@@ -10,6 +10,21 @@
 - STL 不包含預覽材質或色彩。Blender 場景的地板、相機、燈光只供預覽，請勿當作列印模型匯出。
 - 本庫不分發參考照片；各模型 README、sources.md、參考來源.md 或 source_review.json 保留來源網址及建模限制。第三方照片、建築設計、雕塑與商標權利不因本庫公開而獲得授權；商用或再散布前請自行確認適用權利。
 
+## 建築模型圖鑑
+
+點選圖片或名稱開啟模型說明；下方各建築區塊可展開查看正反面預覽與原有資訊。
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="Taipei101_150mm/previews/front.png" alt="臺北101前視模型預覽" width="220">](Taipei101_150mm/README.md)<br>**[臺北101](Taipei101_150mm/README.md)** | [<img src="中正紀念堂_150mm/previews/front.png" alt="中正紀念堂前視模型預覽" width="220">](中正紀念堂_150mm/README.md)<br>**[中正紀念堂](中正紀念堂_150mm/README.md)** | [<img src="palace-museum-north-model/previews/front.png" alt="國立故宮博物院北部院區前視模型預覽" width="220">](palace-museum-north-model/README.md)<br>**[國立故宮博物院北部院區](palace-museum-north-model/README.md)** |
+| [<img src="presidential-office/previews/front.png" alt="總統府前視模型預覽" width="220">](presidential-office/README.md)<br>**[總統府](presidential-office/README.md)** | [<img src="longshan-temple/previews/front.png" alt="艋舺龍山寺前視模型預覽" width="220">](longshan-temple/README.md)<br>**[艋舺龍山寺](longshan-temple/README.md)** | [<img src="fort-san-domingo/previews/front.png" alt="淡水紅毛城前視模型預覽" width="220">](fort-san-domingo/README.md)<br>**[淡水紅毛城](fort-san-domingo/README.md)** |
+| [<img src="hsinchu-station/previews/front.png" alt="新竹火車站前視模型預覽" width="220">](hsinchu-station/README.md)<br>**[新竹火車站](hsinchu-station/README.md)** | [<img src="lanyang-museum/previews/front.png" alt="蘭陽博物館前視模型預覽" width="220">](lanyang-museum/README.md)<br>**[蘭陽博物館](lanyang-museum/README.md)** | [<img src="luce-chapel/previews/front.png" alt="路思義教堂前視模型預覽" width="220">](luce-chapel/README.md)<br>**[路思義教堂](luce-chapel/README.md)** |
+| [<img src="taichung-theater/previews/front.png" alt="臺中國家歌劇院前視模型預覽" width="220">](taichung-theater/README.md)<br>**[臺中國家歌劇院](taichung-theater/README.md)** | [<img src="chung-tai-monastery/previews/front.png" alt="中台禪寺前視模型預覽" width="220">](chung-tai-monastery/README.md)<br>**[中台禪寺](chung-tai-monastery/README.md)** | [<img src="palace-south/previews/front.png" alt="國立故宮博物院南部院區前視模型預覽" width="220">](palace-south/README.md)<br>**[國立故宮博物院南部院區](palace-south/README.md)** |
+| [<img src="chihkan-tower/previews/front.png" alt="赤崁樓前視模型預覽" width="220">](chihkan-tower/README.md)<br>**[赤崁樓](chihkan-tower/README.md)** | [<img src="anping-old-fort/previews/front.png" alt="安平古堡前視模型預覽" width="220">](anping-old-fort/README.md)<br>**[安平古堡](anping-old-fort/README.md)** | [<img src="chimei-museum/previews/front.png" alt="奇美博物館前視模型預覽" width="220">](chimei-museum/README.md)<br>**[奇美博物館](chimei-museum/README.md)** |
+| [<img src="85-sky-tower/previews/front.png" alt="高雄85大樓前視模型預覽" width="220">](85-sky-tower/README.md)<br>**[高雄85大樓](85-sky-tower/README.md)** | [<img src="weiwuying/previews/front.png" alt="衛武營國家藝術文化中心前視模型預覽" width="220">](weiwuying/README.md)<br>**[衛武營國家藝術文化中心](weiwuying/README.md)** | [<img src="dragon-tiger-pagodas/previews/front.png" alt="龍虎塔前視模型預覽" width="220">](dragon-tiger-pagodas/README.md)<br>**[龍虎塔](dragon-tiger-pagodas/README.md)** |
+| [<img src="eluanbi-lighthouse/previews/front.png" alt="鵝鑾鼻燈塔前視模型預覽" width="220">](eluanbi-lighthouse/README.md)<br>**[鵝鑾鼻燈塔](eluanbi-lighthouse/README.md)** | [<img src="pine-garden/previews/front.png" alt="松園別館前視模型預覽" width="220">](pine-garden/README.md)<br>**[松園別館](pine-garden/README.md)** | [<img src="prehistory-museum-kangle/previews/front.png" alt="國立臺灣史前文化博物館康樂本館前視模型預覽" width="220">](prehistory-museum-kangle/README.md)<br>**[國立臺灣史前文化博物館康樂本館](prehistory-museum-kangle/README.md)** |
+| [<img src="deyue-tower/previews/front.png" alt="金門得月樓前視模型預覽" width="220">](deyue-tower/README.md)<br>**[金門得月樓](deyue-tower/README.md)** | [<img src="penghu-tianhou-temple/previews/front.png" alt="澎湖天后宮前視模型預覽" width="220">](penghu-tianhou-temple/README.md)<br>**[澎湖天后宮](penghu-tianhou-temple/README.md)** | [<img src="dongyong-lighthouse/previews/front.png" alt="馬祖東湧燈塔前視模型預覽" width="220">](dongyong-lighthouse/README.md)<br>**[馬祖東湧燈塔](dongyong-lighthouse/README.md)** |
+
 ## 模型目錄與實際預覽
 
 | 地標 | 檔案與說明 | 前視預覽 | 後視預覽 |
@@ -63,144 +78,265 @@
 
 ### 臺北101
 
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
+
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="Taipei101_150mm/previews/front.png" alt="臺北101前視模型預覽" width="320">](Taipei101_150mm/previews/front.png) | [<img src="Taipei101_150mm/previews/rear.png" alt="臺北101後視模型預覽" width="320">](Taipei101_150mm/previews/rear.png) |
 
+</details>
+
 ### 中正紀念堂
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="中正紀念堂_150mm/previews/front.png" alt="中正紀念堂前視模型預覽" width="320">](中正紀念堂_150mm/previews/front.png) | [<img src="中正紀念堂_150mm/previews/rear.png" alt="中正紀念堂後視模型預覽" width="320">](中正紀念堂_150mm/previews/rear.png) |
 
+</details>
+
 ### 國立故宮博物院北部院區
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="palace-museum-north-model/previews/front.png" alt="國立故宮博物院北部院區前視模型預覽" width="320">](palace-museum-north-model/previews/front.png) | [<img src="palace-museum-north-model/previews/rear.png" alt="國立故宮博物院北部院區後視模型預覽" width="320">](palace-museum-north-model/previews/rear.png) |
 
+</details>
+
 ### 總統府
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="presidential-office/previews/front.png" alt="總統府前視模型預覽" width="320">](presidential-office/previews/front.png) | [<img src="presidential-office/previews/rear.png" alt="總統府後視模型預覽" width="320">](presidential-office/previews/rear.png) |
 
+</details>
+
 ### 艋舺龍山寺
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="longshan-temple/previews/front.png" alt="艋舺龍山寺前視模型預覽" width="320">](longshan-temple/previews/front.png) | [<img src="longshan-temple/previews/rear.png" alt="艋舺龍山寺後視模型預覽" width="320">](longshan-temple/previews/rear.png) |
 
+</details>
+
 ### 淡水紅毛城
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="fort-san-domingo/previews/front.png" alt="淡水紅毛城前視模型預覽" width="320">](fort-san-domingo/previews/front.png) | [<img src="fort-san-domingo/previews/rear.png" alt="淡水紅毛城後視模型預覽" width="320">](fort-san-domingo/previews/rear.png) |
 
+</details>
+
 ### 新竹火車站
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="hsinchu-station/previews/front.png" alt="新竹火車站前視模型預覽" width="320">](hsinchu-station/previews/front.png) | [<img src="hsinchu-station/previews/rear.png" alt="新竹火車站後視模型預覽" width="320">](hsinchu-station/previews/rear.png) |
 
+</details>
+
 ### 蘭陽博物館
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="lanyang-museum/previews/front.png" alt="蘭陽博物館前視模型預覽" width="320">](lanyang-museum/previews/front.png) | [<img src="lanyang-museum/previews/rear.png" alt="蘭陽博物館後視模型預覽" width="320">](lanyang-museum/previews/rear.png) |
 
+</details>
+
 ### 路思義教堂
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="luce-chapel/previews/front.png" alt="路思義教堂前視模型預覽" width="320">](luce-chapel/previews/front.png) | [<img src="luce-chapel/previews/rear.png" alt="路思義教堂後視模型預覽" width="320">](luce-chapel/previews/rear.png) |
 
+</details>
+
 ### 臺中國家歌劇院
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="taichung-theater/previews/front.png" alt="臺中國家歌劇院前視模型預覽" width="320">](taichung-theater/previews/front.png) | [<img src="taichung-theater/previews/rear.png" alt="臺中國家歌劇院後視模型預覽" width="320">](taichung-theater/previews/rear.png) |
 
+</details>
+
 ### 中台禪寺
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="chung-tai-monastery/previews/front.png" alt="中台禪寺前視模型預覽" width="320">](chung-tai-monastery/previews/front.png) | [<img src="chung-tai-monastery/previews/rear.png" alt="中台禪寺後視模型預覽" width="320">](chung-tai-monastery/previews/rear.png) |
 
+</details>
+
 ### 國立故宮博物院南部院區
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="palace-south/previews/front.png" alt="國立故宮博物院南部院區前視模型預覽" width="320">](palace-south/previews/front.png) | [<img src="palace-south/previews/rear.png" alt="國立故宮博物院南部院區後視模型預覽" width="320">](palace-south/previews/rear.png) |
 
+</details>
+
 ### 赤崁樓
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="chihkan-tower/previews/front.png" alt="赤崁樓前視模型預覽" width="320">](chihkan-tower/previews/front.png) | [<img src="chihkan-tower/previews/rear.png" alt="赤崁樓後視模型預覽" width="320">](chihkan-tower/previews/rear.png) |
 
+</details>
+
 ### 安平古堡
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="anping-old-fort/previews/front.png" alt="安平古堡前視模型預覽" width="320">](anping-old-fort/previews/front.png) | [<img src="anping-old-fort/previews/rear.png" alt="安平古堡後視模型預覽" width="320">](anping-old-fort/previews/rear.png) |
 
+</details>
+
 ### 奇美博物館
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="chimei-museum/previews/front.png" alt="奇美博物館前視模型預覽" width="320">](chimei-museum/previews/front.png) | [<img src="chimei-museum/previews/rear.png" alt="奇美博物館後視模型預覽" width="320">](chimei-museum/previews/rear.png) |
 
+</details>
+
 ### 高雄85大樓
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="85-sky-tower/previews/front.png" alt="高雄85大樓前視模型預覽" width="320">](85-sky-tower/previews/front.png) | [<img src="85-sky-tower/previews/rear.png" alt="高雄85大樓後視模型預覽" width="320">](85-sky-tower/previews/rear.png) |
 
+</details>
+
 ### 衛武營國家藝術文化中心
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="weiwuying/previews/front.png" alt="衛武營國家藝術文化中心前視模型預覽" width="320">](weiwuying/previews/front.png) | [<img src="weiwuying/previews/rear.png" alt="衛武營國家藝術文化中心後視模型預覽" width="320">](weiwuying/previews/rear.png) |
 
+</details>
+
 ### 龍虎塔
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="dragon-tiger-pagodas/previews/front.png" alt="龍虎塔前視模型預覽" width="320">](dragon-tiger-pagodas/previews/front.png) | [<img src="dragon-tiger-pagodas/previews/rear.png" alt="龍虎塔後視模型預覽" width="320">](dragon-tiger-pagodas/previews/rear.png) |
 
+</details>
+
 ### 鵝鑾鼻燈塔
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="eluanbi-lighthouse/previews/front.png" alt="鵝鑾鼻燈塔前視模型預覽" width="320">](eluanbi-lighthouse/previews/front.png) | [<img src="eluanbi-lighthouse/previews/rear.png" alt="鵝鑾鼻燈塔後視模型預覽" width="320">](eluanbi-lighthouse/previews/rear.png) |
 
+</details>
+
 ### 松園別館
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="pine-garden/previews/front.png" alt="松園別館前視模型預覽" width="320">](pine-garden/previews/front.png) | [<img src="pine-garden/previews/rear.png" alt="松園別館後視模型預覽" width="320">](pine-garden/previews/rear.png) |
 
+</details>
+
 ### 國立臺灣史前文化博物館康樂本館
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="prehistory-museum-kangle/previews/front.png" alt="國立臺灣史前文化博物館康樂本館前視模型預覽" width="320">](prehistory-museum-kangle/previews/front.png) | [<img src="prehistory-museum-kangle/previews/rear.png" alt="國立臺灣史前文化博物館康樂本館後視模型預覽" width="320">](prehistory-museum-kangle/previews/rear.png) |
 
+</details>
+
 ### 金門得月樓
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="deyue-tower/previews/front.png" alt="金門得月樓前視模型預覽" width="320">](deyue-tower/previews/front.png) | [<img src="deyue-tower/previews/rear.png" alt="金門得月樓後視模型預覽" width="320">](deyue-tower/previews/rear.png) |
 
+</details>
+
 ### 澎湖天后宮
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="penghu-tianhou-temple/previews/front.png" alt="澎湖天后宮前視模型預覽" width="320">](penghu-tianhou-temple/previews/front.png) | [<img src="penghu-tianhou-temple/previews/rear.png" alt="澎湖天后宮後視模型預覽" width="320">](penghu-tianhou-temple/previews/rear.png) |
 
+</details>
+
 ### 馬祖東湧燈塔
+
+<details>
+<summary>查看模型說明、檔案與各角度預覽</summary>
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
 | [<img src="dongyong-lighthouse/previews/front.png" alt="馬祖東湧燈塔前視模型預覽" width="320">](dongyong-lighthouse/previews/front.png) | [<img src="dongyong-lighthouse/previews/rear.png" alt="馬祖東湧燈塔後視模型預覽" width="320">](dongyong-lighthouse/previews/rear.png) |
+
+</details>
+

@@ -56,3 +56,151 @@
 ## 龍虎塔 STL 下載方式
 
 龍虎塔的 STL 較大，另以 Release v1.0.0 附件提供：[下載 dragon_tiger_pagodas_150mm.stl](https://github.com/root50643/taiwan-landmark-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl)。GitHub 的原始碼 ZIP 不包含此 STL。請將下載檔改名為 model.stl，放入 dragon-tiger-pagodas/ 目錄，再依該目錄 README 執行驗證或預覽。檔案幾何與既有驗證雜湊維持不變；publication-manifest.json 將此檔標記為 release_only。
+
+## 24 處地標模型預覽
+
+以下皆為實際模型的渲染圖。
+
+### 臺北101
+
+![臺北101前視模型預覽](Taipei101_150mm/previews/front.png)
+
+![臺北101後視模型預覽](Taipei101_150mm/previews/rear.png)
+
+### 中正紀念堂
+
+![中正紀念堂前視模型預覽](中正紀念堂_150mm/previews/front.png)
+
+![中正紀念堂後視模型預覽](中正紀念堂_150mm/previews/rear.png)
+
+### 國立故宮博物院北部院區
+
+![國立故宮博物院北部院區前視模型預覽](palace-museum-north-model/previews/front.png)
+
+![國立故宮博物院北部院區後視模型預覽](palace-museum-north-model/previews/rear.png)
+
+### 總統府
+
+![總統府前視模型預覽](presidential-office/previews/front.png)
+
+![總統府後視模型預覽](presidential-office/previews/rear.png)
+
+### 艋舺龍山寺
+
+![艋舺龍山寺前視模型預覽](longshan-temple/previews/front.png)
+
+![艋舺龍山寺後視模型預覽](longshan-temple/previews/rear.png)
+
+### 淡水紅毛城
+
+![淡水紅毛城前視模型預覽](fort-san-domingo/previews/front.png)
+
+![淡水紅毛城後視模型預覽](fort-san-domingo/previews/rear.png)
+
+### 新竹火車站
+
+![新竹火車站前視模型預覽](hsinchu-station/previews/front.png)
+
+![新竹火車站後視模型預覽](hsinchu-station/previews/rear.png)
+
+### 蘭陽博物館
+
+![蘭陽博物館前視模型預覽](lanyang-museum/previews/front.png)
+
+![蘭陽博物館後視模型預覽](lanyang-museum/previews/rear.png)
+
+### 路思義教堂
+
+![路思義教堂前視模型預覽](luce-chapel/previews/front.png)
+
+![路思義教堂後視模型預覽](luce-chapel/previews/rear.png)
+
+### 臺中國家歌劇院
+
+![臺中國家歌劇院前視模型預覽](taichung-theater/previews/front.png)
+
+![臺中國家歌劇院後視模型預覽](taichung-theater/previews/rear.png)
+
+### 中台禪寺
+
+![中台禪寺前視模型預覽](chung-tai-monastery/previews/front.png)
+
+![中台禪寺後視模型預覽](chung-tai-monastery/previews/rear.png)
+
+### 國立故宮博物院南部院區
+
+![國立故宮博物院南部院區前視模型預覽](palace-south/previews/front.png)
+
+![國立故宮博物院南部院區後視模型預覽](palace-south/previews/rear.png)
+
+### 赤崁樓
+
+![赤崁樓前視模型預覽](chihkan-tower/previews/front.png)
+
+![赤崁樓後視模型預覽](chihkan-tower/previews/rear.png)
+
+### 安平古堡
+
+![安平古堡前視模型預覽](anping-old-fort/previews/front.png)
+
+![安平古堡後視模型預覽](anping-old-fort/previews/rear.png)
+
+### 奇美博物館
+
+![奇美博物館前視模型預覽](chimei-museum/previews/front.png)
+
+![奇美博物館後視模型預覽](chimei-museum/previews/rear.png)
+
+### 高雄85大樓
+
+![高雄85大樓前視模型預覽](85-sky-tower/previews/front.png)
+
+![高雄85大樓後視模型預覽](85-sky-tower/previews/rear.png)
+
+### 衛武營國家藝術文化中心
+
+![衛武營國家藝術文化中心前視模型預覽](weiwuying/previews/front.png)
+
+![衛武營國家藝術文化中心後視模型預覽](weiwuying/previews/rear.png)
+
+### 龍虎塔
+
+![龍虎塔前視模型預覽](dragon-tiger-pagodas/previews/front.png)
+
+![龍虎塔後視模型預覽](dragon-tiger-pagodas/previews/rear.png)
+
+### 鵝鑾鼻燈塔
+
+![鵝鑾鼻燈塔前視模型預覽](eluanbi-lighthouse/previews/front.png)
+
+![鵝鑾鼻燈塔後視模型預覽](eluanbi-lighthouse/previews/rear.png)
+
+### 松園別館
+
+![松園別館前視模型預覽](pine-garden/previews/front.png)
+
+![松園別館後視模型預覽](pine-garden/previews/rear.png)
+
+### 國立臺灣史前文化博物館康樂本館
+
+![國立臺灣史前文化博物館康樂本館前視模型預覽](prehistory-museum-kangle/previews/front.png)
+
+![國立臺灣史前文化博物館康樂本館後視模型預覽](prehistory-museum-kangle/previews/rear.png)
+
+### 金門得月樓
+
+![金門得月樓前視模型預覽](deyue-tower/previews/front.png)
+
+![金門得月樓後視模型預覽](deyue-tower/previews/rear.png)
+
+### 澎湖天后宮
+
+![澎湖天后宮前視模型預覽](penghu-tianhou-temple/previews/front.png)
+
+![澎湖天后宮後視模型預覽](penghu-tianhou-temple/previews/rear.png)
+
+### 馬祖東湧燈塔
+
+![馬祖東湧燈塔前視模型預覽](dongyong-lighthouse/previews/front.png)
+
+![馬祖東湧燈塔後視模型預覽](dongyong-lighthouse/previews/rear.png)

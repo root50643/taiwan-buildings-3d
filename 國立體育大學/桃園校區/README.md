@@ -1,6 +1,6 @@
 # 國立體育大學｜桃園校區
 
-本批3個不同建築，含2個局部段，並非全校完成。
+累計6個不同建築，含5個局部段，並非全校完成。
 
 - [綜合體育館](buildings/ntsu-arena/README.md)｜既有外觀全形近似（後勤細節未核）
 - [行政教學大樓中央入口段](buildings/ntsu-administration-entrance-section/README.md)｜局部段，非全棟
@@ -9,3 +9,9 @@
 [校區續接清單與來源](coverage.json)
 
 [下一批建物與精確來源續接](NEXT-STEPS.md)
+
+- [教學研究大樓中央前立面段](buildings/ntsu-teaching-central-section/README.md)｜局部，非全館
+
+- [綜合科技大樓弧廊及內凹立面段](buildings/ntsu-science-portico-section/README.md)｜局部，非全館
+
+- [室內網球館中央門樓段](buildings/ntsu-tennis-entry-section/README.md)｜局部，非全館

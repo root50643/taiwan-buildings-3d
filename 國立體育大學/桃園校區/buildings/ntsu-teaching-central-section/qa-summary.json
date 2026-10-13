@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "all_programs_exit_zero": true,
+    "all_validation_checks_true": true,
+    "all_0p2_contour_checks_true": true,
+    "all_0p2_opening_loss_under_one_percent": true,
+    "canonical_v3_sha_verified": true
+  },
+  "program_runs": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_contour_validity.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_depth_rays.py",
+      "exit_code": 0
+    }
+  ],
+  "stl_sha256": "1e0b7b5bc0b55fb9e89d1561b3ed813517ae4663095fb2e7b74c5a9e5784f173",
+  "dimensions_mm": [
+    150.0,
+    65.0,
+    118.19999694824219
+  ],
+  "opening_0p2_max_loss_fraction": 0.002302537358544184,
+  "opening_1mm_max_loss_fraction": 0.002302537358544161,
+  "limitations": "No physical print or slicer toolpath validation. Opening is not exhaustive minimum wall thickness."
+}

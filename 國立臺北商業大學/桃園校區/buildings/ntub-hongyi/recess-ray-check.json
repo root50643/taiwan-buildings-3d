@@ -1,0 +1,288 @@
+{
+  "passed": true,
+  "checks": {
+    "courtyard_center_open_to_sky": true,
+    "courtyard_mouth_open_to_sky": true,
+    "courtyard_back_open_to_sky": true,
+    "courtyard_entry_clear_to_back": true,
+    "left_balcony_recess": true,
+    "right_balcony_recess": true,
+    "classroom_shoulder_roof_below_outer_roof": true,
+    "outer_wing_higher_roof": true,
+    "right_rooftop_loggia_horizontal_gap": true,
+    "left_rooftop_loggia_horizontal_gap": true,
+    "lower_classroom_wall_control": true
+  },
+  "stl_sha256": "e5c014bb143e5c8682be55e3bfb4022121c06a6594ad28cfcfeb12f3cddd7153",
+  "method": "First positive intersection on the original delivered STL; process=False preserves original STL triangles. No repair or modification. Coordinates in millimetres.",
+  "limitations": [
+    "This establishes modeled recess/open-air geometry, not exact real-world depth.",
+    "Positive material behind deep loggia remains deliberately present where actual through-route is unverified."
+  ],
+  "rays": [
+    {
+      "name": "courtyard_center_open_to_sky",
+      "origin_mm": [
+        0,
+        0,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        2.99,
+        3.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "courtyard_mouth_open_to_sky",
+      "origin_mm": [
+        0,
+        -58,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        -58.0,
+        3.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        2.99,
+        3.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "courtyard_back_open_to_sky",
+      "origin_mm": [
+        0,
+        24,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        24.0,
+        3.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        2.99,
+        3.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "courtyard_entry_clear_to_back",
+      "origin_mm": [
+        5,
+        -90,
+        10
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        5.0,
+        42.0,
+        10.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        41.99,
+        42.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "left_balcony_recess",
+      "origin_mm": [
+        0,
+        -43,
+        47
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        -30.0,
+        -43.0,
+        47.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        -30.01,
+        -29.99
+      ],
+      "passed": true
+    },
+    {
+      "name": "right_balcony_recess",
+      "origin_mm": [
+        0,
+        -43,
+        47
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        30.0,
+        -43.0,
+        47.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        29.99,
+        30.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "classroom_shoulder_roof_below_outer_roof",
+      "origin_mm": [
+        36,
+        0,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        36.0,
+        0.0,
+        78.80000305175781
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        78.79,
+        78.81
+      ],
+      "passed": true
+    },
+    {
+      "name": "outer_wing_higher_roof",
+      "origin_mm": [
+        56,
+        0,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        56.0,
+        0.0,
+        91.30000305175781
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        91.29,
+        91.31
+      ],
+      "passed": true
+    },
+    {
+      "name": "right_rooftop_loggia_horizontal_gap",
+      "origin_mm": [
+        0,
+        0,
+        72
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        41.5,
+        0.0,
+        72.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        41.49,
+        41.51
+      ],
+      "passed": true
+    },
+    {
+      "name": "left_rooftop_loggia_horizontal_gap",
+      "origin_mm": [
+        0,
+        0,
+        72
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        -41.5,
+        0.0,
+        72.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        -41.51,
+        -41.49
+      ],
+      "passed": true
+    },
+    {
+      "name": "lower_classroom_wall_control",
+      "origin_mm": [
+        0,
+        0,
+        64
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        28.0,
+        0.0,
+        64.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        27.99,
+        28.01
+      ],
+      "passed": true
+    }
+  ]
+}

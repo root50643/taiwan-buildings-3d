@@ -1,0 +1,309 @@
+{
+  "passed": true,
+  "checks": {
+    "front_shaft_single_window_recess": true,
+    "right_shaft_single_window_recess": true,
+    "front_head_glazing_recess": true,
+    "balcony_open_walkway_deck": true,
+    "front_balcony_through_square_hole": true,
+    "front_balcony_solid_parapet_control": true,
+    "rear_blank_face": true,
+    "gable_peak_top": true,
+    "two_gables_each_3mm_thick_original_stl": true,
+    "finite_gable_peak_width_original_stl": true,
+    "gable_upturned_end_widths_at_136_99mm": true,
+    "outer_roof_corner_finite_vertical_thickness": true
+  },
+  "stl_sha256": "2b7af78f157a0113309136ba6da42fc82e81164aa188cdf30f59775d0eb84c03",
+  "method": "First positive intersection on the original delivered STL; process=False preserves original STL triangles. No repair or modification. Coordinates in millimetres.",
+  "limitations": [
+    "This establishes modeled recess/open-air geometry, not exact real-world depth.",
+    "The plain rear elevation omits unknown openings and attachment to the main library; this is a tower segment only."
+  ],
+  "rays": [
+    {
+      "name": "front_shaft_single_window_recess",
+      "origin_mm": [
+        0,
+        -60,
+        60
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        0.0,
+        -17.700000762939453,
+        60.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -17.71,
+        -17.69
+      ],
+      "passed": true
+    },
+    {
+      "name": "right_shaft_single_window_recess",
+      "origin_mm": [
+        60,
+        0,
+        60
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        17.700000762939453,
+        0.0,
+        60.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        17.69,
+        17.71
+      ],
+      "passed": true
+    },
+    {
+      "name": "front_head_glazing_recess",
+      "origin_mm": [
+        0,
+        -60,
+        122
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        0.0,
+        -16.75,
+        122.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -16.76,
+        -16.74
+      ],
+      "passed": true
+    },
+    {
+      "name": "balcony_open_walkway_deck",
+      "origin_mm": [
+        22,
+        1,
+        130
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        22.0,
+        1.0,
+        112.80000305175781
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        112.79,
+        112.81
+      ],
+      "passed": true
+    },
+    {
+      "name": "front_balcony_through_square_hole",
+      "origin_mm": [
+        -15,
+        -60,
+        114.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        -15.0,
+        -18.0,
+        114.8
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -18.01,
+        -17.99
+      ],
+      "passed": true
+    },
+    {
+      "name": "front_balcony_solid_parapet_control",
+      "origin_mm": [
+        0,
+        -60,
+        114.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        0.0,
+        -26.5,
+        114.8
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -26.51,
+        -26.49
+      ],
+      "passed": true
+    },
+    {
+      "name": "rear_blank_face",
+      "origin_mm": [
+        0,
+        60,
+        60
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit_mm": [
+        0.0,
+        19.0,
+        60.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        18.99,
+        19.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "gable_peak_top",
+      "origin_mm": [
+        17,
+        0,
+        170
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        17.0,
+        0.0,
+        150.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        149.99,
+        150.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "two_gables_each_3mm_thick_original_stl",
+      "origin_mm": [
+        60,
+        0,
+        149
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "x_intersections_mm": [
+        18.5,
+        15.5,
+        -15.5,
+        -18.5
+      ],
+      "wall_thicknesses_mm": [
+        3.0,
+        3.0
+      ],
+      "passed": true
+    },
+    {
+      "name": "finite_gable_peak_width_original_stl",
+      "origin_mm": [
+        17,
+        -60,
+        149.99
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "y_intersections_mm": [
+        -2.505,
+        2.505
+      ],
+      "width_mm": 5.01,
+      "passed": true
+    },
+    {
+      "name": "gable_upturned_end_widths_at_136_99mm",
+      "origin_mm": [
+        17,
+        -60,
+        136.99
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "y_intersections_mm": [
+        -29.0,
+        -26.99375,
+        -14.02667,
+        14.02667,
+        26.99375,
+        29.0
+      ],
+      "solid_spans_mm": [
+        2.0062500000000014,
+        28.05334,
+        2.0062500000000014
+      ],
+      "minimum_tip_width_mm": 2.0062500000000014,
+      "passed": true
+    },
+    {
+      "name": "outer_roof_corner_finite_vertical_thickness",
+      "origin_mm": [
+        28,
+        28,
+        170
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "z_intersections_mm": [
+        0.0,
+        3.0,
+        131.8,
+        136.7
+      ],
+      "roof_thickness_mm": 4.899999999999977,
+      "passed": true
+    }
+  ]
+}

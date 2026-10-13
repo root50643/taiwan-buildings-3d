@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": {
+    "all_four_validators_exit_zero": true,
+    "all_raw_geometry_rebuild_blend_checks_true": true,
+    "all_0_2mm_sections_degree_two_closed": true,
+    "all_individual_and_combined_polygons_valid": true,
+    "canonical_fail_closed_v3_sha_verified": true,
+    "thin_screen_reference_width_0_8mm": true,
+    "thin_screen_max_loss_below_one_percent": true,
+    "no_polygon_repair_fallback": true,
+    "model_sha_matches_validated_stl": true
+  },
+  "runs": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_layers.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_contour_validity.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0
+    }
+  ],
+  "model_sha256": "2553c19571f53b70a8fd1c82736caa54002bd5dcc9cc03e2584bc714c09918d5",
+  "canonical_validator_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
+  "layer_pitch_mm": 0.2,
+  "first_z_mm": 0.071,
+  "layer_count": 750,
+  "thin_sample_count": 150,
+  "maximum_0_8mm_opening_loss_fraction": 0.004866657303836615,
+  "physical_print_test_performed": false,
+  "slicer_toolpath_test_performed": false,
+  "full_wall_thickness_analysis_performed": false
+}

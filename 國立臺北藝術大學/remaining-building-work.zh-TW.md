@@ -1,10 +1,10 @@
 # 北藝大逐項續接
 
-第二批新增2個局部段；累計4件模型，1主要外觀、3局部段。不是4棟完整測繪。全校仍未完成，實體棟數分母尚未知。
+累計6件模型：1主要外觀、5局部段。全校尚未完成，實體棟數分母未知；38個研究條目不是38棟。
 
 已查看115學年度官方招生簡章（PDF第27頁／印刷頁25）校圖，為北藝大製作、芳苑國中公開轉載。112官方配置圖亦已視讀；113原圖仍未取得。115插畫不是測繪，也不等同2026全面現況調查。
 
-2024官方記錄：藝大會館2–4樓轉為動畫與新媒體大樓教學用途，2024-09-05揭牌；圖書館2024進行外牆及屋頂修繕、綜合宿舍2024開工整修。尚無足以排除2025–2026其餘拆建的完整資產清冊。
+2024會館轉動畫與新媒體教學用途；2025-08圖書館第一階段已複驗、第二階段當時報竣待驗，仍缺修繕後外觀。2025-04宿舍分區拆架／查驗，不等於全案竣工。未取得全面2026資產現況清冊。
 
 ## 科技藝術館
 - 狀態：formal_model_main_exterior
@@ -23,13 +23,13 @@
 
 ## 戲劇廳
 - 狀態：not_yet_individually_researched
-- 下一步：尚未逐立面檢視；先以官方圖核獨棟／連體界線，再補可辨年代多角度實拍與平面。 2020官方出入口資料顯示兩廳與佈景工廠有連接；2023舊戲劇系館修繕不能混為2013戲舞新棟。
-- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)
+- 下一步：尚未逐立面檢視；先以官方圖核獨棟／連體界線，再補可辨年代多角度實拍與平面。 2020官方出入口資料顯示兩廳與佈景工廠有連接；2023舊戲劇系館修繕不能混為2013戲舞新棟。 既有工廠2024仍有教學使用，服裝工廠辦公室明在四樓；106–107新工廠計畫已終止，不增建成棟。
+- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://sec.tnua.edu.tw/wp-content/uploads/2024/05/主管會報會議紀錄20240422-通過-2.pdf)
 
 ## 戲劇舞蹈大樓
-- 狀態：checked_evidence_gap
-- 下一步：2013新建大樓，與舊戲劇／舞蹈系館群不同。已看梅城建築師中庭實拍；OSM外廓沒有表現已知中庭，不能照實心方盒建。補外側、屋頂、完整樓層平面後再做。
-- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://meichengarchitect.com/architecture)；[4](https://www.openstreetmap.org/way/256161753)；[5](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)
+- 狀態：partial_model_only
+- 下一步：僅建外角樓梯塔與玻璃轉角段。完整磚翼17／20上窗列、灰翼12寬加1窄、中庭橋廊已研究，但下層遮擋、完整平面／屋頂／背面及後續太陽能改動仍缺。不得當全棟。
+- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://meichengarchitect.com/architecture)；[4](https://www.openstreetmap.org/way/256161753)；[5](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)；[6](https://s1323015.blogspot.com/2016/02/blog-post_29.html)；[7](https://publicart.taipei/Works_detail.aspx?id=780)；[8](https://publicart.taipei/Works_detail.aspx?id=779)
 
 ## 舞蹈系館
 - 狀態：not_yet_individually_researched
@@ -37,9 +37,9 @@
 - 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)
 
 ## 活動中心
-- 狀態：checked_evidence_gap
-- 下一步：2018網誌有鼓樓斜面、水舞台、荷花池院落多角。須合併音樂廳／商店的棟界去重；不能用鼓樓照片當鐘樓另一面。
-- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://blog.udn.com/jefnjil/112277513)；[4](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)
+- 狀態：partial_model_only
+- 下一步：僅建鼓樓與相鄰短翼／曲牆／階梯。完整活動中心、商店、音樂廳／荷池與水舞臺棟界尚待核，勿與鐘樓混用。
+- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://blog.udn.com/jefnjil/112277513)；[4](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)；[5](https://commons.wikimedia.org/wiki/File:TNUA_administration_buildings_and_Arts_forum_20240324.jpg)；[6](https://commons.wikimedia.org/wiki/File:TNUA_administrative_building_20100123.jpg)；[7](https://openmuseum.tw/muse/digi_object/297876b35514c00d2ecdb225ce847e0b)
 
 ## 行政大樓
 - 狀態：checked_evidence_gap
@@ -53,13 +53,13 @@
 
 ## 綜合宿舍
 - 狀態：checked_evidence_gap
-- 下一步：2024官方記錄7月1日起整修、當時預估2025年9月復用；不是已驗證竣工日期。需查完成後實拍與棟界。
-- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://sec.tnua.edu.tw/wp-content/uploads/2024/10/113.10.01_%E6%9C%83%E8%AD%B0%E7%B4%80%E9%8C%84.pdf)；[4](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)
+- 下一步：2025-04官方資料記C/D棟鷹架4/17拆除、A/B棟分段查驗。2025-09-01是電表設備驗收，不能當整體外牆工程竣工。補整修後完整外觀及正式棟界。
+- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://sec.tnua.edu.tw/wp-content/uploads/2024/10/113.10.01_%E6%9C%83%E8%AD%B0%E7%B4%80%E9%8C%84.pdf)；[4](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)；[5](https://ga.tnua.edu.tw/wp-content/uploads/2025/04/總務會議議程_附件1-113學年第2學期.pdf)；[6](https://ga.tnua.edu.tw/wp-content/uploads/2025/12/第31次節能小組會議簡報1141201.pdf)
 
 ## 學人宿舍
 - 狀態：checked_evidence_gap
-- 下一步：115圖改列學人會館；先核2024整修後形狀與實際棟界，再取外觀照片。
-- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)
+- 下一步：學人會館2024-01-22報竣、2/22複驗、3月開放入住；須看改修後外觀，原學人宿舍名稱不另加一棟。
+- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)；[4](https://ga.tnua.edu.tw/wp-content/uploads/2024/06/總務會議議程_附件1-112學年第2學期修.pdf)
 
 ## 研究生宿舍
 - 狀態：not_yet_individually_researched
@@ -98,8 +98,8 @@
 
 ## 圖書館
 - 狀態：checked_evidence_gap
-- 下一步：已查看2016、2018與2023正面，均可數主要跨與深門廊。2024官方記錄外牆、露台、斜屋頂修繕；須補修繕後側背／屋頂。開放博物館建築圖物件401，停止該來源，不用替代路線取同圖。
-- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://commons.wikimedia.org/wiki/File:台北藝術大學圖書館.jpg)；[4](https://commons.wikimedia.org/wiki/File:Taipei_National_University_of_the_Arts_Library_20230624.jpg)；[5](https://sec.tnua.edu.tw/wp-content/uploads/2024/10/113.10.01_%E6%9C%83%E8%AD%B0%E7%B4%80%E9%8C%84.pdf)；[6](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)
+- 下一步：已有2016/2018/2023正面。2025-08-21總務處記第一階段8/13複驗通過、第二階段已報竣待驗，外牆／屋頂／戶外地坪均涉及；須補後續完工及新外觀。建築圖物件401已停，不繞路。
+- 來源：[1](https://admissionex.tnua.edu.tw/wp-content/uploads/2024/04/113_cac_map.pdf)；[2](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)；[3](https://commons.wikimedia.org/wiki/File:台北藝術大學圖書館.jpg)；[4](https://commons.wikimedia.org/wiki/File:Taipei_National_University_of_the_Arts_Library_20230624.jpg)；[5](https://sec.tnua.edu.tw/wp-content/uploads/2024/10/113.10.01_%E6%9C%83%E8%AD%B0%E7%B4%80%E9%8C%84.pdf)；[6](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)；[7](https://ga.tnua.edu.tw/wp-content/uploads/2025/08/總務處工作會報營繕組.pdf)
 
 ## 美術系館
 - 狀態：checked_evidence_gap
@@ -186,3 +186,17 @@
 - 下一步：教育部推廣入口仍列歷史名稱；是否2026持續使用及棟別未核。
 - 來源：[1](https://sec.tnua.edu.tw/wp-content/uploads/2025/06/00_%E5%85%A8%E9%83%A8.pdf)；[2](https://cell.moe.edu.tw/Guests/SchlOne.aspx?gschlid=28)
 
+## 北藝風創意貨櫃屋
+- 狀態：checked_evidence_gap
+- 下一步：兩層創意空間至少2025有使用。社團定位在鷺鷥草原、阿福草旁；須核2026外觀／基礎／平面。一組貨櫃建築不按模組數或營運者加棟，勿與劇設橘色儲物貨櫃混同。
+- 來源：[1](https://sec.tnua.edu.tw/wp-content/uploads/2022/10/105.10.11.pdf)；[2](https://sec.tnua.edu.tw/wp-content/uploads/2025/05/主管會報會議紀錄20250512通過.pdf)；[3](https://www.dcard.tw/f/tnua/p/258122136)
+
+## 校門舊污水處理廠再利用空間
+- 狀態：checked_boundary_and_use_gap
+- 下一步：位置在校門崗哨亭下方；2022-10只證整修完成、將交電影系，不證已移交啟用。現名／獨立地上地下外殼／與崗亭共構尚未知，暫不新增實體棟數。
+- 來源：[1](https://sec.tnua.edu.tw/wp-content/uploads/2022/07/主管會報會議紀錄20220622-通過.pdf)；[2](https://sec.tnua.edu.tw/wp-content/uploads/2022/12/1111025_會議紀錄.pdf)
+
+## 排除未建計畫
+
+- 106–107佈景工廠新建計畫：2022終止；2025款項清理不是竣工。[1](https://sec.tnua.edu.tw/wp-content/uploads/2022/12/1111025_會議紀錄.pdf)；[2](https://sec.tnua.edu.tw/wp-content/uploads/2025/05/1140506_會議紀錄.pdf)
+- 藝術圓夢中心BOT：2023-04-12通知不續辦；後續是前置服務結案，不是恢復興建。[1](https://sec.tnua.edu.tw/wp-content/uploads/2023/05/主管會報會議紀錄20230501核可.pdf)

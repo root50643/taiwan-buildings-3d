@@ -1,0 +1,229 @@
+{
+  "passed": true,
+  "checks": {
+    "ground_arcade_recess_behind_front_piers": true,
+    "upper_arcade_recess_behind_front_piers": true,
+    "lower_glazing_recess_off_mullion": true,
+    "upper_glazing_recess_off_mullion": true,
+    "opaque_spandrel_control": true,
+    "roof_floor_below_open_crown": true,
+    "crown_rim_top_control": true,
+    "crop_back_plain_face": true,
+    "crown_opening_has_no_blocking_face": true
+  },
+  "stl_sha256": "e0ea088d1f0731101ec94be59c75105435bcfb5ba3c80fc0429eec612dbc6b3e",
+  "method": "First positive intersection on the original delivered STL; process=False preserves original STL triangles. No repair or modification. Coordinates in millimetres.",
+  "limitations": [
+    "This establishes modeled recess/open-air geometry, not exact real-world depth.",
+    "The plain rear plane is an explicit crop, not a documented rear elevation."
+  ],
+  "rays": [
+    {
+      "name": "ground_arcade_recess_behind_front_piers",
+      "origin_mm": [
+        2,
+        -80,
+        12
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        2.0,
+        -35.650001525878906,
+        12.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -35.66,
+        -35.64
+      ],
+      "passed": true
+    },
+    {
+      "name": "upper_arcade_recess_behind_front_piers",
+      "origin_mm": [
+        0,
+        -80,
+        32
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        0.0,
+        -37.0,
+        32.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -37.01,
+        -36.99
+      ],
+      "passed": true
+    },
+    {
+      "name": "lower_glazing_recess_off_mullion",
+      "origin_mm": [
+        2,
+        -80,
+        55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        2.0,
+        -51.5,
+        55.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -51.51,
+        -51.49
+      ],
+      "passed": true
+    },
+    {
+      "name": "upper_glazing_recess_off_mullion",
+      "origin_mm": [
+        2,
+        -80,
+        79
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        2.0,
+        -51.5,
+        79.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -51.51,
+        -51.49
+      ],
+      "passed": true
+    },
+    {
+      "name": "opaque_spandrel_control",
+      "origin_mm": [
+        0,
+        -80,
+        69
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        0.0,
+        -54.0,
+        69.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -54.01,
+        -53.99
+      ],
+      "passed": true
+    },
+    {
+      "name": "roof_floor_below_open_crown",
+      "origin_mm": [
+        0,
+        -20,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        -20.0,
+        100.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        99.99,
+        100.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "crown_rim_top_control",
+      "origin_mm": [
+        0,
+        -54,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        -54.0,
+        122.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        121.99,
+        122.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "crop_back_plain_face",
+      "origin_mm": [
+        0,
+        50,
+        60
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit_mm": [
+        0.0,
+        0.0,
+        60.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -0.01,
+        0.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "crown_opening_has_no_blocking_face",
+      "origin_mm": [
+        0,
+        -80,
+        110
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "intersections": 0,
+      "passed": true
+    }
+  ]
+}

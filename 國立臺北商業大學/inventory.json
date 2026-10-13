@@ -65,7 +65,7 @@
       "campus": "臺北校區",
       "name": "學生活動中心（體育館）",
       "kind": "major_building",
-      "status": "partial_model_frozen_independent_qa_pending",
+      "status": "partial_model_independent_qa_passed",
       "observed": "2023主立面段1件已外觀核可，保留7大跨/遮陽片/窄窗/雨棚/台階；西向背切面非全館。",
       "not_established": "整棟側背、屋面與實際進深未核；2026改建討論不是已拆完成證據。",
       "sources": [
@@ -149,13 +149,14 @@
       "campus": "桃園校區",
       "name": "公能樓",
       "kind": "major_building",
-      "status": "researched_evidence_gap",
-      "observed": "官方校圖獨立近方形棟；空間配置B棟及現行行政單位位置可核。",
-      "not_established": "尚未看足夠外觀照片；不能把2011/2013校園效果圖當落成实拍。",
+      "status": "whole_massing_partial_elevations_model_frozen_independent_qa_pending",
+      "observed": "官方校圖獨立近方形棟；空間配置B棟及現行行政單位位置可核。；第二批已建全形量體近似，可見立面核對及原STL凹口／中庭射線通過，詳模型README。",
+      "not_established": "未拍側外立面；屋頂光電精確片數／邊界／斜率及2026現況。",
       "sources": [
         "https://www.ntub.edu.tw/p/404-1000-66809.php?Lang=zh-tw",
         "https://cec.ntub.edu.tw/var/file/30/1030/img/979/6.2.Buildinglayout.pdf",
-        "https://www.ntub.edu.tw/p/412-1000-3926.php?Lang=zh-tw"
+        "https://www.ntub.edu.tw/p/412-1000-3926.php?Lang=zh-tw",
+        "https://gen.ntub.edu.tw/p/412-1009-3949.php?Lang=zh-tw"
       ],
       "aliases_or_boundaries": [
         "B棟/圖資行政大樓/圖書資訊行政大樓/公能大樓同棟。"
@@ -165,13 +166,14 @@
       "campus": "桃園校區",
       "name": "北商學舍",
       "kind": "major_building",
-      "status": "researched_not_modeled",
-      "observed": "官方校圖ㄇ形；新生手冊明載地上7樓地下1樓、開放綠化中庭，手冊外觀照片待逐張大圖核。",
-      "not_established": "東西翼窗列差異、屋頂與中庭連橋有待看高清實拍和各層幾何平面。",
+      "status": "whole_massing_partial_elevations_model_frozen_independent_qa_pending",
+      "observed": "官方校圖ㄇ形；新生手冊明載地上7樓地下1樓、開放綠化中庭，手冊外觀照片待逐張大圖核。；第二批已建全形量體近似，可見立面核對及原STL凹口／中庭射線通過，詳模型README。",
+      "not_established": "西／南外側局部立面、精確坡角、實際透通深度及未見連廊。",
       "sources": [
         "https://www.ntub.edu.tw/p/404-1000-66809.php?Lang=zh-tw",
         "https://cec.ntub.edu.tw/var/file/30/1030/img/979/6.2.Buildinglayout.pdf",
-        "https://newstud.ntub.edu.tw/var/file/53/1053/img/1686/165923810.pdf"
+        "https://newstud.ntub.edu.tw/var/file/53/1053/img/1686/165923810.pdf",
+        "https://gen.ntub.edu.tw/p/412-1009-3949.php?Lang=zh-tw"
       ],
       "aliases_or_boundaries": [
         "C棟/学生宿舍；不是另一棟北育學舍，PDF索引OCR有誤讀風險。"
@@ -226,17 +228,30 @@
         "https://newstud.ntub.edu.tw/var/file/53/1053/img/1686/165923810.pdf"
       ],
       "aliases_or_boundaries": []
+    },
+    {
+      "campus": "桃園校區",
+      "name": "風雨球場上蓋",
+      "kind": "ancillary",
+      "status": "researched_not_modeled",
+      "observed": "官方111–113年度開源節流成效第5頁有現場照片；天溝2024-03-26完成。",
+      "not_established": "完整覆蓋範圍、立柱間距與屋架形狀未研究。",
+      "sources": [
+        "https://sec.ntub.edu.tw/var/file/3/1003/img/906886778.pdf"
+      ]
     }
   ],
   "next_steps": [
-    "先完成弘毅樓和北商學舍照片逐立面／逐層調查，再决定全形或局部。",
-    "承曦樓與五育樓已有兩種年代校園面，補道路侧和屋頂圖後建模。",
-    "活動中心首件維持2023年代局部；未核現況拆建，不升格為全館。"
+    "弘毅樓：官方高清照片已有多角庭院/外側，需要逐層核兩翼7層局部退縮及屋頂光電。",
+    "承曦樓/五育樓：補道路背面与屋頂新建物。",
+    "既有三件均保留不同程度範圍限制，不能把局部未核默認為已核。"
   ],
   "failed_sources": [
     {
       "url": "https://meo.ntub.edu.tw/var/file/12/1012/img/806767595.pdf",
       "result": "2026-10-13原站HTTP404，搜尋索引仍有照片文字；未看PDF照片，不作幾何依據。"
     }
-  ]
+  ],
+  "whole_massing_partial_elevation_models": 2,
+  "total_model_count": 3
 }

@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "checks": {
+    "south_entrance_glazing_recess": true,
+    "south_lateral_ground_portico": true,
+    "south_wall_control": true,
+    "north_double_height_balcony": true,
+    "north_wall_control": true
+  },
+  "stl_sha256": "32580d5fcdbbc1ad05bac9f77d49d2c568735e797c300007311c5d6597c3e164",
+  "method": "First positive intersection on the original delivered STL; process=True only merges matching STL vertices. No repair or modification. Coordinates in millimetres.",
+  "limitations": [
+    "This establishes modeled recess/open-air geometry, not exact real-world depth.",
+    "Positive material behind deep loggia remains deliberately present where actual through-route is unverified."
+  ],
+  "rays": [
+    {
+      "name": "south_entrance_glazing_recess",
+      "origin_mm": [
+        3.2,
+        -90,
+        12
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        3.2,
+        -49.5,
+        12.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -49.51,
+        -49.49
+      ],
+      "passed": true
+    },
+    {
+      "name": "south_lateral_ground_portico",
+      "origin_mm": [
+        28,
+        -90,
+        12
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        28.0,
+        -46.400001525878906,
+        12.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -46.41,
+        -46.39
+      ],
+      "passed": true
+    },
+    {
+      "name": "south_wall_control",
+      "origin_mm": [
+        22,
+        -90,
+        23
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        22.0,
+        -52.0,
+        23.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        -52.01,
+        -51.99
+      ],
+      "passed": true
+    },
+    {
+      "name": "north_double_height_balcony",
+      "origin_mm": [
+        4,
+        90,
+        30
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit_mm": [
+        4.0,
+        54.0,
+        30.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        53.99,
+        54.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "north_wall_control",
+      "origin_mm": [
+        18,
+        90,
+        25
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit_mm": [
+        18.0,
+        60.0,
+        25.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        59.99,
+        60.01
+      ],
+      "passed": true
+    }
+  ]
+}

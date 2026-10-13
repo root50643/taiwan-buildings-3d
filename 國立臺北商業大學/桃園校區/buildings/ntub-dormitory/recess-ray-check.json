@@ -1,0 +1,213 @@
+{
+  "passed": true,
+  "checks": {
+    "east_lower_double_floor_loggia": true,
+    "east_upper_double_floor_loggia": true,
+    "east_intact_band_control": true,
+    "courtyard_center_open_to_sky": true,
+    "courtyard_north_open_to_sky": true,
+    "courtyard_rear_open_to_sky": true,
+    "north_entry_clear_to_rear_wing": true,
+    "covered_walkway_does_not_fill_court": true
+  },
+  "stl_sha256": "ff50286d5378a490f0c4e27448c5bceab3d5255af366cd81a68f9b901dc54d79",
+  "method": "First positive intersection on the original delivered STL; process=True only merges matching STL vertices. No repair or modification. Coordinates in millimetres.",
+  "limitations": [
+    "This establishes modeled recess/open-air geometry, not exact real-world depth.",
+    "Positive material behind deep loggia remains deliberately present where actual through-route is unverified."
+  ],
+  "rays": [
+    {
+      "name": "east_lower_double_floor_loggia",
+      "origin_mm": [
+        -90,
+        3,
+        36
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        -42.5,
+        3.0,
+        36.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        -42.51,
+        -42.49
+      ],
+      "passed": true
+    },
+    {
+      "name": "east_upper_double_floor_loggia",
+      "origin_mm": [
+        -90,
+        -54,
+        63
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        -42.5,
+        -54.0,
+        63.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        -42.51,
+        -42.49
+      ],
+      "passed": true
+    },
+    {
+      "name": "east_intact_band_control",
+      "origin_mm": [
+        -90,
+        3,
+        27
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "first_hit_mm": [
+        -66.0,
+        3.0,
+        27.0
+      ],
+      "axis_checked": 0,
+      "expected_first_hit_range_mm": [
+        -66.01,
+        -65.99
+      ],
+      "passed": true
+    },
+    {
+      "name": "courtyard_center_open_to_sky",
+      "origin_mm": [
+        0,
+        0,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        2.99,
+        3.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "courtyard_north_open_to_sky",
+      "origin_mm": [
+        0,
+        -50,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        -50.0,
+        3.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        2.99,
+        3.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "courtyard_rear_open_to_sky",
+      "origin_mm": [
+        0,
+        18,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        0.0,
+        18.0,
+        3.0
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        2.99,
+        3.01
+      ],
+      "passed": true
+    },
+    {
+      "name": "north_entry_clear_to_rear_wing",
+      "origin_mm": [
+        5,
+        -90,
+        10
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit_mm": [
+        5.0,
+        39.5,
+        10.0
+      ],
+      "axis_checked": 1,
+      "expected_first_hit_range_mm": [
+        39.49,
+        39.51
+      ],
+      "passed": true
+    },
+    {
+      "name": "covered_walkway_does_not_fill_court",
+      "origin_mm": [
+        31,
+        0,
+        150
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_mm": [
+        31.0,
+        0.0,
+        15.699999809265137
+      ],
+      "axis_checked": 2,
+      "expected_first_hit_range_mm": [
+        15.69,
+        15.71
+      ],
+      "passed": true
+    }
+  ]
+}

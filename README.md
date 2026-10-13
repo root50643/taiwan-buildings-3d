@@ -8,7 +8,7 @@
 
 | 國立聯合大學 | 國家衛生研究院竹南院區 | 臺灣各地地標 |
 | :---: | :---: | :---: |
-| [<img src="聯合大學/buildings/bajia-t3-north-gate-guardhouse/previews/front.png" alt="聯合大學八甲北大門與中央警衛室模型" width="260">](聯合大學/README.md)<br>**[聯合大學｜38 組](聯合大學/README.md)**<br>八甲、二坪山校區；北大門與中央警衛室置於圖鑑首位 | [<img src="國家衛生研究院竹南院區/buildings/zhunan-administration/previews/front.png" alt="國家衛生研究院竹南院區行政大樓模型" width="260">](國家衛生研究院竹南院區/README.md)<br>**[國衛院竹南院區｜9 組](國家衛生研究院竹南院區/README.md)**<br>行政、圖書資訊、研究大樓等公開外觀近似模型 | [<img src="臺灣地標/Taipei101_150mm/previews/front.png" alt="臺北 101 模型" width="260">](臺灣地標/README.md)<br>**[臺灣地標｜24 組](臺灣地標/README.md)**<br>各地建築再以獨立模型資料夾區分 |
+| [<img src="國立聯合大學/buildings/bajia-t3-north-gate-guardhouse/previews/front.png" alt="國立聯合大學八甲北大門與中央警衛室模型" width="260">](國立聯合大學/README.md)<br>**[國立聯合大學｜38 組](國立聯合大學/README.md)**<br>八甲、二坪山校區；北大門與中央警衛室置於圖鑑首位 | [<img src="國家衛生研究院竹南院區/buildings/zhunan-administration/previews/front.png" alt="國家衛生研究院竹南院區行政大樓模型" width="260">](國家衛生研究院竹南院區/README.md)<br>**[國衛院竹南院區｜9 組](國家衛生研究院竹南院區/README.md)**<br>行政、圖書資訊、研究大樓等公開外觀近似模型 | [<img src="臺灣地標/Taipei101_150mm/previews/front.png" alt="臺北 101 模型" width="260">](臺灣地標/README.md)<br>**[臺灣地標｜24 組](臺灣地標/README.md)**<br>各地建築再以獨立模型資料夾區分 |
 
 ## 新增大專校院圖鑑
 
@@ -36,7 +36,7 @@
 
 ## 資料夾與使用方式
 
-- [聯合大學/](聯合大學/)：38 組校園模型位於 buildings/；研究目錄位於 docs/。
+- [國立聯合大學/](國立聯合大學/)：38 組校園模型位於 buildings/；研究目錄位於 docs/。
 - [國家衛生研究院竹南院區/](國家衛生研究院竹南院區/)：9 組列印包位於 buildings/；範圍與證據限制位於 docs/。
 - [臺灣地標/](臺灣地標/)：24 組地標各有自己的資料夾，保留原本模型名稱與目錄結構。
 - 先進入地點資料夾，再依該資料夾 README 與個別模型說明操作。原說明中的相對路徑以其所在的地點／模型資料夾為準。
@@ -58,6 +58,6 @@
 
 ## 整合與版本追溯
 
-本庫由原臺灣地標模型庫原地改名，保留提交歷史與 Release；聯合大學、國衛院的原儲存庫仍保留。整合僅增加地點層級與本頁導航，不改動原模型、原始檔、預覽、說明或驗證檔案的內容。
+本庫由原臺灣地標模型庫原地改名，保留提交歷史與 Release；國立聯合大學、國衛院的原儲存庫仍保留。原模型、原始檔、預覽與驗證檔案內容保留；依正式校名將國立聯合大學資料夾及相關文字連結統一更名。
 
 整合來源版本、全部檔案的原路徑／新路徑與 Git blob SHA 記錄於 [整合清單](consolidation-manifest.json)。原儲存庫之後若有更新，不會自動同步至本庫。

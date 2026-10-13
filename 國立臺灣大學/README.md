@@ -1,12 +1,12 @@
 # 國立臺灣大學：公開外觀3D列印模型
 
-目前收錄37件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區。不是全校完成，也不是37棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
+目前收錄40件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區。不是全校完成，也不是40棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
 
 每件含STL、OBJ、Blender場景、可攜式參數化來源、原STL正背預覽及繁體中文來源說明。各件獨立最長150mm，不能當同一比例校園拼接；來源照片未重新散布。
 
 ## 下載前
 - 已驗證原STL法向、流形邊/頂點、單一連通封閉表面、正體積、獨立重建與Blender幾何一致性。
-- 前34件另作[新增截面有效性與薄篩補查](qa/printability-20261013/README.zh-TW.md)，第11批3件在各模型內有同類結果。
+- 前34件另作[新增截面有效性與薄篩補查](qa/printability-20261013/README.zh-TW.md)，第11、12批6件在各模型內有同類結果。
 - 工科海洋入口段只提供修訂v2：消除舊版窗框相切折返。舊版STL不在此整合包中，建物件數不變。
 - 尚未用真正列印切片器生成工具路徑或實體試印。屋簷、門廊、跨距及細節需要支撐/解析度評估。國發所、第一學生活動中心的頂尖及地質前棟拱罩的薄篩警示見附錄，不能以支撐取代細節線寬檢查。
 
@@ -30,7 +30,8 @@
 | [![知武館](校總區/buildings/ntu-tomatake-hall/previews/front.png)](校總區/buildings/ntu-tomatake-hall/README.md)<br>[知武館](校總區/buildings/ntu-tomatake-hall/README.md) | [![醫學人文博物館（中央樓及西翼外部量體）](城中校區/buildings/ntu-medical-humanities-museum/previews/front.png)](城中校區/buildings/ntu-medical-humanities-museum/README.md)<br>[醫學人文博物館（中央樓及西翼外部量體）](城中校區/buildings/ntu-medical-humanities-museum/README.md) | [![大氣科學館B館](校總區/buildings/ntu-atmospheric-science-b/previews/front.png)](校總區/buildings/ntu-atmospheric-science-b/README.md)<br>[大氣科學館B館](校總區/buildings/ntu-atmospheric-science-b/README.md) |
 | [![地質科學館（三層前棟）](校總區/buildings/ntu-geology-front/previews/front.png)](校總區/buildings/ntu-geology-front/README.md)<br>[地質科學館（三層前棟）](校總區/buildings/ntu-geology-front/README.md) | [![植物標本館（主館）](校總區/buildings/ntu-herbarium-main/previews/front.png)](校總區/buildings/ntu-herbarium-main/README.md)<br>[植物標本館（主館）](校總區/buildings/ntu-herbarium-main/README.md) | [![磯永吉紀念室（2026修繕前外觀）](校總區/buildings/ntu-iso-cottage-pre-restoration/previews/front.png)](校總區/buildings/ntu-iso-cottage-pre-restoration/README.md)<br>[磯永吉紀念室（2026修繕前外觀）](校總區/buildings/ntu-iso-cottage-pre-restoration/README.md) |
 | [![氣象館A館](校總區/buildings/ntu-meteorology-a/previews/front.png)](校總區/buildings/ntu-meteorology-a/README.md)<br>[氣象館A館](校總區/buildings/ntu-meteorology-a/README.md) | [![食品科技館（原館前部）](校總區/buildings/ntu-food-science-front/previews/front.png)](校總區/buildings/ntu-food-science-front/README.md)<br>[食品科技館（原館前部）](校總區/buildings/ntu-food-science-front/README.md) | [![地理館（前部）](校總區/buildings/ntu-geography-front/previews/front.png)](校總區/buildings/ntu-geography-front/README.md)<br>[地理館（前部）](校總區/buildings/ntu-geography-front/README.md) |
-| [![地質標本館小屋](校總區/buildings/ntu-geological-specimen-cottage/previews/front.png)](校總區/buildings/ntu-geological-specimen-cottage/README.md)<br>[地質標本館小屋](校總區/buildings/ntu-geological-specimen-cottage/README.md) |  |  |
+| [![地質標本館小屋](校總區/buildings/ntu-geological-specimen-cottage/previews/front.png)](校總區/buildings/ntu-geological-specimen-cottage/README.md)<br>[地質標本館小屋](校總區/buildings/ntu-geological-specimen-cottage/README.md) | [![語文大樓（前部）](校總區/buildings/ntu-language-front/previews/front.png)](校總區/buildings/ntu-language-front/README.md)<br>[語文大樓（前部）](校總區/buildings/ntu-language-front/README.md) | [![霖澤館（主棟）](校總區/buildings/ntu-linze-main/previews/front.png)](校總區/buildings/ntu-linze-main/README.md)<br>[霖澤館（主棟）](校總區/buildings/ntu-linze-main/README.md) |
+| [![萬才館（主棟與前階梯段）](校總區/buildings/ntu-wancai-main/previews/front.png)](校總區/buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](校總區/buildings/ntu-wancai-main/README.md) |  |  |
 
 ## 清冊與版本
-[全校待辦與來源缺口](inventory/README.zh-TW.md) · [37件版本索引](model-index.json) · [完整SHA256](SHA256SUMS) · [批次紀錄](batches/)
+[全校待辦與來源缺口](inventory/README.zh-TW.md) · [40件版本索引](model-index.json) · [完整SHA256](SHA256SUMS) · [批次紀錄](batches/)

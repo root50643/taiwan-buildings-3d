@@ -1,6 +1,6 @@
 # 國立臺北教育大學｜臺北校區建築模型
 
-第七批新增百年紀念鐘樓、正門入口段2模型；既有17模型逐檔原樣保留。合計19模型覆蓋18個主要命名館舍範圍與2個補充構造範圍，行政A＋圖書館H合計只算1模型。芳蘭樓仍只有入口局部，其他量體近似亦有未知面。18名冊覆蓋不代表所有歷史／附設建物或全校完成。各件自建，最長150毫米含底座，各自獨立比例。
+第八批新增防空洞第一入口地上段、舊警衛室2024可見段、舊琴房山牆簷廊段3模型；既有19模型逐檔原樣保留。合計22模型覆蓋18個主要命名館舍範圍與5個補充／局部範圍，行政A＋圖書館H合計只算1模型。芳蘭樓仍只有入口局部，其他量體近似亦有未知面。18名冊覆蓋不代表所有歷史／附設建物或全校完成。各件自建，最長150毫米含底座，各自獨立比例。
 
 | 大禮堂 | 文薈樓 | 芳蘭樓入口暨可見立面段 |
 |---|---|---|
@@ -26,10 +26,14 @@
 |---|---|---|
 | [![視聽館](臺北校區/buildings/ntue-audiovisual/previews/front.png)](臺北校區/buildings/ntue-audiovisual/) | [![學生活動中心](臺北校區/buildings/ntue-student-center/previews/front.png)](臺北校區/buildings/ntue-student-center/) | [![百年紀念鐘樓](臺北校區/buildings/ntue-bell-tower/previews/front.png)](臺北校區/buildings/ntue-bell-tower/) |
 
-| 正門入口段 | 百年紀念鐘樓（本批索引，不重計） | 學生活動中心（前批索引，不重計） |
+| 正門入口段 | 防空洞藝廊第一入口地上段 | 舊警衛室可見外觀段（2024） |
 |---|---|---|
-| [![正門入口段](臺北校區/buildings/ntue-main-gate/previews/front.png)](臺北校區/buildings/ntue-main-gate/) | [![百年紀念鐘樓（本批索引，不重計）](臺北校區/buildings/ntue-bell-tower/previews/front.png)](臺北校區/buildings/ntue-bell-tower/) | [![學生活動中心（前批索引，不重計）](臺北校區/buildings/ntue-student-center/previews/front.png)](臺北校區/buildings/ntue-student-center/) |
+| [![正門入口段](臺北校區/buildings/ntue-main-gate/previews/front.png)](臺北校區/buildings/ntue-main-gate/) | [![防空洞藝廊第一入口地上段](臺北校區/buildings/ntue-air-gallery-entry-segment/previews/front.png)](臺北校區/buildings/ntue-air-gallery-entry-segment/) | [![舊警衛室可見外觀段（2024）](臺北校區/buildings/ntue-historic-guardhouse-2024-segment/previews/front.png)](臺北校區/buildings/ntue-historic-guardhouse-2024-segment/) |
 
-[後續清單](CONTINUATION.md)。來源攝影日及未見屋頂細節未知，限制明列各件README。鐘樓跨年代懸鐘設備狀態未確認；鐘頸與脊端裝飾厚化，鐘面細字省略。正門只入口段，不含後側警衛空間。底座朝下；入口拱頂、懸鐘與薄件可能需支撐。原照片/PDF不散布，數位QA不是實體試印或切片器驗證。本批外觀已核可，獨立QA通過才可發布。
+| 舊琴房／小使室山牆簷廊段 | 百年紀念鐘樓（前批索引，不重計） | 學生活動中心（前批索引，不重計） |
+|---|---|---|
+| [![舊琴房／小使室山牆簷廊段](臺北校區/buildings/ntue-janitor-veranda-segment/previews/front.png)](臺北校區/buildings/ntue-janitor-veranda-segment/) | [![百年紀念鐘樓（前批索引，不重計）](臺北校區/buildings/ntue-bell-tower/previews/front.png)](臺北校區/buildings/ntue-bell-tower/) | [![學生活動中心（前批索引，不重計）](臺北校區/buildings/ntue-student-center/previews/front.png)](臺北校區/buildings/ntue-student-center/) |
+
+[後續清單](CONTINUATION.md)。來源攝影日及未見屋頂細節未知，限制明列各件README。新增三件均為明示局部：防空洞不含地下／第二入口；舊警衛室以2024外觀為限、後部平直截斷；舊琴房只有三開間四柱段，不含另外便所。底座朝下；入口框、窗罩、簷廊與厚化斜撐可能需支撐。原照片/PDF不散布，數位QA不是實體試印或切片器驗證。本批外觀已核可，獨立QA通過才可發布。
 
 [補充棟界與附設校區](SUPPLEMENTARY-SCOPE.md)

@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-10-13",
+  "exhaustive": false,
+  "updates": [
+    {
+      "campus": "光復校區",
+      "building": "雲平大樓西棟",
+      "model_path": "光復校區/buildings/yunping-west",
+      "school_property_code": "R1A-27-0",
+      "public_gis_building_id": "A028",
+      "status": "第七批待QA",
+      "is_partial_property_component": false,
+      "scope_limit": "本件只作西棟。校方GIS的建物範圍圖將西、東棟分開；西棟約為低橫向量體加高T形主體，不能用單片長樓替代。保留低前棟大入口、高棟前方下部外框與上部窄窗列。兩棟接合處依公開外框分界截斷，不附東棟；模型各自獨立比例，不能直接拼合。外框小折角、側向玻璃帶及陽臺深度簡化；各窗距、層高與屋面高差是照片估計，不是實測。地面廣場、雕塑與室內空間省略。"
+    },
+    {
+      "campus": "光復校區",
+      "building": "雲平大樓東棟",
+      "model_path": "光復校區/buildings/yunping-east",
+      "school_property_code": "R1A-28-0",
+      "public_gis_building_id": "A029",
+      "status": "第七批待QA",
+      "is_partial_property_component": false,
+      "scope_limit": "本件只作東棟，依校方公開建物範圍辨識為開口朝一側的C形外框。保留長立面下部外框、上層細窗列、方入口、內向窗廊與高玻璃條及拱形入口。內庭的外牆是公開建築外觀，沒有復原室內。庭院深度與窗距為近似；不完全看得見的北向外面及屋頂採簡單實體。外框的細小凹凸簡化，西棟和共用地下層不在此模型內，亦不表現設備。"
+    },
+    {
+      "campus": "成功校區",
+      "building": "資訊大樓高棟",
+      "model_path": "成功校區/buildings/information-building",
+      "school_property_code": "R1A-23-0",
+      "public_gis_building_id": "B006",
+      "status": "第七批待QA",
+      "is_partial_property_component": true,
+      "scope_limit": "本件只作校方GIS B006所辨識的資訊大樓高棟及貼接外部入口階梯。R1A-23-0財產名是「資訊暨理化實驗大樓」，本件不能宣稱該筆整個複合體完成，旁邊長條理化樓與兩棟之間連橋未納入。保留狹長直窗、低層較大窗區、頂部兩組矩形框洞及階梯圓角平臺。依公開外框估計主體深度，細小折角未逐一復刻；入口雨棚簡化，鋼製細欄杆省略。完整背面未取得，採素面而非虛構精細背窗。屋頂平台沒有建設備或室內。"
+    }
+  ],
+  "specific_gaps": [
+    {
+      "campus": "力行校區",
+      "building": "社會科學院南北兩棟與空橋",
+      "source": "https://arcgong.com/成大社科院/",
+      "gap": "設計者明確分南北兩棟，已見多角度外觀；網幕屬橋側，不能做成大面實牆。待公開GIS外框與照片方位對應後逐棟建模。"
+    },
+    {
+      "campus": "敬業校區",
+      "building": "敬業一舍、敬業三舍",
+      "source": "https://housing-osa.ncku.edu.tw/var/file/52/1052/img/141/NCKUStudentDormitoryPhotoAlbum-20240717.pdf",
+      "gap": "已有前面像素，待GIS外框與南北棟拆分，尚未假定整組一棟。"
+    },
+    {
+      "campus": "成功校區",
+      "building": "資訊暨理化實驗大樓中的理化長樓與連橋",
+      "source": "https://nckumap.ncku.edu.tw/map.php",
+      "gap": "高棟本件排除理化長樓；後續需明確棟界及完整背面，不能計為整筆財產完成。"
+    }
+  ]
+}

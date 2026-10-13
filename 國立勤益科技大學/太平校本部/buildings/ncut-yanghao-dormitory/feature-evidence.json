@@ -1,0 +1,283 @@
+{
+  "schema_version": "campus-model-feature-evidence-v1",
+  "model_id": "ncut-yanghao-dormitory",
+  "classification": "養浩學舍C、D棟連接整體群外觀近似模型",
+  "as_of": "2026-10-13",
+  "review_state": {
+    "exterior_comparison": "短翼4跨／長翼6跨、疏密立面的獨立處理及屋頂26構件補充證據已通過外觀覆核，可進入版本凍結流程。",
+    "digital_quality": "目前原STL、輪廓、薄特徵與屋頂逐構件報告已核對；四層屋頂薄特徵提示為附限制的已說明例外，非零警告。",
+    "independent_geometry_review": "仍待獨立幾何重驗，不在此宣稱通過。",
+    "formal_release": "待獨立幾何重驗及最終凍結紀錄；本特徵表不取代逐檔雜湊及發布核准。"
+  },
+  "coordinate_convention": "毫米；底面z=0，正反面僅指previews/front.png與rear.png相機視角，不是測繪方位；各z值均為模型參數。",
+  "method": "原創照片導向近似模型；未擷取第三方3D網格；區分照片可見特徵、局部推定與縮尺加厚。",
+  "model_file": "model.stl",
+  "build_source": "build_model.py",
+  "sources_file": "sources.json",
+  "dimensions_mm": [
+    150.0,
+    87.0,
+    75.6500015258789
+  ],
+  "base_thickness_mm": 3,
+  "features": [
+    {
+      "id": "scope",
+      "feature": "C、D棟連接的養浩學舍整體群",
+      "source_observation": "養浩學舍位於太平校本部新校區（原坪林營區）。官方宿舍簡介將養浩學舍稱為8層Z字形C、D棟，由交誼廳連接；2023-08-02落成典禮、08-16正式啟用。",
+      "source_refs": [
+        "dorm-intro",
+        "map2026"
+      ],
+      "model_implementation": "兩翼與中央連接部作成一件整體群；不包含勤益學舍A、B棟。",
+      "confidence": "高",
+      "uncertainty_and_simplification": [
+        "模型件數不是實際棟數普查；地下室、內部及地景不建模。"
+      ]
+    },
+    {
+      "id": "z-footprint",
+      "feature": "長短翼錯位及兩側向外開放",
+      "source_observation": "官方配置圖和相反方向空拍均支持長短翼由中央部錯位連接的Z形外觀。",
+      "source_refs": [
+        "campus-plan",
+        "yanghao-photos-upper",
+        "yanghao-photos-lower"
+      ],
+      "model_implementation": "短翼與長翼分別設62×22 mm及82×22 mm主要量體，中央26×68 mm量體相接；整體翻轉至配置圖對應的Z形，兩側空間不填實。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "上述毫米值為模型參數，不是實測；未宣稱精確進深或經測定的地理方位。"
+      ]
+    },
+    {
+      "id": "wing-bay-hierarchy",
+      "feature": "短翼4跨、長翼6跨，以及獨立的長翼外立面",
+      "source_observation": "第2頁下方空拍的主柱／牆邊界支持短翼4跨、長翼6跨；短翼旁大片白色樓梯端牆不算第五跨。短翼內外兩面及長翼內側可見寬凹槽與四窄窗的層級；上圖左側長翼外立面為大片白牆、疏排單凸窗及散置窄窗。",
+      "source_refs": [
+        "yanghao-photos-lower",
+        "yanghao-photos-upper"
+      ],
+      "model_implementation": "短翼內外兩面各4跨、長翼內側6跨，以四窄窗加兩寬凹槽處理；長翼外側6跨獨立建模，每跨一個主要角形凸窗及分開的小窄窗，不套用密窗網。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "分組為外觀判讀，不是寢室或結構清冊；門片框不算主跨。",
+        "長翼外側斜視解析度有限，凸窗位置、突深、散置小窗及其規則化排列仍屬局部近似。"
+      ]
+    },
+    {
+      "id": "visible-eight-rows",
+      "feature": "八列窗／陽臺及非整排寢室的一樓",
+      "source_observation": "兩張完工空拍支持八層外觀，地面部分為入口和遮雨通道；官方另記地上八層。",
+      "source_refs": [
+        "yanghao-photos-upper",
+        "yanghao-photos-lower",
+        "dorm-intro"
+      ],
+      "model_implementation": "主要開口起始z=4.1 mm，每7.5 mm排列八列；下層另以入口凹面與雨遮表示。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "樓層用途不直接等於窗列；樹木遮住的地面細節沒有逐扇確認。"
+      ]
+    },
+    {
+      "id": "triangular-projections",
+      "feature": "三角外推部與較深陽臺",
+      "source_observation": "官方報導指出三角對外窗和深陽臺，照片可見窄窗與寬凹部交替、局部外挑。",
+      "source_refs": [
+        "yanghao-photos-lower",
+        "news-ner-20230803",
+        "news-udn-20230802"
+      ],
+      "model_implementation": "短翼兩面及長翼內側的較寬陽臺作有背靠凹槽，上部七列加入厚1.25 mm三角板；長翼外側改為較完整的角形凸窗量體，與小窄窗分開。",
+      "confidence": "中",
+      "uncertainty_and_simplification": [
+        "保留辨識用形狀，未重建每扇凸窗完整三維框架、門片或實際欄杆；三角板不等同實景全部構造。"
+      ]
+    },
+    {
+      "id": "core-balconies",
+      "feature": "中央轉角八層堆疊陽臺",
+      "source_observation": "兩方向空拍都可見中央部轉角連續陽臺、粗白色樓板帶和豎向牆柱。",
+      "source_refs": [
+        "yanghao-photos-upper",
+        "yanghao-photos-lower"
+      ],
+      "model_implementation": "兩側中央轉角各八層凹槽，配相連樓板與有背靠欄牆，不使用孤立細欄杆。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "陽臺深度、欄牆高度與構件厚度依縮尺加強，不是實測結構尺寸。"
+      ]
+    },
+    {
+      "id": "staggered-common-glazing",
+      "feature": "交錯雙層高交誼空間玻璃",
+      "source_observation": "中央立面的大玻璃區在不同水平位置與高度交錯，並非與寢室同大小的整齊網格。",
+      "source_refs": [
+        "yanghao-photos-upper",
+        "yanghao-photos-lower",
+        "dorm-intro"
+      ],
+      "model_implementation": "保留兩列交錯的雙層高玻璃凹面，主要凹面起始z=14.5、22、36、43.5 mm；加粗十字框與實體背靠相接。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "照片中的玻璃細格、室內樓板與實際開窗方式簡化；高差與進深均是模型近似。"
+      ]
+    },
+    {
+      "id": "outer-end-ribbons",
+      "feature": "兩翼外端雙玻璃直帶",
+      "source_observation": "相反方向空拍顯示白色端牆上的兩條高玻璃帶、低部出入口及上方寬白色牆段。",
+      "source_refs": [
+        "yanghao-photos-upper",
+        "yanghao-photos-lower"
+      ],
+      "model_implementation": "兩個外端各以兩條連續玻璃凹帶及相連橫框表示，下部保留門洞凹面，上方為寬女兒牆。",
+      "confidence": "中",
+      "uncertainty_and_simplification": [
+        "遠側端與細橫框無完整正交照片；橫框間距及入口精確形式簡化。"
+      ]
+    },
+    {
+      "id": "ribbon-canopies",
+      "feature": "不規則裙帶式入口雨遮與斜支桿",
+      "source_observation": "照片與官方轉載報導均支持地面折轉紅色入口雨遮；下方受部分植栽遮蔽。",
+      "source_refs": [
+        "yanghao-photos-lower",
+        "yanghao-photos-upper",
+        "news-ner-20230803",
+        "news-udn-20230802"
+      ],
+      "model_implementation": "兩側雨遮均沿中央核心及翼部延伸、連成L形折轉輪廓，z=11.0 mm起、厚1.6 mm；斜支桿直徑1.36 mm並連回量體；單色STL不保留原紅色。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "雨遮精確折角、延伸長度和斜桿數量為照片近似；被樹冠遮蔽的地面門片僅作相連凹面。"
+      ]
+    },
+    {
+      "id": "open-roof-frames",
+      "feature": "屋頂開放高框、平屋面與中央露臺",
+      "source_observation": "兩張空拍均顯示白色屋頂高框的真正矩形穿空，以及框內的平屋面。",
+      "source_refs": [
+        "yanghao-photos-upper",
+        "yanghao-photos-lower"
+      ],
+      "model_implementation": "翼部屋面蓋頂約68.1 mm，中央約68.0 mm，周邊高框最高75.65 mm；框間保持通空，屋面下方不挖成穿透整棟。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "高差、框厚和屋面厚度均為模型值；屋頂機電及太陽能設備省略，並未把高框區作另一完整住宿層。",
+        "屋頂分構件補充檢查見roof-component-check.json；外包矩形短邊與建模柱寬不等於整件模型每處最小壁厚。"
+      ]
+    },
+    {
+      "id": "scaled-window-recesses",
+      "feature": "窄窗槽與實體牆肋的縮尺折衷",
+      "source_observation": "短翼兩面與長翼內側保留主跨內四窄窗及兩寬凹槽；長翼外側另有獨立凸窗與小窄窗節奏。",
+      "source_refs": [
+        "yanghao-photos-lower",
+        "yanghao-photos-upper"
+      ],
+      "model_implementation": "密窗立面窄槽0.50 mm、較寬槽1.15 mm，局部實體牆肋約0.8 mm；長翼外側的小窄窗槽寬0.70 mm、主要凸窗凹面寬2.0 mm。短翼4跨、長翼6跨均保留。",
+      "confidence": "幾何參數高；實景比例中",
+      "uncertainty_and_simplification": [
+        "0.50／0.70 mm是凹槽空隙寬而非實體壁厚；小凹槽可能於實際切片或熔融擠出時被填平。",
+        "0.8 mm牆肋是局部設計值，不能據此宣稱全面最小壁厚已達0.8 mm；再縮小會減少細件解析度。"
+      ]
+    },
+    {
+      "id": "evidence-gaps",
+      "feature": "已見主要立面與局部未見範圍",
+      "source_observation": "兩相反方向完工空拍已有主要正反立面證據；地面樹冠、內角與設備使若干局部不可確認。",
+      "source_refs": [
+        "yanghao-photos-upper",
+        "yanghao-photos-lower",
+        "campus-plan"
+      ],
+      "model_implementation": "有證據的輪廓、開口層級與屋頂框保留；地面遮蔽部採簡化入口，未知設備不加造。",
+      "confidence": "主要外觀中至高；遮蔽細節中低",
+      "uncertainty_and_simplification": [
+        "精確進深、局部地面門窗、細欄杆、室內及機電配置不足；不能將整個背面概括為未知。",
+        "影像未標攝影日，不保證所有細節截至2026年完全未變。"
+      ]
+    }
+  ],
+  "quality_method": {
+    "report_files": [
+      "validation.json",
+      "contour-validity-check.json",
+      "thin-feature-check.json",
+      "roof-component-check.json"
+    ],
+    "contour_pitch_mm": 0.2,
+    "contour_z_offset_mm": 0.071,
+    "thin_screen_pitch_mm": 1.0,
+    "thin_reference_width_mm": 0.8,
+    "thin_validator": "canonical fail-closed v3",
+    "thin_validator_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
+    "invalid_contour_behavior": "個別Polygon、合成Polygon及閉合／degree-2條件不合格即assert失敗、非零退出；不使用buffer(0)或make_valid修復後繼續。",
+    "actual_slicer_toolpath_tested": false,
+    "physical_trial_printed": false,
+    "limitations": [
+      "數位幾何檢查不等於全面最小壁厚、窮盡式自交檢查或任何機器材料的可印保證。",
+      "0.8 mm形態opening面積損失包含尖角，不保證0.50／0.70 mm小窗槽能印出。",
+      "雨遮、三角板、陽臺凹部與屋頂框需在實際切片中檢查支撐及橋接。"
+    ],
+    "roof_component_audit": "在z=70.071、71.071、72.071、73.071 mm對每個有效原始截面構件分別進行半徑0.4 mm opening，檢查消失、分裂、保留率、旋轉外包矩形與損失是否限於原轉角0.41 mm鄰域；不修補原輪廓。"
+  },
+  "model_sha256": "6efc4133d359b70fab35aaeec47dd77bf6dffe53e48b93e6aa7183facbd16879",
+  "quality_snapshot": {
+    "source": "validation.json、contour-validity-check.json、thin-feature-check.json、roof-component-check.json",
+    "original_stl_checks_all_true": true,
+    "hard_check_count": 16,
+    "dimensions_mm": [
+      150.0,
+      87.0,
+      75.6500015258789
+    ],
+    "triangles": 27290,
+    "surface_shells": 1,
+    "source_rebuild_hash_matches": true,
+    "blend_stl_geometry_agree": true,
+    "contour_sampled_layers": 378,
+    "all_sampled_contours_closed_and_valid": true,
+    "thin_sampled_layers": 76,
+    "thin_layers_over_one_percent": 4,
+    "thin_max_opening_loss_fraction": 0.01213519844361972,
+    "thin_layers_over_one_percent_z_mm": [
+      70.071,
+      71.071,
+      72.071,
+      73.071
+    ],
+    "roof_component_checks_all_true": true,
+    "roof_component_count_per_section": 26,
+    "roof_sections_z_mm": [
+      70.071,
+      71.071,
+      72.071,
+      73.071
+    ],
+    "roof_minimum_component_mrr_short_side_mm": 1.5499992370605469,
+    "roof_minimum_retained_area_fraction": 0.9442933704571475,
+    "roof_whole_components_disappeared": 0,
+    "roof_components_split_after_opening": 0,
+    "roof_construction_cross_sections_mm": {
+      "standalone_wing_roof_posts": [
+        1.6,
+        1.55
+      ],
+      "standalone_core_roof_posts": [
+        1.55,
+        1.7
+      ],
+      "end_frame_wall_width": 1.6
+    },
+    "roof_loss_within_original_0_41mm_corner_neighbourhoods": true,
+    "roof_dimension_limitation": "MRR短邊是構件外包尺度；獨立柱的設計寬度也不等同全面最小壁厚。",
+    "actual_slicer_toolpath_tested": false,
+    "physical_trial_printed": false,
+    "thin_warning_disposition": "四個屋頂取樣層的opening提示已由逐構件保留、無分裂、外包尺寸及轉角鄰域核對補充說明，外觀覆核接受此附限制例外；不是零警告、全面壁厚或列印保證。"
+  },
+  "campus": "太平校本部",
+  "campus_area": "新校區（原坪林營區）"
+}

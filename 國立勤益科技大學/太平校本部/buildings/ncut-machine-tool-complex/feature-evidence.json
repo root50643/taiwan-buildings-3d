@@ -1,0 +1,199 @@
+{
+  "schema_version": "campus-model-feature-evidence-v1",
+  "model_id": "ncut-machine-tool-complex",
+  "classification": "整體建築群外觀近似模型",
+  "as_of": "2026-10-13",
+  "review_state": {
+    "exterior_comparison": "正背面與院落頂視已核對並通過外觀覆核",
+    "formal_release": "本特徵表不取代批次最終驗證、檔案雜湊及凍結紀錄"
+  },
+  "coordinate_convention": "毫米；底座底面z=0，正面為previews/front.png視角；所有z值為模型參數，不是實景高度。",
+  "method": "原創照片導向近似模型；未擷取第三方3D網格；有來源可見特徵、推定與列印加厚分開記錄。",
+  "model_file": "model.stl",
+  "model_sha256": "167ad46cb6da38ceb84ef62dfedabc8aac461d8581357f96f51047168e833a94",
+  "build_source": "build_model.py",
+  "sources_file": "sources.json",
+  "features": [
+    {
+      "id": "group-boundary",
+      "feature": "教學主樓、兩側廠房與院落的完整群體",
+      "source_observation": "俯拍與兩方向斜向空拍均顯示折轉教學翼、兩側較低廠房、內側低翼及南端入口相連。",
+      "source_refs": [
+        "aha-200001030",
+        "aha-200001520",
+        "aha-200001027",
+        "map2026",
+        "plan114-117"
+      ],
+      "model_implementation": "全群合為一件模型及一個底座；不將主樓和兩側廠房拆計為三件。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "未包含鄰近復通樓、機械館、道路、雕塑及植栽；不把歷史舊綜合實習／焊工工廠混入。"
+      ]
+    },
+    {
+      "id": "front-windows",
+      "feature": "教學翼前側五列主窗與寬窄分組",
+      "source_observation": "外側實拍可辨五列主窗；一般寬窗與高窄窗混合，各列不同，中央較低。",
+      "source_refs": [
+        "aha-200001050",
+        "aha-200001024",
+        "aha-200001025"
+      ],
+      "model_implementation": "左右折轉翼各用五列非等寬窗序列；N=1.3 mm寬、6.2 mm高，W=2.35 mm寬、4.2 mm高。模型每列17個分組，依列使用不同序列；窗洞為立面凹刻。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "17個為縮尺建模分組，不宣稱逐扇玻璃精確測量；兩翼細節採近似對稱，未逐扇還原差異。"
+      ]
+    },
+    {
+      "id": "front-entrance",
+      "feature": "前側弧形入口及橢圓雨遮",
+      "source_observation": "中央白色曲面入口包覆拱形玻璃，雨遮外挑於玻璃前方。",
+      "source_refs": [
+        "aha-200001050",
+        "aha-200001025",
+        "aha-200001028"
+      ],
+      "model_implementation": "入口以橢圓柱量體、拱形凹面、實體玻璃背板及連接格線表示；雨遮為相連的1.5 mm厚實體。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "玻璃以不透明實體浮雕表示；原斜向拉桿及細小門框未逐根還原；雨遮須評估支撐。"
+      ]
+    },
+    {
+      "id": "teaching-roof-levels",
+      "feature": "教學翼中央退階與獨立屋頂高差",
+      "source_observation": "俯拍及斜向空拍可見兩翼較高、中間露臺較低，後側服務核心另行突出；不是同高矩形屋頂。",
+      "source_refs": [
+        "aha-200001030",
+        "aha-200001028",
+        "aha-200001027"
+      ],
+      "model_implementation": "以底面為z=0 mm：中央露臺45.0、兩翼樓體54.0、屋頂蓋板55.1、女兒牆最高58.3、後側服務塊最高61.8；中央後凸核心蓋板53.2。平面同時退縮，並非僅以材質做假高差。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "上述均為模型參數，不是實景公尺高度；女兒牆及屋面邊緣為連接／列印而加厚，細欄杆與機電設備略去。"
+      ]
+    },
+    {
+      "id": "roof-openings-and-end-balconies",
+      "feature": "屋頂長孔與側端層疊凹入陽臺",
+      "source_observation": "前側高女兒牆有漸變長孔，側端五層凹入陽臺旁有直立窄窗。",
+      "source_refs": [
+        "aha-200001050",
+        "aha-200001042",
+        "aha-200001056"
+      ],
+      "model_implementation": "各翼上緣五組長孔由外向內收小；側端保留五組較深凹槽及旁側窄槽。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "女兒牆孔邊、遮簷與陽臺連接部件加厚；盆栽、薄欄杆和細金屬框不建模。"
+      ]
+    },
+    {
+      "id": "courtyard-open",
+      "feature": "近三角形露天院落與低連廊",
+      "source_observation": "俯拍可直接見院落地坪；兩側低翼向內收，教學樓與廠房間有短連廊。",
+      "source_refs": [
+        "aha-200001030",
+        "aha-200001520",
+        "aha-200001056"
+      ],
+      "model_implementation": "院落上方保留開放，地面落至底座頂部；兩側內低翼及後方橫向連接部頂面z=25 mm。通往教學翼的低有頂連廊保留下方空間。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "院落比例和進深來自照片；無精確測繪。頂視圖直接渲染交付STL，必要時以高度色階辨識，色階不代表真實外牆色。"
+      ]
+    },
+    {
+      "id": "workshop-curves",
+      "feature": "兩側實習廠房曲簷與不規則平面",
+      "source_observation": "外側長廠房有低拱曲屋頂、折角輪廓及明顯車輛門洞；高度低於教學樓。",
+      "source_refs": [
+        "aha-200001030",
+        "aha-200001027",
+        "aha-200001034",
+        "aha-200001044"
+      ],
+      "model_implementation": "左右廠房保留折角平面、採樣曲面屋頂、端部大型凹門及局部側窗／短遮簷；內側低翼用兩列開口。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "屋頂曲率、厚度和各立面窗間距為近似；未建實際金屬板縫、室內鋼架或機台。"
+      ]
+    },
+    {
+      "id": "rear-tower",
+      "feature": "廠房端圓形玻璃入口塔",
+      "source_observation": "廠房之間的圓塔高於內側兩層低翼，正面為高拱玻璃與橢圓雨遮。",
+      "source_refs": [
+        "aha-200001027",
+        "aha-200001034",
+        "aha-200001036",
+        "aha-200001038"
+      ],
+      "model_implementation": "圓塔樓體頂面36.0 mm、上蓋37.1 mm；大拱形凹面以有背板的格線表示，左右低翼維持低於圓塔。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "玻璃格線採加厚水平／垂直浮雕；斜拉索、門片細框及屋頂設備未完整重現。"
+      ]
+    },
+    {
+      "id": "courtyard-elevation",
+      "feature": "教學樓院落側與服務核心",
+      "source_observation": "背側空拍可辨小窗、較寬窗組、服務核心直向窄縫及高低突出塊。",
+      "source_refs": [
+        "aha-200001027",
+        "aha-200001030"
+      ],
+      "model_implementation": "院落側以五列簡化小窗及核心窗組表示，與前側寬窄窗序列分開；後側服務塊使用不同z高度。",
+      "confidence": "中",
+      "uncertainty_and_simplification": [
+        "被廠房／低翼遮住的下層窗與內角看不完整；這些局部規則化，不能宣稱未知背面均已考證。"
+      ]
+    },
+    {
+      "id": "scale-and-integrity",
+      "feature": "原創連接網格與比例界限",
+      "source_observation": "來源提供多面外觀及平面關係，沒有整組可核測繪尺寸。",
+      "source_refs": [
+        "aha-page",
+        "campus-plan"
+      ],
+      "model_implementation": "以布林運算建立一體外觀與150×150×3 mm底座；原始交付STL為單一連通表面殼，無另附封閉內腔殼。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "模型為各件獨立比例，無固定1:n測繪比例；地下室、室內、景觀及標誌文字未建模；數位驗證不是實體試印。"
+      ]
+    }
+  ],
+  "quality_snapshot": {
+    "source": "validation.json、contour-validity-check.json、thin-feature-check.json",
+    "original_stl_checks_all_true": true,
+    "dimensions_mm": [
+      150.0,
+      150.0,
+      61.79999923706055
+    ],
+    "surface_shells": 1,
+    "contour_pitch_mm": 0.2,
+    "contour_z_offset_mm": 0.071,
+    "contour_sampled_layers": 309,
+    "all_sampled_contours_closed_and_valid": true,
+    "thin_screen_pitch_mm": 1.0,
+    "thin_reference_width_mm": 0.8,
+    "thin_validator": "canonical fail-closed v3",
+    "thin_validator_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
+    "thin_sampled_layers": 62,
+    "thin_layers_over_one_percent": 0,
+    "thin_max_opening_loss_fraction": 0.0058607362476771965,
+    "invalid_contour_behavior": "個別Polygon、合成Polygon及閉合／degree-2條件不合格即assert失敗，非零退出；不以buffer(0)或make_valid修復後宣稱通過。",
+    "actual_slicer_toolpath_tested": false,
+    "physical_trial_printed": false,
+    "limitations": [
+      "0.8 mm opening不是全面最小壁厚檢查。",
+      "0.2 mm切層不是Cura／PrusaSlicer實際工具路徑。",
+      "單一表面殼不等於已完成窮盡式自交檢查。"
+    ]
+  }
+}

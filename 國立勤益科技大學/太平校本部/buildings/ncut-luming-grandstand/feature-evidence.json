@@ -1,0 +1,155 @@
+{
+  "schema_version": "campus-model-feature-evidence-v1",
+  "model_id": "ncut-luming-grandstand",
+  "classification": "附屬看臺模型",
+  "as_of": "2026-10-13",
+  "review_state": {
+    "exterior_comparison": "運動場側與背側已核對並通過外觀覆核",
+    "formal_release": "本特徵表不取代批次最終驗證、檔案雜湊及凍結紀錄"
+  },
+  "coordinate_convention": "毫米；底座底面z=0，正面為previews/front.png視角；所有z值為模型參數，不是實景高度。",
+  "method": "原創照片導向近似模型；未擷取第三方3D網格；有來源可見特徵、推定與列印加厚分開記錄。",
+  "model_file": "model.stl",
+  "model_sha256": "96a67db567ef942aa0acef89e00796c46715f252c3362571c1975187e4348347",
+  "build_source": "build_model.py",
+  "sources_file": "sources.json",
+  "features": [
+    {
+      "id": "scope",
+      "feature": "附屬看臺模型的範圍與年代",
+      "source_observation": "官方校圖列鹿鳴臺；工程資料證實運動場看臺及下方空間為同一群體，2022年2月完工。",
+      "source_refs": [
+        "map2026",
+        "luming-photos",
+        "plan111-114",
+        "moi-111-register"
+      ],
+      "model_implementation": "整體長條看臺、下層露出量體、前後外觀及局部端部為一件「附屬看臺模型」。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "不含跑道、球場、周邊棚架、地下室或室內；B1+地上2層只作建物資料，不把三層全數堆在地面。"
+      ]
+    },
+    {
+      "id": "front-bays",
+      "feature": "運動場側分組、座階與中央臺區",
+      "source_observation": "施工後看臺側照片可辨兩端寬座區、中央兩側窄座區，中央臺區寬敞開放，入口區被較寬牆柱分隔。",
+      "source_refs": [
+        "luming-photos"
+      ],
+      "model_implementation": "保留四座區及中央開放臺區；各座區以六級階梯式座臺表示；寬牆柱與較細中央支柱分列，不把玻璃小框算成主柱。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "座椅與台階為整體縮尺幾何，不含逐張座椅與扶手；立面分區優先於規則柱網，精確跨距未知。"
+      ]
+    },
+    {
+      "id": "roof-bays",
+      "feature": "15個寬窄屋頂分區與16道肋",
+      "source_observation": "兩方向空拍可辨中央寬區、兩側緊鄰窄區及各六個外側重複寬區。",
+      "source_refs": [
+        "luming-photos"
+      ],
+      "model_implementation": "屋頂沿長向劃為6+1+1+1+6共15區，由16道相連肋界定；屋面略向背側升高，厚度及肋厚做縮尺加強。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "分區為照片判讀；不宣稱實際結構梁數。屋頂厚度與坡度近似；1.25 mm肋厚為模型值。"
+      ]
+    },
+    {
+      "id": "front-lower-glazing",
+      "feature": "前側下層窗帶與深通道",
+      "source_observation": "看臺下方可見成組水平窗帶，中央與兩處樓梯／出入口形成較深空間。",
+      "source_refs": [
+        "luming-photos"
+      ],
+      "model_implementation": "四組長窗帶用凹面及有背靠的加粗直框分隔；中央與兩側深通道保留開口，前低擋牆保留相應中斷。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "門片細框與個別玻璃未逐一還原；照片中遮蔽區的進深估計。"
+      ]
+    },
+    {
+      "id": "rear-semicircular-bays",
+      "feature": "背側兩列半圓形外挑與中央入口",
+      "source_observation": "背側上排清楚顯示左右各六組半圓外挑；下排部分受樹木遮蔽，中央入口寬而直。",
+      "source_refs": [
+        "luming-photos"
+      ],
+      "model_implementation": "背面以12個半圓單元上下兩列表示，保留外挑凹空及相連圍邊；中央入口留出寬區、上部長玻璃凹面與低雨遮。",
+      "confidence": "上排中至高；下排遮蔽處中低",
+      "uncertainty_and_simplification": [
+        "下排受遮蔽部分按上排節奏推定；半圓外挑的欄杆形式、深度和窗高均近似，不能視為完整實測背立面。"
+      ]
+    },
+    {
+      "id": "ends",
+      "feature": "短側端、端部樓梯及進深",
+      "source_observation": "空拍可見短側端與局部樓梯，但沒有完整正交端立面。",
+      "source_refs": [
+        "luming-photos",
+        "campus-plan"
+      ],
+      "model_implementation": "兩端保留九級簡化樓梯與少量端部凹窗；未添加沒有來源支持的附屋。",
+      "confidence": "中低",
+      "uncertainty_and_simplification": [
+        "精確階數、坡度、端部窗及整體進深證據不足；端部局部採對稱近似。"
+      ]
+    },
+    {
+      "id": "height-proportion",
+      "feature": "低長外觀與屋面z高差",
+      "source_observation": "看臺後背與運動場側照片均呈長而低的比例。",
+      "source_refs": [
+        "luming-photos"
+      ],
+      "model_implementation": "底座固定3 mm；上部草模以z_final=3+(z_draft−3)×0.72調整照片比例。屋面上緣由20.28升至21.216 mm，肋最高23.376 mm；整件150×53×23.376 mm。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "0.72是照片導向建模調整，不是測量所得的真實垂直比例；所有尺寸均是毫米模型值。"
+      ]
+    },
+    {
+      "id": "print-detail",
+      "feature": "有連接的細部及頂肋薄區提示",
+      "source_observation": "需要兼顧有頂座區、外挑雨遮與半圓外挑的辨識。",
+      "source_refs": [
+        "luming-photos"
+      ],
+      "model_implementation": "欄杆用連續加厚帶、屋頂肋與板相連、窗框有背靠；完整原STL驗證為單一連通表面殼。",
+      "confidence": "中至高",
+      "uncertainty_and_simplification": [
+        "canonical v3的0.8 mm參考寬度opening篩檢在z=23.071 mm的屋頂肋尖／角區記錄3.627%面積損失；1層超過1%。此為局部提示，不是全模型不通過或可印保證；屋簷、看臺頂板與外挑下方須評估支撐。"
+      ]
+    }
+  ],
+  "quality_snapshot": {
+    "source": "validation.json、contour-validity-check.json、thin-feature-check.json",
+    "original_stl_checks_all_true": true,
+    "dimensions_mm": [
+      150.0,
+      53.0,
+      23.375999450683594
+    ],
+    "surface_shells": 1,
+    "contour_pitch_mm": 0.2,
+    "contour_z_offset_mm": 0.071,
+    "contour_sampled_layers": 117,
+    "all_sampled_contours_closed_and_valid": true,
+    "thin_screen_pitch_mm": 1.0,
+    "thin_reference_width_mm": 0.8,
+    "thin_validator": "canonical fail-closed v3",
+    "thin_validator_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
+    "thin_sampled_layers": 24,
+    "thin_layers_over_one_percent": 1,
+    "thin_max_opening_loss_fraction": 0.03627033096887846,
+    "invalid_contour_behavior": "個別Polygon、合成Polygon及閉合／degree-2條件不合格即assert失敗，非零退出；不以buffer(0)或make_valid修復後宣稱通過。",
+    "actual_slicer_toolpath_tested": false,
+    "physical_trial_printed": false,
+    "limitations": [
+      "0.8 mm opening不是全面最小壁厚檢查。",
+      "0.2 mm切層不是Cura／PrusaSlicer實際工具路徑。",
+      "單一表面殼不等於已完成窮盡式自交檢查。"
+    ]
+  }
+}

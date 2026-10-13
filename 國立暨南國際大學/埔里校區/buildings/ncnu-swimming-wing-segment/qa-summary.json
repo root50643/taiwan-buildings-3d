@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "all_original_mesh_checks": true,
+    "source_rebuild_sha_matches": true,
+    "blend_geometry_matches_stl": true,
+    "all_0_2mm_contours_valid": true,
+    "thin_screen_exit_zero": true,
+    "canonical_v3_hash_matches": true,
+    "individual_invalid_polygon_rejected": true,
+    "combined_invalid_polygon_rejected": true
+  },
+  "stl_sha256": "df1860f84ae473ff3abb8beb9f4224332f041360d3447682d2a64649099b5cd3",
+  "negative_test": {
+    "individual": {
+      "exit_code": 1,
+      "assertion_error": true
+    },
+    "combined": {
+      "exit_code": 1,
+      "assertion_error": true
+    }
+  },
+  "note": "Digital geometry checks only; no physical test print or slicer toolpath claim."
+}

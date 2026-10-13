@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": {
+    "original_mesh_topology_and_normals": true,
+    "source_rebuild_exact_sha": true,
+    "saved_blend_matches_stl": true,
+    "all_0_2mm_contours_valid": true,
+    "all_0_2mm_thin_screen_passed": true,
+    "canonical_v3_exact_sha": true,
+    "previews_from_actual_stl": true
+  },
+  "stl_sha256": "f48bb9f5476d072c0e403f7f63c055ad6ce9d68733de79c3a492e7368426378e",
+  "dimensions_mm": [
+    150.0,
+    86.0,
+    86.5
+  ],
+  "surface_shells": 1,
+  "contour_layers": 433,
+  "thin_all_layers": 433,
+  "max_opening_loss_fraction": 0.0037115485705332446,
+  "reference_width_mm": 0.8,
+  "contour_and_full_thin_pitch_mm": 0.2,
+  "fixed_z_offset_mm": 0.071,
+  "canonical_original_thin_pitch_mm": 1.0,
+  "method_note": "保留canonical v3完整原檔並核SHA；額外0.2mm全層版使用相同閉環與個別/合成Polygon valid斷言，invalid立即非零退出，無repair fallback。",
+  "limitations": [
+    "非實體試印或Cura/Prusa工具路徑驗證。",
+    "0.8mm XY形態opening並非全面最小壁厚或抗折強度證明。",
+    "不宣稱完全無自交或保證免支撐。",
+    "未知背面未測繪；完整範圍及來源見sources.json。"
+  ]
+}

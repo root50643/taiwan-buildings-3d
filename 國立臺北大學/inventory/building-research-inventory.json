@@ -1,0 +1,915 @@
+{
+  "school": "國立臺北大學",
+  "as_of": "2026-10-13",
+  "whole_school_complete": false,
+  "model_artifacts": 2,
+  "whole_exterior_approximations": 1,
+  "partial_building_segments": 1,
+  "inventory_entry_count_is_not_building_count": true,
+  "sources": {
+    "sanxia_2025": {
+      "url": "https://dce.ntpu.edu.tw/lyadmin/pages/uploads/file/cus2_wllbfix4h8.pdf",
+      "date": "2025 course attachment; base-map date unstated",
+      "note": "第6頁實際看圖，12為崇越館、10為懷德居木師基地，不能信OCR的恐龍館/樹德樓等誤字"
+    },
+    "sanxia_walk": {
+      "url": "https://cms-carrier.ntpu.edu.tw/uploads/ntpu/walk_map_1_zh.jpg",
+      "date": "undated; linked by current general-affairs site",
+      "note": "現有漫步地圖含心湖會館，不將植物、雕塑和步道計成建物"
+    },
+    "taipei_map": {
+      "url": "https://dce.ntpu.edu.tw/lyadmin/pages/uploads/file/cus2_vrmv2j8lq3.pdf",
+      "date": "undated map reused on official site",
+      "note": "已實際看圖，但仍畫出2022、2024已拆建物。僅供歷史棟名定位，不是現況證據"
+    },
+    "development": {
+      "url": "https://sfai.ntpu.edu.tw/uploads/data_download/tw/115-119年中長程校務發展計畫_1141112(第61次校務會議通過).pdf",
+      "date": "approved 2025-11-12, period 2026–2030",
+      "note": "p78三期宿舍/合江整修、p151玉山與LB07新建；计划不是竣工事實"
+    },
+    "site_scope": {
+      "url": "https://sfai.ntpu.edu.tw/web/about/data.jsp?cp_id=CP1603450999104",
+      "date": "114 academic year; data 2025-10",
+      "note": "官方分三峽、臺北兩校區；臺北再拆民生、建國與合江研究範圍"
+    },
+    "jianguo_demolition": {
+      "url": "https://cms-carrier.ntpu.edu.tw/uploads/04_111_12_07_74b5a8f923.pdf",
+      "date": "2022-12-07 meeting",
+      "note": "2022年5月拆圖書館、社科館、莊敬大樓"
+    },
+    "minsheng_demolition": {
+      "url": "https://cms-carrier.ntpu.edu.tw/uploads/113_1_726fa76142.pdf",
+      "date": "113學年度第1學期總務會議",
+      "note": "明記2024-04-18拆資訊大樓、育樂館、民生大門警衛室"
+    },
+    "jianguo_new": {
+      "url": "https://new.ntpu.edu.tw/news/67e4e58201c2a9265160041c/建國校區產業研發中心舉行上梁典禮",
+      "date": "2025-03-27",
+      "note": "已上梁，當時預訂2026-10-16營運；本次未找到更晚完成實拍，不能宣稱現已營運"
+    },
+    "minsheng_new": {
+      "url": "https://new.ntpu.edu.tw/news/685b9a4fa7400e0ad1fd4cc0",
+      "date": "2025-06-25; groundbreaking 2025-06-23",
+      "note": "18層產學合作中心、10層校友會館及運動/會議設施；保留教學大樓"
+    },
+    "minsheng_work": {
+      "url": "https://new.ntpu.edu.tw/news?tag=民生bot",
+      "date": "2026-05-19 notice in index",
+      "note": "仍有延長施工公告，不能用效果圖當成完成建築"
+    },
+    "hejiang_bot": {
+      "url": "https://www.ppp.ntpu.edu.tw/",
+      "date": "accessed 2026-10-13",
+      "note": "合江BOT明示終止執行，不能將舊BOT構想当成現存"
+    },
+    "hejiang_old": {
+      "url": "https://www.ppp.ntpu.edu.tw/faq/3",
+      "date": "undated historical FAQ",
+      "note": "舊宿舍女一至女四與學生活動中心，自強大樓；女三曾改男一。年久FAQ不能取代現況"
+    },
+    "hejiang_rules": {
+      "url": "https://cms-carrier.ntpu.edu.tw/uploads/1140312_4da1ac0c2c.pdf",
+      "date": "2025-03-12 regulations",
+      "note": "仍列自強大樓、合江學人宿舍等場地"
+    },
+    "dorms": {
+      "url": "https://www.overseas.edu.tw/school/ntpu/",
+      "date": "undated admissions profile; accessed 2026-10-13",
+      "note": "三峽四棟名：曉日、皓月、繁星、辰曦；外觀尚未逐棟核"
+    },
+    "wood": {
+      "url": "https://www.hdg.tw/家具三合院/",
+      "date": "2019 completion narrative; accessed 2026-10-13",
+      "note": "校內木師基地由三棟組成，林口的基金會本館不是臺北大學校區"
+    },
+    "wood_arch": {
+      "url": "https://www.ta-mag.net/ta/News.php?id=1644",
+      "date": "2019 publication",
+      "note": "林嘉慧建築師／東月營造，多角度完成照片可作下一批來源，棟界待實看照片確認"
+    },
+    "library_arch": {
+      "url": "https://liaoarch.wixsite.com/liaoarchitect/library",
+      "date": "undated completed photography",
+      "note": "圖書館與資訊中心前後分棟；不是音律電機資訊大樓"
+    },
+    "mindlake": {
+      "url": "https://new.ntpu.edu.tw/news/62bd4b68836cf05bcfa9be83/心湖會館新建工程",
+      "date": "2021 completion; 2022 publication",
+      "note": "兩層、折線露臺，首批完成近似模型"
+    },
+    "yushan": {
+      "url": "https://new.ntpu.edu.tw/news/69b79b0a63f5a608851fb67c/玉山永續講堂新建工程",
+      "date": "2026-03-16 publication; 2026-05-11 update",
+      "note": "施工階段，2025-11-30開工、944日；頁面四張明示示意圖"
+    },
+    "scu_return": {
+      "url": "https://www.scu.edu.tw/secretary/SECRT/1121025report.pdf",
+      "date": "2023-10-25 report",
+      "note": "東吳合樂學舍2023-07-31租約到期返還，避免以東吳租用名再增一棟"
+    }
+  },
+  "entries": [
+    {
+      "id": "administration",
+      "campus": "三峽校區",
+      "name": "行政大樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "棟名及區位已核，未完成多角度外觀與棟界研究；系所名稱不另計。",
+      "next_step": "找官方營繕竣工資料、建築師完整圖庫與各院現場照片，核背面、屋頂、院落。"
+    },
+    {
+      "id": "business",
+      "campus": "三峽校區",
+      "name": "商學大樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "棟名及區位已核，未完成多角度外觀與棟界研究；系所名稱不另計。",
+      "next_step": "找官方營繕竣工資料、建築師完整圖庫與各院現場照片，核背面、屋頂、院落。"
+    },
+    {
+      "id": "humanities",
+      "campus": "三峽校區",
+      "name": "人文大樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "棟名及區位已核，未完成多角度外觀與棟界研究；系所名稱不另計。",
+      "next_step": "找官方營繕竣工資料、建築師完整圖庫與各院現場照片，核背面、屋頂、院落。"
+    },
+    {
+      "id": "law",
+      "campus": "三峽校區",
+      "name": "法學大樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [
+        "法律大樓"
+      ],
+      "boundary_and_status_note": "棟名及區位已核，未完成多角度外觀與棟界研究；系所名稱不另計。",
+      "next_step": "找官方營繕竣工資料、建築師完整圖庫與各院現場照片，核背面、屋頂、院落。"
+    },
+    {
+      "id": "social-sciences",
+      "campus": "三峽校區",
+      "name": "社會科學大樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [
+        "社科大樓"
+      ],
+      "boundary_and_status_note": "棟名及區位已核，未完成多角度外觀與棟界研究；系所名稱不另計。",
+      "next_step": "找官方營繕竣工資料、建築師完整圖庫與各院現場照片，核背面、屋頂、院落。"
+    },
+    {
+      "id": "public-affairs",
+      "campus": "三峽校區",
+      "name": "公共事務大樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [
+        "公共事務學院大樓"
+      ],
+      "boundary_and_status_note": "棟名及區位已核，未完成多角度外觀與棟界研究；系所名稱不另計。",
+      "next_step": "找官方營繕竣工資料、建築師完整圖庫與各院現場照片，核背面、屋頂、院落。"
+    },
+    {
+      "id": "ee-cs",
+      "campus": "三峽校區",
+      "name": "音律電機資訊大樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [
+        "電機資訊大樓"
+      ],
+      "boundary_and_status_note": "棟名及區位已核，未完成多角度外觀與棟界研究；系所名稱不另計。與圖資大樓後方資訊中心是不同建築。",
+      "next_step": "找官方營繕竣工資料、建築師完整圖庫與各院現場照片，核背面、屋頂、院落。"
+    },
+    {
+      "id": "library-main",
+      "campus": "三峽校區",
+      "name": "圖書資訊大樓：圖書館主體段",
+      "record_type": "building_candidate",
+      "research_status": "局部已建模／已通過獨立幾何審核",
+      "model_delivered": true,
+      "sources": [
+        "sanxia_2025",
+        "library_arch"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "模型只含雙翼主體、曲帶、穿堂、屋頂、跨橋。",
+      "next_step": "發布權限取得後可發布此局部；後方資訊中心仍待接續。",
+      "model_slug": "ntpu-library-main-block-segment"
+    },
+    {
+      "id": "it-center",
+      "campus": "三峽校區",
+      "name": "圖書資訊大樓：後方資訊中心",
+      "record_type": "building_candidate",
+      "research_status": "已研究仍缺完整建模範圍",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "library_arch"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "已看建築師後側與西南側照片；有低樓量體、公共廊道與平台，但遠側/屋頂/附屬樓梯棟界還未充分核實。不是無資料。",
+      "next_step": "先從liao圖庫第06/12/13照片核低棟平面，再找空拍補平台/後翼。"
+    },
+    {
+      "id": "mind-lake",
+      "campus": "三峽校區",
+      "name": "心湖會館",
+      "record_type": "building_candidate",
+      "research_status": "已建模／已通過獨立幾何審核",
+      "model_delivered": true,
+      "sources": [
+        "sanxia_2025",
+        "mindlake"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "完成整體外觀近似；三亭、露臺、樓梯是一座會館的組成。",
+      "next_step": "發布權限取得後可發布，不把三組亭體另計三件成品。",
+      "model_slug": "ntpu-mind-lake-hall"
+    },
+    {
+      "id": "wood-complex",
+      "campus": "三峽校區",
+      "name": "懷德居木師基地",
+      "record_type": "building_group",
+      "research_status": "已找到可靠來源／未完成多角度精讀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "wood",
+        "wood_arch"
+      ],
+      "aliases": [
+        "木藝教室",
+        "木師教堂（主棟）"
+      ],
+      "boundary_and_status_note": "基金會明指三棟成院落；主棟別稱木師教堂，整組不是一座通用方盒。",
+      "next_step": "下一優先：實看竣工空拍與建築圖，分主棟/兩附棟，決定複合整體或逐棟模型。"
+    },
+    {
+      "id": "topco",
+      "campus": "三峽校區",
+      "name": "崇越館",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "兩者為不同棟；網站OCR曾把崇越館誤為恐龍館/紫薇館，不採錯字。",
+      "next_step": "尋官方營繕與建築師完成圖庫。"
+    },
+    {
+      "id": "gymnasium",
+      "campus": "三峽校區",
+      "name": "綜合體育館暨活動中心",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "兩者為不同棟；網站OCR曾把崇越館誤為恐龍館/紫薇館，不採錯字。",
+      "next_step": "尋官方營繕與建築師完成圖庫。"
+    },
+    {
+      "id": "dorm-sun",
+      "campus": "三峽校區",
+      "name": "曉日樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "dorms",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "學生宿舍群內獨立棟名；群組總標籤不另加棟數。",
+      "next_step": "核各棟位置與連通地下層，尋宿舍整修前後照片與屋頂形體。"
+    },
+    {
+      "id": "dorm-moon",
+      "campus": "三峽校區",
+      "name": "皓月樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "dorms",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "學生宿舍群內獨立棟名；群組總標籤不另加棟數。",
+      "next_step": "核各棟位置與連通地下層，尋宿舍整修前後照片與屋頂形體。"
+    },
+    {
+      "id": "dorm-star",
+      "campus": "三峽校區",
+      "name": "繁星樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "dorms",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "學生宿舍群內獨立棟名；群組總標籤不另加棟數。",
+      "next_step": "核各棟位置與連通地下層，尋宿舍整修前後照片與屋頂形體。"
+    },
+    {
+      "id": "dorm-morn",
+      "campus": "三峽校區",
+      "name": "辰曦樓",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "dorms",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "學生宿舍群內獨立棟名；群組總標籤不另加棟數。",
+      "next_step": "核各棟位置與連通地下層，尋宿舍整修前後照片與屋頂形體。"
+    },
+    {
+      "id": "dorm-phase3",
+      "campus": "三峽校區",
+      "name": "三期學生宿舍",
+      "record_type": "building_candidate",
+      "research_status": "規劃中／不作現況模型",
+      "model_delivered": false,
+      "sources": [
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "2026–2030計畫提出增建，未核具體完工。",
+      "next_step": "查更新工程公告與實際開工/竣工影像。"
+    },
+    {
+      "id": "yushan-hall",
+      "campus": "三峽校區",
+      "name": "玉山永續講堂",
+      "record_type": "building_candidate",
+      "research_status": "施工中／不可用效果圖當現況",
+      "model_delivered": false,
+      "sources": [
+        "yushan",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "2026-05-11仍施工；頁面示意圖不當成竣工外觀。",
+      "next_step": "以完成實拍為建模前提，之後核實際屋頂與曲面。"
+    },
+    {
+      "id": "lb07-museum",
+      "campus": "三峽校區邊界待核",
+      "name": "LB07館／李梅樹紀念館新館",
+      "record_type": "building_candidate",
+      "research_status": "規劃/新建狀態待追證",
+      "model_delivered": false,
+      "sources": [
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "2025計畫預計2026取得執照發包、2029啟用；不是既有李梅樹館之改名，也不是單憑捷運館號即可當學校棟界。",
+      "next_step": "核基地權屬、建築位置、2026現況；完成之前不做現況版。"
+    },
+    {
+      "id": "water-plant",
+      "campus": "三峽校區",
+      "name": "污水處理場",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_walk",
+        "minsheng_demolition"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "地圖/官方維護文本出現的附屬建築或亭體，未核正式棟界。",
+      "next_step": "逐項核實建築型態、位置、近照及是否仍存。"
+    },
+    {
+      "id": "power-center",
+      "campus": "三峽校區",
+      "name": "動力中心",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_walk",
+        "minsheng_demolition"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "地圖/官方維護文本出現的附屬建築或亭體，未核正式棟界。",
+      "next_step": "逐項核實建築型態、位置、近照及是否仍存。"
+    },
+    {
+      "id": "grandstand",
+      "campus": "三峽校區",
+      "name": "田徑場看台附屬空間",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_walk",
+        "minsheng_demolition"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "地圖/官方維護文本出現的附屬建築或亭體，未核正式棟界。",
+      "next_step": "逐項核實建築型態、位置、近照及是否仍存。"
+    },
+    {
+      "id": "rushan",
+      "campus": "三峽校區",
+      "name": "如山亭",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_walk",
+        "minsheng_demolition"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "地圖/官方維護文本出現的附屬建築或亭體，未核正式棟界。",
+      "next_step": "逐項核實建築型態、位置、近照及是否仍存。"
+    },
+    {
+      "id": "junyong",
+      "campus": "三峽校區",
+      "name": "君永亭",
+      "record_type": "building_candidate",
+      "research_status": "未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_walk",
+        "minsheng_demolition"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "地圖/官方維護文本出現的附屬建築或亭體，未核正式棟界。",
+      "next_step": "逐項核實建築型態、位置、近照及是否仍存。"
+    },
+    {
+      "id": "main-gate",
+      "campus": "三峽校區",
+      "name": "正門門房及入口構築物",
+      "record_type": "scope_task",
+      "research_status": "未研究／未逐棟拆分",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "sanxia_walk"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "是待普查範圍，不當作1棟或已完成清單。",
+      "next_step": "用校圖、空拍、總務財產與工程列表對照逐棟建檔。"
+    },
+    {
+      "id": "other-gates",
+      "campus": "三峽校區",
+      "name": "其他哨亭、各門房",
+      "record_type": "scope_task",
+      "research_status": "未研究／未逐棟拆分",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "sanxia_walk"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "是待普查範圍，不當作1棟或已完成清單。",
+      "next_step": "用校圖、空拍、總務財產與工程列表對照逐棟建檔。"
+    },
+    {
+      "id": "service-buildings",
+      "campus": "三峽校區",
+      "name": "球場服務屋、機房、溫室/回收棚等附屬物",
+      "record_type": "scope_task",
+      "research_status": "未研究／未逐棟拆分",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_2025",
+        "sanxia_walk"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "是待普查範圍，不當作1棟或已完成清單。",
+      "next_step": "用校圖、空拍、總務財產與工程列表對照逐棟建檔。"
+    },
+    {
+      "id": "landscape",
+      "campus": "三峽校區",
+      "name": "心湖、步道、植物區、水生公園、田徑場/球場",
+      "record_type": "nonbuilding",
+      "research_status": "非建物／本輪不計棟",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_walk"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "地圖景點不是每項皆為建物。",
+      "next_step": "若另做景觀模型需獨立分類；附屬服務屋要另查。"
+    },
+    {
+      "id": "sculpture",
+      "campus": "三峽校區",
+      "name": "飛鳶雕像、運動休憩木作平台等景觀設施",
+      "record_type": "nonbuilding",
+      "research_status": "非建物／本輪不計棟",
+      "model_delivered": false,
+      "sources": [
+        "sanxia_walk"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "地圖景點不是每項皆為建物。",
+      "next_step": "若另做景觀模型需獨立分類；附屬服務屋要另查。"
+    },
+    {
+      "id": "minsheng-teaching",
+      "campus": "臺北校區／民生",
+      "name": "教學大樓",
+      "record_type": "building_candidate",
+      "research_status": "現存用途已核／未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "minsheng_new",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "2025開工說明明示保留並持續教學。",
+      "next_step": "優先搜校史與現場四向照片，確認BOT工程對出入口的影響。"
+    },
+    {
+      "id": "minsheng-it-old",
+      "campus": "臺北校區／民生",
+      "name": "資訊大樓",
+      "record_type": "building_candidate",
+      "research_status": "歷史建物／2024-04-18已拆除",
+      "model_delivered": false,
+      "sources": [
+        "minsheng_demolition",
+        "taipei_map"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "官方113-1總務會議明記拆除。尚可下載的舊校圖不代表仍現存。",
+      "next_step": "若製作必須命名歷史版並找拆前實拍；不得列目前待現存模型。"
+    },
+    {
+      "id": "minsheng-recreation-old",
+      "campus": "臺北校區／民生",
+      "name": "育樂館",
+      "record_type": "building_candidate",
+      "research_status": "歷史建物／2024-04-18已拆除",
+      "model_delivered": false,
+      "sources": [
+        "minsheng_demolition",
+        "taipei_map"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "官方113-1總務會議明記拆除。尚可下載的舊校圖不代表仍現存。",
+      "next_step": "若製作必須命名歷史版並找拆前實拍；不得列目前待現存模型。"
+    },
+    {
+      "id": "minsheng-guard-old",
+      "campus": "臺北校區／民生",
+      "name": "民生大門警衛室",
+      "record_type": "building_candidate",
+      "research_status": "歷史建物／2024-04-18已拆除",
+      "model_delivered": false,
+      "sources": [
+        "minsheng_demolition",
+        "taipei_map"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "官方113-1總務會議明記拆除。尚可下載的舊校圖不代表仍現存。",
+      "next_step": "若製作必須命名歷史版並找拆前實拍；不得列目前待現存模型。"
+    },
+    {
+      "id": "minsheng-industry",
+      "campus": "臺北校區／民生",
+      "name": "產學合作中心",
+      "record_type": "building_candidate",
+      "research_status": "新建中／現況模型未研究",
+      "model_delivered": false,
+      "sources": [
+        "minsheng_new",
+        "minsheng_work"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "前二者為18層與10層計畫；運動/會議空間棟界不能只依功能名認定另棟。",
+      "next_step": "取得最新施工/竣工狀態與實拍，完成後依實際棟界建模。"
+    },
+    {
+      "id": "minsheng-alumni",
+      "campus": "臺北校區／民生",
+      "name": "校友會館",
+      "record_type": "building_candidate",
+      "research_status": "新建中／現況模型未研究",
+      "model_delivered": false,
+      "sources": [
+        "minsheng_new",
+        "minsheng_work"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "前二者為18層與10層計畫；運動/會議空間棟界不能只依功能名認定另棟。",
+      "next_step": "取得最新施工/竣工狀態與實拍，完成後依實際棟界建模。"
+    },
+    {
+      "id": "minsheng-new-gym",
+      "campus": "臺北校區／民生",
+      "name": "新多功能運動場館／國際會議空間",
+      "record_type": "boundary_unresolved",
+      "research_status": "新建中／現況模型未研究",
+      "model_delivered": false,
+      "sources": [
+        "minsheng_new",
+        "minsheng_work"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "前二者為18層與10層計畫；運動/會議空間棟界不能只依功能名認定另棟。",
+      "next_step": "取得最新施工/竣工狀態與實拍，完成後依實際棟界建模。"
+    },
+    {
+      "id": "jianguo-library-old",
+      "campus": "臺北校區／建國",
+      "name": "舊圖書館",
+      "record_type": "building_candidate",
+      "research_status": "歷史建物／2022年5月已拆除",
+      "model_delivered": false,
+      "sources": [
+        "jianguo_demolition",
+        "taipei_map"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "舊校圖仍標示，不能列為現存。",
+      "next_step": "歷史模型需另外蒐集拆前多角度來源。"
+    },
+    {
+      "id": "jianguo-social-old",
+      "campus": "臺北校區／建國",
+      "name": "舊社會科學館",
+      "record_type": "building_candidate",
+      "research_status": "歷史建物／2022年5月已拆除",
+      "model_delivered": false,
+      "sources": [
+        "jianguo_demolition",
+        "taipei_map"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "舊校圖仍標示，不能列為現存。",
+      "next_step": "歷史模型需另外蒐集拆前多角度來源。"
+    },
+    {
+      "id": "jianguo-zhuangjing-old",
+      "campus": "臺北校區／建國",
+      "name": "莊敬大樓",
+      "record_type": "building_candidate",
+      "research_status": "歷史建物／2022年5月已拆除",
+      "model_delivered": false,
+      "sources": [
+        "jianguo_demolition",
+        "taipei_map"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "舊校圖仍標示，不能列為現存。",
+      "next_step": "歷史模型需另外蒐集拆前多角度來源。"
+    },
+    {
+      "id": "jianguo-old-other",
+      "campus": "臺北校區／建國",
+      "name": "建國大樓、力行大樓、蕙蓀北樓及南樓",
+      "record_type": "scope_task",
+      "research_status": "歷史地圖項目／拆除細節待核",
+      "model_delivered": false,
+      "sources": [
+        "taipei_map",
+        "jianguo_new"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "舊圖有名，BOT整體重建；各棟拆除年與舊別名尚未逐項核。不得把此群條目算1棟。",
+      "next_step": "核更早總務拆除公告/財產清冊，再逐棟拆為歷史候選。"
+    },
+    {
+      "id": "jianguo-industry",
+      "campus": "臺北校區／建國",
+      "name": "產業研發中心",
+      "record_type": "building_candidate",
+      "research_status": "已研究仍缺最新完工證據",
+      "model_delivered": false,
+      "sources": [
+        "jianguo_new"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "2025上梁公告預訂2026-10-16營運；查核日2026-10-13，不能把未到的預訂日期當已完成。",
+      "next_step": "先查當月新公告/營運方實拍及建築師竣工圖，不從效果圖交付現況版。"
+    },
+    {
+      "id": "hejiang-ziqiang",
+      "campus": "臺北校區／合江",
+      "name": "自強大樓",
+      "record_type": "building_candidate",
+      "research_status": "現存用途已核／未研究外觀",
+      "model_delivered": false,
+      "sources": [
+        "hejiang_rules",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "獨立於已拆莊敬大樓，不能沿舊地下道關係視為同一棟。",
+      "next_step": "蒐集2022整修後多角度與屋頂照片。"
+    },
+    {
+      "id": "hejiang-nw",
+      "campus": "臺北校區／合江",
+      "name": "舊女二舍所在棟",
+      "record_type": "building_candidate",
+      "research_status": "已核歷史區位／現用名稱及外觀待核",
+      "model_delivered": false,
+      "sources": [
+        "taipei_map",
+        "hejiang_old",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "舊FAQ及新計畫宿舍女一/女二名稱有前後差異，需按棟位對照，不武斷換名。",
+      "next_step": "核最新宿舍配置/整修公告與樓號照片，再決定名稱及模型範圍。"
+    },
+    {
+      "id": "hejiang-ne",
+      "campus": "臺北校區／合江",
+      "name": "舊女四舍所在棟",
+      "record_type": "building_candidate",
+      "research_status": "已核歷史區位／現用名稱及外觀待核",
+      "model_delivered": false,
+      "sources": [
+        "taipei_map",
+        "hejiang_old",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "舊FAQ及新計畫宿舍女一/女二名稱有前後差異，需按棟位對照，不武斷換名。",
+      "next_step": "核最新宿舍配置/整修公告與樓號照片，再決定名稱及模型範圍。"
+    },
+    {
+      "id": "hejiang-sw",
+      "campus": "臺北校區／合江",
+      "name": "舊女三舍所在棟",
+      "record_type": "building_candidate",
+      "research_status": "已核歷史區位／現用名稱及外觀待核",
+      "model_delivered": false,
+      "sources": [
+        "taipei_map",
+        "hejiang_old",
+        "development"
+      ],
+      "aliases": [
+        "男一舍（待核現用名）"
+      ],
+      "boundary_and_status_note": "舊FAQ及新計畫宿舍女一/女二名稱有前後差異，需按棟位對照，不武斷換名。",
+      "next_step": "核最新宿舍配置/整修公告與樓號照片，再決定名稱及模型範圍。"
+    },
+    {
+      "id": "hejiang-se",
+      "campus": "臺北校區／合江",
+      "name": "舊女一舍所在棟",
+      "record_type": "building_candidate",
+      "research_status": "已核歷史區位／現用名稱及外觀待核",
+      "model_delivered": false,
+      "sources": [
+        "taipei_map",
+        "hejiang_old",
+        "development"
+      ],
+      "aliases": [
+        "合江學舍（東吳舊租用名，勿重複計棟）"
+      ],
+      "boundary_and_status_note": "舊FAQ及新計畫宿舍女一/女二名稱有前後差異，需按棟位對照，不武斷換名。",
+      "next_step": "核最新宿舍配置/整修公告與樓號照片，再決定名稱及模型範圍。"
+    },
+    {
+      "id": "hejiang-activity",
+      "campus": "臺北校區／合江",
+      "name": "學生活動中心",
+      "record_type": "building_candidate",
+      "research_status": "已研究仍缺現況開放與完整外觀證據",
+      "model_delivered": false,
+      "sources": [
+        "taipei_map",
+        "hejiang_old"
+      ],
+      "aliases": [
+        "風雲樓（別名待官方核）"
+      ],
+      "boundary_and_status_note": "舊FAQ寫封閉未用；需查修繕/拆除現況，封閉不等於拆除。",
+      "next_step": "查最新總務會議與多角度照片。"
+    },
+    {
+      "id": "hejiang-faculty",
+      "campus": "臺北校區／合江周邊",
+      "name": "合江學人宿舍／職務宿舍",
+      "record_type": "boundary_unresolved",
+      "research_status": "已知場域／棟界待核",
+      "model_delivered": false,
+      "sources": [
+        "hejiang_rules",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "2025辦法列合江街55巷學人宿舍；與學生宿舍群地址、權屬和棟位尚未串接。",
+      "next_step": "先核公開財產/場地配置，避免與學生宿舍或東吳租用名重複。"
+    },
+    {
+      "id": "scu-rental-alias",
+      "campus": "臺北校區／合江",
+      "name": "東吳合樂、合江、合楓等歷史租用名稱",
+      "record_type": "alias_record",
+      "research_status": "別名/使用單位／不另計棟",
+      "model_delivered": false,
+      "sources": [
+        "scu_return",
+        "hejiang_old"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "屬租用臺北大學建物時的使用名稱；至少合樂學舍2023年7月底已返還。",
+      "next_step": "用地址與既有合江四舍棟界對照，不能跨校重複算成新增建物。"
+    },
+    {
+      "id": "external-sites",
+      "campus": "校外場域",
+      "name": "校外學人住宿、實習/研究與合作場域普查",
+      "record_type": "scope_task",
+      "research_status": "未完成校外範圍普查",
+      "model_delivered": false,
+      "sources": [
+        "site_scope",
+        "development"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "目前官方校地資料分三峽/臺北，但不能由此證明沒有其他校外使用空間。",
+      "next_step": "查公開校產、最新租用場地與研究中心聯絡地址；合作機構不自動納入本校建物。"
+    },
+    {
+      "id": "linkou-hdg",
+      "campus": "校外合作機構",
+      "name": "懷德居林口本館",
+      "record_type": "scope_exclusion",
+      "research_status": "非本校校區／不計校產模型",
+      "model_delivered": false,
+      "sources": [
+        "wood"
+      ],
+      "aliases": [],
+      "boundary_and_status_note": "基金會林口本館與三峽校內木師基地是不同場域。",
+      "next_step": "除非另有明確使用/權屬證據，不把林口基金會建物併入臺北大學。"
+    }
+  ]
+}

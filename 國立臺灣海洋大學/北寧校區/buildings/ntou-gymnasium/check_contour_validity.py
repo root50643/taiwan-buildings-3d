@@ -1,0 +1,44 @@
+"""Check actual STL contour closure and polygon validity at 0.2 mm pitch.
+No morphological opening is performed here; see the separate 1 mm thin-feature screen.
+"""
+from pathlib import Path
+import json
+import numpy as np
+import trimesh
+from shapely.geometry import Polygon
+R=Path(__file__).resolve().parent
+m=trimesh.load(R/'model.stl',force='mesh',process=True)
+rows=[]
+for z in np.arange(.071,m.bounds[1,2],.2):
+ # Canonical edge direction gives bitwise-consistent shared-edge intersections.
+ tri=m.triangles
+ mask=(tri[:,:,2].min(axis=1)<z)&(tri[:,:,2].max(axis=1)>z)
+ segments=[]
+ for f in tri[mask]:
+  hit=[]
+  for a,b in [(f[0],f[1]),(f[1],f[2]),(f[2],f[0])]:
+   if tuple(a)>tuple(b):a,b=b,a
+   if a[2]<z<b[2] or b[2]<z<a[2]:hit.append(a+(b-a)*(z-a[2])/(b[2]-a[2]))
+  if len(hit)==2:segments.append(hit)
+ adj={}
+ for seg in segments:
+  a,b=[tuple(np.round(q[:2],6)) for q in seg]
+  if a==b:continue
+  adj.setdefault(a,[]).append(b);adj.setdefault(b,[]).append(a)
+ assert adj and all(len(v)==2 for v in adj.values()), f'Unclosed section at {z}: reject thin screening'
+ remaining=set(adj);shape=Polygon()
+ while remaining:
+  seed=next(iter(remaining));a=seed;last=None;loop=[]
+  while True:
+   loop.append(a);remaining.discard(a)
+   if len(adj[a])!=2:break
+   opts=adj[a];b=opts[0] if opts[0]!=last else opts[1];last,a=a,b
+   if a==seed or len(loop)>len(adj):break
+  if len(loop)>2:
+   p=Polygon(loop)
+   assert a==seed and p.is_valid, f'Invalid closed loop at {z}'
+   if p.area>1e-8:shape=shape.symmetric_difference(p)
+ assert shape.is_valid, f'Invalid composite section at {z}'
+ rows.append({'z_mm':round(float(z),3),'area_mm2':float(shape.area)})
+report={'passed':True,'checks':{'all_sampled_contours_degree_two_and_closed':True,'all_individual_polygons_valid':True,'all_composite_polygons_valid':True},'method':'canonical shared-edge intersections, 0.2mm pitch, z offset0.071mm; all nodes degree2, each loop closed and Polygon valid asserted','sampled_layers':len(rows),'all_sampled_contours_closed_and_valid':True,'not_a_slicer':True,'not_exhaustive_self_intersection_test':True,'thin_feature_opening_not_performed_in_this_audit':True,'sections':rows}
+(R/'contour-validity-check.json').write_text(json.dumps(report,indent=2));print(report['sampled_layers'])

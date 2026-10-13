@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": {
+    "original_mesh_topology_and_normals": true,
+    "source_rebuild_exact_sha": true,
+    "saved_blend_matches_stl": true,
+    "all_0_2mm_contours_valid": true,
+    "all_0_2mm_thin_screen_passed": true,
+    "canonical_v3_exact_sha": true,
+    "previews_from_actual_stl": true
+  },
+  "stl_sha256": "2edbf92d659ff8c9bec80df8cf458e2eeeeb657c7affd8a1c4bc29c5629dfb6d",
+  "dimensions_mm": [
+    150.0,
+    84.0,
+    86.0
+  ],
+  "surface_shells": 1,
+  "contour_layers": 430,
+  "thin_all_layers": 430,
+  "max_opening_loss_fraction": 0.00450468785732313,
+  "reference_width_mm": 0.8,
+  "contour_and_full_thin_pitch_mm": 0.2,
+  "fixed_z_offset_mm": 0.071,
+  "canonical_original_thin_pitch_mm": 1.0,
+  "method_note": "保留已核SHA的canonical v3完整檔；額外0.2mm逐層thin使用同樣valid斷言，invalid直接失敗，無repair fallback。",
+  "limitations": [
+    "非實體試印、不是切片工具路徑驗證。",
+    "0.8mm XY形態opening不是全面最小壁厚或抗折強度證明。",
+    "不保證無需支撐或實體列印成功。",
+    "未重建未知背面及完整全棟；不宣稱完全無自交。"
+  ]
+}

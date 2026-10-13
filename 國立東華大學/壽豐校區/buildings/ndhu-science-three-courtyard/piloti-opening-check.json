@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": {
+    "walkway_through_both_faces_empty": true,
+    "walkway_clear_to_10_8mm": true,
+    "two_columns_crossed": true,
+    "solid_continuous_beam_across_columns": true,
+    "solid_continuous_beam_across_walkway": true
+  },
+  "stl_sha256": "eee26057d1f2169085e804651ff10ab65bf6ac5ef7a0ced8f7f385ddd99a641c",
+  "method": "X-directed actual-STL triangle intersections, no repair. Empty midspan rays cross full B width; columns give two solid intervals; beam returns outer faces only. Geometry QA separately confirms one connected solid.",
+  "rays": {
+    "walkway_midspan": {
+      "y_mm": 10.0,
+      "z_mm": 6.0,
+      "x_hits_mm": []
+    },
+    "walkway_upper_clearance": {
+      "y_mm": 10.0,
+      "z_mm": 10.8,
+      "x_hits_mm": []
+    },
+    "columns": {
+      "y_mm": 20.0,
+      "z_mm": 6.0,
+      "x_hits_mm": [
+        -60.8,
+        -57.2,
+        -40.8,
+        -37.2
+      ]
+    },
+    "beam_above_columns": {
+      "y_mm": 20.0,
+      "z_mm": 11.2,
+      "x_hits_mm": [
+        -62.0,
+        -36.0
+      ]
+    },
+    "beam_above_walkway": {
+      "y_mm": 10.0,
+      "z_mm": 11.2,
+      "x_hits_mm": [
+        -62.0,
+        -36.0
+      ]
+    }
+  },
+  "not_a_structural_load_test": true
+}

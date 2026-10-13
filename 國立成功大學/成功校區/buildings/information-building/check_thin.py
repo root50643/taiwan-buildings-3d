@@ -38,7 +38,7 @@ for z in np.arange(.071,m.bounds[1,2],1.0):
    p=Polygon(loop)
    assert a==seed and p.is_valid, f'Invalid closed loop at {z}'
    if p.area>1e-8:shape=shape.symmetric_difference(p)
- if not shape.is_valid:shape=shape.buffer(0)
+ assert shape.is_valid, f'Invalid composite section at {z}'
  opened=shape.buffer(-.4).buffer(.4)
  lost=shape.difference(opened).area
  rows.append({'z_mm':round(float(z),3),'section_area_mm2':float(shape.area),'area_not_retained_by_0_8mm_opening_mm2':float(lost),'fraction':float(lost/max(shape.area,1e-9))})

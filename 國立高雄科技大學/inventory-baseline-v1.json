@@ -1,0 +1,6042 @@
+{
+  "schema_version": "1.0",
+  "institution": "國立高雄科技大學",
+  "institution_code": "NKUST",
+  "research_date": "2026-10-13",
+  "language": "zh-Hant",
+  "scope": "多校區官方名錄、地圖與避難圖交叉研究清冊；不是現存棟數、不代表學校全部完成研究或建模",
+  "school_complete": false,
+  "physical_building_count": null,
+  "coverage_status": "all_requested_campus_scopes_visited_inventory_baseline_only",
+  "coverage_limits": [
+    "五主要校區環安逃生圖目錄全部逐列納入；未逐一審核所有PDF。",
+    "2024發展計畫與2026防空表補缺、比對群棟/別名；2023散步圖僅作輔助，不能代表2026所有新建物。",
+    "東方原圖號完整轉錄，但現行取得/改修逐項區別；非宣稱全舊校址歸入現役NKUST建築。",
+    "所有物理棟界、附屬設施和現行建築總量仍需資產表/竣工總圖，未獲得前不給完成率或棟數。"
+  ],
+  "count_policy": {
+    "unit": "research_item",
+    "not_a_building_count": true,
+    "department_is_not_extra_building": true,
+    "groups_are_not_single_buildings": true,
+    "aliases_are_not_extra_items": true,
+    "planned_and_demolished_excluded_from_current_building_claims": true
+  },
+  "campuses": [
+    {
+      "id": "jianggong",
+      "name": "建工校區",
+      "address": "高雄市三民區建工路415號",
+      "legacy_school": "國立高雄應用科技大學",
+      "subcampuses": []
+    },
+    {
+      "id": "yanchao",
+      "name": "燕巢校區",
+      "address": "高雄市燕巢區深中路58號",
+      "legacy_school": "國立高雄應用科技大學",
+      "subcampuses": []
+    },
+    {
+      "id": "first",
+      "name": "第一校區",
+      "address": "東側：高雄市燕巢區大學路1號；西側：高雄市楠梓區卓越路2號",
+      "legacy_school": "國立高雄第一科技大學",
+      "subcampuses": [
+        "east",
+        "west"
+      ]
+    },
+    {
+      "id": "nanzi",
+      "name": "楠梓校區",
+      "address": "高雄市楠梓區海專路142號",
+      "legacy_school": "國立高雄海洋科技大學",
+      "subcampuses": []
+    },
+    {
+      "id": "qijin",
+      "name": "旗津校區",
+      "address": "高雄市旗津區中洲三路482號與524號",
+      "legacy_school": "國立高雄海洋科技大學",
+      "subcampuses": [
+        "482號主教學區",
+        "524號體育/圖書館區"
+      ]
+    },
+    {
+      "id": "tungfang",
+      "name": "東方校區／產業園區",
+      "address": "高雄市湖內區東方路110號",
+      "legacy_school": "東方設計大學（退場校地代管/分期取得，非2018三校合併）",
+      "subcampuses": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "about",
+      "url": "https://www.nkust.edu.tw/p/412-1000-82.php",
+      "title": "高科大簡介",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "網頁未示發佈日；五校區概述落後2026揭牌新聞"
+    },
+    {
+      "id": "dev2024",
+      "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+      "title": "113年12月中程校務發展計畫：校區現況與配置圖",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2024-12",
+      "accessed_date": "2026-10-13",
+      "date_note": "PDF檔建立2024-12-31、修改2025-01-02；正文頁15-24，PDF頁20-29"
+    },
+    {
+      "id": "defense2026",
+      "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+      "title": "防護團訓練暨防空疏散實施要點",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2026-02-25",
+      "accessed_date": "2026-10-13",
+      "date_note": "附圖1.1-1.5圖面署114.08（2025-08）；PDF頁4-8"
+    },
+    {
+      "id": "walkmap2023",
+      "url": "https://www.nkust.edu.tw/var/file/0/1000/img/75/880959610.pdf",
+      "title": "校園散步地圖",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2023-09-06",
+      "accessed_date": "2026-10-13",
+      "date_note": "以PDF Title/CreationDate確認版本；官網目前仍連此版，不視為2026竣工總圖"
+    },
+    {
+      "id": "jianggong-evacuation",
+      "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+      "title": "jianggong校區環安中心避難逃生圖目錄",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "目錄不顯示版本日；連結已解析，未全部下載或逐頁審核"
+    },
+    {
+      "id": "first-evacuation",
+      "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+      "title": "first校區環安中心避難逃生圖目錄",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "目錄不顯示版本日；連結已解析，未全部下載或逐頁審核"
+    },
+    {
+      "id": "nanzi-evacuation",
+      "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+      "title": "nanzi校區環安中心避難逃生圖目錄",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "目錄不顯示版本日；連結已解析，未全部下載或逐頁審核"
+    },
+    {
+      "id": "qijin-evacuation",
+      "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+      "title": "qijin校區環安中心避難逃生圖目錄",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "目錄不顯示版本日；連結已解析，未全部下載或逐頁審核"
+    },
+    {
+      "id": "yanchao-evacuation",
+      "url": "https://shecenter.nkust.edu.tw/p/412-1023-6568.php",
+      "title": "yanchao校區環安中心避難逃生圖目錄",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "目錄不顯示版本日；連結已解析，未全部下載或逐頁審核"
+    },
+    {
+      "id": "first-history",
+      "url": "https://gen.nkust.edu.tw/p/412-1008-2236.php",
+      "title": "總務處事蹟：第一校區歷年建設",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "頁框最後更新2026-10-12不代表各項文字更新日"
+    },
+    {
+      "id": "first-industry-contact",
+      "url": "https://b070.nkust.edu.tw/p/412-1073-85.php",
+      "title": "創新育成中心地址：第一校區產業創新園區A棟",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": ""
+    },
+    {
+      "id": "yizhi-open",
+      "url": "https://www.nkust.edu.tw/p/404-1000-61456.php",
+      "title": "毅志樓宿舍落成啟用",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2022-09",
+      "accessed_date": "2026-10-13",
+      "date_note": "內文啟用事件日2022-08-31"
+    },
+    {
+      "id": "removed2019",
+      "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/40/pta_28598_5065063_97991.pdf",
+      "title": "108學年度第3次行政會議執行情形附件",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2019",
+      "accessed_date": "2026-10-13",
+      "date_note": "中、南棟拆遷及後續東西棟銜接、景觀施工"
+    },
+    {
+      "id": "north-repair",
+      "url": "https://usr.nkust.edu.tw/userfiles/files/20240305024444140.pdf",
+      "title": "2022永續報告4.5校史建築與開放空間",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2022",
+      "accessed_date": "2026-10-13",
+      "date_note": "上傳2024；預計2025-10修復不能等同完工"
+    },
+    {
+      "id": "tungfang2026",
+      "url": "https://www.nkust.edu.tw/p/406-1000-100217%2Cr1363.php",
+      "title": "第六校區產業園區揭牌",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2026-01-21",
+      "accessed_date": "2026-10-13",
+      "date_note": "明確取得新世紀、圖書資訊兩大樓；其餘活化仍規劃"
+    },
+    {
+      "id": "tungfang-repair",
+      "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+      "title": "114學年度第2次校務基金管理委員會會議紀錄",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2025-09-19",
+      "accessed_date": "2026-10-13",
+      "date_note": "正文第5頁：R/K/C/F/B/A-a/A-b耐震詳細評估；R/K/S用途與整修規劃"
+    },
+    {
+      "id": "first-material2026",
+      "url": "https://www.nkust.edu.tw/p/406-1000-102166%2Cr1363.php",
+      "title": "伺服成型與智慧製造研討會暨台灣先進材料成形技術中心參訪",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2026-04-13",
+      "accessed_date": "2026-10-13",
+      "date_note": "活動日2026-04-11，證明已實際參訪運作；非原先預計竣工日期"
+    },
+    {
+      "id": "construction2025",
+      "url": "https://secretary.nkust.edu.tw/app/index.php?Action=downloadfile&cg=11028&file=WVhSMFlXTm9Mekl2Y0hSaFh6Y3pOVEkxWHpjME1EQTVNbDgwTlRrd05pNXdaR1k9&fname=WW54RPOKIC44VXMP44VWROWTSTNKNPWSRKFGGC35LPIDPOA5FCB4A0SWFH54IGA0KKPOSSMLA4VWTXJGYWJGA0XSOPRKYWMK01YTNOB5SWEC34SWCCLKCDRKSS44XX05EDNO41MOMKHCPOYS20RO04YSIHRL04B0SWECFGQOYSA4LKQKKKCGA500IG04GD34VWJGGDB1B430A1A1",
+      "title": "114學年度第2次校務會議工作報告",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2025",
+      "accessed_date": "2026-10-13",
+      "date_note": "已讀官方搜尋索引節錄；智慧科技學院/宿舍二期可行性評估、第一東餐廳耐震補強、楠梓圖書館設計階段；未追得完工驗收"
+    },
+    {
+      "id": "longterm2022",
+      "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+      "title": "111年度業務報告暨112年度業務規劃：暫定重大工程時程",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2022-10",
+      "accessed_date": "2026-10-13",
+      "date_note": "遠期規劃不是現存建築或已開工證據"
+    },
+    {
+      "id": "sert-space",
+      "url": "https://sert.nkust.edu.tw/introduction/origin/space/distributed",
+      "title": "南區毒化災專業訓練中心空間分佈",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2023-11-06",
+      "accessed_date": "2026-10-13",
+      "date_note": "頁面寫7層、A/B兩部分空橋相連"
+    },
+    {
+      "id": "sert-function",
+      "url": "https://sert.nkust.edu.tw/introduction/origin/space/function",
+      "title": "南區毒化災專業訓練中心空間機能",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2023-11-06",
+      "accessed_date": "2026-10-13",
+      "date_note": "頁面寫A/B各6層，與空間分佈7層有差異"
+    },
+    {
+      "id": "first-xianzhang",
+      "url": "https://ce1.nkust.edu.tw/p/405-1096-24105%2Cc5161.php?Lang=zh-tw",
+      "title": "震害防制實驗室 憲章館",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": ""
+    },
+    {
+      "id": "dorm-names",
+      "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/16/pta_52539_140283_50300.pdf",
+      "title": "111學年度第11次行政會議執行情形附件：宿舍分棟",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2023",
+      "accessed_date": "2026-10-13",
+      "date_note": "第一樂群C/D/E、燕巢樂知/詠絮/涵芳、旗津渤海"
+    },
+    {
+      "id": "yanchao-library-photo",
+      "url": "https://app.lib.nkust.edu.tw/photo_contest/photo_list.php",
+      "title": "圖書館攝影比賽作品",
+      "publisher": "國立高雄科技大學",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "模型研究已檢視燕巢圖資多角度照片；本清冊未自行逐張核驗"
+    },
+    {
+      "id": "industry-architect",
+      "url": "https://www.infinitearchi.com/blank-15",
+      "title": "築宇：高雄科技大學產學實驗園區第一期工程",
+      "publisher": "築宇建築師事務所",
+      "source_date": null,
+      "accessed_date": "2026-10-13",
+      "date_note": "模型研究已檢視兩角度實拍；業主現校區標示與官方地址衝突，應以官方第一校區證據校正"
+    },
+    {
+      "id": "library-floor4",
+      "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/80/pta_28425_2822845_92148.pdf",
+      "title": "燕巢校區圖資大樓四樓平面圖",
+      "publisher": "國立高雄科技大學",
+      "source_date": "2019",
+      "accessed_date": "2026-10-13",
+      "date_note": "索引可確認有建築平面圖；本輪未逐頁檢視"
+    }
+  ],
+  "research_items": [
+    {
+      "id": "jianggong-001",
+      "campus": "jianggong",
+      "name": "西棟",
+      "aliases": [
+        "教學大樓西棟A/B",
+        "西橫棟"
+      ],
+      "entity_type": "building_group",
+      "components": [
+        "西棟前棟",
+        "西棟後棟"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/488129972.pdf",
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/537313067.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "圖面前/後棟與A/B對照尚待核對；先合為研究群，不能宣稱一棟。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-002",
+      "campus": "jianggong",
+      "name": "東棟",
+      "aliases": [
+        "教學大樓東棟A/B",
+        "東橫棟"
+      ],
+      "entity_type": "building_group",
+      "components": [
+        "東棟前棟",
+        "東棟後棟"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/857551250.pdf",
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/856593624.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "圖面前/後棟與A/B對照尚待核對；先合為研究群，不能宣稱一棟。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-003",
+      "campus": "jianggong",
+      "name": "中正堂",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/207807114.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-004",
+      "campus": "jianggong",
+      "name": "化工館",
+      "aliases": [
+        "化材館",
+        "化學工程與材料工程館"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/657200044.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-005",
+      "campus": "jianggong",
+      "name": "司令台",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/861060502.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-006",
+      "campus": "jianggong",
+      "name": "育賢樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/517846587.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-007",
+      "campus": "jianggong",
+      "name": "思賢樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/598634781.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "職務宿舍；2024現況述地上10層。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-008",
+      "campus": "jianggong",
+      "name": "立體機車停車場",
+      "aliases": [
+        "停車場"
+      ],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/314954012.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-009",
+      "campus": "jianggong",
+      "name": "雙科館",
+      "aliases": [
+        "電機館",
+        "模具館"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/292295499.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "官方現況明載雙科館（模具、電機）；兩系名稱不能額外計為兩棟。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-010",
+      "campus": "jianggong",
+      "name": "行政大樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/577291436.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-011",
+      "campus": "jianggong",
+      "name": "土木一館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/313568512.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-012",
+      "campus": "jianggong",
+      "name": "土木二館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/568740650.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-013",
+      "campus": "jianggong",
+      "name": "學生活動中心暨體育館",
+      "aliases": [
+        "活動中心",
+        "體育館"
+      ],
+      "entity_type": "building_group",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/255788122.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2026防空分配表合稱活動中心暨體育館；先保留合組，物理棟界未核。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-014",
+      "campus": "jianggong",
+      "name": "資訊大樓",
+      "aliases": [
+        "資訊工業大樓暨圖書館",
+        "資訊工業大樓",
+        "建工分館"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/508465360.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "圖書館是本建築內用途，不增列獨立館舍。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-015",
+      "campus": "jianggong",
+      "name": "再生能源館",
+      "aliases": [
+        "太陽能辦公室"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/845915292.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-016",
+      "campus": "jianggong",
+      "name": "圖書文具部",
+      "aliases": [],
+      "entity_type": "facility_boundary_unresolved",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/277724319.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "有獨立避難圖連結，但是否獨立建築待圖面比對；不當成一棟。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-017",
+      "campus": "jianggong",
+      "name": "多功能實習工廠",
+      "aliases": [
+        "多功能實習館",
+        "多功能實習大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/806841807.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-018",
+      "campus": "jianggong",
+      "name": "弘德樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/811782313.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-019",
+      "campus": "jianggong",
+      "name": "勤業樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/819183924.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-020",
+      "campus": "jianggong",
+      "name": "慧樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "jianggong-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/579998647.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-021",
+      "campus": "jianggong",
+      "name": "毅志樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "rebuilt_opened_2022-08-31",
+      "source_refs": [
+        "jianggong-evacuation",
+        "dev2024",
+        "yizhi-open"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1267/458796900.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "新樓地下1層地上11層；原樓2019拆除，不與新樓並算現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6563.php",
+          "source_date": null,
+          "source_id": "jianggong-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://www.nkust.edu.tw/p/404-1000-61456.php",
+          "source_date": "2022-09",
+          "source_id": "yizhi-open"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-001",
+      "campus": "first",
+      "name": "工學院",
+      "aliases": [
+        "工學群實驗大樓（87年）"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/800943536.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-002",
+      "campus": "first",
+      "name": "外語學院",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/316023174.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-003",
+      "campus": "first",
+      "name": "財金學院",
+      "aliases": [
+        "綜合教學大樓",
+        "財經學院",
+        "財務金融學院"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/149485470.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-004",
+      "campus": "first",
+      "name": "電資學院",
+      "aliases": [
+        "工學群（84年）",
+        "電機與資訊學院大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/147781022.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "與87年工學群實驗大樓（現工學院）不同；勿將兩個歷史工學群名混同。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-005",
+      "campus": "first",
+      "name": "管理學院",
+      "aliases": [
+        "服務學群大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/197194692.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-006",
+      "campus": "first",
+      "name": "行政大樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/226133219.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-007",
+      "campus": "first",
+      "name": "圖資大樓",
+      "aliases": [
+        "圖書資訊視聽大樓",
+        "圖書資訊中心",
+        "第一分館",
+        "創夢工場"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/164958449.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "創夢工場屬館內場域，非額外獨立棟。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-008",
+      "campus": "first",
+      "name": "活動中心",
+      "aliases": [
+        "學生活動中心"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/903230399.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-009",
+      "campus": "first",
+      "name": "毒災中心",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/873077819.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "環安目錄與南區材料調度中心各有不同避難圖，不合併。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-010",
+      "campus": "first",
+      "name": "產業創新園區A棟",
+      "aliases": [
+        "產創園區A棟",
+        "產業創新園區第一大樓",
+        "產一大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024",
+        "first-industry-contact",
+        "first-history",
+        "walkmap2023"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/890509374.pdf"
+      ],
+      "plan_review": "first_floor_and_rooftop_floor_visually_reviewed",
+      "architectural_research_status": "partial_model_prepared",
+      "researched_evidence_gaps": [
+        "完整背面立面未獲對照",
+        "避難圖5樓可能為屋頂平台層，與外觀四層主量體的樓層定義需再核",
+        "官方散步圖證明第一西校區外觀；A棟身份為官方A平面/地點/沿革交叉判定，非單一官方照片直接標A"
+      ],
+      "not_yet_researched": [
+        "實測尺寸與層高",
+        "完整屋頂設備",
+        "未曝光立面"
+      ],
+      "notes": "官方明示第一校區西側/楠梓區卓越路2-1號；非深中路燕巢校區。",
+      "subcampus": "west",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://b070.nkust.edu.tw/p/412-1073-85.php",
+          "source_date": null,
+          "source_id": "first-industry-contact"
+        },
+        {
+          "url": "https://gen.nkust.edu.tw/p/412-1008-2236.php",
+          "source_date": null,
+          "source_id": "first-history"
+        },
+        {
+          "url": "https://www.nkust.edu.tw/var/file/0/1000/img/75/880959610.pdf",
+          "source_date": "2023-09-06",
+          "source_id": "walkmap2023"
+        }
+      ],
+      "model_status": "partial_exterior_model_frozen_pending_independent_audit",
+      "plan_source_date": null,
+      "model_claim": "局部主立面研究模型；不得視為整棟完成、施工圖或實測成果",
+      "model_directory": "第一校區（西校區）/buildings/nkust-industry-a-front-segment",
+      "full_building_modeled": false,
+      "model_scope": "只建築師公開照片可辨識的長主立面、兩端近側面和屋頂退台；背面以平面封口，非完整建築測繪。",
+      "model_sources_manifest": "第一校區（西校區）/buildings/nkust-industry-a-front-segment/sources.json"
+    },
+    {
+      "id": "first-011",
+      "campus": "first",
+      "name": "產業創新園區B棟",
+      "aliases": [
+        "產創園區B棟",
+        "產業創新園區第二大樓",
+        "產二大樓",
+        "前瞻鐵道機電技術人才培訓基地"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/794584160.pdf"
+      ],
+      "plan_review": "downloaded_not_visually_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "鐵道培訓基地為本樓用途，不另計一棟。",
+      "subcampus": "west",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-012",
+      "campus": "first",
+      "name": "游泳池",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/299273467.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "west",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-013",
+      "campus": "first",
+      "name": "東校區餐廳及招待所／創業園區",
+      "aliases": [
+        "高科大會館",
+        "高科會館",
+        "高第一招待所",
+        "創業園區",
+        "東校區餐廳"
+      ],
+      "entity_type": "building_group",
+      "components": [
+        "東側餐廳及附屬設施",
+        "招待所／會館"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/111837853.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "85年餐廳及交誼設施轉用；2025東棟耐震補強尚需完工驗收證明。不要把舊名/營運單位再計獨立棟。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-014",
+      "campus": "first",
+      "name": "污水處理廠",
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/427002818.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "能源中心別名僅作待核線索，尚需官方圖面匹配。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null,
+      "unverified_alias_candidates": [
+        "能源中心"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "first-015",
+      "campus": "first",
+      "name": "教師研究大樓",
+      "aliases": [
+        "教師研究室大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/792023358.pdf"
+      ],
+      "plan_review": "downloaded_text_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-016",
+      "campus": "first",
+      "name": "智慧防災工廠",
+      "aliases": [
+        "智慧防災實作工場"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/170773693.pdf"
+      ],
+      "plan_review": "downloaded_text_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-017",
+      "campus": "first",
+      "name": "智慧製造工廠",
+      "aliases": [
+        "智慧製造實作工場"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/480381996.pdf"
+      ],
+      "plan_review": "downloaded_text_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-018",
+      "campus": "first",
+      "name": "跨領域實作工廠",
+      "aliases": [
+        "跨領域實作工場"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/341411454.pdf"
+      ],
+      "plan_review": "downloaded_text_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-019",
+      "campus": "first",
+      "name": "南區專業訓練場暨資材調度中心",
+      "aliases": [
+        "南區毒化災專業訓練中心",
+        "南訓中心",
+        "SERT",
+        "南區材料調度中心"
+      ],
+      "entity_type": "building_group",
+      "components": [
+        "A鋼構訓練部分",
+        "B鋼筋混凝土教學/資材部分",
+        "連接空橋"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024",
+        "sert-space",
+        "sert-function"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/800604941.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "partial_candidate_research",
+      "researched_evidence_gaps": [
+        "官方space頁寫地上7層，function頁寫兩部分各6層；需要逐層圖與現況交叉"
+      ],
+      "not_yet_researched": [
+        "各部分完整多角度實拍",
+        "尺寸與屋頂形狀"
+      ],
+      "notes": "非舊毒災中心同義詞；2024計畫載2021-07落成、政府啟用新聞為2021-08-03，分清完工/啟用。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://sert.nkust.edu.tw/introduction/origin/space/distributed",
+          "source_date": "2023-11-06",
+          "source_id": "sert-space"
+        },
+        {
+          "url": "https://sert.nkust.edu.tw/introduction/origin/space/function",
+          "source_date": "2023-11-06",
+          "source_id": "sert-function"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-020",
+      "campus": "first",
+      "name": "樂群樓",
+      "aliases": [
+        "89年學生宿舍"
+      ],
+      "entity_type": "building_group",
+      "components": [
+        "樂群樓C棟",
+        "樂群樓D棟",
+        "樂群樓E棟"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dorm-names",
+        "first-history"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/199368921.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "三分棟合為一研究群，非一物理建築。",
+      "subcampus": "west",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/16/pta_52539_140283_50300.pdf",
+          "source_date": "2023",
+          "source_id": "dorm-names"
+        },
+        {
+          "url": "https://gen.nkust.edu.tw/p/412-1008-2236.php",
+          "source_date": null,
+          "source_id": "first-history"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-021",
+      "campus": "first",
+      "name": "敬業樓A棟",
+      "aliases": [
+        "84年第一期學生宿舍"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/811736004.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "west",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-022",
+      "campus": "first",
+      "name": "敬業樓B棟",
+      "aliases": [
+        "87年女生宿舍及餐廳大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/449902719.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "west",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-023",
+      "campus": "first",
+      "name": "職務宿舍A",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/866473752.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-024",
+      "campus": "first",
+      "name": "職務宿舍B",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/793812428.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-025",
+      "campus": "first",
+      "name": "職務宿舍C",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/874000581.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "first-026",
+      "campus": "first",
+      "name": "職務宿舍D",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-evacuation",
+        "dev2024"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/134505075.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6564.php",
+          "source_date": null,
+          "source_id": "first-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-001",
+      "campus": "nanzi",
+      "name": "行政大樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/115032619.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-002",
+      "campus": "nanzi",
+      "name": "大仁樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/302270669.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-003",
+      "campus": "nanzi",
+      "name": "大信樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/550413846.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-004",
+      "campus": "nanzi",
+      "name": "弘德樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/431635681.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-005",
+      "campus": "nanzi",
+      "name": "立誠樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/582007990.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-006",
+      "campus": "nanzi",
+      "name": "致遠樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/887356595.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-007",
+      "campus": "nanzi",
+      "name": "寰宇樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/899825751.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-008",
+      "campus": "nanzi",
+      "name": "厚生樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/639290555.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-009",
+      "campus": "nanzi",
+      "name": "海天樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/661549236.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-010",
+      "campus": "nanzi",
+      "name": "英才樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/316557576.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-011",
+      "campus": "nanzi",
+      "name": "樂群樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/433987182.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-012",
+      "campus": "nanzi",
+      "name": "活動中心",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/353407588.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-013",
+      "campus": "nanzi",
+      "name": "圖書館",
+      "aliases": [
+        "圖書資訊視聽館",
+        "圖書資訊館",
+        "楠梓分館"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/592806899.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2025耐震補強設計/2026招標線索，尚未核現行施工或完工狀態。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-014",
+      "campus": "nanzi",
+      "name": "司令台",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/187973649.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-015",
+      "campus": "nanzi",
+      "name": "體育館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/890335572.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-016",
+      "campus": "nanzi",
+      "name": "科技潛水暨水域運動教學發展中心",
+      "aliases": [
+        "潛水池",
+        "職業潛水池"
+      ],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/228273023.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-017",
+      "campus": "nanzi",
+      "name": "水產食品科學系實習大樓",
+      "aliases": [
+        "水食工廠",
+        "水食實習大樓",
+        "水產食品實習大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/183381483.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-018",
+      "campus": "nanzi",
+      "name": "造船實習工廠",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/288306082.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024配置圖A15造船實習工廠，另A11造船系FRP工廠；不可誤合併。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-019",
+      "campus": "nanzi",
+      "name": "黃海樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/164468335.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-020",
+      "campus": "nanzi",
+      "name": "慧海樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/731446917.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-021",
+      "campus": "nanzi",
+      "name": "東海樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/731826762.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "nanzi-022",
+      "campus": "nanzi",
+      "name": "南海樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "nanzi-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1269/146327849.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6566.php",
+          "source_date": null,
+          "source_id": "nanzi-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-001",
+      "campus": "qijin",
+      "name": "鄭和樓（行政大樓）",
+      "aliases": [
+        "行政大樓",
+        "行政中心",
+        "鄭和樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/766705275.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-002",
+      "campus": "qijin",
+      "name": "教學大樓",
+      "aliases": [
+        "教學綜合實習大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/173481833.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-003",
+      "campus": "qijin",
+      "name": "船訓大樓",
+      "aliases": [
+        "商船船員訓練中心",
+        "海事人員訓練處"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/745488809.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "營運單位名稱與船訓大樓合列，勿重複計建物。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-004",
+      "campus": "qijin",
+      "name": "海事大樓",
+      "aliases": [
+        "海事工程實習大樓",
+        "海事工程實習大廈"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/772051060.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-005",
+      "campus": "qijin",
+      "name": "物理化學實驗室",
+      "aliases": [
+        "普通化學/物理實驗室",
+        "普化物理實驗室"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/159302803.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-006",
+      "campus": "qijin",
+      "name": "船舶機械實習工廠",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/471351078.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-007",
+      "campus": "qijin",
+      "name": "立體停車場",
+      "aliases": [
+        "立體機車停車場"
+      ],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/437719974.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-008",
+      "campus": "qijin",
+      "name": "體育館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/621008887.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "qijin-009",
+      "campus": "qijin",
+      "name": "渤海樓",
+      "aliases": [
+        "學生宿舍",
+        "渤海樓學生宿舍"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "qijin-evacuation",
+        "defense2026",
+        "dorm-names"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1270/155838152.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6567.php",
+          "source_date": null,
+          "source_id": "qijin-evacuation"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        },
+        {
+          "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/16/pta_52539_140283_50300.pdf",
+          "source_date": "2023",
+          "source_id": "dorm-names"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "yanchao-001",
+      "campus": "yanchao",
+      "name": "行政大樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "yanchao-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1271/919265210.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6568.php",
+          "source_date": null,
+          "source_id": "yanchao-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "yanchao-002",
+      "campus": "yanchao",
+      "name": "創新設計學院大樓",
+      "aliases": [
+        "創新設計大樓",
+        "創設大樓",
+        "人文社會學院大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "yanchao-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1271/152593681.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6568.php",
+          "source_date": null,
+          "source_id": "yanchao-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "yanchao-003",
+      "campus": "yanchao",
+      "name": "圖資大樓",
+      "aliases": [
+        "圖書資訊大樓",
+        "圖資館",
+        "燕巢分館"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "yanchao-evacuation",
+        "dev2024",
+        "yanchao-library-photo",
+        "library-floor4"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1271/767205939.pdf"
+      ],
+      "plan_review": "parent_downloaded_and_reviewed_2020_pdf",
+      "architectural_research_status": "partial_model_prepared",
+      "researched_evidence_gaps": [
+        "圖資大樓右轉翼/背面未完整對照",
+        "平面圖為2020製檔，未確認所有後續改修是否反映"
+      ],
+      "not_yet_researched": [
+        "實測尺寸與層高",
+        "完整屋頂設備",
+        "未曝光立面"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6568.php",
+          "source_date": null,
+          "source_id": "yanchao-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://app.lib.nkust.edu.tw/photo_contest/photo_list.php",
+          "source_date": null,
+          "source_id": "yanchao-library-photo"
+        },
+        {
+          "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/80/pta_28425_2822845_92148.pdf",
+          "source_date": "2019",
+          "source_id": "library-floor4"
+        }
+      ],
+      "model_status": "partial_exterior_model_frozen_pending_independent_audit",
+      "plan_source_date": null,
+      "model_claim": "局部主立面研究模型；不得視為整棟完成、施工圖或實測成果",
+      "model_directory": "燕巢校區/buildings/nkust-yanchao-library-entrance-wing",
+      "full_building_modeled": false,
+      "model_scope": "只含長入口翼及其右端玻璃接點塔。照片右側轉折圖書館翼、完整後方服务區、室內與基地坡面不在本件範圍；不可稱為全館。",
+      "model_sources_manifest": "燕巢校區/buildings/nkust-yanchao-library-entrance-wing/sources.json"
+    },
+    {
+      "id": "yanchao-004",
+      "campus": "yanchao",
+      "name": "管一大樓",
+      "aliases": [
+        "管理學院一期大樓",
+        "商業智慧學院一期大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "yanchao-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1271/855534509.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "商業智慧學院/原管理學院為用途別名，勿另建一棟。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6568.php",
+          "source_date": null,
+          "source_id": "yanchao-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "yanchao-005",
+      "campus": "yanchao",
+      "name": "管二大樓",
+      "aliases": [
+        "管理學院二期大樓",
+        "商業智慧學院二期大樓"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "yanchao-evacuation"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1271/385276606.pdf"
+      ],
+      "plan_review": "official_link_verified_only",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6568.php",
+          "source_date": null,
+          "source_id": "yanchao-evacuation"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "yanchao-006",
+      "campus": "yanchao",
+      "name": "學生宿舍群（樂知樓、詠絮樓、涵芳樓）",
+      "aliases": [
+        "學生宿舍",
+        "樂知樓",
+        "詠絮樓",
+        "涵芳樓"
+      ],
+      "entity_type": "building_group",
+      "components": [
+        "樂知樓",
+        "詠絮樓",
+        "涵芳樓"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "yanchao-evacuation",
+        "dev2024",
+        "defense2026",
+        "dorm-names"
+      ],
+      "plan_sources": [
+        "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1271/146817895.pdf"
+      ],
+      "plan_review": "downloaded_text_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "避難PDF合稱宿舍，本輪未逐頁拆分對應栋界；三名不另立重复項。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://shecenter.nkust.edu.tw/p/412-1023-6568.php",
+          "source_date": null,
+          "source_id": "yanchao-evacuation"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        },
+        {
+          "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/16/pta_52539_140283_50300.pdf",
+          "source_date": "2023",
+          "source_id": "dorm-names"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "plan_source_date": null
+    },
+    {
+      "id": "jianggong-022",
+      "campus": "jianggong",
+      "name": "北棟教學大樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2021-03-08登錄歷史建築，2023-09-23修復開工；預計2025-10不是竣工證明，2026現況未核。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-023",
+      "campus": "jianggong",
+      "name": "機械館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "環安目錄未列，但2024現況及2026防空表列入。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-024",
+      "campus": "jianggong",
+      "name": "機械科材料室",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024現況另列，不能自動合併機械館。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-025",
+      "campus": "jianggong",
+      "name": "員生餐廳",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024現況及2026防空表列入。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-026",
+      "campus": "jianggong",
+      "name": "游泳池",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024配置圖及現況列入，露天/附屬建築棟界尚待核。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-027",
+      "campus": "jianggong",
+      "name": "便利商店",
+      "aliases": [],
+      "entity_type": "facility_boundary_unresolved",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024配置圖標示，是否現毅志樓底層超商或另一位置須現況核。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-028",
+      "campus": "jianggong",
+      "name": "原中棟教室、原南棟教室",
+      "aliases": [],
+      "entity_type": "historical_removed",
+      "components": [
+        "原中棟",
+        "原南棟"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "demolished_2019",
+      "source_refs": [
+        "removed2019"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "保留歷史排除記錄；不建為現役校舍。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://secretary.nkust.edu.tw/var/file/2/1002/attach/40/pta_28598_5065063_97991.pdf",
+          "source_date": "2019",
+          "source_id": "removed2019"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-027",
+      "campus": "first",
+      "name": "憲章館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-xianzhang"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "震害防制實驗室。需核與工學院結構界線；不因實驗室名而重複。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://ce1.nkust.edu.tw/p/405-1096-24105%2Cc5161.php?Lang=zh-tw",
+          "source_date": null,
+          "source_id": "first-xianzhang"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-028",
+      "campus": "first",
+      "name": "實作工場I、II",
+      "aliases": [],
+      "entity_type": "building_group",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-history",
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "90年/95年各一實作工場，與105年跨領域/智慧工場關係未完成逐棟核對。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://gen.nkust.edu.tw/p/412-1008-2236.php",
+          "source_date": null,
+          "source_id": "first-history"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-029",
+      "campus": "first",
+      "name": "台灣先進材料成形技術中心",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "first-material2026",
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2026-04-11已有實地參訪；勿沿用2024計畫仍建造中的狀態。",
+      "subcampus": "east",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://www.nkust.edu.tw/p/406-1000-102166%2Cr1363.php",
+          "source_date": "2026-04-13",
+          "source_id": "first-material2026"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "nanzi-023",
+      "campus": "nanzi",
+      "name": "造船系FRP工廠",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024配置圖A11；獨立於A15造船實習工廠。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "nanzi-024",
+      "campus": "nanzi",
+      "name": "藝文中心",
+      "aliases": [],
+      "entity_type": "facility_boundary_unresolved",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024配置圖B02位於厚生樓附近；是否附屬相連須核。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "nanzi-025",
+      "campus": "nanzi",
+      "name": "海洋工程實習大樓",
+      "aliases": [],
+      "entity_type": "alias_or_boundary_unresolved",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024現況段落列此名，但配置圖列造船實習工廠/FRP工廠；先保留待匹配線索，不能再加算一棟。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-007",
+      "campus": "yanchao",
+      "name": "教職員生宿舍",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "defense2026",
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2026防災表與涵芳樓分列；2024現況文字可能統稱職務宿舍/涵芳，棟界及別名待圖面核。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-008",
+      "campus": "yanchao",
+      "name": "智善廳",
+      "aliases": [
+        "智善樓"
+      ],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "defense2026",
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2026防空表寫智善樓，地圖寫智善廳；作同一研究項。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-009",
+      "campus": "yanchao",
+      "name": "資源回收廠",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "defense2026",
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-010",
+      "campus": "yanchao",
+      "name": "污水處理廠",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "defense2026",
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-011",
+      "campus": "yanchao",
+      "name": "超商門市",
+      "aliases": [],
+      "entity_type": "facility_boundary_unresolved",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "defense2026",
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "地圖單列，可能為小型獨立店鋪；未完成棟界查證。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        },
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-010",
+      "campus": "qijin",
+      "name": "艇庫",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024配置圖A06、2026防空表。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-011",
+      "campus": "qijin",
+      "name": "旗津圖書館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2026防災圖位於中洲三路524號側；勿混同教學大樓。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-012",
+      "campus": "qijin",
+      "name": "教職員宿舍群",
+      "aliases": [],
+      "entity_type": "building_group",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024配置圖D02、D03均名教職員宿舍；2026稱職員宿舍。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-013",
+      "campus": "qijin",
+      "name": "游泳池",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "524號側；非體育館別名。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-014",
+      "campus": "qijin",
+      "name": "海上求生及滅火訓練場",
+      "aliases": [],
+      "entity_type": "facility_area",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "包含滅火場與訓練設施；非整項一棟。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-015",
+      "campus": "qijin",
+      "name": "風電高空作業訓練塔",
+      "aliases": [],
+      "entity_type": "ancillary_structure",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "listed_existing_at_source_date",
+      "source_refs": [
+        "dev2024",
+        "defense2026"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "12米訓練塔/風電訓練基地部分；非教學大樓。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/var/file/33/1033/img/1805/107249040.pdf",
+          "source_date": "2026-02-25",
+          "source_id": "defense2026"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-001",
+      "campus": "tungfang",
+      "name": "行政大樓",
+      "aliases": [],
+      "entity_type": "building_group",
+      "components": [
+        "A-a",
+        "A-b"
+      ],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "managed_assessment_or_reuse_planning_2025",
+      "source_refs": [
+        "dev2024",
+        "tungfang-repair"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2025-09-19會議記錄耐震詳細評估/規劃，非已完成改建或已進駐證明。 2025評估分為A-a、A-b；本輪合組，不能把一個圖號視為一物理棟。",
+      "map_code": "A",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+          "source_date": "2025-09-19",
+          "source_id": "tungfang-repair"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-002",
+      "campus": "tungfang",
+      "name": "藝術中心",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "managed_assessment_or_reuse_planning_2025",
+      "source_refs": [
+        "dev2024",
+        "tungfang-repair"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2025-09-19會議記錄耐震詳細評估/規劃，非已完成改建或已進駐證明。",
+      "map_code": "B",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+          "source_date": "2025-09-19",
+          "source_id": "tungfang-repair"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-003",
+      "campus": "tungfang",
+      "name": "新世紀大樓",
+      "aliases": [
+        "女生宿舍",
+        "民生學院合署辦公室"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "acquired_and_industrial_park_opened_2026-01-21",
+      "source_refs": [
+        "dev2024",
+        "tungfang2026",
+        "tungfang-repair"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2026-01-21官方揭牌新聞明確點名已取得。用途配置仍以最新修繕/進駐文件再核。 舊圖C內含多用途，只列一項。",
+      "map_code": "C",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://www.nkust.edu.tw/p/406-1000-100217%2Cr1363.php",
+          "source_date": "2026-01-21",
+          "source_id": "tungfang2026"
+        },
+        {
+          "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+          "source_date": "2025-09-19",
+          "source_id": "tungfang-repair"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-004",
+      "campus": "tungfang",
+      "name": "師生餐廳",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "D",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-005",
+      "campus": "tungfang",
+      "name": "男生宿舍",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "E",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-006",
+      "campus": "tungfang",
+      "name": "圖書資訊大樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "acquired_and_industrial_park_opened_2026-01-21",
+      "source_refs": [
+        "dev2024",
+        "tungfang2026",
+        "tungfang-repair"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2026-01-21官方揭牌新聞明確點名已取得。用途配置仍以最新修繕/進駐文件再核。",
+      "map_code": "F",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://www.nkust.edu.tw/p/406-1000-100217%2Cr1363.php",
+          "source_date": "2026-01-21",
+          "source_id": "tungfang2026"
+        },
+        {
+          "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+          "source_date": "2025-09-19",
+          "source_id": "tungfang-repair"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-007",
+      "campus": "tungfang",
+      "name": "G館（舊圖名稱待核）",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_name_needs_verification",
+      "researched_evidence_gaps": [
+        "原圖G字形需要高解析原圖或原校建物表核字"
+      ],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方地圖G圖號；縮圖字形疑讀遊動館，未取得其他官方文字交叉確認。不可憑常見名稱改作活動館、游藝館，也不可當已完成NKUST接管。",
+      "map_code": "G",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task",
+      "unverified_name_reading": "遊動館（圖像字形低信心）"
+    },
+    {
+      "id": "tungfang-008",
+      "campus": "tungfang",
+      "name": "綜合教學大樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "H",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-009",
+      "campus": "tungfang",
+      "name": "中正樓",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "JA",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-010",
+      "campus": "tungfang",
+      "name": "美工二館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "JB",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-011",
+      "campus": "tungfang",
+      "name": "應用學院合署辦公室／包浩斯設計中心",
+      "aliases": [
+        "電機館"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "managed_assessment_or_reuse_planning_2025",
+      "source_refs": [
+        "dev2024",
+        "tungfang-repair"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2025-09-19會議記錄耐震詳細評估/規劃，非已完成改建或已進駐證明。 2025規劃車輛系，部分樓層能源系。",
+      "map_code": "K",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+          "source_date": "2025-09-19",
+          "source_id": "tungfang-repair"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-012",
+      "campus": "tungfang",
+      "name": "體育館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "L",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-013",
+      "campus": "tungfang",
+      "name": "行銷館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "M",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-014",
+      "campus": "tungfang",
+      "name": "美工一館(A)",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "N",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-015",
+      "campus": "tungfang",
+      "name": "食品工廠",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "P",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-016",
+      "campus": "tungfang",
+      "name": "餐飲館",
+      "aliases": [],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "legacy_tungfang_map_current_transfer_unverified",
+      "source_refs": [
+        "dev2024"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2024官方計畫所附原東方校園圖；非2026全面接管或現役使用證明。",
+      "map_code": "Q",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-017",
+      "campus": "tungfang",
+      "name": "美工一館(B)",
+      "aliases": [
+        "化工二館"
+      ],
+      "entity_type": "building_candidate",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "managed_assessment_or_reuse_planning_2025",
+      "source_refs": [
+        "dev2024",
+        "tungfang-repair"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2025-09-19會議記錄耐震詳細評估/規劃，非已完成改建或已進駐證明。 同一編號R在舊圖為美工一館(B)，2025文稱化工二館，不新增另一棟。",
+      "map_code": "R",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+          "source_date": "2025-09-19",
+          "source_id": "tungfang-repair"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "tungfang-018",
+      "campus": "tungfang",
+      "name": "數位教學大樓／福田繁雄設計藝術館",
+      "aliases": [],
+      "entity_type": "building_group",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "reuse_repair_planning_2025",
+      "source_refs": [
+        "dev2024",
+        "tungfang-repair"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "2025-09-19會議稱六樓規劃國際學院使用；不是正式進駐證明。",
+      "map_code": "S",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://public.nkust.edu.tw/var/file/56/1056/img/1466/240632832.pdf",
+          "source_date": "2024-12",
+          "source_id": "dev2024"
+        },
+        {
+          "url": "https://ofa.nkust.edu.tw/p/450-1001-96762%2Cc0.php?Lang=zh-tw",
+          "source_date": "2025-09-19",
+          "source_id": "tungfang-repair"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-029",
+      "campus": "jianggong",
+      "name": "教育暨推廣大樓",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "jianggong-030",
+      "campus": "jianggong",
+      "name": "產學合作大樓(BOT)",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-030",
+      "campus": "first",
+      "name": "智慧機電學院新大樓",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-031",
+      "campus": "first",
+      "name": "新工學院大樓",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-032",
+      "campus": "first",
+      "name": "新電資學院大樓",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-033",
+      "campus": "first",
+      "name": "綜合教學新大樓",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "first-034",
+      "campus": "first",
+      "name": "產業創新園區第三大樓",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "nanzi-026",
+      "campus": "nanzi",
+      "name": "海事暨產學合作綜合大樓(BOT)",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-012",
+      "campus": "yanchao",
+      "name": "智慧科技學院大樓",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022",
+        "construction2025"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        },
+        {
+          "url": "https://secretary.nkust.edu.tw/app/index.php?Action=downloadfile&cg=11028&file=WVhSMFlXTm9Mekl2Y0hSaFh6Y3pOVEkxWHpjME1EQTVNbDgwTlRrd05pNXdaR1k9&fname=WW54RPOKIC44VXMP44VWROWTSTNKNPWSRKFGGC35LPIDPOA5FCB4A0SWFH54IGA0KKPOSSMLA4VWTXJGYWJGA0XSOPRKYWMK01YTNOB5SWEC34SWCCLKCDRKSS44XX05EDNO41MOMKHCPOYS20RO04YSIHRL04B0SWECFGQOYSA4LKQKKKCGA500IG04GD34VWJGGDB1B430A1A1",
+          "source_date": "2025",
+          "source_id": "construction2025"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-013",
+      "campus": "yanchao",
+      "name": "教職員生宿舍第二期",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022",
+        "construction2025"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        },
+        {
+          "url": "https://secretary.nkust.edu.tw/app/index.php?Action=downloadfile&cg=11028&file=WVhSMFlXTm9Mekl2Y0hSaFh6Y3pOVEkxWHpjME1EQTVNbDgwTlRrd05pNXdaR1k9&fname=WW54RPOKIC44VXMP44VWROWTSTNKNPWSRKFGGC35LPIDPOA5FCB4A0SWFH54IGA0KKPOSSMLA4VWTXJGYWJGA0XSOPRKYWMK01YTNOB5SWEC34SWCCLKCDRKSS44XX05EDNO41MOMKHCPOYS20RO04YSIHRL04B0SWECFGQOYSA4LKQKKKCGA500IG04GD34VWJGGDB1B430A1A1",
+          "source_date": "2025",
+          "source_id": "construction2025"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "yanchao-014",
+      "campus": "yanchao",
+      "name": "多功能健康活動中心",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-016",
+      "campus": "qijin",
+      "name": "海景餐廳",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    },
+    {
+      "id": "qijin-017",
+      "campus": "qijin",
+      "name": "國際級海事人員訓練中心",
+      "aliases": [],
+      "entity_type": "planned_project",
+      "components": [],
+      "physical_building_count": null,
+      "boundary_verified": false,
+      "existence_status": "planning_only_latest_completion_unverified",
+      "source_refs": [
+        "longterm2022"
+      ],
+      "plan_sources": [],
+      "plan_review": "not_reviewed",
+      "architectural_research_status": "inventory_only",
+      "researched_evidence_gaps": [],
+      "not_yet_researched": [
+        "逐面現況照片與拍攝日期",
+        "高度與層高",
+        "屋頂與背面",
+        "建築/連廊/附屬設施棟界"
+      ],
+      "notes": "只確認官方規劃，未查得本輪可證實竣工/現役之官方文件；不能按計畫預定年份自動視為現存。",
+      "accessed_date": "2026-10-13",
+      "sources": [
+        {
+          "url": "https://personnel.nkust.edu.tw/var/file/19/1019/img/2070/117531982.pdf",
+          "source_date": "2022-10",
+          "source_id": "longterm2022"
+        }
+      ],
+      "model_status": "not_modeled_in_this_inventory_task"
+    }
+  ],
+  "research_item_summary": {
+    "total_research_items": 139,
+    "by_campus": {
+      "jianggong": 30,
+      "first": 34,
+      "nanzi": 26,
+      "qijin": 17,
+      "yanchao": 14,
+      "tungfang": 18
+    },
+    "by_entity_type": {
+      "building_group": 11,
+      "building_candidate": 94,
+      "ancillary_structure": 14,
+      "facility_boundary_unresolved": 4,
+      "historical_removed": 1,
+      "alias_or_boundary_unresolved": 1,
+      "facility_area": 1,
+      "planned_project": 13
+    }
+  },
+  "recommended_candidates": [
+    {
+      "research_item_id": "first-010",
+      "name": "第一校區西區產業創新園區A棟主立面段",
+      "recommendation": "優先；規則窗帶和斜側框，可做有證據局部",
+      "photo_sources": [
+        "https://www.infinitearchi.com/blank-15",
+        "https://www.nkust.edu.tw/var/file/0/1000/img/75/880959610.pdf#page=6"
+      ],
+      "plan_source": "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1268/890509374.pdf",
+      "evidence_scope": "建築師兩角實拍已視讀；本輪視讀官方散步圖同外觀剪圖、一樓及屋頂層平面；不是完整四立面證據"
+    },
+    {
+      "research_item_id": "yanchao-003",
+      "name": "燕巢校區圖資大樓已曝光主立面段",
+      "recommendation": "可做局部；勿延伸到未證右轉翼",
+      "photo_sources": [
+        "https://app.lib.nkust.edu.tw/photo_contest/photo_list.php",
+        "https://www.nkust.edu.tw/var/file/0/1000/img/75/880959610.pdf#page=3"
+      ],
+      "plan_source": "https://shecenter.nkust.edu.tw/var/file/23/1023/img/1271/767205939.pdf",
+      "evidence_scope": "官方圖書館攝影作品已逐張研究；本輪視讀官方散步圖；已讀2020避難平面圖"
+    }
+  ],
+  "priority_next_checks": [
+    {
+      "scope": "建工",
+      "task": "北棟修復竣工/校史館正式啟用，以及東西前後棟A/B對照",
+      "status": "researched_actual_gap",
+      "reason": "已讀修復開工與預定完工，未得正式完工證據；不能把預定日期當現況"
+    },
+    {
+      "scope": "第一",
+      "task": "南訓中心A/B層數與空橋、舊毒災中心區別",
+      "status": "researched_actual_gap",
+      "reason": "兩個官方頁面寫6/7層不一致，且環安目錄两個不同項"
+    },
+    {
+      "scope": "東方",
+      "task": "2026-01-21後各棟取得、耐震與進駐最新狀態",
+      "status": "researched_actual_gap",
+      "reason": "已查2024代管、2025評估、2026C/F揭牌；其餘取得/竣工不能推論"
+    },
+    {
+      "scope": "各校區",
+      "task": "除了兩個局部候選以外所有建築的逐面照片、屋頂/層高研究",
+      "status": "not_yet_researched",
+      "reason": "本輪只建立官方清單與平面圖索引，不能把尚未搜尋寫成證據不存在"
+    },
+    {
+      "scope": "各校區",
+      "task": "資產建物清冊與竣工總圖、未命名機房/警衛室/棚架/附屬設施全面核對",
+      "status": "not_yet_researched",
+      "reason": "現有官方地圖與逃生目錄不是完整實體資產表"
+    }
+  ],
+  "delivery_policy": "公開交付只包含本清冊與撰寫的交接說明及原始官方URL；不打包sources目錄中的第三方PDF/照片/HTML/渲染。",
+  "release_note": "此清冊139個研究項並非139棟。兩件局部外觀模型已完成製作者數位QA及外觀覆核；獨立幾何審核待完成，全校尚未完成。"
+}

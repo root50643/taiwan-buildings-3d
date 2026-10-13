@@ -2,9 +2,9 @@
 
 [返回臺大總圖鑑](../README.md)
 
-本校區目前37件外觀近似，不代表全部建築完成。各件獨立150mm；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
+本校區目前40件外觀近似，不代表全部建築完成。各件獨立150mm；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
 
-原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為40件整合版本的校區入口。
+原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為43件整合版本的校區入口。
 
 | 建築一 | 建築二 | 建築三 |
 |---|---|---|
@@ -20,4 +20,5 @@
 | [![地質科學館（三層前棟）](buildings/ntu-geology-front/previews/front.png)](buildings/ntu-geology-front/README.md)<br>[地質科學館（三層前棟）](buildings/ntu-geology-front/README.md) | [![植物標本館（主館）](buildings/ntu-herbarium-main/previews/front.png)](buildings/ntu-herbarium-main/README.md)<br>[植物標本館（主館）](buildings/ntu-herbarium-main/README.md) | [![磯永吉紀念室（2026修繕前外觀）](buildings/ntu-iso-cottage-pre-restoration/previews/front.png)](buildings/ntu-iso-cottage-pre-restoration/README.md)<br>[磯永吉紀念室（2026修繕前外觀）](buildings/ntu-iso-cottage-pre-restoration/README.md) |
 | [![氣象館A館](buildings/ntu-meteorology-a/previews/front.png)](buildings/ntu-meteorology-a/README.md)<br>[氣象館A館](buildings/ntu-meteorology-a/README.md) | [![食品科技館（原館前部）](buildings/ntu-food-science-front/previews/front.png)](buildings/ntu-food-science-front/README.md)<br>[食品科技館（原館前部）](buildings/ntu-food-science-front/README.md) | [![地理館（前部）](buildings/ntu-geography-front/previews/front.png)](buildings/ntu-geography-front/README.md)<br>[地理館（前部）](buildings/ntu-geography-front/README.md) |
 | [![地質標本館小屋](buildings/ntu-geological-specimen-cottage/previews/front.png)](buildings/ntu-geological-specimen-cottage/README.md)<br>[地質標本館小屋](buildings/ntu-geological-specimen-cottage/README.md) | [![語文大樓（前部）](buildings/ntu-language-front/previews/front.png)](buildings/ntu-language-front/README.md)<br>[語文大樓（前部）](buildings/ntu-language-front/README.md) | [![霖澤館（主棟）](buildings/ntu-linze-main/previews/front.png)](buildings/ntu-linze-main/README.md)<br>[霖澤館（主棟）](buildings/ntu-linze-main/README.md) |
-| [![萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/previews/front.png)](buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/README.md) |  |  |
+| [![萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/previews/front.png)](buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/README.md) | [![博理館](buildings/ntu-bory-hall/previews/front.png)](buildings/ntu-bory-hall/README.md)<br>[博理館](buildings/ntu-bory-hall/README.md) | [![化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/previews/front.png)](buildings/ntu-chemical-engineering-entry/README.md)<br>[化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/README.md) |
+| [![社會科學院主棟](buildings/ntu-social-sciences-main/previews/front.png)](buildings/ntu-social-sciences-main/README.md)<br>[社會科學院主棟](buildings/ntu-social-sciences-main/README.md) |  |  |

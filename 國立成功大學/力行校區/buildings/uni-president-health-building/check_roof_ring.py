@@ -38,7 +38,7 @@ for z in [102.071]:
    p=Polygon(loop)
    assert a==seed and p.is_valid, f'Invalid closed loop at {z}'
    if p.area>1e-8:shape=shape.symmetric_difference(p)
- if not shape.is_valid:shape=shape.buffer(0)
+ assert shape.is_valid, f'Invalid composite section at {z}'
 
 polys=list(shape.geoms) if hasattr(shape,"geoms") else [shape]
 rings=[{"z_mm":102.071,"minimum_outer_to_inner_boundary_distance_mm":min(poly.exterior.distance(inner) for inner in poly.interiors),"ring_area_mm2":poly.area,"bounds":list(poly.bounds)} for poly in polys if poly.interiors]

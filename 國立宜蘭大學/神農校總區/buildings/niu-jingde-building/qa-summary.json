@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": {
+    "all_commands_exit_zero": true,
+    "all_original_mesh_checks_true": true,
+    "all_0p2mm_layer_checks_true": true,
+    "thin_screen_completed": true,
+    "canonical_fail_closed_v3_sha_matches": true,
+    "reports_match_current_stl": true
+  },
+  "commands": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "script_sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "script": "check_layers.py",
+      "exit_code": 0,
+      "script_sha256": "fd481ab48775f7bb91cb06471e61b525c08e14bd640dc124b50c51da947cc548"
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0,
+      "script_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915"
+    }
+  ],
+  "stl_sha256": "1621b5d9a863db687ba9b426bef0c7d014a9330138dbdb3a6858bdda71e359c4",
+  "blend_sha256": "c0f4953cc23231481dfb028eb2f695ac8752fda0c05d7041c3b51b60b42207eb",
+  "dimensions_mm": [
+    138.0,
+    150.0,
+    84.0
+  ],
+  "layer_count_0p2mm": 420,
+  "thin_layer_count_1mm": 84,
+  "thin_max_opening_loss_fraction": 0.0007939783994979727,
+  "thin_over_one_percent_layers": 0,
+  "note": "Morphological opening loss includes corners; visual review and backed detail dimensions are documented in README. Not a slicer toolpath or physical-print test.",
+  "source_images_packaged": false
+}

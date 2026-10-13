@@ -38,7 +38,7 @@ for z in np.arange(.071,m.bounds[1,2],.2):
    p=Polygon(loop)
    assert a==seed and p.is_valid, f'Invalid closed loop at {z}'
    if p.area>1e-8:shape=shape.symmetric_difference(p)
- if not shape.is_valid:shape=shape.buffer(0)
+ assert shape.is_valid, f'Invalid composite section at {z}'
  rows.append({'z_mm':round(float(z),3),'area_mm2':float(shape.area)})
 report={'method':'canonical shared-edge intersections, 0.2mm pitch, z offset0.071mm; all nodes degree2, each loop closed and Polygon valid asserted','sampled_layers':len(rows),'all_sampled_contours_closed_and_valid':True,'not_a_slicer':True,'not_exhaustive_self_intersection_test':True,'thin_feature_opening_not_performed_in_this_audit':True,'sections':rows}
 (R/'contour-validity-check.json').write_text(json.dumps(report,indent=2));print(report['sampled_layers'])

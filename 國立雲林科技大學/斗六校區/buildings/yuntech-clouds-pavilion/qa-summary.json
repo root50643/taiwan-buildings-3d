@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": {
+    "original_stl_all_checks_true": true,
+    "source_rebuild_sha_equal": true,
+    "saved_blend_geometry_equal": true,
+    "every_0_2mm_layer_passed": true,
+    "all_individual_and_combined_contours_valid": true,
+    "no_contour_repair": true,
+    "canonical_v3_validator_hash": true,
+    "thin_screen_completed": true,
+    "thin_screen_no_layer_over_1_percent": true
+  },
+  "dimensions_mm": [
+    76.0,
+    76.0,
+    150.0
+  ],
+  "sampled_0_2mm_layers": 750,
+  "thin_screen": {
+    "method": "Actual STL XY sections with canonical edge interpolation and closed-loop assertions at 1.0mm pitch, z offset .071mm; morphological opening radius 0.4mm. Narrow tips and sharp corners also contribute.",
+    "reference_width_mm": 0.8,
+    "sampled_layers": 150,
+    "layers_over_one_percent_opening_loss": 0,
+    "maximum_opening_loss_fraction": 0.0076009094653084665,
+    "not_a_slicer": true,
+    "not_exhaustive_wall_thickness": true,
+    "judgment": "Review fine roof/rim/corner regions and use supports where needed; no automatic printability claim."
+  },
+  "stl_sha256": "949be122ac7d08a0f80eda8b58e68c3858e068ba980a88160e9a163c250f04f3",
+  "support_warning": "底層柱廊與上層出簷有懸空，通常需支撐或調整列印策略；勿宣稱免支撐。塔體細長，搬取時請抓底座。",
+  "not_a_slicer_or_physical_print_test": true
+}

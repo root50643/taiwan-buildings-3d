@@ -1,0 +1,147 @@
+{
+  "school": "國立臺北大學",
+  "date": "2026-10-13",
+  "stage": "independent_geometry_audit_passed; publication_wrapper_v1_links_and_hashes_passed",
+  "models": [
+    {
+      "slug": "ntpu-library-main-block-segment",
+      "source_stl": "../三峽校區/buildings/ntpu-library-main-block-segment/model.stl",
+      "source_sha256": "1c3e243f7690ccdc48492d27094a98953972df12517fda30827776a750450ac4",
+      "steps": [
+        {
+          "script": "build_model.py",
+          "exit_code": 0,
+          "seconds": 3.77
+        },
+        {
+          "script": "check_contour_validity.py",
+          "exit_code": 0,
+          "seconds": 6.34
+        },
+        {
+          "script": "check_thin_features.py",
+          "exit_code": 0,
+          "seconds": 2.23
+        }
+      ],
+      "rebuild_sha256": "1c3e243f7690ccdc48492d27094a98953972df12517fda30827776a750450ac4",
+      "rebuild_matches": true,
+      "contour-validity-check.json": {
+        "passed": true,
+        "checks": {
+          "all_nodes_degree_two": true,
+          "all_individual_polygons_valid": true,
+          "all_composite_sections_valid": true
+        },
+        "stl_sha256": "1c3e243f7690ccdc48492d27094a98953972df12517fda30827776a750450ac4",
+        "method": "canonical shared-edge intersections, 0.2mm pitch, z offset0.071mm; all nodes degree2, each loop closed and Polygon valid asserted",
+        "sampled_layers": 415,
+        "all_sampled_contours_closed_and_valid": true,
+        "not_a_slicer": true,
+        "not_exhaustive_self_intersection_test": true,
+        "thin_feature_opening_not_performed_in_this_audit": true
+      },
+      "all_0p2mm_sections_closed_valid": true,
+      "thin-feature-check.json": {
+        "passed": true,
+        "checks": {
+          "all_sampled_contours_closed_valid": true,
+          "maximum_opening_loss_below_one_percent": true
+        },
+        "stl_sha256": "1c3e243f7690ccdc48492d27094a98953972df12517fda30827776a750450ac4",
+        "method": "Actual STL XY sections with canonical edge interpolation and closed-loop assertions at 1.0mm pitch, z offset .071mm; morphological opening radius 0.4mm. Narrow tips and sharp corners also contribute.",
+        "reference_width_mm": 0.8,
+        "sampled_layers": 83,
+        "layers_over_one_percent_opening_loss": 0,
+        "maximum_opening_loss_fraction": 0.0019457580191839384,
+        "not_a_slicer": true,
+        "not_exhaustive_wall_thickness": true,
+        "judgment": "Review fine roof/rim/corner regions and use supports where needed; no automatic printability claim."
+      },
+      "source_unchanged": true,
+      "copied_stl_unchanged": true,
+      "passed": true
+    },
+    {
+      "slug": "ntpu-mind-lake-hall",
+      "source_stl": "../三峽校區/buildings/ntpu-mind-lake-hall/model.stl",
+      "source_sha256": "00d317de3628ecc8922c0da391d53adfa0a40e9703e9daa5c7fdda2b21cc2136",
+      "steps": [
+        {
+          "script": "build_model.py",
+          "exit_code": 0,
+          "seconds": 0.76
+        },
+        {
+          "script": "check_contour_validity.py",
+          "exit_code": 0,
+          "seconds": 1.42
+        },
+        {
+          "script": "check_thin_features.py",
+          "exit_code": 0,
+          "seconds": 0.89
+        }
+      ],
+      "rebuild_sha256": "00d317de3628ecc8922c0da391d53adfa0a40e9703e9daa5c7fdda2b21cc2136",
+      "rebuild_matches": true,
+      "contour-validity-check.json": {
+        "passed": true,
+        "checks": {
+          "all_nodes_degree_two": true,
+          "all_individual_polygons_valid": true,
+          "all_composite_sections_valid": true
+        },
+        "stl_sha256": "00d317de3628ecc8922c0da391d53adfa0a40e9703e9daa5c7fdda2b21cc2136",
+        "method": "canonical shared-edge intersections, 0.2mm pitch, z offset0.071mm; all nodes degree2, each loop closed and Polygon valid asserted",
+        "sampled_layers": 158,
+        "all_sampled_contours_closed_and_valid": true,
+        "not_a_slicer": true,
+        "not_exhaustive_self_intersection_test": true,
+        "thin_feature_opening_not_performed_in_this_audit": true
+      },
+      "all_0p2mm_sections_closed_valid": true,
+      "thin-feature-check.json": {
+        "passed": true,
+        "checks": {
+          "all_sampled_contours_closed_valid": true,
+          "maximum_opening_loss_below_one_percent": true
+        },
+        "stl_sha256": "00d317de3628ecc8922c0da391d53adfa0a40e9703e9daa5c7fdda2b21cc2136",
+        "method": "Actual STL XY sections with canonical edge interpolation and closed-loop assertions at 1.0mm pitch, z offset .071mm; morphological opening radius 0.4mm. Narrow tips and sharp corners also contribute.",
+        "reference_width_mm": 0.8,
+        "sampled_layers": 32,
+        "layers_over_one_percent_opening_loss": 0,
+        "maximum_opening_loss_fraction": 0.005217302109176024,
+        "not_a_slicer": true,
+        "not_exhaustive_wall_thickness": true,
+        "judgment": "Review fine roof/rim/corner regions and use supports where needed; no automatic printability claim."
+      },
+      "source_unchanged": true,
+      "copied_stl_unchanged": true,
+      "passed": true
+    }
+  ],
+  "geometry_summary": {
+    "original_stl_single_surface_shell": true,
+    "edge_two_faces_and_vertex_link_cycle": true,
+    "positive_volume_normals_and_winding": true,
+    "max_dimension_150_mm": true,
+    "saved_blend_matches_actual_stl": true,
+    "independent_rebuild_hash_matches": true,
+    "all_573_sections_valid": true
+  },
+  "not_physical_print_test": true,
+  "not_slicer_toolpaths": true,
+  "limits": [
+    "Curve shape, depth, bridge placement and hidden detail remain photo estimates.",
+    "Morphological opening is not exhaustive wall-thickness measurement."
+  ],
+  "wrapper_v1_audit": {
+    "file_hashes_verified": 50,
+    "local_links_verified": 44,
+    "nested_checksums_verified": 90,
+    "frozen_model_files_unchanged": 42,
+    "passed": true
+  }
+}

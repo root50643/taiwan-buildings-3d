@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "checks": {
+    "entry_is_true_open_passage": true,
+    "entry_has_solid_header": true,
+    "bridge_midspan_open_low": true,
+    "bridge_midspan_open_high": true,
+    "bridge_has_two_solid_piers": true,
+    "bridge_slab_continuous": true,
+    "pavilion_center_solid_from_base_to_roof": true,
+    "pavilion_lobe_solid_from_base_to_roof": true
+  },
+  "stl_sha256": "4b4804560c8646b63a89db97586e7268004040cc05b5fd328843967d3d18b6da",
+  "method": "Moller-Trumbore ray intersections on raw unchanged STL triangles. Pavilion vertical hits establish solid closed body and integral roof, not an empty ring. Bridge rays establish real open underpass, two solid piers and continuous slab. Whole-model validation independently checks a single connected shell.",
+  "rays": {
+    "entrance_open": {
+      "origin_mm": [
+        38.0,
+        0.0,
+        5.5
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 30,
+      "hit_distances_mm": []
+    },
+    "entrance_header": {
+      "origin_mm": [
+        38.0,
+        0.0,
+        10.4
+      ],
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 30,
+      "hit_distances_mm": [
+        1.5,
+        29.75
+      ]
+    },
+    "bridge_midspan_low": {
+      "origin_mm": [
+        -12.74873734152916,
+        3.5355339059327378,
+        5.5
+      ],
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "length_mm": 12,
+      "hit_distances_mm": []
+    },
+    "bridge_midspan_high": {
+      "origin_mm": [
+        -12.74873734152916,
+        3.5355339059327378,
+        9.5
+      ],
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "length_mm": 12,
+      "hit_distances_mm": []
+    },
+    "bridge_piers": {
+      "origin_mm": [
+        -15.577164466275352,
+        6.363961030678927,
+        5.5
+      ],
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "length_mm": 12,
+      "hit_distances_mm": [
+        2.4,
+        4.8,
+        7.2,
+        9.6
+      ]
+    },
+    "bridge_overhead_slab": {
+      "origin_mm": [
+        -12.74873734152916,
+        3.5355339059327378,
+        11.3
+      ],
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "length_mm": 12,
+      "hit_distances_mm": [
+        2.2,
+        9.8
+      ]
+    },
+    "pavilion_center_vertical": {
+      "origin_mm": [
+        14.121320343559642,
+        2.1213203435596424,
+        -1.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "length_mm": 18,
+      "hit_distances_mm": [
+        1.0,
+        13.5
+      ]
+    },
+    "pavilion_lobe_vertical": {
+      "origin_mm": [
+        11.292893218813452,
+        7.7781745930520225,
+        -1.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "length_mm": 18,
+      "hit_distances_mm": [
+        1.0,
+        13.5
+      ]
+    }
+  },
+  "not_structural_load_test": true
+}

@@ -1,6 +1,6 @@
 # 國立臺北教育大學｜臺北校區建築模型
 
-本增量新增體育館、科學館、藝術館3件整體量體近似。前兩批6件檔案原樣保留。合計8件整體近似與1件明確局部，尚未全校完成。各件自行建模，最長150毫米含底座，比例各自獨立。
+第四批新增行政大樓暨圖書館建築群、至善樓、明德樓3模型。行政A＋圖書館H覆蓋2個名冊建物但合計只算1模型；既有9模型逐檔原樣保留。合計12模型、13個命名館舍範圍，其中芳蘭樓仍只有入口局部；其餘量體近似仍有未知面，不代表全校完成。各件自建，最長150毫米含底座，各自獨立比例。
 
 | 大禮堂 | 文薈樓 | 芳蘭樓入口暨可見立面段 |
 |---|---|---|
@@ -14,4 +14,8 @@
 |---|---|---|
 | [![體育館](buildings/ntue-gym/previews/front.png)](buildings/ntue-gym/) | [![科學館](buildings/ntue-science/previews/front.png)](buildings/ntue-science/) | [![藝術館](buildings/ntue-arts/previews/front.png)](buildings/ntue-arts/) |
 
-[後續清單](../CONTINUATION.md)。照片／PDF僅私人核對，不隨公開包散布。底座朝下；雨遮、入口頂板、百葉及突出構件可能需支撐。來源遮蔽及未知背面明列各件README；不是測繪、實體試印或切片器驗證。新增3件外觀已覆核，須獨立審核通過才可發布。
+| 行政大樓暨圖書館建築群 | 至善樓 | 明德樓 |
+|---|---|---|
+| [![行政大樓暨圖書館建築群](buildings/ntue-admin-library-complex/previews/front.png)](buildings/ntue-admin-library-complex/) | [![至善樓](buildings/ntue-zhishan/previews/front.png)](buildings/ntue-zhishan/) | [![明德樓](buildings/ntue-mingde/previews/front.png)](buildings/ntue-mingde/) |
+
+[後續清單](../CONTINUATION.md)。全部模型非實測；未知面與遮蔽範圍明列各件README。底座朝下；雨遮、入口及薄件可能需支撐。原照片/PDF不散布，數位QA不是實體試印或切片器驗證。本批外觀已核可，獨立QA通過才可發布。

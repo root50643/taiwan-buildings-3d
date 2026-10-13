@@ -1,0 +1,48 @@
+# 國立成功大學：首批外觀近似模型與待辦清冊
+
+目前交付 3 件代表建築，並非全校完成。校區已列入範圍，逐棟盤點尚未完成；清冊中的宿舍、醫院等群棟也尚未拆分。不要用本清冊筆數推算全校建物數或完成率。
+
+## 三欄模型圖鑑
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="成功校區/buildings/museum/previews/front.png" alt="成大博物館實際模型正面" width="220">](成功校區/buildings/museum/README.md)<br>**[成功校區｜成大博物館](成功校區/buildings/museum/README.md)** | [<img src="成功校區/buildings/gechi-hall/previews/front.png" alt="格致堂實際模型正面" width="220">](成功校區/buildings/gechi-hall/README.md)<br>**[成功校區｜格致堂](成功校區/buildings/gechi-hall/README.md)** | [<img src="光復校區/buildings/lixian-building/previews/front.png" alt="禮賢樓實際模型正面" width="220">](光復校區/buildings/lixian-building/README.md)<br>**[光復校區｜禮賢樓](光復校區/buildings/lixian-building/README.md)** |
+
+[全國院校清冊](../全國大專院校/README.md)
+
+## 首批 3 件
+
+- [成功校區：成大博物館](成功校區/buildings/museum/README.md)｜150 × 61 × 42.5 mm
+- [成功校區：格致堂](成功校區/buildings/gechi-hall/README.md)｜102 × 150 × 63.7 mm
+- [光復校區：禮賢樓](光復校區/buildings/lixian-building/README.md)｜150 × 47 × 38.8 mm
+
+每件提供 STL、獨立可攜 Python 原始程式、可編輯 Blender、實際 STL 的正背面及立面預覽、來源、近似與支撐說明、重建與幾何驗證報告。最長邊 150 mm 包含底座，各件獨立縮放。
+
+## 範圍與清冊
+
+[清冊 CSV](inventory.csv) 與 [JSON](inventory.json) 是後續工作的種子清冊，而非校方資產總表。校區含：成功、光復、勝利、自強、成杏、力行、敬業、東寧、歸仁、安南、斗六。校方土地表另列台北聯絡中心與宿舍區；這些土地分類是否應納入建築模型範圍及其實際建物仍待確認。
+
+資料依據：
+
+1. [校方 GIS](https://nckumap.ncku.edu.tw/map-Pushtest.php?lan=zh-tw)：確認正式地圖入口。動態建物清單沒有成功擷取，頁面顯示的零筆不是「沒有建物」。
+2. [校方電子圖庫](https://main-oga.ncku.edu.tw/p/412-1060-11039.php?Lang=zh-tw)：有分校區平面圖連結；本批未聲稱已分析所有 DWG，也不使用管線或設備圖。
+3. [校方虛擬校園](https://virtualcampustour.ossd.ncku.edu.tw/)：整理八個主要校區的具名建物／群棟。庭園、道路、藝術品不算成已完成建築。
+4. [校方文化資產導覽手冊](https://museum.ncku.edu.tw/upload/publication/2022101313273293.pdf)：確認歷史建物，實際檢視其中博物館照片。
+5. [校方土地面積統計表，2025-07-15](https://prop-oga.ncku.edu.tw/var/file/59/1059/img/4743/627791856.pdf)：補核校區範圍；不是建物棟數來源。
+6. [校方招生簡章中的校區平面圖，PDF第63頁／印刷頁58](https://adms-acad.ncku.edu.tw/var/file/44/1044/img/4427/345826878.pdf)：已檢視地圖像素，圖面落款2020-01，用於八校區相對位置，不當作最新建物清單。
+7. [校方認識成大](https://oia.ncku.edu.tw/p/404-1032-275724.php?Lang=zh-tw)：補核歸仁、安南及斗六三校區。
+
+## 剩餘工作及證據缺口
+
+- 其餘具名建物見 inventory.csv：仍需逐棟正面、至少一側及屋頂外觀；沒有背面資料時要個別說明，不能批量複製正面。
+- 校方虛擬導覽是景點選集，沒有涵蓋全部系館、宿舍及附屬建物。需要完整外觀建物清冊，並釐清群棟、改名、拆建和跨棟連通關係。
+- 歸仁、安南、斗六尚未逐棟盤點；本批沒有這三校區的模型。
+- 首批三件為外觀近似；所有整體尺寸、深度及未觀察背面均非測繪資料。詳見每棟README的保留與近似。
+
+## 驗證摘要
+
+三件模型均通過 validation.json 所列全部檢查：原始 STL 法線、封閉性、邊及頂點流形、單一連通表面、無分離的內部空腔殼、正體積、150 mm 最長邊、乾淨重建 STL 雜湊、Blender 與 STL 三角形幾何一致。預覽取自該 STL，已檢視正背面。
+
+未實體試印、未執行切片驗證，也未宣稱所有自交的窮舉檢測。格致堂四柱門廊尤其需要檢查並配置支撐。其他兩件拱口和屋簷也可能需要局部支撐。
+
+原始參考照片及整份校方PDF均未包含在此公開套件。查核日期：2026-10-13。

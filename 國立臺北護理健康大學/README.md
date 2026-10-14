@@ -11,3 +11,14 @@
 [模型、範圍與驗證](城區校區/buildings/ntunhs-wenjiao-1965/README.md) · [城區校區入口](城區校區/README.md) · [覆蓋範圍](coverage.json)
 
 本件保留38層形態opening面積損失超過1%的警示；逐構件連通性與抽樣法線厚度已檢查，仍需支撐及實際切片檢視。詳見模型頁，請勿解讀為零警告或全面保證可印。
+
+
+## 本次新增：石牌校區學思樓（2021完工外觀）
+
+以上文教大樓與「本增量」文字完整保留原先歷史增量內容。本次另增下列學思樓；目前此處收錄2件不同建物，不代表全校完成，也不增加學校覆蓋數。原城區校區與文教樓的檔案、連結、圖及角損警示保持不變。
+
+| 學思樓北面，實際STL | 同件學思樓南面，實際STL |
+|---|---|
+| [![學思樓北面](石牌校區/buildings/ntunhs-xuesi-2021/previews/front.png)](石牌校區/buildings/ntunhs-xuesi-2021/README.md) | [![學思樓南面](石牌校區/buildings/ntunhs-xuesi-2021/previews/rear.png)](石牌校區/buildings/ntunhs-xuesi-2021/README.md) |
+
+[學思樓模型與完整限制](石牌校區/buildings/ntunhs-xuesi-2021/README.md) · [石牌校區入口](石牌校區/README.md)。本件來源限定近似、分棟高度待核；22柱890跨層角損樣本有具體法向/根接評估，仍非全域壁厚或實體試印保證。

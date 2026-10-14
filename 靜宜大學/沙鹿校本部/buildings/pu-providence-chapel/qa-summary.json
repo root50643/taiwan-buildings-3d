@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "status": "author_QA_passed_independent_review_pending",
+  "checks": {
+    "approved_stl_unchanged": true,
+    "all_validation_checks_true": true,
+    "one_connected_surface_no_internal_shells": true,
+    "all_original_polygons_survive_without_split": true,
+    "all_seven_images_independently_reproduce": true,
+    "all_scripts_exit_zero": true,
+    "canonical_v3_sha_verified": true,
+    "canonical_component_validator_sha_verified": true
+  },
+  "stl_sha256": "df84e1b7a4290b799082c7d2a2d23427fd6bb5cb3719ee2c82f73c152c84847b",
+  "dimensions_mm": [
+    114.0,
+    150.0,
+    75.19999694824219
+  ],
+  "triangles": 25994,
+  "surface_shells": 1,
+  "sampled_layers_0_2mm": 376,
+  "original_polygon_count": 376,
+  "maximum_opening_loss_fraction": 0.06407799248768964,
+  "layers_over_one_percent_opening_loss": 44,
+  "steps": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "script_sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0,
+      "script_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915"
+    },
+    {
+      "script": "check_all_layers.py",
+      "exit_code": 0,
+      "script_sha256": "03f7514a485d7cd41642e8d9afba16f00d0500e59cf25947482bd917dda954a6"
+    },
+    {
+      "script": "check_layer_components.py",
+      "exit_code": 0,
+      "script_sha256": "365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5"
+    },
+    {
+      "script": "check_render_rebuild.py",
+      "exit_code": 0,
+      "script_sha256": "5c8e025fef326858d4a1ed742ddbd61b72bc242c5991df8fdddf2f670efec08c"
+    }
+  ],
+  "report_sha256": {
+    "validation.json": "1fac21b0f5f7a6d7d4b9df7caadae56796e5c43e5de4ad3780755e0d003e703b",
+    "thin-feature-check.json": "4c349c21e7a7d68c1047fb8898419e1c4befb15b521e6b48c514381776a22796",
+    "layer-opening-check.json": "e0cdfa830eedf6348032d54117dfba0de18e6d8043274ba2fef300aec0084fce",
+    "layer-component-check.json": "4689c70f57249bba46bfc13663e555a2ac27697af5af8bd2fa6cade5fa9a002c",
+    "render-manifest.json": "a2c6acfad84205923b3a503364402728cab714c2cef0d98022eba467c0bf7a31"
+  },
+  "appearance_approval": "2026-10-14 parent reviewed source-actual-900 and roof-ground-900; approximate curve/terrain disclosure required",
+  "limitations": [
+    "未作實體試印或實際切片工具路徑驗證。",
+    "0.8mm opening不是全方向最小壁厚；細十字架與尖角有面積損失，零消失／分裂另逐Polygon強制檢查。",
+    "自由曲面與地形為來源比例近似，不是實測；獨立幾何複核尚待進行。"
+  ]
+}

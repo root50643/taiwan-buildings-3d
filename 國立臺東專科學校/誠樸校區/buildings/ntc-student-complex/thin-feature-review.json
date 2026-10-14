@@ -1,0 +1,54 @@
+{
+  "minimum_designed_width_reference_mm": 1.125,
+  "exceptions": [],
+  "full_direction_minimum_wall_analysis": false,
+  "features": [
+    {
+      "feature": "南北側陽台樓板、欄板與分隔板",
+      "width_or_thickness_mm": 1.1295,
+      "projection_mm": {
+        "north": 3.93975,
+        "south_maximum": 4.275
+      },
+      "root_connection": "樓板嵌入主牆；欄板與樓板和端部／分隔板相交；分隔板嵌入主牆",
+      "warning": "樓板下方需切片支撐／橋接評估"
+    },
+    {
+      "feature": "中央3F大平台與4F L形小陽台",
+      "slab_thickness_mm": 1.1295,
+      "upstand_width_mm": 1.1295,
+      "root_connection": "大平台北緣及側緣與主體相交；小陽台連接中央梯間與下層主體",
+      "warning": "大平台下方挑空，橫向跨度約18 mm；需支撐評估"
+    },
+    {
+      "feature": "水平外挑簷",
+      "thickness_mm": 1.1295,
+      "projection_mm": 1.0125,
+      "root_connection": "根部沿整段主牆連續嵌入",
+      "warning": "懸挑、銳角損失和列印方向影響；非孤立薄環"
+    },
+    {
+      "feature": "屋面／屋突蓋／低屋面壓頂",
+      "minimum_thickness_mm": 1.1295,
+      "root_connection": "各件均與下方實體搭接，無漂浮板",
+      "warning": "屋突外挑蓋需局部支撐評估",
+      "main_north_roof_projection_mm": 4.275,
+      "main_roof_thickness_mm": 1.2645
+    },
+    {
+      "feature": "簡化光電板組",
+      "thickness_mm": 1.422,
+      "minimum_width_mm": 5.1795,
+      "root_connection": "板組底嵌主屋面約0.18 mm",
+      "warning": "粗化板組，省略薄支架和精細模組框"
+    },
+    {
+      "feature": "淺凹窗帶",
+      "recess_depth_mm": "約0.8–0.95",
+      "root_connection": "主牆保留實體背板；沒有獨立玻璃或窗框",
+      "warning": "不能據此聲稱窗框尺寸與實物一致"
+    }
+  ],
+  "screening": "See complete unrounded per-layer / per-original-Polygon records in layer-component-check.json; no split/disappearance waiver is allowed.",
+  "physical_print_test": false
+}

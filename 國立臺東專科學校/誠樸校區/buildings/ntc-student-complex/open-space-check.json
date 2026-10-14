@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "checks": {
+    "central_notch_open_above_3F_balcony": true,
+    "fourth_floor_L_balcony_west_leg_open": true,
+    "fourth_floor_L_balcony_east_leg_open": true,
+    "south_notch_outside_platform_open_to_base": true,
+    "ground_entrance_below_balcony_clear": true,
+    "second_entrance_below_balcony_clear": true,
+    "north_balcony_air_space_real": true,
+    "2F_balcony_air_or_wall_position": true,
+    "3F_balcony_air_or_wall_position": true,
+    "4F_west_balcony_air_or_wall_position": true,
+    "4F_east_projection_air_or_wall_position": true,
+    "north_1F_projected_wall_position": true,
+    "north_2F_projected_wall_position": true,
+    "southwest_roof_one_storey_lower": true
+  },
+  "rays": {
+    "central_balcony": {
+      "first_hit_z_mm": 21.49725,
+      "expected_z_mm": 21.49725,
+      "hits_mm": [
+        49.00275,
+        50.13225,
+        67.5,
+        70.5
+      ]
+    },
+    "fourth_floor_L_balcony_west_leg": {
+      "first_hit_z_mm": 30.722250000000003,
+      "expected_z_mm": 30.72225,
+      "hits_mm": [
+        39.77775,
+        70.5
+      ]
+    },
+    "fourth_floor_L_balcony_east_leg": {
+      "first_hit_z_mm": 30.722250000000003,
+      "expected_z_mm": 30.72225,
+      "hits_mm": [
+        39.77775,
+        70.5
+      ]
+    },
+    "south_notch": {
+      "first_hit_z_mm": 3.0,
+      "hits_mm": [
+        67.5,
+        70.5
+      ]
+    },
+    "ground_entrance": {
+      "first_hit_y_mm": 0.8977499999999949,
+      "expected_y_mm": 0.8977499999999968,
+      "clear_distance_mm": 45.44775
+    },
+    "second_entrance": {
+      "first_hit_y_mm": 0.8977499999999949,
+      "expected_y_mm": 0.8977499999999968,
+      "clear_distance_mm": 45.44775
+    },
+    "2F_balcony": {
+      "first_hit_y_mm": -16.877250000000004,
+      "expected_y_mm": -16.877250000000004,
+      "clear_distance_mm": 20.92275
+    },
+    "3F_balcony": {
+      "first_hit_y_mm": -12.602250000000005,
+      "expected_y_mm": -12.602250000000002,
+      "clear_distance_mm": 25.19775
+    },
+    "4F_west_balcony": {
+      "first_hit_y_mm": -12.602250000000005,
+      "expected_y_mm": -12.602250000000002,
+      "clear_distance_mm": 25.19775
+    },
+    "4F_east_projection": {
+      "first_hit_y_mm": -16.877250000000004,
+      "expected_y_mm": -16.877250000000004,
+      "clear_distance_mm": 20.92275
+    },
+    "north_1F": {
+      "first_hit_y_mm": 27.002249999999997,
+      "expected_y_mm": 27.00225
+    },
+    "north_2F": {
+      "first_hit_y_mm": 27.002249999999997,
+      "expected_y_mm": 27.00225
+    },
+    "roof_step": {
+      "southwest_first_hit_z_mm": 31.62225,
+      "main_first_hit_z_mm": 40.98225,
+      "height_difference_mm": 9.36
+    }
+  },
+  "method": "Moller-Trumbore intersections against original unprocessed STL triangles. Source plan establishes central platform and notch; exact vertical clearances are inferred. No closed atrium is claimed."
+}

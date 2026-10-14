@@ -1,0 +1,185 @@
+{
+  "school": "國立臺東專科學校",
+  "campus": "誠樸校區",
+  "building_code": "C03",
+  "building": "學生綜合樓（學生綜合大樓）",
+  "model_status": "frozen_v1_visual_and_independent_QA_approved",
+  "model_scope": "完整竣工主體的近似外觀，細部簡化",
+  "evidence_period": "2014學年編碼配置圖、2016落成說明、2017海報實景及NLSC 2023年份標记正射屋面；不是2026精確現況",
+  "review_date_utc": "2026-10-14",
+  "coordinate_convention": "STL: east +X, north +Y, up +Z. front preview is south; rear is north.",
+  "scale": {
+    "unit": "mm",
+    "model_mm_per_inferred_real_m": 2.25,
+    "nominal_ratio": "約1:444.44",
+    "original_plan_dimensions": [
+      5848,
+      2380
+    ],
+    "original_unit_explicitly_verified": false,
+    "interpretation": "按臺灣建築圖常用cm合理推定58.48×23.80m；原始數字是直接證據，公尺換算不是實測",
+    "floor_height_inferred_m": 4.1,
+    "base_mm": [
+      150,
+      70,
+      3
+    ]
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "本校建築物空間編碼_1150801更正空間編碼",
+      "url": "https://ga.ntc.edu.tw/p/405-1003-8164,c837.php?Lang=zh-tw",
+      "page_or_image": "C03 學生綜合樓-Model.pdf，物理第1/1頁，全1F至4F",
+      "date": "頁面2026-08-01更新；圖底103學年校規會通過版",
+      "supports": [
+        "尺寸鏈",
+        "各層棟界",
+        "中央3F大平台與4F退空",
+        "4F中央梯間南側L形小陽台",
+        "北側陽台分組",
+        "三層西南凸翼低屋面"
+      ],
+      "limitations": [
+        "空間編碼配置图不是竣工圖或使照",
+        "沒有剖面及精確樓高"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "全校平面圖",
+      "url": "https://ga.ntc.edu.tw/p/405-1003-6604,c837.php?Lang=zh-tw",
+      "page_or_image": "單張JPG圖1",
+      "date": "圖未標修訂年月",
+      "supports": [
+        "誠樸校區C03名稱、位置、獨立棟界",
+        "排除C01/C02及宿舍混棟"
+      ],
+      "limitations": [
+        "示意總圖不用來臆造屋面設備"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "88週年校慶校史：誠樸校區簡史",
+      "url": "https://b005.ntc.edu.tw/p/404-1005-5676.php?Lang=zh-tw",
+      "page_or_image": "第3張/共6張",
+      "date": "2016年落成校史",
+      "supports": [
+        "2016-06-18落成",
+        "學生綜合樓4層、樓地板面積4240.34㎡"
+      ],
+      "limitations": [
+        "同頁第4張大鳥瞰為電腦渲染，未用作已建屋面主證"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "89周年建築巡禮：誠樸校區學生綜合大樓實景",
+      "url": "https://b005.ntc.edu.tw/p/404-1005-5677.php?Lang=zh-tw",
+      "page_or_image": "第9張/共9張，右上實景",
+      "date": "2017海報；快門日期未註記",
+      "supports": [
+        "四層外觀",
+        "水平挑簷",
+        "淺色牆及青綠色窗帶",
+        "存在帶圓窗的高塔"
+      ],
+      "limitations": [
+        "C03照片原生只有約120×80px，放大不增加真實細節",
+        "拍攝朝向未知；圓窗塔不能可靠定位，模型未任意放置圓窗",
+        "第8張的學生宿舍不是C03"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "國土測繪中心PHOTO2正射影像",
+      "url": "https://maps.nlsc.gov.tw/S09SOA/pro/Wmts_ajax_main.jsp",
+      "sample_tile_url": "https://wmts.nlsc.gov.tw/wmts/PHOTO2/default/GoogleMapsCompatible/19/228094/438540",
+      "page_or_image": "25張z19小範圍圖磚合併，C03屋面裁切",
+      "date": "圖上浮水印NLSC 2023；精確拍攝日未知",
+      "supports": [
+        "長條主屋面",
+        "西南突出低屋面",
+        "中段凹入與梯間/屋突",
+        "屋頂光電板存在"
+      ],
+      "limitations": [
+        "不是2026現況",
+        "影像位移及陰影不能取代平面尺寸",
+        "光電板數量/各設備細部簡化，非2016設備原貌"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "1140902誠樸校區安全地圖",
+      "url": "https://std.ntc.edu.tw/p/406-1002-28982,r11.php?Lang=zh-tw",
+      "page_or_image": "單張GIF圖1",
+      "date": "2025-09-02標題",
+      "supports": [
+        "C03位置與近似外輪廓"
+      ],
+      "limitations": [
+        "側邊標至5F，與S1全1–4F及S3四層不一致",
+        "不能推成完整增建第五層，也不能宣稱已證明只指屋突；法定樓層分類未核驗"
+      ]
+    }
+  ],
+  "geometry_evidence": [
+    {
+      "feature": "整棟足跡及四層主體",
+      "basis": [
+        "S1",
+        "S2",
+        "S3",
+        "S5"
+      ],
+      "status": "直接圖證＋尺寸單位推定"
+    },
+    {
+      "feature": "3F中央大平台、4F同區退空及另一L形小陽台",
+      "basis": [
+        "S1"
+      ],
+      "status": "直接圖證；高程及1–2F入口挑空淨高推定"
+    },
+    {
+      "feature": "東西梯間屋突、屋面",
+      "basis": [
+        "S1",
+        "S5"
+      ],
+      "status": "位置及平面近似可對位；高度推定，不等同圓窗塔已定位"
+    },
+    {
+      "feature": "主要窗列及陽台",
+      "basis": [
+        "S1",
+        "S4"
+      ],
+      "status": "平面分組與實景主要水平節奏；開口寬高、微小窗框簡化"
+    },
+    {
+      "feature": "圓窗所在高塔",
+      "basis": [
+        "S4"
+      ],
+      "status": "存在有證據，位置無法唯一對位，刻意省略圓窗而不亂放"
+    },
+    {
+      "feature": "北側1–2F突出玻璃牆、南側2F較深陽台／3F退縮／4F東半再前伸",
+      "basis": [
+        "S1"
+      ],
+      "status": "逐層依外牆及陽台線近似追建，不將柱網線直接當外牆；窗帶尺寸及板厚仍簡化"
+    }
+  ],
+  "omissions": [
+    "圓窗塔精確位置及圓窗",
+    "細窗格、百葉、冷氣、管線、欄杆小桿",
+    "屋頂設備逐項原樣及精確光電模組數量",
+    "室內格間與使用用途",
+    "C03以外建物及全校景觀"
+  ],
+  "third_party_originals_in_public_package": false
+}

@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "checks": {
+    "all_vertical_probe_heights_match": true,
+    "courtyard_not_a_solid_triangular_roof": true,
+    "rear_court_bottom_is_2F_roof_not_ground": true,
+    "under_eave_void_in_front_of_2F_glazing": true,
+    "solid_roof_control_present": true,
+    "north_under_cantilever_is_open": true,
+    "north_pier_connects_ground_to_2F": true
+  },
+  "method": "Vertical intersections of original STL triangles; reported courtyard apertures are sampled, not an exhaustive indoor survey. Separate front under-eave portion and rear 2F roof terrace are preserved.",
+  "probes": [
+    {
+      "probe": "courtyard_rear",
+      "xy_real_m_approx": [
+        0,
+        18
+      ],
+      "z_intersections_mm": [
+        0.0,
+        26.7145
+      ],
+      "top_hit_mm": 26.7145,
+      "expected_top_hit_mm": 26.714499999999997,
+      "clear_air_to_roof_mm": 12.835499999999996,
+      "pass": true
+    },
+    {
+      "probe": "courtyard_middle",
+      "xy_real_m_approx": [
+        0,
+        15.5
+      ],
+      "z_intersections_mm": [
+        0.0,
+        26.7145
+      ],
+      "top_hit_mm": 26.7145,
+      "expected_top_hit_mm": 26.714499999999997,
+      "clear_air_to_roof_mm": 12.835499999999996,
+      "pass": true
+    },
+    {
+      "probe": "courtyard_front_with_under_eave_void",
+      "xy_real_m_approx": [
+        0,
+        10
+      ],
+      "z_intersections_mm": [
+        0.0,
+        13.6425,
+        25.618,
+        26.7145
+      ],
+      "top_hit_mm": 26.7145,
+      "expected_top_hit_mm": 26.714499999999997,
+      "clear_air_to_roof_mm": 12.835499999999996,
+      "pass": true
+    },
+    {
+      "probe": "solid_roof_control",
+      "xy_real_m_approx": [
+        0,
+        35
+      ],
+      "z_intersections_mm": [
+        0.0,
+        39.55
+      ],
+      "top_hit_mm": 39.55,
+      "expected_top_hit_mm": 39.55,
+      "clear_air_to_roof_mm": 0.0,
+      "pass": true
+    },
+    {
+      "probe": "north_under_cantilever",
+      "xy_real_m_approx": [
+        0,
+        50
+      ],
+      "z_intersections_mm": [
+        0.0,
+        3.0,
+        12.503,
+        26.7145
+      ],
+      "top_hit_mm": 26.7145,
+      "expected_top_hit_mm": 26.714499999999997,
+      "clear_air_to_roof_mm": 12.835499999999996,
+      "pass": true
+    },
+    {
+      "probe": "north_low_pier",
+      "xy_real_m_approx": [
+        0,
+        55
+      ],
+      "z_intersections_mm": [
+        0.0,
+        26.7145
+      ],
+      "top_hit_mm": 26.7145,
+      "expected_top_hit_mm": 26.714499999999997,
+      "clear_air_to_roof_mm": 12.835499999999996,
+      "pass": true
+    }
+  ]
+}

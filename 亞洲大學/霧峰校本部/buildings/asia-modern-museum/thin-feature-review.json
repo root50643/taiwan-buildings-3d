@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "no_freestanding_decorative_struts": true,
+    "mullions_wall_backed": true,
+    "rim_width_over_0_8mm": true,
+    "roof_slab_thickness_over_0_8mm": true,
+    "no_mesh_repair_in_validation": true,
+    "north_low_pier_over_0_8mm": true
+  },
+  "source_geometry_dimensions_mm": {
+    "roof_slab": 1.0105,
+    "courtyard_rim_plan_width": 1.1825,
+    "facade_panel_recess_depth": 0.215,
+    "additional_v_incision_depth_approx": 0.129,
+    "north_low_pier_thickness": 3.01
+  },
+  "method": "Original parameter review plus raw single-shell checks and 0.2mm per-original-Polygon opening; the small window mullion/diagonal lines are continuously backed by the main solid, not independent thin bars. Roof and courtyard rim remain attached along their broad perimeter.",
+  "limitations": [
+    "Not exhaustive minimum thickness or actual slicing.",
+    "Acute triangular tips and overhangs still require actual support planning."
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "building": "開南大學圖書館",
+  "representation": "原創參數式、來源限定有界近似，全棟地上量體；非測繪重建",
+  "sources": [
+    {
+      "id": "official-general",
+      "url": "https://general.knu.edu.tw/p/405-1006-749,c247.php?Lang=zh-tw",
+      "supports": "2004/8/2 開工、2005/9/30 完工、7F/B1、總樓地板 18710.25㎡；無尺寸正立面線稿及西南側前照片。館用 1–4F 不代表整棟只有四層。",
+      "limitations": "頁內其他衝突面積不採用；線稿沒有實測尺寸。"
+    },
+    {
+      "id": "official-history",
+      "url": "https://www.knu.edu.tw/var/file/0/1000/img/784/806649701.pdf",
+      "page": 5,
+      "supports": "1662px 正面：雙塔深拱窗、中央大入口與門扇、三組透空屋簷框。",
+      "limitations": "第 2 頁行政樓不採作圖書館。"
+    },
+    {
+      "id": "nlsc",
+      "url": "https://maps.nlsc.gov.tw/",
+      "supports": "北向屋頂、中央封閉採光頂、兩側透空框輪廓。2024 浮水印不作確定拍攝年。",
+      "image_scale_m_per_pixel": 0.13528952676558043,
+      "native_image_size_px": [
+        1792,
+        1792
+      ],
+      "low_roof_corner_pixels": [
+        [
+          635,
+          1000
+        ],
+        [
+          790,
+          1158
+        ],
+        [
+          1210,
+          814
+        ],
+        [
+          1058,
+          635
+        ]
+      ],
+      "rear_frame_endpoint_pixels": [
+        [
+          610,
+          940
+        ],
+        [
+          1005,
+          605
+        ]
+      ],
+      "pixel_uncertainty": 8,
+      "limitations": "高低屋頂視差未閉環，不能將 8–10m 影像後緣差直接當實體無柱懸挑。"
+    },
+    {
+      "id": "osm",
+      "url": "https://www.openstreetmap.org/way/387287747",
+      "supports": "沿長軸粗外包絡 73.66×53.89m，後者含入口；主地面深約 43m 為粗線候選。",
+      "limitations": "非測量，不能等同高屋簷或牆線。"
+    },
+    {
+      "id": "official-airphoto",
+      "url": "https://mandarin.knu.edu.tw/var/file/32/1032/img/303900667.jpg",
+      "supports": "左後方圖書館側前高處輪廓。",
+      "limitations": "前景是行政樓；無後牆新證據。"
+    }
+  ],
+  "bounds_and_assumptions": {
+    "model_scale_mm_per_nominal_m": 1.8,
+    "nominal_highest_height_m": 36.3,
+    "height_range_m": [
+      32,
+      39
+    ],
+    "ground_width_m": 74,
+    "ground_depth_candidate_m": 43,
+    "ground_including_entry_depth_m": 54,
+    "low_roof_depth_model_m": 32.6,
+    "low_roof_image_range_m": [
+      30,
+      33
+    ],
+    "highest_frame_depth_model_m": 35.5,
+    "highest_frame_depth_candidate_range_m": [
+      33,
+      36
+    ],
+    "side_frame_envelope_depth_model_m": 41.7,
+    "side_frame_image_range_m": [
+      38,
+      42
+    ],
+    "entry_recess_nominal_m": 9.8,
+    "entry_recess_inferred_range_m": [
+      8,
+      12
+    ],
+    "uncertainties": "各層輪廓分開估計。後部退台及支承位置為有界結構簡化，無後牆照片／剖面。西南六層窗帶可見，逐窗間距推估；東北窗節奏未實證。背面不鏡像正面裝飾。"
+  },
+  "private_source_policy": "只列來源與判讀，不散布來源原圖；沒有第三方模型或貼圖。"
+}

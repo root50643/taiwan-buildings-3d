@@ -1,0 +1,111 @@
+{
+  "status": "pending_independent_review_and_parent_specific_exception_acceptance",
+  "stl_sha256": "1f685fa69f1619a2646b07e45f52364948cbe471dcdf36891719032c77f7c4de",
+  "original_polygon_samples": 3641,
+  "warning_samples": 3184,
+  "whole_layers_over_one_percent": 15,
+  "peak_component": {
+    "centroid_xy": [
+      -46.15379949999999,
+      -28.159999999999997
+    ],
+    "convex_area_difference_mm2": 0.0,
+    "rotated_rectangle_coords": [
+      [
+        -47.0952,
+        -29.065399
+      ],
+      [
+        -47.0952,
+        -27.254601
+      ],
+      [
+        -45.212399,
+        -27.254601
+      ],
+      [
+        -45.212399,
+        -29.065399
+      ],
+      [
+        -47.0952,
+        -29.065399
+      ]
+    ],
+    "bounds": [
+      -47.0952,
+      -29.065399,
+      -45.212399,
+      -27.254601
+    ],
+    "rotated_bbox_min_width": 1.8107979999999984,
+    "retained_fraction": 0.959022675084111,
+    "loss_area_mm2": 0.13970695588978538,
+    "loss_outside_0p41_vertex_mm2": 0.0008462490295968361,
+    "z_mm": 52.871,
+    "original_component_index": 2,
+    "original_area_mm2": 3.409372285197998,
+    "eroded_components": 1,
+    "opened_components": 1,
+    "opening_loss_fraction": 0.04097732491588901,
+    "loss_outside_0p41_vertex_fraction": 0.00024821256196364325
+  },
+  "maximum_outside_vertex_loss_component": {
+    "centroid_xy": [
+      -55.44000050000001,
+      33.47999950000001
+    ],
+    "convex_area_difference_mm2": -4.440892098500626e-16,
+    "rotated_rectangle_coords": [
+      [
+        -56.345402,
+        34.475399
+      ],
+      [
+        -54.534599,
+        34.475399
+      ],
+      [
+        -54.534599,
+        32.4846
+      ],
+      [
+        -56.345402,
+        32.4846
+      ],
+      [
+        -56.345402,
+        34.475399
+      ]
+    ],
+    "bounds": [
+      -56.345402,
+      32.4846,
+      -54.534599,
+      34.475399
+    ],
+    "rotated_bbox_min_width": 1.810803,
+    "retained_fraction": 0.9611677752842948,
+    "loss_area_mm2": 0.13998802662332824,
+    "loss_outside_0p41_vertex_mm2": 0.001054324091947636,
+    "z_mm": 54.471,
+    "original_component_index": 20,
+    "original_area_mm2": 3.604944801597005,
+    "eroded_components": 1,
+    "opened_components": 1,
+    "opening_loss_fraction": 0.038832224715705216,
+    "loss_outside_0p41_vertex_fraction": 0.00029246608477349396
+  },
+  "minimum_local_normal_caliper_mm": 1.8107986450195308,
+  "warning_z_range_mm": [
+    3.071,
+    66.071
+  ],
+  "interpretation": "跨層原 Polygon 樣本，不是 3184 個獨立建築構件。柱、梁、格架等薄細截面均須逐列核閱；角鄰域外非零，不宣稱純四角效應。",
+  "limits": [
+    "所有原 Polygon 侵蝕／開運算皆保留一個構件，但不等於全面壁厚合格。",
+    "局部原 STL 射線寬度不是全方向最小壁厚，根射線不是結構強度證明。",
+    "幾何庫與浮點環境可能帶來微小數值差異，不能以四捨五入消除非零損失。",
+    "未試印；150mm 尺度不能任意縮小。懸挑屋簷與拱頂須實際切片選擇支撐。"
+  ]
+}

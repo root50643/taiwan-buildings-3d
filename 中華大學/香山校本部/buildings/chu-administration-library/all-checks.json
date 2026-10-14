@@ -1,0 +1,56 @@
+{
+  "passed": false,
+  "hard_geometry_checks_passed": true,
+  "ready_for_independent_review": true,
+  "checks": {
+    "all_scripts_exit_zero": false,
+    "all_original_polygons_survive_and_do_not_split": true,
+    "canonical_v3_sha_verified": true,
+    "all_original_local_loss_proofs_pass": false
+  },
+  "stl_sha256": "1b03e0865c6f67a69ec8daabd5a42224e4dac6076a50cf750255fcbcd1d5c5e1",
+  "runs": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_raw_mesh.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_all_layers.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_layer_components.py",
+      "exit_code": 1
+    },
+    {
+      "script": "check_recess_roots.py",
+      "exit_code": 0
+    },
+    {
+      "script": "summarize_component_losses.py",
+      "exit_code": 1
+    },
+    {
+      "script": "diagnose_rectangle_boundaries.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_readme_views.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_preview_rebuild.py",
+      "exit_code": 0
+    }
+  ],
+  "unresolved_original_local_proof_samples": 10,
+  "note": "Original local-proof failures are preserved. Author review freeze is not independent approval or a waiver of these ten original Polygon results."
+}

@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "status": "author_QA_passed_independent_review_pending",
+  "checks": {
+    "approved_STL_unchanged": true,
+    "raw_binary_exact_topology_passed": true,
+    "source_rebuild_STL_SHA_identical": true,
+    "Blend_geometry_identical": true,
+    "all_original_layer_components_valid_survive_and_do_not_split": true,
+    "every_original_polygon_loss_at_most_one_percent": true,
+    "all_feature_normal_root_and_open_space_rays_pass": true,
+    "all_8_PNG_bytes_and_pixels_independently_reproduce": true,
+    "all_8_scripts_exit_zero": true,
+    "canonical_validator_SHAs_match": true
+  },
+  "stl_sha256": "01277bf8746a2ae19b5abe792d334756caa2e22db1252f5d586e1951069ec7a0",
+  "dimensions_mm": [
+    109.09091186523438,
+    150.0,
+    29.899999618530273
+  ],
+  "triangles": 7854,
+  "surface_shells": 1,
+  "sampled_layers": 150,
+  "original_polygon_count": 967,
+  "maximum_whole_layer_opening_loss_fraction": 0.0036227077671700148,
+  "maximum_individual_polygon_opening_loss_fraction": 0.009508479905529508,
+  "individual_polygons_above_one_percent": 0,
+  "selected_normal_ray_count": 97,
+  "selected_root_ray_count": 67,
+  "selected_open_space_ray_count": 5,
+  "minimum_selected_normal_width_mm": 0.625,
+  "steps": [
+    {
+      "script": "check_raw_mesh.py",
+      "exit_code": 0,
+      "sha256": "01e4e1e63205b76fb3299100fa974f9075c5c5d60fb4f09ed343b88b3fbc42af"
+    },
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "sha256": "13ccb530901ff9c8dce7895cfc922d4ed83906cb2e0422e2d6cdb4480f876343"
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0,
+      "sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915"
+    },
+    {
+      "script": "check_all_layers.py",
+      "exit_code": 0,
+      "sha256": "03f7514a485d7cd41642e8d9afba16f00d0500e59cf25947482bd917dda954a6"
+    },
+    {
+      "script": "check_layer_components.py",
+      "exit_code": 0,
+      "sha256": "365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5"
+    },
+    {
+      "script": "check_component_detail.py",
+      "exit_code": 0,
+      "sha256": "aa51ec13999ad152ddb8e42416e39b0448b4ce6dae3f2f2439afb879f7cd5094"
+    },
+    {
+      "script": "check_feature_rays.py",
+      "exit_code": 0,
+      "sha256": "ea4cd08d28949658db02d0fc62bdb82d2dbd3c4dcf40744de133f0ad9003fdcd"
+    },
+    {
+      "script": "check_render_rebuild.py",
+      "exit_code": 0,
+      "sha256": "307bc7b64d7daab83531f42016f44f9f272bb8d73ccc3be79fd735a9ba6fc75e"
+    }
+  ],
+  "report_sha256": {
+    "raw-mesh-check.json": "560621d99a5cb61ac4d5ef8256150a78d51c02c52e528735eae910319bb5aab2",
+    "validation.json": "d6256ece958fd53b623c31fcd0c949690b6da0e4763a1b97d87b1eea4ba1060b",
+    "layer-component-check.json": "7330f5410099e17ad66530482bba7efd51395f18aea724625d611df30a8ee8cd",
+    "component-detail.json": "22c0547adac212f04d33959efaea039c2c4d58218e9a6ba50d1f71ccea32de07",
+    "feature-rays.json": "c371d007e4455153c25f28c5326b0f3a240cc4f9c2be5cc4f63cd50921f2a278",
+    "render-manifest.json": "bc91c75a88bc9748e3ca054392a5afe31bcfa635b8339c84e8b5435930bd9da5",
+    "thin-feature-check.json": "0b3e4d9da83848234e6efd52dad94ff441db0df431fbed440c03a9e8c3a5f39a",
+    "layer-opening-check.json": "b1264f607e62da9ba675696032a38c5e1853030f3d3d64b5a7917ac9bae570fc"
+  },
+  "limits": [
+    "照片比例近似，公尺高度、屋脊及地形非實測。",
+    "法向厚度、根接與淨空只為指定射線，不是全方向最小壁厚。",
+    "未實體試印或實際切片工具路徑；遮棚、連橋與陽台需評估支撐，勿任意縮小。"
+  ]
+}

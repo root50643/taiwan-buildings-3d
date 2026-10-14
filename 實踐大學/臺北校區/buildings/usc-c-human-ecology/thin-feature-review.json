@@ -1,0 +1,73 @@
+{
+  "reference_width_mm": 0.8,
+  "root_thickness_mm": {
+    "gallery_columns": 1.344,
+    "bridge_piers": 1.68,
+    "screen_wall": 1.316,
+    "screen_ligaments_approx": 1.015,
+    "roof_ridge_flat": 1.26,
+    "gallery_decks": 1.204
+  },
+  "overhangs": [
+    "South gallery decks span up to ~7mm between posts; support/bridge review required",
+    "West screen above 1F spans between coarsened posts",
+    "North bridge decks and upper landing overhang; review support removal access"
+  ],
+  "not_physical_print_test": true,
+  "no_mesh_repair": true,
+  "geometric_changes": [
+    "Strengthened bridge root overlap into classroom wall",
+    "Lowered terrace north parapets to avoid roof-edge narrow connection",
+    "Widened gable ridge cap",
+    "Screen hole array raised 0.336mm to keep bottom strip over 1mm"
+  ],
+  "checks": {
+    "roots_explicitly_connected": true,
+    "coarsening_disclosed": true,
+    "overhang_warning_present": true
+  },
+  "actual_stl_screen_check": "screen-check.json",
+  "screen_min_measured_ligament_mm": 1.015274,
+  "screen_min_measured_bottom_margin_mm": 1.042439,
+  "opening_high_loss_exception": {
+    "stl_sha256": "8e6a46017cf59eb230e4071a4920da66ad466b6494f3634f300a81bf50154c2d",
+    "scope": "Docs-only disclosure overlay; original raw STL and original scores unchanged.",
+    "sampled_layers": 165,
+    "layers_over_1percent": 7,
+    "affected_whole_layer_z_mm": [
+      29.671,
+      30.871
+    ],
+    "original_polygon_samples": 2853,
+    "component_samples_over_1percent": 2272,
+    "sample_count_is_not_physical_column_count": true,
+    "maximum_whole_layer_loss_fraction": 0.08042467189442443,
+    "maximum_component_loss_fraction": 0.1508524758268949,
+    "minimum_component_retained_fraction": 0.8491475241731051,
+    "vertex_neighborhood_radius_mm": 0.41,
+    "maximum_loss_outside_vertex_neighborhood_fraction_of_original_component": 0.0013208178690634095,
+    "not_all_loss_is_corner_only": true,
+    "minimum_screen_hole_ligament_mm": 1.015273999999991,
+    "minimum_selected_screen_normal_ray_thickness_mm": 1.3216,
+    "audited_apertures": 104,
+    "vertical_root_probes": 12,
+    "limitations": [
+      "Not global minimum-wall proof.",
+      "Not a slicer/toolpath or physical print test.",
+      "Do not arbitrarily scale below 150mm maximum dimension.",
+      "Thin screen, bridges and galleries require support/bridging review.",
+      "Raw scores retained; no collinear simplification substituted."
+    ],
+    "references": [
+      "independent-opening-detail.json",
+      "independent-screen-probes.json",
+      "independent-raw-stl-check.json"
+    ],
+    "checks": {
+      "all_original_components_survive": true,
+      "no_original_component_split": true,
+      "raw_score_preserved": true
+    }
+  },
+  "opening_loss_explanation": "Significant local opening loss retained and quantified in opening-warning-supplement.json; 0.41mm vertex-neighbourhood exterior loss is nonzero. Not all pure-corner loss and not full printability."
+}

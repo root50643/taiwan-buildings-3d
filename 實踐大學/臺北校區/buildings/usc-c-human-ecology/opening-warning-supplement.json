@@ -1,0 +1,40 @@
+{
+  "stl_sha256": "8e6a46017cf59eb230e4071a4920da66ad466b6494f3634f300a81bf50154c2d",
+  "scope": "Docs-only disclosure overlay; original raw STL and original scores unchanged.",
+  "sampled_layers": 165,
+  "layers_over_1percent": 7,
+  "affected_whole_layer_z_mm": [
+    29.671,
+    30.871
+  ],
+  "original_polygon_samples": 2853,
+  "component_samples_over_1percent": 2272,
+  "sample_count_is_not_physical_column_count": true,
+  "maximum_whole_layer_loss_fraction": 0.08042467189442443,
+  "maximum_component_loss_fraction": 0.1508524758268949,
+  "minimum_component_retained_fraction": 0.8491475241731051,
+  "vertex_neighborhood_radius_mm": 0.41,
+  "maximum_loss_outside_vertex_neighborhood_fraction_of_original_component": 0.0013208178690634095,
+  "not_all_loss_is_corner_only": true,
+  "minimum_screen_hole_ligament_mm": 1.015273999999991,
+  "minimum_selected_screen_normal_ray_thickness_mm": 1.3216,
+  "audited_apertures": 104,
+  "vertical_root_probes": 12,
+  "limitations": [
+    "Not global minimum-wall proof.",
+    "Not a slicer/toolpath or physical print test.",
+    "Do not arbitrarily scale below 150mm maximum dimension.",
+    "Thin screen, bridges and galleries require support/bridging review.",
+    "Raw scores retained; no collinear simplification substituted."
+  ],
+  "references": [
+    "independent-opening-detail.json",
+    "independent-screen-probes.json",
+    "independent-raw-stl-check.json"
+  ],
+  "checks": {
+    "all_original_components_survive": true,
+    "no_original_component_split": true,
+    "raw_score_preserved": true
+  }
+}

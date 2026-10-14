@@ -1,6 +1,6 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **430 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 359 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **431 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 360 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -31,7 +31,7 @@
 | [<img src="國立臺中教育大學/柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/previews/front.png" alt="國立臺中教育大學實際模型預覽" width="260">](國立臺中教育大學/README.md)<br>**[國立臺中教育大學｜3 組](國立臺中教育大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立體育大學/桃園校區/buildings/ntsu-arena/previews/front.png" alt="國立體育大學實際模型預覽" width="260">](國立體育大學/README.md)<br>**[國立體育大學｜6 組](國立體育大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立澎湖科技大學/馬公校本部/buildings/npu-library-rotunda-front/previews/front.png" alt="國立澎湖科技大學實際模型預覽" width="260">](國立澎湖科技大學/README.md)<br>**[國立澎湖科技大學｜2 組](國立澎湖科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立金門大學/金寧校本部/buildings/nqu-library-tower-segment/previews/front.png" alt="國立金門大學實際模型預覽" width="260">](國立金門大學/README.md)<br>**[國立金門大學｜1 組](國立金門大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="中原大學/中壢校區/buildings/cycu-huai-en-hall-2021/previews/front.png" alt="中原大學實際模型預覽" width="260">](中原大學/README.md)<br>**[中原大學｜1 組](中原大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺北護理健康大學/城區校區/buildings/ntunhs-wenjiao-1965/previews/front.png" alt="國立臺北護理健康大學實際模型預覽" width="260">](國立臺北護理健康大學/README.md)<br>**[國立臺北護理健康大學｜1 組](國立臺北護理健康大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="真理大學/淡水校區/buildings/au-oxford-1999-core/previews/front.png" alt="真理大學實際模型預覽" width="260">](真理大學/README.md)<br>**[真理大學｜1 組](真理大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立空中大學/蘆洲校本部/buildings/nou-north-courtyard/previews/front.png" alt="國立空中大學實際模型預覽" width="260">](國立空中大學/README.md)<br>**[國立空中大學｜1 組](國立空中大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺灣體育運動大學/臺中校區/buildings/ntus-changqi-building/previews/front.png" alt="國立臺灣體育運動大學實際模型預覽" width="260">](國立臺灣體育運動大學/README.md)<br>**[國立臺灣體育運動大學｜1 組](國立臺灣體育運動大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
-| [<img src="國立臺南護理專科學校/臺南校區/buildings/ntin-xinxin-building/previews/front.png" alt="國立臺南護理專科學校實際模型預覽" width="260">](國立臺南護理專科學校/README.md)<br>**[國立臺南護理專科學校｜1 組](國立臺南護理專科學校/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺東專科學校/誠樸校區/buildings/ntc-student-complex/previews/front.png" alt="國立臺東專科學校實際模型預覽" width="260">](國立臺東專科學校/README.md)<br>**[國立臺東專科學校｜1 組](國立臺東專科學校/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |  |
+| [<img src="國立臺南護理專科學校/臺南校區/buildings/ntin-xinxin-building/previews/front.png" alt="國立臺南護理專科學校實際模型預覽" width="260">](國立臺南護理專科學校/README.md)<br>**[國立臺南護理專科學校｜1 組](國立臺南護理專科學校/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺東專科學校/誠樸校區/buildings/ntc-student-complex/previews/front.png" alt="國立臺東專科學校實際模型預覽" width="260">](國立臺東專科學校/README.md)<br>**[國立臺東專科學校｜1 組](國立臺東專科學校/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="實踐大學/臺北校區/buildings/usc-c-human-ecology/previews/front.png" alt="實踐大學實際模型預覽" width="260">](實踐大學/README.md)<br>**[實踐大學｜1 組](實踐大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 
 ## 全國大專校院擴充進度
 
@@ -55,7 +55,7 @@
 
 ## 模型範圍與限制
 
-- 430 組是模型／列印包數量，並不等於 430 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
+- 431 組是模型／列印包數量，並不等於 431 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
 - 均為依公開資料建立的外觀近似模型，不是官方模型、測繪成果、BIM 或工程圖；背面、屋頂與細節可能含推估、簡化或加粗。
 - 各件採獨立展示尺寸，沒有共同校園／院區比例尺。STL 不含預覽材質或色彩。
 - 既有數位網格檢查不等於切片或實體試印成功；尚未實體試印，請檢查薄壁、懸挑、支撐及列印設備限制。

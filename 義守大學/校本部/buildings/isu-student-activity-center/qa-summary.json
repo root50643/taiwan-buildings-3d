@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "checks": {
+    "eight_programs_exit_zero": true,
+    "all_report_checks_true": true
+  },
+  "stl_sha256": "e4fbac9f7a983850267a3f57d710e6af2ca94d5f67295be2c384c48fc0c54b4b",
+  "reports": [
+    {
+      "script": "check_raw_mesh.py",
+      "report": "raw-mesh-check.json",
+      "exit_code": 0,
+      "checks": {
+        "binary_length_exact": true,
+        "finite_original_data": true,
+        "original_faces_nondegenerate": true,
+        "original_normals_unit": true,
+        "original_normals_agree": true,
+        "exact_coordinate_edges_two_faces": true,
+        "exact_coordinate_consistent_winding": true,
+        "exact_coordinate_vertex_links_cycles": true,
+        "single_surface_no_internal_shell": true,
+        "positive_signed_volume": true,
+        "longest_150mm": true
+      },
+      "all_checks_true": true
+    },
+    {
+      "script": "check_component_detail.py",
+      "report": "component-detail.json",
+      "exit_code": 0,
+      "checks": {
+        "all_original_components_survive_0_8mm_opening": true,
+        "no_original_component_splits_after_erosion_or_opening": true,
+        "all_individual_polygon_losses_le_one_percent": true
+      },
+      "all_checks_true": true
+    },
+    {
+      "script": "check_surface_chords.py",
+      "report": "surface-chords.json",
+      "exit_code": 0,
+      "checks": {
+        "every_original_triangle_four_samples": true,
+        "all_original_surface_entry_hits_confirmed": true,
+        "all_sampled_first_chords_ge_0p8mm": true
+      },
+      "all_checks_true": true
+    },
+    {
+      "script": "check_feature_roots.py",
+      "report": "feature-roots.json",
+      "exit_code": 0,
+      "checks": {
+        "four_front_column_two_axis_chords_three_heights": true,
+        "all_four_front_roots_continuous_base_to_roof": true,
+        "seventeen_fine_column_roots_continuous": true,
+        "two_rear_supports_and_twelve_pilasters_rooted": true,
+        "entrance_three_open_clearances_over20mm": true
+      },
+      "all_checks_true": true
+    },
+    {
+      "script": "check_roof_normals.py",
+      "report": "roof-normals.json",
+      "exit_code": 0,
+      "checks": {
+        "all_designated_original_face_normals_first_chord_ge0p8mm": true,
+        "north_raised_slopes_and_main_ridge_vertical_root_continuous": true,
+        "actual_face_index_and_all_hits_recorded": true
+      },
+      "all_checks_true": true
+    },
+    {
+      "script": "validate_model.py",
+      "report": "validation.json",
+      "exit_code": 0,
+      "checks": {
+        "binary_stl_length": true,
+        "finite_coordinates_and_normals": true,
+        "original_normals_unit": true,
+        "original_normals_match_winding": true,
+        "nondegenerate_original_faces": true,
+        "watertight": true,
+        "winding_consistent": true,
+        "every_edge_two_faces": true,
+        "vertex_links_single_cycles": true,
+        "one_connected_surface_shell": true,
+        "no_disconnected_enclosed_shell": true,
+        "positive_volume": true,
+        "base_z_zero": true,
+        "longest_dimension_150mm": true,
+        "source_rebuild_hash_matches": true,
+        "blend_stl_geometry_agree": true
+      },
+      "all_checks_true": true
+    },
+    {
+      "script": "check_render_rebuild.py",
+      "report": "render-manifest.json",
+      "exit_code": 0,
+      "checks": {
+        "seven_actual_stl_images_verified": true,
+        "all_independent_pixel_rebuilds_match": true
+      },
+      "all_checks_true": true
+    },
+    {
+      "script": "check_documentation.py",
+      "report": "documentation-check.json",
+      "exit_code": 0,
+      "checks": {
+        "three_readmes_same_model_front_rear_same_row": true,
+        "all_relative_document_links_exist": true,
+        "seven_png_dimensions_correct": true,
+        "no_source_photo_pdf_ppt_redistribution": true
+      },
+      "all_checks_true": true
+    }
+  ],
+  "publication": "Author QA complete; independent reviewer and unified writer control publication."
+}

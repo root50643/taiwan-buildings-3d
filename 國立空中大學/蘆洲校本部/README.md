@@ -1,0 +1,17 @@
+# 國立空中大學｜蘆洲校本部
+
+[返回學校](../README.md)
+
+## 本次模型
+
+[北院｜紅色防漏坡屋蓋版](buildings/nou-north-courtyard/README.md)：完整外環四翼、中央行政橫棟、雙庭院、內院柱廊及正門穿堂的低細節近似。保存後加低坡屋蓋，未推造原始平屋頂。
+
+| 正面 | 背面 |
+|:---:|:---:|
+| [![北院正面](buildings/nou-north-courtyard/previews/front.png)](buildings/nou-north-courtyard/README.md) | [![北院背面](buildings/nou-north-courtyard/previews/rear.png)](buildings/nou-north-courtyard/README.md) |
+
+含底座最長 150 mm，單位毫米。紅色僅預覽材質，STL 不含顏色。資料出版日、網頁日與照片拍攝日有別，詳個別 README；不宣稱 2026 精確現況。
+
+## 範圍邊界
+
+本次只完成北院一件，不含南院、活動中心、教學大樓及其他校舍。教學大樓已有部分工程圖與正面照片，但中上層退縮、背側和中庭三維關係仍未確認，未硬造模型。其他建物與校區尚未在本輪完整調查；不可將本件當成全校模型集。

@@ -1,6 +1,6 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **447 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 376 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **448 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 377 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -37,6 +37,7 @@
 | [<img src="大同大學/中山北路校本部/buildings/ttu-shangzhi-hall/previews/front.png" alt="大同大學實際模型預覽" width="260">](大同大學/README.md)<br>**[大同大學｜1 組](大同大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="佛光大學/礁溪校區/buildings/fgu-huaien-hall/previews/front.png" alt="佛光大學實際模型預覽" width="260">](佛光大學/README.md)<br>**[佛光大學｜1 組](佛光大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="淡江大學/淡水校本部/buildings/tku-palace-classrooms/previews/front.png" alt="淡江大學實際模型預覽" width="260">](淡江大學/README.md)<br>**[淡江大學｜1 組](淡江大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="開南大學/桃園校區/buildings/knu-library/previews/front.png" alt="開南大學實際模型預覽" width="260">](開南大學/README.md)<br>**[開南大學｜1 組](開南大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="樹人醫護管理專科學校/路竹校本部/buildings/szmc-multifunction-activity-center/previews/front.png" alt="樹人醫護管理專科學校實際模型預覽" width="260">](樹人醫護管理專科學校/README.md)<br>**[樹人醫護管理專科學校｜1 組](樹人醫護管理專科學校/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="馬偕醫學大學/校本部/buildings/mmu-multifunctional-2013/previews/front.png" alt="馬偕醫學大學實際模型預覽" width="260">](馬偕醫學大學/README.md)<br>**[馬偕醫學大學｜1 組](馬偕醫學大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="法鼓文理學院/金山校本部/buildings/dila-yangsheng-hall/previews/front.png" alt="法鼓文理學院實際模型預覽" width="260">](法鼓文理學院/README.md)<br>**[法鼓文理學院｜1 組](法鼓文理學院/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="中華福音神學研究學院/八德校區/buildings/ces-trinity-chapel/previews/front.png" alt="中華福音神學研究學院實際模型預覽" width="260">](中華福音神學研究學院/README.md)<br>**[中華福音神學研究學院｜1 組](中華福音神學研究學院/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="明新科技大學/新豐校區/buildings/must-youren-library/previews/front.png" alt="明新科技大學實際模型預覽" width="260">](明新科技大學/README.md)<br>**[明新科技大學｜1 組](明新科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
+| [<img src="台灣基督長老教會南神神學院/校本部/buildings/ttcs-chapel-1957/previews/front.png" alt="台灣基督長老教會南神神學院實際模型預覽" width="260">](台灣基督長老教會南神神學院/README.md)<br>**[台灣基督長老教會南神神學院｜1 組](台灣基督長老教會南神神學院/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |  |  |
 
 ## 全國大專校院擴充進度
 
@@ -60,7 +61,7 @@
 
 ## 模型範圍與限制
 
-- 447 組是模型／列印包數量，並不等於 447 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
+- 448 組是模型／列印包數量，並不等於 448 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
 - 均為依公開資料建立的外觀近似模型，不是官方模型、測繪成果、BIM 或工程圖；背面、屋頂與細節可能含推估、簡化或加粗。
 - 各件採獨立展示尺寸，沒有共同校園／院區比例尺。STL 不含預覽材質或色彩。
 - 既有數位網格檢查不等於切片或實體試印成功；尚未實體試印，請檢查薄壁、懸挑、支撐及列印設備限制。

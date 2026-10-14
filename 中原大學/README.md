@@ -4,7 +4,8 @@
 
 目前交付1棟：懷恩樓（約2021外觀近似，未含2024光電）。本頁不是全校建築清單，也不代表全校完成。
 
-![懷恩樓南面](中壢校區/buildings/cycu-huai-en-hall-2021/previews/front.png)
-![懷恩樓北面](中壢校區/buildings/cycu-huai-en-hall-2021/previews/rear.png)
+| 南面實際模型 | 北面實際模型 |
+| :---: | :---: |
+| <img src="中壢校區/buildings/cycu-huai-en-hall-2021/previews/front.png" alt="懷恩樓南面" width="420"> | <img src="中壢校區/buildings/cycu-huai-en-hall-2021/previews/rear.png" alt="懷恩樓北面" width="420"> |
 
 [模型、來源與驗證](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)

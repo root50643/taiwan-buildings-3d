@@ -1,0 +1,13 @@
+"""Re-run checks in a working copy. Do not alter a frozen release in place."""
+from pathlib import Path
+import json,subprocess,sys,hashlib
+R=Path(__file__).resolve().parent
+scripts=['validate_model.py','check_thin_features.py','check_layer_components.py','check_voids.py','check_ornaments.py','test_fail_closed.py']
+results=[]
+for script in scripts:
+ p=subprocess.run([sys.executable,str(R/script)],cwd=R,check=True,capture_output=True,text=True)
+ results.append({'script':script,'exit_code':p.returncode})
+v=json.loads((R/'validation.json').read_text());a=json.loads((R/'layer-component-check.json').read_text());o=json.loads((R/'ornament-check.json').read_text());q=json.loads((R/'void-check.json').read_text());f=json.loads((R/'fail-closed-selftest.json').read_text())
+checks={'all_verifiers_exit_zero':True,'raw_stl_validation_passed':v['passed'],'canonical_contours_valid_every_layer':a['passed'],'every_original_polygon_survives_without_splitting':all(a['checks'].values()),'courtyard_and_portico_rays_passed':q['passed'],'targeted_ornament_top_widths_and_roots_passed':o['passed'],'invalid_injection_rejected':f['passed']}
+report={'passed':all(checks.values()),'checks':checks,'stl_sha256':v['stl_sha256'],'executions':results,'dimensions_mm':v['dimensions_mm'],'surface_shells':v['surface_shells'],'triangles':v['triangles'],'layer_pitch_mm':.2,'layer_offset_mm':.071,'layers':a['sampled_layers'],'original_polygons_checked':len(a['original_component_checks']),'layers_over_1pct_opening_loss':a['layers_over_one_percent_opening_loss'],'maximum_total_layer_opening_loss_fraction':a['maximum_opening_loss_fraction'],'original_polygons_over_1pct_opening_loss':sum(c['opening_loss_fraction']>.01 for c in a['original_component_checks']),'maximum_original_polygon_opening_loss_fraction':max(c['opening_loss_fraction'] for c in a['original_component_checks']),'thin_features_warning':True,'support_assessment_required':True,'physical_print_test_performed':False,'actual_slicer_toolpaths_verified':False,'limitations':['Pass means the listed digital checks passed; it does not mean zero thin-feature warnings, guaranteed printability or no supports.','The 1.15-1.2 mm ornament tops are deliberate print-thickened simplifications; per-layer and per-component loss values are fully retained.','Targeted axial rays and calipers do not prove all-direction minimum wall thickness.','Selected historic core from 1999 drawings, excluding later additions, not the whole 1999 courtyard or present condition.']}
+(R/'qa-summary.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2));assert report['passed']

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": {
+    "check_thin_features.py_individual_invalid_rejected": true,
+    "check_thin_features.py_combined_invalid_rejected": true,
+    "check_layer_components.py_individual_invalid_rejected": true,
+    "check_layer_components.py_combined_invalid_rejected": true
+  },
+  "tests": [
+    {
+      "validator": "check_thin_features.py",
+      "original_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
+      "injection": "individual",
+      "exit_code": 1,
+      "last_error_line": "AssertionError: Invalid closed loop at 0.071"
+    },
+    {
+      "validator": "check_thin_features.py",
+      "original_sha256": "059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915",
+      "injection": "combined",
+      "exit_code": 1,
+      "last_error_line": "AssertionError: Invalid combined section at 0.071: reject thin screening without repair"
+    },
+    {
+      "validator": "check_layer_components.py",
+      "original_sha256": "365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5",
+      "injection": "individual",
+      "exit_code": 1,
+      "last_error_line": "AssertionError: Invalid closed loop at 0.071"
+    },
+    {
+      "validator": "check_layer_components.py",
+      "original_sha256": "365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5",
+      "injection": "combined",
+      "exit_code": 1,
+      "last_error_line": "AssertionError: Invalid combined section at 0.071: reject thin screening without repair"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checks": {
+    "all_verifiers_exit_zero": true,
+    "raw_stl_validation_passed": true,
+    "canonical_contours_valid_every_layer": true,
+    "every_original_polygon_survives_without_splitting": true,
+    "courtyard_and_portico_rays_passed": true,
+    "targeted_ornament_top_widths_and_roots_passed": true,
+    "invalid_injection_rejected": true
+  },
+  "stl_sha256": "b7966d5a426accfdf6a816a3261748512f564f245a40513f2e55e22754280406",
+  "executions": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_layer_components.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_voids.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_ornaments.py",
+      "exit_code": 0
+    },
+    {
+      "script": "test_fail_closed.py",
+      "exit_code": 0
+    }
+  ],
+  "dimensions_mm": [
+    150.0,
+    130.0,
+    66.0999984741211
+  ],
+  "surface_shells": 1,
+  "triangles": 14042,
+  "layer_pitch_mm": 0.2,
+  "layer_offset_mm": 0.071,
+  "layers": 331,
+  "original_polygons_checked": 1047,
+  "layers_over_1pct_opening_loss": 70,
+  "maximum_total_layer_opening_loss_fraction": 0.09593913655528649,
+  "original_polygons_over_1pct_opening_loss": 568,
+  "maximum_original_polygon_opening_loss_fraction": 0.09987884182374136,
+  "thin_features_warning": true,
+  "support_assessment_required": true,
+  "physical_print_test_performed": false,
+  "actual_slicer_toolpaths_verified": false,
+  "limitations": [
+    "Pass means the listed digital checks passed; it does not mean zero thin-feature warnings, guaranteed printability or no supports.",
+    "The 1.15-1.2 mm ornament tops are deliberate print-thickened simplifications; per-layer and per-component loss values are fully retained.",
+    "Targeted axial rays and calipers do not prove all-direction minimum wall thickness.",
+    "Selected historic core from 1999 drawings, excluding later additions, not the whole 1999 courtyard or present condition."
+  ]
+}

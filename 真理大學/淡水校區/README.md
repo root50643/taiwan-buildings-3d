@@ -1,0 +1,13 @@
+# 真理大學淡水校區
+
+目前1件指定歷史主體模型，不代表校區或全校所有建物完成。
+
+## 牛津學堂（1999調查圖所繪主體，不含後加建）
+
+| 同一建物正面 | 同一建物背面 |
+|---|---|
+| ![正面](buildings/au-oxford-1999-core/previews/front.png) | ![背面](buildings/au-oxford-1999-core/previews/rear.png) |
+
+[開啟模型與檔案](buildings/au-oxford-1999-core/README.md) · [返回學校](../README.md)
+
+保留完整兩長翼、前橫堂、通空柱廊與後段院落；明確排除中庭／背側後加建，不稱1882原貌或2026現況。150×130×66.1mm，70層opening損失>1%；小端飾與尖塔1.15–1.2mm，完整警告在[薄件說明](buildings/au-oxford-1999-core/THIN-FEATURES.md)。需切片確認支撐，未實體試印。

@@ -1,0 +1,71 @@
+{
+  "status": "explicit_nonzero_warning_for_review",
+  "total_layer_count": 238,
+  "original_polygon_sample_count": 1912,
+  "whole_layers_over_one_percent": 0,
+  "max_whole_layer_loss_fraction": 0.0007188686308008162,
+  "component_samples_over_one_percent": 1669,
+  "maximum_component_loss_fraction": 0.04390523959460185,
+  "worst_component": {
+    "centroid_xy": [
+      49.79055277464059,
+      33.26898272046455
+    ],
+    "convex_area_difference_mm2": 1.6421759991835927e-06,
+    "rotated_rectangle_coords": [
+      [
+        50.729760426335304,
+        32.379030851288114
+      ],
+      [
+        48.879776,
+        32.349955
+      ],
+      [
+        48.85134457312054,
+        34.158937183326024
+      ],
+      [
+        50.70132899945591,
+        34.188013034614215
+      ],
+      [
+        50.729760426335304,
+        32.379030851288114
+      ]
+    ],
+    "bounds": [
+      48.879776,
+      32.349955,
+      50.701329,
+      34.188013
+    ],
+    "rotated_bbox_min_width": 1.8092055951785544,
+    "retained_fraction": 0.9560947604053982,
+    "loss_area_mm2": 0.14471016251053978,
+    "loss_outside_0p41_vertex_mm2": 0.0034058062780685993,
+    "z_mm": 30.071,
+    "original_component_index": 17,
+    "original_area_mm2": 3.295965671676505,
+    "eroded_components": 1,
+    "opened_components": 1,
+    "opening_loss_fraction": 0.04390523959460185
+  },
+  "maximum_loss_outside_0p41_vertex_neighborhood_mm2": 0.0034058062780685993,
+  "affected_features": "跨層樣本為外廊斜柱及門廊柱等小截面，不是1669個實體構件；完整逐樣本數據與座標保留。",
+  "caliper_evidence": "每一個>1%原Polygon均取局部中心、沿旋轉包絡兩個法向，以原始STL三角面射線量正反最近交點；最小1.7999999523162837mm。不是把外框寬度冒充壁厚。",
+  "root_evidence": "32個外圈結構位置（開放段斜柱／高牆段壁柱）根向射線穿入廊板或牆體/屋面；5根門廊柱上下連底/屋蓋。見root-ray-check.json。",
+  "interpretation": "非零形態損失仍是警告；排除0.41mm頂點鄰域後仍有殘餘，不能稱全僅四角。原Polygon erosion/opening全部零消失及零分裂，並有局部法向/根部連接補證。",
+  "numerical_variation": "浮點、輪廓6位量化與GEOS buffer圓弧離散可能帶來末位微變；保留完整數值，不改閾值、不吞失敗、不修補invalid。",
+  "limitations": [
+    "局部指定法向射線不是全方向全域最小壁厚。",
+    "不得任意縮小，變更尺度後需重跑所有檢查。",
+    "外簷/門廊/環廊仍須實際切片評估支撐。",
+    "未跑實際工具路徑或實體試印，不保證免支撐或一定可印。"
+  ],
+  "evidence": [
+    "detailed-component-check.json",
+    "warning-caliper-check.json",
+    "root-ray-check.json"
+  ]
+}

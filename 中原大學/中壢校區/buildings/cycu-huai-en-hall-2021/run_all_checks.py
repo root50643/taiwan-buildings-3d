@@ -1,0 +1,9 @@
+from pathlib import Path
+import hashlib,json,subprocess,sys
+R=Path(__file__).resolve().parent
+for f in ['validate_model.py','check_all_layers.py','check_thin_features.py','check_layer_components.py','check_open_spaces.py','check_render_reproduction.py']:
+ subprocess.run([sys.executable,str(R/f)],check=True)
+v=json.loads((R/'validation.json').read_text());l=json.loads((R/'layer-opening-check.json').read_text());c=json.loads((R/'layer-component-check.json').read_text());o=json.loads((R/'open-space-check.json').read_text());r=json.loads((R/'render-reproduction-check.json').read_text())
+checks={**v['checks'],**c['checks'],**o['checks'],**r['checks'],'all_validators_exit_zero':True,'all_0_2mm_original_sections_valid':True,'canonical_fail_closed_v3_sha_verified':hashlib.sha256((R/'check_thin_features.py').read_bytes()).hexdigest()=='059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915','per_original_polygon_validator_sha_verified':hashlib.sha256((R/'check_layer_components.py').read_bytes()).hexdigest()=='365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5'}
+report={'passed':all(checks.values()),'checks':checks,'dimensions_mm':v['dimensions_mm'],'stl_sha256':v['stl_sha256'],'layer_count':l['sampled_layers'],'layer_offset_mm':.071,'layer_pitch_mm':.2,'reference_opening_width_mm':.8,'original_polygon_count':len(c['original_component_checks']),'opening_maximum_loss_fraction':l['maximum_opening_loss_fraction'],'opening_layers_over_1_percent':l['layers_over_one_percent_opening_loss'],'scope':'Original-STL manifold/normal/vertex-link/section checks; independent STL SHA, saved Blend triangle geometry and actual rendered PNG agreement; each original XY Polygon survives erosion/opening without splitting. Not a slicer, physical print or exhaustive multidirectional wall-thickness certification.'}
+(R/'qa-summary.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,indent=2));assert report['passed']

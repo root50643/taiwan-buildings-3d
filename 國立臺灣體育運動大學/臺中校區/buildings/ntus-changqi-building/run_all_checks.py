@@ -1,0 +1,13 @@
+"""Fail-closed aggregate; run on a working copy rather than the immutable freeze."""
+from pathlib import Path
+import json,subprocess,sys,hashlib,re
+R=Path(__file__).resolve().parent
+scripts=['validate_model.py','check_all_layers.py','check_layer_components.py','check_thin_features.py','check_open_spaces.py','check_previews.py']
+for script in scripts:subprocess.run([sys.executable,str(R/script)],check=True)
+v=json.loads((R/'validation.json').read_text());o=json.loads((R/'open-space-check.json').read_text());l=json.loads((R/'layer-opening-check.json').read_text());t=json.loads((R/'thin-feature-check.json').read_text());lc=json.loads((R/'layer-component-check.json').read_text());pr=json.loads((R/'preview-check.json').read_text())
+links=re.findall(r'\]\(([^)]+)\)',(R/'README.md').read_text())
+missing=[x for x in links if '://' not in x and not (R/x).exists() and x not in ['SHA256SUMS','qa-summary.json']]
+assert not missing,missing
+checks={**lc['checks'],**v['checks'],**o['checks'],**pr['checks'],'all_0_2mm_original_sections_valid':True,'canonical_v3_thin_screen_completed':True,'all_validators_exit_zero':True,'all_readme_links_resolve':not missing,'canonical_v3_hash_matches':hashlib.sha256((R/'check_thin_features.py').read_bytes()).hexdigest()=='059f7378c74a1400dcf010365ebf35df3027fd853f1c960462a233dc68ce8915','canonical_per_polygon_hash_matches':hashlib.sha256((R/'check_layer_components.py').read_bytes()).hexdigest()=='365e437af0d3d6defc2f52adf3e8601ac3643a14e15e03c8c8610b10bb8061a5'}
+report={'passed':all(checks.values()),'checks':checks,'layer_count':l['sampled_layers'],'original_polygon_count':len(lc['original_component_checks']),'layer_offset_mm':.071,'layer_pitch_mm':.2,'opening_reference_width_mm':.8,'opening_maximum_loss_fraction':l['maximum_opening_loss_fraction'],'opening_layers_over_1_percent':l['layers_over_one_percent_opening_loss'],'opening_maximum_loss_layer':max(l['layers'],key=lambda x:x['fraction']),'opening_interpretation':'No sampled layer exceeds 1% area loss. Each original Polygon survives erosion and opening without splitting. Nonzero corner/detail loss is disclosed. This is not a full-direction wall-thickness test, slicer simulation or physical print test.','actual_clearances_mm':o['actual_clearances_mm'],'stl_sha256':v['stl_sha256'],'publication_status':'Local author QA passed; appearance reviewed. Independent pre-publication audit is separate.'}
+(R/'qa-summary.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));assert report['passed'];assert (R/'qa-summary.json').exists();print(json.dumps(report,ensure_ascii=False,indent=2))

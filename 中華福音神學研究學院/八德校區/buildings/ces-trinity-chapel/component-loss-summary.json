@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "checks": {
+    "all_original_components_preserved_single": true,
+    "all_over_one_percent_corner_outside_loss_below_1e_8_mm2": true,
+    "each_family_has_original_surface_controls": true
+  },
+  "stl_sha256": "0cb993bbdbb9d3bdb84bd31f8b8da3a66b60263da47efb821e2989ff4760fade",
+  "over_one_percent_samples": 72,
+  "feature_families": [
+    {
+      "feature": "主屋面兩個設備／採光低構造",
+      "samples": 18,
+      "bounds_variants": 2,
+      "z_range_mm": [
+        30.871,
+        32.471
+      ],
+      "maximum_loss_fraction": 0.02807793730606706,
+      "maximum_loss_outside_adaptive_corners_mm2": 0.0,
+      "original_surface_controls": "roof_light_root_226 / roof_light_root_351",
+      "minimum_normal_width_mm": 1.984
+    },
+    {
+      "feature": "鐘塔西南開口邊與十字板連接",
+      "samples": 25,
+      "bounds_variants": 1,
+      "z_range_mm": [
+        41.671,
+        46.471
+      ],
+      "maximum_loss_fraction": 0.021425115121081244,
+      "maximum_loss_outside_adaptive_corners_mm2": 7.360495893338204e-12,
+      "original_surface_controls": "tower_southwest_cross_back_root / tower_cross_vertical_plate",
+      "minimum_normal_width_mm": 1.24
+    },
+    {
+      "feature": "鐘塔西側高窗尾端有限折牆截面",
+      "samples": 29,
+      "bounds_variants": 2,
+      "z_range_mm": [
+        41.671,
+        51.471
+      ],
+      "maximum_loss_fraction": 0.10060101261359779,
+      "maximum_loss_outside_adaptive_corners_mm2": 1.1451722816552268e-14,
+      "original_surface_controls": "tower_west_opening_end_strip_21.0 / tower_west_opening_end_strip_24.8 / tower_west_end_strip_vertical_root",
+      "minimum_normal_width_mm": 1.24
+    }
+  ],
+  "method": "Rows repeat physical parts across slice heights; they are not separate built pieces. No original Polygon was replaced, simplified, repaired or excluded."
+}

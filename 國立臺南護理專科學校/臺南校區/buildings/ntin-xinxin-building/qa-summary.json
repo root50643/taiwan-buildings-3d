@@ -1,0 +1,54 @@
+{
+  "status": "外觀已核可；作者全部檢查通過；待獨立幾何審核後發布",
+  "checks": {
+    "appearance_approved": true,
+    "all_validator_exit_codes_zero": true,
+    "raw_geometry_passed": true,
+    "all_0_2mm_layers_valid_and_component_preserving": true,
+    "saved_blend_and_all_five_pngs_identical": true,
+    "public_links_and_privacy_passed": true
+  },
+  "passed": true,
+  "independent_review_required_before_publication": true,
+  "stl_sha256": "d9b3a2a55439f8d7a8650942128def62f7f7d9ca505aa71c31b3ff2c4e22b161",
+  "size_mm": [
+    150.0,
+    48.0,
+    41.70000076293945
+  ],
+  "sampled_layers": 209,
+  "original_polygons_tested": 691,
+  "zero_eroded_or_opened_components_lost_or_split": true,
+  "reference_width_mm": 0.8,
+  "not_a_full_minimum_wall_thickness_test": true,
+  "not_a_slicer_or_physical_print": true,
+  "exit_codes": [
+    {
+      "script": "validate_model.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_thin_features.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_layer_components.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_assets.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_package.py",
+      "exit_code": 0
+    }
+  ],
+  "maximum_whole_layer_opening_loss_fraction": 0.0008601105915247672,
+  "whole_layer_opening_loss_denominator": "total area of each complete XY layer",
+  "maximum_original_polygon_opening_loss_fraction": 0.0292385974785899,
+  "original_polygon_samples_over_one_percent_opening_loss": 64,
+  "original_polygon_opening_loss_denominator": "area of each original connected Polygon independently, with repeated z samples counted separately",
+  "opening_loss_warning_file": "opening-loss-warning.json",
+  "docs_amendment": "Explicit whole-layer versus individual-Polygon statistics; geometry, Blend, PNG, source scripts and original reports unchanged."
+}

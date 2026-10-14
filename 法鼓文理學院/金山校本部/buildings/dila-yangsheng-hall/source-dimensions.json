@@ -1,0 +1,791 @@
+{
+  "schema_version": "1.0",
+  "document_type": "來源尺寸與推定表",
+  "language": "zh-TW",
+  "prepared_date": "2026-10-14",
+  "building": {
+    "school": "法鼓文理學院",
+    "campus": "金山校本部",
+    "name": "揚生館",
+    "school_id": "moe-1196",
+    "scope": "單棟的球場量體、狹長量體與必要連接及地形，不代表全校。"
+  },
+  "provenance": {
+    "model_source_path": "build_model.py",
+    "model_source_sha256": "0f52b0a452c12d137a1c417e612caffaf1f517a43878201111a894a7c0309b66",
+    "method": "公開來源與源程式逐項對照；局部推定與官方數值分開記錄。"
+  },
+  "dates": [
+    {
+      "value": "2015",
+      "type": "作品／完工年記載",
+      "source_refs": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "value": "2014-08-11",
+      "type": "2022 避難調查所列完工日",
+      "source_refs": [
+        "S07"
+      ],
+      "printed_original": "103 年 8 月 11 日"
+    },
+    {
+      "value": null,
+      "type": "NLSC 航照拍攝日",
+      "source_refs": [
+        "S05"
+      ],
+      "visible_marker": "NLSC 2024",
+      "note": "標記不可直接視為拍攝日。"
+    }
+  ],
+  "date_reconciliation": "並列來源記載；差異原因未證實，不推斷使用執照或分期竣工。",
+  "coordinate_system": {
+    "plan_image_px": [
+      1248,
+      1721
+    ],
+    "plan_to_model_mm": {
+      "x": "(pixel_x - 550) * 0.0603 * 1.7",
+      "y": "(850 - pixel_y) * 0.0603 * 1.7",
+      "z": "1.6 + local_terrain_height_m * 1.7"
+    },
+    "arrival_datum_local_m": 4.0,
+    "terrain_origin": "作者局部零點，非海拔或測量基準",
+    "orientation": "程式 X/Y 為平面圖像座標及反向 y；不得單憑此式視為地理正北。"
+  },
+  "classification_definitions": {
+    "來源正式數值": "原始出版資料直接列值；仍須保留其部位及口徑。",
+    "比例圖派生尺寸": "作者描繪的像素範圍乘校準參數，不是來源原標尺寸。",
+    "有界推定": "來源支持相對形態或量級，但具體數值由作者選定，沒有工程標註。",
+    "類推": "由可見的不同部位借用形態語彙，缺少目標部位直接照片證據。",
+    "列印簡化": "為縮尺幾何連接或呈現而作的作者處理，不主張原建築實際形狀。"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "name": "姚仁喜 大元建築工場官方作品頁與照片",
+      "url": "https://www.krisyaoartech.com/en/projects/education/Dharma-Drum-Institute-of-Liberal-Arts",
+      "local_files": [
+        "architect-official.html",
+        "architect-image-urls.json",
+        "architect-01.jpg",
+        "architect-02.jpg",
+        "architect-03.jpg",
+        "architect-04.jpg",
+        "architect-21.jpg",
+        "architect-22.jpg"
+      ],
+      "role": "年代、雙量體拓撲、7 m 球場室內淨高、外觀照片；21/22 不作球場屋面工程截面。"
+    },
+    {
+      "id": "S02",
+      "name": "ArchDaily 建築師供圖與球場層平面",
+      "url": "https://www.archdaily.cn/cn/770150/tai-wan-fa-gu-ren-wen-ke-xue-xue-yuan-kris-yao-artech",
+      "local_files": [
+        "archdaily.html",
+        "ad-large-urls.json",
+        "ad-large-23.jpg",
+        "ad-large-00.jpg",
+        "ad-large-15.jpg",
+        "ad-large-19.jpg",
+        "ad-large-21.jpg"
+      ],
+      "role": "平面拓撲、相對比例與南北端配景；ad-large-23 無官方圖尺。"
+    },
+    {
+      "id": "S03",
+      "name": "建築師雜誌 法鼓文理學院作品資料",
+      "url": "https://www.twarchitect.org.tw/works/法鼓文理學院/",
+      "local_files": [
+        "architect-mag.html"
+      ],
+      "role": "體育館正式面積、高度及 2015 完工年記載。"
+    },
+    {
+      "id": "S04",
+      "name": "法鼓文理學院校舍建築頁",
+      "url": "https://www.dila.edu.tw/building1",
+      "local_files": [
+        "official-building.html",
+        "official-building-A3.jpg"
+      ],
+      "role": "揚生館各層用途與正面外觀。"
+    },
+    {
+      "id": "S05",
+      "name": "國土測繪中心 PHOTO2 航照圖磚",
+      "url": "https://wmts.nlsc.gov.tw/wmts/PHOTO2/default/EPSG:3857/20/448260/878516",
+      "local_files": [
+        "aerial/tiles.json",
+        "aerial/nlsc-yangsheng-z20.jpg",
+        "aerial/yangsheng-roof-crop.jpg"
+      ],
+      "role": "屋頂拓撲及近似尺度；NLSC 2024 為可見標記，拍攝日期未證實。"
+    },
+    {
+      "id": "S06",
+      "name": "OpenStreetMap way 524912887",
+      "url": "https://www.openstreetmap.org/way/524912887",
+      "local_files": [
+        "osm-yangsheng-geometry.json",
+        "osm-campus.xml"
+      ],
+      "role": "粗外包絡與定位；不是工程測量或單獨主館屋頂尺寸。"
+    },
+    {
+      "id": "S07",
+      "name": "金山區 2022 年避難收容調查表",
+      "url": "https://www.jinshan.ntpc.gov.tw/userfiles/9530212/files/111%E5%B9%B4%E6%96%B0%E5%8C%97%E5%B8%82%E9%87%91%E5%B1%B1%E5%8D%80%E9%81%BF%E9%9B%A3%E6%94%B6%E5%AE%B9%E8%99%95%E6%89%80%E6%9A%A8%E9%98%B2%E7%81%BD%E6%B0%91%E7%94%9F%E7%89%A9%E8%B3%87%E8%A8%AD%E7%BD%AE%E8%A8%88%E7%95%AB.pdf",
+      "url_status": "原下載網址已由來源交接確認",
+      "local_files": [
+        "district-refuge.pdf",
+        "district-refuge.txt",
+        "district-p158.png"
+      ],
+      "printed_page": 158,
+      "role": "多功能球場／游心場完工日期與主體三層記載。"
+    }
+  ],
+  "dimensions_and_assumptions": [
+    {
+      "id": "height_reported",
+      "label_zh_TW": "來源所列體育館總高",
+      "classification": "來源正式數值與模型對應",
+      "source_refs": [
+        "S03"
+      ],
+      "source_value": {
+        "value": 22.7,
+        "unit": "m",
+        "field": "體育館高度"
+      },
+      "model_value": {
+        "relative_to_arrival_datum_m": 22.7,
+        "local_terrain_z_m": 26.7,
+        "model_top_z_mm": 46.99
+      },
+      "method_zh_TW": "將來源總高作為長條棟最高女兒牆相對 DATUM 的約束。",
+      "limitations_zh_TW": "來源未給本原型地形零點，未核實建築高度起算地坪與最高屋突是否計入；26.7 m 不是官方高度。",
+      "code_reference": "DATUM=4.0; roof parapet hi=DATUM+22.7"
+    },
+    {
+      "id": "area_footprint",
+      "label_zh_TW": "來源所列體育館建築面積",
+      "classification": "來源正式數值",
+      "source_refs": [
+        "S03"
+      ],
+      "source_value": {
+        "value": 2293,
+        "unit": "m2"
+      },
+      "model_value": null,
+      "method_zh_TW": "只記錄來源。",
+      "limitations_zh_TW": "不以模型矩形外包面積代替此值；模型未重建完整法定建築面積。"
+    },
+    {
+      "id": "area_floor",
+      "label_zh_TW": "來源所列體育館總樓地板面積",
+      "classification": "來源正式數值",
+      "source_refs": [
+        "S03"
+      ],
+      "source_value": {
+        "value": 6832,
+        "unit": "m2"
+      },
+      "model_value": null,
+      "method_zh_TW": "只記錄來源。",
+      "limitations_zh_TW": "外觀實體並非完整樓板或面積模型，不能聲稱模型面積吻合。"
+    },
+    {
+      "id": "court_clear_height",
+      "label_zh_TW": "球場室內淨高",
+      "classification": "來源正式數值",
+      "source_refs": [
+        "S01"
+      ],
+      "source_value": {
+        "value": 7.0,
+        "unit": "m",
+        "field": "7-meter high ceiling"
+      },
+      "model_value": null,
+      "method_zh_TW": "作為球場挑高性質參考。",
+      "limitations_zh_TW": "不是全館總高；本模型未完整重建室內淨空，不能拿此值直接驗證模型內部。"
+    },
+    {
+      "id": "plan_scale",
+      "label_zh_TW": "球場層平面像素校尺",
+      "classification": "作者校準假設",
+      "source_refs": [
+        "S02",
+        "S05",
+        "S06"
+      ],
+      "source_value": {
+        "image": "ad-large-23.jpg",
+        "image_size_px": [
+          1248,
+          1721
+        ],
+        "official_scale_bar": false
+      },
+      "model_value": {
+        "nominal_m_per_px": 0.0603,
+        "scaled_mm_per_px": 0.10251
+      },
+      "method_zh_TW": "以公開平面比例配合航照長度量級交核。",
+      "limitations_zh_TW": "不是官方圖尺、工程測量或已完成的標準球場校尺；四位小數是程式參數精度，不是現地精度。",
+      "code_reference": "P=.0603*S"
+    },
+    {
+      "id": "aerial_resolution",
+      "label_zh_TW": "航照近似地面解析度",
+      "classification": "投影換算近似",
+      "source_refs": [
+        "S05"
+      ],
+      "source_value": {
+        "zoom": 20,
+        "latitude_deg": 25.24337549,
+        "mosaic_size_px": [
+          1792,
+          1792
+        ],
+        "visible_marker": "NLSC 2024",
+        "capture_date": null
+      },
+      "model_value": {
+        "approx_m_per_px": 0.135
+      },
+      "method_zh_TW": "由 z20 與緯度取得平面量級，用於交核。",
+      "limitations_zh_TW": "標記不是拍攝日；建築傾倒、接縫與像素辨識有誤差；裁圖不提高解析度。"
+    },
+    {
+      "id": "osm_envelope",
+      "label_zh_TW": "OSM 粗外包絡",
+      "classification": "外部幾何近似",
+      "source_refs": [
+        "S06"
+      ],
+      "source_value": {
+        "dimensions_m": [
+          43.61240519883157,
+          74.03998977036214
+        ],
+        "way": 524912887
+      },
+      "model_value": null,
+      "method_zh_TW": "採已保存幾何的定向外包絡，只作定位與量級參考。",
+      "limitations_zh_TW": "含凸出和南端，非球場屋頂；模型另含階梯與橋段，範圍不一。"
+    },
+    {
+      "id": "arrival_datum",
+      "label_zh_TW": "上層抵達地坪基準",
+      "classification": "有界地形推定",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S04"
+      ],
+      "source_value": null,
+      "model_value": {
+        "local_terrain_z_m": 4.0,
+        "model_z_mm": 8.4
+      },
+      "method_zh_TW": "保留上下層地坪及坡地差異的作者局部基準。",
+      "limitations_zh_TW": "無海拔或測量標高意義，不是來源直接數值。",
+      "code_reference": "DATUM=4.0"
+    },
+    {
+      "id": "gym_roof_height",
+      "label_zh_TW": "球場主屋面高度",
+      "classification": "有界高度推定",
+      "source_refs": [
+        "S01",
+        "S04"
+      ],
+      "source_value": {
+        "handoff_candidate_range_m": [
+          15,
+          18
+        ],
+        "range_type": "作者照片比例候選區間，非來源容許誤差"
+      },
+      "model_value": {
+        "relative_to_arrival_datum_m": 17.0,
+        "local_terrain_z_m": 21.0,
+        "model_z_mm": 37.3
+      },
+      "method_zh_TW": "在照片相對高度與較高長條棟約束下選取 17.0 m。",
+      "limitations_zh_TW": "缺揚生館工程剖面；不能將照片比例推定列為官方高度。",
+      "code_reference": "gym cap hi=DATUM+17.0"
+    },
+    {
+      "id": "gym_roof_bands",
+      "label_zh_TW": "球場五組低幅屋面帶",
+      "classification": "拓撲支持與有界截面推定",
+      "source_refs": [
+        "S05"
+      ],
+      "source_value": {
+        "approx_parallel_band_count": 5,
+        "measured_cross_section": false
+      },
+      "model_value": {
+        "count": 5,
+        "y_centers_px": [
+          360,
+          485,
+          610,
+          735,
+          860
+        ],
+        "x_span_px": [
+          285,
+          625
+        ],
+        "nominal_length_m": 20.502,
+        "nominal_base_width_m": 2.8944,
+        "top_above_main_roof_m": 0.4,
+        "top_relative_to_arrival_datum_m": 17.4,
+        "top_local_terrain_z_m": 21.4,
+        "top_model_z_mm": 37.98
+      },
+      "method_zh_TW": "航照決定條帶規律，程式採低幅梯形凸帶表達。",
+      "limitations_zh_TW": "截面、坡度及凸高均非實測；architect-21/22 不是本館球場屋面截面；不宣稱鋸齒工程復原。",
+      "code_reference": "for y in [360,485,610,735,860]; pp heights DATUM+16.95, DATUM+17.4"
+    },
+    {
+      "id": "gym_lower_footprint",
+      "label_zh_TW": "主館下部建模矩形",
+      "classification": "比例圖派生尺寸",
+      "source_refs": [
+        "S02",
+        "S05"
+      ],
+      "source_value": null,
+      "model_value": {
+        "rect_px": [
+          220,
+          287,
+          645,
+          1000
+        ],
+        "dimensions_m": [
+          25.6275,
+          42.9939
+        ]
+      },
+      "method_zh_TW": "程式像素邊界乘 0.0603。",
+      "limitations_zh_TW": "為作者簡化矩形，非完整官方建築輪廓；不含所有凸盒、西側帶及南端平台。",
+      "code_reference": "add(220,287,645,1000,...)"
+    },
+    {
+      "id": "gym_upper_core",
+      "label_zh_TW": "主館上部核心矩形",
+      "classification": "比例圖派生尺寸",
+      "source_refs": [
+        "S02",
+        "S05"
+      ],
+      "source_value": null,
+      "model_value": {
+        "rect_px": [
+          270,
+          287,
+          645,
+          1000
+        ],
+        "dimensions_m": [
+          22.6125,
+          42.9939
+        ]
+      },
+      "method_zh_TW": "核心矩形與西側狹帶分開建構。",
+      "limitations_zh_TW": "此寬度不含西側狹帶和突出盒，不能當作全主館寬度。",
+      "code_reference": "add(270,287,645,1000,...)"
+    },
+    {
+      "id": "gym_roof_cap",
+      "label_zh_TW": "主館屋頂蓋板",
+      "classification": "比例圖派生尺寸",
+      "source_refs": [
+        "S02",
+        "S05"
+      ],
+      "source_value": null,
+      "model_value": {
+        "rect_px": [
+          260,
+          282,
+          650,
+          1005
+        ],
+        "dimensions_m": [
+          23.517,
+          43.5969
+        ]
+      },
+      "method_zh_TW": "採與主體稍有出入的屋頂輪廓。",
+      "limitations_zh_TW": "平面牆基與屋面各有範圍，皆為有界描繪；不視為官方測量。",
+      "code_reference": "add(260,282,650,1005,...)"
+    },
+    {
+      "id": "west_strip",
+      "label_zh_TW": "西側狹帶及低廊高度",
+      "classification": "平面支持與有界高度推定",
+      "source_refs": [
+        "S02",
+        "S05"
+      ],
+      "source_value": {
+        "strip_presence": true,
+        "measured_height": null
+      },
+      "model_value": {
+        "rect_px": [
+          210,
+          340,
+          270,
+          1000
+        ],
+        "dimensions_m": [
+          3.618,
+          39.798
+        ],
+        "bottom_relative_to_arrival_datum_m": 7.9,
+        "top_relative_to_arrival_datum_m": 8.6,
+        "top_local_terrain_z_m": 12.6,
+        "top_model_z_mm": 23.02
+      },
+      "method_zh_TW": "保留狹帶獨立拓撲，垂直尺寸以低幅廊體保守處理。",
+      "limitations_zh_TW": "南端盒窗近照及航照陰影不能證明此廊高度；高度不是實測。",
+      "code_reference": "add(210,340,270,1000,DATUM+7.9,DATUM+8.6)"
+    },
+    {
+      "id": "west_boxes",
+      "label_zh_TW": "西側五個 U 形突出盒",
+      "classification": "平面確證與側窗類推",
+      "source_refs": [
+        "S02",
+        "S01"
+      ],
+      "source_value": {
+        "count_in_plan": 5,
+        "side_glazing_direct_west_elevation_photo_confirmation": false
+      },
+      "model_value": {
+        "count": 5,
+        "centers_y_px": [
+          414,
+          536,
+          658,
+          780,
+          902
+        ],
+        "per_box_plan_size_px": [
+          37,
+          58
+        ],
+        "nominal_plan_size_m": [
+          2.2311,
+          3.4974
+        ],
+        "bottom_relative_to_arrival_datum_m": 8.7,
+        "top_relative_to_arrival_datum_m": 16.95
+      },
+      "method_zh_TW": "數量與位置取平面；盒側開窗語彙類推自南端單盒照片，外向正面保留實面。",
+      "limitations_zh_TW": "不能聲稱五盒玻璃側面逐一有西立面照片確證；開窗高度與厚度是作者選值。",
+      "code_reference": "WEST_BOX_Y=[414,536,658,780,902]; x=[239,276]; y +/-29"
+    },
+    {
+      "id": "south_box",
+      "label_zh_TW": "南端突出單盒",
+      "classification": "平面與照片支持的簡化",
+      "source_refs": [
+        "S01",
+        "S02"
+      ],
+      "source_value": {
+        "count": 1,
+        "opaque_front_and_glazed_returns": true
+      },
+      "model_value": {
+        "rect_px": [
+          315,
+          995,
+          392,
+          1040
+        ],
+        "nominal_plan_size_m": [
+          4.6431,
+          2.7135
+        ],
+        "bottom_relative_to_arrival_datum_m": 8.7,
+        "top_relative_to_arrival_datum_m": 16.95
+      },
+      "method_zh_TW": "以平面定位並依南端照片保留實面及側窗。",
+      "limitations_zh_TW": "尺寸與窗框不是量測值；其語彙不能升格為整條西面直接證據。",
+      "code_reference": "add(315,995,392,1040,...)"
+    },
+    {
+      "id": "linear_block",
+      "label_zh_TW": "狹長棟主體尺寸",
+      "classification": "比例圖派生尺寸",
+      "source_refs": [
+        "S02",
+        "S05"
+      ],
+      "source_value": null,
+      "model_value": {
+        "upper_rect_px": [
+          687,
+          395,
+          895,
+          1380
+        ],
+        "upper_dimensions_m": [
+          12.5424,
+          59.3955
+        ],
+        "lower_rect_px": [
+          687,
+          395,
+          895,
+          1330
+        ],
+        "lower_dimensions_m": [
+          12.5424,
+          56.3805
+        ],
+        "south_upper_projection_m": 3.015,
+        "roof_rect_px": [
+          680,
+          390,
+          900,
+          1385
+        ],
+        "roof_dimensions_m": [
+          13.266,
+          59.9985
+        ]
+      },
+      "method_zh_TW": "分別記錄較短下部、南端上層懸挑與屋頂外緣。",
+      "limitations_zh_TW": "矩形均是作者描繪選值；陰影與女兒牆會影響航照輪廓。",
+      "code_reference": "linear body boxes and roof parapet box"
+    },
+    {
+      "id": "linear_floor_levels",
+      "label_zh_TW": "狹長棟五層標高分配",
+      "classification": "樓層用途支持與標高推定",
+      "source_refs": [
+        "S04",
+        "S01"
+      ],
+      "source_value": {
+        "floor_labels": [
+          "1F",
+          "2F",
+          "3F",
+          "4F",
+          "5F"
+        ]
+      },
+      "model_value": {
+        "relative_to_arrival_datum_m": [
+          0,
+          4.1,
+          8.6,
+          13.3,
+          17.9,
+          22.7
+        ],
+        "nominal_intervals_m": [
+          4.1,
+          4.5,
+          4.7,
+          4.6,
+          4.8
+        ]
+      },
+      "method_zh_TW": "以校方五層用途配合照片安排開放廊與深框。",
+      "limitations_zh_TW": "來源沒有逐層樓高；不是五個官方樓板標高，也不能複製進球場主量體。",
+      "code_reference": "FLOORS=[0,4.1,8.6,13.3,17.9,22.7]"
+    },
+    {
+      "id": "south_platform",
+      "label_zh_TW": "南端平台與階梯",
+      "classification": "有界標高與列印幾何簡化",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S04"
+      ],
+      "source_value": null,
+      "model_value": {
+        "platform_local_terrain_z_m": 6.2,
+        "platform_model_z_mm": 12.14,
+        "lower_flight_range_local_m": [
+          0,
+          2.0
+        ],
+        "lower_flight_steps": 12,
+        "upper_flight_range_local_m": [
+          2.0,
+          6.2
+        ],
+        "upper_flight_steps": 24
+      },
+      "method_zh_TW": "照片確立寬階梯及高差關係，再選取可連接局部地形的有限級數。",
+      "limitations_zh_TW": "6.2 m 不是相對 DATUM 加值；階梯級數、踏階尺寸與高差均未測量。",
+      "code_reference": "stair(...,0,2.0,12); stair(...,2.0,6.2,24); south platform hi=6.2"
+    },
+    {
+      "id": "bridges",
+      "label_zh_TW": "北東短橋及模型端部支根",
+      "classification": "連接拓撲支持與列印簡化",
+      "source_refs": [
+        "S01",
+        "S02"
+      ],
+      "source_value": {
+        "north_connection": true,
+        "east_connection": true
+      },
+      "model_value": {
+        "north_rect_px": [
+          777,
+          180,
+          820,
+          400
+        ],
+        "east_rect_px": [
+          895,
+          630,
+          1005,
+          675
+        ],
+        "deck_top_relative_to_arrival_datum_m": 8.6,
+        "rooted_end_supports": true
+      },
+      "method_zh_TW": "保留必要短橋，端部設實體連接到本模型地形。",
+      "limitations_zh_TW": "橋端支根是列印範圍截斷後的簡化，不主張原建築實有同形橋墩；不包含整座宿舍與道路。",
+      "code_reference": "short bridge boxes; rooted end supports"
+    },
+    {
+      "id": "construction_grid",
+      "label_zh_TW": "原始構件的共同建構格",
+      "classification": "數值一致性處理",
+      "source_refs": [],
+      "source_value": null,
+      "model_value": {
+        "step_mm": 1e-05,
+        "stage": "對每個作者原始構件，布林運算之前",
+        "round_decimal_places": 5
+      },
+      "method_zh_TW": "統一 CrossSection 軸向生成與換軸後的浮點頂點座標。",
+      "limitations_zh_TW": "不是輸出 STL 修復、工程精度或 QA 通過證據。",
+      "code_reference": "construction_grid; np.round(...,5); before CSG"
+    },
+    {
+      "id": "base_scale",
+      "label_zh_TW": "模型縮尺與基座",
+      "classification": "製作參數",
+      "source_refs": [],
+      "source_value": null,
+      "model_value": {
+        "mm_per_m": 1.7,
+        "nominal_scale_denominator": 588.2352941176471,
+        "base_size_mm": [
+          100,
+          150,
+          1.6
+        ]
+      },
+      "method_zh_TW": "模型單位 mm，基座為作者製作選值。",
+      "limitations_zh_TW": "基座範圍不是官方基地界址；成品高度包含基座與局部地形。",
+      "code_reference": "S=1.7; BASE=1.6; Manifold.cube((100,150,BASE))"
+    },
+    {
+      "id": "south_frame_posts",
+      "label_zh_TW": "南端深框兩支中央欄柱與保留細框",
+      "classification": "列印幾何加厚",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S04"
+      ],
+      "source_value": null,
+      "model_value": {
+        "central_post_count": 2,
+        "central_post_cross_section_px": [
+          10,
+          10
+        ],
+        "central_post_cross_section_mm": [
+          1.0251,
+          1.0251
+        ],
+        "retained_8px_fine_frame_thickness_mm": 0.82008
+      },
+      "method_zh_TW": "南端兩層中央欄柱單獨加粗為 10 × 10 px；其餘部分 8 px 細框仍依原建模寬度保留。",
+      "limitations_zh_TW": "加粗屬縮尺列印取向處理，並非現場柱徑量測；0.82008 mm 是仍保留的部分細框厚度，不表示所有構件等厚，亦不是試印通過保證。",
+      "code_reference": "box(784,1367,794,1377,...) in two-floor loop; 8 * P = 0.82008 mm"
+    }
+  ],
+  "excluded_evidence": [
+    {
+      "files": [
+        "ad-large-22.jpg",
+        "ad-large-24.jpg",
+        "ad-large-25.jpg"
+      ],
+      "reason": "行政教學樓平面／剖面，不能套用本館。"
+    },
+    {
+      "files": [
+        "ad-large-26.jpg"
+      ],
+      "reason": "宿舍剖透，不能套用本館。"
+    },
+    {
+      "files": [
+        "architect-21.jpg",
+        "architect-22.jpg"
+      ],
+      "reason": "室內天光照片不是球場屋面工程截面。"
+    },
+    {
+      "files": [
+        "video-WpXVulDd4eU-storyboard0.jpg",
+        "video-rMTWH0VWPOk-storyboard0.jpg"
+      ],
+      "reason": "交接記錄為 SiteUnavailable 回應，未取得可看影格；不用影片時間點作證。"
+    }
+  ],
+  "limitations": {
+    "engineering_survey": false,
+    "complete_four_elevations": false,
+    "official_gym_roof_section_available": false,
+    "physical_print_test_performed": false,
+    "qa_pass_claim": false,
+    "original_mesh_imported": false,
+    "scope_of_originality": "作者程式幾何，來源照片及圖面權利仍屬原權利人。",
+    "unmodeled_or_simplified": [
+      "東側細窗",
+      "樹後低層窗扇",
+      "百葉",
+      "家具",
+      "設備線路",
+      "細金屬欄杆",
+      "完整室內與玻璃材質"
+    ],
+    "note": "本表不宣告視覺、網格、切片或列印 QA 通過。"
+  }
+}

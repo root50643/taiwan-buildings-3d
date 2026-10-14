@@ -1,0 +1,410 @@
+{
+  "passed": true,
+  "stl_sha256": "68a41525726440ce8623460139d24ed907bc6242e328bfd2426fd7c7171ba007",
+  "method": "Moller-Trumbore finite-segment intersections against original delivered STL triangles; no mesh repair.",
+  "checks": {
+    "ground_colonnade_preserved": true,
+    "three_upper_north_corridor_air_strips_preserved": true,
+    "exterior_stair_under_space_preserved": true,
+    "stair_and_original_service_core_are_present": true,
+    "main_flat_roof_without_invented_courtyard": true
+  },
+  "tests": [
+    {
+      "name": "1965 ground colonnade -55",
+      "a_mm": [
+        -55,
+        -30,
+        5.5
+      ],
+      "b_mm": [
+        -55,
+        30,
+        5.5
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "1965 ground colonnade -30",
+      "a_mm": [
+        -30,
+        -30,
+        5.5
+      ],
+      "b_mm": [
+        -30,
+        30,
+        5.5
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "1965 ground colonnade -10",
+      "a_mm": [
+        -10,
+        -30,
+        5.5
+      ],
+      "b_mm": [
+        -10,
+        30,
+        5.5
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "1965 ground colonnade 0",
+      "a_mm": [
+        0,
+        -30,
+        5.5
+      ],
+      "b_mm": [
+        0,
+        30,
+        5.5
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "1965 ground colonnade 10",
+      "a_mm": [
+        10,
+        -30,
+        5.5
+      ],
+      "b_mm": [
+        10,
+        30,
+        5.5
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "1965 ground colonnade 20",
+      "a_mm": [
+        20,
+        -30,
+        5.5
+      ],
+      "b_mm": [
+        20,
+        30,
+        5.5
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "1965 ground colonnade 55",
+      "a_mm": [
+        55,
+        -30,
+        5.5
+      ],
+      "b_mm": [
+        55,
+        30,
+        5.5
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "north corridor long open strip 16",
+      "a_mm": [
+        -44,
+        17.3,
+        16
+      ],
+      "b_mm": [
+        44,
+        17.3,
+        16
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "north corridor opening 16",
+      "a_mm": [
+        0,
+        30,
+        16
+      ],
+      "b_mm": [
+        0,
+        15.4,
+        16
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "wall behind north corridor 16",
+      "a_mm": [
+        0,
+        30,
+        16
+      ],
+      "b_mm": [
+        0,
+        10,
+        16
+      ],
+      "expected_clear": false,
+      "intersection_distances_mm": [
+        15.25
+      ],
+      "passed": true
+    },
+    {
+      "name": "north corridor long open strip 24.7",
+      "a_mm": [
+        -44,
+        17.3,
+        24.7
+      ],
+      "b_mm": [
+        44,
+        17.3,
+        24.7
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "north corridor opening 24.7",
+      "a_mm": [
+        0,
+        30,
+        24.7
+      ],
+      "b_mm": [
+        0,
+        15.4,
+        24.7
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "wall behind north corridor 24.7",
+      "a_mm": [
+        0,
+        30,
+        24.7
+      ],
+      "b_mm": [
+        0,
+        10,
+        24.7
+      ],
+      "expected_clear": false,
+      "intersection_distances_mm": [
+        15.25
+      ],
+      "passed": true
+    },
+    {
+      "name": "north corridor long open strip 33.4",
+      "a_mm": [
+        -44,
+        17.3,
+        33.4
+      ],
+      "b_mm": [
+        44,
+        17.3,
+        33.4
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "north corridor opening 33.4",
+      "a_mm": [
+        0,
+        30,
+        33.4
+      ],
+      "b_mm": [
+        0,
+        15.4,
+        33.4
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "wall behind north corridor 33.4",
+      "a_mm": [
+        0,
+        30,
+        33.4
+      ],
+      "b_mm": [
+        0,
+        10,
+        33.4
+      ],
+      "expected_clear": false,
+      "intersection_distances_mm": [
+        15.25
+      ],
+      "passed": true
+    },
+    {
+      "name": "air below exterior folding-stair landing",
+      "a_mm": [
+        35.3,
+        21,
+        4.2
+      ],
+      "b_mm": [
+        42,
+        21,
+        4.2
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "air below north-projecting flight",
+      "a_mm": [
+        37,
+        27,
+        3.0
+      ],
+      "b_mm": [
+        47,
+        27,
+        3.0
+      ],
+      "expected_clear": true,
+      "intersection_distances_mm": [],
+      "passed": true
+    },
+    {
+      "name": "actual step mass of north-projecting flight",
+      "a_mm": [
+        41.1,
+        27,
+        15
+      ],
+      "b_mm": [
+        41.1,
+        27,
+        2.5
+      ],
+      "expected_clear": false,
+      "intersection_distances_mm": [
+        9.518182,
+        11.018182
+      ],
+      "passed": true
+    },
+    {
+      "name": "roof remains solid, no invented inner courtyard",
+      "a_mm": [
+        0,
+        0,
+        50
+      ],
+      "b_mm": [
+        0,
+        0,
+        30
+      ],
+      "expected_clear": false,
+      "intersection_distances_mm": [
+        12.299999
+      ],
+      "passed": true
+    },
+    {
+      "name": "original ground service core retained",
+      "a_mm": [
+        39.5,
+        -28,
+        6
+      ],
+      "b_mm": [
+        39.5,
+        -12,
+        6
+      ],
+      "expected_clear": false,
+      "intersection_distances_mm": [
+        7.5,
+        12.5
+      ],
+      "passed": true
+    }
+  ],
+  "north_corridor_measured_clearances": [
+    {
+      "storey": 2,
+      "front_plane_y_mm": 21.0,
+      "back_wall_y_mm": 14.4,
+      "front_to_back_wall_mm": 6.6,
+      "inner_rail_y_mm": 19.4,
+      "rail_to_back_wall_clear_depth_mm": 4.999999999999998,
+      "floor_z_mm": 11.15,
+      "soffit_z_mm": 18.6,
+      "floor_to_soffit_clear_height_mm": 7.450000000000001,
+      "rail_top_z_mm": 14.05,
+      "above_rail_clear_height_mm": 4.550000000000001
+    },
+    {
+      "storey": 3,
+      "front_plane_y_mm": 21.0,
+      "back_wall_y_mm": 14.4,
+      "front_to_back_wall_mm": 6.6,
+      "inner_rail_y_mm": 19.4,
+      "rail_to_back_wall_clear_depth_mm": 4.999999999999998,
+      "floor_z_mm": 19.85,
+      "soffit_z_mm": 27.299999,
+      "floor_to_soffit_clear_height_mm": 7.449998999999998,
+      "rail_top_z_mm": 22.75,
+      "above_rail_clear_height_mm": 4.549999
+    },
+    {
+      "storey": 4,
+      "front_plane_y_mm": 21.0,
+      "back_wall_y_mm": 14.4,
+      "front_to_back_wall_mm": 6.6,
+      "inner_rail_y_mm": 19.4,
+      "rail_to_back_wall_clear_depth_mm": 4.999999999999998,
+      "floor_z_mm": 28.549999,
+      "soffit_z_mm": 36.0,
+      "floor_to_soffit_clear_height_mm": 7.450001,
+      "rail_top_z_mm": 31.450001,
+      "above_rail_clear_height_mm": 4.549999
+    }
+  ],
+  "ground_colonnade_measured_clearance": {
+    "base_top_z_mm": 2.4,
+    "soffit_z_mm": 9.9,
+    "clear_height_mm": 7.5
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "specific_morphological_loss_exception_accepted_after_independent_review",
+  "supersedes": "v1 thin-feature-review.json中的僅十架及純圓角原因敘述不完整；以本補充為準，原freeze不改。",
+  "stl_sha256": "899833cab3d36540de1455757b2b1119f5d4563a8f0bede4f16286f036f04652",
+  "sampled_layers": 416,
+  "original_polygon_samples": 800,
+  "layers_over_one_percent": 52,
+  "original_polygon_samples_over_one_percent": 436,
+  "affected_features": [
+    "四個角柱",
+    "頂部十字架"
+  ],
+  "peak": {
+    "z_mm": 83.071,
+    "area_mm2": 2.53605625,
+    "opening_loss_area_mm2": 0.1475368442830866,
+    "opening_loss_percent": 5.81756986987519,
+    "retained_percent": 94.18243013012481,
+    "loss_outside_0p41_vertex_neighborhood_mm2": 0.004540467122641696,
+    "loss_outside_0p41_vertex_neighborhood_percent": 0.17903653054389848
+  },
+  "normal_caliper_evidence": {
+    "warning_samples_complete_rectangles": true,
+    "minimum_axis_caliper_mm": 1.5925,
+    "corner_pillar_xy_mm": [
+      2.093002,
+      2.73
+    ],
+    "scope": "436個高損完整矩形截面的X/Y軸法向射線；不是一般多邊形旋轉外框或全域最小壁厚證明。"
+  },
+  "connection_evidence": {
+    "cross_downward_ray_count": 3,
+    "cross_down_exit_z_mm": [
+      0,
+      0,
+      0
+    ],
+    "corner_pillar_count": 4,
+    "pillar_down_exit_z_mm": 0,
+    "pillar_up_exit_z_above_mm": 23,
+    "zero_erosion_or_opening_disappearance_split": true
+  },
+  "interpretation": "形態opening造成的局部截面損失仍為真實非零警告；即使排除0.41mm頂點鄰域，尚有約0.17903653%損失，不能稱完全僅四角。獨立核對完整矩形caliper、根部連接與逐構件零消失/分裂後，接受此模型及此尺度的具體例外。",
+  "numerical_variation": "浮點運算、截面座標6位量化、GEOS版本與buffer圓弧離散可能使末位數字微變；以完整未四捨五入報告重現，不改閾值、不吞失敗。",
+  "limits": [
+    "局部caliper不是全方向/全域最小壁厚。",
+    "不得任意縮小；縮放後必須重跑所有幾何與切片檢查。",
+    "簷口、門廊及十架仍須在實際切片評估支撐。",
+    "沒有實體試印或實際工具路徑保證。"
+  ],
+  "evidence": [
+    "detailed-component-check.json",
+    "local-caliper-root-check.json"
+  ],
+  "reproduce": [
+    "check_detailed_components.py",
+    "check_local_calipers_roots.py"
+  ]
+}

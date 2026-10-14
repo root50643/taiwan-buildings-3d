@@ -1,0 +1,108 @@
+{
+  "source": "NLSC WMTS PHOTO2024 z20 mosaic; watermark2021",
+  "image": "PHOTO2024-aerial.jpg",
+  "origin_tile": [
+    878243,
+    448825
+  ],
+  "tile_size": 256,
+  "zoom": 20,
+  "ground_scale_m_per_pixel": 0.13522978831734034,
+  "scale_latitude": 25.067,
+  "points_in_mosaic_pixels": {
+    "A_NW_low_roof": [
+      658,
+      316
+    ],
+    "B_NE_low_roof": [
+      923,
+      383
+    ],
+    "C_SE_low_roof": [
+      839,
+      827
+    ],
+    "D_SW_low_roof": [
+      549,
+      774
+    ],
+    "Dome_W": [
+      673,
+      565
+    ],
+    "Dome_E": [
+      840,
+      565
+    ],
+    "Dome_N": [
+      757,
+      482
+    ],
+    "Dome_S": [
+      757,
+      652
+    ],
+    "West_portico_N": [
+      646,
+      491
+    ],
+    "West_portico_S": [
+      621,
+      605
+    ]
+  },
+  "segments": [
+    {
+      "name": "north_width",
+      "from": "A_NW_low_roof",
+      "to": "B_NE_low_roof",
+      "pixels": 273.3386178350948,
+      "metres_nominal": 36.96352342879426
+    },
+    {
+      "name": "east_length",
+      "from": "B_NE_low_roof",
+      "to": "C_SE_low_roof",
+      "pixels": 451.8760892103055,
+      "metres_nominal": 61.107107889577215
+    },
+    {
+      "name": "south_width",
+      "from": "C_SE_low_roof",
+      "to": "D_SW_low_roof",
+      "pixels": 294.8033242689098,
+      "metres_nominal": 39.86619113613292
+    },
+    {
+      "name": "west_length",
+      "from": "D_SW_low_roof",
+      "to": "A_NW_low_roof",
+      "pixels": 470.791886081313,
+      "metres_nominal": 63.66508709629736
+    },
+    {
+      "name": "dome_e_w",
+      "from": "Dome_W",
+      "to": "Dome_E",
+      "pixels": 167.0,
+      "metres_nominal": 22.583374648995836
+    },
+    {
+      "name": "dome_n_s",
+      "from": "Dome_N",
+      "to": "Dome_S",
+      "pixels": 170.0,
+      "metres_nominal": 22.989064013947857
+    },
+    {
+      "name": "west_portico_outer_roof_width",
+      "from": "West_portico_N",
+      "to": "West_portico_S",
+      "pixels": 116.70903992407786,
+      "metres_nominal": 15.78253876365307,
+      "uncertainty": "manual visible roof edge, about +/-1.5m; roof width is not column-centre width"
+    }
+  ],
+  "limits": "Approximate visible low-roof/enclosing terrace envelope, NOT cadastral wall footprint or architectural survey. Northern tree edges and roof overhang uncertain; allow at least +/-2m on envelope; dome plan diameter +/-1m. Ground sampling resolution is NOT 0.135m merely because delivered z20 pixels are. Excludes east/west exterior stair projections. No height derived.",
+  "public_notes": "人工取點數據，不附第三方來源圖；方位按北向上原圖，本模型以建築東西入口與南北長軸為局部座標。"
+}

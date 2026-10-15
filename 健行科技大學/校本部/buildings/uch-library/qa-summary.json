@@ -1,0 +1,61 @@
+{
+  "stl_sha256": "5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160",
+  "all_strict_checks_pass": false,
+  "independent_exception_status": "specific original-square-column corner loss and true-edge short-chord exceptions approved after independent review; strict checks unchanged",
+  "checks": [
+    {
+      "script": "check_raw_mesh.py",
+      "exit_code": 0,
+      "stdout_tail": "{'passed': True, 'checks': {'binary_length_exact': True, 'finite_original_data': True, 'original_faces_nondegenerate': True, 'original_normals_unit': True, 'original_normals_agree': True, 'exact_coordinate_edges_two_faces': True, 'exact_coordinate_consistent_winding': True, 'exact_coordinate_vertex_links_cycles': True, 'single_surface_no_internal_shell': True, 'positive_signed_volume': True, 'longest_150mm': True}, 'stl_sha256': '5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160', 'triangles': 7180, 'vertices_exact': 3560, 'surface_shells': 1, 'bad_vertex_links': 0, 'volume_mm3': 490374.9167744924, 'method': 'Binary triangles, saved normals, exact-coordinate indexing, edge orientations, vertex links, face BFS. No mesh processing, repair, rounding or dropped triangles.'}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_component_detail.py",
+      "exit_code": 1,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"check_component_detail.py\", line 65, in <module>\n    assert report['checks']['all_individual_polygon_losses_le_one_percent'], 'Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging'\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging\n"
+    },
+    {
+      "script": "check_surface_chords.py",
+      "exit_code": 1,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"check_surface_chords.py\", line 26, in <module>\n    (R/'surface-chords.json').write_text(json.dumps(r));assert r['passed']\n                                                               ~^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "script": "check_curved_glazing_edges.py",
+      "exit_code": 0,
+      "stdout_tail": "{'stl_sha256': '5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160', 'count': 76, 'maximum_distance_to_true_edge_mm': 0.015297657708295491, 'minimum_bisector_backing_first_exit_mm': 18.110019932075506, 'checks': {'all_short_chord_midpoints_material_and_after_exit_air': True, 'all_short_chords_have_true_corner_bisector_solid_backing': True}, 'status': 'Evidence only; strict original-normal0.8mm check still fails and requires independent review, not reclassified as globally thick.'}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_support_roots.py",
+      "exit_code": 0,
+      "stdout_tail": "{'stl_sha256': '5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160', 'passed': True, 'checks': {'twelve_supports_five_height_two_axis_chords': True, 'all_nine_footprint_points_rooted_from_base': True, 'all_original_support_widths_at_least_nominal': True}, 'minimum_nominal_canopy_width_mm': 1.3846153846153846, 'minimum_nominal_main_width_mm': 3.1730769230769234, 'limits': 'Only designated posts; attached posts may merge with walls and have larger measured intervals. Other glazing/roof faces require separate checks; no global wall guarantee.'}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_warning_families.py",
+      "exit_code": 0,
+      "stdout_tail": "{'main': {'warning_original_polygons': 476, 'z_range_mm': [2.071, 27.671], 'minimum_original_width_mm': 3.173076629638672, 'peak_loss_fraction': 0.013740436741445271, 'peak_retained_fraction': 0.9862595632585547, 'maximum_loss_outside_true_rectangle_vertex_0p41mm': 0.0}, 'canopy': {'warning_original_polygons': 217, 'z_range_mm': [4.671, 10.671], 'minimum_original_width_mm': 1.384613037109375, 'peak_loss_fraction': 0.07206103648763468, 'peak_retained_fraction': 0.9279389635123654, 'maximum_loss_outside_true_rectangle_vertex_0p41mm': 2.4340486915132597e-16}}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "stdout_tail": "ild_hash_matches\": true,\n    \"blend_stl_geometry_agree\": true\n  },\n  \"dimensions_mm\": [\n    150.0,\n    138.46154022216797,\n    63.44230651855469\n  ],\n  \"triangles\": 7180,\n  \"vertices\": 3560,\n  \"surface_shells\": 1,\n  \"nonmanifold_edges\": 0,\n  \"bad_vertex_links\": 0,\n  \"volume_mm3\": 490374.9167744924,\n  \"base_contact_area_mm2\": 20769.231033325195,\n  \"stl_sha256\": \"5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160\",\n  \"rebuild_stl_sha256\": \"5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160\",\n  \"stl_geometry_sha256\": \"9d1691f7fa62247ac55463f4b5db337116d7d72521bcff554b6fcb5e21fd19bf\",\n  \"blend_geometry_sha256\": \"9d1691f7fa62247ac55463f4b5db337116d7d72521bcff554b6fcb5e21fd19bf\",\n  \"limitations\": [\n    \"Not a slicer validation or physical print test.\",\n    \"Exterior photo-based miniature; depth and unseen elevations are estimates.\",\n    \"One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_render_rebuild.py",
+      "exit_code": 0,
+      "stdout_tail": "   {\n      \"view\": \"eastfit\",\n      \"file\": \"previews/eastfit.png\",\n      \"sha256\": \"e0deeca59c8312b26e94f765d9aaae3c95df399f8a13327a5f785f5e73d13c26\",\n      \"pixel_sha256\": \"4e691a29a27c1b3ccb42d3db477ff0d1d54874013d5e611a1f0ce7172319908a\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"top-lines\",\n      \"file\": \"previews/top-lines.png\",\n      \"sha256\": \"c19db42725cfb75cee3a687d1ddc07ff01410d9111be856af8fa98ac18eafb54\",\n      \"pixel_sha256\": \"1557ce3637b99c301317efdaf11e635d8af8f12ef40f216e5001fee14ec73309\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    }\n  ],\n  \"limits\": \"Pixel identity verifies reproducible rendering of the delivered STL, not architectural fidelity.\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_documentation.py",
+      "exit_code": 0,
+      "stdout_tail": "{'passed': True, 'checks': {'three_readmes_same_model_front_rear_same_row': True, 'all_relative_document_links_exist': True, 'ten_png_dimensions_correct': True, 'no_source_photo_pdf_ppt_redistribution': True}, 'stl_sha256': '5ca920efccfd375f11a39c08d034d1f27588ebdbb0c8fa435c75a35102452160', 'readmes': ['README.md', '校本部/README.md', '校本部/buildings/uch-library/README.md']}\n",
+      "stderr_tail": ""
+    }
+  ]
+}

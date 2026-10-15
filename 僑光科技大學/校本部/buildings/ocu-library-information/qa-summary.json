@@ -1,0 +1,83 @@
+{
+  "stl_sha256": "c791646865a9093b141ede99f2c669587ab3a69df91b22eccd374c76eb83223c",
+  "all_strict_checks_pass": false,
+  "independent_exception_status": "pending",
+  "runs": [
+    {
+      "script": "check_raw_mesh.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_component_detail.py",
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"check_component_detail.py\", line 65, in <module>\n    assert report['checks']['all_individual_polygon_losses_le_one_percent'], 'Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging'\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging\n"
+    },
+    {
+      "script": "check_surface_chords.py",
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"check_surface_chords.py\", line 21, in <module>\n    (R/'surface-chords.json').write_text(json.dumps(r));assert r['passed']\n                                                               ~^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "script": "check_corner_backing.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_dense_transitions.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_dense_backing.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_low_roots.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_crown_roots.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_warning_families.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_render_rebuild.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_documentation.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_true_corner_masks.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_window_piers.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    },
+    {
+      "script": "check_opposing_faces.py",
+      "exit_code": 0,
+      "stderr_tail": ""
+    }
+  ],
+  "limits": "Supplementary root evidence does not override strict false or authorize publication."
+}

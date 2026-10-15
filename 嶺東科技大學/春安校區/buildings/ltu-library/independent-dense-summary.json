@@ -1,0 +1,449 @@
+{
+  "status": "EVIDENCE_COMPLETE_NO_AUTOMATIC_ACCEPTANCE",
+  "source_stl_sha256": "b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74",
+  "original_triangles": 7080,
+  "original_triangles_byte_coordinates_match_preserved_binary": true,
+  "source_hash_unchanged": true,
+  "mesh_repaired_or_changed": false,
+  "samples_per_original_triangle": 15,
+  "original_normal_rays": 106200,
+  "original_normal_geometric_first_spans_below_0p8_mm": 156,
+  "minimum_original_normal_geometric_first_span_mm": 0.0058879094724734,
+  "coarse_original_parity_flags": 0,
+  "strict_all_original_normal_thickness_ge_0p8_passed": false,
+  "original_short_open_material_then_open_air_count": 155,
+  "original_short_boundary_degenerate_after_count": 1,
+  "independent_actual_entry_exit_pair_root_count": 156,
+  "independent_pair_root_verified_count": 156,
+  "independent_triple_root_count": 0,
+  "minimum_independent_pair_root_mm": 20.613302399795113,
+  "minimum_independent_pair_root_sample": [
+    1424,
+    7
+  ],
+  "minimum_pair_root_margin_above_0p8_mm": 19.813302399795113,
+  "root_first_or_full_next_interval_boundary_overlap_count": 0,
+  "short_and_root_precision_control_count": 5616,
+  "short_and_root_nonboundary_control_count": 5608,
+  "short_and_root_nonboundary_control_failures": 0,
+  "short_and_root_on_boundary_diagnostic_only_controls": 8,
+  "maximum_nonboundary_winding_error": 9.74865138671696e-14,
+  "control_station_rule": "For each original short ray and selected root: outside; just inside entry; just inside exit; just after exit; 1,10,25,50,75,90,99 percent of first span and next finite geometric interval (or first 1 mm after terminal exit). Full next-interval boundary screening independently covers unbounded intervals to infinity. Boundary positions have no material/air winding assignment.",
+  "finite_original_edge_chain_counts": {
+    "all_convex": 152,
+    "all_concave": 4
+  },
+  "finite_edge_occurrence_counts_by_signed_classification": {
+    "convex": 165,
+    "concave": 9
+  },
+  "finite_original_edge_chain_unresolved_count": 0,
+  "maximum_finite_original_edge_to_short_chord_distance_mm": 0.48249548349930327,
+  "minimum_common_inward_normal_margin": 5.116965050522203e-07,
+  "minimum_common_inward_normal_margin_sample": [
+    915,
+    1
+  ],
+  "minimum_common_inward_margin_above_required_1e-7": 4.1169650505222026e-07,
+  "normal_boundary_screen": {
+    "screened_rays": 106200,
+    "first_segment_boundary_rays": 0,
+    "next_geometric_interval_boundary_rays": 17,
+    "boundary_triangle_intervals": 43,
+    "boundary_control_count": 1039,
+    "boundary_nonboundary_controls_failed": 0,
+    "boundary_rays_in_author_original_10_point_stencil": 4,
+    "boundary_rays_in_added_5_point_stencil": 13,
+    "all_17_next_intervals_entirely_boundary": true,
+    "sample_ids": [
+      [
+        984,
+        0
+      ],
+      [
+        984,
+        2
+      ],
+      [
+        984,
+        6
+      ],
+      [
+        984,
+        8
+      ],
+      [
+        984,
+        11
+      ],
+      [
+        4944,
+        13
+      ],
+      [
+        293,
+        14
+      ],
+      [
+        296,
+        14
+      ],
+      [
+        299,
+        14
+      ],
+      [
+        305,
+        14
+      ],
+      [
+        309,
+        14
+      ],
+      [
+        312,
+        14
+      ],
+      [
+        778,
+        14
+      ],
+      [
+        802,
+        14
+      ],
+      [
+        810,
+        14
+      ],
+      [
+        4945,
+        14
+      ],
+      [
+        6260,
+        14
+      ]
+    ],
+    "comparison": "Author single-after-probe candidate screen reported 4 rays among 70800 rays / 10 points per original triangle. Independent whole-interval clipping checks 106200 rays / 15 points per original triangle and finds the same 4 old-stencil rays plus 13 added-stencil rays. The numeric increase is due to expanded sampling, not evidence that 13 were missed within the author 10-point stencil. Whole-interval evidence also preserves every finite triangle segment instead of labeling a whole interval from one probe."
+  },
+  "author_nearest_edge_pair_evidence_preserved": {
+    "method": "nearest sampled finite dihedral edge, filtered by an adjacent face normal matching source normal; use its adjacent normals bisector",
+    "sample_count": 122,
+    "minimum_first_exit_mm": 0.09341035508316296,
+    "checks": {
+      "all_original_normals_match_actual_adjacent_face": true,
+      "every_short_sample_included": true,
+      "all_first_original_intervals_material_then_air": false,
+      "all_bisector_starts_and_controls_inside": false,
+      "all_bisectors_start_with_exit_not_remote_entry": true,
+      "all_continuous_bisector_roots_ge_0p8": false
+    },
+    "failed_root_or_controls_count": 19,
+    "failed_samples": [
+      {
+        "face": 1429,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1430,
+          1436
+        ],
+        "continuous_first_exit_mm": 0.5235330340052928,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1430,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1430,
+          1436
+        ],
+        "continuous_first_exit_mm": 0.5138017732674535,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1449,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1441,
+          1449
+        ],
+        "continuous_first_exit_mm": 0.5138016116704371,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1453,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1441,
+          1449
+        ],
+        "continuous_first_exit_mm": 0.2568958058352153,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "face": 1454,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1441,
+          1449
+        ],
+        "continuous_first_exit_mm": 0.5235329200521863,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1455,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1441,
+          1449
+        ],
+        "continuous_first_exit_mm": 0.5235329200521863,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1456,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1456,
+          1460
+        ],
+        "continuous_first_exit_mm": 0.5138016116704371,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1471,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1464,
+          1485
+        ],
+        "continuous_first_exit_mm": 0.25689578043234607,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "face": 1485,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1464,
+          1485
+        ],
+        "continuous_first_exit_mm": 0.5138015608646906,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1486,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1464,
+          1485
+        ],
+        "continuous_first_exit_mm": 0.5138015608646906,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1492,
+        "sample": 1,
+        "nearest_edge_adjacent_original_faces": [
+          1464,
+          1485
+        ],
+        "continuous_first_exit_mm": 0.5138015608646906,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 984,
+        "sample": 2,
+        "nearest_edge_adjacent_original_faces": [
+          985,
+          5719
+        ],
+        "continuous_first_exit_mm": 0.5241108784689137,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1018,
+        "sample": 2,
+        "nearest_edge_adjacent_original_faces": [
+          1018,
+          1019
+        ],
+        "continuous_first_exit_mm": 0.18010443334488058,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "face": 1424,
+        "sample": 2,
+        "nearest_edge_adjacent_original_faces": [
+          1430,
+          1436
+        ],
+        "continuous_first_exit_mm": 0.26662714737156484,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "face": 1453,
+        "sample": 2,
+        "nearest_edge_adjacent_original_faces": [
+          1456,
+          1460
+        ],
+        "continuous_first_exit_mm": 0.25689580583521937,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "face": 1471,
+        "sample": 2,
+        "nearest_edge_adjacent_original_faces": [
+          1471,
+          1493
+        ],
+        "continuous_first_exit_mm": 0.25689578043234607,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "face": 1422,
+        "sample": 3,
+        "nearest_edge_adjacent_original_faces": [
+          1422,
+          1425
+        ],
+        "continuous_first_exit_mm": 0.09341035508316296,
+        "inside_controls": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "face": 1447,
+        "sample": 3,
+        "nearest_edge_adjacent_original_faces": [
+          1459,
+          1460
+        ],
+        "continuous_first_exit_mm": 0.4281663537202159,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "face": 1472,
+        "sample": 3,
+        "nearest_edge_adjacent_original_faces": [
+          1472,
+          1473
+        ],
+        "continuous_first_exit_mm": 0.3567215529514111,
+        "inside_controls": [
+          true,
+          true,
+          true,
+          false
+        ]
+      }
+    ],
+    "independent_long_roots_do_not_relabel_author_method_as_passing": true
+  },
+  "opposing_coplanar_independent": {
+    "sha256": "b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74",
+    "original_faces": 7080,
+    "degenerate_original_faces_without_normal": [],
+    "method": "Same code on all cases. Expanded original AABB by 1e-6 mm; opposite unit normals dot < -1+1e-9; maximum vertex-to-plane distance <=1e-6 mm. Long-double Sutherland-Hodgman convex clipping on dominant-axis projection, corrected surface area; positive area >1e-9 mm2. No mesh repair, merge, welding, or deletion. Near-coplanarity tolerance is retained explicitly; not all reported positive candidates need be exactly coplanar.",
+    "all_expanded_aabb_candidate_pairs": 140046,
+    "opposite_normal_aabb_pairs": 928,
+    "opposite_coplanar_candidate_pairs": 0,
+    "positive_area_opposing_overlap_count": 0,
+    "maximum_candidate_intersection_area_mm2": 0,
+    "overlaps": [],
+    "candidates": [],
+    "source_hash_unchanged": true,
+    "limits": "Finite-precision opposing-near-coplanar screen is not a global self-intersection or thickness theorem. No acceptance or exception approved."
+  },
+  "acceptance_or_exception_approved_by_this_audit": false,
+  "limits": "Finite sampled mesh evidence only. Positive root support does not replace a failing original-normal short span, remove the 17 boundary-degenerate original rays, make the author nearest-edge method pass, establish global minimum thickness, or authorize a reviewer exception. No original mesh edits or repairs were performed."
+}

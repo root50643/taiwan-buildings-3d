@@ -1,0 +1,82 @@
+{
+  "stl_sha256": "b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74",
+  "all_automatic_checks_pass": false,
+  "independent_review": "PENDING: no author approval of warnings",
+  "commands": [
+    {
+      "script": "check_raw_mesh.py",
+      "exit_code": 0,
+      "output": "{'passed': True, 'checks': {'binary_length_exact': True, 'finite_original_data': True, 'original_faces_nondegenerate': True, 'original_normals_unit': True, 'original_normals_agree': True, 'exact_coordinate_edges_two_faces': True, 'exact_coordinate_consistent_winding': True, 'exact_coordinate_vertex_links_cycles': True, 'single_surface_no_internal_shell': True, 'positive_signed_volume': True, 'longest_150mm': True}, 'stl_sha256': 'b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74', 'triangles': 7080, 'vertices_exact': 3530, 'surface_shells': 1, 'bad_vertex_links': 0, 'volume_mm3': 155780.95900765332, 'method': 'Binary triangles, saved normals, exact-coordinate indexing, edge orientations, vertex links, face BFS. No mesh processing, repair, rounding or dropped triangles.'}\n"
+    },
+    {
+      "script": "check_opposing_faces.py",
+      "exit_code": 0,
+      "output": "{'stl_sha256': 'b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74', 'original_triangles': 7080, 'opposing_coplanar_candidate_pairs_tested': 0, 'positive_area_overlap_count': 0, 'checks': {'no_opposing_coplanar_positive_area_overlap': True}, 'passed': True, 'limits': 'Original AABB candidates; opposite-normal tolerance 1e-9, plane distance 1e-6mm, positive-area threshold 1e-9mm². This is a declared finite precision overlap screen, not an unrestricted global self-intersection theorem.'}\n"
+    },
+    {
+      "script": "check_component_detail.py",
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"[MODEL_DIR]/check_component_detail.py\", line 65, in <module>\n    assert report['checks']['all_individual_polygon_losses_le_one_percent'], 'Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging'\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging\n"
+    },
+    {
+      "script": "check_true_corner_masks.py",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "script": "check_dense_surface.py",
+      "exit_code": 1,
+      "output": "{'stl_sha256': 'b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74', 'original_triangles': 7080, 'samples': 70800, 'uncompressed_csv_sha256': '210839495cc26572f1ace95b66795fb53340dfa2c9819c06a953f4fa09efb55a', 'minimum_first_chord_mm': 0.00588790947247, 'under_0p8mm_count': 122, 'checks': {'every_original_face_ten_samples': True, 'all_surface_entries_at_declared_offset': True, 'all_fixed_direction_parity_codes_expected': True, 'all_first_chords_ge_0p8mm': False}, 'passed': False, 'limits': 'Finite original-normal sample screen, not global wall thickness. Short chords require real local root/air evidence. Strict false remains until any specific independent exception.'}\nSAMPLE 0 COMPLETE 7080\nSAMPLE 1 COMPLETE 14160\nSAMPLE 2 COMPLETE 21240\nSAMPLE 3 COMPLETE 28320\nSAMPLE 4 COMPLETE 35400\nSAMPLE 5 COMPLETE 42480\nSAMPLE 6 COMPLETE 49560\nSAMPLE 7 COMPLETE 56640\nSAMPLE 8 COMPLETE 63720\nSAMPLE 9 COMPLETE 70800\n"
+    },
+    {
+      "script": "check_dense_backing.py",
+      "exit_code": 1,
+      "output": "{'stl_sha256': 'b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74', 'count': 122, 'max_true_edge_distance_mm': 0.4632046839533468, 'minimum_continuous_bisector_first_exit_mm': 0.09341035508316296, 'checks': {'all_original_normals_match_actual_adjacent_face': True, 'every_short_sample_included': True, 'all_first_original_intervals_material_then_air': False, 'all_bisector_starts_and_controls_inside': False, 'all_bisectors_start_with_exit_not_remote_entry': True, 'all_continuous_bisector_roots_ge_0p8': False}, 'status': 'Evidence only, no automatic exception or global thickness guarantee. Strict surface report remains false.'}\n"
+    },
+    {
+      "script": "check_vertex_roots.py",
+      "exit_code": 0,
+      "output": "{'every_short_sample_has_true_incident_continuous_root': True} failed []\n"
+    },
+    {
+      "script": "check_short_winding.py",
+      "exit_code": 1,
+      "output": "{'every_short_original_first_interval_material_then_air': False, 'every_chosen_root_starts_material_and_continues_to_first_air': True} failed [(984, 2, [1.19295858267073e-20, 1.0, 1.0, 1.0000000000000087, 1.0, 1.0, 2.986872552709624e-20])]\n0/854\n500/854\n"
+    },
+    {
+      "script": "check_all_after_boundaries.py",
+      "exit_code": 0,
+      "output": "candidates 4\n"
+    },
+    {
+      "script": "check_boundary_interval.py",
+      "exit_code": 0,
+      "output": "boundary cases [(0, 1.2088767852585574), (2, 0.03626630355775696), (6, 1.7951820261089575), (8, 1.7770488743300794)]\n0/6\n0/6\n0/6\n0/6\n"
+    },
+    {
+      "script": "check_designated_roots.py",
+      "exit_code": 0,
+      "output": "{'all_designated_post_normal_widths_ge_0p8': True, 'all_36_post_rays_continuous_base_to_top': True, 'all_28_tread_centre_three_direction_chords_ge_0p8': True}\n"
+    },
+    {
+      "script": "check_warning_families.py",
+      "exit_code": 0,
+      "output": "{'external_stair_frames_and_treads': {'count': 211, 'z_range_mm': [1.071, 17.871], 'peak_loss_fraction': 0.02708218992566739, 'minimum_retained_fraction': 0.9729178100743326, 'maximum_loss_outside_true_corners_mm2': 0.00032025263790754974}, 'entry_posts_and_low_step_junction': {'count': 41, 'z_range_mm': [2.071, 6.071], 'peak_loss_fraction': 0.09608943428718894, 'minimum_retained_fraction': 0.903910565712811, 'maximum_loss_outside_true_corners_mm2': 1.604369221974494e-13}}\n"
+    },
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": {\n    \"binary_stl_length\": true,\n    \"finite_coordinates_and_normals\": true,\n    \"original_normals_unit\": true,\n    \"original_normals_match_winding\": true,\n    \"nondegenerate_original_faces\": true,\n    \"watertight\": true,\n    \"winding_consistent\": true,\n    \"every_edge_two_faces\": true,\n    \"vertex_links_single_cycles\": true,\n    \"one_connected_surface_shell\": true,\n    \"no_disconnected_enclosed_shell\": true,\n    \"positive_volume\": true,\n    \"base_z_zero\": true,\n    \"longest_dimension_150mm\": true,\n    \"source_rebuild_hash_matches\": true,\n    \"blend_stl_geometry_agree\": true\n  },\n  \"dimensions_mm\": [\n    150.0,\n    94.03447723388672,\n    42.56666946411133\n  ],\n  \"triangles\": 7080,\n  \"vertices\": 3530,\n  \"surface_shells\": 1,\n  \"nonmanifold_edges\": 0,\n  \"bad_vertex_links\": 0,\n  \"volume_mm3\": 155780.9590076533,\n  \"base_contact_area_mm2\": 11887.645423711627,\n  \"stl_sha256\": \"b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74\",\n  \"rebuild_stl_sha256\": \"b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74\",\n  \"stl_geometry_sha256\": \"05220cb99fcba3f507c823050a066d5dcc8e2820aa8d049bdc23339d98b272de\",\n  \"blend_geometry_sha256\": \"05220cb99fcba3f507c823050a066d5dcc8e2820aa8d049bdc23339d98b272de\",\n  \"limitations\": [\n    \"Not a slicer validation or physical print test.\",\n    \"Exterior photo-based miniature; depth and unseen elevations are estimates.\",\n    \"One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed.\"\n  ]\n}\n"
+    },
+    {
+      "script": "check_render_rebuild.py",
+      "exit_code": 0,
+      "output": "{\n  \"passed\": true,\n  \"checks\": {\n    \"ten_actual_stl_images_verified\": true,\n    \"all_independent_pixel_rebuilds_match\": true\n  },\n  \"stl_sha256\": \"b83ae9af72a556f200762afe11e13cd55cff55243a5dc03a38760ff971d17f74\",\n  \"render_script_sha256\": \"b0c4bc1ad004d29a05644b9412e8faf98e800fa1720ca9629f717a1f543145de\",\n  \"views\": [\n    {\n      \"view\": \"front\",\n      \"file\": \"previews/front.png\",\n      \"sha256\": \"fd539209c4e3b90890d726e5f383bf35732e72b6fb6ca8cbe83be191ff234ed3\",\n      \"pixel_sha256\": \"f7df41fc303844d4e362054ab6acb8dff15a136ba984ecd3b70206cfe2cae6c2\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"rear\",\n      \"file\": \"previews/rear.png\",\n      \"sha256\": \"c2ee1a8f20c53920b3af29c3d4935ad2a701790bd98879df9c5a8013052891fa\",\n      \"pixel_sha256\": \"539acd982eeffd35d8babab486aef142f501b6fa9c64059190d8603f4b55a51e\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"west\",\n      \"file\": \"previews/west.png\",\n      \"sha256\": \"f3f7ede90cae57a6b85b81b78b2f02a504e6465aeaff76fdcdbd0317ac12ea06\",\n      \"pixel_sha256\": \"a435bf0c10c10333548e7f02604314ac32fb5f0f60e9089aa85b8596a89a33d4\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"east\",\n      \"file\": \"previews/east.png\",\n      \"sha256\": \"2c35a8be1eb64f07bea3b531ea04d0055b055345eb547accd0aafd4dc5bc6877\",\n      \"pixel_sha256\": \"8b63314029c9d635fc3f1f627f8fc1c2c0ef9ed7d14b0f09f2faf653a3b7ad8d\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"top\",\n      \"file\": \"previews/top.png\",\n      \"sha256\": \"2770348d8b6770ae75852f69ffc970954a5b1bc9481ddb7e3d5e81cbe1280dea\",\n      \"pixel_sha256\": \"09bfad6181812e42f53b4d43bd9daf6d9171193a7fe69fae377287bb6e253b1e\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"aerial\",\n      \"file\": \"previews/aerial.png\",\n      \"sha256\": \"3d076f740cd97a870a8f4bfc35e8566b4505964e2bd5d9999e74ce1c57ac67c3\",\n      \"pixel_sha256\": \"d9f7c0d64a50ecd9cd717bf3bcdc48ca09c5f0ebf95db3458ca3f89f98d8cc01\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"frontfit\",\n      \"file\": \"previews/frontfit.png\",\n      \"sha256\": \"77b2340dfae26c943542c69ffe203dc2c3b7a7a0adce8bb8b84bc17fbabdf70e\",\n      \"pixel_sha256\": \"03ddc7bcaa4e15f475ab5938a4f01420e37f1d97cb7297df0378df6d9d6eb4bd\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"backfit\",\n      \"file\": \"previews/backfit.png\",\n      \"sha256\": \"0a43a2c7a386f08753723c5c00266b5ca95074b9a0f228177b24a5d47a32fdb9\",\n      \"pixel_sha256\": \"f887e934a9c39fa9509948f68cf5417d99585296e93912b57dfdcff10c74de3c\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"westfit\",\n      \"file\": \"previews/westfit.png\",\n      \"sha256\": \"f1e5874f9914dbe146803b636cc600d5418f75a40df51645ef41bbec12d83453\",\n      \"pixel_sha256\": \"be996e5f0866e7f3806a2697538ea2a40a7771e646ec1c860a43aaec7144bd34\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"topedges\",\n      \"file\": \"previews/topedges.png\",\n      \"sha256\": \"08be68fd3bb9ad16881fb76725647f69c634bc92e865ffdd77082d1337c4c838\",\n      \"pixel_sha256\": \"30775ac8e4b980d80806b917341dec11bf7373a19073a8f6f1ea68c134888074\",\n      \"checks\": {\n        \"dimensions_1200x900\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    }\n  ],\n  \"limits\": \"Pixel identity verifies reproducible rendering of the delivered STL, not architectural fidelity.\"\n}\n"
+    },
+    {
+      "script": "check_documentation.py",
+      "exit_code": 0,
+      "output": "{'three_readme_levels_same_model_front_rear': True, 'relative_links_exist': True, 'no_private_absolute_paths_in_public_text': True}\n"
+    }
+  ]
+}

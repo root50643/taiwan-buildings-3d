@@ -1,0 +1,17 @@
+"""Check three relative README levels and public-only payload. Does not waive QA."""
+from pathlib import Path
+import re,json,hashlib
+R=Path(__file__).resolve().parent;rows=[]
+for p in [R/'README.md',R.parents[1]/'README.md',R.parents[2]/'README.md']:
+ s=p.read_text();images=re.findall(r'!\[[^\]]*\]\(([^)]+)\)',s);assert len(images)>=2
+ paths=[(p.parent/x).resolve()for x in images];assert all(q.exists()for q in paths)
+ assert paths[0]==(R/'previews/front.png').resolve()and paths[1]==(R/'previews/rear.png').resolve()
+ for link in re.findall(r'\]\(([^)]+)\)',s):
+  if not link.startswith(('http:','https:','#')):assert (p.parent/link).exists(),(p,link)
+ rows.append(dict(readme=str(p.relative_to(R.parents[3])),same_model_front_rear_on_one_markdown_row=any('previews/front.png' in line and 'previews/rear.png'in line for line in s.splitlines()),image_sha256=[hashlib.sha256(q.read_bytes()).hexdigest()for q in paths]))
+for p in R.rglob('*'):
+ if p.is_file()and p.suffix in ['.py','.cpp','.md','.json']:
+  s=p.read_text();assert ('/work'+'space/')not in s and ('/t'+'mp/')not in s,(p,'private absolute path')
+assert all(q['same_model_front_rear_on_one_markdown_row']for q in rows)
+r=dict(checks={'three_readme_levels_same_model_front_rear':True,'relative_links_exist':True,'no_private_absolute_paths_in_public_text':True},passed=True,readmes=rows,limits='Checks local links and layout markup, not public access or publication approval. Source photos are excluded by the frozen payload inventory.')
+(R/'documentation-check.json').write_text(json.dumps(r,ensure_ascii=False,indent=2));print(r['checks'])

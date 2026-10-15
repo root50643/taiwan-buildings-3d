@@ -1,0 +1,131 @@
+{
+  "passed": false,
+  "ready_for_independent_review": true,
+  "exceptions_independently_approved": false,
+  "stl_sha256": "ce092218ba989de99613b3c2f18429b7146bb7cb9c07b4f39fd0a7a61a1c0202",
+  "checks": {
+    "all_replay_programs_completed": true,
+    "raw_mesh": true,
+    "every_original_polygon_survives_unsplit": true,
+    "source_blend_rebuild": true,
+    "five_png_byte_replay": true,
+    "three_readme_rows": true,
+    "all_dense_values_exact_replay": true,
+    "original_dense_diagnostic": false
+  },
+  "runs": [
+    {
+      "script": "check_raw_mesh.py",
+      "report": "raw-mesh-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "check_layer_components.py",
+      "report": "layer-component-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "check_canonical_thin.py",
+      "report": "canonical-script-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "validate_model.py",
+      "report": "validation.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "check_preview_rebuild.py",
+      "report": "preview-rebuild-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "check_readme_views.py",
+      "report": "readme-view-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "inspect_backing.py",
+      "report": "backing-root-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "check_root_sections.py",
+      "report": "root-section-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "classify_components.py",
+      "report": "component-loss-evidence.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": null
+    },
+    {
+      "script": "check_short_chord_roots.py",
+      "report": "short-chord-root-evidence.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": null
+    },
+    {
+      "script": "check_dense_original_rays.py",
+      "report": "dense-independent-root-evidence.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": null
+    },
+    {
+      "script": "check_dense_replay.py",
+      "report": "dense-replay-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "check_adaptive_origins.py",
+      "report": "adaptive-origin-evidence.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": null
+    },
+    {
+      "script": "check_all_boundaries.py",
+      "report": "all-six-boundary-controls.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": null
+    },
+    {
+      "script": "check_corrected_roots.py",
+      "report": "corrected-origin-root-check.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": true
+    },
+    {
+      "script": "check_surface_root_summary.py",
+      "report": "surface-root-summary.json",
+      "exit_code": 0,
+      "completed": true,
+      "report_passed": false
+    }
+  ],
+  "retained_exceptions": "830 original component opening-loss samples;12 original fixed-origin/boundary diagnostic samples. All original false values retained; independent approval pending."
+}

@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "stl_sha256": "7e9fdb8a610f566d7f22e06d07545f12d2e761ae16f5b660f8e2f5d52cb5388d",
+  "validation_script_sha256": "0e82a68349d7624ab07cf237e516e21b69979ad02b446cca41971626172eeee3",
+  "cases": [
+    {
+      "case": "unclassified_root",
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        "zero_unclassified_or_failed_roots"
+      ]
+    },
+    {
+      "case": "strict_failure_erased",
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        "strict_false_and_all_original_samples_preserved"
+      ]
+    },
+    {
+      "case": "wrong_root_winding",
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        "all_full_root_winding_controls_pass",
+        "detail_binding_drum-root-interval-details.json.gz"
+      ]
+    },
+    {
+      "case": "source_changed",
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        "stl_saved_blend_and_four_actual_stl_previews_reproduce"
+      ]
+    },
+    {
+      "case": "stl_changed",
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        "exact_approved_stl_preserved"
+      ]
+    }
+  ],
+  "method": "Temporary copies only. Deliberately unclassified root, hidden strict failure, wrong winding, changed renderer and changed STL must each produce a false evidence gate and nonzero exit."
+}

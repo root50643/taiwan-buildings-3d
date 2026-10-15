@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "flipped_original_triangle_rejected": true,
+    "invalid_individual_polygon_rejected": true,
+    "invalid_combined_polygon_rejected": true,
+    "no_invalid_polygon_repair_fallback": true
+  },
+  "stl_sha256": "7e9fdb8a610f566d7f22e06d07545f12d2e761ae16f5b660f8e2f5d52cb5388d",
+  "component_script_sha256": "e9a2cbe809ee69b444d2ac2314c42db4a8300652d3b18a6dfe8f0868c713893f",
+  "tests": [
+    {
+      "case": "invalid_individual_polygon",
+      "exit_code": 1,
+      "assertion_seen": true
+    },
+    {
+      "case": "invalid_combined_polygon",
+      "exit_code": 1,
+      "assertion_seen": true
+    }
+  ],
+  "method": "Only temporary deliberately damaged copies are executed; final STL and validators remain unchanged."
+}

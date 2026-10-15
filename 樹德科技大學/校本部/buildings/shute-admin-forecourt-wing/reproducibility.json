@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "checks": {
+    "independent_rebuilt_stl_sha_identical": true,
+    "saved_reopened_blend_exact_oriented_triangles": true,
+    "saved_blend_one_mesh_mm_units": true,
+    "four_actual_stl_renders_reproduce": true
+  },
+  "stl_sha256": "7e9fdb8a610f566d7f22e06d07545f12d2e761ae16f5b660f8e2f5d52cb5388d",
+  "blend_sha256": "50df27437d9e69869131feb7bd2d7e9c6a596d217351b3c17792dacc23e17a3f",
+  "build_script_sha256": "5375ef1aefb132f281a8f618355abbc826c717cd70ef35d3cd5298d5ae4bf786",
+  "render_script_sha256": "597475fe3f829854162a714a5f98e1b6bd8a73a66ff7c1e2d119a8432d67ecbc",
+  "blend_metadata": {
+    "mesh_count": 1,
+    "triangles": 5734,
+    "units": "METRIC",
+    "scale_length": 0.0010000000474974513,
+    "version": "4.3.2"
+  },
+  "views": [
+    {
+      "view": "front",
+      "path": "previews/front.png",
+      "sha256": "3bd33b37791944026bf8d5280cb03804a530b0af939ff3b0e4d76d41dedd79d0",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    },
+    {
+      "view": "rear",
+      "path": "previews/rear.png",
+      "sha256": "24709256439c920c403a8cec16695fb6f0b4f2c34b41ddd8e4e69f653d9cc693",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    },
+    {
+      "view": "elevation",
+      "path": "previews/elevation.png",
+      "sha256": "a7626e8700a91617ea9e369ba4d95f601b4aa14a923adf9747d5706bcb776e1c",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    },
+    {
+      "view": "top",
+      "path": "previews/top.png",
+      "sha256": "344f724a45150b37ca2f06b97fbb11110a432786bd8ce5817063f8e8df8942c0",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    }
+  ],
+  "method": "Independent subprocess STL generation in an empty temporary directory; exact cyclic orientation-preserving triangle comparison after reopening the saved Blend; independently rerendered actual STL, pixel and PNG byte equality."
+}

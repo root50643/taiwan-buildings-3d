@@ -1,0 +1,80 @@
+{
+  "revision": "recovered-release-v3",
+  "passed": true,
+  "status": "author_bounded_evidence_only_pending_new_independent_review",
+  "stl_sha256": "7e9fdb8a610f566d7f22e06d07545f12d2e761ae16f5b660f8e2f5d52cb5388d",
+  "checks": {
+    "exact_approved_stl_preserved": true,
+    "every_report_bound_to_actual_stl": true,
+    "raw_original_mesh_all_checks": true,
+    "all_520_unrounded_sections_and_original_polygons_pass": true,
+    "negative_controls_reject_real_failures": true,
+    "strict_false_and_all_original_samples_preserved": true,
+    "regenerated_raw_numeric_rows_identical_to_v2": true,
+    "all_short_samples_uniquely_covered_by_fixed_roots": true,
+    "zero_unclassified_or_failed_roots": true,
+    "root_points_and_original_normals_preserved": true,
+    "complete_root_and_next_intervals_have_no_boundary_overlap": true,
+    "all_full_root_winding_controls_pass": true,
+    "all_original_normals_screened_with_no_first_material_boundary": true,
+    "five_after_boundary_rays_explicitly_retained": true,
+    "all_boundary_material_air_and_finite_triangle_controls_pass": true,
+    "three_original_flags_have_exact_bounded_explanation": true,
+    "stl_saved_blend_and_four_actual_stl_previews_reproduce": true,
+    "every_recovered_numerical_source_is_byte_identical": true,
+    "detail_binding_dense-short-samples.json.gz": true,
+    "detail_binding_drum-relief-root-samples.json.gz": true,
+    "detail_binding_drum-root-interval-details.json.gz": true,
+    "detail_binding_component-layer-details.json.gz": true
+  },
+  "reports": [
+    {
+      "path": "raw-mesh-check.json",
+      "sha256": "763a22099f63af0810183b849f348caf6c546c82c715bbe1c65c481ccf5d0060"
+    },
+    {
+      "path": "component-detail.json",
+      "sha256": "f7172e95d5ac294a1dd6f731d2fa7a84420a4b746f0cd4a62b4f8c8a0bc89fe6"
+    },
+    {
+      "path": "negative-controls.json",
+      "sha256": "467b9e975c790d4e4ad5ca9de05ee0db9a021ecd01b790d20fafbe8f1e8690e1"
+    },
+    {
+      "path": "dense-short-chords.json",
+      "sha256": "c02bc2eb8ad2b6f9d443c1559a39883e896a50598f9a17aef615b619e72fa9fb"
+    },
+    {
+      "path": "drum-relief-roots.json",
+      "sha256": "4dcd56674f7b822acdb90677c2bd190cc56172414d5085542fb126839f897e75"
+    },
+    {
+      "path": "drum-root-intervals.json",
+      "sha256": "41a8c60d5448e5b6a90ae18764769b5b3fce870bb793fd8bb30eeae903c2b2ad"
+    },
+    {
+      "path": "boundary-witnesses.json.gz",
+      "sha256": "50c787fb9f5007cf731559a0075182e1dad962305529b9ca15de5da79e45bb7b"
+    },
+    {
+      "path": "flag-boundary-classification.json",
+      "sha256": "6631d6fa66c6bf52fceca55fe90ff7656bccd51221542983da2bbeeb52613d6d"
+    },
+    {
+      "path": "reproducibility.json",
+      "sha256": "57073d7c33de6e22448a25e0908d67c8d1e53ac021ed44daf508ba148a13c014"
+    }
+  ],
+  "unresolved_unqualified_strict_diagnostics": {
+    "original_short_count": 1977,
+    "minimum_original_first_chord_mm": 0.0133115275996,
+    "original_fixed_parity_flag_count": 3,
+    "strict_diagnostic_passed": false,
+    "bounded_classes": [
+      "source-bounded shallow drum relief with direct material roots",
+      "positive-length original exterior boundary intervals"
+    ],
+    "does_not_establish_all_direction_minimum_wall_thickness": true
+  },
+  "limits": "A passing bounded evidence gate does not turn the original strict failures into passes, approve publication, certify all-direction wall thickness, or replace physical slicing and test printing. v3 renderer, scene and aggregation source require new independent review."
+}

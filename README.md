@@ -1,6 +1,6 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **467 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 396 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **468 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 397 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -43,7 +43,7 @@
 | [<img src="中華大學/香山校本部/buildings/chu-administration-library/previews/front.png" alt="中華大學實際模型預覽" width="260">](中華大學/README.md)<br>**[中華大學｜1 組](中華大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="慈濟大學/介仁校區/buildings/tcu-hexin-library-2001/previews/north.png" alt="慈濟大學實際模型預覽" width="260">](慈濟大學/README.md)<br>**[慈濟大學｜1 組](慈濟大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="玄奘大學/香山校本部/buildings/hcu-library-information-building/previews/front.png" alt="玄奘大學實際模型預覽" width="260">](玄奘大學/README.md)<br>**[玄奘大學｜1 組](玄奘大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="義守大學/校本部/buildings/isu-student-activity-center/previews/front.png" alt="義守大學實際模型預覽" width="260">](義守大學/README.md)<br>**[義守大學｜1 組](義守大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="南臺科技大學/校本部/buildings/stust-living-services-gate-2016/previews/campus.png" alt="南臺科技大學實際模型預覽" width="260">](南臺科技大學/README.md)<br>**[南臺科技大學｜1 組](南臺科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="健行科技大學/校本部/buildings/uch-library/previews/front.png" alt="健行科技大學實際模型預覽" width="260">](健行科技大學/README.md)<br>**[健行科技大學｜1 組](健行科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="台南應用科技大學/校本部/buildings/tut-library-information-2002/previews/front.png" alt="台南應用科技大學實際模型預覽" width="260">](台南應用科技大學/README.md)<br>**[台南應用科技大學｜1 組](台南應用科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="嘉南藥理大學/校本部/buildings/cnu-wang-chen-library/previews/front.png" alt="嘉南藥理大學實際模型預覽" width="260">](嘉南藥理大學/README.md)<br>**[嘉南藥理大學｜1 組](嘉南藥理大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="崑山科技大學/永康校區/buildings/ksu-library-information-building/previews/front.png" alt="崑山科技大學實際模型預覽" width="260">](崑山科技大學/README.md)<br>**[崑山科技大學｜1 組](崑山科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
-| [<img src="正修科技大學/校本部/buildings/csu-library-technology/previews/front.png" alt="正修科技大學實際模型預覽" width="260">](正修科技大學/README.md)<br>**[正修科技大學｜1 組](正修科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="中臺科技大學/校本部/buildings/ctust-tianji/previews/front.png" alt="中臺科技大學實際模型預覽" width="260">](中臺科技大學/README.md)<br>**[中臺科技大學｜1 組](中臺科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |  |
+| [<img src="正修科技大學/校本部/buildings/csu-library-technology/previews/front.png" alt="正修科技大學實際模型預覽" width="260">](正修科技大學/README.md)<br>**[正修科技大學｜1 組](正修科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="中臺科技大學/校本部/buildings/ctust-tianji/previews/front.png" alt="中臺科技大學實際模型預覽" width="260">](中臺科技大學/README.md)<br>**[中臺科技大學｜1 組](中臺科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="元培醫事科技大學/新竹校區/buildings/ypu-guanghan-guanghuan-complex/previews/front.png" alt="元培醫事科技大學實際模型預覽" width="260">](元培醫事科技大學/README.md)<br>**[元培醫事科技大學｜1 組](元培醫事科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 
 ## 全國大專校院擴充進度
 
@@ -67,7 +67,7 @@
 
 ## 模型範圍與限制
 
-- 467 組是模型／列印包數量，並不等於 467 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
+- 468 組是模型／列印包數量，並不等於 468 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
 - 均為依公開資料建立的外觀近似模型，不是官方模型、測繪成果、BIM 或工程圖；背面、屋頂與細節可能含推估、簡化或加粗。
 - 各件採獨立展示尺寸，沒有共同校園／院區比例尺。STL 不含預覽材質或色彩。
 - 既有數位網格檢查不等於切片或實體試印成功；尚未實體試印，請檢查薄壁、懸挑、支撐及列印設備限制。

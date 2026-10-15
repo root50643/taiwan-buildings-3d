@@ -1,0 +1,82 @@
+{
+  "stl_sha256": "f7ccaa9bbb042ec8880ad5f63faec349227a22116f6992f12c5f8bc81167c31a",
+  "source_original_face_id": 1311,
+  "first_exit_original_face_id": 4476,
+  "surface_point_mm": [
+    -7.467484839785678,
+    -7.614972321670853,
+    23.8
+  ],
+  "first_solid_normal_chord_mm": 0.5683881480891052,
+  "shared_original_edge": {
+    "adjacency_id": 4179,
+    "original_faces": [
+      1311,
+      4476
+    ],
+    "endpoints_mm": [
+      [
+        -7.73237419128418,
+        -7.542731285095215,
+        23.0
+      ],
+      [
+        -7.73237419128418,
+        -7.542731285095215,
+        26.5310001373291
+      ]
+    ],
+    "convex": true,
+    "normal_angle_degrees": 115.783163136547
+  },
+  "first_solid_midpoint_mm": [
+    -7.542259788836662,
+    -7.889152880274965,
+    23.8
+  ],
+  "common_inward_bisector_direction": [
+    0.6773481958343393,
+    -0.7356625731950521,
+    0.0
+  ],
+  "dot_bisector_source_exit_normals": [
+    -0.5315230408561914,
+    -0.5315230408561912
+  ],
+  "connected_bisector_first_exit_mm": 30.291622973358525,
+  "all_bisector_hits": [
+    {
+      "distance_mm": 30.291622973358525,
+      "original_face_id": 911,
+      "point_mm": [
+        12.97571638106176,
+        -30.173566183110257,
+        23.8
+      ],
+      "normal_dot_direction": 0.7230650935116765
+    }
+  ],
+  "controls": {
+    "origin_inside": [
+      true,
+      true
+    ],
+    "at_0_8mm_inside": [
+      true,
+      true
+    ],
+    "root_midpoint_inside": [
+      true,
+      true
+    ],
+    "air_after_first_exit": [
+      false,
+      false
+    ]
+  },
+  "interpretation": "Actual source and first-exit triangles meet directly at one convex edge. The generic nearest-G-segment direction crosses a recess and re-enters, so it is NOT a continuous backing root. The actual local source/exit inward bisector is separate connected-root evidence.",
+  "limitations": [
+    "Does not replace the original short normal chord with a thicker value or prove a global minimum wall thickness.",
+    "No longest-axis fallback, no repair."
+  ]
+}

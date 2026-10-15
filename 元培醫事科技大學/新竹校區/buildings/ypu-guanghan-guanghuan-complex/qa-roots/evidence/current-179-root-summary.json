@@ -1,0 +1,33 @@
+{
+  "stl_sha256": "f7ccaa9bbb042ec8880ad5f63faec349227a22116f6992f12c5f8bc81167c31a",
+  "original_faces": 5028,
+  "original_triangle_acceleration_preserves_exact_coordinates_and_winding": true,
+  "replayed_new_original_samples": 179,
+  "pure_convex_samples": 1,
+  "mixed_actual_convex_concave_seam_samples": 178,
+  "direction_method_counts": {
+    "source_exit_inward_bisector": 161,
+    "all_actual_chain_normal_max_margin_inward_direction": 18
+  },
+  "minimum_connected_first_exit_root_mm": 3.4437597252439898,
+  "minimum_max_margin_root_mm": 34.97328629508863,
+  "minimum_all_face_margin_for_max_margin_samples": 0.3327296502501688,
+  "all_direction_dots_inward": true,
+  "all_inside_and_air_controls_correct": true,
+  "all_roots_at_least_0_8": true,
+  "remaining_micro_width_actual_seam_faces": [
+    135,
+    224,
+    233,
+    236,
+    537,
+    571,
+    573
+  ],
+  "method": "New current-STL original face IDs and exact triangles. Local graph has at most two intermediate actual near-coplanar patches; all actual shared crease segments within .8mm of first material chord. The 178 mixed chains retain one genuine concave seam edge and are never labeled pure convex. All actual intermediate triangle normals are included. Use source/exit inward bisector when inward to all faces; otherwise geometry-only max-margin normal-cone direction, optimized before ray casting and independent of root length. First connected exit only.",
+  "limitations": [
+    "178 mixed convex/concave chains cannot support a pure convex-corner exception. Original micro-width seam facets are recorded, not collapsed or repaired.",
+    "The common inward root supports a bounded directional backing interpretation for these samples only; it does not establish global minimum wall thickness or automatic printability.",
+    "This is author diagnostic evidence, not independent acceptance."
+  ]
+}

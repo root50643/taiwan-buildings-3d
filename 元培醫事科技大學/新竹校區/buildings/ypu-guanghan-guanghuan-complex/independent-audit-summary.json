@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "stl_sha256": "f7ccaa9bbb042ec8880ad5f63faec349227a22116f6992f12c5f8bc81167c31a",
+  "reviewer_decision": "Specific finite evidence exceptions approved on 2026-10-15. Original author evidence, failed coplanar root values and two parity flags retained. Digital QA only, not a physical print.",
+  "original_faces": 5028,
+  "layers": 169,
+  "original_polygons": 280,
+  "whole_layer_warning_count": 4,
+  "whole_layer_max_loss_percent": 1.2947342328829632,
+  "warning_families": {
+    "H_continuous_lower_roof_band": {
+      "count": 4,
+      "max_loss_percent": 1.1922555934121286,
+      "minimum_retained_percent": 98.80774440658787,
+      "true_corner_outside_max_mm2": 5.688371813215142e-15,
+      "true_corner_outside_max_percent": 8.735788360993558e-15,
+      "outside_original_edge_0p005_max_mm2": 0.0,
+      "actual_normal_min_mm": 1.176965,
+      "down_first_exit_z_range": [
+        29.954999899999997,
+        29.9549999
+      ]
+    },
+    "H_free_pergola_posts": {
+      "count": 44,
+      "max_loss_percent": 6.299505764280765,
+      "minimum_retained_percent": 93.70049423571923,
+      "true_corner_outside_max_mm2": 0.0014502068757382166,
+      "true_corner_outside_max_percent": 0.06462585229246004,
+      "outside_original_edge_0p005_max_mm2": 0.0,
+      "actual_normal_min_mm": 1.4979972000000001,
+      "down_first_exit_z_range": [
+        0.0,
+        29.9549999
+      ]
+    },
+    "L_free_pergola_posts": {
+      "count": 16,
+      "max_loss_percent": 6.186316997133069,
+      "minimum_retained_percent": 93.81368300286694,
+      "true_corner_outside_max_mm2": 0.0001582327684632001,
+      "true_corner_outside_max_percent": 0.007051371799336963,
+      "outside_original_edge_0p005_max_mm2": 0.0,
+      "actual_normal_min_mm": 1.4979972000000001,
+      "down_first_exit_z_range": [
+        0.0,
+        29.9549999
+      ]
+    }
+  },
+  "dense_independent": {
+    "stl_sha256": "f7ccaa9bbb042ec8880ad5f63faec349227a22116f6992f12c5f8bc81167c31a",
+    "original_faces": 5028,
+    "independent_barycentric_samples_per_face": 10,
+    "sample_weights": [
+      [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      [
+        0.98,
+        0.01,
+        0.01
+      ],
+      [
+        0.01,
+        0.98,
+        0.01
+      ],
+      [
+        0.01,
+        0.01,
+        0.98
+      ],
+      [
+        0.495,
+        0.495,
+        0.01
+      ],
+      [
+        0.01,
+        0.495,
+        0.495
+      ],
+      [
+        0.495,
+        0.01,
+        0.495
+      ],
+      [
+        0.49,
+        0.49,
+        0.02
+      ],
+      [
+        0.49,
+        0.02,
+        0.49
+      ],
+      [
+        0.02,
+        0.49,
+        0.49
+      ]
+    ],
+    "total_samples": 50280,
+    "original_seven_samples": 35196,
+    "added_three_samples": 15084,
+    "short_first_segments_under_0_8_count": 1001,
+    "short_original_seven": 763,
+    "short_added_three": 238,
+    "minimum_original_first_solid_mm": 0.0393813188145,
+    "strict_short_first_segment_recheck_count": 1001,
+    "strict_chord_disagreements_over_1e_6_count": 0,
+    "pure_convex_chain_count": 751,
+    "mixed_chain_count": 250,
+    "direction_method_counts": {
+      "source_exit_inward_bisector": 976,
+      "all_chain_normal_max_margin": 25
+    },
+    "minimum_independent_first_root_mm": 3.4437597256816823,
+    "minimum_inward_dot_margin": 5.505290975711844e-07,
+    "original_parity_flags_count": 2,
+    "new_parity_flags_count": 0,
+    "root_control_points_count": 12012,
+    "root_control_rays_count": 24024,
+    "root_control_parity_flags": [],
+    "unresolved_count": 0,
+    "not_global_minimum_thickness_or_printability_proof": true,
+    "method": "Read original STL float32 vertices directly; no repair or face reordering. Original independent 10-weight dense scan retained. All 1001 short first normal chords re-intersected in longdouble; actual source and first exit identified, with air and all later material intervals excluded. Geometry-only local chain selection, at most 3 actual crease links within 0.8mm of original short material chord. All intermediate original face normals used for common inward direction. Direction selection precedes root tracing. Fresh independent original-triangle BVH roots cross-checked by unaccelerated longdouble first exits. Twelve root positions checked via two independent parity directions; exceptions adjudicated by solid angle. Mixed concave/convex chains are explicitly retained and cannot support a pure-convex claim.",
+    "stratified_coverage": {
+      "original_7_weight_short_samples": {
+        "sample_count": 763,
+        "pure_convex_selected_chain": 573,
+        "mixed_actual_chain": 190,
+        "method_counts": {
+          "source_exit_inward_bisector": 743,
+          "all_chain_normal_max_margin": 20
+        },
+        "minimum_first_connected_inward_root_mm": 3.4437597256816823
+      },
+      "new_3_weight_short_samples": {
+        "sample_count": 238,
+        "pure_convex_selected_chain": 178,
+        "mixed_actual_chain": 60,
+        "method_counts": {
+          "source_exit_inward_bisector": 233,
+          "all_chain_normal_max_margin": 5
+        },
+        "minimum_first_connected_inward_root_mm": 7.576317772287188
+      },
+      "original_179_catalog_samples": {
+        "sample_count": 179,
+        "pure_convex_selected_chain": 1,
+        "mixed_actual_chain": 178,
+        "method_counts": {
+          "source_exit_inward_bisector": 161,
+          "all_chain_normal_max_margin": 18
+        },
+        "minimum_first_connected_inward_root_mm": 3.4437597256816823
+      },
+      "original_584_other_short_samples": {
+        "sample_count": 584,
+        "pure_convex_selected_chain": 572,
+        "mixed_actual_chain": 12,
+        "method_counts": {
+          "source_exit_inward_bisector": 582,
+          "all_chain_normal_max_margin": 2
+        },
+        "minimum_first_connected_inward_root_mm": 6.333730517821881
+      }
+    },
+    "strict_max_absolute_short_chord_delta_mm": 2.8870550394799466e-10,
+    "strict_max_absolute_root_delta_mm": 5.3290705182007514e-14,
+    "all_short_entry_faces_match_source": true,
+    "all_short_first_exit_normals_are_outward_for_ray": true,
+    "all_50280_csv_first_segments_positive_finite": true,
+    "all_50280_csv_entries_within_1e_7_of_offset": true,
+    "all_50280_csv_air_intervals_positive": true,
+    "source_hash_unchanged": true,
+    "original_parity_flags_resolution": "At exact source centroids, strict intersection preserves an intermediate non-crossing boundary contact; solid angle before/after it remains 1. At CSV-rounded points strict rays miss this contact. Both geometries first leave material at face403 (sample486, span22.3320306739mm) and face455 (sample488, span19.5948913592mm). Original 2 after-exit flags retained; the supposed following air intervals were inside material. Neither is a short-wall case.",
+    "mixed_chain_classification_note": "The tighter 0.8mm first-chord locality chooses mixed original chains for 12 additional cases within the author 584 broader-locality group. This is conservative alternative local classification, not a claim that the broader 1.5mm convex route does not exist. The 179 catalog retains its 178 genuinely mixed chains.",
+    "exception_approval": false,
+    "requires_parent_or_root_decision": true,
+    "maximum_selected_chain_edge_to_first_chord_distance_mm": 0.28609040945470765,
+    "minimum_max_margin_direction_first_root_mm": 25.377887996473174,
+    "low_margin_caution": "The minimum common-inward dot margin is only 5.505290975711844e-7. The exact original mesh tests pass, but this does not establish manufacturing tolerance robustness."
+  },
+  "package": {
+    "original_files": 70,
+    "checksums": 264,
+    "links": 14,
+    "source_rebuild_exact_sha": true,
+    "saved_blend_oriented_mesh_identical": true,
+    "five_png_bytes_and_pixels_identical": true,
+    "three_readmes_opposite_views_same_row": true
+  },
+  "four_coplanar_axis_roots": "Original -X long values at tower roof are boundary-coincident and are not valid robust interior-root proofs. Preserve original values and +/-z perturbation controls. Separate finite original-normal width and geometry-selected actual L_post02 connections support this specific beam.",
+  "bounded_roof_support": "Post feet partially supported, 28.0031–76.1251%; not all foot area supported. H11 supports, L5 including tower; beam spans need slicing/support assessment.",
+  "independent_portable_json": "Three strict wrappers retain original finite values and explain null air as no third ray hit; raw compressed archives unchanged.",
+  "limits": [
+    "Minimum common-inward dot margin5.505290975711844e-7 is not manufacturing tolerance robustness.",
+    "Original normal first segments and following-air semantics remain; connected roots are not a global minimum-wall claim.",
+    "Specified tower overlap cannot be substituted for local beam-neck width.",
+    "Unknown rear windows, omitted PV/equipment, multi-date sources and nominal heights remain.",
+    "Not printed; inspect slicer and supports; do not arbitrarily shrink."
+  ]
+}

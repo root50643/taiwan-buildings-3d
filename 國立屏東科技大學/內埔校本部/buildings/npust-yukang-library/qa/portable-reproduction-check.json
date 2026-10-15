@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "checks": {
+    "scripts_resolve_portable_paths": true,
+    "dense_raw_csv_payload_bytes_identical": true,
+    "all_selected_original_numeric_reports_reproduced": true
+  },
+  "results": [
+    {
+      "script": "qa/dense/run_dense.py",
+      "exit_code": 0
+    },
+    {
+      "script": "qa/dense/classify_short.py",
+      "exit_code": 0
+    },
+    {
+      "script": "qa/dense/check_backed_mullions.py",
+      "exit_code": 0
+    },
+    {
+      "script": "qa/check_warning_corners.py",
+      "exit_code": 0
+    },
+    {
+      "script": "qa/check_warning_normals.py",
+      "exit_code": 0
+    },
+    {
+      "script": "qa/check_roots_sections.py",
+      "exit_code": 0
+    },
+    {
+      "file": "qa/dense/all-original.csv.gz",
+      "uncompressed_payload_sha256": "4a2a465f614fb79725280af7de091f6a980dfd67c2c9976afdc9b2a087c77f1a",
+      "rebuild_payload_identical": true
+    },
+    {
+      "file": "qa/dense/short-original.csv.gz",
+      "uncompressed_payload_sha256": "7f4d5c41d8a2c9884f52f238da5820cf92ee686416c929379bbf1c4f2077735c",
+      "rebuild_payload_identical": true
+    },
+    {
+      "file": "qa/dense/initial-summary.json",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/dense/edge-classification-summary.json",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/dense/backed-mullions-summary.json",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/dense/backed-mullions-original-roots.json.gz",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/warning-corners-original.json.gz",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/warning-corners-summary.json",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/warning-original-normal-probes.json.gz",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/warning-original-normal-summary.json",
+      "all_original_numerical_values_reproduced": true
+    },
+    {
+      "file": "qa/root-sections-original.json",
+      "all_original_numerical_values_reproduced": true
+    }
+  ]
+}

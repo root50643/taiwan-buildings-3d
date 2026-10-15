@@ -1,0 +1,108 @@
+{
+  "model_sha256": "76939c4a6901112a66b76a6c87de5b76829de584bcac9b61e2d5b2a301a36e86",
+  "portable_scripts_executed": true,
+  "compiler_source_included": true,
+  "compiled_binary_and_work_buffers_use_runtime_tempfile": true,
+  "private_csv_private_audit_or_precompiled_binary_required": false,
+  "original_model_or_raw_audit_writes": false,
+  "default_model_dir_expression": "Path(__file__).resolve().parents[2]",
+  "default_output_subdirectories": [
+    "recheck/components",
+    "recheck/boundaries"
+  ],
+  "checks": [
+    {
+      "reference": "components-summary.json",
+      "reference_sha256": "b6070fa24b019be33d1d283a82259265fabf916145ed19ef1ba64b4e342e656f",
+      "rerun_basename": "cycu-library-components-independent.json",
+      "rerun_sha256": "b6070fa24b019be33d1d283a82259265fabf916145ed19ef1ba64b4e342e656f",
+      "decoded_json_exactly_equal": true
+    },
+    {
+      "reference": "components-evidence.json.gz",
+      "reference_sha256": "abf4170a21ddd691bd6d3db120e56648a0158cc84910784c908b3e2cf00fcb21",
+      "rerun_basename": "cycu-library-components-evidence.json.gz",
+      "rerun_sha256": "7c7e970845eeb998b570b71388c7fbb397ee63ac20751664f77f5e535d859cbc",
+      "decoded_json_exactly_equal": true
+    },
+    {
+      "reference": "normals-roots-summary.json",
+      "reference_sha256": "b1b48fd8ac8540c1760e6354fed89064851974293138ea139411e31f0b760e57",
+      "rerun_basename": "cycu-library-normals-roots-independent.json",
+      "rerun_sha256": "b1b48fd8ac8540c1760e6354fed89064851974293138ea139411e31f0b760e57",
+      "decoded_json_exactly_equal": true
+    },
+    {
+      "reference": "normals-roots-evidence.json.gz",
+      "reference_sha256": "c5b0fd885ace4db897cc0bfcd0a2f3ecc77a8d8d21f59eff80bf843ef1c6e6d1",
+      "rerun_basename": "cycu-library-normals-roots-evidence.json.gz",
+      "rerun_sha256": "d2a6d04e3a7233a13d2a4cee1c952d7c1e9dd5da2699cb5f724c1b224b82c549",
+      "decoded_json_exactly_equal": true
+    },
+    {
+      "reference": "boundary-summary.json",
+      "reference_sha256": "1c1173d2e9f1fd202a22ff5215a09eb24b92f73d7c15f29cd40f12cb59967563",
+      "rerun_basename": "cycu-library-boundary-independent.json",
+      "rerun_sha256": "bd292ed42208430af2bccc252789338557dbfb055894e723b3565e5f27b0337a",
+      "all_numerical_wkt_ray_and_control_values_exactly_equal": true,
+      "only_expected_metadata_differences": {
+        "script_sha256": {
+          "reference": "7ea60d41aae993924a85c133cdff8e7d7fe874e7fe1ef72dd76262ec55786b7f",
+          "rerun": "f7ce4ce8f141d1ec2c6a09afce25686de4944aba98a657994846f9ec05fe2ee6"
+        },
+        "winding_executable_sha256": {
+          "reference": "b37d675ff326686934851c59c9c9fa4e5e8cdfcd1cc2e8bfd3fb577b9c08c809",
+          "rerun": "2191677298cef4955c29aec70974b631ac93d56646557dde0cc0208a2f338e55"
+        }
+      }
+    },
+    {
+      "reference": "boundary-evidence.json.gz",
+      "reference_sha256": "7c1c0bbb3e7ba3800918de3246dc1a54f318b0d1b8c55a7dc959cc1a96e0b544",
+      "rerun_basename": "cycu-library-boundary-evidence.json.gz",
+      "rerun_sha256": "61db27afa6e0aa993995a2bc7c3687811ef52984d75aa87a89098a6f76d11101",
+      "all_numerical_wkt_ray_and_control_values_exactly_equal": true,
+      "only_expected_metadata_differences": {
+        "script_sha256": {
+          "reference": "7ea60d41aae993924a85c133cdff8e7d7fe874e7fe1ef72dd76262ec55786b7f",
+          "rerun": "f7ce4ce8f141d1ec2c6a09afce25686de4944aba98a657994846f9ec05fe2ee6"
+        },
+        "winding_executable_sha256": {
+          "reference": "b37d675ff326686934851c59c9c9fa4e5e8cdfcd1cc2e8bfd3fb577b9c08c809",
+          "rerun": "2191677298cef4955c29aec70974b631ac93d56646557dde0cc0208a2f338e55"
+        }
+      }
+    }
+  ],
+  "strict_individual_one_percent_passed": false,
+  "audit_time_exception_approval": false,
+  "public_code_sha256": {
+    "audit_boundaries.py": "f7ce4ce8f141d1ec2c6a09afce25686de4944aba98a657994846f9ec05fe2ee6",
+    "audit_components.py": "f24736f4e68a5d27dd831e4292af2149ea44aa473cfc515e346e8d002bb4b0f2",
+    "winding_controls.cpp": "ffa597026b3770c57b6f5aa93440662658694672a137ca0d5f086999abaa46ec"
+  },
+  "private_absolute_path_scan_passed": true,
+  "scanned_reference_and_source_files": [
+    "boundary-summary.json",
+    "normals-roots-summary.json",
+    "README.md",
+    "normals-roots-evidence.json.gz",
+    "audit_boundaries.py",
+    "components-summary.json",
+    "components-evidence.json.gz",
+    "audit_components.py",
+    "winding_controls.cpp",
+    "boundary-evidence.json.gz",
+    "provenance.json"
+  ],
+  "raw_to_public_mapping_hashes_verified": true,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "shapely": "2.2.0",
+    "geos": "3.14.1",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "script_sha256": "f213e0977c96c7d83b292260513d5e72c90d22d24f2403891e85affd5f96f9bf",
+    "stl_sha256": "76939c4a6901112a66b76a6c87de5b76829de584bcac9b61e2d5b2a301a36e86"
+  }
+}

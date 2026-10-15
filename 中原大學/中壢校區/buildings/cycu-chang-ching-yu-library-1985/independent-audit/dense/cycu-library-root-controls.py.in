@@ -1,0 +1,16 @@
+from pathlib import Path
+import json,numpy as np,gzip,subprocess
+O=Path('@WORK@');rs=json.load(gzip.open('@WORK@/cycu-library-short-roots.json.gz','rt'))['rows'];corn={(r['face'],r['sample']):r for r in json.load(gzip.open('@WORK@/cycu-library-corner-roots.json.gz','rt'))};pts=[];refs=[]
+for r in rs:
+ second=r['parent_with_inward_normal'] if r['family']=='backed_mullion' else corn[(r['face'],r['sample'])]['common_root']
+ for key,ray in [('original_normal',r['normal']),('fixed_parent_or_two_plane',second)]:
+  o=np.array(ray['origin']);d=np.array(ray['direction']);h=ray['events'];a,b=h[0]['t'],h[1]['t'];c=h[2]['t']if len(h)>2 else b+1
+  stations=[('outside',a-min(1e-5,a/2),0),('entry_inside',a+min(1e-5,(b-a)/100),1),('exit_inside',b-min(1e-5,(b-a)/100),1),('post_exit',b+min(1e-5,(c-b)/100),0)]
+  for frac in [.01,.1,.25,.5,.75,.9,.99]:stations += [(f'first_segment_{frac}',a+(b-a)*frac,1),(f'first_after_interval_{frac}',b+(c-b)*frac,0)]
+  for role,t,expected in stations:
+   boundaries=[x for x in ray['boundaries']if x['a']+1e-10<t<x['b']-1e-10];pts.append(o+d*t);refs.append({'index':len(pts)-1,'face':r['face'],'sample':r['sample'],'key':key,'role':role,'expected':None if boundaries else expected,'boundary_faces':[x['face']for x in boundaries]})
+np.array(pts).tofile('@WORK@/cycu-library-root-controls.bin')
+with gzip.open('@WORK@/cycu-library-root-controls-meta.json.gz','wt')as f:json.dump(refs,f,separators=(',',':'))
+print('controls',len(pts),flush=True)
+subprocess.run([str(O/'cmu-dense-flag-winding-omp'),'@WORK@/cycu-library-dense-triangles.bin','@WORK@/cycu-library-root-controls.bin','@WORK@/cycu-library-root-controls-winding.csv'],check=True)
+w=np.loadtxt('@WORK@/cycu-library-root-controls-winding.csv',delimiter=',')[:,1];bad=[dict(r,winding=float(w[r['index']]))for r in refs if r['expected']is not None and abs(w[r['index']]-r['expected'])>1e-7];summary={'controls':len(pts),'failures':bad,'boundary_diagnostic_controls':sum(r['expected']is None for r in refs),'maximum_error':max(abs(w[r['index']]-r['expected'])for r in refs if r['expected']is not None)};(O/'cycu-library-root-controls-summary.json').write_text(json.dumps(summary,indent=2));print(summary)

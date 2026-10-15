@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,gzip,numpy as np,ast,subprocess
+O=Path('@WORK@');T=np.fromfile('@WORK@/cycu-library-dense-triangles.bin').reshape(-1,3,3);N=np.cross(T[:,1]-T[:,0],T[:,2]-T[:,0]);N/=np.linalg.norm(N,axis=1)[:,None]
+s=json.load(gzip.open('@WORK@/cycu-library-short-roots.json.gz','rt'));rows=[r for r in s['rows']if r['family']=='outline_corner'];qs=[]
+for r in rows:
+ f=r['face'];e=r['normal']['events'][1]['faces'][0]['face'];p=np.array(r['surface']);d=-(N[f]+N[e]);d/=np.linalg.norm(d);r['entry_face']=f;r['exit_face']=e;r['direction_method']='negative sum of actual original entry and exit plane unit normals, no selection by root length';r['common_inward_margins']=[float(-d@N[f]),float(-d@N[e])];r['shared_original_vertices']=[v.tolist()for v in T[f]if any(np.array_equal(v,w)for w in T[e])];qs.append([p-d*1e-5,d])
+np.array(qs).tofile('@WORK@/cycu-library-corner-roots-queries.bin');subprocess.run([str(O/'cmu-dense-strict'),'@WORK@/cycu-library-dense-triangles.bin','@WORK@/cycu-library-corner-roots-queries.bin','@WORK@/cycu-library-corner-roots-hits.csv'],check=True)
+tree=ast.parse((O/'npust-yukang-dense-roots.py').read_text());exec(compile(ast.Module(body=[x for x in tree.body if isinstance(x,ast.FunctionDef)and x.name=='parse'],type_ignores=[]),'parse','exec'))
+for r,q,line in zip(rows,qs,open('@WORK@/cycu-library-corner-roots-hits.csv')):
+ h,b=parse(line);signs=[0 if min(z['nd']for z in x['faces'])< -1e-10 and max(z['nd']for z in x['faces'])>1e-10 else (1 if max(z['nd']for z in x['faces'])>1e-10 else -1)for x in h];winds=[sum(signs[j:])for j in range(len(signs)+1)];r['common_root']={'origin':q[0].tolist(),'direction':q[1].tolist(),'events':h,'boundaries':b,'interval_windings':winds,'first_span':h[1]['t']-h[0]['t']if len(h)>1 else None,'valid':bool(len(h)>1 and abs(h[0]['t']-1e-5)<1e-8 and winds[:3]==[0,1,0])}
+print('common roots',len(rows),'bad',[(r['face'],r['sample'],r['common_root']['first_span'])for r in rows if not r['common_root']['valid']or r['common_root']['first_span']<.8]);print('minimum',min(r['common_root']['first_span']for r in rows))
+with gzip.open('@WORK@/cycu-library-corner-roots.json.gz','wt')as f:json.dump(rows,f,allow_nan=False)

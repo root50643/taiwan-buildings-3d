@@ -1,0 +1,11 @@
+from pathlib import Path
+import json,gzip,numpy as np,subprocess,ast
+O=Path('@WORK@');rows=[q for q in json.load(gzip.open('@WORK@/cycu-library-corner-edge-proof.json.gz','rt'))['rows']if not q['real_incident_edge']];qs=[];refs=[]
+for q in rows:
+ c=min([c for c in q['tangent_curves']if c['offset']<=.4 and c['valid']and c['first_span']>=.8],key=lambda x:x['offset']);p=np.array(q['surface']);n=-np.array(q['normal']['direction']);t=np.array([-n[1],n[0],0]);t/=np.linalg.norm(t)
+ for off in np.linspace(0,c['offset'],21):qs.append([p+c['sign']*t*off+n*1e-5,-n]);refs.append({'face':q['face'],'sample':q['sample'],'offset':float(off),'target':c['offset'],'sign':c['sign']})
+np.array(qs).tofile('@WORK@/cycu-library-tangent-path.bin');subprocess.run([str(O/'cmu-dense-strict'),'@WORK@/cycu-library-dense-triangles.bin','@WORK@/cycu-library-tangent-path.bin','@WORK@/cycu-library-tangent-path-hits.csv'],check=True)
+tree=ast.parse((O/'npust-yukang-dense-roots.py').read_text());exec(compile(ast.Module(body=[x for x in tree.body if isinstance(x,ast.FunctionDef)and x.name=='parse'],type_ignores=[]),'parse','exec'))
+for q,ray,line in zip(refs,qs,open('@WORK@/cycu-library-tangent-path-hits.csv')):
+ h,b=parse(line);q.update(origin=ray[0].tolist(),direction=ray[1].tolist(),events=h,boundaries=b,first_span=h[1]['t']-h[0]['t']if len(h)>1 else None,on_original_plane=bool(len(h)>1 and abs(h[0]['t']-1e-5)<1e-8))
+j={'samples':len(refs),'all_original_plane':all(r['on_original_plane']for r in refs),'minimum_final_chord_mm':min(r['first_span']for r in refs if r['offset']==r['target']),'rows':refs};(O/'cycu-library-seven-tangent-path.json').write_text(json.dumps(j,indent=2));print({k:v for k,v in j.items()if k!='rows'})

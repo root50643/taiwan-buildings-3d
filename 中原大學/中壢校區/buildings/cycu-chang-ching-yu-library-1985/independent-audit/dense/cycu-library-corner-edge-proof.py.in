@@ -1,0 +1,21 @@
+from pathlib import Path
+import numpy as np,json,gzip,collections
+O=Path('@WORK@');T=np.fromfile('@WORK@/cycu-library-dense-triangles.bin').reshape(-1,3,3);N=np.cross(T[:,1]-T[:,0],T[:,2]-T[:,0]);N/=np.linalg.norm(N,axis=1)[:,None];edges=collections.defaultdict(list)
+for f,t in enumerate(T):
+ for a,b in zip(t,np.roll(t,-1,axis=0)):edges[tuple(sorted((tuple(a),tuple(b))))].append(f)
+r=json.load(gzip.open('@WORK@/cycu-library-corner-roots.json.gz','rt'));er=[]
+for verts,ff in edges.items():
+ if len(ff)!=2:continue
+ if N[ff[0]]@N[ff[1]]>1-1e-9:continue
+ er.append((np.array(verts),ff))
+for q in r:
+ f,e=q['entry_face'],q['exit_face'];p=np.array(q['surface']);cand=[]
+ for v,ff in er:
+  a,b=ff
+  if not ((N[a]@N[f]>1-1e-9 and N[b]@N[e]>1-1e-9)or(N[b]@N[f]>1-1e-9 and N[a]@N[e]>1-1e-9)):continue
+  if max(abs((v-T[f,0])@N[f]))>1e-7 or max(abs((v-T[e,0])@N[e]))>1e-7:continue
+  delta=v[1]-v[0];t=np.clip((p-v[0])@delta/(delta@delta),0,1);near=v[0]+delta*t;sa=float((T[b].mean(0)-T[a,0])@N[a]);sb=float((T[a].mean(0)-T[b,0])@N[b]);cand.append({'edge_vertices':v.tolist(),'incident_faces':ff,'distance_to_finite_edge':float(np.linalg.norm(p-near)),'side_plane_signs':[sa,sb],'convex':sa<0 and sb<0})
+ q['real_incident_edge']=min(cand,key=lambda a:a['distance_to_finite_edge'])if cand else None
+out={'count':len(r),'all_real_edges_found':all(q['real_incident_edge']for q in r),'all_convex':all(q['real_incident_edge']and q['real_incident_edge']['convex']for q in r),'maximum_edge_distance_mm':max(q['real_incident_edge']['distance_to_finite_edge']for q in r if q['real_incident_edge']),'minimum_common_inward_margin':min(min(q['common_inward_margins'])for q in r),'minimum_original_two_plane_root_mm':min(q['common_root']['first_span']for q in r),'rows':r}
+with gzip.open('@WORK@/cycu-library-corner-edge-proof.json.gz','wt')as f:json.dump(out,f,allow_nan=False)
+print({k:v for k,v in out.items()if k!='rows'})

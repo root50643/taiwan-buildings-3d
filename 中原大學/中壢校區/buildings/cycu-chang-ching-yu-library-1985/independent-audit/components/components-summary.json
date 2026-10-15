@@ -1,0 +1,73 @@
+{
+  "stl_sha256": "76939c4a6901112a66b76a6c87de5b76829de584bcac9b61e2d5b2a301a36e86",
+  "sampled_layers": 273,
+  "original_polygons": 695,
+  "warning_count": 47,
+  "maximum_individual_loss_fraction": 0.0668910704667389,
+  "minimum_retained_fraction": 0.9331089295332611,
+  "maximum_layer_aggregate_loss_fraction": 0.0044663183617240105,
+  "all_original_components_survive_unsplit": true,
+  "strict_individual_one_percent_passed": false,
+  "all_warning_true_corner_outside_0_41_zero": true,
+  "maximum_author_reported_loss_fraction_delta": 7.619386591591862e-05,
+  "maximum_warning_author_reported_loss_fraction_delta": 3.1681505294200996e-08,
+  "maximum_warning_author_wkt_recalculation_delta": 0.0,
+  "all_polygon_nonzero_true_corner_outside_count": 331,
+  "all_polygon_max_true_corner_outside_mm2": 0.04417537599911031,
+  "true_corner_zero_claim_scope": "Only the 47 >1% warning polygons, not every original polygon",
+  "maximum_author_rounded_original_symmetric_difference_mm2": 1.8555559654177738e-05,
+  "families": {
+    "roof_grid_cell": {
+      "count": 32,
+      "z_range_mm": [
+        44.671,
+        44.871
+      ],
+      "min_loss_fraction": 0.06689107046673888,
+      "max_loss_fraction": 0.0668910704667389,
+      "min_retained_fraction": 0.9331089295332611,
+      "max_loss_area_mm2": 0.13815224151264735,
+      "max_true_corner_outside_0_41_mm2": 0.0,
+      "nonzero_true_corner_outside_count": 0,
+      "true_corner_counts": [
+        4
+      ]
+    },
+    "roof_outer_ring": {
+      "count": 8,
+      "z_range_mm": [
+        44.671,
+        44.871
+      ],
+      "min_loss_fraction": 0.021676112754166626,
+      "max_loss_fraction": 0.02167611275416663,
+      "min_retained_fraction": 0.9783238872458334,
+      "max_loss_area_mm2": 0.8289134490758843,
+      "max_true_corner_outside_0_41_mm2": 0.0,
+      "nonzero_true_corner_outside_count": 0,
+      "true_corner_counts": [
+        48
+      ]
+    },
+    "sloped_parapet": {
+      "count": 7,
+      "z_range_mm": [
+        15.271,
+        16.471
+      ],
+      "min_loss_fraction": 0.010115194119735788,
+      "max_loss_fraction": 0.022836687895705487,
+      "min_retained_fraction": 0.9771633121042945,
+      "max_loss_area_mm2": 0.1381522415126542,
+      "max_true_corner_outside_0_41_mm2": 0.0,
+      "nonzero_true_corner_outside_count": 0,
+      "true_corner_counts": [
+        4
+      ]
+    }
+  },
+  "method": "Original float32 STL promoted exactly to float64. Canonical edge interpolation without rounding, closed original rings composed by symmetric difference. Formal opening uses every original Polygon buffer(-0.4).buffer(0.4) with default Shapely quad_segs=16. Actual outer and hole ring turns >0.1 degree select true corners, no simplify; 0.41 mm disks with quad_segs=64. No bbox or idealized polygon substitution. Bounds only match independently reconstructed components to author rows. Every original polygon WKT, opening, eroded polygon and loss retained. Author rounded warning WKT separately preserved/recomputed.",
+  "author_rounding_disclosed": true,
+  "exception_approval": false,
+  "not_printability_approval": true
+}

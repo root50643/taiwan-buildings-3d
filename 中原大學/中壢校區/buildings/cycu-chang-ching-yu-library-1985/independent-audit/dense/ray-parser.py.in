@@ -1,0 +1,10 @@
+def parse(line):
+ hpart,bpart=line.split('|');hh=[]
+ for val in hpart.split(';')[1:]:
+  t,f,u,v,nd=map(float,val.split(','));rec={'face':int(f),'barycentric':[1-u-v,u,v],'nd':nd}
+  if hh and abs(t-hh[-1]['t'])<1e-11:hh[-1]['faces'].append(rec)
+  else:hh.append({'t':t,'faces':[rec]})
+ bb=[]
+ for val in bpart.strip().split(';')[1:]:
+  a,b,f,plane,nd=map(float,val.split(','));bb.append({'a':a,'b':b,'face':int(f),'plane':plane,'nd':nd})
+ return hh,bb

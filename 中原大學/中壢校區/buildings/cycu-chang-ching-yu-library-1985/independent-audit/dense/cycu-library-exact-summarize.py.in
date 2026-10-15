@@ -1,0 +1,18 @@
+from pathlib import Path
+import ast,json,pandas as pd,numpy as np,gzip
+O=Path('@WORK@');tree=ast.parse((O/'tajen-dense-roots.py').read_text());mod=ast.Module(body=[x for x in tree.body if isinstance(x,ast.FunctionDef) and x.name=='parse'],type_ignores=[]);exec(compile(mod,'parse','exec'))
+df=pd.read_csv('@WORK@/cycu-library-dense.csv');bounds=[];first=[];differences=[];controlflags=[]
+with open('@WORK@/cycu-library-exact-hits.csv') as f:
+ for i,line in enumerate(f):
+  h,b=parse(line);r=df.iloc[i];a=h[0]['t'];z=h[1]['t'];c=h[2]['t'] if len(h)>2 else z+1000
+  overlaps=[]
+  for q in b:
+   for role,l,rr in [('first',a,z),('after',z,c)]:
+    lo=max(q['a'],l);hi=min(q['b'],rr)
+    if hi-lo>1e-8:overlaps.append({**q,'role':role,'lo':lo,'hi':hi,'length':hi-lo})
+  rec={'index':i,'face':int(r.face),'sample':int(r['sample']),'first_span':z-a,'after_span':c-z if len(h)>2 else None,'events':h,'boundaries':overlaps}
+  if overlaps:bounds.append(rec)
+  if any(q['role']=='first' for q in overlaps):first.append(rec)
+  if abs((z-a)-r.first_solid)>1e-7:differences.append(rec)
+  if r.inside_control!=1 or r.outside_control!=0 or r.mid_control!=1 or r.after_exit_control!=0:controlflags.append(rec)
+j={'samples':len(df),'first_boundary_rays':len(first),'boundary_rays':len(bounds),'boundary_triangles':sum(len(r['boundaries'])for r in bounds),'changed_first_events':len(differences),'original_parity_flags':len(controlflags),'boundaries':bounds,'first_boundary':first,'changed':differences,'flag_events':controlflags};(O/'cycu-library-exact-events-summary.json').write_text(json.dumps(j,indent=2,allow_nan=False));print({k:v for k,v in j.items() if not isinstance(v,list)})

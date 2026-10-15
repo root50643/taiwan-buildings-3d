@@ -1,0 +1,28 @@
+from pathlib import Path
+import json,gzip,numpy as np,itertools,subprocess,ast
+O=Path('@WORK@');T=np.fromfile(Path('@WORK@/cycu-library-dense-triangles.bin')).reshape(-1,3,3);rows=json.load(gzip.open(Path('@WORK@/cycu-library-short-roots.json.gz'),'rt'))['rows'];groups={}
+for r in rows:
+ if r['family']!='backed_mullion':continue
+ p=np.array(r['surface']);n=-np.array(r['normal']['direction']);mid=p-n*r['normal']['first_span']/2;key=(int(np.sign(p[1])),int(p[2]>29),round(float(mid[0]),4));groups[key]=mid
+boxes=[];pts=[];queries=[]
+for (side,upper,c),mid in groups.items():
+ family=('north'if side>0 else'south')+('_upper'if upper else'_lower');axis=1;direction=np.array([0.,-side,0]);scale=150/83.5;plane=side*(17.0 if upper else 16.95)*scale
+ source=mid.copy();source[2]=((17.4 if upper else 13.8)+1.2)*scale;source[axis]=side*(17.04 if upper else 16.99)*scale
+ center=source.copy();center[axis]=plane+direction[axis]*.8;half=np.array([.4,.4,.4]);tt=T-center
+ ids=np.flatnonzero(np.all(tt.max(1)>=-half,axis=1)&np.all(tt.min(1)<=half,axis=1));hits=[]
+ for i in ids:
+  tri=tt[i];es=np.roll(tri,-1,axis=0)-tri;axes=[*np.eye(3),np.cross(es[0],es[1]),*[np.cross(e,a)for e in es for a in np.eye(3)]];inter=True
+  for a in axes:
+   norm=np.linalg.norm(a)
+   if norm<1e-18:continue
+   a=a/norm;v=tri@a;rad=abs(a)@half
+   if v.min()>rad+1e-11 or v.max()<-rad-1e-11:inter=False;break
+  if inter:hits.append(int(i))
+ start=len(pts);pts.extend([center,*[center+np.array(v)*half for v in itertools.product([-1,1],repeat=3)],source]);queries.append([source,direction]);boxes.append({'family':family,'bar_center_axis_mm':c,'source_inside_relief_mm':source.tolist(),'predetermined_parent_inward':direction.tolist(),'source_parent_backplane_mm':plane,'center_mm':center.tolist(),'dimensions_mm':[.8,.8,.8],'boundary_intersecting_original_faces':hits,'winding_indices':list(range(start,len(pts)))})
+np.array(pts).tofile('@WORK@/cycu-library-box-controls.bin');np.array(queries).tofile('@WORK@/cycu-library-box-rays.bin')
+subprocess.run([str(O/'cmu-dense-strict'),str(Path('@WORK@/cycu-library-dense-triangles.bin')),'@WORK@/cycu-library-box-rays.bin','@WORK@/cycu-library-box-hits.csv'],check=True)
+subprocess.run([str(O/'cmu-dense-flag-winding-omp'),str(Path('@WORK@/cycu-library-dense-triangles.bin')),'@WORK@/cycu-library-box-controls.bin','@WORK@/cycu-library-box-winding.csv'],check=True)
+w=np.loadtxt('@WORK@/cycu-library-box-winding.csv',delimiter=',')[:,1]
+for b,line in zip(boxes,Path('@WORK@/cycu-library-box-hits.csv').read_text().splitlines()):
+ vals=line.split('|')[0].split(';')[1:];events=[list(map(float,x.split(',')))for x in vals];b['original_events']=events;b['first_exit_mm']=events[0][0];b['first_exit_normal_dot']=events[0][-1];b['windings']=w[b['winding_indices']].tolist();b['passed']=not b['boundary_intersecting_original_faces'] and max(abs(w[b['winding_indices']]-1))<1e-8 and b['first_exit_mm']>1.3 and b['first_exit_normal_dot']>0
+out={'boxes':boxes,'count':len(boxes),'passed':all(b['passed']for b in boxes),'method':'64 source-defined relief centers at source z13.8/17.4; fixed original parent-wall inward direction, no longest-root search. Exact original ray from interior thin relief to first exit and 0.8mm cube wholly within parent: all-original triangle SAT and winding checks. Local backing only, never a global wall minimum.'};(O/'cycu-library-backing-boxes.json').write_text(json.dumps(out,indent=2));print('BOXES',len(boxes),'PASS',out['passed'],'min_first_exit',min(b['first_exit_mm']for b in boxes))

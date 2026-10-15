@@ -1,0 +1,15 @@
+exec(open('@WORK@/cycu-library-corner-edge-proof.py').read().split('for q in r:')[0])
+allr=json.load(gzip.open('@WORK@/cycu-library-corner-edge-proof.json.gz','rt'))['rows'];rows=[q for q in allr if not q['real_incident_edge']];queries=[]
+for q in rows:
+ f=q['face'];p=np.array(q['surface']);cand=[]
+ for v,ff in er:
+  if f not in ff:continue
+  e=ff[1]if ff[0]==f else ff[0];delta=v[1]-v[0];t=np.clip((p-v[0])@delta/(delta@delta),0,1);dist=np.linalg.norm(p-v[0]-delta*t);cand.append((dist,e,v,ff))
+ dist,e,v,ff=min(cand,key=lambda x:x[0]);d=-(N[f]+N[e]);d/=np.linalg.norm(d);q['nearest_actual_edge']={'distance':float(dist),'vertices':v.tolist(),'faces':ff,'other_face':e,'convex_side_signs':[float((T[e].mean(0)-T[f,0])@N[f]),float((T[f].mean(0)-T[e,0])@N[e])],'margins':[float(-N[f]@d),float(-N[e]@d)]};queries.append([p-d*1e-5,d])
+np.array(queries).tofile('@WORK@/cycu-library-seven-queries.bin')
+import subprocess,ast
+subprocess.run([str(O/'cmu-dense-strict'),'@WORK@/cycu-library-dense-triangles.bin','@WORK@/cycu-library-seven-queries.bin','@WORK@/cycu-library-seven-hits.csv'],check=True)
+tree=ast.parse((O/'npust-yukang-dense-roots.py').read_text());exec(compile(ast.Module(body=[x for x in tree.body if isinstance(x,ast.FunctionDef)and x.name=='parse'],type_ignores=[]),'parse','exec'))
+for q,query,line in zip(rows,queries,open('@WORK@/cycu-library-seven-hits.csv')):
+ h,b=parse(line);q['nearest_actual_root']={'origin':query[0].tolist(),'direction':query[1].tolist(),'events':h,'boundaries':b,'first_span':h[1]['t']-h[0]['t']if len(h)>1 else None};print(q['face'],q['sample'],q['nearest_actual_edge'],q['nearest_actual_root']['first_span'])
+with gzip.open('@WORK@/cycu-library-seven.json.gz','wt')as f:json.dump(rows,f)

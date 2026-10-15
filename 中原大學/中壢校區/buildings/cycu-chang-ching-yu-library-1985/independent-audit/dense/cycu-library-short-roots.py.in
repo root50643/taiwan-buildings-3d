@@ -1,0 +1,34 @@
+from pathlib import Path
+import ast,numpy as np,pandas as pd,json,subprocess,gzip,collections
+O=Path('@WORK@');P='cycu-library-';T=np.fromfile('@WORK@/cycu-library-dense-triangles.bin').reshape(-1,3,3);N=np.cross(T[:,1]-T[:,0],T[:,2]-T[:,0]);N/=np.linalg.norm(N,axis=1)[:,None]
+W=np.array([[1/3]*3,[.98,.01,.01],[.01,.98,.01],[.01,.01,.98],[.495,.495,.01],[.01,.495,.495],[.495,.01,.495],[.49,.49,.02],[.49,.02,.49],[.02,.49,.49],[.8,.1,.1],[.1,.8,.1],[.1,.1,.8],[.2,.3,.5],[.2,.5,.3]])
+tree=ast.parse((O/'npust-yukang-dense-roots.py').read_text());exec(compile(ast.Module(body=[x for x in tree.body if isinstance(x,ast.FunctionDef) and x.name=='parse'],type_ignores=[]),'parse','exec'))
+df=pd.read_csv('@WORK@/cycu-library-dense.csv');short=df[df.first_solid<.8];rows=[];queries=[];meta=[]
+for _,r in short.iterrows():
+ f,s=int(r.face),int(r['sample']);p=W[s]@T[f];n=N[f];src=p/(150/83.5)-[0,0,1.2];relief=12.4<src[2]<18.8 and 16.85<abs(src[1])<17.2 and abs(n[0])>.99
+ row={'face':f,'sample':s,'surface':p.tolist(),'normal':n.tolist(),'original_dense':r.to_dict(),'family':'backed_mullion' if relief else 'outline_corner'};i=len(rows);rows.append(row)
+ queries.append([p+n*1e-5,-n]);meta.append([i,'normal',0,0])
+ if relief:
+  d=np.array([0.,-np.sign(p[1]),0]);queries.append([p-n*1e-4,d]);meta.append([i,'pure_parent_from_internal_offset',0,0])
+  d-=.15*n;d/=np.linalg.norm(d);queries.append([p-d*1e-5,d]);meta.append([i,'parent_with_inward_normal',0,0])
+ else:
+  tangent=np.array([-n[1],n[0],0]);tangent/=np.linalg.norm(tangent)
+  for sign in [-1,1]:
+   for off in [.0,.05,.1,.2,.4,.8,1.2]:
+    q=p+sign*tangent*off;queries.append([q+n*1e-5,-n]);meta.append([i,'tangent_curve',sign,off])
+np.array(queries).tofile('@WORK@/cycu-library-roots-queries.bin');subprocess.run([str(O/'cmu-dense-strict'),'@WORK@/cycu-library-dense-triangles.bin','@WORK@/cycu-library-roots-queries.bin','@WORK@/cycu-library-roots-hits.csv'],check=True)
+for (i,key,sign,off),q,line in zip(meta,queries,open('@WORK@/cycu-library-roots-hits.csv')):
+ h,b=parse(line);signs=[0 if min(z['nd']for z in x['faces'])< -1e-10 and max(z['nd']for z in x['faces'])>1e-10 else (1 if max(z['nd']for z in x['faces'])>1e-10 else -1)for x in h];winds=[sum(signs[j:])for j in range(len(signs)+1)];rec={'origin':q[0].tolist(),'direction':q[1].tolist(),'events':h,'boundaries':b,'interval_windings':winds}
+ if key=='pure_parent_from_internal_offset':rec.update(first_span=h[0]['t']if h else None,valid=bool(h and winds[:2]==[1,0]))
+ else:rec.update(first_span=h[1]['t']-h[0]['t']if len(h)>1 else None,valid=bool(len(h)>1 and abs(h[0]['t']-1e-5)<1e-8 and winds[:3]==[0,1,0]))
+ if key=='tangent_curve':rows[i].setdefault('tangent_curves',[]).append(dict(rec,sign=sign,offset=off))
+ else:rows[i][key]=rec
+j={'samples':len(df),'shorts':len(rows),'families':dict(collections.Counter(r['family']for r in rows)),'rows':rows}
+def finite(x):
+ if isinstance(x,float) and not np.isfinite(x):return None
+ if isinstance(x,dict):return {k:finite(v)for k,v in x.items()}
+ if isinstance(x,list):return [finite(v)for v in x]
+ return x
+j['nonfinite_policy']='Unbounded original air becomes null in this strict JSON only; exact original CSV and event absence preserved.'
+with gzip.open('@WORK@/cycu-library-short-roots.json.gz','wt')as f:json.dump(finite(j),f,allow_nan=False)
+print(j['families']);print('normal bad',sum(not r['normal']['valid']for r in rows));print('parent bad',sum(not r['parent_with_inward_normal']['valid'] or r['parent_with_inward_normal']['first_span']<.8 for r in rows if r['family']=='backed_mullion'));print('corner no recovery .4',[(r['face'],r['sample'])for r in rows if r['family']=='outline_corner' and not any(q['offset']<=.4 and q['valid'] and q['first_span']>=.8 for q in r['tangent_curves'])])

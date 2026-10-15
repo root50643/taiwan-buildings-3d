@@ -1,5 +1,5 @@
 """國立金門大學楊清廉圖資大樓銃樓段；照片近似，非全館；毫米。
-兩個實拍可辨識立面保留，其餘留白。無第三方3D素材。
+2024-09-23新側四錯層窄窗與石基補證修版；未知背面仍留白。無第三方3D素材。
 """
 from pathlib import Path
 import numpy as np
@@ -22,6 +22,20 @@ s+=box(0,0,117.5,36,36,15.5)
 for z in [30,55,80]:s-=box(0,-19.05,z,3.3,2.7,10.5)
 for x in [-3.1,3.1]:s-=box(x,-19.05,98,2.7,2.7,10)
 for z in [30,55,80]:s-=box(19.05,0,z,2.7,3.3,10.5)
+# 2024-09-23 image: x-negative side has four staggered single windows.
+# Lowest crosses z=23 stone/brick boundary; do not copy the old right rows.
+for z in [20,45,70,95]:
+ s-=box(-19.45,0,z,3.5,3.3,10.5)
+ # Shallow backed surround intersects both the proud stone and brick substrate.
+ s+=box(-19.25,0,z-.9,1.4,5.1,1.0)
+ s+=box(-19.25,0,z+10.4,1.4,5.1,1.0)
+ for y in [-2.1,2.1]:s+=box(-19.25,y,z-.8,1.4,1,12)
+# Front plinth single window, observed separately from the three brick rows.
+s-=box(0,-19.85,11,2.7,3.0,8.0)
+# New side low opening has a solid back and only a simplified lower grille.
+s-=box(-19.8,0,4,3.0,8.0,11.0)
+for y in [-2.5,0,2.5]:s+=box(-19.0,y,3.8,2.0,1.0,5.2)
+s+=box(-19.9,0,15,1.4,10,1.2)
 # Front and right window reveals with 1mm pale surrounding strips in relief.
 for z in [30,55,80]:
  s+=box(0,-19.15,z-.9,5.1,1,1)
@@ -40,7 +54,9 @@ for z in np.arange(23,109,3):
  s+=box(19.1,18.7,z,1,1.8,1.3);s+=box(19.1,-18.7,z,1,1.8,1.3)
 # Front two square balcony recesses, logo centre omitted; right three.
 for x in [-15,15]:s-=box(x,-26.5,113.6,2.4,6,2.4)
-for y in [-17,0,17]:s-=box(26.5,y,113.6,6,2.4,2.4)
+for y in [-17,0,17]:
+ s-=box(26.5,y,113.6,6,2.4,2.4)
+ s-=box(-26.5,y,113.6,6,2.4,2.4)
 # Head glazing on confirmed elevations, solid backing; unspecified elevations blank.
 s-=box(0,-18,120,22,2.5,5)
 s-=box(18,0,120,2.5,18,5)
@@ -68,18 +84,21 @@ for i in range(nx-1):
   a=i*ny+j;b=(i+1)*ny+j;c=b+1;d=a+1;f.extend([[a,b,c],[a,c,d]])
 # A finite underside eliminates zero-width curling tips.
 edge=list(range(ny))+[i*ny+ny-1 for i in range(1,nx)]+[(nx-1)*ny+j for j in range(ny-2,-1,-1)]+[i*ny for i in range(nx-2,0,-1)]
-bot=len(v);v.extend([[v[i][0],v[i][1],131.8] for i in edge])
+bot=len(v);v.extend([[v[i][0],v[i][1],131.4] for i in edge])
 for k,a in enumerate(edge):
  b=edge[(k+1)%len(edge)];c=bot+(k+1)%len(edge);d=bot+k;f.extend([[a,b,c],[a,c,d]])
-center=len(v);v.append([0,0,131.8])
+center=len(v);v.append([0,0,131.4])
 for k in range(len(edge)):f.append([center,bot+k,bot+(k+1)%len(edge)])
-m=trimesh.Trimesh(v,f,process=True);m.fix_normals();s+=Manifold(Mesh64(np.array(m.vertices),np.array(m.faces,dtype=np.uint64)))
+# Analytically oriented top/side/bottom triangles; no normal fixing or mesh repair.
+roof=Manifold(Mesh64(np.asarray(v,dtype=float),np.asarray(f,dtype=np.uint64)))
+assert roof.volume()>0
+s+=roof
 # Raised, broad, curved gable panels. Cross-section extruded 3.0mm in X and bonded to roof.
 for x in [-17,17]:
- section=CrossSection([list(reversed([[float(y),float(z)] for y,z in zip(ys,zs)]+[[29,131.8],[-29,131.8]]))])
+ section=CrossSection([list(reversed([[float(y),float(z)] for y,z in zip(ys,zs)]+[[29,131.4],[-29,131.4]]))])
  gable=section.extrude(3.0).transform([[0,0,1,x-1.5],[1,0,0,0],[0,1,0,0]])
  s+=gable
 assert len(s.decompose())==1
 m=s.simplify(.000001).to_mesh64()
-mesh=trimesh.Trimesh(np.asarray(m.vert_properties,dtype=np.float32)[:,:3],np.asarray(m.tri_verts),process=True)
+mesh=trimesh.Trimesh(np.asarray(m.vert_properties,dtype=np.float32)[:,:3],np.asarray(m.tri_verts),process=False)
 mesh.export(OUT/'model.stl');print(mesh.extents,mesh.is_watertight,len(mesh.faces))

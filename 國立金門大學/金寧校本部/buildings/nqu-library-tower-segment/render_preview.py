@@ -10,6 +10,9 @@ bpy.ops.wm.stl_import(filepath=str(OUT/'model.stl'));model=bpy.context.object;mo
 mat=bpy.data.materials.new('Warm stone preview only');mat.diffuse_color=(.69,.64,.54,1);model.data.materials.append(mat)
 target_z=(min(v.co.z for v in model.data.vertices)+max(v.co.z for v in model.data.vertices))/2
 scene=bpy.context.scene
+# Disable volatile PNG metadata for byte-identical public rebuilds.
+for prop in scene.render.bl_rna.properties:
+ if prop.identifier.startswith('use_stamp') and prop.type=='BOOLEAN':setattr(scene.render,prop.identifier,False)
 scene.render.engine='BLENDER_WORKBENCH';scene.display.shading.light='STUDIO';scene.display.shading.studiolight_rotate_z=.35
 scene.display.shading.color_type='MATERIAL';scene.display.shading.show_shadows=True
 scene.display.shading.show_cavity=True;scene.display.shading.cavity_type='BOTH';scene.display.shading.curvature_ridge_factor=1.5;scene.display.shading.curvature_valley_factor=1.2
@@ -19,7 +22,7 @@ scene.render.resolution_x=900;scene.render.resolution_y=800;scene.render.resolut
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
 scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=.001;scene.unit_settings.length_unit='MILLIMETERS'
 bpy.ops.object.camera_add();cam=bpy.context.object;cam.name='Preview_camera';scene.camera=cam;cam.data.type='ORTHO';cam.data.ortho_scale=180
-for name,loc,aim in [('front',(195,-220,155),(0,0,target_z)),('rear',(-195,230,160),(0,0,target_z)),('elevation',(0,-260,target_z),(0,0,target_z)),('top',(0,0,260),(0,0,0))]:
+for name,loc,aim in [('front',(195,-220,155),(0,0,target_z)),('rear',(-195,230,160),(0,0,target_z)),('elevation',(0,-260,target_z),(0,0,target_z)),('top',(0,0,260),(0,0,0)),('new-side',(-200,-230,90),(0,0,75)),('left',(-260,0,75),(0,0,75))]:
  cam.location=loc;cam.rotation_euler=(Vector(aim)-cam.location).to_track_quat('-Z','Y').to_euler()
  # Frame every actual STL corner with margin, including the entire base.
  inv=cam.rotation_euler.to_matrix().transposed(); projected=[inv@(model.matrix_world@Vector(c)-cam.location) for c in model.bound_box]
@@ -30,7 +33,7 @@ for name,loc,aim in [('front',(195,-220,155),(0,0,target_z)),('rear',(-195,230,1
 cam.location=(195,-220,155);cam.rotation_euler=(Vector((0,0,target_z))-cam.location).to_track_quat('-Z','Y').to_euler()
 scene.render.filepath='//previews/front.png'
 cam.data.ortho_scale=front_scale
-model['units']='mm';model['evidence']='NQU official and architect photographs; tower segment only; unseen rear and left elevations intentionally blank';model['model_category']='Single connected printable solid'
+model['units']='mm';model['evidence']='NQU official and architect photographs; tower segment only; 2024-09-23 confirms staggered left windows and plinth openings; unseen rear intentionally blank';model['model_category']='Single connected printable solid'
 # Remove private default file-browser paths before delivery.
 for screen in bpy.data.screens:
  for area in screen.areas:

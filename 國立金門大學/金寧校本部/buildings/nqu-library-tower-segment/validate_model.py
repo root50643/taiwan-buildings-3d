@@ -15,7 +15,9 @@ records=np.frombuffer(raw,offset=84,dtype=np.dtype([('normal','<f4',(3,)),('v','
 tri=records['v'].astype(float); saved=records['normal'].astype(float)
 calc=np.cross(tri[:,1]-tri[:,0],tri[:,2]-tri[:,0]);norm=np.linalg.norm(calc,axis=1)
 unit=calc/np.maximum(norm[:,None],1e-30)
-mesh=trimesh.load(path,force='mesh',process=True)
+# Exact-coordinate indexing only; do not merge by tolerance or repair.
+vertices,inverse=np.unique(tri.reshape(-1,3),axis=0,return_inverse=True)
+mesh=trimesh.Trimesh(vertices=vertices,faces=inverse.reshape(-1,3),process=False)
 edges,cnt=np.unique(np.sort(mesh.edges,axis=1),axis=0,return_counts=True)
 # Face-connected components without optional graph packages.
 edgefaces={}; parent=list(range(len(mesh.faces)))
@@ -59,6 +61,6 @@ with tempfile.TemporaryDirectory() as td:
   return sha(json.dumps(sorted(records),separators=(',',':')).encode())
  stl_geom=geometry_hash(tri);blend_geom=geometry_hash(bv[bf]);checks['blend_stl_geometry_agree']=stl_geom==blend_geom
 bottom=np.isclose(mesh.triangles[:,:,2],0,atol=1e-6).all(axis=1)
-report={'passed':all(checks.values()),'checks':checks,'dimensions_mm':mesh.extents.tolist(),'triangles':len(mesh.faces),'vertices':len(mesh.vertices),'surface_shells':comps,'nonmanifold_edges':int((cnt!=2).sum()),'bad_vertex_links':badlinks,'volume_mm3':float(mesh.volume),'base_contact_area_mm2':float(mesh.area_faces[bottom].sum()),'stl_sha256':sha(raw),'rebuild_stl_sha256':rebuild,'stl_geometry_sha256':stl_geom,'blend_geometry_sha256':blend_geom,'limitations':['Not a slicer validation or physical print test.','Exterior photo-based tower segment; curve/depth proportions are approximate; unseen openings and the main-building connection are omitted.','One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed.']}
+report={'passed':all(checks.values()),'checks':checks,'dimensions_mm':mesh.extents.tolist(),'triangles':len(mesh.faces),'vertices':len(mesh.vertices),'surface_shells':comps,'nonmanifold_edges':int((cnt!=2).sum()),'bad_vertex_links':badlinks,'volume_mm3':float(mesh.volume),'base_contact_area_mm2':float(mesh.area_faces[bottom].sum()),'stl_sha256':sha(raw),'rebuild_stl_sha256':rebuild,'stl_geometry_sha256':stl_geom,'blend_geometry_sha256':blend_geom,'limitations':['Not a slicer validation or physical print test.','Exterior photo-based miniature; depth and unseen elevations are estimates.','One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed.']}
 (root/a.output).write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,ensure_ascii=False,indent=2));raise SystemExit(0 if report['passed'] else 1)
 

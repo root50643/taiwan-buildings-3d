@@ -1,0 +1,90 @@
+{
+  "source": {
+    "source": "cmu-guanhuai/model.stl",
+    "sha256": "2246229578d37cf02f7448b1faf88c4730337cc21023483950a8e8ba0849fb3a",
+    "triangles": 70600,
+    "vertices_changed": false,
+    "hash_unchanged": true
+  },
+  "dense_sampling": {
+    "faces": 70600,
+    "points_per_original_face": 10,
+    "total_points": 706000,
+    "raw_normal_short_count": 29073,
+    "raw_normal_short_minimum_mm": 3.0341981243878658e-06,
+    "raw_dense_flags_retained": 3,
+    "old_7_point_short_count": 22415,
+    "added_3_point_short_count": 6658
+  },
+  "root_summary": {
+    "counts": {
+      "author7_pair": 22254,
+      "author7_triple": 161,
+      "added3_pair": 6609,
+      "added3_triple": 49
+    },
+    "minimum_root_material_mm": 0.8482380989326581,
+    "minimum_by_group_mm": {
+      "author7_pair": 0.8535450605943898,
+      "author7_triple": 21.731325785061856,
+      "added3_pair": 0.8482380989326581,
+      "added3_triple": 21.769766470663264
+    },
+    "all_original_source_entry_triangles_match": true,
+    "all_root_source_entry_triangles_match": true,
+    "maximum_original_dense_to_longdouble_span_delta_mm": 1.3823275857305362e-11,
+    "all_short_and_root_first_material_and_first_air_geometrically_verified": true,
+    "ray_positive_length_boundary_overlap_count": 0,
+    "pair_failures_retained": 210,
+    "pair_failure_minimum_mm": 0.0006620546500304135,
+    "all_chosen_directions_inward_to_actual_defining_faces": true
+  },
+  "finite_geometry": {
+    "all_have_finite_original_edge_chains": true,
+    "unresolved": [],
+    "all_actual_chain_original_normals_strictly_inward": true,
+    "minimum_common_inward_margin": 0.000107776926592193,
+    "maximum_finite_edge_to_original_or_pair_chord_distance_mm": 1.5570715153334267,
+    "maximum_chain_edge_count": 10,
+    "pure_convex_chain_rows": 24536,
+    "mixed_convex_concave_chain_rows": 4537,
+    "exact_original_triangle_shared_vertices_histogram": {
+      "0": 7874,
+      "1": 10794,
+      "2": 10405
+    },
+    "patch_method": "Original-edge adjacency; coplanar connected patches with adjacent-normal dot >1-1e-8 and plane residual <2e-5 mm. Minimum-max-distance path, max 30 edges, each finite edge within 2 mm of actual first chord. Every chosen patch original triangle normal must be strictly inward by >1e-7. Opposing faces are never collapsed. Infinite plane intersection distance is separately labelled and never substituted for a finite shared edge.",
+    "warning": "Mixed chains are explicitly not classified as single convex edges. Actual original finite edges and every chain triangle normal are retained; infinite plane intersection lines are separately labelled and never treated as finite shared edges."
+  },
+  "full_original_triangle_winding": {
+    "controls": 174450,
+    "triangles_per_control": 70600,
+    "arithmetic": "long double; compensated sum of every original triangle solid angle",
+    "roles": "For every original short and its selected root: source outside, first-material midpoint, complete first-air midpoint. Two additional support witnesses included separately. Full continuity is additionally established by all-original-triangle long-double intersections and positive-length coplanar interval clipping.",
+    "maximum_absolute_error": 2.604307272953486e-10,
+    "failures": [],
+    "passed": true
+  },
+  "flags": "independent-flags.json",
+  "additional_support_sites": "independent-support-box.json and independent-support-axes.json",
+  "limitations": "Finite samples and specified source-derived connections only. Raw short normals and failed pair/triple attempts remain. No global wall or manufacturing-tolerance certification. Null first_air means unbounded exterior air without a subsequent hit, not zero thickness.",
+  "old_thin_regression": {
+    "old_sha256": "c20d6f3c4ecfd7ee933ac70f6e7152d1c2117048e9bc5efab701e1704ff0c5ce",
+    "new_sha256": "2246229578d37cf02f7448b1faf88c4730337cc21023483950a8e8ba0849fb3a",
+    "old_unresolved_count": 4974,
+    "selected_original_opposing_face_thin_witnesses": 3736,
+    "new_unchanged_axis_containing_material_interval_minimum_mm": 1.1529006958007812,
+    "failed_count": 0,
+    "full_original_triangle_winding_controls": 3736,
+    "maximum_winding_error": 0.0,
+    "winding_passed": true,
+    "positive_length_boundary_overlaps": [],
+    "evidence": "cmu-dense-thin-regression.json"
+  },
+  "passed": true,
+  "status": "main reviewer accepted specific bounded short-root and side-connected slab evidence; no opening exception",
+  "formal_number": 400,
+  "physical_print_test": false,
+  "original_author_passed_true_preserved": true,
+  "package_source_blend_nine_png_exact": true
+}

@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "stl_sha256": "21ffee77f0aef328458f03437e1c324151686d9b203cb6292921d1fde35bfdb2",
+  "checks": {
+    "missing_triangle": true,
+    "duplicated_triangle": true,
+    "reversed_face": true,
+    "extra_closed_shell": true,
+    "narrow_root": true,
+    "tiny_separate_polygon": true
+  },
+  "controls": [
+    {
+      "name": "missing_triangle",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "exact_coordinate_edges_two_faces",
+      "input_sha256": "a5d31eec66106ca6c02a1a5333fd9f2dd5ce5201edb32734a5365cf77f40281f",
+      "report_path": "negative-control-results/missing_triangle/raw-mesh-check.json"
+    },
+    {
+      "name": "duplicated_triangle",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "exact_coordinate_edges_two_faces",
+      "input_sha256": "7224daa1659f46daac2af70f47395e215f546b95546f1cd37782fc7eddae5022",
+      "report_path": "negative-control-results/duplicated_triangle/raw-mesh-check.json"
+    },
+    {
+      "name": "reversed_face",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "exact_coordinate_consistent_winding",
+      "input_sha256": "471001586d7565e31297102c13c64ca20c85316f22ad504e0d6c4599c5d760f5",
+      "report_path": "negative-control-results/reversed_face/raw-mesh-check.json"
+    },
+    {
+      "name": "extra_closed_shell",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "single_surface_no_internal_shell",
+      "input_sha256": "d6b43cd339e60ccfaecf473b4c89fd5f5328db07281528f623f0ab7ebd844004",
+      "report_path": "negative-control-results/extra_closed_shell/raw-mesh-check.json"
+    },
+    {
+      "name": "narrow_root",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "original_component_erosion",
+      "input_sha256": "297acaa3c4956f022bcf6f01a2374ec3480d5900eef4fd0cc80a53b4f8967354",
+      "report_path": "negative-control-results/narrow_root/first-layer-failure.json"
+    },
+    {
+      "name": "tiny_separate_polygon",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "original_component_erosion",
+      "input_sha256": "f447f97e198ef67ad286fce0c0a850434adbcc70a94836e2e39ad5f167bff831",
+      "report_path": "negative-control-results/tiny_separate_polygon/first-layer-failure.json"
+    }
+  ],
+  "evidence_sources": {
+    "check_negative_controls.py": "38612caad833e4bdb93867588e3c183f7d1c6a2af39f8f02ec28fda554d5d99c",
+    "check_raw_mesh.py": "3b23085ea57b707d94617009db066f3c1dc35dbb79422ce7eefe20cfe179ea76",
+    "check_component_detail.py": "3dca0f079ad763e66620fa946b92e2cd15c079bcf19ea8af9f5ce8c62753e79a",
+    "build_model.py": "2ebc75703e56c1a391352ee1f55bbe6a5857a00e1f910e6a15be3b221dcecdb0",
+    "parameters.json": "ceef3a0609b4b3b04cab90a4d5ea72630e0023e473a215476fccf70631478b6a"
+  }
+}

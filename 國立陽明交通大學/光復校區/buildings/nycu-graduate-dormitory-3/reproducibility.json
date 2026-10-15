@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "checks": {
+    "independent_rebuilt_stl_sha_identical": true,
+    "saved_reopened_blend_exact_oriented_triangles": true,
+    "saved_blend_one_actual_stl_mesh_mm_units": true,
+    "five_actual_stl_renders_reproduce": true
+  },
+  "stl_sha256": "47b25ef7c42c2827008b04a711eda1c6555ba90ee547445d8209e7363d2076e9",
+  "blend_sha256": "3933b44aea5a3182ec36c7fb112980ad0c6fca7c0220d0df8a68f718530ec963",
+  "build_script_sha256": "1023441793339e574f2c23924841c9c72ebd88a79efd8a2beddd7e7575b03ff7",
+  "parameters_sha256": "820555a7dbf31b987f136c67d3f139bb8102b32aacbe45e3b89eccfd253b3680",
+  "render_script_sha256": "72923af217aa39f45077e2588ade98a4c58f21f1d77972f68a2194382383ee40",
+  "blend_metadata": {
+    "actual_stl_mesh_count": 1,
+    "render_ground_mesh_count": 1,
+    "triangles": 15224,
+    "stl_tag": "47b25ef7c42c2827008b04a711eda1c6555ba90ee547445d8209e7363d2076e9",
+    "units": "METRIC",
+    "scale_length": 0.0010000000474974513,
+    "blender": "4.3.2"
+  },
+  "views": [
+    {
+      "view": "front",
+      "path": "front.png",
+      "sha256": "2a321f5e57bd637bea8634147ba8b3f1affd1dc36e2d0bae1be49fe82d06211d",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    },
+    {
+      "view": "rear",
+      "path": "rear.png",
+      "sha256": "2e7d948298dba4510f3b6a86f05e62201c69bb64da4d9a49bea66345a2069840",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    },
+    {
+      "view": "top",
+      "path": "top.png",
+      "sha256": "7b133c470bfb40d42bbd3b2d81b480c769e443c1d799167af63ef8fda258e093",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    },
+    {
+      "view": "elevation",
+      "path": "elevation.png",
+      "sha256": "924b5502eb248da8d5266a1d92a9413e0f1a35ae2a04dbf59b532fac31997b89",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    },
+    {
+      "view": "northeast-detail",
+      "path": "northeast-detail.png",
+      "sha256": "6129240223a8f21f3516b0df1654833f60f650a2a50d5e081bc7f7f8b943ece2",
+      "checks": {
+        "dimensions_800x640": true,
+        "nonblank": true,
+        "independent_render_pixels_identical": true,
+        "independent_png_bytes_identical": true
+      }
+    }
+  ],
+  "exact_oriented_triangle_sha256": "e8fdaa5a5d1021326b1032d96dbb7bd267a37a86b8bb99dbe1db1b3b7bd9cadc",
+  "method": "Independent subprocess build in empty temporary directory; original exact-coordinate oriented triangles compared with saved/reopened Blend. Separate render ground is explicitly excluded from printable geometry. Independent actual-STL rerender pixels and PNG bytes must both match."
+}

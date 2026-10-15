@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "valid_box",
+      "expected_pass": true,
+      "exit_code": 0,
+      "actual_pass": true,
+      "topology_pass": true,
+      "sections_pass": true,
+      "regression_passed": true
+    },
+    {
+      "case": "oversized",
+      "expected_pass": false,
+      "exit_code": 1,
+      "actual_pass": false,
+      "topology_pass": false,
+      "sections_pass": null,
+      "regression_passed": true
+    },
+    {
+      "case": "negative_volume",
+      "expected_pass": false,
+      "exit_code": 1,
+      "actual_pass": false,
+      "topology_pass": false,
+      "sections_pass": null,
+      "regression_passed": true
+    },
+    {
+      "case": "stored_normal_nonunit",
+      "expected_pass": false,
+      "exit_code": 1,
+      "actual_pass": false,
+      "topology_pass": false,
+      "sections_pass": null,
+      "regression_passed": true
+    },
+    {
+      "case": "stored_normal_reversed",
+      "expected_pass": false,
+      "exit_code": 1,
+      "actual_pass": false,
+      "topology_pass": false,
+      "sections_pass": null,
+      "regression_passed": true
+    },
+    {
+      "case": "vanished_polygon",
+      "expected_pass": false,
+      "exit_code": 1,
+      "actual_pass": false,
+      "topology_pass": true,
+      "sections_pass": false,
+      "regression_passed": true
+    },
+    {
+      "case": "split_polygon",
+      "expected_pass": false,
+      "exit_code": 1,
+      "actual_pass": false,
+      "topology_pass": true,
+      "sections_pass": false,
+      "regression_passed": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "./negative-control-results/duplicated_triangle/check_raw_mesh.py", line 43, in <module>
+    r={'passed':all(checks.values()),'checks':checks,'stl_sha256':hashlib.sha256(raw).hexdigest(),'triangles':n,'vertices_exact':len(V),'surface_shells':shells,'bad_vertex_links':bad,'volume_mm3':vol,'method':'Binary triangles, saved normals, exact-coordinate indexing, edge orientations, vertex links, face BFS. No mesh processing, repair, rounding or dropped triangles.'};(R/'raw-mesh-check.json').write_text(json.dumps(r,indent=2));print(r);require(r['passed'], 'Required condition failed')
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "./negative-control-results/duplicated_triangle/check_raw_mesh.py", line 5, in require
+    raise RuntimeError(message)
+RuntimeError: Required condition failed

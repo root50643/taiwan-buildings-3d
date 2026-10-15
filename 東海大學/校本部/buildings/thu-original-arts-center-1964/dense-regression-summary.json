@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "cases": 9,
+  "cases_detail": [
+    "2mm cube passes with all 120 samples",
+    "0.6mm slab fails; all 40 short samples retained; 200 winding controls pass",
+    "stored-normal mode passes",
+    "finite next-air interval of 1mm retained",
+    "positive-length coplanar overlaps fail",
+    "open mesh fails",
+    "partial face coverage fails",
+    "sub-float64 under-threshold value fails",
+    "positive sub-tolerance boundary overlap fails as unclassified"
+  ],
+  "additional_container_test": "Lossless xz transcode plus --reuse-events passes on the 2mm cube",
+  "log_file": "dense-tests/dense-regression.log",
+  "log_sha256": "83b4715284828c976b28dbac705d2b85bd4e7c8bd4b6c5a808d398ed8221a857",
+  "note": "Helper mechanics only; building approval is the separately STL-bound dense audit."
+}

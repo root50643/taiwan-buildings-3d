@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "stl_sha256": "f5318c2c1b37f5f5781511e63695ab5fbe7e4dc21d269118ec0f3695bda3fb85",
+  "checks": {
+    "missing_triangle": true,
+    "duplicated_triangle": true,
+    "reversed_face": true,
+    "extra_closed_shell": true,
+    "narrow_root": true,
+    "tiny_separate_polygon": true
+  },
+  "controls": [
+    {
+      "name": "missing_triangle",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "exact_coordinate_edges_two_faces",
+      "input_sha256": "91f73ac5441d23b50f3226c7b12d05ecf93c2962965a0cb2c65a24caa15dfa6e",
+      "report_path": "negative-control-results/missing_triangle/raw-mesh-check.json"
+    },
+    {
+      "name": "duplicated_triangle",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "exact_coordinate_edges_two_faces",
+      "input_sha256": "12d79bf7a5d5d5ecaef89d7501a34d1b77cb0c9f255f288ad48812d84c136198",
+      "report_path": "negative-control-results/duplicated_triangle/raw-mesh-check.json"
+    },
+    {
+      "name": "reversed_face",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "exact_coordinate_consistent_winding",
+      "input_sha256": "1ebd4cb71c67c4e50ae5a7611790cab97ef886b76d89db295f136563b8aa7842",
+      "report_path": "negative-control-results/reversed_face/raw-mesh-check.json"
+    },
+    {
+      "name": "extra_closed_shell",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "single_surface_no_internal_shell",
+      "input_sha256": "3348f62945a03a32d69b21850db96f7e02fca97692c8cc909df005c5bc220028",
+      "report_path": "negative-control-results/extra_closed_shell/raw-mesh-check.json"
+    },
+    {
+      "name": "narrow_root",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "original_component_erosion",
+      "input_sha256": "55160bb68358509aacdfb8a0316b2ce7fe73e6da0ba84523eb16c2890a3ae8d1",
+      "report_path": "negative-control-results/narrow_root/first-layer-failure.json"
+    },
+    {
+      "name": "tiny_separate_polygon",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "original_component_erosion",
+      "input_sha256": "fe265ec59a1dd6dddaa981ada7c802292c1cdf1a86e19f600fae263a5e1c1674",
+      "report_path": "negative-control-results/tiny_separate_polygon/first-layer-failure.json"
+    }
+  ]
+}

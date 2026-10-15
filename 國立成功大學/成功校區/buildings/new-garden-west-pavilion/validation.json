@@ -1,42 +1,67 @@
 {
   "passed": true,
   "checks": {
-    "binary_stl_length": true,
-    "finite_coordinates_and_normals": true,
-    "original_normals_unit": true,
-    "original_normals_match_winding": true,
-    "nondegenerate_original_faces": true,
-    "watertight": true,
-    "winding_consistent": true,
-    "every_edge_two_faces": true,
-    "vertex_links_single_cycles": true,
-    "one_connected_surface_shell": true,
-    "no_disconnected_enclosed_shell": true,
-    "positive_volume": true,
-    "base_z_zero": true,
-    "longest_dimension_150mm": true,
-    "source_rebuild_hash_matches": true,
-    "blend_stl_geometry_agree": true
+    "exact_current_distributable_inventory": true,
+    "all_reports_bound_to_current_stl": true,
+    "all_reports_explicitly_pass": true,
+    "all_report_check_flags_true": true,
+    "raw_original_triangles_pass": true,
+    "maximum_per_polygon_opening_loss_le_one_percent": true,
+    "layer_detail_hash_current": true,
+    "dense_every_face_ten_samples": true,
+    "dense_no_short_chords_or_parity_flags": true,
+    "dense_minimum_ge_0p8mm": true,
+    "dense_csv_hash_current": true,
+    "dense_short_report_hash_current": true,
+    "saved_scene_hash_current": true,
+    "build_and_parameters_current": true,
+    "renderer_current": true,
+    "all_replayed_source_hashes_current": true,
+    "isolated_full_replay_passes": true,
+    "six_current_previews_match_replay": true,
+    "fresh_distribution_privacy_scan": true,
+    "optimized_python_and_blender_error_controls_pass": true
   },
-  "dimensions_mm": [
-    150.0,
-    94.0,
-    38.599998474121094
+  "stl_sha256": "f5318c2c1b37f5f5781511e63695ab5fbe7e4dc21d269118ec0f3695bda3fb85",
+  "current_inventory_changed_paths": [],
+  "current_input_manifest_sha256": "f033f79fa1f07be0955cc29d50e2dec93b757fa5e408919f1f185a6351cfbac0",
+  "reports": [
+    {
+      "path": "raw-mesh-check.json",
+      "sha256": "1216c3a1b6ca14091742e3912e12b13692a478369132ea1894d5bc5aaef913f3"
+    },
+    {
+      "path": "architectural-features.json",
+      "sha256": "cfb956f8c2b7791c96addb2d7d647b4f8c739993dda78da2ee703d2cbc352204"
+    },
+    {
+      "path": "component-detail.json",
+      "sha256": "d96a54859c8ba7033839a5562c91cab1344e9137dc5f2e67b9fe872f656c6196"
+    },
+    {
+      "path": "dense-short-chords.json",
+      "sha256": "622c291c7e623d844b32d79348dcb053a79d3ce7af67c6974e402392fefccda9"
+    },
+    {
+      "path": "negative-controls.json",
+      "sha256": "430d2155c2d36f79ec2ad428611157b393ed227ec08767e7eeaa510714de082a"
+    },
+    {
+      "path": "verification-gates.json",
+      "sha256": "9dfb393c5887de8ec2f3fd2844ac1ab508f4ff10e8507ca658f555e0c8a06786"
+    },
+    {
+      "path": "scene-check.json",
+      "sha256": "28dd7f7a531a1b0bc0f4cc7487d2cd15374daa46b0a6baf4ff0eec07c9fa75d4"
+    },
+    {
+      "path": "reproducibility.json",
+      "sha256": "b8b4a44cff8a1c179b6c10a3d13ed63951f5d689f15eb606cb2b0ff061edae30"
+    },
+    {
+      "path": "artifact-integrity.json",
+      "sha256": "ecbadac079b04d0e34282a24116e16fd7b70d17eec92c9b0a0b9c97c2759aab5"
+    }
   ],
-  "triangles": 1706,
-  "vertices": 833,
-  "surface_shells": 1,
-  "nonmanifold_edges": 0,
-  "bad_vertex_links": 0,
-  "volume_mm3": 292824.4015944721,
-  "base_contact_area_mm2": 14100.0,
-  "stl_sha256": "710bdca08fb1eff1a95892f6de66369d1707d2ac5638438ed68688ce7ec4263b",
-  "rebuild_stl_sha256": "710bdca08fb1eff1a95892f6de66369d1707d2ac5638438ed68688ce7ec4263b",
-  "stl_geometry_sha256": "cad5ac056ddc4d91fa1fb220ae2c309fd8a1b864605b9b9574a59e97548719f0",
-  "blend_geometry_sha256": "cad5ac056ddc4d91fa1fb220ae2c309fd8a1b864605b9b9574a59e97548719f0",
-  "limitations": [
-    "Not a slicer validation or physical print test.",
-    "Exterior photo-based miniature; depth and unseen elevations are estimates.",
-    "One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed."
-  ]
+  "limits": "Author finite numerical evidence. Independent review is separate. Not a global all-direction wall-thickness proof, slicer toolpath or physical test print."
 }

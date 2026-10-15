@@ -1,0 +1,84 @@
+{
+  "stl_sha256": "0ff3e1a65202e528f2328a9372a058a0d1c79639c7ace4aa93fcd55e5ef4cea2",
+  "scope": "Two exposed example quadrants only; curvature illustration, never normal-thickness or root certification",
+  "passed": true,
+  "method": "Vertical ray intersections with final raw STL. A planar quadrant has zero mixed height difference at the four sample corners; each tested quadrant is demonstrably nonplanar.",
+  "formula": "z = valley + rise*(u + v - u*v), with a separately recorded 1.1mm high-rim band",
+  "subdivisions_per_quadrant": 14,
+  "pre_simplification_triangulation_vertical_error_bound_mm": 0.005299104008036008,
+  "additional_simplification_tolerance_mm": 0.0002,
+  "checks": [
+    {
+      "part": "classroom quadrant",
+      "samples": [
+        {
+          "u": 0.2,
+          "v": 0.2,
+          "x_mm": 14.86,
+          "y_mm": 70.11,
+          "raw_STL_roof_z_mm": 17.35548364417656
+        },
+        {
+          "u": 0.8,
+          "v": 0.2,
+          "x_mm": 20.29,
+          "y_mm": 70.11,
+          "raw_STL_roof_z_mm": 18.414454093409304
+        },
+        {
+          "u": 0.2,
+          "v": 0.8,
+          "x_mm": 14.86,
+          "y_mm": 64.68,
+          "raw_STL_roof_z_mm": 18.414453508292112
+        },
+        {
+          "u": 0.8,
+          "v": 0.8,
+          "x_mm": 20.29,
+          "y_mm": 64.68,
+          "raw_STL_roof_z_mm": 18.679950580195666
+        }
+      ],
+      "measured_mixed_height_difference_mm": -0.7934733773291924,
+      "expected_bilinear_difference_mm": -0.7967808000000001,
+      "nonplanar_four_sample_test_pass": true
+    },
+    {
+      "part": "hall quadrant",
+      "samples": [
+        {
+          "u": 0.2,
+          "v": 0.2,
+          "x_mm": 85.53299999999999,
+          "y_mm": 74.663,
+          "raw_STL_roof_z_mm": 26.843935219740573
+        },
+        {
+          "u": 0.8,
+          "v": 0.2,
+          "x_mm": 89.832,
+          "y_mm": 74.663,
+          "raw_STL_roof_z_mm": 28.25828665417322
+        },
+        {
+          "u": 0.2,
+          "v": 0.8,
+          "x_mm": 85.53299999999999,
+          "y_mm": 66.362,
+          "raw_STL_roof_z_mm": 28.259078832511165
+        },
+        {
+          "u": 0.8,
+          "v": 0.8,
+          "x_mm": 89.832,
+          "y_mm": 66.362,
+          "raw_STL_roof_z_mm": 28.613603151473683
+        }
+      ],
+      "measured_mixed_height_difference_mm": -1.059827115470128,
+      "expected_bilinear_difference_mm": -1.0623744000000002,
+      "nonplanar_four_sample_test_pass": true
+    }
+  ]
+}

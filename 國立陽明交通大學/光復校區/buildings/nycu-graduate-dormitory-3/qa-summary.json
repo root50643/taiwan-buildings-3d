@@ -1,0 +1,75 @@
+{
+  "stl_sha256": "47b25ef7c42c2827008b04a711eda1c6555ba90ee547445d8209e7363d2076e9",
+  "author_evidence_passed": true,
+  "strict_dense_passed": false,
+  "strict_dense_short_count": 137,
+  "all_specific_corner_witnesses_and_full_intervals_passed": true,
+  "independent_approval": "Required separately for this fresh v2; no previous approval is reused",
+  "steps": [
+    {
+      "script": "check_provenance.py",
+      "script_sha256": "1802e3a8ee29ac621fc5fd3d74ec7ddf475b4529f6814d87257b73a429f1baf1",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "check_raw_mesh.py",
+      "script_sha256": "01e4e1e63205b76fb3299100fa974f9075c5c5d60fb4f09ed343b88b3fbc42af",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "check_component_detail.py",
+      "script_sha256": "de6edd231ceb07faa114e5eb0c5f258547435075fb7e0c3f23b3290fa7bf82e2",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "check_dense_surface.py",
+      "script_sha256": "094ad15a3f037a34c4a7ad65e3d93076a50b2ed76248571eacb00d1d0f5f1508",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "passed": true
+    },
+    {
+      "script": "check_corner_roots.py",
+      "script_sha256": "9472c5e26fb17293d31f7b4ef1b2dc41ab4568a8bec81d76cc27e5a4ef155fbb",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "check_full_intervals.py",
+      "script_sha256": "58a5aa0b695cef0c3432672fca2f893eb2ed7a9af5737e8bae15bf73b7421eff",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "check_negative_controls.py",
+      "script_sha256": "507fab9dfa6373305fe18558f30717a2a56b11cdd75875f667b2bbb8b5bd5fda",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "check_reproducibility.py",
+      "script_sha256": "738112c0ac333d484d78b426cce563fc58ad4db0a41db7d33e7e72a7ed34bd4f",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "reports": {
+    "raw-mesh-check.json": "a4bf5890db8ab7a8f409a8fc40ddaadd05a2daa2ecbaa09390ad26fe8973efe6",
+    "component-detail.json": "471abbcc9d068fffbd5a5349a7a5bc47f22568c161cc6804a378112a2a4e9082",
+    "dense-short-chords.json": "7d9158bd5557924217a6168a8eff37167ccb3f28497e3aad25cea482dec7125f",
+    "corner-roots.json": "eed29b8150401503ed95c10f03b82f69639b3ebbd76bac2b2b4fb73210805d41",
+    "full-interval-check.json": "d01300721939289110f2cb4e7ce7dba629e3e6bf4e03d236618f1f25be42cc63",
+    "negative-controls.json": "b970a680c7efc873c195b631543d680686049e507f18fc8bb350e9ac8208d6ce",
+    "reproducibility.json": "9ad6bd6deb73dd750e78ec5ddd4042c1dfc5e43410aa38211ebfe7a69f11992d"
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "thick_box",
+      "expected_passed": true,
+      "actual_passed": true,
+      "passed": true,
+      "full_witness": {
+        "origin_mm": [
+          -2.0,
+          0.113,
+          0.157
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_t_mm": 2,
+        "target_point_mm": [
+          0,
+          0.113,
+          0.157
+        ],
+        "origin_parity_controls": [
+          0,
+          0
+        ],
+        "all_original_hits": [
+          {
+            "t_mm": 1.4,
+            "original_face_id": 0,
+            "barycentric_uv": [
+              0.5869230769230769,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": -1.0
+          },
+          {
+            "t_mm": 2.6,
+            "original_face_id": 11,
+            "barycentric_uv": [
+              0.41307692307692306,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": 1.0
+          }
+        ],
+        "all_coplanar_boundary_intervals": [],
+        "all_grouped_events": [
+          {
+            "t_mm": 1.4,
+            "original_hits": [
+              {
+                "t_mm": 1.4,
+                "original_face_id": 0,
+                "barycentric_uv": [
+                  0.5869230769230769,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": -1.0
+              }
+            ],
+            "crossing": "entry"
+          },
+          {
+            "t_mm": 2.6,
+            "original_hits": [
+              {
+                "t_mm": 2.6,
+                "original_face_id": 11,
+                "barycentric_uv": [
+                  0.41307692307692306,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": 1.0
+              }
+            ],
+            "crossing": "exit"
+          }
+        ],
+        "all_classifiable_material_intervals": [
+          {
+            "entry_t_mm": 1.4,
+            "exit_t_mm": 2.6,
+            "solid_length_mm": 1.2000000000000002,
+            "next_air_end_t_mm": null,
+            "next_air_length_mm": null,
+            "entry_original_face_ids": [
+              0
+            ],
+            "exit_original_face_ids": [
+              11
+            ]
+          }
+        ],
+        "root_interval": {
+          "entry_t_mm": 1.4,
+          "exit_t_mm": 2.6,
+          "solid_length_mm": 1.2000000000000002,
+          "next_air_end_t_mm": null,
+          "next_air_length_mm": null,
+          "entry_original_face_ids": [
+            0
+          ],
+          "exit_original_face_ids": [
+            11
+          ]
+        },
+        "failure_reasons": [],
+        "passed": true
+      }
+    },
+    {
+      "case": "minimum_box",
+      "expected_passed": true,
+      "actual_passed": true,
+      "passed": true,
+      "full_witness": {
+        "origin_mm": [
+          -2.0,
+          0.113,
+          0.157
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_t_mm": 2,
+        "target_point_mm": [
+          0,
+          0.113,
+          0.157
+        ],
+        "origin_parity_controls": [
+          0,
+          0
+        ],
+        "all_original_hits": [
+          {
+            "t_mm": 1.6,
+            "original_face_id": 0,
+            "barycentric_uv": [
+              0.5869230769230769,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": -1.0
+          },
+          {
+            "t_mm": 2.4,
+            "original_face_id": 11,
+            "barycentric_uv": [
+              0.41307692307692306,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": 1.0
+          }
+        ],
+        "all_coplanar_boundary_intervals": [],
+        "all_grouped_events": [
+          {
+            "t_mm": 1.6,
+            "original_hits": [
+              {
+                "t_mm": 1.6,
+                "original_face_id": 0,
+                "barycentric_uv": [
+                  0.5869230769230769,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": -1.0
+              }
+            ],
+            "crossing": "entry"
+          },
+          {
+            "t_mm": 2.4,
+            "original_hits": [
+              {
+                "t_mm": 2.4,
+                "original_face_id": 11,
+                "barycentric_uv": [
+                  0.41307692307692306,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": 1.0
+              }
+            ],
+            "crossing": "exit"
+          }
+        ],
+        "all_classifiable_material_intervals": [
+          {
+            "entry_t_mm": 1.6,
+            "exit_t_mm": 2.4,
+            "solid_length_mm": 0.7999999999999998,
+            "next_air_end_t_mm": null,
+            "next_air_length_mm": null,
+            "entry_original_face_ids": [
+              0
+            ],
+            "exit_original_face_ids": [
+              11
+            ]
+          }
+        ],
+        "root_interval": {
+          "entry_t_mm": 1.6,
+          "exit_t_mm": 2.4,
+          "solid_length_mm": 0.7999999999999998,
+          "next_air_end_t_mm": null,
+          "next_air_length_mm": null,
+          "entry_original_face_ids": [
+            0
+          ],
+          "exit_original_face_ids": [
+            11
+          ]
+        },
+        "failure_reasons": [],
+        "passed": true
+      }
+    },
+    {
+      "case": "thin_box",
+      "expected_passed": false,
+      "actual_passed": false,
+      "passed": true,
+      "full_witness": {
+        "origin_mm": [
+          -2.0,
+          0.113,
+          0.157
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_t_mm": 2,
+        "target_point_mm": [
+          0,
+          0.113,
+          0.157
+        ],
+        "origin_parity_controls": [
+          0,
+          0
+        ],
+        "all_original_hits": [
+          {
+            "t_mm": 1.605,
+            "original_face_id": 0,
+            "barycentric_uv": [
+              0.5869230769230769,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": -1.0
+          },
+          {
+            "t_mm": 2.395,
+            "original_face_id": 11,
+            "barycentric_uv": [
+              0.41307692307692306,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": 1.0
+          }
+        ],
+        "all_coplanar_boundary_intervals": [],
+        "all_grouped_events": [
+          {
+            "t_mm": 1.605,
+            "original_hits": [
+              {
+                "t_mm": 1.605,
+                "original_face_id": 0,
+                "barycentric_uv": [
+                  0.5869230769230769,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": -1.0
+              }
+            ],
+            "crossing": "entry"
+          },
+          {
+            "t_mm": 2.395,
+            "original_hits": [
+              {
+                "t_mm": 2.395,
+                "original_face_id": 11,
+                "barycentric_uv": [
+                  0.41307692307692306,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": 1.0
+              }
+            ],
+            "crossing": "exit"
+          }
+        ],
+        "all_classifiable_material_intervals": [
+          {
+            "entry_t_mm": 1.605,
+            "exit_t_mm": 2.395,
+            "solid_length_mm": 0.79,
+            "next_air_end_t_mm": null,
+            "next_air_length_mm": null,
+            "entry_original_face_ids": [
+              0
+            ],
+            "exit_original_face_ids": [
+              11
+            ]
+          }
+        ],
+        "root_interval": {
+          "entry_t_mm": 1.605,
+          "exit_t_mm": 2.395,
+          "solid_length_mm": 0.79,
+          "next_air_end_t_mm": null,
+          "next_air_length_mm": null,
+          "entry_original_face_ids": [
+            0
+          ],
+          "exit_original_face_ids": [
+            11
+          ]
+        },
+        "failure_reasons": [
+          "root_material_interval_shorter_than_0p8"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "case": "gap_cannot_be_chained_into_material",
+      "expected_passed": false,
+      "actual_passed": false,
+      "passed": true,
+      "full_witness": {
+        "origin_mm": [
+          -2.0,
+          0.113,
+          0.157
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_t_mm": 2,
+        "target_point_mm": [
+          0,
+          0.113,
+          0.157
+        ],
+        "origin_parity_controls": [
+          0,
+          0
+        ],
+        "all_original_hits": [
+          {
+            "t_mm": 1.4,
+            "original_face_id": 0,
+            "barycentric_uv": [
+              0.5869230769230769,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": -1.0
+          },
+          {
+            "t_mm": 1.995,
+            "original_face_id": 11,
+            "barycentric_uv": [
+              0.41307692307692306,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": 1.0
+          },
+          {
+            "t_mm": 2.005,
+            "original_face_id": 12,
+            "barycentric_uv": [
+              0.5869230769230769,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": -1.0
+          },
+          {
+            "t_mm": 2.6,
+            "original_face_id": 23,
+            "barycentric_uv": [
+              0.41307692307692306,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": 1.0
+          }
+        ],
+        "all_coplanar_boundary_intervals": [],
+        "all_grouped_events": [
+          {
+            "t_mm": 1.4,
+            "original_hits": [
+              {
+                "t_mm": 1.4,
+                "original_face_id": 0,
+                "barycentric_uv": [
+                  0.5869230769230769,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": -1.0
+              }
+            ],
+            "crossing": "entry"
+          },
+          {
+            "t_mm": 1.995,
+            "original_hits": [
+              {
+                "t_mm": 1.995,
+                "original_face_id": 11,
+                "barycentric_uv": [
+                  0.41307692307692306,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": 1.0
+              }
+            ],
+            "crossing": "exit"
+          },
+          {
+            "t_mm": 2.005,
+            "original_hits": [
+              {
+                "t_mm": 2.005,
+                "original_face_id": 12,
+                "barycentric_uv": [
+                  0.5869230769230769,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": -1.0
+              }
+            ],
+            "crossing": "entry"
+          },
+          {
+            "t_mm": 2.6,
+            "original_hits": [
+              {
+                "t_mm": 2.6,
+                "original_face_id": 23,
+                "barycentric_uv": [
+                  0.41307692307692306,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": 1.0
+              }
+            ],
+            "crossing": "exit"
+          }
+        ],
+        "all_classifiable_material_intervals": [
+          {
+            "entry_t_mm": 1.4,
+            "exit_t_mm": 1.995,
+            "solid_length_mm": 0.5950000000000002,
+            "next_air_end_t_mm": 2.005,
+            "next_air_length_mm": 0.009999999999999787,
+            "entry_original_face_ids": [
+              0
+            ],
+            "exit_original_face_ids": [
+              11
+            ]
+          },
+          {
+            "entry_t_mm": 2.005,
+            "exit_t_mm": 2.6,
+            "solid_length_mm": 0.5950000000000002,
+            "next_air_end_t_mm": null,
+            "next_air_length_mm": null,
+            "entry_original_face_ids": [
+              12
+            ],
+            "exit_original_face_ids": [
+              23
+            ]
+          }
+        ],
+        "root_interval": null,
+        "failure_reasons": [
+          "no_classifiable_material_interval_contains_nominated_root_point"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "case": "next_air_gap_retained",
+      "expected_gap_mm": 0.01,
+      "actual_gap_mm": 0.009999999999999787,
+      "passed": true,
+      "full_witness": {
+        "origin_mm": [
+          -2.0,
+          0.113,
+          0.157
+        ],
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "target_t_mm": 1.7,
+        "target_point_mm": [
+          -0.3,
+          0.113,
+          0.157
+        ],
+        "origin_parity_controls": [
+          0,
+          0
+        ],
+        "all_original_hits": [
+          {
+            "t_mm": 1.4,
+            "original_face_id": 0,
+            "barycentric_uv": [
+              0.5869230769230769,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": -1.0
+          },
+          {
+            "t_mm": 1.995,
+            "original_face_id": 11,
+            "barycentric_uv": [
+              0.41307692307692306,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": 1.0
+          },
+          {
+            "t_mm": 2.005,
+            "original_face_id": 12,
+            "barycentric_uv": [
+              0.5869230769230769,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": -1.0
+          },
+          {
+            "t_mm": 2.6,
+            "original_face_id": 23,
+            "barycentric_uv": [
+              0.41307692307692306,
+              0.38785714285714284
+            ],
+            "normal_dot_direction": 1.0
+          }
+        ],
+        "all_coplanar_boundary_intervals": [],
+        "all_grouped_events": [
+          {
+            "t_mm": 1.4,
+            "original_hits": [
+              {
+                "t_mm": 1.4,
+                "original_face_id": 0,
+                "barycentric_uv": [
+                  0.5869230769230769,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": -1.0
+              }
+            ],
+            "crossing": "entry"
+          },
+          {
+            "t_mm": 1.995,
+            "original_hits": [
+              {
+                "t_mm": 1.995,
+                "original_face_id": 11,
+                "barycentric_uv": [
+                  0.41307692307692306,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": 1.0
+              }
+            ],
+            "crossing": "exit"
+          },
+          {
+            "t_mm": 2.005,
+            "original_hits": [
+              {
+                "t_mm": 2.005,
+                "original_face_id": 12,
+                "barycentric_uv": [
+                  0.5869230769230769,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": -1.0
+              }
+            ],
+            "crossing": "entry"
+          },
+          {
+            "t_mm": 2.6,
+            "original_hits": [
+              {
+                "t_mm": 2.6,
+                "original_face_id": 23,
+                "barycentric_uv": [
+                  0.41307692307692306,
+                  0.38785714285714284
+                ],
+                "normal_dot_direction": 1.0
+              }
+            ],
+            "crossing": "exit"
+          }
+        ],
+        "all_classifiable_material_intervals": [
+          {
+            "entry_t_mm": 1.4,
+            "exit_t_mm": 1.995,
+            "solid_length_mm": 0.5950000000000002,
+            "next_air_end_t_mm": 2.005,
+            "next_air_length_mm": 0.009999999999999787,
+            "entry_original_face_ids": [
+              0
+            ],
+            "exit_original_face_ids": [
+              11
+            ]
+          },
+          {
+            "entry_t_mm": 2.005,
+            "exit_t_mm": 2.6,
+            "solid_length_mm": 0.5950000000000002,
+            "next_air_end_t_mm": null,
+            "next_air_length_mm": null,
+            "entry_original_face_ids": [
+              12
+            ],
+            "exit_original_face_ids": [
+              23
+            ]
+          }
+        ],
+        "root_interval": {
+          "entry_t_mm": 1.4,
+          "exit_t_mm": 1.995,
+          "solid_length_mm": 0.5950000000000002,
+          "next_air_end_t_mm": 2.005,
+          "next_air_length_mm": 0.009999999999999787,
+          "entry_original_face_ids": [
+            0
+          ],
+          "exit_original_face_ids": [
+            11
+          ]
+        },
+        "failure_reasons": [
+          "root_material_interval_shorter_than_0p8"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "case": "thick_center_clearance",
+      "expected_mm": 0.6,
+      "actual_mm": 0.6,
+      "passed": true,
+      "witness": {
+        "distance_lower_bound_mm": 0.6,
+        "candidate_minimum_distance_mm": 0.6,
+        "closest_original_face_id": 0,
+        "closest_point_mm": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "closest_original_triangle_mm": [
+          [
+            -0.6,
+            -0.65,
+            0.7
+          ],
+          [
+            -0.6,
+            0.65,
+            0.7
+          ],
+          [
+            -0.6,
+            -0.65,
+            -0.7
+          ]
+        ],
+        "candidate_count": 12,
+        "excluded_bbox_distance_lower_bound_mm": 1.5
+      }
+    },
+    {
+      "case": "thin_center_clearance",
+      "expected_mm": 0.395,
+      "actual_mm": 0.395,
+      "passed": true,
+      "witness": {
+        "distance_lower_bound_mm": 0.395,
+        "candidate_minimum_distance_mm": 0.395,
+        "closest_original_face_id": 0,
+        "closest_point_mm": [
+          -0.395,
+          0.0,
+          0.0
+        ],
+        "closest_original_triangle_mm": [
+          [
+            -0.395,
+            -0.65,
+            0.7
+          ],
+          [
+            -0.395,
+            0.65,
+            0.7
+          ],
+          [
+            -0.395,
+            -0.65,
+            -0.7
+          ]
+        ],
+        "candidate_count": 12,
+        "excluded_bbox_distance_lower_bound_mm": 1.5
+      }
+    },
+    {
+      "case": "gap_center_clearance",
+      "expected_mm": 0.005,
+      "actual_mm": 0.0050000000000000044,
+      "passed": true,
+      "witness": {
+        "distance_lower_bound_mm": 0.0050000000000000044,
+        "candidate_minimum_distance_mm": 0.0050000000000000044,
+        "closest_original_face_id": 10,
+        "closest_point_mm": [
+          -0.0050000000000000044,
+          0.0,
+          0.0
+        ],
+        "closest_original_triangle_mm": [
+          [
+            -0.0050000000000000044,
+            0.65,
+            -0.7
+          ],
+          [
+            -0.0050000000000000044,
+            -0.65,
+            0.7
+          ],
+          [
+            -0.0050000000000000044,
+            -0.65,
+            -0.7
+          ]
+        ],
+        "candidate_count": 24,
+        "excluded_bbox_distance_lower_bound_mm": 1.5
+      }
+    }
+  ],
+  "scope": "Synthetic positive and negative controls only. These do not change or repair the target STL.",
+  "validator_sha256": "843d935b3d91a01f72e5eb60a74188dd8da45430d7a8e8da6d7598341a26072d"
+}

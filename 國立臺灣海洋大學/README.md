@@ -17,4 +17,12 @@
 
 原始STL水密與拓撲、原始法向、單表面、獨立重建SHA、Blend幾何一致及0.2mm封閉有效輪廓均檢查；0.8mm形態opening是輔助篩檢。沒有實體試印或Cura／PrusaSlicer實際工具路徑驗證，不保證任何機器或材料均可直接列印。
 
-[全校檔案SHA256](SHA256SUMS) · [本批驗證摘要](batch-validation.json)。來源照片與PDF沒有重新散布。
+[全校檔案SHA256](SHA256SUMS) · [2026-10-13舊版歷史驗證摘要](batch-validation.json)。該歷史摘要綁定舊體育館STL SHA 0e59d54a22fcad3dbfac8ac30a16743165768828504982a66c0d62b824fac3f0，當時all_passed不能套用這次新STL；現版請讀[原始QA摘要](北寧校區/buildings/ntou-gymnasium/qa-summary.json)與[獨立修版限定裁定](北寧校區/buildings/ntou-gymnasium/INDEPENDENT-REVISION-AUDIT.md)。來源照片與PDF沒有重新散布。
+
+## 體育館既有件場側修版
+
+| 同件正面 | 同件背面 |
+|---|---|
+| ![正面](北寧校區/buildings/ntou-gymnasium/previews/front.png) | ![背面](北寧校區/buildings/ntou-gymnasium/previews/rear.png) |
+
+2026-10-15來源補證修版，件數不增加；獨立覆核已完成，限定警示及原嚴格失敗保留，請讀[模型QA](北寧校區/buildings/ntou-gymnasium/QA.md)。

@@ -10,6 +10,8 @@ bpy.ops.wm.stl_import(filepath=str(OUT/'model.stl'));model=bpy.context.object;mo
 mat=bpy.data.materials.new('Warm stone preview only');mat.diffuse_color=(.69,.64,.54,1);model.data.materials.append(mat)
 target_z=(min(v.co.z for v in model.data.vertices)+max(v.co.z for v in model.data.vertices))/2
 scene=bpy.context.scene
+for prop in scene.render.bl_rna.properties:
+ if prop.identifier.startswith('use_stamp') and prop.type=='BOOLEAN':setattr(scene.render,prop.identifier,False)
 scene.render.engine='BLENDER_WORKBENCH';scene.display.shading.light='STUDIO';scene.display.shading.studiolight_rotate_z=.35
 scene.display.shading.color_type='MATERIAL';scene.display.shading.show_shadows=True
 scene.display.shading.show_cavity=True;scene.display.shading.cavity_type='BOTH';scene.display.shading.curvature_ridge_factor=1.5;scene.display.shading.curvature_valley_factor=1.2
@@ -19,12 +21,15 @@ scene.render.resolution_x=1000;scene.render.resolution_y=800;scene.render.resolu
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
 scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=.001;scene.unit_settings.length_unit='MILLIMETERS'
 bpy.ops.object.camera_add();cam=bpy.context.object;cam.name='Preview_camera';scene.camera=cam;cam.data.type='ORTHO';cam.data.ortho_scale=180
-for name,loc,aim in [('front',(-195,-220,155),(0,0,target_z)),('rear',(195,230,160),(0,0,target_z)),('elevation',(0,-260,target_z),(0,0,target_z)),('top',(0,0,260),(0,0,0))]:
+for name,loc,aim in [('front',(-195,-220,155),(0,0,target_z)),('rear',(195,230,160),(0,0,target_z)),('elevation',(0,-260,target_z),(0,0,target_z)),('top',(0,0,260),(0,0,0)),('field-detail',(0,-260,24),(0,-25,22)),('left-detail',(-180,-240,56),(-15,-25,19)),('entry-detail',(-60,-230,27),(7,-24,10))]:
  cam.location=loc;cam.rotation_euler=(Vector(aim)-cam.location).to_track_quat('-Z','Y').to_euler()
  # Frame every actual STL corner with margin, including the entire base.
  inv=cam.rotation_euler.to_matrix().transposed(); projected=[inv@(model.matrix_world@Vector(c)-cam.location) for c in model.bound_box]
  width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
  cam.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ if name=='field-detail':cam.data.ortho_scale=77
+ if name=='left-detail':cam.data.ortho_scale=105
+ if name=='entry-detail':cam.data.ortho_scale=65
  if name=='front':front_scale=cam.data.ortho_scale
  scene.render.filepath=str(PREV/(name+'.png'));bpy.ops.render.render(write_still=True)
 cam.location=(-195,-220,155);cam.rotation_euler=(Vector((0,0,target_z))-cam.location).to_track_quat('-Z','Y').to_euler()

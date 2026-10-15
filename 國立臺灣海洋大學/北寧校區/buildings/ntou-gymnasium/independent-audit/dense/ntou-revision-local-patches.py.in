@@ -1,0 +1,25 @@
+from pathlib import Path
+import numpy as np,trimesh,json,gzip,collections
+O=Path('@WORK@');T=np.fromfile('@WORK@/ntou-revision-dense-triangles.bin').reshape(-1,3,3);V,I=np.unique(T.reshape(-1,3),axis=0,return_inverse=True);m=trimesh.Trimesh(V,I.reshape(-1,3),process=False);N=m.face_normals
+adj=m.face_adjacency;ed=m.vertices[m.face_adjacency_edges];angle=m.face_adjacency_angles;use=angle>np.radians(12);A=adj[use];E=ed[use];NN=N[A];conv=m.face_adjacency_convex[use];neigh=[[]for _ in T]
+for a,b in adj:neigh[a].append(int(b));neigh[b].append(int(a))
+def path(start,target,p,n):
+ ids=np.array(list(m.triangles_tree.intersection(np.r_[p-1,p+1])),int);close=trimesh.triangles.closest_point(T[ids],np.tile(p,(len(ids),1)));allowed=set(ids[(np.linalg.norm(close-p,axis=1)<=1+1e-8)&(N[ids]@n>np.cos(np.radians(12)))].tolist());prev={start:None};todo=[start]
+ for f in todo:
+  if f==target:
+   out=[]
+   while f is not None:out.append(f);f=prev[f]
+   return out[::-1]
+  for q in neigh[f]:
+   if q in allowed and q not in prev:prev[q]=f;todo.append(q)
+ return None
+rows=json.load(gzip.open('@WORK@/ntou-revision-short-roots.json.gz','rt'));bad=[]
+for r in rows:
+ f,e=r['face'],r['exit_face'];p=np.array(r['surface']);a=NN@N[f];b=NN@N[e];quality=np.maximum(np.minimum(a[:,0],b[:,1]),np.minimum(a[:,1],b[:,0]));exact=np.maximum(np.maximum(a[:,0],b[:,1]),np.maximum(a[:,1],b[:,0]));ids=np.where((quality>np.cos(np.radians(12)))&(exact>.99999))[0]
+ if not len(ids):bad.append([f,r['sample'],'no compatible edge']);continue
+ v=E[ids,1]-E[ids,0];ts=np.clip(np.einsum('ij,ij->i',p-E[ids,0],v)/np.einsum('ij,ij->i',v,v),0,1);dist=np.linalg.norm(p-E[ids,0]-ts[:,None]*v,axis=1);ix=int(ids[np.argmin(dist)]);fs=A[ix].copy()
+ if min(N[fs[0]]@N[f],N[fs[1]]@N[e])<min(N[fs[1]]@N[f],N[fs[0]]@N[e]):fs=fs[::-1]
+ pp=path(f,int(fs[0]),p,N[f]);ep=path(e,int(fs[1]),p,N[e]);r['local_edge']={'faces':fs.tolist(),'vertices':E[ix].tolist(),'distance':float(dist.min()),'deviation_deg':float(np.degrees(np.arccos(np.clip(quality[ix],-1,1)))),'convex':bool(conv[ix]),'source_path':pp,'exit_path':ep,'path_source_max_normal_angle':float(np.degrees(np.arccos(np.clip(min(N[j]@N[f]for j in pp),-1,1))))if pp else None,'path_exit_max_normal_angle':float(np.degrees(np.arccos(np.clip(min(N[j]@N[e]for j in ep),-1,1))))if ep else None}
+ if pp is None or ep is None or dist.min()>.8 or not conv[ix]:bad.append([f,r['sample'],r['local_edge']])
+with gzip.open('@WORK@/ntou-revision-local-patches.json.gz','wt')as o:json.dump(rows,o)
+s={'count':len(rows),'failures':bad,'max_edge_distance':max(r['local_edge']['distance']for r in rows),'max_normal_deviation_deg':max(r['local_edge']['deviation_deg']for r in rows),'min_margin':min(min(r['margins'])for r in rows),'min_root':min(r['common_root']['first_span']for r in rows),'max_path_length':max(max(len(r['local_edge']['source_path']or[]),len(r['local_edge']['exit_path']or[]))for r in rows)};(O/'ntou-revision-local-patches-summary.json').write_text(json.dumps(s,indent=2));print(json.dumps(s)[:12000])

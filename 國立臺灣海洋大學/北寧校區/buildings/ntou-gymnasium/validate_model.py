@@ -15,7 +15,9 @@ records=np.frombuffer(raw,offset=84,dtype=np.dtype([('normal','<f4',(3,)),('v','
 tri=records['v'].astype(float); saved=records['normal'].astype(float)
 calc=np.cross(tri[:,1]-tri[:,0],tri[:,2]-tri[:,0]);norm=np.linalg.norm(calc,axis=1)
 unit=calc/np.maximum(norm[:,None],1e-30)
-mesh=trimesh.load(path,force='mesh',process=True)
+# Exact-coordinate indexing only; do not merge by tolerance or repair.
+vertices,inverse=np.unique(tri.reshape(-1,3),axis=0,return_inverse=True)
+mesh=trimesh.Trimesh(vertices=vertices,faces=inverse.reshape(-1,3),process=False)
 edges,cnt=np.unique(np.sort(mesh.edges,axis=1),axis=0,return_counts=True)
 # Face-connected components without optional graph packages.
 edgefaces={}; parent=list(range(len(mesh.faces)))

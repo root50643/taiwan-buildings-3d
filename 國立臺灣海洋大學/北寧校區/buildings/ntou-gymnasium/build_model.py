@@ -42,18 +42,30 @@ outer=[(-22-20*np.sin(a),14.5+27.4*(1-np.cos(a))/2) for a in np.linspace(0,np.pi
 inner=[(-22-18.5*np.sin(a),15.3+25.9*(1-np.cos(a))/2) for a in np.linspace(np.pi,0,41)]
 for x in ribxs:
  details.append(along_x(outer+[(-13,41.9),(-13,14.5)],float(x)-.85,1.7))
-# Lower long colonnade with recessed doors and backed window panels.
+# Revised field-facing lower facade from official 2000px and March2026 close view.
+# Continuous wall blocks, with only the confirmed central two-bay deep entrance.
+# Unseen terminal bays stay plain; do not extend the observed window rhythm blindly.
 add(0,-24.0,2.7,138,8.0,12.7)
-add(0,-30.0,14.6,140,23,1.7)
-for x in ribxs:
- parts.append(cyl(float(x),-35.6,2.7,1.45,12.9))
-for i,(x0,x1) in enumerate(zip(ribxs[:-1],ribxs[1:])):
- x=(x0+x1)/2
- if i in [2,5,8]:
-  cut(x,-28,3.5,7.3,2.0,8.9)
- else:
-  cut(x,-28,7.1,8.4,2.0,4.7)
-  # Backed window recess, tiny glazing bars omitted for print resolution.
+add(0,-23.5,14.6,140,13.0,1.7)
+cut(0,-24.5,2.8,21.3,8.0,11.6)
+for x in [-5.75,5.75]:
+ cut(x,-20.5,3.3,8.0,1.6,7.2)
+ cut(x,-20.5,11.3,8.0,1.6,1.0)
+# Left photographed zone: small staggered horizontal windows in a solid facade.
+for i,x in enumerate(np.linspace(-33.0,-13.2,12)):
+ z=[5.0,6.5,4.0,6.5,8.0,6.5][i%6]
+ cut(float(x),-28.0,z,1.65,1.6,1.0)
+# Additional left near-side group is visible close to the small blue doorway.
+for x,z in [(-43.5,5),(-41,7),(-38.5,9)]:cut(x,-28,z,1.8,1.6,1.0)
+# Two confirmed right large window groups; backed shallow glass, upper transoms.
+for x in [17.25,28.75]:
+ cut(x,-28,5.0,9.6,.8,4.6)
+ cut(x,-28,10.5,9.6,.8,1.0)
+ # Glazing bars are unioned after the recess cutter, retaining root overlap.
+# Small left door and local canopy, separate from the principal entrance.
+cut(-38.5,-28,2.9,4.8,1.6,8.6)
+add(-38.5,-29.7,11.7,7.0,5.5,1.0)
+for x in [-41.5,-35.5]:parts.append(cyl(x,-31.6,2.7,.6,9.8))
 # End caps: the glass under the long curve is divided into broad backed panels.
 for sx in [-1,1]:
  for y,z,w,h in [(-23,18,7,7),(-32,20,6.4,8),(-28,30,7,7)]:
@@ -61,7 +73,7 @@ for sx in [-1,1]:
 # Main hall side windows visible in official aerial; hidden rear kept restrained.
 for sx in [-1,1]:
  for y in [-13,-1,11,23,35]:
-  cut(sx*57.5,y,15,2,8.1,6.6)
+  cut(sx*57.5,y,15.25,2,8.1,6.35)
   details.append(box(sx*58,y,14.1,1.8,9.7,1.0))
 for x in [-46,-23,0,23,46]:
  cut(x,45,15,16,2,6.6)
@@ -74,8 +86,12 @@ solid=parts[0]
 for p in parts[1:]:solid=solid+p
 for p in details:solid=solid+p
 for p in cuts:solid=solid-p
+# Main circular entrance support is added after opening subtraction.
+solid += cyl(0,-26.5,2.7,1.45,12.9)
+for x in [17.25,28.75]:
+ solid += box(x,-27.6,4.9,.85,.8,4.8)
 assert len(solid.decompose())==1
 m=solid.simplify(.00001).to_mesh64()
-mesh=trimesh.Trimesh(np.asarray(m.vert_properties,dtype=np.float32)[:,:3],np.asarray(m.tri_verts),process=True)
-mesh.export(OUT/'model.stl');mesh.export(OUT/'model.obj')
+mesh=trimesh.Trimesh(np.asarray(m.vert_properties,dtype=np.float32)[:,:3],np.asarray(m.tri_verts),process=False)
+mesh.export(OUT/'model.stl')
 print('Dimensions mm',mesh.extents,'watertight',mesh.is_watertight)

@@ -1,0 +1,19 @@
+from pathlib import Path
+import ast,numpy as np,pandas as pd,json,subprocess,gzip,collections
+O=Path('@WORK@');T=np.fromfile('@WORK@/ntou-revision-dense-triangles.bin').reshape(-1,3,3);N=np.cross(T[:,1]-T[:,0],T[:,2]-T[:,0]);N/=np.linalg.norm(N,axis=1)[:,None]
+W=np.array([[1/3]*3,[.98,.01,.01],[.01,.98,.01],[.01,.01,.98],[.495,.495,.01],[.01,.495,.495],[.495,.01,.495],[.49,.49,.02],[.49,.02,.49],[.02,.49,.49],[.8,.1,.1],[.1,.8,.1],[.1,.1,.8],[.2,.3,.5],[.2,.5,.3]])
+tree=ast.parse((O/'npust-yukang-dense-roots.py').read_text());exec(compile(ast.Module(body=[x for x in tree.body if isinstance(x,ast.FunctionDef) and x.name=='parse'],type_ignores=[]),'parse','exec'))
+df=pd.read_csv('@WORK@/ntou-revision-dense.csv');short=df[df.first_solid<.8];rows=[];qs=[]
+for _,r in short.iterrows():
+ f,s=int(r.face),int(r['sample']);p=W[s]@T[f];n=N[f];rows.append({'face':f,'sample':s,'surface':p.tolist(),'normal_vector':n.tolist(),'original_dense':r.to_dict()});qs.append([p+n*1e-5,-n])
+def run(qs,name):
+ np.array(qs).tofile('@WORK@/ntou-revision-'+name+'-queries.bin');subprocess.run([str(O/'cmu-dense-strict'),'@WORK@/ntou-revision-dense-triangles.bin','@WORK@/ntou-revision-'+name+'-queries.bin','@WORK@/ntou-revision-'+name+'-hits.csv'],check=True);out=[]
+ for q,line in zip(qs,open('@WORK@/ntou-revision-'+name+'-hits.csv')):
+  h,b=parse(line);signs=[0 if min(z['nd']for z in x['faces'])< -1e-10 and max(z['nd']for z in x['faces'])>1e-10 else (1 if max(z['nd']for z in x['faces'])>1e-10 else -1)for x in h];winds=[sum(signs[j:])for j in range(len(signs)+1)];out.append(dict(origin=q[0].tolist(),direction=q[1].tolist(),events=h,boundaries=b,interval_windings=winds,first_span=h[1]['t']-h[0]['t']if len(h)>1 else None,valid=bool(len(h)>1 and abs(h[0]['t']-1e-5)<1e-8 and winds[:3]==[0,1,0])))
+ return out
+qs2=[]
+for r,rec in zip(rows,run(qs,'normal')):
+ r['normal']=rec;f=r['face'];ef=rec['events'][1]['faces'][0]['face'];r['exit_face']=ef;d=-(N[f]+N[ef]);d/=np.linalg.norm(d);r['margins']=[float(-d@N[f]),float(-d@N[ef])];p=np.array(r['surface']);qs2.append([p-d*1e-5,d])
+for r,rec in zip(rows,run(qs2,'common')):r['common_root']=rec
+with gzip.open('@WORK@/ntou-revision-short-roots.json.gz','wt')as f:json.dump(rows,f)
+print('dense',len(df),'short',len(rows),'flags',len(df[(df.inside_control!=1)|(df.outside_control!=0)|(df.mid_control!=1)|(df.after_exit_control!=0)]));print('normalbad',[(r['face'],r['sample'])for r in rows if not r['normal']['valid']]);print('rootbad',[(r['face'],r['sample'],r['common_root']['first_span'])for r in rows if not r['common_root']['valid']or r['common_root']['first_span']<.8]);print('minroots',min(r['common_root']['first_span']for r in rows),'minnormal',short.first_solid.min())

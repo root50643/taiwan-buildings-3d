@@ -1,34 +1,104 @@
 {
-  "passed": true,
-  "checks": {
-    "binary_stl_length": true,
-    "finite_coordinates_and_normals": true,
-    "original_normals_unit": true,
-    "original_normals_match_winding": true,
-    "nondegenerate_original_faces": true,
-    "watertight": true,
-    "winding_consistent": true,
-    "every_edge_two_faces": true,
-    "vertex_links_single_cycles": true,
-    "one_connected_surface_shell": true,
-    "no_disconnected_enclosed_shell": true,
-    "positive_volume": true,
-    "base_z_zero": true,
-    "longest_dimension_150mm": true,
-    "source_rebuild_hash_matches": true,
-    "blend_stl_geometry_agree": true,
-    "contours_0_2mm_all_closed_valid": true,
-    "canonical_thin_max_loss_below_1_percent": true,
-    "previews_from_actual_stl": true,
-    "thin_sampled_contours_closed_valid": true
-  },
-  "validation_programs_exit_zero": [
-    "validate_model.py",
-    "check_contour_validity.py",
-    "thin_canonical_v2.py"
+  "stl_sha256": "752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49",
+  "all_strict_checks_passed": false,
+  "independent_exception_status": "pending",
+  "checks": [
+    {
+      "script": "check_raw_mesh.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'passed': True, 'checks': {'binary_length_exact': True, 'finite_original_data': True, 'original_faces_nondegenerate': True, 'original_normals_unit': True, 'original_normals_agree': True, 'exact_coordinate_edges_two_faces': True, 'exact_coordinate_consistent_winding': True, 'exact_coordinate_vertex_links_cycles': True, 'single_surface_no_internal_shell': True, 'positive_signed_volume': True, 'longest_150mm': True}, 'stl_sha256': '752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49', 'triangles': 5630, 'vertices_exact': 2807, 'surface_shells': 1, 'bad_vertex_links': 0, 'volume_mm3': 399880.0873317534, 'method': 'Binary triangles, saved normals, exact-coordinate indexing, edge orientations, vertex links, face BFS. No mesh processing, repair, rounding or dropped triangles.'}\n\n"
+    },
+    {
+      "script": "check_opposing_faces.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'stl_sha256': '752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49', 'original_triangles': 5630, 'opposing_coplanar_candidate_pairs_tested': 0, 'positive_area_overlap_count': 0, 'checks': {'no_opposing_coplanar_positive_area_overlap': True}, 'passed': True, 'limits': 'Original AABB candidates; opposite-normal tolerance 1e-9, plane distance 1e-6mm, positive-area threshold 1e-9mm\u00b2. This is a declared finite precision overlap screen, not an unrestricted global self-intersection theorem.'}\n\n"
+    },
+    {
+      "script": "check_component_detail.py",
+      "exit_code": 1,
+      "strict_passed": false,
+      "output_tail": "\nTraceback (most recent call last):\n  File \"MODEL_DIR/check_component_detail.py\", line 65, in <module>\n    assert report['checks']['all_individual_polygon_losses_le_one_percent'], 'Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging'\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Per-polygon warning: change source geometry or obtain a specific evidenced exception; no whole-layer averaging\n"
+    },
+    {
+      "script": "check_true_corner_masks.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "\n"
+    },
+    {
+      "script": "check_dense_surface.py",
+      "exit_code": 1,
+      "strict_passed": false,
+      "output_tail": "{'stl_sha256': '752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49', 'original_triangles': 5630, 'samples': 56300, 'uncompressed_csv_sha256': '111c6a0c5feca6b18662b2742ce9a1e742445adbffbfd196d0834113c9a79771', 'minimum_first_chord_mm': 3.35533604338e-05, 'under_0p8mm_count': 1227, 'checks': {'every_original_face_ten_samples': True, 'all_surface_entries_at_declared_offset': True, 'all_fixed_direction_parity_codes_expected': False, 'all_first_chords_ge_0p8mm': False}, 'passed': False, 'limits': 'Finite original-normal sample screen, not global wall thickness. Short chords require real local root/air evidence. Strict false remains until any specific independent exception.'}\n\nSAMPLE 0 COMPLETE 5630\nSAMPLE 1 COMPLETE 11260\nSAMPLE 2 COMPLETE 16890\nSAMPLE 3 COMPLETE 22520\nSAMPLE 4 COMPLETE 28150\nSAMPLE 5 COMPLETE 33780\nSAMPLE 6 COMPLETE 39410\nSAMPLE 7 COMPLETE 45040\nSAMPLE 8 COMPLETE 50670\nSAMPLE 9 COMPLETE 56300\n"
+    },
+    {
+      "script": "check_dense_backing.py",
+      "exit_code": 1,
+      "strict_passed": false,
+      "output_tail": "{'stl_sha256': '752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49', 'count': 1227, 'max_true_edge_distance_mm': 4.851001510620122, 'minimum_continuous_bisector_first_exit_mm': 0.024065792086051516, 'checks': {'all_original_normals_match_actual_adjacent_face': True, 'every_short_sample_included': True, 'all_first_original_intervals_material_then_air': True, 'all_bisector_starts_and_controls_inside': False, 'all_bisectors_start_with_exit_not_remote_entry': True, 'all_continuous_bisector_roots_ge_0p8': False}, 'status': 'Evidence only, no automatic exception or global thickness guarantee. Strict surface report remains false.'}\n\n"
+    },
+    {
+      "script": "check_vertex_roots.py",
+      "exit_code": 1,
+      "strict_passed": false,
+      "output_tail": "{'every_short_sample_has_true_incident_continuous_root': False} failed [(447, 1), (477, 1), (483, 1), (572, 1), (578, 1), (618, 1), (752, 1), (757, 1), (796, 1), (866, 1), (872, 1), (922, 1), (447, 2), (449, 2), (477, 2), (479, 2), (483, 2), (485, 2), (572, 2), (576, 2), (578, 2), (614, 2), (618, 2), (620, 2), (752, 2), (754, 2), (757, 2), (794, 2), (796, 2), (799, 2), (866, 2), (868, 2), (872, 2), (874, 2), (922, 2), (924, 2), (447, 4), (477, 4), (483, 4), (572, 4), (578, 4), (618, 4), (752, 4), (757, 4), (796, 4), (866, 4), (872, 4), (922, 4), (995, 4), (1047, 4), (1095, 4), (1145, 4), (1189, 4), (1243, 4), (1287, 4), (1338, 4), (1381, 4), (1434, 4), (1482, 4), (1529, 4), (356, 6), (366, 6), (376, 6), (393, 6), (403, 6), (412, 6), (662, 6), (673, 6), (683, 6), (692, 6), (702, 6), (712, 6), (447, 7), (477, 7), (483, 7), (572, 7), (578, 7), (618, 7), (752, 7), (757, 7), (796, 7), (866, 7), (872, 7), (922, 7), (995, 7), (1047, 7), (1095, 7), (1145, 7), (1189, 7), (1243, 7), (1287, 7), (1338, 7), (1381, 7), (1434, 7), (1482, 7), (1529, 7), (356, 8), (366, 8), (376, 8), (393, 8), (403, 8), (412, 8), (662, 8), (673, 8), (683, 8), (692, 8), (702, 8), (712, 8)]\n\n"
+    },
+    {
+      "script": "check_curved_patch_roots.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'stl_sha256': '752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49', 'checks': {'every_short_sample_included': True, 'all_true_edge_distance_le_0p8': True, 'all_actual_local_smooth_patch_paths': True, 'all_first_roots_ge_0p8': True, 'all_controls': True}, 'count': 1227, 'max_true_edge_distance_mm': 0.7826560592651362, 'max_normal_deviation_deg': 5.288988101219061, 'minimum_first_root_mm': 6.653930959847953}\nfailed patches []\nfailed controls []\n\n"
+    },
+    {
+      "script": "check_root_full_intervals.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'no_positive_length_original_boundary_in_first_root_or_next_interval': True}\n\n1227 queries, 5630 original triangles, 0 overlaps\n"
+    },
+    {
+      "script": "check_flag_winding.py",
+      "exit_code": 1,
+      "strict_passed": false,
+      "output_tail": "flags 8 confirmed 7\n[(4510, 0, [-1.9488380487587738e-15, 1.000000000000002, 1.0, 0.9999999999999999])]\n\n0/32\n"
+    },
+    {
+      "script": "check_full_boundary_intervals.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'total_screened_dense_rays': 56300, 'positive_length_first_segment_boundary_ray_count': 0, 'positive_length_after_interval_boundary_ray_count': 12, 'boundary_triangle_interval_count': 24, 'control_count': 600, 'all_nonboundary_controls_passed': True, 'no_exception_approved': True, 'stl_sha256': '752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49'} FAILED 0\n\n56300 queries, 5630 original triangles, 24 overlaps\n0/12\n12 strict rays complete\n"
+    },
+    {
+      "script": "check_flag_boundaries.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'all_flags_have_exact_after_probe_on_positive_surface_interval': True, 'all_original_side_controls_pass': True}\n\n"
+    },
+    {
+      "script": "check_designated_roots.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'all_designated_normal_thicknesses_ge_0p8': True, 'all_original_winding_controls': True}\nfails []\n\n"
+    },
+    {
+      "script": "validate_model.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{\n  \"passed\": true,\n  \"checks\": {\n    \"binary_stl_length\": true,\n    \"finite_coordinates_and_normals\": true,\n    \"original_normals_unit\": true,\n    \"original_normals_match_winding\": true,\n    \"nondegenerate_original_faces\": true,\n    \"watertight\": true,\n    \"winding_consistent\": true,\n    \"every_edge_two_faces\": true,\n    \"vertex_links_single_cycles\": true,\n    \"one_connected_surface_shell\": true,\n    \"no_disconnected_enclosed_shell\": true,\n    \"positive_volume\": true,\n    \"base_z_zero\": true,\n    \"longest_dimension_150mm\": true,\n    \"source_rebuild_hash_matches\": true,\n    \"blend_stl_geometry_agree\": true\n  },\n  \"dimensions_mm\": [\n    150.0,\n    111.0,\n    41.900001525878906\n  ],\n  \"triangles\": 5630,\n  \"vertices\": 2807,\n  \"surface_shells\": 1,\n  \"nonmanifold_edges\": 0,\n  \"bad_vertex_links\": 0,\n  \"volume_mm3\": 399880.08733175346,\n  \"base_contact_area_mm2\": 16650.0,\n  \"stl_sha256\": \"752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49\",\n  \"rebuild_stl_sha256\": \"752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49\",\n  \"stl_geometry_sha256\": \"c62377db063f99535e37069f23a54937713f525b863cbab29991f5b621732fbf\",\n  \"blend_geometry_sha256\": \"c62377db063f99535e37069f23a54937713f525b863cbab29991f5b621732fbf\",\n  \"limitations\": [\n    \"Not a slicer validation or physical print test.\",\n    \"Exterior photo-based miniature; depth and unseen elevations are estimates.\",\n    \"One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed.\"\n  ]\n}\n\n"
+    },
+    {
+      "script": "check_render_rebuild.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "d556dad4d5135943920e34bf7e6094e2baec78234c4c\",\n      \"pixel_sha256\": \"8bf1326e2d47390a777f3d96c3c703bd78c268d85280523e7bb5adec08b120f0\",\n      \"checks\": {\n        \"declared_dimensions\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"field-detail\",\n      \"file\": \"previews/field-detail.png\",\n      \"sha256\": \"5566df77e0841ed3f5ed512dac413b93e06d0ef7331e5a74c1c441e01ede9956\",\n      \"pixel_sha256\": \"9f4eec0d9e34d71f1ebeb448beb400a1bc7997d9fa52a3b37d8f1d9824eb803f\",\n      \"checks\": {\n        \"declared_dimensions\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"left-detail\",\n      \"file\": \"previews/left-detail.png\",\n      \"sha256\": \"48f80033ffec2536515fd0116c6d64e0f932ce3d044835b46064f094f046e572\",\n      \"pixel_sha256\": \"b00bd6257e4b7a472e5f700b1a7c14aebe0657f096ba9deab20dc4bf333f4743\",\n      \"checks\": {\n        \"declared_dimensions\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    },\n    {\n      \"view\": \"entry-detail\",\n      \"file\": \"previews/entry-detail.png\",\n      \"sha256\": \"d52e5e215be3dfcbac171c20d6114cc8d0f806fc4e24143e83bee840f66a8e46\",\n      \"pixel_sha256\": \"f5557b0756ef6d5fe08e86c035ce01f145ddb3adb234c8ffdd9b266ba22ffe54\",\n      \"checks\": {\n        \"declared_dimensions\": true,\n        \"nonblank\": true,\n        \"independent_render_pixels_identical\": true,\n        \"independent_png_bytes_identical\": true\n      }\n    }\n  ],\n  \"limits\": \"Pixel identity verifies reproducible rendering of the delivered STL, not architectural fidelity.\"\n}\n\n"
+    },
+    {
+      "script": "check_documentation.py",
+      "exit_code": 0,
+      "strict_passed": true,
+      "output_tail": "{'checks': {'\u5317\u5be7\u6821\u5340/buildings/ntou-gymnasium/README.md_same_model_front_rear_row': True, '\u5317\u5be7\u6821\u5340/README.md_same_model_front_rear_row': True, 'README.md_same_model_front_rear_row': True, 'no_compiled_python_cache': True, 'only_actual_stl_pngs': True, 'front_full_canvas': True, 'rear_full_canvas': True, 'elevation_full_canvas': True, 'top_full_canvas': True}, 'passed': True, 'stl_sha256': '752b4c147bd18874b1c49890596c260e58015520f71f60cebc6ee6144700ef49', 'manual_visual_review': 'All seven actual STL views inspected; front/rear/elevation/top complete building, three detail views intentionally cropped. Source comparisons are private and excluded.'}\n\n"
+    }
   ],
-  "canonical_thin_script_sha256": "349d0542fb7818ddbd0fff6e9814d4f9c634112f30740640e4671863d60868aa",
-  "maximum_opening_loss_fraction": 0.003413047531054951,
-  "no_cura_or_prusa_toolpath_claim": true,
-  "no_physical_print_claim": true
+  "limits": "Expected strict failures are preserved. Supplementary local roots and boundary classifications do not constitute author-approved exceptions. Surface winding values are diagnostics, never bulk air proof."
 }

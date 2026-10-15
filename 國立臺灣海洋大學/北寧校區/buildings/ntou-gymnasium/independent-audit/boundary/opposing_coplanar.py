@@ -1,0 +1,30 @@
+from pathlib import Path
+import numpy as np,json,hashlib,time
+from config import *
+D=np.longdouble
+CASES=[('ntou-revision-release-candidate-v1',S,H)]
+def cross(a,b):return a[0]*b[1]-a[1]*b[0]
+def clip(subject,clipper):
+ orient=np.sign(cross(clipper[1]-clipper[0],clipper[2]-clipper[0]));out=list(subject)
+ for a,b in zip(clipper,np.roll(clipper,-1,axis=0)):
+  inp=out;out=[]
+  if not inp:break
+  prev=inp[-1];dp=orient*cross(b-a,prev-a)
+  for cur in inp:
+   dc=orient*cross(b-a,cur-a)
+   if (dc>=0)!=(dp>=0):out.append(prev+(cur-prev)*dp/(dp-dc))
+   if dc>=0:out.append(cur)
+   prev=cur;dp=dc
+ return out
+for ver,s,sha in CASES:
+ start=time.time();raw=s.read_bytes();assert hashlib.sha256(raw).hexdigest()==sha;T=np.frombuffer(raw,offset=84,dtype=[('n','<f4',(3,)),('v','<f4',(3,3)),('a','<u2')])['v'].astype(D);N=np.cross(T[:,1]-T[:,0],T[:,2]-T[:,0]);lengths=np.linalg.norm(N,axis=1);degenerate=np.flatnonzero(lengths==0).tolist();N/=np.where(lengths>0,lengths,1)[:,None];lo=T.min(1);hi=T.max(1);cand=[];bad=[];maxarea=0;expanded=0;opposite=0
+ for i,t in enumerate(T):
+  ids=np.flatnonzero(np.all(hi>=t.min(0)-D('1e-6'),axis=1)&np.all(lo<=t.max(0)+D('1e-6'),axis=1)&(np.arange(len(T))>i));expanded+=len(ids)
+  if not len(ids):continue
+  ids=ids[(N[ids]@N[i])< -1+D('1e-9')];opposite+=len(ids)
+  for j in ids:
+   plane=np.max(abs((T[j]-t[0])@N[i]))
+   if plane>D('1e-6'):continue
+   ax=int(np.argmax(abs(N[i])));axes=[k for k in range(3)if k!=ax];poly=clip(t[:,axes],T[j][:,axes]);area=abs(sum(cross(poly[k],poly[(k+1)%len(poly)])for k in range(len(poly))))/2/abs(N[i,ax])if len(poly)>2 else D(0);maxarea=max(maxarea,float(area));r={'faces':[i,int(j)],'coplanarity_mm':float(plane),'normal_dot':float(N[j]@N[i]),'intersection_area_mm2':float(area),'dominant_axis':ax,'intersection_polygon_projected_mm':[x.tolist()for x in np.array(poly,float)]};cand.append(r)
+   if area>D('1e-9'):bad.append(r)
+ out={'version':ver,'path':'model.stl','sha256':sha,'original_faces':len(T),'degenerate_original_faces_without_normal':degenerate,'method':'Same code on all cases. Expanded original AABB by 1e-6 mm; opposite unit normals dot < -1+1e-9; maximum vertex-to-plane distance <=1e-6 mm. Long-double Sutherland-Hodgman convex clipping on dominant-axis projection, corrected surface area; positive area >1e-9 mm2. No mesh repair, merge, welding, or deletion. Near-coplanarity tolerance is retained explicitly; not all reported positive candidates need be exactly coplanar.','all_expanded_aabb_candidate_pairs':expanded,'opposite_normal_aabb_pairs':opposite,'opposite_coplanar_candidate_pairs':len(cand),'positive_area_opposing_overlap_count':len(bad),'maximum_candidate_intersection_area_mm2':maxarea,'overlaps':bad,'candidates':cand,'source_hash_unchanged':hashlib.sha256(s.read_bytes()).hexdigest()==sha,'seconds':time.time()-start,'limits':'Finite-precision opposing-near-coplanar screen is not a global self-intersection or thickness theorem. No acceptance or exception approved.'};(W/('ntou-revision-boundary-opposing-coplanar.json')).write_text(json.dumps(out,indent=2));print(ver,len(T),len(cand),len(bad),maxarea,'seconds',time.time()-start,flush=True)

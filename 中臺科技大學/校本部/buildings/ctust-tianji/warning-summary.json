@@ -1,0 +1,55 @@
+{
+  "stl_sha256": "2b49f4c3ccca097da6bb794b808732d902dc400613a3c4f0f1174bb06bc183db",
+  "families": {
+    "court_stair": {
+      "sample_count": 32,
+      "maximum_loss_fraction": 0.012233783282964317,
+      "minimum_retained_fraction": 0.9877662167170357,
+      "maximum_true_rectangle_corner_outside_loss_mm2": 0.0017138264254378556,
+      "maximum_true_corner_outside_fraction": 0.0001489547817296241,
+      "minimum_original_rectangle_caliper_mm": 1.8749999999999964,
+      "minimum_original_face_normal_first_solid_mm": 1.8749999999999998,
+      "minimum_direct_vertical_root_mm": 7.871,
+      "vertical_root_exit_z_range_mm": [
+        -1.7763568394002505e-15,
+        0.0
+      ]
+    },
+    "west_colonnade": {
+      "sample_count": 224,
+      "maximum_loss_fraction": 0.03325101740388718,
+      "minimum_retained_fraction": 0.9667489825961129,
+      "maximum_true_rectangle_corner_outside_loss_mm2": 0.0,
+      "maximum_true_corner_outside_fraction": 0.0,
+      "minimum_original_rectangle_caliper_mm": 1.875,
+      "minimum_original_face_normal_first_solid_mm": 1.8749997615814207,
+      "minimum_direct_vertical_root_mm": 8.871,
+      "vertical_root_exit_z_range_mm": [
+        -3.552713678800501e-15,
+        0.0
+      ]
+    },
+    "roof_support": {
+      "sample_count": 60,
+      "maximum_loss_fraction": 0.039296637585820055,
+      "minimum_retained_fraction": 0.96070336241418,
+      "maximum_true_rectangle_corner_outside_loss_mm2": 0.0,
+      "maximum_true_corner_outside_fraction": 0.0,
+      "minimum_original_rectangle_caliper_mm": 1.874999999999993,
+      "minimum_original_face_normal_first_solid_mm": 1.8749999999999998,
+      "minimum_direct_vertical_root_mm": 1.715316101074222,
+      "vertical_root_exit_z_range_mm": [
+        -1.4210854715202004e-14,
+        69.75568389892578
+      ]
+    }
+  },
+  "exception_status": "Pending independent review and root decision; local warnings are not auto-approved.",
+  "limits": [
+    "The rectangles are original XY polygons, not a global wall-thickness minimum.",
+    "True rectangle corner neighborhoods radius .41mm are separate from all triangulation vertices.",
+    "Court stairs have nonzero corner-exterior loss; do not call all loss pure corners.",
+    "Roof pillars root to a roof slab; they do not all reach the bottom.",
+    "No print test or arbitrary scaling/support-free claim."
+  ]
+}

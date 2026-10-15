@@ -1,0 +1,10 @@
+"""Exact original-Polygon warning families; no waiver from whole-layer loss."""
+from pathlib import Path
+import json,hashlib,collections
+R=Path(__file__).resolve().parent;j=json.loads((R/'surface-ray-check.json').read_text());sha=hashlib.sha256((R/'model.stl').read_bytes()).hexdigest();assert sha==j['stl_sha256'];groups=collections.defaultdict(list)
+for r in j['warning_samples']:groups[r['family']].append(r)
+out={}
+for family,rs in groups.items():
+ roots=[r for r in j['root_samples'] if r['family']==family+'_vertical_back_root'];normals=[r for r in j['first_chord_samples'] if r['family']==family]
+ out[family]={'sample_count':len(rs),'maximum_loss_fraction':max(r['opening_loss_fraction'] for r in rs),'minimum_retained_fraction':min(r['retained_fraction'] for r in rs),'maximum_true_rectangle_corner_outside_loss_mm2':max(r['loss_outside_0p41_rectangle_corner_mm2'] for r in rs),'maximum_true_corner_outside_fraction':max(r['loss_outside_0p41_rectangle_corner_mm2']/r['original_area_mm2'] for r in rs),'minimum_original_rectangle_caliper_mm':min(r['rotated_bbox_min_width'] for r in rs),'minimum_original_face_normal_first_solid_mm':min(r['first_solid_mm'] for r in normals),'minimum_direct_vertical_root_mm':min(r['first_uninterrupted_solid_mm'] for r in roots),'vertical_root_exit_z_range_mm':[min(r['first_exit_mm'][2] for r in roots),max(r['first_exit_mm'][2] for r in roots)]}
+report={'stl_sha256':sha,'families':out,'exception_status':'Pending independent review and root decision; local warnings are not auto-approved.','limits':['The rectangles are original XY polygons, not a global wall-thickness minimum.','True rectangle corner neighborhoods radius .41mm are separate from all triangulation vertices.','Court stairs have nonzero corner-exterior loss; do not call all loss pure corners.','Roof pillars root to a roof slab; they do not all reach the bottom.','No print test or arbitrary scaling/support-free claim.']};(R/'warning-summary.json').write_text(json.dumps(report,indent=2));print(json.dumps(out,indent=2))

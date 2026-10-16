@@ -1,0 +1,731 @@
+{
+  "case_count": 65,
+  "cases": [
+    {
+      "case": "valid_read_only",
+      "expected_accept": true,
+      "passed": true,
+      "report": {
+        "archive_sha256": "2dc3cfb86726675544862ad8a9f85a2cf7d12ed71809feaae08b5adc20394cfe",
+        "extracted": false,
+        "format": "bwbc-controls-ustar-xz-v1",
+        "index_sha256": "472eae7d4d69f1633c729d67db55e3a3a014b2a3a3421d9ddcb18f6a73c3c5f2",
+        "member_bytes": 38,
+        "members": 3,
+        "passed": true,
+        "tar_bytes": 10240,
+        "tar_sha256": "043190ca0f59952110b356737aac9c39673b8c55db5a0a8ffb60219370b77ed8"
+      },
+      "returncode": 0
+    },
+    {
+      "case": "valid_extract",
+      "expected_accept": true,
+      "passed": true,
+      "report": {
+        "archive_sha256": "2dc3cfb86726675544862ad8a9f85a2cf7d12ed71809feaae08b5adc20394cfe",
+        "extracted": true,
+        "format": "bwbc-controls-ustar-xz-v1",
+        "index_sha256": "472eae7d4d69f1633c729d67db55e3a3a014b2a3a3421d9ddcb18f6a73c3c5f2",
+        "member_bytes": 38,
+        "members": 3,
+        "passed": true,
+        "tar_bytes": 10240,
+        "tar_sha256": "043190ca0f59952110b356737aac9c39673b8c55db5a0a8ffb60219370b77ed8"
+      },
+      "returncode": 0
+    },
+    {
+      "case": "existing_output",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "FileExistsError: [Errno 17] File exists: 'extracted'",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "existing_output_symlink",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "FileExistsError: [Errno 17] File exists: 'extracted'",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "ancestor_symlink",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "NotADirectoryError: [Errno 20] Not a directory: 'linked'",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "untrusted_output_parent",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: output parent must be user-owned and not group/other writable",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "compressed_corruption",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "LZMAError: Corrupt input data",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "compressed_truncation",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: incomplete XZ stream",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "extra_xz_stream",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: extra XZ stream/trailing bytes",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "xz_trailing_zero_padding",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: extra XZ stream/trailing bytes",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "xz_trailing_garbage",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: extra XZ stream/trailing bytes",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "wrong_archive_hash",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: archive SHA256 mismatch",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "wrong_tar_hash",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: tar SHA256 mismatch",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "wrong_member_hash",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: member SHA256 mismatch",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "wrong_member_size",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: tar/index byte count mismatch",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "boolean_member_size",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: member byte count",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "missing_tar_member",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: missing indexed tar member",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "extra_tar_member",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: extra tar members/nonzero trailing data",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "member_substitution",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: member SHA256 mismatch",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "duplicate_tar_member",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: tar/index path or order mismatch",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "tar_member_order",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: tar/index path or order mismatch",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "index_missing_member",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: extra tar members/nonzero trailing data",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "index_extra_member",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: missing indexed tar member",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "index_duplicate_member",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: index paths must be unique and sorted",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "index_unsorted",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: index paths must be unique and sorted",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "index_extra_field",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: index schema",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "index_duplicate_json_key",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: duplicate JSON object key",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_index_absolute",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: absolute/backslash member path",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_tar_absolute",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: absolute/backslash member path",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_index_dotdot",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: unsafe member path segment",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_tar_dotdot",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: unsafe member path segment",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_index_backslash",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: absolute/backslash member path",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_tar_backslash",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: absolute/backslash member path",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_index_dot",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: unsafe member path segment",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_tar_dot",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: unsafe member path segment",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_index_empty_component",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: unsafe member path segment",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_tar_empty_component",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: unsafe member path segment",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_index_drive",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: drive-prefixed member path",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "unsafe_tar_drive",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: drive-prefixed member path",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "index_prefix_collision",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: file/directory prefix collision",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_mode",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: mode must be 0644",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_uid",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: uid must be zero",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_gid",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: gid must be zero",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_mtime",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: mtime must be zero",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_uname",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: uname/gname must be empty",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_gname",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: uname/gname must be empty",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_devmajor",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: device numbers must be zero",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_reserved",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: reserved USTAR bytes must be zero",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_linkname",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: link name must be empty",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_magic",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: not POSIX USTAR",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "metadata_binary_size",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: invalid octal size",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "forbidden_type_symlink",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: only ordinary file members allowed",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "forbidden_type_hardlink",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: only ordinary file members allowed",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "forbidden_type_directory",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: only ordinary file members allowed",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "forbidden_type_pax",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: only ordinary file members allowed",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "forbidden_type_global_pax",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: only ordinary file members allowed",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "forbidden_type_gnu_longname",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: only ordinary file members allowed",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "forbidden_type_nul_typeflag",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: only ordinary file members allowed",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "header_checksum",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: tar header checksum",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "member_padding",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: nonzero member padding",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "missing_tar_terminator",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: missing two-block tar terminator",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "one_block_tar_terminator",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: missing two-block tar terminator",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "non_block_tar_length",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: tar length not block aligned",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "tar_trailing_nonzero",
+      "expected_accept": false,
+      "passed": true,
+      "report": {
+        "error": "ValueError: extra tar members/nonzero trailing data",
+        "format": "bwbc-controls-ustar-xz-v1",
+        "passed": false
+      },
+      "returncode": 1
+    },
+    {
+      "case": "streaming_decompression_limit_reduced",
+      "error": "decompressed tar exceeds 512 MiB",
+      "expected_accept": false,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "python_optimized": true,
+  "tool": "archive_verify.py",
+  "tool_sha256": "428fcd7e70d936eb831b9ad455da4eb5ea523bac57ee4a50fabe552f02441c4a"
+}

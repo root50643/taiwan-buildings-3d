@@ -1,0 +1,92 @@
+{
+  "archive_validator_sha256": "428fcd7e70d936eb831b9ad455da4eb5ea523bac57ee4a50fabe552f02441c4a",
+  "case_count": 7,
+  "cases": [
+    {
+      "calls": {
+        "extract": 1,
+        "verify": 1
+      },
+      "case": "valid_fresh_replay",
+      "error": null,
+      "expected_accept": true,
+      "passed": true,
+      "stdout": {
+        "archive_members_verified": 3,
+        "files": 17,
+        "optimization_level": 1,
+        "passed": true
+      }
+    },
+    {
+      "calls": {
+        "extract": 0,
+        "verify": 1
+      },
+      "case": "late_archive_substitution",
+      "error": "ValueError: Archive/index changed after package integrity check",
+      "expected_accept": false,
+      "passed": true,
+      "stdout": null
+    },
+    {
+      "calls": {
+        "extract": 0,
+        "verify": 1
+      },
+      "case": "late_index_substitution",
+      "error": "ValueError: Archive/index changed after package integrity check",
+      "expected_accept": false,
+      "passed": true,
+      "stdout": null
+    },
+    {
+      "calls": {
+        "extract": 0,
+        "verify": 1
+      },
+      "case": "missing_helper",
+      "error": "ValueError: Missing required replay helper in package inventory",
+      "expected_accept": false,
+      "passed": true,
+      "stdout": null
+    },
+    {
+      "calls": {
+        "extract": 0,
+        "verify": 1
+      },
+      "case": "helper_content_mismatch",
+      "error": "ValueError: Direct source integrity differs: verification/check_controls.py",
+      "expected_accept": false,
+      "passed": true,
+      "stdout": null
+    },
+    {
+      "calls": {
+        "extract": 0,
+        "verify": 0
+      },
+      "case": "archive_content_mismatch",
+      "error": "ValueError: Direct source integrity differs: controls.tar.xz",
+      "expected_accept": false,
+      "passed": true,
+      "stdout": null
+    },
+    {
+      "calls": {
+        "extract": 1,
+        "verify": 1
+      },
+      "case": "existing_output",
+      "error": "FileExistsError: [Errno 17] File exists: 'replay'",
+      "expected_accept": false,
+      "passed": true,
+      "stdout": null
+    }
+  ],
+  "passed": true,
+  "python_optimized": true,
+  "tool": "prepare_control_replay.py",
+  "tool_sha256": "f79ad7652d1c889e549a6b99337f8f76097d89bf606a15291db509bb4beb69fd"
+}

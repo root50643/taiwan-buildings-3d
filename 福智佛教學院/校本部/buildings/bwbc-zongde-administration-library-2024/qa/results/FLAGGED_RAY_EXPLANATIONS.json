@@ -1,0 +1,4667 @@
+{
+  "scope": "Read-only interpretation of saved 12-row exact diagnoses and original flag files. No mesh, original dense full CSV, new intersection, parity ray, or Blender calculation was run. Distances are arithmetic conversions of stored exact event parameters only.",
+  "stl_sha256": "96481addb2b9ac4144cb5f012f19b57e047106021e93adb5c34df2c00770e1a3",
+  "source_artifact_sha256": {
+    "resume-v17/geometry/normal/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz": "5e4239c6219ea355b92acc0b4fdd65c1fa2d4ef18fe6bdd3ade56e7f2da27f15",
+    "resume-v17/geometry/normal/standard/dense/dense-flagged-samples.json.gz": "a9b528c6de41607a7b14952277b8bacb353bb49b0e9f8fa9d0f3b90dbfa12d1f",
+    "resume-v17/geometry/optimized/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz": "5e4239c6219ea355b92acc0b4fdd65c1fa2d4ef18fe6bdd3ade56e7f2da27f15",
+    "resume-v17/geometry/optimized/standard/dense/dense-flagged-samples.json.gz": "a9b528c6de41607a7b14952277b8bacb353bb49b0e9f8fa9d0f3b90dbfa12d1f"
+  },
+  "checks": {
+    "detail_count_12": true,
+    "flag_count_12": true,
+    "unique_flag_keys": true,
+    "unique_detail_keys": true,
+    "normal_optimized_detail_file_bytes_identical": true,
+    "normal_optimized_flag_file_bytes_identical": true,
+    "all_per_ray_checks_true": true
+  },
+  "category_counts": {
+    "positive_length_boundary_intervals": 9,
+    "ordinary_interior_face_crossings_only": 2,
+    "isolated_tangent_contact": 1
+  },
+  "distance_convention": "Millimetres along the recorded ray measured from its first exact source-face entry; negative start is the outward-offset origin. Each saved reduced lattice direction has squared norm one. Exact distance=(stored_t-first_entry_t)/coordinate_lattice_denominator.",
+  "original_numerical_strict_state_policy": "Original numerical strict_passed=false and all 12 flags are retained; this interpretation is supplementary and not a waiver or global thickness certificate.",
+  "rays": [
+    {
+      "original_face_index": 144,
+      "sample_index": 0,
+      "detail_jsonl_line_1_based": 1,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 143.75,
+      "first_conservative_chord_squared_mm2_exact": "330625/16",
+      "first_exit_point_faces": [
+        38
+      ],
+      "coplanar_interval_count": 2,
+      "coplanar_contact_faces_in_ray_order": [
+        433,
+        432
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        38,
+        439
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 144,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit",
+        "original_triangle_parity_controls_failed"
+      ],
+      "original_cpp_descriptor": {
+        "face": "144",
+        "sample": "0",
+        "x": "47.5",
+        "y": "142.5",
+        "z": "3.25",
+        "nx": "0",
+        "ny": "1",
+        "nz": "0",
+        "origin_x": "47.5",
+        "origin_y": "142.50001",
+        "origin_z": "3.25",
+        "entry": "9.9999999999961231012e-06",
+        "exit": "143.75000999999999998",
+        "first_solid": "143.74999999999999999",
+        "air_after": "18.750000000000000028",
+        "exit_x": "47.5",
+        "exit_y": "-1.2499999999999999861",
+        "exit_z": "3.25",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "1",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "3",
+        "event_count": "3",
+        "raw_intersections_t_face_direction": "9.9999999999961231012e-06:144:-1;143.75000999999999998:38:1;162.50001000000000001:439:1;",
+        "events_t_direction": "9.9999999999961231012e-06:-1;143.75000999999999998:1;162.50001000000000001:1;",
+        "paired_intervals": "9.9999999999961231012e-06:143.75000999999999998;",
+        "x_hex": "0xb.ep+2",
+        "y_hex": "0x8.e8p+4",
+        "z_hex": "0xdp-2",
+        "nx_hex": "0x0p+0",
+        "ny_hex": "0x8p-3",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xb.ep+2",
+        "origin_y_hex": "0x8.e8000a7c5ac471bp+4",
+        "origin_z_hex": "0xdp-2",
+        "dx_hex": "-0x0p+0",
+        "dy_hex": "-0x8p-3",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 144,
+          "t0": "720575940379/67108864",
+          "t1": "720575940379/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 38,
+          "t0": "10358279863528081179/67108864",
+          "t1": "10358279863528081179/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "575/4",
+          "distance_from_first_entry_end_mm_exact": "575/4"
+        },
+        {
+          "face": 433,
+          "t0": "10358279863528081179/67108864",
+          "t1": "10808639826265130779/67108864",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "575/4",
+          "distance_from_first_entry_end_mm_exact": "150"
+        },
+        {
+          "face": 432,
+          "t0": "10808639826265130779/67108864",
+          "t1": "11709359751739229979/67108864",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "150",
+          "distance_from_first_entry_end_mm_exact": "325/2"
+        },
+        {
+          "face": 439,
+          "t0": "11709359751739229979/67108864",
+          "t1": "11709359751739229979/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "325/2",
+          "distance_from_first_entry_end_mm_exact": "325/2"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-720575940379/72057594037927936",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "575/4",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "575/4",
+          "distance_from_first_entry_end_mm_exact": "150",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "150",
+          "distance_from_first_entry_end_mm_exact": "325/2",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "325/2",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-720575940379/72057594037927936",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "575/4",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "575/4",
+          "distance_from_first_entry_end_mm_exact": "325/2",
+          "state": "boundary",
+          "original_interval_count": 2
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "325/2",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 24409,
+      "sample_index": 0,
+      "detail_jsonl_line_1_based": 2,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 1.5500011444091797,
+      "first_conservative_chord_squared_mm2_exact": "660395146609/274877906944",
+      "first_exit_point_faces": [
+        9467
+      ],
+      "coplanar_interval_count": 2,
+      "coplanar_contact_faces_in_ray_order": [
+        27391,
+        27364
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        27363,
+        15885
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 24409,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 9467,
+          "distance_from_first_entry_mm_exact": "812647/524288",
+          "directed_crossing": 1
+        },
+        {
+          "face": 15634,
+          "distance_from_first_entry_mm_exact": "1461453/131072",
+          "directed_crossing": 1
+        },
+        {
+          "face": 33806,
+          "distance_from_first_entry_mm_exact": "5262541/262144",
+          "directed_crossing": -1
+        },
+        {
+          "face": 33804,
+          "distance_from_first_entry_mm_exact": "9512508185641/423483932672",
+          "directed_crossing": 1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit"
+      ],
+      "original_cpp_descriptor": {
+        "face": "24409",
+        "sample": "0",
+        "x": "117.43333435058593751",
+        "y": "108.875",
+        "z": "22.924999237060546875",
+        "nx": "0",
+        "ny": "0",
+        "nz": "-1",
+        "origin_x": "117.43333435058593751",
+        "origin_y": "108.875",
+        "origin_z": "22.924989237060546875",
+        "entry": "9.9999999999995925481e-06",
+        "exit": "1.5500111444091796871",
+        "first_solid": "1.5500011444091796875",
+        "air_after": "7.6499996185302734375",
+        "exit_x": "117.43333435058593751",
+        "exit_y": "108.875",
+        "exit_z": "24.475000381469726562",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "7",
+        "event_count": "7",
+        "raw_intersections_t_face_direction": "9.9999999999995925481e-06:24409:-1;1.5500111444091796871:9467:1;9.2000107629394531246:27363:-1;9.8000092370605468746:15885:-1;11.15001152587890625:15634:1;20.075010762939453125:33806:-1;22.462510821745934502:33804:1;",
+        "events_t_direction": "9.9999999999995925481e-06:-1;1.5500111444091796871:1;9.2000107629394531246:-1;9.8000092370605468746:-1;11.15001152587890625:1;20.075010762939453125:-1;22.462510821745934502:1;",
+        "paired_intervals": "9.9999999999995925481e-06:1.5500111444091796871;9.2000107629394531246:9.8000092370605468746;11.15001152587890625:20.075010762939453125;",
+        "x_hex": "0xe.addde0000000001p+3",
+        "y_hex": "0xd.9cp+3",
+        "z_hex": "0xb.76666p+1",
+        "nx_hex": "0x0p+0",
+        "ny_hex": "0x0p+0",
+        "nz_hex": "-0x8p-3",
+        "origin_x_hex": "0xe.addde0000000001p+3",
+        "origin_y_hex": "0xd.9cp+3",
+        "origin_z_hex": "0xb.76660c1d29dc726p+1",
+        "dx_hex": "-0x0p+0",
+        "dy_hex": "-0x0p+0",
+        "dz_hex": "0x8p-3"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 24409,
+          "t0": "2882303761517/268435456",
+          "t1": "2882303761517/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 9467,
+          "t0": "446760295192403053/268435456",
+          "t1": "446760295192403053/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "812647/524288",
+          "distance_from_first_entry_end_mm_exact": "812647/524288"
+        },
+        {
+          "face": 27363,
+          "t0": "2651722562801835117/268435456",
+          "t1": "2651722562801835117/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "2411725/262144",
+          "distance_from_first_entry_end_mm_exact": "2411725/262144"
+        },
+        {
+          "face": 27391,
+          "t0": "2651722562801835117/268435456",
+          "t1": "4534987489064695618357021/452119127654400",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2411725/262144",
+          "distance_from_first_entry_end_mm_exact": "2267491317236263844655923/242729608396462148812800"
+        },
+        {
+          "face": 27364,
+          "t0": "4534987489064695618357021/452119127654400",
+          "t1": "2824660348688211053/268435456",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2267491317236263844655923/242729608396462148812800",
+          "distance_from_first_entry_end_mm_exact": "2569011/262144"
+        },
+        {
+          "face": 15885,
+          "t0": "2824660348688211053/268435456",
+          "t1": "2824660348688211053/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "2569011/262144",
+          "distance_from_first_entry_end_mm_exact": "2569011/262144"
+        },
+        {
+          "face": 15634,
+          "t0": "3213772016199998573/268435456",
+          "t1": "3213772016199998573/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "1461453/131072",
+          "distance_from_first_entry_end_mm_exact": "1461453/131072"
+        },
+        {
+          "face": 33806,
+          "t0": "5786227903451700333/268435456",
+          "t1": "5786227903451700333/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "5262541/262144",
+          "distance_from_first_entry_end_mm_exact": "5262541/262144"
+        },
+        {
+          "face": 33804,
+          "t0": "10459118015681741791501787/433647547056128",
+          "t1": "10459118015681741791501787/433647547056128",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "9512508185641/423483932672",
+          "distance_from_first_entry_end_mm_exact": "9512508185641/423483932672"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-2882303761517/288230376151711744",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "812647/524288",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "812647/524288",
+          "distance_from_first_entry_end_mm_exact": "2411725/262144",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2411725/262144",
+          "distance_from_first_entry_end_mm_exact": "2267491317236263844655923/242729608396462148812800",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2267491317236263844655923/242729608396462148812800",
+          "distance_from_first_entry_end_mm_exact": "2569011/262144",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2569011/262144",
+          "distance_from_first_entry_end_mm_exact": "1461453/131072",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1461453/131072",
+          "distance_from_first_entry_end_mm_exact": "5262541/262144",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "5262541/262144",
+          "distance_from_first_entry_end_mm_exact": "9512508185641/423483932672",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9512508185641/423483932672",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-2882303761517/288230376151711744",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "812647/524288",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "812647/524288",
+          "distance_from_first_entry_end_mm_exact": "2411725/262144",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2411725/262144",
+          "distance_from_first_entry_end_mm_exact": "2569011/262144",
+          "state": "boundary",
+          "original_interval_count": 2
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2569011/262144",
+          "distance_from_first_entry_end_mm_exact": "1461453/131072",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1461453/131072",
+          "distance_from_first_entry_end_mm_exact": "5262541/262144",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "5262541/262144",
+          "distance_from_first_entry_end_mm_exact": "9512508185641/423483932672",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9512508185641/423483932672",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 24971,
+      "sample_index": 0,
+      "detail_jsonl_line_1_based": 3,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 1.8000030517578125,
+      "first_conservative_chord_squared_mm2_exact": "13915741225/4294967296",
+      "first_exit_point_faces": [
+        24970
+      ],
+      "coplanar_interval_count": 9,
+      "coplanar_contact_faces_in_ray_order": [
+        31123,
+        31121,
+        31102,
+        31101,
+        31093,
+        31083,
+        32121,
+        32130,
+        32131
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        24970,
+        32125
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 24971,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 24865,
+          "distance_from_first_entry_mm_exact": "27",
+          "directed_crossing": -1
+        },
+        {
+          "face": 24848,
+          "distance_from_first_entry_mm_exact": "15099495/524288",
+          "directed_crossing": 1
+        },
+        {
+          "face": 3175,
+          "distance_from_first_entry_mm_exact": "4885709/131072",
+          "directed_crossing": -1
+        },
+        {
+          "face": 2620,
+          "distance_from_first_entry_mm_exact": "2015111465/33554432",
+          "directed_crossing": 1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit",
+        "original_triangle_parity_controls_failed"
+      ],
+      "original_cpp_descriptor": {
+        "face": "24971",
+        "sample": "0",
+        "x": "60.400001525878906253",
+        "y": "36.625",
+        "z": "21.08333269755045573",
+        "nx": "1",
+        "ny": "0",
+        "nz": "0",
+        "origin_x": "60.400011525878906253",
+        "origin_y": "36.625",
+        "origin_z": "21.08333269755045573",
+        "entry": "1.0000000000003061995e-05",
+        "exit": "1.800013051757812503",
+        "first_solid": "1.8000030517578124999",
+        "air_after": "10.232297261555989582",
+        "exit_x": "58.59999847412109375",
+        "exit_y": "36.625",
+        "exit_z": "21.08333269755045573",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "1",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "7",
+        "event_count": "7",
+        "raw_intersections_t_face_direction": "1.0000000000003061995e-05:24971:-1;1.800013051757812503:24970:1;12.032310313313802085:32125:1;27.000010000000000003:24865:-1;28.800011144409179689:24848:1;37.275011525878906253:3175:-1;60.055011527070999149:2620:1;",
+        "events_t_direction": "1.0000000000003061995e-05:-1;1.800013051757812503:1;12.032310313313802085:1;27.000010000000000003:-1;28.800011144409179689:1;37.275011525878906253:-1;60.055011527070999149:1;",
+        "paired_intervals": "1.0000000000003061995e-05:1.800013051757812503;12.032310313313802085:27.000010000000000003;28.800011144409179689:37.275011525878906253;",
+        "x_hex": "0xf.1999a0000000001p+2",
+        "y_hex": "0x9.28p+2",
+        "z_hex": "0xa.8aaaa5555555556p+1",
+        "nx_hex": "0x8p-3",
+        "ny_hex": "0x0p+0",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xf.1999c9f16b11c6ep+2",
+        "origin_y_hex": "0x9.28p+2",
+        "origin_z_hex": "0xa.8aaaa5555555556p+1",
+        "dx_hex": "-0x8p-3",
+        "dy_hex": "-0x0p+0",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 24971,
+          "t0": "1441151880759/134217728",
+          "t1": "1441151880759/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 24970,
+          "t0": "259409219493072439/134217728",
+          "t1": "259409219493072439/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "117965/65536",
+          "distance_from_first_entry_end_mm_exact": "117965/65536"
+        },
+        {
+          "face": 31123,
+          "t0": "259409219493072439/134217728",
+          "t1": "23128711008816797755465/7445996896256",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "117965/65536",
+          "distance_from_first_entry_end_mm_exact": "11564315529016954444211/3997539144442128105472"
+        },
+        {
+          "face": 31121,
+          "t0": "23128711008816797755465/7445996896256",
+          "t1": "453964503493152311/134217728",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "11564315529016954444211/3997539144442128105472",
+          "distance_from_first_entry_end_mm_exact": "412877/131072"
+        },
+        {
+          "face": 31102,
+          "t0": "453964503493152311/134217728",
+          "t1": "28608232278110198381711/7445996896256",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "412877/131072",
+          "distance_from_first_entry_end_mm_exact": "7152038081831827378667/1998769572221064052736"
+        },
+        {
+          "face": 31101,
+          "t0": "28608232278110198381711/7445996896256",
+          "t1": "1420992911717468254899769/282302831656960",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "7152038081831827378667/1998769572221064052736",
+          "distance_from_first_entry_end_mm_exact": "1420989880513894416879889/303120357383709172695040"
+        },
+        {
+          "face": 31093,
+          "t0": "1420992911717468254899769/282302831656960",
+          "t1": "695357333569048119/134217728",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1420989880513894416879889/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "1264845/262144"
+        },
+        {
+          "face": 31083,
+          "t0": "695357333569048119/134217728",
+          "t1": "320661447335672286218121/54709159198720",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1264845/262144",
+          "distance_from_first_entry_end_mm_exact": "2446448210911166463/448177432155914240"
+        },
+        {
+          "face": 32121,
+          "t0": "320661447335672286218121/54709159198720",
+          "t1": "1817762531170140824758119/282302831656960",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2446448210911166463/448177432155914240",
+          "distance_from_first_entry_end_mm_exact": "1817759499966566986738239/303120357383709172695040"
+        },
+        {
+          "face": 32130,
+          "t0": "1817762531170140824758119/282302831656960",
+          "t1": "3687081738785169599933703/388787284738048",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1817759499966566986738239/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "1843538782106743486132617/208728584131319510859776"
+        },
+        {
+          "face": 32131,
+          "t0": "3687081738785169599933703/388787284738048",
+          "t1": "1255743547763331680770611/97196821184512",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1843538782106743486132617/208728584131319510859776",
+          "distance_from_first_entry_end_mm_exact": "5022970016481644095413975/417457168262639021719552"
+        },
+        {
+          "face": 32125,
+          "t0": "1255743547763331680770611/97196821184512",
+          "t1": "1255743547763331680770611/97196821184512",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "5022970016481644095413975/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "5022970016481644095413975/417457168262639021719552"
+        },
+        {
+          "face": 24865,
+          "t0": "3891111519199989303/134217728",
+          "t1": "3891111519199989303/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "27",
+          "distance_from_first_entry_end_mm_exact": "27"
+        },
+        {
+          "face": 24848,
+          "t0": "4150519022663274039/134217728",
+          "t1": "4150519022663274039/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "15099495/524288",
+          "distance_from_first_entry_end_mm_exact": "15099495/524288"
+        },
+        {
+          "face": 3175,
+          "t0": "5371895296581733943/134217728",
+          "t1": "5371895296581733943/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "4885709/131072",
+          "distance_from_first_entry_end_mm_exact": "4885709/131072"
+        },
+        {
+          "face": 2620,
+          "t0": "8654839281121529399/134217728",
+          "t1": "8654839281121529399/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "2015111465/33554432",
+          "distance_from_first_entry_end_mm_exact": "2015111465/33554432"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "117965/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "117965/65536",
+          "distance_from_first_entry_end_mm_exact": "11564315529016954444211/3997539144442128105472",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "11564315529016954444211/3997539144442128105472",
+          "distance_from_first_entry_end_mm_exact": "412877/131072",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "412877/131072",
+          "distance_from_first_entry_end_mm_exact": "7152038081831827378667/1998769572221064052736",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "7152038081831827378667/1998769572221064052736",
+          "distance_from_first_entry_end_mm_exact": "1420989880513894416879889/303120357383709172695040",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1420989880513894416879889/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "1264845/262144",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1264845/262144",
+          "distance_from_first_entry_end_mm_exact": "2446448210911166463/448177432155914240",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2446448210911166463/448177432155914240",
+          "distance_from_first_entry_end_mm_exact": "1817759499966566986738239/303120357383709172695040",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1817759499966566986738239/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "1843538782106743486132617/208728584131319510859776",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1843538782106743486132617/208728584131319510859776",
+          "distance_from_first_entry_end_mm_exact": "5022970016481644095413975/417457168262639021719552",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "5022970016481644095413975/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "27",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "27",
+          "distance_from_first_entry_end_mm_exact": "15099495/524288",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "15099495/524288",
+          "distance_from_first_entry_end_mm_exact": "4885709/131072",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4885709/131072",
+          "distance_from_first_entry_end_mm_exact": "2015111465/33554432",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2015111465/33554432",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "117965/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "117965/65536",
+          "distance_from_first_entry_end_mm_exact": "5022970016481644095413975/417457168262639021719552",
+          "state": "boundary",
+          "original_interval_count": 9
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "5022970016481644095413975/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "27",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "27",
+          "distance_from_first_entry_end_mm_exact": "15099495/524288",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "15099495/524288",
+          "distance_from_first_entry_end_mm_exact": "4885709/131072",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4885709/131072",
+          "distance_from_first_entry_end_mm_exact": "2015111465/33554432",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2015111465/33554432",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 25097,
+      "sample_index": 0,
+      "detail_jsonl_line_1_based": 4,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 1.8000030517578125,
+      "first_conservative_chord_squared_mm2_exact": "13915741225/4294967296",
+      "first_exit_point_faces": [
+        25062
+      ],
+      "coplanar_interval_count": 9,
+      "coplanar_contact_faces_in_ray_order": [
+        31123,
+        31121,
+        31102,
+        31101,
+        31093,
+        31083,
+        32121,
+        32130,
+        32131
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        24970,
+        32125
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 25097,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 25062,
+          "distance_from_first_entry_mm_exact": "117965/65536",
+          "directed_crossing": 1
+        },
+        {
+          "face": 24971,
+          "distance_from_first_entry_mm_exact": "27",
+          "directed_crossing": -1
+        },
+        {
+          "face": 24865,
+          "distance_from_first_entry_mm_exact": "54",
+          "directed_crossing": -1
+        },
+        {
+          "face": 24848,
+          "distance_from_first_entry_mm_exact": "29255271/524288",
+          "directed_crossing": 1
+        },
+        {
+          "face": 3175,
+          "distance_from_first_entry_mm_exact": "8424653/131072",
+          "directed_crossing": -1
+        },
+        {
+          "face": 2620,
+          "distance_from_first_entry_mm_exact": "2921081129/33554432",
+          "directed_crossing": 1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit"
+      ],
+      "original_cpp_descriptor": {
+        "face": "25097",
+        "sample": "0",
+        "x": "87.40000152587890625",
+        "y": "36.625",
+        "z": "21.08333269755045573",
+        "nx": "1",
+        "ny": "0",
+        "nz": "0",
+        "origin_x": "87.400011525878906253",
+        "origin_y": "36.625",
+        "origin_z": "21.08333269755045573",
+        "entry": "1.0000000000003061995e-05",
+        "exit": "1.800013051757812503",
+        "first_solid": "1.8000030517578124999",
+        "air_after": "25.1999969482421875",
+        "exit_x": "85.59999847412109375",
+        "exit_y": "36.625",
+        "exit_z": "21.08333269755045573",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "9",
+        "event_count": "9",
+        "raw_intersections_t_face_direction": "1.0000000000003061995e-05:25097:-1;1.800013051757812503:25062:1;27.000010000000000003:24971:-1;28.800013051757812501:24970:1;39.032310313313802085:32125:1;54.00001:24865:-1;55.800011144409179694:24848:1;64.275011525878906253:3175:-1;87.055011527070999156:2620:1;",
+        "events_t_direction": "1.0000000000003061995e-05:-1;1.800013051757812503:1;27.000010000000000003:-1;28.800013051757812501:1;39.032310313313802085:1;54.00001:-1;55.800011144409179694:1;64.275011525878906253:-1;87.055011527070999156:1;",
+        "paired_intervals": "1.0000000000003061995e-05:1.800013051757812503;27.000010000000000003:28.800013051757812501;39.032310313313802085:54.00001;55.800011144409179694:64.275011525878906253;",
+        "x_hex": "0xa.ecccdp+3",
+        "y_hex": "0x9.28p+2",
+        "z_hex": "0xa.8aaaa5555555556p+1",
+        "nx_hex": "0x8p-3",
+        "ny_hex": "0x0p+0",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xa.eccce4f8b588e37p+3",
+        "origin_y_hex": "0x9.28p+2",
+        "origin_z_hex": "0xa.8aaaa5555555556p+1",
+        "dx_hex": "-0x8p-3",
+        "dy_hex": "-0x0p+0",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 25097,
+          "t0": "1441151880759/134217728",
+          "t1": "1441151880759/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 25062,
+          "t0": "259409219493072439/134217728",
+          "t1": "259409219493072439/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "117965/65536",
+          "distance_from_first_entry_end_mm_exact": "117965/65536"
+        },
+        {
+          "face": 24971,
+          "t0": "3891111519199989303/134217728",
+          "t1": "3891111519199989303/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "27",
+          "distance_from_first_entry_end_mm_exact": "27"
+        },
+        {
+          "face": 24970,
+          "t0": "4150519297541180983/134217728",
+          "t1": "4150519297541180983/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "1887437/65536",
+          "distance_from_first_entry_end_mm_exact": "1887437/65536"
+        },
+        {
+          "face": 31123,
+          "t0": "4150519297541180983/134217728",
+          "t1": "238995824808691715450953/7445996896256",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1887437/65536",
+          "distance_from_first_entry_end_mm_exact": "119497872428954413291955/3997539144442128105472"
+        },
+        {
+          "face": 31121,
+          "t0": "238995824808691715450953/7445996896256",
+          "t1": "4345074581541260855/134217728",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "119497872428954413291955/3997539144442128105472",
+          "distance_from_first_entry_end_mm_exact": "3951821/131072"
+        },
+        {
+          "face": 31102,
+          "t0": "4345074581541260855/134217728",
+          "t1": "244475346077985116077199/7445996896256",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "3951821/131072",
+          "distance_from_first_entry_end_mm_exact": "61118816531800556802539/1998769572221064052736"
+        },
+        {
+          "face": 31101,
+          "t0": "244475346077985116077199/7445996896256",
+          "t1": "9605242561077615917665849/282302831656960",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "61118816531800556802539/1998769572221064052736",
+          "distance_from_first_entry_end_mm_exact": "9605239529874042079645969/303120357383709172695040"
+        },
+        {
+          "face": 31093,
+          "t0": "9605242561077615917665849/282302831656960",
+          "t1": "4586467411617156663/134217728",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "9605239529874042079645969/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "8342733/262144"
+        },
+        {
+          "face": 31083,
+          "t0": "4586467411617156663/134217728",
+          "t1": "1906736281799252050380681/54709159198720",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "8342733/262144",
+          "distance_from_first_entry_end_mm_exact": "14547238879120850943/448177432155914240"
+        },
+        {
+          "face": 32121,
+          "t0": "1906736281799252050380681/54709159198720",
+          "t1": "10002012180530288487524199/282302831656960",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "14547238879120850943/448177432155914240",
+          "distance_from_first_entry_end_mm_exact": "10002009149326714649504319/303120357383709172695040"
+        },
+        {
+          "face": 32130,
+          "t0": "10002012180530288487524199/282302831656960",
+          "t1": "14958425281876423186361607/388787284738048",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "10002009149326714649504319/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "7479210553652370279346569/208728584131319510859776"
+        },
+        {
+          "face": 32131,
+          "t0": "14958425281876423186361607/388787284738048",
+          "t1": "4073579433536145077377587/97196821184512",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "7479210553652370279346569/208728584131319510859776",
+          "distance_from_first_entry_end_mm_exact": "16294313559572897681841879/417457168262639021719552"
+        },
+        {
+          "face": 32125,
+          "t0": "4073579433536145077377587/97196821184512",
+          "t1": "4073579433536145077377587/97196821184512",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "16294313559572897681841879/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "16294313559572897681841879/417457168262639021719552"
+        },
+        {
+          "face": 24865,
+          "t0": "7782221597248097847/134217728",
+          "t1": "7782221597248097847/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "54",
+          "distance_from_first_entry_end_mm_exact": "54"
+        },
+        {
+          "face": 24848,
+          "t0": "8041629100711382583/134217728",
+          "t1": "8041629100711382583/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "29255271/524288",
+          "distance_from_first_entry_end_mm_exact": "29255271/524288"
+        },
+        {
+          "face": 3175,
+          "t0": "9263005374629842487/134217728",
+          "t1": "9263005374629842487/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "8424653/131072",
+          "distance_from_first_entry_end_mm_exact": "8424653/131072"
+        },
+        {
+          "face": 2620,
+          "t0": "12545949359169637943/134217728",
+          "t1": "12545949359169637943/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "2921081129/33554432",
+          "distance_from_first_entry_end_mm_exact": "2921081129/33554432"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "117965/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "117965/65536",
+          "distance_from_first_entry_end_mm_exact": "27",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "27",
+          "distance_from_first_entry_end_mm_exact": "1887437/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1887437/65536",
+          "distance_from_first_entry_end_mm_exact": "119497872428954413291955/3997539144442128105472",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "119497872428954413291955/3997539144442128105472",
+          "distance_from_first_entry_end_mm_exact": "3951821/131072",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "3951821/131072",
+          "distance_from_first_entry_end_mm_exact": "61118816531800556802539/1998769572221064052736",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "61118816531800556802539/1998769572221064052736",
+          "distance_from_first_entry_end_mm_exact": "9605239529874042079645969/303120357383709172695040",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9605239529874042079645969/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "8342733/262144",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "8342733/262144",
+          "distance_from_first_entry_end_mm_exact": "14547238879120850943/448177432155914240",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "14547238879120850943/448177432155914240",
+          "distance_from_first_entry_end_mm_exact": "10002009149326714649504319/303120357383709172695040",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "10002009149326714649504319/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "7479210553652370279346569/208728584131319510859776",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "7479210553652370279346569/208728584131319510859776",
+          "distance_from_first_entry_end_mm_exact": "16294313559572897681841879/417457168262639021719552",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "16294313559572897681841879/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "54",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "54",
+          "distance_from_first_entry_end_mm_exact": "29255271/524288",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "29255271/524288",
+          "distance_from_first_entry_end_mm_exact": "8424653/131072",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "8424653/131072",
+          "distance_from_first_entry_end_mm_exact": "2921081129/33554432",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2921081129/33554432",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "117965/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "117965/65536",
+          "distance_from_first_entry_end_mm_exact": "27",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "27",
+          "distance_from_first_entry_end_mm_exact": "1887437/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1887437/65536",
+          "distance_from_first_entry_end_mm_exact": "16294313559572897681841879/417457168262639021719552",
+          "state": "boundary",
+          "original_interval_count": 9
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "16294313559572897681841879/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "54",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "54",
+          "distance_from_first_entry_end_mm_exact": "29255271/524288",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "29255271/524288",
+          "distance_from_first_entry_end_mm_exact": "8424653/131072",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "8424653/131072",
+          "distance_from_first_entry_end_mm_exact": "2921081129/33554432",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2921081129/33554432",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 25239,
+      "sample_index": 0,
+      "detail_jsonl_line_1_based": 5,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 2.3000030517578125,
+      "first_conservative_chord_squared_mm2_exact": "22720437289/4294967296",
+      "first_exit_point_faces": [
+        25156
+      ],
+      "coplanar_interval_count": 21,
+      "coplanar_contact_faces_in_ray_order": [
+        31123,
+        31121,
+        31102,
+        31101,
+        31093,
+        31083,
+        31082,
+        31068,
+        31067,
+        31054,
+        31053,
+        31044,
+        31039,
+        31026,
+        32097,
+        32101,
+        32103,
+        32117,
+        32121,
+        32130,
+        32131
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        24970,
+        32125
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 25239,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 25156,
+          "distance_from_first_entry_mm_exact": "150733/65536",
+          "directed_crossing": 1
+        },
+        {
+          "face": 25065,
+          "distance_from_first_entry_mm_exact": "55/2",
+          "directed_crossing": -1
+        },
+        {
+          "face": 25062,
+          "distance_from_first_entry_mm_exact": "1920205/65536",
+          "directed_crossing": 1
+        },
+        {
+          "face": 24943,
+          "distance_from_first_entry_mm_exact": "109/2",
+          "directed_crossing": -1
+        },
+        {
+          "face": 24853,
+          "distance_from_first_entry_mm_exact": "163/2",
+          "directed_crossing": -1
+        },
+        {
+          "face": 24838,
+          "distance_from_first_entry_mm_exact": "43673191/524288",
+          "directed_crossing": 1
+        },
+        {
+          "face": 3180,
+          "distance_from_first_entry_mm_exact": "12029133/131072",
+          "directed_crossing": -1
+        },
+        {
+          "face": 2620,
+          "distance_from_first_entry_mm_exact": "3843828009/33554432",
+          "directed_crossing": 1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit"
+      ],
+      "original_cpp_descriptor": {
+        "face": "25239",
+        "sample": "0",
+        "x": "114.90000152587890626",
+        "y": "36.625",
+        "z": "17.558333079020182293",
+        "nx": "1",
+        "ny": "0",
+        "nz": "0",
+        "origin_x": "114.90001152587890626",
+        "origin_y": "36.625",
+        "origin_z": "17.558333079020182293",
+        "entry": "1.0000000000010000889e-05",
+        "exit": "2.30001305175781251",
+        "first_solid": "2.3000030517578125",
+        "air_after": "25.1999969482421875",
+        "exit_x": "112.59999847412109375",
+        "exit_y": "36.625",
+        "exit_z": "17.558333079020182293",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "11",
+        "event_count": "11",
+        "raw_intersections_t_face_direction": "1.0000000000010000889e-05:25239:-1;2.30001305175781251:25156:1;27.50001000000000001:25065:-1;29.30001305175781251:25062:1;54.500010000000000013:24943:-1;56.30001305175781251:24970:1;73.333262509481850717:32125:1;81.50001000000000001:24853:-1;83.300011144409179698:24838:1;91.77501152587890626:3180:-1;114.55501152707099916:2620:1;",
+        "events_t_direction": "1.0000000000010000889e-05:-1;2.30001305175781251:1;27.50001000000000001:-1;29.30001305175781251:1;54.500010000000000013:-1;56.30001305175781251:1;73.333262509481850717:1;81.50001000000000001:-1;83.300011144409179698:1;91.77501152587890626:-1;114.55501152707099916:1;",
+        "paired_intervals": "1.0000000000010000889e-05:2.30001305175781251;27.50001000000000001:29.30001305175781251;54.500010000000000013:56.30001305175781251;73.333262509481850717:81.50001000000000001;83.300011144409179698:91.77501152587890626;",
+        "x_hex": "0xe.5cccd0000000001p+3",
+        "y_hex": "0x9.28p+2",
+        "z_hex": "0x8.c77775555555556p+1",
+        "nx_hex": "0x8p-3",
+        "ny_hex": "0x0p+0",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xe.5ccce4f8b588e38p+3",
+        "origin_y_hex": "0x9.28p+2",
+        "origin_z_hex": "0x8.c77775555555556p+1",
+        "dx_hex": "-0x8p-3",
+        "dy_hex": "-0x0p+0",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 25239,
+          "t0": "180143985095/16777216",
+          "t1": "180143985095/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 25156,
+          "t0": "41433351691375047/16777216",
+          "t1": "41433351691375047/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "150733/65536",
+          "distance_from_first_entry_end_mm_exact": "150733/65536"
+        },
+        {
+          "face": 25065,
+          "t0": "495396139154739655/16777216",
+          "t1": "495396139154739655/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "55/2",
+          "distance_from_first_entry_end_mm_exact": "55/2"
+        },
+        {
+          "face": 25062,
+          "t0": "527822111447388615/16777216",
+          "t1": "527822111447388615/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "1920205/65536",
+          "distance_from_first_entry_end_mm_exact": "1920205/65536"
+        },
+        {
+          "face": 24943,
+          "t0": "981784898910753223/16777216",
+          "t1": "981784898910753223/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "109/2",
+          "distance_from_first_entry_end_mm_exact": "109/2"
+        },
+        {
+          "face": 24970,
+          "t0": "1014210871203402183/16777216",
+          "t1": "1014210871203402183/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "3689677/65536",
+          "distance_from_first_entry_end_mm_exact": "3689677/65536"
+        },
+        {
+          "face": 31123,
+          "t0": "1014210871203402183/16777216",
+          "t1": "9685720002344784561788245/160088933269504",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "3689677/65536",
+          "distance_from_first_entry_end_mm_exact": "9685718283402952449954065/171894183211011508535296"
+        },
+        {
+          "face": 31121,
+          "t0": "9685720002344784561788245/160088933269504",
+          "t1": "1038530281703412167/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "9685718283402952449954065/171894183211011508535296",
+          "distance_from_first_entry_end_mm_exact": "7556301/131072"
+        },
+        {
+          "face": 31102,
+          "t0": "1038530281703412167/16777216",
+          "t1": "4956432902664994047419547/80044466634752",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "7556301/131072",
+          "distance_from_first_entry_end_mm_exact": "4956432043194077991502457/85947091605505754267648"
+        },
+        {
+          "face": 31101,
+          "t0": "4956432902664994047419547/80044466634752",
+          "t1": "17494930678973903987680849/282302831656960",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4956432043194077991502457/85947091605505754267648",
+          "distance_from_first_entry_end_mm_exact": "17494927647770330147557649/303120357383709172695040"
+        },
+        {
+          "face": 31093,
+          "t0": "17494930678973903987680849/282302831656960",
+          "t1": "1068704385462899143/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "17494927647770330147557649/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "15551693/262144"
+        },
+        {
+          "face": 31083,
+          "t0": "1068704385462899143/16777216",
+          "t1": "604816831944056107907301/9483069685760",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "15551693/262144",
+          "distance_from_first_entry_end_mm_exact": "36915083625510906539/621482454925967360"
+        },
+        {
+          "face": 31082,
+          "t0": "604816831944056107907301/9483069685760",
+          "t1": "1095725983227122119/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "36915083625510906539/621482454925967360",
+          "distance_from_first_entry_end_mm_exact": "15944909/262144"
+        },
+        {
+          "face": 31068,
+          "t0": "1095725983227122119/16777216",
+          "t1": "10479556904693634671950581/160118930931712",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "15944909/262144",
+          "distance_from_first_entry_end_mm_exact": "10479555185429705114766541/171926392955546462322688"
+        },
+        {
+          "face": 31067,
+          "t0": "10479556904693634671950581/160118930931712",
+          "t1": "1129052661701349831/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "10479555185429705114766541/171926392955546462322688",
+          "distance_from_first_entry_end_mm_exact": "4107469/65536"
+        },
+        {
+          "face": 31054,
+          "t0": "1129052661701349831/16777216",
+          "t1": "74080036707101820092881/1098018455552",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4107469/65536",
+          "distance_from_first_entry_end_mm_exact": "18085943583305280171/287838950012223488"
+        },
+        {
+          "face": 31053,
+          "t0": "74080036707101820092881/1098018455552",
+          "t1": "1156074259465572807/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "18085943583305280171/287838950012223488",
+          "distance_from_first_entry_end_mm_exact": "4205773/65536"
+        },
+        {
+          "face": 31044,
+          "t0": "1156074259465572807/16777216",
+          "t1": "1318068144738647493260441/18967515103232",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4205773/65536",
+          "distance_from_first_entry_end_mm_exact": "1318067941076504856138001/20366214263691875975168"
+        },
+        {
+          "face": 31039,
+          "t0": "1318068144738647493260441/18967515103232",
+          "t1": "1189400869220323783/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1318067941076504856138001/20366214263691875975168",
+          "distance_from_first_entry_end_mm_exact": "8654029/131072"
+        },
+        {
+          "face": 31026,
+          "t0": "1189400869220323783/16777216",
+          "t1": "2719281467596261740591457/37935030206464",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "8654029/131072",
+          "distance_from_first_entry_end_mm_exact": "2719281060271976466346577/40732428527383751950336"
+        },
+        {
+          "face": 32097,
+          "t0": "2719281467596261740591457/37935030206464",
+          "t1": "1454199595103685765468191/18967515103232",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2719281060271976466346577/40732428527383751950336",
+          "distance_from_first_entry_end_mm_exact": "1454199391441543128345751/20366214263691875975168"
+        },
+        {
+          "face": 32101,
+          "t0": "1454199595103685765468191/18967515103232",
+          "t1": "2055356811162185688275291/26352442933248",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1454199391441543128345751/20366214263691875975168",
+          "distance_from_first_entry_end_mm_exact": "2055356528204984267976131/28295720142001617764352"
+        },
+        {
+          "face": 32103,
+          "t0": "2055356811162185688275291/26352442933248",
+          "t1": "3132320160986988918024525/40029732732928",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2055356528204984267976131/28295720142001617764352",
+          "distance_from_first_entry_end_mm_exact": "3132319731171006528728515/42981598238886615580672"
+        },
+        {
+          "face": 32117,
+          "t0": "3132320160986988918024525/40029732732928",
+          "t1": "5947436217584271339951421/75864557486080",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "3132319731171006528728515/42981598238886615580672",
+          "distance_from_first_entry_end_mm_exact": "5947435402994788018572821/81458948332056393809920"
+        },
+        {
+          "face": 32121,
+          "t0": "5947436217584271339951421/75864557486080",
+          "t1": "22150162052052026938851199/282302831656960",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "5947435402994788018572821/81458948332056393809920",
+          "distance_from_first_entry_end_mm_exact": "22150159020848453098727999/303120357383709172695040"
+        },
+        {
+          "face": 32130,
+          "t0": "22150162052052026938851199/282302831656960",
+          "t1": "15278035407712714947194909/194393642369024",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "22150159020848453098727999/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "15278033320426873631912329/208728584131319510859776"
+        },
+        {
+          "face": 32131,
+          "t0": "15278035407712714947194909/194393642369024",
+          "t1": "30613496106669042873441279/388787284738048",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "15278033320426873631912329/208728584131319510859776",
+          "distance_from_first_entry_end_mm_exact": "30613491932097360242876119/417457168262639021719552"
+        },
+        {
+          "face": 32125,
+          "t0": "30613496106669042873441279/388787284738048",
+          "t1": "30613496106669042873441279/388787284738048",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "30613491932097360242876119/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "30613491932097360242876119/417457168262639021719552"
+        },
+        {
+          "face": 24853,
+          "t0": "1468173658666766791/16777216",
+          "t1": "1468173658666766791/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "163/2",
+          "distance_from_first_entry_end_mm_exact": "163/2"
+        },
+        {
+          "face": 24838,
+          "t0": "1500599596599677383/16777216",
+          "t1": "1500599596599677383/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "43673191/524288",
+          "distance_from_first_entry_end_mm_exact": "43673191/524288"
+        },
+        {
+          "face": 3180,
+          "t0": "1653271630839484871/16777216",
+          "t1": "1653271630839484871/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "12029133/131072",
+          "distance_from_first_entry_end_mm_exact": "12029133/131072"
+        },
+        {
+          "face": 2620,
+          "t0": "2063639628906959303/16777216",
+          "t1": "2063639628906959303/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "3843828009/33554432",
+          "distance_from_first_entry_end_mm_exact": "3843828009/33554432"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "150733/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "150733/65536",
+          "distance_from_first_entry_end_mm_exact": "55/2",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "55/2",
+          "distance_from_first_entry_end_mm_exact": "1920205/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1920205/65536",
+          "distance_from_first_entry_end_mm_exact": "109/2",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "109/2",
+          "distance_from_first_entry_end_mm_exact": "3689677/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "3689677/65536",
+          "distance_from_first_entry_end_mm_exact": "9685718283402952449954065/171894183211011508535296",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9685718283402952449954065/171894183211011508535296",
+          "distance_from_first_entry_end_mm_exact": "7556301/131072",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "7556301/131072",
+          "distance_from_first_entry_end_mm_exact": "4956432043194077991502457/85947091605505754267648",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4956432043194077991502457/85947091605505754267648",
+          "distance_from_first_entry_end_mm_exact": "17494927647770330147557649/303120357383709172695040",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "17494927647770330147557649/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "15551693/262144",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "15551693/262144",
+          "distance_from_first_entry_end_mm_exact": "36915083625510906539/621482454925967360",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "36915083625510906539/621482454925967360",
+          "distance_from_first_entry_end_mm_exact": "15944909/262144",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "15944909/262144",
+          "distance_from_first_entry_end_mm_exact": "10479555185429705114766541/171926392955546462322688",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "10479555185429705114766541/171926392955546462322688",
+          "distance_from_first_entry_end_mm_exact": "4107469/65536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4107469/65536",
+          "distance_from_first_entry_end_mm_exact": "18085943583305280171/287838950012223488",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "18085943583305280171/287838950012223488",
+          "distance_from_first_entry_end_mm_exact": "4205773/65536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4205773/65536",
+          "distance_from_first_entry_end_mm_exact": "1318067941076504856138001/20366214263691875975168",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1318067941076504856138001/20366214263691875975168",
+          "distance_from_first_entry_end_mm_exact": "8654029/131072",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "8654029/131072",
+          "distance_from_first_entry_end_mm_exact": "2719281060271976466346577/40732428527383751950336",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2719281060271976466346577/40732428527383751950336",
+          "distance_from_first_entry_end_mm_exact": "1454199391441543128345751/20366214263691875975168",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1454199391441543128345751/20366214263691875975168",
+          "distance_from_first_entry_end_mm_exact": "2055356528204984267976131/28295720142001617764352",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2055356528204984267976131/28295720142001617764352",
+          "distance_from_first_entry_end_mm_exact": "3132319731171006528728515/42981598238886615580672",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "3132319731171006528728515/42981598238886615580672",
+          "distance_from_first_entry_end_mm_exact": "5947435402994788018572821/81458948332056393809920",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "5947435402994788018572821/81458948332056393809920",
+          "distance_from_first_entry_end_mm_exact": "22150159020848453098727999/303120357383709172695040",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "22150159020848453098727999/303120357383709172695040",
+          "distance_from_first_entry_end_mm_exact": "15278033320426873631912329/208728584131319510859776",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "15278033320426873631912329/208728584131319510859776",
+          "distance_from_first_entry_end_mm_exact": "30613491932097360242876119/417457168262639021719552",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "30613491932097360242876119/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "163/2",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "163/2",
+          "distance_from_first_entry_end_mm_exact": "43673191/524288",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "43673191/524288",
+          "distance_from_first_entry_end_mm_exact": "12029133/131072",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "12029133/131072",
+          "distance_from_first_entry_end_mm_exact": "3843828009/33554432",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "3843828009/33554432",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "150733/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "150733/65536",
+          "distance_from_first_entry_end_mm_exact": "55/2",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "55/2",
+          "distance_from_first_entry_end_mm_exact": "1920205/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1920205/65536",
+          "distance_from_first_entry_end_mm_exact": "109/2",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "109/2",
+          "distance_from_first_entry_end_mm_exact": "3689677/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "3689677/65536",
+          "distance_from_first_entry_end_mm_exact": "30613491932097360242876119/417457168262639021719552",
+          "state": "boundary",
+          "original_interval_count": 21
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "30613491932097360242876119/417457168262639021719552",
+          "distance_from_first_entry_end_mm_exact": "163/2",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "163/2",
+          "distance_from_first_entry_end_mm_exact": "43673191/524288",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "43673191/524288",
+          "distance_from_first_entry_end_mm_exact": "12029133/131072",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "12029133/131072",
+          "distance_from_first_entry_end_mm_exact": "3843828009/33554432",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "3843828009/33554432",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 30810,
+      "sample_index": 0,
+      "detail_jsonl_line_1_based": 6,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 5.875,
+      "first_conservative_chord_squared_mm2_exact": "2209/64",
+      "first_exit_point_faces": [
+        30804
+      ],
+      "coplanar_interval_count": 2,
+      "coplanar_contact_faces_in_ray_order": [
+        1021,
+        1023
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        1022,
+        517
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 30810,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 30804,
+          "distance_from_first_entry_mm_exact": "47/8",
+          "directed_crossing": 1
+        },
+        {
+          "face": 1513,
+          "distance_from_first_entry_mm_exact": "89",
+          "directed_crossing": -1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit"
+      ],
+      "original_cpp_descriptor": {
+        "face": "30810",
+        "sample": "0",
+        "x": "112.125",
+        "y": "69.625",
+        "z": "6.4833332697550455732",
+        "nx": "1",
+        "ny": "0",
+        "nz": "0",
+        "origin_x": "112.12501",
+        "origin_y": "69.625",
+        "origin_z": "6.4833332697550455732",
+        "entry": "1.0000000000003061995e-05",
+        "exit": "5.8750100000000000031",
+        "first_solid": "5.875",
+        "air_after": "83.125000000000000007",
+        "exit_x": "106.25",
+        "exit_y": "69.625",
+        "exit_z": "6.4833332697550455732",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "5",
+        "event_count": "5",
+        "raw_intersections_t_face_direction": "1.0000000000003061995e-05:30810:-1;5.8750100000000000031:30804:1;89.00001000000000001:1513:-1;110.87501:1022:1;111.50001:517:1;",
+        "events_t_direction": "1.0000000000003061995e-05:-1;5.8750100000000000031:1;89.00001000000000001:-1;110.87501:1;111.50001:1;",
+        "paired_intervals": "1.0000000000003061995e-05:5.8750100000000000031;89.00001000000000001:110.87501;",
+        "x_hex": "0xe.04p+3",
+        "y_hex": "0x8.b4p+3",
+        "z_hex": "0xc.f77775555555556p-1",
+        "nx_hex": "0x8p-3",
+        "ny_hex": "0x0p+0",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xe.040014f8b588e37p+3",
+        "origin_y_hex": "0x8.b4p+3",
+        "origin_z_hex": "0xc.f77775555555556p-1",
+        "dx_hex": "-0x8p-3",
+        "dy_hex": "-0x0p+0",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 30810,
+          "t0": "1441151880759/134217728",
+          "t1": "1441151880759/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 30804,
+          "t0": "846678171097534007/134217728",
+          "t1": "846678171097534007/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "47/8",
+          "distance_from_first_entry_end_mm_exact": "47/8"
+        },
+        {
+          "face": 1513,
+          "t0": "12826253179903053367/134217728",
+          "t1": "12826253179903053367/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "89",
+          "distance_from_first_entry_end_mm_exact": "89"
+        },
+        {
+          "face": 1022,
+          "t0": "15978772919062400567/134217728",
+          "t1": "15978772919062400567/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "887/8",
+          "distance_from_first_entry_end_mm_exact": "887/8"
+        },
+        {
+          "face": 1021,
+          "t0": "15978772919062400567/134217728",
+          "t1": "110703768178334363754334709/925348959092736",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "887/8",
+          "distance_from_first_entry_end_mm_exact": "6756821181791721925289/60643669383101546496"
+        },
+        {
+          "face": 1023,
+          "t0": "110703768178334363754334709/925348959092736",
+          "t1": "16068844911609810487/134217728",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "6756821181791721925289/60643669383101546496",
+          "distance_from_first_entry_end_mm_exact": "223/2"
+        },
+        {
+          "face": 517,
+          "t0": "16068844911609810487/134217728",
+          "t1": "16068844911609810487/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "223/2",
+          "distance_from_first_entry_end_mm_exact": "223/2"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "47/8",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "47/8",
+          "distance_from_first_entry_end_mm_exact": "89",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "89",
+          "distance_from_first_entry_end_mm_exact": "887/8",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "887/8",
+          "distance_from_first_entry_end_mm_exact": "6756821181791721925289/60643669383101546496",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6756821181791721925289/60643669383101546496",
+          "distance_from_first_entry_end_mm_exact": "223/2",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "223/2",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "47/8",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "47/8",
+          "distance_from_first_entry_end_mm_exact": "89",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "89",
+          "distance_from_first_entry_end_mm_exact": "887/8",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "887/8",
+          "distance_from_first_entry_end_mm_exact": "223/2",
+          "state": "boundary",
+          "original_interval_count": 2
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "223/2",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 31053,
+      "sample_index": 0,
+      "detail_jsonl_line_1_based": 7,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 5.625,
+      "first_conservative_chord_squared_mm2_exact": "2025/64",
+      "first_exit_point_faces": [
+        31057
+      ],
+      "coplanar_interval_count": 2,
+      "coplanar_contact_faces_in_ray_order": [
+        3009,
+        3007
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        2991,
+        3010
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 31053,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 31057,
+          "distance_from_first_entry_mm_exact": "45/8",
+          "directed_crossing": 1
+        },
+        {
+          "face": 2292,
+          "distance_from_first_entry_mm_exact": "647/8",
+          "directed_crossing": -1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit"
+      ],
+      "original_cpp_descriptor": {
+        "face": "31053",
+        "sample": "0",
+        "x": "51.22499847412109375",
+        "y": "36.625",
+        "z": "17.899320602416992188",
+        "nx": "0",
+        "ny": "-1",
+        "nz": "0",
+        "origin_x": "51.22499847412109375",
+        "origin_y": "36.62499",
+        "origin_z": "17.899320602416992188",
+        "entry": "9.9999999999995925481e-06",
+        "exit": "5.6250099999999999996",
+        "first_solid": "5.625",
+        "air_after": "75.25",
+        "exit_x": "51.22499847412109375",
+        "exit_y": "42.25",
+        "exit_z": "17.899320602416992188",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "5",
+        "event_count": "5",
+        "raw_intersections_t_face_direction": "9.9999999999995925481e-06:31053:-1;5.6250099999999999996:31057:1;80.875009999999999996:2292:-1;104.0800118310546875:2991:1;104.70501183105468749:3010:1;",
+        "events_t_direction": "9.9999999999995925481e-06:-1;5.6250099999999999996:1;80.875009999999999996:-1;104.0800118310546875:1;104.70501183105468749:1;",
+        "paired_intervals": "9.9999999999995925481e-06:5.6250099999999999996;80.875009999999999996:104.0800118310546875;",
+        "x_hex": "0xc.ce666p+2",
+        "y_hex": "0x9.28p+2",
+        "z_hex": "0x8.f31cfp+1",
+        "nx_hex": "0x0p+0",
+        "ny_hex": "-0x8p-3",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xc.ce666p+2",
+        "origin_y_hex": "0x9.27ffd60e94ee393p+2",
+        "origin_z_hex": "0x8.f31cfp+1",
+        "dx_hex": "-0x0p+0",
+        "dy_hex": "0x8p-3",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 31053,
+          "t0": "2882303761517/268435456",
+          "t1": "2882303761517/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 31057,
+          "t0": "1621298748157140077/268435456",
+          "t1": "1621298748157140077/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "45/8",
+          "distance_from_first_entry_end_mm_exact": "45/8"
+        },
+        {
+          "face": 2292,
+          "t0": "23310634553573448813/268435456",
+          "t1": "23310634553573448813/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "647/8",
+          "distance_from_first_entry_end_mm_exact": "647/8"
+        },
+        {
+          "face": 2991,
+          "t0": "29999020959939501165/268435456",
+          "t1": "29999020959939501165/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "6820987/65536",
+          "distance_from_first_entry_end_mm_exact": "6820987/65536"
+        },
+        {
+          "face": 3009,
+          "t0": "29999020959939501165/268435456",
+          "t1": "6529072748209794292670525/58347399151616",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "6820987/65536",
+          "distance_from_first_entry_end_mm_exact": "1484539125547/14244970496"
+        },
+        {
+          "face": 3007,
+          "t0": "6529072748209794292670525/58347399151616",
+          "t1": "30179164945034321005/268435456",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1484539125547/14244970496",
+          "distance_from_first_entry_end_mm_exact": "6861947/65536"
+        },
+        {
+          "face": 3010,
+          "t0": "30179164945034321005/268435456",
+          "t1": "30179164945034321005/268435456",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "6861947/65536",
+          "distance_from_first_entry_end_mm_exact": "6861947/65536"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-2882303761517/288230376151711744",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "45/8",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "45/8",
+          "distance_from_first_entry_end_mm_exact": "647/8",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "647/8",
+          "distance_from_first_entry_end_mm_exact": "6820987/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6820987/65536",
+          "distance_from_first_entry_end_mm_exact": "1484539125547/14244970496",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1484539125547/14244970496",
+          "distance_from_first_entry_end_mm_exact": "6861947/65536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6861947/65536",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-2882303761517/288230376151711744",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "45/8",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "45/8",
+          "distance_from_first_entry_end_mm_exact": "647/8",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "647/8",
+          "distance_from_first_entry_end_mm_exact": "6820987/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6820987/65536",
+          "distance_from_first_entry_end_mm_exact": "6861947/65536",
+          "state": "boundary",
+          "original_interval_count": 2
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6861947/65536",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 684,
+      "sample_index": 1,
+      "detail_jsonl_line_1_based": 8,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 22.925003051757812,
+      "first_conservative_chord_squared_mm2_exact": "2257244822569/4294967296",
+      "first_exit_point_faces": [
+        682
+      ],
+      "coplanar_interval_count": 36,
+      "coplanar_contact_faces_in_ray_order": [
+        646,
+        638,
+        637,
+        636,
+        635,
+        634,
+        633,
+        632,
+        631,
+        630,
+        614,
+        612,
+        611,
+        610,
+        609,
+        608,
+        607,
+        606,
+        605,
+        604,
+        603,
+        613,
+        537,
+        536,
+        535,
+        534,
+        532,
+        531,
+        530,
+        529,
+        528,
+        533,
+        524,
+        476,
+        478,
+        477
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        682,
+        474
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 684,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit"
+      ],
+      "original_cpp_descriptor": {
+        "face": "684",
+        "sample": "1",
+        "x": "23.75",
+        "y": "140.42500305175781251",
+        "z": "3.7139999532699584962",
+        "nx": "0",
+        "ny": "1",
+        "nz": "0",
+        "origin_x": "23.75",
+        "origin_y": "140.42501305175781251",
+        "origin_z": "3.7139999532699584962",
+        "entry": "1.0000000000010000887e-05",
+        "exit": "22.925013051757812508",
+        "first_solid": "22.925003051757812498",
+        "air_after": "116.875",
+        "exit_x": "23.75",
+        "exit_y": "117.5",
+        "exit_z": "3.7139999532699584962",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "3",
+        "event_count": "3",
+        "raw_intersections_t_face_direction": "1.0000000000010000887e-05:684:-1;22.925013051757812508:682:1;139.80001305175781251:474:1;",
+        "events_t_direction": "1.0000000000010000887e-05:-1;22.925013051757812508:1;139.80001305175781251:1;",
+        "paired_intervals": "1.0000000000010000887e-05:22.925013051757812508;",
+        "x_hex": "0xb.ep+1",
+        "y_hex": "0x8.c6ccd0000000001p+4",
+        "z_hex": "0xe.db22cdc28f5c29p-2",
+        "nx_hex": "0x0p+0",
+        "ny_hex": "0x8p-3",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xb.ep+1",
+        "origin_y_hex": "0x8.c6ccda7c5ac471cp+4",
+        "origin_z_hex": "0xe.db22cdc28f5c29p-2",
+        "dx_hex": "-0x0p+0",
+        "dy_hex": "-0x8p-3",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 684,
+          "t0": "180143985095/16777216",
+          "t1": "180143985095/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 682,
+          "t0": "412980320949440967/16777216",
+          "t1": "412980320949440967/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "1502413/65536"
+        },
+        {
+          "face": 646,
+          "t0": "412980320949440967/16777216",
+          "t1": "3408294457508831700275291/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "104012847416090485067/4496393977917865984"
+        },
+        {
+          "face": 638,
+          "t0": "3408294457508831700275291/137219054501888",
+          "t1": "3418166088149621368774321/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "104012847416090485067/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1709082307385621341587243/73668918934206316281856"
+        },
+        {
+          "face": 637,
+          "t0": "3418166088149621368774321/137219054501888",
+          "t1": "3421996880926988053070341/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1709082307385621341587243/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1710997703774304683735253/73668918934206316281856"
+        },
+        {
+          "face": 636,
+          "t0": "3421996880926988053070341/137219054501888",
+          "t1": "3431426493557778505752241/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1710997703774304683735253/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1715712510089699910076203/73668918934206316281856"
+        },
+        {
+          "face": 635,
+          "t0": "3431426493557778505752241/137219054501888",
+          "t1": "3435257286335145190048261/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1715712510089699910076203/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1717627906478383252224213/73668918934206316281856"
+        },
+        {
+          "face": 634,
+          "t0": "3435257286335145190048261/137219054501888",
+          "t1": "3446602295354618984878171/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1717627906478383252224213/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "105181909850349130227/4496393977917865984"
+        },
+        {
+          "face": 633,
+          "t0": "3446602295354618984878171/137219054501888",
+          "t1": "3456179254816065806028891/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "105181909850349130227/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "105474175458913791517/4496393977917865984"
+        },
+        {
+          "face": 632,
+          "t0": "3456179254816065806028891/137219054501888",
+          "t1": "3466050885456855474527921/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "105474175458913791517/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1733024706039238394464043/73668918934206316281856"
+        },
+        {
+          "face": 631,
+          "t0": "3466050885456855474527921/137219054501888",
+          "t1": "3469881678234222158823941/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1733024706039238394464043/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1734940102427921736612053/73668918934206316281856"
+        },
+        {
+          "face": 630,
+          "t0": "3469881678234222158823941/137219054501888",
+          "t1": "3479311290865012611505841/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1734940102427921736612053/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1739654908743316962953003/73668918934206316281856"
+        },
+        {
+          "face": 614,
+          "t0": "3479311290865012611505841/137219054501888",
+          "t1": "3483142083642379295801861/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1739654908743316962953003/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1741570305132000305101013/73668918934206316281856"
+        },
+        {
+          "face": 612,
+          "t0": "3483142083642379295801861/137219054501888",
+          "t1": "3494487092661853090631771/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1741570305132000305101013/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "106643237893172436677/4496393977917865984"
+        },
+        {
+          "face": 611,
+          "t0": "3494487092661853090631771/137219054501888",
+          "t1": "3504064052123299911782491/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "106643237893172436677/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "106935503501737097967/4496393977917865984"
+        },
+        {
+          "face": 610,
+          "t0": "3504064052123299911782491/137219054501888",
+          "t1": "3513935682764089580281521/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "106935503501737097967/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1756967104692855447340843/73668918934206316281856"
+        },
+        {
+          "face": 609,
+          "t0": "3513935682764089580281521/137219054501888",
+          "t1": "3517766475541456264577541/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1756967104692855447340843/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1758882501081538789488853/73668918934206316281856"
+        },
+        {
+          "face": 608,
+          "t0": "3517766475541456264577541/137219054501888",
+          "t1": "3527196088172246717259441/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1758882501081538789488853/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1763597307396934015829803/73668918934206316281856"
+        },
+        {
+          "face": 607,
+          "t0": "3527196088172246717259441/137219054501888",
+          "t1": "3531026880949613401555461/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1763597307396934015829803/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1765512703785617357977813/73668918934206316281856"
+        },
+        {
+          "face": 606,
+          "t0": "3531026880949613401555461/137219054501888",
+          "t1": "3542371889969087196385371/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1765512703785617357977813/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "108104565935995743127/4496393977917865984"
+        },
+        {
+          "face": 605,
+          "t0": "3542371889969087196385371/137219054501888",
+          "t1": "3551948849430534017536091/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "108104565935995743127/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "108396831544560404417/4496393977917865984"
+        },
+        {
+          "face": 604,
+          "t0": "3551948849430534017536091/137219054501888",
+          "t1": "3561820480071323686035121/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "108396831544560404417/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1780909503346472500217643/73668918934206316281856"
+        },
+        {
+          "face": 603,
+          "t0": "3561820480071323686035121/137219054501888",
+          "t1": "3565651272848690370331141/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1780909503346472500217643/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1782824899735155842365653/73668918934206316281856"
+        },
+        {
+          "face": 613,
+          "t0": "3565651272848690370331141/137219054501888",
+          "t1": "4818954884791970672703511/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1782824899735155842365653/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1204738352853397996775919/36834459467103158140928"
+        },
+        {
+          "face": 537,
+          "t0": "4818954884791970672703511/137219054501888",
+          "t1": "4828384497422761125385411/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1204738352853397996775919/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "603547878005547804973197/18417229733551579070464"
+        },
+        {
+          "face": 536,
+          "t0": "4828384497422761125385411/137219054501888",
+          "t1": "4832215290200127809681431/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "603547878005547804973197/18417229733551579070464",
+          "distance_from_first_entry_end_mm_exact": "1208053454205437281020399/36834459467103158140928"
+        },
+        {
+          "face": 535,
+          "t0": "4832215290200127809681431/137219054501888",
+          "t1": "4843560299219601604511341/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1208053454205437281020399/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "2421779412920611459455753/73668918934206316281856"
+        },
+        {
+          "face": 534,
+          "t0": "4843560299219601604511341/137219054501888",
+          "t1": "4853137258681048425662061/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2421779412920611459455753/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "2426567892651334870031113/73668918934206316281856"
+        },
+        {
+          "face": 532,
+          "t0": "4853137258681048425662061/137219054501888",
+          "t1": "4863008889321838094161091/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2426567892651334870031113/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "607875926992932426070157/18417229733551579070464"
+        },
+        {
+          "face": 531,
+          "t0": "4863008889321838094161091/137219054501888",
+          "t1": "4866839682099204778457111/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "607875926992932426070157/18417229733551579070464",
+          "distance_from_first_entry_end_mm_exact": "1216709552180206523214319/36834459467103158140928"
+        },
+        {
+          "face": 530,
+          "t0": "4866839682099204778457111/137219054501888",
+          "t1": "4876269294729995231139011/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1216709552180206523214319/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "609533477668952068192397/18417229733551579070464"
+        },
+        {
+          "face": 529,
+          "t0": "4876269294729995231139011/137219054501888",
+          "t1": "4880100087507361915435031/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "609533477668952068192397/18417229733551579070464",
+          "distance_from_first_entry_end_mm_exact": "1220024653532245807458799/36834459467103158140928"
+        },
+        {
+          "face": 528,
+          "t0": "4880100087507361915435031/137219054501888",
+          "t1": "4891445096526835710264941/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1220024653532245807458799/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "2445721811574228512332553/73668918934206316281856"
+        },
+        {
+          "face": 533,
+          "t0": "4891445096526835710264941/137219054501888",
+          "t1": "12360538428845678270882027/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2445721811574228512332553/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "772533559716706224080137/9208614866775789535232"
+        },
+        {
+          "face": 524,
+          "t0": "12360538428845678270882027/137219054501888",
+          "t1": "15400135267741936195466717/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "772533559716706224080137/9208614866775789535232",
+          "distance_from_first_entry_end_mm_exact": "7700066897181778754933441/73668918934206316281856"
+        },
+        {
+          "face": 476,
+          "t0": "15400135267741936195466717/137219054501888",
+          "t1": "20513849089436867308933211/137219054501888",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "7700066897181778754933441/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "156508236816852482783/1124098494479466496"
+        },
+        {
+          "face": 478,
+          "t0": "20513849089436867308933211/137219054501888",
+          "t1": "89965508527632225826672367/599893534048256",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "156508236816852482783/1124098494479466496",
+          "distance_from_first_entry_end_mm_exact": "686382309618564233951/4914327830923313152"
+        },
+        {
+          "face": 477,
+          "t0": "89965508527632225826672367/599893534048256",
+          "t1": "2518413146745147847/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "686382309618564233951/4914327830923313152",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536"
+        },
+        {
+          "face": 474,
+          "t0": "2518413146745147847/16777216",
+          "t1": "2518413146745147847/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "9161933/65536",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "1502413/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "104012847416090485067/4496393977917865984",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "104012847416090485067/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1709082307385621341587243/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1709082307385621341587243/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1710997703774304683735253/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1710997703774304683735253/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1715712510089699910076203/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1715712510089699910076203/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1717627906478383252224213/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1717627906478383252224213/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "105181909850349130227/4496393977917865984",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "105181909850349130227/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "105474175458913791517/4496393977917865984",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "105474175458913791517/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1733024706039238394464043/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1733024706039238394464043/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1734940102427921736612053/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1734940102427921736612053/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1739654908743316962953003/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1739654908743316962953003/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1741570305132000305101013/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1741570305132000305101013/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "106643237893172436677/4496393977917865984",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "106643237893172436677/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "106935503501737097967/4496393977917865984",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "106935503501737097967/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1756967104692855447340843/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1756967104692855447340843/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1758882501081538789488853/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1758882501081538789488853/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1763597307396934015829803/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1763597307396934015829803/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1765512703785617357977813/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1765512703785617357977813/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "108104565935995743127/4496393977917865984",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "108104565935995743127/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "108396831544560404417/4496393977917865984",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "108396831544560404417/4496393977917865984",
+          "distance_from_first_entry_end_mm_exact": "1780909503346472500217643/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1780909503346472500217643/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1782824899735155842365653/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1782824899735155842365653/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "1204738352853397996775919/36834459467103158140928",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1204738352853397996775919/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "603547878005547804973197/18417229733551579070464",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "603547878005547804973197/18417229733551579070464",
+          "distance_from_first_entry_end_mm_exact": "1208053454205437281020399/36834459467103158140928",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1208053454205437281020399/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "2421779412920611459455753/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2421779412920611459455753/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "2426567892651334870031113/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2426567892651334870031113/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "607875926992932426070157/18417229733551579070464",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "607875926992932426070157/18417229733551579070464",
+          "distance_from_first_entry_end_mm_exact": "1216709552180206523214319/36834459467103158140928",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1216709552180206523214319/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "609533477668952068192397/18417229733551579070464",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "609533477668952068192397/18417229733551579070464",
+          "distance_from_first_entry_end_mm_exact": "1220024653532245807458799/36834459467103158140928",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1220024653532245807458799/36834459467103158140928",
+          "distance_from_first_entry_end_mm_exact": "2445721811574228512332553/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2445721811574228512332553/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "772533559716706224080137/9208614866775789535232",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "772533559716706224080137/9208614866775789535232",
+          "distance_from_first_entry_end_mm_exact": "7700066897181778754933441/73668918934206316281856",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "7700066897181778754933441/73668918934206316281856",
+          "distance_from_first_entry_end_mm_exact": "156508236816852482783/1124098494479466496",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "156508236816852482783/1124098494479466496",
+          "distance_from_first_entry_end_mm_exact": "686382309618564233951/4914327830923313152",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "686382309618564233951/4914327830923313152",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9161933/65536",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "1502413/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536",
+          "state": "boundary",
+          "original_interval_count": 36
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9161933/65536",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 689,
+      "sample_index": 1,
+      "detail_jsonl_line_1_based": 9,
+      "category": "positive_length_boundary_intervals",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 22.925003051757812,
+      "first_conservative_chord_squared_mm2_exact": "2257244822569/4294967296",
+      "first_exit_point_faces": [
+        682
+      ],
+      "coplanar_interval_count": 36,
+      "coplanar_contact_faces_in_ray_order": [
+        646,
+        647,
+        650,
+        649,
+        648,
+        645,
+        644,
+        643,
+        642,
+        640,
+        639,
+        629,
+        628,
+        627,
+        626,
+        625,
+        624,
+        623,
+        620,
+        619,
+        641,
+        618,
+        617,
+        549,
+        548,
+        547,
+        546,
+        544,
+        543,
+        542,
+        540,
+        539,
+        545,
+        525,
+        479,
+        477
+      ],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        682,
+        474
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 689,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit"
+      ],
+      "original_cpp_descriptor": {
+        "face": "689",
+        "sample": "1",
+        "x": "23.75",
+        "y": "140.42500305175781251",
+        "z": "13.498499622344970704",
+        "nx": "0",
+        "ny": "1",
+        "nz": "0",
+        "origin_x": "23.75",
+        "origin_y": "140.42501305175781251",
+        "origin_z": "13.498499622344970704",
+        "entry": "1.0000000000010000887e-05",
+        "exit": "22.925013051757812508",
+        "first_solid": "22.925003051757812498",
+        "air_after": "116.875",
+        "exit_x": "23.75",
+        "exit_y": "117.5",
+        "exit_z": "13.498499622344970704",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "3",
+        "event_count": "3",
+        "raw_intersections_t_face_direction": "1.0000000000010000887e-05:689:-1;22.925013051757812508:682:1;139.80001305175781251:474:1;",
+        "events_t_direction": "1.0000000000010000887e-05:-1;22.925013051757812508:1;139.80001305175781251:1;",
+        "paired_intervals": "1.0000000000010000887e-05:22.925013051757812508;",
+        "x_hex": "0xb.ep+1",
+        "y_hex": "0x8.c6ccd0000000001p+4",
+        "z_hex": "0xd.7f9dabd70a3d70bp+0",
+        "nx_hex": "0x0p+0",
+        "ny_hex": "0x8p-3",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0xb.ep+1",
+        "origin_y_hex": "0x8.c6ccda7c5ac471cp+4",
+        "origin_z_hex": "0xd.7f9dabd70a3d70bp+0",
+        "dx_hex": "-0x0p+0",
+        "dy_hex": "-0x8p-3",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 689,
+          "t0": "180143985095/16777216",
+          "t1": "180143985095/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 682,
+          "t0": "412980320949440967/16777216",
+          "t1": "412980320949440967/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "1502413/65536"
+        },
+        {
+          "face": 646,
+          "t0": "412980320949440967/16777216",
+          "t1": "1713109577728434982218661/69489131520000",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "1672957843354069059439/72864635572715520000"
+        },
+        {
+          "face": 647,
+          "t0": "1713109577728434982218661/69489131520000",
+          "t1": "578972999447216504285093/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1672957843354069059439/72864635572715520000",
+          "distance_from_first_entry_end_mm_exact": "282701537676674287471/12220966189613973504"
+        },
+        {
+          "face": 650,
+          "t0": "578972999447216504285093/23309643153408",
+          "t1": "4645199286240641507046647/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "282701537676674287471/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "4645197283957540998690767/200228310050635341889536"
+        },
+        {
+          "face": 649,
+          "t0": "4645199286240641507046647/186477145227264",
+          "t1": "4650405234522924215420249/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4645197283957540998690767/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4650403232239823707064369/200228310050635341889536"
+        },
+        {
+          "face": 648,
+          "t0": "4650405234522924215420249/186477145227264",
+          "t1": "4663219834145198687368439/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4650403232239823707064369/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4663217831862098179012559/200228310050635341889536"
+        },
+        {
+          "face": 645,
+          "t0": "4663219834145198687368439/186477145227264",
+          "t1": "4668425782427481395742041/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4663217831862098179012559/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4668423780144380887386161/200228310050635341889536"
+        },
+        {
+          "face": 644,
+          "t0": "4668425782427481395742041/186477145227264",
+          "t1": "585480419523862152734629/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4668423780144380887386161/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "285878988885973920503/12220966189613973504"
+        },
+        {
+          "face": 643,
+          "t0": "585480419523862152734629/23309643153408",
+          "t1": "195702424847674521615671/7769881051136",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "285878988885973920503/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "95557783896099609587/4073655396537991168"
+        },
+        {
+          "face": 642,
+          "t0": "195702424847674521615671/7769881051136",
+          "t1": "4710273487007097991542007/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "95557783896099609587/4073655396537991168",
+          "distance_from_first_entry_end_mm_exact": "4710271484723997483186127/200228310050635341889536"
+        },
+        {
+          "face": 640,
+          "t0": "4710273487007097991542007/186477145227264",
+          "t1": "4715479435289380699915609/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4710271484723997483186127/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4715477433006280191559729/200228310050635341889536"
+        },
+        {
+          "face": 639,
+          "t0": "4715479435289380699915609/186477145227264",
+          "t1": "4728294034911655171863799/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4715477433006280191559729/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4728292032628554663507919/200228310050635341889536"
+        },
+        {
+          "face": 629,
+          "t0": "4728294034911655171863799/186477145227264",
+          "t1": "4733499983193937880237401/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4728292032628554663507919/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4733497980910837371881521/200228310050635341889536"
+        },
+        {
+          "face": 628,
+          "t0": "4733499983193937880237401/186477145227264",
+          "t1": "593614694619669213296549/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "4733497980910837371881521/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "289850802897598461793/12220966189613973504"
+        },
+        {
+          "face": 627,
+          "t0": "593614694619669213296549/23309643153408",
+          "t1": "595241549638830625408933/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "289850802897598461793/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "290645165699923370051/12220966189613973504"
+        },
+        {
+          "face": 626,
+          "t0": "595241549638830625408933/23309643153408",
+          "t1": "1591782562591184825345789/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "290645165699923370051/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "1591781895163484655893829/66742770016878447296512"
+        },
+        {
+          "face": 625,
+          "t0": "1591782562591184825345789/62159048409088",
+          "t1": "1593517878685279061470323/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1591781895163484655893829/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "1593517211257578892018363/66742770016878447296512"
+        },
+        {
+          "face": 624,
+          "t0": "1593517878685279061470323/62159048409088",
+          "t1": "1597789411892703885453053/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1593517211257578892018363/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "1597788744465003716001093/66742770016878447296512"
+        },
+        {
+          "face": 623,
+          "t0": "1597789411892703885453053/62159048409088",
+          "t1": "1599524727986798121577587/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1597788744465003716001093/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "1599524060559097952125627/66742770016878447296512"
+        },
+        {
+          "face": 620,
+          "t0": "1599524727986798121577587/62159048409088",
+          "t1": "200582989905158757952823/7769881051136",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "1599524060559097952125627/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "97940872303074334361/4073655396537991168"
+        },
+        {
+          "face": 619,
+          "t0": "200582989905158757952823/7769881051136",
+          "t1": "603375824734637685970853/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "97940872303074334361/4073655396537991168",
+          "distance_from_first_entry_end_mm_exact": "294616979711547911341/12220966189613973504"
+        },
+        {
+          "face": 641,
+          "t0": "603375824734637685970853/23309643153408",
+          "t1": "817995544570162443167653/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "294616979711547911341/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "399411764787487734191/12220966189613973504"
+        },
+        {
+          "face": 618,
+          "t0": "817995544570162443167653/23309643153408",
+          "t1": "2185793215741403006035709/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "399411764787487734191/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "2185792548313702836583749/66742770016878447296512"
+        },
+        {
+          "face": 617,
+          "t0": "2185793215741403006035709/62159048409088",
+          "t1": "2187528531835497242160243/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2185792548313702836583749/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "2187527864407797072708283/66742770016878447296512"
+        },
+        {
+          "face": 549,
+          "t0": "2187528531835497242160243/62159048409088",
+          "t1": "2191800065042922066142973/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2187527864407797072708283/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "2191799397615221896691013/66742770016878447296512"
+        },
+        {
+          "face": 548,
+          "t0": "2191800065042922066142973/62159048409088",
+          "t1": "2193535381137016302267507/62159048409088",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2191799397615221896691013/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "2193534713709316132815547/66742770016878447296512"
+        },
+        {
+          "face": 547,
+          "t0": "2193535381137016302267507/62159048409088",
+          "t1": "274834321548936030539063/7769881051136",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "2193534713709316132815547/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "134196405332262455741/4073655396537991168"
+        },
+        {
+          "face": 546,
+          "t0": "274834321548936030539063/7769881051136",
+          "t1": "826129819665969503729573/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "134196405332262455741/4073655396537991168",
+          "distance_from_first_entry_end_mm_exact": "403383578799112275481/12220966189613973504"
+        },
+        {
+          "face": 544,
+          "t0": "826129819665969503729573/23309643153408",
+          "t1": "6622453847990665502602487/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "403383578799112275481/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "6622451845707564994246607/200228310050635341889536"
+        },
+        {
+          "face": 543,
+          "t0": "6622453847990665502602487/186477145227264",
+          "t1": "6627659796272948210976089/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "6622451845707564994246607/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "6627657793989847702620209/200228310050635341889536"
+        },
+        {
+          "face": 542,
+          "t0": "6627659796272948210976089/186477145227264",
+          "t1": "6640474395895222682924279/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "6627657793989847702620209/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "6640472393612122174568399/200228310050635341889536"
+        },
+        {
+          "face": 540,
+          "t0": "6640474395895222682924279/186477145227264",
+          "t1": "6645680344177505391297881/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "6640472393612122174568399/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "6645678341894404882942001/200228310050635341889536"
+        },
+        {
+          "face": 539,
+          "t0": "6645680344177505391297881/186477145227264",
+          "t1": "832637239742615152179109/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "6645678341894404882942001/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "406561030008411908513/12220966189613973504"
+        },
+        {
+          "face": 545,
+          "t0": "832637239742615152179109/23309643153408",
+          "t1": "2211604869326459182250669/23309643153408",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "406561030008411908513/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "276450577380133952338273/3128567344541177217024"
+        },
+        {
+          "face": 525,
+          "t0": "2211604869326459182250669/23309643153408",
+          "t1": "22963889393120997191861177/186477145227264",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "276450577380133952338273/3128567344541177217024",
+          "distance_from_first_entry_end_mm_exact": "22963887390837896683505297/200228310050635341889536"
+        },
+        {
+          "face": 479,
+          "t0": "22963889393120997191861177/186477145227264",
+          "t1": "1161574592570057026798903/7769881051136",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "22963887390837896683505297/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "141793763322948548049/1018413849134497792"
+        },
+        {
+          "face": 477,
+          "t0": "1161574592570057026798903/7769881051136",
+          "t1": "2518413146745147847/16777216",
+          "coplanar_interval": true,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 0,
+          "distance_from_first_entry_start_mm_exact": "141793763322948548049/1018413849134497792",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536"
+        },
+        {
+          "face": 474,
+          "t0": "2518413146745147847/16777216",
+          "t1": "2518413146745147847/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "9161933/65536",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "1502413/65536",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "1672957843354069059439/72864635572715520000",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1672957843354069059439/72864635572715520000",
+          "distance_from_first_entry_end_mm_exact": "282701537676674287471/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "282701537676674287471/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "4645197283957540998690767/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4645197283957540998690767/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4650403232239823707064369/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4650403232239823707064369/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4663217831862098179012559/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4663217831862098179012559/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4668423780144380887386161/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4668423780144380887386161/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "285878988885973920503/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "285878988885973920503/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "95557783896099609587/4073655396537991168",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "95557783896099609587/4073655396537991168",
+          "distance_from_first_entry_end_mm_exact": "4710271484723997483186127/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4710271484723997483186127/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4715477433006280191559729/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4715477433006280191559729/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4728292032628554663507919/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4728292032628554663507919/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "4733497980910837371881521/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "4733497980910837371881521/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "289850802897598461793/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "289850802897598461793/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "290645165699923370051/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "290645165699923370051/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "1591781895163484655893829/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1591781895163484655893829/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "1593517211257578892018363/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1593517211257578892018363/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "1597788744465003716001093/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1597788744465003716001093/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "1599524060559097952125627/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1599524060559097952125627/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "97940872303074334361/4073655396537991168",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "97940872303074334361/4073655396537991168",
+          "distance_from_first_entry_end_mm_exact": "294616979711547911341/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "294616979711547911341/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "399411764787487734191/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "399411764787487734191/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "2185792548313702836583749/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2185792548313702836583749/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "2187527864407797072708283/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2187527864407797072708283/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "2191799397615221896691013/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2191799397615221896691013/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "2193534713709316132815547/66742770016878447296512",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2193534713709316132815547/66742770016878447296512",
+          "distance_from_first_entry_end_mm_exact": "134196405332262455741/4073655396537991168",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "134196405332262455741/4073655396537991168",
+          "distance_from_first_entry_end_mm_exact": "403383578799112275481/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "403383578799112275481/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "6622451845707564994246607/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6622451845707564994246607/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "6627657793989847702620209/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6627657793989847702620209/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "6640472393612122174568399/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6640472393612122174568399/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "6645678341894404882942001/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "6645678341894404882942001/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "406561030008411908513/12220966189613973504",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "406561030008411908513/12220966189613973504",
+          "distance_from_first_entry_end_mm_exact": "276450577380133952338273/3128567344541177217024",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "276450577380133952338273/3128567344541177217024",
+          "distance_from_first_entry_end_mm_exact": "22963887390837896683505297/200228310050635341889536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "22963887390837896683505297/200228310050635341889536",
+          "distance_from_first_entry_end_mm_exact": "141793763322948548049/1018413849134497792",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "141793763322948548049/1018413849134497792",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536",
+          "state": "boundary"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9161933/65536",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "1502413/65536",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "1502413/65536",
+          "distance_from_first_entry_end_mm_exact": "9161933/65536",
+          "state": "boundary",
+          "original_interval_count": 36
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "9161933/65536",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ]
+    },
+    {
+      "original_face_index": 23760,
+      "sample_index": 2,
+      "detail_jsonl_line_1_based": 10,
+      "category": "ordinary_interior_face_crossings_only",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 34.125,
+      "first_conservative_chord_squared_mm2_exact": "74529/64",
+      "first_exit_point_faces": [
+        23838
+      ],
+      "coplanar_interval_count": 0,
+      "coplanar_contact_faces_in_ray_order": [],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 23760,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 23838,
+          "distance_from_first_entry_mm_exact": "273/8",
+          "directed_crossing": 1
+        },
+        {
+          "face": 4940,
+          "distance_from_first_entry_mm_exact": "913/8",
+          "directed_crossing": -1
+        },
+        {
+          "face": 4795,
+          "distance_from_first_entry_mm_exact": "629795717/4194304",
+          "directed_crossing": 1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [
+        {
+          "t_original_numeric_decimal": "42.625009999999999982",
+          "face": 29927,
+          "directed_crossing": 1
+        },
+        {
+          "t_original_numeric_decimal": "42.625010000000000048",
+          "face": 29945,
+          "directed_crossing": -1
+        }
+      ],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit",
+        "near_coincident_or_opposing_original_crossings"
+      ],
+      "original_cpp_descriptor": {
+        "face": "23760",
+        "sample": "2",
+        "x": "147.12500000000000001",
+        "y": "107.31250000000000001",
+        "z": "13.538499622344970703",
+        "nx": "0.99999999999999999995",
+        "ny": "0",
+        "nz": "0",
+        "origin_x": "147.12501000000000001",
+        "origin_y": "107.31250000000000001",
+        "origin_z": "13.538499622344970703",
+        "entry": "1.000000000001000089e-05",
+        "exit": "34.125010000000000013",
+        "first_solid": "34.125000000000000003",
+        "air_after": "8.4999999999999999688",
+        "exit_x": "113",
+        "exit_y": "107.31250000000000001",
+        "exit_z": "13.538499622344970703",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "1",
+        "raw_hit_count": "6",
+        "event_count": "5",
+        "raw_intersections_t_face_direction": "1.000000000001000089e-05:23760:-1;34.125010000000000013:23838:1;42.625009999999999982:29927:1;42.625010000000000048:29945:-1;114.12501000000000002:4940:-1;150.15500997138977053:4795:1;",
+        "events_t_direction": "1.000000000001000089e-05:-1;34.125010000000000013:1;42.625009999999999982:1;114.12501000000000002:-1;150.15500997138977053:1;",
+        "paired_intervals": "1.000000000001000089e-05:34.125010000000000013;42.625009999999999982:114.12501000000000002;",
+        "x_hex": "0x9.320000000000001p+4",
+        "y_hex": "0xd.6a0000000000001p+3",
+        "z_hex": "0xd.89db1c7ae147ae1p+0",
+        "nx_hex": "0xf.fffffffffffffffp-4",
+        "ny_hex": "0x0p+0",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0x9.32000a7c5ac471cp+4",
+        "origin_y_hex": "0xd.6a0000000000001p+3",
+        "origin_z_hex": "0xd.89db1c7ae147ae1p+0",
+        "dx_hex": "-0xf.fffffffffffffffp-4",
+        "dy_hex": "-0x0p+0",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 23760,
+          "t0": "180143985095/16777216",
+          "t1": "180143985095/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 23838,
+          "t0": "614741529280057799/16777216",
+          "t1": "614741529280057799/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "273/8",
+          "distance_from_first_entry_end_mm_exact": "273/8"
+        },
+        {
+          "face": 4940,
+          "t0": "2055893410038616519/16777216",
+          "t1": "2055893410038616519/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "913/8",
+          "distance_from_first_entry_end_mm_exact": "913/8"
+        },
+        {
+          "face": 4795,
+          "t0": "2704952187819856327/16777216",
+          "t1": "2704952187819856327/16777216",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "629795717/4194304",
+          "distance_from_first_entry_end_mm_exact": "629795717/4194304"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "273/8",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "273/8",
+          "distance_from_first_entry_end_mm_exact": "913/8",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "913/8",
+          "distance_from_first_entry_end_mm_exact": "629795717/4194304",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "629795717/4194304",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-180143985095/18014398509481984",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "273/8",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "273/8",
+          "distance_from_first_entry_end_mm_exact": "913/8",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "913/8",
+          "distance_from_first_entry_end_mm_exact": "629795717/4194304",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "629795717/4194304",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ],
+      "special_explanation_checks": {
+        "no_coplanar_or_edge_vertex_contact": true,
+        "all_recorded_crossings_alternate": true
+      }
+    },
+    {
+      "original_face_index": 27690,
+      "sample_index": 2,
+      "detail_jsonl_line_1_based": 11,
+      "category": "ordinary_interior_face_crossings_only",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 1.2999992370605469,
+      "first_conservative_chord_squared_mm2_exact": "116135779369/68719476736",
+      "first_exit_point_faces": [
+        29055
+      ],
+      "coplanar_interval_count": 0,
+      "coplanar_contact_faces_in_ray_order": [],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 27690,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 29055,
+          "distance_from_first_entry_mm_exact": "340787/262144",
+          "directed_crossing": 1
+        },
+        {
+          "face": 24737,
+          "distance_from_first_entry_mm_exact": "2346189/262144",
+          "directed_crossing": -1
+        },
+        {
+          "face": 6,
+          "distance_from_first_entry_mm_exact": "267/8",
+          "directed_crossing": 1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [
+        {
+          "t_original_numeric_decimal": "1.2500100000000000018",
+          "face": 27632,
+          "directed_crossing": 1
+        }
+      ],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit",
+        "original_triangle_parity_controls_failed"
+      ],
+      "original_cpp_descriptor": {
+        "face": "27690",
+        "sample": "2",
+        "x": "91.750000000000000007",
+        "y": "26.329166679382324219",
+        "z": "33.375000000000000003",
+        "nx": "0",
+        "ny": "0",
+        "nz": "1",
+        "origin_x": "91.750000000000000007",
+        "origin_y": "26.329166679382324219",
+        "origin_z": "33.375010000000000003",
+        "entry": "1.0000000000003061996e-05",
+        "exit": "1.2500100000000000018",
+        "first_solid": "1.2499999999999999987",
+        "air_after": "0.049999237060546876301",
+        "exit_x": "91.750000000000000007",
+        "exit_y": "26.329166679382324219",
+        "exit_z": "32.125",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "1",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "0",
+        "raw_hit_count": "5",
+        "event_count": "5",
+        "raw_intersections_t_face_direction": "1.0000000000003061996e-05:27690:-1;1.2500100000000000018:27632:1;1.3000092370605468781:29055:1;8.9500107629394531281:24737:-1;33.375010000000000003:6:1;",
+        "events_t_direction": "1.0000000000003061996e-05:-1;1.2500100000000000018:1;1.3000092370605468781:1;8.9500107629394531281:-1;33.375010000000000003:1;",
+        "paired_intervals": "1.0000000000003061996e-05:1.2500100000000000018;1.3000092370605468781:8.9500107629394531281;",
+        "x_hex": "0xb.780000000000001p+3",
+        "y_hex": "0xd.2a22223d70a3d71p+1",
+        "z_hex": "0x8.580000000000001p+2",
+        "nx_hex": "0x0p+0",
+        "ny_hex": "0x0p+0",
+        "nz_hex": "0x8p-3",
+        "origin_x_hex": "0xb.780000000000001p+3",
+        "origin_y_hex": "0xd.2a22223d70a3d71p+1",
+        "origin_z_hex": "0x8.580029f16b11c6ep+2",
+        "dx_hex": "-0x0p+0",
+        "dy_hex": "-0x0p+0",
+        "dz_hex": "-0x8p-3"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 27690,
+          "t0": "1441151880759/134217728",
+          "t1": "1441151880759/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 29055,
+          "t0": "187351075699330615/134217728",
+          "t1": "187351075699330615/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "340787/262144",
+          "distance_from_first_entry_end_mm_exact": "340787/262144"
+        },
+        {
+          "face": 24737,
+          "t0": "1289832484381953591/134217728",
+          "t1": "1289832484381953591/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "2346189/262144",
+          "distance_from_first_entry_end_mm_exact": "2346189/262144"
+        },
+        {
+          "face": 6,
+          "t0": "4809845843183570487/134217728",
+          "t1": "4809845843183570487/134217728",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "267/8",
+          "distance_from_first_entry_end_mm_exact": "267/8"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "340787/262144",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "340787/262144",
+          "distance_from_first_entry_end_mm_exact": "2346189/262144",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2346189/262144",
+          "distance_from_first_entry_end_mm_exact": "267/8",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "267/8",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-1441151880759/144115188075855872",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "340787/262144",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "340787/262144",
+          "distance_from_first_entry_end_mm_exact": "2346189/262144",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "2346189/262144",
+          "distance_from_first_entry_end_mm_exact": "267/8",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "267/8",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ],
+      "special_explanation_checks": {
+        "no_coplanar_or_edge_vertex_contact": true,
+        "all_recorded_crossings_alternate": true
+      }
+    },
+    {
+      "original_face_index": 23893,
+      "sample_index": 9,
+      "detail_jsonl_line_1_based": 12,
+      "category": "isolated_tangent_contact",
+      "review_checks": {
+        "descriptor_exact_dictionary_match": true,
+        "reasons_exact_list_match": true,
+        "stored_first_chord_square_consistent_with_stored_endpoints": true,
+        "stored_first_chord_square_at_least_16_over_25": true,
+        "source_face_entry_is_ordinary_interior_crossing": true,
+        "exact_classification_completed": true,
+        "original_run_lossless_descriptor_used": true
+      },
+      "first_conservative_chord_mm_approx": 34.125,
+      "first_conservative_chord_squared_mm2_exact": "74529/64",
+      "first_exit_point_faces": [
+        23838
+      ],
+      "coplanar_interval_count": 0,
+      "coplanar_contact_faces_in_ray_order": [],
+      "isolated_noncoplanar_edge_vertex_contact_faces": [
+        29927,
+        29945
+      ],
+      "ordinary_noncoplanar_interior_face_crossings": [
+        {
+          "face": 23893,
+          "distance_from_first_entry_mm_exact": "0",
+          "directed_crossing": -1
+        },
+        {
+          "face": 23838,
+          "distance_from_first_entry_mm_exact": "273/8",
+          "directed_crossing": 1
+        },
+        {
+          "face": 4940,
+          "distance_from_first_entry_mm_exact": "913/8",
+          "directed_crossing": -1
+        },
+        {
+          "face": 4795,
+          "distance_from_first_entry_mm_exact": "629795717/4194304",
+          "directed_crossing": 1
+        }
+      ],
+      "numerical_hit_faces_absent_from_exact_contact_record": [],
+      "original_numerical_reasons": [
+        "original_crossings_not_alternating_enter_exit",
+        "near_coincident_or_opposing_original_crossings"
+      ],
+      "original_cpp_descriptor": {
+        "face": "23893",
+        "sample": "9",
+        "x": "147.125",
+        "y": "107.3125",
+        "z": "14.213499813079833985",
+        "nx": "0.99999999999999999995",
+        "ny": "-0",
+        "nz": "0",
+        "origin_x": "147.12501",
+        "origin_y": "107.3125",
+        "origin_z": "14.213499813079833985",
+        "entry": "9.999999999996123102e-06",
+        "exit": "34.12501",
+        "first_solid": "34.125000000000000003",
+        "air_after": "8.4999999999999999965",
+        "exit_x": "113",
+        "exit_y": "107.3125",
+        "exit_z": "14.213499813079833985",
+        "inside_control": "1",
+        "outside_control": "0",
+        "mid_control": "1",
+        "after_exit_control": "0",
+        "source_face_in_entry": "1",
+        "alternating_crossings": "0",
+        "ambiguous_events": "1",
+        "raw_hit_count": "6",
+        "event_count": "5",
+        "raw_intersections_t_face_direction": "9.999999999996123102e-06:23893:-1;34.12501:23838:1;42.625009999999999996:29945:-1;42.62501:29927:1;114.12501000000000001:4940:-1;150.15500997138977052:4795:1;",
+        "events_t_direction": "9.999999999996123102e-06:-1;34.12501:1;42.625009999999999996:-1;114.12501000000000001:-1;150.15500997138977052:1;",
+        "paired_intervals": "9.999999999996123102e-06:34.12501;42.625009999999999996:114.12501000000000001;",
+        "x_hex": "0x9.32p+4",
+        "y_hex": "0xd.6ap+3",
+        "z_hex": "0xe.36a7ec7ae147ae2p+0",
+        "nx_hex": "0xf.fffffffffffffffp-4",
+        "ny_hex": "-0x0p+0",
+        "nz_hex": "0x0p+0",
+        "origin_x_hex": "0x9.32000a7c5ac471bp+4",
+        "origin_y_hex": "0xd.6ap+3",
+        "origin_z_hex": "0xe.36a7ec7ae147ae2p+0",
+        "dx_hex": "-0xf.fffffffffffffffp-4",
+        "dy_hex": "0x0p+0",
+        "dz_hex": "-0x0p+0"
+      },
+      "all_exact_contacts_with_display_distance": [
+        {
+          "face": 23893,
+          "t0": "720575940379/67108864",
+          "t1": "720575940379/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "0"
+        },
+        {
+          "face": 23838,
+          "t0": "2458966117120231195/67108864",
+          "t1": "2458966117120231195/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "273/8",
+          "distance_from_first_entry_end_mm_exact": "273/8"
+        },
+        {
+          "face": 29927,
+          "t0": "3071455666442618651/67108864",
+          "t1": "3071455666442618651/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "341/8",
+          "distance_from_first_entry_end_mm_exact": "341/8"
+        },
+        {
+          "face": 29945,
+          "t0": "3071455666442618651/67108864",
+          "t1": "3071455666442618651/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": true,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "341/8",
+          "distance_from_first_entry_end_mm_exact": "341/8"
+        },
+        {
+          "face": 4940,
+          "t0": "8223573640154466075/67108864",
+          "t1": "8223573640154466075/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": -1,
+          "distance_from_first_entry_start_mm_exact": "913/8",
+          "distance_from_first_entry_end_mm_exact": "913/8"
+        },
+        {
+          "face": 4795,
+          "t0": "10819808751279425307/67108864",
+          "t1": "10819808751279425307/67108864",
+          "coplanar_interval": false,
+          "edge_or_vertex_contact": false,
+          "directed_crossing": 1,
+          "distance_from_first_entry_start_mm_exact": "629795717/4194304",
+          "distance_from_first_entry_end_mm_exact": "629795717/4194304"
+        }
+      ],
+      "classified_intervals_with_display_distance": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-720575940379/72057594037927936",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "273/8",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "273/8",
+          "distance_from_first_entry_end_mm_exact": "341/8",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "341/8",
+          "distance_from_first_entry_end_mm_exact": "913/8",
+          "state": "outside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "913/8",
+          "distance_from_first_entry_end_mm_exact": "629795717/4194304",
+          "state": "inside"
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "629795717/4194304",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside"
+        }
+      ],
+      "adjacent_equal_state_groups_for_readability": [
+        {
+          "distance_from_first_entry_start_mm_exact": "-720575940379/72057594037927936",
+          "distance_from_first_entry_end_mm_exact": "0",
+          "state": "outside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "0",
+          "distance_from_first_entry_end_mm_exact": "273/8",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "273/8",
+          "distance_from_first_entry_end_mm_exact": "913/8",
+          "state": "outside",
+          "original_interval_count": 2
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "913/8",
+          "distance_from_first_entry_end_mm_exact": "629795717/4194304",
+          "state": "inside",
+          "original_interval_count": 1
+        },
+        {
+          "distance_from_first_entry_start_mm_exact": "629795717/4194304",
+          "distance_from_first_entry_end_mm_exact": null,
+          "state": "outside",
+          "original_interval_count": 1
+        }
+      ],
+      "special_explanation_checks": {
+        "exactly_two_same_parameter_opposing_point_contacts": true,
+        "edge_or_vertex_flags_true": true,
+        "outside_on_both_adjacent_open_intervals": true,
+        "no_positive_length_boundary": true
+      }
+    }
+  ]
+}

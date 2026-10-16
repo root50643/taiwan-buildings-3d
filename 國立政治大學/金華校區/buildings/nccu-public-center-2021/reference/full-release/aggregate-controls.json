@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "stl_sha256": "8ad969e0135c2dfcd505cc85a1a79b78c9982cac3f8b9fe6f0525de9a34a367e",
+  "evidence_sha256": "a59da5e708193032661131be77a17a280b142a5fa750d09b38fd2b028f56f9cc",
+  "checker_sources_sha256": {
+    "check_aggregate_controls.py": "1465e1d54797fc8acee4a8952d8fa759e44302c956a64bd9ed72b4879b08cea6",
+    "validate_model.py": "5ccc3a89d4b9620d0a00980da68f0e6b3e861c2ad0a0685f73990f4ba6e50646",
+    "check_artifacts.py": "d8ec3e442dacb0c1bc20e181443038944e48a242efb395f21beebdf38a52e6ef",
+    "write_validation_manifest.py": "303dfc3ba7baa81207aa11ed5755c09b4409cdb1c911f61fadbdd01321ca3dd2"
+  },
+  "integrity_baseline_passed": true,
+  "optimized_python": true,
+  "production_unchanged": true,
+  "controls": [
+    {
+      "control": "readme_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "README.md"
+    },
+    {
+      "control": "preview_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "previews/front.png"
+    },
+    {
+      "control": "checker_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "verification/check_raw_mesh.py"
+    },
+    {
+      "control": "stl_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "model.stl"
+    },
+    {
+      "control": "report_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/raw/raw-mesh-check.json"
+    },
+    {
+      "control": "nested_excluded_name:qa/nested/validation.json",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/nested/validation.json"
+    },
+    {
+      "control": "nested_excluded_name:qa/nested/freeze-manifest.json",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/nested/freeze-manifest.json"
+    },
+    {
+      "control": "compressed_private_path",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/compressed-private-control.json.gz"
+    },
+    {
+      "control": "fresh_png_metadata",
+      "rejected": true,
+      "returncode": 1,
+      "target": "previews/front.png"
+    }
+  ],
+  "limits": "Integrity-only mode does not convert a strict geometry failure into approval."
+}

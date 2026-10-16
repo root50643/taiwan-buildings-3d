@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "stl_sha256": "8ad969e0135c2dfcd505cc85a1a79b78c9982cac3f8b9fe6f0525de9a34a367e",
+  "evidence_sha256": "f742f62018bf440d201af1933568e661712ba33dc9f6441d642e5c864327118b",
+  "checker_sources_sha256": {
+    "check_aggregate_controls.py": "080a7ee09e0a72163d933fb2e2e20f0f751f1b80c830fe26350a78d73097f1c0",
+    "validate_model.py": "15c36292287de0d8988ff2c2bdd5d8db4b7f9179c0cdd6fe77f794823a9ba52d",
+    "check_artifacts.py": "d8ec3e442dacb0c1bc20e181443038944e48a242efb395f21beebdf38a52e6ef",
+    "write_validation_manifest.py": "303dfc3ba7baa81207aa11ed5755c09b4409cdb1c911f61fadbdd01321ca3dd2",
+    "run_checks.py": "cee318a5a48a7eebe047de7580e141f6bbc4ce1de61ba14b86d81001174b7929",
+    "replay_dense_cache.py": "83c8688e2d62b88773e171902eb83c361d76e2435aab7c96bb44b300ee56a554"
+  },
+  "delivery_baseline_passed": true,
+  "optimized_python": true,
+  "production_unchanged": true,
+  "controls": [
+    {
+      "control": "readme_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "README.md",
+      "science_failure_control": false
+    },
+    {
+      "control": "preview_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "previews/front.png",
+      "science_failure_control": false
+    },
+    {
+      "control": "checker_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "verification/check_raw_mesh.py",
+      "science_failure_control": false
+    },
+    {
+      "control": "stl_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "model.stl",
+      "science_failure_control": false
+    },
+    {
+      "control": "report_changed",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/raw/raw-mesh-check.json",
+      "science_failure_control": false
+    },
+    {
+      "control": "nested_excluded_name:qa/nested/validation.json",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/nested/validation.json",
+      "science_failure_control": false
+    },
+    {
+      "control": "nested_excluded_name:qa/nested/freeze-manifest.json",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/nested/freeze-manifest.json",
+      "science_failure_control": false
+    },
+    {
+      "control": "compressed_private_path",
+      "rejected": true,
+      "returncode": 1,
+      "target": "qa/compressed-private-control.json.gz",
+      "science_failure_control": false
+    },
+    {
+      "control": "fresh_png_metadata",
+      "rejected": true,
+      "returncode": 1,
+      "target": "previews/front.png",
+      "science_failure_control": false
+    },
+    {
+      "control": "missing_complete_dense_cache",
+      "rejected": true,
+      "returncode": 1,
+      "target": null,
+      "science_failure_control": true
+    },
+    {
+      "control": "wrong_complete_dense_cache",
+      "rejected": true,
+      "returncode": 1,
+      "target": null,
+      "science_failure_control": true
+    },
+    {
+      "control": "forged_cache_metadata_after_rebind",
+      "rejected": true,
+      "returncode": 1,
+      "target": "compact-cache.json",
+      "science_failure_control": true
+    },
+    {
+      "control": "stale_success_report_without_cache",
+      "rejected": true,
+      "returncode": 1,
+      "target": "validation.json",
+      "science_failure_control": true
+    },
+    {
+      "control": "summary_error_after_child_outputs",
+      "rejected": true,
+      "control_type": "in_process_fresh_summary_predicate",
+      "target": "qa/qa-summary.json",
+      "science_failure_control": true
+    },
+    {
+      "control": "summary_unexpected_dense_failure",
+      "rejected": true,
+      "control_type": "in_process_fresh_summary_predicate",
+      "target": "qa/qa-summary.json",
+      "science_failure_control": true
+    },
+    {
+      "control": "summary_missing_gate",
+      "rejected": true,
+      "control_type": "in_process_fresh_summary_predicate",
+      "target": "qa/qa-summary.json",
+      "science_failure_control": true
+    },
+    {
+      "control": "unrelated_dense_exit1_not_accepted",
+      "rejected": true,
+      "returncode": 1,
+      "target": "external atomic cache destination",
+      "science_failure_control": true
+    }
+  ],
+  "limits": "Delivery-only mode cannot claim full evidence verification or science replay. Missing/wrong cache and unrelated dense exit failures must be rejected."
+}

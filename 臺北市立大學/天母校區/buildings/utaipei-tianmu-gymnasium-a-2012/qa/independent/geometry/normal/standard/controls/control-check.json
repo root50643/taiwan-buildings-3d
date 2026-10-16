@@ -1,0 +1,482 @@
+{
+  "passed": true,
+  "strict_passed": true,
+  "checks": {
+    "positive_box_passes_all_gates_both_modes": true,
+    "all_negative_controls_rejected_for_expected_reason_both_modes": true,
+    "all_controls_have_reports": true,
+    "both_python_modes_tested": true
+  },
+  "control_runs": 30,
+  "fixtures": 12,
+  "controls": [
+    {
+      "mode": "python_B",
+      "fixture": "normal_box",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": true,
+      "expected_false_check": null,
+      "returncode": 0,
+      "expectation_verified": true,
+      "fixture_sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34",
+      "report_file": "python_B/normal_box/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "688030c3a38413df1013b6e3eb3192609951070ecf0c9178cf3a0231d7a64779",
+      "actual_false_checks": []
+    },
+    {
+      "mode": "python_B",
+      "fixture": "normal_box",
+      "checker": "check_sections.py",
+      "expected_pass": true,
+      "expected_false_check": null,
+      "returncode": 0,
+      "expectation_verified": true,
+      "fixture_sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34",
+      "report_file": "python_B/normal_box/check_sections/section-check.json",
+      "report_sha256": "e4bb0d208ceabfb719481b30af7b27112a52e51a4529a359762d95dfc5b9047c",
+      "actual_false_checks": []
+    },
+    {
+      "mode": "python_B",
+      "fixture": "normal_box",
+      "checker": "check_dense_surface.py",
+      "expected_pass": true,
+      "expected_false_check": null,
+      "returncode": 0,
+      "expectation_verified": true,
+      "fixture_sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34",
+      "report_file": "python_B/normal_box/check_dense_surface/dense-check.json",
+      "report_sha256": "07b24609d1edd32ad382fc4f534757963cd897c792aa56487f535b3b39dcf58c",
+      "actual_false_checks": []
+    },
+    {
+      "mode": "python_B",
+      "fixture": "missing_original_triangle",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_edges_two_faces",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "1ac63fc71f7830e1f21140ff3299555cdcbaf0216e304b73b1d5210d82eb234f",
+      "report_file": "python_B/missing_original_triangle/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "92e966621c702eaa2fe9e45702d691c30a06491ad366946f6a9fd674a501bbe2",
+      "actual_false_checks": [
+        "exact_coordinate_edges_two_faces",
+        "exact_coordinate_consistent_winding",
+        "exact_coordinate_vertex_links_single_cycles"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "duplicate_original_triangle",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_edges_two_faces",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "65f8cbd7b7341928384bf39a711f8a608ecb28071b4a06cee5de6a8554a5e265",
+      "report_file": "python_B/duplicate_original_triangle/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "42b1a675f7c6fe7cd19203cefd8e838f185ad027fd8189169cb24afb155b02f2",
+      "actual_false_checks": [
+        "no_duplicate_original_faces",
+        "exact_coordinate_edges_two_faces",
+        "exact_coordinate_consistent_winding",
+        "exact_coordinate_vertex_links_single_cycles"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "one_reversed_face",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_consistent_winding",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "51fc3db156c308147871c1112eb978f0dedb96da25206ab11bc8c708850d8c66",
+      "report_file": "python_B/one_reversed_face/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "acc120312068cd91b04a891205d89c4a6d48e1f9cf7e58a63f83c90e28b2b401",
+      "actual_false_checks": [
+        "exact_coordinate_consistent_winding"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "all_faces_inverted",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "positive_signed_volume",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "d59808bcd9f92193ccdf31472b3d2de788653567b31b14f10cb1d2933b08b375",
+      "report_file": "python_B/all_faces_inverted/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "4290ab8f3f23de18daf288cf4bfaa7c9e47972837543fba27f6cdad52ec873c9",
+      "actual_false_checks": [
+        "positive_signed_volume"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "separate_closed_shell",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "single_surface_no_internal_shell",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "8cbc941ff3263b1d8b9929f2f06f96408e80dbc899f2544dc2ef3ea72ad1f291",
+      "report_file": "python_B/separate_closed_shell/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "d4048d6fdf33e1b240ff51ca27d48e3b567018cf039f87aa02f181bb6e426742",
+      "actual_false_checks": [
+        "single_surface_no_internal_shell"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "internal_closed_shell",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "single_surface_no_internal_shell",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "b093f488ca4341ecdbb59bde165be22ebb6b4293b358b4ce3da98a63511d2e4b",
+      "report_file": "python_B/internal_closed_shell/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "920b76b2c185bb00237266bd5853cc60cb41ef8afbc5a6b2e6ee55b6fdd241a2",
+      "actual_false_checks": [
+        "single_surface_no_internal_shell"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "vertex_only_touching_shells",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_vertex_links_single_cycles",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "474d3bc22a4447db10ae0f16f0501a2dee22d64869fc557decce215fb3145c5d",
+      "report_file": "python_B/vertex_only_touching_shells/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "6e6280fa86b03652350bf6f227afbf5e3793c572c81dbfb9c398f2322e96e10b",
+      "actual_false_checks": [
+        "exact_coordinate_vertex_links_single_cycles",
+        "single_surface_no_internal_shell"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "narrow_0p6mm_root",
+      "checker": "check_sections.py",
+      "expected_pass": false,
+      "expected_false_check": "no_original_polygon_splits_after_erosion_or_opening",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7",
+      "report_file": "python_B/narrow_0p6mm_root/check_sections/section-check.json",
+      "report_sha256": "686fcc71361d04583f5686c26e316446c10c49ca3f95a8ce5251b00f96798a0e",
+      "actual_false_checks": [
+        "no_original_polygon_splits_after_erosion_or_opening",
+        "all_individual_polygon_losses_le_one_percent"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "narrow_0p6mm_root",
+      "checker": "check_dense_surface.py",
+      "expected_pass": false,
+      "expected_false_check": "all_first_original_chords_ge_0p8mm",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7",
+      "report_file": "python_B/narrow_0p6mm_root/check_dense_surface/dense-check.json",
+      "report_sha256": "9cade1fc7fe8ad3d6fdbf15b2e9a23663ce2642eb1f97846c18e85f45c5e7a63",
+      "actual_false_checks": [
+        "all_first_original_chords_ge_0p8mm"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "tiny_original_polygon",
+      "checker": "check_sections.py",
+      "expected_pass": false,
+      "expected_false_check": "all_original_polygons_survive_erosion_and_opening",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "7858db1ae3cee59b297ef1c4595e526414f7bba913034eb56c0d87b82c75b5a5",
+      "report_file": "python_B/tiny_original_polygon/check_sections/section-check.json",
+      "report_sha256": "168aaffd0a4a9802ef31025ad3b8fee2b165d1c6e94aba5d933ab6a3c33a749b",
+      "actual_false_checks": [
+        "all_original_polygons_survive_erosion_and_opening",
+        "no_original_polygon_splits_after_erosion_or_opening",
+        "all_individual_polygon_losses_le_one_percent"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "thin_0p6mm_slab",
+      "checker": "check_dense_surface.py",
+      "expected_pass": false,
+      "expected_false_check": "all_first_original_chords_ge_0p8mm",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "f257d6b90ae6038a89db58ed235e053601ac1d7116854e5ea20a372ecbe60be6",
+      "report_file": "python_B/thin_0p6mm_slab/check_dense_surface/dense-check.json",
+      "report_sha256": "d58a90706cc45b3ba0f79c59f5adb7e5d1ee21e2ba67a9329d072d7ceb056fc0",
+      "actual_false_checks": [
+        "all_first_original_chords_ge_0p8mm"
+      ]
+    },
+    {
+      "mode": "python_B",
+      "fixture": "truncated_binary_record",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "completed_without_error",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "da8f5e7aff04a14e81342fe34dfdd6e6e71e9ea31bc4994aa3c587bdb82aa0ce",
+      "report_file": "python_B/truncated_binary_record/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "995a54ee755918d3b041b4435800d7a344f8dff991756628cd7b7c517f44ad37",
+      "actual_false_checks": [
+        "completed_without_error"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "normal_box",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": true,
+      "expected_false_check": null,
+      "returncode": 0,
+      "expectation_verified": true,
+      "fixture_sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34",
+      "report_file": "python_B_O/normal_box/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "688030c3a38413df1013b6e3eb3192609951070ecf0c9178cf3a0231d7a64779",
+      "actual_false_checks": []
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "normal_box",
+      "checker": "check_sections.py",
+      "expected_pass": true,
+      "expected_false_check": null,
+      "returncode": 0,
+      "expectation_verified": true,
+      "fixture_sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34",
+      "report_file": "python_B_O/normal_box/check_sections/section-check.json",
+      "report_sha256": "e4bb0d208ceabfb719481b30af7b27112a52e51a4529a359762d95dfc5b9047c",
+      "actual_false_checks": []
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "normal_box",
+      "checker": "check_dense_surface.py",
+      "expected_pass": true,
+      "expected_false_check": null,
+      "returncode": 0,
+      "expectation_verified": true,
+      "fixture_sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34",
+      "report_file": "python_B_O/normal_box/check_dense_surface/dense-check.json",
+      "report_sha256": "07b24609d1edd32ad382fc4f534757963cd897c792aa56487f535b3b39dcf58c",
+      "actual_false_checks": []
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "missing_original_triangle",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_edges_two_faces",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "1ac63fc71f7830e1f21140ff3299555cdcbaf0216e304b73b1d5210d82eb234f",
+      "report_file": "python_B_O/missing_original_triangle/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "92e966621c702eaa2fe9e45702d691c30a06491ad366946f6a9fd674a501bbe2",
+      "actual_false_checks": [
+        "exact_coordinate_edges_two_faces",
+        "exact_coordinate_consistent_winding",
+        "exact_coordinate_vertex_links_single_cycles"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "duplicate_original_triangle",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_edges_two_faces",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "65f8cbd7b7341928384bf39a711f8a608ecb28071b4a06cee5de6a8554a5e265",
+      "report_file": "python_B_O/duplicate_original_triangle/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "42b1a675f7c6fe7cd19203cefd8e838f185ad027fd8189169cb24afb155b02f2",
+      "actual_false_checks": [
+        "no_duplicate_original_faces",
+        "exact_coordinate_edges_two_faces",
+        "exact_coordinate_consistent_winding",
+        "exact_coordinate_vertex_links_single_cycles"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "one_reversed_face",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_consistent_winding",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "51fc3db156c308147871c1112eb978f0dedb96da25206ab11bc8c708850d8c66",
+      "report_file": "python_B_O/one_reversed_face/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "acc120312068cd91b04a891205d89c4a6d48e1f9cf7e58a63f83c90e28b2b401",
+      "actual_false_checks": [
+        "exact_coordinate_consistent_winding"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "all_faces_inverted",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "positive_signed_volume",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "d59808bcd9f92193ccdf31472b3d2de788653567b31b14f10cb1d2933b08b375",
+      "report_file": "python_B_O/all_faces_inverted/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "4290ab8f3f23de18daf288cf4bfaa7c9e47972837543fba27f6cdad52ec873c9",
+      "actual_false_checks": [
+        "positive_signed_volume"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "separate_closed_shell",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "single_surface_no_internal_shell",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "8cbc941ff3263b1d8b9929f2f06f96408e80dbc899f2544dc2ef3ea72ad1f291",
+      "report_file": "python_B_O/separate_closed_shell/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "d4048d6fdf33e1b240ff51ca27d48e3b567018cf039f87aa02f181bb6e426742",
+      "actual_false_checks": [
+        "single_surface_no_internal_shell"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "internal_closed_shell",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "single_surface_no_internal_shell",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "b093f488ca4341ecdbb59bde165be22ebb6b4293b358b4ce3da98a63511d2e4b",
+      "report_file": "python_B_O/internal_closed_shell/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "920b76b2c185bb00237266bd5853cc60cb41ef8afbc5a6b2e6ee55b6fdd241a2",
+      "actual_false_checks": [
+        "single_surface_no_internal_shell"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "vertex_only_touching_shells",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "exact_coordinate_vertex_links_single_cycles",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "474d3bc22a4447db10ae0f16f0501a2dee22d64869fc557decce215fb3145c5d",
+      "report_file": "python_B_O/vertex_only_touching_shells/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "6e6280fa86b03652350bf6f227afbf5e3793c572c81dbfb9c398f2322e96e10b",
+      "actual_false_checks": [
+        "exact_coordinate_vertex_links_single_cycles",
+        "single_surface_no_internal_shell"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "narrow_0p6mm_root",
+      "checker": "check_sections.py",
+      "expected_pass": false,
+      "expected_false_check": "no_original_polygon_splits_after_erosion_or_opening",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7",
+      "report_file": "python_B_O/narrow_0p6mm_root/check_sections/section-check.json",
+      "report_sha256": "686fcc71361d04583f5686c26e316446c10c49ca3f95a8ce5251b00f96798a0e",
+      "actual_false_checks": [
+        "no_original_polygon_splits_after_erosion_or_opening",
+        "all_individual_polygon_losses_le_one_percent"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "narrow_0p6mm_root",
+      "checker": "check_dense_surface.py",
+      "expected_pass": false,
+      "expected_false_check": "all_first_original_chords_ge_0p8mm",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7",
+      "report_file": "python_B_O/narrow_0p6mm_root/check_dense_surface/dense-check.json",
+      "report_sha256": "9cade1fc7fe8ad3d6fdbf15b2e9a23663ce2642eb1f97846c18e85f45c5e7a63",
+      "actual_false_checks": [
+        "all_first_original_chords_ge_0p8mm"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "tiny_original_polygon",
+      "checker": "check_sections.py",
+      "expected_pass": false,
+      "expected_false_check": "all_original_polygons_survive_erosion_and_opening",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "7858db1ae3cee59b297ef1c4595e526414f7bba913034eb56c0d87b82c75b5a5",
+      "report_file": "python_B_O/tiny_original_polygon/check_sections/section-check.json",
+      "report_sha256": "168aaffd0a4a9802ef31025ad3b8fee2b165d1c6e94aba5d933ab6a3c33a749b",
+      "actual_false_checks": [
+        "all_original_polygons_survive_erosion_and_opening",
+        "no_original_polygon_splits_after_erosion_or_opening",
+        "all_individual_polygon_losses_le_one_percent"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "thin_0p6mm_slab",
+      "checker": "check_dense_surface.py",
+      "expected_pass": false,
+      "expected_false_check": "all_first_original_chords_ge_0p8mm",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "f257d6b90ae6038a89db58ed235e053601ac1d7116854e5ea20a372ecbe60be6",
+      "report_file": "python_B_O/thin_0p6mm_slab/check_dense_surface/dense-check.json",
+      "report_sha256": "d58a90706cc45b3ba0f79c59f5adb7e5d1ee21e2ba67a9329d072d7ceb056fc0",
+      "actual_false_checks": [
+        "all_first_original_chords_ge_0p8mm"
+      ]
+    },
+    {
+      "mode": "python_B_O",
+      "fixture": "truncated_binary_record",
+      "checker": "check_raw_mesh.py",
+      "expected_pass": false,
+      "expected_false_check": "completed_without_error",
+      "returncode": 1,
+      "expectation_verified": true,
+      "fixture_sha256": "da8f5e7aff04a14e81342fe34dfdd6e6e71e9ea31bc4994aa3c587bdb82aa0ce",
+      "report_file": "python_B_O/truncated_binary_record/check_raw_mesh/raw-mesh-check.json",
+      "report_sha256": "995a54ee755918d3b041b4435800d7a344f8dff991756628cd7b7c517f44ad37",
+      "actual_false_checks": [
+        "completed_without_error"
+      ]
+    }
+  ],
+  "checker_sources_sha256": {
+    "check_controls.py": "926fb93691ebc3bdc82e04de8557ae13230cb6a3eebc90a2bb189053675ebd07",
+    "check_dense_surface.py": "3e784433d973228203056907aa7ef95ef91a8905e72452d3a8be465e6a5ebb11",
+    "check_intersection_controls.py": "542b296cba809a9b1c421f7a3f786acd11c4271b72af7836fe22a746ec15c867",
+    "check_original_intersections.py": "3698168f95ac9b95f0021d3a41c04bff30dec092028061d8640b038b6cdd37bc",
+    "check_raw_mesh.py": "c0f2c9447e99eca6bd40e3c56cbbaaafe889b32ee3f480ee2526363d88749132",
+    "check_sections.py": "469c0cdf5b6b9fea7e328c81c35654a9cae30133de9e3640150303a5e62389ad",
+    "dense_original.cpp": "258e4f7c94e80845bc94f7f8b9fa0b5be29d792786f3a26cb67e0c2e33d5a687",
+    "qa_common.py": "8e207b9db55d5abe0b0d95b02686c2532e09c49ccc474e00c003cade2407666f",
+    "run_qa.py": "82beceefeb08d6219ac210315bb3fec31ce06636e2792b96e67ca621227074fe"
+  },
+  "method": "Independent generic synthetic fixtures only; no imports from a model builder. The real model is never edited. Normal box must pass, and each deliberately invalid case must return nonzero with its expected false check. No Python assert statements are used for acceptance; all cases run in ordinary -B and optimized -B -O modes."
+}

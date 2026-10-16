@@ -1,0 +1,2482 @@
+{
+  "passed": false,
+  "strict_passed": false,
+  "completed": true,
+  "stl_sha256": "fa05503ab8ea54036a9312d4a2d263545c7b01bd61bbe07108558b4ea5974db6",
+  "expected_longest_mm": 200.0,
+  "tool_sources_sha256": {
+    "verification/check_controls.py": "926fb93691ebc3bdc82e04de8557ae13230cb6a3eebc90a2bb189053675ebd07",
+    "verification/check_dense_surface.py": "3e784433d973228203056907aa7ef95ef91a8905e72452d3a8be465e6a5ebb11",
+    "verification/check_intersection_controls.py": "542b296cba809a9b1c421f7a3f786acd11c4271b72af7836fe22a746ec15c867",
+    "verification/check_original_intersections.py": "3698168f95ac9b95f0021d3a41c04bff30dec092028061d8640b038b6cdd37bc",
+    "verification/check_raw_mesh.py": "c0f2c9447e99eca6bd40e3c56cbbaaafe889b32ee3f480ee2526363d88749132",
+    "verification/check_sections.py": "469c0cdf5b6b9fea7e328c81c35654a9cae30133de9e3640150303a5e62389ad",
+    "verification/dense_original.cpp": "258e4f7c94e80845bc94f7f8b9fa0b5be29d792786f3a26cb67e0c2e33d5a687",
+    "verification/qa_common.py": "8e207b9db55d5abe0b0d95b02686c2532e09c49ccc474e00c003cade2407666f",
+    "verification/run_qa.py": "82beceefeb08d6219ac210315bb3fec31ce06636e2792b96e67ca621227074fe",
+    "tools/archive_verify.py": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+    "tools/build_controls_archive.py": "e4b23d35449c6321abbfea94e85f4d733ce58be65658255e1e5ba5065b33f637",
+    "tools/diagnose_recorded_cpp_rays.py": "f3b9cb43c9bfa35915d8661a122f5dcbffb947e3cdc7492af4d43c23693309d4",
+    "tools/exact_ray_diagnosis.py": "0116a42a06e53723a71bf1a16e6864e71ff3f2b76ca5dbb6aa455fb5bd719d46",
+    "tools/package_controls.py": "a0a4872bb49417917d000fb0ab11c24f2528c3724c61c74008f92275146036a8",
+    "tools/run_control_suite.py": "01ccac672ded6dcb23bd7c0cf77834cb5a13d1fb7844fd5cb1cf04ae310987a4",
+    "tools/run_full_qa.py": "5d7e9d7c0b9a3d6fe33a07491bd9a40425c0cc2ebaa7220cc57cb000501a8794",
+    "tools/test_archive_verify.py": "fc2485a51ed9ed9e055cf8b84900e3e73349c7dad9ee935f94ca0927b09ff887",
+    "tools/test_dense_evidence.py": "0f294122bc12e1ada7fcfbb84c97d100c24b27db4a433116dbf7d9a9eb5b5bc5",
+    "tools/test_fail_closed.py": "643c70543900f3c8ee3e56265b893d3ad3fef1d923f13d254101358d5a118b0c",
+    "tools/validate_dense_evidence.py": "2d940f2ac57d64dc8089c28602d497002d5ae11b7dd57de624bd3a9d2c083fd2"
+  },
+  "checks": {
+    "both_modes_strictly_pass": false,
+    "normal_optimized_scientific_evidence_identical": false,
+    "original_stl_unchanged": true,
+    "tool_sources_unchanged": true
+  },
+  "modes": {
+    "normal": {
+      "child_exit_codes": {
+        "standard": 1,
+        "intersections": 0,
+        "intersection-controls": 0,
+        "dense-evidence": 0
+      },
+      "strict_passed": false,
+      "error_type": "QAError",
+      "error": "Standard aggregate did not strictly pass"
+    },
+    "optimized": {
+      "child_exit_codes": {
+        "standard": 1,
+        "intersections": 0,
+        "intersection-controls": 0,
+        "dense-evidence": 0
+      },
+      "strict_passed": false,
+      "error_type": "QAError",
+      "error": "Standard aggregate did not strictly pass"
+    }
+  },
+  "scope": "Original raw STL, finite original XY sections/normal rays and exact original triangle pairs only. No waivers, architecture approval, source/render audit, global wall guarantee or physical print guarantee.",
+  "evidence_inventory": {
+    "full-qa-progress.json": {
+      "bytes": 3171,
+      "sha256": "93b7d9a24dd56f76b06a11dda4c98c95787069b4a8d06f180c56c7594f82f9da"
+    },
+    "normal/dense-evidence.json": {
+      "bytes": 1038,
+      "sha256": "9711994acbfb424bfc8f4514aff1a6807f5a401fe169285c430088fe559913f0"
+    },
+    "normal/dense-evidence.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/dense-evidence.stdout.txt": {
+      "bytes": 988,
+      "sha256": "79a041b56984d3feabfc56708d4d6a9d8276fca855593e8721e5493b6d744ca0"
+    },
+    "normal/intersection-controls/controls-summary.json": {
+      "bytes": 1019142,
+      "sha256": "ede40a8638f1c682c827e00e060f9a825e4ec230c928893a79db5bed67e69fb3"
+    },
+    "normal/intersection-controls/coplanar_partial_edge_contact.B.json": {
+      "bytes": 4152,
+      "sha256": "9a986d6307e2805673b54bf9bbffd16ebe9d1c237a7f4efc2ffe8801a9dc6714"
+    },
+    "normal/intersection-controls/coplanar_partial_edge_contact.B.json.contacts.jsonl.gz": {
+      "bytes": 178,
+      "sha256": "e4c60efa5ec3ea7f7b4324a5a1e29c48740f2425faf7fc37e0d7e4f2fdccde84"
+    },
+    "normal/intersection-controls/coplanar_partial_edge_contact.B_O.json": {
+      "bytes": 4153,
+      "sha256": "ca31bd4e0ffe39f5b3b4b3b6986a5a3a0e6075c3ee9d8370c5e3f565aecd2d64"
+    },
+    "normal/intersection-controls/coplanar_partial_edge_contact.B_O.json.contacts.jsonl.gz": {
+      "bytes": 178,
+      "sha256": "e4c60efa5ec3ea7f7b4324a5a1e29c48740f2425faf7fc37e0d7e4f2fdccde84"
+    },
+    "normal/intersection-controls/coplanar_partial_edge_contact.stl": {
+      "bytes": 184,
+      "sha256": "560d12f7653aaf4f32d51b0a5224b095b4007b84ceb790ce7ea0c5f19b43094e"
+    },
+    "normal/intersection-controls/coplanar_positive_overlap.B.json": {
+      "bytes": 4400,
+      "sha256": "fdea011642ccd9a9548c51abe23ddf91cf24cf1cab819b25e760d87b704e701a"
+    },
+    "normal/intersection-controls/coplanar_positive_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 230,
+      "sha256": "0b70b89538a83c3e8614774a2d001908956609143ca954eb29815191bafb9623"
+    },
+    "normal/intersection-controls/coplanar_positive_overlap.B_O.json": {
+      "bytes": 4401,
+      "sha256": "b571ec475a69ff6a6e6eb33a834eb5f08c9a22db336388b0a0e71c54ac6cf81b"
+    },
+    "normal/intersection-controls/coplanar_positive_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 230,
+      "sha256": "0b70b89538a83c3e8614774a2d001908956609143ca954eb29815191bafb9623"
+    },
+    "normal/intersection-controls/coplanar_positive_overlap.stl": {
+      "bytes": 184,
+      "sha256": "054f6d72e263e74122647c48cc979d5aa59c72806905cf4063db6f72c7211fc5"
+    },
+    "normal/intersection-controls/coplanar_shared_edge_only.B.json": {
+      "bytes": 2921,
+      "sha256": "fe3dec175ca120c1f33fcdf5210f53b5cb75ec7aebc514f75109ae594b356e71"
+    },
+    "normal/intersection-controls/coplanar_shared_edge_only.B.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "normal/intersection-controls/coplanar_shared_edge_only.B_O.json": {
+      "bytes": 2923,
+      "sha256": "875574ee1884001ff41a5e8d20719a097fe8b792d0cb3ad544df27e25dedc476"
+    },
+    "normal/intersection-controls/coplanar_shared_edge_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "normal/intersection-controls/coplanar_shared_edge_only.stl": {
+      "bytes": 184,
+      "sha256": "46533c1de63f157e59c96a1645af7b3ad97c56be2d90026cd4f23b9e688f6f1a"
+    },
+    "normal/intersection-controls/coplanar_shared_vertex_only.B.json": {
+      "bytes": 2927,
+      "sha256": "ead25f59a9b9f8b7fb72274f82e64458d519e3ea3eb9a37347c20282deff8900"
+    },
+    "normal/intersection-controls/coplanar_shared_vertex_only.B.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "normal/intersection-controls/coplanar_shared_vertex_only.B_O.json": {
+      "bytes": 2929,
+      "sha256": "eb157fc83f802b1bafacd83491aa265d806027c642049db6e8754bf9622262dd"
+    },
+    "normal/intersection-controls/coplanar_shared_vertex_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "normal/intersection-controls/coplanar_shared_vertex_only.stl": {
+      "bytes": 184,
+      "sha256": "20ea65d0d4e5d9ad62755b81842ed898dc056bc5f7943d21c9575d34ba7c7ca0"
+    },
+    "normal/intersection-controls/coplanar_vertex_T_junction.B.json": {
+      "bytes": 3979,
+      "sha256": "c4ecc34caeac4fce4d82a0bef964a5484c2c14dd440bf128c8e73fe9628bd6f2"
+    },
+    "normal/intersection-controls/coplanar_vertex_T_junction.B.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "51d7eb76ff94035f7a202983a8bb5fd14f2971e3cfbaadf24f07efb6dffd4d31"
+    },
+    "normal/intersection-controls/coplanar_vertex_T_junction.B_O.json": {
+      "bytes": 3980,
+      "sha256": "f3cfd9d11c57fdbeffc087654683962b880dfd0e97fa4e01b395aebd12848502"
+    },
+    "normal/intersection-controls/coplanar_vertex_T_junction.B_O.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "51d7eb76ff94035f7a202983a8bb5fd14f2971e3cfbaadf24f07efb6dffd4d31"
+    },
+    "normal/intersection-controls/coplanar_vertex_T_junction.stl": {
+      "bytes": 184,
+      "sha256": "2725b9608e654ed54f89e1649712a895e600250f1c69365cb0f64e148154aa83"
+    },
+    "normal/intersection-controls/degenerate_face.B.json": {
+      "bytes": 2395,
+      "sha256": "4ecd599932f82f4c50774fca9e9dffa5277beedab3b913ea7501ca8a08eb85db"
+    },
+    "normal/intersection-controls/degenerate_face.B_O.json": {
+      "bytes": 2397,
+      "sha256": "8c526832b9ca76c14dfa6e919e5617acf971cfd33fa68fc10afea03cd25a160e"
+    },
+    "normal/intersection-controls/degenerate_face.stl": {
+      "bytes": 134,
+      "sha256": "6d415ed31d5c2dc7123100f6c9543c47bfd5ec85d80b3c588c4b04988a0557a9"
+    },
+    "normal/intersection-controls/disjoint_coplanar_bbox_overlap.B.json": {
+      "bytes": 2929,
+      "sha256": "0c70743da9f18ef87784fb9f91e6aad388ff882185f6a5497a442216f2e69364"
+    },
+    "normal/intersection-controls/disjoint_coplanar_bbox_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/disjoint_coplanar_bbox_overlap.B_O.json": {
+      "bytes": 2931,
+      "sha256": "52b1f0d1a041971888a7f32b84f9e87f0e0d39241abe68fbe3b93b05facee39d"
+    },
+    "normal/intersection-controls/disjoint_coplanar_bbox_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/disjoint_coplanar_bbox_overlap.stl": {
+      "bytes": 184,
+      "sha256": "4c4c81c37b0ae6eeedde42c7f7821a59927a376f1f569797d9f5f3d25e12ac17"
+    },
+    "normal/intersection-controls/disjoint_noncoplanar_bbox_overlap.B.json": {
+      "bytes": 2938,
+      "sha256": "78702d36a4daaa72f25f3ac3deee5abd38b52370c74fa7a39690c9d3b8afa84f"
+    },
+    "normal/intersection-controls/disjoint_noncoplanar_bbox_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/disjoint_noncoplanar_bbox_overlap.B_O.json": {
+      "bytes": 2939,
+      "sha256": "6719c739bf40a23180fa57715fa467ca5d87b0ef4fef8ba43268e1137dd5bc60"
+    },
+    "normal/intersection-controls/disjoint_noncoplanar_bbox_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/disjoint_noncoplanar_bbox_overlap.stl": {
+      "bytes": 184,
+      "sha256": "3ace7d03bdd9c105fbf9d1f36516f2686ab3a1a42eac381f7d5fe837093dbf2c"
+    },
+    "normal/intersection-controls/duplicate_reversed_face.B.json": {
+      "bytes": 4572,
+      "sha256": "406843442a85bd67bf1282e14253bc1536bb65afee39af6e8bb14d5308a257f6"
+    },
+    "normal/intersection-controls/duplicate_reversed_face.B.json.contacts.jsonl.gz": {
+      "bytes": 221,
+      "sha256": "ba7dc8391fc7a2b738db096be3e7bded4f6b848ce7db98fb85dec853dddc11e0"
+    },
+    "normal/intersection-controls/duplicate_reversed_face.B_O.json": {
+      "bytes": 4574,
+      "sha256": "af897f8c138b00c07e3f22ff8fc9df845faca21d93d1caba04311f0a984d5ba0"
+    },
+    "normal/intersection-controls/duplicate_reversed_face.B_O.json.contacts.jsonl.gz": {
+      "bytes": 221,
+      "sha256": "ba7dc8391fc7a2b738db096be3e7bded4f6b848ce7db98fb85dec853dddc11e0"
+    },
+    "normal/intersection-controls/duplicate_reversed_face.stl": {
+      "bytes": 184,
+      "sha256": "5a3491d319ac7474efe749ed86e570dcf82be09ac9fbe2ba6e30602eae605372"
+    },
+    "normal/intersection-controls/extremely_skinny_area_overlap.B.json": {
+      "bytes": 4686,
+      "sha256": "a00629b6f1c84f797559de5299089de51a2b96fbb6bb4b00ef16381339815b74"
+    },
+    "normal/intersection-controls/extremely_skinny_area_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 271,
+      "sha256": "e45ceaaf0e986cdf7270e3c6fcb04c1586b154405f1282a6a7eb6d7dfa7ba44b"
+    },
+    "normal/intersection-controls/extremely_skinny_area_overlap.B_O.json": {
+      "bytes": 4687,
+      "sha256": "d6ef887dd463b1b6e7480c13726d252f4aef1ca2037ed4617a544512d64ca462"
+    },
+    "normal/intersection-controls/extremely_skinny_area_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 271,
+      "sha256": "e45ceaaf0e986cdf7270e3c6fcb04c1586b154405f1282a6a7eb6d7dfa7ba44b"
+    },
+    "normal/intersection-controls/extremely_skinny_area_overlap.stl": {
+      "bytes": 184,
+      "sha256": "64f160564186055ce18b383ada5893039f337fab37023f42d91873f8f7d3c617"
+    },
+    "normal/intersection-controls/malformed_count.B.json": {
+      "bytes": 1357,
+      "sha256": "ccd4c260a1a474a6e9188c95fa133fb7bba897e876a99c57b5ece12a7f8209d5"
+    },
+    "normal/intersection-controls/malformed_count.B_O.json": {
+      "bytes": 1357,
+      "sha256": "ccd4c260a1a474a6e9188c95fa133fb7bba897e876a99c57b5ece12a7f8209d5"
+    },
+    "normal/intersection-controls/malformed_count.stl": {
+      "bytes": 84,
+      "sha256": "7d53f38fa3d077fc7b61f926a22a2795e6e9dd4af84c8abc331e524d79037fe3"
+    },
+    "normal/intersection-controls/minimum_subnormal_plane_gap.B.json": {
+      "bytes": 2942,
+      "sha256": "3217a4b8037bf5a36a9cddf9b0b58398c75289d38d6534977f59e0e024bc72e4"
+    },
+    "normal/intersection-controls/minimum_subnormal_plane_gap.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/minimum_subnormal_plane_gap.B_O.json": {
+      "bytes": 2942,
+      "sha256": "bcbac30ceba5977b0e591db3ec94d50d0cbea53acac03138b5cb7a6d58a2ceee"
+    },
+    "normal/intersection-controls/minimum_subnormal_plane_gap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/minimum_subnormal_plane_gap.stl": {
+      "bytes": 184,
+      "sha256": "3fb98d2cd07f6b8f28b0efa8436a078e5d61887ceb61026633c293e775a9fefa"
+    },
+    "normal/intersection-controls/noncoplanar_crossing.B.json": {
+      "bytes": 4146,
+      "sha256": "bcc0b7e010d8da867500f8cbc30e85939d28788aef43df446e027346c2c9bae8"
+    },
+    "normal/intersection-controls/noncoplanar_crossing.B.json.contacts.jsonl.gz": {
+      "bytes": 182,
+      "sha256": "8ff5f1b824427a49f03c07902af58bf5e5c158844ef2ec7e247c857fcafdcca3"
+    },
+    "normal/intersection-controls/noncoplanar_crossing.B_O.json": {
+      "bytes": 4147,
+      "sha256": "796a80e3bf3adf5a6ccb172f6c8760f1ec6696bc4500a3eebd9cef8449bd68a6"
+    },
+    "normal/intersection-controls/noncoplanar_crossing.B_O.json.contacts.jsonl.gz": {
+      "bytes": 182,
+      "sha256": "8ff5f1b824427a49f03c07902af58bf5e5c158844ef2ec7e247c857fcafdcca3"
+    },
+    "normal/intersection-controls/noncoplanar_crossing.stl": {
+      "bytes": 184,
+      "sha256": "924e9c6d3b5e72fd798d1c3533ce35d9ae5e2054c56b663e7baf15033dd6d5c4"
+    },
+    "normal/intersection-controls/noncoplanar_shared_edge_only.B.json": {
+      "bytes": 2926,
+      "sha256": "3f3adab86f9a51db0c36e88b39d4f6531b53e1ea24f544bd57e1ea363e34009c"
+    },
+    "normal/intersection-controls/noncoplanar_shared_edge_only.B.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "normal/intersection-controls/noncoplanar_shared_edge_only.B_O.json": {
+      "bytes": 2929,
+      "sha256": "646d8c27b2f94ff41fee499056824b35f891dd795a3e714f21950fbee43e5df7"
+    },
+    "normal/intersection-controls/noncoplanar_shared_edge_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "normal/intersection-controls/noncoplanar_shared_edge_only.stl": {
+      "bytes": 184,
+      "sha256": "914ec2179ca573132eff86696aedd93ce4cae4f0deee2c2c5c7e8b98c3a18678"
+    },
+    "normal/intersection-controls/nonfinite.B.json": {
+      "bytes": 1363,
+      "sha256": "070c3b1809d9eae133c6e0262ba27c633e84d74fd66ce2d70d6b598955a8b00a"
+    },
+    "normal/intersection-controls/nonfinite.B_O.json": {
+      "bytes": 1363,
+      "sha256": "070c3b1809d9eae133c6e0262ba27c633e84d74fd66ce2d70d6b598955a8b00a"
+    },
+    "normal/intersection-controls/nonfinite.stl": {
+      "bytes": 134,
+      "sha256": "eadd8d390f9a956c8a745f838dd09b888a46bffe4663c88d55e8378227eb4086"
+    },
+    "normal/intersection-controls/nonshared_point_on_interior.B.json": {
+      "bytes": 3990,
+      "sha256": "e2cbc9778c032b723cfbf51a104bfd227de40257ee9f7c308c16e7eabe86ecd9"
+    },
+    "normal/intersection-controls/nonshared_point_on_interior.B.json.contacts.jsonl.gz": {
+      "bytes": 170,
+      "sha256": "a2b83d5c2ff0ee780661e60d6ef14ea434a788a5b1bb7b8c3258f4eec0817794"
+    },
+    "normal/intersection-controls/nonshared_point_on_interior.B_O.json": {
+      "bytes": 3990,
+      "sha256": "19d7af1201bf5f361ea0cd87f08c202bcbbcfb0f706ead5fc637c90a4de92a9a"
+    },
+    "normal/intersection-controls/nonshared_point_on_interior.B_O.json.contacts.jsonl.gz": {
+      "bytes": 170,
+      "sha256": "a2b83d5c2ff0ee780661e60d6ef14ea434a788a5b1bb7b8c3258f4eec0817794"
+    },
+    "normal/intersection-controls/nonshared_point_on_interior.stl": {
+      "bytes": 184,
+      "sha256": "d57144c665f77f18dc46cd393d0aee67dc7ec074d93a5e877786d8b4abbe4329"
+    },
+    "normal/intersection-controls/normal_box.B.json": {
+      "bytes": 2965,
+      "sha256": "e732da8b1d3e3462956f6df51622c6f5492c9c81552e383266b3539aa8c8e05a"
+    },
+    "normal/intersection-controls/normal_box.B.json.contacts.jsonl.gz": {
+      "bytes": 552,
+      "sha256": "165a16338a774c93e80e15d73eb0719878d283fd8f494d45976965909a689638"
+    },
+    "normal/intersection-controls/normal_box.B_O.json": {
+      "bytes": 2966,
+      "sha256": "c7e722242a435aa031af543ea5966bd126c64dc68dd90f0e4a9aef6e33b8b717"
+    },
+    "normal/intersection-controls/normal_box.B_O.json.contacts.jsonl.gz": {
+      "bytes": 552,
+      "sha256": "165a16338a774c93e80e15d73eb0719878d283fd8f494d45976965909a689638"
+    },
+    "normal/intersection-controls/normal_box.stl": {
+      "bytes": 684,
+      "sha256": "b43a89437d4c12945a16a050f9fa0ee8d40bded11cda52326ab4a42acc126371"
+    },
+    "normal/intersection-controls/oblique_box.B.json": {
+      "bytes": 3002,
+      "sha256": "bc78fbe88bed936082063f2830425cdc354c979872efccbbee59d03435bfda18"
+    },
+    "normal/intersection-controls/oblique_box.B.json.contacts.jsonl.gz": {
+      "bytes": 620,
+      "sha256": "96aec872833af683ba53f37a4c9b9ba82438d243ece9aa3fd3dc9e7e83432a92"
+    },
+    "normal/intersection-controls/oblique_box.B_O.json": {
+      "bytes": 3004,
+      "sha256": "92551ad0d2eed11955cad3cc1b1782165ba2d21f7d1fed4e2cde1daf2d732fd6"
+    },
+    "normal/intersection-controls/oblique_box.B_O.json.contacts.jsonl.gz": {
+      "bytes": 620,
+      "sha256": "96aec872833af683ba53f37a4c9b9ba82438d243ece9aa3fd3dc9e7e83432a92"
+    },
+    "normal/intersection-controls/oblique_box.stl": {
+      "bytes": 684,
+      "sha256": "5a25ee3d31134dbfd15fc79acd527cc7cf0d9957ef4ac8a07882f7561ce1d69a"
+    },
+    "normal/intersection-controls/shared_edge_but_overlaps.B.json": {
+      "bytes": 4513,
+      "sha256": "9614e44fab40fc227a73bf76cddcce1ed6215684956dc19323474b4abdf22bf9"
+    },
+    "normal/intersection-controls/shared_edge_but_overlaps.B.json.contacts.jsonl.gz": {
+      "bytes": 226,
+      "sha256": "a95af886881983f22c4e8b655165ded17149669de38f6e54b4e0eb80faec5209"
+    },
+    "normal/intersection-controls/shared_edge_but_overlaps.B_O.json": {
+      "bytes": 4514,
+      "sha256": "2b829fada5fd4ef60c89db1c36729282d23166042a040e90ce38da56152aa453"
+    },
+    "normal/intersection-controls/shared_edge_but_overlaps.B_O.json.contacts.jsonl.gz": {
+      "bytes": 226,
+      "sha256": "a95af886881983f22c4e8b655165ded17149669de38f6e54b4e0eb80faec5209"
+    },
+    "normal/intersection-controls/shared_edge_but_overlaps.stl": {
+      "bytes": 184,
+      "sha256": "fc0396b1e98a925caaa0085261b1768d987c4b727f3f2da65d8a45528b005ac4"
+    },
+    "normal/intersection-controls/shared_vertex_but_area_overlap.B.json": {
+      "bytes": 4456,
+      "sha256": "aaa6d5821cdb120336f8c995dd09c09119e875767f5d3f5f041e27b2ff0df75e"
+    },
+    "normal/intersection-controls/shared_vertex_but_area_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 222,
+      "sha256": "37c790c6ee9a6002f4caf792fe59599d835651bff6efe73308f852125c8d12b3"
+    },
+    "normal/intersection-controls/shared_vertex_but_area_overlap.B_O.json": {
+      "bytes": 4458,
+      "sha256": "4ed07c52e5dcd545bd942ba35d5090638dad53495b589db436d07a4a3a8eb01f"
+    },
+    "normal/intersection-controls/shared_vertex_but_area_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 222,
+      "sha256": "37c790c6ee9a6002f4caf792fe59599d835651bff6efe73308f852125c8d12b3"
+    },
+    "normal/intersection-controls/shared_vertex_but_area_overlap.stl": {
+      "bytes": 184,
+      "sha256": "32051aee80cb490e0f2e83b663ee179f72d084c42dbf7f0a573b17ecf289cafc"
+    },
+    "normal/intersection-controls/shared_vertex_but_crosses.B.json": {
+      "bytes": 4225,
+      "sha256": "ce48f4c3000ae4deddc7cdc8fe01a2dc2e5391d034027fd32378e381106cdbe9"
+    },
+    "normal/intersection-controls/shared_vertex_but_crosses.B.json.contacts.jsonl.gz": {
+      "bytes": 175,
+      "sha256": "360a499edc9b80a6c295430cca7dd80a4568ff30a94b09b02b472abf3c30dd11"
+    },
+    "normal/intersection-controls/shared_vertex_but_crosses.B_O.json": {
+      "bytes": 4227,
+      "sha256": "102ac1f40227d5e7c575625a846ceac0563ae5759d806a6fe954b2f4b1e58ccc"
+    },
+    "normal/intersection-controls/shared_vertex_but_crosses.B_O.json.contacts.jsonl.gz": {
+      "bytes": 175,
+      "sha256": "360a499edc9b80a6c295430cca7dd80a4568ff30a94b09b02b472abf3c30dd11"
+    },
+    "normal/intersection-controls/shared_vertex_but_crosses.stl": {
+      "bytes": 184,
+      "sha256": "df7d1b6a81cf3b69d2cb784aef62bdf956512fc3bca9ec4e1e5001ef68acb990"
+    },
+    "normal/intersection-controls/shared_vertex_only.B.json": {
+      "bytes": 2909,
+      "sha256": "6a155e43a27cef2c361ad1647a1d77b8c4bdb5105063b84a95445b0df88588d7"
+    },
+    "normal/intersection-controls/shared_vertex_only.B.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "normal/intersection-controls/shared_vertex_only.B_O.json": {
+      "bytes": 2911,
+      "sha256": "ca34e0db9d8e483379224caf241c4b38def02fdb1ebc78028545be3e3f6b5a2f"
+    },
+    "normal/intersection-controls/shared_vertex_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "normal/intersection-controls/shared_vertex_only.stl": {
+      "bytes": 184,
+      "sha256": "838580d8b68f308c59ff05a625e82ad2c96071da6072f4b1395f0b2531a2484a"
+    },
+    "normal/intersection-controls/tiny_coplanar_near_disjoint.B.json": {
+      "bytes": 2961,
+      "sha256": "999c475e50efabd00d00f8aec968ad2b537b8d3d6444761753f6714cdd480c2e"
+    },
+    "normal/intersection-controls/tiny_coplanar_near_disjoint.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/tiny_coplanar_near_disjoint.B_O.json": {
+      "bytes": 2963,
+      "sha256": "14ed6394d45c1014e9ed437a0d516bb406300e24e6ad0aa70af57f76f52175eb"
+    },
+    "normal/intersection-controls/tiny_coplanar_near_disjoint.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "normal/intersection-controls/tiny_coplanar_near_disjoint.stl": {
+      "bytes": 184,
+      "sha256": "744a539f172fe81c70c8b4c794462d68ec18323ed45d38f72ee889540d406b88"
+    },
+    "normal/intersection-controls/tiny_noncoplanar_crossing.B.json": {
+      "bytes": 4574,
+      "sha256": "e87a3460bc04a2ac790ed7d830fd51b6f5a1c1ca6c74b4c868126d9fad6234d8"
+    },
+    "normal/intersection-controls/tiny_noncoplanar_crossing.B.json.contacts.jsonl.gz": {
+      "bytes": 236,
+      "sha256": "14a84ccd58ee377c018f9cd2a0add786c4e71665c8b6102ecc184966e0238c18"
+    },
+    "normal/intersection-controls/tiny_noncoplanar_crossing.B_O.json": {
+      "bytes": 4576,
+      "sha256": "94d1c470a90788924ee81b41f5bbfeeb2ba3703227fc03a349f3581479e47d60"
+    },
+    "normal/intersection-controls/tiny_noncoplanar_crossing.B_O.json.contacts.jsonl.gz": {
+      "bytes": 236,
+      "sha256": "14a84ccd58ee377c018f9cd2a0add786c4e71665c8b6102ecc184966e0238c18"
+    },
+    "normal/intersection-controls/tiny_noncoplanar_crossing.stl": {
+      "bytes": 184,
+      "sha256": "f8cae698af299ee32a598ec82c87a794c317d9b9fdc4b53f5e9dee12359b9e3a"
+    },
+    "normal/intersection-controls.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/intersection-controls.stdout.txt": {
+      "bytes": 132,
+      "sha256": "b6d54cde7be8cea8739b25df019cbc7ef775010a833a15f808a8b7b1c71203fb"
+    },
+    "normal/intersections.json": {
+      "bytes": 3090,
+      "sha256": "e73f7ad781116caa4ab683f0c8d2450966fcf6f973a7da98712d9c6e278e1028"
+    },
+    "normal/intersections.json.contacts.jsonl.gz": {
+      "bytes": 1186834,
+      "sha256": "38f3629abe9a42d6ff35f709f91eb625ca486bb25c99ff3582215deb40a567cb"
+    },
+    "normal/intersections.stderr.txt": {
+      "bytes": 110,
+      "sha256": "f87ffc2c7d5d4da6e73297c43806c368a1b3e10157755d90f0542c183cc14c92"
+    },
+    "normal/intersections.stdout.txt": {
+      "bytes": 104,
+      "sha256": "488b74857cb1d673043e183282b091974c33501b0bd15b812ebbed416ff8d15b"
+    },
+    "normal/standard/controls/control-check.json": {
+      "bytes": 20963,
+      "sha256": "16843a04bd7109dca7dd97e57701fc7ae7c9a606347540af291d9c5134c32572"
+    },
+    "normal/standard/controls/python_B/all_faces_inverted/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2515,
+      "sha256": "4290ab8f3f23de18daf288cf4bfaa7c9e47972837543fba27f6cdad52ec873c9"
+    },
+    "normal/standard/controls/python_B/all_faces_inverted/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/all_faces_inverted/check_raw_mesh/stdout.txt": {
+      "bytes": 214,
+      "sha256": "45df2ec5fab1dfb4bd9235c99f92a5c4820aaa76151f42a99db9595da6dda1e5"
+    },
+    "normal/standard/controls/python_B/all_faces_inverted/fixture.stl": {
+      "bytes": 684,
+      "sha256": "d59808bcd9f92193ccdf31472b3d2de788653567b31b14f10cb1d2933b08b375"
+    },
+    "normal/standard/controls/python_B/duplicate_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 4524,
+      "sha256": "42b1a675f7c6fe7cd19203cefd8e838f185ad027fd8189169cb24afb155b02f2"
+    },
+    "normal/standard/controls/python_B/duplicate_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/duplicate_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 223,
+      "sha256": "32c70033146924ebb1511024cb224f559bce8a480c5aa69e47cb54f4218ff90b"
+    },
+    "normal/standard/controls/python_B/duplicate_original_triangle/fixture.stl": {
+      "bytes": 734,
+      "sha256": "65f8cbd7b7341928384bf39a711f8a608ecb28071b4a06cee5de6a8554a5e265"
+    },
+    "normal/standard/controls/python_B/internal_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2533,
+      "sha256": "920b76b2c185bb00237266bd5853cc60cb41ef8afbc5a6b2e6ee55b6fdd241a2"
+    },
+    "normal/standard/controls/python_B/internal_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/internal_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 217,
+      "sha256": "3b34f817cc6518f30a31414d7c2b6717cefe28eb69074bdc3016e2b768fe1bfc"
+    },
+    "normal/standard/controls/python_B/internal_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "b093f488ca4341ecdbb59bde165be22ebb6b4293b358b4ce3da98a63511d2e4b"
+    },
+    "normal/standard/controls/python_B/missing_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3890,
+      "sha256": "92e966621c702eaa2fe9e45702d691c30a06491ad366946f6a9fd674a501bbe2"
+    },
+    "normal/standard/controls/python_B/missing_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/missing_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 221,
+      "sha256": "fe27f2961318d19106fc057d3ed77232261fc5984833615bfcb8ffd08a62311b"
+    },
+    "normal/standard/controls/python_B/missing_original_triangle/fixture.stl": {
+      "bytes": 634,
+      "sha256": "1ac63fc71f7830e1f21140ff3299555cdcbaf0216e304b73b1d5210d82eb234f"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-check.json": {
+      "bytes": 3694,
+      "sha256": "9cade1fc7fe8ad3d6fdbf15b2e9a23663ce2642eb1f97846c18e85f45c5e7a63"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 15028,
+      "sha256": "f1f187a163491376db3d3bd6106e02fd61b335da981d61cc05bf5e6975490730"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-run.log": {
+      "bytes": 418,
+      "sha256": "66f7eccad6d0e26599b49b8b82fc68676708c110aaa649e46dd25795c6618a9c"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2840,
+      "sha256": "bffc341865086d94320a0f6e6ad41cf7533fa85faeb3c1bfd918ab27825742b1"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/stdout.txt": {
+      "bytes": 236,
+      "sha256": "93cbee586bd7a2c3f39c82da2f4eedb0ea5de2b190955918a9442e16b3126c5e"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_sections/section-check.json": {
+      "bytes": 2837,
+      "sha256": "686fcc71361d04583f5686c26e316446c10c49ca3f95a8ce5251b00f96798a0e"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_sections/section-details.json.gz": {
+      "bytes": 1998,
+      "sha256": "29b481d8004553e20f4ae191bc32bd5ee55223da127dd0f4d4efbb7764915ba9"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_sections/section-failures.json.gz": {
+      "bytes": 32754,
+      "sha256": "18620e3d28e7da283e519d4904a083e039b7dde8df871cd701a871d954a664be"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/check_sections/stdout.txt": {
+      "bytes": 212,
+      "sha256": "d34554b58fb1c1fdab5a7bd9580414fcc5229c850ac3066f0ebe3fa688f50340"
+    },
+    "normal/standard/controls/python_B/narrow_0p6mm_root/fixture.stl": {
+      "bytes": 2484,
+      "sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/dense-check.json": {
+      "bytes": 3674,
+      "sha256": "07b24609d1edd32ad382fc4f534757963cd897c792aa56487f535b3b39dcf58c"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 3972,
+      "sha256": "f0efd240facfa3b987bcd06f23eb46dc14035a749c652825459d9f9ba04c764d"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/normal_box/check_dense_surface/stdout.txt": {
+      "bytes": 227,
+      "sha256": "e99d35b09bab751a7c8eb7c799bf26cd17e9d4c04217d1dac12086d3051facab"
+    },
+    "normal/standard/controls/python_B/normal_box/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2510,
+      "sha256": "688030c3a38413df1013b6e3eb3192609951070ecf0c9178cf3a0231d7a64779"
+    },
+    "normal/standard/controls/python_B/normal_box/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/normal_box/check_raw_mesh/stdout.txt": {
+      "bytes": 205,
+      "sha256": "8933bb5829fa7a49aef00fa0be62e3e9b46dc9184bff387f021137df549396a8"
+    },
+    "normal/standard/controls/python_B/normal_box/check_sections/section-check.json": {
+      "bytes": 2836,
+      "sha256": "e4bb0d208ceabfb719481b30af7b27112a52e51a4529a359762d95dfc5b9047c"
+    },
+    "normal/standard/controls/python_B/normal_box/check_sections/section-details.json.gz": {
+      "bytes": 4772,
+      "sha256": "e146bdf74432023b5b9ffabb0e4543b0d231a5a51bb0319cf7a617a996f76931"
+    },
+    "normal/standard/controls/python_B/normal_box/check_sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B/normal_box/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/normal_box/check_sections/stdout.txt": {
+      "bytes": 204,
+      "sha256": "a90f0b4cb8f1840eec4a1aa13ecd1db6224e143a87d69e3a96804f273452178c"
+    },
+    "normal/standard/controls/python_B/normal_box/fixture.stl": {
+      "bytes": 684,
+      "sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34"
+    },
+    "normal/standard/controls/python_B/one_reversed_face/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3184,
+      "sha256": "acc120312068cd91b04a891205d89c4a6d48e1f9cf7e58a63f83c90e28b2b401"
+    },
+    "normal/standard/controls/python_B/one_reversed_face/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/one_reversed_face/check_raw_mesh/stdout.txt": {
+      "bytes": 213,
+      "sha256": "5f1ef455d601d595fcfaa6ac1692d35436120fbfd82ba50a5c5c18be3a454fb5"
+    },
+    "normal/standard/controls/python_B/one_reversed_face/fixture.stl": {
+      "bytes": 684,
+      "sha256": "51fc3db156c308147871c1112eb978f0dedb96da25206ab11bc8c708850d8c66"
+    },
+    "normal/standard/controls/python_B/separate_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2534,
+      "sha256": "d4048d6fdf33e1b240ff51ca27d48e3b567018cf039f87aa02f181bb6e426742"
+    },
+    "normal/standard/controls/python_B/separate_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/separate_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 217,
+      "sha256": "784cff1c64c7c2190ce1c74f1799366151e4eda7b1817894658292c814680017"
+    },
+    "normal/standard/controls/python_B/separate_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "8cbc941ff3263b1d8b9929f2f06f96408e80dbc899f2544dc2ef3ea72ad1f291"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-check.json": {
+      "bytes": 3692,
+      "sha256": "d58a90706cc45b3ba0f79c59f5adb7e5d1ee21e2ba67a9329d072d7ceb056fc0"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 4272,
+      "sha256": "6bb0f2730bc673e27d3e4137e123555ebdd34c2d9235853066de09f8f5291a2b"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2600,
+      "sha256": "dbb7398a2b5e5dfbc1688a9e18280a2ae3d4860e7d843bde8d79442057e682eb"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/stdout.txt": {
+      "bytes": 234,
+      "sha256": "af9ea8f6ab66dc9bf64a084fdb607969bc3ab2216727619ec1d506a47a1c253c"
+    },
+    "normal/standard/controls/python_B/thin_0p6mm_slab/fixture.stl": {
+      "bytes": 684,
+      "sha256": "f257d6b90ae6038a89db58ed235e053601ac1d7116854e5ea20a372ecbe60be6"
+    },
+    "normal/standard/controls/python_B/tiny_original_polygon/check_sections/section-check.json": {
+      "bytes": 2822,
+      "sha256": "168aaffd0a4a9802ef31025ad3b8fee2b165d1c6e94aba5d933ab6a3c33a749b"
+    },
+    "normal/standard/controls/python_B/tiny_original_polygon/check_sections/section-details.json.gz": {
+      "bytes": 3496,
+      "sha256": "e213c0d99e980d9a69ef5c0559d7dc6f76239ef40ae4d89f5de038cb7b400b15"
+    },
+    "normal/standard/controls/python_B/tiny_original_polygon/check_sections/section-failures.json.gz": {
+      "bytes": 3719,
+      "sha256": "7f2c846104d55a8521e42d1b9b42b419ad864e707515b83620748d60b50d21fc"
+    },
+    "normal/standard/controls/python_B/tiny_original_polygon/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/tiny_original_polygon/check_sections/stdout.txt": {
+      "bytes": 216,
+      "sha256": "103bd55aef83c4095c15f5fa9f9b82114e925f6c5a948f108fbb2a07d3b5dde5"
+    },
+    "normal/standard/controls/python_B/tiny_original_polygon/fixture.stl": {
+      "bytes": 2284,
+      "sha256": "7858db1ae3cee59b297ef1c4595e526414f7bba913034eb56c0d87b82c75b5a5"
+    },
+    "normal/standard/controls/python_B/truncated_binary_record/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 1200,
+      "sha256": "995a54ee755918d3b041b4435800d7a344f8dff991756628cd7b7c517f44ad37"
+    },
+    "normal/standard/controls/python_B/truncated_binary_record/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/truncated_binary_record/check_raw_mesh/stdout.txt": {
+      "bytes": 271,
+      "sha256": "80a0e6fd22d61685f039bd1a21a45fdf7c16662683fd5617c2b4d70c5ac0bc1c"
+    },
+    "normal/standard/controls/python_B/truncated_binary_record/fixture.stl": {
+      "bytes": 683,
+      "sha256": "da8f5e7aff04a14e81342fe34dfdd6e6e71e9ea31bc4994aa3c587bdb82aa0ce"
+    },
+    "normal/standard/controls/python_B/vertex_only_touching_shells/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3073,
+      "sha256": "6e6280fa86b03652350bf6f227afbf5e3793c572c81dbfb9c398f2322e96e10b"
+    },
+    "normal/standard/controls/python_B/vertex_only_touching_shells/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B/vertex_only_touching_shells/check_raw_mesh/stdout.txt": {
+      "bytes": 223,
+      "sha256": "00ba1797049f9f39a6177adf5fd85304745a3603a5b83a69e96f06f02ec00ab3"
+    },
+    "normal/standard/controls/python_B/vertex_only_touching_shells/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "474d3bc22a4447db10ae0f16f0501a2dee22d64869fc557decce215fb3145c5d"
+    },
+    "normal/standard/controls/python_B_O/all_faces_inverted/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2515,
+      "sha256": "4290ab8f3f23de18daf288cf4bfaa7c9e47972837543fba27f6cdad52ec873c9"
+    },
+    "normal/standard/controls/python_B_O/all_faces_inverted/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/all_faces_inverted/check_raw_mesh/stdout.txt": {
+      "bytes": 216,
+      "sha256": "42a390f8bb4207368091bc21263756cd54a989044b7ceeabd0e5f79ce596a1ef"
+    },
+    "normal/standard/controls/python_B_O/all_faces_inverted/fixture.stl": {
+      "bytes": 684,
+      "sha256": "d59808bcd9f92193ccdf31472b3d2de788653567b31b14f10cb1d2933b08b375"
+    },
+    "normal/standard/controls/python_B_O/duplicate_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 4524,
+      "sha256": "42b1a675f7c6fe7cd19203cefd8e838f185ad027fd8189169cb24afb155b02f2"
+    },
+    "normal/standard/controls/python_B_O/duplicate_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/duplicate_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 225,
+      "sha256": "ac8e7e47ae0b7633a558a27d9ac5a319f259cb3157a4bce2a2bb3e9fa0ff141a"
+    },
+    "normal/standard/controls/python_B_O/duplicate_original_triangle/fixture.stl": {
+      "bytes": 734,
+      "sha256": "65f8cbd7b7341928384bf39a711f8a608ecb28071b4a06cee5de6a8554a5e265"
+    },
+    "normal/standard/controls/python_B_O/internal_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2533,
+      "sha256": "920b76b2c185bb00237266bd5853cc60cb41ef8afbc5a6b2e6ee55b6fdd241a2"
+    },
+    "normal/standard/controls/python_B_O/internal_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/internal_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 219,
+      "sha256": "8d15bd3a444e4dbc1c4f542c08e8c6d966bb903678ebe048097bea18d3116788"
+    },
+    "normal/standard/controls/python_B_O/internal_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "b093f488ca4341ecdbb59bde165be22ebb6b4293b358b4ce3da98a63511d2e4b"
+    },
+    "normal/standard/controls/python_B_O/missing_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3890,
+      "sha256": "92e966621c702eaa2fe9e45702d691c30a06491ad366946f6a9fd674a501bbe2"
+    },
+    "normal/standard/controls/python_B_O/missing_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/missing_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 223,
+      "sha256": "b945df2b7ffe56d30775d82e1b560726b73ec659d560cbf57d7fa27baac0ccde"
+    },
+    "normal/standard/controls/python_B_O/missing_original_triangle/fixture.stl": {
+      "bytes": 634,
+      "sha256": "1ac63fc71f7830e1f21140ff3299555cdcbaf0216e304b73b1d5210d82eb234f"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-check.json": {
+      "bytes": 3694,
+      "sha256": "9cade1fc7fe8ad3d6fdbf15b2e9a23663ce2642eb1f97846c18e85f45c5e7a63"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 15028,
+      "sha256": "f1f187a163491376db3d3bd6106e02fd61b335da981d61cc05bf5e6975490730"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-run.log": {
+      "bytes": 418,
+      "sha256": "66f7eccad6d0e26599b49b8b82fc68676708c110aaa649e46dd25795c6618a9c"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2840,
+      "sha256": "bffc341865086d94320a0f6e6ad41cf7533fa85faeb3c1bfd918ab27825742b1"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/stdout.txt": {
+      "bytes": 238,
+      "sha256": "1b519ac2fbaa40b1d192609e8e7e96825a1fb424ad046776d36db0c81b220f81"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/section-check.json": {
+      "bytes": 2837,
+      "sha256": "686fcc71361d04583f5686c26e316446c10c49ca3f95a8ce5251b00f96798a0e"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/section-details.json.gz": {
+      "bytes": 1998,
+      "sha256": "29b481d8004553e20f4ae191bc32bd5ee55223da127dd0f4d4efbb7764915ba9"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/section-failures.json.gz": {
+      "bytes": 32754,
+      "sha256": "18620e3d28e7da283e519d4904a083e039b7dde8df871cd701a871d954a664be"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/stdout.txt": {
+      "bytes": 214,
+      "sha256": "5ddabb0f912e273ff3363ddda1248c6dfb2c8862ea2bb3a39fae0e6520a4667b"
+    },
+    "normal/standard/controls/python_B_O/narrow_0p6mm_root/fixture.stl": {
+      "bytes": 2484,
+      "sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/dense-check.json": {
+      "bytes": 3674,
+      "sha256": "07b24609d1edd32ad382fc4f534757963cd897c792aa56487f535b3b39dcf58c"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 3972,
+      "sha256": "f0efd240facfa3b987bcd06f23eb46dc14035a749c652825459d9f9ba04c764d"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_dense_surface/stdout.txt": {
+      "bytes": 229,
+      "sha256": "5c4d4bf3d3b4f7af9dd8a9d21700aba595823dc046c5d3a7b5414db6c554833c"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2510,
+      "sha256": "688030c3a38413df1013b6e3eb3192609951070ecf0c9178cf3a0231d7a64779"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_raw_mesh/stdout.txt": {
+      "bytes": 207,
+      "sha256": "1ccb5b9fd3a46233997b748e36040bede7faa23834e45f7f1ec82d42c6aa7aaa"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_sections/section-check.json": {
+      "bytes": 2836,
+      "sha256": "e4bb0d208ceabfb719481b30af7b27112a52e51a4529a359762d95dfc5b9047c"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_sections/section-details.json.gz": {
+      "bytes": 4772,
+      "sha256": "e146bdf74432023b5b9ffabb0e4543b0d231a5a51bb0319cf7a617a996f76931"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/normal_box/check_sections/stdout.txt": {
+      "bytes": 206,
+      "sha256": "aebfc3bf49d6edd18e0fe5ffbf867dd219fda48ace9670ff4d67c6e2550c561c"
+    },
+    "normal/standard/controls/python_B_O/normal_box/fixture.stl": {
+      "bytes": 684,
+      "sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34"
+    },
+    "normal/standard/controls/python_B_O/one_reversed_face/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3184,
+      "sha256": "acc120312068cd91b04a891205d89c4a6d48e1f9cf7e58a63f83c90e28b2b401"
+    },
+    "normal/standard/controls/python_B_O/one_reversed_face/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/one_reversed_face/check_raw_mesh/stdout.txt": {
+      "bytes": 215,
+      "sha256": "088e61c4c62e38e6b70469c700b1b05e6f36e1b5f9cb578255c0b1c71705cf76"
+    },
+    "normal/standard/controls/python_B_O/one_reversed_face/fixture.stl": {
+      "bytes": 684,
+      "sha256": "51fc3db156c308147871c1112eb978f0dedb96da25206ab11bc8c708850d8c66"
+    },
+    "normal/standard/controls/python_B_O/separate_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2534,
+      "sha256": "d4048d6fdf33e1b240ff51ca27d48e3b567018cf039f87aa02f181bb6e426742"
+    },
+    "normal/standard/controls/python_B_O/separate_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/separate_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 219,
+      "sha256": "8b652479dbf42ad6e09fcafd30d8326164d6248c6e594229f05811dc91c4017a"
+    },
+    "normal/standard/controls/python_B_O/separate_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "8cbc941ff3263b1d8b9929f2f06f96408e80dbc899f2544dc2ef3ea72ad1f291"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-check.json": {
+      "bytes": 3692,
+      "sha256": "d58a90706cc45b3ba0f79c59f5adb7e5d1ee21e2ba67a9329d072d7ceb056fc0"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 4272,
+      "sha256": "6bb0f2730bc673e27d3e4137e123555ebdd34c2d9235853066de09f8f5291a2b"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2600,
+      "sha256": "dbb7398a2b5e5dfbc1688a9e18280a2ae3d4860e7d843bde8d79442057e682eb"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/stdout.txt": {
+      "bytes": 236,
+      "sha256": "93249b3e343c3a6a6173a8712652a4f78d2260a85c9b7b18430f70ef234952a4"
+    },
+    "normal/standard/controls/python_B_O/thin_0p6mm_slab/fixture.stl": {
+      "bytes": 684,
+      "sha256": "f257d6b90ae6038a89db58ed235e053601ac1d7116854e5ea20a372ecbe60be6"
+    },
+    "normal/standard/controls/python_B_O/tiny_original_polygon/check_sections/section-check.json": {
+      "bytes": 2822,
+      "sha256": "168aaffd0a4a9802ef31025ad3b8fee2b165d1c6e94aba5d933ab6a3c33a749b"
+    },
+    "normal/standard/controls/python_B_O/tiny_original_polygon/check_sections/section-details.json.gz": {
+      "bytes": 3496,
+      "sha256": "e213c0d99e980d9a69ef5c0559d7dc6f76239ef40ae4d89f5de038cb7b400b15"
+    },
+    "normal/standard/controls/python_B_O/tiny_original_polygon/check_sections/section-failures.json.gz": {
+      "bytes": 3719,
+      "sha256": "7f2c846104d55a8521e42d1b9b42b419ad864e707515b83620748d60b50d21fc"
+    },
+    "normal/standard/controls/python_B_O/tiny_original_polygon/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/tiny_original_polygon/check_sections/stdout.txt": {
+      "bytes": 218,
+      "sha256": "fbf9ad4fdf1a2ee1ae93166844188c391ba052972c67a325eae78ab8f91a67b2"
+    },
+    "normal/standard/controls/python_B_O/tiny_original_polygon/fixture.stl": {
+      "bytes": 2284,
+      "sha256": "7858db1ae3cee59b297ef1c4595e526414f7bba913034eb56c0d87b82c75b5a5"
+    },
+    "normal/standard/controls/python_B_O/truncated_binary_record/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 1200,
+      "sha256": "995a54ee755918d3b041b4435800d7a344f8dff991756628cd7b7c517f44ad37"
+    },
+    "normal/standard/controls/python_B_O/truncated_binary_record/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/truncated_binary_record/check_raw_mesh/stdout.txt": {
+      "bytes": 273,
+      "sha256": "f7bf5609f7c1ca4c7f121651ef0df89bb6cdf074b123604cc6a9be683437a752"
+    },
+    "normal/standard/controls/python_B_O/truncated_binary_record/fixture.stl": {
+      "bytes": 683,
+      "sha256": "da8f5e7aff04a14e81342fe34dfdd6e6e71e9ea31bc4994aa3c587bdb82aa0ce"
+    },
+    "normal/standard/controls/python_B_O/vertex_only_touching_shells/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3073,
+      "sha256": "6e6280fa86b03652350bf6f227afbf5e3793c572c81dbfb9c398f2322e96e10b"
+    },
+    "normal/standard/controls/python_B_O/vertex_only_touching_shells/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/python_B_O/vertex_only_touching_shells/check_raw_mesh/stdout.txt": {
+      "bytes": 225,
+      "sha256": "34f09db7b6f0f6e0253a05e59d6fb69d5c0ba4d82dc52578d44ce7f619b11524"
+    },
+    "normal/standard/controls/python_B_O/vertex_only_touching_shells/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "474d3bc22a4447db10ae0f16f0501a2dee22d64869fc557decce215fb3145c5d"
+    },
+    "normal/standard/controls/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/controls/stdout.txt": {
+      "bytes": 2551,
+      "sha256": "bc283cc7ff5289317fcac4f9be0c13714a077ddc9e4cbddb4e869fea6406d9f3"
+    },
+    "normal/standard/dense/dense-check.json": {
+      "bytes": 3705,
+      "sha256": "6df05ace79350158ea14118afd05ab15c7338f4b646179761ee18e63c88e2979"
+    },
+    "normal/standard/dense/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/dense/dense-flagged-samples.json.gz": {
+      "bytes": 2064,
+      "sha256": "56fa46e1a7e3f9a643bda8417b97f3c691bf12ffe34a0330c408fb611030fbf3"
+    },
+    "normal/standard/dense/dense-original.csv.xz": {
+      "bytes": 14135064,
+      "sha256": "31bd8567fcf447a0ef3abd262a42c1bd9bbd8bc3f2b7dbca262285580757014a"
+    },
+    "normal/standard/dense/dense-run.log": {
+      "bytes": 444,
+      "sha256": "b430a80262c10d13cbce66fba2837b9e6155071205163b7692c58cdc774b127c"
+    },
+    "normal/standard/dense/dense-short-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/dense/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/dense/stdout.txt": {
+      "bytes": 185,
+      "sha256": "250019d9314d1e028ada0a1e9d1658db8089f6a4617bab9d019232fb92bc939a"
+    },
+    "normal/standard/qa-summary.json": {
+      "bytes": 3440,
+      "sha256": "26f577b59bb6241745ce764876f0d478f50fef824a4ab4014ab0c71ca0df1f0b"
+    },
+    "normal/standard/raw/raw-mesh-check.json": {
+      "bytes": 2619,
+      "sha256": "6e815e170a3adeea915c30e997af9e558afc26893a94269563f3b68783dc24b2"
+    },
+    "normal/standard/raw/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/raw/stdout.txt": {
+      "bytes": 165,
+      "sha256": "c2e4cc73ed7fd1842eb6ffa7e2722a9cc6aef4aa41a8206441fffdf2a93a6dbd"
+    },
+    "normal/standard/sections/section-check.json": {
+      "bytes": 2851,
+      "sha256": "87b6185c57ad7a8863d3ce45d80d0d03db491b3428bca0e282cb1a096baad874"
+    },
+    "normal/standard/sections/section-details.json.gz": {
+      "bytes": 278060,
+      "sha256": "1ce5b4e8509448a37fc553ac5dbf5c80bde8b4ffdcf6c482a3d5952b53792723"
+    },
+    "normal/standard/sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal/standard/sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard/sections/stdout.txt": {
+      "bytes": 169,
+      "sha256": "d48e8aaefbf7eec45c37c4193a2ef4cfd1a95465afb143a296c0a7b59b58f238"
+    },
+    "normal/standard.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "normal/standard.stdout.txt": {
+      "bytes": 670,
+      "sha256": "41357bd3007cb3dd18834f77fa08d20cd27747abc0c1aa9ab028c8a97c17201b"
+    },
+    "optimized/dense-evidence.json": {
+      "bytes": 1038,
+      "sha256": "9711994acbfb424bfc8f4514aff1a6807f5a401fe169285c430088fe559913f0"
+    },
+    "optimized/dense-evidence.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/dense-evidence.stdout.txt": {
+      "bytes": 988,
+      "sha256": "79a041b56984d3feabfc56708d4d6a9d8276fca855593e8721e5493b6d744ca0"
+    },
+    "optimized/intersection-controls/controls-summary.json": {
+      "bytes": 1019142,
+      "sha256": "6663aa54e94adc8b064b94549fa094283728d2a0a7c2e86584746813ed8a6e23"
+    },
+    "optimized/intersection-controls/coplanar_partial_edge_contact.B.json": {
+      "bytes": 4153,
+      "sha256": "be40518f37cb537950255d45f3d52b7a4726fa0451a6e001e600c88f6f0852d2"
+    },
+    "optimized/intersection-controls/coplanar_partial_edge_contact.B.json.contacts.jsonl.gz": {
+      "bytes": 178,
+      "sha256": "e4c60efa5ec3ea7f7b4324a5a1e29c48740f2425faf7fc37e0d7e4f2fdccde84"
+    },
+    "optimized/intersection-controls/coplanar_partial_edge_contact.B_O.json": {
+      "bytes": 4154,
+      "sha256": "3c6b36823d946e226e5faeb55e333b9905dace4b62fa7b34b79148b8ddd00309"
+    },
+    "optimized/intersection-controls/coplanar_partial_edge_contact.B_O.json.contacts.jsonl.gz": {
+      "bytes": 178,
+      "sha256": "e4c60efa5ec3ea7f7b4324a5a1e29c48740f2425faf7fc37e0d7e4f2fdccde84"
+    },
+    "optimized/intersection-controls/coplanar_partial_edge_contact.stl": {
+      "bytes": 184,
+      "sha256": "560d12f7653aaf4f32d51b0a5224b095b4007b84ceb790ce7ea0c5f19b43094e"
+    },
+    "optimized/intersection-controls/coplanar_positive_overlap.B.json": {
+      "bytes": 4400,
+      "sha256": "084c049b4a874ec08dcc092cc8a93ac57536e5853c87b0adc11f939944024bac"
+    },
+    "optimized/intersection-controls/coplanar_positive_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 230,
+      "sha256": "0b70b89538a83c3e8614774a2d001908956609143ca954eb29815191bafb9623"
+    },
+    "optimized/intersection-controls/coplanar_positive_overlap.B_O.json": {
+      "bytes": 4401,
+      "sha256": "097a16cc7c6b8c90c8da854dc89b716b51b16fb5a639c33d19dc2f8a1075f1db"
+    },
+    "optimized/intersection-controls/coplanar_positive_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 230,
+      "sha256": "0b70b89538a83c3e8614774a2d001908956609143ca954eb29815191bafb9623"
+    },
+    "optimized/intersection-controls/coplanar_positive_overlap.stl": {
+      "bytes": 184,
+      "sha256": "054f6d72e263e74122647c48cc979d5aa59c72806905cf4063db6f72c7211fc5"
+    },
+    "optimized/intersection-controls/coplanar_shared_edge_only.B.json": {
+      "bytes": 2921,
+      "sha256": "05b8ecce4db317865bec838160b6eeff5175454636443f124cda8e33f14e98e3"
+    },
+    "optimized/intersection-controls/coplanar_shared_edge_only.B.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "optimized/intersection-controls/coplanar_shared_edge_only.B_O.json": {
+      "bytes": 2923,
+      "sha256": "02567f32502d58246c508c64bc141ee688d518f6510c3c1be1e3139779e2c319"
+    },
+    "optimized/intersection-controls/coplanar_shared_edge_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "optimized/intersection-controls/coplanar_shared_edge_only.stl": {
+      "bytes": 184,
+      "sha256": "46533c1de63f157e59c96a1645af7b3ad97c56be2d90026cd4f23b9e688f6f1a"
+    },
+    "optimized/intersection-controls/coplanar_shared_vertex_only.B.json": {
+      "bytes": 2927,
+      "sha256": "ebda7cc0a9d1d9cc27dd93d65e016ea4108f1ca0fafa127be193a23ad11d8772"
+    },
+    "optimized/intersection-controls/coplanar_shared_vertex_only.B.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "optimized/intersection-controls/coplanar_shared_vertex_only.B_O.json": {
+      "bytes": 2929,
+      "sha256": "74f13ddd46b7930cd5ea528d3703b6d5cc02a1a102d204ccd46034a04177a25e"
+    },
+    "optimized/intersection-controls/coplanar_shared_vertex_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "optimized/intersection-controls/coplanar_shared_vertex_only.stl": {
+      "bytes": 184,
+      "sha256": "20ea65d0d4e5d9ad62755b81842ed898dc056bc5f7943d21c9575d34ba7c7ca0"
+    },
+    "optimized/intersection-controls/coplanar_vertex_T_junction.B.json": {
+      "bytes": 3978,
+      "sha256": "6928716d84a605f48557785d89ff54695a26d0cf3c5d1186331b4423b97c4f44"
+    },
+    "optimized/intersection-controls/coplanar_vertex_T_junction.B.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "51d7eb76ff94035f7a202983a8bb5fd14f2971e3cfbaadf24f07efb6dffd4d31"
+    },
+    "optimized/intersection-controls/coplanar_vertex_T_junction.B_O.json": {
+      "bytes": 3981,
+      "sha256": "4e5896388933b1f50bc077b009576bbf47cd8ca66df77387d39b52b750ccc475"
+    },
+    "optimized/intersection-controls/coplanar_vertex_T_junction.B_O.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "51d7eb76ff94035f7a202983a8bb5fd14f2971e3cfbaadf24f07efb6dffd4d31"
+    },
+    "optimized/intersection-controls/coplanar_vertex_T_junction.stl": {
+      "bytes": 184,
+      "sha256": "2725b9608e654ed54f89e1649712a895e600250f1c69365cb0f64e148154aa83"
+    },
+    "optimized/intersection-controls/degenerate_face.B.json": {
+      "bytes": 2397,
+      "sha256": "8e5f4f8c34bc949c56f84f9d07c0e83c059dc92324e88a62d2dfdf9fa620ae67"
+    },
+    "optimized/intersection-controls/degenerate_face.B_O.json": {
+      "bytes": 2396,
+      "sha256": "8a1586370f2e76487a5341055112e0aec4c5c6ca756b96983ccc5485c97bcf83"
+    },
+    "optimized/intersection-controls/degenerate_face.stl": {
+      "bytes": 134,
+      "sha256": "6d415ed31d5c2dc7123100f6c9543c47bfd5ec85d80b3c588c4b04988a0557a9"
+    },
+    "optimized/intersection-controls/disjoint_coplanar_bbox_overlap.B.json": {
+      "bytes": 2930,
+      "sha256": "557b0ec15b55e36aafc5645f928b064459f228414733991af8d922ab5ca1f340"
+    },
+    "optimized/intersection-controls/disjoint_coplanar_bbox_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/disjoint_coplanar_bbox_overlap.B_O.json": {
+      "bytes": 2931,
+      "sha256": "e84eef6f0057bab3507ee8c7e5689367e73a31966ca935f501d0b8429cd4bc4c"
+    },
+    "optimized/intersection-controls/disjoint_coplanar_bbox_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/disjoint_coplanar_bbox_overlap.stl": {
+      "bytes": 184,
+      "sha256": "4c4c81c37b0ae6eeedde42c7f7821a59927a376f1f569797d9f5f3d25e12ac17"
+    },
+    "optimized/intersection-controls/disjoint_noncoplanar_bbox_overlap.B.json": {
+      "bytes": 2935,
+      "sha256": "213fdc8c76b28c9e6f29c46909bc0a6abb2c4978a80781e398475b364bea1a6f"
+    },
+    "optimized/intersection-controls/disjoint_noncoplanar_bbox_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/disjoint_noncoplanar_bbox_overlap.B_O.json": {
+      "bytes": 2940,
+      "sha256": "cf95f019122192c3c58ea150ee48b7bf13f20ca4fb835f736750764525c3667b"
+    },
+    "optimized/intersection-controls/disjoint_noncoplanar_bbox_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/disjoint_noncoplanar_bbox_overlap.stl": {
+      "bytes": 184,
+      "sha256": "3ace7d03bdd9c105fbf9d1f36516f2686ab3a1a42eac381f7d5fe837093dbf2c"
+    },
+    "optimized/intersection-controls/duplicate_reversed_face.B.json": {
+      "bytes": 4572,
+      "sha256": "cf4e0169e0d9832fdc1a1472df7d9a0cdac9b3f48b7e091b59843d992fad5257"
+    },
+    "optimized/intersection-controls/duplicate_reversed_face.B.json.contacts.jsonl.gz": {
+      "bytes": 221,
+      "sha256": "ba7dc8391fc7a2b738db096be3e7bded4f6b848ce7db98fb85dec853dddc11e0"
+    },
+    "optimized/intersection-controls/duplicate_reversed_face.B_O.json": {
+      "bytes": 4573,
+      "sha256": "85b6b658aa05a3aaedefb46af9fbf514cb80132d6de4cb7dd7368378331ed53e"
+    },
+    "optimized/intersection-controls/duplicate_reversed_face.B_O.json.contacts.jsonl.gz": {
+      "bytes": 221,
+      "sha256": "ba7dc8391fc7a2b738db096be3e7bded4f6b848ce7db98fb85dec853dddc11e0"
+    },
+    "optimized/intersection-controls/duplicate_reversed_face.stl": {
+      "bytes": 184,
+      "sha256": "5a3491d319ac7474efe749ed86e570dcf82be09ac9fbe2ba6e30602eae605372"
+    },
+    "optimized/intersection-controls/extremely_skinny_area_overlap.B.json": {
+      "bytes": 4686,
+      "sha256": "54953400f832fe902d0b2fef935c1ab23d5f8f4927d54f27c48c56593cb1a9c0"
+    },
+    "optimized/intersection-controls/extremely_skinny_area_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 271,
+      "sha256": "e45ceaaf0e986cdf7270e3c6fcb04c1586b154405f1282a6a7eb6d7dfa7ba44b"
+    },
+    "optimized/intersection-controls/extremely_skinny_area_overlap.B_O.json": {
+      "bytes": 4688,
+      "sha256": "71083cc0fa1c3519b767c604303089d9aa6dc4750d0c1e8e6f7af457b3a2935c"
+    },
+    "optimized/intersection-controls/extremely_skinny_area_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 271,
+      "sha256": "e45ceaaf0e986cdf7270e3c6fcb04c1586b154405f1282a6a7eb6d7dfa7ba44b"
+    },
+    "optimized/intersection-controls/extremely_skinny_area_overlap.stl": {
+      "bytes": 184,
+      "sha256": "64f160564186055ce18b383ada5893039f337fab37023f42d91873f8f7d3c617"
+    },
+    "optimized/intersection-controls/malformed_count.B.json": {
+      "bytes": 1357,
+      "sha256": "ccd4c260a1a474a6e9188c95fa133fb7bba897e876a99c57b5ece12a7f8209d5"
+    },
+    "optimized/intersection-controls/malformed_count.B_O.json": {
+      "bytes": 1357,
+      "sha256": "ccd4c260a1a474a6e9188c95fa133fb7bba897e876a99c57b5ece12a7f8209d5"
+    },
+    "optimized/intersection-controls/malformed_count.stl": {
+      "bytes": 84,
+      "sha256": "7d53f38fa3d077fc7b61f926a22a2795e6e9dd4af84c8abc331e524d79037fe3"
+    },
+    "optimized/intersection-controls/minimum_subnormal_plane_gap.B.json": {
+      "bytes": 2941,
+      "sha256": "a6155dc6000367111e795eacf389becc7da016242f0f6ce434bdfaca72bd3061"
+    },
+    "optimized/intersection-controls/minimum_subnormal_plane_gap.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/minimum_subnormal_plane_gap.B_O.json": {
+      "bytes": 2942,
+      "sha256": "7414600d88f47b1926b1188266f251257a4569cb71cbbe6aab07afdd4d5bceb2"
+    },
+    "optimized/intersection-controls/minimum_subnormal_plane_gap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/minimum_subnormal_plane_gap.stl": {
+      "bytes": 184,
+      "sha256": "3fb98d2cd07f6b8f28b0efa8436a078e5d61887ceb61026633c293e775a9fefa"
+    },
+    "optimized/intersection-controls/noncoplanar_crossing.B.json": {
+      "bytes": 4147,
+      "sha256": "afe5f5a5fa82debca2c68602efffa75c75231b21b19b0316a15e446fe58655e3"
+    },
+    "optimized/intersection-controls/noncoplanar_crossing.B.json.contacts.jsonl.gz": {
+      "bytes": 182,
+      "sha256": "8ff5f1b824427a49f03c07902af58bf5e5c158844ef2ec7e247c857fcafdcca3"
+    },
+    "optimized/intersection-controls/noncoplanar_crossing.B_O.json": {
+      "bytes": 4148,
+      "sha256": "297cbed722a275a7bbbbf94572b3fdf792009bba3729c46e971b8c44f5ddc89c"
+    },
+    "optimized/intersection-controls/noncoplanar_crossing.B_O.json.contacts.jsonl.gz": {
+      "bytes": 182,
+      "sha256": "8ff5f1b824427a49f03c07902af58bf5e5c158844ef2ec7e247c857fcafdcca3"
+    },
+    "optimized/intersection-controls/noncoplanar_crossing.stl": {
+      "bytes": 184,
+      "sha256": "924e9c6d3b5e72fd798d1c3533ce35d9ae5e2054c56b663e7baf15033dd6d5c4"
+    },
+    "optimized/intersection-controls/noncoplanar_shared_edge_only.B.json": {
+      "bytes": 2928,
+      "sha256": "9228bb8916f8a3ee959319e6f63577661dae7243c3aad98478bc9cc9f0b5ca22"
+    },
+    "optimized/intersection-controls/noncoplanar_shared_edge_only.B.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "optimized/intersection-controls/noncoplanar_shared_edge_only.B_O.json": {
+      "bytes": 2929,
+      "sha256": "65aaa7da4680bbfbf977da84b93b5e1ac06d84e25afb9ad3de00533073234d37"
+    },
+    "optimized/intersection-controls/noncoplanar_shared_edge_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 165,
+      "sha256": "cfd6529902024726c9f16fab4adec846730042ab3e2ca52962ce84d50281292b"
+    },
+    "optimized/intersection-controls/noncoplanar_shared_edge_only.stl": {
+      "bytes": 184,
+      "sha256": "914ec2179ca573132eff86696aedd93ce4cae4f0deee2c2c5c7e8b98c3a18678"
+    },
+    "optimized/intersection-controls/nonfinite.B.json": {
+      "bytes": 1363,
+      "sha256": "070c3b1809d9eae133c6e0262ba27c633e84d74fd66ce2d70d6b598955a8b00a"
+    },
+    "optimized/intersection-controls/nonfinite.B_O.json": {
+      "bytes": 1363,
+      "sha256": "070c3b1809d9eae133c6e0262ba27c633e84d74fd66ce2d70d6b598955a8b00a"
+    },
+    "optimized/intersection-controls/nonfinite.stl": {
+      "bytes": 134,
+      "sha256": "eadd8d390f9a956c8a745f838dd09b888a46bffe4663c88d55e8378227eb4086"
+    },
+    "optimized/intersection-controls/nonshared_point_on_interior.B.json": {
+      "bytes": 3990,
+      "sha256": "96a2614b86467966c1cc3bb40fe513f87acb80b3531a92a2cd7f6bf3eafcc45a"
+    },
+    "optimized/intersection-controls/nonshared_point_on_interior.B.json.contacts.jsonl.gz": {
+      "bytes": 170,
+      "sha256": "a2b83d5c2ff0ee780661e60d6ef14ea434a788a5b1bb7b8c3258f4eec0817794"
+    },
+    "optimized/intersection-controls/nonshared_point_on_interior.B_O.json": {
+      "bytes": 3991,
+      "sha256": "7bee4de87250e6bfdad10e9d25f9c34794e85a460663ecb374327ffd2d2b32d9"
+    },
+    "optimized/intersection-controls/nonshared_point_on_interior.B_O.json.contacts.jsonl.gz": {
+      "bytes": 170,
+      "sha256": "a2b83d5c2ff0ee780661e60d6ef14ea434a788a5b1bb7b8c3258f4eec0817794"
+    },
+    "optimized/intersection-controls/nonshared_point_on_interior.stl": {
+      "bytes": 184,
+      "sha256": "d57144c665f77f18dc46cd393d0aee67dc7ec074d93a5e877786d8b4abbe4329"
+    },
+    "optimized/intersection-controls/normal_box.B.json": {
+      "bytes": 2965,
+      "sha256": "b23411284e0d68e7e9342780f8f4cee9808db491b8dc24828be9b05aeaa95733"
+    },
+    "optimized/intersection-controls/normal_box.B.json.contacts.jsonl.gz": {
+      "bytes": 552,
+      "sha256": "165a16338a774c93e80e15d73eb0719878d283fd8f494d45976965909a689638"
+    },
+    "optimized/intersection-controls/normal_box.B_O.json": {
+      "bytes": 2966,
+      "sha256": "61eff9967920f500e5e67b3402482298a633e44023336909024eeca9e20ea6c7"
+    },
+    "optimized/intersection-controls/normal_box.B_O.json.contacts.jsonl.gz": {
+      "bytes": 552,
+      "sha256": "165a16338a774c93e80e15d73eb0719878d283fd8f494d45976965909a689638"
+    },
+    "optimized/intersection-controls/normal_box.stl": {
+      "bytes": 684,
+      "sha256": "b43a89437d4c12945a16a050f9fa0ee8d40bded11cda52326ab4a42acc126371"
+    },
+    "optimized/intersection-controls/oblique_box.B.json": {
+      "bytes": 3002,
+      "sha256": "0f4e0164cf72dfa96c8e17a2e1b2d795973b09ff345288d292662396d3f67ecf"
+    },
+    "optimized/intersection-controls/oblique_box.B.json.contacts.jsonl.gz": {
+      "bytes": 620,
+      "sha256": "96aec872833af683ba53f37a4c9b9ba82438d243ece9aa3fd3dc9e7e83432a92"
+    },
+    "optimized/intersection-controls/oblique_box.B_O.json": {
+      "bytes": 3004,
+      "sha256": "11731685a6471f438b1457b35672d5d0712ec8a5908f0ff0b18bc46261c60452"
+    },
+    "optimized/intersection-controls/oblique_box.B_O.json.contacts.jsonl.gz": {
+      "bytes": 620,
+      "sha256": "96aec872833af683ba53f37a4c9b9ba82438d243ece9aa3fd3dc9e7e83432a92"
+    },
+    "optimized/intersection-controls/oblique_box.stl": {
+      "bytes": 684,
+      "sha256": "5a25ee3d31134dbfd15fc79acd527cc7cf0d9957ef4ac8a07882f7561ce1d69a"
+    },
+    "optimized/intersection-controls/shared_edge_but_overlaps.B.json": {
+      "bytes": 4514,
+      "sha256": "52753c48e6e518bf4aae2da5d43c03c3b05a2ea543e7bcac10917c27badc95a9"
+    },
+    "optimized/intersection-controls/shared_edge_but_overlaps.B.json.contacts.jsonl.gz": {
+      "bytes": 226,
+      "sha256": "a95af886881983f22c4e8b655165ded17149669de38f6e54b4e0eb80faec5209"
+    },
+    "optimized/intersection-controls/shared_edge_but_overlaps.B_O.json": {
+      "bytes": 4515,
+      "sha256": "f442141e1f83d76458c3ebe3bf47d9688a677aa1355a7aa0b3be7fed23123cee"
+    },
+    "optimized/intersection-controls/shared_edge_but_overlaps.B_O.json.contacts.jsonl.gz": {
+      "bytes": 226,
+      "sha256": "a95af886881983f22c4e8b655165ded17149669de38f6e54b4e0eb80faec5209"
+    },
+    "optimized/intersection-controls/shared_edge_but_overlaps.stl": {
+      "bytes": 184,
+      "sha256": "fc0396b1e98a925caaa0085261b1768d987c4b727f3f2da65d8a45528b005ac4"
+    },
+    "optimized/intersection-controls/shared_vertex_but_area_overlap.B.json": {
+      "bytes": 4457,
+      "sha256": "cbb1638375d9db7f9e5480d69bda3e1a9b574cdc3ffbe12195ae899935798e8f"
+    },
+    "optimized/intersection-controls/shared_vertex_but_area_overlap.B.json.contacts.jsonl.gz": {
+      "bytes": 222,
+      "sha256": "37c790c6ee9a6002f4caf792fe59599d835651bff6efe73308f852125c8d12b3"
+    },
+    "optimized/intersection-controls/shared_vertex_but_area_overlap.B_O.json": {
+      "bytes": 4458,
+      "sha256": "64cba4ca53ee50c7e1d99bad4e4f52ddfc852cc7726480b14fbd86734a7a053e"
+    },
+    "optimized/intersection-controls/shared_vertex_but_area_overlap.B_O.json.contacts.jsonl.gz": {
+      "bytes": 222,
+      "sha256": "37c790c6ee9a6002f4caf792fe59599d835651bff6efe73308f852125c8d12b3"
+    },
+    "optimized/intersection-controls/shared_vertex_but_area_overlap.stl": {
+      "bytes": 184,
+      "sha256": "32051aee80cb490e0f2e83b663ee179f72d084c42dbf7f0a573b17ecf289cafc"
+    },
+    "optimized/intersection-controls/shared_vertex_but_crosses.B.json": {
+      "bytes": 4225,
+      "sha256": "1db688fabd0ff159c8369f76a882e7e939cc6d9a610e5dfe386e06a436a52222"
+    },
+    "optimized/intersection-controls/shared_vertex_but_crosses.B.json.contacts.jsonl.gz": {
+      "bytes": 175,
+      "sha256": "360a499edc9b80a6c295430cca7dd80a4568ff30a94b09b02b472abf3c30dd11"
+    },
+    "optimized/intersection-controls/shared_vertex_but_crosses.B_O.json": {
+      "bytes": 4227,
+      "sha256": "5fc6ae700d08af9a5c93fa82e3fdfb775dc24cee790b055a143548f41ad9ead1"
+    },
+    "optimized/intersection-controls/shared_vertex_but_crosses.B_O.json.contacts.jsonl.gz": {
+      "bytes": 175,
+      "sha256": "360a499edc9b80a6c295430cca7dd80a4568ff30a94b09b02b472abf3c30dd11"
+    },
+    "optimized/intersection-controls/shared_vertex_but_crosses.stl": {
+      "bytes": 184,
+      "sha256": "df7d1b6a81cf3b69d2cb784aef62bdf956512fc3bca9ec4e1e5001ef68acb990"
+    },
+    "optimized/intersection-controls/shared_vertex_only.B.json": {
+      "bytes": 2910,
+      "sha256": "52f7f7b62cfd3130199c06ba86407820d5751f0d4a07ae1b9e903e5be0db7e72"
+    },
+    "optimized/intersection-controls/shared_vertex_only.B.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "optimized/intersection-controls/shared_vertex_only.B_O.json": {
+      "bytes": 2911,
+      "sha256": "038fcf78254c602cdb5c57109c2bc8c9b2894376428c0cc9f6fada89075587ab"
+    },
+    "optimized/intersection-controls/shared_vertex_only.B_O.json.contacts.jsonl.gz": {
+      "bytes": 154,
+      "sha256": "2f2a1dcd37d4ef7bc51a2456e45e31a4d0283b37451b0ce6415f6a781eda3d0e"
+    },
+    "optimized/intersection-controls/shared_vertex_only.stl": {
+      "bytes": 184,
+      "sha256": "838580d8b68f308c59ff05a625e82ad2c96071da6072f4b1395f0b2531a2484a"
+    },
+    "optimized/intersection-controls/tiny_coplanar_near_disjoint.B.json": {
+      "bytes": 2960,
+      "sha256": "21f72f6101be1a5acf187bf8b343d178e486893ce0226bcc054facd4585b248a"
+    },
+    "optimized/intersection-controls/tiny_coplanar_near_disjoint.B.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/tiny_coplanar_near_disjoint.B_O.json": {
+      "bytes": 2963,
+      "sha256": "22369768e05e09e6d80aa750a0131d4f5f4c57f0f40adfcd53a2337df716d227"
+    },
+    "optimized/intersection-controls/tiny_coplanar_near_disjoint.B_O.json.contacts.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "optimized/intersection-controls/tiny_coplanar_near_disjoint.stl": {
+      "bytes": 184,
+      "sha256": "744a539f172fe81c70c8b4c794462d68ec18323ed45d38f72ee889540d406b88"
+    },
+    "optimized/intersection-controls/tiny_noncoplanar_crossing.B.json": {
+      "bytes": 4574,
+      "sha256": "774080ab0910b42f2ce5295bd30c723934db1babe0ba6ed97c78088b0b2579de"
+    },
+    "optimized/intersection-controls/tiny_noncoplanar_crossing.B.json.contacts.jsonl.gz": {
+      "bytes": 236,
+      "sha256": "14a84ccd58ee377c018f9cd2a0add786c4e71665c8b6102ecc184966e0238c18"
+    },
+    "optimized/intersection-controls/tiny_noncoplanar_crossing.B_O.json": {
+      "bytes": 4576,
+      "sha256": "9df43a46c56231db1d4e9f553e661ff6f9ab4193c637457a151298ff93fc2509"
+    },
+    "optimized/intersection-controls/tiny_noncoplanar_crossing.B_O.json.contacts.jsonl.gz": {
+      "bytes": 236,
+      "sha256": "14a84ccd58ee377c018f9cd2a0add786c4e71665c8b6102ecc184966e0238c18"
+    },
+    "optimized/intersection-controls/tiny_noncoplanar_crossing.stl": {
+      "bytes": 184,
+      "sha256": "f8cae698af299ee32a598ec82c87a794c317d9b9fdc4b53f5e9dee12359b9e3a"
+    },
+    "optimized/intersection-controls.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/intersection-controls.stdout.txt": {
+      "bytes": 132,
+      "sha256": "b6d54cde7be8cea8739b25df019cbc7ef775010a833a15f808a8b7b1c71203fb"
+    },
+    "optimized/intersections.json": {
+      "bytes": 3088,
+      "sha256": "0082fc2bc9b1f30d6e348841cc9e0687732fbee14e7faca865d9b01b9c2fe4a5"
+    },
+    "optimized/intersections.json.contacts.jsonl.gz": {
+      "bytes": 1186834,
+      "sha256": "38f3629abe9a42d6ff35f709f91eb625ca486bb25c99ff3582215deb40a567cb"
+    },
+    "optimized/intersections.stderr.txt": {
+      "bytes": 110,
+      "sha256": "f87ffc2c7d5d4da6e73297c43806c368a1b3e10157755d90f0542c183cc14c92"
+    },
+    "optimized/intersections.stdout.txt": {
+      "bytes": 104,
+      "sha256": "488b74857cb1d673043e183282b091974c33501b0bd15b812ebbed416ff8d15b"
+    },
+    "optimized/standard/controls/control-check.json": {
+      "bytes": 20963,
+      "sha256": "16843a04bd7109dca7dd97e57701fc7ae7c9a606347540af291d9c5134c32572"
+    },
+    "optimized/standard/controls/python_B/all_faces_inverted/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2515,
+      "sha256": "4290ab8f3f23de18daf288cf4bfaa7c9e47972837543fba27f6cdad52ec873c9"
+    },
+    "optimized/standard/controls/python_B/all_faces_inverted/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/all_faces_inverted/check_raw_mesh/stdout.txt": {
+      "bytes": 217,
+      "sha256": "6771c64f1b21cecfa8522e97b62f6c4d3eac0f061ea2f4d0a9f05978dc1eb6f6"
+    },
+    "optimized/standard/controls/python_B/all_faces_inverted/fixture.stl": {
+      "bytes": 684,
+      "sha256": "d59808bcd9f92193ccdf31472b3d2de788653567b31b14f10cb1d2933b08b375"
+    },
+    "optimized/standard/controls/python_B/duplicate_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 4524,
+      "sha256": "42b1a675f7c6fe7cd19203cefd8e838f185ad027fd8189169cb24afb155b02f2"
+    },
+    "optimized/standard/controls/python_B/duplicate_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/duplicate_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 226,
+      "sha256": "256fbb2fe02a7c39c9bed434787bef6d2ea9b554e6628b7e99338fc61bcfb08a"
+    },
+    "optimized/standard/controls/python_B/duplicate_original_triangle/fixture.stl": {
+      "bytes": 734,
+      "sha256": "65f8cbd7b7341928384bf39a711f8a608ecb28071b4a06cee5de6a8554a5e265"
+    },
+    "optimized/standard/controls/python_B/internal_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2533,
+      "sha256": "920b76b2c185bb00237266bd5853cc60cb41ef8afbc5a6b2e6ee55b6fdd241a2"
+    },
+    "optimized/standard/controls/python_B/internal_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/internal_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 220,
+      "sha256": "efaf44c4534cfed9a2c67408f697d105827758330218400d88efbd86502d70e4"
+    },
+    "optimized/standard/controls/python_B/internal_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "b093f488ca4341ecdbb59bde165be22ebb6b4293b358b4ce3da98a63511d2e4b"
+    },
+    "optimized/standard/controls/python_B/missing_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3890,
+      "sha256": "92e966621c702eaa2fe9e45702d691c30a06491ad366946f6a9fd674a501bbe2"
+    },
+    "optimized/standard/controls/python_B/missing_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/missing_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 224,
+      "sha256": "778e2d46c41dcad6954b0763adb924e27a0257cbe0e5cd00e82a1e5a916ba169"
+    },
+    "optimized/standard/controls/python_B/missing_original_triangle/fixture.stl": {
+      "bytes": 634,
+      "sha256": "1ac63fc71f7830e1f21140ff3299555cdcbaf0216e304b73b1d5210d82eb234f"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-check.json": {
+      "bytes": 3694,
+      "sha256": "9cade1fc7fe8ad3d6fdbf15b2e9a23663ce2642eb1f97846c18e85f45c5e7a63"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 15028,
+      "sha256": "f1f187a163491376db3d3bd6106e02fd61b335da981d61cc05bf5e6975490730"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-run.log": {
+      "bytes": 418,
+      "sha256": "66f7eccad6d0e26599b49b8b82fc68676708c110aaa649e46dd25795c6618a9c"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2840,
+      "sha256": "bffc341865086d94320a0f6e6ad41cf7533fa85faeb3c1bfd918ab27825742b1"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_dense_surface/stdout.txt": {
+      "bytes": 239,
+      "sha256": "7a138eb9a79e1aeaf4fff573284161f5d64449e4083733c92e475a7d6d228c57"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_sections/section-check.json": {
+      "bytes": 2837,
+      "sha256": "686fcc71361d04583f5686c26e316446c10c49ca3f95a8ce5251b00f96798a0e"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_sections/section-details.json.gz": {
+      "bytes": 1998,
+      "sha256": "29b481d8004553e20f4ae191bc32bd5ee55223da127dd0f4d4efbb7764915ba9"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_sections/section-failures.json.gz": {
+      "bytes": 32754,
+      "sha256": "18620e3d28e7da283e519d4904a083e039b7dde8df871cd701a871d954a664be"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/check_sections/stdout.txt": {
+      "bytes": 215,
+      "sha256": "af7837551c364148c818a68d34342cca2261aa64fe071683e48598b17fd55e0b"
+    },
+    "optimized/standard/controls/python_B/narrow_0p6mm_root/fixture.stl": {
+      "bytes": 2484,
+      "sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/dense-check.json": {
+      "bytes": 3674,
+      "sha256": "07b24609d1edd32ad382fc4f534757963cd897c792aa56487f535b3b39dcf58c"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 3972,
+      "sha256": "f0efd240facfa3b987bcd06f23eb46dc14035a749c652825459d9f9ba04c764d"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_dense_surface/stdout.txt": {
+      "bytes": 230,
+      "sha256": "f216afa036fce4a9286a1a74fcee617e3f8b7f89e9f4aa94252ef2aa65340ab2"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2510,
+      "sha256": "688030c3a38413df1013b6e3eb3192609951070ecf0c9178cf3a0231d7a64779"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_raw_mesh/stdout.txt": {
+      "bytes": 208,
+      "sha256": "63f7286935b9a373899d6181d78ae615a9200452486a29743e2383948c5ad5a6"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_sections/section-check.json": {
+      "bytes": 2836,
+      "sha256": "e4bb0d208ceabfb719481b30af7b27112a52e51a4529a359762d95dfc5b9047c"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_sections/section-details.json.gz": {
+      "bytes": 4772,
+      "sha256": "e146bdf74432023b5b9ffabb0e4543b0d231a5a51bb0319cf7a617a996f76931"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/normal_box/check_sections/stdout.txt": {
+      "bytes": 207,
+      "sha256": "e9d25a69a8fb571de4bc921730ef45b45649925d96acc7085a917d70c62796e0"
+    },
+    "optimized/standard/controls/python_B/normal_box/fixture.stl": {
+      "bytes": 684,
+      "sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34"
+    },
+    "optimized/standard/controls/python_B/one_reversed_face/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3184,
+      "sha256": "acc120312068cd91b04a891205d89c4a6d48e1f9cf7e58a63f83c90e28b2b401"
+    },
+    "optimized/standard/controls/python_B/one_reversed_face/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/one_reversed_face/check_raw_mesh/stdout.txt": {
+      "bytes": 216,
+      "sha256": "a9c9f3f3498430d471d9e1f21df03bf6756323469a73d9cd2e60f9438003e479"
+    },
+    "optimized/standard/controls/python_B/one_reversed_face/fixture.stl": {
+      "bytes": 684,
+      "sha256": "51fc3db156c308147871c1112eb978f0dedb96da25206ab11bc8c708850d8c66"
+    },
+    "optimized/standard/controls/python_B/separate_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2534,
+      "sha256": "d4048d6fdf33e1b240ff51ca27d48e3b567018cf039f87aa02f181bb6e426742"
+    },
+    "optimized/standard/controls/python_B/separate_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/separate_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 220,
+      "sha256": "81638858faa6242c7dadc0a623ae2bcb12fe699f7b6283d063654f14e8d11acb"
+    },
+    "optimized/standard/controls/python_B/separate_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "8cbc941ff3263b1d8b9929f2f06f96408e80dbc899f2544dc2ef3ea72ad1f291"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-check.json": {
+      "bytes": 3692,
+      "sha256": "d58a90706cc45b3ba0f79c59f5adb7e5d1ee21e2ba67a9329d072d7ceb056fc0"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 4272,
+      "sha256": "6bb0f2730bc673e27d3e4137e123555ebdd34c2d9235853066de09f8f5291a2b"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2600,
+      "sha256": "dbb7398a2b5e5dfbc1688a9e18280a2ae3d4860e7d843bde8d79442057e682eb"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/check_dense_surface/stdout.txt": {
+      "bytes": 237,
+      "sha256": "a6f71e37c0e199d131de35fe28bfaf942dc1c9eb72df95919ee8ac4e54d471f4"
+    },
+    "optimized/standard/controls/python_B/thin_0p6mm_slab/fixture.stl": {
+      "bytes": 684,
+      "sha256": "f257d6b90ae6038a89db58ed235e053601ac1d7116854e5ea20a372ecbe60be6"
+    },
+    "optimized/standard/controls/python_B/tiny_original_polygon/check_sections/section-check.json": {
+      "bytes": 2822,
+      "sha256": "168aaffd0a4a9802ef31025ad3b8fee2b165d1c6e94aba5d933ab6a3c33a749b"
+    },
+    "optimized/standard/controls/python_B/tiny_original_polygon/check_sections/section-details.json.gz": {
+      "bytes": 3496,
+      "sha256": "e213c0d99e980d9a69ef5c0559d7dc6f76239ef40ae4d89f5de038cb7b400b15"
+    },
+    "optimized/standard/controls/python_B/tiny_original_polygon/check_sections/section-failures.json.gz": {
+      "bytes": 3719,
+      "sha256": "7f2c846104d55a8521e42d1b9b42b419ad864e707515b83620748d60b50d21fc"
+    },
+    "optimized/standard/controls/python_B/tiny_original_polygon/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/tiny_original_polygon/check_sections/stdout.txt": {
+      "bytes": 219,
+      "sha256": "55147774bb49a2048afaa5b3dd17b2a8bf63196f792712bc7dcdb97a1e78e3f1"
+    },
+    "optimized/standard/controls/python_B/tiny_original_polygon/fixture.stl": {
+      "bytes": 2284,
+      "sha256": "7858db1ae3cee59b297ef1c4595e526414f7bba913034eb56c0d87b82c75b5a5"
+    },
+    "optimized/standard/controls/python_B/truncated_binary_record/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 1200,
+      "sha256": "995a54ee755918d3b041b4435800d7a344f8dff991756628cd7b7c517f44ad37"
+    },
+    "optimized/standard/controls/python_B/truncated_binary_record/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/truncated_binary_record/check_raw_mesh/stdout.txt": {
+      "bytes": 274,
+      "sha256": "9044b30b40c59b78abc28e996e7aad4681e2c90410e5d7b56cb3f77b9be52a44"
+    },
+    "optimized/standard/controls/python_B/truncated_binary_record/fixture.stl": {
+      "bytes": 683,
+      "sha256": "da8f5e7aff04a14e81342fe34dfdd6e6e71e9ea31bc4994aa3c587bdb82aa0ce"
+    },
+    "optimized/standard/controls/python_B/vertex_only_touching_shells/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3073,
+      "sha256": "6e6280fa86b03652350bf6f227afbf5e3793c572c81dbfb9c398f2322e96e10b"
+    },
+    "optimized/standard/controls/python_B/vertex_only_touching_shells/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B/vertex_only_touching_shells/check_raw_mesh/stdout.txt": {
+      "bytes": 226,
+      "sha256": "37fffd1949f56b45b4f03fec15e4671545521006bd71a8fbf9f5c873172c19b9"
+    },
+    "optimized/standard/controls/python_B/vertex_only_touching_shells/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "474d3bc22a4447db10ae0f16f0501a2dee22d64869fc557decce215fb3145c5d"
+    },
+    "optimized/standard/controls/python_B_O/all_faces_inverted/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2515,
+      "sha256": "4290ab8f3f23de18daf288cf4bfaa7c9e47972837543fba27f6cdad52ec873c9"
+    },
+    "optimized/standard/controls/python_B_O/all_faces_inverted/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/all_faces_inverted/check_raw_mesh/stdout.txt": {
+      "bytes": 219,
+      "sha256": "cdc11251264fd64239cad12af6d29bf42274a982375bc94411e61d6d7250dcf2"
+    },
+    "optimized/standard/controls/python_B_O/all_faces_inverted/fixture.stl": {
+      "bytes": 684,
+      "sha256": "d59808bcd9f92193ccdf31472b3d2de788653567b31b14f10cb1d2933b08b375"
+    },
+    "optimized/standard/controls/python_B_O/duplicate_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 4524,
+      "sha256": "42b1a675f7c6fe7cd19203cefd8e838f185ad027fd8189169cb24afb155b02f2"
+    },
+    "optimized/standard/controls/python_B_O/duplicate_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/duplicate_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 228,
+      "sha256": "6a5cdd6a82790cf2867436356d7f2be48afebfbdc5f3f47bd3a62339a2fa788b"
+    },
+    "optimized/standard/controls/python_B_O/duplicate_original_triangle/fixture.stl": {
+      "bytes": 734,
+      "sha256": "65f8cbd7b7341928384bf39a711f8a608ecb28071b4a06cee5de6a8554a5e265"
+    },
+    "optimized/standard/controls/python_B_O/internal_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2533,
+      "sha256": "920b76b2c185bb00237266bd5853cc60cb41ef8afbc5a6b2e6ee55b6fdd241a2"
+    },
+    "optimized/standard/controls/python_B_O/internal_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/internal_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 222,
+      "sha256": "fc62d9edfb9a95b295a39a15aeeb7a89da73812ffc6064cc375ef646e97676a7"
+    },
+    "optimized/standard/controls/python_B_O/internal_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "b093f488ca4341ecdbb59bde165be22ebb6b4293b358b4ce3da98a63511d2e4b"
+    },
+    "optimized/standard/controls/python_B_O/missing_original_triangle/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3890,
+      "sha256": "92e966621c702eaa2fe9e45702d691c30a06491ad366946f6a9fd674a501bbe2"
+    },
+    "optimized/standard/controls/python_B_O/missing_original_triangle/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/missing_original_triangle/check_raw_mesh/stdout.txt": {
+      "bytes": 226,
+      "sha256": "7d20e6f97d72e34dd654a086cd0d8a0b1e69b86e65c2f2e78b6d687c83a611ba"
+    },
+    "optimized/standard/controls/python_B_O/missing_original_triangle/fixture.stl": {
+      "bytes": 634,
+      "sha256": "1ac63fc71f7830e1f21140ff3299555cdcbaf0216e304b73b1d5210d82eb234f"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-check.json": {
+      "bytes": 3694,
+      "sha256": "9cade1fc7fe8ad3d6fdbf15b2e9a23663ce2642eb1f97846c18e85f45c5e7a63"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 15028,
+      "sha256": "f1f187a163491376db3d3bd6106e02fd61b335da981d61cc05bf5e6975490730"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-run.log": {
+      "bytes": 418,
+      "sha256": "66f7eccad6d0e26599b49b8b82fc68676708c110aaa649e46dd25795c6618a9c"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2840,
+      "sha256": "bffc341865086d94320a0f6e6ad41cf7533fa85faeb3c1bfd918ab27825742b1"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_dense_surface/stdout.txt": {
+      "bytes": 241,
+      "sha256": "08ce1066c9e87b7bdc199cd96d5c5ccdf7b3eca2c24eeaeef7cee6181123ae66"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/section-check.json": {
+      "bytes": 2837,
+      "sha256": "686fcc71361d04583f5686c26e316446c10c49ca3f95a8ce5251b00f96798a0e"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/section-details.json.gz": {
+      "bytes": 1998,
+      "sha256": "29b481d8004553e20f4ae191bc32bd5ee55223da127dd0f4d4efbb7764915ba9"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/section-failures.json.gz": {
+      "bytes": 32754,
+      "sha256": "18620e3d28e7da283e519d4904a083e039b7dde8df871cd701a871d954a664be"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/check_sections/stdout.txt": {
+      "bytes": 217,
+      "sha256": "a920e9d5e6bcd000073ac453d8df44b584af9634dd309620ebe9b1d43300a2e4"
+    },
+    "optimized/standard/controls/python_B_O/narrow_0p6mm_root/fixture.stl": {
+      "bytes": 2484,
+      "sha256": "6140c80f1f5c97ed535fe36066793907e8e5767a87f2322b7bd8f73b4b8aabf7"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/dense-check.json": {
+      "bytes": 3674,
+      "sha256": "07b24609d1edd32ad382fc4f534757963cd897c792aa56487f535b3b39dcf58c"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 3972,
+      "sha256": "f0efd240facfa3b987bcd06f23eb46dc14035a749c652825459d9f9ba04c764d"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_dense_surface/stdout.txt": {
+      "bytes": 232,
+      "sha256": "06ea7c5ca221284a10cf5cad700e7709ddcf8c0bf141f8f0b7696955e8caa073"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2510,
+      "sha256": "688030c3a38413df1013b6e3eb3192609951070ecf0c9178cf3a0231d7a64779"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_raw_mesh/stdout.txt": {
+      "bytes": 210,
+      "sha256": "0d8d1b1e5bab950646f5eee4a6f3b5aeb02465307111279f73e93498c6177a79"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_sections/section-check.json": {
+      "bytes": 2836,
+      "sha256": "e4bb0d208ceabfb719481b30af7b27112a52e51a4529a359762d95dfc5b9047c"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_sections/section-details.json.gz": {
+      "bytes": 4772,
+      "sha256": "e146bdf74432023b5b9ffabb0e4543b0d231a5a51bb0319cf7a617a996f76931"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/check_sections/stdout.txt": {
+      "bytes": 209,
+      "sha256": "ab208291f396a9dbe49762da8af53724feb3650cfe897514bd5fc62db5215093"
+    },
+    "optimized/standard/controls/python_B_O/normal_box/fixture.stl": {
+      "bytes": 684,
+      "sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34"
+    },
+    "optimized/standard/controls/python_B_O/one_reversed_face/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3184,
+      "sha256": "acc120312068cd91b04a891205d89c4a6d48e1f9cf7e58a63f83c90e28b2b401"
+    },
+    "optimized/standard/controls/python_B_O/one_reversed_face/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/one_reversed_face/check_raw_mesh/stdout.txt": {
+      "bytes": 218,
+      "sha256": "3653bee93c2c9357f5900344eebe91c6a78488429e42d7f90829548a655d65f9"
+    },
+    "optimized/standard/controls/python_B_O/one_reversed_face/fixture.stl": {
+      "bytes": 684,
+      "sha256": "51fc3db156c308147871c1112eb978f0dedb96da25206ab11bc8c708850d8c66"
+    },
+    "optimized/standard/controls/python_B_O/separate_closed_shell/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 2534,
+      "sha256": "d4048d6fdf33e1b240ff51ca27d48e3b567018cf039f87aa02f181bb6e426742"
+    },
+    "optimized/standard/controls/python_B_O/separate_closed_shell/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/separate_closed_shell/check_raw_mesh/stdout.txt": {
+      "bytes": 222,
+      "sha256": "ebd001202857943b360072303d3f67c05926e026d19634626502e5b6c0b16c34"
+    },
+    "optimized/standard/controls/python_B_O/separate_closed_shell/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "8cbc941ff3263b1d8b9929f2f06f96408e80dbc899f2544dc2ef3ea72ad1f291"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-check.json": {
+      "bytes": 3692,
+      "sha256": "d58a90706cc45b3ba0f79c59f5adb7e5d1ee21e2ba67a9329d072d7ceb056fc0"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-flagged-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-original.csv.xz": {
+      "bytes": 4272,
+      "sha256": "6bb0f2730bc673e27d3e4137e123555ebdd34c2d9235853066de09f8f5291a2b"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-run.log": {
+      "bytes": 412,
+      "sha256": "27aa41149c6b4cfeb59b6147a99cddfbcff5806623b1c8353a5748c523e1cf37"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/dense-short-samples.json.gz": {
+      "bytes": 2600,
+      "sha256": "dbb7398a2b5e5dfbc1688a9e18280a2ae3d4860e7d843bde8d79442057e682eb"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/check_dense_surface/stdout.txt": {
+      "bytes": 239,
+      "sha256": "b52632bf51bc630fd27dd05b4531723e98c6578a408315e041e3906fffc9e4e1"
+    },
+    "optimized/standard/controls/python_B_O/thin_0p6mm_slab/fixture.stl": {
+      "bytes": 684,
+      "sha256": "f257d6b90ae6038a89db58ed235e053601ac1d7116854e5ea20a372ecbe60be6"
+    },
+    "optimized/standard/controls/python_B_O/tiny_original_polygon/check_sections/section-check.json": {
+      "bytes": 2822,
+      "sha256": "168aaffd0a4a9802ef31025ad3b8fee2b165d1c6e94aba5d933ab6a3c33a749b"
+    },
+    "optimized/standard/controls/python_B_O/tiny_original_polygon/check_sections/section-details.json.gz": {
+      "bytes": 3496,
+      "sha256": "e213c0d99e980d9a69ef5c0559d7dc6f76239ef40ae4d89f5de038cb7b400b15"
+    },
+    "optimized/standard/controls/python_B_O/tiny_original_polygon/check_sections/section-failures.json.gz": {
+      "bytes": 3719,
+      "sha256": "7f2c846104d55a8521e42d1b9b42b419ad864e707515b83620748d60b50d21fc"
+    },
+    "optimized/standard/controls/python_B_O/tiny_original_polygon/check_sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/tiny_original_polygon/check_sections/stdout.txt": {
+      "bytes": 221,
+      "sha256": "00329132303d99a7194b591147f7abb51c74b6ae2792615613956c992e02fab8"
+    },
+    "optimized/standard/controls/python_B_O/tiny_original_polygon/fixture.stl": {
+      "bytes": 2284,
+      "sha256": "7858db1ae3cee59b297ef1c4595e526414f7bba913034eb56c0d87b82c75b5a5"
+    },
+    "optimized/standard/controls/python_B_O/truncated_binary_record/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 1200,
+      "sha256": "995a54ee755918d3b041b4435800d7a344f8dff991756628cd7b7c517f44ad37"
+    },
+    "optimized/standard/controls/python_B_O/truncated_binary_record/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/truncated_binary_record/check_raw_mesh/stdout.txt": {
+      "bytes": 276,
+      "sha256": "a1fe1bf7936cbf7befdb8112b1290246987762ba0a28beb672af641f16fc843c"
+    },
+    "optimized/standard/controls/python_B_O/truncated_binary_record/fixture.stl": {
+      "bytes": 683,
+      "sha256": "da8f5e7aff04a14e81342fe34dfdd6e6e71e9ea31bc4994aa3c587bdb82aa0ce"
+    },
+    "optimized/standard/controls/python_B_O/vertex_only_touching_shells/check_raw_mesh/raw-mesh-check.json": {
+      "bytes": 3073,
+      "sha256": "6e6280fa86b03652350bf6f227afbf5e3793c572c81dbfb9c398f2322e96e10b"
+    },
+    "optimized/standard/controls/python_B_O/vertex_only_touching_shells/check_raw_mesh/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/python_B_O/vertex_only_touching_shells/check_raw_mesh/stdout.txt": {
+      "bytes": 228,
+      "sha256": "1d51f02db3c2805b47773b9dc55d2d54e5b5fa0fee3f392cbaec1b2f053dc0f6"
+    },
+    "optimized/standard/controls/python_B_O/vertex_only_touching_shells/fixture.stl": {
+      "bytes": 1284,
+      "sha256": "474d3bc22a4447db10ae0f16f0501a2dee22d64869fc557decce215fb3145c5d"
+    },
+    "optimized/standard/controls/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/controls/stdout.txt": {
+      "bytes": 2554,
+      "sha256": "7f19002bb76e19851d55b5eefe66df465c8b339c124f15286908d1469a818ddb"
+    },
+    "optimized/standard/dense/dense-check.json": {
+      "bytes": 3705,
+      "sha256": "6df05ace79350158ea14118afd05ab15c7338f4b646179761ee18e63c88e2979"
+    },
+    "optimized/standard/dense/dense-compiler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/dense/dense-flagged-samples.json.gz": {
+      "bytes": 2064,
+      "sha256": "56fa46e1a7e3f9a643bda8417b97f3c691bf12ffe34a0330c408fb611030fbf3"
+    },
+    "optimized/standard/dense/dense-original.csv.xz": {
+      "bytes": 14135064,
+      "sha256": "31bd8567fcf447a0ef3abd262a42c1bd9bbd8bc3f2b7dbca262285580757014a"
+    },
+    "optimized/standard/dense/dense-run.log": {
+      "bytes": 444,
+      "sha256": "b430a80262c10d13cbce66fba2837b9e6155071205163b7692c58cdc774b127c"
+    },
+    "optimized/standard/dense/dense-short-samples.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/dense/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/dense/stdout.txt": {
+      "bytes": 188,
+      "sha256": "2aaad9cb185481c4de1881889369a02200067d01b620c486fd1eccce833cd332"
+    },
+    "optimized/standard/qa-summary.json": {
+      "bytes": 3439,
+      "sha256": "1cff67e68f182f542c49b1702e374f9b364bcf2f8447429b528c4c34ee364e0d"
+    },
+    "optimized/standard/raw/raw-mesh-check.json": {
+      "bytes": 2619,
+      "sha256": "6e815e170a3adeea915c30e997af9e558afc26893a94269563f3b68783dc24b2"
+    },
+    "optimized/standard/raw/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/raw/stdout.txt": {
+      "bytes": 168,
+      "sha256": "6c7c4f82dcae71bc9b3e75a0848ac47b111471d5647e5501f7feb452079d2073"
+    },
+    "optimized/standard/sections/section-check.json": {
+      "bytes": 2851,
+      "sha256": "87b6185c57ad7a8863d3ce45d80d0d03db491b3428bca0e282cb1a096baad874"
+    },
+    "optimized/standard/sections/section-details.json.gz": {
+      "bytes": 278060,
+      "sha256": "1ce5b4e8509448a37fc553ac5dbf5c80bde8b4ffdcf6c482a3d5952b53792723"
+    },
+    "optimized/standard/sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "optimized/standard/sections/stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard/sections/stdout.txt": {
+      "bytes": 172,
+      "sha256": "46fec21ed52b343d3927d3e70d8e1484c400ebbb18fc9938fcc38902b3caa01a"
+    },
+    "optimized/standard.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "optimized/standard.stdout.txt": {
+      "bytes": 685,
+      "sha256": "192e4db5ef9d2ead9d1aefefc93797b1d3ea404a22d50b7c90ab28d7f9628575"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "strict_passed": true,
+  "checks": {
+    "every_original_face_exactly_ten_samples": true,
+    "stored_normals_agree_with_original_directed_faces": true,
+    "all_original_ray_intervals_and_controls_valid": true,
+    "all_first_original_chords_ge_0p8mm": true
+  },
+  "stl_sha256": "6fcac7d4b0e6559b79a0b3305511e127c868ab9ad6c59df5d0431e57f5e0bc34",
+  "original_triangles": 12,
+  "samples": 120,
+  "samples_per_original_face": 10,
+  "barycentric_weights": [
+    [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    [
+      0.98,
+      0.01,
+      0.01
+    ],
+    [
+      0.01,
+      0.98,
+      0.01
+    ],
+    [
+      0.01,
+      0.01,
+      0.98
+    ],
+    [
+      0.495,
+      0.495,
+      0.01
+    ],
+    [
+      0.01,
+      0.495,
+      0.495
+    ],
+    [
+      0.495,
+      0.01,
+      0.495
+    ],
+    [
+      0.49,
+      0.49,
+      0.02
+    ],
+    [
+      0.49,
+      0.02,
+      0.49
+    ],
+    [
+      0.02,
+      0.49,
+      0.49
+    ]
+  ],
+  "minimum_first_chord_mm": 10.0,
+  "minimum_required_chord_mm": 0.8,
+  "origin_outside_offset_mm": 1e-05,
+  "under_0p8mm_count": 0,
+  "flagged_sample_count": 0,
+  "csv_file": "dense-original.csv.xz",
+  "csv_compression": "xz",
+  "csv_compressed_sha256": "25d0a4adcf71ec05d5f79e09d310bff242d3ae383b03fb04b944a658de084464",
+  "csv_compressed_bytes": 2780,
+  "uncompressed_csv_bytes": 42187,
+  "uncompressed_csv_sha256": "1f08268a3923c095eae21e96a56cef44b44789aa153dae754a3be8bbd506be2e",
+  "short_chords_file": "dense-short-samples.json.gz",
+  "short_chords_sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f",
+  "flagged_samples_file": "dense-flagged-samples.json.gz",
+  "flagged_samples_sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f",
+  "cpp_source_sha256": "f0f513970c0e930717a30df6883b06d018166a3306b9b05c620b7dfc946e8095",
+  "compiled_executable_sha256": "08c0cf75acc4e70cac2bae31ea966680d7cbb01e782aa12513dbcb38bd578906",
+  "checker_sources_sha256": {
+    "check_controls.py": "926fb93691ebc3bdc82e04de8557ae13230cb6a3eebc90a2bb189053675ebd07",
+    "check_dense_surface.py": "3e784433d973228203056907aa7ef95ef91a8905e72452d3a8be465e6a5ebb11",
+    "check_intersection_controls.py": "542b296cba809a9b1c421f7a3f786acd11c4271b72af7836fe22a746ec15c867",
+    "check_original_intersections.py": "3698168f95ac9b95f0021d3a41c04bff30dec092028061d8640b038b6cdd37bc",
+    "check_raw_mesh.py": "c0f2c9447e99eca6bd40e3c56cbbaaafe889b32ee3f480ee2526363d88749132",
+    "check_sections.py": "469c0cdf5b6b9fea7e328c81c35654a9cae30133de9e3640150303a5e62389ad",
+    "dense_original.cpp": "f0f513970c0e930717a30df6883b06d018166a3306b9b05c620b7dfc946e8095",
+    "qa_common.py": "8e207b9db55d5abe0b0d95b02686c2532e09c49ccc474e00c003cade2407666f",
+    "run_qa.py": "8c5512be806074356f02714a4bb4557d860e62aa894ccc0aca7eb2d655f5d394"
+  },
+  "method": "Every original binary triangle, unchanged face order, ten fixed barycentric samples, unit normal derived directly from its original coordinates and checked against saved normals. Long-double original-triangle Moller-Trumbore intersections through a BVH. CSV retains every raw intersection with original face ID and crossing direction, every clustered event, and all paired intervals. The first original solid interval is checked independently; no medians, means, nearest-thickness substitution, normal repair or waived short rays.",
+  "limitations": "Finite original-normal sampling and numerical intersection controls are not a global all-direction wall-thickness or self-intersection proof. Any short original ray makes strict_passed false; no automatic exception mechanism."
+}

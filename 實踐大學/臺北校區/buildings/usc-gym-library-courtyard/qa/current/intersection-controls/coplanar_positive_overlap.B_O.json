@@ -1,0 +1,148 @@
+{
+  "checker": "exact_original_triangle_intersections_v1",
+  "passed": false,
+  "strict_passed": false,
+  "completed": true,
+  "stl_path": "coplanar_positive_overlap.stl",
+  "stl_sha256": "054f6d72e263e74122647c48cc979d5aa59c72806905cf4063db6f72c7211fc5",
+  "original_face_count": 2,
+  "face_index_base": 0,
+  "total_unordered_original_face_pairs": 1,
+  "tools": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "arithmetic": "unbounded Python int and fractions.Fraction",
+    "external_geometry_dependencies": [],
+    "source_sha256": "3698168f95ac9b95f0021d3a41c04bff30dec092028061d8640b038b6cdd37bc",
+    "optimization_level": 1
+  },
+  "lattice": {
+    "denominator": "4",
+    "denominator_power_of_two": 2,
+    "exact_coordinate_round_trips_checked": 18,
+    "all_original_coordinates_round_trip_exactly": true,
+    "maximum_coordinate_integer_bits": 4
+  },
+  "scope_and_limitations": [
+    "Checks every unordered original-triangle pair whose closed exact AABBs overlap.",
+    "No repair, welding, coordinate rounding, dropped faces, epsilon, tiny-face filter, or adjacency exclusions.",
+    "Allows only empty intersection, exactly one shared original vertex, or exactly the full edge between two shared original vertices.",
+    "Rejects coplanar positive-area overlap, crossing segments, nonshared point/segment contacts, and intersections exceeding shared vertices or edges.",
+    "Binary STL stores no connectivity: exact coordinate equality defines a geometrically shared vertex; signed zero has the same geometric value.",
+    "This geometric pair check does not establish manifoldness, orientation, watertightness, minimum wall thickness, connectedness, mechanical strength, or slicer/printer suitability.",
+    "No global printability guarantee; combine with separate topology, dimensional, material, and slicer checks."
+  ],
+  "degenerate_original_faces": [],
+  "bad_pairs": [
+    {
+      "face_indices": [
+        0,
+        1
+      ],
+      "reason": "coplanar_positive_area_overlap",
+      "shared_original_vertex_count": 0,
+      "intersection": {
+        "dimension": 2,
+        "projection_dropped_axis": 2,
+        "vertices_exact_original_units": [
+          [
+            "1/4",
+            "5/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "1/4",
+            "0"
+          ],
+          [
+            "5/4",
+            "1/4",
+            "0"
+          ]
+        ],
+        "vertices_approx_original_units": [
+          [
+            0.25,
+            1.25,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.0
+          ],
+          [
+            1.25,
+            0.25,
+            0.0
+          ]
+        ],
+        "twice_projected_area_original_units_squared_exact": "1"
+      },
+      "original_vertices": [
+        [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            2.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.25,
+            0.25,
+            0.0
+          ],
+          [
+            1.25,
+            0.25,
+            0.0
+          ],
+          [
+            0.25,
+            1.25,
+            0.0
+          ]
+        ]
+      ],
+      "shared_original_vertices": []
+    }
+  ],
+  "broad_phase": {
+    "method": "exact integer closed-AABB sweep, each unordered pair once",
+    "sweep_axis": 0,
+    "axis_active_pair_costs": [
+      1,
+      1,
+      1
+    ],
+    "all_bbox_overlapping_pairs_completed": true,
+    "candidate_pairs_checked": 1,
+    "candidate_sequence_sha256": "01acecb507abfe1a354aa8064f4af5d3f1acd019e37db3c11c97523b71c76e9d"
+  },
+  "actual_intersection_pair_count": 1,
+  "all_actual_intersections": {
+    "format": "gzip JSON Lines; one exact intersection per line",
+    "path": "coplanar_positive_overlap.B_O.json.contacts.jsonl.gz",
+    "sha256": "0b70b89538a83c3e8614774a2d001908956609143ca954eb29815191bafb9623",
+    "record_count": 1
+  },
+  "classification_counts": {
+    "coplanar_positive_area_overlap": 1
+  },
+  "bad_pair_count": 1,
+  "stl_sha256_after_check": "054f6d72e263e74122647c48cc979d5aa59c72806905cf4063db6f72c7211fc5",
+  "input_unchanged_during_check": true,
+  "elapsed_seconds": 0.02371525764465332
+}

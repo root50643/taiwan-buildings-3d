@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "python_optimization_level": 0,
+  "stages": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "verification/run_qa.py",
+        "--stl",
+        "model.stl",
+        "--out",
+        "qa/current",
+        "--expected-longest-mm",
+        "200"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "run_exact_intersections.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "verification/check_intersection_controls.py",
+        "--out-dir",
+        "qa/current/intersection-controls"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "check_reproducibility.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "check_architectural_features.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "blender",
+        "-b",
+        "scene.blend",
+        "-t",
+        "1",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "probe_scene.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [
+        "scene-check.json"
+      ],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "check_compression_controls.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "validate_model.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "check_aggregate_controls.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "check_runner_controls.py"
+      ],
+      "exit_code": 0,
+      "required_new_reports": [],
+      "new_reports_present": true,
+      "passed": true
+    }
+  ]
+}

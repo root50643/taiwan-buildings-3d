@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "python_optimization_level": 0,
+  "controls": [
+    {
+      "case": "real_writer_gzip",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_passed": true,
+      "error": null
+    },
+    {
+      "case": "real_writer_xz",
+      "expected_valid": true,
+      "observed_valid": true,
+      "control_passed": true,
+      "error": null
+    },
+    {
+      "case": "missing_file",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "FileNotFoundError: [Errno 2] No such file or directory: '[candidate]/qa/compression-controls/missing.csv.xz'"
+    },
+    {
+      "case": "wrong_csv_compressed_sha256",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "QAError: Compressed SHA256 mismatch"
+    },
+    {
+      "case": "wrong_uncompressed_csv_sha256",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "QAError: CSV SHA256 or byte count mismatch"
+    },
+    {
+      "case": "wrong_declared_format",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "QAError: CSV extension disagrees with declared compression"
+    },
+    {
+      "case": "unsupported_format",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "QAError: CSV compression must be explicitly gzip or xz"
+    },
+    {
+      "case": "wrong_extension",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "QAError: CSV extension disagrees with declared compression"
+    },
+    {
+      "case": "corrupt_with_matching_outer_hash",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "LZMAError: Corrupt input data"
+    },
+    {
+      "case": "gzip_disguised_as_xz_with_matching_outer_hash",
+      "expected_valid": false,
+      "observed_valid": false,
+      "control_passed": true,
+      "error": "QAError: CSV magic disagrees with declared compression"
+    }
+  ],
+  "same_csv_hash_both_real_writers": "1f08268a3923c095eae21e96a56cef44b44789aa153dae754a3be8bbd506be2e",
+  "reader_source_sha256": "8e207b9db55d5abe0b0d95b02686c2532e09c49ccc474e00c003cade2407666f",
+  "writer_source_sha256": "3e784433d973228203056907aa7ef95ef91a8905e72452d3a8be465e6a5ebb11",
+  "control_source_sha256": "480341fb3178d40cf372452683db4f81db9b3ea0d68807da9722065eed0e50ab",
+  "scope": "Synthetic small-box writer and container-integrity controls; current model evidence is separately checked."
+}

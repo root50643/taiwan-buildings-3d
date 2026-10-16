@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "python_optimization_level": 1,
+  "controls": [
+    {
+      "case": "fresh_success",
+      "with_render": false,
+      "expected_passed": true,
+      "observed_passed": true,
+      "exit_code": 0,
+      "control_passed": true
+    },
+    {
+      "case": "fresh_success",
+      "with_render": true,
+      "expected_passed": true,
+      "observed_passed": true,
+      "exit_code": 0,
+      "control_passed": true
+    },
+    {
+      "case": "blender_exception",
+      "with_render": false,
+      "expected_passed": false,
+      "observed_passed": false,
+      "exit_code": 1,
+      "control_passed": true
+    },
+    {
+      "case": "blender_exception",
+      "with_render": true,
+      "expected_passed": false,
+      "observed_passed": false,
+      "exit_code": 1,
+      "control_passed": true
+    },
+    {
+      "case": "missing_fresh_report",
+      "with_render": false,
+      "expected_passed": false,
+      "observed_passed": false,
+      "exit_code": 1,
+      "control_passed": true
+    },
+    {
+      "case": "missing_fresh_report",
+      "with_render": true,
+      "expected_passed": false,
+      "observed_passed": false,
+      "exit_code": 1,
+      "control_passed": true
+    }
+  ],
+  "runner_source_sha256": "1d25e6e44c097ff2ed63e5fa516a83a27ff21daa70b4a0c20703269c03d7f3a6",
+  "control_source_sha256": "265fd517dff9502c22bd71b15aad114be262f147eb8d17e0280c1523dae49ad9",
+  "scope": "Mock subprocess orchestration only; independent geometry/render evidence is separate."
+}

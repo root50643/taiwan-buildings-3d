@@ -1,0 +1,333 @@
+{
+  "python_optimization_level": 1,
+  "passed": true,
+  "controls": [
+    {
+      "case": "unaltered_current_bundle",
+      "expected_passed": true,
+      "observed_passed": true,
+      "control_passed": true
+    },
+    {
+      "case": "wrong_compression_format",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "aggregate_dense_report_binding",
+        "dense_lossless_csv_hash",
+        "dense_declared_container_bytes"
+      ]
+    },
+    {
+      "case": "unknown_compression_format",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "aggregate_dense_report_binding",
+        "dense_lossless_csv_hash",
+        "dense_declared_container_bytes"
+      ]
+    },
+    {
+      "case": "wrong_compressed_csv_hash",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "dense_csv_file_hash",
+        "aggregate_dense_report_binding"
+      ]
+    },
+    {
+      "case": "wrong_compressed_csv_bytes",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "aggregate_dense_report_binding",
+        "dense_declared_container_bytes"
+      ]
+    },
+    {
+      "case": "wrong_lossless_csv_hash",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "aggregate_dense_report_binding",
+        "dense_lossless_csv_hash"
+      ]
+    },
+    {
+      "case": "missing_gate_records",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "aggregate_exact_gate_records"
+      ]
+    },
+    {
+      "case": "wrong_gate_report_hash",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "aggregate_raw_report_binding"
+      ]
+    },
+    {
+      "case": "missing_raw_checks",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "raw_required_flag_schema",
+        "raw_every_flag_true",
+        "aggregate_raw_report_binding"
+      ]
+    },
+    {
+      "case": "empty_raw_checks",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "raw_required_flag_schema",
+        "raw_every_flag_true",
+        "aggregate_raw_report_binding"
+      ]
+    },
+    {
+      "case": "missing_raw_flag",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "raw_required_flag_schema",
+        "aggregate_raw_report_binding"
+      ]
+    },
+    {
+      "case": "missing_strict_passed",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "raw_strict_passed",
+        "aggregate_raw_report_binding"
+      ]
+    },
+    {
+      "case": "missing_feature_checks",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "features_all_probe_flags_true",
+        "features_complete_expected_probes"
+      ]
+    },
+    {
+      "case": "empty_feature_checks",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "features_all_probe_flags_true",
+        "features_complete_expected_probes"
+      ]
+    },
+    {
+      "case": "missing_feature_probe",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "features_complete_expected_probes"
+      ]
+    },
+    {
+      "case": "raw_failure",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "raw_passed",
+        "aggregate_raw_report_binding"
+      ]
+    },
+    {
+      "case": "relaxed_ray_threshold",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "dense_required_width_unrelaxed",
+        "dense_zero_short_or_flagged",
+        "aggregate_dense_report_binding"
+      ]
+    },
+    {
+      "case": "retained_ray_flag",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "dense_zero_short_or_flagged",
+        "aggregate_dense_report_binding"
+      ]
+    },
+    {
+      "case": "retained_slice_failure",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "sections_zero_failures",
+        "aggregate_sections_report_binding"
+      ]
+    },
+    {
+      "case": "closed_contact_failure",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "exact_intersections_completed_clear",
+        "exact_invocation_bound_to_report"
+      ]
+    },
+    {
+      "case": "false_feature_probe",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "features_all_probe_flags_true"
+      ]
+    },
+    {
+      "case": "stale_feature_mesh",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "features_current_stl"
+      ]
+    },
+    {
+      "case": "stale_rebuild_source",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "repro_current_source"
+      ]
+    },
+    {
+      "case": "stale_scene",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "scene_current_blend"
+      ]
+    },
+    {
+      "case": "missing_render_view",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "preview_top_hash"
+      ]
+    },
+    {
+      "case": "missing_current_csv",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "dense_csv_file_hash",
+        "dense_lossless_csv_hash",
+        "dense_declared_container_bytes"
+      ]
+    },
+    {
+      "case": "corrupt_current_csv",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "dense_lossless_csv_hash",
+        "dense_declared_container_bytes"
+      ]
+    },
+    {
+      "case": "gzip_disguised_as_current_xz",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "dense_lossless_csv_hash",
+        "dense_declared_container_bytes"
+      ]
+    },
+    {
+      "case": "coordinated_wrong_lossless_csv_hash",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "dense_lossless_csv_hash"
+      ]
+    },
+    {
+      "case": "changed_preview",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "preview_top_hash"
+      ]
+    },
+    {
+      "case": "changed_stl_header",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "raw_current_stl",
+        "sections_current_stl",
+        "dense_current_stl",
+        "aggregate_current_stl",
+        "exact_invocation_current_stl",
+        "intersections_current_stl",
+        "features_current_stl",
+        "reproducibility_current_stl",
+        "scene_current_stl",
+        "repro_current_source",
+        "render_bound_to_current_stl"
+      ]
+    },
+    {
+      "case": "missing_required_report",
+      "expected_passed": false,
+      "observed_passed": false,
+      "control_passed": true,
+      "rejection_flags": [
+        "features_readable",
+        "features_all_probe_flags_true",
+        "features_complete_expected_probes",
+        "features_current_source"
+      ]
+    }
+  ],
+  "source_validator_sha256": "5d8a198afb1b8754772efea5ce2252cf692a2392b4b1cc1942d63c01974498fe",
+  "source_control_sha256": "c8d2d5a5d2e3b09e9306a5eaaaf2f2c109c9f2fe0cc8b6d9ba128f3fe787b108",
+  "stl_sha256": "9a23a5c919933e4457a7a8f85440bc00972fb3279183192a61a25938e8a11188",
+  "limits": "Synthetic mutations of copied reports/artifacts test aggregation logic, not architecture or physical printing."
+}

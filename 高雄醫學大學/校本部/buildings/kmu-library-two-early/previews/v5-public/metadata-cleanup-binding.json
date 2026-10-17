@@ -1,0 +1,622 @@
+{
+  "passed": true,
+  "source_manifest_sha256": "abe48f0750081f7b599e533b53e0edbf655eabc6486b5a04838f1b55ef16a417",
+  "stl_sha256": "276fb42c47b0152feb14f9c7851413ea18fa6be20fd86ed73669ddabef69dd7d",
+  "sanitizer_sha256": "8534792905d7fb329e40ccc0277690e2c658ae5f5636b3d2dcb53c2e50ba0cdb",
+  "batch_source_sha256": "e46ea69d0ff368b6d8c6537f365471a150d7cfee5e0890801ae835806b4a7d04",
+  "removal_whitelist": [
+    "Date",
+    "File",
+    "RenderTime",
+    "Time",
+    "cycles.ViewLayer.render_time",
+    "cycles.ViewLayer.synchronization_time",
+    "cycles.ViewLayer.total_time"
+  ],
+  "views": {
+    "front": {
+      "passed": true,
+      "original_png_sha256": "7d7a2ce47edf703bd394fd34f7d61954d4be900255f188748f5d4728fa17a94a",
+      "sanitized_png_sha256": "b4bf592079da15a0b5a3e520a497118ee84c550da23a586fdcea4f66e0da3fef",
+      "original_rgba_sha256": "73947765885ff0d7b7d6ba25ca571b08f6e551e8467eb59c2e145e5a09b9731d",
+      "sanitized_rgba_sha256": "73947765885ff0d7b7d6ba25ca571b08f6e551e8467eb59c2e145e5a09b9731d",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "7bcf1b5c4c3345ec2fb5ae06423192fcbc6e3974293795a9eb1b7b9c225e8607",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "590177d08de966df72c09b7d28c2117a9d56b42f1fee457efb03d8c13d4729d5",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "409f9b9d1850d3ad05329b70be7f6f6bb7bf4241ade7cb3565fb29343904e3b3",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "69fbd571246081bff8bf0f8d83be96c545594401234e06f5aea720ea2b23c575",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "849a8691cb3ea99a0a7713030c60d0fedae36fd373bb5fce7e3eabad137278c8",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "rear": {
+      "passed": true,
+      "original_png_sha256": "7420d10472081dbd3932d5120e07bd8ffba0e7088cdb6e66b325f34f032218f9",
+      "sanitized_png_sha256": "2b432683e5d4bf781f7af4a623ca594973b6653dd2e6ef4269c5de436f9e137d",
+      "original_rgba_sha256": "3b9f1a3865c075c3317ec63b51abf58fe693b96343f1df13606589f252adfb19",
+      "sanitized_rgba_sha256": "3b9f1a3865c075c3317ec63b51abf58fe693b96343f1df13606589f252adfb19",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "73984287c3095f642e4256b5b4e0137bce04bfea4dab1b2ebee12b6165fe7e41",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "a8f1e8ed06fdabeab2db2f9f3615095baea7830e462d5d4b8bd3e5277eecd3f4",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "c9670d66f86892fafaef64d32aaf4bd4c573afb4bf815b7ee443bc8d1d01175e",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "86fbf11b6acabba889fde4b2be695802869ef319795717252d5e77ae338d6622",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "3199680ad26bdc7858838509f793890c23fde76f63b4ceff9d414ef2a7aaec37",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "west": {
+      "passed": true,
+      "original_png_sha256": "0d7d5afe4fc5921d6f83017b9c4d2d3a93155e6095fdd591c390fe67132faee4",
+      "sanitized_png_sha256": "27e2a49a5cbd414e0b049a8300909b16fff301aded2d48e66e3799f38f0ad6f2",
+      "original_rgba_sha256": "53a604e2b42988eda55151d6fc78d67c4eae30bc572356173c202d329cd17d25",
+      "sanitized_rgba_sha256": "53a604e2b42988eda55151d6fc78d67c4eae30bc572356173c202d329cd17d25",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "bed8b8b83735d60e55ba7c3425417d08eb78e8b0f3d73271b524c9a09f73ffbe",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "50b8878af0d4ed85fca1287c6c7bd14304b1f018eec58f71fa74bea5e76ec897",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "da3033ea3a0f77a3c07314c834604c598da5e0864907dfdf7aa6e45baa04aff0",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "bbab615769a91535305d0439ee46f700f7554b2f6e467a74a9dad2da72326689",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "3199680ad26bdc7858838509f793890c23fde76f63b4ceff9d414ef2a7aaec37",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "east": {
+      "passed": true,
+      "original_png_sha256": "f7fc9f52e45f128719633dceda754db2a9f8d10180a96b6834c635e2e6b7ea7f",
+      "sanitized_png_sha256": "9f9549f556e59db8cef29bfe3731e565382a7d145e90ec563a8fa0a9e7aa19b7",
+      "original_rgba_sha256": "3f329b2ca2e1b13a75d2ed6d267dd77b22ecff2648b52fc1b977f7673d19ac83",
+      "sanitized_rgba_sha256": "3f329b2ca2e1b13a75d2ed6d267dd77b22ecff2648b52fc1b977f7673d19ac83",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "b0e81dcb597c657cfa90f03c04329358f2512659a2ef618bd10e0b4c5df7fccf",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "d52246bbcc3c98f56d4d3149d392b55709dcff8dc9a06cebfeb7d8af77f0ca4d",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "8b161824b8010f77a5fca2daa4cd99ab11b318161054f3b293860a711f462a12",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "668e9f4c2d2e0ddd30cf467c490b89db880e579fd094213b0aa6e9ad3a16f9cb",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "3199680ad26bdc7858838509f793890c23fde76f63b4ceff9d414ef2a7aaec37",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "south": {
+      "passed": true,
+      "original_png_sha256": "0db42a28fe8c1fc36ac2c30861a7690365cec8e194aa0ce0dc6997274c6961f3",
+      "sanitized_png_sha256": "e6ee8c014e091380782e6f4558da04713ade1db9d93be5b3d2327964418c0a8f",
+      "original_rgba_sha256": "633f8eb7ac03169a0c646c2d47d688855f945bb9d98e52ad14daf1cf3f29b927",
+      "sanitized_rgba_sha256": "633f8eb7ac03169a0c646c2d47d688855f945bb9d98e52ad14daf1cf3f29b927",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "2b235b96d60fd33e780fb5a5b642151c9cff9d7a40e54bff07fe48b5f27bb7d0",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "23f32221dbca59a612b849502425de70ca07fd64157eb788a366d2e147964e88",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "4d5bafb7cdab610c21886a87aa963083632014e30d784d01c421b083d24e1d25",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "c28fb814cd64c30fc1d168612c62cbb7f90e224e6c1c6708670da7a7ba5f3807",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "849a8691cb3ea99a0a7713030c60d0fedae36fd373bb5fce7e3eabad137278c8",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "north": {
+      "passed": true,
+      "original_png_sha256": "4dd60cdbede454a3fad3e79670ac2358fcad71e806467bddb6f07b5f6b1712a9",
+      "sanitized_png_sha256": "c1716771c6dbec691189c329a6d22ad70350915dccf10c2d01d44a695d72707a",
+      "original_rgba_sha256": "8d2bc2d7a9292263ab84b167203aca2e16fc54db3b103479bdd88ff81513b34c",
+      "sanitized_rgba_sha256": "8d2bc2d7a9292263ab84b167203aca2e16fc54db3b103479bdd88ff81513b34c",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "102a6ea364087c38f94c1e278120a27fd74ebc08fa14889a0f678d7fe0cca2d7",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "61b8326dcbbd371f9783a9ced4964385c26c6670dcb74b5a9035bc8940bec469",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "f05a74d39bdb738d100b602d596e878f7e1fc458417a3a14101e0d703b0fd80f",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "3b3c766712704d001cbe4b1f30e2ddf290a00e00120e2eff3528f2eaa7ad21ba",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "849a8691cb3ea99a0a7713030c60d0fedae36fd373bb5fce7e3eabad137278c8",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "top": {
+      "passed": true,
+      "original_png_sha256": "0bc4761d74bc8ab8494d65a9fa1d03e8ccbc681afb631a4db679e20fcc74eed5",
+      "sanitized_png_sha256": "f3d238e4d426ffa43e230b55589fe65511f2f93e1a2b19fc52baa51ec9f3e533",
+      "original_rgba_sha256": "4147f75a2fd9a4dad6f1050ac0a63b81771aa6fbae32c74c3127e29cc0f59be4",
+      "sanitized_rgba_sha256": "4147f75a2fd9a4dad6f1050ac0a63b81771aa6fbae32c74c3127e29cc0f59be4",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "5b7612475837b17efc3f866faefe9ec098deb9e475a25fd7c4270295d61f63d9",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "631e48ada1e04952aadefd54f59ba424a4ac99aa92fe24b5293ca82d8ae6ebfd",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "9340d2f8ee42056f0ffdd788d87d43afbb094df8aff14fe6909ecd62bef9cc6c",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "9fa8dbf890cdb536905f6289ab72b4c357fd89553136019008b70b2dc3e40702",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "849a8691cb3ea99a0a7713030c60d0fedae36fd373bb5fce7e3eabad137278c8",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "entry-detail": {
+      "passed": true,
+      "original_png_sha256": "9b1ecfdc415fdf71bad038addf42796e96f6616bd86abf8ea6b048932d966295",
+      "sanitized_png_sha256": "558c10fbdb2e150c50f579497174775ba5db94f2b65b0491873c28a87efdb5e6",
+      "original_rgba_sha256": "e3eb9ebdb88cb4ebf391523ca39b30ea33268025d6ceac8f19dd438541c3b5f1",
+      "sanitized_rgba_sha256": "e3eb9ebdb88cb4ebf391523ca39b30ea33268025d6ceac8f19dd438541c3b5f1",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "99840b3514e39fa09d020eee4eacca58a32ea0fa2fbf339838f50fc042863abe",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "4934350777aa94423805101bf1a7165d00e55b5ffef38c41f4b4d73c6062031c",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "8cf59659603e6b2189b82619da888fa855491df72815179393e7f77bbe3f89e5",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "a1a2a1f3a3379e9b7176197aed6cc7f557adb3a30a57edfc2f6fd003cfd5fff7",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "849a8691cb3ea99a0a7713030c60d0fedae36fd373bb5fce7e3eabad137278c8",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    },
+    "roof-detail": {
+      "passed": true,
+      "original_png_sha256": "50961dad9f583234410ae707a295aa4b318ee919d05edbe97de27e82733b5a6c",
+      "sanitized_png_sha256": "5fbb5d08706756de3a438869bf4dbac4efaa005fe1dec23e3a08f7fba23cfd64",
+      "original_rgba_sha256": "fa83551b0547df249f984eeac122f8123f74e450cac9982ead36cfa86624cbf9",
+      "sanitized_rgba_sha256": "fa83551b0547df249f984eeac122f8123f74e450cac9982ead36cfa86624cbf9",
+      "width": 1000,
+      "height": 780,
+      "mode": "RGBA",
+      "bit_depth": 8,
+      "removal_whitelist": [
+        "Date",
+        "File",
+        "RenderTime",
+        "Time",
+        "cycles.ViewLayer.render_time",
+        "cycles.ViewLayer.synchronization_time",
+        "cycles.ViewLayer.total_time"
+      ],
+      "removed_fields": [
+        {
+          "key": "File",
+          "original_payload_sha256": "a2bc1b326bec0860223a1bf5aecaff1eb3298a3d22025bf4eeac4f5c91fccb56",
+          "removed_chunk_bytes": 97
+        },
+        {
+          "key": "Date",
+          "original_payload_sha256": "2534cec9bc618d323aeda9a34d704693a641e34dfc3959e799fe47e3d159b2fd",
+          "removed_chunk_bytes": 36
+        },
+        {
+          "key": "Time",
+          "original_payload_sha256": "a9535270239815dda295c3bf40a44282cbe3638907bcc197d77dc38bee683be1",
+          "removed_chunk_bytes": 28
+        },
+        {
+          "key": "RenderTime",
+          "original_payload_sha256": "9463bee28d896c7acfe9c2019e887697f0cfbb25360bf6855ec3b81ccb5a66c4",
+          "removed_chunk_bytes": 31
+        },
+        {
+          "key": "cycles.ViewLayer.total_time",
+          "original_payload_sha256": "03a02309fa95bc5e60e17cb5c69dea1d3172f48b477723b7f09ba0196bc2921b",
+          "removed_chunk_bytes": 48
+        },
+        {
+          "key": "cycles.ViewLayer.render_time",
+          "original_payload_sha256": "27721b8f7d02173c1c062d775943c2db79d970b1119ae1b7f679f293aa8a3ab5",
+          "removed_chunk_bytes": 49
+        },
+        {
+          "key": "cycles.ViewLayer.synchronization_time",
+          "original_payload_sha256": "849a8691cb3ea99a0a7713030c60d0fedae36fd373bb5fce7e3eabad137278c8",
+          "removed_chunk_bytes": 58
+        }
+      ],
+      "checks": {
+        "original_file_unchanged": true,
+        "all_surviving_chunks_including_crc_unchanged": true,
+        "idat_compressed_bytes_unchanged": true,
+        "decoded_rgba_bytes_unchanged": true,
+        "dimensions_mode_unchanged": true,
+        "all_colour_metadata_unchanged": true,
+        "all_whitelisted_fields_absent": true
+      },
+      "method": "Copy original PNG signature and every surviving complete chunk including CRC verbatim. Remove only whitelisted tEXt chunks. No IDAT recompression, pixel reencoding, colour conversion or image editing."
+    }
+  },
+  "public_manifest_sha256": "d0ad761dd692d834f3b784d939df56f6ee1073366a10c0a8ad3f9e77b47efea1"
+}

@@ -1,0 +1,151 @@
+{
+  "schema": "wfu-roster-r2-narrow-static-peer-v1",
+  "passed": true,
+  "publication_go": false,
+  "model_go": false,
+  "scope": "Static source/diff review plus existing controls and current-byte evidence readback. No new synthetic, model, render, sealer, or archive execution. This is a pre-seal review, not an actual package scan.",
+  "reviewed_source_sha256": {
+    "prepare_public_roster.py": "af89c9e34cca8b7e3344f3c71e8f0dc0fb010d575667d791994bc95899f7ca29",
+    "test_prepare_public_roster.py": "d1633d51958da666a2653dbb5d3c63ad75b45fc94b6e02f060d43a9688a11f02",
+    "restore_scientific_layout.py": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e",
+    "roster_primitives.py": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273"
+  },
+  "plan_sha256": "eaca626126499d0ef3e4b56d5920e43148ddb27061396f3b6074ba57c6cc1614",
+  "final_plan_logical_items": 1528,
+  "final_plan_new_control_members": 247,
+  "normal_optimized_existing_controls": [
+    {
+      "mode": "normal",
+      "actual_optimization_level": 0,
+      "case_count": 29,
+      "sha256": "44ebd01e4c5bef85a88f4b80808419e22046bbb2baf5261b272226e52449229b",
+      "existing_record_read_only": true
+    },
+    {
+      "mode": "optimized",
+      "actual_optimization_level": 1,
+      "case_count": 29,
+      "sha256": "8931f08602c63f42aa0db580428af0a6d835ca50f87e37caf57cd77e03b5169d",
+      "existing_record_read_only": true
+    }
+  ],
+  "original_15_cases_retained": true,
+  "additional_key_and_omission_cases": 14,
+  "unchanged_fd_safe_restore_and_primitives": true,
+  "fixed_projection_entries": [
+    {
+      "logical_source": "independent/TOOLING-AND-CONTROLS-CHECKPOINT-v1.json",
+      "original_sha256": "45d9dc3a82f0221386b31a24883fc44a2d010087d95c2b1e00d66abf21e0c4cb",
+      "value_pointer_count": 0,
+      "key_alias_count": 2,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/candidate-sdna-v13/controls-normal/positive.json",
+      "original_sha256": "34bb70cef3db3afaccb10833f7a1f6634379e8d9836473c6ab3ae4982f1b8413",
+      "value_pointer_count": 4,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/candidate-sdna-v13/controls-optimized/positive.json",
+      "original_sha256": "5edb1109f88ebc254d1c8225c0cbc5e9feaf058033280de78cdbc61e9072d3ea",
+      "value_pointer_count": 4,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/candidate-sdna-v13/profile/exact-known-fields-normal.json",
+      "original_sha256": "0bd548ecce10fd62e32fa56382f0200799ac24c720f8bdd31d4b260589e3b5b6",
+      "value_pointer_count": 4,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/candidate-sdna-v13/profile/exact-known-fields-optimized.json",
+      "original_sha256": "f6c90a5af9ab3a0cbcec57a7d1cd3d983d903620a0ebceb3fe1e8fe05ea2e191",
+      "value_pointer_count": 4,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/candidate-sdna-v13/profile/normal.stdout.log",
+      "original_sha256": "0bd548ecce10fd62e32fa56382f0200799ac24c720f8bdd31d4b260589e3b5b6",
+      "value_pointer_count": 4,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/candidate-sdna-v13/profile/optimized.stdout.log",
+      "original_sha256": "f6c90a5af9ab3a0cbcec57a7d1cd3d983d903620a0ebceb3fe1e8fe05ea2e191",
+      "value_pointer_count": 4,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/result-binding-v13/source-identity-v2/controls-normal.json",
+      "original_sha256": "f413312a03f0cb7c3a008581a993392c114ecd5f1e8dff677d5dca00add670c5",
+      "value_pointer_count": 5,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "independent/result-binding-v13/source-identity-v2/controls-optimized.json",
+      "original_sha256": "2f047ee5aab524850abed724b49be72d07ccaad426d86e833a47e36709981675",
+      "value_pointer_count": 5,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    },
+    {
+      "logical_source": "roster/CONTROL-PAYLOAD-COVERAGE.json",
+      "original_sha256": "efbf9740e38fa9d63aa669203b9a55938e76084bb38a39a2b5aa3b00497fb2b1",
+      "value_pointer_count": 2,
+      "key_alias_count": 0,
+      "all_nontarget_typed_values_identical_by_reversal": true
+    }
+  ],
+  "fixed_string_pointer_count": 36,
+  "fixed_object_key_alias_count": 2,
+  "fixed_flat_omission_alias_count": 2,
+  "projection_policy": "Only explicit parent/pointer and exact old/new string labels. Reverse all enumerated operations and require typed deep equality. No recursive replacement, arbitrary traversal rewrite, value waiver or scanner exemption.",
+  "runtime_stdout_omissions": {
+    "exact_file_count": 138,
+    "total_bytes": 39887,
+    "tuple_set_matches_existing_recommendations": true,
+    "all_original_and_retained_stdout_bytes_read_back_identical": true,
+    "required_byte_exact_canonical_json_count": 22,
+    "required_json_current_bytes_sha_reverified": true,
+    "existing_science_exit_pointer_readbacks": 312,
+    "existing_science_exit_pointer_type_checks_passed": true,
+    "all_22_dependencies_unique_unprojected_and_expected_hash_gated": true,
+    "all_138_exit_codes_remain_original_typed_ints": true,
+    "unique_science_or_exit_spans_missing": 0
+  },
+  "source_selection_changes": {
+    "removed_logical_items": 149,
+    "removed_stdout": 138,
+    "superseded_roster_sources_or_metadata": 11,
+    "new_logical_items": 24,
+    "changed_existing_entries": 32,
+    "ten_exact_metadata_projection_entries": 10,
+    "unchanged_science_rows_with_added_exact_dependency_annotation": 22
+  },
+  "all_removed_originals_explicitly_retained_privately": true,
+  "sdna_stdout_aliases_explicitly_projected_with_same_four_pointer_changes": true,
+  "no_science_or_scene_or_csv_changes_in_reviewed_plan": true,
+  "full_scanner_modified_by_this_revision": false,
+  "wrapper_source_sha256": "f79bc1aec6467e1fdeb78eb30ad801ef68e3ae77e5746fa9ccf7b34aa51267d3",
+  "wrapper_source_modifications": 0,
+  "actual_r2_seal_pending": true,
+  "actual_r2_public_tree_replay_pending": true,
+  "evidence_sha256": {
+    "public-roster-v13/revision-r2/STDOUT-REMOVAL-EXACT-RECIPE.json": "811ad3849871c1eecd88588d681566954789f1991216b68eb84557f6d096c366",
+    "runtime-stdout-audit-v1/CLASSIFICATION.json": "28bc6b6ac473505e6b988a6355b8a95f1aa30e00010ba7476a93b74293967c89",
+    "runtime-stdout-audit-v1/OMISSION-RECOMMENDATIONS.json": "6a3e4b4ddd697707ba29693ffa3440b2b57ec8046847d155707c607052c0d0ec",
+    "runtime-stdout-audit-v1/SUMMARY.json": "6ddf201cac36a44946b07d67695f284a1657ddf1bbb5b8f29c75f3ddc9781540",
+    "runtime-stdout-audit-v1/PUBLIC-ELIGIBILITY.json": "86941eab9e9da011c623512385400dd1b8414fd262195452e1bc5f2d68e09277",
+    "public-roster-v13/revision-r2/SOURCE-SELF-SCAN.json": "f7f0cef9cbe336205666588b4399b194c4845c029cb25b3dbca5c256e03183fe",
+    "public-roster-v13/revision-r2/ADAPTATION.json": "007a4902dbae7d1a547f1290a8d7f8ed16224b9c3c7413c504ce92a3188f97ec"
+  },
+  "nonblocking_note": "The one-off private plan preparer uses Python assertions and is not treated as a generic optimized-mode validator. This review directly authenticated the resulting fixed plan and its selected originals. The public sealer and restorer use explicit exceptions; their existing normal and optimized controls remain the applicable records."
+}

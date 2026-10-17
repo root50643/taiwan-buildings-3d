@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "optimization_level": 0,
+  "helper_sha256": "0c0830d6929697522cbbc9b692a66649aa6fb9cc7aaedc9a60fc193638dd3a7b",
+  "postflight_overlay_inputs": {
+    "artifact_structure.py": {
+      "bytes": 30521,
+      "sha256": "0c0830d6929697522cbbc9b692a66649aa6fb9cc7aaedc9a60fc193638dd3a7b"
+    }
+  },
+  "reviewer_sha256": "18911a8a647d6cd8b4c56f4b46f7e788ab2caf0bf9f590c2470e1396cb224b1c",
+  "scope": "Additional read-only structural/math consistency check of all original independent section polygons, exact recorded rays and exact contact records. Fresh core predicates and all source/render bindings remain required separately. Original strict=False remains unchanged.",
+  "all_inputs_unchanged": true,
+  "modes": {
+    "normal": {
+      "sections": {
+        "sampled_layers": 1718,
+        "original_polygon_count": 7752,
+        "maximum_individual_polygon_loss_fraction": 0.0010683266512004827,
+        "per_offset_layer_counts": [
+          573,
+          573,
+          572
+        ]
+      },
+      "exact_recorded_rays": {
+        "flag_count": 33,
+        "ray_contact_count": 452,
+        "interval_count": 448,
+        "boundary_interval_count": 260,
+        "minimum_first_chord_squared_mm2_exact": "134689734001/17179869184"
+      },
+      "exact_contacts": {
+        "candidate_pairs_checked": 471844,
+        "actual_intersection_pair_count": 160122,
+        "contact_reason_counts": {
+          "allowed_shared_edge": 31419,
+          "allowed_shared_vertex": 128703
+        },
+        "disjoint_candidate_count": 311722,
+        "candidate_sequence_sha256": "6cd5d030aa2499718c5b4a3f6d5f263b7088c3750d53607378eb9601d46c3e30"
+      }
+    },
+    "optimized": {
+      "sections": {
+        "sampled_layers": 1718,
+        "original_polygon_count": 7752,
+        "maximum_individual_polygon_loss_fraction": 0.0010683266512004827,
+        "per_offset_layer_counts": [
+          573,
+          573,
+          572
+        ]
+      },
+      "exact_recorded_rays": {
+        "flag_count": 33,
+        "ray_contact_count": 452,
+        "interval_count": 448,
+        "boundary_interval_count": 260,
+        "minimum_first_chord_squared_mm2_exact": "134689734001/17179869184"
+      },
+      "exact_contacts": {
+        "candidate_pairs_checked": 471844,
+        "actual_intersection_pair_count": 160122,
+        "contact_reason_counts": {
+          "allowed_shared_edge": 31419,
+          "allowed_shared_vertex": 128703
+        },
+        "disjoint_candidate_count": 311722,
+        "candidate_sequence_sha256": "6cd5d030aa2499718c5b4a3f6d5f263b7088c3750d53607378eb9601d46c3e30"
+      }
+    }
+  },
+  "evidence_inventory": {
+    "independent-execution-summary.json": {
+      "sha256": "c13e12e6202057731cc4acfc7ea53dd17550ccc893979d2103f65e8904c56bc4",
+      "bytes": 18566
+    },
+    "geometry/normal/standard/sections/section-check.json": {
+      "sha256": "95527b064ef1fa290bf9c5aab193abcf76fa8feccaa4fd26156c09b1c00199fa",
+      "bytes": 2841
+    },
+    "geometry/normal/standard/sections/section-details.json.gz": {
+      "sha256": "7d23469413a1b0a775c8180fcf44c8ecb0e58dcb2cd2b82016b72113cc391f17",
+      "bytes": 636592
+    },
+    "geometry/normal/standard/sections/section-failures.json.gz": {
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f",
+      "bytes": 22
+    },
+    "geometry/normal/standard/dense/dense-check.json": {
+      "sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d",
+      "bytes": 3691
+    },
+    "geometry/normal/standard/dense/dense-flagged-samples.json.gz": {
+      "sha256": "489c9a6fc4ef52020344f871787fa792e37466ae32479bc392f4d7b7850b3f9c",
+      "bytes": 10415
+    },
+    "geometry/normal/exact-recorded-rays/exact-recorded-ray-summary.json": {
+      "sha256": "600c8cd63b0c50af7aee7bb76624926aa307803e6b48fc747ad573656b265184",
+      "bytes": 1807
+    },
+    "geometry/normal/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz": {
+      "sha256": "7b3bde87774f7a9bed946bb7c70faf2e620f9e4275a9d465d469d167d5702c23",
+      "bytes": 52044
+    },
+    "geometry/normal/intersections.json": {
+      "sha256": "f283b7a43bbccc206d6dd0db04e1595a6e535542b0dc87116d9639460df6bbc8",
+      "bytes": 3103
+    },
+    "geometry/normal/intersections.json.contacts.jsonl.gz": {
+      "sha256": "faf713319eb1e17540f1be4b38fc7a28bd3c282dc9a9ee3404b75d8d062eac7c",
+      "bytes": 1494185
+    },
+    "geometry/optimized/standard/sections/section-check.json": {
+      "sha256": "95527b064ef1fa290bf9c5aab193abcf76fa8feccaa4fd26156c09b1c00199fa",
+      "bytes": 2841
+    },
+    "geometry/optimized/standard/sections/section-details.json.gz": {
+      "sha256": "7d23469413a1b0a775c8180fcf44c8ecb0e58dcb2cd2b82016b72113cc391f17",
+      "bytes": 636592
+    },
+    "geometry/optimized/standard/sections/section-failures.json.gz": {
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f",
+      "bytes": 22
+    },
+    "geometry/optimized/standard/dense/dense-check.json": {
+      "sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d",
+      "bytes": 3691
+    },
+    "geometry/optimized/standard/dense/dense-flagged-samples.json.gz": {
+      "sha256": "489c9a6fc4ef52020344f871787fa792e37466ae32479bc392f4d7b7850b3f9c",
+      "bytes": 10415
+    },
+    "geometry/optimized/exact-recorded-rays/exact-recorded-ray-summary.json": {
+      "sha256": "56e14531e973b1349eb862f5d83b8591237cd9af5f6611a8d504bc9af310a2ad",
+      "bytes": 1807
+    },
+    "geometry/optimized/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz": {
+      "sha256": "7b3bde87774f7a9bed946bb7c70faf2e620f9e4275a9d465d469d167d5702c23",
+      "bytes": 52044
+    },
+    "geometry/optimized/intersections.json": {
+      "sha256": "f179179a229f824f0f1db29188f06f6dbf99c13106a598dc95894cd21b17efbe",
+      "bytes": 3103
+    },
+    "geometry/optimized/intersections.json.contacts.jsonl.gz": {
+      "sha256": "faf713319eb1e17540f1be4b38fc7a28bd3c282dc9a9ee3404b75d8d062eac7c",
+      "bytes": 1494185
+    }
+  }
+}

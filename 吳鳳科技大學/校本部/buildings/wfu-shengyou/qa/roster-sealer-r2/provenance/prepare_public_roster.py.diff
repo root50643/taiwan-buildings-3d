@@ -1,0 +1,108 @@
+--- prior/prepare_public_roster.py
++++ revision-r2/prepare_public_roster.py
+@@ -7,7 +7,7 @@
+ import sys
+ sys.dont_write_bytecode = True
+ from pathlib import Path
+-import argparse, hashlib, types
++import argparse, copy, hashlib, types
+ 
+ HERE = Path(__file__).absolute().parent
+ # This private preparation entry is source-frozen before execution. Its public
+@@ -25,6 +25,55 @@
+     if expected is not None:
+         M.require(M.typed_equal(row, expected), 'Frozen source descriptor changed: ' + path)
+     return data, row
++
++
++def project_json_keys(data, changes):
++    """Rename explicitly listed path-label keys, preserving every typed value."""
++    original = M.parse(data)
++    result = copy.deepcopy(original)
++    seen = set()
++    for change in changes:
++        M.require(set(change) == {'parent_pointer', 'old', 'new'}, 'Unknown key projection instruction')
++        pointer, old, new = (change[k] for k in ('parent_pointer', 'old', 'new'))
++        M.require(type(old) is str and type(new) is str and old != new,
++                  'Key projection requires distinct string labels')
++        M.require((pointer, old) not in seen, 'Duplicate key projection')
++        seen.add((pointer, old))
++        parent, key = M.pointer_parent(result, pointer)
++        target = parent[key]
++        M.require(type(target) is dict and old in target and new not in target,
++                  'Key projection source drift or destination collision')
++        target[new] = target.pop(old)
++    reverse = copy.deepcopy(result)
++    for change in reversed(changes):
++        parent, key = M.pointer_parent(reverse, change['parent_pointer'])
++        target = parent[key]
++        M.require(type(target) is dict and change['new'] in target and change['old'] not in target,
++                  'Key projection reverse collision')
++        target[change['old']] = target.pop(change['new'])
++    M.require(M.typed_equal(original, reverse), 'Unexpected key-projection value change')
++    return M.dump(result)
++
++
++def public_omission_labels(omissions):
++    """Only explicit flat omission labels may use a public logical alias."""
++    result = []
++    for original in omissions:
++        row = copy.deepcopy(original)
++        if 'public_relative_path_alias' in row:
++            alias = row.pop('public_relative_path_alias')
++            old = row['original_relative_path']
++            M.require(type(old) is str and type(alias) is str and old != alias,
++                      'Omission alias requires distinct string labels')
++            M.safe_relative(alias)
++            M.require('original_relative_path_label_sha256' not in row and
++                      'original_relative_path_is_public_logical_alias' not in row,
++                      'Omission alias metadata collision')
++            row['original_relative_path'] = alias
++            row['original_relative_path_label_sha256'] = M.digest(old.encode())
++            row['original_relative_path_is_public_logical_alias'] = True
++        result.append(row)
++    return result
+ 
+ 
+ def seal(plan, roots, out):
+@@ -53,8 +102,11 @@
+         sources[(root_name, source_name)] = original_desc
+         data = original
+         changes = entry.get('changes', [])
+-        if changes:
++        key_changes = entry.get('key_changes', [])
++        if changes or key_changes:
+             data = M.project_json(original, changes)
++            if key_changes:
++                data = project_json_keys(data, key_changes)
+             projection_path = 'projections/' + str(len(projections)).zfill(4) + '.json'
+             generated[projection_path] = data
+             projections.append({'public_path': destination, 'logical_original': restore,
+@@ -62,6 +114,9 @@
+                 'public_bytes': len(data), 'public_sha256': M.digest(data),
+                 'changes': [{'json_pointer': c['pointer'], 'original_string_sha256': M.digest(c['old'].encode()),
+                              'public_value': c['new']} for c in changes],
++                'key_changes': [{'parent_json_pointer': c['parent_pointer'],
++                    'original_key_sha256': M.digest(c['old'].encode()), 'public_key': c['new']}
++                    for c in key_changes],
+                 'all_other_typed_JSON_values_identical': True, 'original_bytes_retained_privately': True})
+             copy_source = {'source_root': 'generated', 'source_relative_path': projection_path}
+         else:
+@@ -80,7 +135,7 @@
+                            'publisher_owned_existing': entry.get('publisher_owned_existing', False),
+                            'new_controls_member': entry.get('new_controls_member', False)})
+         aliases.append({'restore_path': restore, 'canonical_public_path': preferred, **desc,
+-            'mode': 'metadata_only_json_projection' if changes else 'byte_exact',
++            'mode': 'metadata_only_json_projection' if changes or key_changes else 'byte_exact',
+             'original_bytes': original_desc['bytes'], 'original_sha256': original_desc['sha256'],
+             'new_controls_member': entry.get('new_controls_member', False)})
+     # Reauthenticate all selected source bytes before emitting the small recipe.
+@@ -92,7 +147,7 @@
+         'scope': 'Final four-source science, selected reproducibility tools and controls only. Original historical inventory is retained, but private historical payloads are not reconstructed.',
+         'files': list(canonical.values()), 'copy_map': aliases,
+         'required_gate_bindings': gate_bindings, 'projection_bindings': projections,
+-        'omissions': plan['omissions'], 'full_author_inventory_publicly_reconstructible': False}
++        'omissions': public_omission_labels(plan['omissions']), 'full_author_inventory_publicly_reconstructible': False}
+     M.validated_map(mapping)
+     generated['PUBLIC-COPY-MAP.json'] = M.dump(mapping)
+     generated['PUBLISHER-COPY-RECIPE.private.json'] = M.dump({'schema':'wfu-publisher-copy-recipe-v1',

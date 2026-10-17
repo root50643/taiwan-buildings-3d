@@ -1,0 +1,74 @@
+{
+  "schema": "wfu-lattice56-wrapper-static-peer-review-v1",
+  "scope": "Static source/diff and completed prerequisite evidence verification only. Reviewer did not run candidate code, tests, postflight, geometry or rendering.",
+  "reviewed_wrapper": {
+    "path": "wfu-shengyou-independent-qa/postflight-tools-v13/run_postflight_lattice56_v13.py",
+    "bytes": 9973,
+    "sha256": "a957bc24c56c1a6415feaea1dcb5bd5c108bf3ea1dc35848b572b6c05c6a8ce1"
+  },
+  "baseline_wrapper": {
+    "path": "wfu-shengyou-independent-qa/postflight-tools-v13/run_postflight_after_cache_v13.py",
+    "bytes": 8535,
+    "sha256": "b313cbaf45f64d8cb00b960be512dbd9095fe33e44a0b419e3cf36c558731ecd"
+  },
+  "complete_diff": {
+    "path": "wfu-shengyou-independent-qa/postflight-tools-v13/provenance/lattice56-wrapper.diff",
+    "bytes": 12684,
+    "sha256": "b6c761aaf69e1ffa41b97ec1aa38380a5c429f5d319e445a8df6d5b706b42c1a"
+  },
+  "adaptation_record": {
+    "path": "wfu-shengyou-independent-qa/postflight-tools-v13/provenance/LATTICE56-ADAPTATION.json",
+    "bytes": 1125,
+    "sha256": "fade12073acb087e9058da23c3490ce482180e5d6ae4300373061d3f99ed3a7a"
+  },
+  "preexecution_gap": {
+    "description": "First lattice wrapper rehashed only the five sources in controls-summary.source_sha256; run_lattice56_controls.py was omitted from claimed complete overlay source identity.",
+    "retained_unexecuted_source": {
+      "path": "wfu-shengyou-independent-qa/postflight-tools-v13/provenance/run_postflight_lattice56.before-sixth-source-bind.py",
+      "bytes": 9915,
+      "sha256": "e893468c02ec5c8757876371dcdb893e119a1f6246e13b51037666458bda345a"
+    },
+    "resolution": "Merge the separately recorded orchestrator_sha256 into overlay_sources; existing before/after hash checks now cover all six sources.",
+    "only_one_line_source_change_confirmed": true,
+    "final_bytes_read_back_confirmed": true
+  },
+  "static_checks": {
+    "six_stages_retained": true,
+    "original_case_and_complete_review_sources_retained": true,
+    "artifact_reviewer_uses_new_sibling_helper_overlay": true,
+    "helper_authentication_and_final_rehash_preserved": true,
+    "original_candidate_frozen_and_new_overlay_cache_roots_checked": true,
+    "cache_guard_before_and_after_each_child": true,
+    "bytecode_guard_controls_retained": true,
+    "PYTHONOPTIMIZE_removed_from_child_environment": true,
+    "normal_and_O_child_options_explicit": true,
+    "both_mode_report_actual_optimization_levels_checked": true,
+    "both_mode_reports_identical_except_optimization_level": true,
+    "self_source_and_original_candidate_sources_rehashed_at_end": true,
+    "all_six_overlay_sources_rehashed_before_and_after": true,
+    "exact_controls_summary_pin_rechecked_at_end": true,
+    "old_parser_summary_identity_still_required": true,
+    "inherited_124_scene_files_24_cases_4_tool_binding_code_preserved": true,
+    "fresh_r3_stage_output_paths": true,
+    "original_frozen_helper_and_failed_artifact_outputs_unchanged": true
+  },
+  "controlled_overlay_sources_sha256": {
+    "artifact_structure.py": "0c0830d6929697522cbbc9b692a66649aa6fb9cc7aaedc9a60fc193638dd3a7b",
+    "test_artifact_structure.py": "30d9b4c44c31a28d6240f231cd6ebcfa295352ac94ea8e587b31182e29cb3c05",
+    "run_structure_parser_controls.py": "624f87c600f0572a2d8328181bebdc84bcdbdf94dea16b9db0c42ebdf78b56d6",
+    "review_artifact_structure.py": "18911a8a647d6cd8b4c56f4b46f7e788ab2caf0bf9f590c2470e1396cb224b1c",
+    "prove_stl_coordinate_lattice.py": "c19aa7a2f861ce47525388e86fe454aa9280c75586eca1f09b733973b0c0de06",
+    "run_lattice56_controls.py": "9eabf970abd9a6f6506195779217a3c16e4976892d78bb93916ce1166030f4db"
+  },
+  "completed_prerequisite_controls_summary": {
+    "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/controls-summary.json",
+    "bytes": 4486,
+    "sha256": "e426308df08de89b34d8c20c2301cdafd105593c030591f560d500ed41224807"
+  },
+  "postflight_result": "Not evaluated by this static peer record; parent is executing the independent six-stage run.",
+  "remaining_requirements": [
+    "Completed fresh r3 six-stage result and normal/O comparisons",
+    "Separate source-binding, privacy and packaging checks required by existing final workflow"
+  ],
+  "model_go": false
+}

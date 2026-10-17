@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "optimization_level": 0,
+  "case_count": 9,
+  "cases": [
+    {
+      "name": "positive",
+      "expected_accept": true,
+      "accepted": true,
+      "returncode": 0,
+      "expected_error": null,
+      "passed": true,
+      "fixture_sha256": "70d8914cefaaceac8572d00c6cfba52b5abbedd18c810175f2deedb47ed2c429",
+      "result_sha256": "34bb70cef3db3afaccb10833f7a1f6634379e8d9836473c6ab3ae4982f1b8413"
+    },
+    {
+      "name": "ui_home_changed",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original Blend hash mismatch",
+      "passed": true,
+      "fixture_sha256": "884cfd1ac6ebc898202e33c7678782d3c9de5275cb7722a96c95576254af58ce",
+      "result_sha256": null
+    },
+    {
+      "name": "default_render_path_changed",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original Blend hash mismatch",
+      "passed": true,
+      "fixture_sha256": "29e44c64d031acc2d45d9480ff435d878eedfd1ce31e493ee64adf1c8c727ded",
+      "result_sha256": null
+    },
+    {
+      "name": "inactive_ui_buffer_changed",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original Blend hash mismatch",
+      "passed": true,
+      "fixture_sha256": "6d4df90adcc1730fb6a907eab1359c0b4b81e038a530eb66cc6bcd42a1931ce2",
+      "result_sha256": null
+    },
+    {
+      "name": "header_changed",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original Blend hash mismatch",
+      "passed": true,
+      "fixture_sha256": "aed21c66b5d079d68433ec07a9a98bc7a29475ebefb1285687039bee609b3bf8",
+      "result_sha256": null
+    },
+    {
+      "name": "new_private_path_appended",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original Blend hash mismatch",
+      "passed": true,
+      "fixture_sha256": "302cde304f4238037cf6c3cdc8a9f5eab33875d9697a6a07666d5e5bb09dbfdd",
+      "result_sha256": null
+    },
+    {
+      "name": "truncated_blend",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original Blend hash mismatch",
+      "passed": true,
+      "fixture_sha256": "1a167034f9f36c8155f1dd9ae41584e26b0b1671b3dc4fb1a26a30774bb64e31",
+      "result_sha256": null
+    },
+    {
+      "name": "wrong_expected_candidate",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "restricted to the frozen WFU v13 Blend",
+      "passed": true,
+      "fixture_sha256": "70d8914cefaaceac8572d00c6cfba52b5abbedd18c810175f2deedb47ed2c429",
+      "result_sha256": null
+    },
+    {
+      "name": "existing_output_not_overwritten",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Fresh output required",
+      "passed": true,
+      "fixture_sha256": "70d8914cefaaceac8572d00c6cfba52b5abbedd18c810175f2deedb47ed2c429",
+      "result_sha256": "d32eedd77aa7959a397e1c2c8fd28cb4e4e5a237af5cba9c65e2f0951b8ab87e"
+    }
+  ],
+  "blend_sha256": "70d8914cefaaceac8572d00c6cfba52b5abbedd18c810175f2deedb47ed2c429",
+  "source_sha256": "093bd3278b7ee3efa3eb9d049a0ced26c8a21aee9562eb01cabc0f62f1375006",
+  "test_source_sha256": "60af5d0bf5a9c9bd6e4460b79ef20b23a0071a12317d9e3b701e6c76e62826e4",
+  "positive_report_sha256": "34bb70cef3db3afaccb10833f7a1f6634379e8d9836473c6ab3ae4982f1b8413",
+  "all_original_input_and_tool_bytes_unchanged": true,
+  "profile": [
+    {
+      "classification": "generic_file_browser_home",
+      "block_code": "DATA",
+      "struct": "FileSelectParams",
+      "field": "dir[1090]",
+      "field_type": "char",
+      "field_absolute_byte_offset": 171624,
+      "marker_absolute_byte_offset": 171624,
+      "marker_offset_in_field": 0,
+      "field_buffer_bytes": 1090,
+      "field_buffer_sha256": "2d1dc02e846e766c501535dfda01be83adbdea6d8e03a42e4e5df5377da744d1",
+      "after_first_nul_nonzero_bytes": 29
+    },
+    {
+      "classification": "generic_unrendered_output_default",
+      "block_code": "SC\u0000\u0000",
+      "struct": "Scene",
+      "field": "r.pic[1024]",
+      "field_type": "char",
+      "field_absolute_byte_offset": 231956,
+      "marker_absolute_byte_offset": 231956,
+      "marker_offset_in_field": 0,
+      "field_buffer_bytes": 1024,
+      "field_buffer_sha256": "a27bf0cff013ac91d264ac7f6b87fe91b392cee0ed657588929e56c4f0b4d07d",
+      "after_first_nul_nonzero_bytes": 0
+    }
+  ],
+  "scope": "Only the exact frozen Blend is eligible. SDNA locates and hashes both generic non-resource UI/output-default fields, including every NUL tail byte. Every changed candidate byte is rejected. The rest of the binary still requires the independent bounded private-path/credential-pattern scan and full scene resource inspection. No Blender or geometry engine was used."
+}

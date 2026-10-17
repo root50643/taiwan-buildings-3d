@@ -1,0 +1,20 @@
+--- wfu-shengyou-independent-qa/candidate-tools-v12/artifact_structure.py
++++ wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/artifact_structure.py
+@@ -12,7 +12,7 @@
+ FACES = 20946
+ LAYERS = 1718
+ PER_OFFSET_LAYERS = (573, 573, 572)
+-LATTICE = 1 << 30
++LATTICE = 1 << 56
+ STL_SHA256 = '8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0'
+ OFFSETS = (.031, .071, .137)
+ REASONS = frozenset({
+@@ -404,7 +404,7 @@
+     lattice = obj(report['lattice'], 'intersection lattice', ('denominator', 'denominator_power_of_two',
+         'exact_coordinate_round_trips_checked', 'all_original_coordinates_round_trip_exactly'))
+     require(positive_integer_text(lattice['denominator'], 'intersection denominator') == LATTICE and
+-            integer(lattice['denominator_power_of_two'], 'denominator power') == 30 and
++            integer(lattice['denominator_power_of_two'], 'denominator power') == 56 and
+             integer(lattice['exact_coordinate_round_trips_checked'], 'coordinate round trips') == 9 * FACES,
+             'Intersection exact lattice binding differs')
+     truth(lattice['all_original_coordinates_round_trip_exactly'], 'exact coordinate round trips')

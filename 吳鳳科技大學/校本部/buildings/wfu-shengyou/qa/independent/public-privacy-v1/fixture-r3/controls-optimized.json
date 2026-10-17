@@ -1,0 +1,3017 @@
+{
+  "passed": true,
+  "optimization_level": 1,
+  "case_count": 162,
+  "cases": [
+    {
+      "name": "safe_complete_csv",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "safe_plain_words",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "marker_00_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1069,
+        "raw_sha256": "fe4398cb5e00f98b27e7e7d376d5f8d1a17585f04d78c865658dc735ba43da06",
+        "encoded_bytes": 104,
+        "encoded_sha256": "e7d961fe18dc4ec820907fe3fa80a02f994df7dd99bf01293022e6c84b8762cd",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "e7d961fe18dc4ec820907fe3fa80a02f994df7dd99bf01293022e6c84b8762cd",
+          "decoded_bytes": 1069,
+          "decoded_sha256": "fe4398cb5e00f98b27e7e7d376d5f8d1a17585f04d78c865658dc735ba43da06",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_00_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1069,
+        "raw_sha256": "fe4398cb5e00f98b27e7e7d376d5f8d1a17585f04d78c865658dc735ba43da06",
+        "encoded_bytes": 104,
+        "encoded_sha256": "e7d961fe18dc4ec820907fe3fa80a02f994df7dd99bf01293022e6c84b8762cd",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "e7d961fe18dc4ec820907fe3fa80a02f994df7dd99bf01293022e6c84b8762cd",
+          "decoded_bytes": 1069,
+          "decoded_sha256": "fe4398cb5e00f98b27e7e7d376d5f8d1a17585f04d78c865658dc735ba43da06",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_00_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1044,
+        "raw_sha256": "02a987ba9d64b39d6963cdb46011d1dd6b97a7d7424fbfed2900ab7830edc83e",
+        "encoded_bytes": 100,
+        "encoded_sha256": "ad4b2d0f61c0e9d49d50ebba9ab5d32f6cd350466e71dd8c56615f82803b80c8",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "ad4b2d0f61c0e9d49d50ebba9ab5d32f6cd350466e71dd8c56615f82803b80c8",
+          "decoded_bytes": 1044,
+          "decoded_sha256": "02a987ba9d64b39d6963cdb46011d1dd6b97a7d7424fbfed2900ab7830edc83e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_00_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1044,
+        "raw_sha256": "02a987ba9d64b39d6963cdb46011d1dd6b97a7d7424fbfed2900ab7830edc83e",
+        "encoded_bytes": 100,
+        "encoded_sha256": "ad4b2d0f61c0e9d49d50ebba9ab5d32f6cd350466e71dd8c56615f82803b80c8",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "ad4b2d0f61c0e9d49d50ebba9ab5d32f6cd350466e71dd8c56615f82803b80c8",
+          "decoded_bytes": 1044,
+          "decoded_sha256": "02a987ba9d64b39d6963cdb46011d1dd6b97a7d7424fbfed2900ab7830edc83e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_01_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+        "encoded_bytes": 96,
+        "encoded_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_01_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+        "encoded_bytes": 96,
+        "encoded_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_01_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1039,
+        "raw_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+        "encoded_bytes": 92,
+        "encoded_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+          "decoded_bytes": 1039,
+          "decoded_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_01_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1039,
+        "raw_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+        "encoded_bytes": 92,
+        "encoded_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+          "decoded_bytes": 1039,
+          "decoded_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_02_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1065,
+        "raw_sha256": "4062d84c176bebcc75ae7134651e92e3ee2bb03b9acb209be9aec978af3181fc",
+        "encoded_bytes": 100,
+        "encoded_sha256": "34f47298d450664f73b8b8e29fb7383a2ed34c9e533cb226cd0d3bd84d58f1bd",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "34f47298d450664f73b8b8e29fb7383a2ed34c9e533cb226cd0d3bd84d58f1bd",
+          "decoded_bytes": 1065,
+          "decoded_sha256": "4062d84c176bebcc75ae7134651e92e3ee2bb03b9acb209be9aec978af3181fc",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_02_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1065,
+        "raw_sha256": "4062d84c176bebcc75ae7134651e92e3ee2bb03b9acb209be9aec978af3181fc",
+        "encoded_bytes": 100,
+        "encoded_sha256": "34f47298d450664f73b8b8e29fb7383a2ed34c9e533cb226cd0d3bd84d58f1bd",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "34f47298d450664f73b8b8e29fb7383a2ed34c9e533cb226cd0d3bd84d58f1bd",
+          "decoded_bytes": 1065,
+          "decoded_sha256": "4062d84c176bebcc75ae7134651e92e3ee2bb03b9acb209be9aec978af3181fc",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_02_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1040,
+        "raw_sha256": "50449198d435ca378b69c84875564838acba5381b44863e2e4bb3818bd95f670",
+        "encoded_bytes": 96,
+        "encoded_sha256": "c3e291c11f1afa1555d864d5d5eae680c5ac725725b0ade28b346c66d80f1c14",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "c3e291c11f1afa1555d864d5d5eae680c5ac725725b0ade28b346c66d80f1c14",
+          "decoded_bytes": 1040,
+          "decoded_sha256": "50449198d435ca378b69c84875564838acba5381b44863e2e4bb3818bd95f670",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_02_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1040,
+        "raw_sha256": "50449198d435ca378b69c84875564838acba5381b44863e2e4bb3818bd95f670",
+        "encoded_bytes": 96,
+        "encoded_sha256": "c3e291c11f1afa1555d864d5d5eae680c5ac725725b0ade28b346c66d80f1c14",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "c3e291c11f1afa1555d864d5d5eae680c5ac725725b0ade28b346c66d80f1c14",
+          "decoded_bytes": 1040,
+          "decoded_sha256": "50449198d435ca378b69c84875564838acba5381b44863e2e4bb3818bd95f670",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_03_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1083,
+        "raw_sha256": "a588fc6d062c5efc06b9b9afeb6897bc079ad9956c278cbb09078e9192f01a11",
+        "encoded_bytes": 116,
+        "encoded_sha256": "68adae886944c6e17357e58b61adcddb58677fd3df2eaa17983d8940f6a78b39",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "68adae886944c6e17357e58b61adcddb58677fd3df2eaa17983d8940f6a78b39",
+          "decoded_bytes": 1083,
+          "decoded_sha256": "a588fc6d062c5efc06b9b9afeb6897bc079ad9956c278cbb09078e9192f01a11",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_03_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1083,
+        "raw_sha256": "a588fc6d062c5efc06b9b9afeb6897bc079ad9956c278cbb09078e9192f01a11",
+        "encoded_bytes": 116,
+        "encoded_sha256": "68adae886944c6e17357e58b61adcddb58677fd3df2eaa17983d8940f6a78b39",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "68adae886944c6e17357e58b61adcddb58677fd3df2eaa17983d8940f6a78b39",
+          "decoded_bytes": 1083,
+          "decoded_sha256": "a588fc6d062c5efc06b9b9afeb6897bc079ad9956c278cbb09078e9192f01a11",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_03_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1058,
+        "raw_sha256": "134e28fb64625f96be63b46e3a8e57c43681c726487caeafb5134941fdaf2c66",
+        "encoded_bytes": 112,
+        "encoded_sha256": "3ae36c20cabf176d0fc164bf7463bc5f2861aff1bb2c9308bd5c8a3b8fc32b1c",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "3ae36c20cabf176d0fc164bf7463bc5f2861aff1bb2c9308bd5c8a3b8fc32b1c",
+          "decoded_bytes": 1058,
+          "decoded_sha256": "134e28fb64625f96be63b46e3a8e57c43681c726487caeafb5134941fdaf2c66",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_03_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1058,
+        "raw_sha256": "134e28fb64625f96be63b46e3a8e57c43681c726487caeafb5134941fdaf2c66",
+        "encoded_bytes": 112,
+        "encoded_sha256": "3ae36c20cabf176d0fc164bf7463bc5f2861aff1bb2c9308bd5c8a3b8fc32b1c",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "3ae36c20cabf176d0fc164bf7463bc5f2861aff1bb2c9308bd5c8a3b8fc32b1c",
+          "decoded_bytes": 1058,
+          "decoded_sha256": "134e28fb64625f96be63b46e3a8e57c43681c726487caeafb5134941fdaf2c66",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_04_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1093,
+        "raw_sha256": "ddcf4fbbe5da8d21691a2aecd1f9aeb88747e3d7b837ac4e305fdedaea62a356",
+        "encoded_bytes": 124,
+        "encoded_sha256": "29f2ccb10ff4888149e793fb25a2d78e172d714e58fedc75cc91a189e712a115",
+        "profile": {
+          "compressed_bytes": 124,
+          "compressed_sha256": "29f2ccb10ff4888149e793fb25a2d78e172d714e58fedc75cc91a189e712a115",
+          "decoded_bytes": 1093,
+          "decoded_sha256": "ddcf4fbbe5da8d21691a2aecd1f9aeb88747e3d7b837ac4e305fdedaea62a356",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_04_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1093,
+        "raw_sha256": "ddcf4fbbe5da8d21691a2aecd1f9aeb88747e3d7b837ac4e305fdedaea62a356",
+        "encoded_bytes": 124,
+        "encoded_sha256": "29f2ccb10ff4888149e793fb25a2d78e172d714e58fedc75cc91a189e712a115",
+        "profile": {
+          "compressed_bytes": 124,
+          "compressed_sha256": "29f2ccb10ff4888149e793fb25a2d78e172d714e58fedc75cc91a189e712a115",
+          "decoded_bytes": 1093,
+          "decoded_sha256": "ddcf4fbbe5da8d21691a2aecd1f9aeb88747e3d7b837ac4e305fdedaea62a356",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_04_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1068,
+        "raw_sha256": "e68aaab9e87f2944ed9723d790b71c037f79f15ce65f19a49db656768e4bac49",
+        "encoded_bytes": 120,
+        "encoded_sha256": "8b374a88b3b2bb0b0210a265ad9cc8c30c7edc8e26fd5a1ddfa6c07f49fe2123",
+        "profile": {
+          "compressed_bytes": 120,
+          "compressed_sha256": "8b374a88b3b2bb0b0210a265ad9cc8c30c7edc8e26fd5a1ddfa6c07f49fe2123",
+          "decoded_bytes": 1068,
+          "decoded_sha256": "e68aaab9e87f2944ed9723d790b71c037f79f15ce65f19a49db656768e4bac49",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_04_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1068,
+        "raw_sha256": "e68aaab9e87f2944ed9723d790b71c037f79f15ce65f19a49db656768e4bac49",
+        "encoded_bytes": 120,
+        "encoded_sha256": "8b374a88b3b2bb0b0210a265ad9cc8c30c7edc8e26fd5a1ddfa6c07f49fe2123",
+        "profile": {
+          "compressed_bytes": 120,
+          "compressed_sha256": "8b374a88b3b2bb0b0210a265ad9cc8c30c7edc8e26fd5a1ddfa6c07f49fe2123",
+          "decoded_bytes": 1068,
+          "decoded_sha256": "e68aaab9e87f2944ed9723d790b71c037f79f15ce65f19a49db656768e4bac49",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_05_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1081,
+        "raw_sha256": "d6b91714a212f02b01e74758c366c27a6d56f93d2075ce4166720b6158758971",
+        "encoded_bytes": 112,
+        "encoded_sha256": "6563639ee4e83c8bab0019a7cd75341e2652fb2196189c4dfd51605ebf63d0e3",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "6563639ee4e83c8bab0019a7cd75341e2652fb2196189c4dfd51605ebf63d0e3",
+          "decoded_bytes": 1081,
+          "decoded_sha256": "d6b91714a212f02b01e74758c366c27a6d56f93d2075ce4166720b6158758971",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_05_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1081,
+        "raw_sha256": "d6b91714a212f02b01e74758c366c27a6d56f93d2075ce4166720b6158758971",
+        "encoded_bytes": 112,
+        "encoded_sha256": "6563639ee4e83c8bab0019a7cd75341e2652fb2196189c4dfd51605ebf63d0e3",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "6563639ee4e83c8bab0019a7cd75341e2652fb2196189c4dfd51605ebf63d0e3",
+          "decoded_bytes": 1081,
+          "decoded_sha256": "d6b91714a212f02b01e74758c366c27a6d56f93d2075ce4166720b6158758971",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_05_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1056,
+        "raw_sha256": "5678b2bde28cdc136f14a4ac4e2f416e522b967432c3f8a8147c6a8d501c919e",
+        "encoded_bytes": 108,
+        "encoded_sha256": "0141bee6cd7972e9620fb0bd0436c09ef5bc5c51a69fbeb11bf8f5012edf82ec",
+        "profile": {
+          "compressed_bytes": 108,
+          "compressed_sha256": "0141bee6cd7972e9620fb0bd0436c09ef5bc5c51a69fbeb11bf8f5012edf82ec",
+          "decoded_bytes": 1056,
+          "decoded_sha256": "5678b2bde28cdc136f14a4ac4e2f416e522b967432c3f8a8147c6a8d501c919e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_05_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1056,
+        "raw_sha256": "5678b2bde28cdc136f14a4ac4e2f416e522b967432c3f8a8147c6a8d501c919e",
+        "encoded_bytes": 108,
+        "encoded_sha256": "0141bee6cd7972e9620fb0bd0436c09ef5bc5c51a69fbeb11bf8f5012edf82ec",
+        "profile": {
+          "compressed_bytes": 108,
+          "compressed_sha256": "0141bee6cd7972e9620fb0bd0436c09ef5bc5c51a69fbeb11bf8f5012edf82ec",
+          "decoded_bytes": 1056,
+          "decoded_sha256": "5678b2bde28cdc136f14a4ac4e2f416e522b967432c3f8a8147c6a8d501c919e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_06_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1091,
+        "raw_sha256": "64605b155f0b66f506e87be49574d78933792e4de05d4a246b06f27a3d2ae327",
+        "encoded_bytes": 120,
+        "encoded_sha256": "250769004f766f7808b09946e617d9af0f381000becb3e2daa99e997e5db0733",
+        "profile": {
+          "compressed_bytes": 120,
+          "compressed_sha256": "250769004f766f7808b09946e617d9af0f381000becb3e2daa99e997e5db0733",
+          "decoded_bytes": 1091,
+          "decoded_sha256": "64605b155f0b66f506e87be49574d78933792e4de05d4a246b06f27a3d2ae327",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_06_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1091,
+        "raw_sha256": "64605b155f0b66f506e87be49574d78933792e4de05d4a246b06f27a3d2ae327",
+        "encoded_bytes": 120,
+        "encoded_sha256": "250769004f766f7808b09946e617d9af0f381000becb3e2daa99e997e5db0733",
+        "profile": {
+          "compressed_bytes": 120,
+          "compressed_sha256": "250769004f766f7808b09946e617d9af0f381000becb3e2daa99e997e5db0733",
+          "decoded_bytes": 1091,
+          "decoded_sha256": "64605b155f0b66f506e87be49574d78933792e4de05d4a246b06f27a3d2ae327",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_06_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1066,
+        "raw_sha256": "749d5b5add9574ac55320042315539bb520606d74453e4f4cf545ada933a4785",
+        "encoded_bytes": 116,
+        "encoded_sha256": "b386776fd712523c6f963106a6485ada3bb936ed2b69de44447862d2ff59b90b",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "b386776fd712523c6f963106a6485ada3bb936ed2b69de44447862d2ff59b90b",
+          "decoded_bytes": 1066,
+          "decoded_sha256": "749d5b5add9574ac55320042315539bb520606d74453e4f4cf545ada933a4785",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_06_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1066,
+        "raw_sha256": "749d5b5add9574ac55320042315539bb520606d74453e4f4cf545ada933a4785",
+        "encoded_bytes": 116,
+        "encoded_sha256": "b386776fd712523c6f963106a6485ada3bb936ed2b69de44447862d2ff59b90b",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "b386776fd712523c6f963106a6485ada3bb936ed2b69de44447862d2ff59b90b",
+          "decoded_bytes": 1066,
+          "decoded_sha256": "749d5b5add9574ac55320042315539bb520606d74453e4f4cf545ada933a4785",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_07_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1063,
+        "raw_sha256": "0507ef3948e8086740541ae2ac4e31a77404637c4eabb053eaff3818d3f5d6d7",
+        "encoded_bytes": 96,
+        "encoded_sha256": "42ccd1dbc17751c661fe3094274b152513efbd3e87eda6180690e30444def623",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "42ccd1dbc17751c661fe3094274b152513efbd3e87eda6180690e30444def623",
+          "decoded_bytes": 1063,
+          "decoded_sha256": "0507ef3948e8086740541ae2ac4e31a77404637c4eabb053eaff3818d3f5d6d7",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_07_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1063,
+        "raw_sha256": "0507ef3948e8086740541ae2ac4e31a77404637c4eabb053eaff3818d3f5d6d7",
+        "encoded_bytes": 96,
+        "encoded_sha256": "42ccd1dbc17751c661fe3094274b152513efbd3e87eda6180690e30444def623",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "42ccd1dbc17751c661fe3094274b152513efbd3e87eda6180690e30444def623",
+          "decoded_bytes": 1063,
+          "decoded_sha256": "0507ef3948e8086740541ae2ac4e31a77404637c4eabb053eaff3818d3f5d6d7",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_07_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1038,
+        "raw_sha256": "77d10286d1ff6565275e714dde2b86f1aaac5b97edfc1669077f7ef20cd1ac16",
+        "encoded_bytes": 92,
+        "encoded_sha256": "65c54d79f2215c170112fb4aabdf2932b91d39ec425cd48622f7ba2f1b8cd377",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "65c54d79f2215c170112fb4aabdf2932b91d39ec425cd48622f7ba2f1b8cd377",
+          "decoded_bytes": 1038,
+          "decoded_sha256": "77d10286d1ff6565275e714dde2b86f1aaac5b97edfc1669077f7ef20cd1ac16",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_07_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1038,
+        "raw_sha256": "77d10286d1ff6565275e714dde2b86f1aaac5b97edfc1669077f7ef20cd1ac16",
+        "encoded_bytes": 92,
+        "encoded_sha256": "65c54d79f2215c170112fb4aabdf2932b91d39ec425cd48622f7ba2f1b8cd377",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "65c54d79f2215c170112fb4aabdf2932b91d39ec425cd48622f7ba2f1b8cd377",
+          "decoded_bytes": 1038,
+          "decoded_sha256": "77d10286d1ff6565275e714dde2b86f1aaac5b97edfc1669077f7ef20cd1ac16",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_08_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+        "encoded_bytes": 96,
+        "encoded_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_08_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+        "encoded_bytes": 96,
+        "encoded_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "46ead3dd6183c3fca301b088e180ee62abd694b1adcf7a4564ebff26eb31bfeb",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "62ddfd51a404ccfe1eaa528c08ad75f5db6817f7b7276c1a1c3cae2796c9d296",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_08_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1039,
+        "raw_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+        "encoded_bytes": 92,
+        "encoded_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+          "decoded_bytes": 1039,
+          "decoded_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_08_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1039,
+        "raw_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+        "encoded_bytes": 92,
+        "encoded_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "3e1f4c133a9d0442de6e6ea021920ca45f03a8378da33c65109defc88f8e5ca1",
+          "decoded_bytes": 1039,
+          "decoded_sha256": "6456099804d3818c17bf3d119469145d60abe028785d94eb41d6b24fe0df5f01",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_09_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "4935237d528854f4f3c57cbbc417097b760fe052e6253bffede0848b783a25fb",
+        "encoded_bytes": 96,
+        "encoded_sha256": "c46cf19237d269da7aef0ce1bef9676d98e6e48f0f93454d453dd28bae7925c0",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "c46cf19237d269da7aef0ce1bef9676d98e6e48f0f93454d453dd28bae7925c0",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "4935237d528854f4f3c57cbbc417097b760fe052e6253bffede0848b783a25fb",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_09_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "4935237d528854f4f3c57cbbc417097b760fe052e6253bffede0848b783a25fb",
+        "encoded_bytes": 96,
+        "encoded_sha256": "c46cf19237d269da7aef0ce1bef9676d98e6e48f0f93454d453dd28bae7925c0",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "c46cf19237d269da7aef0ce1bef9676d98e6e48f0f93454d453dd28bae7925c0",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "4935237d528854f4f3c57cbbc417097b760fe052e6253bffede0848b783a25fb",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_09_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1039,
+        "raw_sha256": "f9b5d29fdaaaf4f99e60f954e9e0287c0eb51a62b53c4c69c8be55c5619a6c53",
+        "encoded_bytes": 92,
+        "encoded_sha256": "66ae52e807441b06b7803a9fd0afe0ed898e475409cf9fae2b3295afb7d48884",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "66ae52e807441b06b7803a9fd0afe0ed898e475409cf9fae2b3295afb7d48884",
+          "decoded_bytes": 1039,
+          "decoded_sha256": "f9b5d29fdaaaf4f99e60f954e9e0287c0eb51a62b53c4c69c8be55c5619a6c53",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_09_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1039,
+        "raw_sha256": "f9b5d29fdaaaf4f99e60f954e9e0287c0eb51a62b53c4c69c8be55c5619a6c53",
+        "encoded_bytes": 92,
+        "encoded_sha256": "66ae52e807441b06b7803a9fd0afe0ed898e475409cf9fae2b3295afb7d48884",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "66ae52e807441b06b7803a9fd0afe0ed898e475409cf9fae2b3295afb7d48884",
+          "decoded_bytes": 1039,
+          "decoded_sha256": "f9b5d29fdaaaf4f99e60f954e9e0287c0eb51a62b53c4c69c8be55c5619a6c53",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_10_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1071,
+        "raw_sha256": "ae847fd07c28204b354b36d10989de64273c2b0f77b74ba5b627038a657249d9",
+        "encoded_bytes": 104,
+        "encoded_sha256": "f4f349e53495fd4713f68115540627372eb84df99999a4529fb3417b4683d4e2",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "f4f349e53495fd4713f68115540627372eb84df99999a4529fb3417b4683d4e2",
+          "decoded_bytes": 1071,
+          "decoded_sha256": "ae847fd07c28204b354b36d10989de64273c2b0f77b74ba5b627038a657249d9",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_10_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1071,
+        "raw_sha256": "ae847fd07c28204b354b36d10989de64273c2b0f77b74ba5b627038a657249d9",
+        "encoded_bytes": 104,
+        "encoded_sha256": "f4f349e53495fd4713f68115540627372eb84df99999a4529fb3417b4683d4e2",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "f4f349e53495fd4713f68115540627372eb84df99999a4529fb3417b4683d4e2",
+          "decoded_bytes": 1071,
+          "decoded_sha256": "ae847fd07c28204b354b36d10989de64273c2b0f77b74ba5b627038a657249d9",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_10_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1046,
+        "raw_sha256": "84a928a4738d6785bec21d81b0d58aa6a7fd60582c7d84f51b9c95d4a86b4c6c",
+        "encoded_bytes": 100,
+        "encoded_sha256": "b99052e3cfd7bec59b2683a849ee4e6b72afb744b58cbbe5df1ca8f4634aaefb",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "b99052e3cfd7bec59b2683a849ee4e6b72afb744b58cbbe5df1ca8f4634aaefb",
+          "decoded_bytes": 1046,
+          "decoded_sha256": "84a928a4738d6785bec21d81b0d58aa6a7fd60582c7d84f51b9c95d4a86b4c6c",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_10_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1046,
+        "raw_sha256": "84a928a4738d6785bec21d81b0d58aa6a7fd60582c7d84f51b9c95d4a86b4c6c",
+        "encoded_bytes": 100,
+        "encoded_sha256": "b99052e3cfd7bec59b2683a849ee4e6b72afb744b58cbbe5df1ca8f4634aaefb",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "b99052e3cfd7bec59b2683a849ee4e6b72afb744b58cbbe5df1ca8f4634aaefb",
+          "decoded_bytes": 1046,
+          "decoded_sha256": "84a928a4738d6785bec21d81b0d58aa6a7fd60582c7d84f51b9c95d4a86b4c6c",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_11_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1071,
+        "raw_sha256": "4a5093514fd70615da4a03fa4dea5747c7403292500eca572a1b800f960692b1",
+        "encoded_bytes": 104,
+        "encoded_sha256": "9f92b5b4eeac732bb85532de60da089a2cd9c71d7d9bf932722981a584922462",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "9f92b5b4eeac732bb85532de60da089a2cd9c71d7d9bf932722981a584922462",
+          "decoded_bytes": 1071,
+          "decoded_sha256": "4a5093514fd70615da4a03fa4dea5747c7403292500eca572a1b800f960692b1",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_11_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1071,
+        "raw_sha256": "4a5093514fd70615da4a03fa4dea5747c7403292500eca572a1b800f960692b1",
+        "encoded_bytes": 104,
+        "encoded_sha256": "9f92b5b4eeac732bb85532de60da089a2cd9c71d7d9bf932722981a584922462",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "9f92b5b4eeac732bb85532de60da089a2cd9c71d7d9bf932722981a584922462",
+          "decoded_bytes": 1071,
+          "decoded_sha256": "4a5093514fd70615da4a03fa4dea5747c7403292500eca572a1b800f960692b1",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_11_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1046,
+        "raw_sha256": "a6ac57d685e29edf715aec6b880fdaa6abc3a2db48fe3da4c5bf41baf8f09238",
+        "encoded_bytes": 100,
+        "encoded_sha256": "85f1e8535b52fbc2814f3dd5630bfebad550f30839a1a43a0a6956e43c3ae5b2",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "85f1e8535b52fbc2814f3dd5630bfebad550f30839a1a43a0a6956e43c3ae5b2",
+          "decoded_bytes": 1046,
+          "decoded_sha256": "a6ac57d685e29edf715aec6b880fdaa6abc3a2db48fe3da4c5bf41baf8f09238",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_11_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1046,
+        "raw_sha256": "a6ac57d685e29edf715aec6b880fdaa6abc3a2db48fe3da4c5bf41baf8f09238",
+        "encoded_bytes": 100,
+        "encoded_sha256": "85f1e8535b52fbc2814f3dd5630bfebad550f30839a1a43a0a6956e43c3ae5b2",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "85f1e8535b52fbc2814f3dd5630bfebad550f30839a1a43a0a6956e43c3ae5b2",
+          "decoded_bytes": 1046,
+          "decoded_sha256": "a6ac57d685e29edf715aec6b880fdaa6abc3a2db48fe3da4c5bf41baf8f09238",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_12_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1065,
+        "raw_sha256": "d3145b694a95cb6eac7614803f880be2fffa65832e7115d3da976788eb716033",
+        "encoded_bytes": 100,
+        "encoded_sha256": "05659108119226538950e81e969b5c9d7663ea99fa80c10c106a5b761116e8ca",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "05659108119226538950e81e969b5c9d7663ea99fa80c10c106a5b761116e8ca",
+          "decoded_bytes": 1065,
+          "decoded_sha256": "d3145b694a95cb6eac7614803f880be2fffa65832e7115d3da976788eb716033",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_12_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1065,
+        "raw_sha256": "d3145b694a95cb6eac7614803f880be2fffa65832e7115d3da976788eb716033",
+        "encoded_bytes": 100,
+        "encoded_sha256": "05659108119226538950e81e969b5c9d7663ea99fa80c10c106a5b761116e8ca",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "05659108119226538950e81e969b5c9d7663ea99fa80c10c106a5b761116e8ca",
+          "decoded_bytes": 1065,
+          "decoded_sha256": "d3145b694a95cb6eac7614803f880be2fffa65832e7115d3da976788eb716033",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_12_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1040,
+        "raw_sha256": "8948888c0c0151064e9b07b5df94f29f0ded74f34b4072c75d917c61c773b12e",
+        "encoded_bytes": 96,
+        "encoded_sha256": "8a2a3d83679dd0308e6fdcc529cd7eb3618defc3af8cd0de88fa8baa7b7cf777",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "8a2a3d83679dd0308e6fdcc529cd7eb3618defc3af8cd0de88fa8baa7b7cf777",
+          "decoded_bytes": 1040,
+          "decoded_sha256": "8948888c0c0151064e9b07b5df94f29f0ded74f34b4072c75d917c61c773b12e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_12_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1040,
+        "raw_sha256": "8948888c0c0151064e9b07b5df94f29f0ded74f34b4072c75d917c61c773b12e",
+        "encoded_bytes": 96,
+        "encoded_sha256": "8a2a3d83679dd0308e6fdcc529cd7eb3618defc3af8cd0de88fa8baa7b7cf777",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "8a2a3d83679dd0308e6fdcc529cd7eb3618defc3af8cd0de88fa8baa7b7cf777",
+          "decoded_bytes": 1040,
+          "decoded_sha256": "8948888c0c0151064e9b07b5df94f29f0ded74f34b4072c75d917c61c773b12e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_13_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1067,
+        "raw_sha256": "476772af7a84460436b6b9852fdf947b050a2fbaf8861cbbaf352aae97e3238d",
+        "encoded_bytes": 100,
+        "encoded_sha256": "95da429ef7b6071cdd0da22e8fd7c833e8dabe755eee69b71af092ec77c1db88",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "95da429ef7b6071cdd0da22e8fd7c833e8dabe755eee69b71af092ec77c1db88",
+          "decoded_bytes": 1067,
+          "decoded_sha256": "476772af7a84460436b6b9852fdf947b050a2fbaf8861cbbaf352aae97e3238d",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_13_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1067,
+        "raw_sha256": "476772af7a84460436b6b9852fdf947b050a2fbaf8861cbbaf352aae97e3238d",
+        "encoded_bytes": 100,
+        "encoded_sha256": "95da429ef7b6071cdd0da22e8fd7c833e8dabe755eee69b71af092ec77c1db88",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "95da429ef7b6071cdd0da22e8fd7c833e8dabe755eee69b71af092ec77c1db88",
+          "decoded_bytes": 1067,
+          "decoded_sha256": "476772af7a84460436b6b9852fdf947b050a2fbaf8861cbbaf352aae97e3238d",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "marker_13_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1042,
+        "raw_sha256": "96f93ec985f7cee31e32c886ca20f797e510b4121ae509777fa4dece1ce26c94",
+        "encoded_bytes": 96,
+        "encoded_sha256": "93d51f71ca8ec067ed9b2e93576c3316e1b5698877033715306d338c9e38ea5c",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "93d51f71ca8ec067ed9b2e93576c3316e1b5698877033715306d338c9e38ea5c",
+          "decoded_bytes": 1042,
+          "decoded_sha256": "96f93ec985f7cee31e32c886ca20f797e510b4121ae509777fa4dece1ce26c94",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "marker_13_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1042,
+        "raw_sha256": "96f93ec985f7cee31e32c886ca20f797e510b4121ae509777fa4dece1ce26c94",
+        "encoded_bytes": 96,
+        "encoded_sha256": "93d51f71ca8ec067ed9b2e93576c3316e1b5698877033715306d338c9e38ea5c",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "93d51f71ca8ec067ed9b2e93576c3316e1b5698877033715306d338c9e38ea5c",
+          "decoded_bytes": 1042,
+          "decoded_sha256": "96f93ec985f7cee31e32c886ca20f797e510b4121ae509777fa4dece1ce26c94",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_00_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1098,
+        "raw_sha256": "3c58a417f5a794f16788665b9d410796e22e2bfc5ea8f8d04930a574fcc83e80",
+        "encoded_bytes": 96,
+        "encoded_sha256": "fa0e270ac8a1c8d31aded94e1ea51b30e95ac7d2f0cca3fe6c63326afb6cdb8c",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "fa0e270ac8a1c8d31aded94e1ea51b30e95ac7d2f0cca3fe6c63326afb6cdb8c",
+          "decoded_bytes": 1098,
+          "decoded_sha256": "3c58a417f5a794f16788665b9d410796e22e2bfc5ea8f8d04930a574fcc83e80",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_00_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1098,
+        "raw_sha256": "3c58a417f5a794f16788665b9d410796e22e2bfc5ea8f8d04930a574fcc83e80",
+        "encoded_bytes": 96,
+        "encoded_sha256": "fa0e270ac8a1c8d31aded94e1ea51b30e95ac7d2f0cca3fe6c63326afb6cdb8c",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "fa0e270ac8a1c8d31aded94e1ea51b30e95ac7d2f0cca3fe6c63326afb6cdb8c",
+          "decoded_bytes": 1098,
+          "decoded_sha256": "3c58a417f5a794f16788665b9d410796e22e2bfc5ea8f8d04930a574fcc83e80",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_00_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1073,
+        "raw_sha256": "a3c585d48cf8796954ca4ba016236e3503fd43d19ac1522666fd973d41e6971c",
+        "encoded_bytes": 92,
+        "encoded_sha256": "41c176b046b92ef2341ec9f27ba9a056d13290ef5d7c2124821b856d45d3af42",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "41c176b046b92ef2341ec9f27ba9a056d13290ef5d7c2124821b856d45d3af42",
+          "decoded_bytes": 1073,
+          "decoded_sha256": "a3c585d48cf8796954ca4ba016236e3503fd43d19ac1522666fd973d41e6971c",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_00_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1073,
+        "raw_sha256": "a3c585d48cf8796954ca4ba016236e3503fd43d19ac1522666fd973d41e6971c",
+        "encoded_bytes": 92,
+        "encoded_sha256": "41c176b046b92ef2341ec9f27ba9a056d13290ef5d7c2124821b856d45d3af42",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "41c176b046b92ef2341ec9f27ba9a056d13290ef5d7c2124821b856d45d3af42",
+          "decoded_bytes": 1073,
+          "decoded_sha256": "a3c585d48cf8796954ca4ba016236e3503fd43d19ac1522666fd973d41e6971c",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_01_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1106,
+        "raw_sha256": "be0aef538d889e6b20b0d5ba62c2a5992e32f9d1a9c1207112c7a84aff430938",
+        "encoded_bytes": 104,
+        "encoded_sha256": "113492ef17e092235bb62ebafc0728377ebf503bf7dde645dfdde5936e0760b2",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "113492ef17e092235bb62ebafc0728377ebf503bf7dde645dfdde5936e0760b2",
+          "decoded_bytes": 1106,
+          "decoded_sha256": "be0aef538d889e6b20b0d5ba62c2a5992e32f9d1a9c1207112c7a84aff430938",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_01_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1106,
+        "raw_sha256": "be0aef538d889e6b20b0d5ba62c2a5992e32f9d1a9c1207112c7a84aff430938",
+        "encoded_bytes": 104,
+        "encoded_sha256": "113492ef17e092235bb62ebafc0728377ebf503bf7dde645dfdde5936e0760b2",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "113492ef17e092235bb62ebafc0728377ebf503bf7dde645dfdde5936e0760b2",
+          "decoded_bytes": 1106,
+          "decoded_sha256": "be0aef538d889e6b20b0d5ba62c2a5992e32f9d1a9c1207112c7a84aff430938",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_01_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1081,
+        "raw_sha256": "9e5ee37fbcd014f50d26185bc173f3df5c11c8a85e6bdf02c09c7186bfe00420",
+        "encoded_bytes": 100,
+        "encoded_sha256": "88e6e2a467fc3c0992d59ca30b51aff003784eedb7234ad503e34a8a4afcb9d2",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "88e6e2a467fc3c0992d59ca30b51aff003784eedb7234ad503e34a8a4afcb9d2",
+          "decoded_bytes": 1081,
+          "decoded_sha256": "9e5ee37fbcd014f50d26185bc173f3df5c11c8a85e6bdf02c09c7186bfe00420",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_01_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1081,
+        "raw_sha256": "9e5ee37fbcd014f50d26185bc173f3df5c11c8a85e6bdf02c09c7186bfe00420",
+        "encoded_bytes": 100,
+        "encoded_sha256": "88e6e2a467fc3c0992d59ca30b51aff003784eedb7234ad503e34a8a4afcb9d2",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "88e6e2a467fc3c0992d59ca30b51aff003784eedb7234ad503e34a8a4afcb9d2",
+          "decoded_bytes": 1081,
+          "decoded_sha256": "9e5ee37fbcd014f50d26185bc173f3df5c11c8a85e6bdf02c09c7186bfe00420",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_02_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1087,
+        "raw_sha256": "66c41caedc9d5ec8af45e12a894248225b2e7d1efc72b39be63f573698abc38b",
+        "encoded_bytes": 100,
+        "encoded_sha256": "1a63c8615031f13986ccc59af9689e52854653f5c97e3824f663d1c738802dde",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "1a63c8615031f13986ccc59af9689e52854653f5c97e3824f663d1c738802dde",
+          "decoded_bytes": 1087,
+          "decoded_sha256": "66c41caedc9d5ec8af45e12a894248225b2e7d1efc72b39be63f573698abc38b",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_02_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1087,
+        "raw_sha256": "66c41caedc9d5ec8af45e12a894248225b2e7d1efc72b39be63f573698abc38b",
+        "encoded_bytes": 100,
+        "encoded_sha256": "1a63c8615031f13986ccc59af9689e52854653f5c97e3824f663d1c738802dde",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "1a63c8615031f13986ccc59af9689e52854653f5c97e3824f663d1c738802dde",
+          "decoded_bytes": 1087,
+          "decoded_sha256": "66c41caedc9d5ec8af45e12a894248225b2e7d1efc72b39be63f573698abc38b",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_02_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1062,
+        "raw_sha256": "3acad759228a7fc324d84428f99cecabbf36a9bc7dc9c9ecf06e396e79c11575",
+        "encoded_bytes": 96,
+        "encoded_sha256": "07588e1c2f21956cb877b73e77fec16768cab0918a49c06c4f43db93cbeb91ce",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "07588e1c2f21956cb877b73e77fec16768cab0918a49c06c4f43db93cbeb91ce",
+          "decoded_bytes": 1062,
+          "decoded_sha256": "3acad759228a7fc324d84428f99cecabbf36a9bc7dc9c9ecf06e396e79c11575",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_02_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1062,
+        "raw_sha256": "3acad759228a7fc324d84428f99cecabbf36a9bc7dc9c9ecf06e396e79c11575",
+        "encoded_bytes": 96,
+        "encoded_sha256": "07588e1c2f21956cb877b73e77fec16768cab0918a49c06c4f43db93cbeb91ce",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "07588e1c2f21956cb877b73e77fec16768cab0918a49c06c4f43db93cbeb91ce",
+          "decoded_bytes": 1062,
+          "decoded_sha256": "3acad759228a7fc324d84428f99cecabbf36a9bc7dc9c9ecf06e396e79c11575",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_03_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1078,
+        "raw_sha256": "f4242404cdf349712208fb37d9d53732ddff264204b2a9a54560e361902216e2",
+        "encoded_bytes": 96,
+        "encoded_sha256": "4a49cda9de8e560edb3b044b6d5661341d6725a346f7ba03be81ccbd815531d0",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "4a49cda9de8e560edb3b044b6d5661341d6725a346f7ba03be81ccbd815531d0",
+          "decoded_bytes": 1078,
+          "decoded_sha256": "f4242404cdf349712208fb37d9d53732ddff264204b2a9a54560e361902216e2",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_03_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1078,
+        "raw_sha256": "f4242404cdf349712208fb37d9d53732ddff264204b2a9a54560e361902216e2",
+        "encoded_bytes": 96,
+        "encoded_sha256": "4a49cda9de8e560edb3b044b6d5661341d6725a346f7ba03be81ccbd815531d0",
+        "profile": {
+          "compressed_bytes": 96,
+          "compressed_sha256": "4a49cda9de8e560edb3b044b6d5661341d6725a346f7ba03be81ccbd815531d0",
+          "decoded_bytes": 1078,
+          "decoded_sha256": "f4242404cdf349712208fb37d9d53732ddff264204b2a9a54560e361902216e2",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_03_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1053,
+        "raw_sha256": "6c3de971509719b4a8b1c4bb69890ca51e677e10eb202d8c6010317da2d05d15",
+        "encoded_bytes": 92,
+        "encoded_sha256": "4d205d2f1f2bd502c24eca2a4306cabaf14e35250b6ddd382ad55494b2616c87",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "4d205d2f1f2bd502c24eca2a4306cabaf14e35250b6ddd382ad55494b2616c87",
+          "decoded_bytes": 1053,
+          "decoded_sha256": "6c3de971509719b4a8b1c4bb69890ca51e677e10eb202d8c6010317da2d05d15",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_03_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1053,
+        "raw_sha256": "6c3de971509719b4a8b1c4bb69890ca51e677e10eb202d8c6010317da2d05d15",
+        "encoded_bytes": 92,
+        "encoded_sha256": "4d205d2f1f2bd502c24eca2a4306cabaf14e35250b6ddd382ad55494b2616c87",
+        "profile": {
+          "compressed_bytes": 92,
+          "compressed_sha256": "4d205d2f1f2bd502c24eca2a4306cabaf14e35250b6ddd382ad55494b2616c87",
+          "decoded_bytes": 1053,
+          "decoded_sha256": "6c3de971509719b4a8b1c4bb69890ca51e677e10eb202d8c6010317da2d05d15",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_04_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1104,
+        "raw_sha256": "525cccff2d2e7b1f3b66c091cc6231a7b93e7f5061988484a907a5a6250be255",
+        "encoded_bytes": 116,
+        "encoded_sha256": "c303650460f58beb7bd27f4919808f508606fe62a56cd560acd6b18edc30f697",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "c303650460f58beb7bd27f4919808f508606fe62a56cd560acd6b18edc30f697",
+          "decoded_bytes": 1104,
+          "decoded_sha256": "525cccff2d2e7b1f3b66c091cc6231a7b93e7f5061988484a907a5a6250be255",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_04_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1104,
+        "raw_sha256": "525cccff2d2e7b1f3b66c091cc6231a7b93e7f5061988484a907a5a6250be255",
+        "encoded_bytes": 116,
+        "encoded_sha256": "c303650460f58beb7bd27f4919808f508606fe62a56cd560acd6b18edc30f697",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "c303650460f58beb7bd27f4919808f508606fe62a56cd560acd6b18edc30f697",
+          "decoded_bytes": 1104,
+          "decoded_sha256": "525cccff2d2e7b1f3b66c091cc6231a7b93e7f5061988484a907a5a6250be255",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_04_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1079,
+        "raw_sha256": "8ec0b9acd45e02cc71eb5389c51f9dfe69971c2b454b41e911969dca77e912e7",
+        "encoded_bytes": 112,
+        "encoded_sha256": "d58a7b37f8aa692632d24d09a5c36a1cbde7df3a252e0829fc606ddefd5c5996",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "d58a7b37f8aa692632d24d09a5c36a1cbde7df3a252e0829fc606ddefd5c5996",
+          "decoded_bytes": 1079,
+          "decoded_sha256": "8ec0b9acd45e02cc71eb5389c51f9dfe69971c2b454b41e911969dca77e912e7",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_04_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1079,
+        "raw_sha256": "8ec0b9acd45e02cc71eb5389c51f9dfe69971c2b454b41e911969dca77e912e7",
+        "encoded_bytes": 112,
+        "encoded_sha256": "d58a7b37f8aa692632d24d09a5c36a1cbde7df3a252e0829fc606ddefd5c5996",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "d58a7b37f8aa692632d24d09a5c36a1cbde7df3a252e0829fc606ddefd5c5996",
+          "decoded_bytes": 1079,
+          "decoded_sha256": "8ec0b9acd45e02cc71eb5389c51f9dfe69971c2b454b41e911969dca77e912e7",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_05_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1093,
+        "raw_sha256": "4608f99d0e5e2ec0b88dbddf8814c3258c6c6bdb9a87ee3081ec68aefb7eaa90",
+        "encoded_bytes": 104,
+        "encoded_sha256": "4f24e6abff9f4791389895439b49e4d40932e3fc979b16ca6c77d5441075c1fb",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "4f24e6abff9f4791389895439b49e4d40932e3fc979b16ca6c77d5441075c1fb",
+          "decoded_bytes": 1093,
+          "decoded_sha256": "4608f99d0e5e2ec0b88dbddf8814c3258c6c6bdb9a87ee3081ec68aefb7eaa90",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_05_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1093,
+        "raw_sha256": "4608f99d0e5e2ec0b88dbddf8814c3258c6c6bdb9a87ee3081ec68aefb7eaa90",
+        "encoded_bytes": 104,
+        "encoded_sha256": "4f24e6abff9f4791389895439b49e4d40932e3fc979b16ca6c77d5441075c1fb",
+        "profile": {
+          "compressed_bytes": 104,
+          "compressed_sha256": "4f24e6abff9f4791389895439b49e4d40932e3fc979b16ca6c77d5441075c1fb",
+          "decoded_bytes": 1093,
+          "decoded_sha256": "4608f99d0e5e2ec0b88dbddf8814c3258c6c6bdb9a87ee3081ec68aefb7eaa90",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_05_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1068,
+        "raw_sha256": "008bc6ffe7360c126e1722db92571928f4c3e4d659da92a6df9caca724718b2c",
+        "encoded_bytes": 100,
+        "encoded_sha256": "7cb803f3a14768542fd4f2b602317b7955942a7c63c00147735578634c2db69b",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "7cb803f3a14768542fd4f2b602317b7955942a7c63c00147735578634c2db69b",
+          "decoded_bytes": 1068,
+          "decoded_sha256": "008bc6ffe7360c126e1722db92571928f4c3e4d659da92a6df9caca724718b2c",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_05_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1068,
+        "raw_sha256": "008bc6ffe7360c126e1722db92571928f4c3e4d659da92a6df9caca724718b2c",
+        "encoded_bytes": 100,
+        "encoded_sha256": "7cb803f3a14768542fd4f2b602317b7955942a7c63c00147735578634c2db69b",
+        "profile": {
+          "compressed_bytes": 100,
+          "compressed_sha256": "7cb803f3a14768542fd4f2b602317b7955942a7c63c00147735578634c2db69b",
+          "decoded_bytes": 1068,
+          "decoded_sha256": "008bc6ffe7360c126e1722db92571928f4c3e4d659da92a6df9caca724718b2c",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_06_cross_one_byte_output_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1089,
+        "raw_sha256": "d8ae4494e9e143eb0238c03b1e76730e192f709c1470df9f198758c07356c51e",
+        "encoded_bytes": 116,
+        "encoded_sha256": "47676b661131f51b94ef6a18a139b21841460b481bc2e977ec533d2c437008e7",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "47676b661131f51b94ef6a18a139b21841460b481bc2e977ec533d2c437008e7",
+          "decoded_bytes": 1089,
+          "decoded_sha256": "d8ae4494e9e143eb0238c03b1e76730e192f709c1470df9f198758c07356c51e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_06_cross_one_byte_output",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1089,
+        "raw_sha256": "d8ae4494e9e143eb0238c03b1e76730e192f709c1470df9f198758c07356c51e",
+        "encoded_bytes": 116,
+        "encoded_sha256": "47676b661131f51b94ef6a18a139b21841460b481bc2e977ec533d2c437008e7",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "47676b661131f51b94ef6a18a139b21841460b481bc2e977ec533d2c437008e7",
+          "decoded_bytes": 1089,
+          "decoded_sha256": "d8ae4494e9e143eb0238c03b1e76730e192f709c1470df9f198758c07356c51e",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1
+      }
+    },
+    {
+      "name": "credential_06_tail_compressed_buffer_safe",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "c60e95619f7b19f1926c61b45ba796db72528e17cbda1e4b0a8ef8805a1c9d89",
+        "encoded_bytes": 112,
+        "encoded_sha256": "0111a1ff275fe0fc151ee8eec578ad98554b4470da1c4fa8a4a5dfe16cab7b9d",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "0111a1ff275fe0fc151ee8eec578ad98554b4470da1c4fa8a4a5dfe16cab7b9d",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "c60e95619f7b19f1926c61b45ba796db72528e17cbda1e4b0a8ef8805a1c9d89",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "credential_06_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 1064,
+        "raw_sha256": "c60e95619f7b19f1926c61b45ba796db72528e17cbda1e4b0a8ef8805a1c9d89",
+        "encoded_bytes": 112,
+        "encoded_sha256": "0111a1ff275fe0fc151ee8eec578ad98554b4470da1c4fa8a4a5dfe16cab7b9d",
+        "profile": {
+          "compressed_bytes": 112,
+          "compressed_sha256": "0111a1ff275fe0fc151ee8eec578ad98554b4470da1c4fa8a4a5dfe16cab7b9d",
+          "decoded_bytes": 1064,
+          "decoded_sha256": "c60e95619f7b19f1926c61b45ba796db72528e17cbda1e4b0a8ef8805a1c9d89",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "compressed_short",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "size/hash differs",
+      "error": "ValueError: Compressed CSV size/hash differs before streaming",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 115,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "compressed_large",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "size/hash differs",
+      "error": "ValueError: Compressed CSV size/hash differs before streaming",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 117,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "compressed_wrong_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "size/hash differs",
+      "error": "ValueError: Compressed CSV size/hash differs before streaming",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "decoded_oversize",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "exceeds exact byte bound",
+      "error": "ValueError: Decoded CSV exceeds exact byte bound",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5639,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "decoded_short",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "exact size/hash differs",
+      "error": "ValueError: Decoded CSV exact size/hash differs",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5641,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "decoded_wrong_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "exact size/hash differs",
+      "error": "ValueError: Decoded CSV exact size/hash differs",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "wrong_rows",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "data-row/line count differs",
+      "error": "ValueError: Decoded CSV full data-row/line count differs",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 2
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "zero_decoded_bound",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact decoded",
+      "error": "ValueError: Invalid exact decoded CSV bounds",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 0,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "bool_decoded_bound",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact decoded",
+      "error": "ValueError: Invalid exact decoded CSV bounds",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": true,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "raised_decoded_bound",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact decoded",
+      "error": "ValueError: Invalid exact decoded CSV bounds",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 194500310,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "negative_rows",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact decoded",
+      "error": "ValueError: Invalid exact decoded CSV bounds",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": -1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "bool_rows",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact decoded",
+      "error": "ValueError: Invalid exact decoded CSV bounds",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": true
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "missing_final_newline",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "data-row/line count differs",
+      "error": "ValueError: Decoded CSV full data-row/line count differs",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5639,
+        "raw_sha256": "e64167d70b8b78cb9590df86374692d131ac3a7e07af0e73c7a6882a66d4d042",
+        "encoded_bytes": 116,
+        "encoded_sha256": "45e79c8a86e2955e9b42ff4199c7d1df2b728afec3ce910cdec56e474df6b29e",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "45e79c8a86e2955e9b42ff4199c7d1df2b728afec3ce910cdec56e474df6b29e",
+          "decoded_bytes": 5639,
+          "decoded_sha256": "e64167d70b8b78cb9590df86374692d131ac3a7e07af0e73c7a6882a66d4d042",
+          "csv_data_rows": 0
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "trailing_garbage",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Trailing",
+      "error": "ValueError: Trailing data or extra stream after the single XZ stream",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 123,
+        "encoded_sha256": "e65380f97a06ad89f16356ba887d6780d83eaeb2a7875f901e8160e006c4051d",
+        "profile": {
+          "compressed_bytes": 123,
+          "compressed_sha256": "e65380f97a06ad89f16356ba887d6780d83eaeb2a7875f901e8160e006c4051d",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "trailing_zero_padding",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Trailing",
+      "error": "ValueError: Trailing data or extra stream after the single XZ stream",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 120,
+        "encoded_sha256": "76c51a430d4db0bbf51d8f8985f44f3e0571eb308484e97220080eb4a34d5f7e",
+        "profile": {
+          "compressed_bytes": 120,
+          "compressed_sha256": "76c51a430d4db0bbf51d8f8985f44f3e0571eb308484e97220080eb4a34d5f7e",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "extra_xz_stream",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Trailing",
+      "error": "ValueError: Trailing data or extra stream after the single XZ stream",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 148,
+        "encoded_sha256": "226cb3b2acf0da9cc03cbb1ce892275cef38201eadb6f4e7ae8a328c56d03e94",
+        "profile": {
+          "compressed_bytes": 148,
+          "compressed_sha256": "226cb3b2acf0da9cc03cbb1ce892275cef38201eadb6f4e7ae8a328c56d03e94",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "truncated_xz",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Incomplete single XZ",
+      "error": "ValueError: Incomplete single XZ stream",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 115,
+        "encoded_sha256": "9f5e1da504688b8224683ddeb19cf6bb33b3effefa90ce6cc1318dbedfb809cd",
+        "profile": {
+          "compressed_bytes": 115,
+          "compressed_sha256": "9f5e1da504688b8224683ddeb19cf6bb33b3effefa90ce6cc1318dbedfb809cd",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "corrupt_xz",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "LZMAError",
+      "error": "LZMAError: Input format not supported by decoder",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "cd4c3fcf249fdff70f094b7958ff0adbad2fa6c676d236fbf50c7ae90774f2a5",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "cd4c3fcf249fdff70f094b7958ff0adbad2fa6c676d236fbf50c7ae90774f2a5",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "invalid_chunk_0",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid bounded streaming chunk size",
+      "error": "ValueError: Invalid bounded streaming chunk size",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 0
+      }
+    },
+    {
+      "name": "invalid_chunk_-1",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid bounded streaming chunk size",
+      "error": "ValueError: Invalid bounded streaming chunk size",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": -1
+      }
+    },
+    {
+      "name": "invalid_chunk_True",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid bounded streaming chunk size",
+      "error": "ValueError: Invalid bounded streaming chunk size",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": true
+      }
+    },
+    {
+      "name": "invalid_chunk_False",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid bounded streaming chunk size",
+      "error": "ValueError: Invalid bounded streaming chunk size",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": false
+      }
+    },
+    {
+      "name": "invalid_chunk_4194305",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid bounded streaming chunk size",
+      "error": "ValueError: Invalid bounded streaming chunk size",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 4194305
+      }
+    },
+    {
+      "name": "invalid_chunk_1.0",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid bounded streaming chunk size",
+      "error": "ValueError: Invalid bounded streaming chunk size",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 1.0
+      }
+    },
+    {
+      "name": "invalid_chunk_'31'",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid bounded streaming chunk size",
+      "error": "ValueError: Invalid bounded streaming chunk size",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 116,
+        "encoded_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+        "profile": {
+          "compressed_bytes": 116,
+          "compressed_sha256": "9360d75dc0077f708994a7d9c8a6168df103d058a5545fbda620627e70a6f199",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": "31"
+      }
+    },
+    {
+      "name": "compressed_plain_pattern_0",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 18,
+        "encoded_sha256": "d4e16576986d8a4dec2bb0d005caa6ebb3258ed445a2b29f6d7d939464b84e0e",
+        "profile": {
+          "compressed_bytes": 18,
+          "compressed_sha256": "d4e16576986d8a4dec2bb0d005caa6ebb3258ed445a2b29f6d7d939464b84e0e",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "compressed_plain_pattern_1",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "raw_bytes": 5640,
+        "raw_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+        "encoded_bytes": 55,
+        "encoded_sha256": "62434f87957af135c8b2bc75daf0b87db4f2c4e631095cc6b6b4865695cdf565",
+        "profile": {
+          "compressed_bytes": 55,
+          "compressed_sha256": "62434f87957af135c8b2bc75daf0b87db4f2c4e631095cc6b6b4865695cdf565",
+          "decoded_bytes": 5640,
+          "decoded_sha256": "4a51a8f0488920680ee5b12208650dcb57461098a5624837d9faf575f099c220",
+          "csv_data_rows": 1
+        },
+        "chunk_bytes": 31
+      }
+    },
+    {
+      "name": "non_bytes_input_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Compressed CSV input",
+      "error": "ValueError: Compressed CSV input exceeds unchanged generic bound",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_rejects_synthetic_csv",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Compressed CSV size/hash differs",
+      "error": "ValueError: Compressed CSV size/hash differs before streaming",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_profile_tamper_compressed_bytes",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "error": "ValueError: Exact fixed CSV profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_profile_tamper_compressed_sha256",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "error": "ValueError: Exact fixed CSV profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_profile_tamper_decoded_bytes",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "error": "ValueError: Exact fixed CSV profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_profile_tamper_decoded_sha256",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "error": "ValueError: Exact fixed CSV profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_profile_tamper_csv_data_rows",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "error": "ValueError: Exact fixed CSV profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_policy_tamper_MAX_BYTES",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unchanged generic",
+      "error": "ValueError: Unchanged generic MAX_BYTES required",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_policy_tamper_PRIVATE_MARKERS",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "pattern coverage differs",
+      "error": "ValueError: Original privacy pattern coverage differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_policy_tamper_SECRET_PATTERNS",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "pattern coverage differs",
+      "error": "ValueError: Original privacy pattern coverage differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_policy_tamper_TMP_MARKER",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "pattern coverage differs",
+      "error": "ValueError: Original privacy pattern coverage differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_blend_candidate_param_tamper",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact Blend candidate/field profile differs",
+      "error": "ValueError: Exact Blend candidate/field profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_blend_field_param_tamper_0",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact Blend candidate/field profile differs",
+      "error": "ValueError: Exact Blend candidate/field profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_blend_field_param_tamper_1",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact Blend candidate/field profile differs",
+      "error": "ValueError: Exact Blend candidate/field profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "production_blend_field_param_tamper_2",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact Blend candidate/field profile differs",
+      "error": "ValueError: Exact Blend candidate/field profile differs",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "synthetic_blend_mask_effective_strings_only",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "production_rejects_synthetic_blend",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact original WFU Blend identity differs",
+      "error": "ValueError: Exact original WFU Blend identity differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "blend_wrong_candidate_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact Blend privacy profile hash differs",
+      "error": "ValueError: Exact Blend privacy profile hash differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "blend_effective_buffer_changed",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact SDNA full-buffer identity differs",
+      "error": "ValueError: Exact SDNA full-buffer identity differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "blend_nul_tail_changed",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact SDNA full-buffer identity differs",
+      "error": "ValueError: Exact SDNA full-buffer identity differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "blend_wrong_offset",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact SDNA full-buffer identity differs",
+      "error": "ValueError: Exact SDNA full-buffer identity differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "blend_effective_string_changed_even_after_hash_rebinding",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact SDNA full-buffer identity differs",
+      "error": "ValueError: Exact SDNA full-buffer identity differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "blend_duplicate_default_elsewhere",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unexpected repeated generic path",
+      "error": "ValueError: Unexpected repeated generic path outside approved field",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "473b5d4f74d7b336be36114da017dbd189811b5b72c5225066df93a187c835b9",
+        "not_original_blend_or_sdna_validation": true
+      }
+    },
+    {
+      "name": "blend_nul_tail_pattern_still_scanned_0",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "62684f06ab3156b2aab66e48d9f0a84519ee1f7f992b06dce32f23a152557c7e"
+      }
+    },
+    {
+      "name": "blend_nul_tail_pattern_still_scanned_1",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "a64582214ef03d1b92be56367b2ac1b1ffdc4478fc4170bd7d292b0949a673ff"
+      }
+    },
+    {
+      "name": "blend_nul_tail_pattern_still_scanned_2",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in exact CSV complete buffer",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 234000,
+        "synthetic_sha256": "cc2c1930530cee49333ea1babf19bdf28b50f9c2e872dcc49b81f268b6b0660f"
+      }
+    },
+    {
+      "name": "production_profile_unchanged_after_synthetic_controls",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_regular_positive",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_leaf_symlink_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Too many levels of symbolic links",
+      "error": "OSError: [Errno 40] Too many levels of symbolic links: 'leaf-link'",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_ancestor_symlink_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "NotADirectoryError",
+      "error": "NotADirectoryError: [Errno 20] Not a directory: 'ancestor-link'",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_workspace_symlink_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "NotADirectoryError",
+      "error": "NotADirectoryError: [Errno 20] Not a directory: 'ancestor-link'",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_fifo_rejected_without_blocking",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact source byte count/type differs",
+      "error": "ValueError: Exact source byte count/type differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_directory_leaf_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact source byte count/type differs",
+      "error": "ValueError: Exact source byte count/type differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_wrong_size_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact source byte count/type differs",
+      "error": "ValueError: Exact source byte count/type differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_wrong_hash_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact source size/hash differs",
+      "error": "ValueError: Exact source size/hash differs",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_missing_leaf_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "FileNotFoundError",
+      "error": "FileNotFoundError: [Errno 2] No such file or directory: 'missing'",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_relative_parent_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unsafe input relative path",
+      "error": "ValueError: Unsafe input relative path",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_workspace_parent_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unsafe workspace path",
+      "error": "ValueError: Unsafe workspace path",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_invalid_exact_bound_None",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact input byte bound",
+      "error": "ValueError: Invalid exact input byte bound",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_invalid_exact_bound_True",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact input byte bound",
+      "error": "ValueError: Invalid exact input byte bound",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_invalid_exact_bound_0",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact input byte bound",
+      "error": "ValueError: Invalid exact input byte bound",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_invalid_exact_bound_-1",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact input byte bound",
+      "error": "ValueError: Invalid exact input byte bound",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_invalid_exact_bound_536870913",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Invalid exact input byte bound",
+      "error": "ValueError: Invalid exact input byte bound",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_source_snapshot_unchanged_positive",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_source_snapshot_change_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Tool self source changed during execution",
+      "error": "ValueError: Tool self source changed during execution",
+      "passed": true,
+      "fixture_binding": null
+    },
+    {
+      "name": "filesystem_ancestor_swap_cannot_redirect_open_fd",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_later_read_rejects_swapped_symlink",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "NotADirectoryError",
+      "error": "NotADirectoryError: [Errno 20] Not a directory: 'swap'",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_mutation_during_read_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Source changed during read",
+      "error": "ValueError: Source changed during read",
+      "passed": true,
+      "fixture_binding": {
+        "synthetic_bytes": 23,
+        "synthetic_sha256": "6b1b00ea90683d3e3d5deab86ce4a3efe72a5c5d63383f892876d7ddd81e9d3a"
+      }
+    },
+    {
+      "name": "filesystem_mutation_injection_exercised",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true,
+      "fixture_binding": null
+    }
+  ],
+  "synthetic_only": true,
+  "original_candidate_or_csv_read": false,
+  "geometry_or_render_run": false,
+  "model_go": false,
+  "publication_go": false,
+  "checker_sha256": "c58c05cc4fb94ffda13f71e99aaf43771ede9381b19e1e72ea367b7423aafe91",
+  "test_source_sha256": "7dea2d6b29f8d4550a6d9c7ce9947d674a7530e55bc0c3f439c2da3a640a81cb",
+  "test_source_bytes": 21119,
+  "test_source_unchanged_during_execution": true,
+  "checker_source_bytes": 12080,
+  "primitive_sha256": "1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd",
+  "generic_sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+  "scope": "Synthetic byte/pattern/bounds and small temporary filesystem controls only. Existing original-candidate SDNA controls are independently retained in provenance. These controls do not replace original-file scans or complete scene/API-resource checks."
+}

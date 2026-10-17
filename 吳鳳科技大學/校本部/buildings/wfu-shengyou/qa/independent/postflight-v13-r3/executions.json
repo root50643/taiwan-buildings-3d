@@ -1,0 +1,105 @@
+[
+  {
+    "name": "normal-case-policy-controls",
+    "returncode": 0,
+    "elapsed_seconds": 0.5589706897735596,
+    "log_file": "normal-case-policy-controls.log",
+    "log_sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/independent/candidate-tools-v12/test_case_postflight.py",
+      "--run",
+      "qa/independent/final-v13-r1",
+      "--out",
+      "qa/independent/case-controls-normal-r3"
+    ]
+  },
+  {
+    "name": "normal-complete-readonly-review",
+    "returncode": 0,
+    "elapsed_seconds": 55.409417390823364,
+    "log_file": "normal-complete-readonly-review.log",
+    "log_sha256": "6cbf6cbd987b0a39c25dad1bc182a464ceae92a7d41bc3e67f4f06311edbc788",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/independent/candidate-tools-v12/review_completed_wfu_candidate.py",
+      "--run",
+      "qa/independent/final-v13-r1",
+      "--author",
+      ".",
+      "--out",
+      "qa/independent/final-v13-r1/review-normal-r3"
+    ]
+  },
+  {
+    "name": "normal-all-artifact-records-review",
+    "returncode": 0,
+    "elapsed_seconds": 9.626638650894165,
+    "log_file": "normal-all-artifact-records-review.log",
+    "log_sha256": "7bbb9408dae4b2dc15f384f395d95c4b7b06cf2fee2e554d78d73c50a2b07b34",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/independent/candidate-tools-v13-lattice56/review_artifact_structure.py",
+      "--run",
+      "qa/independent/final-v13-r1",
+      "--out",
+      "qa/independent/final-v13-r1/review-artifacts-normal-r3"
+    ]
+  },
+  {
+    "name": "optimized-case-policy-controls",
+    "returncode": 0,
+    "elapsed_seconds": 0.701580286026001,
+    "log_file": "optimized-case-policy-controls.log",
+    "log_sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "-O",
+      "qa/independent/candidate-tools-v12/test_case_postflight.py",
+      "--run",
+      "qa/independent/final-v13-r1",
+      "--out",
+      "qa/independent/case-controls-optimized-r3"
+    ]
+  },
+  {
+    "name": "optimized-complete-readonly-review",
+    "returncode": 0,
+    "elapsed_seconds": 53.9437141418457,
+    "log_file": "optimized-complete-readonly-review.log",
+    "log_sha256": "6cbf6cbd987b0a39c25dad1bc182a464ceae92a7d41bc3e67f4f06311edbc788",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "-O",
+      "qa/independent/candidate-tools-v12/review_completed_wfu_candidate.py",
+      "--run",
+      "qa/independent/final-v13-r1",
+      "--author",
+      ".",
+      "--out",
+      "qa/independent/final-v13-r1/review-optimized-r3"
+    ]
+  },
+  {
+    "name": "optimized-all-artifact-records-review",
+    "returncode": 0,
+    "elapsed_seconds": 9.878797054290771,
+    "log_file": "optimized-all-artifact-records-review.log",
+    "log_sha256": "d5723c76e55a797a594d5cbf36977d612c1aba8fbd2f0a4685349c8397d0e40d",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "-O",
+      "qa/independent/candidate-tools-v13-lattice56/review_artifact_structure.py",
+      "--run",
+      "qa/independent/final-v13-r1",
+      "--out",
+      "qa/independent/final-v13-r1/review-artifacts-optimized-r3"
+    ]
+  }
+]

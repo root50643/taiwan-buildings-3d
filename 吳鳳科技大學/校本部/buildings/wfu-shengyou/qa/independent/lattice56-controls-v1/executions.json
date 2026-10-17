@@ -1,0 +1,68 @@
+[
+  {
+    "stage": "parser-normal",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/independent/candidate-tools-v13-lattice56/run_structure_parser_controls.py",
+      "--out",
+      "qa/independent/lattice56-controls-v1/parser-normal"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "6e275faaa2780abbc8c6569f1a84dfee52c75243a9203ec87e1688c18af75e1b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "report": "parser-normal/results.json",
+    "report_sha256": "84879a133c1b75bb3ccd3b7c57bd7918a3b9b6475150ab414a9fea2c39bd6be3"
+  },
+  {
+    "stage": "coordinate-proof-normal",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/independent/candidate-tools-v13-lattice56/prove_stl_coordinate_lattice.py",
+      "--stl",
+      "qa/independent/final-v13-r1/frozen/models/v13/model.stl",
+      "--out",
+      "qa/independent/lattice56-controls-v1/coordinate-proof-normal.json"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "83771433249c5aca55cba43046f41e83067eac28bc52b39c4c9ad475b774cdf0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "report": "coordinate-proof-normal.json",
+    "report_sha256": "559d606b73ce529847b0cacb34f5c707e6e78743151cf767d30d0c74b8d48db2"
+  },
+  {
+    "stage": "parser-optimized",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "-O",
+      "qa/independent/candidate-tools-v13-lattice56/run_structure_parser_controls.py",
+      "--out",
+      "qa/independent/lattice56-controls-v1/parser-optimized"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "72c772be7e7960c6c732d7ed489515b12038480ff65462071d5981ccca4ed093",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "report": "parser-optimized/results.json",
+    "report_sha256": "5f32a7e0779ecf588d90b137f6791a12c33c7c006dc92d865d6a0d4ef8199e14"
+  },
+  {
+    "stage": "coordinate-proof-optimized",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "-O",
+      "qa/independent/candidate-tools-v13-lattice56/prove_stl_coordinate_lattice.py",
+      "--stl",
+      "qa/independent/final-v13-r1/frozen/models/v13/model.stl",
+      "--out",
+      "qa/independent/lattice56-controls-v1/coordinate-proof-optimized.json"
+    ],
+    "returncode": 0,
+    "stdout_sha256": "83771433249c5aca55cba43046f41e83067eac28bc52b39c4c9ad475b774cdf0",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "report": "coordinate-proof-optimized.json",
+    "report_sha256": "8521f553367ae9953a5de2245b59b74712d491598b75a811d5334dda50c77ede"
+  }
+]

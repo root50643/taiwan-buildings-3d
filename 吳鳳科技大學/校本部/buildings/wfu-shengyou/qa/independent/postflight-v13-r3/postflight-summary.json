@@ -1,0 +1,189 @@
+{
+  "passed": true,
+  "completed": true,
+  "original_numerical_strict_passed": false,
+  "source_sha256": {
+    "test_case_postflight.py": "4e3b06d84189db9a2f6cadf73ecf6d8938a8c235655b3997ef2b13b3b84da094",
+    "review_completed_wfu_candidate.py": "3a432e528018e255a3a6abb4f535d9bbd8f2521e73cdd1c9e767710bd1c830d0",
+    "inspect_flagged_wfu_mode.py": "59b1a4adf5e2105c1871b34c063662d3e070e161f6dfc1e3e93f7af4ef58eca6",
+    "review_artifact_structure.py": "f1a5f7db84e704e1f3d1c76eb9474520c6bd67c19e93db1b1c3e0fcbae7e2772"
+  },
+  "orchestration_source_sha256": "a957bc24c56c1a6415feaea1dcb5bd5c108bf3ea1dc35848b572b6c05c6a8ce1",
+  "cache_origin_proof_sha256": "df53106859a43155e0ba3524606faed87ec7219680e2b3f01f2a3dd5785cc95f",
+  "postflight_overlay_sources": {
+    "artifact_structure.py": "0c0830d6929697522cbbc9b692a66649aa6fb9cc7aaedc9a60fc193638dd3a7b",
+    "test_artifact_structure.py": "30d9b4c44c31a28d6240f231cd6ebcfa295352ac94ea8e587b31182e29cb3c05",
+    "run_structure_parser_controls.py": "624f87c600f0572a2d8328181bebdc84bcdbdf94dea16b9db0c42ebdf78b56d6",
+    "review_artifact_structure.py": "18911a8a647d6cd8b4c56f4b46f7e788ab2caf0bf9f590c2470e1396cb224b1c",
+    "prove_stl_coordinate_lattice.py": "c19aa7a2f861ce47525388e86fe454aa9280c75586eca1f09b733973b0c0de06",
+    "run_lattice56_controls.py": "9eabf970abd9a6f6506195779217a3c16e4976892d78bb93916ce1166030f4db"
+  },
+  "lattice56_controls_summary_sha256": "e426308df08de89b34d8c20c2301cdafd105593c030591f560d500ed41224807",
+  "frozen_author_helper_preserved_unmodified": true,
+  "all_sources_unchanged": true,
+  "local_bytecode_cache_absent_before_and_after_every_stage": true,
+  "local_bytecode_cache_checks": [
+    {
+      "stage": "normal-case-policy-controls",
+      "before": true,
+      "after": true
+    },
+    {
+      "stage": "normal-complete-readonly-review",
+      "before": true,
+      "after": true
+    },
+    {
+      "stage": "normal-all-artifact-records-review",
+      "before": true,
+      "after": true
+    },
+    {
+      "stage": "optimized-case-policy-controls",
+      "before": true,
+      "after": true
+    },
+    {
+      "stage": "optimized-complete-readonly-review",
+      "before": true,
+      "after": true
+    },
+    {
+      "stage": "optimized-all-artifact-records-review",
+      "before": true,
+      "after": true
+    }
+  ],
+  "bytecode_guard_control_count": 4,
+  "inherited_scene_policy_controls": {
+    "result_sha256": "54a5f691e0156183da9bbb3164b50dbf89225fcdc36adaa134c166bd1f2d2f8d",
+    "copy_map_sha256": "078c28f1737fb8d4b181503153c8191054f310b74be9f47988013826bdc60415",
+    "original_control_files_rehashed": 124,
+    "cases": 24,
+    "both_modes": true,
+    "current_tools_byte_identical": true,
+    "scope": "Original completed generic negative-control suite retained byte-for-byte; historical AEUST case identity is inactive and is not WFU acceptance. No repeat synthetic suite."
+  },
+  "executions": [
+    {
+      "name": "normal-case-policy-controls",
+      "returncode": 0,
+      "elapsed_seconds": 0.5589706897735596,
+      "log_file": "normal-case-policy-controls.log",
+      "log_sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1",
+      "command": [
+        "modeling-toolchain/.venv/bin/python",
+        "-B",
+        "qa/independent/candidate-tools-v12/test_case_postflight.py",
+        "--run",
+        "qa/independent/final-v13-r1",
+        "--out",
+        "qa/independent/case-controls-normal-r3"
+      ]
+    },
+    {
+      "name": "normal-complete-readonly-review",
+      "returncode": 0,
+      "elapsed_seconds": 55.409417390823364,
+      "log_file": "normal-complete-readonly-review.log",
+      "log_sha256": "6cbf6cbd987b0a39c25dad1bc182a464ceae92a7d41bc3e67f4f06311edbc788",
+      "command": [
+        "modeling-toolchain/.venv/bin/python",
+        "-B",
+        "qa/independent/candidate-tools-v12/review_completed_wfu_candidate.py",
+        "--run",
+        "qa/independent/final-v13-r1",
+        "--author",
+        ".",
+        "--out",
+        "qa/independent/final-v13-r1/review-normal-r3"
+      ]
+    },
+    {
+      "name": "normal-all-artifact-records-review",
+      "returncode": 0,
+      "elapsed_seconds": 9.626638650894165,
+      "log_file": "normal-all-artifact-records-review.log",
+      "log_sha256": "7bbb9408dae4b2dc15f384f395d95c4b7b06cf2fee2e554d78d73c50a2b07b34",
+      "command": [
+        "modeling-toolchain/.venv/bin/python",
+        "-B",
+        "qa/independent/candidate-tools-v13-lattice56/review_artifact_structure.py",
+        "--run",
+        "qa/independent/final-v13-r1",
+        "--out",
+        "qa/independent/final-v13-r1/review-artifacts-normal-r3"
+      ]
+    },
+    {
+      "name": "optimized-case-policy-controls",
+      "returncode": 0,
+      "elapsed_seconds": 0.701580286026001,
+      "log_file": "optimized-case-policy-controls.log",
+      "log_sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1",
+      "command": [
+        "modeling-toolchain/.venv/bin/python",
+        "-B",
+        "-O",
+        "qa/independent/candidate-tools-v12/test_case_postflight.py",
+        "--run",
+        "qa/independent/final-v13-r1",
+        "--out",
+        "qa/independent/case-controls-optimized-r3"
+      ]
+    },
+    {
+      "name": "optimized-complete-readonly-review",
+      "returncode": 0,
+      "elapsed_seconds": 53.9437141418457,
+      "log_file": "optimized-complete-readonly-review.log",
+      "log_sha256": "6cbf6cbd987b0a39c25dad1bc182a464ceae92a7d41bc3e67f4f06311edbc788",
+      "command": [
+        "modeling-toolchain/.venv/bin/python",
+        "-B",
+        "-O",
+        "qa/independent/candidate-tools-v12/review_completed_wfu_candidate.py",
+        "--run",
+        "qa/independent/final-v13-r1",
+        "--author",
+        ".",
+        "--out",
+        "qa/independent/final-v13-r1/review-optimized-r3"
+      ]
+    },
+    {
+      "name": "optimized-all-artifact-records-review",
+      "returncode": 0,
+      "elapsed_seconds": 9.878797054290771,
+      "log_file": "optimized-all-artifact-records-review.log",
+      "log_sha256": "d5723c76e55a797a594d5cbf36977d612c1aba8fbd2f0a4685349c8397d0e40d",
+      "command": [
+        "modeling-toolchain/.venv/bin/python",
+        "-B",
+        "-O",
+        "qa/independent/candidate-tools-v13-lattice56/review_artifact_structure.py",
+        "--run",
+        "qa/independent/final-v13-r1",
+        "--out",
+        "qa/independent/final-v13-r1/review-artifacts-optimized-r3"
+      ]
+    }
+  ],
+  "normal_optimized_readonly_comparisons": [
+    {
+      "report": "review-result.json",
+      "normal_sha256": "454ec4a6b65f0617d3566238b6c059d1055cf28315b2b4baee268dfe0a444e0b",
+      "optimized_sha256": "3a6f85fb53d2d8c4b22f1626d369e985b41bdbba4dd8d7137843fa295c23262f",
+      "only_difference": "optimization_level",
+      "all_other_fields_identical": true
+    },
+    {
+      "report": "artifact-structure-review.json",
+      "normal_sha256": "efd8d6b63dfc19cbb7d1e25200a3340e85d2d51f14a9eaf06944b64f429a515c",
+      "optimized_sha256": "93fd838ef9ca3b6f5244dc0328caaf79e495840013836ebfd7a1096bec5d981b",
+      "only_difference": "optimization_level",
+      "all_other_fields_identical": true
+    }
+  ],
+  "scope": "Complete read-only independent scientific/source/render reviews with fresh case-policy controls. Parser and SDNA controls were separately completed and remain required; original 24-case generic scene-policy negative controls are explicitly byte-bound here; author/source result bindings remain a separate required stage. Public archive/allowlist and private restore packaging must still pass independently; no publication authorization is implied."
+}

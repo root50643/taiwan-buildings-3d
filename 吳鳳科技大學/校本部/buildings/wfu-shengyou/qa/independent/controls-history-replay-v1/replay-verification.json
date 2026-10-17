@@ -1,0 +1,165 @@
+{
+  "schema": "wfu-inherited-controls-archive-safe-replay-v1",
+  "passed": true,
+  "model_go": false,
+  "both_modes_safe_extraction_and_bitwise_rebuild": true,
+  "archive_sha256": "e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9",
+  "index_sha256": "157fbf951147405727eb557b167e6db16d9ce3a651012f1c87ee2a5975d0015e",
+  "tar_sha256": "b2844f33dd9e1b5278f58ea88627cbc7db95a3b35db59ca09933d769e67aa17b",
+  "members": 16730,
+  "modes": {
+    "normal": {
+      "optimization_level": 0,
+      "safe_validation_and_extraction": {
+        "archive_sha256": "e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9",
+        "extracted": true,
+        "format": "original-stl-controls-ustar-xz-v1",
+        "index_sha256": "157fbf951147405727eb557b167e6db16d9ce3a651012f1c87ee2a5975d0015e",
+        "member_bytes": 468247108,
+        "members": 16730,
+        "passed": true,
+        "tar_bytes": 481423360,
+        "tar_sha256": "b2844f33dd9e1b5278f58ea88627cbc7db95a3b35db59ca09933d769e67aa17b"
+      },
+      "rebuild": {
+        "passed": true,
+        "members": 16730,
+        "archive_sha256": "e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9",
+        "tar_sha256": "b2844f33dd9e1b5278f58ea88627cbc7db95a3b35db59ca09933d769e67aa17b",
+        "archive_bytes": 59649412,
+        "tar_bytes": 481423360
+      },
+      "rebuilt_archive_byte_identical": true,
+      "all_extracted_original_member_bytes_verified": true,
+      "original_member_count": 16730,
+      "elapsed_seconds": 80.30957245826721,
+      "verifier_source_sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+      "rebuild_source_sha256": "e4b23d35449c6321abbfea94e85f4d733ce58be65658255e1e5ba5065b33f637",
+      "source_location": "Trusted original verifier; exact extracted original builder",
+      "temporary_extraction_removed_after_complete_verification": true
+    },
+    "optimized": {
+      "optimization_level": 1,
+      "safe_validation_and_extraction": {
+        "archive_sha256": "e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9",
+        "extracted": true,
+        "format": "original-stl-controls-ustar-xz-v1",
+        "index_sha256": "157fbf951147405727eb557b167e6db16d9ce3a651012f1c87ee2a5975d0015e",
+        "member_bytes": 468247108,
+        "members": 16730,
+        "passed": true,
+        "tar_bytes": 481423360,
+        "tar_sha256": "b2844f33dd9e1b5278f58ea88627cbc7db95a3b35db59ca09933d769e67aa17b"
+      },
+      "rebuild": {
+        "passed": true,
+        "members": 16730,
+        "archive_sha256": "e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9",
+        "tar_sha256": "b2844f33dd9e1b5278f58ea88627cbc7db95a3b35db59ca09933d769e67aa17b",
+        "archive_bytes": 59649412,
+        "tar_bytes": 481423360
+      },
+      "rebuilt_archive_byte_identical": true,
+      "all_extracted_original_member_bytes_verified": true,
+      "original_member_count": 16730,
+      "elapsed_seconds": 81.2984504699707,
+      "verifier_source_sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+      "rebuild_source_sha256": "e4b23d35449c6321abbfea94e85f4d733ce58be65658255e1e5ba5065b33f637",
+      "source_location": "Trusted original verifier; exact extracted original builder",
+      "temporary_extraction_removed_after_complete_verification": true
+    }
+  },
+  "all_original_archives_indexes_and_tools_unchanged": true,
+  "generic_decoded_byte_limit_unchanged": 536870912,
+  "full_synthetic_suites_rerun_from_final_archive": false,
+  "scope": "Exact historical tool/control archive reuse only. Historical AEUST model identities/results are inactive fixtures and never WFU acceptance. WFU case controls and model science are separately required.",
+  "synthetic_evidence_scope": "All complete original synthetic suites were executed in both modes before final packaging. This record verifies safe exact archive restoration and rebuilding, not another synthetic-suite execution.",
+  "actual_child_runtime": [
+    {
+      "record": "outer-normal-verify.runtime.json",
+      "sha256": "716ec9777b63ca8e9f429beb3295d783ddc3872159d02cf9c86525580d495622",
+      "actual": {
+        "optimization_level": 0,
+        "cpu_affinity": [
+          0
+        ],
+        "python_executable": "modeling-toolchain/.venv/bin/python",
+        "target": "qa/independent/reuse-preflight-v1/tooling/tools/archive_verify.py",
+        "target_sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+        "target_arguments": [
+          "--archive",
+          "qa/controls-history/controls.tar.xz",
+          "--index",
+          "qa/controls-history/controls-index.json",
+          "--out",
+          "qa/independent/controls-history-replay-v1/outer-replay-normal-jg3r1c2m/extracted"
+        ]
+      }
+    },
+    {
+      "record": "outer-normal-rebuild.runtime.json",
+      "sha256": "8ffca500cf1a61fdba87f830935633b10491dc7b6d84b0a4c23a050c761c28f0",
+      "actual": {
+        "optimization_level": 0,
+        "cpu_affinity": [
+          0
+        ],
+        "python_executable": "modeling-toolchain/.venv/bin/python",
+        "target": "qa/independent/controls-history-replay-v1/outer-replay-normal-jg3r1c2m/extracted/tooling/tools/build_controls_archive.py",
+        "target_sha256": "e4b23d35449c6321abbfea94e85f4d733ce58be65658255e1e5ba5065b33f637",
+        "target_arguments": [
+          "--root",
+          "qa/independent/controls-history-replay-v1/outer-replay-normal-jg3r1c2m/extracted",
+          "--index",
+          "qa/controls-history/controls-index.json",
+          "--out",
+          "qa/independent/controls-history-replay-v1/outer-replay-normal-jg3r1c2m/rebuilt.tar.xz"
+        ]
+      }
+    },
+    {
+      "record": "outer-optimized-verify.runtime.json",
+      "sha256": "baf03b8bb406cf480f0036d16504e7276fddc33391d482d6376d0680a331e5ce",
+      "actual": {
+        "optimization_level": 1,
+        "cpu_affinity": [
+          0
+        ],
+        "python_executable": "modeling-toolchain/.venv/bin/python",
+        "target": "qa/independent/reuse-preflight-v1/tooling/tools/archive_verify.py",
+        "target_sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+        "target_arguments": [
+          "--archive",
+          "qa/controls-history/controls.tar.xz",
+          "--index",
+          "qa/controls-history/controls-index.json",
+          "--out",
+          "qa/independent/controls-history-replay-v1/outer-replay-optimized-uq756_qm/extracted"
+        ]
+      }
+    },
+    {
+      "record": "outer-optimized-rebuild.runtime.json",
+      "sha256": "14f7321ce3adcd87185d8d08d3352c590480529b8bcb4cca9484d762f8193577",
+      "actual": {
+        "optimization_level": 1,
+        "cpu_affinity": [
+          0
+        ],
+        "python_executable": "modeling-toolchain/.venv/bin/python",
+        "target": "qa/independent/controls-history-replay-v1/outer-replay-optimized-uq756_qm/extracted/tooling/tools/build_controls_archive.py",
+        "target_sha256": "e4b23d35449c6321abbfea94e85f4d733ce58be65658255e1e5ba5065b33f637",
+        "target_arguments": [
+          "--root",
+          "qa/independent/controls-history-replay-v1/outer-replay-optimized-uq756_qm/extracted",
+          "--index",
+          "qa/controls-history/controls-index.json",
+          "--out",
+          "qa/independent/controls-history-replay-v1/outer-replay-optimized-uq756_qm/rebuilt.tar.xz"
+        ]
+      }
+    }
+  ],
+  "runtime_launcher_source_sha256": "f44673ed9c2bc04e21bf907fe19745dab18a25ba59c2241bd227b986710c6244",
+  "orchestration_source_sha256": "b85db97f2926ccbe524007336520239042f8c1b9374adb0a434d92fbbb799b82"
+}

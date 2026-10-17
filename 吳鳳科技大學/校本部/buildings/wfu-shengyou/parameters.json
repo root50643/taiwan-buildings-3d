@@ -1,0 +1,73 @@
+{
+  "revision": "v13",
+  "school": "吳鳳科技大學",
+  "moe_school_code": "1065",
+  "building": "生有樓",
+  "version_scope": "School-labeled 2014 aerial exterior; 2025-10 floor plans used only for relative topology crosscheck",
+  "coordinate_policy": "Model X is paper right; Y is paper down; Z is up. Not geographical directions.",
+  "local_axes": {
+    "X": "paper right",
+    "Y": "paper down",
+    "Z": "up"
+  },
+  "dimension_status": "All output millimetres are model-relative estimates; no real-world height, floor height or 1:N scale is claimed",
+  "base_thickness_mm": 3.0,
+  "base_bounds_mm": [
+    -110,
+    110,
+    -10,
+    176
+  ],
+  "design_longest_extent_mm": 220,
+  "relative_plan_point_to_model_mm": 0.24,
+  "plan_reference_origin": [
+    499,
+    15
+  ],
+  "ground_landing_height_mm": 6,
+  "floor_datums_mm": [
+    6,
+    15,
+    24,
+    33,
+    42,
+    51,
+    60,
+    69,
+    78
+  ],
+  "low_wing_roof_mm": 51,
+  "high_body_roof_mm": 87,
+  "roof_ridge_mm": 110,
+  "nominal_slab_thickness_mm": 1.8,
+  "nominal_gallery_pier_width_mm": 2.8,
+  "nominal_roof_beam_width_mm": 2.8,
+  "construction_simplify_tolerance_mm": 1e-05,
+  "render_samples": 64,
+  "render_resolution_percent": 100,
+  "detail_level": "Coarsened observed exterior with explicitly simplified hidden closures",
+  "print_status": "Not physically test printed; large portico/gallery/roof spans require support evaluation",
+  "hidden_facade_policy": "Two rear diagonal faces are neutral low-detail closures, not a claim of windowless as-built walls; no mirrored windows",
+  "roof_policy": "Segmented central panels and large open side frames; no whole triangular solid pyramid or complete tenth storey",
+  "fabrication_simplifications": {
+    "rounded_plan_corners": "Original 2D unions rounded before extrusion, clipped entrance and guard ends rounded after clipping",
+    "facades": "Observed paper-right entrance/main/tail groups with pale sills; obscured paper-left fewer conservative openings; counts estimated",
+    "roof_interior": "Unverified interior/print closure confined to front and central roof-panel plan projections, bottom at model deck87; not actual auditorium reconstruction",
+    "roof_gaps": "Large side voids and high gap at model y141–145 retained; no connecting bars across this gap",
+    "panel_edge_frames": "Rounded integral beam width2.8mm with center1.4mm below panel upper edge; top caps aligned",
+    "local_joints": "Two nominal9x4x4mm rounded connection collars at y134; no continuous side wall",
+    "ridge_support": "3mm wide central capsule support with centers y159/164; unverified interior support estimate"
+  },
+  "formal_view_contract": {
+    "pixels": [
+      1000,
+      780
+    ],
+    "cycles_samples": 64,
+    "renderer": "CPU",
+    "threads": 1,
+    "denoising": false,
+    "seed": 0,
+    "views": 9
+  }
+}

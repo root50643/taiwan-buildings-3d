@@ -1,0 +1,124 @@
+[
+  {
+    "name": "source-rebuild",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/render-check/v13/reproduction/source/build_model.py",
+      "--output-dir",
+      "qa/render-check/v13/reproduction/models/v13"
+    ],
+    "exit_code": 0,
+    "seconds": 0.9387472530070227,
+    "log": "logs/source-rebuild.log",
+    "log_sha256": "3b4939beb628a5ac6f455bbc614facd4d591482c142ee4adac9553c283d881d1"
+  },
+  {
+    "name": "source-scene-state",
+    "command": [
+      "blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "qa/render-check/v13/tools/compare_source_scene.py",
+      "--",
+      "--source",
+      "qa/render-check/v13/reproduction/source/render_preview.py",
+      "--version",
+      "v13",
+      "--original-blend",
+      "qa/render-check/v13/frozen/models/v13/scene.blend",
+      "--manifest",
+      "qa/render-check/v13/frozen/previews/v13/render-manifest.json",
+      "--expected-stl-sha256",
+      "8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0",
+      "--out",
+      "qa/render-check/v13/source-scene"
+    ],
+    "exit_code": 0,
+    "seconds": 4.611152928991942,
+    "log": "logs/source-scene-state.log",
+    "log_sha256": "9ea3b633ffa852110ce257e24d51c983052443fd1fd497bb5109bff47d80b76c"
+  },
+  {
+    "name": "blend-inspect",
+    "command": [
+      "blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "qa/render-check/v13/tools/inspect_and_rerender_blend.py",
+      "--",
+      "--blend",
+      "qa/render-check/v13/frozen/models/v13/scene.blend",
+      "--stl",
+      "qa/render-check/v13/frozen/models/v13/model.stl",
+      "--manifest",
+      "qa/render-check/v13/frozen/previews/v13/render-manifest.json",
+      "--expected-sha256",
+      "8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0",
+      "--out",
+      "qa/render-check/v13/blend-inspect",
+      "--inspect-only"
+    ],
+    "exit_code": 0,
+    "seconds": 1.474134853007854,
+    "log": "logs/blend-inspect.log",
+    "log_sha256": "ec6d047f22de188c16fa58feca02b0ae001520e694c84f66ea0a130cb4d7f71c"
+  },
+  {
+    "name": "png-controls-normal",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/render-check/v13/tools/test_png_exact_compare.py",
+      "--out",
+      "qa/render-check/v13/png-controls-normal"
+    ],
+    "exit_code": 0,
+    "seconds": 0.03608017299848143,
+    "log": "logs/png-controls-normal.log",
+    "log_sha256": "960cb4c3c86bd9cc1a8976b6456f55364586c2ea27d39750f8a96063012d3c7d"
+  },
+  {
+    "name": "png-controls-optimized",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "-O",
+      "qa/render-check/v13/tools/test_png_exact_compare.py",
+      "--out",
+      "qa/render-check/v13/png-controls-optimized"
+    ],
+    "exit_code": 0,
+    "seconds": 0.11892215600528289,
+    "log": "logs/png-controls-optimized.log",
+    "log_sha256": "960cb4c3c86bd9cc1a8976b6456f55364586c2ea27d39750f8a96063012d3c7d"
+  },
+  {
+    "name": "metadata-only-cleanup",
+    "command": [
+      "modeling-toolchain/.venv/bin/python",
+      "-B",
+      "qa/render-check/v13/tools/sanitize_png_previews.py",
+      "--manifest",
+      "qa/render-check/v13/frozen/previews/v13/render-manifest.json",
+      "--expected-manifest-sha256",
+      "7dcdb731af4535cb40a4829c191a448d57edee1a6253ff3f9f9f4d856b7a3598",
+      "--expected-stl-sha256",
+      "8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0",
+      "--out",
+      "qa/render-check/v13/sanitized-previews"
+    ],
+    "exit_code": 0,
+    "seconds": 12.394087901993771,
+    "log": "logs/metadata-only-cleanup.log",
+    "log_sha256": "ab84f3e8ca79f588288f44a4507f6b2cf733a5d9f9717a8cb4f59794a06d510f"
+  }
+]

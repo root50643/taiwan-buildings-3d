@@ -1,0 +1,330 @@
+{
+  "schema": "wfu-case-lattice-adaptation-v1",
+  "scope": "Case-specific coordinate lattice correction only; no generic gate, threshold, core predicate, model geometry, rendering or strict=False change.",
+  "created_utc": "2026-10-17T13:24:58.226964+00:00",
+  "source_sha256": {
+    "artifact_structure.py": "0c0830d6929697522cbbc9b692a66649aa6fb9cc7aaedc9a60fc193638dd3a7b",
+    "prove_stl_coordinate_lattice.py": "c19aa7a2f861ce47525388e86fe454aa9280c75586eca1f09b733973b0c0de06",
+    "review_artifact_structure.py": "18911a8a647d6cd8b4c56f4b46f7e788ab2caf0bf9f590c2470e1396cb224b1c",
+    "run_lattice56_controls.py": "9eabf970abd9a6f6506195779217a3c16e4976892d78bb93916ce1166030f4db",
+    "run_structure_parser_controls.py": "624f87c600f0572a2d8328181bebdc84bcdbdf94dea16b9db0c42ebdf78b56d6",
+    "test_artifact_structure.py": "30d9b4c44c31a28d6240f231cd6ebcfa295352ac94ea8e587b31182e29cb3c05"
+  },
+  "source_records": [
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/artifact_structure.py",
+      "bytes": 30521,
+      "sha256": "0c0830d6929697522cbbc9b692a66649aa6fb9cc7aaedc9a60fc193638dd3a7b"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/prove_stl_coordinate_lattice.py",
+      "bytes": 7151,
+      "sha256": "c19aa7a2f861ce47525388e86fe454aa9280c75586eca1f09b733973b0c0de06"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/review_artifact_structure.py",
+      "bytes": 4467,
+      "sha256": "18911a8a647d6cd8b4c56f4b46f7e788ab2caf0bf9f590c2470e1396cb224b1c"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/run_lattice56_controls.py",
+      "bytes": 6355,
+      "sha256": "9eabf970abd9a6f6506195779217a3c16e4976892d78bb93916ce1166030f4db"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/run_structure_parser_controls.py",
+      "bytes": 3098,
+      "sha256": "624f87c600f0572a2d8328181bebdc84bcdbdf94dea16b9db0c42ebdf78b56d6"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/test_artifact_structure.py",
+      "bytes": 22715,
+      "sha256": "30d9b4c44c31a28d6240f231cd6ebcfa295352ac94ea8e587b31182e29cb3c05"
+    }
+  ],
+  "prior_candidate_provenance": {
+    "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/provenance/SOURCE-BINDINGS.json",
+    "bytes": 2283,
+    "sha256": "690d9a7f7d0ed66012bb8e387032becd3e7ac36f347fd5507e8dd461df41a2c0"
+  },
+  "initial_binding_record": {
+    "record": {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/provenance/INITIAL-SOURCE-BINDINGS.json",
+      "bytes": 2283,
+      "sha256": "4484cf4e43c561d04b088b81011d0888accb67bd74cd72c3de4f13b59f76258f"
+    },
+    "role": "Preserved provisional source-binding snapshot before final sibling-helper overlay inventory. Current identities are this manifest and SOURCE-BINDINGS.json."
+  },
+  "helper_changes": [
+    {
+      "name": "LATTICE",
+      "old": "1 << 30",
+      "new": "1 << 56"
+    },
+    {
+      "name": "validate_intersection_contacts.denominator_power_of_two",
+      "old": 30,
+      "new": 56
+    }
+  ],
+  "static_helper_bytes_equal_original_after_only_two_replacements": true,
+  "test_changes": {
+    "methods": 13,
+    "original_subtests_retained": 69,
+    "added_lattice_subtests": 10,
+    "subtests_per_mode": 79,
+    "fixtures": [
+      "Contact lattice power 30 -> 56",
+      "Origin half-lattice hexadecimal coordinate 0x1p-31 -> 0x1p-57"
+    ],
+    "added_negative_cases": [
+      "old AEUST lattice 2^30",
+      "numeric lattice denominator",
+      "boolean lattice denominator",
+      "old AEUST lattice and power",
+      "old AEUST power only",
+      "wrong lattice power 55",
+      "boolean lattice power",
+      "float lattice power",
+      "numeric contact denominator",
+      "boolean contact denominator"
+    ],
+    "added_positive_literal": "LATTICE == 72057594037927936"
+  },
+  "reviewer_overlay": {
+    "helper_source": "artifact_structure.py",
+    "helper_sha256": "0c0830d6929697522cbbc9b692a66649aa6fb9cc7aaedc9a60fc193638dd3a7b",
+    "load": "Compile authenticated sibling helper bytes, without bytecode import",
+    "inventory": "postflight_overlay_inputs separate from unchanged run-relative scientific evidence_inventory",
+    "before_after_helper_hash_and_size": true
+  },
+  "independent_lattice_proof": {
+    "source": {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/prove_stl_coordinate_lattice.py",
+      "bytes": 7151,
+      "sha256": "c19aa7a2f861ce47525388e86fe454aa9280c75586eca1f09b733973b0c0de06"
+    },
+    "input": {
+      "path": "wfu-shengyou-independent-qa/final-v13-r1/frozen/models/v13/model.stl",
+      "bytes": 1047384,
+      "sha256": "8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0"
+    },
+    "method": "Decode every original binary32 vertex coordinate; as_integer_ratio; denominator LCM; Fraction exact rational roundtrip and original 4-byte float32 roundtrip with explicit signed-zero preservation. No producer reports or candidate helper imported.",
+    "faces": 20946,
+    "original_coordinate_count": 188514,
+    "expected_minimal_lattice_power": 56,
+    "observed_completed_normal_result": {
+      "passed": true,
+      "completed": true,
+      "cpu_affinity": [
+        0
+      ],
+      "stl_sha256": "8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0",
+      "stl_bytes": 1047384,
+      "original_faces": 20946,
+      "original_coordinate_values_checked": 188514,
+      "coordinate_denominator_lcm": "72057594037927936",
+      "maximum_denominator_power": 56,
+      "minimality_witness": {
+        "face_index": 9170,
+        "vertex_index": 1,
+        "axis": "x",
+        "byte_offset": 458608,
+        "original_float32_little_endian_hex": "00009a26",
+        "exact_float_hex": "0x1.3400000000000p-50",
+        "numerator": "77",
+        "denominator": "72057594037927936",
+        "denominator_power_of_two": 56
+      },
+      "exact_rational_round_trips": 188514,
+      "binary32_byte_round_trips": 188514,
+      "negative_zero_signs_preserved_explicitly": 0,
+      "coordinates_not_representable_on_old_2p30_lattice": 121,
+      "source_sha256": "c19aa7a2f861ce47525388e86fe454aa9280c75586eca1f09b733973b0c0de06",
+      "original_input_and_source_unchanged": true,
+      "producer_reports_read": false,
+      "candidate_parser_imported": false,
+      "geometry_predicates_or_render_rerun": false,
+      "model_go": false,
+      "scope": "Exact original binary32 vertex-coordinate denominator LCM and round trips only. This is an independent case-constant proof, not model/science acceptance."
+    }
+  },
+  "prior_report_parameter_bindings_only": [
+    {
+      "path": "qa/v12-full/normal/intersections.json",
+      "bytes": 3103,
+      "sha256": "cf460e2046c092281bf40d042966194b0a701fcd6a2e244a980fcb20ada4ce62",
+      "lattice_report": {
+        "denominator": "72057594037927936",
+        "denominator_power_of_two": 56,
+        "exact_coordinate_round_trips_checked": 188514,
+        "all_original_coordinates_round_trip_exactly": true,
+        "maximum_coordinate_integer_bits": 64
+      }
+    },
+    {
+      "path": "qa/v12-full/optimized/intersections.json",
+      "bytes": 3102,
+      "sha256": "ff35a620f4994697360bddaf7d0b40cd61b0e207229951aca3dd198da6deff4e",
+      "lattice_report": {
+        "denominator": "72057594037927936",
+        "denominator_power_of_two": 56,
+        "exact_coordinate_round_trips_checked": 188514,
+        "all_original_coordinates_round_trip_exactly": true,
+        "maximum_coordinate_integer_bits": 64
+      }
+    },
+    {
+      "path": "qa/independent/final-v13-r1/geometry/normal/intersections.json",
+      "bytes": 3103,
+      "sha256": "f283b7a43bbccc206d6dd0db04e1595a6e535542b0dc87116d9639460df6bbc8",
+      "lattice_report": {
+        "denominator": "72057594037927936",
+        "denominator_power_of_two": 56,
+        "exact_coordinate_round_trips_checked": 188514,
+        "all_original_coordinates_round_trip_exactly": true,
+        "maximum_coordinate_integer_bits": 64
+      }
+    },
+    {
+      "path": "qa/independent/final-v13-r1/geometry/optimized/intersections.json",
+      "bytes": 3103,
+      "sha256": "f179179a229f824f0f1db29188f06f6dbf99c13106a598dc95894cd21b17efbe",
+      "lattice_report": {
+        "denominator": "72057594037927936",
+        "denominator_power_of_two": 56,
+        "exact_coordinate_round_trips_checked": 188514,
+        "all_original_coordinates_round_trip_exactly": true,
+        "maximum_coordinate_integer_bits": 64
+      }
+    }
+  ],
+  "original_failure": {
+    "path": "wfu-shengyou-independent-qa/final-v13-r1/review-artifacts-normal/artifact-structure-review.json",
+    "bytes": 587,
+    "sha256": "00b8f393910dc5a2e4d8d6f992f05f2adbf7dd454d3a8f9710f7b0a2c35bcd52"
+  },
+  "original_failure_retained_copy": {
+    "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/provenance/failed-original-artifact-structure-review.json",
+    "bytes": 587,
+    "sha256": "00b8f393910dc5a2e4d8d6f992f05f2adbf7dd454d3a8f9710f7b0a2c35bcd52"
+  },
+  "protected_author_and_frozen_sources": [
+    {
+      "path": "qa/postflight-tools/artifact_structure.py",
+      "bytes": 30521,
+      "sha256": "3a1c5ecf34dbe7b90d747cc191ecf9cf536878e6143362f083f1ad4a76c23d14"
+    },
+    {
+      "path": "qa/postflight-tools/test_artifact_structure.py",
+      "bytes": 21568,
+      "sha256": "255dd8664f5979d5b1b0153b79456451de1b7d5f049dc0c5c8475c3deab0b3db"
+    },
+    {
+      "path": "qa/independent/final-v13-r1/frozen/qa/postflight-tools/artifact_structure.py",
+      "bytes": 30521,
+      "sha256": "3a1c5ecf34dbe7b90d747cc191ecf9cf536878e6143362f083f1ad4a76c23d14"
+    },
+    {
+      "path": "qa/independent/final-v13-r1/frozen/qa/postflight-tools/test_artifact_structure.py",
+      "bytes": 21568,
+      "sha256": "255dd8664f5979d5b1b0153b79456451de1b7d5f049dc0c5c8475c3deab0b3db"
+    }
+  ],
+  "source_syntax_parsed_only_by_preparer": true,
+  "preparer_executed_candidate_code_or_tests": false,
+  "controls_run_by_parent": {
+    "output_root": "wfu-shengyou-independent-qa/lattice56-controls-v1",
+    "summary": {
+      "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/controls-summary.json",
+      "bytes": 4486,
+      "sha256": "e426308df08de89b34d8c20c2301cdafd105593c030591f560d500ed41224807"
+    },
+    "four_stages_exit_zero": true,
+    "normal_optimized_proof_equivalent_except_mode": true,
+    "outputs": [
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/controls-summary.json",
+        "bytes": 4486,
+        "sha256": "e426308df08de89b34d8c20c2301cdafd105593c030591f560d500ed41224807"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/coordinate-proof-normal.json",
+        "bytes": 1324,
+        "sha256": "559d606b73ce529847b0cacb34f5c707e6e78743151cf767d30d0c74b8d48db2"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/coordinate-proof-normal.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/coordinate-proof-normal.stdout.log",
+        "bytes": 66,
+        "sha256": "83771433249c5aca55cba43046f41e83067eac28bc52b39c4c9ad475b774cdf0"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/coordinate-proof-optimized.json",
+        "bytes": 1324,
+        "sha256": "8521f553367ae9953a5de2245b59b74712d491598b75a811d5334dda50c77ede"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/coordinate-proof-optimized.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/coordinate-proof-optimized.stdout.log",
+        "bytes": 66,
+        "sha256": "83771433249c5aca55cba43046f41e83067eac28bc52b39c4c9ad475b774cdf0"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/executions.json",
+        "bytes": 3155,
+        "sha256": "17106602bfad764822e194966312f0d56c99686c6f46d5547526566087ea62c6"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-normal/results.json",
+        "bytes": 15069,
+        "sha256": "84879a133c1b75bb3ccd3b7c57bd7918a3b9b6475150ab414a9fea2c39bd6be3"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-normal/unittest.log",
+        "bytes": 1360,
+        "sha256": "64c22d637b5a7fc6063d0bb751c830f36ec47e638c184ffdab144f6f4cbaafe2"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-normal.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-normal.stdout.log",
+        "bytes": 81,
+        "sha256": "6e275faaa2780abbc8c6569f1a84dfee52c75243a9203ec87e1688c18af75e1b"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-optimized/results.json",
+        "bytes": 15069,
+        "sha256": "5f32a7e0779ecf588d90b137f6791a12c33c7c006dc92d865d6a0d4ef8199e14"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-optimized/unittest.log",
+        "bytes": 1360,
+        "sha256": "0571b117882171e660cf348f29fed9722f47d87897586d55b08805c6831a43ab"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-optimized.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "wfu-shengyou-independent-qa/lattice56-controls-v1/parser-optimized.stdout.log",
+        "bytes": 81,
+        "sha256": "72c772be7e7960c6c732d7ed489515b12038480ff65462071d5981ccca4ed093"
+      }
+    ]
+  },
+  "status": "Sources frozen. Parent completed both-mode controls and independent coordinate proof; fresh all-artifact postflight still required.",
+  "model_go": false
+}

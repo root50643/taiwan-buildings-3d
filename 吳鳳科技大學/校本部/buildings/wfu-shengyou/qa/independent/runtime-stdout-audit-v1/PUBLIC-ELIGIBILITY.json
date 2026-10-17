@@ -1,0 +1,128 @@
+{
+  "schema": "wfu-runtime-stdout-audit-public-eligibility-v1",
+  "scope": "Complete original plain-buffer policy, all fixed and additional markers plus every secret regex, applied to the four complete original buffers with no masks or exemptions. No original report/source changed.",
+  "policy_source_sha256": {
+    "check_wfu_privacy.py": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+    "package_controls_v2.py": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+    "exact_privacy_primitives.py": "1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd"
+  },
+  "marker_count_including_duplicates": 14,
+  "secret_pattern_count": 7,
+  "files": [
+    {
+      "path": "CLASSIFICATION.json",
+      "bytes": 534531,
+      "sha256": "28bc6b6ac473505e6b988a6355b8a95f1aa30e00010ba7476a93b74293967c89",
+      "complete_plain_policy_passed": true,
+      "public_eligible": true,
+      "action": "eligible_for_exact_byte_public_copy",
+      "exception_or_mask_applied": false,
+      "scanner_error": null,
+      "hits": []
+    },
+    {
+      "path": "OMISSION-RECOMMENDATIONS.json",
+      "bytes": 148693,
+      "sha256": "6a3e4b4ddd697707ba29693ffa3440b2b57ec8046847d155707c607052c0d0ec",
+      "complete_plain_policy_passed": true,
+      "public_eligible": true,
+      "action": "eligible_for_exact_byte_public_copy",
+      "exception_or_mask_applied": false,
+      "scanner_error": null,
+      "hits": []
+    },
+    {
+      "path": "SUMMARY.json",
+      "bytes": 1948,
+      "sha256": "6ddf201cac36a44946b07d67695f284a1657ddf1bbb5b8f29c75f3ddc9781540",
+      "complete_plain_policy_passed": true,
+      "public_eligible": true,
+      "action": "eligible_for_exact_byte_public_copy",
+      "exception_or_mask_applied": false,
+      "scanner_error": null,
+      "hits": []
+    },
+    {
+      "path": "audit_runtime_stdout.py",
+      "bytes": 12935,
+      "sha256": "2836aa3706e458ab9dab5f64ee9cbedbcb4f12a314d3823c7a408d7afe30c076",
+      "complete_plain_policy_passed": false,
+      "public_eligible": false,
+      "action": "private_only_do_not_publish_original_source",
+      "exception_or_mask_applied": false,
+      "scanner_error": "Private path marker in exact CSV complete buffer",
+      "hits": [
+        {
+          "kind": "private_marker",
+          "policy_index": 5,
+          "offset": 2430,
+          "bytes": 23,
+          "matched_bytes_sha256": "ad980d0e7d7d9d1eaeef83de24da2b4ced6a550641e95428a35d0efcda0e81f9",
+          "matched_bytes_hex": "7766752d7368656e67796f752d707269766174652d7631"
+        },
+        {
+          "kind": "private_marker",
+          "policy_index": 5,
+          "offset": 2818,
+          "bytes": 23,
+          "matched_bytes_sha256": "ad980d0e7d7d9d1eaeef83de24da2b4ced6a550641e95428a35d0efcda0e81f9",
+          "matched_bytes_hex": "7766752d7368656e67796f752d707269766174652d7631"
+        },
+        {
+          "kind": "private_marker",
+          "policy_index": 5,
+          "offset": 10615,
+          "bytes": 23,
+          "matched_bytes_sha256": "ad980d0e7d7d9d1eaeef83de24da2b4ced6a550641e95428a35d0efcda0e81f9",
+          "matched_bytes_hex": "7766752d7368656e67796f752d707269766174652d7631"
+        }
+      ]
+    }
+  ],
+  "eligible_exact_byte_public_files": [
+    "CLASSIFICATION.json",
+    "OMISSION-RECOMMENDATIONS.json",
+    "SUMMARY.json"
+  ],
+  "private_only_files": [
+    "audit_runtime_stdout.py"
+  ],
+  "exit_recheck": {
+    "total": 138,
+    "exit_1": 102,
+    "exit_0": 36,
+    "all_22_structured_dependencies_rehashed_unchanged": true
+  },
+  "original_strict_false_examples_read_back": [
+    {
+      "path": "qa/v12-full/full-qa-summary.json",
+      "bytes": 120380,
+      "sha256": "4b8009a069c44efb6681a7c8cb19c3862cbc064bfba4651148c59a9d94cfb74f",
+      "passed": false,
+      "strict_passed": false
+    },
+    {
+      "path": "qa/v12-full/normal/standard/qa-summary.json",
+      "bytes": 3440,
+      "sha256": "4eb7dca07eac7499197a610fd5524460ec95da380d64a727868ad55ee1191aee",
+      "passed": false,
+      "strict_passed": false
+    },
+    {
+      "path": "qa/v12-full/optimized/standard/qa-summary.json",
+      "bytes": 3439,
+      "sha256": "a0fca0b3bc2452957cbe9e0a7a3101af61c5d80c939050a6149137ce2f9f3267",
+      "passed": false,
+      "strict_passed": false
+    },
+    {
+      "path": "qa/v12-full/normal/standard/dense/dense-check.json",
+      "bytes": 3691,
+      "sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d",
+      "passed": false,
+      "strict_passed": false
+    }
+  ],
+  "original_four_files_unchanged": true,
+  "model_go": false
+}

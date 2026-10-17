@@ -1,0 +1,37 @@
+--- prior/test_prepare_public_roster.py
++++ revision-r2/test_prepare_public_roster.py
+@@ -41,6 +41,34 @@
+   case('unresolved_projection',lambda p:p['items'][2].update(projection_status='awaiting'))
+   case('projection_source_drift',lambda p:p['items'][2]['changes'][0].update(old='wrong'))
+   case('projection_science_upgrade',lambda p:p['items'][2].update(changes=[{'pointer':'/strict_passed','old':False,'new':True}]))
++  # Keep all original fifteen cases; add precise key-label/omission controls.
++  (source/'keys.json').write_text('{"files":{"original/key":{"bytes":1,"sha256":"abc","strict":false},"occupied":{"exit":1}}}\n')
++  def keyplan(p,changes):
++   p['items'].append(dict(row('keys.json','keys.json'),key_changes=changes))
++  validkey={'parent_pointer':'/files','old':'original/key','new':'public/key'}
++  out=case('exact_key_label_alias',lambda p:keyplan(p,[validkey]),accept=True)
++  keymap=json.loads((out/'PUBLIC-COPY-MAP.json').read_text())
++  keyproof=keymap['projection_bindings'][-1]
++  if keyproof['key_changes'] != [{'parent_json_pointer':'/files','original_key_sha256':P.M.digest(b'original/key'),'public_key':'public/key'}]:raise RuntimeError('Key-label binding differs')
++  if 'original/key' in json.dumps(keyproof):raise RuntimeError('Private original key leaked through public binding')
++  def kmutate(field,value):
++   v=dict(validkey);v[field]=value;return lambda p:keyplan(p,[v])
++  case('key_unknown_parent',kmutate('parent_pointer','/absent'))
++  case('key_nondict_parent',kmutate('parent_pointer','/files/occupied/exit'))
++  case('key_unknown_original',kmutate('old','absent'))
++  case('key_destination_collision',kmutate('new','occupied'))
++  case('key_boolean_label',kmutate('new',True))
++  case('key_unchanged_label',kmutate('new','original/key'))
++  case('key_duplicate_instruction',lambda p:keyplan(p,[validkey,validkey]))
++  case('key_unknown_instruction',lambda p:keyplan(p,[dict(validkey,extra=True)]))
++  omission={'original_root':'test','original_relative_path':'old-label/input','bytes':1,'sha256':'0'*64,'retained_privately':True,'public_original_reconstruction_claimed':False,'public_relative_path_alias':'logical/input'}
++  out=case('exact_omission_label_alias',lambda p:p['omissions'].append(omission),accept=True)
++  om=json.loads((out/'PUBLIC-COPY-MAP.json').read_text())['omissions'][0]
++  if om['original_relative_path']!='logical/input' or om['original_relative_path_label_sha256']!=P.M.digest(b'old-label/input') or om['original_relative_path_is_public_logical_alias'] is not True or om['bytes']!=1:raise RuntimeError('Omission alias metadata differs')
++  case('omission_traversal_alias',lambda p:p['omissions'].append(dict(omission,public_relative_path_alias='../escape')))
++  case('omission_boolean_alias',lambda p:p['omissions'].append(dict(omission,public_relative_path_alias=True)))
++  case('omission_unchanged_alias',lambda p:p['omissions'].append(dict(omission,public_relative_path_alias='old-label/input')))
++  case('omission_binding_collision',lambda p:p['omissions'].append(dict(omission,original_relative_path_label_sha256='0'*64)))
+  result={'passed':True,'optimization_level':sys.flags.optimize,'case_count':len(cases),'cases':cases,'prepare_source_sha256':hashlib.sha256(raw).hexdigest(),'restore_source_sha256':hashlib.sha256((HERE/'restore_scientific_layout.py').read_bytes()).hexdigest(),'test_source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'original_evidence_read':False,'publication_go':False}
+  with a.out.open('x') as f:json.dump(result,f,indent=2);f.write('\n')
+  print(json.dumps({'passed':True,'case_count':len(cases)}))

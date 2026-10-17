@@ -1,0 +1,66 @@
+{
+  "schema": "wfu-public-privacy-source-path-adaptation-v1",
+  "reader_revision": "fixture-r3",
+  "status": "source_prepared_controls_awaiting_shared_slot",
+  "files": [
+    {
+      "file": "check_wfu_privacy.py",
+      "original_bytes": 12080,
+      "original_sha256": "c58c05cc4fb94ffda13f71e99aaf43771ede9381b19e1e72ea367b7423aafe91",
+      "public_bytes": 12032,
+      "public_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+      "assignment_changes": [
+        {
+          "assignment": "BLEND_PATH",
+          "public_value": "models/v13/scene.blend"
+        },
+        {
+          "assignment": "CSV_PATH",
+          "public_value": "qa/v12-full/normal/standard/dense/dense-original.csv.xz"
+        }
+      ],
+      "all_other_AST_nodes_identical": true,
+      "other_source_bytes_unchanged": true
+    },
+    {
+      "file": "test_wfu_privacy.py",
+      "original_bytes": 21119,
+      "original_sha256": "7dea2d6b29f8d4550a6d9c7ce9947d674a7530e55bc0c3f439c2da3a640a81cb",
+      "public_bytes": 21119,
+      "public_sha256": "2a6b695b5d8eb648c9137e87c490aac1d00984babf7f65ff56c6e9e16efa4a57",
+      "assignment_changes": [
+        {
+          "assignment": "CHECKER_SHA",
+          "public_value": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950"
+        },
+        {
+          "assignment": "CHECKER_BYTES",
+          "public_value": 12032
+        }
+      ],
+      "all_other_AST_nodes_identical": true,
+      "other_source_bytes_unchanged": true
+    },
+    {
+      "file": "exact_privacy_primitives.py",
+      "original_bytes": 6783,
+      "original_sha256": "1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd",
+      "public_bytes": 6783,
+      "public_sha256": "1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd",
+      "assignment_changes": [],
+      "all_other_AST_nodes_identical": true,
+      "other_source_bytes_unchanged": true
+    },
+    {
+      "file": "package_controls_v2.py",
+      "original_bytes": 47569,
+      "original_sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+      "public_bytes": 47569,
+      "public_sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+      "assignment_changes": [],
+      "all_other_AST_nodes_identical": true,
+      "other_source_bytes_unchanged": true
+    }
+  ],
+  "scope": "The public checker changes only the two input path assignments. The controls change only the checker SHA and size pins. All r3 validation, patterns, masks and 162 cases are preserved. Original r2 and r3 source/diffs remain private; this file is not a runtime pass."
+}

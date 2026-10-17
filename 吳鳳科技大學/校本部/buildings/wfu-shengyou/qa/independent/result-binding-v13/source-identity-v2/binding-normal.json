@@ -1,0 +1,894 @@
+{
+  "schema": "wfu-independent-result-binding-v13-v1",
+  "passed": true,
+  "stl_sha256": "8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0",
+  "checker_sha256": "61299bea365305aee39a52b1622471590e745b6ac27081b7d8152a485e6711d2",
+  "checker_optimization_level": 0,
+  "original_pinned_inputs": {
+    "author/qa/source-review/SOURCE-APPEARANCE-CERTIFICATE-v13.public.json": {
+      "bytes": 7007,
+      "sha256": "8e83cd7772f9c328b4f88879b3f6d8e3409b7b28b966e61a7d4629bc9f645b62"
+    },
+    "author/qa/source-review/SOURCE-BINDING-v13.json": {
+      "bytes": 12988,
+      "sha256": "f5c4b3e4afc6515c041516fbee94df4f436a84fc67503abfee10c9cd88209f0f"
+    },
+    "author/qa/freeze-v13/SCIENCE-INVENTORY.json": {
+      "bytes": 507775,
+      "sha256": "aaa410e60b4416a4519bc42da78144df0743e04d3442ca994f22a4f3b4a9c5e8"
+    }
+  },
+  "runner_selection": {
+    "bytes": 9457,
+    "sha256": "fbee2590fadf2bceff7643fed85c38b0d142afe3049dd5ee62c394d531718a17"
+  },
+  "full_author_inventory_members_verified": 1014,
+  "frozen_runner_inputs_verified": 53,
+  "science_comparisons": [
+    {
+      "logical_file": "standard/qa-summary.json",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": false,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/qa-summary.json",
+          "bytes": 3440,
+          "sha256": "4eb7dca07eac7499197a610fd5524460ec95da380d64a727868ad55ee1191aee",
+          "non_scientific_fields_retained_in_original": {
+            "optimized_python": false
+          }
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/qa-summary.json",
+          "bytes": 3439,
+          "sha256": "a0fca0b3bc2452957cbe9e0a7a3101af61c5d80c939050a6149137ce2f9f3267",
+          "non_scientific_fields_retained_in_original": {
+            "optimized_python": true
+          }
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/qa-summary.json",
+          "bytes": 3440,
+          "sha256": "4eb7dca07eac7499197a610fd5524460ec95da380d64a727868ad55ee1191aee",
+          "non_scientific_fields_retained_in_original": {
+            "optimized_python": false
+          }
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/qa-summary.json",
+          "bytes": 3439,
+          "sha256": "a0fca0b3bc2452957cbe9e0a7a3101af61c5d80c939050a6149137ce2f9f3267",
+          "non_scientific_fields_retained_in_original": {
+            "optimized_python": true
+          }
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/raw/raw-mesh-check.json",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/raw/raw-mesh-check.json",
+          "bytes": 2598,
+          "sha256": "dff126578cf8b627fdc858ce3643c7def4c82b8b3c15e93b7e38c44532fee860"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/raw/raw-mesh-check.json",
+          "bytes": 2598,
+          "sha256": "dff126578cf8b627fdc858ce3643c7def4c82b8b3c15e93b7e38c44532fee860"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/raw/raw-mesh-check.json",
+          "bytes": 2598,
+          "sha256": "dff126578cf8b627fdc858ce3643c7def4c82b8b3c15e93b7e38c44532fee860"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/raw/raw-mesh-check.json",
+          "bytes": 2598,
+          "sha256": "dff126578cf8b627fdc858ce3643c7def4c82b8b3c15e93b7e38c44532fee860"
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/sections/section-check.json",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/sections/section-check.json",
+          "bytes": 2841,
+          "sha256": "95527b064ef1fa290bf9c5aab193abcf76fa8feccaa4fd26156c09b1c00199fa"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/sections/section-check.json",
+          "bytes": 2841,
+          "sha256": "95527b064ef1fa290bf9c5aab193abcf76fa8feccaa4fd26156c09b1c00199fa"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/sections/section-check.json",
+          "bytes": 2841,
+          "sha256": "95527b064ef1fa290bf9c5aab193abcf76fa8feccaa4fd26156c09b1c00199fa"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/sections/section-check.json",
+          "bytes": 2841,
+          "sha256": "95527b064ef1fa290bf9c5aab193abcf76fa8feccaa4fd26156c09b1c00199fa"
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/sections/section-details.json.gz",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/sections/section-details.json.gz",
+          "bytes": 636592,
+          "sha256": "7d23469413a1b0a775c8180fcf44c8ecb0e58dcb2cd2b82016b72113cc391f17"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/sections/section-details.json.gz",
+          "bytes": 636592,
+          "sha256": "7d23469413a1b0a775c8180fcf44c8ecb0e58dcb2cd2b82016b72113cc391f17"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/sections/section-details.json.gz",
+          "bytes": 636592,
+          "sha256": "7d23469413a1b0a775c8180fcf44c8ecb0e58dcb2cd2b82016b72113cc391f17"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/sections/section-details.json.gz",
+          "bytes": 636592,
+          "sha256": "7d23469413a1b0a775c8180fcf44c8ecb0e58dcb2cd2b82016b72113cc391f17"
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/sections/section-failures.json.gz",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/sections/section-failures.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/sections/section-failures.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/sections/section-failures.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/sections/section-failures.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/dense/dense-check.json",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/dense/dense-check.json",
+          "bytes": 3691,
+          "sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/dense/dense-check.json",
+          "bytes": 3691,
+          "sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/dense/dense-check.json",
+          "bytes": 3691,
+          "sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/dense/dense-check.json",
+          "bytes": 3691,
+          "sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d"
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/dense/dense-original.csv.xz",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/dense/dense-original.csv.xz",
+          "bytes": 19156984,
+          "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/dense/dense-original.csv.xz",
+          "bytes": 19156984,
+          "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/dense/dense-original.csv.xz",
+          "bytes": 19156984,
+          "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/dense/dense-original.csv.xz",
+          "bytes": 19156984,
+          "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/dense/dense-flagged-samples.json.gz",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/dense/dense-flagged-samples.json.gz",
+          "bytes": 10415,
+          "sha256": "489c9a6fc4ef52020344f871787fa792e37466ae32479bc392f4d7b7850b3f9c"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/dense/dense-flagged-samples.json.gz",
+          "bytes": 10415,
+          "sha256": "489c9a6fc4ef52020344f871787fa792e37466ae32479bc392f4d7b7850b3f9c"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/dense/dense-flagged-samples.json.gz",
+          "bytes": 10415,
+          "sha256": "489c9a6fc4ef52020344f871787fa792e37466ae32479bc392f4d7b7850b3f9c"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/dense/dense-flagged-samples.json.gz",
+          "bytes": 10415,
+          "sha256": "489c9a6fc4ef52020344f871787fa792e37466ae32479bc392f4d7b7850b3f9c"
+        }
+      ]
+    },
+    {
+      "logical_file": "standard/dense/dense-short-samples.json.gz",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/standard/dense/dense-short-samples.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/standard/dense/dense-short-samples.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/standard/dense/dense-short-samples.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/standard/dense/dense-short-samples.json.gz",
+          "bytes": 22,
+          "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+        }
+      ]
+    },
+    {
+      "logical_file": "dense-evidence.json",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/dense-evidence.json",
+          "bytes": 1039,
+          "sha256": "dfb184a7423445e056185e7a108aa4b0557bfb40af1e61c47f723fa550e3ad11"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/dense-evidence.json",
+          "bytes": 1039,
+          "sha256": "dfb184a7423445e056185e7a108aa4b0557bfb40af1e61c47f723fa550e3ad11"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/dense-evidence.json",
+          "bytes": 1039,
+          "sha256": "dfb184a7423445e056185e7a108aa4b0557bfb40af1e61c47f723fa550e3ad11"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/dense-evidence.json",
+          "bytes": 1039,
+          "sha256": "dfb184a7423445e056185e7a108aa4b0557bfb40af1e61c47f723fa550e3ad11"
+        }
+      ]
+    },
+    {
+      "logical_file": "intersections.json",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": false,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/intersections.json",
+          "bytes": 3103,
+          "sha256": "cf460e2046c092281bf40d042966194b0a701fcd6a2e244a980fcb20ada4ce62",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 16.378500938415527,
+            "tools.optimization_level": 0
+          }
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/intersections.json",
+          "bytes": 3102,
+          "sha256": "ff35a620f4994697360bddaf7d0b40cd61b0e207229951aca3dd198da6deff4e",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 16.45716166496277,
+            "tools.optimization_level": 1
+          }
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/intersections.json",
+          "bytes": 3103,
+          "sha256": "f283b7a43bbccc206d6dd0db04e1595a6e535542b0dc87116d9639460df6bbc8",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 16.110506772994995,
+            "tools.optimization_level": 0
+          }
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/intersections.json",
+          "bytes": 3103,
+          "sha256": "f179179a229f824f0f1db29188f06f6dbf99c13106a598dc95894cd21b17efbe",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 17.154869556427002,
+            "tools.optimization_level": 1
+          }
+        }
+      ]
+    },
+    {
+      "logical_file": "intersections.json.contacts.jsonl.gz",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-full/normal/intersections.json.contacts.jsonl.gz",
+          "bytes": 1494185,
+          "sha256": "faf713319eb1e17540f1be4b38fc7a28bd3c282dc9a9ee3404b75d8d062eac7c"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-full/optimized/intersections.json.contacts.jsonl.gz",
+          "bytes": 1494185,
+          "sha256": "faf713319eb1e17540f1be4b38fc7a28bd3c282dc9a9ee3404b75d8d062eac7c"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/intersections.json.contacts.jsonl.gz",
+          "bytes": 1494185,
+          "sha256": "faf713319eb1e17540f1be4b38fc7a28bd3c282dc9a9ee3404b75d8d062eac7c"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/intersections.json.contacts.jsonl.gz",
+          "bytes": 1494185,
+          "sha256": "faf713319eb1e17540f1be4b38fc7a28bd3c282dc9a9ee3404b75d8d062eac7c"
+        }
+      ]
+    },
+    {
+      "logical_file": "exact-recorded-rays/exact-recorded-ray-summary.json",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": false,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-recorded-rays/normal/exact-recorded-ray-summary.json",
+          "bytes": 1807,
+          "sha256": "6aaf2e2853b82f1ce494b86a09b4deeb09049924aa04c6403d45aaa24551ff0b",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 11.567392110824585,
+            "optimization_level": 0,
+            "input_and_tool_sha256.intersections_report": "cf460e2046c092281bf40d042966194b0a701fcd6a2e244a980fcb20ada4ce62"
+          }
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-recorded-rays/optimized/exact-recorded-ray-summary.json",
+          "bytes": 1807,
+          "sha256": "2a096a23f10a6a973205afb579a1443279f56f6ddbff039a5ac2529f683a4555",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 11.929250955581665,
+            "optimization_level": 1,
+            "input_and_tool_sha256.intersections_report": "ff35a620f4994697360bddaf7d0b40cd61b0e207229951aca3dd198da6deff4e"
+          }
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/exact-recorded-rays/exact-recorded-ray-summary.json",
+          "bytes": 1807,
+          "sha256": "600c8cd63b0c50af7aee7bb76624926aa307803e6b48fc747ad573656b265184",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 12.428409099578857,
+            "optimization_level": 0,
+            "input_and_tool_sha256.intersections_report": "f283b7a43bbccc206d6dd0db04e1595a6e535542b0dc87116d9639460df6bbc8"
+          }
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/exact-recorded-rays/exact-recorded-ray-summary.json",
+          "bytes": 1807,
+          "sha256": "56e14531e973b1349eb862f5d83b8591237cd9af5f6611a8d504bc9af310a2ad",
+          "non_scientific_fields_retained_in_original": {
+            "elapsed_seconds": 12.070037841796875,
+            "optimization_level": 1,
+            "input_and_tool_sha256.intersections_report": "f179179a229f824f0f1db29188f06f6dbf99c13106a598dc95894cd21b17efbe"
+          }
+        }
+      ]
+    },
+    {
+      "logical_file": "exact-recorded-rays/exact-recorded-ray-details.jsonl.gz",
+      "all_four_scientifically_identical": true,
+      "all_four_bitwise_identical": true,
+      "sources": [
+        {
+          "source": "author-normal",
+          "mode": "normal",
+          "path": "qa/v12-recorded-rays/normal/exact-recorded-ray-details.jsonl.gz",
+          "bytes": 52044,
+          "sha256": "7b3bde87774f7a9bed946bb7c70faf2e620f9e4275a9d465d469d167d5702c23"
+        },
+        {
+          "source": "author-optimized",
+          "mode": "optimized",
+          "path": "qa/v12-recorded-rays/optimized/exact-recorded-ray-details.jsonl.gz",
+          "bytes": 52044,
+          "sha256": "7b3bde87774f7a9bed946bb7c70faf2e620f9e4275a9d465d469d167d5702c23"
+        },
+        {
+          "source": "independent-normal",
+          "mode": "normal",
+          "path": "qa/independent/final-v13-r1/geometry/normal/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz",
+          "bytes": 52044,
+          "sha256": "7b3bde87774f7a9bed946bb7c70faf2e620f9e4275a9d465d469d167d5702c23"
+        },
+        {
+          "source": "independent-optimized",
+          "mode": "optimized",
+          "path": "qa/independent/final-v13-r1/geometry/optimized/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz",
+          "bytes": 52044,
+          "sha256": "7b3bde87774f7a9bed946bb7c70faf2e620f9e4275a9d465d469d167d5702c23"
+        }
+      ]
+    }
+  ],
+  "full_csv_four_source_copy_map": [
+    {
+      "source": "author-normal",
+      "original_path": "qa/v12-full/normal/standard/dense/dense-original.csv.xz",
+      "restore_from_canonical_path": "qa/v12-full/normal/standard/dense/dense-original.csv.xz",
+      "compressed": {
+        "bytes": 19156984,
+        "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+      },
+      "decoded": {
+        "bytes": 194500309,
+        "sha256": "6408a97da82dc7a1e226225637a415d6cd8ecaecfb962e51454f52bc3067f2b6"
+      },
+      "data_rows": 209460,
+      "all_decoded_bytes_read": true
+    },
+    {
+      "source": "author-optimized",
+      "original_path": "qa/v12-full/optimized/standard/dense/dense-original.csv.xz",
+      "restore_from_canonical_path": "qa/v12-full/normal/standard/dense/dense-original.csv.xz",
+      "compressed": {
+        "bytes": 19156984,
+        "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+      },
+      "decoded": {
+        "bytes": 194500309,
+        "sha256": "6408a97da82dc7a1e226225637a415d6cd8ecaecfb962e51454f52bc3067f2b6"
+      },
+      "data_rows": 209460,
+      "all_decoded_bytes_read": true
+    },
+    {
+      "source": "independent-normal",
+      "original_path": "qa/independent/final-v13-r1/geometry/normal/standard/dense/dense-original.csv.xz",
+      "restore_from_canonical_path": "qa/v12-full/normal/standard/dense/dense-original.csv.xz",
+      "compressed": {
+        "bytes": 19156984,
+        "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+      },
+      "decoded": {
+        "bytes": 194500309,
+        "sha256": "6408a97da82dc7a1e226225637a415d6cd8ecaecfb962e51454f52bc3067f2b6"
+      },
+      "data_rows": 209460,
+      "all_decoded_bytes_read": true
+    },
+    {
+      "source": "independent-optimized",
+      "original_path": "qa/independent/final-v13-r1/geometry/optimized/standard/dense/dense-original.csv.xz",
+      "restore_from_canonical_path": "qa/v12-full/normal/standard/dense/dense-original.csv.xz",
+      "compressed": {
+        "bytes": 19156984,
+        "sha256": "80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550"
+      },
+      "decoded": {
+        "bytes": 194500309,
+        "sha256": "6408a97da82dc7a1e226225637a415d6cd8ecaecfb962e51454f52bc3067f2b6"
+      },
+      "data_rows": 209460,
+      "all_decoded_bytes_read": true
+    }
+  ],
+  "csv_payloads_created": 0,
+  "original_strict_results": {
+    "author_full_passed": false,
+    "author_full_strict_passed": false,
+    "author_full_checks_preserved_verbatim": {
+      "both_modes_strictly_pass": false,
+      "normal_optimized_scientific_evidence_identical": false,
+      "original_stl_unchanged": true,
+      "tool_sources_unchanged": true
+    },
+    "author_full_producer_returncode": 1,
+    "author_mode_records_preserved_verbatim": {
+      "normal": {
+        "child_exit_codes": {
+          "standard": 1,
+          "intersections": 0,
+          "intersection-controls": 0,
+          "dense-evidence": 0
+        },
+        "strict_passed": false,
+        "error_type": "QAError",
+        "error": "Standard aggregate did not strictly pass"
+      },
+      "optimized": {
+        "child_exit_codes": {
+          "standard": 1,
+          "intersections": 0,
+          "intersection-controls": 0,
+          "dense-evidence": 0
+        },
+        "strict_passed": false,
+        "error_type": "QAError",
+        "error": "Standard aggregate did not strictly pass"
+      }
+    },
+    "independent_strict_passed": false,
+    "independent_standard_returncodes": {
+      "normal": 1,
+      "optimized": 1
+    }
+  },
+  "source_appearance_binding": {
+    "passed": true,
+    "status": "GO_FOR_DECLARED_REPRESENTATIVE_APPEARANCE_ONLY",
+    "certificate_scope_verbatim": "Original source/appearance summary and exact model/render artifact binding; no source photographs or plans are included. This is not manufacturing, test-print or publication approval.",
+    "certificate_limitations_verbatim": [
+      "No reliable real-world dimensions, total height, floor heights or 1:N scale were obtained; all output millimetres are model dimensions or estimates.",
+      "2014 is the school video label, not an independently proven per-frame capture date. The 2025 plans are not same-year as-built elevations. This is neither a precise 2001 completion reconstruction nor a 2026-current-condition model.",
+      "Two incompletely observed diagonal back elevations use neutral low-detail closures; blank surfaces are not claims that the actual building has no windows. No front-window template is mirrored onto them.",
+      "Partial 9/10F auditorium roof volume is not a complete tenth standard floor. The lower wings do not continue to nine storeys.",
+      "Roof slopes, exact segmentation sizes, hidden interiors and joints, floor heights, window counts, thin-member thicknesses and courtyard levels are simplified estimates.",
+      "Central roof closure is confined to the two existing front/central panel projections. Local rounded collars and ridge support are unverified print-construction estimates, not source-proven actual joints.",
+      "View identifiers east/west/north/south are interface/local-coordinate labels, not verified geographic directions.",
+      "Appearance approval does not constitute manufacturing, slicer, physical-test-print, general privacy, licensing or publication approval. Keep the separate geometry/print limitations and publication gate."
+    ],
+    "source_binding_scope_verbatim": "Immutable inputs for independent source appearance review. Not itself source/manufacturing/publication GO. Seven view IDs are local interface labels, not geographic directions. Public copies retain exact original IDAT/RGBA and colour chunks; only reviewed nonvisual text metadata removed.",
+    "scene_state_scope_verbatim": "Exact equality of the scene state set used by this case: serialized scalar RNA, mesh/material assignments, sockets/links, Noise texture/color mappings and their built-in ramp, camera/render/visibility and collections. This is not a claim to serialize arbitrary Blender RNA. Original source construction prefix executed; no source PNGs rendered.",
+    "scene_state_policy_verbatim": "Both original and source-built saved Blend files are opened with the same Blender version before full-state serialization. No state fields are ignored due to differences.",
+    "construction_to_saved_reload_differences_retained": [
+      "/world/nodes/rna/is_runtime_data: value differs"
+    ],
+    "source_prefix_executed_lines": [
+      1,
+      68
+    ],
+    "image_render_tail_excluded_lines": [
+      69,
+      73
+    ],
+    "views": {
+      "courtyard-arcade": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/courtyard-arcade.png",
+          "bytes": 828802,
+          "sha256": "36bfc76de536af5d58a6a5cc42e3249dbee5fed5da882454e671db9c9f8c8b1f"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/courtyard-arcade.png",
+          "bytes": 828826,
+          "sha256": "e71dc6189d06d90e07da48efbc5c4fbc0165e5cb5b1797b56abfec7134ff795a"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/courtyard-arcade.png",
+          "bytes": 828457,
+          "sha256": "1b190819e358e417ea93a3c5f5ce5527b658dad448d4cd2b451a13026eac05c9"
+        },
+        "decoded_rgba_sha256": "4c4c88d91a94ada55fb2792f1f58649b020253a75866db12d70c723689ffda1e"
+      },
+      "courtyard-gallery": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/courtyard-gallery.png",
+          "bytes": 1514553,
+          "sha256": "e06a039a2192c749d3d1d5c3b7527df0e164bf7ebab8d90da5e9e5fc175fec58"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/courtyard-gallery.png",
+          "bytes": 1514577,
+          "sha256": "7ed38f6918e16cf497eb3a5ddf12e5e4db54926bc02013a2a244347573739e0e"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/courtyard-gallery.png",
+          "bytes": 1514208,
+          "sha256": "c3b01fee0ec8d536edb59d9a7ee8e7787d175505d550d5bb92615d4c798ac0ad"
+        },
+        "decoded_rgba_sha256": "ef0502143785ea710e0ec69257f7e28aa5e3b1a6a7bfb28cbeea0eeb1c30568e"
+      },
+      "east": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/east.png",
+          "bytes": 767628,
+          "sha256": "1c59ef3bc9497ea0c5e41bb9c2d2434400251c7ec7102adb419981709178cfbc"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/east.png",
+          "bytes": 767652,
+          "sha256": "e93efa8e2e470ab8f4613d5241918538cd5e14abb65206416a19f30a341077b1"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/east.png",
+          "bytes": 767283,
+          "sha256": "77630ad6941177b02682416298fc159b8e841b5a3e9f272e6b4a4610e8ddce32"
+        },
+        "decoded_rgba_sha256": "c1b73031c444c856fbe94df8434b6c301fe3f4477a18698a526a0e501309b652"
+      },
+      "front": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/front.png",
+          "bytes": 831676,
+          "sha256": "65b11240312533403092bd4f996aec9ef84fdf8829d34548be2cc7a752752140"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/front.png",
+          "bytes": 831700,
+          "sha256": "7286f23267bc1adde46f521c553a409ec718e856b54d90996cbaef8fcbb1711c"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/front.png",
+          "bytes": 831331,
+          "sha256": "13bc8ce4f7d22abf5f7910f1aeebbc5765afbeb78350155a37580425e96873bc"
+        },
+        "decoded_rgba_sha256": "f08f7b98ef8f0b9f5b19eb99f7377f36044ede3bdb698af1dacfe8c2f0185392"
+      },
+      "north": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/north.png",
+          "bytes": 879220,
+          "sha256": "adda2a6a7b0290a67b4da89325088f5aef44a978241d38dac586a7b2caf7ae66"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/north.png",
+          "bytes": 879244,
+          "sha256": "f6744b29ddad77a524f4c7aa9cd64eb1b29e5699964cdb6f2376464e940cdc0c"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/north.png",
+          "bytes": 878875,
+          "sha256": "e3050c366b28a0aabfefbfe4b12ceda9202552f269cbdfb8ab29eb3677ffae5a"
+        },
+        "decoded_rgba_sha256": "3a888708de71b6b117fda0b26046594c37e34e4dd08f20209d9ee6b7c183e9ec"
+      },
+      "rear": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/rear.png",
+          "bytes": 713527,
+          "sha256": "81ba3895392eafe726fa167d8f5a966586075522e8da5407562efc28af7f32e8"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/rear.png",
+          "bytes": 713551,
+          "sha256": "acba637ab2fd96efe216892e582d4986a0b3153ec3d3882916da06deb428743b"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/rear.png",
+          "bytes": 713182,
+          "sha256": "fa6bad2d0fa425637789172950e71c23ac75a527d969821ac9b8eb703b6338a1"
+        },
+        "decoded_rgba_sha256": "058259705bbb4615a84d70d371d0816539cf1f571f07e521f0b2832628a5da74"
+      },
+      "south": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/south.png",
+          "bytes": 780648,
+          "sha256": "d76d4055c33569cd9f5c88da5328199596e8cf2553550114cbe0e52f76796131"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/south.png",
+          "bytes": 780672,
+          "sha256": "55c0fd5ff47ea89c40ca0b13aa4084043d33b794a86af3784d07c8ddc6865d97"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/south.png",
+          "bytes": 780303,
+          "sha256": "718189f454b4275b35cba919e37eb9c8ea2228b6b9c63208809d62379163df93"
+        },
+        "decoded_rgba_sha256": "df60e3cac38ab8e55e40f4fe9422419a9c1e3a4bac1d7955e85d1b0f29106965"
+      },
+      "top": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/top.png",
+          "bytes": 1096369,
+          "sha256": "886cdbb39a095283dfc5663ad8e058e7c47f48b015738181423e0a3680365a5e"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/top.png",
+          "bytes": 1096393,
+          "sha256": "3fb16f59749bec1ef09babba91c94ad6979a36cdd3d99601622b46271d9f6faf"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/top.png",
+          "bytes": 1096024,
+          "sha256": "10bd67609a1bacb7e5e1fa3422797b17f58f8970dccb409243105b2a98233a19"
+        },
+        "decoded_rgba_sha256": "eebf37f72fe39c4df5cd9b1662140c49bf95b6926309057caa1b07e49f3ebf58"
+      },
+      "west": {
+        "raw": {
+          "path": "qa/independent/final-v13-r1/frozen/previews/v13/west.png",
+          "bytes": 723165,
+          "sha256": "5358f1287205e898a5faefe7865291801f630ee65b9c0165c54cfeee2153a018"
+        },
+        "replay": {
+          "path": "qa/independent/final-v13-r1/saved-blend-rerenders/west.png",
+          "bytes": 723189,
+          "sha256": "05134e5b2afe3ecfd1e9a2e3f3c4fe7894607c24318602ca30cc0282c6e03093"
+        },
+        "clean": {
+          "path": "qa/independent/final-v13-r1/public-previews/west.png",
+          "bytes": 722820,
+          "sha256": "f757107424dae2add5a1391d9688be3a35334e679c0f31fb5fa607cd948e5cbb"
+        },
+        "decoded_rgba_sha256": "aabc2037198d1592d2e8b19e66e4af201e00cc65b022b5e76109aa21bbe0832b"
+      }
+    },
+    "scene_state": {
+      "source-scene-audit.json": {
+        "bytes": 1894,
+        "sha256": "0f334312dd6d8b054b4d05df51dd1adb0c4f7fb4f3c4d43d95a6397a26281ac7"
+      },
+      "original-scene-state.json": {
+        "bytes": 167332,
+        "sha256": "5a5392d71a92898c2f455c527fd4f1f9cebcaca44a811a809ebc179e417bec1a"
+      },
+      "source-scene-state.json": {
+        "bytes": 167332,
+        "sha256": "5a5392d71a92898c2f455c527fd4f1f9cebcaca44a811a809ebc179e417bec1a"
+      },
+      "source-constructed-memory-state.json": {
+        "bytes": 167331,
+        "sha256": "f284e231753dc964b6f71f3855616921313b8669922def0bd2496233d81c0e28"
+      }
+    },
+    "replay_audit": {
+      "bytes": 114871,
+      "sha256": "159a2ad2ab4c542b9606262e2f201e4084ec91d6eda05657cb781ee924c4f764"
+    },
+    "public_manifest": {
+      "bytes": 5006,
+      "sha256": "e61e43d244b8001ad838ba4aedb6cab60bedfe01e61a9b8d673c2f0c7dfb0854"
+    },
+    "metadata_cleanup_binding": {
+      "bytes": 25608,
+      "sha256": "adedb42a4d391c9782836425c09c3e73402adc39e6cce7ead9d43787947f1954"
+    }
+  },
+  "scope": "Read-only exact primary raw/sections/dense/exact science comparison across author normal/-O and independent normal/-O. Full author inventory retained and rehashed. Only explicit execution-time, interpreter-mode and independently compared intersection-report-reference fields are excluded from science equality; their original values remain recorded. No producer file is edited. Original numerical strict=false and standard/producer exit1 remain. Appearance-only GO is not manufacturing, physical-print, privacy, licensing or publication approval."
+}

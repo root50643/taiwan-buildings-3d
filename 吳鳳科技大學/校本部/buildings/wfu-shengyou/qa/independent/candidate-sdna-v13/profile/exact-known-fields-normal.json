@@ -1,0 +1,46 @@
+{
+  "blend_sha256": "70d8914cefaaceac8572d00c6cfba52b5abbedd18c810175f2deedb47ed2c429",
+  "version": "403",
+  "pointer_bytes": 8,
+  "byte_order": "little",
+  "blocks": 1923,
+  "field_findings": [
+    {
+      "marker": "utf8-hex:2f686f6d652f6167656e74",
+      "block_code": "DATA",
+      "struct": "FileSelectParams",
+      "field": "dir[1090]",
+      "field_type": "char",
+      "field_offset": 96,
+      "field_absolute_byte_offset": 171624,
+      "marker_absolute_byte_offset": 171624,
+      "field_buffer_bytes": 1090,
+      "field_buffer_sha256": "2d1dc02e846e766c501535dfda01be83adbdea6d8e03a42e4e5df5377da744d1",
+      "marker_offset_in_field": 0,
+      "field_effective_before_first_nul": "utf8-hex:2f686f6d652f6167656e74",
+      "after_first_nul_nonzero_bytes": 29,
+      "interpretation": "Generic runtime home UI location or unrendered default output directory; not a linked resource."
+    },
+    {
+      "marker": "utf8-hex:2f746d702f",
+      "block_code": "SC\u0000\u0000",
+      "struct": "Scene",
+      "field": "r.pic[1024]",
+      "field_type": "char",
+      "field_offset": 596,
+      "field_absolute_byte_offset": 231956,
+      "marker_absolute_byte_offset": 231956,
+      "field_buffer_bytes": 1024,
+      "field_buffer_sha256": "a27bf0cff013ac91d264ac7f6b87fe91b392cee0ed657588929e56c4f0b4d07d",
+      "marker_offset_in_field": 0,
+      "field_effective_before_first_nul": "utf8-hex:2f746d702f",
+      "after_first_nul_nonzero_bytes": 0,
+      "interpretation": "Generic runtime home UI location or unrendered default output directory; not a linked resource."
+    }
+  ],
+  "scope": "Read-only SDNA profile of one hash-authenticated control Blend. Only the two known complete generic non-resource field buffers are allowed. Caller must bind this whole-file hash to its original control fixture/result manifest. No geometry, model GO, general private-data clearance or source-file change is implied.",
+  "passed": true,
+  "exact_known_generic_field_buffers_only": true,
+  "optimization_level": 0,
+  "source_sha256": "48b96072e1c68b3fd6acd7d5abcc4d0dd8b7b222a81f080e0356fa31da713fd2"
+}

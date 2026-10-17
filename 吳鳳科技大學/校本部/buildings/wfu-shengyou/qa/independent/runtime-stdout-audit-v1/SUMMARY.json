@@ -1,0 +1,38 @@
+{
+  "schema": "wfu-runtime-stdout-audit-summary-v1",
+  "passed": true,
+  "scope": "Classification/equivalence check only; no package modification or model approval.",
+  "stdout_files_read_completely": 138,
+  "stdout_total_bytes": 39887,
+  "class_counts": {
+    "individual_control_summary": 120,
+    "control_suite_summary": 4,
+    "science_producer_summary": 12,
+    "standard_aggregate_summary": 2
+  },
+  "printed_status_fields_exactly_represented_in_public_json": true,
+  "all_138_exit_codes_explicitly_retained_in_public_json": true,
+  "unique_science_or_exit_spans_requiring_projection": 0,
+  "recommended_omit": 138,
+  "recommended_project": 0,
+  "public_logical_report_bindings": 141,
+  "distinct_canonical_public_json_dependencies": 22,
+  "private_stdout_copies_verified": 138,
+  "classification": {
+    "path": "CLASSIFICATION.json",
+    "bytes": 534531,
+    "sha256": "28bc6b6ac473505e6b988a6355b8a95f1aa30e00010ba7476a93b74293967c89"
+  },
+  "omission_manifest": {
+    "path": "OMISSION-RECOMMENDATIONS.json",
+    "bytes": 148693,
+    "sha256": "6a3e4b4ddd697707ba29693ffa3440b2b57ec8046847d155707c607052c0d0ec"
+  },
+  "audit_source": {
+    "path": "audit_runtime_stdout.py",
+    "bytes": 12935,
+    "sha256": "2836aa3706e458ab9dab5f64ee9cbedbcb4f12a314d3823c7a408d7afe30c076"
+  },
+  "interpretation": "CLASSIFICATION runtime_path_field.resolved_public_path records the logical public report alias; structured_report.path and every exit/science evidence.path identify actual physical canonical JSON after exact byte deduplication. An absent report error key corresponding to stdout error:null carries no unique error detail. All non-null errors, booleans, short_samples counts and control expectations were matched exactly.",
+  "unchanged_science_flags": "The original dense passed:false, standard passed:false, strict_passed:false and relevant exit code 1 remain in the required original JSON. No flag waiver or acceptance inference."
+}

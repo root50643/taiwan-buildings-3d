@@ -1,0 +1,96 @@
+{
+  "passed": false,
+  "strict_passed": false,
+  "checks": {
+    "all_gates_explicitly_pass": false,
+    "all_gate_check_flags_true": false,
+    "all_required_gate_check_keys_present": true,
+    "original_stl_unchanged": true,
+    "all_geometry_reports_bound_to_current_stl": true,
+    "checker_sources_unchanged_during_run": true,
+    "all_reports_bound_to_current_checkers": true,
+    "three_required_layer_offsets": true,
+    "every_original_face_has_ten_rays": true,
+    "zero_short_or_flagged_dense_samples": false,
+    "all_full_detail_artifact_hashes_current": true,
+    "dense_lossless_csv_hash_current": true
+  },
+  "stl_sha256": "8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0",
+  "expected_longest_mm": 220.0,
+  "gate_reports": [
+    {
+      "gate": "raw",
+      "returncode": 0,
+      "passed": true,
+      "report_file": "raw/raw-mesh-check.json",
+      "report_sha256": "dff126578cf8b627fdc858ce3643c7def4c82b8b3c15e93b7e38c44532fee860",
+      "failed_checks": []
+    },
+    {
+      "gate": "sections",
+      "returncode": 0,
+      "passed": true,
+      "report_file": "sections/section-check.json",
+      "report_sha256": "95527b064ef1fa290bf9c5aab193abcf76fa8feccaa4fd26156c09b1c00199fa",
+      "failed_checks": []
+    },
+    {
+      "gate": "dense",
+      "returncode": 1,
+      "passed": false,
+      "report_file": "dense/dense-check.json",
+      "report_sha256": "ba484f669a84383ddf605c7329cfad1ee8c7a97248fd4ab0803797f98605535d",
+      "failed_checks": [
+        "all_original_ray_intervals_and_controls_valid"
+      ]
+    },
+    {
+      "gate": "controls",
+      "returncode": 0,
+      "passed": true,
+      "report_file": "controls/control-check.json",
+      "report_sha256": "16843a04bd7109dca7dd97e57701fc7ae7c9a606347540af291d9c5134c32572",
+      "failed_checks": []
+    }
+  ],
+  "evidence_files": [
+    {
+      "gate": "sections",
+      "key": "detail_file",
+      "verified": true
+    },
+    {
+      "gate": "sections",
+      "key": "failure_file",
+      "verified": true
+    },
+    {
+      "gate": "dense",
+      "key": "csv_file",
+      "verified": true
+    },
+    {
+      "gate": "dense",
+      "key": "short_chords_file",
+      "verified": true
+    },
+    {
+      "gate": "dense",
+      "key": "flagged_samples_file",
+      "verified": true
+    }
+  ],
+  "checker_sources_sha256": {
+    "check_controls.py": "926fb93691ebc3bdc82e04de8557ae13230cb6a3eebc90a2bb189053675ebd07",
+    "check_dense_surface.py": "3e784433d973228203056907aa7ef95ef91a8905e72452d3a8be465e6a5ebb11",
+    "check_intersection_controls.py": "542b296cba809a9b1c421f7a3f786acd11c4271b72af7836fe22a746ec15c867",
+    "check_original_intersections.py": "3698168f95ac9b95f0021d3a41c04bff30dec092028061d8640b038b6cdd37bc",
+    "check_raw_mesh.py": "c0f2c9447e99eca6bd40e3c56cbbaaafe889b32ee3f480ee2526363d88749132",
+    "check_sections.py": "469c0cdf5b6b9fea7e328c81c35654a9cae30133de9e3640150303a5e62389ad",
+    "dense_original.cpp": "258e4f7c94e80845bc94f7f8b9fa0b5be29d792786f3a26cb67e0c2e33d5a687",
+    "qa_common.py": "8e207b9db55d5abe0b0d95b02686c2532e09c49ccc474e00c003cade2407666f",
+    "run_qa.py": "82beceefeb08d6219ac210315bb3fec31ce06636e2792b96e67ca621227074fe"
+  },
+  "optimized_python": false,
+  "limits": "Raw mesh topology, finite XY layers and finite original-normal rays only. No geometry repair, waived short rays, architecture approval, render audit, global wall guarantee, or independent review claim."
+}

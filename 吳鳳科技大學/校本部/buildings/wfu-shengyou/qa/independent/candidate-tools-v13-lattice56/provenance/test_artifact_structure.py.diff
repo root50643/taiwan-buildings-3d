@@ -1,0 +1,52 @@
+--- wfu-shengyou-independent-qa/candidate-tools-v12/test_artifact_structure.py
++++ wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/test_artifact_structure.py
+@@ -97,7 +97,7 @@
+               'original_face_count': a.FACES, 'face_index_base': 0,
+               'total_unordered_original_face_pairs': a.FACES * (a.FACES - 1) // 2,
+               'degenerate_original_faces': [], 'bad_pairs': [], 'bad_pair_count': 0,
+-              'lattice': {'denominator': str(a.LATTICE), 'denominator_power_of_two': 30,
++              'lattice': {'denominator': str(a.LATTICE), 'denominator_power_of_two': 56,
+                           'exact_coordinate_round_trips_checked': 9 * a.FACES,
+                           'all_original_coordinates_round_trip_exactly': True},
+               'broad_phase': {'sweep_axis': 0, 'axis_active_pair_costs': [5, 6, 7],
+@@ -113,6 +113,7 @@
+ 
+ class ExactTests(unittest.TestCase):
+     def test_positive(self):
++        self.assertEqual(a.LATTICE, 72057594037927936)
+         result = a.validate_exact_rows(*exact_fixture())
+         self.assertEqual(result['minimum_first_chord_squared_mm2_exact'], '1')
+         self.assertEqual(result['interval_count'], 3)
+@@ -123,7 +124,7 @@
+     def test_origin_hex_round_trip(self):
+         rows, flags = exact_fixture()
+         for descriptor in (rows[0]['original_cpp_descriptor'], flags[0]['original_cpp_row']):
+-            descriptor['origin_x_hex'] = '0x1p-31'
++            descriptor['origin_x_hex'] = '0x1p-57'
+         rows[0]['ray_origin_integer_lattice_numerators'] = [1, 0, 0]
+         rows[0]['ray_origin_integer_lattice_denominator'] = '2'
+         a.validate_exact_rows(rows, flags)
+@@ -160,6 +161,9 @@
+             'hex direction mismatch': change_descriptor,
+             'hex normal direction mismatch': change_normal,
+             'wrong lattice': lambda r, f: r[0].update(coordinate_lattice_denominator='1'),
++            'old AEUST lattice 2^30': lambda r, f: r[0].update(coordinate_lattice_denominator='1073741824'),
++            'numeric lattice denominator': lambda r, f: r[0].update(coordinate_lattice_denominator=72057594037927936),
++            'boolean lattice denominator': lambda r, f: r[0].update(coordinate_lattice_denominator=True),
+             'nonreduced direction': lambda r, f: r[0].update(ray_direction_integer_lattice=[2, 0, 0]),
+             'false classification': lambda r, f: r[0].update(exact_classification_completed=False),
+             'bool face': lambda r, f: r[0].update(original_face_index=True),
+@@ -263,6 +267,13 @@
+             'wrong artifact count': lambda r, rows: r['all_actual_intersections'].update(record_count=3),
+             'escaped basename': lambda r, rows: r['all_actual_intersections'].update(path='../contacts.jsonl.gz'),
+             'wrong coordinate lattice': lambda r, rows: r['lattice'].update(denominator='1'),
++            'old AEUST lattice and power': lambda r, rows: r['lattice'].update(denominator='1073741824', denominator_power_of_two=30),
++            'old AEUST power only': lambda r, rows: r['lattice'].update(denominator_power_of_two=30),
++            'wrong lattice power 55': lambda r, rows: r['lattice'].update(denominator_power_of_two=55),
++            'boolean lattice power': lambda r, rows: r['lattice'].update(denominator_power_of_two=True),
++            'float lattice power': lambda r, rows: r['lattice'].update(denominator_power_of_two=56.0),
++            'numeric contact denominator': lambda r, rows: r['lattice'].update(denominator=72057594037927936),
++            'boolean contact denominator': lambda r, rows: r['lattice'].update(denominator=True),
+             'wrong model': lambda r, rows: r.update(stl_sha256='0' * 64),
+             'nan coordinate': lambda r, rows: rows[0]['intersection']['vertices_approx_original_units'][0].__setitem__(0, math.nan),
+         }

@@ -1,0 +1,378 @@
+{
+  "passed": true,
+  "scope": "Small adapter-only controls. Producer runs are explicitly injected test outcomes.\nNo WFU mesh, STL geometry checks or model result is used or implied.\n",
+  "optimization_level": 1,
+  "cpu_affinity": [
+    0
+  ],
+  "cases": [
+    {
+      "case": "exact_original_28_source_contract",
+      "kind": "input-contract",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null,
+      "passed": true
+    },
+    {
+      "case": "wrong_capture_interpreter",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Use selected modeling-toolchain Python",
+      "passed": true
+    },
+    {
+      "case": "wrong_stl_hash",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "STL hash differs",
+      "passed": true
+    },
+    {
+      "case": "malformed_hash_short",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Expected STL SHA256 required",
+      "passed": true
+    },
+    {
+      "case": "malformed_hash_nonhex",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Expected STL SHA256 required",
+      "passed": true
+    },
+    {
+      "case": "malformed_hash_upper",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Expected STL SHA256 required",
+      "passed": true
+    },
+    {
+      "case": "extent_zero",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Finite positive expected extent required",
+      "passed": true
+    },
+    {
+      "case": "extent_negative",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Finite positive expected extent required",
+      "passed": true
+    },
+    {
+      "case": "extent_nan",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Finite positive expected extent required",
+      "passed": true
+    },
+    {
+      "case": "extent_infinity",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Finite positive expected extent required",
+      "passed": true
+    },
+    {
+      "case": "extent_boolean",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Finite positive expected extent required",
+      "passed": true
+    },
+    {
+      "case": "revision_path",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Canonical vN revision required",
+      "passed": true
+    },
+    {
+      "case": "revision_empty",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Canonical vN revision required",
+      "passed": true
+    },
+    {
+      "case": "revision_text",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Canonical vN revision required",
+      "passed": true
+    },
+    {
+      "case": "revision_identity",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Capture must target exact models/vN/model.stl",
+      "passed": true
+    },
+    {
+      "case": "manifest_hash",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Tooling manifest hash differs",
+      "passed": true
+    },
+    {
+      "case": "manifest_not_passed",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Completed original tool reuse preflight required",
+      "passed": true
+    },
+    {
+      "case": "manifest_source_mutation",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact tested 28-tool roster differs",
+      "passed": true
+    },
+    {
+      "case": "manifest_missing_tool",
+      "kind": "input-contract",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact tested 28-tool roster differs",
+      "passed": true
+    },
+    {
+      "case": "full_original_exit_0",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 0,
+      "producer_exit": 0,
+      "expected_error": null,
+      "caught": null,
+      "completed": true
+    },
+    {
+      "case": "full_original_exit_1",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 1,
+      "producer_exit": 1,
+      "expected_error": null,
+      "caught": null,
+      "completed": true
+    },
+    {
+      "case": "full_original_exit_2",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 2,
+      "producer_exit": 2,
+      "expected_error": null,
+      "caught": null,
+      "completed": true
+    },
+    {
+      "case": "exact_original_exit1_normal",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 1,
+      "producer_exit": 1,
+      "expected_error": null,
+      "caught": null,
+      "completed": true
+    },
+    {
+      "case": "exact_original_exit1_optimized",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 1,
+      "producer_exit": 1,
+      "expected_error": null,
+      "caught": null,
+      "completed": true
+    },
+    {
+      "case": "full_optimized_rejected",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "Full wrapper must start normal",
+      "caught": "Full wrapper must start normal and itself runs BOTH modes",
+      "completed": null
+    },
+    {
+      "case": "full_with_full_argument_rejected",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "Full wrapper must start normal",
+      "caught": "Full wrapper must start normal and itself runs BOTH modes",
+      "completed": null
+    },
+    {
+      "case": "existing_capture_rejected",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "must both be NEW",
+      "caught": "Capture and producer output must both be NEW",
+      "completed": null
+    },
+    {
+      "case": "overlap_capture_rejected",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "must be separate trees",
+      "caught": "Capture/output must be separate trees",
+      "completed": null
+    },
+    {
+      "case": "exact_short",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "zero short rays and positive original flags",
+      "caught": "Exact route requires zero short rays and positive original flags",
+      "completed": null
+    },
+    {
+      "case": "exact_bool_short",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "zero short rays and positive original flags",
+      "caught": "Exact route requires zero short rays and positive original flags",
+      "completed": null
+    },
+    {
+      "case": "exact_empty_flags",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "zero short rays and positive original flags",
+      "caught": "Exact route requires zero short rays and positive original flags",
+      "completed": null
+    },
+    {
+      "case": "exact_bool_flags",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "zero short rays and positive original flags",
+      "caught": "Exact route requires zero short rays and positive original flags",
+      "completed": null
+    },
+    {
+      "case": "exact_strict_upgraded",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "zero short rays and positive original flags",
+      "caught": "Exact route requires zero short rays and positive original flags",
+      "completed": null
+    },
+    {
+      "case": "exact_failed_raw",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": null,
+      "producer_exit": 1,
+      "expected_error": "Exact prerequisite failed",
+      "caught": "Exact prerequisite failed: qa/independent/capture-controls-optimized-v1/exact_failed_raw/full/normal/standard/raw/raw-mesh-check.json",
+      "completed": null
+    },
+    {
+      "case": "missing_producer_report",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 2,
+      "producer_exit": 1,
+      "expected_error": "Producer summary missing",
+      "caught": null,
+      "completed": false
+    },
+    {
+      "case": "wrong_runtime_mode",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 2,
+      "producer_exit": 1,
+      "expected_error": "Actual optimization mode mismatch",
+      "caught": null,
+      "completed": false
+    },
+    {
+      "case": "boolean_runtime_mode",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 2,
+      "producer_exit": 1,
+      "expected_error": "Actual optimization mode mismatch",
+      "caught": null,
+      "completed": false
+    },
+    {
+      "case": "wrong_runtime_affinity",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 2,
+      "producer_exit": 1,
+      "expected_error": "Runtime CPU binding differs",
+      "caught": null,
+      "completed": false
+    },
+    {
+      "case": "wrong_runtime_source",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 2,
+      "producer_exit": 1,
+      "expected_error": "Runtime producer binding differs",
+      "caught": null,
+      "completed": false
+    },
+    {
+      "case": "late_stl_mutation",
+      "kind": "injected-capture-control",
+      "passed": true,
+      "capture_return": 2,
+      "producer_exit": 1,
+      "expected_error": "Original sources/STL changed",
+      "caught": null,
+      "completed": false
+    }
+  ],
+  "case_count": 40,
+  "capture_source_sha256": "f44673ed9c2bc04e21bf907fe19745dab18a25ba59c2241bd227b986710c6244",
+  "test_source_sha256": "33c799436532d4b70b158dcdc3cf1c70ac4f58f9ce9d24a668f5ade39426e2a4",
+  "original_tooling_manifest_sha256": "6459a954628aa303fec5464010d50ab503ccdbc6f327a6baa8cc1e87f34d2793",
+  "all_original_tool_sources_unchanged": true,
+  "model_verified": false
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "wfu-public-restorer-final-case-provenance-v2",
+  "scope": "Three case constants changed; no generic restore algorithm changed. Positive complete public-layout restoration and negative exact-map binding were both executed in actual normal and optimized interpreters. Original numerical/model results are independent gates.",
+  "source_sha256": "7862d7e1cfefe921fbaaef0389aae8d10b3a2b7dbf735f4924388acc765429d5",
+  "original_source_sha256": "77ebfa1cce007523c102c04b593344889f09784683bd2c98479cbff523768104",
+  "diff": {
+    "path": "case-constants.diff",
+    "bytes": 5948,
+    "sha256": "ab7c14049237b31d0aa39bdf2c0e49f3e688ea5441de02ba05579b5f31a11acc"
+  },
+  "AST_other_nodes_identical": true,
+  "only_changed_AST_constants": {
+    "copy_map_sha256": {
+      "before": "9548a87bd1fb4651caf608b022a41165b1be818400e7f76baf32d87fb1e74ceb",
+      "after": "bf66ffc5ec94fa955af0294e627e2afd78e55ad6c700683a499f01f13ae10fb4"
+    },
+    "canonical_files": {
+      "before": 670,
+      "after": 543
+    },
+    "logical_files": {
+      "before": 1653,
+      "after": 1528
+    }
+  },
+  "inverse_constant_substitution_reconstructed_original_bytes_bitwise": true,
+  "positive_replay": {
+    "path": "public-restore-proof.json",
+    "bytes": 3654,
+    "sha256": "97f0338a60599cc935e6f39e0f78cfe2aa39101efbc5d7d11534333a627e0167"
+  },
+  "negative_controls": {
+    "path": "case-pin-controls.json",
+    "bytes": 1719,
+    "sha256": "816e2c4da9627f721ff185e60736a3e5b74fde96afd1201684ef19f8ef9001e7"
+  },
+  "negative_control_source": {
+    "path": "test_case_pins_public.py",
+    "bytes": 4262,
+    "sha256": "297de81b1bdb06c424a1292a97eb728e860447a74d2c624547aadf23e420b811"
+  },
+  "unchanged_generic_tools": {
+    "qa/restore_scientific_layout.py": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e",
+    "qa/roster_primitives.py": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273",
+    "qa/independent-tools/capture_process.py": "f44673ed9c2bc04e21bf907fe19745dab18a25ba59c2241bd227b986710c6244"
+  },
+  "original_source_and_original_preceding_case_proofs_retained_privately": true
+}

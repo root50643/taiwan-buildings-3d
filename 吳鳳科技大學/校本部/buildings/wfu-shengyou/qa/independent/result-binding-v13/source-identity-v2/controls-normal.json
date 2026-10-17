@@ -1,0 +1,268 @@
+{
+  "passed": true,
+  "checker_sha256": "61299bea365305aee39a52b1622471590e745b6ac27081b7d8152a485e6711d2",
+  "test_source_sha256": "829098d2f62420c367cc13490307ca6b372f14f8e255fc6f22fbecd4f4741fd0",
+  "optimization_level": 0,
+  "cases": [
+    {
+      "name": "four_modes_science_equal_only_elapsed_and_mode_differ",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_changed_exact_contact_count",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_unknown_scientific_field_change",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_boolean_replaced_with_integer",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_added_scientific_field",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_negative_elapsed",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid execution elapsed_seconds"
+    },
+    {
+      "name": "reject_string_elapsed",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid execution elapsed_seconds"
+    },
+    {
+      "name": "reject_wrong_mode_even_when_all_science_equal",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Incorrect intersection interpreter mode"
+    },
+    {
+      "name": "accept_own_compared_intersection_reference",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_forged_intersection_reference",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact summary not bound to its own compared intersection report"
+    },
+    {
+      "name": "reject_missing_explicit_elapsed",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "'elapsed_seconds'"
+    },
+    {
+      "name": "reject_wrong_summary_mode",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Incorrect QA interpreter mode"
+    },
+    {
+      "name": "reject_duplicate_json_key",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Duplicate JSON key: strict_passed"
+    },
+    {
+      "name": "reject_nonfinite_json",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Nonfinite JSON constant: NaN"
+    },
+    {
+      "name": "reject_duplicate_inventory_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Duplicate inventory member: a"
+    },
+    {
+      "name": "reject_parent_traversal",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid member path"
+    },
+    {
+      "name": "reject_absolute_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid member path"
+    },
+    {
+      "name": "reject_symlink_evidence",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Missing/nonregular evidence: qa/independent/result-binding-v13/source-identity-v2/small-controls-yah_7346/link"
+    },
+    {
+      "name": "reject_same_size_changed_file",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Bytes/hash mismatch: qa/independent/result-binding-v13/source-identity-v2/small-controls-yah_7346/regular"
+    },
+    {
+      "name": "accept_complete_csv_compressed_decoded_hash_bytes_rows",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_decoded_hash_change",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "CSV decoded hash/bytes differ"
+    },
+    {
+      "name": "reject_decoded_byte_count_change",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "CSV decoded hash/bytes differ"
+    },
+    {
+      "name": "reject_skipped_csv_row",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "CSV whole-file row count differs"
+    },
+    {
+      "name": "reject_truncated_xz_even_with_updated_compressed_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "name": "accept_actual_wfu_source_schema",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_inherited_aeust_go_schema",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "'schema'"
+    },
+    {
+      "name": "reject_manufacturing_go_substitution",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Missing appearance-only approval"
+    },
+    {
+      "name": "reject_missing_view",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source-binding nine-view coverage differs"
+    },
+    {
+      "name": "reject_extra_view",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source-binding nine-view coverage differs"
+    },
+    {
+      "name": "reject_source_wrong_stl",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Wrong WFU source-binding schema/version/STL"
+    },
+    {
+      "name": "reject_privacy_scope_promotion",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source verification missing: image_identity_is_not_general_privacy_clearance"
+    },
+    {
+      "name": "accept_exact_replay_audit_schema",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_missing_replay_required_check",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay required checks missing/failed"
+    },
+    {
+      "name": "reject_replay_false_check_despite_passed_true",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay required checks missing/failed"
+    },
+    {
+      "name": "reject_inspection_instead_of_replay",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Independent nine-view replay failed/incomplete"
+    },
+    {
+      "name": "reject_eight_replay_views",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay nine-view coverage differs"
+    },
+    {
+      "name": "reject_duplicate_replay_view",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay nine-view coverage differs"
+    },
+    {
+      "name": "reject_scene_triangle_count_substitution",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay original triangle identity differs"
+    },
+    {
+      "name": "accept_unchanged_executed_source_bytes",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_same_size_source_change_after_snapshot",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Executed source changed during check: qa/independent/result-binding-v13/source-identity-v2/small-controls-yah_7346/source_identity.py"
+    },
+    {
+      "name": "reject_source_not_matching_frozen_selection_sha",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Executed source does not match frozen selection: qa/independent/result-binding-v13/source-identity-v2/small-controls-yah_7346/source_identity.py"
+    },
+    {
+      "name": "reject_stale_pyc_same_mtime_same_size_substitution",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_loaded_source_changed_before_result",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Executed source changed during check: qa/independent/result-binding-v13/source-identity-v2/small-controls-yah_7346/source_identity.py"
+    }
+  ],
+  "case_count": 43,
+  "scope": "Small unit-level acceptance and negative controls only. No full science, PNG replay or Blender execution. Full candidate binding still requires completed independent run."
+}

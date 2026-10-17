@@ -1,0 +1,63 @@
+--- author/README.md
++++ publication/README.md
+@@ -16,6 +16,29 @@
+ 
+ ## 檔案與狀態
+ 
+-目前候選為v15，已通過逐九圖綁定的獨立來源／外觀審核；作者有限數位檢查與原射線有界補證已完成，獨立全量及九圖replay仍待完成，尚未發布。最新結論見STATUS.md。來源、尺寸／簡化及列印限制分別見SOURCE-CREDITS.md、ESTIMATES-AND-SIMPLIFICATIONS.md、PRINTING-LIMITS.md。重建流程見REPRODUCE.md。
++本發布版本為v15。指定原件的獨立normal／-O全量、同run actual-hex精確有界補證、原Blend唯一九圖CPU64重播與逐圖來源／外觀審核已完成。這是有限數位與精確補證的bounded GO：原始generic strict=false、各26個flags及實際exit1全部保留，沒有改稱原strict全通，也沒有實體試印。最新結論見[STATUS.md](STATUS.md)及[完整QA](qa/README.md)。來源、尺寸／簡化與列印限制分別見[SOURCE-CREDITS.md](SOURCE-CREDITS.md)、[ESTIMATES-AND-SIMPLIFICATIONS.md](ESTIMATES-AND-SIMPLIFICATIONS.md)、[PRINTING-LIMITS.md](PRINTING-LIMITS.md)，重建見[REPRODUCE.md](REPRODUCE.md)。
+ 
+ 任何數位通過都僅適用所列雜湊的原件、指定採樣與本模型尺寸；不等於全域最薄壁、結構強度、支撐可移除或實體列印成功保證。
++
++## 九視圖實際模型預覽
++
++前兩張為正反並排。方向檔名沿用模型局部座標，不代表經測繪確認的東西南北。全部來自同一凍結原創場景；只移除允許的非視覺metadata，原像素、IDAT與存留chunks不變。
++
++| 正反與俯視 | 正反與俯視 | 正反與俯視 |
++| :---: | :---: | :---: |
++| [<img src="qa/render-check/v15-author-preflight/sanitized-previews/front.png" alt="有庠科技大樓街側／正面原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/front.png)<br>街側／正面 | [<img src="qa/render-check/v15-author-preflight/sanitized-previews/rear.png" alt="有庠科技大樓校園側／背面原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/rear.png)<br>校園側／背面 | [<img src="qa/render-check/v15-author-preflight/sanitized-previews/top.png" alt="有庠科技大樓俯視原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/top.png)<br>俯視 |
++| [<img src="qa/render-check/v15-author-preflight/sanitized-previews/east.png" alt="有庠科技大樓局部+X原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/east.png)<br>局部+X | [<img src="qa/render-check/v15-author-preflight/sanitized-previews/west.png" alt="有庠科技大樓局部−X原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/west.png)<br>局部−X | [<img src="qa/render-check/v15-author-preflight/sanitized-previews/north.png" alt="有庠科技大樓局部+Y原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/north.png)<br>局部+Y |
++| [<img src="qa/render-check/v15-author-preflight/sanitized-previews/south.png" alt="有庠科技大樓局部−Y原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/south.png)<br>局部−Y | [<img src="qa/render-check/v15-author-preflight/sanitized-previews/courtyard-gallery.png" alt="有庠科技大樓天井廊道原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-gallery.png)<br>天井廊道 | [<img src="qa/render-check/v15-author-preflight/sanitized-previews/courtyard-arcade.png" alt="有庠科技大樓小天井／跨接原創模型渲染" width="300">](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-arcade.png)<br>小天井／跨接 |
++
++## 下載與重建
++
++- [原始STL](models/v15/model.stl) · [Blender場景](models/v15/scene.blend)
++- [參數化建模原碼](source/build_model.py) · [渲染原碼](source/render_preview.py) · [模型參數](parameters.json)
++- [完整數位QA與控制安全重播](qa/README.md) · [公開來源記錄](public-sources.json)
++- [來源外觀覆核](qa/source-review/final-v15/PUBLIC-SOURCE-REVIEW.md) · [來源外觀GO](qa/source-review/final-v15/SOURCE-APPEARANCE-GO.json)
++
++STL SHA256：46649566e965a049e6e333e9d82b075407c8e926e55c9034f11fbe3dbdf15a5d。47,770個原三角面；各模式1,785截層、22,364原Polygon、477,700原射線零短線及851,184閉AABB原面候選零不合法接觸。26個原數值flags用同次實際lossless hex精確分類；有限採樣和原strict=false的界線不可省略。原第一次sum語意失敗、reader修正與控制證據保留。
++
++## 保存範圍註記
++
++一份舊版進度metadata WORK-STATE.json（3,814 bytes，SHA256 6e3f0b0e1e31a2e0385ecf3b66bad84158d4d1afaa0a231e60096740f8f17faf）原bytes已不可還原。它不屬模型科學證據或必需發布依賴；3,690項原科學freeze、原數值失敗及完整指定原資料仍保留。此處不宣稱全部歷史metadata均可恢復；詳見[精確歷史缺口註記](qa/independent/publication-chain/metadata-gap-acknowledgment-result.json)。
+--- author/STATUS.md
++++ publication/STATUS.md
+@@ -1,8 +1,8 @@
+ # 狀態
+ 
+-更新：2026-10-17 07:22 UTC。
++發布副本更新：2026-10-17 10:25 UTC。
+ 
+-v15為未發布候選。47,770個原三角形，219×107×119毫米，STL SHA256：46649566e965a049e6e333e9d82b075407c8e926e55c9034f11fbe3dbdf15a5d。
++v15為已完成有限獨立驗收的發布版本。47,770個原三角形，219×107×119毫米，STL SHA256：46649566e965a049e6e333e9d82b075407c8e926e55c9034f11fbe3dbdf15a5d。
+ 
+ - v0／v1四面宏觀來源條件審核已完成。
+ - D七帶／高低玻璃／上盒與C十帶／上白體小窗已經來源端逐圖核對。
+@@ -11,7 +11,14 @@
+ - v15已取得SOURCE-APPEARANCE-GO：九張原創圖逐張檢視，scene與原STL的47,770個三角形逐序同一。此項不代表製造通過。
+ - 作者全量normal／-O已完成：各1,785截層、22,364原多邊形通過；477,700原射線零短線；851,184候選原面對精確檢查無不合法相交。各26個數值flags仍在，因此原strict=false及實際exit1保留。
+ - 全部26條同次actual-hex射線在兩模式均完成精確分類、實際exit0；作者r2有界補證與兩模式比較通過，原generic strict=false仍保留。
+-- 原碼重建STL逐byte、完整scene-state與saved Blend檢查通過；24場景控制全過。作者未重做九圖replay，該完整重現由獨立QA執行，尚待完成。
+-- 未實體試印，沒有push或發布。
++- 原碼重建STL逐byte、完整scene-state與saved Blend檢查通過；24場景控制全過。作者未重做九圖replay；唯一完整CPU64九圖重現已由獨立QA執行，逐圖及saved Blend原面身份綁定見[完整QA](qa/README.md)。
++- 獨立normal／-O原網格全量、同run actual-hex精確分類和完整scene／九圖重現已完成，結論僅為bounded GO，原generic strict=false及各26個flags／實際exit1均保留。
++- 未實體試印。這份狀態檔描述受驗版本；實際發布由包含本檔的repository commit建立，本文不是remote上傳收據。
+ 
+ 先前失敗與修訂證據保留在qa/BUILD-DIAGNOSTICS.md及分版報告；不得將前版局部診斷冒稱本版全量通過。
++
++## 發布副本註記
++
++此README／STATUS更新只發生在發布副本，作者3690項科學freeze及來源原件未修改。完整原資料、失敗flags、actual-hex補證、工具與控制皆按精確allowlist保留；摘要不能取代原證據。製造、支撐移除及尺度限制見[PRINTING-LIMITS.md](PRINTING-LIMITS.md)。
++
++一份舊版WORK-STATE進度metadata（3,814 bytes，SHA256 6e3f0b0e1e31a2e0385ecf3b66bad84158d4d1afaa0a231e60096740f8f17faf）原bytes不可還原；此項非科學資料或必需依賴，all_historical_retained=false如實保留。參見[精確缺口註記](qa/independent/publication-chain/metadata-gap-acknowledgment-result.json)。

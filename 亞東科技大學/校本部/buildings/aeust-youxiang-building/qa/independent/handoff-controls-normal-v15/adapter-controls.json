@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "optimization_level": 0,
+  "case_count": 15,
+  "cases": [
+    {
+      "name": "genuine_complete_exact_mapping",
+      "expected_accept": true,
+      "accepted": true,
+      "returncode": 0,
+      "expected_error": null,
+      "passed": true,
+      "manifest_sha256": "a46bf5d5eba7ba570dd0bd4adb832663f43146858751118d619b18f2ceab6224",
+      "stdout_sha256": "03928a87a63ddfa43816492b4fe34d4a0ae44bdfb89b23ffb1bfc4ab556e408e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "wrong_revision",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Wrong candidate",
+      "passed": true,
+      "manifest_sha256": "891560d974ab78fe8b556e246c4b774c4d60a239cb7567bd6eaf49f850162cde",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "98aa40ee908c81f95e37a566bfb3a73d470921427fd179697f67718e442b1057"
+    },
+    {
+      "name": "wrong_stl",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Wrong candidate",
+      "passed": true,
+      "manifest_sha256": "68c81b54754029fde733988261ced525c8cdebae52187f712ca921d005467854",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "98aa40ee908c81f95e37a566bfb3a73d470921427fd179697f67718e442b1057"
+    },
+    {
+      "name": "empty_members",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Expected exact dict source schema",
+      "passed": true,
+      "manifest_sha256": "d024eae10fc2157ef9afe9b268c1ba03479f438ce7d3b7d1bc1a57f236b16590",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "6711f8a4a8a8b32f404ed16c6bc45cbc386b3a35279ea7340765518ecd2e8bdb"
+    },
+    {
+      "name": "recursive_self_member",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Expected exact dict source schema",
+      "passed": true,
+      "manifest_sha256": "40421bd1af6c9fa3acaa4e59a306e95aed09145283bfb0950aba6e7198a4dd8e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "6711f8a4a8a8b32f404ed16c6bc45cbc386b3a35279ea7340765518ecd2e8bdb"
+    },
+    {
+      "name": "missing_required_original_source",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Incomplete freeze required members",
+      "passed": true,
+      "manifest_sha256": "345ab8b456fea6bd942a39976e2667037aca77f2a18edc74fe4eb67f60da7f92",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8f8d41ba65d441533c6132beb4f76b074b9560bd4a7a209d680be138d099d4f7"
+    },
+    {
+      "name": "missing_tested_core_source",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Author checker differs",
+      "passed": true,
+      "manifest_sha256": "781b3edf12a8f85c40432598cbaff65e6155c2e6fb318a4bb3a44d1beca3b06e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "6597499e69f5e3cad83730a52eb1d76d67b363ee03b3d44af9970b411ec8dc44"
+    },
+    {
+      "name": "wrong_file_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Frozen input differs",
+      "passed": true,
+      "manifest_sha256": "60270c759d928dc5c2412b6ff98e273b652fa588a27c8eb13a0a0e41da3dbad1",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7eb09499bcd11b824fc6179e2b393b80e3815a720435c6d4aadbff6be71e222e"
+    },
+    {
+      "name": "boolean_byte_count",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Frozen input differs",
+      "passed": true,
+      "manifest_sha256": "b9e787ed66797e72bd230709814960549d7026193223ed85954a1cd406621f14",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7eb09499bcd11b824fc6179e2b393b80e3815a720435c6d4aadbff6be71e222e"
+    },
+    {
+      "name": "extra_member_metadata",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original file schema differs",
+      "passed": true,
+      "manifest_sha256": "f0186a6b5a83c7db460fc0641bfb5961e1ef2440a5d0ba5c16be11720b86496a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "a6023c223f08bf8301e49afff9a554314dcb2c1fcd17f64cfaa336d19743b192"
+    },
+    {
+      "name": "traversal",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unsafe",
+      "passed": true,
+      "manifest_sha256": "ab6fbb371af75a95df6381412d2c0b3ec84006677b39111c5dafabc62749bcae",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "654be9fe91d93c78dffbf631a786d7d1de89c339f8113bbd48e43f156967cf58"
+    },
+    {
+      "name": "absolute",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unsafe",
+      "passed": true,
+      "manifest_sha256": "a5bf5dc2ff2cba47c32aa8350a350d7abd8aeb6ee48b61256cc95843bf048b26",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "654be9fe91d93c78dffbf631a786d7d1de89c339f8113bbd48e43f156967cf58"
+    },
+    {
+      "name": "backslash",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unsafe",
+      "passed": true,
+      "manifest_sha256": "5d3d2f5a02b0b6c56381f3d088693ec6b858168beef1a45be2fca1d916163217",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "2c81cd3e1e0b4ce21295ec8475bc52cc0582387b9133f64e986693e302317b67"
+    },
+    {
+      "name": "dot_segment",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unsafe",
+      "passed": true,
+      "manifest_sha256": "c9129cc2c29138ae6b7524c56b5a0f9132425dbc466ba6f5f8707bc3e6121e57",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "654be9fe91d93c78dffbf631a786d7d1de89c339f8113bbd48e43f156967cf58"
+    },
+    {
+      "name": "symlink_input",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Nonregular or symlink input",
+      "passed": true,
+      "manifest_sha256": "a46bf5d5eba7ba570dd0bd4adb832663f43146858751118d619b18f2ceab6224",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "9fc34f8b531344b872c455c70c7571c3f863909a091969cd80f0e9641990453b"
+    }
+  ],
+  "test_source_sha256": "9ca3d6850556a696c1b621396bfe6a367e9aad2bb3b39a34129e282fa6ce1ae5",
+  "adapter_source_sha256": "a98d528d07f290a2e4e16330784a176964a8ccadaa05e1d52a066364c2ce081e",
+  "original_author_freeze_sha256": "a46bf5d5eba7ba570dd0bd4adb832663f43146858751118d619b18f2ceab6224",
+  "all_original_author_files_unchanged": true,
+  "scope": "Schema-only handoff controls. Complete scientific/model acceptance still requires the independent original-STL execution and final reviews."
+}

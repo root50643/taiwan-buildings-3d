@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "optimization_level": 1,
+  "helper_sha256": "e1025c4fd2e35ef1754793e4119505338fdbf83999f666772658ef99fc56483e",
+  "reviewer_sha256": "41510702fa68db20bc55ad22687dc4caf29d0a3c56ec805435b8f1c5af0900cf",
+  "scope": "Additional read-only structural/math consistency check of all original independent section polygons, exact recorded rays and exact contact records. Fresh core predicates and all source/render bindings remain required separately. Original strict=False remains unchanged.",
+  "all_inputs_unchanged": true,
+  "modes": {
+    "normal": {
+      "sections": {
+        "sampled_layers": 1785,
+        "original_polygon_count": 22364,
+        "maximum_individual_polygon_loss_fraction": 0.003473410269880485,
+        "per_offset_layer_counts": [
+          595,
+          595,
+          595
+        ]
+      },
+      "exact_recorded_rays": {
+        "flag_count": 26,
+        "ray_contact_count": 446,
+        "interval_count": 423,
+        "boundary_interval_count": 180,
+        "minimum_first_chord_squared_mm2_exact": "12412410921/17179869184"
+      },
+      "exact_contacts": {
+        "candidate_pairs_checked": 851184,
+        "actual_intersection_pair_count": 374637,
+        "contact_reason_counts": {
+          "allowed_shared_edge": 71655,
+          "allowed_shared_vertex": 302982
+        },
+        "disjoint_candidate_count": 476547,
+        "candidate_sequence_sha256": "48a7c96578686044ecb1d24aa311aebfe2540ee75e9f994202e0201ba96f146d"
+      }
+    },
+    "optimized": {
+      "sections": {
+        "sampled_layers": 1785,
+        "original_polygon_count": 22364,
+        "maximum_individual_polygon_loss_fraction": 0.003473410269880485,
+        "per_offset_layer_counts": [
+          595,
+          595,
+          595
+        ]
+      },
+      "exact_recorded_rays": {
+        "flag_count": 26,
+        "ray_contact_count": 446,
+        "interval_count": 423,
+        "boundary_interval_count": 180,
+        "minimum_first_chord_squared_mm2_exact": "12412410921/17179869184"
+      },
+      "exact_contacts": {
+        "candidate_pairs_checked": 851184,
+        "actual_intersection_pair_count": 374637,
+        "contact_reason_counts": {
+          "allowed_shared_edge": 71655,
+          "allowed_shared_vertex": 302982
+        },
+        "disjoint_candidate_count": 476547,
+        "candidate_sequence_sha256": "48a7c96578686044ecb1d24aa311aebfe2540ee75e9f994202e0201ba96f146d"
+      }
+    }
+  },
+  "evidence_inventory": {
+    "independent-execution-summary.json": {
+      "sha256": "12eaf562172b36497b7fea8a87818b1d0daddfd94d546abaae9de259fc43d41c",
+      "bytes": 417090
+    },
+    "frozen/qa/postflight-tools/artifact_structure.py": {
+      "sha256": "e1025c4fd2e35ef1754793e4119505338fdbf83999f666772658ef99fc56483e",
+      "bytes": 30417
+    },
+    "geometry/normal/standard/sections/section-check.json": {
+      "sha256": "89cb2213bc504f1eb4a458a8551c21234761b140a9683634064a72ae9fe6ca26",
+      "bytes": 2841
+    },
+    "geometry/normal/standard/sections/section-details.json.gz": {
+      "sha256": "dc3b7b427bbede1afbf81a5fedd48fba94e1dbf3675e41017a3a2e4a2ee2691f",
+      "bytes": 1313788
+    },
+    "geometry/normal/standard/sections/section-failures.json.gz": {
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f",
+      "bytes": 22
+    },
+    "geometry/normal/standard/dense/dense-check.json": {
+      "sha256": "2b45e1d33c81b522482461904a5035f201ec1bcdf2c8e4ffba982c40e98b69aa",
+      "bytes": 3706
+    },
+    "geometry/normal/standard/dense/dense-flagged-samples.json.gz": {
+      "sha256": "f512919d5638f833a097ca0e0af7809f93fc0b2fdb54d30b33698313a399c07c",
+      "bytes": 6319
+    },
+    "geometry/normal/exact-recorded-rays/exact-recorded-ray-summary.json": {
+      "sha256": "15ebe5ec8ce976b8266896cd253d8a838eb721891c29de2cc8a55f95eebcc81f",
+      "bytes": 1807
+    },
+    "geometry/normal/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz": {
+      "sha256": "de02c1aaff628332e1b1366bbdf166982a8bfd768492879337b2c18620de4b1f",
+      "bytes": 27184
+    },
+    "geometry/normal/intersections.json": {
+      "sha256": "2a3df2ab7071afe4fb98930a387c657591f891f658112bb4cbedd9dc50d1c99f",
+      "bytes": 3097
+    },
+    "geometry/normal/intersections.json.contacts.jsonl.gz": {
+      "sha256": "976ce8ea9c4e3ffbfcc11098b0e769ee82b6987fc8ad0fec83f69f911cc888f5",
+      "bytes": 3203137
+    },
+    "geometry/optimized/standard/sections/section-check.json": {
+      "sha256": "89cb2213bc504f1eb4a458a8551c21234761b140a9683634064a72ae9fe6ca26",
+      "bytes": 2841
+    },
+    "geometry/optimized/standard/sections/section-details.json.gz": {
+      "sha256": "dc3b7b427bbede1afbf81a5fedd48fba94e1dbf3675e41017a3a2e4a2ee2691f",
+      "bytes": 1313788
+    },
+    "geometry/optimized/standard/sections/section-failures.json.gz": {
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f",
+      "bytes": 22
+    },
+    "geometry/optimized/standard/dense/dense-check.json": {
+      "sha256": "2b45e1d33c81b522482461904a5035f201ec1bcdf2c8e4ffba982c40e98b69aa",
+      "bytes": 3706
+    },
+    "geometry/optimized/standard/dense/dense-flagged-samples.json.gz": {
+      "sha256": "f512919d5638f833a097ca0e0af7809f93fc0b2fdb54d30b33698313a399c07c",
+      "bytes": 6319
+    },
+    "geometry/optimized/exact-recorded-rays/exact-recorded-ray-summary.json": {
+      "sha256": "192cbbac779f60cd2105aa6528738b7295b188875a954f972407405273c744a0",
+      "bytes": 1806
+    },
+    "geometry/optimized/exact-recorded-rays/exact-recorded-ray-details.jsonl.gz": {
+      "sha256": "de02c1aaff628332e1b1366bbdf166982a8bfd768492879337b2c18620de4b1f",
+      "bytes": 27184
+    },
+    "geometry/optimized/intersections.json": {
+      "sha256": "2add683b4e6e7e8c7e7557cb52d3512c81b3b7deb10b878edfdf8541af461e08",
+      "bytes": 3099
+    },
+    "geometry/optimized/intersections.json.contacts.jsonl.gz": {
+      "sha256": "976ce8ea9c4e3ffbfcc11098b0e769ee82b6987fc8ad0fec83f69f911cc888f5",
+      "bytes": 3203137
+    }
+  }
+}

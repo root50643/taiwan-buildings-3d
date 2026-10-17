@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "optimization_level": 1,
+  "case_count": 11,
+  "cases": [
+    {
+      "name": "positive",
+      "expected_accept": true,
+      "accepted": true,
+      "returncode": 0,
+      "expected_error": null,
+      "passed": true,
+      "fixture_sha256": "e3ec3b7f00c8ae33b9734a3f6d10b7bc7ab1ff24fae3f0f97349616dabe8e67a",
+      "result_sha256": "4b59c04c8198078dfa6ef758ae799484206fcea21a977347ef360f152f694a41"
+    },
+    {
+      "name": "changed_home_buffer",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unexpected path field",
+      "passed": true,
+      "fixture_sha256": "8df0c90d0fb6d544f7992f6c746f28dba255d96390df2f7915967139fe499b50",
+      "result_sha256": null
+    },
+    {
+      "name": "changed_output_buffer",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unexpected path field",
+      "passed": true,
+      "fixture_sha256": "7b6b48c019ee0649e9e6253f7d78e9c7827ba8634ba60899dc48e731674a801b",
+      "result_sha256": null
+    },
+    {
+      "name": "changed_inactive_ui_tail",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unexpected path field",
+      "passed": true,
+      "fixture_sha256": "09489bb9dedaa26b463de2a35462d4fc45744044029c0e89d7aa06d3cd9e7e10",
+      "result_sha256": null
+    },
+    {
+      "name": "new_private_marker_inside_buffer",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unexpected path field",
+      "passed": true,
+      "fixture_sha256": "0e73964076d5460a412e799b0660554c5ce5f84b1379377ba2d35cdaf3d85ed7",
+      "result_sha256": null
+    },
+    {
+      "name": "trailing_block_bytes",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Incomplete or trailing Blender block stream",
+      "passed": true,
+      "fixture_sha256": "16d611cf94e0f7dcab76c02d0a587ab0a030e75faf3645ed3bad1265497d8577",
+      "result_sha256": null
+    },
+    {
+      "name": "truncated_block_stream",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Incomplete or trailing Blender block stream",
+      "passed": true,
+      "fixture_sha256": "10f11d986765c5fed3b3b49d5d5cf070dfd54d219f68c6b449454f43c32c390f",
+      "result_sha256": null
+    },
+    {
+      "name": "wrong_format_version",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Unsupported control Blend SDNA format",
+      "passed": true,
+      "fixture_sha256": "25feb9c389eaf823ffd6dd389f3b83064a1e9788c5330515f7fa635fece1b666",
+      "result_sha256": null
+    },
+    {
+      "name": "wrong_header",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Invalid Blender header",
+      "passed": true,
+      "fixture_sha256": "4317b3406c796ed6800e16b376c782609ca4bec13b4f27e2e8e3c05dd94e55b2",
+      "result_sha256": null
+    },
+    {
+      "name": "wrong_declared_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Original Blend hash mismatch",
+      "passed": true,
+      "fixture_sha256": "e3ec3b7f00c8ae33b9734a3f6d10b7bc7ab1ff24fae3f0f97349616dabe8e67a",
+      "result_sha256": null
+    },
+    {
+      "name": "existing_output",
+      "expected_accept": false,
+      "accepted": false,
+      "returncode": 1,
+      "expected_error": "Fresh output required",
+      "passed": true,
+      "fixture_sha256": "e3ec3b7f00c8ae33b9734a3f6d10b7bc7ab1ff24fae3f0f97349616dabe8e67a",
+      "result_sha256": "d32eedd77aa7959a397e1c2c8fd28cb4e4e5a237af5cba9c65e2f0951b8ab87e"
+    }
+  ],
+  "base_blend_sha256": "e3ec3b7f00c8ae33b9734a3f6d10b7bc7ab1ff24fae3f0f97349616dabe8e67a",
+  "source_sha256": "48b96072e1c68b3fd6acd7d5abcc4d0dd8b7b222a81f080e0356fa31da713fd2",
+  "test_source_sha256": "4cd45bd7b578dcd5a6f953d60217c39afc0b22b621e63c168afa2577a07bf79f",
+  "all_original_input_and_tool_bytes_unchanged": true,
+  "scope": "Independent decoder controls for exact control-fixture binary privacy profiles; changed bytes are authenticated to exercise SDNA structural and fixed field-buffer gates. No geometry/Blender engine or model acceptance."
+}

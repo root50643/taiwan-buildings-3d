@@ -1,0 +1,99 @@
+{
+  "schema": "aeust-exact-source-copy-plan-v1",
+  "ready_for_exact_four_resolution": true,
+  "model_go": false,
+  "adapter_source": {
+    "source_relative_path": "independent/public-preparation/source-copy-adapter-v1/source_copy_duplicate_adapter.py",
+    "bytes": 43962,
+    "sha256": "76aa6c42900004cf367fc616df12cbf8c667fb2c848fbbe546454f7e8ccc6e31"
+  },
+  "adapter_test_source": {
+    "source_relative_path": "independent/public-preparation/source-copy-adapter-v1/test_source_copy_duplicate_adapter.py",
+    "bytes": 51278,
+    "sha256": "ba50d20a2a499d826aa7042f9a975f8051f8f166fd1e552026933cbb7a090bd6"
+  },
+  "adapter_controls": {
+    "normal": {
+      "source_relative_path": "independent/source-copy-controls-normal-v15/results.json",
+      "bytes": 43363,
+      "sha256": "6500c375b9a339f4e2eb2d6733dbca542f95ec03ffe608c492c0783e412eb7e6"
+    },
+    "optimized": {
+      "source_relative_path": "independent/source-copy-controls-optimized-v15/results.json",
+      "bytes": 43363,
+      "sha256": "99a30733e6b70f1f71af33958c6eec84639e0faa2442b0b3ec0dece160927a54"
+    }
+  },
+  "anchor_sources": {
+    "graph": {
+      "source_relative_path": "independent/public-preparation/source-copy-adapter-v1/handoff-dense-duplicate-static-binding.json",
+      "bytes": 14984,
+      "sha256": "2b5d1957abb5c4113f1de58fd8ef4001518533c651f732da1e956003c8fd3f79"
+    },
+    "generator": {
+      "source_relative_path": "independent/archive-preparation/generate_final_inventory.py",
+      "bytes": 56044,
+      "sha256": "60633de97fbb0e39e565b44e94cc6f8174eb81405eca6ba246ff4fc11695d786"
+    },
+    "producer": {
+      "source_relative_path": "independent/independent-tools/test_handoff_adapter.py",
+      "bytes": 4996,
+      "sha256": "9ca3d6850556a696c1b621396bfe6a367e9aad2bb3b39a34129e282fa6ce1ae5"
+    },
+    "handoff_adapter": {
+      "source_relative_path": "independent/independent-tools/prepare_frozen_handoff.py",
+      "bytes": 5291,
+      "sha256": "a98d528d07f290a2e4e16330784a176964a8ccadaa05e1d52a066364c2ce081e"
+    },
+    "freeze": {
+      "source_relative_path": "author/qa/V15-SCIENTIFIC-HANDOFF-FREEZE.json",
+      "bytes": 794226,
+      "sha256": "a46bf5d5eba7ba570dd0bd4adb832663f43146858751118d619b18f2ceab6224"
+    },
+    "runner_adapter": {
+      "source_relative_path": "independent/final-v15-r1/author-freeze-manifest.json",
+      "bytes": 849103,
+      "sha256": "11794b224ea898237e21a54b387956ba2cfbab26c8161e2da1be467f0474d368"
+    },
+    "scanner": {
+      "source_relative_path": "independent/archive-preparation/package_controls_v2.py",
+      "bytes": 47569,
+      "sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c"
+    },
+    "public_helper": {
+      "source_relative_path": "independent/public-preparation/public_bundle_common_v15.py",
+      "bytes": 67415,
+      "sha256": "75f1604d4f67e87906325c7394d39b96fad98e1c44ca59db862307b4a35b935a"
+    },
+    "base_direct_contract": {
+      "source_relative_path": "independent/public-preparation/PUBLIC-DIRECT-PATH-CONTRACT.json",
+      "bytes": 34299,
+      "sha256": "508bf1f9ae233f221952e45f6e550e44f881849125210a4e8e82ce7ea8a7235d"
+    },
+    "comparison": {
+      "source_relative_path": "independent/final-v15-r1/author-independent-science-comparison.json",
+      "bytes": 12458,
+      "sha256": "8b5debdbec2435a214f8c1da10215f4a165b1ec93442c2885269a8e860ce7aa8"
+    },
+    "control_normal": {
+      "source_relative_path": "independent/handoff-controls-normal-v15/adapter-controls.json",
+      "bytes": 7621,
+      "sha256": "054469b254703ab512506ce2bff3c773f00a649e17844e457c7e2dc7bc8d4d73"
+    },
+    "control_optimized": {
+      "source_relative_path": "independent/handoff-controls-optimized-v15/adapter-controls.json",
+      "bytes": 7621,
+      "sha256": "ed024297f6891dcde6e3ff07ae3e9bf9b6b191c27f7b1b80000652394d4c4e3a"
+    }
+  },
+  "original_plan": {
+    "source_relative_path": "independent/archive-preparation/final-selection-plan-r2.json",
+    "bytes": 81375,
+    "sha256": "e1675cfd3f68b70c501eba78c3a604c26af122c946c2cfd867842cb1a2fcb788"
+  },
+  "original_result": {
+    "source_relative_path": "independent/archive-preparation/final-inventory-r2/final-inventory-generation-result.json",
+    "bytes": 44356,
+    "sha256": "383b00dbbd37c4ba8b32667a5c1efdcf61876c684055494e8f0289603e31e9aa"
+  }
+}

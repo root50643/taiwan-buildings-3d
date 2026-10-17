@@ -1,0 +1,204 @@
+{
+  "passed": true,
+  "optimization_level": 0,
+  "cases": [
+    {
+      "case": "genuine_strict_false_and_complete_exact_evidence",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_rejection_reason": null,
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "missing_stage",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Incomplete or unexpected child stage exit map",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "extra_stage",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Incomplete or unexpected child stage exit map",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "missing_dense_stage",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Incomplete or unexpected child stage exit map",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "standard_exit_boolean",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Unexpected typed child stage exit",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "standard_exit_float",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Unexpected typed child stage exit",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "standard_exit_string",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Unexpected typed child stage exit",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "standard_exit_zero",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Unexpected typed child stage exit",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "standard_exit_unexpected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Unexpected typed child stage exit",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "false_exact_exit",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Unexpected typed child stage exit",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "aggregate_strict_upgraded",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "strict=false must remain false",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "dense_strict_upgraded",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Gate incomplete or unexpected failure",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "incomplete_exact_classification",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "classification incomplete",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "partial_flag_selection",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "classification incomplete",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_exact_flag_count",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "coverage or strict semantics",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "upgraded_exact_strict",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "coverage or strict semantics",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_exact_source_binding",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "input/source binding differs",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "missing_exact_detail_row",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "do not cover original flags",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "duplicate_exact_detail_row",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "do not cover original flags",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "incomplete_exact_detail_row",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Exact row incomplete",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "substituted_original_ray_descriptor",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "not the original recorded event",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "changed_original_flag_reasons",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "not the original recorded event",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "short_exact_first_chord",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Exact first chord is short",
+      "reason_matched": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_first_interval_state",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_rejection_reason": "Exact interval ordering fails",
+      "reason_matched": true,
+      "passed": true
+    }
+  ],
+  "case_count": 24,
+  "source_sha256": "9a067f4d80e68055741e5f9f034881e0f2adb20e6414ace7cbdb9105bb12cdd2",
+  "case_policy_source_sha256": "2b8a0ed405183ab3141a878ea7c9cc3443b7585bcae31797a1ed1c0269e96618",
+  "baseline_stl_sha256": "bcfb73e933ef1f590246cfd05f6480b2a5c0d4d4d9e4e878b25bec965393002b",
+  "baseline_dense_audit_sha256": "4654b874e47dc806dfcf5e7f58b74ebb89d280f32173f5698f07aa3fe4b15959",
+  "scope": "Postflight policy controls only. A genuine completed dense-audit result is cached for these tests. Full final read-only reviews invoke the unchanged actual dense audit; no model geometry is rerun, original file modified, or original strict=false waived."
+}

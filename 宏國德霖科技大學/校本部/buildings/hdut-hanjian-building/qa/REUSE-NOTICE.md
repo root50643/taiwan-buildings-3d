@@ -1,0 +1,3 @@
+Existing verified KMU/TMU general geometry QA tools were copied without changes. No new geometry wrapper and no earlier building evidence or exceptions are reused. Fresh checks bind this original STL. TOOLING-REUSE-BINDING.json records the initial copied identity.
+
+Five render tools have a narrowly documented case adaptation, not an unchanged claim: the two courtyard view names, fixed per-view ORTHO/50mm or PERSP/20mm policy, source camera_specs binding, and projection/lens/missing-view/extra-view negative controls. Original and adapted hashes plus exact diffs are in render-adaptation/ADAPTATION-BINDING.json and adjacent .before/.diff files. The latest Noise TexMapping/ColorMapping and ramp-state comparison remains intact. Geometry checkers are untouched.

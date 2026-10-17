@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "tool_sources_unchanged": true,
+  "both_modes_archive_bitwise_rebuild": true,
+  "sources_sha256": {
+    "render-tools/compare_source_scene.py": "5e5c7e80cc4c6bf7e7a803cb76f5c8337bab73405935e8f5a39b1859a6873996",
+    "render-tools/inspect_and_rerender_blend.py": "30e7af67b97653c9097391890babc494ab4dad5d8356b28639d2b7fcdfc2d88a",
+    "render-tools/make_render_negative_fixtures.py": "5e0487ac270e4509877b828fb59497376bfff7184a54609fea2ef8fbec6aa3a9",
+    "render-tools/png_exact_compare.py": "8534792905d7fb329e40ccc0277690e2c658ae5f5636b3d2dcb53c2e50ba0cdb",
+    "render-tools/run_source_render_verification.py": "127c3762746bd2ade2a5c27090116793bf2c6e2fd7eb8471a6badcd78daf69d0",
+    "render-tools/sanitize_png_previews.py": "530c0d57c996901616af4a191e78873754805aadbedbc1e2e8d28ffba6141052",
+    "render-tools/test_noise_mapping_state.py": "da64f6b7fcbc06a8f099f9f36df9bec60c442703217641a8363a1f182c140103",
+    "render-tools/test_png_exact_compare.py": "3e7ac5287c7407226778075268c5a70d8e862b2eeed4743efcc60b5b6c4c75cc",
+    "tools/archive_verify.py": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+    "tools/build_controls_archive.py": "e4b23d35449c6321abbfea94e85f4d733ce58be65658255e1e5ba5065b33f637",
+    "tools/diagnose_recorded_cpp_rays.py": "f3b9cb43c9bfa35915d8661a122f5dcbffb947e3cdc7492af4d43c23693309d4",
+    "tools/exact_ray_diagnosis.py": "0116a42a06e53723a71bf1a16e6864e71ff3f2b76ca5dbb6aa455fb5bd719d46",
+    "tools/package_controls.py": "a0a4872bb49417917d000fb0ab11c24f2528c3724c61c74008f92275146036a8",
+    "tools/run_control_suite.py": "01ccac672ded6dcb23bd7c0cf77834cb5a13d1fb7844fd5cb1cf04ae310987a4",
+    "tools/run_full_qa.py": "5d7e9d7c0b9a3d6fe33a07491bd9a40425c0cc2ebaa7220cc57cb000501a8794",
+    "tools/test_archive_verify.py": "fc2485a51ed9ed9e055cf8b84900e3e73349c7dad9ee935f94ca0927b09ff887",
+    "tools/test_dense_evidence.py": "0f294122bc12e1ada7fcfbb84c97d100c24b27db4a433116dbf7d9a9eb5b5bc5",
+    "tools/test_fail_closed.py": "643c70543900f3c8ee3e56265b893d3ad3fef1d923f13d254101358d5a118b0c",
+    "tools/validate_dense_evidence.py": "2d940f2ac57d64dc8089c28602d497002d5ae11b7dd57de624bd3a9d2c083fd2",
+    "verification/check_controls.py": "926fb93691ebc3bdc82e04de8557ae13230cb6a3eebc90a2bb189053675ebd07",
+    "verification/check_dense_surface.py": "3e784433d973228203056907aa7ef95ef91a8905e72452d3a8be465e6a5ebb11",
+    "verification/check_intersection_controls.py": "542b296cba809a9b1c421f7a3f786acd11c4271b72af7836fe22a746ec15c867",
+    "verification/check_original_intersections.py": "3698168f95ac9b95f0021d3a41c04bff30dec092028061d8640b038b6cdd37bc",
+    "verification/check_raw_mesh.py": "c0f2c9447e99eca6bd40e3c56cbbaaafe889b32ee3f480ee2526363d88749132",
+    "verification/check_sections.py": "469c0cdf5b6b9fea7e328c81c35654a9cae30133de9e3640150303a5e62389ad",
+    "verification/dense_original.cpp": "258e4f7c94e80845bc94f7f8b9fa0b5be29d792786f3a26cb67e0c2e33d5a687",
+    "verification/qa_common.py": "8e207b9db55d5abe0b0d95b02686c2532e09c49ccc474e00c003cade2407666f",
+    "verification/run_qa.py": "82beceefeb08d6219ac210315bb3fec31ce06636e2792b96e67ca621227074fe"
+  },
+  "fresh_suite_summary_sha256": "9d70d4acd1fdaaba1055d37ee5bb731ebc714ffc64645ff18ee7c407fb51cc8f",
+  "private_archive_sha256": "4196a9ebb019966a6c2bdcf80872285905fe6b240c04a03cf3ea53feca4fad91",
+  "private_archive_members": 1197,
+  "modes": {
+    "normal": {
+      "png_control_passed": true,
+      "noise_mapping_control_count": 32,
+      "noise_mapping_passed": true,
+      "archive_safe_extraction_passed": true,
+      "archive_bitwise_rebuild_passed": true,
+      "batch_manifest_control_count": 34,
+      "batch_manifest_control_passed": true
+    },
+    "optimized": {
+      "png_control_passed": true,
+      "noise_mapping_control_count": 32,
+      "noise_mapping_passed": true,
+      "archive_safe_extraction_passed": true,
+      "archive_bitwise_rebuild_passed": true,
+      "batch_manifest_control_count": 34,
+      "batch_manifest_control_passed": true
+    }
+  },
+  "scope": "Fresh HDUT-task synthetic controls only. All 20 geometry/control sources and the PNG core/Noise serialization sources are unchanged from their completed fresh normal/-O runs. The fifth narrow render-batch adapter now also passes 34 fresh controls in each mode covering all nine view removals and per-view projection/lens mutations, exact camera-field preservation and unchanged PNG visual bytes. Final frozen-scene camera/material mutation controls remain pending. No candidate geometry has been independently executed.",
+  "previous_tool_summary_sha256": "74515725a6c9a1ea1b75ae51ebfff0d408394c4cf07a9b169d6e53c61f7cf78c",
+  "render_batch_adapter_changed": {
+    "old_sha256": "e46ea69d0ff368b6d8c6537f365471a150d7cfee5e0890801ae835806b4a7d04",
+    "new_sha256": "530c0d57c996901616af4a191e78873754805aadbedbc1e2e8d28ffba6141052",
+    "fresh_specific_controls_per_mode": 34
+  }
+}

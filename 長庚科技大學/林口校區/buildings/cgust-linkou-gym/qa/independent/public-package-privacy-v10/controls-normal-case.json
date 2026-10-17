@@ -1,0 +1,184 @@
+{
+  "passed": true,
+  "optimization_level": 0,
+  "cpu_affinity": [
+    0
+  ],
+  "case_count": 18,
+  "cases": [
+    {
+      "name": "current_exact_policy",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null,
+      "expected_error_substring": null,
+      "passed": true
+    },
+    {
+      "name": "retained_and_current_marker_0",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Private path marker in exact CSV complete buffer",
+      "expected_error_substring": "Private path marker",
+      "passed": true
+    },
+    {
+      "name": "retained_and_current_marker_1",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Private path marker in exact CSV complete buffer",
+      "expected_error_substring": "Private path marker",
+      "passed": true
+    },
+    {
+      "name": "retained_and_current_marker_2",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Private path marker in exact CSV complete buffer",
+      "expected_error_substring": "Private path marker",
+      "passed": true
+    },
+    {
+      "name": "retained_and_current_marker_3",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Private path marker in exact CSV complete buffer",
+      "expected_error_substring": "Private path marker",
+      "passed": true
+    },
+    {
+      "name": "old_blend_identity_not_inherited",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact Blend candidate/field profile differs",
+      "expected_error_substring": "Exact Blend candidate/field profile differs",
+      "passed": true
+    },
+    {
+      "name": "old_csv_profile_not_inherited",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact fixed CSV profile differs",
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_changed_csv_compressed_bytes",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact fixed CSV profile differs",
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_changed_csv_compressed_sha256",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact fixed CSV profile differs",
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_changed_csv_decoded_bytes",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact fixed CSV profile differs",
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_changed_csv_decoded_sha256",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact fixed CSV profile differs",
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_changed_csv_csv_data_rows",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact fixed CSV profile differs",
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_float_row_count",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact fixed CSV profile differs",
+      "expected_error_substring": "Exact fixed CSV profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_shifted_sdna_field",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact Blend candidate/field profile differs",
+      "expected_error_substring": "Exact Blend candidate/field profile differs",
+      "passed": true
+    },
+    {
+      "name": "reject_dropped_case_marker",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Original privacy pattern coverage differs",
+      "expected_error_substring": "Original privacy pattern coverage differs",
+      "passed": true
+    },
+    {
+      "name": "reject_expanded_generic_byte_bound",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Unchanged generic MAX_BYTES required",
+      "expected_error_substring": "Unchanged generic MAX_BYTES required",
+      "passed": true
+    },
+    {
+      "name": "reject_foreign_scene_before_projection",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact original CGUST Blend identity differs",
+      "expected_error_substring": "Exact original CGUST Blend identity differs",
+      "passed": true
+    },
+    {
+      "name": "reject_foreign_csv_before_decode",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Compressed CSV size/hash differs before streaming",
+      "expected_error_substring": "Compressed CSV size/hash differs before streaming",
+      "passed": true
+    }
+  ],
+  "source_sha256": "c163b21f4c5b21a439c769d3c62dd28963f5044e516adf10134fa21d599e6d5b",
+  "scanner_source_sha256": "e0abeb905ccfe96a493fa08b5d0c0838f635c706bf5bfe7e6326349c234834ec",
+  "bound_sources": {
+    "package_controls_v2.py": {
+      "bytes": 47569,
+      "sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c"
+    },
+    "exact_privacy_primitives.py": {
+      "bytes": 6761,
+      "sha256": "e9a3ab70bbe3c332ba218b0c93aff1e37bd0f33b20ebd47b524d512d59c9fa34"
+    },
+    "check_cgust_privacy.py": {
+      "bytes": 12106,
+      "sha256": "cbd0664021c9dce9a68d01e2046acff6f8a713b7f487b5cfac5adc86b5e71bea"
+    },
+    "roster_primitives.py": {
+      "bytes": 6313,
+      "sha256": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273"
+    },
+    "restore_scientific_layout.py": {
+      "bytes": 8677,
+      "sha256": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e"
+    },
+    "archive_verify.py": {
+      "bytes": 10831,
+      "sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd"
+    }
+  },
+  "scene_csv_and_historical_archive_read": false,
+  "scope": "Current fixed identity and added-marker controls only; unchanged generic controls are retained by hash. Actual package scan remains required."
+}

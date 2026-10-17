@@ -1,0 +1,66 @@
+PUBLIC DISPLAY PROJECTION, NOT THE EXACT RAW DIFF.
+Private original-prefix literals are marked [REDACTED_PRIVATE_SOURCE_PREFIX].
+Generic detector/synthetic literals in original lines use readable exact-equivalent concatenation.
+Complete original lines, literals and raw diffs are hash-bound in the provenance and AST proof.
+--- private-original/test_result_binding.py
++++ public-variant/test_result_binding.py
+@@ -9,6 +9,8 @@
+ import subprocess
+ import tempfile
+ import check_result_binding as binding
++
++binding.AUTHOR_PREFIX = binding.validate_source_path_prefix('fixture-author/')
+ 
+ 
+ def source_fixture():
+@@ -177,9 +179,9 @@
+         case('reject_metadata_noncanonical_dot_segment', False, lambda: binding.physical_path('author/./regular', roots))
+         case('reject_metadata_backslash', False, lambda: binding.physical_path('author/a\\b', roots))
+         case('reject_physical_path_in_report_text', False, lambda: binding.validate_output_metadata({'note': str(regular)}, roots))
+-        case('reject_unknown_absolute_private_path_in_report', False, lambda: binding.validate_output_metadata({'note': ('/' + 'home/private/secret')}, roots))
++        case('reject_unknown_absolute_private_path_in_report', False, lambda: binding.validate_output_metadata({'note': ('/' + 'home/private/secret')}, roots))
+         case('reject_absolute_report_path_field', False, lambda: binding.validate_output_metadata({'path': '/outside/regular'}, roots))
+-        case('reject_source_binding_prefix_impersonation', False, lambda: binding.source_relative('[REDACTED_PRIVATE_SOURCE_PREFIX]-other/models/v10/model.stl'))
++        case('reject_source_binding_prefix_impersonation', False, lambda: binding.source_relative(binding.AUTHOR_PREFIX.rstrip('/') + '-other/models/v10/model.stl'))
+         case('reject_source_binding_parent_traversal', False, lambda: binding.source_relative(binding.AUTHOR_PREFIX + '../outside'))
+         case('reject_source_binding_absolute_member', False, lambda: binding.source_relative(binding.AUTHOR_PREFIX + '/outside'))
+         inventory = {'schema': 'cgust-author-full-science-inventory-v1', 'version': 'v10', 'stl_sha256': binding.STL,
+@@ -193,12 +195,37 @@
+         def unfinished_cli():
+             output = Path(temp) / 'must-not-exist.json'
+             command = [sys.executable, '-B', *(['-O'] if sys.flags.optimize else []), binding.__file__,
+-                       '--author-root', str(root / 'nonexistent-author'), '--run-root', str(roots['run']), '--out', str(output)]
++                       '--author-root', str(root / 'nonexistent-author'), '--run-root', str(roots['run']), '--out', str(output),
++                       '--source-path-prefix', binding.AUTHOR_PREFIX]
+             result = subprocess.run(command, capture_output=True, text=True)
+             binding.require(result.returncode == 1 and not output.exists(), 'Incomplete-run CLI did not fail closed without evidence')
+             failure = json.loads(result.stderr)
+             binding.require(failure['passed'] is False and failure['error'] == 'Independent run has no completion summary yet', 'Incomplete-run CLI read science before completion gate')
+         case('reject_unfinished_cli_before_reading_any_science', True, unfinished_cli)
++        # Public variant adds prefix validation only; the original 65 cases remain.
++        case('accept_safe_source_prefix', True, lambda: binding.require(binding.validate_source_path_prefix('fixture-author/') == 'fixture-author/', 'Safe prefix altered'))
++        case('accept_nested_safe_source_prefix', True, lambda: binding.require(binding.validate_source_path_prefix('fixture/root/') == 'fixture/root/', 'Nested prefix altered'))
++        case('reject_missing_source_prefix_value', False, lambda: binding.validate_source_path_prefix(None))
++        case('reject_empty_source_prefix_value', False, lambda: binding.validate_source_path_prefix(''))
++        case('reject_source_prefix_missing_trailing_slash', False, lambda: binding.validate_source_path_prefix('fixture-author'))
++        case('reject_source_prefix_absolute', False, lambda: binding.validate_source_path_prefix('/fixture-author/'))
++        case('reject_source_prefix_parent_only', False, lambda: binding.validate_source_path_prefix('../'))
++        case('reject_source_prefix_embedded_parent', False, lambda: binding.validate_source_path_prefix('fixture/../author/'))
++        case('reject_source_prefix_backslash', False, lambda: binding.validate_source_path_prefix('fixture\\author/'))
++        case('reject_source_prefix_windows_drive', False, lambda: binding.validate_source_path_prefix('C:/fixture/'))
++        case('reject_source_prefix_dot_segment', False, lambda: binding.validate_source_path_prefix('fixture/./author/'))
++        case('reject_source_prefix_duplicate_slash', False, lambda: binding.validate_source_path_prefix('fixture//author/'))
++        case('reject_source_prefix_root_only', False, lambda: binding.validate_source_path_prefix('/'))
++        case('reject_source_prefix_boolean', False, lambda: binding.validate_source_path_prefix(True))
++        case('reject_source_prefix_whitespace', False, lambda: binding.validate_source_path_prefix('fixture author/'))
++        def missing_prefix_cli():
++            output = Path(temp) / 'missing-prefix-must-not-exist.json'
++            command = [sys.executable, '-B', *(['-O'] if sys.flags.optimize else []), binding.__file__,
++                       '--author-root', str(root), '--run-root', str(roots['run']), '--out', str(output)]
++            result = subprocess.run(command, capture_output=True, text=True)
++            binding.require(result.returncode == 2 and not output.exists() and '--source-path-prefix' in result.stderr,
++                            'Missing required prefix CLI did not fail before any science')
++        case('reject_missing_required_source_prefix_cli', True, missing_prefix_cli)
+     result = {'passed': True, 'checker_sha256': binding.sha(binding.__file__), 'test_source_sha256': binding.sha(__file__),
+               'checker_path': 'checker/check_result_binding.py', 'test_source_path': 'checker/test_result_binding.py',
+               'optimization_level': sys.flags.optimize, 'cases': results, 'case_count': len(results),

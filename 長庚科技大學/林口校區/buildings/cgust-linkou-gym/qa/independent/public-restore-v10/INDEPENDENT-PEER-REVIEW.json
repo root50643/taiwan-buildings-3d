@@ -1,0 +1,70 @@
+{
+  "schema": "cgust-low-disk-restore-independent-peer-v1",
+  "passed": true,
+  "scope": "Read-only source/AST, exact public candidate identities, actual control records and safety-boundary review. Actual production logical restore remains pending.",
+  "reviewed_final_sources": {
+    "restore_low_disk.py": {
+      "bytes": 16779,
+      "sha256": "df0bbf8cf03d1cb489fc757801cc88ea238f51626d69e8d7d7f42a10e3e1fd0e"
+    },
+    "replay_public_restore.py": {
+      "bytes": 8901,
+      "sha256": "0a39d18f17e888b37dd1459e6b2d148275ac8e7581e8f6507867fcb1120bd87d"
+    },
+    "test_low_disk.py": {
+      "bytes": 10469,
+      "sha256": "020f13196bda3d403c2784fefdadc679728ee2fe675ea9e270183a85114826d2"
+    },
+    "test_final_case_pins.py": {
+      "bytes": 3782,
+      "sha256": "b28b3fe49a598141b0570a97e37181b2e7e6a45ebeedd1abd589f6ee62152384"
+    },
+    "PREPARATION-REPORT.json": {
+      "bytes": 4176,
+      "sha256": "57b4a5361793cb98d340a499b28754fcf4df4087da220116bc38a68b2caece43"
+    },
+    "PUBLIC-FILES.json": {
+      "bytes": 5047,
+      "sha256": "93b05541edd68a61c1b9cd5f4d2a7b71f8686eb92e429b2080f47c9c111bec34"
+    }
+  },
+  "unchanged_prepared_functions": [
+    "disk_checkpoint",
+    "execute",
+    "expected_directories",
+    "hash_fd",
+    "identity",
+    "load_original",
+    "read_source",
+    "require",
+    "snapshot",
+    "split_map",
+    "verified_hardlink",
+    "verify_official_proof",
+    "verify_tree"
+  ],
+  "added_case_validation_function_only": true,
+  "small_controls_per_actual_mode": 25,
+  "final_case_pin_controls_per_actual_mode": 7,
+  "all_four_actual_runtime_records_and_full_case_results_reauthenticated": true,
+  "original_public_safe_tools": {
+    "qa/restore_scientific_layout.py": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e",
+    "qa/roster_primitives.py": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273",
+    "qa/independent-tools/capture_process.py": "f44673ed9c2bc04e21bf907fe19745dab18a25ba59c2241bd227b986710c6244"
+  },
+  "static_checks": {
+    "full_original_map_validated_before_partition": true,
+    "every_canonical_authenticated_before_new_tree": true,
+    "single_exact_history_alias_only": true,
+    "ordinary_regular_fd_relative_nofollow_hardlink": true,
+    "source_inode_and_bytes_ancestry_rechecked": true,
+    "complete_logical_type_fileset_size_hash_rechecked_by_child_and_parent": true,
+    "original_tools_unchanged": true,
+    "128_mib_floor_before_allocation_and_each_phase": true,
+    "only_successfully_verified_derived_trees_removed": true,
+    "private_receipt_dependency_explicit_and_not_required_by_original_public_full_restore": true
+  },
+  "actual_public_restore_performed": false,
+  "publication_go": false,
+  "original_numerical_strict_passed": false
+}

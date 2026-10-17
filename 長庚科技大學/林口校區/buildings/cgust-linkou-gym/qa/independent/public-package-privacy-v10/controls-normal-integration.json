@@ -1,0 +1,205 @@
+{
+  "passed": true,
+  "optimization_level": 0,
+  "case_count": 24,
+  "cases": [
+    {
+      "name": "ordinary_safe_file",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "exact_synthetic_state_masks_only_five_bytes",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "state_wrong_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "State identity differs",
+      "error": "ValueError: State identity differs",
+      "passed": true
+    },
+    {
+      "name": "state_wrong_marker_offset",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "State exact literal/offset differs",
+      "error": "ValueError: State exact literal/offset differs",
+      "passed": true
+    },
+    {
+      "name": "state_wrong_encoded_offset",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "State exact literal/offset differs",
+      "error": "ValueError: State exact literal/offset differs",
+      "passed": true
+    },
+    {
+      "name": "state_wrong_typed_pointer",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "State typed pointer differs",
+      "error": "ValueError: State typed pointer differs",
+      "passed": true
+    },
+    {
+      "name": "state_duplicate_default_elsewhere",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Temporary path outside exact Blender default",
+      "error": "ValueError: Temporary path outside exact Blender default",
+      "passed": true
+    },
+    {
+      "name": "state_other_private_bytes_not_masked",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in public payload: state.json",
+      "passed": true
+    },
+    {
+      "name": "state_other_credential_not_masked",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Credential-shaped content",
+      "error": "ValueError: Credential-shaped content in public payload: state.json",
+      "passed": true
+    },
+    {
+      "name": "same_state_at_unapproved_path",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unreviewed temporary path",
+      "error": "ValueError: Unreviewed temporary path in public payload: other.json",
+      "passed": true
+    },
+    {
+      "name": "state_exception_not_recursive_gzip",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unreviewed temporary path",
+      "error": "ValueError: Unreviewed temporary path in public payload: state.json.gz#decoded",
+      "passed": true
+    },
+    {
+      "name": "state_exception_not_recursive_zip",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unreviewed temporary path",
+      "error": "ValueError: Unreviewed temporary path in public payload: nested.zip#zip/state.json",
+      "passed": true
+    },
+    {
+      "name": "new_cgust_has_no_malformed_fixture_exception",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unapproved malformed compressed payload",
+      "error": "ValueError: Unapproved malformed compressed payload: fixture.xz",
+      "passed": true
+    },
+    {
+      "name": "new_cgust_private_marker_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "ValueError: Private path marker in exact CSV complete buffer",
+      "passed": true
+    },
+    {
+      "name": "new_cgust_other_blend_has_no_default_exception",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Unreviewed temporary path",
+      "error": "ValueError: Unreviewed temporary path in public payload: other.blend",
+      "passed": true
+    },
+    {
+      "name": "historical_domain_rejects_foreign_identity_0",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Historical domain requires the exact frozen archive",
+      "error": "ValueError: Historical domain requires the exact frozen archive",
+      "passed": true
+    },
+    {
+      "name": "historical_domain_rejects_foreign_identity_1",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Historical domain requires the exact frozen archive",
+      "error": "ValueError: Historical domain requires the exact frozen archive",
+      "passed": true
+    },
+    {
+      "name": "historical_domain_rejects_foreign_identity_2",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Historical domain requires the exact frozen archive",
+      "error": "ValueError: Historical domain requires the exact frozen archive",
+      "passed": true
+    },
+    {
+      "name": "frozen_state_table_two_unique_canonical_rows",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "state_table_cannot_be_replaced_by_synthetic_permission",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact state exception table differs",
+      "error": "ValueError: Exact state exception table differs",
+      "passed": true
+    },
+    {
+      "name": "state_table_requires_both_canonical_files",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact state missing/different",
+      "error": "ValueError: Exact state missing/different in canonical map",
+      "passed": true
+    },
+    {
+      "name": "state_table_requires_exact_canonical_hashes",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Exact state missing/different",
+      "error": "ValueError: Exact state missing/different in canonical map",
+      "passed": true
+    },
+    {
+      "name": "all_file_inventory_includes_extra_regular_files",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true
+    },
+    {
+      "name": "all_file_inventory_rejects_links",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Symlink in public inventory",
+      "error": "ValueError: Symlink in public inventory",
+      "passed": true
+    }
+  ],
+  "source_sha256": "493bea6ab0c311ecbd09928e6f8fa4b98cd6c331944e5c40ae49d271b0b41c33",
+  "entry_source_sha256": "e0abeb905ccfe96a493fa08b5d0c0838f635c706bf5bfe7e6326349c234834ec",
+  "small_synthetic_only": true,
+  "historical_archive_or_original_csv_read": false,
+  "model_go": false,
+  "publication_go": false
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "small-controls-replay-preparation-v1",
+  "prepared_not_executed": true,
+  "actual_public_replay_executed": false,
+  "source": {
+    "path": "exercise_new_controls_replay.py",
+    "bytes": 14839,
+    "sha256": "8e95171193b334432ccd2fa1d0493cccc231e43a4a9189ec504629268b51312b"
+  },
+  "base_source_sha256": "f79bc1aec6467e1fdeb78eb30ad801ef68e3ae77e5746fa9ccf7b34aa51267d3",
+  "allowed_exact_adaptation_span_count": 11,
+  "diff": {
+    "path": "replay-adaptation.diff",
+    "bytes": 9268,
+    "sha256": "c3f8979d3456365fae1f58291649e3b6b6ef62e193a1ef446080b3885514d355"
+  },
+  "spans": {
+    "path": "adaptation-spans.json",
+    "bytes": 5020,
+    "sha256": "503a24f1f75341d21e2acb652bc30f8ba6b347ba2c55bc5eb873a9253884774b"
+  },
+  "tests": {
+    "path": "test_replay_adaptation.py",
+    "bytes": 6136,
+    "sha256": "416c93dcf9bc3788b519e8a05cc1f8afb5483f393b22bdce964d770f887cebd6"
+  },
+  "checks": {
+    "normal": {
+      "passed": true,
+      "optimization_level": 0,
+      "case_count": 19,
+      "result": {
+        "path": "adaptation-controls-normal.json",
+        "bytes": 3388,
+        "sha256": "d0f1b242ff39e3cab785e373f4a54529c8791fc01b202f0bf69da24788a07620"
+      }
+    },
+    "optimized": {
+      "passed": true,
+      "optimization_level": 1,
+      "case_count": 19,
+      "result": {
+        "path": "adaptation-controls-optimized.json",
+        "bytes": 3388,
+        "sha256": "400fee479f2a65da2226b0fefcb6d2d67f0001dbf67cd7430b44ec5ee928d67b"
+      }
+    }
+  },
+  "resource_preflight": {
+    "path": "RESOURCE-PREFLIGHT.json",
+    "bytes": 970,
+    "sha256": "cf6f8f72f77fb076a7be057daa586dd01aa69b8ba1422dbdfa2b06711fac5c95"
+  },
+  "original_tools_modified": false,
+  "original_generic_archive_suites_rerun": false,
+  "historical_archive_opened": false,
+  "large_scientific_restore_created": false,
+  "publication_go": false,
+  "model_go": false,
+  "scope": "Only explicit full-map original builder provenance replaces the prior selected-member builder assumption. All original archive validation, complete member authentication and bitwise rebuild checks remain unchanged."
+}

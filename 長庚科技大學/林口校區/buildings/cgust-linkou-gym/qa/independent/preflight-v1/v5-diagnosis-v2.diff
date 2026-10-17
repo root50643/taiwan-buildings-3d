@@ -1,0 +1,11 @@
+--- diagnose_v5_recorded_failures.py
++++ diagnose_v5_recorded_failures_v2.py
+@@ -24,7 +24,7 @@
+  for row in short[0]:
+   x,y,z=row['surface_point_mm']
+   if x < -65 and y > 155 and z < 30:k='B_S_braces_cut_by_window'
+-  elif -18.21 < x < -18.19 and 155 < y < 173 and 33.49 < z < 33.61:k='narrow_room_S_windows_cut_roof_eave'
++  elif -18.71 < x < -18.19 and 155 < y < 173 and 33.49 < z < 33.61:k='narrow_room_S_windows_cut_roof_eave'
+   elif 173 < y < 175 and z > 30:k='B_secondary_arch_window_bottom_and_corner_intersections'
+   else:raise RuntimeError('Unclassified original short record')
+   groups[k].append(row)

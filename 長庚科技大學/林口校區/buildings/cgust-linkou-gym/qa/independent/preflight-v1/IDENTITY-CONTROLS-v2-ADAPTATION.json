@@ -1,0 +1,37 @@
+{
+  "scope": "Additional synthetic identity controls only; existing sources, 22-case controls and all model evidence remain unchanged. No model GO.",
+  "original_test": {
+    "path": "cgust-linkou-gym-independent-qa/tools/test_derive_stl_case.py",
+    "bytes": 5705,
+    "sha256": "048f51502982021f9faea980c593346f3600e00c1c573f14492bdbc9b661aa93"
+  },
+  "derive_unchanged": {
+    "path": "cgust-linkou-gym-independent-qa/tools/derive_stl_case.py",
+    "bytes": 7750,
+    "sha256": "e56007862f5576c2fb1478c8cdf7c75178f2c32237ac9ec9a86871606f3bbcd3"
+  },
+  "original_launcher_unchanged": {
+    "path": "cgust-linkou-gym-independent-qa/preflight-v1/run_identity_controls.sh",
+    "bytes": 1101,
+    "sha256": "5eab2543dcb0098f6a35397a16a9b27d04ea92ab8134cc6f6d8895cff1c44375"
+  },
+  "adapted_test": {
+    "path": "cgust-linkou-gym-independent-qa/tools/test_derive_stl_case_v2.py",
+    "bytes": 10702,
+    "sha256": "81c147da5713cf428ee4fd91fef91b624e9d47d7a82c1abbf78ea47f764e7298"
+  },
+  "diff": {
+    "path": "cgust-linkou-gym-independent-qa/preflight-v1/identity-controls-v2.diff",
+    "bytes": 9395,
+    "sha256": "321ee1bf7216dc80d3ebadbdc28d989b8bb019396dbfc2bb1ff218044e6f6650"
+  },
+  "retained_original_case_count": 22,
+  "added_case_count": 2,
+  "expected_case_count_per_mode": 24,
+  "changes": [
+    "Retain all 22 original cases and add existing-output non-overwrite plus over-limit sparse-file rejection",
+    "Require exact Python exit and exact final exception classification for all 15 negatives",
+    "Verify all nine positive histogram, bounds/extents, input/source hash, completion and CPU bindings",
+    "Preserve test and derive source bytes before and after; no geometry/model computation"
+  ]
+}

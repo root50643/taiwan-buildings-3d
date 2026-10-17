@@ -1,0 +1,45 @@
+{
+  "scope": "Single argv insertion sets Python bytecode policy before original Blender tools execute; original source/tool bytes, geometry/source-state predicates and rerender opt-in preserved. Author uses inspect-only.",
+  "original": {
+    "path": "author/qa/render-tools/run_source_render_verification.py",
+    "bytes": 7322,
+    "sha256": "127c3762746bd2ade2a5c27090116793bf2c6e2fd7eb8471a6badcd78daf69d0"
+  },
+  "adapted": {
+    "path": "author/qa/render-tools-v10-cacheguard/run_source_render_verification.py",
+    "bytes": 7383,
+    "sha256": "de4565114c476031a899ad03db1c53af15c773490836f391b5a7a36e3b15cf3a"
+  },
+  "diff": {
+    "path": "author/qa/render-tools-v10-cacheguard/cacheguard-command.diff",
+    "bytes": 1561,
+    "sha256": "630f19f7ec5a763b57161284c44575a8409881b1e955cd7cf55d2c2608e27764"
+  },
+  "unchanged_tools": [
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/compare_source_scene.py",
+      "bytes": 12209,
+      "sha256": "5e5c7e80cc4c6bf7e7a803cb76f5c8337bab73405935e8f5a39b1859a6873996"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/inspect_and_rerender_blend.py",
+      "bytes": 12353,
+      "sha256": "be58dc6a5fd4090c71268225d943c30529b5bfae7f631ff296c4aeb853a69dcb"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/png_exact_compare.py",
+      "bytes": 12926,
+      "sha256": "8534792905d7fb329e40ccc0277690e2c658ae5f5636b3d2dcb53c2e50ba0cdb"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/sanitize_png_previews.py",
+      "bytes": 3196,
+      "sha256": "baa71c396101d4c6fa53b393086249486afa50b4d731382dd6772843537a957e"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/test_png_exact_compare.py",
+      "bytes": 3551,
+      "sha256": "3e7ac5287c7407226778075268c5a70d8e862b2eeed4743efcc60b5b6c4c75cc"
+    }
+  ]
+}

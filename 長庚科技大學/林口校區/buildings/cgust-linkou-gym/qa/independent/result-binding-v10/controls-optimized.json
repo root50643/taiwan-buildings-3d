@@ -1,0 +1,402 @@
+{
+  "passed": true,
+  "checker_sha256": "a646f5e5b9e057118ba66b56d2f1829c287a91f639aa9b64ba7f87875034c0a0",
+  "test_source_sha256": "803240d71e8d382bd41f29caab04edf3814e374358a608e74242d86404895d69",
+  "checker_path": "checker/check_result_binding.py",
+  "test_source_path": "checker/test_result_binding.py",
+  "optimization_level": 1,
+  "cases": [
+    {
+      "name": "four_modes_science_equal_only_elapsed_and_mode_differ",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_changed_exact_contact_count",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_unknown_scientific_field_change",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_boolean_replaced_with_integer",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_added_scientific_field",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Scientific content differs: intersections.json"
+    },
+    {
+      "name": "reject_negative_elapsed",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid execution elapsed_seconds"
+    },
+    {
+      "name": "reject_string_elapsed",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid execution elapsed_seconds"
+    },
+    {
+      "name": "reject_wrong_mode_even_when_all_science_equal",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Incorrect intersection interpreter mode"
+    },
+    {
+      "name": "accept_own_compared_intersection_reference",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_forged_intersection_reference",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact summary not bound to its own compared intersection report"
+    },
+    {
+      "name": "reject_missing_explicit_elapsed",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "'elapsed_seconds'"
+    },
+    {
+      "name": "reject_wrong_summary_mode",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Incorrect QA interpreter mode"
+    },
+    {
+      "name": "reject_duplicate_json_key",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Duplicate JSON key: strict_passed"
+    },
+    {
+      "name": "reject_nonfinite_json",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Nonfinite JSON constant: NaN"
+    },
+    {
+      "name": "reject_duplicate_inventory_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Duplicate inventory member: a"
+    },
+    {
+      "name": "reject_parent_traversal",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid member path"
+    },
+    {
+      "name": "reject_absolute_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid member path"
+    },
+    {
+      "name": "reject_symlink_evidence",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Missing/nonregular evidence: author/link"
+    },
+    {
+      "name": "reject_same_size_changed_file",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Bytes/hash mismatch: author/regular"
+    },
+    {
+      "name": "accept_complete_csv_compressed_decoded_hash_bytes_rows",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_decoded_hash_change",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "CSV decoded hash/bytes differ"
+    },
+    {
+      "name": "reject_decoded_byte_count_change",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "CSV decoded hash/bytes differ"
+    },
+    {
+      "name": "reject_skipped_csv_row",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "CSV whole-file row count differs"
+    },
+    {
+      "name": "reject_truncated_xz_even_with_updated_compressed_hash",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "name": "accept_actual_cgust_three_document_schema",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_inherited_aeust_go_schema",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "'document'"
+    },
+    {
+      "name": "reject_manufacturing_go_substitution",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Missing appearance-only approval"
+    },
+    {
+      "name": "reject_missing_view",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source nine-view coverage differs"
+    },
+    {
+      "name": "reject_extra_view",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source nine-view coverage differs"
+    },
+    {
+      "name": "reject_source_wrong_stl",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Wrong CGUST source STL/triangles"
+    },
+    {
+      "name": "reject_privacy_scope_promotion",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source approval scope promoted: general_privacy_approval_in_this_document"
+    },
+    {
+      "name": "accept_exact_replay_audit_schema",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_missing_replay_required_check",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay required checks missing/failed"
+    },
+    {
+      "name": "reject_replay_false_check_despite_passed_true",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay required checks missing/failed"
+    },
+    {
+      "name": "reject_inspection_instead_of_replay",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Independent nine-view replay failed/incomplete"
+    },
+    {
+      "name": "reject_eight_replay_views",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay nine-view coverage differs"
+    },
+    {
+      "name": "reject_duplicate_replay_view",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay nine-view coverage differs"
+    },
+    {
+      "name": "reject_scene_triangle_count_substitution",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Replay original triangle identity differs"
+    },
+    {
+      "name": "reject_inherited_wfu_certificate_schema",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "'document'"
+    },
+    {
+      "name": "reject_missing_source_bound_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source binding must retain all 36 original members"
+    },
+    {
+      "name": "reject_duplicate_source_bound_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Duplicate inventory member: author/previews/v10/courtyard-arcade.png"
+    },
+    {
+      "name": "reject_publication_scope_promotion",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Source approval scope promoted: publication_approval_in_this_document"
+    },
+    {
+      "name": "reject_source_approval_false",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Final source approval incomplete"
+    },
+    {
+      "name": "reject_certificate_approval_pixel_hash_mismatch",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Certificate/approval PNG identity differs: front"
+    },
+    {
+      "name": "accept_stable_logical_member_roundtrip",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "accept_logical_report_metadata",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_metadata_outside_declared_roots",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Metadata path outside or ambiguous declared roots"
+    },
+    {
+      "name": "reject_metadata_common_prefix_impersonation",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Metadata path outside or ambiguous declared roots"
+    },
+    {
+      "name": "reject_absolute_metadata_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Unknown logical metadata root"
+    },
+    {
+      "name": "reject_unknown_metadata_root",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Unknown logical metadata root"
+    },
+    {
+      "name": "reject_metadata_parent_traversal",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid member path"
+    },
+    {
+      "name": "reject_metadata_noncanonical_dot_segment",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid member path"
+    },
+    {
+      "name": "reject_metadata_backslash",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid logical metadata path"
+    },
+    {
+      "name": "reject_physical_path_in_report_text",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Private physical root in report metadata"
+    },
+    {
+      "name": "reject_unknown_absolute_private_path_in_report",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Private absolute path in report metadata"
+    },
+    {
+      "name": "reject_absolute_report_path_field",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Unknown logical metadata root"
+    },
+    {
+      "name": "reject_source_binding_prefix_impersonation",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Wrong source-binding author prefix"
+    },
+    {
+      "name": "reject_source_binding_parent_traversal",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid source-binding member path"
+    },
+    {
+      "name": "reject_source_binding_absolute_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Invalid source-binding member path"
+    },
+    {
+      "name": "accept_actual_cgust_inventory_without_restore_map",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    },
+    {
+      "name": "reject_inherited_wfu_inventory_schema",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Original inventory schema/identity differs"
+    },
+    {
+      "name": "reject_invented_inventory_restore_map",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Unexpected restore map in original CGUST inventory"
+    },
+    {
+      "name": "reject_inventory_missing_member",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Original inventory count/bytes differ"
+    },
+    {
+      "name": "reject_inventory_logical_byte_mismatch",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Original inventory count/bytes differ"
+    },
+    {
+      "name": "reject_unfinished_cli_before_reading_any_science",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null
+    }
+  ],
+  "case_count": 65,
+  "scope": "Small unit-level acceptance and negative controls only. No full science, PNG replay or Blender execution. Full candidate binding still requires completed independent run."
+}

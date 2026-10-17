@@ -1,0 +1,151 @@
+--- canonical-table/scan_public_package.py
++++ semantic-labels/scan_public_package.py
+@@ -123,6 +123,106 @@
+     return bytes(result)
+ 
+ 
++SEMANTIC_LABEL_PROFILES = {'qa/independent/result-binding-public-v10/test_result_binding.py': {'kind': 'relative_synthetic_python', 'bytes': 20439, 'sha256': '1d063514521b6b252d3888f290501672872d5da9640b1c10dbedbf9e33136b74', 'line': 207, 'constant_columns': [115, 135], 'spans': [{'offset': 17333, 'bytes': 6, 'rule_index': 1}, {'offset': 17353, 'bytes': 6, 'rule_index': 1}]}, 'qa/independent/result-binding-public-v10/test_result_binding.py.public-redacted.diff': {'kind': 'relative_synthetic_diff', 'bytes': 6248, 'sha256': '6f20068e2ab79ae7cf4c21989bd44d84ba980280c1a8134f53663247f8b73c67', 'line': 42, 'source_line_sha256': 'b513d740b68dbbc7ff8b054a3645e46e57e0be6bf5c7dd0cdfb030e236b3c231', 'spans': [{'offset': 3630, 'bytes': 6, 'rule_index': 1}, {'offset': 3650, 'bytes': 6, 'rule_index': 1}]}, 'qa/independent/scene-privacy-preparation/v10-sdna-observation.json': {'kind': 'empty_detection_rule_labels', 'bytes': 5004, 'sha256': '3057023ea200ce76fc988fef524aeba03c8d97b5239357ce3f90f1c048d92de2', 'observation_indices': [1, 2, 6, 8], 'spans': [{'offset': 3681, 'bytes': 6, 'rule_index': 1}, {'offset': 3745, 'bytes': 13, 'rule_index': 2}, {'offset': 4085, 'bytes': 7, 'rule_index': 4}, {'offset': 4219, 'bytes': 13, 'rule_index': 3}]}}
++SEMANTIC_SOURCE_PATH = 'qa/independent/result-binding-public-v10/test_result_binding.py'
++
++
++def semantic_label_projection(data, context, top, primitive, generic, source_line=None):
++    """Eight authenticated policy/relative-fixture labels; no data/path exemption.
++
++    Original bytes are retained. This is only the input to the existing complete
++    pattern scan. Nested content and unlisted paths never inherit this scope.
++    """
++    if top is not True or context not in SEMANTIC_LABEL_PROFILES:
++        return data
++    import ast
++    from pathlib import PurePosixPath
++    spec = SEMANTIC_LABEL_PROFILES[context]
++    require(type(data) is bytes and type(spec['bytes']) is int and len(data) == spec['bytes']
++            and digest(data) == spec['sha256'], 'Semantic-label exact file identity differs')
++    spans = spec['spans']
++    require(type(spans) is list and len(spans) in (2, 4), 'Semantic-label span count differs')
++    for span in spans:
++        require(type(span) is dict and all(type(span[k]) is int for k in ('offset','bytes','rule_index')),
++                'Semantic-label span metadata type differs')
++        index = span['rule_index']
++        require(0 <= index < len(primitive.ADDITIONAL_PRIVATE_MARKERS), 'Semantic-label policy rule differs')
++        marker = primitive.ADDITIONAL_PRIVATE_MARKERS[index]
++        offset = span['offset']
++        require(type(marker) is bytes and span['bytes'] == len(marker) and 0 <= offset
++                and offset + len(marker) <= len(data) and data[offset:offset+len(marker)] == marker,
++                'Semantic-label exact marker/range differs')
++    kind = spec['kind']
++    if kind == 'relative_synthetic_python':
++        require(len(spans) == 2 and type(spec['line']) is int and spec['line'] == 207
++                and spec['constant_columns'] == [115,135]
++                and all(type(x) is int for x in spec['constant_columns']), 'Synthetic source position differs')
++        tree = ast.parse(data)
++        nodes = [n for n in ast.walk(tree) if isinstance(n, ast.Constant)
++                 and n.lineno == spec['line'] and n.col_offset in spec['constant_columns']]
++        require(len(nodes) == 2 and all(type(n.value) is str for n in nodes), 'Synthetic fixture AST type differs')
++        nodes.sort(key=lambda n:n.col_offset)
++        value = nodes[0].value
++        path = PurePosixPath(value)
++        require(nodes[1].value == value and not path.is_absolute() and path.parts == ('fixture','root')
++                and value == path.as_posix() + '/', 'Synthetic fixture must be exact normalized relative prefix')
++        calls = [n for n in ast.walk(tree) if isinstance(n, ast.Call) and isinstance(n.func, ast.Name)
++                 and n.func.id == 'case' and n.lineno == spec['line']]
++        expected = "case('accept_nested_safe_source_prefix', True, lambda: binding.require(binding.validate_source_path_prefix(" + repr(value) + ") == " + repr(value) + ", 'Nested prefix altered'))"
++        require(len(calls) == 1 and ast.dump(calls[0],include_attributes=False)
++                == ast.dump(ast.parse(expected,mode='eval').body,include_attributes=False), 'Synthetic fixture AST context differs')
++        lines = data.splitlines(keepends=True)
++        base = sum(len(x) for x in lines[:spec['line']-1])
++        for node,span in zip(nodes,spans):
++            marker = primitive.ADDITIONAL_PRIVATE_MARKERS[span['rule_index']]
++            literal = ast.get_source_segment(data.decode('utf8'),node).encode()
++            require(literal == repr(value).encode() and node.end_lineno == node.lineno
++                    and span['offset'] == base + node.col_offset + literal.index(marker)
++                    and data.count(marker) == 2, 'Synthetic fixture exact AST span differs')
++    elif kind == 'relative_synthetic_diff':
++        require(type(source_line) is bytes and digest(source_line) == spec['source_line_sha256'],
++                'Diff requires previously authenticated original source line')
++        require(type(spec['line']) is int and spec['line'] == 42 and len(spans) == 2,
++                'Diff source position differs')
++        lines = data.splitlines(keepends=True)
++        exact_line = lines[spec['line']-1].rstrip(b'\r\n')
++        require(exact_line == b'+' + source_line, 'Diff added line differs from authenticated source')
++        base = sum(len(x) for x in lines[:spec['line']-1])
++        marker = primitive.ADDITIONAL_PRIVATE_MARKERS[1]
++        positions = [i for i in range(len(exact_line)) if exact_line.startswith(marker,i)]
++        require(len(positions) == 2 and [base+i for i in positions] == [s['offset'] for s in spans]
++                and data.count(marker) == 2, 'Diff exact source-linked spans differ')
++    elif kind == 'empty_detection_rule_labels':
++        value = generic.load_json_bytes(data)
++        require(type(value) is dict and type(value.get('limited_raw_path_marker_observations')) is list
++                and spec['observation_indices'] == [1,2,6,8] and len(spans) == 4,
++                'Semantic observation pointer scope differs')
++        items = value['limited_raw_path_marker_observations']
++        for index,span in zip(spec['observation_indices'],spans):
++            require(type(index) is int and index < len(items) and type(items[index]) is dict,
++                    'Semantic observation element type differs')
++            item = items[index];marker = primitive.ADDITIONAL_PRIVATE_MARKERS[span['rule_index']]
++            require(type(item.get('marker_utf8')) is str and item['marker_utf8'].encode() == marker
++                    and type(item.get('offsets')) is list and item['offsets'] == [],
++                    'Semantic rule label must have exact string and empty observation offsets')
++            literal = json.dumps(item['marker_utf8'],ensure_ascii=False).encode()
++            offset = span['offset']
++            require(data[offset-1:offset+len(marker)+1] == literal and data.count(literal) == 1
++                    and data.count(marker) == 1, 'Semantic JSON exact encoded string span differs')
++    else:
++        raise ValueError('Unknown semantic-label class')
++    projected = bytearray(data)
++    cursor = 0
++    for span in sorted(spans,key=lambda x:x['offset']):
++        offset=span['offset'];size=span['bytes']
++        require(offset >= cursor, 'Overlapping semantic-label spans')
++        projected[offset:offset+size] = b'_'*size
++        cursor=offset+size
++    # Construction changes exactly the verified spans, never whole strings,
++    # whole lines, whole source files, JSON objects or outside-path bytes.
++    return bytes(projected)
++
++
+ def current_scanner(generic, primitive, checker, policy, selection, states):
+     allowances = [dict(source_relative_path=name, kind='json_blender_render_default',
+                        json_pointer='/render/filepath', bytes=row['bytes'], sha256=row['sha256'])
+@@ -140,11 +240,19 @@
+             if top and context in states:
+                 data = state_projection(data, states[context], generic)
+                 self.state_seen.add(context)
++            original_semantic_data = data
++            data = semantic_label_projection(data, context, top, primitive, generic, self.semantic_source_line)
++            if top is True and context in SEMANTIC_LABEL_PROFILES:
++                if context == SEMANTIC_SOURCE_PATH:
++                    self.semantic_source_line = original_semantic_data.splitlines()[206]
++                self.semantic_seen.add(context)
+             primitive.scan_complete_plain_buffer(policy, data)
+             return data
+     scanner = Current(sources, selection, [], allowances, [])
+     scanner.blend_seen = False
+     scanner.state_seen = set()
++    scanner.semantic_source_line = None
++    scanner.semantic_seen = set()
+     return scanner
+ 
+ 
+@@ -285,7 +393,8 @@
+             scanner.scan({'source_relative_path':name},data)
+     scanner.complete()
+     require(scanner.blend_seen and scanner.state_seen == set(states) and csv_report is not None
+-            and history_report is not None and set(tracked) == names, 'Whole-package privacy scope incomplete')
++            and history_report is not None and set(tracked) == names
++            and scanner.semantic_seen == set(SEMANTIC_LABEL_PROFILES), 'Whole-package privacy scope incomplete')
+     require(inventory(root) == names, 'Public inventory changed during scan')
+     for name,row in sorted(tracked.items()):
+         read_file(name,row)
+@@ -298,6 +407,11 @@
+               'files':tracked,'all_public_files_and_names_scanned':True,'all_public_bytes_unchanged':True,
+               'current_cgust':{'blend_effective_bytes':16,'exact_json_files':2,'masked_bytes_per_json':5,
+                              'no_malformed_archive_exceptions':True,'csv':csv_report},
++              'exact_semantic_label_scan_only':{'files':3,'spans':8,'effective_bytes':63,
++                  'classes':['relative_synthetic_python','relative_synthetic_diff','empty_detection_rule_labels'],
++                  'profiles':SEMANTIC_LABEL_PROFILES,
++                  'classified_non_sensitive_false_positives':True,'data_transmission_exception':False,
++                  'original_public_bytes_unchanged':True,'top_level_only':True},
+               'inactive_historical_controls':history_report,'source_bindings':TOOLS,
+               'model_go':False,'publication_go':False,
+               'scope':'Exact byte-pattern privacy scan only. Historical frozen exceptions remain confined to the original archive; no zero-exception or universal-secret-detection claim. Source/science/full-scene/publication gates remain separate.'}

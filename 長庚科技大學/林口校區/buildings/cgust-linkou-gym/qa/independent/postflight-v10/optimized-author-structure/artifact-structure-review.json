@@ -1,0 +1,192 @@
+{
+  "passed": true,
+  "optimization_level": 1,
+  "cpu_affinity": [
+    0
+  ],
+  "helper_sha256": "3ec28d504422014bf847eb25ec2f65aab34715e43ce8ebf3e3300752bc8db6a7",
+  "reviewer_sha256": "15c5112f7f59081a99fbcc88a99fc0ec2aa197fc0ec7066d0570a5f50d5db312",
+  "input_path_bindings": {
+    "stl": "stl",
+    "qa-root": "qa-root",
+    "full-root": "full-root",
+    "exact-normal": "exact-normal",
+    "exact-optimized": "exact-optimized"
+  },
+  "postflight_overlay_inputs": {
+    "artifact_structure.py": {
+      "bytes": 30529,
+      "sha256": "3ec28d504422014bf847eb25ec2f65aab34715e43ce8ebf3e3300752bc8db6a7"
+    }
+  },
+  "producer_exit_review_performed": false,
+  "independent_freeze_review_performed": false,
+  "source_render_review_performed": false,
+  "full_csv_decoded_by_this_entry": false,
+  "original_numerical_strict_passed": false,
+  "model_go": false,
+  "scope": "Additional read-only all-record structural/math consistency review. Explicit full/exact inputs and original hashes are bound; public path metadata uses stable logical roots and the actual CLI is retained in private capture. Complete producer-exit, raw-CSV, source/render and independent-freeze reviews remain separate requirements; no model acceptance.",
+  "all_inputs_unchanged": true,
+  "modes": {
+    "normal": {
+      "sections": {
+        "sampled_layers": 795,
+        "original_polygon_count": 3950,
+        "maximum_individual_polygon_loss_fraction": 0.009582718267157835,
+        "per_offset_layer_counts": [
+          265,
+          265,
+          265
+        ]
+      },
+      "exact_recorded_rays": {
+        "flag_count": 10,
+        "ray_contact_count": 59,
+        "interval_count": 60,
+        "boundary_interval_count": 22,
+        "minimum_first_chord_squared_mm2_exact": "43980381225/17179869184"
+      },
+      "exact_contacts": {
+        "candidate_pairs_checked": 59258,
+        "actual_intersection_pair_count": 37510,
+        "contact_reason_counts": {
+          "allowed_shared_edge": 7764,
+          "allowed_shared_vertex": 29746
+        },
+        "disjoint_candidate_count": 21748,
+        "candidate_sequence_sha256": "70016c310a5e37b8cb8810041b0203cdb1428dcde63ff815d45eee6a9e7adee6"
+      }
+    },
+    "optimized": {
+      "sections": {
+        "sampled_layers": 795,
+        "original_polygon_count": 3950,
+        "maximum_individual_polygon_loss_fraction": 0.009582718267157835,
+        "per_offset_layer_counts": [
+          265,
+          265,
+          265
+        ]
+      },
+      "exact_recorded_rays": {
+        "flag_count": 10,
+        "ray_contact_count": 59,
+        "interval_count": 60,
+        "boundary_interval_count": 22,
+        "minimum_first_chord_squared_mm2_exact": "43980381225/17179869184"
+      },
+      "exact_contacts": {
+        "candidate_pairs_checked": 59258,
+        "actual_intersection_pair_count": 37510,
+        "contact_reason_counts": {
+          "allowed_shared_edge": 7764,
+          "allowed_shared_vertex": 29746
+        },
+        "disjoint_candidate_count": 21748,
+        "candidate_sequence_sha256": "70016c310a5e37b8cb8810041b0203cdb1428dcde63ff815d45eee6a9e7adee6"
+      }
+    }
+  },
+  "evidence_inventory": {
+    "stl": {
+      "bytes": 258884,
+      "sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978"
+    },
+    "qa-root/tools/exact_ray_diagnosis.py": {
+      "bytes": 11660,
+      "sha256": "0116a42a06e53723a71bf1a16e6864e71ff3f2b76ca5dbb6aa455fb5bd719d46"
+    },
+    "qa-root/tools/diagnose_recorded_cpp_rays.py": {
+      "bytes": 12619,
+      "sha256": "f3b9cb43c9bfa35915d8661a122f5dcbffb947e3cdc7492af4d43c23693309d4"
+    },
+    "full-root/normal/standard/sections/section-check.json": {
+      "bytes": 2838,
+      "sha256": "0f0a2d27c45097bd28e7413e61c2c019b7ce2af272af4adefe58ab31146a159c"
+    },
+    "full-root/normal/standard/sections/section-details.json.gz": {
+      "bytes": 184774,
+      "sha256": "ebf7bc5d8c7bbe8a32f0c99b507ed6f000e9ae1917796487e50a9b68382496ad"
+    },
+    "full-root/normal/standard/sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "full-root/normal/standard/dense/dense-check.json": {
+      "bytes": 3702,
+      "sha256": "1b1d4aa312ec18be0cb04a06aa517ddde775f9a8e3410124087dbf8b1c5a61cb"
+    },
+    "full-root/normal/standard/dense/dense-flagged-samples.json.gz": {
+      "bytes": 1903,
+      "sha256": "1e85961814e804cfb282dad52fc58f73f24dbadaf15f679d92f5520853928574"
+    },
+    "full-root/normal/standard/raw/raw-mesh-check.json": {
+      "bytes": 2592,
+      "sha256": "c7f9a71fd4e04631786839a9fcf9db5b931859a82b2aa59acd9c72400cf0a256"
+    },
+    "full-root/normal/intersections.json": {
+      "bytes": 3079,
+      "sha256": "8c1ce6fb46ab84e26a9d73278af1a3bc389ff94743794335a9f7f92b01ee3db1"
+    },
+    "exact-normal/exact-recorded-ray-summary.json": {
+      "bytes": 1806,
+      "sha256": "b920a4361c3c6324b8f6eb47ce9e59ca74f1d0d7fe382f7fec9140b61c363515"
+    },
+    "full-root/normal/standard/dense/dense-original.csv.xz": {
+      "bytes": 2644728,
+      "sha256": "99ccbee592a29e80c02e0565212a2cbff03fc8feb1b4300cc6ed372b53753359"
+    },
+    "exact-normal/exact-recorded-ray-details.jsonl.gz": {
+      "bytes": 5255,
+      "sha256": "3e8cad5cd2c2319b223b7b1b7436b028f220652901232d73cddb14e172ef27f5"
+    },
+    "full-root/normal/intersections.json.contacts.jsonl.gz": {
+      "bytes": 321086,
+      "sha256": "e5b0c49c7736c87f355bb1c18fb1fe8aa098c051ef9149d572b2bd0d42a9d02a"
+    },
+    "full-root/optimized/standard/sections/section-check.json": {
+      "bytes": 2838,
+      "sha256": "0f0a2d27c45097bd28e7413e61c2c019b7ce2af272af4adefe58ab31146a159c"
+    },
+    "full-root/optimized/standard/sections/section-details.json.gz": {
+      "bytes": 184774,
+      "sha256": "ebf7bc5d8c7bbe8a32f0c99b507ed6f000e9ae1917796487e50a9b68382496ad"
+    },
+    "full-root/optimized/standard/sections/section-failures.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "full-root/optimized/standard/dense/dense-check.json": {
+      "bytes": 3702,
+      "sha256": "1b1d4aa312ec18be0cb04a06aa517ddde775f9a8e3410124087dbf8b1c5a61cb"
+    },
+    "full-root/optimized/standard/dense/dense-flagged-samples.json.gz": {
+      "bytes": 1903,
+      "sha256": "1e85961814e804cfb282dad52fc58f73f24dbadaf15f679d92f5520853928574"
+    },
+    "full-root/optimized/standard/raw/raw-mesh-check.json": {
+      "bytes": 2592,
+      "sha256": "c7f9a71fd4e04631786839a9fcf9db5b931859a82b2aa59acd9c72400cf0a256"
+    },
+    "full-root/optimized/intersections.json": {
+      "bytes": 3078,
+      "sha256": "35e3f5c29810c16d86e8e28fcf435054a549a72014b665f7b66cee4d8e3b5ef5"
+    },
+    "exact-optimized/exact-recorded-ray-summary.json": {
+      "bytes": 1806,
+      "sha256": "e2d72da240a9ae89fcdcabbacbf7ac7ea50bb7bdfe96a7c06b86f7aed4f1c374"
+    },
+    "full-root/optimized/standard/dense/dense-original.csv.xz": {
+      "bytes": 2644728,
+      "sha256": "99ccbee592a29e80c02e0565212a2cbff03fc8feb1b4300cc6ed372b53753359"
+    },
+    "exact-optimized/exact-recorded-ray-details.jsonl.gz": {
+      "bytes": 5255,
+      "sha256": "3e8cad5cd2c2319b223b7b1b7436b028f220652901232d73cddb14e172ef27f5"
+    },
+    "full-root/optimized/intersections.json.contacts.jsonl.gz": {
+      "bytes": 321086,
+      "sha256": "e5b0c49c7736c87f355bb1c18fb1fe8aa098c051ef9149d572b2bd0d42a9d02a"
+    }
+  }
+}

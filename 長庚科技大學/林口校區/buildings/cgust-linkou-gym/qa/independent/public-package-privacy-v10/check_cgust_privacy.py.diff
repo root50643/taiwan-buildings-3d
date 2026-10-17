@@ -1,0 +1,102 @@
+--- original/check_wfu_privacy.py
++++ adapted/check_cgust_privacy.py
+@@ -1,4 +1,4 @@
+-"""Read-only exact WFU byte/pattern checks; never a publication/science gate.
++"""Read-only exact CGUST byte/pattern checks; never a publication/science gate.
+ 
+ Source bytes are authenticated and compiled in memory, ignoring stale pyc files.
+ Inputs are opened read-only. The only persistent output is a fresh JSON report.
+@@ -15,23 +15,17 @@
+ 
+ HERE = Path(__file__).absolute().parent
+ GENERIC_SHA = '1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c'
+-PRIMITIVES_SHA = '1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd'
+-BLEND_SHA = '70d8914cefaaceac8572d00c6cfba52b5abbedd18c810175f2deedb47ed2c429'
+-BLEND_BYTES = 1827468
+-BLEND_PATH = 'models/v13/scene.blend'
+-CSV_PATH = 'qa/v12-full/normal/standard/dense/dense-original.csv.xz'
+-CSV_ITEMS = (
+-    ('compressed_bytes', 19156984),
+-    ('compressed_sha256', '80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550'),
+-    ('decoded_bytes', 194500309),
+-    ('decoded_sha256', '6408a97da82dc7a1e226225637a415d6cd8ecaecfb962e51454f52bc3067f2b6'),
+-    ('csv_data_rows', 209460),
+-)
++PRIMITIVES_SHA = 'e9a3ab70bbe3c332ba218b0c93aff1e37bd0f33b20ebd47b524d512d59c9fa34'
++BLEND_SHA = '24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b'
++BLEND_BYTES = 883140
++BLEND_PATH = 'models/v10/scene.blend'
++CSV_PATH = 'qa/v9-full/normal/standard/dense/dense-original.csv.xz'
++CSV_ITEMS = (('compressed_bytes', 2644728), ('compressed_sha256', '99ccbee592a29e80c02e0565212a2cbff03fc8feb1b4300cc6ed372b53753359'), ('decoded_bytes', 40229114), ('decoded_sha256', '42cd8adaf225258b0cc38c08496c91925e22acfb495db739cae3f89aa2c4df89'), ('csv_data_rows', 51760))
+ FIELDS = (
+     (171624, 1090, '2d1dc02e846e766c501535dfda01be83adbdea6d8e03a42e4e5df5377da744d1'),
+     (231956, 1024, 'a27bf0cff013ac91d264ac7f6b87fe91b392cee0ed657588929e56c4f0b4d07d'),
+ )
+-WFU_MARKERS = (b'wfu-shengyou-' + b'private-v1', b'wfu-shengyou-source-' + b'audit-private')
++CGUST_MARKERS = (b'wfu-shengyou-' + b'private-v1', b'wfu-shengyou-source-' + b'audit-private') + (b'cgust-linkou-gym-' + b'private-v1', b'cgust-linkou-gym-source-' + b'audit-private')
+ SCOPE = ('Two exact original-file identities and complete byte/pattern privacy checks only. '
+          'Known complete Blend buffers retain all NUL-tail bytes. This does not assert '
+          'zero paths in the original Blend or inspect scene/API resources. Full scene '
+@@ -50,10 +44,10 @@
+ 
+ def load_exact_source(name, expected):
+     path = HERE / name
+-    sizes = {'package_controls_v2.py': 47569, 'exact_privacy_primitives.py': 6783}
++    sizes = {'package_controls_v2.py': 47569, 'exact_privacy_primitives.py': 6761}
+     require(name in sizes, 'Unknown fixed tool source')
+     data = read_exact(HERE, name, expected, sizes[name])
+-    module = types.ModuleType('wfu_verified_' + path.stem)
++    module = types.ModuleType('cgust_verified_' + path.stem)
+     module.__file__ = str(path)
+     exec(compile(data, str(path), 'exec'), module.__dict__)
+     return module
+@@ -62,9 +56,9 @@
+ def load_tools():
+     generic = load_exact_source('package_controls_v2.py', GENERIC_SHA)
+     primitive = load_exact_source('exact_privacy_primitives.py', PRIMITIVES_SHA)
+-    # Only add WFU directory markers; never mutate the original generic module.
++    # Only add CGUST directory markers; never mutate the original generic module.
+     policy = types.SimpleNamespace(MAX_BYTES=generic.MAX_BYTES,
+-        PRIVATE_MARKERS=generic.PRIVATE_MARKERS + WFU_MARKERS,
++        PRIVATE_MARKERS=generic.PRIVATE_MARKERS + CGUST_MARKERS,
+         TMP_MARKER=generic.TMP_MARKER, SECRET_PATTERNS=generic.SECRET_PATTERNS)
+     validate_policy(generic, primitive, policy)
+     return generic, primitive, policy
+@@ -74,7 +68,7 @@
+     require(type(generic.MAX_BYTES) is int and generic.MAX_BYTES == 512 * 1024 * 1024
+             and type(policy.MAX_BYTES) is int and policy.MAX_BYTES == generic.MAX_BYTES,
+             'Unchanged generic MAX_BYTES required')
+-    require(policy.PRIVATE_MARKERS == generic.PRIVATE_MARKERS + WFU_MARKERS
++    require(policy.PRIVATE_MARKERS == generic.PRIVATE_MARKERS + CGUST_MARKERS
+             and policy.TMP_MARKER == generic.TMP_MARKER
+             and policy.SECRET_PATTERNS == generic.SECRET_PATTERNS,
+             'Original privacy pattern coverage differs')
+@@ -155,7 +149,7 @@
+ def scan_blend(data, generic, primitive, policy):
+     validate_policy(generic, primitive, policy)
+     require(type(data) is bytes and len(data) == BLEND_BYTES and digest(data) == BLEND_SHA,
+-            'Exact original WFU Blend identity differs')
++            'Exact original CGUST Blend identity differs')
+     projection = primitive.mask_exact_blend_defaults(data)
+     # Authenticate both full buffers first; mask only their effective strings.
+     # NUL terminators, all NUL tails and all other bytes are identical and scanned.
+@@ -185,8 +179,8 @@
+     validate_policy(generic, primitive, policy)
+     # There is no caller-supplied profile or allowlist in this production entry.
+     result = primitive.bounded_xz_csv_privacy_scan(policy, data, dict(CSV_ITEMS), chunk_bytes)
+-    return dict(result, source_path=CSV_PATH, decoded_newline_count=209461,
+-                exact_decoded_bound_bytes=194500309)
++    return dict(result, source_path=CSV_PATH, decoded_newline_count=51761,
++                exact_decoded_bound_bytes=40229114)
+ 
+ 
+ def main():
+@@ -220,7 +214,7 @@
+               'generic_MAX_BYTES': generic.MAX_BYTES, 'generic_source_sha256': GENERIC_SHA,
+               'primitive_source_sha256': PRIMITIVES_SHA, 'checker_source_sha256': initial_source['sha256'],
+               'checker_source_bytes': initial_source['bytes'], 'checker_source_unchanged_during_execution': True,
+-              'all_original_patterns_plus_common_and_wfu_markers': True,
++              'all_original_patterns_plus_common_and_case_markers': True,
+               'model_go': False, 'publication_go': False, 'scope': SCOPE,
+               'author_independent_normal_optimized_copy_map_checked': False}
+     require_source_unchanged(__file__, initial_source)

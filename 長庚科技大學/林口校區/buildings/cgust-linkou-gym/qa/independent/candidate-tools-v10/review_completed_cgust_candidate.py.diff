@@ -1,0 +1,26 @@
+--- wfu-shengyou-independent-qa/candidate-tools-v12/review_completed_wfu_candidate.py
++++ cgust-linkou-gym-independent-qa/candidate-tools-v10/review_completed_cgust_candidate.py
+@@ -1,4 +1,4 @@
+-"""Case-bound WFU v12 frozen STL 83482136 final audit of fresh frozen evidence.
++"""Case-bound CGUST v10 frozen STL 66f0516f final audit of fresh frozen evidence.
+ All original numerical strict=false results remain false; every flag needs its
+ exact original-recorded-line proof. Unchanged Tianmu source/render checks follow.
+ """
+@@ -11,7 +11,7 @@
+     with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+ def main():
+     ap=argparse.ArgumentParser();ap.add_argument('--run',type=Path,required=True);ap.add_argument('--author',type=Path,required=True);ap.add_argument('--out',type=Path,required=True);a=ap.parse_args();require(not a.out.exists(),'Refuse existing review output');a.out.mkdir(parents=True)
+-    run=a.run.resolve();author=a.author.resolve();frozen=run/'frozen';tracked={};case_source=Path(__file__).with_name('inspect_flagged_wfu_mode.py');case_hash=sha(case_source);report={'case_review_source_sha256':case_hash,'passed':False,'bounded_verification_passed':False,'original_numerical_strict_passed':False,'review_source_sha256':sha(__file__),'optimization_level':sys.flags.optimize,'scope':'Required complete fresh original-STL gates, source and saved scene reproduction, nine images, and exact publication bindings. Finite rays/sections do not establish global minimum thickness or a physical-print guarantee.'}
++    run=a.run.resolve();author=a.author.resolve();frozen=run/'frozen';tracked={};case_source=Path(__file__).with_name('inspect_flagged_cgust_mode.py');case_hash=sha(case_source);report={'case_review_source_sha256':case_hash,'passed':False,'bounded_verification_passed':False,'original_numerical_strict_passed':False,'review_source_sha256':sha(__file__),'optimization_level':sys.flags.optimize,'scope':'Required complete fresh original-STL gates, source and saved scene reproduction, nine images, and exact publication bindings. Finite rays/sections do not establish global minimum thickness or a physical-print guarantee.'}
+     def key(p):
+         p=Path(p).resolve()
+         if p.is_relative_to(run):return 'run/'+str(p.relative_to(run))
+@@ -31,7 +31,7 @@
+         verify=read(run/'author-freeze-validation.json');yes(verify,['passed'],'Freeze validation');track(run/'author-freeze-manifest.json',verify['manifest_sha256'])
+         require(verify['file_count']==len(freeze['files']),'Freeze count mismatch')
+         sys.path[:0]=[str(frozen/'qa/tools'),str(frozen/'qa/verification'),str(frozen/'qa/render-tools')]
+-        from inspect_flagged_wfu_mode import inspect_mode
++        from inspect_flagged_cgust_mode import inspect_mode
+         from qa_common import checker_inventory
+         from png_exact_compare import compare as compare_png,SANITIZE_TEXT_KEYS
+         names={'source-stl-reproduction','source-scene-state-reproduction','saved-blend-nine-rerenders','public-png-metadata-cleanup'}|{m+'-'+s for m in ['normal','optimized'] for s in ['standard','exact-intersections','intersection-controls','dense-evidence','exact-recorded-rays']}

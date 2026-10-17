@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "case_count": 25,
+  "disk_checkpoints": [
+    {
+      "phase": "before_small_controls",
+      "available_bytes": 218517504,
+      "estimated_new_allocation_bytes": 1048576,
+      "projected_remaining_bytes": 217468928,
+      "minimum_remaining_bytes": 134217728
+    },
+    {
+      "phase": "after_small_controls",
+      "available_bytes": 218517504,
+      "estimated_new_allocation_bytes": 0,
+      "projected_remaining_bytes": 218517504,
+      "minimum_remaining_bytes": 134217728
+    }
+  ],
+  "actual_optimization_level": 1,
+  "actual_cpu_affinity": [
+    0
+  ],
+  "case_restore_source_sha256": "9cc1954fea71ed83425f3e3c58db60b1b69f65cdbe2460d624b19f651d7613c4",
+  "test_source_sha256": "020f13196bda3d403c2784fefdadc679728ee2fe675ea9e270183a85114826d2",
+  "original_restore_source_sha256": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e",
+  "original_primitives_source_sha256": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273",
+  "production_map_pinned": false,
+  "actual_public_restore_performed": false,
+  "generic_original_synthetic_suite_rerun": false,
+  "cases": [
+    {
+      "case": "regular_hardlink_exact_inode_bytes_and_source_metadata",
+      "expected": "accept",
+      "passed": true,
+      "detail": {
+        "same_inode_verified": true,
+        "source_bytes_reauthenticated": true,
+        "source_mode_size_mtime_unchanged": true,
+        "bytes": 26,
+        "sha256": "065465867404f92dce3651081cf555efe7d70ec5bbc7044b82f9cc870974e720",
+        "new_payload_allocation": false
+      }
+    },
+    {
+      "case": "reject_digest",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Exact regular file digest differs"
+    },
+    {
+      "case": "reject_size",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Exact regular file size differs"
+    },
+    {
+      "case": "reject_source_symlink",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "OSError",
+      "reason": "[Errno 40] Too many levels of symbolic links"
+    },
+    {
+      "case": "reject_source_fifo",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Expected bounded regular file"
+    },
+    {
+      "case": "reject_source_parent_symlink",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "NotADirectoryError",
+      "reason": "[Errno 20] Not a directory"
+    },
+    {
+      "case": "reject_destination_parent_symlink",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "NotADirectoryError",
+      "reason": "[Errno 20] Not a directory"
+    },
+    {
+      "case": "reject_target_exists",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "FileExistsError",
+      "reason": "[Errno 17] File exists"
+    },
+    {
+      "case": "reject_target_symlink",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "FileExistsError",
+      "reason": "[Errno 17] File exists"
+    },
+    {
+      "case": "reject_unsafe_destination_parent",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Link destination parent must be owned and private"
+    },
+    {
+      "case": "reject_source_leaf_replacement_at_link",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Linked inode differs"
+    },
+    {
+      "case": "reject_source_ancestor_drift_at_link",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Directory ancestor changed"
+    },
+    {
+      "case": "reject_destination_ancestor_drift_at_link",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Directory ancestor changed"
+    },
+    {
+      "case": "exact_fixed_archive_partition_preserves_original_map",
+      "expected": "accept",
+      "passed": true,
+      "detail": {
+        "full_canonical": 2,
+        "full_logical": 2,
+        "new_write_logical": 1,
+        "archive_bytes_in_metadata_only": 59649412
+      }
+    },
+    {
+      "case": "reject_archive_sha_partition",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Archive canonical identity differs"
+    },
+    {
+      "case": "reject_archive_size_partition",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Archive canonical identity differs"
+    },
+    {
+      "case": "reject_archive_alias_path_partition",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Pinned archive alias missing"
+    },
+    {
+      "case": "reject_extra_archive_alias_partition",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Expected exactly one pinned archive alias"
+    },
+    {
+      "case": "reject_archive_mode_partition",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Expected exactly one pinned archive alias"
+    },
+    {
+      "case": "original_subset_plus_tiny_hardlink_complete_fileset",
+      "expected": "accept",
+      "passed": true,
+      "detail": {
+        "synthetic_only": true,
+        "new_write_files": 1,
+        "tiny_hardlink_files": 1,
+        "verified_roster": [
+          {
+            "path": "history/qa/controls/controls.tar.xz",
+            "bytes": 26,
+            "sha256": "065465867404f92dce3651081cf555efe7d70ec5bbc7044b82f9cc870974e720"
+          },
+          {
+            "path": "logical/example.txt",
+            "bytes": 4,
+            "sha256": "edeaaff3f1774ad2888673770c6d64097e391bc362d7d6fb34982ddf0efd18cb"
+          }
+        ]
+      }
+    },
+    {
+      "case": "reject_full_roster_extra_file",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Logical fileset or directoryset differs"
+    },
+    {
+      "case": "reject_full_roster_missing_file",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Logical fileset or directoryset differs"
+    },
+    {
+      "case": "reject_full_roster_symlink_file",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "OSError",
+      "reason": "[Errno 40] Too many levels of symbolic links"
+    },
+    {
+      "case": "reject_full_roster_same_size_corruption",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "Exact regular file digest differs"
+    },
+    {
+      "case": "reject_projected_disk_below_128_mib",
+      "expected": "reject",
+      "passed": true,
+      "error_type": "ValueError",
+      "reason": "128 MiB disk floor would be crossed"
+    }
+  ],
+  "scope": "Small controls for new hardlink, fixed partition and complete-roster boundary only; no production public restore."
+}

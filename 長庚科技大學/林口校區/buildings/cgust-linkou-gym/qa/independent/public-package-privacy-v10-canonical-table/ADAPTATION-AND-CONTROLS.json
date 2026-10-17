@@ -1,0 +1,184 @@
+{
+  "schema": "cgust-single-canonical-table-path-adaptation-v1",
+  "passed": true,
+  "scope": "One fixed table read-path literal correction and four bounded read-point controls in both interpreter modes. No full package scan.",
+  "original_scanner": {
+    "bytes": 20036,
+    "sha256": "e0abeb905ccfe96a493fa08b5d0c0838f635c706bf5bfe7e6326349c234834ec"
+  },
+  "adapted_scanner": {
+    "bytes": 20071,
+    "sha256": "2a83fcadc426bed87df3b76eff9caff14f6e9e0d5614b5c1dbfa66f29d72f7ac"
+  },
+  "diff": {
+    "bytes": 772,
+    "sha256": "6073406b69798f731bdb5701f3158b06cbfc06b186adf50b0acb17a32fbf97e5"
+  },
+  "ast_and_byte_proof": {
+    "old_literal": "qa/SOURCE-STATE-DEFAULT-EXCEPTIONS.json",
+    "new_literal": "qa/independent/scene-state-bridge-v10/SOURCE-STATE-DEFAULT-EXCEPTIONS.json",
+    "old_literal_occurrences": 1,
+    "changed_source_lines": [
+      257
+    ],
+    "variant_is_exact_one_literal_byte_replacement": true,
+    "original_ast_sha256": "18928cf36cdeaf6b705c7f2605c8272024a1c6a3fbd2111a16e9bc67ed2a3f39",
+    "variant_ast_sha256": "aff41d4460d95168ebe2773eebbba7c86a5a5ae27222ea804ac09311af363ff5",
+    "original_ast_after_one_literal_replacement_sha256": "aff41d4460d95168ebe2773eebbba7c86a5a5ae27222ea804ac09311af363ff5",
+    "all_other_ast_identical": true
+  },
+  "unchanged_siblings_and_private_reference": [
+    {
+      "logical_path": "package_controls_v2.py",
+      "bytes": 47569,
+      "sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+      "same_regular_inode_as_original": true,
+      "bytes_equal_original": true
+    },
+    {
+      "logical_path": "exact_privacy_primitives.py",
+      "bytes": 6761,
+      "sha256": "e9a3ab70bbe3c332ba218b0c93aff1e37bd0f33b20ebd47b524d512d59c9fa34",
+      "same_regular_inode_as_original": true,
+      "bytes_equal_original": true
+    },
+    {
+      "logical_path": "check_cgust_privacy.py",
+      "bytes": 12106,
+      "sha256": "cbd0664021c9dce9a68d01e2046acff6f8a713b7f487b5cfac5adc86b5e71bea",
+      "same_regular_inode_as_original": true,
+      "bytes_equal_original": true
+    },
+    {
+      "logical_path": "roster_primitives.py",
+      "bytes": 6313,
+      "sha256": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273",
+      "same_regular_inode_as_original": true,
+      "bytes_equal_original": true
+    },
+    {
+      "logical_path": "restore_scientific_layout.py",
+      "bytes": 8677,
+      "sha256": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e",
+      "same_regular_inode_as_original": true,
+      "bytes_equal_original": true
+    },
+    {
+      "logical_path": "archive_verify.py",
+      "bytes": 10831,
+      "sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+      "same_regular_inode_as_original": true,
+      "bytes_equal_original": true
+    },
+    {
+      "logical_path": "provenance/state-exceptions.reference.json",
+      "bytes": 7377,
+      "sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f",
+      "same_regular_inode_as_original": true,
+      "bytes_equal_original": true
+    }
+  ],
+  "new_control_source": {
+    "bytes": 10046,
+    "sha256": "58363b639dfc66cd35f7fbeb4524f4c804d2bca1b58b4551e0076a1f6eee8df3"
+  },
+  "control_bootstrap_exact_reuse": [
+    {
+      "function": "require",
+      "source_logical_reference": "original-integration-controls",
+      "source_lines": [
+        12,
+        14
+      ],
+      "excerpt_sha256": "07c0440d03e54684966792496e1aa6cf42cc901912e8d6f8b022210bd9c2d3df",
+      "excerpt_bytes": 80,
+      "byte_identical": true
+    },
+    {
+      "function": "load_entry",
+      "source_logical_reference": "original-integration-controls",
+      "source_lines": [
+        17,
+        35
+      ],
+      "excerpt_sha256": "6b0de83e33ce4e4ae035a7a49084dd0f9be2bf827f003dc2a970d231f0442d1c",
+      "excerpt_bytes": 1116,
+      "byte_identical": true
+    }
+  ],
+  "capture_boot_source": {
+    "logical_reference": "reused-independent-tools/capture_process.py",
+    "bytes": 8067,
+    "sha256": "f44673ed9c2bc04e21bf907fe19745dab18a25ba59c2241bd227b986710c6244",
+    "literal_sha256": "07dd214897bfda2db47b2ed64526cf38c6cb32e2bd379bfd2740cc27143fe5b5",
+    "literal_bytes": 508
+  },
+  "sealed_map": {
+    "logical_public_path": "qa/PUBLIC-COPY-MAP.json",
+    "bytes": 2253316,
+    "sha256": "88c242807a32719dd3d77d2bfffb04e5cbefd48ee2d4c29ff24ba58d02e0c486"
+  },
+  "table_existing_canonical": {
+    "logical_public_path": "qa/independent/scene-state-bridge-v10/SOURCE-STATE-DEFAULT-EXCEPTIONS.json",
+    "bytes": 7377,
+    "sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f"
+  },
+  "configuration_probe": {
+    "original_top_path_present_in_sealed_map": false,
+    "new_canonical_path_present": true,
+    "probe_is_exact_original_ast_read_point_only": true,
+    "full_scanner_run_invoked": false,
+    "actual_fullscan_failed_claimed": false,
+    "archive_csv_scene_payloads_read": false
+  },
+  "existing_controls_retained_without_rerun": {
+    "logical_reference": "public-package-privacy-v10/SMALL-CONTROLS-SUMMARY.json",
+    "bytes": 1636,
+    "sha256": "02ab5e8d5bdf3b2a4bcc9faa1a58294de698eaee30e3db67dc6971601c7b0337",
+    "integration_per_mode": 24,
+    "case_per_mode": 18,
+    "rerun": false
+  },
+  "new_controls": [
+    {
+      "logical_path": "path-controls-normal.json",
+      "bytes": 2814,
+      "sha256": "aefedd8dc628576c986bb63f5544717a18f5348f2d6ec29446032ce7b7133223",
+      "passed": true,
+      "case_count": 4,
+      "optimization_level": 0,
+      "actual_cpu_affinity": [
+        0
+      ],
+      "actual_returncode": 0,
+      "actual_target_sha256": "58363b639dfc66cd35f7fbeb4524f4c804d2bca1b58b4551e0076a1f6eee8df3",
+      "private_capture_sha256": "3e71c9274f473a6b0980658e993a39b637e1777af85ee4885dcdb28fea3ff5f3",
+      "private_runtime_sha256": "dcb25a3ca4391a59b7e68a42947262a3f97a08249f08a0d37d09a766cc3c910e",
+      "original_boot_literal_byte_identical": true
+    },
+    {
+      "logical_path": "path-controls-optimized.json",
+      "bytes": 2814,
+      "sha256": "66623c3171eb7677747801adae773be361d093a348c2ba4b02330bc4da875bb7",
+      "passed": true,
+      "case_count": 4,
+      "optimization_level": 1,
+      "actual_cpu_affinity": [
+        0
+      ],
+      "actual_returncode": 0,
+      "actual_target_sha256": "58363b639dfc66cd35f7fbeb4524f4c804d2bca1b58b4551e0076a1f6eee8df3",
+      "private_capture_sha256": "f667c8c4bf68c91dbbce2c9cd853d4ff6ef182d42ade9031bce80f6b39242429",
+      "private_runtime_sha256": "bd72c75b8dfac7ef26f2b322a7623aba4d5a7afe7b966bc575dd08bb4f596e0e",
+      "original_boot_literal_byte_identical": true
+    }
+  ],
+  "old_tool_tree_bytes_unchanged": true,
+  "sealed_main_map_modified": false,
+  "table_bytes_modified": false,
+  "public_table_duplicate_created": false,
+  "private_cli_captures_published": false,
+  "full_public_scan_still_required": true,
+  "model_go": false,
+  "publication_go": false
+}

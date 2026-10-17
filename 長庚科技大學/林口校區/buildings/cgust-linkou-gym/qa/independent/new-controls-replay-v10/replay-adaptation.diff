@@ -1,0 +1,120 @@
+--- base/exercise_new_controls_replay.py
++++ adapted/exercise_new_controls_replay.py
+@@ -10,7 +10,6 @@
+ RESTORE_SHA = '60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e'
+ PRIMITIVES_SHA = '7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273'
+ CAPTURE_SHA = 'f44673ed9c2bc04e21bf907fe19745dab18a25ba59c2241bd227b986710c6244'
+-BUILDER_MEMBER = 'independent/reuse-preflight-v1/tooling/tools/build_controls_archive.py'
+ FORMAT = 'original-stl-controls-ustar-xz-v1'
+ LIMIT = 536870912
+ 
+@@ -39,11 +38,30 @@
+         data = (root / row['path']).read_bytes()
+         need(len(data) == row['bytes'] and digest(data) == row['sha256'], 'Actual member bytes differ')
+ 
++def resolve_builder_binding(mapping, logical_member, expected_data):
++    """Bind an explicitly named logical builder to its unique canonical descriptor."""
++    need(digest(expected_data) == BUILDER_SHA, 'Original builder bytes differ')
++    matches = [row for row in mapping['copy_map'] if row['restore_path'] == logical_member]
++    need(len(matches) == 1, 'Original builder logical member missing or ambiguous')
++    row = matches[0]
++    need(row['sha256'] == BUILDER_SHA and type(row['bytes']) is int
++         and row['bytes'] == len(expected_data) and row['mode'] == 'byte_exact',
++         'Original builder logical descriptor differs')
++    canonical = [item for item in mapping['files']
++                 if item['canonical_public_path'] == row['canonical_public_path']]
++    need(len(canonical) == 1 and canonical[0]['sha256'] == BUILDER_SHA
++         and type(canonical[0]['bytes']) is int and canonical[0]['bytes'] == len(expected_data),
++         'Original builder canonical descriptor missing, ambiguous, or different')
++    return row
++
+ def main():
+     ap = argparse.ArgumentParser(description=__doc__)
+     ap.add_argument('--public-root', type=Path, required=True)
+     ap.add_argument('--copy-map', default='qa/NEW-CONTROLS-STAGING-MAP.json')
+     ap.add_argument('--selection', default='qa/NEW-CONTROLS-SELECTION.json')
++    ap.add_argument('--full-copy-map', default='qa/PUBLIC-COPY-MAP.json')
++    ap.add_argument('--expected-full-map-sha256', required=True)
++    ap.add_argument('--builder-member', required=True)
+     ap.add_argument('--expected-map-sha256', required=True)
+     ap.add_argument('--expected-selection-sha256', required=True)
+     ap.add_argument('--capture-source', type=Path, required=True)
+@@ -69,13 +87,20 @@
+     module = types.ModuleType('exact_public_restorer')
+     module.__file__ = str(restore)
+     exec(compile(source_bytes[restore], str(restore), 'exec'), module.__dict__)
+-    for relative in [args.copy_map, args.selection]:
++    for relative in [args.copy_map, args.selection, args.full_copy_map, args.builder_member]:
+         module.safe_relative(relative)
+     read_public = module._m._read_regular_snapshot
+     map_bytes = read_public(root, args.copy_map, None, 16 * 1024 * 1024)
+     selection_bytes = read_public(root, args.selection, None, 16 * 1024 * 1024)
+     need(digest(map_bytes) == args.expected_map_sha256 and digest(selection_bytes) == args.expected_selection_sha256,
+          'Actual public map/selection differs from sealed identities')
++    full_map_bytes = read_public(root, args.full_copy_map, None, 16 * 1024 * 1024)
++    need(digest(full_map_bytes) == args.expected_full_map_sha256, 'Full public map differs from sealed identity')
++    full_mapping = module.parse(full_map_bytes)
++    module.validated_map(full_mapping)
++    builder_binding = resolve_builder_binding(full_mapping, args.builder_member, source_bytes[builder])
++    need(module.read_exact(root, builder_binding['canonical_public_path'], builder_binding) == source_bytes[builder],
++         'Canonical public builder content differs')
+     mapping, selection = module.parse(map_bytes), module.parse(selection_bytes)
+     module.validated_map(mapping)
+     need(selection.get('schema') == 'wfu-new-control-logical-selection-v1' and
+@@ -86,8 +111,6 @@
+     members = sorted([{'path': row['restore_path'], 'bytes': row['bytes'], 'sha256': row['sha256']}
+                       for row in selection['files']], key=lambda row: row['path'])
+     need(sum(row['bytes'] for row in members) < LIMIT, 'Unchanged generic archive size limit exceeded')
+-    need(any(row['path'] == BUILDER_MEMBER and row['sha256'] == BUILDER_SHA for row in members),
+-         'Original builder is absent from selected members')
+     # The controlled writer owns destination safety; create only the private parent here.
+     module._m.write_new_tree(out, [])
+     assignments = [node for node in ast.parse(source_bytes[args.capture_source]).body
+@@ -151,9 +174,8 @@
+                                                    '--out', str(extracted)], level)
+             need(vr.get('extracted') is True and vr['archive_sha256'] == index['archive_sha256'], 'Safe extraction differs')
+             regular_tree(extracted, members)
+-            extracted_builder = extracted / BUILDER_MEMBER
+-            need(sha(extracted_builder) == BUILDER_SHA, 'Extracted original builder differs')
+-            br = child(name + '-rebuild', extracted_builder, ['--root', str(extracted), '--index', str(index_path),
++            need(sha(builder) == BUILDER_SHA, 'Canonical original builder changed')
++            br = child(name + '-rebuild', builder, ['--root', str(extracted), '--index', str(index_path),
+                                                              '--out', str(rebuilt)], level)
+             need(rebuilt.read_bytes() == archive_bytes and br['tar_sha256'] == index['tar_sha256'], 'Rebuild is not bitwise exact')
+             modes[name] = {'optimization_level': level, 'safe_validation_and_extraction': vr, 'rebuild': br,
+@@ -161,16 +183,23 @@
+     regular_tree(stage, members)
+     need(archive.read_bytes() == archive_bytes and index_path.read_bytes() == encode(index), 'Private archive/index changed')
+     need(read_public(root, args.copy_map, None, 16 * 1024 * 1024) == map_bytes and
+-         read_public(root, args.selection, None, 16 * 1024 * 1024) == selection_bytes, 'Public map/selection changed')
++         read_public(root, args.selection, None, 16 * 1024 * 1024) == selection_bytes and
++         read_public(root, args.full_copy_map, None, 16 * 1024 * 1024) == full_map_bytes, 'Public maps/selection changed')
+     for row in mapping['files']:
+         module.read_exact(root, row['canonical_public_path'], row)
+     for path, expected in sources.items():
+         need(sha(path) == expected, 'Original source changed during replay')
+     need(sha(__file__) == own_sha, 'Orchestrator changed during replay')
+-    report = {'schema': 'wfu-public-new-controls-deterministic-replay-v1', 'passed': True,
++    report = {'schema': 'public-new-controls-deterministic-replay-v2', 'passed': True,
+               'model_go': False, 'publication_go': False, 'original_numerical_strict_passed': False,
+               'actual_public_tree_used': True, 'public_copy_map_sha256': digest(map_bytes),
+-              'public_selection_sha256': digest(selection_bytes), 'canonical_files': len(mapping['files']),
++              'public_selection_sha256': digest(selection_bytes),
++              'public_full_copy_map_sha256': digest(full_map_bytes),
++              'original_builder_binding': {'logical_member': args.builder_member,
++                  'canonical_public_path': builder_binding['canonical_public_path'],
++                  'bytes': builder_binding['bytes'], 'sha256': builder_binding['sha256'],
++                  'rebuild_source': 'original_public_builder_bound_to_full_copy_map'},
++              'canonical_files': len(mapping['files']),
+               'logical_members': len(members), 'archive_sha256': index['archive_sha256'],
+               'index_sha256': sha(index_path), 'tar_sha256': index['tar_sha256'],
+               'archive_bytes': len(archive_bytes), 'tar_bytes': len(raw), 'modes': modes,
+@@ -179,7 +208,7 @@
+               'restore_source_sha256': RESTORE_SHA, 'verifier_source_sha256': VERIFIER_SHA,
+               'builder_source_sha256': BUILDER_SHA, 'all_public_inputs_and_tools_unchanged': True,
+               'generic_decoded_byte_limit_unchanged': LIMIT, 'synthetic_suites_rerun': False,
+-              'scope': 'Actual canonical public payload restored into the sealed small control layout, then original deterministic archive creation and both-mode safe extraction/all-member rehash/bitwise rebuild. Public JSON projections remain explicitly labeled projections; no original private labels are invented. The compressed archive remains private.'}
++              'scope': 'Actual canonical public payload restored into the sealed small control layout, then original deterministic archive creation and both-mode safe extraction/all-member rehash/bitwise rebuild. The rebuild tool is the unchanged original public builder bound to the sealed full copy map; selected archive members are unchanged. Public JSON projections remain explicitly labeled projections; no original private labels are invented. The compressed archive remains private.'}
+     write(out / 'replay-proof.json', encode(report))
+     print(json.dumps({key: report[key] for key in ['passed', 'logical_members', 'archive_sha256', 'index_sha256', 'tar_sha256']}))
+ 

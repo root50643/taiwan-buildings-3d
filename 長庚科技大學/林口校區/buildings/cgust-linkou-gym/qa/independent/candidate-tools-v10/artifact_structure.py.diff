@@ -1,0 +1,22 @@
+--- cgust-linkou-gym-independent-qa/candidate-tools-v8/artifact_structure.py
++++ cgust-linkou-gym-independent-qa/candidate-tools-v10/artifact_structure.py
+@@ -1,4 +1,4 @@
+-"""Fail-closed, stdlib-only structural/math review of bound CGUST v8 candidate artifacts.
++"""Fail-closed, stdlib-only structural/math review of bound CGUST v10 candidate artifacts.
+ 
+ No geometry predicates are rerun. The caller must authenticate every producer,
+ input and artifact hash, CSV provenance and process outcome separately. Passing
+@@ -9,11 +9,11 @@
+ import math
+ import re
+ 
+-FACES = 7628
++FACES = 5176
+ LAYERS = 795
+ PER_OFFSET_LAYERS = (265, 265, 265)
+ LATTICE = 1 << 23
+-STL_SHA256 = 'bce6cf52cd6f8e14fb92387218f398d15e84bd1f75bc218b3cfbcf39c351af3e'
++STL_SHA256 = '66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978'
+ OFFSETS = (.031, .071, .137)
+ REASONS = frozenset({
+     'original_crossings_not_alternating_enter_exit',

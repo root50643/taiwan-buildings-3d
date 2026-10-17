@@ -1,0 +1,286 @@
+{
+  "schema": "cgust-v10-exact-scene-state-bridge-result-v1",
+  "status": "complete_within_exact_bridge_scope",
+  "passed": true,
+  "logical_alias_count": 6,
+  "unique_identity_count": 2,
+  "actual_six_to_two_canonical_byte_comparisons": true,
+  "controls_per_mode": 19,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "executions": {
+    "controls_normal": {
+      "logical_path": "bridge-controls-normal.json",
+      "bytes": 10821,
+      "sha256": "a467546cca89deb72c16ebdf46d5fa526ffba5224c9c9bf3512ead5fab4b65f4",
+      "passed": true,
+      "optimization_level": 0,
+      "case_count": 19,
+      "logical_alias_count": 6,
+      "unique_identity_count": 2,
+      "recorded_exit_code": 0
+    },
+    "scan_normal": {
+      "logical_path": "bridge-scan-normal.json",
+      "bytes": 9341,
+      "sha256": "9ea14b56fff8008211bc3edd76a2622050605a660cc6b1d6a6a5b66ce8e17270",
+      "passed": true,
+      "optimization_level": 0,
+      "case_count": null,
+      "logical_alias_count": 6,
+      "unique_identity_count": 2,
+      "recorded_exit_code": 0
+    },
+    "controls_optimized": {
+      "logical_path": "bridge-controls-optimized.json",
+      "bytes": 10821,
+      "sha256": "019feef18b518b44994c39182730277a4befb0fcdf766bb845015e719a49dc41",
+      "passed": true,
+      "optimization_level": 1,
+      "case_count": 19,
+      "logical_alias_count": 6,
+      "unique_identity_count": 2,
+      "recorded_exit_code": 0
+    },
+    "scan_optimized": {
+      "logical_path": "bridge-scan-optimized.json",
+      "bytes": 9341,
+      "sha256": "0a1b14e6bf14044a873c82501b75c33f072e0a1167e9f8e533431384416a1aca",
+      "passed": true,
+      "optimization_level": 1,
+      "case_count": null,
+      "logical_alias_count": 6,
+      "unique_identity_count": 2,
+      "recorded_exit_code": 0
+    }
+  },
+  "original_scene_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+  "fixed_exception_table": {
+    "logical_path": "SOURCE-STATE-DEFAULT-EXCEPTIONS.json",
+    "bytes": 7377,
+    "sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f"
+  },
+  "exact_field": {
+    "json_pointer": "/render/filepath",
+    "exact_type": "string",
+    "exact_value_utf8_hex": "2f746d702f",
+    "encoded_json_string_offset": 108037,
+    "encoded_json_string_bytes": 7,
+    "marker_offset": 108038,
+    "marker_bytes": 5,
+    "encoded_string_occurrences": 1,
+    "marker_occurrences": 1
+  },
+  "original_state_json_bytes_rewritten": false,
+  "original_states_claimed_path_free": false,
+  "all_other_original_bytes_scanned_unchanged": true,
+  "original_saved_source_states_equal": true,
+  "constructed_memory_equals_saved_claimed": false,
+  "constructed_memory_saved_difference": [
+    "/world/nodes/rna/is_runtime_data: value differs"
+  ],
+  "negative_control_policy": {
+    "fixtures_only_in_private_process_memory": true,
+    "public_generator_with_hex_recipes_and_sha256": true,
+    "actual_rebuild_bitwise_comparisons": true,
+    "large_fixtures_created": false,
+    "unchanged_generic_full_suites_rerun": false
+  },
+  "immutable_reference_rechecks": [
+    {
+      "logical_key": "generic",
+      "bytes": 47569,
+      "sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+      "equals_preparation_identity": true
+    },
+    {
+      "logical_key": "case_sdna_gate",
+      "bytes": 10988,
+      "sha256": "854e1868de71bb82c93d27f637dd70c68d3eb1293d1c5eeb6e3177476cddb045",
+      "equals_preparation_identity": true
+    },
+    {
+      "logical_key": "package_scanner",
+      "bytes": 20022,
+      "sha256": "20a8bcfe207d8b9e6b268669e629a107b8067456502a6df4c712f00794712366",
+      "equals_preparation_identity": true
+    },
+    {
+      "logical_key": "old_exception_shape",
+      "bytes": 6935,
+      "sha256": "126fac9c7d8ff0e36c5922868c4ea3f48ece0423fa2c6c284dad258e749c8863",
+      "equals_preparation_identity": true
+    },
+    {
+      "logical_key": "active_tools_freeze",
+      "bytes": 40145,
+      "sha256": "195b3cde5e66da4868e3307a4625a11e41f40b2222154aa97677d5f14ba2396c",
+      "equals_preparation_identity": true
+    }
+  ],
+  "byte_exact_reused_functions": 10,
+  "all_reused_functions_byte_identical": true,
+  "execution_contract": {
+    "lock": "shared_heavy_lock",
+    "cpu_affinity": [
+      0
+    ],
+    "blender_or_render_or_geometry_executed": false,
+    "private_launch_script": "run_bridge_controls.private.sh",
+    "invocation_from_workspace": "bash cgust-linkou-gym-independent-qa/scene-state-bridge-v10/run_bridge_controls.private.sh",
+    "fresh_result_policy": "Do not rerun into existing output names; preserve completed artifacts."
+  },
+  "artifact_roster_excluding_this_summary_and_final_manifest": [
+    {
+      "logical_path": "BRIDGE-PREPARATION.json",
+      "bytes": 14846,
+      "sha256": "6bc1e64fdb152d9b660342f4f1f8cbbfd2dc11bde82b4e9547428a9838c84027",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "SOURCE-STATE-DEFAULT-EXCEPTIONS.json",
+      "bytes": 7377,
+      "sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "bridge-controls-normal.json",
+      "bytes": 10821,
+      "sha256": "a467546cca89deb72c16ebdf46d5fa526ffba5224c9c9bf3512ead5fab4b65f4",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "bridge-controls-normal.private.exit-code",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-controls-normal.private.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-controls-normal.private.stdout",
+      "bytes": 60,
+      "sha256": "80b2a57c199d25c61e47e2420490afbbc460ce1e6bfac3b1cc20254ee0bff66f",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-controls-optimized.json",
+      "bytes": 10821,
+      "sha256": "019feef18b518b44994c39182730277a4befb0fcdf766bb845015e719a49dc41",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "bridge-controls-optimized.private.exit-code",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-controls-optimized.private.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-controls-optimized.private.stdout",
+      "bytes": 60,
+      "sha256": "6f7e978f5ba586e2e0cd927961ccbf86ed8e7930a01d20b2ecd0a4c78ae74abe",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-scan-normal.json",
+      "bytes": 9341,
+      "sha256": "9ea14b56fff8008211bc3edd76a2622050605a660cc6b1d6a6a5b66ce8e17270",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "bridge-scan-normal.private.exit-code",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-scan-normal.private.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-scan-normal.private.stdout",
+      "bytes": 95,
+      "sha256": "9da274bf2451f34bcc51d57294bfd321a2f74ccf69f59d43e523b93531009486",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-scan-optimized.json",
+      "bytes": 9341,
+      "sha256": "0a1b14e6bf14044a873c82501b75c33f072e0a1167e9f8e533431384416a1aca",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "bridge-scan-optimized.private.exit-code",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-scan-optimized.private.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-scan-optimized.private.stdout",
+      "bytes": 95,
+      "sha256": "9da274bf2451f34bcc51d57294bfd321a2f74ccf69f59d43e523b93531009486",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "bridge-tooling.sha256",
+      "bytes": 395,
+      "sha256": "1974c3d52662e29cbbfbf1b151868cf4e404e3f7016ad4ce97023a68fec3126e",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "check_scene_state_bridge_v10.py",
+      "bytes": 18218,
+      "sha256": "a5b1714cf74d42c3fff80dc22b397afb458e88b29748bd116cc704f74be9ed24",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "run_bridge_controls.private.sh",
+      "bytes": 1175,
+      "sha256": "cad52f0cc91e7c33066052ecad1c53648dee49482cfa7dd124e70e69b71ac212",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "test_scene_state_bridge_v10.py",
+      "bytes": 13293,
+      "sha256": "1a17e0e3ca0aa5c75473202dd2759569f4e4206e07fcea99f1fdfd2bba113919",
+      "classification": "public_evidence_candidate"
+    },
+    {
+      "logical_path": "tools-after.private.log",
+      "bytes": 147,
+      "sha256": "727b2afc75ce90eaa4c455fe3089a4dfb1b23876adde661db7bd61c1687a756c",
+      "classification": "private_execution_record"
+    },
+    {
+      "logical_path": "tools-before.private.log",
+      "bytes": 147,
+      "sha256": "727b2afc75ce90eaa4c455fe3089a4dfb1b23876adde661db7bd61c1687a756c",
+      "classification": "private_execution_record"
+    }
+  ],
+  "artifact_bytes_excluding_this_summary_and_final_manifest": 96240,
+  "preparation_budget_correction": "The historical preparation estimated 100000 total bytes. The exact final roster is authoritative; no large copies or fixture files exist.",
+  "final_package_privacy_scan_pending": true,
+  "model_go": false,
+  "publication_go": false
+}

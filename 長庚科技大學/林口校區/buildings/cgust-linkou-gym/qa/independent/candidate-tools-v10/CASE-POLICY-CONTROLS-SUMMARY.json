@@ -1,0 +1,119 @@
+{
+  "schema": "cgust-case-policy-controls-summary-v1",
+  "passed": true,
+  "model_go": false,
+  "case_stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+  "shared_lock_exclusivity_probe_exit": 1,
+  "controls": [
+    {
+      "mode": "normal",
+      "case_count": 24,
+      "exit_code": 0,
+      "cpu_affinity": [
+        0
+      ],
+      "optimization_level": 0,
+      "all_sources_unchanged": true,
+      "all_read_inputs_unchanged": true
+    },
+    {
+      "mode": "optimized",
+      "case_count": 24,
+      "exit_code": 0,
+      "cpu_affinity": [
+        0
+      ],
+      "optimization_level": 1,
+      "all_sources_unchanged": true,
+      "all_read_inputs_unchanged": true
+    }
+  ],
+  "files": [
+    {
+      "path": "CASE-POSTFLIGHT-ADAPTATION.json",
+      "bytes": 3264,
+      "sha256": "3e9d9002df241d0d0278b5d8fb1bb3422530c3eefc4562e07b5b51eb9ab146eb"
+    },
+    {
+      "path": "inspect_flagged_cgust_mode.py",
+      "bytes": 10697,
+      "sha256": "5c311e685e1907656a543de8f1e2be128ce3ea9562eb3e1b3017850d3895be27"
+    },
+    {
+      "path": "inspect_flagged_cgust_mode.py.diff",
+      "bytes": 7205,
+      "sha256": "149c1a85daa3a9566df44be0d994115e3dcabe557272362cf34e316081437e80"
+    },
+    {
+      "path": "policy-controls-normal/case-controls.json",
+      "bytes": 69688,
+      "sha256": "fe127227c4011f64686aa5aed944e50998706cc56e9b8dba63fc8458455a5844"
+    },
+    {
+      "path": "policy-controls-normal.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "policy-controls-normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "policy-controls-normal.stdout.txt",
+      "bytes": 30,
+      "sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1"
+    },
+    {
+      "path": "policy-controls-optimized/case-controls.json",
+      "bytes": 69688,
+      "sha256": "213da87c80f3556b93617a5854831c83a2f3a2ac61084017e1d3e8542f628e30"
+    },
+    {
+      "path": "policy-controls-optimized.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "policy-controls-optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "policy-controls-optimized.stdout.txt",
+      "bytes": 30,
+      "sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1"
+    },
+    {
+      "path": "policy-lock-probe.exit-code.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "review_completed_cgust_candidate.py",
+      "bytes": 13210,
+      "sha256": "804f40a26b4e778a23bfbd2bee375ffbc2ffb2440ce5e074be6737570694c0f3"
+    },
+    {
+      "path": "review_completed_cgust_candidate.py.diff",
+      "bytes": 3209,
+      "sha256": "1a8c1c01fdf003ae4e39895068fa71dd87ef8c8d58f5fb9de4e4d4ca95bfacdd"
+    },
+    {
+      "path": "run_case_policy_controls.sh",
+      "bytes": 1043,
+      "sha256": "1d0f0ea74ef64bbf200ee8ff4b0ffa0d43d7d976bdc8ff7f7b545a1b7d3cd877"
+    },
+    {
+      "path": "test_case_postflight.py",
+      "bytes": 7811,
+      "sha256": "e956e59c7d01b70b5f04842a5a6d5a1902bf8ff0cdabc32e86d9c32b9c878346"
+    },
+    {
+      "path": "test_case_postflight.py.diff",
+      "bytes": 7747,
+      "sha256": "4c3b8ce13f95ba50c6c518cfe5bf3d1e6d18fe200c2c6aad871580ea608c948d"
+    }
+  ],
+  "scope": "Case-bound controls only, using genuine author normal evidence in both host interpreter modes. Test-only dense audit caching; real final reviewer fully recomputes original CSV evidence. New report path metadata uses logical root keys from inception. Final reviewer not yet executed and source final GO still required."
+}

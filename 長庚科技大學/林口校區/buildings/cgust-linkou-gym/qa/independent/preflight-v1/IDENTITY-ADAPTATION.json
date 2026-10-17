@@ -1,0 +1,20 @@
+{
+  "scope": "Identity-only preflight adaptation; not a model GO or scientific checker waiver",
+  "original": {
+    "path": "wfu-shengyou-independent-qa/candidate-tools-v13-lattice56/prove_stl_coordinate_lattice.py",
+    "bytes": 7151,
+    "sha256": "c19aa7a2f861ce47525388e86fe454aa9280c75586eca1f09b733973b0c0de06"
+  },
+  "adapted": {
+    "path": "cgust-linkou-gym-independent-qa/tools/derive_stl_case.py",
+    "bytes": 7750,
+    "sha256": "e56007862f5576c2fb1478c8cdf7c75178f2c32237ac9ec9a86871606f3bbcd3"
+  },
+  "diff_sha256": "71443dfc3bc89c0313e73651085ed720588ba5d4e65056cded74b29003e2a4bb",
+  "changes": [
+    "Caller supplies exact STL SHA; binary face count and all coordinate denominator powers are derived from raw bytes",
+    "Original no-follow read, stable-fstat, exact rational and signed-zero binary32 roundtrip checks retained",
+    "WFU-only old-2^30 rejection replaced by exact minimality witness valid also for integer-only coordinates",
+    "Counts, extents and denominator histogram are metadata only, not geometry acceptance"
+  ]
+}

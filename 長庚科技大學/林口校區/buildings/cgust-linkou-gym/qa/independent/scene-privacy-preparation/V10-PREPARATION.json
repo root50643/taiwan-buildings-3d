@@ -1,0 +1,377 @@
+{
+  "schema": "cgust-v10-scene-privacy-preparation-and-results-v1",
+  "private_preparation_not_public_payload": true,
+  "candidate": {
+    "logical_input": "models/v10/scene.blend",
+    "bytes": 883140,
+    "sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b"
+  },
+  "status": "exact-scene SDNA/byte projection and bounded used/unused-resource API supplement passed; broader source/render/public-package gates remain external",
+  "correction_to_retained_v8_plan": {
+    "retained_v8_plan_modified": false,
+    "incorrect_old_claim": "The earlier PREPARATION.json and worker prose stated a 15-byte mask and called WFU 16-byte documentation inconsistent.",
+    "correct_fact": "The unchanged raw observation always recorded 11 bytes for the home UI value plus 5 bytes for the output default. The correct total is 16. WFU documentation was correct.",
+    "enforcement": "The generic SDNA parser derives each span from the actual raw buffer before its first NUL. The v10 checker independently derives effective_length from raw.partition, and controls confirm the sum is 16."
+  },
+  "fields_freshly_decoded_from_v10": [
+    {
+      "block_code": "DATA",
+      "root_type": "FileSelectParams",
+      "sdna_index": 804,
+      "root_struct_bytes": 2088,
+      "block_payload_offset": 171528,
+      "field": "dir[1090]",
+      "field_type": "char",
+      "field_absolute_byte_offset": 171624,
+      "field_buffer_bytes": 1090,
+      "field_buffer_sha256": "2d1dc02e846e766c501535dfda01be83adbdea6d8e03a42e4e5df5377da744d1",
+      "effective_utf8": "utf8-hex:2f686f6d652f6167656e74",
+      "effective_bytes": 11,
+      "after_first_nul_nonzero_bytes": 29,
+      "tail_sha256": "7c7167aa8393f7803ee13cf0cd1ef446319fdd733456ee85fc355ad22f65c471",
+      "field_chain": [
+        {
+          "parent_type": "FileSelectParams",
+          "field": "dir[1090]",
+          "relative_offset": 96,
+          "bytes": 1090
+        }
+      ]
+    },
+    {
+      "block_code": "SC\u0000\u0000",
+      "root_type": "Scene",
+      "sdna_index": 726,
+      "root_struct_bytes": 6744,
+      "block_payload_offset": 230928,
+      "field": "r.pic[1024]",
+      "field_type": "char",
+      "field_absolute_byte_offset": 231956,
+      "field_buffer_bytes": 1024,
+      "field_buffer_sha256": "a27bf0cff013ac91d264ac7f6b87fe91b392cee0ed657588929e56c4f0b4d07d",
+      "effective_utf8": "utf8-hex:2f746d702f",
+      "effective_bytes": 5,
+      "after_first_nul_nonzero_bytes": 0,
+      "tail_sha256": "3df3e7ad4df4994b5212a4780e885902004ae52a26d2a1d93a5b8fcbb3a0b1f2",
+      "field_chain": [
+        {
+          "parent_type": "Scene",
+          "field": "r",
+          "relative_offset": 432,
+          "bytes": 4376
+        },
+        {
+          "parent_type": "RenderData",
+          "field": "pic[1024]",
+          "relative_offset": 596,
+          "bytes": 1024
+        }
+      ]
+    }
+  ],
+  "byte_gate": {
+    "case_specific_controls_per_mode": 15,
+    "normal_passed": true,
+    "optimized_passed": true,
+    "original_scene_scan_both_modes_passed": true,
+    "effective_bytes_masked": 16,
+    "ui_nonzero_nul_tail_bytes_preserved_and_scanned": 29,
+    "other_bytes_unchanged": true,
+    "full_scene_zero_paths_claimed": false,
+    "generic_full_synthetic_suites_rerun": false
+  },
+  "api_supplement": {
+    "source": "inspect_cgust_v10_api_resources.py",
+    "single_original_blender_open_only": true,
+    "blender_version": "4.3.2",
+    "render_calls": 0,
+    "save_calls": 0,
+    "small_validator_controls_per_mode": 30,
+    "normal_and_optimized_validator_controls_passed": true,
+    "original_API_inventory_passed": true,
+    "original_scene_unchanged": true,
+    "resource_categories_all_empty": [
+      "libraries",
+      "images",
+      "fonts",
+      "sounds",
+      "movieclips",
+      "cache_files",
+      "volumes",
+      "texts",
+      "node_groups",
+      "particles",
+      "textures"
+    ],
+    "inclusive_blend_paths_empty": true,
+    "packed_false_means_packed_paths_not_skipped": true,
+    "local_false_means_linked_paths_not_skipped": true,
+    "all_data_shader_nodes_inspected": 18,
+    "exact_output_value_utf8_hex": "2f746d702f",
+    "exact_output_value_sha256": "ac351c7174c8f47a9a9056bd96bcd71cfb980c906daee74ab9bce8308c68b811",
+    "autoexec_disabled_before_and_after_open": true,
+    "arbitrary_RNA_serialization_claimed": false,
+    "documentation_reference": "https://docs.blender.org/api/4.4/bpy.utils.html#bpy.utils.blend_paths",
+    "documentation_version_note": "4.4 official docs used only to check option semantics; actual source executed and reported against installed Blender 4.3.2."
+  },
+  "negative_fixture_replay": {
+    "materialized_new_blend_fixtures": 0,
+    "private_originals": "Only private process-memory originals for these new small controls; no new path-bearing fixture file persisted. Old retained private fixtures and historical archives untouched.",
+    "generator": "test_cgust_v10_scene_privacy.py",
+    "new_recipes": "Logical base, exact base identity, original-byte hex, offset and replacement-byte hex are recorded in controls reports.",
+    "actual_reconstruction": "Each new byte-patch fixture was reconstructed a second time using a separate bytes-slicing path, compared bitwise, and both reconstructed/source fixture byte counts and SHA256 values were recorded.",
+    "projection_fixture_note": "The NUL-tail scan-boundary fixture has an explicitly labeled exact effective-string in-memory projection base; it is not represented as an original source Blend or published modified scene.",
+    "public_future": "These logical sources/results are candidates for later selection. No upload, archive or publication is authorized or implied."
+  },
+  "source_reuse": {
+    "generic_reference": "wfu-shengyou-independent-qa/public-privacy-v1/package_controls_v2.py",
+    "generic_bytes": 47569,
+    "generic_sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+    "generic_source_byte_identical_and_not_copied": true,
+    "generic_parser_called": "blend_generic_default_projection invokes bounded blend_sdna_defaults; one case entry pins the entire profile and whole candidate independently.",
+    "all_generic_common_previous_wfu_and_new_cgust_patterns_retained": true,
+    "no_new_wrapper_layers": true,
+    "reused_exact_excerpts": [
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 3845,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 2248,
+        "name": "_read_regular_snapshot",
+        "bytes": 2425,
+        "sha256": "7b28cfe08ae1d0892c553b665366738d26118b29924792bb506a99596f8514f3",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 1912,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 2184,
+        "name": "digest",
+        "bytes": 62,
+        "sha256": "50b76bfffc27cbd7a792c95d031f6fd8e49777b6241b96ed8c4c4773edc356cb",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 6272,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 4675,
+        "name": "read_exact",
+        "bytes": 502,
+        "sha256": "252652a1a6ea71bdce3465c7ad608aaa90279c56de1c9eeeedd14f9d1503f4ae",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 1821,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 2093,
+        "name": "require",
+        "bytes": 89,
+        "sha256": "771470ca6047ea7b84814e6cc23c2357b927e95ad29ed2fbd7b34f2969c68de4",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 7053,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 5456,
+        "name": "require_source_unchanged",
+        "bytes": 136,
+        "sha256": "8bb33723349b6651f74125c2da7746efbc3e85d4651a844cfd60843bad06bbab",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 6776,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 5179,
+        "name": "source_snapshot",
+        "bytes": 275,
+        "sha256": "5d4f0f789e9adc07c6f26f5e7344b9b413383a2661501fa15e633cbceaa5a3f5",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/exact_privacy_primitives.py",
+        "source_sha256": "1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd",
+        "source_start_byte": 659,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 5594,
+        "name": "ADDITIONAL_PRIVATE_MARKERS",
+        "bytes": 182,
+        "sha256": "47b529074a8a8adf6b2439494f895f8313002e151bcd6c05002ed4bf4207fd3b",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/exact_privacy_primitives.py",
+        "source_sha256": "1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd",
+        "source_start_byte": 843,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 5778,
+        "name": "ADDITIONAL_SECRET_PATTERNS",
+        "bytes": 275,
+        "sha256": "c0faa79c97d98997af26df1abaab3508f57ab1db1816482b8d63700a7ada6436",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/exact_privacy_primitives.py",
+        "source_sha256": "1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd",
+        "source_start_byte": 1469,
+        "new_logical_file": "check_cgust_v10_scene_privacy.py",
+        "new_start_byte": 6055,
+        "name": "scan_complete_plain_buffer",
+        "bytes": 566,
+        "sha256": "482b8c8e9a9fab5f3ff2bf6c8c1e76d71d7b5e2490cc908cc99fe6d0b0c06d1c",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 3845,
+        "new_logical_file": "test_cgust_v10_scene_privacy.py",
+        "new_start_byte": 753,
+        "name": "_read_regular_snapshot",
+        "bytes": 2425,
+        "sha256": "7b28cfe08ae1d0892c553b665366738d26118b29924792bb506a99596f8514f3",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 1912,
+        "new_logical_file": "test_cgust_v10_scene_privacy.py",
+        "new_start_byte": 689,
+        "name": "digest",
+        "bytes": 62,
+        "sha256": "50b76bfffc27cbd7a792c95d031f6fd8e49777b6241b96ed8c4c4773edc356cb",
+        "byte_identical": true
+      },
+      {
+        "source_reference": "wfu-shengyou-independent-qa/public-roster-v13/privacy-public-r3/check_wfu_privacy.py",
+        "source_sha256": "58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950",
+        "source_start_byte": 1821,
+        "new_logical_file": "test_cgust_v10_scene_privacy.py",
+        "new_start_byte": 598,
+        "name": "require",
+        "bytes": 89,
+        "sha256": "771470ca6047ea7b84814e6cc23c2357b927e95ad29ed2fbd7b34f2969c68de4",
+        "byte_identical": true
+      }
+    ]
+  },
+  "observer_narrow_adaptation": {
+    "base_source_sha256": "df2db2767026c4b27412b68522448568f8184c5c0c50801ad124a801e4ac14a2",
+    "adapted_source_sha256": "c52b55874519186c26fb59e43b54f238d5b71e468e5dbf88bfc7d0b2137febb0",
+    "changes": "Only candidate version labels, input relative path, exact input byte count and SHA, and observation schema label. Decoder and read-only functions unchanged.",
+    "diff": "--- observe_cgust_v8_sdna.py\n+++ observe_cgust_v10_sdna.py\n@@ -1,4 +1,4 @@\n-\"\"\"Read-only stdlib observation of one CGUST v8 Blend; NOT a privacy gate.\n+\"\"\"Read-only stdlib observation of one CGUST v10 Blend; NOT a privacy gate.\n \n Run from the workspace root with python -B; JSON goes to stdout. This source\n never imports or executes the historical tools, runs Blender, masks bytes,\n@@ -14,9 +14,9 @@\n import struct\n \n \n-SCENE = 'author/models/v8/scene.blend'\n-SCENE_BYTES = 1016176\n-SCENE_SHA256 = 'c7ab626e4cbc30e32f6a8beda579aa126cf928e877e92b3a09d60ec6a1313f59'\n+SCENE = 'author/models/v10/scene.blend'\n+SCENE_BYTES = 883140\n+SCENE_SHA256 = '24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b'\n REFERENCES = {\n     'wfu-shengyou-independent-qa/public-privacy-v1/package_controls_v2.py':\n         (47569, '1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c'),\n@@ -227,14 +227,14 @@\n def main():\n     own = read_only_snapshot(__file__)\n     data = read_only_snapshot(SCENE, SCENE_BYTES)\n-    require(digest(data) == SCENE_SHA256, 'Exact CGUST v8 identity differs')\n+    require(digest(data) == SCENE_SHA256, 'Exact CGUST v10 identity differs')\n     references = []\n     for path, (size, expected) in REFERENCES.items():\n         source = read_only_snapshot(path, size)\n         require(digest(source) == expected, 'Reference source changed')\n         references.append({'path': path, 'bytes': size, 'sha256': expected,\n                            'read_for_identity_only': True, 'executed': False})\n-    result = {'schema': 'cgust-v8-read-only-sdna-observation-v1',\n+    result = {'schema': 'cgust-v10-read-only-sdna-observation-v1',\n         'status': 'observation_only_not_a_privacy_or_scene_acceptance',\n         'source_path': SCENE, 'bytes': len(data), 'sha256': digest(data),\n         'observation_source_bytes': len(own), 'observation_source_sha256': digest(own),\n"
+  },
+  "source_and_result_artifacts": [
+    {
+      "logical_file": "observe_cgust_v10_sdna.py",
+      "bytes": 12230,
+      "sha256": "c52b55874519186c26fb59e43b54f238d5b71e468e5dbf88bfc7d0b2137febb0"
+    },
+    {
+      "logical_file": "v10-sdna-observation.json",
+      "bytes": 4948,
+      "sha256": "530ef513c869acf35ea85311e879c45b5c7e2a67092063a21df2968a2f4dd5d3"
+    },
+    {
+      "logical_file": "check_cgust_v10_scene_privacy.py",
+      "bytes": 10988,
+      "sha256": "854e1868de71bb82c93d27f637dd70c68d3eb1293d1c5eeb6e3177476cddb045"
+    },
+    {
+      "logical_file": "test_cgust_v10_scene_privacy.py",
+      "bytes": 12220,
+      "sha256": "09e37542811feaeb5b59b807274dbb52bf927afc41516df8db21dcd8bab74919"
+    },
+    {
+      "logical_file": "inspect_cgust_v10_api_resources.py",
+      "bytes": 12022,
+      "sha256": "ef7469971f4dc1c4c7fdc7397b9cff4076df009f1024e0dded5a134ea3e9b59d"
+    },
+    {
+      "logical_file": "v10-controls-normal.json",
+      "bytes": 9659,
+      "sha256": "d4f7efa3eebc99aaa5382bf1d861cf516cfbeb419f68bf00277dd5e5dc21c10e"
+    },
+    {
+      "logical_file": "v10-controls-optimized.json",
+      "bytes": 9659,
+      "sha256": "179829d5c06f15bebc0c6f383684dac3cdd79fb175efa3691fe4badcaf51dd91"
+    },
+    {
+      "logical_file": "v10-scan-normal.json",
+      "bytes": 2343,
+      "sha256": "c002258738ed89089dfd1d710585035c17e0e219e5c9a4bbf99f2f1a5b273029"
+    },
+    {
+      "logical_file": "v10-scan-optimized.json",
+      "bytes": 2343,
+      "sha256": "d387eaf74f2bd098b2328c2a4230957129e8916fd25ce6c1c5a7856ad3ca06e2"
+    },
+    {
+      "logical_file": "v10-api-controls-normal.json",
+      "bytes": 11762,
+      "sha256": "8b955b5a4c9b0a2cd44d8fed3f1262ee674e43addad22596edcea054cadfeec8"
+    },
+    {
+      "logical_file": "v10-api-controls-optimized.json",
+      "bytes": 11762,
+      "sha256": "ea95522e11ff1ec699ff69f8abf0ebd65533509b9d365032367424fe4d79d1e7"
+    },
+    {
+      "logical_file": "v10-api-inventory.json",
+      "bytes": 1855,
+      "sha256": "4590ed91f5300cac183aa33e5c46fcd8bd60be5c36ca2a659d2dfda73196f9f8"
+    },
+    {
+      "logical_file": "v10-public-evidence-byte-scan.json",
+      "bytes": 2899,
+      "sha256": "091b9e8e21166dbe5b6c858c0bf10e2f216b27f30a691e66745189d145703c4b"
+    },
+    {
+      "logical_file": "v10-tooling.sha256",
+      "bytes": 448,
+      "sha256": "608813aaf9f1566e16580a2550fd2d804e9bc17bf1af4bbc85be13ac4781e580"
+    },
+    {
+      "logical_file": "v10-api-tooling.sha256",
+      "bytes": 159,
+      "sha256": "7198f3a81aa7a1b844a5fd177ec633c024c2b9f4bb576f46a9296d759da89ce3"
+    }
+  ],
+  "all_selected_source_and_result_byte_privacy_scan": {
+    "logical_report": "v10-public-evidence-byte-scan.json",
+    "ten_exact_files_scanned": true,
+    "all_generic_common_wfu_cgust_patterns": true,
+    "exceptions": 0,
+    "whole_future_package_scanned": false
+  },
+  "private_execution_records": {
+    "cli_runner": "run_v10_scene_privacy_private.sh",
+    "stdout_stderr_exit_suffix": ".private.*",
+    "do_not_select": "Raw CLI logs, observations and preparation are private and excluded from the ten-file public-evidence scan.",
+    "shared_lock": "runtime/reused-private/qa/.heavy.lock",
+    "cpu": 0,
+    "byte_controls_and_scans_lock_start": "2026-10-17T16:35:28Z",
+    "byte_controls_and_scans_lock_end": "2026-10-17T16:35:29Z",
+    "source_freezes_before_after_match": true
+  },
+  "remaining_join_requirements": [
+    "Bind author and independent original scene-inspector/state reports to this same v10 scene SHA and final original STL/manifest/tool hashes.",
+    "If source-state JSON is selected publicly, derive its own whole-file identity and exact typed render-output pointer/literal offset. No WFU or v8 JSON offsets transfer.",
+    "Final chosen public file membership, CSV and compressed containers, source review, physical geometry and nine-view equivalence remain outside these reports."
+  ],
+  "model_go": false,
+  "publication_go": false,
+  "full_public_package_privacy_go": false
+}

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "optimization_level": 1,
+  "cpu_affinity": [
+    0
+  ],
+  "source_sha256": "906b730d49b2c5ea39850fbdec20830049dd9489928b9377cacd996f024cd6c6",
+  "original_runner_sha256": "538625810f924812964d965b6b440b056b7dab528c4fcfdd02a000c295476197",
+  "adapted_runner_sha256": "531fff0d8167cd88695f1a6a76772a373536f2871397608543bf1b8b71f2d156",
+  "all_sources_unchanged": true,
+  "cases": [
+    {
+      "case": "exact_two_guard_insertions",
+      "expected_accept": true,
+      "accepted": true,
+      "rejection": null,
+      "passed": true
+    },
+    {
+      "case": "missing_one_guard",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact Blender guard command differs",
+      "passed": true
+    },
+    {
+      "case": "false_guard",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact Blender guard command differs",
+      "passed": true
+    },
+    {
+      "case": "unexpected_source_change",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Non-command runner AST changed",
+      "passed": true
+    },
+    {
+      "case": "changed_cpu_threads",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact Blender guard command differs",
+      "passed": true
+    },
+    {
+      "case": "extra_expression",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact Blender guard command differs",
+      "passed": true
+    }
+  ],
+  "scope": "Exact command-only runner adaptation controls; no geometry, source rebuild, scene load or render executes in these AST controls."
+}

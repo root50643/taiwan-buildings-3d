@@ -1,0 +1,599 @@
+{
+  "schema": "cgust-v10-postflight-and-runner-runtime-read-only-peer-v1",
+  "reviewed_at_utc": "2026-10-17T16:40:50.686790+00:00",
+  "passed": true,
+  "blocking_findings_for_tool_preparation": [],
+  "model_go": false,
+  "source_and_final_nine_image_go": "Not granted by this peer; pending parent/source reviewers.",
+  "scope": "Read-only source/diff/static inspection, retained output/hash checks and tiny cache byte comparison only. No tests or project modules were executed; no Blender, geometry, CSV decode, final reviewer or independent full run was launched.",
+  "postflight": {
+    "adaptation": {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/CASE-POSTFLIGHT-ADAPTATION.json",
+      "bytes": 3264,
+      "sha256": "3e9d9002df241d0d0278b5d8fb1bb3422530c3eefc4562e07b5b51eb9ab146eb"
+    },
+    "all_three_original_adapted_diff_pins_and_exact_diffs_match": true,
+    "review_conclusion": "Only measured v10 case constants, explicit exact_dir and controlled-test CLI/logical metadata/affinity/source-before-after additions. Original strict=false semantics, complete typed exit map, generic raw/sections/intersections/controls, full dense audit call, exact same-run source binding, descriptor/reason identity, rational first-chord threshold and interval order remain. Final source/freeze/scene/nine-image/PNG requirements only change case helper import.",
+    "policy_controls": [
+      {
+        "python_mode": "normal",
+        "actual_optimization_level": 0,
+        "actual_cpu_affinity": [
+          0
+        ],
+        "producer_evidence_mode": "normal",
+        "case_count": 24,
+        "all_passed": true,
+        "wfu_original_case_ledger_identical": true,
+        "test_helper_before_after_hashes_match_current_bytes": true,
+        "logical_inventory_files": 325,
+        "logical_inventory_bytes": 5115698,
+        "logical_inventory_complete_no_collision": true,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-normal/case-controls.json",
+          "bytes": 69688,
+          "sha256": "fe127227c4011f64686aa5aed944e50998706cc56e9b8dba63fc8458455a5844"
+        }
+      },
+      {
+        "python_mode": "optimized",
+        "actual_optimization_level": 1,
+        "actual_cpu_affinity": [
+          0
+        ],
+        "producer_evidence_mode": "normal",
+        "case_count": 24,
+        "all_passed": true,
+        "wfu_original_case_ledger_identical": true,
+        "test_helper_before_after_hashes_match_current_bytes": true,
+        "logical_inventory_files": 325,
+        "logical_inventory_bytes": 5115698,
+        "logical_inventory_complete_no_collision": true,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-optimized/case-controls.json",
+          "bytes": 69688,
+          "sha256": "213da87c80f3556b93617a5854831c83a2f3a2ac61084017e1d3e8542f628e30"
+        }
+      }
+    ],
+    "policy_lock_probe_exit": 1,
+    "logical_inventory_reference": "policy-controls-normal/case-controls.json:input_inventory",
+    "actual_cli_reference": "run_case_policy_controls.sh",
+    "logical_scope_roots": [
+      "stl",
+      "full-normal",
+      "exact-normal",
+      "qa-tools",
+      "qa-verification"
+    ]
+  },
+  "runner_runtime": {
+    "original_runner": {
+      "path": "wfu-shengyou-independent-qa/independent-tools/run_frozen_candidate.py",
+      "bytes": 9409,
+      "sha256": "538625810f924812964d965b6b440b056b7dab528c4fcfdd02a000c295476197"
+    },
+    "adapted_runner": {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/run_frozen_candidate.py",
+      "bytes": 9531,
+      "sha256": "531fff0d8167cd88695f1a6a76772a373536f2871397608543bf1b8b71f2d156"
+    },
+    "exact_inserted_argv": [
+      "--python-expr",
+      "import sys; sys.dont_write_bytecode = True"
+    ],
+    "runner_insertions": 2,
+    "runner_all_other_bytes_identical": true,
+    "original_author_wrapper": {
+      "path": "author/qa/render-tools/run_source_render_verification.py",
+      "bytes": 7322,
+      "sha256": "127c3762746bd2ade2a5c27090116793bf2c6e2fd7eb8471a6badcd78daf69d0"
+    },
+    "adapted_author_wrapper": {
+      "path": "author/qa/render-tools-v10-cacheguard/run_source_render_verification.py",
+      "bytes": 7383,
+      "sha256": "de4565114c476031a899ad03db1c53af15c773490836f391b5a7a36e3b15cf3a"
+    },
+    "author_common_insertions": 1,
+    "author_all_other_bytes_identical": true,
+    "author_copied_renderer_tools_byte_identical": 5,
+    "ast_controls": [
+      {
+        "kind": "ast",
+        "host_optimization_level": 0,
+        "cpu_affinity": [
+          0
+        ],
+        "case_count": 6,
+        "all_passed": true,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-normal/results.json",
+          "bytes": 1625,
+          "sha256": "46413161b87f79a742fec00c58a2a9e5c884cebaafd6d423160982884b58f585"
+        }
+      },
+      {
+        "kind": "ast",
+        "host_optimization_level": 1,
+        "cpu_affinity": [
+          0
+        ],
+        "case_count": 6,
+        "all_passed": true,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-optimized/results.json",
+          "bytes": 1625,
+          "sha256": "17bb6b33ee944b153a9671615d40ed6bfcabae85152575be69ea4a90fbf858ce"
+        }
+      },
+      {
+        "kind": "author",
+        "host_optimization_level": 0,
+        "cpu_affinity": [
+          0
+        ],
+        "case_count": 6,
+        "all_passed": true,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-normal/results.json",
+          "bytes": 1593,
+          "sha256": "fa412485fa0598656bbea4a993a57c8796b2240c1c31724a36680c14dbe662c7"
+        }
+      },
+      {
+        "kind": "author",
+        "host_optimization_level": 1,
+        "cpu_affinity": [
+          0
+        ],
+        "case_count": 6,
+        "all_passed": true,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-optimized/results.json",
+          "bytes": 1593,
+          "sha256": "841c470c2eeafa6e66d0646efdd01baba4bfc8093d64fe3cd37dcd999439cea0"
+        }
+      }
+    ],
+    "actual_blender_runtime_controls": [
+      {
+        "case": "environment-only",
+        "actual_blender_python_optimization_level": 0,
+        "cpu_affinity": [
+          0
+        ],
+        "runtime_dont_write_bytecode": false,
+        "cache_count": 1,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only/results.json",
+          "bytes": 852,
+          "sha256": "02c1004dfabd6a4c4ca74b3ddf8e314a8351ba998011c4ede6b1e48ae2b8c1bf"
+        }
+      },
+      {
+        "case": "explicit-guard",
+        "actual_blender_python_optimization_level": 0,
+        "cpu_affinity": [
+          0
+        ],
+        "runtime_dont_write_bytecode": true,
+        "cache_count": 0,
+        "result": {
+          "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-explicit-guard/results.json",
+          "bytes": 671,
+          "sha256": "46c485b5efee0dad1c211bc5f4ba53a6fb1d538a334e19a74f6bdec9908806d1"
+        }
+      }
+    ],
+    "cache_rebuild": {
+      "result": {
+        "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild/results.json",
+        "bytes": 788,
+        "sha256": "5cd933c4b81be46734a26d2d14228025c5263da21995345ab5d3346586632fbc"
+      },
+      "original": {
+        "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only/__pycache__/fixture.cpython-313.pyc",
+        "bytes": 239,
+        "sha256": "7791c8b5de236628a2a5ea7706a14b9b6c01098c63d049fe7c335ba0bc5d2106"
+      },
+      "rebuilt": {
+        "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild/rebuilt.pyc",
+        "bytes": 239,
+        "sha256": "7791c8b5de236628a2a5ea7706a14b9b6c01098c63d049fe7c335ba0bc5d2106"
+      },
+      "bytes_identical": true,
+      "original_fixture_retained_unchanged": true,
+      "actual_cpu_affinity": [
+        0
+      ],
+      "optimization_level_recorded": false
+    },
+    "all_seven_runtime_ast_child_exit_codes_zero": true,
+    "all_seven_runtime_ast_child_stderr_empty": true
+  },
+  "original_core28": {
+    "count": 28,
+    "reference": {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/STRUCTURE-CONTROLS-SUMMARY.json",
+      "bytes": 39459,
+      "sha256": "4ce4d5f3c70bbf3f5c6366f9dfe5fc5dff8201a37a224b4b588f063b83041ac2"
+    },
+    "all_current_size_and_sha256_match_protected_inventory": true
+  },
+  "limits": [
+    "The actual Blender environment-only and explicit-guard probes record Python optimization_level=0. The 0/1 pair applies to host Python AST controls only. No Blender -O runtime claim is made.",
+    "Cache rebuild result omits optimization_level. Its retained launcher unsets PYTHONOPTIMIZE and uses the explicit guard; this peer relies on actual bitwise equality and does not invent a recorded optimization field.",
+    "The tiny actual-cache fixture script uses assert only for fresh output. It ran at observed optimization_level=0; no claim of optimized-runtime coverage is derived from it.",
+    "Both policy interpreter modes inspect genuine normal producer evidence with expected producer opt=0. Dense audit is cached only in the policy test; no full candidate acceptance is claimed.",
+    "Final reviewers were not executed. Postflight policy logical-key projection is checked for complete collision-free coverage of these actual 325 inputs; no new arbitrary-CLI/path tests were run."
+  ],
+  "all_reviewed_files_unchanged_during_peer": true,
+  "reviewed_file_count": 73,
+  "reviewed_file_inventory": [
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/CASE-POSTFLIGHT-ADAPTATION.json",
+      "bytes": 3264,
+      "sha256": "3e9d9002df241d0d0278b5d8fb1bb3422530c3eefc4562e07b5b51eb9ab146eb"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/inspect_flagged_cgust_mode.py",
+      "bytes": 10697,
+      "sha256": "5c311e685e1907656a543de8f1e2be128ce3ea9562eb3e1b3017850d3895be27"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/inspect_flagged_cgust_mode.py.diff",
+      "bytes": 7205,
+      "sha256": "149c1a85daa3a9566df44be0d994115e3dcabe557272362cf34e316081437e80"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-normal.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-normal.stdout.txt",
+      "bytes": 30,
+      "sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-normal/case-controls.json",
+      "bytes": 69688,
+      "sha256": "fe127227c4011f64686aa5aed944e50998706cc56e9b8dba63fc8458455a5844"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-optimized.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-optimized.stdout.txt",
+      "bytes": 30,
+      "sha256": "5e3e313a1cfc50b5d935d1d6558aec12863be2c06e3137e2ab4c26d454d1c5f1"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-controls-optimized/case-controls.json",
+      "bytes": 69688,
+      "sha256": "213da87c80f3556b93617a5854831c83a2f3a2ac61084017e1d3e8542f628e30"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/policy-lock-probe.exit-code.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/review_completed_cgust_candidate.py",
+      "bytes": 13210,
+      "sha256": "804f40a26b4e778a23bfbd2bee375ffbc2ffb2440ce5e074be6737570694c0f3"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/review_completed_cgust_candidate.py.diff",
+      "bytes": 3209,
+      "sha256": "1a8c1c01fdf003ae4e39895068fa71dd87ef8c8d58f5fb9de4e4d4ca95bfacdd"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/run_case_policy_controls.sh",
+      "bytes": 1043,
+      "sha256": "1d0f0ea74ef64bbf200ee8ff4b0ffa0d43d7d976bdc8ff7f7b545a1b7d3cd877"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/test_case_postflight.py",
+      "bytes": 7811,
+      "sha256": "e956e59c7d01b70b5f04842a5a6d5a1902bf8ff0cdabc32e86d9c32b9c878346"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/test_case_postflight.py.diff",
+      "bytes": 7747,
+      "sha256": "4c3b8ce13f95ba50c6c518cfe5bf3d1e6d18fe200c2c6aad871580ea608c948d"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/RUNTIME-GUARD-CONTROLS-SUMMARY.json",
+      "bytes": 10545,
+      "sha256": "0bb67d1dd8ff08c44365f36c9684bf38697efa720b119be0a03366ad7c13df3e"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-normal.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-normal.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-normal/results.json",
+      "bytes": 1625,
+      "sha256": "46413161b87f79a742fec00c58a2a9e5c884cebaafd6d423160982884b58f585"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-optimized.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-optimized.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/ast-optimized/results.json",
+      "bytes": 1625,
+      "sha256": "17bb6b33ee944b153a9671615d40ed6bfcabae85152575be69ea4a90fbf858ce"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-normal.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-normal.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-normal/results.json",
+      "bytes": 1593,
+      "sha256": "fa412485fa0598656bbea4a993a57c8796b2240c1c31724a36680c14dbe662c7"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-optimized.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-optimized.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/author-optimized/results.json",
+      "bytes": 1593,
+      "sha256": "841c470c2eeafa6e66d0646efdd01baba4bfc8093d64fe3cd37dcd999439cea0"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only.stdout.txt",
+      "bytes": 101,
+      "sha256": "257d9a37e013afcd7e9edd0c71c636fdeee372493f05f39c8036c40484cbbeb3"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only/__pycache__/fixture.cpython-313.pyc",
+      "bytes": 239,
+      "sha256": "7791c8b5de236628a2a5ea7706a14b9b6c01098c63d049fe7c335ba0bc5d2106"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only/fixture.py",
+      "bytes": 42,
+      "sha256": "f0f30b251a30fb05047a4caf16e9c8710ab29c0f00ebe0c9ccfb332c9e1fb369"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-environment-only/results.json",
+      "bytes": 852,
+      "sha256": "02c1004dfabd6a4c4ca74b3ddf8e314a8351ba998011c4ede6b1e48ae2b8c1bf"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-explicit-guard.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-explicit-guard.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-explicit-guard.stdout.txt",
+      "bytes": 100,
+      "sha256": "669d2e052ea928f6914ba1a7dc401282c82378e2f0e14cb931e7f7de2cb02987"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-explicit-guard/fixture.py",
+      "bytes": 42,
+      "sha256": "f0f30b251a30fb05047a4caf16e9c8710ab29c0f00ebe0c9ccfb332c9e1fb369"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-explicit-guard/results.json",
+      "bytes": 671,
+      "sha256": "46c485b5efee0dad1c211bc5f4ba53a6fb1d538a334e19a74f6bdec9908806d1"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild.stdout.txt",
+      "bytes": 72,
+      "sha256": "c70d502cf24f93803440946590f767903bab2de4c402176f7f5c53b71f4e820c"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild/fixture.py",
+      "bytes": 42,
+      "sha256": "f0f30b251a30fb05047a4caf16e9c8710ab29c0f00ebe0c9ccfb332c9e1fb369"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild/rebuilt.pyc",
+      "bytes": 239,
+      "sha256": "7791c8b5de236628a2a5ea7706a14b9b6c01098c63d049fe7c335ba0bc5d2106"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/cache-rebuild/results.json",
+      "bytes": 788,
+      "sha256": "5cd933c4b81be46734a26d2d14228025c5263da21995345ab5d3346586632fbc"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/check_actual_cache.py",
+      "bytes": 1948,
+      "sha256": "0a857bf5c0c5ea313e6387e19906bb22aca2855de1ff908766046044eb33278c"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/rebuild_cache_fixture.py",
+      "bytes": 1742,
+      "sha256": "f1533cb481075cebd305e119be9dfdbf0b6b9770cdad085fad078239b40761bd"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/run_author_controls.sh",
+      "bytes": 860,
+      "sha256": "828a9d6f72b51fc0317cdbe99058927517dc5c6392beb314f7fedebbfaa2d486"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/run_cache_rebuild.sh",
+      "bytes": 759,
+      "sha256": "827f93b036e329b9cbbab380be5f7ca55da0d72cc0bf5fc85e1596fe73c07665"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/run_controls.sh",
+      "bytes": 1341,
+      "sha256": "a45f6a0c26153d70da50a941a7419f199600132f59303366b54aa3d0cbfad40d"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/run_frozen_candidate.py",
+      "bytes": 9531,
+      "sha256": "531fff0d8167cd88695f1a6a76772a373536f2871397608543bf1b8b71f2d156"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/run_frozen_candidate.py.diff",
+      "bytes": 3184,
+      "sha256": "d585956336fe8ccf47b74c53389fb6e7668e5c03ff285d17c6d452a3c8278f36"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/test_author_cacheguard.py",
+      "bytes": 2972,
+      "sha256": "472530f75b5e96a3f7850c7bdac842d745d5ffb90f390e2040ab23b43d085983"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/runner-runtime-v1/test_runner_patch.py",
+      "bytes": 3339,
+      "sha256": "906b730d49b2c5ea39850fbdec20830049dd9489928b9377cacd996f024cd6c6"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/ADAPTATION.json",
+      "bytes": 2002,
+      "sha256": "e2b51674e7eddf02d472b16321ac94d46233181dd41bbebd7391e2ce21c155db"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/cacheguard-command.diff",
+      "bytes": 1561,
+      "sha256": "630f19f7ec5a763b57161284c44575a8409881b1e955cd7cf55d2c2608e27764"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/compare_source_scene.py",
+      "bytes": 12209,
+      "sha256": "5e5c7e80cc4c6bf7e7a803cb76f5c8337bab73405935e8f5a39b1859a6873996"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/inspect_and_rerender_blend.py",
+      "bytes": 12353,
+      "sha256": "be58dc6a5fd4090c71268225d943c30529b5bfae7f631ff296c4aeb853a69dcb"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/png_exact_compare.py",
+      "bytes": 12926,
+      "sha256": "8534792905d7fb329e40ccc0277690e2c658ae5f5636b3d2dcb53c2e50ba0cdb"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/run_source_render_verification.py",
+      "bytes": 7383,
+      "sha256": "de4565114c476031a899ad03db1c53af15c773490836f391b5a7a36e3b15cf3a"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/sanitize_png_previews.py",
+      "bytes": 3196,
+      "sha256": "baa71c396101d4c6fa53b393086249486afa50b4d731382dd6772843537a957e"
+    },
+    {
+      "path": "author/qa/render-tools-v10-cacheguard/test_png_exact_compare.py",
+      "bytes": 3551,
+      "sha256": "3e7ac5287c7407226778075268c5a70d8e862b2eeed4743efcc60b5b6c4c75cc"
+    },
+    {
+      "path": "author/qa/render-tools/run_source_render_verification.py",
+      "bytes": 7322,
+      "sha256": "127c3762746bd2ade2a5c27090116793bf2c6e2fd7eb8471a6badcd78daf69d0"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v12/inspect_flagged_wfu_mode.py",
+      "bytes": 10913,
+      "sha256": "59b1a4adf5e2105c1871b34c063662d3e070e161f6dfc1e3e93f7af4ef58eca6"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v12/review_completed_wfu_candidate.py",
+      "bytes": 13204,
+      "sha256": "3a432e528018e255a3a6abb4f535d9bbd8f2521e73cdd1c9e767710bd1c830d0"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/candidate-tools-v12/test_case_postflight.py",
+      "bytes": 6435,
+      "sha256": "4e3b06d84189db9a2f6cadf73ecf6d8938a8c235655b3997ef2b13b3b84da094"
+    },
+    {
+      "path": "wfu-shengyou-independent-qa/independent-tools/run_frozen_candidate.py",
+      "bytes": 9409,
+      "sha256": "538625810f924812964d965b6b440b056b7dab528c4fcfdd02a000c295476197"
+    }
+  ]
+}

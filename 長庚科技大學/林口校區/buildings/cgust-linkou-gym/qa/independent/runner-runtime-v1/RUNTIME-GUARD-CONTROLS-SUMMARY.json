@@ -1,0 +1,300 @@
+{
+  "schema": "cgust-blender-runtime-bytecode-guard-v1",
+  "passed": true,
+  "model_go": false,
+  "original_runner_sha256": "538625810f924812964d965b6b440b056b7dab528c4fcfdd02a000c295476197",
+  "adapted_runner_sha256": "531fff0d8167cd88695f1a6a76772a373536f2871397608543bf1b8b71f2d156",
+  "runner_adaptation_scope": "Exactly two Blender argv lists insert --python-expr and import sys; sys.dont_write_bytecode = True before the original --python tool. Remove these four literals and entire runner AST equals the original. Geometry producers, original28 tools, stages, scene/PNG requirements and input/output freeze logic are unchanged.",
+  "author_wrapper_sha256": "de4565114c476031a899ad03db1c53af15c773490836f391b5a7a36e3b15cf3a",
+  "author_adaptation_scope": "Exactly one common Blender argv list gets the same two literals; entire remaining AST is unchanged, including inspect-only default.",
+  "runtime_observation": {
+    "blender": "4.3.2",
+    "python": "3.13.5",
+    "ignore_environment": 1,
+    "environment_only_runtime_dont_write_bytecode": false,
+    "environment_only_actual_cache_count": 1,
+    "explicit_guard_runtime_dont_write_bytecode": true,
+    "explicit_guard_actual_cache_count": 0
+  },
+  "mode_scope": "Runner and author-wrapper AST controls each execute in host Python normal and -O. Actual Blender import/cache and explicit bitwise rebuild controls run in Blender Python optimization0 only; no claim of Blender optimized execution.",
+  "raw_negative_fixture_retained": true,
+  "negative_fixture_actual_bitwise_reconstruction_passed": true,
+  "controls": [
+    {
+      "case_group": "ast-normal",
+      "report": "ast-normal/results.json",
+      "bytes": 1625,
+      "sha256": "46413161b87f79a742fec00c58a2a9e5c884cebaafd6d423160982884b58f585",
+      "exit_code": 0,
+      "optimization_level": 0,
+      "python_version": null
+    },
+    {
+      "case_group": "ast-optimized",
+      "report": "ast-optimized/results.json",
+      "bytes": 1625,
+      "sha256": "17bb6b33ee944b153a9671615d40ed6bfcabae85152575be69ea4a90fbf858ce",
+      "exit_code": 0,
+      "optimization_level": 1,
+      "python_version": null
+    },
+    {
+      "case_group": "author-normal",
+      "report": "author-normal/results.json",
+      "bytes": 1593,
+      "sha256": "fa412485fa0598656bbea4a993a57c8796b2240c1c31724a36680c14dbe662c7",
+      "exit_code": 0,
+      "optimization_level": 0,
+      "python_version": null
+    },
+    {
+      "case_group": "author-optimized",
+      "report": "author-optimized/results.json",
+      "bytes": 1593,
+      "sha256": "841c470c2eeafa6e66d0646efdd01baba4bfc8093d64fe3cd37dcd999439cea0",
+      "exit_code": 0,
+      "optimization_level": 1,
+      "python_version": null
+    },
+    {
+      "case_group": "cache-environment-only",
+      "report": "cache-environment-only/results.json",
+      "bytes": 852,
+      "sha256": "02c1004dfabd6a4c4ca74b3ddf8e314a8351ba998011c4ede6b1e48ae2b8c1bf",
+      "exit_code": 0,
+      "optimization_level": 0,
+      "python_version": null
+    },
+    {
+      "case_group": "cache-explicit-guard",
+      "report": "cache-explicit-guard/results.json",
+      "bytes": 671,
+      "sha256": "46c485b5efee0dad1c211bc5f4ba53a6fb1d538a334e19a74f6bdec9908806d1",
+      "exit_code": 0,
+      "optimization_level": 0,
+      "python_version": null
+    },
+    {
+      "case_group": "cache-rebuild",
+      "report": "cache-rebuild/results.json",
+      "bytes": 788,
+      "sha256": "5cd933c4b81be46734a26d2d14228025c5263da21995345ab5d3346586632fbc",
+      "exit_code": 0,
+      "optimization_level": null,
+      "python_version": "3.13.5"
+    }
+  ],
+  "files": [
+    {
+      "path": "ast-normal/results.json",
+      "bytes": 1625,
+      "sha256": "46413161b87f79a742fec00c58a2a9e5c884cebaafd6d423160982884b58f585"
+    },
+    {
+      "path": "ast-normal.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "ast-normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ast-normal.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "ast-optimized/results.json",
+      "bytes": 1625,
+      "sha256": "17bb6b33ee944b153a9671615d40ed6bfcabae85152575be69ea4a90fbf858ce"
+    },
+    {
+      "path": "ast-optimized.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "ast-optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ast-optimized.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "author-normal/results.json",
+      "bytes": 1593,
+      "sha256": "fa412485fa0598656bbea4a993a57c8796b2240c1c31724a36680c14dbe662c7"
+    },
+    {
+      "path": "author-normal.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "author-normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "author-normal.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "author-optimized/results.json",
+      "bytes": 1593,
+      "sha256": "841c470c2eeafa6e66d0646efdd01baba4bfc8093d64fe3cd37dcd999439cea0"
+    },
+    {
+      "path": "author-optimized.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "author-optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "author-optimized.stdout.txt",
+      "bytes": 34,
+      "sha256": "29ba1f30af4fc5edf8bb31917e8a2797a0d05f640f4d7cc0b0d9184681d7b3c8"
+    },
+    {
+      "path": "cache-environment-only/__pycache__/fixture.cpython-313.pyc",
+      "bytes": 239,
+      "sha256": "7791c8b5de236628a2a5ea7706a14b9b6c01098c63d049fe7c335ba0bc5d2106"
+    },
+    {
+      "path": "cache-environment-only/fixture.py",
+      "bytes": 42,
+      "sha256": "f0f30b251a30fb05047a4caf16e9c8710ab29c0f00ebe0c9ccfb332c9e1fb369"
+    },
+    {
+      "path": "cache-environment-only/results.json",
+      "bytes": 852,
+      "sha256": "02c1004dfabd6a4c4ca74b3ddf8e314a8351ba998011c4ede6b1e48ae2b8c1bf"
+    },
+    {
+      "path": "cache-environment-only.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cache-environment-only.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cache-environment-only.stdout.txt",
+      "bytes": 101,
+      "sha256": "257d9a37e013afcd7e9edd0c71c636fdeee372493f05f39c8036c40484cbbeb3"
+    },
+    {
+      "path": "cache-explicit-guard/fixture.py",
+      "bytes": 42,
+      "sha256": "f0f30b251a30fb05047a4caf16e9c8710ab29c0f00ebe0c9ccfb332c9e1fb369"
+    },
+    {
+      "path": "cache-explicit-guard/results.json",
+      "bytes": 671,
+      "sha256": "46c485b5efee0dad1c211bc5f4ba53a6fb1d538a334e19a74f6bdec9908806d1"
+    },
+    {
+      "path": "cache-explicit-guard.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cache-explicit-guard.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cache-explicit-guard.stdout.txt",
+      "bytes": 100,
+      "sha256": "669d2e052ea928f6914ba1a7dc401282c82378e2f0e14cb931e7f7de2cb02987"
+    },
+    {
+      "path": "cache-rebuild/fixture.py",
+      "bytes": 42,
+      "sha256": "f0f30b251a30fb05047a4caf16e9c8710ab29c0f00ebe0c9ccfb332c9e1fb369"
+    },
+    {
+      "path": "cache-rebuild/rebuilt.pyc",
+      "bytes": 239,
+      "sha256": "7791c8b5de236628a2a5ea7706a14b9b6c01098c63d049fe7c335ba0bc5d2106"
+    },
+    {
+      "path": "cache-rebuild/results.json",
+      "bytes": 788,
+      "sha256": "5cd933c4b81be46734a26d2d14228025c5263da21995345ab5d3346586632fbc"
+    },
+    {
+      "path": "cache-rebuild.exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "cache-rebuild.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cache-rebuild.stdout.txt",
+      "bytes": 72,
+      "sha256": "c70d502cf24f93803440946590f767903bab2de4c402176f7f5c53b71f4e820c"
+    },
+    {
+      "path": "check_actual_cache.py",
+      "bytes": 1948,
+      "sha256": "0a857bf5c0c5ea313e6387e19906bb22aca2855de1ff908766046044eb33278c"
+    },
+    {
+      "path": "rebuild_cache_fixture.py",
+      "bytes": 1742,
+      "sha256": "f1533cb481075cebd305e119be9dfdbf0b6b9770cdad085fad078239b40761bd"
+    },
+    {
+      "path": "run_author_controls.sh",
+      "bytes": 860,
+      "sha256": "828a9d6f72b51fc0317cdbe99058927517dc5c6392beb314f7fedebbfaa2d486"
+    },
+    {
+      "path": "run_cache_rebuild.sh",
+      "bytes": 759,
+      "sha256": "827f93b036e329b9cbbab380be5f7ca55da0d72cc0bf5fc85e1596fe73c07665"
+    },
+    {
+      "path": "run_controls.sh",
+      "bytes": 1341,
+      "sha256": "a45f6a0c26153d70da50a941a7419f199600132f59303366b54aa3d0cbfad40d"
+    },
+    {
+      "path": "run_frozen_candidate.py",
+      "bytes": 9531,
+      "sha256": "531fff0d8167cd88695f1a6a76772a373536f2871397608543bf1b8b71f2d156"
+    },
+    {
+      "path": "run_frozen_candidate.py.diff",
+      "bytes": 3184,
+      "sha256": "d585956336fe8ccf47b74c53389fb6e7668e5c03ff285d17c6d452a3c8278f36"
+    },
+    {
+      "path": "test_author_cacheguard.py",
+      "bytes": 2972,
+      "sha256": "472530f75b5e96a3f7850c7bdac842d745d5ffb90f390e2040ab23b43d085983"
+    },
+    {
+      "path": "test_runner_patch.py",
+      "bytes": 3339,
+      "sha256": "906b730d49b2c5ea39850fbdec20830049dd9489928b9377cacd996f024cd6c6"
+    }
+  ],
+  "scope": "Command-only runtime guard controls; no candidate geometry, scene rebuild or image render was executed here. This is not a model/source/privacy/publication acceptance."
+}

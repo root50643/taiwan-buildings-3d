@@ -1,0 +1,73 @@
+--- historical-scanner/scan_public_package.py
++++ cgust-scanner/scan_public_package.py
+@@ -1,4 +1,4 @@
+-"""All-file bounded privacy scan; current WFU and inactive historical domains.
++"""All-file bounded privacy scan; current CGUST and inactive historical domains.
+ No extraction, geometry, rewriting, publication approval or persistent CSV copy.
+ Run only in the parent-owned shared CPU slot. Output must be outside public root.
+ """
+@@ -8,12 +8,12 @@
+ import argparse, hashlib, json, os, stat, tempfile, types
+ 
+ HERE = Path(__file__).absolute().parent
+-TOOLS = {'package_controls_v2.py': {'bytes': 47569, 'sha256': '1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c'}, 'exact_privacy_primitives.py': {'bytes': 6783, 'sha256': '1b8f3d36243bdd1bc090bbf1dffa55e9f80d803bce73c2354efb7f466b15f6cd'}, 'check_wfu_privacy.py': {'bytes': 12032, 'sha256': '58e7025590eec9efc7f242552ac22c950fc8e41d41c5eb74051ee323c3a9e950'}, 'roster_primitives.py': {'bytes': 6313, 'sha256': '7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273'}, 'restore_scientific_layout.py': {'bytes': 8677, 'sha256': '60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e'}, 'archive_verify.py': {'bytes': 10831, 'sha256': '1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd'}}
++TOOLS = {'package_controls_v2.py': {'bytes': 47569, 'sha256': '1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c'}, 'exact_privacy_primitives.py': {'bytes': 6761, 'sha256': 'e9a3ab70bbe3c332ba218b0c93aff1e37bd0f33b20ebd47b524d512d59c9fa34'}, 'check_cgust_privacy.py': {'bytes': 12106, 'sha256': 'cbd0664021c9dce9a68d01e2046acff6f8a713b7f487b5cfac5adc86b5e71bea'}, 'roster_primitives.py': {'bytes': 6313, 'sha256': '7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273'}, 'restore_scientific_layout.py': {'bytes': 8677, 'sha256': '60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e'}, 'archive_verify.py': {'bytes': 10831, 'sha256': '1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd'}}
+ HISTORY_METADATA = {'controls-index.json': {'bytes': 4364858, 'sha256': '157fbf951147405727eb557b167e6db16d9ce3a651012f1c87ee2a5975d0015e'}, 'controls-selection.json': {'bytes': 7688822, 'sha256': '51540622191aff2f431002198d7a69d2c3bee7747c4cebbb6060b4b954efb054'}, 'malformed-fixture-allowlist.json': {'bytes': 424474, 'sha256': '3c857b321d73d5ccdc5fe4b6143ac8995af05efa3d79e25f1e9a9e30160ab0ec'}, 'privacy-allowlist.json': {'bytes': 86755, 'sha256': '924b86a8649aea7702ec8db4461bfbe64934c1f748fab6372df712ce480fafbc'}, 'negative-archive-allowlist.json': {'bytes': 771008, 'sha256': '236657191ba7de94c7fe4e5fb8399ed34b2a491843420e329132933fda97f497'}, 'packaging-result.json': {'bytes': 11725077, 'sha256': 'f7ac5122332996e021b36cb7533a54084d0650f800204b71197c0555e5f51a43'}, 'replay-verification.json': {'bytes': 3866, 'sha256': '29d065ddf4742d08c4a43ccecc7475ce94972820fb7fd5006952b0b62027ed17'}}
+-STATE_EXCEPTIONS = {'bytes': 6935, 'sha256': '126fac9c7d8ff0e36c5922868c4ea3f48ece0423fa2c6c284dad258e749c8863'}
++STATE_EXCEPTIONS = {'bytes': 7377, 'sha256': 'c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f'}
+ HISTORY_ARCHIVE = {'bytes': 59649412, 'sha256': 'e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9'}
+ HISTORY_PATH = 'qa/controls-history/controls.tar.xz'
+-STATE_HASHES = {'5a5392d71a92898c2f455c527fd4f1f9cebcaca44a811a809ebc179e417bec1a': 167332, 'f284e231753dc964b6f71f3855616921313b8669922def0bd2496233d81c0e28': 167331}
++STATE_HASHES = {'0e03d8ce76b8a040925bdf70d0a93b94f17c043000866f32cb33b8e2a1f694e7': 120264, '3c5ecbeb2109c40e0ba7662907d116725986d4e25d82a47ad3f0922ccde5ac73': 120263}
+ 
+ 
+ def require(value, message):
+@@ -85,7 +85,7 @@
+     require(len(data) == STATE_EXCEPTIONS['bytes'] and digest(data) == STATE_EXCEPTIONS['sha256'],
+             'Exact state exception table differs')
+     value = generic.load_json_bytes(data)
+-    require(value['schema'] == 'wfu-source-state-exact-generic-default-scan-exceptions-v1'
++    require(value['schema'] == 'cgust-source-state-exact-generic-default-scan-exceptions-v1'
+             and len(value['files']) == 6 and set(value['unique_sha256']) == set(STATE_HASHES),
+             'State exception scope differs')
+     unique = {}
+@@ -94,8 +94,8 @@
+         require(row['sha256'] in STATE_HASHES and row['bytes'] == STATE_HASHES[row['sha256']]
+                 and row['json_pointer'] == '/render/filepath' and row['exact_type'] == 'string'
+                 and row['exact_value_utf8_hex'] == '2f746d702f'
+-                and row['encoded_json_string_offset'] == 155195 and row['encoded_json_string_bytes'] == 7
+-                and row['marker_offset'] == 155196 and row['marker_bytes'] == 5
++                and row['encoded_json_string_offset'] == 108037 and row['encoded_json_string_bytes'] == 7
++                and row['marker_offset'] == 108038 and row['marker_bytes'] == 5
+                 and row['encoded_string_occurrences'] == 1, 'Exact state exception fields differ')
+         require(name in canonical and all(canonical[name][k] == row[k] for k in ('bytes','sha256')),
+                 'Exact state missing/different in canonical map')
+@@ -223,7 +223,7 @@
+     return dict(verified, inactive_historical_tool_controls=True,
+                 every_indexed_member_and_framing_scanned=True, exact_blend_privacy_entries_used=34,
+                 exact_malformed_entries_used=188, exact_negative_archive_entries_used=len(scanner.used_negative_archives),
+-                no_new_historical_exceptions=True, applies_to_new_wfu=False,
++                no_new_historical_exceptions=True, applies_to_new_cgust=False,
+                 zero_exception_claimed=False, persistent_decoded_output_written=False)
+ 
+ 
+@@ -234,8 +234,8 @@
+     require(not out.absolute().is_relative_to(root), 'Report must be outside the scanned public tree')
+     require(out.parent.is_dir() and not out.exists() and not out.is_symlink(), 'Fresh output required')
+     generic = tools['package_controls_v2.py']; primitive = tools['exact_privacy_primitives.py']
+-    checker = tools['check_wfu_privacy.py']; restore = tools['restore_scientific_layout.py']
+-    policy = types.SimpleNamespace(MAX_BYTES=generic.MAX_BYTES, PRIVATE_MARKERS=generic.PRIVATE_MARKERS+checker.WFU_MARKERS,
++    checker = tools['check_cgust_privacy.py']; restore = tools['restore_scientific_layout.py']
++    policy = types.SimpleNamespace(MAX_BYTES=generic.MAX_BYTES, PRIVATE_MARKERS=generic.PRIVATE_MARKERS+checker.CGUST_MARKERS,
+                                    TMP_MARKER=generic.TMP_MARKER, SECRET_PATTERNS=generic.SECRET_PATTERNS)
+     checker.validate_policy(generic, primitive, policy)
+     names = inventory(root)
+@@ -296,7 +296,7 @@
+     result = {'passed':True,'completed':True,'optimization_level':sys.flags.optimize,
+               'scanner_source_sha256':digest(own),'copy_map_sha256':digest(map_data),'public_file_count':len(names),
+               'files':tracked,'all_public_files_and_names_scanned':True,'all_public_bytes_unchanged':True,
+-              'current_wfu':{'blend_effective_bytes':16,'exact_json_files':2,'masked_bytes_per_json':5,
++              'current_cgust':{'blend_effective_bytes':16,'exact_json_files':2,'masked_bytes_per_json':5,
+                              'no_malformed_archive_exceptions':True,'csv':csv_report},
+               'inactive_historical_controls':history_report,'source_bindings':TOOLS,
+               'model_go':False,'publication_go':False,

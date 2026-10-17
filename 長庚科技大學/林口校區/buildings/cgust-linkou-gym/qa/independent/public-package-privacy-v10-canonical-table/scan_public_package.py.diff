@@ -1,0 +1,11 @@
+--- original/scan_public_package.py
++++ canonical-table/scan_public_package.py
+@@ -254,7 +254,7 @@
+     mapping = generic.load_json_bytes(map_data)
+     canonical, aliases = restore.validated_map(mapping)
+     require(set(canonical) <= names, 'Canonical public file missing')
+-    states = bind_state_exceptions(read_file('qa/SOURCE-STATE-DEFAULT-EXCEPTIONS.json',STATE_EXCEPTIONS),generic,canonical)
++    states = bind_state_exceptions(read_file('qa/independent/scene-state-bridge-v10/SOURCE-STATE-DEFAULT-EXCEPTIONS.json',STATE_EXCEPTIONS),generic,canonical)
+     require(checker.BLEND_PATH in canonical and canonical[checker.BLEND_PATH]['sha256'] == checker.BLEND_SHA,
+             'Original Blend absent from canonical map')
+     csv_profile = dict(checker.CSV_ITEMS)

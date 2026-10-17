@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "optimization_level": 0,
+  "cpu_affinity": [
+    0
+  ],
+  "source_sha256": "472530f75b5e96a3f7850c7bdac842d745d5ffb90f390e2040ab23b43d085983",
+  "original_wrapper_sha256": "127c3762746bd2ade2a5c27090116793bf2c6e2fd7eb8471a6badcd78daf69d0",
+  "adapted_wrapper_sha256": "de4565114c476031a899ad03db1c53af15c773490836f391b5a7a36e3b15cf3a",
+  "all_sources_unchanged": true,
+  "cases": [
+    {
+      "case": "exact_single_common_guard",
+      "expected_accept": true,
+      "accepted": true,
+      "rejection": null,
+      "passed": true
+    },
+    {
+      "case": "missing_guard",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact guard differs",
+      "passed": true
+    },
+    {
+      "case": "false_guard",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact guard differs",
+      "passed": true
+    },
+    {
+      "case": "changed_threads",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact guard differs",
+      "passed": true
+    },
+    {
+      "case": "removed_inspect_only",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Other wrapper AST changed",
+      "passed": true
+    },
+    {
+      "case": "extra_expression",
+      "expected_accept": false,
+      "accepted": false,
+      "rejection": "Exact guard differs",
+      "passed": true
+    }
+  ],
+  "scope": "Author wrapper exact argv-only adaptation peer controls. Source/scene/PNG predicates and inspect-only default remain identical; real shared runtime cache controls are separate."
+}

@@ -1,0 +1,316 @@
+{
+  "schema": "cgust-exact-semantic-label-scanner-adaptation-v1",
+  "passed": true,
+  "scope": "Exactly three top-level files and eight authenticated non-sensitive label spans. No generic privacy pattern, model, science, archive, CSV, Blend or state-default allowance is changed.",
+  "classified_non_sensitive_false_positives": true,
+  "data_transmission_exception": false,
+  "original_scanner": {
+    "bytes": 20071,
+    "sha256": "2a83fcadc426bed87df3b76eff9caff14f6e9e0d5614b5c1dbfa66f29d72f7ac"
+  },
+  "adapted_scanner": {
+    "bytes": 28871,
+    "sha256": "500d93a6669327034758b9dbb1f224407bdf1e702aeb72a9563d84ac81daee96"
+  },
+  "diff": {
+    "bytes": 11039,
+    "sha256": "6949fbf1a4824ceef2d0029b75cbd1b1a763dab79a65a4dc6741b7e222844f38"
+  },
+  "new_control_source": {
+    "bytes": 11823,
+    "sha256": "4dd6f36e9f6bba22f6517e75f8aefd18b6cdde9bed81264b5f6ae173c39ceeba"
+  },
+  "profiles": {
+    "qa/independent/result-binding-public-v10/test_result_binding.py": {
+      "kind": "relative_synthetic_python",
+      "bytes": 20439,
+      "sha256": "1d063514521b6b252d3888f290501672872d5da9640b1c10dbedbf9e33136b74",
+      "line": 207,
+      "constant_columns": [
+        115,
+        135
+      ],
+      "spans": [
+        {
+          "offset": 17333,
+          "bytes": 6,
+          "rule_index": 1
+        },
+        {
+          "offset": 17353,
+          "bytes": 6,
+          "rule_index": 1
+        }
+      ]
+    },
+    "qa/independent/result-binding-public-v10/test_result_binding.py.public-redacted.diff": {
+      "kind": "relative_synthetic_diff",
+      "bytes": 6248,
+      "sha256": "6f20068e2ab79ae7cf4c21989bd44d84ba980280c1a8134f53663247f8b73c67",
+      "line": 42,
+      "source_line_sha256": "b513d740b68dbbc7ff8b054a3645e46e57e0be6bf5c7dd0cdfb030e236b3c231",
+      "spans": [
+        {
+          "offset": 3630,
+          "bytes": 6,
+          "rule_index": 1
+        },
+        {
+          "offset": 3650,
+          "bytes": 6,
+          "rule_index": 1
+        }
+      ]
+    },
+    "qa/independent/scene-privacy-preparation/v10-sdna-observation.json": {
+      "kind": "empty_detection_rule_labels",
+      "bytes": 5004,
+      "sha256": "3057023ea200ce76fc988fef524aeba03c8d97b5239357ce3f90f1c048d92de2",
+      "observation_indices": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "spans": [
+        {
+          "offset": 3681,
+          "bytes": 6,
+          "rule_index": 1
+        },
+        {
+          "offset": 3745,
+          "bytes": 13,
+          "rule_index": 2
+        },
+        {
+          "offset": 4085,
+          "bytes": 7,
+          "rule_index": 4
+        },
+        {
+          "offset": 4219,
+          "bytes": 13,
+          "rule_index": 3
+        }
+      ]
+    }
+  },
+  "exact_file_count": 3,
+  "exact_span_count": 8,
+  "exact_effective_byte_count": 63,
+  "ast_proof": {
+    "original_ast_sha256": "aff41d4460d95168ebe2773eebbba7c86a5a5ae27222ea804ac09311af363ff5",
+    "adapted_ast_sha256": "0f874a245283fc5ca11eb226e8f7778ae5364e2d99310a3916c6a2652c16f4f4",
+    "adapted_ast_after_removing_only_declared_additions_sha256": "aff41d4460d95168ebe2773eebbba7c86a5a5ae27222ea804ac09311af363ff5",
+    "all_other_ast_identical": true,
+    "declared_additions": [
+      "two fixed semantic-label profile constants",
+      "one exact classifier/projector function",
+      "Current.plain projection before unchanged complete-pattern scan and source-line/seen bookkeeping",
+      "complete semantic seen-set requirement",
+      "complete profile and false-positive classification report"
+    ]
+  },
+  "unchanged_function_byte_proofs": [
+    {
+      "function": "require",
+      "original_lines": [
+        19,
+        21
+      ],
+      "new_lines": [
+        19,
+        21
+      ],
+      "bytes": 81,
+      "sha256": "fba5518dbbe127c5d736b6a2ef99ebbb28b24be84759bc3ce649d93a6815e637",
+      "byte_identical": true
+    },
+    {
+      "function": "digest",
+      "original_lines": [
+        24,
+        25
+      ],
+      "new_lines": [
+        24,
+        25
+      ],
+      "bytes": 62,
+      "sha256": "50b76bfffc27cbd7a792c95d031f6fd8e49777b6241b96ed8c4c4773edc356cb",
+      "byte_identical": true
+    },
+    {
+      "function": "bootstrap",
+      "original_lines": [
+        28,
+        52
+      ],
+      "new_lines": [
+        28,
+        52
+      ],
+      "bytes": 1302,
+      "sha256": "08aef4dbde1230b535476daee35b098d17bd4c12a8197480ca6c73ce9a471629",
+      "byte_identical": true
+    },
+    {
+      "function": "load_tools",
+      "original_lines": [
+        55,
+        65
+      ],
+      "new_lines": [
+        55,
+        65
+      ],
+      "bytes": 475,
+      "sha256": "dcc48a726ee32ece31ad01f9f230eee91ab93782a3fb92dd2f1fb9127e90a015",
+      "byte_identical": true
+    },
+    {
+      "function": "inventory",
+      "original_lines": [
+        68,
+        81
+      ],
+      "new_lines": [
+        68,
+        81
+      ],
+      "bytes": 660,
+      "sha256": "92bc026292af49f47e44b0e4c18116b067c54f635c71c82be533ef18f9f25930",
+      "byte_identical": true
+    },
+    {
+      "function": "bind_state_exceptions",
+      "original_lines": [
+        84,
+        106
+      ],
+      "new_lines": [
+        84,
+        106
+      ],
+      "bytes": 1530,
+      "sha256": "eec2519ddd944cc436e902807bb8b254c1fbea48922be6a599a5864beb548180",
+      "byte_identical": true
+    },
+    {
+      "function": "state_projection",
+      "original_lines": [
+        109,
+        123
+      ],
+      "new_lines": [
+        109,
+        123
+      ],
+      "bytes": 911,
+      "sha256": "a7e46799024f5c2f253f3b6b0c4ae15758f900d00638ec1abc879961ca943712",
+      "byte_identical": true
+    },
+    {
+      "function": "scan_history",
+      "original_lines": [
+        151,
+        227
+      ],
+      "new_lines": [
+        259,
+        335
+      ],
+      "bytes": 5150,
+      "sha256": "3c60db61e7641a915caaae099b01820474ac068696066107b37395ed103982b0",
+      "byte_identical": true
+    }
+  ],
+  "six_unchanged_dependencies": [
+    {
+      "logical_path": "package_controls_v2.py",
+      "bytes": 47569,
+      "sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+      "same_inode": true,
+      "byte_equal": true
+    },
+    {
+      "logical_path": "exact_privacy_primitives.py",
+      "bytes": 6761,
+      "sha256": "e9a3ab70bbe3c332ba218b0c93aff1e37bd0f33b20ebd47b524d512d59c9fa34",
+      "same_inode": true,
+      "byte_equal": true
+    },
+    {
+      "logical_path": "check_cgust_privacy.py",
+      "bytes": 12106,
+      "sha256": "cbd0664021c9dce9a68d01e2046acff6f8a713b7f487b5cfac5adc86b5e71bea",
+      "same_inode": true,
+      "byte_equal": true
+    },
+    {
+      "logical_path": "roster_primitives.py",
+      "bytes": 6313,
+      "sha256": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273",
+      "same_inode": true,
+      "byte_equal": true
+    },
+    {
+      "logical_path": "restore_scientific_layout.py",
+      "bytes": 8677,
+      "sha256": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e",
+      "same_inode": true,
+      "byte_equal": true
+    },
+    {
+      "logical_path": "archive_verify.py",
+      "bytes": 10831,
+      "sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd",
+      "same_inode": true,
+      "byte_equal": true
+    }
+  ],
+  "generic_json_parser_reused_unchanged": true,
+  "normal_and_optimized_controls": [
+    {
+      "logical_path": "semantic-controls-normal.json",
+      "bytes": 10983,
+      "sha256": "505952b859cf176ca570d6acf430340fed3de847b12c64ef457d2af3089c6f5e",
+      "passed": true,
+      "case_count": 19,
+      "optimization_level": 0,
+      "actual_cpu_affinity": [
+        0
+      ],
+      "actual_returncode": 0,
+      "private_runtime_sha256": "7567330f5e553b91b35823ce10ab6140a0062b9a3b194b44f724a021c1b97ac1",
+      "private_capture_sha256": "ff671bbbb7e9050392cd9c6f6472fb7aa5b359f24ecc4b412f2bdd0d3abe5cfb"
+    },
+    {
+      "logical_path": "semantic-controls-optimized.json",
+      "bytes": 10983,
+      "sha256": "ae71873ec207a1bee033dde1aaf113993880b52f0f9da3607701d6933fe50ba3",
+      "passed": true,
+      "case_count": 19,
+      "optimization_level": 1,
+      "actual_cpu_affinity": [
+        0
+      ],
+      "actual_returncode": 0,
+      "private_runtime_sha256": "5f1ddf0898642ef053717872b3b0526a214cfc9c5cb929c7df44e0a760fb74ba",
+      "private_capture_sha256": "dd220c27430075e4fa769602c9f7f2cfd05bea41edd16eb5355ef9f642ea0517"
+    }
+  ],
+  "private_fixtures_memory_only": true,
+  "true_private_values_rejected": true,
+  "non_top_nested_and_unlisted_contexts_inherit_no_allowance": true,
+  "source_diff_requires_prior_authenticated_source_line": true,
+  "all_other_original_buffer_bytes_scanned_unchanged": true,
+  "original_public_inputs_rewritten": false,
+  "model_scene_or_science_changed": false,
+  "previous_generic_suites_rerun": false,
+  "full_package_scan_performed": false,
+  "parent_peer_pending": true,
+  "publication_go": false,
+  "model_go": false
+}

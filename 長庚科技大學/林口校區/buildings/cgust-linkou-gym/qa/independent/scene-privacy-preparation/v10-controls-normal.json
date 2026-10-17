@@ -1,0 +1,240 @@
+{
+  "passed": true,
+  "case_count": 15,
+  "optimization_level": 0,
+  "logical_input": "models/v10/scene.blend",
+  "candidate_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+  "candidate_bytes": 883140,
+  "checker_source_sha256": "854e1868de71bb82c93d27f637dd70c68d3eb1293d1c5eeb6e3177476cddb045",
+  "checker_source_bytes": 10988,
+  "generator_source_sha256": "09e37542811feaeb5b59b807274dbb52bf927afc41516df8db21dcd8bab74919",
+  "generator_source_bytes": 12220,
+  "generic_source_sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+  "generic_source_bytes": 47569,
+  "cases": [
+    {
+      "logical_case": "exact_v10_candidate_positive",
+      "expected_accept": true,
+      "accepted": true,
+      "passed": true,
+      "expected_error_substring": null,
+      "actual_error": null,
+      "fixture": null
+    },
+    {
+      "logical_case": "old_wfu_identity_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend privacy allowance identity differs",
+      "actual_error": "ValueError: Exact Blend privacy allowance identity differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "old_cgust_v8_identity_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend privacy allowance identity differs",
+      "actual_error": "ValueError: Exact Blend privacy allowance identity differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "wrong_struct_pin_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend SDNA profile differs",
+      "actual_error": "ValueError: Exact Blend SDNA profile differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "wrong_field_pin_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend SDNA profile differs",
+      "actual_error": "ValueError: Exact Blend SDNA profile differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "wrong_type_pin_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend SDNA profile differs",
+      "actual_error": "ValueError: Exact Blend SDNA profile differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "wrong_offset_pin_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend SDNA profile differs",
+      "actual_error": "ValueError: Exact Blend SDNA profile differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "wrong_range_pin_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend SDNA profile differs",
+      "actual_error": "ValueError: Exact Blend SDNA profile differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "wrong_buffer_hash_pin_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact Blend SDNA profile differs",
+      "actual_error": "ValueError: Exact Blend SDNA profile differs",
+      "fixture": null
+    },
+    {
+      "logical_case": "changed_original_candidate_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Exact CGUST v10 candidate identity differs",
+      "actual_error": "ValueError: Exact CGUST v10 candidate identity differs",
+      "fixture": {
+        "recipe": {
+          "logical_base": "original_scene",
+          "base_bytes": 883140,
+          "base_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+          "mutation": "replace_equal_length",
+          "offset": 171688,
+          "original_bytes_hex": "00",
+          "replacement_bytes_hex": "58"
+        },
+        "fixture_bytes": 883140,
+        "fixture_sha256": "8e6094068584a1a2abc77dbd63e74026241b3bb6181cabe548a6f3eb865232e5",
+        "actual_rebuilt_bytes": 883140,
+        "actual_rebuilt_sha256": "8e6094068584a1a2abc77dbd63e74026241b3bb6181cabe548a6f3eb865232e5",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "nul_tail_full_buffer_hash_rejected_even_after_isolated_identity_rebind",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Generic-default full buffer hash differs",
+      "actual_error": "ValueError: Generic-default full buffer hash differs",
+      "fixture": {
+        "recipe": {
+          "logical_base": "original_scene",
+          "base_bytes": 883140,
+          "base_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+          "mutation": "replace_equal_length",
+          "offset": 171688,
+          "original_bytes_hex": "00",
+          "replacement_bytes_hex": "58"
+        },
+        "fixture_bytes": 883140,
+        "fixture_sha256": "8e6094068584a1a2abc77dbd63e74026241b3bb6181cabe548a6f3eb865232e5",
+        "actual_rebuilt_bytes": 883140,
+        "actual_rebuilt_sha256": "8e6094068584a1a2abc77dbd63e74026241b3bb6181cabe548a6f3eb865232e5",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "new_case_marker_outside_allowed_fields_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Private path marker in exact CSV complete buffer",
+      "actual_error": "ValueError: Private path marker in exact CSV complete buffer",
+      "fixture": {
+        "recipe": {
+          "logical_base": "original_scene",
+          "base_bytes": 883140,
+          "base_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+          "mutation": "replace_equal_length",
+          "offset": 171560,
+          "original_bytes_hex": "000000000000000000000000000000000000000000000000000000",
+          "replacement_bytes_hex": "63677573742d6c696e6b6f752d67796d2d707269766174652d7631"
+        },
+        "fixture_bytes": 883140,
+        "fixture_sha256": "f6c21ba88ae0efa739db069d741949969b32888696ab26db83884e96c5deb5e7",
+        "actual_rebuilt_bytes": 883140,
+        "actual_rebuilt_sha256": "f6c21ba88ae0efa739db069d741949969b32888696ab26db83884e96c5deb5e7",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "outside_generic_output_outside_allowed_fields_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Private path marker in exact CSV complete buffer",
+      "actual_error": "ValueError: Private path marker in exact CSV complete buffer",
+      "fixture": {
+        "recipe": {
+          "logical_base": "original_scene",
+          "base_bytes": 883140,
+          "base_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+          "mutation": "replace_equal_length",
+          "offset": 171560,
+          "original_bytes_hex": "0000000000",
+          "replacement_bytes_hex": "2f746d702f"
+        },
+        "fixture_bytes": 883140,
+        "fixture_sha256": "dfe3a20bd87a56a04f9d6939566186e059760a63877c02708c005b828ce31da5",
+        "actual_rebuilt_bytes": 883140,
+        "actual_rebuilt_sha256": "dfe3a20bd87a56a04f9d6939566186e059760a63877c02708c005b828ce31da5",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "private_nul_tail_bytes_are_scanned",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Private path marker in exact CSV complete buffer",
+      "actual_error": "ValueError: Private path marker in exact CSV complete buffer",
+      "fixture": {
+        "recipe": {
+          "logical_base": "exact_effective_string_projection",
+          "base_bytes": 883140,
+          "base_sha256": "cf2f6a024692a707cc1a2704125c41b89761ce23b4abedd29df68e71c401f90a",
+          "mutation": "replace_equal_length",
+          "offset": 171688,
+          "original_bytes_hex": "00000000000000000000000000000000000000000000000000000000",
+          "replacement_bytes_hex": "2f776f726b73706163652f73796e7468657469632d636f6e74726f6c"
+        },
+        "fixture_bytes": 883140,
+        "fixture_sha256": "9ce13d5908f285b9ab3897a13499da1082ce1880e450f12842249705d9f0db64",
+        "actual_rebuilt_bytes": 883140,
+        "actual_rebuilt_sha256": "9ce13d5908f285b9ab3897a13499da1082ce1880e450f12842249705d9f0db64",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "whole_field_overmask_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "expected_error_substring": "Projection changed bytes outside exact effective strings",
+      "actual_error": "ValueError: Projection changed bytes outside exact effective strings",
+      "fixture": null
+    }
+  ],
+  "production_profile_unchanged": true,
+  "original_scene_and_tool_sources_unchanged": true,
+  "in_memory_negative_fixtures_only": true,
+  "actual_negative_reconstruction_bitwise_comparisons": true,
+  "generic_162_case_and_24_case_suites_rerun": false,
+  "blender_or_render_executed": false,
+  "scene_api_resources_checked": false,
+  "model_go": false,
+  "publication_go": false
+}

@@ -1,0 +1,66 @@
+PUBLIC DISPLAY PROJECTION, NOT THE EXACT RAW DIFF.
+Private original-prefix literals are marked [REDACTED_PRIVATE_SOURCE_PREFIX].
+Generic detector/synthetic literals in original lines use readable exact-equivalent concatenation.
+Complete original lines, literals and raw diffs are hash-bound in the provenance and AST proof.
+--- private-original/check_result_binding.py
++++ public-variant/check_result_binding.py
+@@ -13,7 +13,7 @@
+ import sys
+ 
+ STL = '66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978'
+-AUTHOR_PREFIX = '[REDACTED_PRIVATE_SOURCE_PREFIX]/'
++AUTHOR_PREFIX = None  # Configured only by the required validated CLI argument.
+ PUBLIC_PREVIEWS = 'qa/render-check/v10-author/sanitized-previews'
+ PINS = {
+     'qa/source-review/FINAL-SOURCE-APPEARANCE-GO-v10.private.json': '816f169ce11248e3e92b0fcad7efd28f36f1c5a289e344648eaebe3fe89bb8ad',
+@@ -128,12 +128,26 @@
+             validate_output_metadata(item, roots, key)
+     elif isinstance(value, str):
+         require(not any(str(Path(root).resolve()) in value for root in roots.values()), 'Private physical root in report metadata')
+-        require(not any(prefix in value for prefix in (('/' + 'workspace/'), ('/' + 'home/'), ('/' + 'tmp/'))), 'Private absolute path in report metadata')
++        require(not any(prefix in value for prefix in (('/' + 'workspace/'), ('/' + 'home/'), ('/' + 'tmp/'))), 'Private absolute path in report metadata')
+         if key in {'path', 'original_path', 'restore_from_canonical_path'}:
+             physical_path(value, roots)
+ 
+ 
++def validate_source_path_prefix(value):
++    """Validate a caller-supplied relative directory prefix without disclosing it."""
++    require(type(value) is str and bool(value), 'Source path prefix is required')
++    require(value.endswith('/'), 'Source path prefix requires trailing slash')
++    require('\\' not in value and ':' not in value and not any(c.isspace() or ord(c) < 32 for c in value),
++            'Source path prefix contains unsafe characters')
++    path = Path(value[:-1])
++    require(not path.is_absolute() and bool(path.parts) and '..' not in path.parts and '.' not in path.parts,
++            'Source path prefix must be a safe relative directory')
++    require(path.as_posix() + '/' == value, 'Source path prefix must be canonical')
++    return value
++
++
+ def source_relative(value):
++    require(AUTHOR_PREFIX is not None, 'Source path prefix is not configured')
+     require(type(value) is str and value.startswith(AUTHOR_PREFIX), 'Wrong source-binding author prefix')
+     relative = value[len(AUTHOR_PREFIX):]
+     p = Path(relative)
+@@ -389,11 +403,14 @@
+ 
+ 
+ def main():
++    global AUTHOR_PREFIX
+     ap = argparse.ArgumentParser(description=__doc__)
+     ap.add_argument('--author-root', type=Path, required=True)
+     ap.add_argument('--run-root', type=Path, required=True)
+     ap.add_argument('--out', type=Path, required=True)
++    ap.add_argument('--source-path-prefix', required=True, help='Exact relative directory prefix used in source-bound inputs, ending in /; never emitted in reports')
+     args = ap.parse_args()
++    AUTHOR_PREFIX = validate_source_path_prefix(args.source_path_prefix)
+     require(not args.out.exists(), 'Never replace evidence output')
+     author, run = args.author_root.resolve(), args.run_root.resolve()
+     roots = {'author': author, 'run': run, 'checker': Path(__file__).resolve().parent}
+@@ -453,6 +470,7 @@
+             check_record(physical_path(row['path'], roots), {k: row[k] for k in ['bytes', 'sha256']})
+     result = {'schema': 'cgust-independent-result-binding-v10-v1', 'passed': True, 'stl_sha256': STL,
+               'checker_path': logical_path(__file__, roots), 'checker_sha256': sha(__file__), 'checker_optimization_level': sys.flags.optimize,
++              'source_path_prefix_metadata': {'provided_via': '--source-path-prefix', 'validated_form': 'canonical relative directory prefix ending in /', 'value_disclosed': False},
+               'original_pinned_inputs': inputs, 'runner_selection': record(selection_path),
+               'full_author_inventory_members_verified': len(members), 'frozen_runner_inputs_verified': len(frozen_members),
+               'science_comparisons': groups, 'full_csv_four_source_copy_map': csv_map,

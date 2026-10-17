@@ -1,0 +1,67 @@
+{
+  "checker": "exact_original_triangle_intersections_v1",
+  "passed": true,
+  "strict_passed": true,
+  "completed": true,
+  "stl_path": "model.stl",
+  "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+  "original_face_count": 5176,
+  "face_index_base": 0,
+  "total_unordered_original_face_pairs": 13392900,
+  "tools": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "arithmetic": "unbounded Python int and fractions.Fraction",
+    "external_geometry_dependencies": [],
+    "source_sha256": "3698168f95ac9b95f0021d3a41c04bff30dec092028061d8640b038b6cdd37bc",
+    "optimization_level": 1
+  },
+  "lattice": {
+    "denominator": "8388608",
+    "denominator_power_of_two": 23,
+    "exact_coordinate_round_trips_checked": 46584,
+    "all_original_coordinates_round_trip_exactly": true,
+    "maximum_coordinate_integer_bits": 31
+  },
+  "scope_and_limitations": [
+    "Checks every unordered original-triangle pair whose closed exact AABBs overlap.",
+    "No repair, welding, coordinate rounding, dropped faces, epsilon, tiny-face filter, or adjacency exclusions.",
+    "Allows only empty intersection, exactly one shared original vertex, or exactly the full edge between two shared original vertices.",
+    "Rejects coplanar positive-area overlap, crossing segments, nonshared point/segment contacts, and intersections exceeding shared vertices or edges.",
+    "Binary STL stores no connectivity: exact coordinate equality defines a geometrically shared vertex; signed zero has the same geometric value.",
+    "This geometric pair check does not establish manifoldness, orientation, watertightness, minimum wall thickness, connectedness, mechanical strength, or slicer/printer suitability.",
+    "No global printability guarantee; combine with separate topology, dimensional, material, and slicer checks."
+  ],
+  "degenerate_original_faces": [],
+  "bad_pairs": [],
+  "broad_phase": {
+    "method": "exact integer closed-AABB sweep, each unordered pair once",
+    "sweep_axis": 1,
+    "axis_active_pair_costs": [
+      2021261,
+      1078902,
+      2784261
+    ],
+    "all_bbox_overlapping_pairs_completed": true,
+    "candidate_pairs_checked": 59258,
+    "candidate_sequence_sha256": "70016c310a5e37b8cb8810041b0203cdb1428dcde63ff815d45eee6a9e7adee6"
+  },
+  "actual_intersection_pair_count": 37510,
+  "all_actual_intersections": {
+    "format": "gzip JSON Lines; one exact intersection per line",
+    "path": "intersections.json.contacts.jsonl.gz",
+    "sha256": "e5b0c49c7736c87f355bb1c18fb1fe8aa098c051ef9149d572b2bd0d42a9d02a",
+    "record_count": 37510
+  },
+  "classification_counts": {
+    "allowed_shared_edge": 7764,
+    "allowed_shared_vertex": 29746,
+    "disjoint_coplanar": 3005,
+    "disjoint_noncoplanar": 16207,
+    "disjoint_plane_separated": 2536
+  },
+  "bad_pair_count": 0,
+  "stl_sha256_after_check": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+  "input_unchanged_during_check": true,
+  "elapsed_seconds": 2.453050136566162
+}

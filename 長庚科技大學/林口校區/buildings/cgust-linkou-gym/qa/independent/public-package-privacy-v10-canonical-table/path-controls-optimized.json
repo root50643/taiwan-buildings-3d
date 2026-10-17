@@ -1,0 +1,74 @@
+{
+  "schema": "cgust-canonical-table-path-controls-v1",
+  "passed": true,
+  "case_count": 4,
+  "optimization_level": 1,
+  "cpu_affinity": [
+    0
+  ],
+  "source_sha256": "58363b639dfc66cd35f7fbeb4524f4c804d2bca1b58b4551e0076a1f6eee8df3",
+  "scanner_source_sha256": "2a83fcadc426bed87df3b76eff9caff14f6e9e0d5614b5c1dbfa66f29d72f7ac",
+  "original_scanner_source_sha256": "e0abeb905ccfe96a493fa08b5d0c0838f635c706bf5bfe7e6326349c234834ec",
+  "sealed_map_bytes": 2253316,
+  "sealed_map_sha256": "88c242807a32719dd3d77d2bfffb04e5cbefd48ee2d4c29ff24ba58d02e0c486",
+  "exact_table": {
+    "bytes": 7377,
+    "sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f"
+  },
+  "old_read_path": "qa/SOURCE-STATE-DEFAULT-EXCEPTIONS.json",
+  "new_read_path": "qa/independent/scene-state-bridge-v10/SOURCE-STATE-DEFAULT-EXCEPTIONS.json",
+  "original_read_point_line": 257,
+  "variant_read_point_line": 257,
+  "original_path_present_in_sealed_canonical": false,
+  "new_path_present_in_sealed_canonical": true,
+  "one_literal_change_only": true,
+  "all_other_ast_identical": true,
+  "cases": [
+    {
+      "logical_case": "exact_new_canonical_path_accepts",
+      "expected_accept": true,
+      "accepted": true,
+      "error": null,
+      "passed": true
+    },
+    {
+      "logical_case": "original_top_path_is_absent_and_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact canonical table path absent",
+      "passed": true
+    },
+    {
+      "logical_case": "missing_new_table_payload_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact canonical table path absent",
+      "passed": true
+    },
+    {
+      "logical_case": "wrong_table_sha256_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "error": "Exact canonical table size/hash differs",
+      "passed": true
+    }
+  ],
+  "wrong_hash_fixture": {
+    "recipe": "Replace final byte of exact reference table with hex 20.",
+    "base_sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f",
+    "replacement_hex": "20",
+    "offset": 7376,
+    "fixture_sha256": "29ca6f18634ce6df0db36dde8f75b669bb18950d8c6389faf0103ca12664625e",
+    "actual_rebuilt_sha256": "29ca6f18634ce6df0db36dde8f75b669bb18950d8c6389faf0103ca12664625e",
+    "actual_bitwise_equal": true,
+    "materialized_fixture": false
+  },
+  "probe_scope": "Evaluate only the exact original states-assignment AST with bounded table reads against the authenticated sealed map. Neither original nor adapted run() is called.",
+  "full_scanner_run_invoked": false,
+  "actual_fullscan_failure_claimed": false,
+  "archive_csv_scene_payloads_read": false,
+  "generic_42_case_suites_rerun": false,
+  "original_inputs_unchanged": true,
+  "model_go": false,
+  "publication_go": false
+}

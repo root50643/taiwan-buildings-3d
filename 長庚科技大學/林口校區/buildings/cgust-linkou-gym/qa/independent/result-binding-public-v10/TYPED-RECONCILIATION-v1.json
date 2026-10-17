@@ -1,0 +1,135 @@
+{
+  "schema": "result-binding-public-typed-reconciliation-v1",
+  "passed": true,
+  "original_and_public_pairs": {
+    "normal": {
+      "passed": true,
+      "exact_changed_json_pointers": [
+        "/checker_sha256",
+        "/source_path_prefix_metadata"
+      ],
+      "all_other_typed_values_exact": true,
+      "original_report": {
+        "bytes": 43067,
+        "sha256": "82d008d634baf07665b4fe27fb3930710295dedbf2fbc313c0a2edca54b5be65"
+      },
+      "public_report": {
+        "bytes": 43253,
+        "sha256": "6c5fe8333f652b26fa30bed61c1fc96ac31f4f2905404cb2575535afe505d112"
+      },
+      "new_metadata": {
+        "provided_via": "--source-path-prefix",
+        "validated_form": "canonical relative directory prefix ending in /",
+        "value_disclosed": false
+      }
+    },
+    "optimized": {
+      "passed": true,
+      "exact_changed_json_pointers": [
+        "/checker_sha256",
+        "/source_path_prefix_metadata"
+      ],
+      "all_other_typed_values_exact": true,
+      "original_report": {
+        "bytes": 43067,
+        "sha256": "db05e54930f82e9aacb7aa9aa764acfcd969829adb301c05ba47561edd331b37"
+      },
+      "public_report": {
+        "bytes": 43253,
+        "sha256": "3d0fac948af8c0ed2145efc4865f537c23555c6c72846af70fa694885e61adc8"
+      },
+      "new_metadata": {
+        "provided_via": "--source-path-prefix",
+        "validated_form": "canonical relative directory prefix ending in /",
+        "value_disclosed": false
+      }
+    }
+  },
+  "existing_control_results": {
+    "normal": {
+      "original_65_control_outcomes_exact": true,
+      "all_other_original_control_typed_values_exact": true,
+      "exact_fixture_metadata_projection": {
+        "json_pointer": "/cases/40/error",
+        "old_utf8_sha256": "832c715a236d601a79ea5ed3a454e5f5bfbd21b2d2053c74fbd2998363f399fa",
+        "new_utf8_sha256": "a49eb81701640048aa7ee603149f567486e9798628cbe6bec33f44ba2916cb6a",
+        "new_value": "Duplicate inventory member: fixture-author/previews/v10/courtyard-arcade.png",
+        "rule": "Replace the single original source-prefix occurrence with the approved fixture-author/ synthetic prefix, only in this duplicate-member diagnostic."
+      },
+      "additional_prefix_controls": 16,
+      "total_passed_controls": 81
+    },
+    "optimized": {
+      "original_65_control_outcomes_exact": true,
+      "all_other_original_control_typed_values_exact": true,
+      "exact_fixture_metadata_projection": {
+        "json_pointer": "/cases/40/error",
+        "old_utf8_sha256": "832c715a236d601a79ea5ed3a454e5f5bfbd21b2d2053c74fbd2998363f399fa",
+        "new_utf8_sha256": "a49eb81701640048aa7ee603149f567486e9798628cbe6bec33f44ba2916cb6a",
+        "new_value": "Duplicate inventory member: fixture-author/previews/v10/courtyard-arcade.png",
+        "rule": "Replace the single original source-prefix occurrence with the approved fixture-author/ synthetic prefix, only in this duplicate-member diagnostic."
+      },
+      "additional_prefix_controls": 16,
+      "total_passed_controls": 81
+    }
+  },
+  "public_normal_optimized_only_differences": {
+    "binding": [
+      "/checker_optimization_level"
+    ],
+    "controls": [
+      "/optimization_level"
+    ]
+  },
+  "runtime": {
+    "four_real_cli_returncodes_zero": true,
+    "cpu_affinity": [
+      0
+    ],
+    "private_execution_capture_records": {
+      "controls-normal": {
+        "bytes": 2360,
+        "sha256": "86f0dc1711f25dc69b93a58fb91f369d28cad7dcd52038d7acb0aef9edf6bcf1"
+      },
+      "binding-normal": {
+        "bytes": 2867,
+        "sha256": "1b33b139d266bd8ddb074ef70b70f002fbc6794669b6d7c4ef02007bff49978a"
+      },
+      "controls-optimized": {
+        "bytes": 2388,
+        "sha256": "4da10851e624189b01d75992e13a41a1d03dfbeebfcaa12db0d2ca3ee0252631"
+      },
+      "binding-optimized": {
+        "bytes": 2894,
+        "sha256": "ebba61ec3ec5eb5f0cd6db75f5347da45fd67a086ba8a8ada10dbd8639bc5909"
+      }
+    }
+  },
+  "public_reports": {
+    "checker/controls-normal.json": {
+      "bytes": 14507,
+      "sha256": "cbc1a357e3e6293c2af33f97749511f3862b79637f4b0724adf08198fdcd054d"
+    },
+    "checker/binding-normal.json": {
+      "bytes": 43253,
+      "sha256": "6c5fe8333f652b26fa30bed61c1fc96ac31f4f2905404cb2575535afe505d112"
+    },
+    "checker/controls-optimized.json": {
+      "bytes": 14507,
+      "sha256": "4cf21a00b340ed4f11d8eda1cac0880468b84477f2b62907a18e035891646a57"
+    },
+    "checker/binding-optimized.json": {
+      "bytes": 43253,
+      "sha256": "3d0fac948af8c0ed2145efc4865f537c23555c6c72846af70fa694885e61adc8"
+    }
+  },
+  "original_private_tree_all_bytes_unchanged": true,
+  "public_tool_freeze_all_bytes_unchanged": true,
+  "source_prefix_not_present_or_encoded_in_public_code": true,
+  "known_private_prefix_and_plain_generic_root_patterns_absent": true,
+  "plain_scan_scope": "Every public file present before this reconciliation; final roster generation repeats this check. Exact AST proof preserves all four folded detector/synthetic values. No scanner exemption added.",
+  "scientific_producers_reexecuted": 0,
+  "csv_payloads_created": 0,
+  "original_numerical_strict_passed": false,
+  "original_producer_returncode": 1
+}

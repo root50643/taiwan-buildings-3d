@@ -1,0 +1,46 @@
+--- prepared-unpinned/restore_low_disk.py
++++ final-pinned/restore_low_disk.py
+@@ -16,10 +16,10 @@
+            'bytes': 59649412,
+            'sha256': 'e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9',
+            'mode': 'byte_exact'}
+-# Final publication map is deliberately not guessed. Pin only after final review.
+-MAP_SHA = None
+-CANONICAL_COUNT = None
+-LOGICAL_COUNT = None
++# Reviewed final map; the case-pin delta is retained separately.
++MAP_SHA = '88c242807a32719dd3d77d2bfffb04e5cbefd48ee2d4c29ff24ba58d02e0c486'
++CANONICAL_COUNT = 550
++LOGICAL_COUNT = 1269
+ FLOOR = 128 * 1024 * 1024
+ MAX_FILE = 64 * 1024 * 1024
+ DIR_FLAGS = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW | os.O_CLOEXEC
+@@ -309,6 +309,17 @@
+             'scope': 'Declared public logical layout; newly written payload plus one verified hardlink, not wholly new allocation. Public projections remain projections. No archive decoding or geometry/render rerun.'}
+ 
+ 
++def validate_case_map(original, raw):
++    require(MAP_SHA is not None and CANONICAL_COUNT is not None and LOGICAL_COUNT is not None,
++            'Final case map identity has not been pinned; actual restore is disabled')
++    require(hashlib.sha256(raw).hexdigest() == MAP_SHA, 'Final case map SHA differs')
++    mapping = original.parse(raw)
++    require(len(mapping['files']) == CANONICAL_COUNT and len(mapping['copy_map']) == LOGICAL_COUNT,
++            'Final case map count differs')
++    split_map(original, mapping)
++    return mapping
++
++
+ def main():
+     ap = argparse.ArgumentParser(description=__doc__)
+     ap.add_argument('--public-root', type=Path, required=True)
+@@ -322,9 +333,7 @@
+     require(not out.is_relative_to(root) and not root.is_relative_to(out), 'Output overlaps public source')
+     original = load_original(root / 'qa/restore_scientific_layout.py')
+     raw = read_source(root / 'qa/PUBLIC-COPY-MAP.json', MAP_SHA, 16 * 1024 * 1024)
+-    mapping = original.parse(raw)
+-    require(len(mapping['files']) == CANONICAL_COUNT and len(mapping['copy_map']) == LOGICAL_COUNT,
+-            'Final case map count differs')
++    mapping = validate_case_map(original, raw)
+     result = execute(root, mapping, out, original, a.archive_source, a.archive_proof)
+     read_source(root / 'qa/PUBLIC-COPY-MAP.json', MAP_SHA, 16 * 1024 * 1024)
+     load_original(root / 'qa/restore_scientific_layout.py')

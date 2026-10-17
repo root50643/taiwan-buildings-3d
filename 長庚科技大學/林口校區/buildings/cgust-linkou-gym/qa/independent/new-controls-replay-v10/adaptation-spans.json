@@ -1,0 +1,50 @@
+{
+  "schema": "exact-replay-adaptation-spans-v1",
+  "base_sha256": "f79bc1aec6467e1fdeb78eb30ad801ef68e3ae77e5746fa9ccf7b34aa51267d3",
+  "spans": [
+    {
+      "old": "BUILDER_MEMBER = 'independent/reuse-preflight-v1/tooling/tools/build_controls_archive.py'\n",
+      "new": ""
+    },
+    {
+      "old": "def main():\n",
+      "new": "def resolve_builder_binding(mapping, logical_member, expected_data):\n    \"\"\"Bind an explicitly named logical builder to its unique canonical descriptor.\"\"\"\n    need(digest(expected_data) == BUILDER_SHA, 'Original builder bytes differ')\n    matches = [row for row in mapping['copy_map'] if row['restore_path'] == logical_member]\n    need(len(matches) == 1, 'Original builder logical member missing or ambiguous')\n    row = matches[0]\n    need(row['sha256'] == BUILDER_SHA and type(row['bytes']) is int\n         and row['bytes'] == len(expected_data) and row['mode'] == 'byte_exact',\n         'Original builder logical descriptor differs')\n    canonical = [item for item in mapping['files']\n                 if item['canonical_public_path'] == row['canonical_public_path']]\n    need(len(canonical) == 1 and canonical[0]['sha256'] == BUILDER_SHA\n         and type(canonical[0]['bytes']) is int and canonical[0]['bytes'] == len(expected_data),\n         'Original builder canonical descriptor missing, ambiguous, or different')\n    return row\n\ndef main():\n"
+    },
+    {
+      "old": "    ap.add_argument('--selection', default='qa/NEW-CONTROLS-SELECTION.json')\n",
+      "new": "    ap.add_argument('--selection', default='qa/NEW-CONTROLS-SELECTION.json')\n    ap.add_argument('--full-copy-map', default='qa/PUBLIC-COPY-MAP.json')\n    ap.add_argument('--expected-full-map-sha256', required=True)\n    ap.add_argument('--builder-member', required=True)\n"
+    },
+    {
+      "old": "    for relative in [args.copy_map, args.selection]:\n",
+      "new": "    for relative in [args.copy_map, args.selection, args.full_copy_map, args.builder_member]:\n"
+    },
+    {
+      "old": "    mapping, selection = module.parse(map_bytes), module.parse(selection_bytes)\n",
+      "new": "    full_map_bytes = read_public(root, args.full_copy_map, None, 16 * 1024 * 1024)\n    need(digest(full_map_bytes) == args.expected_full_map_sha256, 'Full public map differs from sealed identity')\n    full_mapping = module.parse(full_map_bytes)\n    module.validated_map(full_mapping)\n    builder_binding = resolve_builder_binding(full_mapping, args.builder_member, source_bytes[builder])\n    need(module.read_exact(root, builder_binding['canonical_public_path'], builder_binding) == source_bytes[builder],\n         'Canonical public builder content differs')\n    mapping, selection = module.parse(map_bytes), module.parse(selection_bytes)\n"
+    },
+    {
+      "old": "    need(any(row['path'] == BUILDER_MEMBER and row['sha256'] == BUILDER_SHA for row in members),\n         'Original builder is absent from selected members')\n",
+      "new": ""
+    },
+    {
+      "old": "            extracted_builder = extracted / BUILDER_MEMBER\n            need(sha(extracted_builder) == BUILDER_SHA, 'Extracted original builder differs')\n            br = child(name + '-rebuild', extracted_builder,",
+      "new": "            need(sha(builder) == BUILDER_SHA, 'Canonical original builder changed')\n            br = child(name + '-rebuild', builder,"
+    },
+    {
+      "old": "         read_public(root, args.selection, None, 16 * 1024 * 1024) == selection_bytes, 'Public map/selection changed')",
+      "new": "         read_public(root, args.selection, None, 16 * 1024 * 1024) == selection_bytes and\n         read_public(root, args.full_copy_map, None, 16 * 1024 * 1024) == full_map_bytes, 'Public maps/selection changed')"
+    },
+    {
+      "old": "'schema': 'wfu-public-new-controls-deterministic-replay-v1'",
+      "new": "'schema': 'public-new-controls-deterministic-replay-v2'"
+    },
+    {
+      "old": "              'public_selection_sha256': digest(selection_bytes), 'canonical_files': len(mapping['files']),",
+      "new": "              'public_selection_sha256': digest(selection_bytes),\n              'public_full_copy_map_sha256': digest(full_map_bytes),\n              'original_builder_binding': {'logical_member': args.builder_member,\n                  'canonical_public_path': builder_binding['canonical_public_path'],\n                  'bytes': builder_binding['bytes'], 'sha256': builder_binding['sha256'],\n                  'rebuild_source': 'original_public_builder_bound_to_full_copy_map'},\n              'canonical_files': len(mapping['files']),"
+    },
+    {
+      "old": "then original deterministic archive creation and both-mode safe extraction/all-member rehash/bitwise rebuild.",
+      "new": "then original deterministic archive creation and both-mode safe extraction/all-member rehash/bitwise rebuild. The rebuild tool is the unchanged original public builder bound to the sealed full copy map; selected archive members are unchanged."
+    }
+  ]
+}

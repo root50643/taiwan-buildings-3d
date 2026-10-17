@@ -1,0 +1,105 @@
+--- cgust-linkou-gym-independent-qa/candidate-tools-v8/test_artifact_structure.py
++++ cgust-linkou-gym-independent-qa/candidate-tools-v10/test_artifact_structure.py
+@@ -6,7 +6,11 @@
+ """
+ import copy
+ import math
++import re
+ import unittest
++from pathlib import Path
++
++import review_artifact_structure as reviewer
+ 
+ import artifact_structure as a
+ 
+@@ -201,6 +205,7 @@
+     def test_cgust_bound_schedule_controls(self):
+         mutations = {
+             'old WFU identity': lambda r: r.update(stl_sha256='8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0'),
++            'old CGUST v8 identity': lambda r: r.update(stl_sha256='bce6cf52cd6f8e14fb92387218f398d15e84bd1f75bc218b3cfbcf39c351af3e'),
+             'old WFU height': lambda r: r.update(z_max_mm=114.5),
+             'old WFU layer count': lambda r: r.update(sampled_layers=1718),
+             'old WFU per-offset count': lambda r: r['per_offset'][0].update(sampled_layers=573),
+@@ -274,6 +279,7 @@
+             'escaped basename': lambda r, rows: r['all_actual_intersections'].update(path='../contacts.jsonl.gz'),
+             'wrong coordinate lattice': lambda r, rows: r['lattice'].update(denominator='1'),
+             'old WFU identity': lambda r, rows: r.update(stl_sha256='8348213614296746732da6a8024821ff48536e847419fe13545dc1ab20730ca0'),
++            'old CGUST v8 identity': lambda r, rows: r.update(stl_sha256='bce6cf52cd6f8e14fb92387218f398d15e84bd1f75bc218b3cfbcf39c351af3e'),
+             'old WFU lattice and power': lambda r, rows: r['lattice'].update(denominator='72057594037927936', denominator_power_of_two=56),
+             'old WFU power only': lambda r, rows: r['lattice'].update(denominator_power_of_two=56),
+             'old AEUST lattice and power': lambda r, rows: r['lattice'].update(denominator='1073741824', denominator_power_of_two=30),
+@@ -332,5 +338,74 @@
+         with self.assertRaises(RuntimeError):a.validate_sections(report,details,failures)
+ 
+ 
++class LogicalMetadataControls(unittest.TestCase):
++    def roots(self):
++        root = Path('/synthetic-private-root')
++        return {'stl': root / 'models/model.stl', 'qa-root': root / 'qa',
++                'full-root': root / 'qa/v9-full', 'exact-normal': root / 'qa/v9-exact-normal',
++                'exact-optimized': root / 'qa/v9-exact-optimized'}
++
++    def test_exact_logical_roots_and_nested_precedence(self):
++        paths = self.roots()
++        self.assertEqual(reviewer.logical_path_bindings(paths), {key: key for key in reviewer.ROOT_KEYS})
++        cases = [(paths['stl'], 'stl'),
++                 (paths['qa-root'] / 'tools/source.py', 'qa-root/tools/source.py'),
++                 (paths['full-root'] / 'normal/section.json', 'full-root/normal/section.json'),
++                 (paths['full-root'] / 'optimized/contact.gz', 'full-root/optimized/contact.gz'),
++                 (paths['exact-normal'] / 'rays.gz', 'exact-normal/rays.gz'),
++                 (paths['exact-optimized'] / 'rays.gz', 'exact-optimized/rays.gz'),
++                 (paths['full-root'], 'full-root')]
++        for path, expected in cases:
++            with self.subTest(logical=expected):
++                self.assertEqual(reviewer.logical_key(path, paths), expected)
++
++    def test_report_preserves_every_nonpath_value_and_input(self):
++        paths = self.roots()
++        payload = {'passed': True, 'original_numerical_strict_passed': False, 'model_go': False,
++                   'optimization_level': 1, 'cpu_affinity': [0],
++                   'input_path_bindings': {key: str(value) for key, value in paths.items()},
++                   'modes': {'normal': {'exact': {'value': '16/25', 'actual_hex': '0x1.99999ap-1'},
++                                        'nested': [1, 0.8, False, None, {'unanticipated_science': ['x', 'y']}]},
++                             'optimized': {'all_records_checked': 10}},
++                   'helper_sha256': 'a' * 64, 'unknown_future_scientific_field': {'preserve': [1, 2]}}
++        tracked = {str(paths['stl']): {'bytes': 258884, 'sha256': 'b' * 64},
++                   str(paths['full-root'] / 'normal/section.json'): {'bytes': 321, 'sha256': 'c' * 64},
++                   str(paths['exact-normal'] / 'rays.gz'): {'bytes': 123, 'sha256': 'd' * 64}}
++        before = copy.deepcopy((payload, paths, tracked))
++        out = reviewer.report_for_output(payload, paths, tracked)
++        self.assertEqual(set(out), set(payload) | {'evidence_inventory'})
++        self.assertEqual({key: value for key, value in out.items() if key not in ('input_path_bindings', 'evidence_inventory')},
++                         {key: value for key, value in payload.items() if key != 'input_path_bindings'})
++        self.assertEqual(out['evidence_inventory'], {'stl': tracked[str(paths['stl'])],
++            'full-root/normal/section.json': tracked[str(paths['full-root'] / 'normal/section.json')],
++            'exact-normal/rays.gz': tracked[str(paths['exact-normal'] / 'rays.gz')]})
++        self.assertEqual((payload, paths, tracked), before)
++        self.assertNotIn('/synthetic-private-root', str(out))
++        self.assertEqual(len(out['evidence_inventory']), len(tracked))
++
++    def test_unscoped_unsafe_or_ambiguous_paths_rejected(self):
++        paths = self.roots()
++        cases = {
++            'outside explicit roots': (lambda: reviewer.logical_key(Path('/elsewhere/file'), paths), 'Evidence path outside explicit CLI roots'),
++            'relative evidence path': (lambda: reviewer.logical_key(Path('qa/file'), paths), 'Logical evidence path must be absolute and safe'),
++            'parent traversal': (lambda: reviewer.logical_key(paths['qa-root'] / '../secret', paths), 'Logical evidence path must be absolute and safe'),
++            'prefix sibling': (lambda: reviewer.logical_key(Path(str(paths['qa-root']) + '-other/file'), paths), 'Evidence path outside explicit CLI roots'),
++            'missing root': (lambda: reviewer.logical_path_bindings({k: v for k, v in paths.items() if k != 'stl'}), 'Logical root set differs'),
++            'unexpected root': (lambda: reviewer.logical_path_bindings({**paths, 'extra': Path('/extra')}), 'Logical root set differs'),
++            'duplicate root aliases': (lambda: reviewer.logical_path_bindings({**paths, 'exact-normal': paths['full-root']}), 'Logical roots must be distinct'),
++            'relative root': (lambda: reviewer.logical_path_bindings({**paths, 'qa-root': Path('relative')}), 'Logical roots must be absolute and safe'),
++        }
++        for name, (call, reason) in cases.items():
++            with self.subTest(rejection=name):
++                with self.assertRaisesRegex(RuntimeError, '^' + re.escape(reason) + '$'): call()
++
++    def test_logical_inventory_collision_rejected(self):
++        paths = self.roots(); name = str(paths['full-root'] / 'normal/file')
++        tracked = {name: {'bytes': 1, 'sha256': 'a' * 64},
++                   str(paths['full-root']) + '/normal/./file': {'bytes': 1, 'sha256': 'a' * 64}}
++        with self.assertRaisesRegex(RuntimeError, 'Logical inventory key collision'):
++            reviewer.report_for_output({'passed': False}, paths, tracked)
++
++
+ if __name__ == '__main__':
+     unittest.main(verbosity=2)

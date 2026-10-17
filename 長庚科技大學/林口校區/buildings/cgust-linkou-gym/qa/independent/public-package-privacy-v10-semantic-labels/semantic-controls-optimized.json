@@ -1,0 +1,260 @@
+{
+  "schema": "cgust-exact-semantic-label-controls-v1",
+  "passed": true,
+  "case_count": 19,
+  "optimization_level": 1,
+  "cpu_affinity": [
+    0
+  ],
+  "source_sha256": "4dd6f36e9f6bba22f6517e75f8aefd18b6cdde9bed81264b5f6ae173c39ceeba",
+  "scanner_source_sha256": "500d93a6669327034758b9dbb1f224407bdf1e702aeb72a9563d84ac81daee96",
+  "cases": [
+    {
+      "logical_case": "exact_relative_synthetic_python_positive",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true
+    },
+    {
+      "logical_case": "exact_relative_synthetic_diff_positive",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true
+    },
+    {
+      "logical_case": "exact_empty_detection_rule_labels_positive",
+      "expected_accept": true,
+      "accepted": true,
+      "expected_error_substring": null,
+      "error": null,
+      "passed": true
+    },
+    {
+      "logical_case": "wrong_whole_file_sha_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Semantic-label exact file identity differs",
+      "error": "Semantic-label exact file identity differs",
+      "passed": true,
+      "fixture_reconstruction": {
+        "generator_case": "append_newline",
+        "base_logical": "qa/independent/result-binding-public-v10/test_result_binding.py",
+        "base_sha256": "1d063514521b6b252d3888f290501672872d5da9640b1c10dbedbf9e33136b74",
+        "fixture_bytes": 20440,
+        "fixture_sha256": "3ed2d3172f4291e6bf41b45c02b085040a85fa848f9a69f7219e20221d3ebea4",
+        "actual_rebuilt_sha256": "3ed2d3172f4291e6bf41b45c02b085040a85fa848f9a69f7219e20221d3ebea4",
+        "actual_bitwise_equal": true,
+        "fixture_file_written": false
+      }
+    },
+    {
+      "logical_case": "true_absolute_python_fixture_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Synthetic fixture must be exact normalized relative prefix",
+      "error": "Synthetic fixture must be exact normalized relative prefix",
+      "passed": true,
+      "fixture_reconstruction": {
+        "generator_case": "replace_two_relative_fixture_constants_with_policy_derived_absolute_value",
+        "base_sha256": "1d063514521b6b252d3888f290501672872d5da9640b1c10dbedbf9e33136b74",
+        "fixture_sha256": "8d492ec359a8a7e0511c30c8807408a06ffb41fc289dc3c1bf1b296ab616d75a",
+        "actual_rebuilt_sha256": "8d492ec359a8a7e0511c30c8807408a06ffb41fc289dc3c1bf1b296ab616d75a",
+        "actual_bitwise_equal": true,
+        "fixture_file_written": false
+      }
+    },
+    {
+      "logical_case": "true_absolute_json_value_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Semantic rule label must have exact string and empty observation offsets",
+      "error": "Semantic rule label must have exact string and empty observation offsets",
+      "passed": true,
+      "fixture_reconstruction": {
+        "generator_case": "absolute_value_in_marker_metadata",
+        "base_logical": "qa/independent/scene-privacy-preparation/v10-sdna-observation.json",
+        "base_sha256": "3057023ea200ce76fc988fef524aeba03c8d97b5239357ce3f90f1c048d92de2",
+        "fixture_bytes": 5011,
+        "fixture_sha256": "94d894f8bb5bcb2e556824565e152e235f728f0d3db800b6c4b876fa0a141564",
+        "actual_rebuilt_sha256": "94d894f8bb5bcb2e556824565e152e235f728f0d3db800b6c4b876fa0a141564",
+        "actual_bitwise_equal": true,
+        "fixture_file_written": false
+      }
+    },
+    {
+      "logical_case": "nonempty_observation_offsets_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Semantic rule label must have exact string and empty observation offsets",
+      "error": "Semantic rule label must have exact string and empty observation offsets",
+      "passed": true,
+      "fixture_reconstruction": {
+        "generator_case": "nonempty_observed_offsets",
+        "base_logical": "qa/independent/scene-privacy-preparation/v10-sdna-observation.json",
+        "base_sha256": "3057023ea200ce76fc988fef524aeba03c8d97b5239357ce3f90f1c048d92de2",
+        "fixture_bytes": 5021,
+        "fixture_sha256": "1b715795a3f92ad87af423d5c5096f8731336228ad35c74df68ed06e7e91c43d",
+        "actual_rebuilt_sha256": "1b715795a3f92ad87af423d5c5096f8731336228ad35c74df68ed06e7e91c43d",
+        "actual_bitwise_equal": true,
+        "fixture_file_written": false
+      }
+    },
+    {
+      "logical_case": "wrong_json_offsets_type_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Semantic rule label must have exact string and empty observation offsets",
+      "error": "Semantic rule label must have exact string and empty observation offsets",
+      "passed": true,
+      "fixture_reconstruction": {
+        "generator_case": "wrong_offsets_type",
+        "base_logical": "qa/independent/scene-privacy-preparation/v10-sdna-observation.json",
+        "base_sha256": "3057023ea200ce76fc988fef524aeba03c8d97b5239357ce3f90f1c048d92de2",
+        "fixture_bytes": 5004,
+        "fixture_sha256": "41010f532350d78b23d6ecc0d8a29f616a7dd479ea1a57334587402604088bfa",
+        "actual_rebuilt_sha256": "41010f532350d78b23d6ecc0d8a29f616a7dd479ea1a57334587402604088bfa",
+        "actual_bitwise_equal": true,
+        "fixture_file_written": false
+      }
+    },
+    {
+      "logical_case": "wrong_position_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Semantic-label exact marker/range differs",
+      "error": "Semantic-label exact marker/range differs",
+      "passed": true
+    },
+    {
+      "logical_case": "wrong_range_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Semantic-label exact marker/range differs",
+      "error": "Semantic-label exact marker/range differs",
+      "passed": true
+    },
+    {
+      "logical_case": "wrong_span_type_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Semantic-label span metadata type differs",
+      "error": "Semantic-label span metadata type differs",
+      "passed": true
+    },
+    {
+      "logical_case": "extra_true_private_marker_outside_spans_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "Private path marker in exact CSV complete buffer",
+      "passed": true,
+      "fixture_reconstruction": {
+        "generator_case": "outside_additional_private_marker",
+        "base_logical": "qa/independent/result-binding-public-v10/test_result_binding.py",
+        "base_sha256": "1d063514521b6b252d3888f290501672872d5da9640b1c10dbedbf9e33136b74",
+        "fixture_bytes": 20457,
+        "fixture_sha256": "f0a7088a2047d5f6d2a21dc148e24a44f57a66fe758f8462b8614059a4350fb5",
+        "actual_rebuilt_sha256": "f0a7088a2047d5f6d2a21dc148e24a44f57a66fe758f8462b8614059a4350fb5",
+        "actual_bitwise_equal": true,
+        "fixture_file_written": false
+      }
+    },
+    {
+      "logical_case": "diff_must_match_authenticated_source_line",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Diff added line differs from authenticated source",
+      "error": "Diff added line differs from authenticated source",
+      "passed": true,
+      "fixture_reconstruction": {
+        "generator_case": "alter_added_diff_case_name",
+        "base_logical": "qa/independent/result-binding-public-v10/test_result_binding.py.public-redacted.diff",
+        "base_sha256": "6f20068e2ab79ae7cf4c21989bd44d84ba980280c1a8134f53663247f8b73c67",
+        "fixture_bytes": 6248,
+        "fixture_sha256": "ae5635ea193da75b2be9cd875f664cba5d13d72d417fa390bcc96dbff0e576fd",
+        "actual_rebuilt_sha256": "ae5635ea193da75b2be9cd875f664cba5d13d72d417fa390bcc96dbff0e576fd",
+        "actual_bitwise_equal": true,
+        "fixture_file_written": false
+      }
+    },
+    {
+      "logical_case": "diff_without_original_source_proof_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Diff requires previously authenticated original source line",
+      "error": "Diff requires previously authenticated original source line",
+      "passed": true
+    },
+    {
+      "logical_case": "non_top_relative_synthetic_python_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "Private path marker in exact CSV complete buffer",
+      "passed": true
+    },
+    {
+      "logical_case": "non_top_relative_synthetic_diff_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "Private path marker in exact CSV complete buffer",
+      "passed": true
+    },
+    {
+      "logical_case": "non_top_empty_detection_rule_labels_rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "Private path marker in exact CSV complete buffer",
+      "passed": true
+    },
+    {
+      "logical_case": "nested_gzip_does_not_inherit_source_allowance",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "Private path marker in exact CSV complete buffer",
+      "passed": true
+    },
+    {
+      "logical_case": "unlisted_top_path_does_not_inherit_by_sha",
+      "expected_accept": false,
+      "accepted": false,
+      "expected_error_substring": "Private path marker",
+      "error": "Private path marker in exact CSV complete buffer",
+      "passed": true
+    }
+  ],
+  "exact_original_inputs": [
+    {
+      "logical_path": "qa/independent/result-binding-public-v10/test_result_binding.py",
+      "bytes": 20439,
+      "sha256": "1d063514521b6b252d3888f290501672872d5da9640b1c10dbedbf9e33136b74"
+    },
+    {
+      "logical_path": "qa/independent/result-binding-public-v10/test_result_binding.py.public-redacted.diff",
+      "bytes": 6248,
+      "sha256": "6f20068e2ab79ae7cf4c21989bd44d84ba980280c1a8134f53663247f8b73c67"
+    },
+    {
+      "logical_path": "qa/independent/scene-privacy-preparation/v10-sdna-observation.json",
+      "bytes": 5004,
+      "sha256": "3057023ea200ce76fc988fef524aeba03c8d97b5239357ce3f90f1c048d92de2"
+    }
+  ],
+  "production_profiles_unchanged": true,
+  "original_public_inputs_unchanged": true,
+  "isolated_identity_rebinding_is_test_only": true,
+  "negative_fixtures_process_memory_only": true,
+  "actual_second_reconstruction_compared": true,
+  "full_scanner_run_invoked": false,
+  "archive_csv_scene_geometry_render_executed": false,
+  "previous_generic_suites_rerun": false,
+  "model_go": false,
+  "publication_go": false
+}

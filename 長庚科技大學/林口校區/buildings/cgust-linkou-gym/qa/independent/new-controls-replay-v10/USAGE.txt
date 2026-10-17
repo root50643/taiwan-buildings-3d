@@ -1,0 +1,31 @@
+The actual-public-tree replay completed successfully after independent review. See COMPLETION.json and replay-proof.json for exact identities and measured results. PREPARATION.json and RESOURCE-PREFLIGHT.json preserve the earlier preparation state. The historical baseline under base/ is only an exact-diff/AST review input, not the entry point for this case.
+Run from a directory where these relative paths are available. Set PYTHON to the controlled Python executable, LOCK_FILE to the coordinator's existing shared exclusive lock, and PUBLIC_ROOT to the actual canonical public payload. Do not create the output directory first. Do not acquire a nested lock if the coordinator already owns it.
+
+PYTHONDONTWRITEBYTECODE=1 flock -x "$LOCK_FILE" taskset -c 0 "$PYTHON" -B exercise_new_controls_replay.py \
+  --public-root "$PUBLIC_ROOT" \
+  --copy-map qa/NEW-CONTROLS-STAGING-MAP.json \
+  --selection qa/NEW-CONTROLS-SELECTION.json \
+  --expected-map-sha256 8fe0a7787521b3c4c25142cc6944bbd1abf70dca32ac54eae37db863d779664b \
+  --expected-selection-sha256 11a6471c7fc98f216bd5da3955c59c4ed4fd5752fec5e472aca71c7ac7acaff4 \
+  --full-copy-map qa/PUBLIC-COPY-MAP.json \
+  --expected-full-map-sha256 88c242807a32719dd3d77d2bfffb04e5cbefd48ee2d4c29ff24ba58d02e0c486 \
+  --builder-member author/qa/tools/build_controls_archive.py \
+  --capture-source "$PUBLIC_ROOT/qa/independent-tools/capture_process.py" \
+  --out replay-output
+
+The exact 206-member selection is the only archive payload. The unchanged original builder is selected by explicit logical identity from the full public map. Its source is outside the archive and is used to rebuild both safely extracted temporary trees. Its exact public canonical bytes, original SHA256, full-map digest and logical-to-canonical binding are all checked. This does not add or relabel any selection member.
+
+The five measured child invocations are public restore, normal archive verify/extract, normal deterministic rebuild, optimized archive verify/extract, and optimized deterministic rebuild. Every selected staged and extracted file is independently checked against exact size and SHA256. The original archive verifier performs complete XZ decoding/checksum validation, complete USTAR profile/member checks and safe extraction; the final rebuilt archive must be bitwise identical in both modes. Existing generic verifier and builder limits are unchanged.
+
+Only the small selected-controls-stage tree is retained with the archive, index, proof, source-pinned runtime launcher and private child runtime/log records. Temporary verification/rebuild trees are automatically removed by the pre-existing replay wrapper. The private records contain actual CLI paths and must not be published. The index and replay proof are eligible for later publication only after separate review and package gates. This run grants neither model acceptance nor publication approval.
+
+The narrow adaptation checks are runnable separately without opening or creating any archive:
+
+PYTHONDONTWRITEBYTECODE=1 taskset -c 0 "$PYTHON" -B test_replay_adaptation.py \
+  --base-source base/exercise_new_controls_replay.py \
+  --candidate exercise_new_controls_replay.py \
+  --spans adaptation-spans.json \
+  --expected-spans-sha256 503a24f1f75341d21e2acb652bc30f8ba6b347ba2c55bc5eb873a9253884774b \
+  --builder-source "$PUBLIC_ROOT/qa/tools/build_controls_archive.py"
+
+Repeat the same narrow check with -O after -B. The source adaptation is defined by eleven exact reviewed spans. Both exact bytes and AST must match their application to the original replay wrapper. The original source identity is pinned; the ordinary relative base path is an explicit input. These checks are not substitutes for the later actual-public-tree replay.

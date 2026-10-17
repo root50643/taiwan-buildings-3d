@@ -1,0 +1,37 @@
+--- historical-scanner/test_public_package.py
++++ cgust-scanner/test_public_package.py
+@@ -5,8 +5,8 @@
+ import argparse, gzip, hashlib, io, json, os, stat, tempfile, types, zipfile
+ 
+ HERE = Path(__file__).absolute().parent
+-ENTRY_BYTES = 20022
+-ENTRY_SHA = '20a8bcfe207d8b9e6b268669e629a107b8067456502a6df4c712f00794712366'
++ENTRY_BYTES = 20036
++ENTRY_SHA = 'e0abeb905ccfe96a493fa08b5d0c0838f635c706bf5bfe7e6326349c234834ec'
+ 
+ 
+ def require(value,message):
+@@ -40,8 +40,8 @@
+     require(args.out.parent.is_dir() and not args.out.exists() and not args.out.is_symlink(),'Fresh output required')
+     m=load_entry();p,tools=m.load_tools()
+     own=p._read_regular_snapshot(HERE,Path(__file__).name,None,256*1024)
+-    g=tools['package_controls_v2.py'];primitive=tools['exact_privacy_primitives.py'];checker=tools['check_wfu_privacy.py']
+-    policy=types.SimpleNamespace(MAX_BYTES=g.MAX_BYTES,PRIVATE_MARKERS=g.PRIVATE_MARKERS+checker.WFU_MARKERS,
++    g=tools['package_controls_v2.py'];primitive=tools['exact_privacy_primitives.py'];checker=tools['check_cgust_privacy.py']
++    policy=types.SimpleNamespace(MAX_BYTES=g.MAX_BYTES,PRIVATE_MARKERS=g.PRIVATE_MARKERS+checker.CGUST_MARKERS,
+                                 TMP_MARKER=g.TMP_MARKER,SECRET_PATTERNS=g.SECRET_PATTERNS)
+     cases=[]
+     def case(name,fn,error=None):
+@@ -89,9 +89,9 @@
+     z=io.BytesIO()
+     with zipfile.ZipFile(z,'w',compression=zipfile.ZIP_DEFLATED) as archive:archive.writestr('state.json',safe)
+     case('state_exception_not_recursive_zip',lambda:scan(z.getvalue(),'nested.zip',{'state.json':row}),'Unreviewed temporary path')
+-    case('new_wfu_has_no_malformed_fixture_exception',lambda:scan(b'not xz','fixture.xz'),'Unapproved malformed compressed payload')
+-    case('new_wfu_private_marker_rejected',lambda:scan(checker.WFU_MARKERS[0],'safe.txt'),'Private path marker')
+-    case('new_wfu_other_blend_has_no_default_exception',lambda:scan(b'BLENDER-v403'+marker,'other.blend'),'Unreviewed temporary path')
++    case('new_cgust_has_no_malformed_fixture_exception',lambda:scan(b'not xz','fixture.xz'),'Unapproved malformed compressed payload')
++    case('new_cgust_private_marker_rejected',lambda:scan(checker.CGUST_MARKERS[0],'safe.txt'),'Private path marker')
++    case('new_cgust_other_blend_has_no_default_exception',lambda:scan(b'BLENDER-v403'+marker,'other.blend'),'Unreviewed temporary path')
+     for n,payload in enumerate((b'',b'foreign archive',b'foreign archive'+b'\0')):
+         case('historical_domain_rejects_foreign_identity_%d'%n,
+              lambda:m.scan_history(lambda path,desc:payload,g,primitive,policy,tools['archive_verify.py']),

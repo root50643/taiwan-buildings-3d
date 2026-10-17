@@ -1,0 +1,11 @@
+--- original/run_source_render_verification.py
++++ v10-cacheguard/run_source_render_verification.py
+@@ -40,7 +40,7 @@
+         run('source-rebuild',[sys.executable,'-B',str(repro/'source/build_model.py'),'--output-dir',str(repro/model)])
+         rebuild={name:{'original_sha256':sha(m/name),'rebuilt_sha256':sha(repro/model/name),'bytes_identical':(m/name).read_bytes()==(repro/model/name).read_bytes()} for name in ['model.stl','color-regions.json','parameters.json','build_model.py','build-report.json']}
+         write(out/'source-rebuild.json',{'passed':all(r['bytes_identical'] for r in rebuild.values()),'files':rebuild});require(all(r['bytes_identical'] for r in rebuild.values()),'Source rebuild not byte identical')
+-        common=['blender','--background','--threads','1','--python-exit-code','1','--python']
++        common=['blender','--background','--threads','1','--python-exit-code','1','--python-expr','import sys; sys.dont_write_bytecode = True','--python']
+         run('source-scene-state',common+[str(out/'tools/compare_source_scene.py'),'--','--source',str(repro/'source/render_preview.py'),'--version',a.version,'--original-blend',str(m/'scene.blend'),'--manifest',str(mf),'--expected-stl-sha256',a.expected_stl_sha256,'--out',str(out/'source-scene')])
+         args=['--blend',str(m/'scene.blend'),'--stl',str(m/'model.stl'),'--manifest',str(mf),'--expected-sha256',a.expected_stl_sha256]
+         run('blend-inspect',common+[str(out/'tools/inspect_and_rerender_blend.py'),'--',*args,'--out',str(out/'blend-inspect'),'--inspect-only'])

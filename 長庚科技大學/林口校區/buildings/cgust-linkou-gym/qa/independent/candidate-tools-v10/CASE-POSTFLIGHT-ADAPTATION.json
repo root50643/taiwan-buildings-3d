@@ -1,0 +1,48 @@
+{
+  "schema": "cgust-case-postflight-narrow-adaptation-v1",
+  "case_stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+  "model_go": false,
+  "files": [
+    {
+      "original": "wfu-shengyou-independent-qa/candidate-tools-v12/inspect_flagged_wfu_mode.py",
+      "original_sha256": "59b1a4adf5e2105c1871b34c063662d3e070e161f6dfc1e3e93f7af4ef58eca6",
+      "adapted": "cgust-linkou-gym-independent-qa/candidate-tools-v10/inspect_flagged_cgust_mode.py",
+      "bytes": 10697,
+      "sha256": "5c311e685e1907656a543de8f1e2be128ce3ea9562eb3e1b3017850d3895be27",
+      "diff": "cgust-linkou-gym-independent-qa/candidate-tools-v10/inspect_flagged_cgust_mode.py.diff",
+      "diff_sha256": "149c1a85daa3a9566df44be0d994115e3dcabe557272362cf34e316081437e80"
+    },
+    {
+      "original": "wfu-shengyou-independent-qa/candidate-tools-v12/review_completed_wfu_candidate.py",
+      "original_sha256": "3a432e528018e255a3a6abb4f535d9bbd8f2521e73cdd1c9e767710bd1c830d0",
+      "adapted": "cgust-linkou-gym-independent-qa/candidate-tools-v10/review_completed_cgust_candidate.py",
+      "bytes": 13210,
+      "sha256": "804f40a26b4e778a23bfbd2bee375ffbc2ffb2440ce5e074be6737570694c0f3",
+      "diff": "cgust-linkou-gym-independent-qa/candidate-tools-v10/review_completed_cgust_candidate.py.diff",
+      "diff_sha256": "1a8c1c01fdf003ae4e39895068fa71dd87ef8c8d58f5fb9de4e4d4ca95bfacdd"
+    },
+    {
+      "original": "wfu-shengyou-independent-qa/candidate-tools-v12/test_case_postflight.py",
+      "original_sha256": "4e3b06d84189db9a2f6cadf73ecf6d8938a8c235655b3997ef2b13b3b84da094",
+      "adapted": "cgust-linkou-gym-independent-qa/candidate-tools-v10/test_case_postflight.py",
+      "bytes": 7811,
+      "sha256": "e956e59c7d01b70b5f04842a5a6d5a1902bf8ff0cdabc32e86d9c32b9c878346",
+      "diff": "cgust-linkou-gym-independent-qa/candidate-tools-v10/test_case_postflight.py.diff",
+      "diff_sha256": "4c3b8ce13f95ba50c6c518cfe5bf3d1e6d18fe200c2c6aad871580ea608c948d"
+    }
+  ],
+  "allowed_changes": [
+    "Case name, exact original STL identity and measured counts, dimensions, numerical minimum and original flagged face/sample set",
+    "Optional explicit exact_dir only to bind author same-run exact outputs at their original paths; default independent-run layout unchanged",
+    "Policy control input paths explicitly supplied instead of fabricating a prior-run layout; original before/after file hashes recorded using public-safe logical scope keys; actual one-CPU affinity and self/helper before-after hashes required",
+    "Final source/scene/nine-image reviewer imports the new case helper; generic requirements unchanged"
+  ],
+  "unmodified_policy": [
+    "All original strict=false semantics and exact integer exit codes",
+    "Dense full CSV predicate recomputation in actual final review",
+    "Same-run exact proof original inputs/tool SHA binding",
+    "Exact first chord threshold and interval order",
+    "All original raw/section/contact/control gates and generic source/scene/PNG checks"
+  ],
+  "control_scope": "24 original postflight policy cases with genuine author normal evidence. Only dense audit return is cached in controls; final review performs the actual full audit. Structural/math parser controls are separate."
+}

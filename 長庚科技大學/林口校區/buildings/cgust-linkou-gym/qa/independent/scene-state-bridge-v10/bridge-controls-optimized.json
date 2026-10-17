@@ -1,0 +1,283 @@
+{
+  "passed": true,
+  "case_count": 19,
+  "optimization_level": 1,
+  "source_set": "author_and_independent",
+  "logical_alias_count": 6,
+  "unique_identity_count": 2,
+  "checker_source_sha256": "a5b1714cf74d42c3fff80dc22b397afb458e88b29748bd116cc704f74be9ed24",
+  "checker_source_bytes": 18218,
+  "generator_source_sha256": "1a17e0e3ca0aa5c75473202dd2759569f4e4206e07fcea99f1fdfd2bba113919",
+  "generator_source_bytes": 13293,
+  "generic_source_sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+  "generic_source_bytes": 47569,
+  "exception_table_sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f",
+  "exception_table_bytes": 7377,
+  "cases": [
+    {
+      "logical_case": "exact_six_aliases_two_canonical_bytes_and_two_audits_positive",
+      "expected": "accept",
+      "passed": true,
+      "observed": "accepted"
+    },
+    {
+      "logical_case": "changed_original_state_identity_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "State identity differs",
+      "reconstruction": {
+        "recipe": {
+          "kind": "replace_same_length",
+          "base_logical": "author.original",
+          "base_sha256": "0e03d8ce76b8a040925bdf70d0a93b94f17c043000866f32cb33b8e2a1f694e7",
+          "offset": 0,
+          "replacement_bytes_hex": "5b"
+        },
+        "fixture_bytes": 120264,
+        "fixture_sha256": "a7c4b3589d8b3e627a721da7a3cf20d6db3c258aafcb8442c812596e1e9db631",
+        "actual_rebuilt_bytes": 120264,
+        "actual_rebuilt_sha256": "a7c4b3589d8b3e627a721da7a3cf20d6db3c258aafcb8442c812596e1e9db631",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "old_wfu_identity_pin_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact case row/type/range pin differs"
+    },
+    {
+      "logical_case": "wrong_pointer_pin_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact case row/type/range pin differs"
+    },
+    {
+      "logical_case": "wrong_type_pin_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact case row/type/range pin differs"
+    },
+    {
+      "logical_case": "wrong_encoded_span_pin_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact case row/type/range pin differs"
+    },
+    {
+      "logical_case": "wrong_effective_range_pin_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact case row/type/range pin differs"
+    },
+    {
+      "logical_case": "bool_is_not_int_pin_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact case row/type/range pin differs"
+    },
+    {
+      "logical_case": "unlisted_logical_alias_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Unknown exact logical alias"
+    },
+    {
+      "logical_case": "changed_exception_table_identity_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact bridge table identity differs",
+      "reconstruction": {
+        "recipe": {
+          "kind": "replace_same_length",
+          "base_logical": "exact_exception_table",
+          "base_sha256": "c44d4f95d3bc8ab3e9408624ee3ed2873f92875481d0f87a7ef2e60f5e8b4a3f",
+          "offset": 0,
+          "replacement_bytes_hex": "5b"
+        },
+        "fixture_bytes": 7377,
+        "fixture_sha256": "18129af2398ebffa7e641a358d3ea64222d10bce6aa91606b8bfe706c1c77813",
+        "actual_rebuilt_bytes": 7377,
+        "actual_rebuilt_sha256": "18129af2398ebffa7e641a358d3ea64222d10bce6aa91606b8bfe706c1c77813",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "other_domain_audit_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Exact audit identity differs"
+    },
+    {
+      "logical_case": "typed_pointer_wrong_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "State typed pointer differs",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b226f74686572223a7b2266696c6570617468223a222f746d702f227d7d"
+        },
+        "fixture_bytes": 30,
+        "fixture_sha256": "68eac24d62e4cc5f0a3f4f01ce85d1ac2162e400f4bf7cb0900473919ce8dcde",
+        "actual_rebuilt_bytes": 30,
+        "actual_rebuilt_sha256": "68eac24d62e4cc5f0a3f4f01ce85d1ac2162e400f4bf7cb0900473919ce8dcde",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "typed_value_wrong_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "State typed pointer differs",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b2272656e646572223a7b2266696c6570617468223a357d7d"
+        },
+        "fixture_bytes": 25,
+        "fixture_sha256": "7cc86bcbc50e7ee8eb292bf50e3c7277eda8a9d0d65808487110bd2507287d98",
+        "actual_rebuilt_bytes": 25,
+        "actual_rebuilt_sha256": "7cc86bcbc50e7ee8eb292bf50e3c7277eda8a9d0d65808487110bd2507287d98",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "duplicate_key_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Duplicate JSON object key",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b2272656e646572223a7b2266696c6570617468223a222f746d702f222c2266696c6570617468223a222f746d702f227d7d"
+        },
+        "fixture_bytes": 50,
+        "fixture_sha256": "be144d7c97d80c574f56d8da732b07f1b1abc8393587ddb98cd7e2e2231eafed",
+        "actual_rebuilt_bytes": 50,
+        "actual_rebuilt_sha256": "be144d7c97d80c574f56d8da732b07f1b1abc8393587ddb98cd7e2e2231eafed",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "duplicate_marker_outside_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "State exact literal/offset differs",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b2272656e646572223a7b2266696c6570617468223a222f746d702f227d2c226f757473696465223a222f746d702f227d"
+        },
+        "fixture_bytes": 49,
+        "fixture_sha256": "e8e11df7fffde99a74dfd2039a2e0096aab2de43ca4193160ab669941fcd6abd",
+        "actual_rebuilt_bytes": 49,
+        "actual_rebuilt_sha256": "e8e11df7fffde99a74dfd2039a2e0096aab2de43ca4193160ab669941fcd6abd",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "escaped_encoding_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "State exact literal/offset differs",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b2272656e646572223a7b2266696c6570617468223a225c7530303266746d702f227d7d"
+        },
+        "fixture_bytes": 36,
+        "fixture_sha256": "0d66055fb072b31af3bbc01867e3f13ea8354c3cb72c10a07e8464b9ace88b8d",
+        "actual_rebuilt_bytes": 36,
+        "actual_rebuilt_sha256": "0d66055fb072b31af3bbc01867e3f13ea8354c3cb72c10a07e8464b9ace88b8d",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "value_tail_not_exempt_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "State typed pointer differs",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b2272656e646572223a7b2266696c6570617468223a222f746d702f707269766174652d7461696c227d7d"
+        },
+        "fixture_bytes": 43,
+        "fixture_sha256": "8f49801e1e01400b014859da7cbbf31ed813f02ca4fe34cabd22159b4e19603a",
+        "actual_rebuilt_bytes": 43,
+        "actual_rebuilt_sha256": "8f49801e1e01400b014859da7cbbf31ed813f02ca4fe34cabd22159b4e19603a",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "outside_private_path_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Private path marker in exact CSV complete buffer",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b2272656e646572223a7b2266696c6570617468223a222f746d702f227d2c226f757473696465223a222f686f6d652f73796e746865746963227d"
+        },
+        "fixture_bytes": 59,
+        "fixture_sha256": "0abe21548cf8a923ba80e2fba644df809e80f4f2b23771b25b8f1c833170fbd3",
+        "actual_rebuilt_bytes": 59,
+        "actual_rebuilt_sha256": "0abe21548cf8a923ba80e2fba644df809e80f4f2b23771b25b8f1c833170fbd3",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    },
+    {
+      "logical_case": "outside_credential_isolated_primitive_rejected",
+      "expected": "reject",
+      "passed": true,
+      "observed": "rejected",
+      "rejection": "Credential-shaped content in exact CSV complete buffer",
+      "reconstruction": {
+        "recipe": {
+          "kind": "hex_bytes",
+          "fixture_utf8_hex": "7b2272656e646572223a7b2266696c6570617468223a222f746d702f227d2c226f757473696465223a226768705f414141414141414141414141414141414141414141414141414141414141414141414141227d"
+        },
+        "fixture_bytes": 84,
+        "fixture_sha256": "9eb0c9548948ff7d5b0e977c92f7736ec0602e2c103f4247a21e2b49fae0be3e",
+        "actual_rebuilt_bytes": 84,
+        "actual_rebuilt_sha256": "9eb0c9548948ff7d5b0e977c92f7736ec0602e2c103f4247a21e2b49fae0be3e",
+        "actual_bitwise_equal": true,
+        "materialized_fixture_file": false
+      }
+    }
+  ],
+  "production_exact_rows_unchanged": true,
+  "private_negative_fixtures_only_in_process_memory": true,
+  "actual_rebuilt_bitwise_comparisons": true,
+  "generic_full_suites_rerun": false,
+  "blender_or_render_executed": false,
+  "model_go": false,
+  "publication_go": false
+}

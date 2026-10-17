@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "completed": true,
+  "optimization_level": 1,
+  "checker_source_sha256": "854e1868de71bb82c93d27f637dd70c68d3eb1293d1c5eeb6e3177476cddb045",
+  "checker_source_bytes": 10988,
+  "generic_source_sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c",
+  "generic_source_bytes": 47569,
+  "original_scene_and_tool_bytes_unchanged": true,
+  "checked": {
+    "original_bytes": 883140,
+    "original_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+    "source_logical_path": "models/v10/scene.blend",
+    "exact_profile": {
+      "blend_sha256": "24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b",
+      "version": "403",
+      "pointer_bytes": 8,
+      "byte_order": "little",
+      "field_findings": [
+        {
+          "classification": "generic_file_browser_home",
+          "block_code": "DATA",
+          "struct": "FileSelectParams",
+          "field": "dir[1090]",
+          "field_buffer_bytes": 1090,
+          "field_buffer_sha256": "2d1dc02e846e766c501535dfda01be83adbdea6d8e03a42e4e5df5377da744d1",
+          "field_type": "char",
+          "field_absolute_byte_offset": 171624,
+          "marker_absolute_byte_offset": 171624,
+          "marker_offset_in_field": 0,
+          "after_first_nul_nonzero_bytes": 29
+        },
+        {
+          "classification": "generic_unrendered_output_default",
+          "block_code": "SC\u0000\u0000",
+          "struct": "Scene",
+          "field": "r.pic[1024]",
+          "field_buffer_bytes": 1024,
+          "field_buffer_sha256": "a27bf0cff013ac91d264ac7f6b87fe91b392cee0ed657588929e56c4f0b4d07d",
+          "field_type": "char",
+          "field_absolute_byte_offset": 231956,
+          "marker_absolute_byte_offset": 231956,
+          "marker_offset_in_field": 0,
+          "after_first_nul_nonzero_bytes": 0
+        }
+      ]
+    },
+    "masked_effective_bytes": 16,
+    "entire_projection_scanned_including_all_nul_tails": true,
+    "all_other_original_bytes_unchanged": true,
+    "projection_written": false,
+    "original_has_zero_paths_claimed": false
+  },
+  "scene_api_resources_checked": false,
+  "model_go": false,
+  "publication_go": false,
+  "scope": "One exact original scene SDNA and complete byte-pattern projection only; source/scene API, render and publication gates remain separate."
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "cgust-canonical-table-scanner-independent-parent-peer-v1",
+  "passed": true,
+  "original_source": {
+    "bytes": 20036,
+    "sha256": "e0abeb905ccfe96a493fa08b5d0c0838f635c706bf5bfe7e6326349c234834ec"
+  },
+  "adapted_source": {
+    "bytes": 20071,
+    "sha256": "2a83fcadc426bed87df3b76eff9caff14f6e9e0d5614b5c1dbfa66f29d72f7ac"
+  },
+  "one_exact_literal_delta_only": true,
+  "all_other_ast_identical": true,
+  "unchanged_six_runtime_dependencies": {
+    "package_controls_v2.py": {
+      "bytes": 47569,
+      "sha256": "1402e983241d78d19969380b45ce79b7cd3936207a4324710a17b094f5ac256c"
+    },
+    "exact_privacy_primitives.py": {
+      "bytes": 6761,
+      "sha256": "e9a3ab70bbe3c332ba218b0c93aff1e37bd0f33b20ebd47b524d512d59c9fa34"
+    },
+    "check_cgust_privacy.py": {
+      "bytes": 12106,
+      "sha256": "cbd0664021c9dce9a68d01e2046acff6f8a713b7f487b5cfac5adc86b5e71bea"
+    },
+    "roster_primitives.py": {
+      "bytes": 6313,
+      "sha256": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273"
+    },
+    "restore_scientific_layout.py": {
+      "bytes": 8677,
+      "sha256": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e"
+    },
+    "archive_verify.py": {
+      "bytes": 10831,
+      "sha256": "1af27c8212057503323899b7a5f9f9171de42f78a28ff1e3e07f82d688e021fd"
+    }
+  },
+  "four_bounded_controls_per_actual_mode": [
+    {
+      "mode": "normal",
+      "report": {
+        "bytes": 2814,
+        "sha256": "aefedd8dc628576c986bb63f5544717a18f5348f2d6ec29446032ce7b7133223"
+      },
+      "private_runtime": {
+        "bytes": 718,
+        "sha256": "dcb25a3ca4391a59b7e68a42947262a3f97a08249f08a0d37d09a766cc3c910e"
+      },
+      "returncode": 0
+    },
+    {
+      "mode": "optimized",
+      "report": {
+        "bytes": 2814,
+        "sha256": "66623c3171eb7677747801adae773be361d093a348c2ba4b02330bc4da875bb7"
+      },
+      "private_runtime": {
+        "bytes": 721,
+        "sha256": "bd72c75b8dfac7ef26f2b322a7623aba4d5a7afe7b966bc575dd08bb4f596e0e"
+      },
+      "returncode": 0
+    }
+  ],
+  "prior_generic_controls_reused_without_rerun": 42,
+  "full_scanner_run_invoked": false,
+  "actual_fullscan_failure_claimed": false,
+  "scope": "Exact canonical table lookup correction only; no privacy policy, scanner, archive, CSV, state-mask or numerical gate relaxation. Original bytes and original configuration mismatch probe remain preserved.",
+  "publication_go": false
+}

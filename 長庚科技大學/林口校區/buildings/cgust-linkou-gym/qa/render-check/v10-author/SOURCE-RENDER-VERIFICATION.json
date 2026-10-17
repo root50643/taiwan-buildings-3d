@@ -1,0 +1,171 @@
+{
+  "completed": true,
+  "passed": true,
+  "version": "v10",
+  "expected_stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+  "rerender_requested": false,
+  "executions": [
+    {
+      "name": "source-rebuild",
+      "command": [
+        "runtime/toolchain/.venv/bin/python",
+        "-B",
+        "author/qa/render-check/v10-author/reproduction/source/build_model.py",
+        "--output-dir",
+        "author/qa/render-check/v10-author/reproduction/models/v10"
+      ],
+      "exit_code": 0,
+      "seconds": 0.26409771700855345,
+      "log": "logs/source-rebuild.log",
+      "log_sha256": "057d318ba6da731b466333cef33f1bd0a43ffcffe8495922459cd5e5d67f1895"
+    },
+    {
+      "name": "source-scene-state",
+      "command": [
+        "blender",
+        "--background",
+        "--threads",
+        "1",
+        "--python-exit-code",
+        "1",
+        "--python-expr",
+        "import sys; sys.dont_write_bytecode = True",
+        "--python",
+        "author/qa/render-check/v10-author/tools/compare_source_scene.py",
+        "--",
+        "--source",
+        "author/qa/render-check/v10-author/reproduction/source/render_preview.py",
+        "--version",
+        "v10",
+        "--original-blend",
+        "author/qa/render-check/v10-author/frozen/models/v10/scene.blend",
+        "--manifest",
+        "author/qa/render-check/v10-author/frozen/previews/v10/render-manifest.json",
+        "--expected-stl-sha256",
+        "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+        "--out",
+        "author/qa/render-check/v10-author/source-scene"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6829269310110249,
+      "log": "logs/source-scene-state.log",
+      "log_sha256": "93fc107cc1f6d928fa4dcd56df3af4f20b0b34d96fa452ce16a5234d38b1a089"
+    },
+    {
+      "name": "blend-inspect",
+      "command": [
+        "blender",
+        "--background",
+        "--threads",
+        "1",
+        "--python-exit-code",
+        "1",
+        "--python-expr",
+        "import sys; sys.dont_write_bytecode = True",
+        "--python",
+        "author/qa/render-check/v10-author/tools/inspect_and_rerender_blend.py",
+        "--",
+        "--blend",
+        "author/qa/render-check/v10-author/frozen/models/v10/scene.blend",
+        "--stl",
+        "author/qa/render-check/v10-author/frozen/models/v10/model.stl",
+        "--manifest",
+        "author/qa/render-check/v10-author/frozen/previews/v10/render-manifest.json",
+        "--expected-sha256",
+        "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+        "--out",
+        "author/qa/render-check/v10-author/blend-inspect",
+        "--inspect-only"
+      ],
+      "exit_code": 0,
+      "seconds": 1.246561934996862,
+      "log": "logs/blend-inspect.log",
+      "log_sha256": "5ae9210ff84dab3c51005cb12f1c0c07dda8e8b6a7b1cc22cd54a686693a1ab2"
+    },
+    {
+      "name": "png-controls-normal",
+      "command": [
+        "runtime/toolchain/.venv/bin/python",
+        "-B",
+        "author/qa/render-check/v10-author/tools/test_png_exact_compare.py",
+        "--out",
+        "author/qa/render-check/v10-author/png-controls-normal"
+      ],
+      "exit_code": 0,
+      "seconds": 0.03271962099825032,
+      "log": "logs/png-controls-normal.log",
+      "log_sha256": "960cb4c3c86bd9cc1a8976b6456f55364586c2ea27d39750f8a96063012d3c7d"
+    },
+    {
+      "name": "png-controls-optimized",
+      "command": [
+        "runtime/toolchain/.venv/bin/python",
+        "-B",
+        "-O",
+        "author/qa/render-check/v10-author/tools/test_png_exact_compare.py",
+        "--out",
+        "author/qa/render-check/v10-author/png-controls-optimized"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11803499099914916,
+      "log": "logs/png-controls-optimized.log",
+      "log_sha256": "960cb4c3c86bd9cc1a8976b6456f55364586c2ea27d39750f8a96063012d3c7d"
+    },
+    {
+      "name": "metadata-only-cleanup",
+      "command": [
+        "runtime/toolchain/.venv/bin/python",
+        "-B",
+        "author/qa/render-check/v10-author/tools/sanitize_png_previews.py",
+        "--manifest",
+        "author/qa/render-check/v10-author/frozen/previews/v10/render-manifest.json",
+        "--expected-manifest-sha256",
+        "14c96f51669a14bea78e75a10f0da42bcede3b9b86f6e18901700636660d4c21",
+        "--expected-stl-sha256",
+        "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+        "--out",
+        "author/qa/render-check/v10-author/sanitized-previews"
+      ],
+      "exit_code": 0,
+      "seconds": 12.174025279004127,
+      "log": "logs/metadata-only-cleanup.log",
+      "log_sha256": "ab84f3e8ca79f588288f44a4507f6b2cf733a5d9f9717a8cb4f59794a06d510f"
+    }
+  ],
+  "canonical_sources_match_model_snapshots": {
+    "source/build_model.py": true,
+    "source/render_preview.py": true,
+    "parameters.json": true
+  },
+  "original_input_rechecks": {
+    "models/v10/model.stl": true,
+    "models/v10/scene.blend": true,
+    "models/v10/parameters.json": true,
+    "models/v10/color-regions.json": true,
+    "models/v10/build_model.py": true,
+    "models/v10/render_preview.py": true,
+    "models/v10/build-report.json": true,
+    "source/build_model.py": true,
+    "source/render_preview.py": true,
+    "parameters.json": true,
+    "previews/v10/render-manifest.json": true,
+    "previews/v10/front.png": true,
+    "previews/v10/rear.png": true,
+    "previews/v10/east.png": true,
+    "previews/v10/west.png": true,
+    "previews/v10/south.png": true,
+    "previews/v10/north.png": true,
+    "previews/v10/top.png": true,
+    "previews/v10/courtyard-gallery.png": true,
+    "previews/v10/courtyard-arcade.png": true
+  },
+  "tool_rechecks": {
+    "run_source_render_verification.py": true,
+    "compare_source_scene.py": true,
+    "inspect_and_rerender_blend.py": true,
+    "png_exact_compare.py": true,
+    "sanitize_png_previews.py": true,
+    "test_png_exact_compare.py": true
+  },
+  "full_nine_view_rerender_verified": false
+}

@@ -1,0 +1,295 @@
+{
+  "scope": "Provisional v10 case identity; original v9 science remains in place. Formal nine images and final source selection are not accepted by this preparation. No independent full run or model GO.",
+  "model_go": false,
+  "stl": {
+    "path": "author/models/v10/model.stl",
+    "bytes": 258884,
+    "sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978"
+  },
+  "same_bytes_v9_stl": {
+    "path": "author/models/v9/model.stl",
+    "bytes": 258884,
+    "sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978"
+  },
+  "author_geometry_binding": {
+    "path": "author/qa/V9-V10-EXACT-GEOMETRY-BINDING.json",
+    "bytes": 794,
+    "sha256": "301cd534a67a1fad7076350cff8cef5635e9560be6a179af36a4b337f2f78d1c"
+  },
+  "controlled_raw_proofs": [
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/coordinate-proof-normal.json",
+      "bytes": 1823,
+      "sha256": "3696d5666c3d0610d4f5960dd84fb9017e228b8691000df2ebb17d33914053cb"
+    },
+    {
+      "path": "cgust-linkou-gym-independent-qa/candidate-tools-v10/coordinate-proof-optimized.json",
+      "bytes": 1823,
+      "sha256": "9ed4be017eb5d995c967e39c715c229232c08d64e19c26cac1201d08a21906b2"
+    }
+  ],
+  "independently_derived": {
+    "original_faces": 5176,
+    "original_coordinate_values_checked": 46584,
+    "coordinate_denominator_lcm": "8388608",
+    "maximum_denominator_power": 23,
+    "minimality_witness": {
+      "face_index": 1511,
+      "vertex_index": 1,
+      "axis": "x",
+      "byte_offset": 75658,
+      "original_float32_little_endian_hex": "6666263f",
+      "exact_float_hex": "0x1.4ccccc0000000p-1",
+      "numerator": "5452595",
+      "denominator": "8388608",
+      "denominator_power_of_two": 23
+    },
+    "bounds_mm": [
+      [
+        -73.0,
+        -29.0,
+        0.0
+      ],
+      [
+        73.0,
+        193.0,
+        53.0
+      ]
+    ],
+    "extents_mm": [
+      146.0,
+      222.0,
+      53.0
+    ]
+  },
+  "author_report_facts": {
+    "normal": {
+      "raw": {
+        "record": {
+          "path": "author/qa/v9-full/normal/standard/raw/raw-mesh-check.json",
+          "bytes": 2592,
+          "sha256": "c7f9a71fd4e04631786839a9fcf9db5b931859a82b2aa59acd9c72400cf0a256"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "triangles": 5176,
+          "bounds_mm": [
+            [
+              -73.0,
+              -29.0,
+              0.0
+            ],
+            [
+              73.0,
+              193.0,
+              53.0
+            ]
+          ],
+          "extents_mm": [
+            146.0,
+            222.0,
+            53.0
+          ]
+        }
+      },
+      "sections": {
+        "record": {
+          "path": "author/qa/v9-full/normal/standard/sections/section-check.json",
+          "bytes": 2838,
+          "sha256": "0f0a2d27c45097bd28e7413e61c2c019b7ce2af272af4adefe58ab31146a159c"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "z_min_mm": 0.0,
+          "z_max_mm": 53.0,
+          "sampled_layers": 795,
+          "per_offset": [
+            {
+              "offset_mm": 0.031,
+              "sampled_layers": 265
+            },
+            {
+              "offset_mm": 0.071,
+              "sampled_layers": 265
+            },
+            {
+              "offset_mm": 0.137,
+              "sampled_layers": 265
+            }
+          ],
+          "original_polygon_count": 3950
+        }
+      },
+      "dense": {
+        "record": {
+          "path": "author/qa/v9-full/normal/standard/dense/dense-check.json",
+          "bytes": 3702,
+          "sha256": "1b1d4aa312ec18be0cb04a06aa517ddde775f9a8e3410124087dbf8b1c5a61cb"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "samples": 51760,
+          "under_0p8mm_count": 0,
+          "flagged_sample_count": 10
+        }
+      },
+      "intersections": {
+        "record": {
+          "path": "author/qa/v9-full/normal/intersections.json",
+          "bytes": 3079,
+          "sha256": "8c1ce6fb46ab84e26a9d73278af1a3bc389ff94743794335a9f7f92b01ee3db1"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "lattice": {
+            "denominator": "8388608",
+            "denominator_power_of_two": 23,
+            "exact_coordinate_round_trips_checked": 46584,
+            "all_original_coordinates_round_trip_exactly": true,
+            "maximum_coordinate_integer_bits": 31
+          }
+        }
+      },
+      "exact": {
+        "record": {
+          "path": "author/qa/v9-exact-normal/exact-recorded-ray-summary.json",
+          "bytes": 1806,
+          "sha256": "b920a4361c3c6324b8f6eb47ce9e59ca74f1d0d7fe382f7fec9140b61c363515"
+        },
+        "detail": {
+          "path": "author/qa/v9-exact-normal/exact-recorded-ray-details.jsonl.gz",
+          "bytes": 5255,
+          "sha256": "3e8cad5cd2c2319b223b7b1b7436b028f220652901232d73cddb14e172ef27f5"
+        },
+        "facts": {
+          "optimization_level": 0,
+          "selected_samples": 10,
+          "total_flagged_samples": 10,
+          "full_original_csv_rows_verified": 51760,
+          "original_numerical_strict_passed": false
+        }
+      }
+    },
+    "optimized": {
+      "raw": {
+        "record": {
+          "path": "author/qa/v9-full/optimized/standard/raw/raw-mesh-check.json",
+          "bytes": 2592,
+          "sha256": "c7f9a71fd4e04631786839a9fcf9db5b931859a82b2aa59acd9c72400cf0a256"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "triangles": 5176,
+          "bounds_mm": [
+            [
+              -73.0,
+              -29.0,
+              0.0
+            ],
+            [
+              73.0,
+              193.0,
+              53.0
+            ]
+          ],
+          "extents_mm": [
+            146.0,
+            222.0,
+            53.0
+          ]
+        }
+      },
+      "sections": {
+        "record": {
+          "path": "author/qa/v9-full/optimized/standard/sections/section-check.json",
+          "bytes": 2838,
+          "sha256": "0f0a2d27c45097bd28e7413e61c2c019b7ce2af272af4adefe58ab31146a159c"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "z_min_mm": 0.0,
+          "z_max_mm": 53.0,
+          "sampled_layers": 795,
+          "per_offset": [
+            {
+              "offset_mm": 0.031,
+              "sampled_layers": 265
+            },
+            {
+              "offset_mm": 0.071,
+              "sampled_layers": 265
+            },
+            {
+              "offset_mm": 0.137,
+              "sampled_layers": 265
+            }
+          ],
+          "original_polygon_count": 3950
+        }
+      },
+      "dense": {
+        "record": {
+          "path": "author/qa/v9-full/optimized/standard/dense/dense-check.json",
+          "bytes": 3702,
+          "sha256": "1b1d4aa312ec18be0cb04a06aa517ddde775f9a8e3410124087dbf8b1c5a61cb"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "samples": 51760,
+          "under_0p8mm_count": 0,
+          "flagged_sample_count": 10
+        }
+      },
+      "intersections": {
+        "record": {
+          "path": "author/qa/v9-full/optimized/intersections.json",
+          "bytes": 3078,
+          "sha256": "35e3f5c29810c16d86e8e28fcf435054a549a72014b665f7b66cee4d8e3b5ef5"
+        },
+        "facts": {
+          "stl_sha256": "66f0516f35df2df734b6d8a4d37a8f93b73e5685fd47b0b7d74ff15c88ccf978",
+          "lattice": {
+            "denominator": "8388608",
+            "denominator_power_of_two": 23,
+            "exact_coordinate_round_trips_checked": 46584,
+            "all_original_coordinates_round_trip_exactly": true,
+            "maximum_coordinate_integer_bits": 31
+          }
+        }
+      },
+      "exact": {
+        "record": {
+          "path": "author/qa/v9-exact-optimized/exact-recorded-ray-summary.json",
+          "bytes": 1806,
+          "sha256": "e2d72da240a9ae89fcdcabbacbf7ac7ea50bb7bdfe96a7c06b86f7aed4f1c374"
+        },
+        "detail": {
+          "path": "author/qa/v9-exact-optimized/exact-recorded-ray-details.jsonl.gz",
+          "bytes": 5255,
+          "sha256": "3e8cad5cd2c2319b223b7b1b7436b028f220652901232d73cddb14e172ef27f5"
+        },
+        "facts": {
+          "optimization_level": 1,
+          "selected_samples": 10,
+          "total_flagged_samples": 10,
+          "full_original_csv_rows_verified": 51760,
+          "original_numerical_strict_passed": false
+        }
+      }
+    }
+  },
+  "independent_layer_schedule": {
+    "pitch_mm": 0.2,
+    "offsets_mm": [
+      0.031,
+      0.071,
+      0.137
+    ],
+    "per_offset_layers": [
+      265,
+      265,
+      265
+    ],
+    "total_layers": 795
+  }
+}

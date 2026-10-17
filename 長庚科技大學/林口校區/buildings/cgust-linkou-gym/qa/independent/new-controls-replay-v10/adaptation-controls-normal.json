@@ -1,0 +1,133 @@
+{
+  "schema": "public-controls-replay-adaptation-check-v1",
+  "passed": true,
+  "optimization_level": 0,
+  "case_count": 19,
+  "cases": [
+    {
+      "case": "explicit_logical_builder_with_same_bytes_alias",
+      "expected": "accept",
+      "observed": "accept",
+      "passed": true
+    },
+    {
+      "case": "missing_logical_builder",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "ambiguous_logical_builder",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_logical_sha256_000000",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_logical_bytes_2928",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_logical_bytes_True",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_logical_mode_metada",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "missing_canonical_builder",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "ambiguous_canonical_builder",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_canonical_sha256_000000",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_canonical_bytes_2928",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_canonical_bytes_True",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "wrong_actual_builder_bytes",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "exact_source_and_ast_positive",
+      "expected": "accept",
+      "observed": "accept",
+      "passed": true
+    },
+    {
+      "case": "verifier_pin_drift",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "generic_limit_drift",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "csv_guard_removed",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "runtime_mode_check_removed",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    },
+    {
+      "case": "runtime_need_not_stripped_by_optimization",
+      "expected": "reject",
+      "observed": "reject",
+      "passed": true
+    }
+  ],
+  "exact_source_and_ast_match_approved_spans": true,
+  "base_source_sha256": "f79bc1aec6467e1fdeb78eb30ad801ef68e3ae77e5746fa9ccf7b34aa51267d3",
+  "candidate_source_sha256": "8e95171193b334432ccd2fa1d0493cccc231e43a4a9189ec504629268b51312b",
+  "spans_sha256": "503a24f1f75341d21e2acb652bc30f8ba6b347ba2c55bc5eb873a9253884774b",
+  "builder_source_sha256": "e4b23d35449c6321abbfea94e85f4d733ce58be65658255e1e5ba5065b33f637",
+  "test_source_sha256": "416c93dcf9bc3788b519e8a05cc1f8afb5483f393b22bdce964d770f887cebd6",
+  "actual_public_replay_executed": false,
+  "archive_constructed_or_opened": false,
+  "generic_synthetic_suites_rerun": false,
+  "model_go": false,
+  "publication_go": false
+}

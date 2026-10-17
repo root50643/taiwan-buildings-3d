@@ -1,0 +1,42 @@
+{
+  "schema": "result-binding-public-adaptation-provenance-v1",
+  "original_private_sources": {
+    "check_result_binding.py": {
+      "bytes": 34696,
+      "sha256": "a646f5e5b9e057118ba66b56d2f1829c287a91f639aa9b64ba7f87875034c0a0"
+    },
+    "test_result_binding.py": {
+      "bytes": 17644,
+      "sha256": "803240d71e8d382bd41f29caab04edf3814e374358a608e74242d86404895d69"
+    }
+  },
+  "complete_raw_diffs_retained_privately": {
+    "check_result_binding.py": {
+      "bytes": 3915,
+      "sha256": "06b83ae076c2712cc9ffa3f0d00480762db9f3fb52c00021971f7ec2345c33ef"
+    },
+    "test_result_binding.py": {
+      "bytes": 5912,
+      "sha256": "135f53946ae21d85407bdab1471e7f465d6199f1ff0fa58476079f965d6b790c"
+    }
+  },
+  "public_diff_is_redacted_presentation_not_raw_bytes": true,
+  "exact_redactions": [
+    {
+      "file": "check_result_binding.py",
+      "original_line_sha256": "dc245a9312c4e480537da93136f88efb199412b4b3c1e870e555064f647fb655",
+      "original_literal_utf8_sha256": "e619bf841bc457d051ec6edeb34410ec0e789e92e849318151b4113a13ca5105",
+      "redacted_placeholder": "[REDACTED_PRIVATE_SOURCE_PREFIX]",
+      "purpose": "Remove private original source-prefix literal from public presentation only; complete exact raw diff retained privately."
+    },
+    {
+      "file": "test_result_binding.py",
+      "original_line_sha256": "b9149cfb8bb39d7bc235e2cc6a7c9d20303128a0633f560e207aadbf608b66f1",
+      "original_literal_utf8_sha256": "5cd6bf685207e0d31443f078badf059e04999b3bcfd3f8d8c9c336fb178b7ebb",
+      "redacted_placeholder": "[REDACTED_PRIVATE_SOURCE_PREFIX]",
+      "purpose": "Remove private original source-prefix literal from public presentation only; complete exact raw diff retained privately."
+    }
+  ],
+  "source_prefix_policy": "Required validated CLI argument; actual value retained only in private runtime captures, never encoded into public source or reports.",
+  "generic_literal_display_projection": "Only the four exact readable literal locations listed in AST-EQUIVALENCE.json; original raw lines are preserved in the private exact diffs."
+}

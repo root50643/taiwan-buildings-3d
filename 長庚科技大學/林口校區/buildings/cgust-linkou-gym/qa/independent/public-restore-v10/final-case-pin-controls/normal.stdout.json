@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "case_count": 7,
+  "cases": [
+    {
+      "case": "exact_final_map_sha_counts_and_archive_alias",
+      "passed": true,
+      "expected": "accept"
+    },
+    {
+      "case": "changed_map_bytes",
+      "passed": true,
+      "expected": "reject",
+      "reason": "Final case map SHA differs"
+    },
+    {
+      "case": "wrong_expected_sha",
+      "passed": true,
+      "expected": "reject",
+      "reason": "Final case map SHA differs"
+    },
+    {
+      "case": "wrong_canonical_count",
+      "passed": true,
+      "expected": "reject",
+      "reason": "Final case map count differs"
+    },
+    {
+      "case": "wrong_logical_count",
+      "passed": true,
+      "expected": "reject",
+      "reason": "Final case map count differs"
+    },
+    {
+      "case": "unpinned_identity",
+      "passed": true,
+      "expected": "reject",
+      "reason": "Final case map identity has not been pinned; actual restore is disabled"
+    },
+    {
+      "case": "replay_pins_exact_final_restore_source",
+      "passed": true,
+      "expected": "accept"
+    }
+  ],
+  "actual_optimization_level": 0,
+  "actual_cpu_affinity": [
+    0
+  ],
+  "copy_map_sha256": "88c242807a32719dd3d77d2bfffb04e5cbefd48ee2d4c29ff24ba58d02e0c486",
+  "canonical_files": 550,
+  "logical_files": 1269,
+  "newly_written_logical_files": 1268,
+  "newly_written_payload_bytes": 63789790,
+  "hardlinked_payload_bytes": 59649412,
+  "archive_alias": {
+    "canonical_public_path": "qa/controls-history/controls.tar.xz",
+    "restore_path": "history/qa/controls/controls.tar.xz",
+    "bytes": 59649412,
+    "sha256": "e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9",
+    "mode": "byte_exact"
+  },
+  "case_restore_source_sha256": "df0bbf8cf03d1cb489fc757801cc88ea238f51626d69e8d7d7f42a10e3e1fd0e",
+  "replay_source_sha256": "0a39d18f17e888b37dd1459e6b2d148275ac8e7581e8f6507867fcb1120bd87d",
+  "test_source_sha256": "b28b3fe49a598141b0570a97e37181b2e7e6a45ebeedd1abd589f6ee62152384",
+  "actual_public_restore_performed": false,
+  "scope": "Final case identity and exact archive partition only; original hardlink edge controls not repeated."
+}

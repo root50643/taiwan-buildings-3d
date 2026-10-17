@@ -1,0 +1,26 @@
+--- original/exact_privacy_primitives.py
++++ adapted/exact_privacy_primitives.py
+@@ -1,6 +1,6 @@
+ """Exact-byte helper excerpts. Provenance records every copied source span.
+ 
+-Only fixed WFU candidate/profile constants differ from the original case values.
++Only fixed CGUST candidate/profile constants differ from the original case values.
+ No AEUST publication or scientific gate is inherited or asserted here.
+ """
+ import hashlib
+@@ -8,13 +8,8 @@
+ import re
+ import stat
+ 
+-BLEND = '70d8914cefaaceac8572d00c6cfba52b5abbedd18c810175f2deedb47ed2c429'
+-SCIENCE_CSV_PROFILE = {
+-    'compressed_bytes': 19156984,
+-    'compressed_sha256': '80cf38d8255e789755e316a24638872db0fb913f2d37795edd3c81349551f550',
+-    'decoded_bytes': 194500309,
+-    'decoded_sha256': '6408a97da82dc7a1e226225637a415d6cd8ecaecfb962e51454f52bc3067f2b6',
+-    'csv_data_rows': 209460}
++BLEND = '24405788a4c5bf2e88a2402089f5d7fc9bc6b360afa97cc316760bdf3e668a1b'
++SCIENCE_CSV_PROFILE = {'compressed_bytes': 2644728, 'compressed_sha256': '99ccbee592a29e80c02e0565212a2cbff03fc8feb1b4300cc6ed372b53753359', 'decoded_bytes': 40229114, 'decoded_sha256': '42cd8adaf225258b0cc38c08496c91925e22acfb495db739cae3f89aa2c4df89', 'csv_data_rows': 51760}
+ 
+ ADDITIONAL_PRIVATE_MARKERS = (b'/' + b'home/', b'/' + b'root/', b'/' + b'private/var/',
+                               b'GH_CONFIG_' + b'DIR', b'file:' + b'//', b'C:' + b'\\Users\\')

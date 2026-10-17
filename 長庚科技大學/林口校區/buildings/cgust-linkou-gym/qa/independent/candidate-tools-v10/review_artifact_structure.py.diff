@@ -1,0 +1,84 @@
+--- cgust-linkou-gym-independent-qa/candidate-tools-v8/review_artifact_structure.py
++++ cgust-linkou-gym-independent-qa/candidate-tools-v10/review_artifact_structure.py
+@@ -7,7 +7,7 @@
+ from pathlib import Path
+ import argparse, gzip, hashlib, json, os, sys, types
+ 
+-HELPER = '76c0d8c17c7fd54c27b33cb382e65f31a82732804097d8b252c708d6b1baf1c5'
++HELPER = '3ec28d504422014bf847eb25ec2f65aab34715e43ce8ebf3e3300752bc8db6a7'
+ EXACT_CORE = '0116a42a06e53723a71bf1a16e6864e71ff3f2b76ca5dbb6aa455fb5bd719d46'
+ DIAGNOSTIC = 'f3b9cb43c9bfa35915d8661a122f5dcbffb947e3cdc7492af4d43c23693309d4'
+ 
+@@ -35,6 +35,44 @@
+             and Path(name).name == name and not Path(name).is_absolute(),
+             'Artifact must be a safe basename')
+     return regular(root / name)
++
++
++ROOT_KEYS = ('stl', 'qa-root', 'full-root', 'exact-normal', 'exact-optimized')
++
++
++def logical_path_bindings(paths):
++    require(set(paths) == set(ROOT_KEYS), 'Logical root set differs')
++    require(all(isinstance(value, Path) and value.is_absolute() and '..' not in value.parts
++                for value in paths.values()), 'Logical roots must be absolute and safe')
++    require(len(set(paths.values())) == len(ROOT_KEYS), 'Logical roots must be distinct')
++    return {key: key for key in ROOT_KEYS}
++
++
++def logical_key(path, paths):
++    logical_path_bindings(paths)
++    path = Path(path)
++    require(path.is_absolute() and '..' not in path.parts, 'Logical evidence path must be absolute and safe')
++    if path == paths['stl']:
++        return 'stl'
++    matches = [(len(root.parts), key, path.relative_to(root))
++               for key, root in paths.items() if key != 'stl' and path.is_relative_to(root)]
++    require(bool(matches), 'Evidence path outside explicit CLI roots')
++    depth = max(item[0] for item in matches)
++    selected = [item for item in matches if item[0] == depth]
++    require(len(selected) == 1, 'Ambiguous logical evidence root')
++    _, key, relative = selected[0]
++    return key if relative == Path('.') else key + '/' + relative.as_posix()
++
++
++def report_for_output(summary, paths, tracked):
++    # Only path metadata changes; every other report value and every inventory row is retained.
++    inventory = {}
++    for absolute, row in tracked.items():
++        key = logical_key(absolute, paths)
++        require(key not in inventory, 'Logical inventory key collision')
++        inventory[key] = row
++    return {**summary, 'input_path_bindings': logical_path_bindings(paths),
++            'evidence_inventory': inventory}
+ 
+ 
+ def main():
+@@ -63,12 +101,12 @@
+     summary = {'passed': False, 'optimization_level': sys.flags.optimize,
+                'cpu_affinity': sorted(os.sched_getaffinity(0)), 'helper_sha256': HELPER,
+                'reviewer_sha256': sha(__file__),
+-               'input_path_bindings': {key: str(value) for key, value in paths.items()},
++               'input_path_bindings': logical_path_bindings(paths),
+                'postflight_overlay_inputs': {'artifact_structure.py': {'bytes': len(helper_bytes), 'sha256': HELPER}},
+                'producer_exit_review_performed': False, 'independent_freeze_review_performed': False,
+                'source_render_review_performed': False, 'full_csv_decoded_by_this_entry': False,
+                'original_numerical_strict_passed': False, 'model_go': False,
+-               'scope': 'Additional read-only all-record structural/math consistency review. Explicit full/exact paths and original input hashes are bound. Complete producer-exit, raw-CSV, source/render and independent-freeze reviews remain separate requirements; no model acceptance.'}
++               'scope': 'Additional read-only all-record structural/math consistency review. Explicit full/exact inputs and original hashes are bound; public path metadata uses stable logical roots and the actual CLI is retained in private capture. Complete producer-exit, raw-CSV, source/render and independent-freeze reviews remain separate requirements; no model acceptance.'}
+ 
+     def track(path):
+         path = regular(path)
+@@ -155,9 +193,10 @@
+                 and helper.stat().st_size == len(helper_bytes), 'Reviewer/helper changed')
+         require(all(regular(Path(key)).stat().st_size == row['bytes'] and sha(Path(key)) == row['sha256']
+                     for key, row in tracked.items()), 'Input changed during review')
+-        summary.update(passed=True, all_inputs_unchanged=True, modes=results, evidence_inventory=tracked)
++        summary.update(passed=True, all_inputs_unchanged=True, modes=results)
+     except Exception as error:
+-        summary.update(error_type=type(error).__name__, error=str(error), evidence_inventory=tracked)
++        summary.update(error_type=type(error).__name__, error=str(error))
++    summary = report_for_output(summary, paths, tracked)
+     with (args.out / 'artifact-structure-review.json').open('x') as stream:
+         json.dump(summary, stream, indent=2, allow_nan=False)
+         stream.write('\n')

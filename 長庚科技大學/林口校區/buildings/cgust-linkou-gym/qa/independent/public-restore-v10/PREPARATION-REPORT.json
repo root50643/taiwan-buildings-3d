@@ -1,0 +1,93 @@
+{
+  "schema": "case-logical-restore-preparation-v1",
+  "passed": true,
+  "status": "prepared_final_pins_peer_review_pending_actual_public_root",
+  "actual_public_restore_performed": false,
+  "copy_map_sha256": "88c242807a32719dd3d77d2bfffb04e5cbefd48ee2d4c29ff24ba58d02e0c486",
+  "canonical_files": 550,
+  "logical_files": 1269,
+  "newly_written_logical_files_per_mode": 1268,
+  "newly_written_payload_bytes_per_mode": 63789790,
+  "hardlinked_archive_bytes_per_mode": 59649412,
+  "archive_sha256": "e5c4465705d5e5299c5d9aa7fa7e99f5db44a61437990508ecee72d615e165b9",
+  "archive_canonical_path": "qa/controls-history/controls.tar.xz",
+  "archive_restore_path": "history/qa/controls/controls.tar.xz",
+  "official_private_source_receipt_sha256": "005f25a70aceab80f36061e8b18930150d20a09807fccf99f8c75e15083da2fb",
+  "private_source_receipt_required_for_optional_mode": true,
+  "public_self_contained_restore_entry": "qa/restore_scientific_layout.py",
+  "newly_allocated_complete_copy_claimed": false,
+  "original_tool_sha256": {
+    "qa/restore_scientific_layout.py": "60b9e1f3b6974e8884501e7f7a5b18446dea04a15886ed864ff7c2de2ab2581e",
+    "qa/roster_primitives.py": "7211c544e258dd4855ca9747837845aa683d6c28c3939ea0b9a08cb271d69273",
+    "qa/independent-tools/capture_process.py": "f44673ed9c2bc04e21bf907fe19745dab18a25ba59c2241bd227b986710c6244"
+  },
+  "inherited_replay_source_sha256": "7862d7e1cfefe921fbaaef0389aae8d10b3a2b7dbf735f4924388acc765429d5",
+  "new_sources": [
+    {
+      "path": "restore_low_disk.py",
+      "bytes": 16779,
+      "sha256": "df0bbf8cf03d1cb489fc757801cc88ea238f51626d69e8d7d7f42a10e3e1fd0e"
+    },
+    {
+      "path": "replay_public_restore.py",
+      "bytes": 8901,
+      "sha256": "0a39d18f17e888b37dd1459e6b2d148275ac8e7581e8f6507867fcb1120bd87d"
+    },
+    {
+      "path": "test_low_disk.py",
+      "bytes": 10469,
+      "sha256": "020f13196bda3d403c2784fefdadc679728ee2fe675ea9e270183a85114826d2"
+    },
+    {
+      "path": "test_final_case_pins.py",
+      "bytes": 3782,
+      "sha256": "b28b3fe49a598141b0570a97e37181b2e7e6a45ebeedd1abd589f6ee62152384"
+    }
+  ],
+  "prepared_unpinned_sources": [
+    {
+      "path": "prepared-unpinned/restore_low_disk.py",
+      "bytes": 16328,
+      "sha256": "9cc1954fea71ed83425f3e3c58db60b1b69f65cdbe2460d624b19f651d7613c4"
+    },
+    {
+      "path": "prepared-unpinned/replay_public_restore.py",
+      "bytes": 9019,
+      "sha256": "a700da25f2271264da44e0dc4df157db40fe42174fc10c271f5aae0c6d8c4ccd"
+    }
+  ],
+  "diffs": [
+    {
+      "path": "replay-wrapper-adaptation.diff",
+      "sha256": "dff4b01b2750658bb8266f75726523fa2fcb9671afbfde8510067402db098f63"
+    },
+    {
+      "path": "replay_public_restore.py.final-case-pin.diff",
+      "sha256": "bd912d8bd34d526f0ff72b83483b0553995b6603dec68adbeab4b39712a09c95"
+    },
+    {
+      "path": "restore_low_disk.py.final-case-pin.diff",
+      "sha256": "020f0a78999dbc5c89b9b199e39072c0af94e8a93fb549dde3bba76ceefdf69f"
+    }
+  ],
+  "controls": [
+    {
+      "path": "small-controls/controls.json",
+      "sha256": "70dd8f43862b83c7c0ac3621afd2bdecf168eae4b9cb912098422591574fc3ae"
+    },
+    {
+      "path": "final-case-pin-controls/controls.json",
+      "sha256": "a78f22442a727e49eca29dc16ab0e6a6f56ad1716e2ea7e079fb8930ed261fed"
+    }
+  ],
+  "original_numerical_strict_passed": false,
+  "publication_go": false,
+  "disk_floor_bytes": 134217728,
+  "risk_notes": [
+    "Optional low-disk replay requires the fixed original private official verification receipt and archive source. Public-only restoration remains available through the unchanged original full-copy entry.",
+    "Hardlinks require the same filesystem and alter link count/ctime; archive payload bytes/mode/mtime are preserved and checked.",
+    "Space projections include allocation-unit rounding, directory allocation and 2 MiB reserve. Other processes can consume space, so measured phase checks remain required.",
+    "Only successfully fully verified derived trees are removed; failed derived trees remain for diagnosis.",
+    "Private original omissions and projected metadata stay omitted/projected. No archive decoding, numerical geometry or rendering is performed."
+  ]
+}

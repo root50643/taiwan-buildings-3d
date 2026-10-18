@@ -1,0 +1,10 @@
+{
+  "stage": "save_delivery.py output assembly, before decision/archive creation",
+  "error": "KeyError: passes_numerical_pair_screen",
+  "cause": "Read a nested original-report field as though it were a top-level key.",
+  "wrong_path": "author['passes_numerical_pair_screen']",
+  "correct_path": "author['self_intersections']['passes_numerical_pair_screen']",
+  "actual_original_value": false,
+  "effect": "Output assembly stopped; no candidate or test results modified. Corrected path and reran checks.",
+  "candidate_defect": false
+}

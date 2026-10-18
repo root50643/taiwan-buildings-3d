@@ -1,0 +1,99 @@
+{
+  "scope": "Synthetic controls only; no candidate building was inspected and no Blender render was run.",
+  "checker_sha256": "0c0ca4e69386b2a5d7a531415eb4ca3ca16c599177c8ffdd8cfee37ed657b43c",
+  "printability_controls": {
+    "clean_cube": {
+      "topology_passes": true,
+      "thin_feature_flagged_layer_count": 0,
+      "vanished_component_core_layers": [],
+      "split_component_core_layers": [],
+      "unsupported_envelope_layer_count": 0,
+      "passes_sampled_thin_feature_screen": true,
+      "passes_sampled_support_screen": true,
+      "positive_control_passed": true
+    },
+    "thin_0p4mm_bar": {
+      "topology_passes": true,
+      "thin_feature_flagged_layer_count": 10,
+      "vanished_component_core_layers": [
+        -0.9,
+        -0.7,
+        -0.5,
+        -0.3,
+        -0.1,
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "split_component_core_layers": [],
+      "unsupported_envelope_layer_count": 0,
+      "passes_sampled_thin_feature_screen": false,
+      "passes_sampled_support_screen": true,
+      "negative_control_detected": true
+    },
+    "thin_0p4mm_neck": {
+      "topology_passes": true,
+      "thin_feature_flagged_layer_count": 10,
+      "vanished_component_core_layers": [],
+      "split_component_core_layers": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+        1.1,
+        1.3,
+        1.5,
+        1.7,
+        1.9
+      ],
+      "unsupported_envelope_layer_count": 0,
+      "passes_sampled_thin_feature_screen": false,
+      "passes_sampled_support_screen": true,
+      "negative_control_detected": true
+    },
+    "over_45_degree_frustum": {
+      "topology_passes": true,
+      "thin_feature_flagged_layer_count": 0,
+      "vanished_component_core_layers": [],
+      "split_component_core_layers": [],
+      "unsupported_envelope_layer_count": 4,
+      "passes_sampled_thin_feature_screen": true,
+      "passes_sampled_support_screen": false,
+      "negative_control_detected": true
+    }
+  },
+  "geometry_controls": {
+    "clean_cube_has_no_unexpected_intersections": true,
+    "overlapping_cubes_crossing_pairs_detected": 18,
+    "overlapping_cubes_negative_control_detected": true,
+    "vertex_touching_cubes_nonmanifold_vertex_links": 1,
+    "vertex_touching_cubes_negative_control_detected": true
+  },
+  "cli_cases": {
+    "clean_cube": {
+      "exit_status": 0,
+      "expected_exit_status": 0,
+      "exit_status_matches": true,
+      "topology_passes": true,
+      "self_intersection_screen_passes": true,
+      "thin_screen_passes": true,
+      "bounded_screen_passes": true,
+      "report": "control-artifacts/clean_cube.json"
+    },
+    "thin_0p4mm_bar": {
+      "exit_status": 1,
+      "expected_exit_status": 1,
+      "exit_status_matches": true,
+      "topology_passes": true,
+      "self_intersection_screen_passes": true,
+      "thin_screen_passes": false,
+      "bounded_screen_passes": false,
+      "report": "control-artifacts/thin_0p4mm_bar.json"
+    }
+  },
+  "thin_failure_alone_rejects_gate": true,
+  "all_control_expectations_passed": true
+}

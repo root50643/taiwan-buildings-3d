@@ -1,0 +1,738 @@
+{
+  "scope": "Public derivative of fixed 2026-10-18 review. No geometry, section, control, rebuild, render or Library action was run while curating.",
+  "reviewed_candidate_commit": "4116148c135d8a67a444ce8bf33fb64aba3e06a3",
+  "reviewed_base_commit": "56c252c0207bc8af202cc8b5b9e66da1c08a028b",
+  "reviewed_stl_sha256": "4e73e7094c83de47c19bcc6121fee575c1360b285d597773d983a873f46b7f5a",
+  "reviewed_scene_sha256_before_release_metadata_cleanup": "5cf2b50f83e9f897ba2aaf4e61c806f4bf3ab7b90c9174c20c6c83a160fd1b25",
+  "policy": "Only documented path substitutions, Python path/runtime configuration, and removal of one PNG File text chunk. JSON keys, types and every nonstring numeric/bool/null value were compared unchanged. Other strings are changed only by recorded path replacements.",
+  "reproduction_status": "Adapted Python syntax parsed only; no adapted script was executed. Original report source/script/scene/image hashes are historical, not hashes of public derivatives.",
+  "curation_note": "First staging attempt stopped on a concatenated multi-object stdout file with a .json suffix; this is now handled as a historical text stream. No QA or render was executed or result changed.",
+  "retained_failures": {
+    "original_generic_exit_code": 1,
+    "original_generic_flags": 20,
+    "strict_independent_exit_code": 1,
+    "strict_support_flags": 36,
+    "human_nonblocking_interpretation_is_separate": true
+  },
+  "json_preservation_checks": [
+    {
+      "file": "decision.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "provenance/results.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "delivery-initial-check-failure.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "geometry-review/independent-stl-results.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "geometry-review/print-risk-analysis.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "geometry-review/connector-tip-review.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "geometry-review/section-controls.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "geometry-review/geometry-evidence-manifest.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/decision.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/flag-audit-results.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/initial-auditor-wrong-field-results.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/shared-index-results.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/rerun-controls.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/rerun-diagnosis.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "scene-evidence/rebuild-scene.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "scene-evidence/independent-front-pixel-comparison.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "scene-evidence/saved-scene-state.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "scene-evidence/source-scene-state.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "visual-review/visual-review.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/same_face.result.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/negative_index.result.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/bool_index.result.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/noninteger_index.result.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/pair_length_three.result.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "flag-audit/malformed_flag.result.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    },
+    {
+      "file": "author-reference/qa-report.json",
+      "nonstring_values_structure_and_keys_unchanged": true
+    }
+  ],
+  "files": [
+    {
+      "source_relative_path": "CHENGQIN-INDEPENDENT-REVIEW.md",
+      "public_relative_path": "CHENGQIN-INDEPENDENT-REVIEW.md",
+      "original_bytes": 12462,
+      "public_bytes": 12393,
+      "original_sha256": "6352e44329a3d5c768e1e1a34d7efcd976ef00848fca0f0a505783348a2bb177",
+      "public_sha256": "7ffbdfcee7c6eba9e08eeb861c84b48676e0edb18d9fa04ab353e590df6c676a",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "text",
+          "type": "historical workspace-relative candidate path",
+          "replacement": "${CANDIDATE_PACKAGE}/",
+          "occurrences": 1
+        },
+        {
+          "location": "text",
+          "type": "historical workspace-relative review path",
+          "replacement": "${REVIEW_WORKDIR}",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source_relative_path": "decision.json",
+      "public_relative_path": "decision.json",
+      "original_bytes": 30776,
+      "public_bytes": 30776,
+      "original_sha256": "3d0d300be9ab4f41d0cd03034adb25fd6e9d70403a278a15c933d7d0d3a66293",
+      "public_sha256": "3d0d300be9ab4f41d0cd03034adb25fd6e9d70403a278a15c933d7d0d3a66293",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "provenance/results.json",
+      "public_relative_path": "provenance/results.json",
+      "original_bytes": 54867,
+      "public_bytes": 53155,
+      "original_sha256": "64d8b68a367045c9ac5f5a9c03d63db3471f04f55ae69a47c72990db2a80ddb6",
+      "public_sha256": "ecd84ff83a688e301dc0501d5ae8388623a500a719312b58662006e6bec5c1b7",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "$.original_scope",
+          "type": "historical workspace-relative review path",
+          "replacement": "${REVIEW_WORKDIR}",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source_relative_path": "delivery-initial-check-failure.json",
+      "public_relative_path": "delivery-initial-check-failure.json",
+      "original_bytes": 537,
+      "public_bytes": 537,
+      "original_sha256": "742bf0c681e65a0a342b780acd3da44829c8d1f1600f778bbbfe4d9d911f8588",
+      "public_sha256": "742bf0c681e65a0a342b780acd3da44829c8d1f1600f778bbbfe4d9d911f8588",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/GEOMETRY-REVIEW.md",
+      "public_relative_path": "geometry-review/GEOMETRY-REVIEW.md",
+      "original_bytes": 6465,
+      "public_bytes": 6331,
+      "original_sha256": "7aafabc9da37e8112f4ce577c1ac5d0be5e79a3c9a058c4847252531bba7d395",
+      "public_sha256": "709b6fa54d7b65e53b3b1c39dc1b86e6fd9018b870f0ecc13bd58dff3c0c31a5",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "text",
+          "type": "private dependency runtime path",
+          "replacement": "${OPTIONAL_DEPENDENCY_DIR}",
+          "occurrences": 1
+        },
+        {
+          "location": "text",
+          "type": "private Python interpreter path",
+          "replacement": "${PYTHON}",
+          "occurrences": 4
+        }
+      ]
+    },
+    {
+      "source_relative_path": "geometry-review/check_chengqin_independent.py",
+      "public_relative_path": "geometry-review/check_chengqin_independent.py",
+      "original_bytes": 20212,
+      "public_bytes": 20212,
+      "original_sha256": "d045fe81103c8d7e40a07fb7741f8085933353f4879c680fbfe40992e0f27f1d",
+      "public_sha256": "d045fe81103c8d7e40a07fb7741f8085933353f4879c680fbfe40992e0f27f1d",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/analyze_print_risks.py",
+      "public_relative_path": "geometry-review/analyze_print_risks.py",
+      "original_bytes": 5083,
+      "public_bytes": 5111,
+      "original_sha256": "8ab91c16baa81be85796c7345accf6359cf295bac64b84a2767f417222bba2ef",
+      "public_sha256": "f5bbc41a556249b30df0b408e234098b691ce6e8af8c00e926a2bee79740e12f",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "Python path configuration",
+          "type": "standard-library import for configurable path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        },
+        {
+          "location": "Python path configuration",
+          "type": "historical relative candidate path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "geometry-review/check_connector_tips.py",
+      "public_relative_path": "geometry-review/check_connector_tips.py",
+      "original_bytes": 3379,
+      "public_bytes": 3328,
+      "original_sha256": "466ff42357d13417bfe8c4a5800600bf4a4e397682d685a49cb7bb7e6ae0071e",
+      "public_sha256": "0d95fb88143cbe1b1b62f83b2052020536d60b8d009fdd61609f935347ec83b5",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "Python path configuration",
+          "type": "standard-library import for configurable path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        },
+        {
+          "location": "Python path configuration",
+          "type": "remove private dependency runtime injection",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        },
+        {
+          "location": "Python path configuration",
+          "type": "historical relative candidate path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "geometry-review/run_independent_section_controls.py",
+      "public_relative_path": "geometry-review/run_independent_section_controls.py",
+      "original_bytes": 2680,
+      "public_bytes": 2601,
+      "original_sha256": "3cbe1ca57476982cdcb5efbda3e7c5409e14aac5be3cbb3b97735b4db33cb2ca",
+      "public_sha256": "0ced0f65181410b9ec3976fb1b06f1202faef7d578eb28b722ea74da41852a42",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "Python path configuration",
+          "type": "remove private dependency runtime injection",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "geometry-review/independent-stl-results.json",
+      "public_relative_path": "geometry-review/independent-stl-results.json",
+      "original_bytes": 1463242,
+      "public_bytes": 1463242,
+      "original_sha256": "12b4225c13e45735e740d935ee6d3c48e5e874ce7e70291e8da545083531a297",
+      "public_sha256": "12b4225c13e45735e740d935ee6d3c48e5e874ce7e70291e8da545083531a297",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/independent-stl-stdout.json",
+      "public_relative_path": "geometry-review/independent-stl-stdout.json",
+      "original_bytes": 33709,
+      "public_bytes": 33709,
+      "original_sha256": "9eea22751f4462300b2724720cf1e5c2e96dca94b0b894aebb65e47f95bb0a40",
+      "public_sha256": "9eea22751f4462300b2724720cf1e5c2e96dca94b0b894aebb65e47f95bb0a40",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/independent-stl-stderr.log",
+      "public_relative_path": "geometry-review/independent-stl-stderr.log",
+      "original_bytes": 0,
+      "public_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/print-risk-analysis.json",
+      "public_relative_path": "geometry-review/print-risk-analysis.json",
+      "original_bytes": 54909,
+      "public_bytes": 54909,
+      "original_sha256": "1098bdebc0cea63ca62f3f88567c0bb5d37b9012dcef768d22a49f3c1fca3304",
+      "public_sha256": "1098bdebc0cea63ca62f3f88567c0bb5d37b9012dcef768d22a49f3c1fca3304",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/print-risk-stdout.json",
+      "public_relative_path": "geometry-review/print-risk-stdout.json",
+      "original_bytes": 2959,
+      "public_bytes": 2959,
+      "original_sha256": "b5e56b48180c44bdddae6b34dda9ac4cb7dfe7918099629ef22e9b6f2ae65cdc",
+      "public_sha256": "b5e56b48180c44bdddae6b34dda9ac4cb7dfe7918099629ef22e9b6f2ae65cdc",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/connector-tip-review.json",
+      "public_relative_path": "geometry-review/connector-tip-review.json",
+      "original_bytes": 6059,
+      "public_bytes": 6059,
+      "original_sha256": "5d2fcd9161ce050189ac27a7884493c9a1beebcebb4c97f71e38c433fa2cce95",
+      "public_sha256": "5d2fcd9161ce050189ac27a7884493c9a1beebcebb4c97f71e38c433fa2cce95",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/section-controls.json",
+      "public_relative_path": "geometry-review/section-controls.json",
+      "original_bytes": 23985,
+      "public_bytes": 23985,
+      "original_sha256": "6a96ad8f7e981b8caaa27c1739b76782486c2634b33a5b67300f0b5d0159b072",
+      "public_sha256": "6a96ad8f7e981b8caaa27c1739b76782486c2634b33a5b67300f0b5d0159b072",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "geometry-review/geometry-evidence-manifest.json",
+      "public_relative_path": "geometry-review/geometry-evidence-manifest.json",
+      "original_bytes": 2326,
+      "public_bytes": 2326,
+      "original_sha256": "2a9b04a73411bc5d13751d45d5c9262758ab5c660764e42b11752357e1ddd9ef",
+      "public_sha256": "2a9b04a73411bc5d13751d45d5c9262758ab5c660764e42b11752357e1ddd9ef",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/FLAG-AUDIT.md",
+      "public_relative_path": "flag-audit/FLAG-AUDIT.md",
+      "original_bytes": 5604,
+      "public_bytes": 5548,
+      "original_sha256": "d4eaa1bac15fe8942c25f3fee813e6d36be09044f72208eb67d9f1840a159fe7",
+      "public_sha256": "d21d12e133f0f8c55f3a2dcb83344db4352e646c70ed2f0cc9b12df808fb4c84",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "text",
+          "type": "private dependency runtime path",
+          "replacement": "${OPTIONAL_DEPENDENCY_DIR}",
+          "occurrences": 1
+        },
+        {
+          "location": "text",
+          "type": "private Python interpreter path",
+          "replacement": "${PYTHON}",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "source_relative_path": "flag-audit/decision.json",
+      "public_relative_path": "flag-audit/decision.json",
+      "original_bytes": 1448,
+      "public_bytes": 1448,
+      "original_sha256": "420fa0c7efa10703b4b4d0602b6125160a90915797ad56db9f92e778c913d6cf",
+      "public_sha256": "420fa0c7efa10703b4b4d0602b6125160a90915797ad56db9f92e778c913d6cf",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/flag-audit-results.json",
+      "public_relative_path": "flag-audit/flag-audit-results.json",
+      "original_bytes": 71677,
+      "public_bytes": 71677,
+      "original_sha256": "5e1d1f29f6eb584bec3e88a2f6dbad20269a8fba200061c6c072a018ac0a31d6",
+      "public_sha256": "5e1d1f29f6eb584bec3e88a2f6dbad20269a8fba200061c6c072a018ac0a31d6",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/initial-auditor-wrong-field-results.json",
+      "public_relative_path": "flag-audit/initial-auditor-wrong-field-results.json",
+      "original_bytes": 71554,
+      "public_bytes": 71554,
+      "original_sha256": "f231208e2c7950a0bcc63d8eca465eaeb8361e343482401608cac7ed6ebc4603",
+      "public_sha256": "f231208e2c7950a0bcc63d8eca465eaeb8361e343482401608cac7ed6ebc4603",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/shared-index-results.json",
+      "public_relative_path": "flag-audit/shared-index-results.json",
+      "original_bytes": 10854,
+      "public_bytes": 10854,
+      "original_sha256": "799a06149534bd4dffc9a98ae61d759e49e6208622601beffe0eead62d230fca",
+      "public_sha256": "799a06149534bd4dffc9a98ae61d759e49e6208622601beffe0eead62d230fca",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/rerun-controls.json",
+      "public_relative_path": "flag-audit/rerun-controls.json",
+      "original_bytes": 15772,
+      "public_bytes": 15772,
+      "original_sha256": "6418799cf14d0f9fcf253a7cf5c599a2aacf5cb7af6c04456aeef0a7c0f4da04",
+      "public_sha256": "6418799cf14d0f9fcf253a7cf5c599a2aacf5cb7af6c04456aeef0a7c0f4da04",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/rerun-diagnosis.json",
+      "public_relative_path": "flag-audit/rerun-diagnosis.json",
+      "original_bytes": 74071,
+      "public_bytes": 74071,
+      "original_sha256": "fed9d8324d08d085f1f612d1c61accd1946ebb1b578b7bd90f5ead8e4b44d2f2",
+      "public_sha256": "fed9d8324d08d085f1f612d1c61accd1946ebb1b578b7bd90f5ead8e4b44d2f2",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/audit_flags.py",
+      "public_relative_path": "flag-audit/audit_flags.py",
+      "original_bytes": 12978,
+      "public_bytes": 12999,
+      "original_sha256": "ad77bcecc3e581d3cdf3c87d6d1cf5f7596f5f20f4eb1f4914317e5195188768",
+      "public_sha256": "03da45b880e4eb1b118ae5f6d1dd85c6a374bed4cef5867c69cfa00a97687c19",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "Python path configuration",
+          "type": "historical relative candidate path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "flag-audit/verify_shared_indices.py",
+      "public_relative_path": "flag-audit/verify_shared_indices.py",
+      "original_bytes": 1840,
+      "public_bytes": 1871,
+      "original_sha256": "0562953301692991a5b808aa3c217fe5ea3dc7d9de6eb440310b6453ad1f8f81",
+      "public_sha256": "6c32d4d823f2b76f122bd2af02c3167a07ded49055debcb8f06465f66b225c48",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "Python path configuration",
+          "type": "standard-library import for configurable path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        },
+        {
+          "location": "Python path configuration",
+          "type": "historical relative candidate path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "scene-evidence/rebuild-scene.json",
+      "public_relative_path": "scene-evidence/rebuild-scene.json",
+      "original_bytes": 10231,
+      "public_bytes": 10231,
+      "original_sha256": "cd6a2c5ddabec3cb9dc5867f51fa0b3205c02952a65dd129ff35e75d34b5c5e7",
+      "public_sha256": "cd6a2c5ddabec3cb9dc5867f51fa0b3205c02952a65dd129ff35e75d34b5c5e7",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "scene-evidence/independent-front-pixel-comparison.json",
+      "public_relative_path": "scene-evidence/independent-front-pixel-comparison.json",
+      "original_bytes": 1323,
+      "public_bytes": 1323,
+      "original_sha256": "74f6c6a5d46c8766dad623c8e38e153c3987b9eab59a1d1fae05909c6e7ccffc",
+      "public_sha256": "74f6c6a5d46c8766dad623c8e38e153c3987b9eab59a1d1fae05909c6e7ccffc",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "scene-evidence/independent-front.png",
+      "public_relative_path": "scene-evidence/independent-front.png",
+      "original_bytes": 1197754,
+      "public_bytes": 1197641,
+      "original_sha256": "3fc727b691d46646add039e8b6edb40dfc604084038774eeb966f45c41dd8544",
+      "public_sha256": "d67c55e8d2e36f201205585d4db0b7431f768ee8f4a0214cffde76d66fd9755c",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "PNG tEXt:File",
+          "type": "private scene absolute path metadata",
+          "replacement": "chunk omitted"
+        }
+      ],
+      "all_non_File_chunks_byte_identical": true,
+      "idat_sha256": "7b8d5dd4352c7008e07d37ee12a56baada6ca847f2d89e5cd275afe8e32dca47",
+      "idat_bytes_unchanged": true,
+      "decoded_rgba_pixels_sha256": "ade793c6c3d2c46a224e02ecd353543f8a76d43d1a575aded6bf1691c7e1fac5",
+      "decoded_pixel_size": [
+        1000,
+        780
+      ],
+      "decoded_pixels_unchanged": true,
+      "verification": "Same IHDR and exact IDAT bytes; original RGBA decoded with standard-library PNG filters and checked against historical comparison report"
+    },
+    {
+      "source_relative_path": "scene-evidence/saved-scene-state.json",
+      "public_relative_path": "scene-evidence/saved-scene-state.json",
+      "original_bytes": 28373,
+      "public_bytes": 28373,
+      "original_sha256": "ef0c666b88a0b01440e23914c6e14d95d82ef0373d17c5dade9f3d5a02b6743e",
+      "public_sha256": "ef0c666b88a0b01440e23914c6e14d95d82ef0373d17c5dade9f3d5a02b6743e",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "scene-evidence/source-scene-state.json",
+      "public_relative_path": "scene-evidence/source-scene-state.json",
+      "original_bytes": 28373,
+      "public_bytes": 28373,
+      "original_sha256": "ef0c666b88a0b01440e23914c6e14d95d82ef0373d17c5dade9f3d5a02b6743e",
+      "public_sha256": "ef0c666b88a0b01440e23914c6e14d95d82ef0373d17c5dade9f3d5a02b6743e",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "scene-evidence/rebuild.stdout.log",
+      "public_relative_path": "scene-evidence/rebuild.stdout.log",
+      "original_bytes": 739,
+      "public_bytes": 739,
+      "original_sha256": "03e781f06e1cc5d59b8cdd195c9e73ab2fd8296da5d4cb07debea2be85da1f00",
+      "public_sha256": "03e781f06e1cc5d59b8cdd195c9e73ab2fd8296da5d4cb07debea2be85da1f00",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "scene-evidence/rebuild.stderr.log",
+      "public_relative_path": "scene-evidence/rebuild.stderr.log",
+      "original_bytes": 0,
+      "public_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "audit_rebuild_scene.py",
+      "public_relative_path": "audit_rebuild_scene.py",
+      "original_bytes": 10945,
+      "public_bytes": 10865,
+      "original_sha256": "d63e1b5172e7e59f03256d181235dcf791e3d2833e7e8ac40759cf55438e9071",
+      "public_sha256": "e145d5c0a4860b7d3d5938772a7d1f244d761691de1b85c6ea1be8654cddbc05",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "Python path configuration",
+          "type": "candidate path and output-location guard",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        },
+        {
+          "location": "Python path configuration",
+          "type": "remove private dependency/runtime injection; inherit installed environment",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "compare_preview_pixels.py",
+      "public_relative_path": "compare_preview_pixels.py",
+      "original_bytes": 1181,
+      "public_bytes": 1223,
+      "original_sha256": "beae6ce6b726b6776bffc0805b46d39d2893153bb0c893c4456b7cd058534c58",
+      "public_sha256": "9d642fa037b46c90456e9b932a6cc8730ce0306e8c9ff8aee57f8eb3284a431e",
+      "changed": true,
+      "redactions": [
+        {
+          "location": "Python path configuration",
+          "type": "standard-library import for configurable path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        },
+        {
+          "location": "Python path configuration",
+          "type": "historical relative candidate path",
+          "occurrences": 1,
+          "replacement": "explicit CHENGQIN_PACKAGE environment path or installed dependencies"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "visual-review/VISUAL-REVIEW.md",
+      "public_relative_path": "visual-review/VISUAL-REVIEW.md",
+      "original_bytes": 3161,
+      "public_bytes": 3161,
+      "original_sha256": "e5e52e4ad22eddf199acc61f61e077a94d3681e0b4dab667bb71c7b1c1a8ba03",
+      "public_sha256": "e5e52e4ad22eddf199acc61f61e077a94d3681e0b4dab667bb71c7b1c1a8ba03",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "visual-review/visual-review.json",
+      "public_relative_path": "visual-review/visual-review.json",
+      "original_bytes": 10782,
+      "public_bytes": 10782,
+      "original_sha256": "97aee9f1f7289df30acfb10f94b073cf4e155774be293b9daf3b93864bbe9ed9",
+      "public_sha256": "97aee9f1f7289df30acfb10f94b073cf4e155774be293b9daf3b93864bbe9ed9",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "visual-review/eight-preview-contact-sheet.jpg",
+      "public_relative_path": "visual-review/eight-preview-contact-sheet.jpg",
+      "original_bytes": 125667,
+      "public_bytes": 125667,
+      "original_sha256": "972f15bca84133f373e9be8c84ef79ebdc2e893ddab96cb546040c1fa8363c33",
+      "public_sha256": "972f15bca84133f373e9be8c84ef79ebdc2e893ddab96cb546040c1fa8363c33",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/same_face.result.json",
+      "public_relative_path": "flag-audit/same_face.result.json",
+      "original_bytes": 16404,
+      "public_bytes": 16404,
+      "original_sha256": "e337f79cedabf816374381127f3a0e12ffa6d4be67fbfe8f35c3ab794ea23c55",
+      "public_sha256": "e337f79cedabf816374381127f3a0e12ffa6d4be67fbfe8f35c3ab794ea23c55",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/negative_index.result.json",
+      "public_relative_path": "flag-audit/negative_index.result.json",
+      "original_bytes": 16404,
+      "public_bytes": 16404,
+      "original_sha256": "6e40f45d3bd2a668388590d629537fa7b001ed3131cc6d41ac83e453c10cd51b",
+      "public_sha256": "6e40f45d3bd2a668388590d629537fa7b001ed3131cc6d41ac83e453c10cd51b",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/bool_index.result.json",
+      "public_relative_path": "flag-audit/bool_index.result.json",
+      "original_bytes": 16404,
+      "public_bytes": 16404,
+      "original_sha256": "bbf22e972b2e370b41a9362af56d0e97c5bb99ddd88aa9f035368e287e2dadfb",
+      "public_sha256": "bbf22e972b2e370b41a9362af56d0e97c5bb99ddd88aa9f035368e287e2dadfb",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/noninteger_index.result.json",
+      "public_relative_path": "flag-audit/noninteger_index.result.json",
+      "original_bytes": 16404,
+      "public_bytes": 16404,
+      "original_sha256": "c1a0894bf0dc20b7f26ba0c6a2d30ce40840fbf0dd2721cf5cb31080c5132830",
+      "public_sha256": "c1a0894bf0dc20b7f26ba0c6a2d30ce40840fbf0dd2721cf5cb31080c5132830",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/pair_length_three.result.json",
+      "public_relative_path": "flag-audit/pair_length_three.result.json",
+      "original_bytes": 16404,
+      "public_bytes": 16404,
+      "original_sha256": "d7fdac6130ea20db07877db81b8c9be6822750b94a1a6726504486933ad40003",
+      "public_sha256": "d7fdac6130ea20db07877db81b8c9be6822750b94a1a6726504486933ad40003",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "flag-audit/malformed_flag.result.json",
+      "public_relative_path": "flag-audit/malformed_flag.result.json",
+      "original_bytes": 16404,
+      "public_bytes": 16404,
+      "original_sha256": "d65edf8926993fb7ca9db084914b243e3065d4c1de53e94ee8e44187fb9f10f2",
+      "public_sha256": "d65edf8926993fb7ca9db084914b243e3065d4c1de53e94ee8e44187fb9f10f2",
+      "changed": false,
+      "redactions": []
+    },
+    {
+      "source_relative_path": "candidate/qa/qa-report.json",
+      "public_relative_path": "author-reference/qa-report.json",
+      "original_bytes": 521570,
+      "public_bytes": 521570,
+      "original_sha256": "9d7253369d81df71bdbdb40d4c0576d2452fe7eeed26d9bbf9e52c5933a94f23",
+      "public_sha256": "9d7253369d81df71bdbdb40d4c0576d2452fe7eeed26d9bbf9e52c5933a94f23",
+      "changed": false,
+      "redactions": []
+    }
+  ],
+  "excluded": [
+    "third-party source images and HTML",
+    "candidate package copy and rebuilt STL duplicate",
+    "Git object copy and complete repository",
+    "dependency/runtime trees and machine configuration",
+    "private delivery/Library files and credentials",
+    "prepare/bootstrap scripts",
+    "six repeated large generated guard-input JSON files and redundant control stdout/stderr",
+    "full provenance orchestrator requiring the private original 79-file candidate and repository copy"
+  ],
+  "new_public_documents": [
+    "README.md",
+    "REDACTION-REPORT.json",
+    "PUBLIC-FILE-MANIFEST.json"
+  ],
+  "limits": "This is a curated subset, not the complete original CLI/archive tree. Pattern privacy scans cannot rule out arbitrary encodings of secrets. Historical outcomes are not new executions or post-cleanup scene certification."
+}

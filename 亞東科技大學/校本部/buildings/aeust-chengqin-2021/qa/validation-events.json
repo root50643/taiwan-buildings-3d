@@ -1,0 +1,98 @@
+{
+  "scope": "Executed preparation, construction, numerical checks, exact flagged-pair diagnosis, rendering and rebuild verification. Original failures remain failures.",
+  "events": [
+    {
+      "action": "public remote main check",
+      "initial_result": "Sandboxed git ls-remote could not resolve github.com",
+      "resolution": "Allowed network execution completed: main 56c252c0207bc8af202cc8b5b9e66da1c08a028b",
+      "status": "resolved"
+    },
+    {
+      "action": "isolated clone initialization",
+      "initial_result": "--no-checkout clone left index/worktree unpopulated; first sparse branch checkout did not materialize files",
+      "resolution": "git reset --hard HEAD only inside newly created isolated clone populated selected paths; original apollo-review untouched",
+      "status": "resolved"
+    },
+    {
+      "action": "initial generator execution",
+      "initial_result": "ModuleNotFoundError: scipy while trimesh fixed connector normals; no STL was exported",
+      "resolution": "Existing scipy 1.16.3 and its dependencies added to private workstation PYTHONPATH; requirements.txt already specifies scipy",
+      "status": "resolved"
+    },
+    {
+      "action": "first complete connector construction",
+      "initial_result": "ValueError: Connector ring construction is not watertight; 30 boundary edges from 10 collinear T junctions at cut endpoints; no STL was exported",
+      "failed_source": "failed-connector-source.py",
+      "failed_source_sha256": "5fd7306e1f7908deedbb8a8a33e9b455b4bff780434bc53398275788f328ac8f",
+      "resolution": "Kept the far endpoint fixed for every band, avoiding edge subdivision mismatch; resulting mesh is watertight without mesh repair",
+      "status": "resolved"
+    },
+    {
+      "action": "connector diagnostic helper",
+      "initial_result": "Diagnostic-only helper initially read UTF-8 parameters with Windows cp950 default and raised UnicodeDecodeError",
+      "resolution": "Enabled UTF-8 in private runner; diagnostic rerun exposed the T-junction coordinates",
+      "status": "resolved"
+    },
+    {
+      "action": "Blender runtime probe",
+      "initial_result": "Sandboxed bpy import could not load DLL; isolated probe without shared dependency path reported missing numpy/cattrs",
+      "resolution": "Allowed runtime load with complete existing dependency directories and BLENDER_USER_RESOURCES inside writable task directory succeeded: bpy 5.2.2 LTS, numpy 2.5.4, scipy 1.16.3. No scene/preview was created by probes",
+      "status": "resolved"
+    },
+    {
+      "action": "initial exported STL geometric screen",
+      "initial_result": "CLI exit1: 20 unexpected numerical triangle contacts; topology, all 795 sections, 0.8mm component-core erosion, and 45deg support tests passed",
+      "report": "qa-report.json",
+      "stl_sha256": "4e73e7094c83de47c19bcc6121fee575c1360b285d597773d983a873f46b7f5a",
+      "status": "generic numerical failure preserved; all 20 flags diagnosed by exact supplement",
+      "diagnosis": "All flagged pairs lie at the connector/main join, not the far cut. Exact float32 rational intersections are 10 shared edges and 10 shared vertices only; full guarded diagnosis and controls retained in flag-diagnosis/. No model/checker change made to silence flags."
+    },
+    {
+      "action": "first eight-view rendering",
+      "initial_result": "exit0, but actual view_image inspection found front wall included in recess material and isometric front clipping/tight framing",
+      "initial_material_range_y_mm": [
+        -21.13,
+        -20.44
+      ],
+      "initial_front_rear_ortho_scale": 245,
+      "first_manifest": "first-render-manifest.json",
+      "resolution": "Changed material threshold to exclude the wall plane at -21.12mm; increased front/rear ortho scale to280. Geometry/STL unchanged. A second and final complete eight-view render completed exit0; first hashes/cameras/stdout/stderr retained, obsolete PNGs not duplicated.",
+      "status": "resolved"
+    },
+    {
+      "action": "final preview review",
+      "result": "Actual view_image inspection of all eight final images. Camera projection test confirms all print-mesh vertices within the seven full-view frames; connector view intentionally crops surrounding main building for detail. Roof boxes, both cores, slab, neutral rear and curved link/cut remain visible across the set.",
+      "status": "completed"
+    },
+    {
+      "action": "fresh STL and saved scene verification",
+      "result": "exit0: fresh generator STL bytes identical; saved scene oriented triangle multiset equals exported binary32 STL; identity transform; all eight PNG/scene/STL hashes match; zero reference-image datablocks. No third full render performed.",
+      "report": "reproducibility.json",
+      "status": "completed"
+    },
+    {
+      "action": "candidate index-integrity check",
+      "initial_result": "First byte comparison rejected Windows checkout CRLF against Git LF blobs; no content edit was present",
+      "resolution": "Compared clean-filter Git object identities for root README, catalog, school README and campus README. All four unchanged. Candidate package uses -text attributes to preserve its exact report/source bytes.",
+      "status": "resolved"
+    },
+    {
+      "action": "source-created scene state verification",
+      "result": "Executed source/render_preview.py create_scene in memory and compared units, render options, camera, material values and face assignments, lights, world and display settings against saved scene. All match; no render/save performed. Repeated STL reconstruction remained byte-identical.",
+      "report": "reproducibility.json",
+      "status": "completed"
+    },
+    {
+      "action": "candidate Git whitespace validation",
+      "initial_result": "git diff --cached --check rejected retained CRLF in raw stdout/log/txt and .gitattributes as trailing whitespace because exact-byte -text disabled line-ending normalization",
+      "resolution": "Applied the same explicit cr-at-eol whitespace allowance to all package evidence files, keeping exact raw evidence bytes and substantive whitespace checks",
+      "status": "resolved for CR-at-EOL; remaining issues checked separately"
+    },
+    {
+      "action": "local candidate commit",
+      "initial_result": "Git refused the first commit because this isolated clone had no author identity; no commit occurred",
+      "resolution": "Used per-command Codex <codex@openai.com> identity for the local candidate only; no global settings changed",
+      "status": "resolved"
+    }
+  ]
+}

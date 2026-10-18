@@ -1,14 +1,22 @@
 # 亞東科技大學｜校本部建築模型圖鑑
 
-目前1套：有庠科技大樓竣工初期外觀代表，以2007／2008校園側照片、2010已刊街側照片及後期相對平面配置交叉約束；不是精準2007年全棟復原或2026現況。教育部115學年度代碼1084；前身亞東技術學院、亞東工專不另計校。原手冊校區名「亞東學校財團法人亞東科技大學」、新北市板橋區四川路二段58號地址保留；repo「校本部」只作展示簡稱。其他建物及逐棟清單尚未完成，非全校完成。
+目前2套：有庠科技大樓竣工初期外觀代表，以及誠勤大樓約2021年外觀代表。有庠模型以2007／2008校園側照片、2010已刊街側照片及後期相對平面配置交叉約束；不是精準2007年全棟復原或2026現況。教育部115學年度代碼1084；前身亞東技術學院、亞東工專不另計校。原手冊校區名「亞東學校財團法人亞東科技大學」、新北市板橋區四川路二段58號地址保留；repo「校本部」只作展示簡稱。其他建物及逐棟清單尚未完成，非全校完成。
 
 ## 建築圖鑑
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/aeust-youxiang-building/qa/render-check/v15-author-preflight/sanitized-previews/front.png" alt="有庠科技大樓街側巨框、圓角窗帶及雙翼天井模型" width="260">](buildings/aeust-youxiang-building/README.md)<br>**[有庠科技大樓｜初期外觀代表](buildings/aeust-youxiang-building/README.md)**<br>雙深天井、街側巨框真洞及不對稱端部<br>219 × 107 × 119 mm |  |  |
+| [<img src="buildings/aeust-youxiang-building/qa/render-check/v15-author-preflight/sanitized-previews/front.png" alt="有庠科技大樓街側巨框、圓角窗帶及雙翼天井模型" width="260">](buildings/aeust-youxiang-building/README.md)<br>**[有庠科技大樓｜初期外觀代表](buildings/aeust-youxiang-building/README.md)**<br>雙深天井、街側巨框真洞及不對稱端部<br>219 × 107 × 119 mm | [<img src="buildings/aeust-chengqin-2021/previews/v1/front.png" alt="誠勤大樓12層板身、端部核心與曲面連接段模型" width="260">](buildings/aeust-chengqin-2021/README.md)<br>**[誠勤大樓｜約2021年外觀代表](buildings/aeust-chengqin-2021/README.md)**<br>平頂板身、兩端屋頂箱體及元智交界截斷<br>184.3 × 63.08 × 159 mm |  |
 
 [完整模型、正反並排預覽與下載](buildings/aeust-youxiang-building/README.md) · [來源摘要](../inventory/sources/aeust-youxiang-building-source-summary.md) · [QA摘要](../inventory/qa/aeust-youxiang-building-review.md)
+
+## 誠勤大樓（新增模型）
+
+[誠勤大樓約2021年外觀代表](buildings/aeust-chengqin-2021/README.md)保留12層細長平頂主體、兩端淺突核心、各端核心區的屋頂箱體，以及多層曲面連接段；在元智交界明確截斷，不含元智本體，不代表完整連棟或2026現況。模型184.3 × 63.08 × 159 mm，含3 mm列印底板；外高、屋頂箱體深度與連接段尺度為估計，官方4F圖只約束相對平面，沒有實測公尺或1:N比例。未知後長邊採中性板身，未鏡射前窗。
+
+[獨立發布覆核與列印限制](buildings/aeust-chengqin-2021/qa/release-review/README.md)記錄有界GO：原泛用浮點檢查的20個旗標及exit 1保留；獨立存儲座標全三角對演算未發現非預期接觸，但嚴格45°支撐包絡仍有36個截層旗標（exit 1／false），源於名義45°窗槽上緣的binary32量化，不得改稱嚴格全通過或免支撐。159 mm高模型、淺浮雕與尖角仍需目標切片器及支撐策略評估；尚無G-code或實體試印。
+
+## 有庠科技大樓（既有模型）
 
 模型219 × 107 × 119 mm，含3 mm整合底座；真實長、寬、高均無實測或正式尺寸佐證，全部為相對估計，沒有1:N比例主張，也沒有用樓地板總面積推算外緣尺寸。2007／2008年校園側照片支持初期量體；街側承包商照片在2010年已刊，精確拍攝日未知。後期9–12F圖只用於相對平面關係，不當作低層／屋頂完整竣工圖。未見短端和屋頂保守簡化，不補鏡像窗；不混入鄰棟誠勤樓與2022改造。
 

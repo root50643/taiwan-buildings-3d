@@ -1,0 +1,906 @@
+{
+  "date": "2026-10-18",
+  "candidate": "4116148c135d8a67a444ce8bf33fb64aba3e06a3",
+  "base": "56c252c0207bc8af202cc8b5b9e66da1c08a028b",
+  "decision": "GO",
+  "blocking_findings": [],
+  "stl_sha256": "4e73e7094c83de47c19bcc6121fee575c1360b285d597773d983a873f46b7f5a",
+  "scene_sha256": "5cf2b50f83e9f897ba2aaf4e61c806f4bf3ab7b90c9174c20c6c83a160fd1b25",
+  "fixed_files": "provenance/results.json pins all 79 candidate files to original bytes and Git blobs",
+  "independence": {
+    "rebuild": "Actual invocation of unchanged author generator into fresh output, complete STL bytes identical; reproducibility, not a second independent modelling algorithm.",
+    "topology_and_self_contact": "Own binary STL parser, exact equal-coordinate merging, integer/Fraction full pair algorithm; no author QA/classifier/trimesh for these checks.",
+    "original_flag_review": "Separate struct/Fraction same-side zero-vertex convex-hull proof for original 20 pairs; flags, indices, coordinates and hashes all traced unchanged.",
+    "sections": "Own triangle/plane intersections and polygon assembly; bounded finite samples.",
+    "scene": "Reviewer actual evaluated-world mesh and actual scene/source properties plus one front rerender and decoded pixel comparison."
+  },
+  "topology": {
+    "vertices": 1470,
+    "triangles": 2936,
+    "edges": 4404,
+    "bounds_mm": [
+      [
+        -84.0,
+        -35.400001525878906,
+        0.0
+      ],
+      [
+        100.30000305175781,
+        27.68000030517578,
+        159.0
+      ]
+    ],
+    "extents_mm": [
+      184.3000030517578,
+      63.08000183105469,
+      159.0
+    ],
+    "exact_signed_volume_mm3_fraction": "1254199567181639061396407/1152921504606846976",
+    "signed_volume_mm3": 1087844.71637497,
+    "surface_area_mm2": 94189.25788059484,
+    "min_triangle_area_mm2": 0.05014702441621921,
+    "edge_incidence_histogram": {
+      "2": 4404
+    },
+    "winding_conflict_edges": [],
+    "boundary_edges": [],
+    "nonmanifold_edges": [],
+    "degenerate_triangles": [],
+    "duplicate_triangles": 0,
+    "nonmanifold_vertex_links": [],
+    "face_connected_components": 1,
+    "component_face_counts": [
+      2936
+    ],
+    "euler": 2,
+    "stored_normals_opposed_to_geometry": [],
+    "merge_policy": "Exact equality of binary32 coordinate triples; no rounding, repair, or trimesh processing",
+    "passes": true
+  },
+  "full_exact_coordinate_pair_algorithm": {
+    "method": "Every unordered pair: exact integer AABB exclusion, then all six edge/closed-triangle intersection tests using rational segment-plane and 2-D segment tests. Any contact beyond the exact indexed shared edge or vertex is rejected.",
+    "coordinate_arithmetic": "Python integers and fractions, exact for binary32 STL coordinates; no floating tolerance in pair tests",
+    "counts": {
+      "total_pairs": 4308580,
+      "exact_aabb_disjoint": 4277205,
+      "exact_aabb_candidates": 31375,
+      "noncoplanar_contact": 14490,
+      "expected_edge_contacts": 4404,
+      "expected_vertex_contacts": 15848,
+      "coplanar_contact": 5762,
+      "candidate_disjoint": 11123
+    },
+    "unexpected_contacts": [],
+    "passes": true,
+    "limitation": "A reproducible exact-coordinate algorithmic check, not an independently machine-verified formal proof or a physical-print guarantee."
+  },
+  "sampled_sections": {
+    "method": "Own triangle/plane segments (XY rounded to 1e-8 mm), polygonize and odd crossing material parity; no candidate QA or trimesh functions used.",
+    "section_count": 1796,
+    "sampling": "0.1 mm midpoint grid plus every vertex-event interval midpoint and points 1e-6 mm above/below events, excluding exactly coplanar event levels.",
+    "first_section_build_plate_supported": true,
+    "feature_core_width_mm": 0.8,
+    "component_core_failures": [],
+    "max_components": 2,
+    "invalid_or_open_sections": [],
+    "vanished_core_z_mm": [],
+    "split_core_z_mm": [],
+    "maximum_outside_support_envelope_mm2": 0.00011894401223611881,
+    "support_violations_over_1e_5_mm2": [
+      {
+        "z_mm": 12.25,
+        "area_mm2": 7266.78081492392,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7081.1174193314,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999938146972731,
+        "outside_45deg_support_envelope_mm2": 1.497183533721408e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7266.78081492392,
+            "core_area_mm2": 7081.1174193314,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 12.35,
+        "area_mm2": 7277.020831308674,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7091.997436676678,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999964,
+        "outside_45deg_support_envelope_mm2": 1.5120001306580231e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7277.020831308674,
+            "core_area_mm2": 7091.997436676678,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 12.45,
+        "area_mm2": 7287.260846540879,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7102.87745280476,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999964,
+        "outside_45deg_support_envelope_mm2": 1.4112001123977931e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7287.260846540879,
+            "core_area_mm2": 7102.87745280476,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 12.55,
+        "area_mm2": 7297.50086292303,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7113.757470145707,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.07500009536743235,
+        "outside_45deg_support_envelope_mm2": 1.0588816529445314e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7297.50086292303,
+            "core_area_mm2": 7113.757470145707,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 12.65,
+        "area_mm2": 7307.740879211261,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7124.637487394805,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999964,
+        "outside_45deg_support_envelope_mm2": 1.5120001306580231e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7307.740879211261,
+            "core_area_mm2": 7124.637487394805,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 12.75,
+        "area_mm2": 7317.980895603268,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7135.51750474612,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999964,
+        "outside_45deg_support_envelope_mm2": 1.512000139610864e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7317.980895603268,
+            "core_area_mm2": 7135.51750474612,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 24.35,
+        "area_mm2": 7268.487436985404,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7082.930705265014,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000000142,
+        "outside_45deg_support_envelope_mm2": 3.0240002971274033e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7268.487436985404,
+            "core_area_mm2": 7082.930705265014,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 24.45,
+        "area_mm2": 7278.727467705207,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7093.810737839715,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999787,
+        "outside_45deg_support_envelope_mm2": 2.923200314678533e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7278.727467705207,
+            "core_area_mm2": 7093.810737839715,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 24.55,
+        "area_mm2": 7288.967498344238,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7104.690770336308,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000000142,
+        "outside_45deg_support_envelope_mm2": 2.9232002788671726e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7288.967498344238,
+            "core_area_mm2": 7104.690770336308,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 24.65,
+        "area_mm2": 7299.207530054984,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7115.570803967127,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09166660308837749,
+        "outside_45deg_support_envelope_mm2": 2.6940282422923487e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7299.207530054984,
+            "core_area_mm2": 7115.570803967127,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 24.75,
+        "area_mm2": 7309.447560783277,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7126.450836552128,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000000142,
+        "outside_45deg_support_envelope_mm2": 2.9232002788671726e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7309.447560783277,
+            "core_area_mm2": 7126.450836552128,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 24.85,
+        "area_mm2": 7319.68759248857,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7137.331768826093,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000000142,
+        "outside_45deg_support_envelope_mm2": 3.0240002971274033e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7319.68759248857,
+            "core_area_mm2": 7137.331768826093,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 48.45,
+        "area_mm2": 7261.66063415725,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7075.677227300356,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.04999747412109912,
+        "outside_45deg_support_envelope_mm2": 3.006126864955703e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7261.66063415725,
+            "core_area_mm2": 7075.677227300356,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 48.55,
+        "area_mm2": 7271.900695561171,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7086.557292482806,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999432,
+        "outside_45deg_support_envelope_mm2": 5.947200647617298e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7271.900695561171,
+            "core_area_mm2": 7086.557292482806,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 48.65,
+        "area_mm2": 7282.1407559397985,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7097.43735657209,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000000142,
+        "outside_45deg_support_envelope_mm2": 5.846400557734345e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7282.1407559397985,
+            "core_area_mm2": 7097.43735657209,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 48.72500038146973,
+        "area_mm2": 7289.820841664162,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7105.597447607933,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.07500038146972798,
+        "outside_45deg_support_envelope_mm2": 4.5391265286665315e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7289.820841664162,
+            "core_area_mm2": 7105.597447607933,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 48.75,
+        "area_mm2": 7292.380817357732,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7108.317421765379,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.024999618530273438,
+        "outside_45deg_support_envelope_mm2": 1.4429914380043142e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7292.380817357732,
+            "core_area_mm2": 7108.317421765379,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 48.85,
+        "area_mm2": 7302.620878804711,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7119.19748698944,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000000142,
+        "outside_45deg_support_envelope_mm2": 5.947200575994577e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7302.620878804711,
+            "core_area_mm2": 7119.19748698944,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 48.95,
+        "area_mm2": 7312.86094019318,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7130.07755215319,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000000142,
+        "outside_45deg_support_envelope_mm2": 5.947200540183218e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7312.86094019318,
+            "core_area_mm2": 7130.07755215319,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 49.04999823706055,
+        "area_mm2": 7323.100820311985,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 7140.9574168421805,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999823706054656,
+        "outside_45deg_support_envelope_mm2": 5.87603191035863e-05,
+        "component_cores": [
+          {
+            "area_mm2": 7323.100820311985,
+            "core_area_mm2": 7140.9574168421805,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.05,
+        "area_mm2": 6862.506402533285,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6689.4290387252895,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.0666615976562639,
+        "outside_45deg_support_envelope_mm2": 7.927746050275639e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6862.506402533285,
+            "core_area_mm2": 6689.4290387252895,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.15,
+        "area_mm2": 6872.746524357301,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6700.309168101294,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999432,
+        "outside_45deg_support_envelope_mm2": 0.00011894401223611881,
+        "component_cores": [
+          {
+            "area_mm2": 6872.746524357301,
+            "core_area_mm2": 6700.309168101294,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.25,
+        "area_mm2": 6882.986645157307,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6711.18929638931,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999432,
+        "outside_45deg_support_envelope_mm2": 0.00011793601205351651,
+        "component_cores": [
+          {
+            "area_mm2": 6882.986645157307,
+            "core_area_mm2": 6711.18929638931,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.30833435058594,
+        "area_mm2": 6888.960153831993,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6717.536149319994,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.0583343505859375,
+        "outside_45deg_support_envelope_mm2": 6.995254278642068e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6888.960153831993,
+            "core_area_mm2": 6717.536149319994,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.35,
+        "area_mm2": 6893.226765957319,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6722.069424677318,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.041665649414056816,
+        "outside_45deg_support_envelope_mm2": 4.8891622482998934e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6893.226765957319,
+            "core_area_mm2": 6722.069424677318,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.45,
+        "area_mm2": 6903.46688778133,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6732.9495540533335,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999432,
+        "outside_45deg_support_envelope_mm2": 0.0001189440122361188,
+        "component_cores": [
+          {
+            "area_mm2": 6903.46688778133,
+            "core_area_mm2": 6732.9495540533335,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.55,
+        "area_mm2": 6913.707008581341,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6743.829682341338,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000002274,
+        "outside_45deg_support_envelope_mm2": 0.00011793600918860738,
+        "component_cores": [
+          {
+            "area_mm2": 6913.707008581341,
+            "core_area_mm2": 6743.829682341338,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 133.63333029882813,
+        "area_mm2": 6922.240132479987,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6752.896118344902,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.08333029882811616,
+        "outside_45deg_support_envelope_mm2": 9.916382904298537e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6922.240132479987,
+            "core_area_mm2": 6752.896118344902,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.15,
+        "area_mm2": 6864.213610378674,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6691.242947050667,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.08333335058594571,
+        "outside_45deg_support_envelope_mm2": 9.898599063958217e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6864.213610378674,
+            "core_area_mm2": 6691.242947050667,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.25,
+        "area_mm2": 6874.453732202683,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6702.12307642668,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999432,
+        "outside_45deg_support_envelope_mm2": 0.00011894401223611881,
+        "component_cores": [
+          {
+            "area_mm2": 6874.453732202683,
+            "core_area_mm2": 6702.12307642668,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.35,
+        "area_mm2": 6884.6938530026955,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6713.003204714691,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999432,
+        "outside_45deg_support_envelope_mm2": 0.00011793601241163009,
+        "component_cores": [
+          {
+            "area_mm2": 6884.6938530026955,
+            "core_area_mm2": 6713.003204714691,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.39166259765625,
+        "area_mm2": 6888.960153831991,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6717.536149319994,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.041662597656255684,
+        "outside_45deg_support_envelope_mm2": 5.008780720541623e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6888.960153831991,
+            "core_area_mm2": 6717.536149319994,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.45,
+        "area_mm2": 6894.933973802712,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6723.883333002708,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.05833740234373863,
+        "outside_45deg_support_envelope_mm2": 6.875948445162458e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6894.933973802712,
+            "core_area_mm2": 6723.883333002708,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.55,
+        "area_mm2": 6905.17409562672,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6734.763462378718,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.10000000000002274,
+        "outside_45deg_support_envelope_mm2": 0.00011894400937120968,
+        "component_cores": [
+          {
+            "area_mm2": 6905.17409562672,
+            "core_area_mm2": 6734.763462378718,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.65,
+        "area_mm2": 6915.41421642673,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6745.643590666732,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.09999999999999432,
+        "outside_45deg_support_envelope_mm2": 0.00011793601241163009,
+        "component_cores": [
+          {
+            "area_mm2": 6915.41421642673,
+            "core_area_mm2": 6745.643590666732,
+            "core_components": 1
+          }
+        ]
+      },
+      {
+        "z_mm": 145.71665854589844,
+        "area_mm2": 6922.24013247999,
+        "components": 1,
+        "valid": true,
+        "cut_count": 0,
+        "dangle_count": 0,
+        "invalid_ring_count": 0,
+        "core_0_8mm_area_mm2": 6752.896118003761,
+        "core_components": 1,
+        "core_vanished": false,
+        "dz_mm": 0.06665854589843434,
+        "outside_45deg_support_envelope_mm2": 7.945573464274853e-05,
+        "component_cores": [
+          {
+            "area_mm2": 6922.24013247999,
+            "core_area_mm2": 6752.896118003761,
+            "core_components": 1
+          }
+        ]
+      }
+    ],
+    "shapely_version": "2.1.2",
+    "limitations": [
+      "Still finite section sampling; event-augmented grid examines all mesh vertex-height intervals but does not certify arbitrary 3-D minimum thickness.",
+      "The 45 degree envelope is a geometric support rule, not extrusion paths, bridges, cooling, shrinkage, adhesion, strength, or a test print.",
+      "A section core may survive while an attached taper is thinner than the test width. This is not an every-point minimum wall-thickness certificate."
+    ]
+  },
+  "retained_failures": {
+    "author_numerical_self_screen": {
+      "exit_code": 1,
+      "flags": 20,
+      "pass_value": false,
+      "original_report_sha256": "9d7253369d81df71bdbdb40d4c0576d2452fe7eeed26d9bbf9e52c5933a94f23",
+      "diagnosis": "20 original pairs independently proven 10 shared edge / 10 shared vertex without moving points. Author supplement remains partial, not a whole-mesh exact or formal proof."
+    },
+    "reviewer_strict_support_screen": {
+      "exit_code": 1,
+      "pass_value": false,
+      "flagged_sections": 36,
+      "area_threshold_mm2": 1e-05,
+      "max_excess_area_mm2": 0.00011894401223611881,
+      "max_facet_angle_deg": 45.000336256650876,
+      "exact_outward_excess_across_full_chamfer_mm": "1/131072",
+      "disposition": "Nonblocking binary32 quantization of nominal 45-degree attached front-window chamfers. Original false, exit 1 and threshold unchanged; do not rewrite as strict pass."
+    },
+    "initial_auditor_wrong_field": "Retained separately in flag-audit/initial-auditor-wrong-field-results.json; wrong nonexistent gate field corrected, not a candidate defect or modification."
+  },
+  "source_visual_review": "Five source originals and eight previews actually viewed and hashes checked; around-2021, bounded roof-box estimates, neutral back and explicit Yuanzhi cut accepted.",
+  "source_live_fetch_limit": "Official source pages visited; direct JPEG/blog retrieval not all successful. Local originals/HTML independently hashed and viewed; no false fresh-download claim.",
+  "rebuild_and_scene": {
+    "rebuilt_stl_bytes_identical": true,
+    "evaluated_world_triangles_match": 2936,
+    "actual_units": {
+      "system": "METRIC",
+      "length_unit": "MILLIMETERS",
+      "scale_length": 0.0010000000474974513
+    },
+    "source_created_scene_state_matches_saved": true,
+    "eight_literal_views_equal_manifest": true,
+    "seven_full_views_framed": true,
+    "connector_is_detail_crop": true,
+    "independent_renders": 1,
+    "decoded_front_pixels_identical": true,
+    "different_pixels": 0,
+    "png_byte_difference_is_metadata": true
+  },
+  "retained_limits": [
+    "No slicer/G-code or physical print; no machine/material/extrusion/cooling/adhesion/strength guarantee.",
+    "Finite 795 author/1796 independent layers are not continuous-Z or arbitrary-direction global wall thickness proof.",
+    "Connector cut corners are attached mathematical tips and may be rounded or omitted by a nozzle; shallow relief may vanish at reduced scale.",
+    "Full pair exact-coordinate algorithm is reproducible but not a formally verified mathematical proof.",
+    "Body height, roof-box depth and connector dimensions remain disclosed estimates; no measured metres or 1:N scale."
+  ],
+  "original_and_copy_unchanged": true,
+  "public_indexes_unchanged": true,
+  "published_count": 491,
+  "remote_or_publication_actions": false,
+  "report": "CHENGQIN-INDEPENDENT-REVIEW.md",
+  "report_sha256": "6352e44329a3d5c768e1e1a34d7efcd976ef00848fca0f0a505783348a2bb177"
+}

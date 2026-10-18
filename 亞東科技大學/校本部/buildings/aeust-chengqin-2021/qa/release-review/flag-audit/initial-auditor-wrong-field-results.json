@@ -1,0 +1,2286 @@
+{
+  "candidate_commit": "4116148c135d8a67a444ce8bf33fb64aba3e06a3",
+  "scope": "Flag provenance, exact interpretation and guarded diagnosis only. No whole-mesh exact certificate, slicer or physical print.",
+  "stl_sha256": "4e73e7094c83de47c19bcc6121fee575c1360b285d597773d983a873f46b7f5a",
+  "original_float_report_sha256": "9d7253369d81df71bdbdb40d4c0576d2452fe7eeed26d9bbf9e52c5933a94f23",
+  "diagnostic_script_sha256": "c8e9771b1c9dba285ae796e29d806b9f49fd681e06c098965e3cbccd3141b42c",
+  "auditor_script_sha256": "d7d1f7334b8b17dfc372776d75d5c62c380582f1b5e7d1bf973142fbeabf3a68",
+  "checks": {
+    "stl_sha_matches_fixed_input": true,
+    "report_sha_matches_original": true,
+    "report_references_actual_stl": true,
+    "original_float_self_screen_still_false": true,
+    "original_overall_screen_still_false": false,
+    "exactly_20_unique_original_flags": true,
+    "binary_stl_face_count_2936": true,
+    "independent_exact_sidedness_proves_all_original_flags": true,
+    "both_original_and_guarded_diagnoses_preserve_actual_flags_and_coordinates": true,
+    "independent_sidedness_controls_passed": true,
+    "unchanged_delivered_diagnosis_cli_exit0": true,
+    "rerun_pairs_equal_candidate_guarded_pairs": true,
+    "rerun_all_20_flags_covered_once": true,
+    "candidate_8_classifier_and_7_cli_controls_passed": true,
+    "six_extra_actual_cli_invalid_pair_guards_passed": true,
+    "all_candidate_files_unchanged_during_audit": true
+  },
+  "independent_classification_counts": {
+    "shared_vertex_only": 10,
+    "shared_edge_only": 10
+  },
+  "independent_pair_proofs": [
+    {
+      "original_flag": {
+        "faces": [
+          1547,
+          1561
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            6.0
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            10.199999809265137
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            10.199999809265137
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            10.800000190734863
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            10.800000190734863
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            10.199999809265137
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "76502474128342045/144115188075855872",
+            "63943568283/72057594037927936",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "3794091501085685/9007199254740992",
+            "60706359226717109/144115188075855872",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1560,
+          1561
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.3919104632692125
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            10.199999809265137
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            10.800000190734863
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            10.199999809265137
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            10.800000190734863
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            10.800000190734863
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            10.199999809265137
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "63943568283/72057594037927936",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "63943568283/72057594037927936",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1594,
+          1596
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            18.08333396911621
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            22.28333282470703
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            22.28333282470703
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            22.883333206176758
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            22.883333206176758
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            22.28333282470703
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "38251228378641495/72057594037927936",
+            "63943568283/72057594037927936",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "1897045319789535/4503599627370496",
+            "30353172721203999/72057594037927936",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1595,
+          1596
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.3919104632692267
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            22.28333282470703
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            22.883333206176758
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            22.28333282470703
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            22.883333206176758
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            22.883333206176758
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            22.28333282470703
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "63943568283/72057594037927936",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "63943568283/72057594037927936",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1613,
+          1615
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            34.36666488647461
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            34.36666488647461
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            30.16666603088379
+          ]
+        ],
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            34.36666488647461
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            34.96666717529297
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            34.96666717529297
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "31971885777/36028797018963968",
+            "0",
+            "38251228378641495/72057594037927936"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "1897045319789535/4503599627370496",
+            "30353172721203999/72057594037927936"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1614,
+          1615
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.391910941720056
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            34.36666488647461
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            34.96666717529297
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            34.36666488647461
+          ]
+        ],
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            34.36666488647461
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            34.96666717529297
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            34.96666717529297
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "31971885777/36028797018963968",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "0",
+            "31971885777/36028797018963968"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1646,
+          1648
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            42.25
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            46.45000076293945
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            46.45000076293945
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            47.04999923706055
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            47.04999923706055
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            46.45000076293945
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "19125622874850275/36028797018963968",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "948523090648075/2251799813685248",
+            "15176593252756555/36028797018963968",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1647,
+          1648
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.3919099848197902
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            46.45000076293945
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            47.04999923706055
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            46.45000076293945
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            47.04999923706055
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            47.04999923706055
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            46.45000076293945
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "15985841253/18014398509481984",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1671,
+          1673
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            54.33333206176758
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            58.53333282470703
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            58.53333282470703
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            59.13333511352539
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            59.13333511352539
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            58.53333282470703
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "19125622874850275/36028797018963968",
+            "31971885777/36028797018963968",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "948523090648075/2251799813685248",
+            "15176593252756555/36028797018963968",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1672,
+          1673
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.391910941720056
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            58.53333282470703
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            59.13333511352539
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            58.53333282470703
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            59.13333511352539
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            59.13333511352539
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            58.53333282470703
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "31971885777/36028797018963968",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "31971885777/36028797018963968",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1696,
+          1710
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            66.41666412353516
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            70.61666870117188
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            70.61666870117188
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            71.21666717529297
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            71.21666717529297
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            70.61666870117188
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "9562820122954665/18014398509481984",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "474261976077345/1125899906842624",
+            "7588303518532833/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1709,
+          1710
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.3919099848197902
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            70.61666870117188
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            71.21666717529297
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            70.61666870117188
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            71.21666717529297
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            71.21666717529297
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            70.61666870117188
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "15985841253/18014398509481984",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1864,
+          1866
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            78.5
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            82.69999694824219
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            82.69999694824219
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            83.30000305175781
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            83.30000305175781
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            82.69999694824219
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "4781401375947805/9007199254740992",
+            "3996511131/4503599627370496",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "237130557285365/562949953421312",
+            "3794144867111861/9007199254740992",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1865,
+          1866
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.391911898626063
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            82.69999694824219
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            83.30000305175781
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            82.69999694824219
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            83.30000305175781
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            83.30000305175781
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            82.69999694824219
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "3996511131/4503599627370496",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "3996511131/4503599627370496",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1885,
+          1887
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            90.58333587646484
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            94.78333282470703
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            94.78333282470703
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            95.38333129882812
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            95.38333129882812
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            94.78333282470703
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "4781401375947805/9007199254740992",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "237130557285365/562949953421312",
+            "3794144867111861/9007199254740992",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1886,
+          1887
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.3919099848197902
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            94.78333282470703
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            95.38333129882812
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            94.78333282470703
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            95.38333129882812
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            95.38333129882812
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            94.78333282470703
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "15985841253/18014398509481984",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1911,
+          1913
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            102.66666412353516
+          ],
+          [
+            80.0,
+            14.327507019042969,
+            106.86666870117188
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            106.86666870117188
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            107.46666717529297
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            107.46666717529297
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            106.86666870117188
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "9562820122954665/18014398509481984",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "474261976077345/1125899906842624",
+            "7588303518532833/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1912,
+          1913
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.3919099848197902
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            106.86666870117188
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            107.46666717529297
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            106.86666870117188
+          ]
+        ],
+        [
+          [
+            80.0,
+            14.371002197265625,
+            107.46666717529297
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            107.46666717529297
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            106.86666870117188
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "15985841253/18014398509481984",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "15985841253/18014398509481984",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1934,
+          1962
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            118.94999694824219
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            118.94999694824219
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            114.75
+          ]
+        ],
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            118.94999694824219
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            119.55000305175781
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            119.55000305175781
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "3996511131/4503599627370496",
+            "0",
+            "4781401375947805/9007199254740992"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "237130557285365/562949953421312",
+            "3794144867111861/9007199254740992"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          1935,
+          1962
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 2.3919118986260557
+      },
+      "actual_raw_binary_stl_triangles_mm": [
+        [
+          [
+            80.0,
+            14.327507019042969,
+            118.94999694824219
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            119.55000305175781
+          ],
+          [
+            82.30583190917969,
+            14.16034984588623,
+            118.94999694824219
+          ]
+        ],
+        [
+          [
+            82.30583190917969,
+            14.16034984588623,
+            118.94999694824219
+          ],
+          [
+            80.0,
+            14.371002197265625,
+            119.55000305175781
+          ],
+          [
+            82.90583038330078,
+            14.16034984588623,
+            119.55000305175781
+          ]
+        ]
+      ],
+      "independent_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "3996511131/4503599627370496",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "0",
+            "3996511131/4503599627370496"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      }
+    }
+  ],
+  "preserved_candidate_diagnoses": {
+    "diagnosis.json": {
+      "file_sha256": "94846e1a562dbea6690834cc6e891ef692857d4814ad49c757abfb3a15bab480",
+      "stl_binding_exact": true,
+      "original_report_binding_exact": true,
+      "row_count_exactly_20": true,
+      "row_checks": [
+        {
+          "faces": [
+            1547,
+            1561
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1560,
+            1561
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1594,
+            1596
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1595,
+            1596
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1613,
+            1615
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1614,
+            1615
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1646,
+            1648
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1647,
+            1648
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1671,
+            1673
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1672,
+            1673
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1696,
+            1710
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1709,
+            1710
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1864,
+            1866
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1865,
+            1866
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1885,
+            1887
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1886,
+            1887
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1911,
+            1913
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1912,
+            1913
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1934,
+            1962
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1935,
+            1962
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        }
+      ],
+      "all_record_provenance_checks_passed": true
+    },
+    "diagnosis-verified.json": {
+      "file_sha256": "fed9d8324d08d085f1f612d1c61accd1946ebb1b578b7bd90f5ead8e4b44d2f2",
+      "stl_binding_exact": true,
+      "original_report_binding_exact": true,
+      "row_count_exactly_20": true,
+      "row_checks": [
+        {
+          "faces": [
+            1547,
+            1561
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1560,
+            1561
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1594,
+            1596
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1595,
+            1596
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1613,
+            1615
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1614,
+            1615
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1646,
+            1648
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1647,
+            1648
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1671,
+            1673
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1672,
+            1673
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1696,
+            1710
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1709,
+            1710
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1864,
+            1866
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1865,
+            1866
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1885,
+            1887
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1886,
+            1887
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1911,
+            1913
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1912,
+            1913
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1934,
+            1962
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        },
+        {
+          "faces": [
+            1935,
+            1962
+          ],
+          "entire_original_flag_unchanged": true,
+          "actual_stl_triangles_equal": true,
+          "actual_shared_coordinates_equal": true,
+          "independent_classification_equal": true
+        }
+      ],
+      "all_record_provenance_checks_passed": true
+    }
+  },
+  "independent_controls": {
+    "shared_edge": {
+      "expected_proven": true,
+      "actual_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "0",
+            "-8"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "0",
+            "8"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      },
+      "expectation_passed": true
+    },
+    "shared_vertex": {
+      "expected_proven": true,
+      "actual_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "2",
+            "2"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "4",
+            "4"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_vertex_only"
+      },
+      "expectation_passed": true
+    },
+    "proper_crossing": {
+      "expected_proven": false,
+      "actual_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 0,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": false,
+          "distances": [
+            "-1",
+            "-1",
+            "3"
+          ],
+          "zero_vertex_count": 0
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": false,
+          "distances": [
+            "-4",
+            "4",
+            "0"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": false,
+        "contact_only_on_shared_topology_proven": false,
+        "classification": "not_proven_by_this_test"
+      },
+      "expectation_passed": true
+    },
+    "coplanar_overlap_not_waived": {
+      "expected_proven": false,
+      "actual_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": false,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": false,
+          "distances": [
+            "0",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 3
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": false,
+          "distances": [
+            "0",
+            "0",
+            "0"
+          ],
+          "zero_vertex_count": 3
+        },
+        "zero_hulls_equal_shared_topology": false,
+        "contact_only_on_shared_topology_proven": false,
+        "classification": "not_proven_by_this_test"
+      },
+      "expectation_passed": true
+    },
+    "near_coplanar_shared_edge": {
+      "expected_proven": true,
+      "actual_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 2,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "0",
+            "-1/1048576"
+          ],
+          "zero_vertex_count": 2
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": true,
+          "distances": [
+            "0",
+            "0",
+            "1/1048576"
+          ],
+          "zero_vertex_count": 2
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": true,
+        "classification": "shared_edge_only"
+      },
+      "expectation_passed": true
+    },
+    "near_coplanar_crossing_not_waived": {
+      "expected_proven": false,
+      "actual_proof": {
+        "proof_method": "Exact binary-coordinate plane sidedness; zero-vertex hull equals actual shared-coordinate set in both triangles",
+        "nonparallel_planes": true,
+        "shared_coordinate_count": 1,
+        "a_vertices_against_b_plane": {
+          "degenerate": false,
+          "same_side": false,
+          "distances": [
+            "0",
+            "-3/16777216",
+            "3/16777216"
+          ],
+          "zero_vertex_count": 1
+        },
+        "b_vertices_against_a_plane": {
+          "degenerate": false,
+          "same_side": false,
+          "distances": [
+            "0",
+            "1/4194304",
+            "-1/4194304"
+          ],
+          "zero_vertex_count": 1
+        },
+        "zero_hulls_equal_shared_topology": true,
+        "contact_only_on_shared_topology_proven": false,
+        "classification": "not_proven_by_this_test"
+      },
+      "expectation_passed": true
+    }
+  },
+  "delivered_cli_rerun": {
+    "exit_status": 0,
+    "stdout_file": "rerun-diagnosis.stdout.txt",
+    "stderr_file": "rerun-diagnosis.stderr.txt"
+  },
+  "delivered_control_rerun": {
+    "exit_status": 0,
+    "stdout_file": "rerun-controls.stdout.txt",
+    "stderr_file": "rerun-controls.stderr.txt"
+  },
+  "extra_cli_guards": {
+    "same_face": {
+      "exit_status": 1,
+      "stdout_file": "same_face.stdout.txt",
+      "stderr_file": "same_face.stderr.txt",
+      "guard_errors": [
+        "invalid_flag_face_pair"
+      ],
+      "diagnosed_pair_count": 0,
+      "passes_flag_diagnosis": false,
+      "expectation_passed": true
+    },
+    "negative_index": {
+      "exit_status": 1,
+      "stdout_file": "negative_index.stdout.txt",
+      "stderr_file": "negative_index.stderr.txt",
+      "guard_errors": [
+        "invalid_flag_face_pair"
+      ],
+      "diagnosed_pair_count": 0,
+      "passes_flag_diagnosis": false,
+      "expectation_passed": true
+    },
+    "bool_index": {
+      "exit_status": 1,
+      "stdout_file": "bool_index.stdout.txt",
+      "stderr_file": "bool_index.stderr.txt",
+      "guard_errors": [
+        "invalid_flag_face_pair"
+      ],
+      "diagnosed_pair_count": 0,
+      "passes_flag_diagnosis": false,
+      "expectation_passed": true
+    },
+    "noninteger_index": {
+      "exit_status": 1,
+      "stdout_file": "noninteger_index.stdout.txt",
+      "stderr_file": "noninteger_index.stderr.txt",
+      "guard_errors": [
+        "invalid_flag_face_pair"
+      ],
+      "diagnosed_pair_count": 0,
+      "passes_flag_diagnosis": false,
+      "expectation_passed": true
+    },
+    "pair_length_three": {
+      "exit_status": 1,
+      "stdout_file": "pair_length_three.stdout.txt",
+      "stderr_file": "pair_length_three.stderr.txt",
+      "guard_errors": [
+        "invalid_flag_face_pair"
+      ],
+      "diagnosed_pair_count": 0,
+      "passes_flag_diagnosis": false,
+      "expectation_passed": true
+    },
+    "malformed_flag": {
+      "exit_status": 1,
+      "stdout_file": "malformed_flag.stdout.txt",
+      "stderr_file": "malformed_flag.stderr.txt",
+      "guard_errors": [
+        "invalid_flag_face_pair"
+      ],
+      "diagnosed_pair_count": 0,
+      "passes_flag_diagnosis": false,
+      "expectation_passed": true
+    }
+  },
+  "candidate_files_sha256": {
+    ".gitattributes": "308a40fa1d89ae5ea4390b4c9b46a0108b09f171f07898f25d451fa0c69c4e9f",
+    "ESTIMATES-AND-SIMPLIFICATIONS.md": "20dbfd4f6ac07fb5a7044f14dcc31d66d68f449f8866b0d34f84af4fa5f8ae20",
+    "parameters.json": "ff9cf99a125db69db6306b1921ff53a2bbc2246e05bbb758833b28ba494dcbc2",
+    "PRINTING-LIMITS.md": "d448c5405469b1743c998fd03cd0acb741d1d239820c8a1e071ad74638a019f6",
+    "public-sources.json": "93a0b3bb0f1e17830fddb5f312127aa18d471a00ab089f354f845e52f51acaf7",
+    "README.md": "056f3c5082ad774925b6e937d2c6ce078d93a42924e79bc4166acaa418361948",
+    "REPRODUCE.md": "2c88d78c9e22509cb82c111431c8d67c3c2b2941021b26ef4ec92b77dbff5252",
+    "requirements.txt": "8f8e3bb13a513bbd2b1e6b9002e8df506cfc3f5058fc261a19d1eb0aaa46b70e",
+    "SOURCE-CREDITS.md": "6a198a8ad94b7783865fd04b63415c933376f93aebd69c64617471ea1b7728cc",
+    "toolchain.json": "3f054f0fcef19d0da529665eb2117c7e5d43cb870c37386f798b2efe53d7ae03",
+    "qa\\CANDIDATE-BINDING.json": "a3eeaf95ef6549f6c1ab1ed36c61345e3a6e60176a2ccf2df5e723257fd8bcac",
+    "qa\\CHECKER-METHOD.md": "4734161b3d1b9f90d45c44a1d0d2e998d08499f4f876a08650537e0ed56b2666",
+    "qa\\check_declared_features.py": "508a2190711baf30d423f6023a592be27126d234d2621ada152378798f2d73b5",
+    "qa\\control-evidence.json": "fe3870b39244b39be561c330ec33d0dc36c444bf0eda257e5642e16761fdb072",
+    "qa\\declared-feature-review.json": "8223d930e4f9e76d1c493845e21663242166f3f3989574274f033c0a82502823",
+    "qa\\failed-connector-source.py": "5fd7306e1f7908deedbb8a8a33e9b455b4bff780434bc53398275788f328ac8f",
+    "qa\\first-render-manifest.json": "9b74964fb1de13720e5f39cbc9b5d0105df05e1e3858897a1d463f5eecb56129",
+    "qa\\first-render.stderr.log": "9dfc69aa12e78e5ef4195bc35f5d2296f4f306a81e4ce2448b9fdcc80cfc1176",
+    "qa\\first-render.stdout.log": "5d2f663dc18ef8279acfb3d7c99073769a1bf1e4a7a4115edbf9868cc1632572",
+    "qa\\flag_diagnosis.py": "c8e9771b1c9dba285ae796e29d806b9f49fd681e06c098965e3cbccd3141b42c",
+    "qa\\geometry.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\geometry.stdout.log": "a0574fbba005679539fe9f2fbd1bd0283de1576a26317ea868d922d0fa674504",
+    "qa\\independent_geometry_qa.py": "0c0ca4e69386b2a5d7a531415eb4ca3ca16c599177c8ffdd8cfee37ed657b43c",
+    "qa\\PACKAGE-MANIFEST.json": "2aa00fa0f578cd7c6e262bad6d1951d296f5f2c396bf1187b33e7ee3973a3e97",
+    "qa\\qa-report.json": "9d7253369d81df71bdbdb40d4c0576d2452fe7eeed26d9bbf9e52c5933a94f23",
+    "qa\\README.md": "5355e89eff586f3c3d8cc326d11eba2e0a707c3c2955d5e9328ef3f56b3e406d",
+    "qa\\render.stderr.log": "9dfc69aa12e78e5ef4195bc35f5d2296f4f306a81e4ce2448b9fdcc80cfc1176",
+    "qa\\render.stdout.log": "323ed74213e792ed7c91c2cd221c9d8433a70078339b6215dace9141dec832a9",
+    "qa\\reproducibility.json": "41e559a72fe6300f4176f19f4a9189548a391cda61aecd2a5deeed7e059a140c",
+    "qa\\reproducibility.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\reproducibility.stdout.log": "8e69ebae2bee31186ca8565806cc75550e9d5e4f34d5732e9ec48e3aa5277272",
+    "qa\\run_controls.py": "94b26ba514f6b35f7f58138817c4ef4cfbe9f5a8de0b28446ec981460de7e703",
+    "qa\\run_diagnosis_controls.py": "4efc9fca23f402b7e0fe1b463536b32e7c88218a7583970b3d214eccac3808d0",
+    "qa\\validation-events.json": "0e68a3e68be98f24fba002adf073ce755179d020f5b5bb5d7872bb31fbde25b0",
+    "qa\\verify_reproducibility.py": "0ded040f6e35c20a42d8aa77ab83c9fdae07e1fdf7365539fb1aa1c27efe15d3",
+    "qa\\visual-inspection.json": "bf85450dad6e73ef0064f106e4fd52b96464d7e5b1ace72243d840352e408b9e",
+    "source\\build_model.py": "95346bf7338a9286995f65e19f7cf94ff9836fd24cded72e374d4dad283b2fbe",
+    "source\\render_preview.py": "bf1360980573275f46e6dc65c2dedae4713d86349d045e57fa4ade4d57de0940",
+    "qa\\control-artifacts\\clean_cube.json": "d5b7623d8d307aabab99c27435ef7608b1a32b4d1b28795bb20a1ba763b18863",
+    "qa\\control-artifacts\\clean_cube.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\control-artifacts\\clean_cube.stdout.txt": "d1b2b960d12b01711a786fe3baf2b23375f2f8a2a38e71bc5247a751acdc45c9",
+    "qa\\control-artifacts\\clean_cube.stl": "74120293f87d683a176db536c1d993ba71ebba56c5b10383b0e31e0375d19ae1",
+    "qa\\control-artifacts\\thin_0p4mm_bar.json": "41e1307ddd9f733c88f6fbceb9f92d4d7df6a99fd2da52a2658acf8c0fc4e518",
+    "qa\\control-artifacts\\thin_0p4mm_bar.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "qa\\control-artifacts\\thin_0p4mm_bar.stdout.txt": "84fce1950e5d5afd38e760d033c493a82215b8aa76afe0d1a1d912d64257b827",
+    "qa\\control-artifacts\\thin_0p4mm_bar.stl": "b03b102246e41e855f3abf0055d76a9e117d42a6c57d038cd4fd31f0f0cdc0ad",
+    "qa\\flag-diagnosis\\controls.json": "6418799cf14d0f9fcf253a7cf5c599a2aacf5cb7af6c04456aeef0a7c0f4da04",
+    "qa\\flag-diagnosis\\diagnosis-verified.json": "fed9d8324d08d085f1f612d1c61accd1946ebb1b578b7bd90f5ead8e4b44d2f2",
+    "qa\\flag-diagnosis\\diagnosis.json": "94846e1a562dbea6690834cc6e891ef692857d4814ad49c757abfb3a15bab480",
+    "qa\\flag-diagnosis\\README.md": "b99e4e951cfc80a068a23d68ff546f8e41a1915c6f0049da056b5ec9f163134c",
+    "qa\\flag-diagnosis\\guard-controls\\crossing.stl": "7d9c483c126b3823704895e43b55318dcfc49e9ad485f5d4d5f6694a7f110add",
+    "qa\\flag-diagnosis\\guard-controls\\degenerate.stl": "7269fcbd41d7012bba350ec01bf8daa38fadae499bc58e4ff2c4f8fa6e5ddbe2",
+    "qa\\flag-diagnosis\\guard-controls\\degenerate_mesh.input.json": "eeb96d8b55825cd5620e9a99b894199efacbe7bcda527eb9401727724b1cab01",
+    "qa\\flag-diagnosis\\guard-controls\\degenerate_mesh.result.json": "77a220aa2bac01f5c93ea66ce3d308ba5b126431366103c046074f6f77d041fa",
+    "qa\\flag-diagnosis\\guard-controls\\duplicate_reversed_pair.input.json": "7bffebf4e22fb918116a79abde4749e3bb8a5f5b81bbafd20b60bc91be4a3fba",
+    "qa\\flag-diagnosis\\guard-controls\\duplicate_reversed_pair.result.json": "b0087cedad847608f2dff84108ffe3b77169eb0967c6872b75bf30b535d926b2",
+    "qa\\flag-diagnosis\\guard-controls\\empty_flag_list.input.json": "211233f784598d8725205e15025765d88a59c47de184d3fdad14378dd4c41e45",
+    "qa\\flag-diagnosis\\guard-controls\\empty_flag_list.result.json": "9d5b5d8f98b2cbdf782e8b10f006aa816678d22f56b91ec11daf882d1e1b5959",
+    "qa\\flag-diagnosis\\guard-controls\\out_of_range_face.input.json": "77d0589f5e393f2565c99ccea178e17fb7728a3d8905d0259df79637b41a82d1",
+    "qa\\flag-diagnosis\\guard-controls\\out_of_range_face.result.json": "98c06c14ce6282b1e73f0039689dd1d2899b43f8d64b3d681b6b3c56dd11dac4",
+    "qa\\flag-diagnosis\\guard-controls\\shared_edge.stl": "83bd8c16d87bb84e5d666a86050d68f1d6e65748ea6c04e11a55ede531c6e423",
+    "qa\\flag-diagnosis\\guard-controls\\unexpected_exact_crossing.input.json": "9fc85b7fc0aca6aa8576afa1f05250c004e44153ce60d99cd273186ff5e90fbd",
+    "qa\\flag-diagnosis\\guard-controls\\unexpected_exact_crossing.result.json": "3a5e8c981106e2e86db2f5fdc7d8321e9859680fb3f68df5628291301e11469d",
+    "qa\\flag-diagnosis\\guard-controls\\valid_shared_edge.input.json": "cd868549b3fc8f24cfb47cbe55a3f711656878ea15fcb9e579c82ac6e967a6b0",
+    "qa\\flag-diagnosis\\guard-controls\\valid_shared_edge.result.json": "4b222167961e1a1a1b0431daa413c8527a303baf1048972e783a89e29233c3db",
+    "qa\\flag-diagnosis\\guard-controls\\wrong_input_hash.input.json": "9d7a4acbf2376448403a7465f9107fa420f49041339c9c9aa01fc4d88b16f4b9",
+    "qa\\flag-diagnosis\\guard-controls\\wrong_input_hash.result.json": "39765ddfca391c26eab7b57639ebf121057316f45c4f8e96f8ab6a0779e82aa5",
+    "previews\\v1\\connector.png": "204a4ccae659e55c8d4aaa5e698019c49763dbef014becbd54443491e3266d1c",
+    "previews\\v1\\end-negative-x.png": "11fd31170e13944cf96223be5d9b4336e38d2e9318b3f6ecad89414191a476ef",
+    "previews\\v1\\end-positive-x.png": "d7539c954f756ac01c72403565bd09cc0db15850a2145aaac39487139f028f17",
+    "previews\\v1\\front.png": "3b2ab343ac9d68b013e6b8d7d938d36f525472ecf1631f8c7872c700f7b82e28",
+    "previews\\v1\\long-front.png": "9715ae185f9c48e37cd261f3a524b29bca1a0271414119d4b8131e627538550e",
+    "previews\\v1\\long-rear.png": "9ab31fb74d4276211ebf81f1e3670a13e25a3103e8f25d492107e2fe53c245b5",
+    "previews\\v1\\rear.png": "d5c452914b2c6b56545617c79679eb5e60f0bc2467344d33a68c9894a88aa5da",
+    "previews\\v1\\render-manifest.json": "ebb73f15f5179792f31462ff5f42f4c2a928553a8c191227d53092e2d51e3e4d",
+    "previews\\v1\\top.png": "6eeffe0662420bcd5b8e69aeb69884ff402dfceba475ee468d46636a398e2d6b",
+    "models\\v1\\build-report.json": "8b47b3c0cf38823822c23d4dd2f9dbed06d6e1ba53339f9281b13d9d9e7bd377",
+    "models\\v1\\model.stl": "4e73e7094c83de47c19bcc6121fee575c1360b285d597773d983a873f46b7f5a",
+    "models\\v1\\scene.blend": "5cf2b50f83e9f897ba2aaf4e61c806f4bf3ab7b90c9174c20c6c83a160fd1b25"
+  },
+  "all_checks_passed": false
+}

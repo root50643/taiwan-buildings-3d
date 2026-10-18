@@ -1,0 +1,192 @@
+{
+  "method": "Own STL slice polygons at representative full and recessed connector levels; only redundant collinear coordinates simplified by 1e-7 mm for corner-angle readability, not used in STL QA. No candidate source generator/QA geometry is imported.",
+  "stl_sha256": "4e73e7094c83de47c19bcc6121fee575c1360b285d597773d983a873f46b7f5a",
+  "rows": [
+    {
+      "z_mm": 4.0,
+      "material_components": 1,
+      "tips": [
+        {
+          "label": "A",
+          "nearest_actual_boundary_vertex_mm": [
+            90.80000305,
+            -31.39999962
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 85.13550071380608,
+          "distance_to_0_8mm_core_mm": 0.591312256078465,
+          "adjacent_boundary_vertices_mm": [
+            [
+              96.30000305,
+              -22.60000038
+            ],
+            [
+              80.0,
+              -23.30000114
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "nearest_actual_boundary_vertex_mm": [
+            96.30000305,
+            -22.60000038
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 71.0893068963163,
+          "distance_to_0_8mm_core_mm": 0.6880687469101372,
+          "adjacent_boundary_vertices_mm": [
+            [
+              94.20437622,
+              -22.11253738
+            ],
+            [
+              90.80000305,
+              -31.39999962
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "z_mm": 7.0,
+      "material_components": 1,
+      "tips": [
+        {
+          "label": "A",
+          "nearest_actual_boundary_vertex_mm": [
+            90.80000305,
+            -31.39999962
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 85.13550071380608,
+          "distance_to_0_8mm_core_mm": 0.591312256078465,
+          "adjacent_boundary_vertices_mm": [
+            [
+              96.30000305,
+              -22.60000038
+            ],
+            [
+              80.0,
+              -23.30000114
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "nearest_actual_boundary_vertex_mm": [
+            96.30000305,
+            -22.60000038
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 68.24488542212777,
+          "distance_to_0_8mm_core_mm": 0.7130591225665474,
+          "adjacent_boundary_vertices_mm": [
+            [
+              93.60437012,
+              -22.11253738
+            ],
+            [
+              90.80000305,
+              -31.39999962
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "z_mm": 10.5,
+      "material_components": 1,
+      "tips": [
+        {
+          "label": "A",
+          "nearest_actual_boundary_vertex_mm": [
+            90.80000305,
+            -31.39999962
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 85.13550071380608,
+          "distance_to_0_8mm_core_mm": 0.591312256078465,
+          "adjacent_boundary_vertices_mm": [
+            [
+              96.30000305,
+              -22.60000038
+            ],
+            [
+              80.0,
+              -23.30000114
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "nearest_actual_boundary_vertex_mm": [
+            96.30000305,
+            -22.60000038
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 71.08930695664888,
+          "distance_to_0_8mm_core_mm": 0.6880687464030925,
+          "adjacent_boundary_vertices_mm": [
+            [
+              95.25218964,
+              -22.35626888
+            ],
+            [
+              90.80000305,
+              -31.39999962
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "z_mm": 120.0,
+      "material_components": 1,
+      "tips": [
+        {
+          "label": "A",
+          "nearest_actual_boundary_vertex_mm": [
+            90.80000305,
+            -31.39999962
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 85.13550071380608,
+          "distance_to_0_8mm_core_mm": 0.591312256078465,
+          "adjacent_boundary_vertices_mm": [
+            [
+              96.30000305,
+              -22.60000038
+            ],
+            [
+              80.0,
+              -23.30000114
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "nearest_actual_boundary_vertex_mm": [
+            96.30000305,
+            -22.60000038
+          ],
+          "distance_from_declared_endpoint_mm": 3.073580976966561e-06,
+          "interior_angle_deg": 71.0893068963163,
+          "distance_to_0_8mm_core_mm": 0.6880687469101372,
+          "adjacent_boundary_vertices_mm": [
+            [
+              94.20437622,
+              -22.11253738
+            ],
+            [
+              90.80000305,
+              -31.39999962
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "The explicit Yuanzhi cut has attached convex corners; B is acute. They have mathematically tapered local tips and may be rounded or omitted locally by nozzle paths. These are ends of a broad filled connector, not detached thin walls, unsupported appendages or a second STL component. Every independently sampled material component has a surviving single 0.8 mm eroded core. This does not prove a global positive pointwise minimum thickness, especially at corner tips.",
+  "requires_slicer_review": "Inspect the cut-end tips and connector-to-main joining corner, shallow horizontal relief and tall-body adhesion/stability at target nozzle/layer size; no G-code or actual print was tested."
+}

@@ -1,0 +1,25 @@
+{
+  "python": "3.13.9",
+  "platform": "Windows AMD64",
+  "packages": {
+    "numpy": "2.5.4",
+    "trimesh": "4.12.2",
+    "manifold3d": "3.3.2",
+    "shapely": "2.1.2",
+    "scipy": "1.16.3",
+    "rtree": "1.4.1",
+    "bpy": "5.2.2",
+    "zstandard": "0.24.0",
+    "Pillow": "12.0.0"
+  },
+  "geometry": "Original ring/box/recess construction using trimesh + manifold CSG; binary STL export and reread; no exported-mesh repair",
+  "render": "Blender 5.2.2 LTS via bpy, Cycles CPU,4 threads,32 samples,1000x780,seed0,no denoising",
+  "render_runs": "Two author runs; independent reviewer rerendered one front view only with identical decoded pixels. Publication cleanup did not rerender.",
+  "managed_environment": "Existing shared dependency installations were read only; BLENDER_USER_RESOURCES set to a writable task-local directory. No tool installation or dependency modification performed.",
+  "slicer": "No slicer/G-code validation or physical printing performed",
+  "git_base": "56c252c0207bc8af202cc8b5b9e66da1c08a028b",
+  "workspace_rules": "Tracked repository has no AGENTS.md or .agents/skills; searched task/ancestor locations and found no applicable skill files. Followed repository README limits, existing AEUST documentation and wfu-apollo workflow.",
+  "workflow_reuse": "build_model uses existing trimesh/manifold conventions; render_preview and verify_reproducibility adapted from wfu-apollo at git_base. Geometry checker provenance in qa/CHECKER-METHOD.md.",
+  "status": "Release after independent GO; original20 numerical self-contact flags and independent36 strict support flags remain failed, separately interpreted as nonblocking. No slicer/G-code or physical print.",
+  "publication_metadata": "PNG File text and Blender FileSelectParams.dir only; other chunks/IDAT/pixels and all other decompressed Blend bytes retained. Text logs anonymized; original SHA mapping retained."
+}

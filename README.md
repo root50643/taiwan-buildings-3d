@@ -1,8 +1,8 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **491 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 420 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **492 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 421 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
-全庫有 **107 所大專校院至少一套模型**，合計 **459 套校園相關模型**；另有 **32 套非大專校園模型**。下方新增目錄為106校／420套，另計原有國立聯合大學38套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標23套不列入高教校數。
+全庫有 **107 所大專校院至少一套模型**，合計 **460 套校園相關模型**；另有 **32 套非大專校園模型**。下方新增目錄為106校／421套，另計原有國立聯合大學38套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標23套不列入高教校數。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -51,7 +51,7 @@
 | [<img src="東海大學/校本部/buildings/thu-original-arts-center-1964/output/preview-entrance.png" alt="東海大學實際模型預覽" width="260">](東海大學/README.md)<br>**[東海大學｜1 組](東海大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="福智佛教學院/校本部/buildings/bwbc-zongde-administration-library-2024/previews/v17/front.png" alt="福智佛教學院宗德樓實際模型預覽" width="260">](福智佛教學院/README.md)<br>**[福智佛教學院｜1 組](福智佛教學院/README.md)**<br>2024宗德樓單棟外觀研究模型，非全校完成 | [<img src="臺北市立大學/天母校區/buildings/utaipei-tianmu-gymnasium-a-2012/renders/front.png" alt="臺北市立大學天母體育館A棟實際模型預覽" width="260">](臺北市立大學/README.md)<br>**[臺北市立大學｜1 組](臺北市立大學/README.md)**<br>2012天母體育館A棟外觀研究模型，非全校完成 |
 | [<img src="中信金融管理學院/校本部/buildings/ctbc-dormitory-hall-early/previews/v11/front.png" alt="中信金融管理學院原女生宿舍暨演講廳實際模型預覽" width="260">](中信金融管理學院/README.md)<br>**[中信金融管理學院｜1 組](中信金融管理學院/README.md)**<br>原女生宿舍暨演講廳早期外觀研究模型，非全校完成 | [<img src="臺北醫學大學/信義校區/buildings/tmu-teaching-building-restored/previews/v3/front.png" alt="臺北醫學大學信義校區教學大樓修復後實際模型預覽" width="260">](臺北醫學大學/README.md)<br>**[臺北醫學大學｜1 組](臺北醫學大學/README.md)**<br>信義校區教學大樓修復後主體，未含廣場鐘樓；非全校完成 | [<img src="高雄醫學大學/校本部/buildings/kmu-library-two-early/previews/v5-public/front.png" alt="高雄醫學大學圖書二館早期完成外觀實際模型預覽" width="260">](高雄醫學大學/README.md)<br>**[高雄醫學大學｜1 組](高雄醫學大學/README.md)**<br>圖書二館2005作品集早期外觀，照片日期未知；非全校完成 |
 | [<img src="宏國德霖科技大學/校本部/buildings/hdut-hanjian-building/previews/v14-public/front.png" alt="宏國德霖科技大學罕見樓早期完成外觀實際模型預覽" width="260">](宏國德霖科技大學/README.md)<br>**[宏國德霖科技大學｜1 組](宏國德霖科技大學/README.md)**<br>餐旅廚藝教學大樓／罕見樓2017實照約束外觀；非全校完成 |  |  |
-| [<img src="亞東科技大學/校本部/buildings/aeust-youxiang-building/qa/render-check/v15-author-preflight/sanitized-previews/front.png" alt="亞東科技大學有庠科技大樓早期外觀代表模型實際預覽" width="260">](亞東科技大學/README.md)<br>**[亞東科技大學｜1 組](亞東科技大學/README.md)**<br>有庠科技大樓竣工初期外觀代表；尺度估計、非全校完成 |  |  |
+| [<img src="亞東科技大學/校本部/buildings/aeust-youxiang-building/qa/render-check/v15-author-preflight/sanitized-previews/front.png" alt="亞東科技大學有庠科技大樓早期外觀代表模型實際預覽" width="260">](亞東科技大學/README.md)<br>**[亞東科技大學｜2 組](亞東科技大學/README.md)**<br>有庠初期外觀與誠勤約2021年外觀代表；尺度估計、非全校完成 |  |  |
 | [<img src="吳鳳科技大學/校本部/buildings/wfu-shengyou/qa/render-check/v13/sanitized-previews/front.png" alt="吳鳳科技大學生有樓入口與三角中庭模型實際預覽" width="260">](吳鳳科技大學/README.md)<br>**[吳鳳科技大學｜2 組](吳鳳科技大學/README.md)**<br>生有樓與APOLLO主館外觀代表；尺度估計、非全校完成 |  |  |
 | [<img src="長庚科技大學/林口校區/buildings/cgust-linkou-gym/previews/v10/front.png" alt="長庚科技大學林口體育館分段弧頂與入口模型實際預覽" width="260">](長庚科技大學/README.md)<br>**[長庚科技大學｜1 組](長庚科技大學/README.md)**<br>林口體育館相對比例外觀代表；尺度估計、非全校完成 |  |  |
 
@@ -77,7 +77,7 @@
 
 ## 模型範圍與限制
 
-- 491 組是模型／列印包數量，並不等於 491 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
+- 492 組是模型／列印包數量，並不等於 491 棟已核實且彼此獨立的建築。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
 - 均為依公開資料建立的外觀近似模型，不是官方模型、測繪成果、BIM 或工程圖；背面、屋頂與細節可能含推估、簡化或加粗。
 - 各件採獨立展示尺寸，沒有共同校園／院區比例尺。STL 不含預覽材質或色彩。
 - 既有數位網格檢查不等於切片或實體試印成功；尚未實體試印，請檢查薄壁、懸挑、支撐及列印設備限制。

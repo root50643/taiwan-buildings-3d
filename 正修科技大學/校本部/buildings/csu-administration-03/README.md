@@ -1,6 +1,6 @@
 # 正修科技大學｜綜合行政大樓 03A/B/C
 
-**固定幾何已獨立條件 GO；本文書修正版待增量確認，尚未登錄公開模型總數或推送。** 03A/B/C 為同棟三區，本件只算一套，含主體與截頂屋蓋兩個列印分件。外觀依實看公開影像作相對估計，非測繪、BIM、工程圖或 2026 現況紀錄。
+**正式交付版：固定幾何及文書修正已獨立增量 GO；保留製造條件與嚴格 false。** 03A/B/C 為同棟三區，本件只算一套，含主體與截頂屋蓋兩個列印分件。外觀依實看公開影像作相對估計，非測繪、BIM、工程圖或 2026 現況紀錄。[發布範圍與核對](PUBLICATION.md)。
 
 | 組裝正面 | 組裝背面 |
 |---|---|
@@ -32,7 +32,7 @@ python -B source/render_preview.py
 
 生成器讀取 parameters.json，不需要照片、網路、私人路徑或原作者檔案。`parameter_semantics` 列出實際控制欄位；門凹深、`relief.*`、`manufacturing.*` 等另為聲明值，幾何仍由源碼中的固定座標生成，修改聲明不會改尺寸。本輪僅修正聲明，生成器與 STL 均不改。原 v2 build/render manifest 與舊 QA 是 76681 固定快照，其參數 SHA 對應[原參數快照](qa/documentation-revision-1/parameters-at-76681.json)；[增量勘誤與新校驗](qa/documentation-revision-1/README.md)另外綁定現用參數，不能把舊 manifest 當作新參數的執行紀錄。渲染器載入固定 v2 STL；重新生成到其他資料夾後，請先比較輸出。STL 單位 mm，沒有地理座標或統一校園比例。窗列與端部六條淺槽是符號化外觀，不代表實際樓層、窗數或開放梯間構造。場景材質僅便於辨識，STL 不帶顏色。
 
-[獨立覆核：條件 GO 與完整限制](qa/independent-76681/INDEPENDENT-CSU-REVIEW.zh-TW.md)。本輪仍待獨立檢查者增量確認，尚未發布。
+[獨立覆核：條件 GO 與完整限制](qa/independent-76681/INDEPENDENT-CSU-REVIEW.zh-TW.md)；[54c4 最終增量確認](qa/final-incremental-54c4/FINAL-INCREMENTAL-REVIEW.zh-TW.md)解除先前文書必修，沒有要求改幾何、再切片或重渲染。這不是實體試印、支撐清除或膠合驗證通過。
 
 16張原預覽另清除私人 `File` metadata；圖像 IDAT／像素完全相同，原 render manifest 不改。[前後檔案映射](qa/documentation-revision-1/png-metadata-redaction.json)提供原／新 SHA，不能把歷史 PNG SHA 當作現用檔案指紋。獨立覆核的公開副本也有逐檔路徑遮蔽映射，沒有改數字、座標或旗標。
 

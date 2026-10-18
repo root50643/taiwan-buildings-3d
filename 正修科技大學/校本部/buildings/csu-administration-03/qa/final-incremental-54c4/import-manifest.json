@@ -1,0 +1,355 @@
+{
+  "import_version": 1,
+  "fixed_review_commit": "54c4ad2a30e6600e85fbf054d4c384f9e5304748",
+  "baseline_review_commit": "76681c5dcedc88d684946780e795d7914a88c075",
+  "source_manifest_role": "SOURCE-ONLY: describes original reviewer bytes. This import-manifest maps originals to redacted delivery bytes.",
+  "source_manifest_sha256": "81d61672e2cec1a546157e76fa5defb9635e08e41a2141929f23f2023b16cb61",
+  "source_manifest_entry_count": 10,
+  "all_original_manifest_entries_size_SHA256_verified": true,
+  "original_final_verification_sha256": "3c64350b6a3a6dd6c2bb4e296062a19ac76bafeea76efffefd63992130373fb2",
+  "read_only_source_integrity": {
+    "all_source_files_same_before_after": true,
+    "source_file_count": 19,
+    "source_tree_snapshot_sha256": "3de0910c475e9475984e2542576039212f8a613039a30693ce3d94a8a8fedf63",
+    "scope": "Entire reviewer directory read before/after; no reviewer source, ZIP, environment or rebuilt model modified."
+  },
+  "core_STL_SHA256_before": {
+    "parts/body.stl": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+    "parts/roof.stl": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+    "assembly.stl": "6d3a8796831cd83bd7e012664dd8f094b6e700998031e71db38567fc1ecff416"
+  },
+  "core_STL_SHA256_after": {
+    "parts/body.stl": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+    "parts/roof.stl": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+    "assembly.stl": "6d3a8796831cd83bd7e012664dd8f094b6e700998031e71db38567fc1ecff416"
+  },
+  "preservation": {
+    "JSON_scalar_leaves_compared": 2935,
+    "changed_JSON_string_values": 6,
+    "all_original_JSON_types_structure_numeric_boolean_null_values_preserved": true,
+    "original_scientific_flags_coordinates_conclusions_and_recorded_hashes_unchanged": true
+  },
+  "historical_scripts_provenance_only": [
+    "check_imported_evidence.py",
+    "finalize_incremental.py",
+    "independent_incremental_check.py"
+  ],
+  "scope": "Import integrity only. No new geometry, slicing, render, full QA, Library transfer, Git or publication action.",
+  "excluded": [
+    "Original ZIP archive",
+    "current-parameter-rebuild-package/",
+    "current-parameter-rebuilt/",
+    "Third-party source media",
+    "Environments and external receipts"
+  ],
+  "files": [
+    {
+      "source_path": "task-7/csu-54c4/agent-text/TEXT-SEMANTICS-INCREMENTAL-REVIEW.zh-TW.md",
+      "destination_path": "agent-text/TEXT-SEMANTICS-INCREMENTAL-REVIEW.zh-TW.md",
+      "source_bytes": 5177,
+      "source_sha256": "b0b9e805fd321e2e35d7f57b27dbb5561a6daf1625977f6e3ae0c46277413cd7",
+      "delivered_bytes": 5177,
+      "delivered_sha256": "b0b9e805fd321e2e35d7f57b27dbb5561a6daf1625977f6e3ae0c46277413cd7",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null
+    },
+    {
+      "source_path": "task-7/csu-54c4/check_imported_evidence.py",
+      "destination_path": "check_imported_evidence.py",
+      "source_bytes": 3107,
+      "source_sha256": "5b6de92ea782b5cc16f559a49b7887417b1534b4d300574a68bd72857ca90512",
+      "delivered_bytes": 3230,
+      "delivered_sha256": "ec3ca64c62bd77c672beb5941b54b9636e0fd330cd5d480fdede06896381c32d",
+      "changes": [
+        {
+          "kind": "private-hostpath-redaction",
+          "path_class": "model-root",
+          "replacement": "<MODEL_ROOT>",
+          "occurrences": 1
+        },
+        {
+          "kind": "historical-entrypoint-guard",
+          "reason": "Top-level historical workflow may rebuild or overwrite reports and depends on fixed HEAD, entire old snapshot, outside original reviewer evidence and Library receipts. No historical result was cleared or changed."
+        }
+      ],
+      "private_original_retained": true,
+      "private_original_task_relative_path": "private-logs/final-incremental-54c4/check_imported_evidence.py",
+      "changed_line_locations": [
+        {
+          "operation": "insert",
+          "original_line_start": 1,
+          "original_line_end_exclusive": 1,
+          "delivered_line_start": 1,
+          "delivered_line_end_exclusive": 4
+        },
+        {
+          "operation": "replace",
+          "original_line_start": 6,
+          "original_line_end_exclusive": 7,
+          "delivered_line_start": 9,
+          "delivered_line_end_exclusive": 10
+        }
+      ]
+    },
+    {
+      "source_path": "task-7/csu-54c4/FINAL-INCREMENTAL-REVIEW.zh-TW.md",
+      "destination_path": "FINAL-INCREMENTAL-REVIEW.zh-TW.md",
+      "source_bytes": 6401,
+      "source_sha256": "fe43347891f47f2202af605ce860879b1a9521a4ef6c4715b1ae569cabe6ffd7",
+      "delivered_bytes": 6401,
+      "delivered_sha256": "fe43347891f47f2202af605ce860879b1a9521a4ef6c4715b1ae569cabe6ffd7",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null
+    },
+    {
+      "source_path": "task-7/csu-54c4/final-verification.json",
+      "destination_path": "final-verification.json",
+      "source_bytes": 1753,
+      "source_sha256": "3c64350b6a3a6dd6c2bb4e296062a19ac76bafeea76efffefd63992130373fb2",
+      "delivered_bytes": 1753,
+      "delivered_sha256": "3c64350b6a3a6dd6c2bb4e296062a19ac76bafeea76efffefd63992130373fb2",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null,
+      "changed_JSON_string_pointers": [],
+      "JSON_structure_numeric_boolean_null_values_preserved": true
+    },
+    {
+      "source_path": "task-7/csu-54c4/finalize_incremental.py",
+      "destination_path": "finalize_incremental.py",
+      "source_bytes": 5595,
+      "source_sha256": "8ebd1ac4f7a3555e76494611dec1e7cf02b1d78c3c571b1d41ab325659cb3839",
+      "delivered_bytes": 5688,
+      "delivered_sha256": "f44cf06d8444cd73a0acf02b31213fdac50296b59cd15632795eb99514456208",
+      "changes": [
+        {
+          "kind": "private-hostpath-redaction",
+          "path_class": "model-root",
+          "replacement": "<MODEL_ROOT>",
+          "occurrences": 1
+        },
+        {
+          "kind": "private-hostpath-redaction",
+          "path_class": "author-task-root",
+          "replacement": "<AUTHOR_TASK_ROOT>",
+          "occurrences": 1
+        },
+        {
+          "kind": "historical-entrypoint-guard",
+          "reason": "Top-level historical workflow may rebuild or overwrite reports and depends on fixed HEAD, entire old snapshot, outside original reviewer evidence and Library receipts. No historical result was cleared or changed."
+        }
+      ],
+      "private_original_retained": true,
+      "private_original_task_relative_path": "private-logs/final-incremental-54c4/finalize_incremental.py",
+      "changed_line_locations": [
+        {
+          "operation": "insert",
+          "original_line_start": 1,
+          "original_line_end_exclusive": 1,
+          "delivered_line_start": 1,
+          "delivered_line_end_exclusive": 4
+        },
+        {
+          "operation": "replace",
+          "original_line_start": 4,
+          "original_line_end_exclusive": 5,
+          "delivered_line_start": 7,
+          "delivered_line_end_exclusive": 8
+        },
+        {
+          "operation": "replace",
+          "original_line_start": 13,
+          "original_line_end_exclusive": 14,
+          "delivered_line_start": 16,
+          "delivered_line_end_exclusive": 17
+        }
+      ]
+    },
+    {
+      "source_path": "task-7/csu-54c4/imported-evidence-crosscheck.json",
+      "destination_path": "imported-evidence-crosscheck.json",
+      "source_bytes": 6062,
+      "source_sha256": "f1097cc2b8b0e28cf623df33ad9ee37f77788c1d6663dde61fb3c8663d5d0458",
+      "delivered_bytes": 6062,
+      "delivered_sha256": "f1097cc2b8b0e28cf623df33ad9ee37f77788c1d6663dde61fb3c8663d5d0458",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null,
+      "changed_JSON_string_pointers": [],
+      "JSON_structure_numeric_boolean_null_values_preserved": true
+    },
+    {
+      "source_path": "task-7/csu-54c4/independent-incremental-evidence.json",
+      "destination_path": "independent-incremental-evidence.json",
+      "source_bytes": 182746,
+      "source_sha256": "b0c7a2d2895eadcdb3b0eba5c0de4fd42f4f1bbe3c0f3f22ff3f037bd33be718",
+      "delivered_bytes": 182516,
+      "delivered_sha256": "1dbcf3e0ffc4bf88f784e15c4baa25c222d67db65bbf78fab593633aefdf9675",
+      "changes": [
+        {
+          "kind": "private-hostpath-redaction",
+          "path_class": "model-root",
+          "replacement": "<MODEL_ROOT>",
+          "occurrences": 1
+        },
+        {
+          "kind": "private-hostpath-redaction",
+          "path_class": "author-task-root",
+          "replacement": "<AUTHOR_TASK_ROOT>",
+          "occurrences": 3
+        }
+      ],
+      "private_original_retained": true,
+      "private_original_task_relative_path": "private-logs/final-incremental-54c4/independent-incremental-evidence.json",
+      "changed_line_locations": [
+        {
+          "operation": "replace",
+          "original_line_start": 739,
+          "original_line_end_exclusive": 743,
+          "delivered_line_start": 739,
+          "delivered_line_end_exclusive": 743
+        }
+      ],
+      "changed_JSON_string_pointers": [
+        "/author_Library_receipt/package_path",
+        "/author_Library_receipt/archive_upload_path",
+        "/author_Library_receipt/archive_download_path",
+        "/author_Library_receipt/verification_path"
+      ],
+      "JSON_structure_numeric_boolean_null_values_preserved": true
+    },
+    {
+      "source_path": "task-7/csu-54c4/independent_incremental_check.py",
+      "destination_path": "independent_incremental_check.py",
+      "source_bytes": 9313,
+      "source_sha256": "4605fd2fa1595d5de3bdaffe0e8f3bc8e498b0d2d2c8bef3f13fedd915fa56de",
+      "delivered_bytes": 9496,
+      "delivered_sha256": "3d3241bdb2e66b821c535b50dcc70ceac40ab246d67e0f698ef04b3d8741b088",
+      "changes": [
+        {
+          "kind": "private-hostpath-redaction",
+          "path_class": "repo-root",
+          "replacement": "<REPO_ROOT>",
+          "occurrences": 1
+        },
+        {
+          "kind": "historical-entrypoint-guard",
+          "reason": "Top-level historical workflow may rebuild or overwrite reports and depends on fixed HEAD, entire old snapshot, outside original reviewer evidence and Library receipts. No historical result was cleared or changed."
+        }
+      ],
+      "private_original_retained": true,
+      "private_original_task_relative_path": "private-logs/final-incremental-54c4/independent_incremental_check.py",
+      "changed_line_locations": [
+        {
+          "operation": "insert",
+          "original_line_start": 1,
+          "original_line_end_exclusive": 1,
+          "delivered_line_start": 1,
+          "delivered_line_end_exclusive": 4
+        },
+        {
+          "operation": "replace",
+          "original_line_start": 6,
+          "original_line_end_exclusive": 7,
+          "delivered_line_start": 9,
+          "delivered_line_end_exclusive": 10
+        }
+      ]
+    },
+    {
+      "source_path": "task-7/csu-54c4/rebuild.stderr.log",
+      "destination_path": "rebuild.stderr.log",
+      "source_bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivered_bytes": 0,
+      "delivered_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null
+    },
+    {
+      "source_path": "task-7/csu-54c4/rebuild.stdout.log",
+      "destination_path": "rebuild.stdout.log",
+      "source_bytes": 1241,
+      "source_sha256": "dc2137541e7f2fe52b025a76cee47f2214e7c39397ad678c5055f6adfc220a4f",
+      "delivered_bytes": 1241,
+      "delivered_sha256": "dc2137541e7f2fe52b025a76cee47f2214e7c39397ad678c5055f6adfc220a4f",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null
+    },
+    {
+      "source_path": "task-7/csu-54c4/evidence-manifest.json",
+      "destination_path": "evidence-manifest.json",
+      "source_bytes": 1598,
+      "source_sha256": "81d61672e2cec1a546157e76fa5defb9635e08e41a2141929f23f2023b16cb61",
+      "delivered_bytes": 1598,
+      "delivered_sha256": "81d61672e2cec1a546157e76fa5defb9635e08e41a2141929f23f2023b16cb61",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null,
+      "changed_JSON_string_pointers": [],
+      "JSON_structure_numeric_boolean_null_values_preserved": true
+    },
+    {
+      "source_path": "task-7/csu-54c4/delivery.json",
+      "destination_path": "delivery.json",
+      "source_bytes": 573,
+      "source_sha256": "d9e2d012dbf1deca5d9b747d0e0733673bae385425ad6ebf0de09a5c230f18fc",
+      "delivered_bytes": 483,
+      "delivered_sha256": "0b71c8bee5ab6be897200fce897b8c0f8275ff1faf60769f897823425f55980e",
+      "changes": [
+        {
+          "kind": "private-hostpath-redaction",
+          "path_class": "final-review-root",
+          "replacement": "<FINAL_REVIEW_ROOT>",
+          "occurrences": 2
+        }
+      ],
+      "private_original_retained": true,
+      "private_original_task_relative_path": "private-logs/final-incremental-54c4/delivery.json",
+      "changed_line_locations": [
+        {
+          "operation": "replace",
+          "original_line_start": 2,
+          "original_line_end_exclusive": 4,
+          "delivered_line_start": 2,
+          "delivered_line_end_exclusive": 4
+        }
+      ],
+      "changed_JSON_string_pointers": [
+        "/report",
+        "/evidence_archive"
+      ],
+      "JSON_structure_numeric_boolean_null_values_preserved": true
+    },
+    {
+      "source_path": null,
+      "destination_path": "README.md",
+      "source_bytes": null,
+      "source_sha256": null,
+      "delivered_bytes": 2850,
+      "delivered_sha256": "a2ed3c4609184fdd4efed42a973b18968070d4b4cb82d24385a6980154c17130",
+      "origin": "new import helper",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null
+    },
+    {
+      "source_path": null,
+      "destination_path": "verify_import.py",
+      "source_bytes": null,
+      "source_sha256": null,
+      "delivered_bytes": 3826,
+      "delivered_sha256": "62147c3a56b32cf5ae4184ab7e1895bbb475d236d2338612593df2873908277c",
+      "origin": "new import helper",
+      "changes": [],
+      "private_original_retained": false,
+      "private_original_task_relative_path": null
+    }
+  ],
+  "imported_source_files": 12,
+  "new_import_helpers": 2
+}

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "status": "author_QA_passed_independent_review_pending",
+  "status": "author_digital_QA_passed",
   "checks": {
     "approved_stl_unchanged": true,
     "all_validation_checks_true": true,
@@ -61,6 +61,24 @@
   "limitations": [
     "未作實體試印或實際切片工具路徑驗證。",
     "0.8mm opening不是全方向最小壁厚；細十字架與尖角有面積損失，零消失／分裂另逐Polygon強制檢查。",
-    "自由曲面與地形為來源比例近似，不是實測；獨立幾何複核尚待進行。"
-  ]
+    "自由曲面與地形為來源比例近似，不是實測；44層十字架局部例外有既有核對紀錄；完整總體獨立放行紀錄未確認，並非審查失敗。"
+  ],
+  "publication": {
+    "status": "published",
+    "record_commit": "897897849bca52f9e43f6b573f71600927d93221",
+    "record_stl_sha256": "df84e1b7a4290b799082c7d2a2d23427fd6bb5cb3719ee2c82f73c152c84847b",
+    "current_stl_matches_record": true
+  },
+  "independent_review": {
+    "overall_release_status": "unconfirmed",
+    "evidence_inventory_checked_date": "2026-10-18",
+    "note": "A complete dated and scoped overall independent release record has not been confirmed; this is not a review-failure finding.",
+    "specific_exception_record": {
+      "status": "record_present_for_fixed_stl",
+      "path": "cross-warning-layers.json",
+      "canonical_lf_sha256": "002a00d36a27d129191c2603c7e4cd971f79f5fc358d5ab0e9de28ecd4b8dd25",
+      "current_record_matches_canonical_lf_sha": true,
+      "scope": "Recorded independent localization/root-ray review of the 44 cross-shaft/crossbar opening-loss layers only; not whole-model release or print approval."
+    }
+  }
 }

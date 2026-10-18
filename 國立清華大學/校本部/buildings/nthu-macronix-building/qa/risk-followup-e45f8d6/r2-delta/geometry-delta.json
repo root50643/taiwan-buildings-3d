@@ -1,0 +1,1037 @@
+{
+  "method": "Read-only STL triangle-plane closed-loop/even-odd area comparison, exact-Z raw evidence plus separately offset supplements; optional 3D Manifold Boolean differences and halfspace crops.",
+  "original_reference_commit": "08604e70212673240173660584236e361221533f",
+  "runtime_versions": {
+    "python": "3.13.9",
+    "numpy": "2.5.4",
+    "scipy": "1.16.3",
+    "trimesh": "4.12.2",
+    "shapely": "2.1.2",
+    "manifold3d": "3.3.2"
+  },
+  "endpoint_cluster_tolerance_mm": 0.0001,
+  "area_equality_tolerance_mm2": 1e-06,
+  "volume_equality_tolerance_mm3": 1e-06,
+  "offset_mm": 1.3e-05,
+  "files": {
+    "original": {
+      "file_name": "input-original.stl",
+      "bytes": 193784,
+      "sha256": "9c90c8b6b6f99076f2096783e78b793404fb81df88ee270d2eb02f21290e24b8",
+      "face_count": 3874,
+      "processed_vertex_count": 1921,
+      "bounds_mm": [
+        [
+          -75.0,
+          -62.0,
+          0.0
+        ],
+        [
+          75.0,
+          62.0,
+          68.0
+        ]
+      ],
+      "extents_mm": [
+        150.0,
+        124.0,
+        68.0
+      ],
+      "volume_mm3": 406815.46177862445,
+      "surface_area_mm2": 81162.1842960627,
+      "watertight": true,
+      "winding_consistent": true
+    },
+    "candidate": {
+      "file_name": "model.stl",
+      "bytes": 196384,
+      "sha256": "00f6bbdd09196fba873d843bb9d50a1c3aad4e19e760978333dce6f49740627c",
+      "face_count": 3926,
+      "processed_vertex_count": 1947,
+      "bounds_mm": [
+        [
+          -75.0,
+          -62.0,
+          0.0
+        ],
+        [
+          75.0,
+          62.0,
+          68.0
+        ]
+      ],
+      "extents_mm": [
+        150.0,
+        124.0,
+        68.0
+      ],
+      "volume_mm3": 407420.6873352102,
+      "surface_area_mm2": 81396.68155141533,
+      "watertight": true,
+      "winding_consistent": true
+    }
+  },
+  "sections": [
+    {
+      "requested_z_mm": 14,
+      "offset_z_mm": 14.000013,
+      "exact_z_raw": {
+        "original": {
+          "z_mm": 14.0,
+          "vertices_on_plane": 114,
+          "coplanar_face_count": 94,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 7342.558366078894,
+          "failure": null,
+          "segment_count": 316,
+          "unique_edge_count": 316,
+          "degree_histogram": {
+            "2": 316
+          }
+        },
+        "candidate": {
+          "z_mm": 14.0,
+          "vertices_on_plane": 114,
+          "coplanar_face_count": 94,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 7342.558366078894,
+          "failure": null,
+          "segment_count": 316,
+          "unique_edge_count": 316,
+          "degree_histogram": {
+            "2": 316
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 7342.558366078894,
+          "candidate_area_mm2": 7342.558366078894,
+          "added_area_mm2": 0.0,
+          "removed_area_mm2": 0.0,
+          "symmetric_difference_area_mm2": 0.0,
+          "net_area_change_mm2": 0.0,
+          "equal_within_area_tolerance": true
+        }
+      },
+      "offset_supplement": {
+        "original": {
+          "z_mm": 14.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 7342.558328641211,
+          "failure": null,
+          "segment_count": 376,
+          "unique_edge_count": 316,
+          "degree_histogram": {
+            "2": 316
+          }
+        },
+        "candidate": {
+          "z_mm": 14.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 7342.558328641211,
+          "failure": null,
+          "segment_count": 376,
+          "unique_edge_count": 316,
+          "degree_histogram": {
+            "2": 316
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 7342.558328641211,
+          "candidate_area_mm2": 7342.558328641211,
+          "added_area_mm2": 0.0,
+          "removed_area_mm2": 0.0,
+          "symmetric_difference_area_mm2": 0.0,
+          "net_area_change_mm2": 0.0,
+          "equal_within_area_tolerance": true
+        }
+      }
+    },
+    {
+      "requested_z_mm": 25,
+      "offset_z_mm": 25.000013,
+      "exact_z_raw": {
+        "original": {
+          "z_mm": 25.0,
+          "vertices_on_plane": 97,
+          "coplanar_face_count": 105,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 7202.119802349495,
+          "failure": null,
+          "segment_count": 356,
+          "unique_edge_count": 356,
+          "degree_histogram": {
+            "2": 356
+          }
+        },
+        "candidate": {
+          "z_mm": 25.0,
+          "vertices_on_plane": 97,
+          "coplanar_face_count": 105,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 7202.119802349495,
+          "failure": null,
+          "segment_count": 356,
+          "unique_edge_count": 356,
+          "degree_histogram": {
+            "2": 356
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 7202.119802349495,
+          "candidate_area_mm2": 7202.119802349495,
+          "added_area_mm2": 0.0,
+          "removed_area_mm2": 0.0,
+          "symmetric_difference_area_mm2": 0.0,
+          "net_area_change_mm2": 0.0,
+          "equal_within_area_tolerance": true
+        }
+      },
+      "offset_supplement": {
+        "original": {
+          "z_mm": 25.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 7202.119777359802,
+          "failure": null,
+          "segment_count": 430,
+          "unique_edge_count": 357,
+          "degree_histogram": {
+            "2": 357
+          }
+        },
+        "candidate": {
+          "z_mm": 25.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 7202.119777359802,
+          "failure": null,
+          "segment_count": 430,
+          "unique_edge_count": 357,
+          "degree_histogram": {
+            "2": 357
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 7202.119777359802,
+          "candidate_area_mm2": 7202.119777359802,
+          "added_area_mm2": 0.0,
+          "removed_area_mm2": 0.0,
+          "symmetric_difference_area_mm2": 0.0,
+          "net_area_change_mm2": 0.0,
+          "equal_within_area_tolerance": true
+        }
+      }
+    },
+    {
+      "requested_z_mm": 33,
+      "offset_z_mm": 33.000013,
+      "exact_z_raw": {
+        "original": {
+          "z_mm": 33.0,
+          "vertices_on_plane": 24,
+          "coplanar_face_count": 22,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 5984.440725586189,
+          "failure": null,
+          "segment_count": 343,
+          "unique_edge_count": 342,
+          "degree_histogram": {
+            "2": 342
+          }
+        },
+        "candidate": {
+          "z_mm": 33.0,
+          "vertices_on_plane": 24,
+          "coplanar_face_count": 22,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 5984.440724578823,
+          "failure": null,
+          "segment_count": 341,
+          "unique_edge_count": 341,
+          "degree_histogram": {
+            "2": 341
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 5984.440725586189,
+          "candidate_area_mm2": 5984.440724578823,
+          "added_area_mm2": 1.0922042777993003e-08,
+          "removed_area_mm2": 1.018286918883877e-06,
+          "symmetric_difference_area_mm2": 1.0292089616009921e-06,
+          "net_area_change_mm2": -1.007365426630713e-06,
+          "equal_within_area_tolerance": false
+        }
+      },
+      "offset_supplement": {
+        "original": {
+          "z_mm": 33.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 5984.440254342312,
+          "failure": null,
+          "segment_count": 347,
+          "unique_edge_count": 343,
+          "degree_histogram": {
+            "2": 343
+          }
+        },
+        "candidate": {
+          "z_mm": 33.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 5984.440724578822,
+          "failure": null,
+          "segment_count": 345,
+          "unique_edge_count": 342,
+          "degree_histogram": {
+            "2": 342
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 5984.440254342312,
+          "candidate_area_mm2": 5984.440724578822,
+          "added_area_mm2": 0.0004712547965837253,
+          "removed_area_mm2": 1.0182870816687377e-06,
+          "symmetric_difference_area_mm2": 0.00047227308366533025,
+          "net_area_change_mm2": 0.000470236509499955,
+          "equal_within_area_tolerance": false
+        }
+      }
+    },
+    {
+      "requested_z_mm": 38,
+      "offset_z_mm": 38.000013,
+      "exact_z_raw": {
+        "original": {
+          "z_mm": 38.0,
+          "vertices_on_plane": 28,
+          "coplanar_face_count": 18,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 6095.130761206435,
+          "failure": null,
+          "segment_count": 343,
+          "unique_edge_count": 343,
+          "degree_histogram": {
+            "2": 343
+          }
+        },
+        "candidate": {
+          "z_mm": 38.0,
+          "vertices_on_plane": 28,
+          "coplanar_face_count": 18,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 6095.130760281775,
+          "failure": null,
+          "segment_count": 340,
+          "unique_edge_count": 340,
+          "degree_histogram": {
+            "2": 340
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 6095.130761206435,
+          "candidate_area_mm2": 6095.130760281775,
+          "added_area_mm2": 1.3129729958469283e-07,
+          "removed_area_mm2": 1.0559562219035479e-06,
+          "symmetric_difference_area_mm2": 1.187253521482386e-06,
+          "net_area_change_mm2": -9.2465961643029e-07,
+          "equal_within_area_tolerance": false
+        }
+      },
+      "offset_supplement": {
+        "original": {
+          "z_mm": 38.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 6095.130761206721,
+          "failure": null,
+          "segment_count": 347,
+          "unique_edge_count": 344,
+          "degree_histogram": {
+            "2": 344
+          }
+        },
+        "candidate": {
+          "z_mm": 38.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 6095.1307602822,
+          "failure": null,
+          "segment_count": 344,
+          "unique_edge_count": 341,
+          "degree_histogram": {
+            "2": 341
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 6095.130761206721,
+          "candidate_area_mm2": 6095.1307602822,
+          "added_area_mm2": 1.3143538075967835e-07,
+          "removed_area_mm2": 1.055956258329698e-06,
+          "symmetric_difference_area_mm2": 1.187391639061514e-06,
+          "net_area_change_mm2": -9.245213732356206e-07,
+          "equal_within_area_tolerance": false
+        }
+      }
+    },
+    {
+      "requested_z_mm": 42,
+      "offset_z_mm": 42.000013,
+      "exact_z_raw": {
+        "original": {
+          "z_mm": 42.0,
+          "vertices_on_plane": 24,
+          "coplanar_face_count": 22,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 4494.227452754673,
+          "failure": null,
+          "segment_count": 196,
+          "unique_edge_count": 196,
+          "degree_histogram": {
+            "2": 196
+          }
+        },
+        "candidate": {
+          "z_mm": 42.0,
+          "vertices_on_plane": 24,
+          "coplanar_face_count": 22,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 4494.227451861782,
+          "failure": null,
+          "segment_count": 193,
+          "unique_edge_count": 193,
+          "degree_histogram": {
+            "2": 193
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 4494.227452754673,
+          "candidate_area_mm2": 4494.227451861782,
+          "added_area_mm2": 1.5774823950616546e-07,
+          "removed_area_mm2": 1.0506397286766064e-06,
+          "symmetric_difference_area_mm2": 1.2083879682001193e-06,
+          "net_area_change_mm2": -8.928909664973617e-07,
+          "equal_within_area_tolerance": false
+        }
+      },
+      "offset_supplement": {
+        "original": {
+          "z_mm": 42.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 4494.224249429387,
+          "failure": null,
+          "segment_count": 199,
+          "unique_edge_count": 197,
+          "degree_histogram": {
+            "2": 197
+          }
+        },
+        "candidate": {
+          "z_mm": 42.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 3,
+          "area_mm2": 4494.224248536496,
+          "failure": null,
+          "segment_count": 196,
+          "unique_edge_count": 194,
+          "degree_histogram": {
+            "2": 194
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 4494.224249429387,
+          "candidate_area_mm2": 4494.224248536496,
+          "added_area_mm2": 1.5774835027463057e-07,
+          "removed_area_mm2": 1.0506396616408782e-06,
+          "symmetric_difference_area_mm2": 1.2083880118981615e-06,
+          "net_area_change_mm2": -8.928909664973617e-07,
+          "equal_within_area_tolerance": false
+        }
+      }
+    },
+    {
+      "requested_z_mm": 48,
+      "offset_z_mm": 48.000013,
+      "exact_z_raw": {
+        "original": {
+          "z_mm": 48.0,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 3963.801706441992,
+          "failure": null,
+          "segment_count": 178,
+          "unique_edge_count": 178,
+          "degree_histogram": {
+            "2": 178
+          }
+        },
+        "candidate": {
+          "z_mm": 48.0,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 3963.8017402395735,
+          "failure": null,
+          "segment_count": 175,
+          "unique_edge_count": 175,
+          "degree_histogram": {
+            "2": 175
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 3963.801706441992,
+          "candidate_area_mm2": 3963.8017402395735,
+          "added_area_mm2": 3.490034512202483e-05,
+          "removed_area_mm2": 1.1027633705638831e-06,
+          "symmetric_difference_area_mm2": 3.600310849256533e-05,
+          "net_area_change_mm2": 3.379758163646329e-05,
+          "equal_within_area_tolerance": false
+        }
+      },
+      "offset_supplement": {
+        "original": {
+          "z_mm": 48.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 3963.8009178902807,
+          "failure": null,
+          "segment_count": 178,
+          "unique_edge_count": 178,
+          "degree_histogram": {
+            "2": 178
+          }
+        },
+        "candidate": {
+          "z_mm": 48.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 7,
+          "area_mm2": 3963.8009516885472,
+          "failure": null,
+          "segment_count": 175,
+          "unique_edge_count": 175,
+          "degree_histogram": {
+            "2": 175
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 3963.8009178902807,
+          "candidate_area_mm2": 3963.8009516885472,
+          "added_area_mm2": 3.490104345489432e-05,
+          "removed_area_mm2": 1.1027767765777668e-06,
+          "symmetric_difference_area_mm2": 3.6003820231509714e-05,
+          "net_area_change_mm2": 3.379826648597373e-05,
+          "equal_within_area_tolerance": false
+        }
+      }
+    },
+    {
+      "requested_z_mm": 54,
+      "offset_z_mm": 54.000013,
+      "exact_z_raw": {
+        "original": {
+          "z_mm": 54.0,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 2934.50397897933,
+          "failure": null,
+          "segment_count": 86,
+          "unique_edge_count": 86,
+          "degree_histogram": {
+            "2": 86
+          }
+        },
+        "candidate": {
+          "z_mm": 54.0,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 3037.516537115587,
+          "failure": null,
+          "segment_count": 109,
+          "unique_edge_count": 109,
+          "degree_histogram": {
+            "2": 109
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 2934.50397897933,
+          "candidate_area_mm2": 3037.516537115587,
+          "added_area_mm2": 103.01255824799037,
+          "removed_area_mm2": 1.1173319305673654e-07,
+          "symmetric_difference_area_mm2": 103.0125583597236,
+          "net_area_change_mm2": 103.01255813625721,
+          "equal_within_area_tolerance": false
+        }
+      },
+      "offset_supplement": {
+        "original": {
+          "z_mm": 54.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 2934.503978979324,
+          "failure": null,
+          "segment_count": 86,
+          "unique_edge_count": 86,
+          "degree_histogram": {
+            "2": 86
+          }
+        },
+        "candidate": {
+          "z_mm": 54.000013,
+          "vertices_on_plane": 0,
+          "coplanar_face_count": 0,
+          "closed": true,
+          "polygon_valid": true,
+          "loops": 2,
+          "area_mm2": 3037.516537115575,
+          "failure": null,
+          "segment_count": 109,
+          "unique_edge_count": 109,
+          "degree_histogram": {
+            "2": 109
+          }
+        },
+        "comparison": {
+          "available": true,
+          "original_area_mm2": 2934.503978979324,
+          "candidate_area_mm2": 3037.516537115575,
+          "added_area_mm2": 103.01255824798402,
+          "removed_area_mm2": 1.1173309983548876e-07,
+          "symmetric_difference_area_mm2": 103.01255835971713,
+          "net_area_change_mm2": 103.01255813625085,
+          "equal_within_area_tolerance": false
+        }
+      }
+    }
+  ],
+  "boolean_3d": {
+    "available": true,
+    "input_status": {
+      "original": {
+        "status": "Error.NoError",
+        "empty": false,
+        "volume_mm3": 406815.4617786245,
+        "bounds_mm": [
+          -75.0,
+          -62.0,
+          0.0,
+          75.0,
+          62.0,
+          68.0
+        ]
+      },
+      "candidate": {
+        "status": "Error.NoError",
+        "empty": false,
+        "volume_mm3": 407420.68733521027,
+        "bounds_mm": [
+          -75.0,
+          -62.0,
+          0.0,
+          75.0,
+          62.0,
+          68.0
+        ]
+      }
+    },
+    "global": {
+      "original": {
+        "status": "Error.NoError",
+        "empty": false,
+        "volume_mm3": 406815.4617786245,
+        "bounds_mm": [
+          -75.0,
+          -62.0,
+          0.0,
+          75.0,
+          62.0,
+          68.0
+        ]
+      },
+      "candidate": {
+        "status": "Error.NoError",
+        "empty": false,
+        "volume_mm3": 407420.68733521027,
+        "bounds_mm": [
+          -75.0,
+          -62.0,
+          0.0,
+          75.0,
+          62.0,
+          68.0
+        ]
+      },
+      "added": {
+        "status": "Error.NoError",
+        "empty": false,
+        "volume_mm3": 605.2255820900749,
+        "bounds_mm": [
+          -47.98076248168945,
+          -14.0,
+          32.79999923706055,
+          0.5551941990852356,
+          -6.481792449951172,
+          55.400001525878906
+        ]
+      },
+      "removed": {
+        "status": "Error.NoError",
+        "empty": false,
+        "volume_mm3": 2.5504325280471204e-05,
+        "bounds_mm": [
+          -47.98076248168945,
+          -14.0,
+          32.79999923706055,
+          -2.219625473022461,
+          -6.481792449951172,
+          55.400001525878906
+        ]
+      },
+      "symmetric_difference_volume_mm3": 605.2256075944002,
+      "net_volume_change_mm3": 605.2255565857631,
+      "equal_within_volume_tolerance": false,
+      "volume_balance_residual_mm3": 1.3487314828072427e-11,
+      "all_operations_no_error": true
+    },
+    "crops": [
+      {
+        "id": "rear_y_ge_10",
+        "description": "Y >= 10 mm; all X and Z",
+        "halfspaces": [
+          {
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "origin_offset_mm": 10
+          }
+        ],
+        "original": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 212969.22360878484,
+          "bounds_mm": [
+            -75.0,
+            10.0,
+            0.0,
+            75.0,
+            62.0,
+            68.0
+          ]
+        },
+        "candidate": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 212969.22360878484,
+          "bounds_mm": [
+            -75.0,
+            10.0,
+            0.0,
+            75.0,
+            62.0,
+            68.0
+          ]
+        },
+        "added": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "removed": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "symmetric_difference_volume_mm3": 0.0,
+        "net_volume_change_mm3": 0.0,
+        "equal_within_volume_tolerance": true,
+        "volume_balance_residual_mm3": 0.0,
+        "all_operations_no_error": true
+      },
+      {
+        "id": "entrance_x_ge_10_y_le_10",
+        "description": "X >= 10 mm and Y <= 10 mm; all Z. Includes a small part of the oval front body.",
+        "halfspaces": [
+          {
+            "normal": [
+              1,
+              0,
+              0
+            ],
+            "origin_offset_mm": 10
+          },
+          {
+            "normal": [
+              0,
+              -1,
+              0
+            ],
+            "origin_offset_mm": -10
+          }
+        ],
+        "original": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 71960.6144977786,
+          "bounds_mm": [
+            10.0,
+            -62.0,
+            0.0,
+            75.0,
+            10.0,
+            51.0
+          ]
+        },
+        "candidate": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 71960.6144977786,
+          "bounds_mm": [
+            10.0,
+            -62.0,
+            0.0,
+            75.0,
+            10.0,
+            51.0
+          ]
+        },
+        "added": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "removed": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "symmetric_difference_volume_mm3": 0.0,
+        "net_volume_change_mm3": 0.0,
+        "equal_within_volume_tolerance": true,
+        "volume_balance_residual_mm3": 0.0,
+        "all_operations_no_error": true
+      },
+      {
+        "id": "entrance_x_ge_16_y_le_10_supplement",
+        "description": "X >= 16 mm and Y <= 10 mm; all Z. Narrower entrance/connector zone outside the oval front roof.",
+        "halfspaces": [
+          {
+            "normal": [
+              1,
+              0,
+              0
+            ],
+            "origin_offset_mm": 16
+          },
+          {
+            "normal": [
+              0,
+              -1,
+              0
+            ],
+            "origin_offset_mm": -10
+          }
+        ],
+        "original": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 63721.34276727011,
+          "bounds_mm": [
+            16.0,
+            -62.0,
+            0.0,
+            75.0,
+            10.0,
+            51.0
+          ]
+        },
+        "candidate": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 63721.34276727011,
+          "bounds_mm": [
+            16.0,
+            -62.0,
+            0.0,
+            75.0,
+            10.0,
+            51.0
+          ]
+        },
+        "added": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "removed": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "symmetric_difference_volume_mm3": 0.0,
+        "net_volume_change_mm3": 0.0,
+        "equal_within_volume_tolerance": true,
+        "volume_balance_residual_mm3": 0.0,
+        "all_operations_no_error": true
+      },
+      {
+        "id": "stair_y_le_minus_50",
+        "description": "Y <= -50 mm; all X and Z. Outer portion of stair/cheek wall only; excludes inner treads overlapping front facade.",
+        "halfspaces": [
+          {
+            "normal": [
+              0,
+              -1,
+              0
+            ],
+            "origin_offset_mm": 50
+          }
+        ],
+        "original": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 8048.827533864015,
+          "bounds_mm": [
+            -75.0,
+            -62.0,
+            0.0,
+            75.0,
+            -50.0,
+            32.0
+          ]
+        },
+        "candidate": {
+          "status": "Error.NoError",
+          "empty": false,
+          "volume_mm3": 8048.827533864015,
+          "bounds_mm": [
+            -75.0,
+            -62.0,
+            0.0,
+            75.0,
+            -50.0,
+            32.0
+          ]
+        },
+        "added": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "removed": {
+          "status": "Error.NoError",
+          "empty": true,
+          "volume_mm3": 0.0,
+          "bounds_mm": null
+        },
+        "symmetric_difference_volume_mm3": 0.0,
+        "net_volume_change_mm3": 0.0,
+        "equal_within_volume_tolerance": true,
+        "volume_balance_residual_mm3": 0.0,
+        "all_operations_no_error": true
+      }
+    ]
+  },
+  "slicer_run": false,
+  "physical_print_test": false,
+  "input_hashes_at_completion": {
+    "original": "9c90c8b6b6f99076f2096783e78b793404fb81df88ee270d2eb02f21290e24b8",
+    "candidate": "00f6bbdd09196fba873d843bb9d50a1c3aad4e19e760978333dce6f49740627c"
+  },
+  "input_hashes_stable": true,
+  "exact_z_failures": [],
+  "offset_supplement_failures": []
+}

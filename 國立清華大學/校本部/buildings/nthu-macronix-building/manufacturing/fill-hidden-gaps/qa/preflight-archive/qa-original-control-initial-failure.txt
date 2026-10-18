@@ -1,0 +1,11 @@
+2026-10-18 first program control (original R2 STL used as both inputs):
+variant_qa.py stopped at the assertion that retained support_access_review.json
+referred to R2. Its actual stl_sha256 is the preserved e45f8d6 STL:
+9c90c8b6b6f99076f2096783e78b793404fb81df88ee270d2eb02f21290e24b8.
+No output JSON or candidate geometry was written.
+
+The assertion was corrected to verify the actual e45 source SHA explicitly.
+All 207 stored line origins/directions are preserved and recomputed from R2
+and the manufacturing variant independently. Source face IDs are never
+transferred, and any changed legacy interval is reported as a mismatch.
+This is a provenance correction, not a geometry repair or moved sampling.

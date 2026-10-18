@@ -1,0 +1,14 @@
+Transcribed verbatim from the first terminal output, before provenance fix:
+
+Traceback (most recent call last):
+  File "<candidate-workspace>\manufacturing-draft\variant_qa.py", line 147, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "<candidate-workspace>\manufacturing-draft\variant_qa.py", line 94, in main
+    accesspath=P/'qa/risk-followup-e45f8d6/support_access_review.json';access=json.loads(accesspath.read_text());assert access['stl_sha256']==ORIGINAL_SHA
+                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+The failed assertion was a mistaken assumption about source-report version;
+support_access_review.json actually pins the preserved e45 STL. No candidate
+geometry or saved original report was changed to satisfy the assertion.

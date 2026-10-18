@@ -1,7 +1,7 @@
 {
   "building": "學習資源中心（旺宏館）",
   "campus": "校本部",
-  "checked_date": "2026-10-13",
+  "checked_date": "2026-10-18",
   "classification": "公開照片外觀近似；非測繪／非精確複製",
   "source_page": "https://attractions.site.nthu.edu.tw/p/406-1515-187049,r8697.php?Lang=zh-tw",
   "public_exterior_photo_urls": [
@@ -13,7 +13,105 @@
   ],
   "pixel_review_completed": true,
   "observed": "官方遠景、橢圓前棟入口端及玻璃入口側的照片像素已檢視。官方文字明列前四層橢圓、後七層ㄑ形、由穿廊連接；模型保留這些量體識別及入口翼三層遮陽格。",
-  "approximations": "沒有完整俯視或後立面測量，ㄑ角度、深度、棟距均為估計；前棟屋頂用低三角屋面概括，後棟可見正面加入退縮窗帶與突出屋簷，未知背面素面；未有充分證據的屋頂設備方塊已移除。穿廊封成實體，窗戶為淺浮雕；背面無虛構窗洞。入口柱與窗框加粗並融合。前棟外側斜梯、扶牆與分段水平長窗以可見照片近似；樓梯位置、階數與深度未實測。",
+  "approximations": "150 mm exterior representative model. Front roof uses estimated Y-Z segmented curves; inset top storey and curved terrace are qualitative photo interpretations, not surveyed dimensions or proven full-circle terrace access. Rear ±14-degree shallow open-book mass remains approximate; official 6F indicates a deeper L and concave arc but cannot be extruded through all floors. Unseen back remains plain, connector solid; no new equipment blocks.",
   "source_3d_assets_extracted": false,
-  "reference_photos_redistributed": false
+  "reference_photos_redistributed": false,
+  "revision_scope": "Existing front roof/terrace candidate R2: only a manufacturing correction to the clerestory/cap tips and recess after same-coordinate thin-flag analysis; rear unchanged.",
+  "new_sources": [
+    {
+      "url": "https://www.archasia.asia/projects/nthu-learningcenter",
+      "supports": "Front four-storey ellipse, rear seven-storey L; high rear to low front roof and inset terrace corroborated by R-03/B-02 pixels.",
+      "date_limits": "Page lists 2005–2011 and separately 2013 opening. Not a 2026 as-built claim."
+    },
+    {
+      "url": "https://www.lib.nthu.edu.tw/library/image/6F.jpg",
+      "supports": "Rear 6F deep L and concave inner arc; deferred in this candidate.",
+      "date_limits": "Drawing date unknown; one floor only."
+    },
+    {
+      "url": "https://www.lib.nthu.edu.tw/library/libtour.html",
+      "supports": "Floor identity and current navigation to 6F.",
+      "date_limits": "Page update 2026-07-23 is not drawing or photo date."
+    }
+  ],
+  "pixel_review": [
+    {
+      "file_label": "1.3.18R-03.webp",
+      "url": "https://cdn.prod.website-files.com/6871392ea22dedab1d41e5cb/6881f45ace041d79e8525603_1.3.18R-03.webp",
+      "sha256": "6b5b381f441d70c883b42f9d4c8367e33036b3a5edc7a032f8eb711fe4e5129e",
+      "date_self_reported_exif": "2012-02-13",
+      "pixels_actually_viewed": true,
+      "redistributed": false
+    },
+    {
+      "file_label": "1.3.18B-02.webp",
+      "url": "https://cdn.prod.website-files.com/6871392ea22dedab1d41e5cb/6881f50afcdd0f348c08eb4e_1.3.18B-02.webp",
+      "sha256": "f4336ed83f98ca9981d3813b062c5256df825a545cd44459402cd103906ac870",
+      "date_self_reported_exif": "2012-04-11",
+      "pixels_actually_viewed": true,
+      "redistributed": false
+    },
+    {
+      "file_label": "libtour-6F.jpg",
+      "url": "https://www.lib.nthu.edu.tw/library/image/6F.jpg",
+      "sha256": "6dbf1856639cbcd21ee25ab5c7da3f8159e7b039a0b678404d9fb12389590db9",
+      "date_self_reported_exif": null,
+      "pixels_actually_viewed": true,
+      "redistributed": false
+    },
+    {
+      "file_label": "libtour-1F.jpg",
+      "url": "https://www.lib.nthu.edu.tw/library/image/1F.jpg",
+      "sha256": "6ab4d2eff4e2719320d5f725b04392b15bc829f2a2cd6edcec3f2218f0807e62",
+      "date_self_reported_exif": null,
+      "pixels_actually_viewed": true,
+      "redistributed": false
+    }
+  ],
+  "source_mapping": [
+    {
+      "geometry": "Lower oval body ends Z31.8; terrace top Z32.8; inset radius 28.5x18.5 vs lower 35x25 mm.",
+      "evidence": [
+        "R-03",
+        "B-02"
+      ],
+      "interpretation": "Inset glass top level outside which a curved terrace is visible. Width/height estimates; no full-circle access claim."
+    },
+    {
+      "geometry": "Roof profile in local Y-Z: (-44,40.5),(-30,39.8),(-26,40.3),(-22,41.4),(-18,43),(-14,45.2),(-10,48),(-7,50.8); 1.3 mm skin.",
+      "evidence": [
+        "R-03",
+        "B-02"
+      ],
+      "interpretation": "Lower front segment and curved descending main roof replace X-Z triangular ridge. Model +Y is toward rear, not geographic north."
+    },
+    {
+      "geometry": "Small attached high-side strip/cap at rear of front upper storey; maximum front roof Z55.4.",
+      "evidence": [
+        "R-03",
+        "B-02"
+      ],
+      "interpretation": "Clerestory silhouette only, not new equipment or extra storey. Approximate span and depth."
+    },
+    {
+      "geometry": "Rear body unchanged.",
+      "evidence": [
+        "6F",
+        "1F",
+        "R-03",
+        "B-02"
+      ],
+      "interpretation": "6F confirms deeper concave L but this candidate defers rear revision until upper/lower and model placement are reconciled."
+    }
+  ],
+  "manufacturing_simplification_R2": {
+    "reason": "Original face 1215 normal chord 0.006247692 mm is a real vertical crescent tip, not merely a thick-plate boundary chord.",
+    "changes": "Clerestory flat ends X=-39/-5, front Y=-10.5; shallow slot X=-37/-7, Y=-10.5/-10, Z50.8/53.3; cap X=-40/-4,Y=-11.5/-4.5,Z54.1/55.4.",
+    "not_source_dimensions": true,
+    "original_tip_same_ray_revised_exit_mm": 3.60919101936,
+    "fixed_Z52_min_continuous_Y_material_mm": 1.3397016525268555,
+    "followup": "qa/risk-followup-e45f8d6/RISK-FOLLOWUP.md",
+    "source_photos_reused": true,
+    "new_source_building_claims": false
+  }
 }

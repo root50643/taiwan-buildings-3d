@@ -1,5 +1,6 @@
-"""Original photo-derived NTHU exterior miniature, dimensions in millimetres.
-No source 3D assets, survey plans, or interior arrangements used.
+"""Photo-derived NTHU exterior miniature, dimensions in millimetres.
+2026-10-18 review candidate: front roof/terrace, robust clerestory ends.
+No source 3D assets, survey dimensions, or interior arrangements used.
 Run: python build_model.py (see requirements.txt).
 """
 from pathlib import Path
@@ -16,17 +17,39 @@ def cut(x,y,z,w,d,h): cuts.append(box(x,y,z,w,d,h))
 def ellipse(x,y,z,rx,ry,h): return Manifold.cylinder(h,1,1,circular_segments=96).scale((rx,ry,1)).translate((x,y,z))
 def wedge(poly,y,depth): return CrossSection([poly]).extrude(depth).rotate((90,0,0)).translate((0,y+depth/2,0))
 def column(x,y,z,r,h): parts.append(Manifold.cylinder(h,r,r,circular_segments=24).translate((x,y,z)))
+def yz_prism(profile, xmin=-60, width=76):
+ # Profile uses (model Y, Z), with rear +Y, front -Y. Extrude along X.
+ return CrossSection([profile]).extrude(width).transform(((0,0,1,xmin),(1,0,0,0),(0,1,0,0)))
 # Overall body is a deliberately approximate exterior interpretation.
 add(0,0,0,150,124,3)
 # Rear seven-storey open-book mass. Wings angle away from central spine.
 for x,ang in [(-30,-14),(30,14)]:
  parts.append(box(0,0,2.8,66,23,62).rotate((0,0,ang)).translate((x,30,0)))
 add(0,32,3,16,27,65)
-# Oval four-storey front body; source directly identifies an elliptical plan.
-parts.append(ellipse(-22,-24,2.8,35,25,35))
-# Front roof a restrained low raised cap; exact curvature not surveyed.
-parts.append(ellipse(-22,-24,37,32,22,2))
-parts.append(wedge([(-51,38), (7,38), (-22,44)],-24,33))
+# Oval front body: three lower levels and an inset fourth level.
+# R-03 and B-02 show a curved terrace outside the inset glazed top storey.
+# Terrace width, heights and curve samples below are miniature estimates.
+parts.append(ellipse(-22,-24,2.8,35,25,29))
+parts.append(ellipse(-22,-24,31.3,35,25,1.5))
+upper_footprint=ellipse(-22,-24,32.2,28.5,18.5,25)
+# Low front roof meets the main roof at Y=-30. The main roof rises toward
+# the rear (+Y), unlike the previous X-Z triangular ridge.
+roof_profile=[(-44,40.5),(-30,39.8),(-26,40.3),(-22,41.4),
+              (-18,43.0),(-14,45.2),(-10,48.0),(-7,50.8)]
+body_profile=[(-44,32.2),(-7,32.2)]+list(reversed(roof_profile))
+parts.append(yz_prism(body_profile) ^ upper_footprint)
+# A 1.3 mm solid roof skin, clipped to a smaller oval than the terrace.
+roof_skin=[(y,z-0.25) for y,z in roof_profile]+[(y,z+1.05) for y,z in reversed(roof_profile)]
+parts.append(yz_prism(roof_skin) ^ ellipse(-22,-24,32,30,20,25))
+# High-side clerestory is attached to the rear end of the upper storey.
+# Manufacturing simplification R2: truncate the two crescent tips with flat
+# ends at X=-39/-5, move the front edge to Y=-10.5, and limit the shallow
+# recess to 0.5 mm depth with 2 mm end piers. This replaces the original
+# 0.00625 mm sampled tip; these offsets are not architectural measurements.
+clerestory=upper_footprint ^ box(-22,-8.0,32.2,34,5.0,22.3)
+parts.append(clerestory)
+parts.append(ellipse(-22,-24,54.1,29.5,19.5,1.3) ^ box(-22,-8.0,54,36,7.0,2))
+cut(-22,-10.3,50.8,30,0.6,2.5)
 # Public entrance connector closes the miniature rather than exposing interiors.
 add(25,-6,3,32,26,38)
 # Right entrance wing in photo, with supported ground-level arcade.

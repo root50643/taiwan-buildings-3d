@@ -1,0 +1,70 @@
+{
+  "checked_utc": "2026-10-18T15:56:22.796642+00:00",
+  "purpose": "Read-only inventory and help inspection; no geometry modifications, slicing, installation or downloads.",
+  "preexisting_slicer_found": true,
+  "tool_exe": "<slicer-tool-workspace>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+  "tool_exe_bytes": 196104,
+  "tool_exe_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "version_banner": "PrusaSlicer-2.9.6 based on Slic3r (with GUI support)",
+  "cli_help_runs": [
+    {
+      "argv": [
+        "<slicer-tool-workspace>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+        "--datadir",
+        "<candidate-workspace>\\slicer-inventory-evidence\\cli-data",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "<candidate-workspace>\\slicer-inventory-evidence\\prusa-help.stdout.txt",
+      "stdout_sha256": "b5f4c6abb9f2fc6060b417b0ce32184c7655545686995954d1d2dc1670b970da",
+      "stderr": "<candidate-workspace>\\slicer-inventory-evidence\\prusa-help.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "<slicer-tool-workspace>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+        "--datadir",
+        "<candidate-workspace>\\slicer-inventory-evidence\\cli-data",
+        "--help-fff"
+      ],
+      "returncode": 0,
+      "stdout": "<candidate-workspace>\\slicer-inventory-evidence\\prusa-help-fff.stdout.txt",
+      "stdout_sha256": "c2cb55b4986a97da18418adedfabf129bc929c9f0264d093f84bdbb48b244174",
+      "stderr": "<candidate-workspace>\\slicer-inventory-evidence\\prusa-help-fff.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "cli_capabilities_from_help": {
+    "load_configuration": "--load",
+    "slice_export_gcode": "--export-gcode / --slice",
+    "export_project": "--export-3mf",
+    "mesh_info": "--info",
+    "full_fff_options": "--help-fff",
+    "custom_user_data_directory": "--datadir",
+    "transformations": [
+      "--center",
+      "--rotate",
+      "--rotate-x",
+      "--rotate-y",
+      "--scale"
+    ]
+  },
+  "path_commands_found": [],
+  "registered_installations_found": [],
+  "search_scope": [
+    "PATH command lookup for PrusaSlicer, prusa-slicer, prusa-slicer-console, OrcaSlicer, BambuStudio, Cura, CuraEngine, Slic3r, slic3r-console, SuperSlicer",
+    "Program Files, Program Files (x86), AppData/Local/Programs top-level application directories",
+    "Windows HKLM/HKCU uninstall registry display names",
+    "Codex/2026-10-18/task* filenames recursively, excluding .git, node_modules, runtime-libs, __pycache__, Library transfer private directories",
+    "Temp and Downloads top-level slicer-related names"
+  ],
+  "search_limit": "Targeted known locations only; not exhaustive full disk inventory. rg unavailable; PowerShell and Python os.walk fallback used.",
+  "existing_reusable_evidence": [
+    "<slicer-tool-workspace>\\slicer-review-solid-staging\\slicer-run-summary.json",
+    "<slicer-tool-workspace>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+    "<slicer-tool-workspace>\\slicer-review-solid-staging\\audit_gcode.py"
+  ],
+  "existing_profile_note": "Existing Xizi profile is 0.4 mm nozzle, 0.15 mm layers, 100% rectilinear infill, no supports. It is evidence of runnable CLI, not an approved NTHU profile.",
+  "slicing_executed": false,
+  "candidate_modified": false
+}

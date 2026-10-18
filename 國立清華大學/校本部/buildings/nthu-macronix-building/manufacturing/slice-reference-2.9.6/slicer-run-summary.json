@@ -1,0 +1,131 @@
+{
+  "created_utc": "2026-10-18T15:57:57.417893+00:00",
+  "purpose": "One actual reference slice of fixed hidden-fill variant; NOT machine-ready and not a physical print or removal demonstration.",
+  "source_model": "<candidate-workspace>\\candidate-repo\\國立清華大學\\校本部\\buildings\\nthu-macronix-building\\manufacturing\\fill-hidden-gaps\\model.stl",
+  "source_model_sha256": "6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a",
+  "input_copy_sha256": "6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a",
+  "source_profile": "<slicer-tool-workspace>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+  "source_profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+  "derived_profile": "<candidate-workspace>\\slicing-work\\derived-single-material-snug-REFERENCE.ini",
+  "derived_profile_sha256": "68b7682788def261b3af3849f163e44f739e731b08d1a0a4fa043420ec75d400",
+  "overrides_only": {
+    "support_material": "1",
+    "support_material_auto": "1",
+    "support_material_style": "snug",
+    "support_material_threshold": "45",
+    "support_material_with_sheath": "0",
+    "support_material_closing_radius": "0.5"
+  },
+  "tool_exe": "<slicer-tool-workspace>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+  "tool_exe_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "orientation": "Original Z-up base down, 100% scale; --center 110,110 translation only, no rotations.",
+  "support_strategy": {
+    "single_material_hard_supports": true,
+    "support_from_buildplate_only": false,
+    "reason_for_everywhere": "The entire model includes a 3 mm base, so buildplate-only support would not reach most architectural overhangs. Supports may start on the model base or ledges.",
+    "auto": true,
+    "threshold_degrees_from_horizontal": 45,
+    "style": "snug",
+    "sheath": false,
+    "closing_radius_mm": 0.5,
+    "top_contact_distance_mm": 0.2,
+    "xy_spacing": "50% of external perimeter width",
+    "interface_layers": 3,
+    "interface_spacing_mm": 0,
+    "support_pattern": "rectilinear",
+    "support_spacing_mm": 2.5,
+    "dont_support_bridges": true,
+    "bridge_limitation": "Slicer-detected bridges are intentionally excluded from support; they require actual path and anchoring review and physical testing."
+  },
+  "reference_equipment": {
+    "bed_mm": [
+      220,
+      220
+    ],
+    "max_height_mm": 200,
+    "nozzle_mm": 0.4,
+    "layer_mm": 0.15,
+    "first_layer_mm": 0.15,
+    "extrusion_width_mm": 0.45,
+    "perimeter_generator": "arachne",
+    "perimeters": 3,
+    "fill_density": "100%",
+    "fill_pattern": "rectilinear",
+    "filament_type": "PLA",
+    "filament_diameter_mm": 1.75,
+    "temperature_C": 200,
+    "bed_temperature_C": 0,
+    "warning": "Inherited generic reference values only. No identified user printer, firmware, extrusion, temperature, adhesion, cooling or removal calibration. Do not send this G-code to hardware."
+  },
+  "physical_print_performed": false,
+  "geometry_changed": false,
+  "runs": [
+    {
+      "action": "slice",
+      "argv": [
+        "<slicer-tool-workspace>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+        "--datadir",
+        "<candidate-workspace>\\slicing-work\\cli-data",
+        "--load",
+        "<candidate-workspace>\\slicing-work\\derived-single-material-snug-REFERENCE.ini",
+        "--threads",
+        "2",
+        "--center",
+        "110,110",
+        "--export-gcode",
+        "--output",
+        "<candidate-workspace>\\slicing-work\\reference-NOT-MACHINE-READY.gcode",
+        "<candidate-workspace>\\slicing-work\\input-model.stl"
+      ],
+      "started_utc": "2026-10-18T15:57:57.443333+00:00",
+      "returncode": 0,
+      "seconds": 5.788838499982376,
+      "stdout": "slice.stdout.log",
+      "stdout_sha256": "343971492a14c1493176ccf3cf3f195f731648170c4d3516ce7519a66578c098",
+      "stderr": "slice.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "action": "project-export",
+      "argv": [
+        "<slicer-tool-workspace>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+        "--datadir",
+        "<candidate-workspace>\\slicing-work\\cli-data",
+        "--load",
+        "<candidate-workspace>\\slicing-work\\derived-single-material-snug-REFERENCE.ini",
+        "--threads",
+        "2",
+        "--center",
+        "110,110",
+        "--export-3mf",
+        "--output",
+        "<candidate-workspace>\\slicing-work\\reference-NOT-MACHINE-READY.3mf",
+        "<candidate-workspace>\\slicing-work\\input-model.stl"
+      ],
+      "started_utc": "2026-10-18T15:58:03.240562+00:00",
+      "returncode": 0,
+      "seconds": 0.07657809997908771,
+      "stdout": "project-export.stdout.log",
+      "stdout_sha256": "4a1b0e4470ada2da84405e964dd3bedcbf7dcb453dbb9600d9e9a4cb15a1434a",
+      "stderr": "project-export.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_model_sha256_after": "6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a",
+  "input_copy_sha256_after": "6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a",
+  "outputs": [
+    {
+      "path": "reference-NOT-MACHINE-READY.gcode",
+      "bytes": 20642153,
+      "sha256": "7f614cbe4a31e59cfed5e843f90b797f1032984c173da044284fc36ab18219de"
+    },
+    {
+      "path": "reference-NOT-MACHINE-READY.3mf",
+      "bytes": 37920,
+      "sha256": "d32a8c9147b154dfa1afb8db2089a4ef49b7119829504ad53c4714d745edad9f"
+    }
+  ],
+  "project_3mf_limit": "Actual exported 3MF contains mesh, build translation and model metadata, but no full print-profile member. It must be paired with the derived INI; it is not a full slicer project with toolpaths/support decisions.",
+  "hardware_start_end_code_limit": "Generic Marlin2 start/end code and homing/retraction/temperature commands are inherited reference values and have not been checked against a user printer. G-code is NOT-MACHINE-READY.",
+  "actual_path_roles_summary": "actual-role-summary.json"
+}

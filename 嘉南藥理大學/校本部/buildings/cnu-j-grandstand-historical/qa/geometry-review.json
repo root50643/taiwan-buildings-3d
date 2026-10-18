@@ -1,0 +1,383 @@
+{
+  "review_kind": "Independent read-only geometry QA; no STL or generator mutation",
+  "reviewed_utc": "2026-10-18T16:23:31.823452+00:00",
+  "units": "mm",
+  "coordinate_policy": "All face indices and coordinates retain the loaded STL design/print frame; no normalization before testing",
+  "thresholds": {
+    "surface_tolerance_mm": 1e-06,
+    "shared_feature_tolerance_mm": 4e-06,
+    "rebuild_coordinate_tolerance_mm": 1e-05,
+    "collision_volume_threshold_mm3": 1e-07,
+    "degenerate_area_threshold_mm2": 1e-12
+  },
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.5.4",
+    "trimesh": "4.12.2",
+    "manifold3d": "3.3.2"
+  },
+  "inputs": {
+    "build_model.py": "6022e5495e3f63c00a8d1de5ba311223b65bc76e98aca5890eb3024ad5a99fbe",
+    "parameters.json": "b26cb3f965f0f811f685d6b3b7bc8ccade54460f268879bf1f43293f47b2711d",
+    "assembly.json": "bcc2e565ae4cca8973ed31af85ea4b62ccd77c5c886266f43bf06e03c320aad2",
+    "model.stl": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f"
+  },
+  "detector_smoke_tests": {
+    "detects_noncoplanar_crossing": true,
+    "detects_coplanar_area_overlap": true,
+    "rejects_separated_parallel_triangles": true,
+    "allows_shared_edge": true
+  },
+  "parts": [
+    {
+      "file": "parts/column-assembly.stl",
+      "sha256": "04547f8b073e8505ba44ac4c97b223dffe7b114c59f7ae88ffb8aae932c1f843",
+      "vertices": 24,
+      "triangles": 44,
+      "bounds_mm": [
+        [
+          -1.399999976158142,
+          12.199999809265137,
+          23.799999237060547
+        ],
+        [
+          1.399999976158142,
+          17.799999237060547,
+          34.45000076293945
+        ]
+      ],
+      "volume_mm3": 157.08001107692698,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 412,
+        "contact_pairs_including_adjacency": 250,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    },
+    {
+      "file": "parts/column-print.stl",
+      "sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+      "vertices": 24,
+      "triangles": 44,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          10.649999618530273,
+          5.599999904632568,
+          2.799999952316284
+        ]
+      ],
+      "volume_mm3": 157.0799891304972,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 412,
+        "contact_pairs_including_adjacency": 250,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    },
+    {
+      "file": "parts/main_body-assembly.stl",
+      "sha256": "754ffd15497bffe9e69eac3d0a3930484eecea7ce53e43ba29106baf75b5d116",
+      "vertices": 1094,
+      "triangles": 2192,
+      "bounds_mm": [
+        [
+          -107.0,
+          -51.0,
+          0.0
+        ],
+        [
+          107.0,
+          39.0,
+          28.0
+        ]
+      ],
+      "volume_mm3": 260673.759066592,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 28917,
+        "contact_pairs_including_adjacency": 16613,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    },
+    {
+      "file": "parts/main_body-print.stl",
+      "sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "vertices": 1094,
+      "triangles": 2192,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          214.0,
+          90.0,
+          28.0
+        ]
+      ],
+      "volume_mm3": 260673.76032246207,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 28917,
+        "contact_pairs_including_adjacency": 16613,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    },
+    {
+      "file": "parts/mast_brace_frame-assembly.stl",
+      "sha256": "55aea8763090a78f238059c984166139fb7484c8e2bef2bc5e1572328d3f0a4b",
+      "vertices": 82,
+      "triangles": 160,
+      "bounds_mm": [
+        [
+          -1.100000023841858,
+          -26.5,
+          36.75
+        ],
+        [
+          1.100000023841858,
+          29.5,
+          53.400001525878906
+        ]
+      ],
+      "volume_mm3": 371.93016787199036,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 1951,
+        "contact_pairs_including_adjacency": 1019,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    },
+    {
+      "file": "parts/mast_brace_frame-print.stl",
+      "sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+      "vertices": 82,
+      "triangles": 160,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          16.649999618530273,
+          56.0,
+          2.200000047683716
+        ]
+      ],
+      "volume_mm3": 371.9301806178967,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 1951,
+        "contact_pairs_including_adjacency": 1019,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    },
+    {
+      "file": "parts/roof-assembly.stl",
+      "sha256": "15583c0f4c27d3fc73bf15870067b17de4ab78394afa447d835404060b07b147",
+      "vertices": 584,
+      "triangles": 1164,
+      "bounds_mm": [
+        [
+          -96.0,
+          -30.0,
+          33.79999923706055
+        ],
+        [
+          96.0,
+          30.0,
+          37.400001525878906
+        ]
+      ],
+      "volume_mm3": 31668.01984466577,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 15567,
+        "contact_pairs_including_adjacency": 8557,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    },
+    {
+      "file": "parts/roof-print.stl",
+      "sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb",
+      "vertices": 584,
+      "triangles": 1164,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          192.0,
+          60.0,
+          3.5999999046325684
+        ]
+      ],
+      "volume_mm3": 31668.003031324635,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "non_two_incident_edge_count": 0,
+      "degenerate_face_count": 0,
+      "manifold3d_status": "Error.NoError",
+      "self_intersection": {
+        "method": "AABB broad phase, plane/edge triangle narrow phase, coplanar convex clipping; shared vertex/edge contact allowed",
+        "aabb_candidate_pairs": 15567,
+        "contact_pairs_including_adjacency": 8557,
+        "unexpected_surface_intersection_count": 0,
+        "unexpected_surface_intersections": []
+      },
+      "pass": true
+    }
+  ],
+  "rebuild_in_memory_without_writing": {
+    "main_body-assembly": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 3.051757815342171e-06,
+      "pass": true
+    },
+    "main_body-print": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 7.32421875682121e-06,
+      "pass": true
+    },
+    "roof-assembly": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 3.051757815342171e-06,
+      "pass": true
+    },
+    "roof-print": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 6.103515630684342e-06,
+      "pass": true
+    },
+    "column-assembly": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 7.629394538355427e-07,
+      "pass": true
+    },
+    "column-print": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 3.814697286941282e-07,
+      "pass": true
+    },
+    "mast_brace_frame-assembly": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 1.6597076140101308e-06,
+      "pass": true
+    },
+    "mast_brace_frame-print": {
+      "same_triangle_count": true,
+      "maximum_coordinate_error_mm": 1.233101201592035e-06,
+      "pass": true
+    }
+  },
+  "assembled_piece_collisions": {
+    "physical_piece_count": 22,
+    "all_pairs": 231,
+    "positive_aabb_overlap_pairs_tested_by_manifold_boolean": 30,
+    "method": "Manifold3d solid intersection of independently loaded STL parts in declared assembly placements",
+    "collision_count": 0,
+    "collisions": [],
+    "pass": true
+  },
+  "assembly_overview_matches_placements": {
+    "same_triangle_count": true,
+    "maximum_coordinate_error_mm": 1.5497207641601562e-06,
+    "pass": true
+  },
+  "overview": {
+    "file": "model.stl",
+    "sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 22,
+    "expected_components": 22,
+    "volume_mm3": 297631.8788155376,
+    "bounds_mm": [
+      [
+        -107.0,
+        -51.0,
+        0.0
+      ],
+      [
+        107.0,
+        39.0,
+        53.400001525878906
+      ]
+    ],
+    "self_intersection_basis": "Each component surface checked above; all cross-component solid intersections checked in assembly. Separate parts are intentional."
+  },
+  "input_sha256_unchanged_after_review": true,
+  "limitations": [
+    "Floating-point triangle predicate with stated millimetre tolerances, not arbitrary-precision proof.",
+    "Positive-volume collision test does not certify adhesive strength, material tolerance, printer calibration, or support removal.",
+    "No physical print or fit test performed; manufacturing review is separate."
+  ],
+  "pass": true,
+  "elapsed_seconds": 33.25
+}

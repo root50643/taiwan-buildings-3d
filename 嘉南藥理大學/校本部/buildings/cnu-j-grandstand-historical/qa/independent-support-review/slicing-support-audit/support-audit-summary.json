@@ -1,0 +1,83 @@
+{
+  "candidate_commit": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
+  "scope": "Four unique print files, not 22 independent slicing jobs. This is the slicing/support subreview only.",
+  "verdict": "CONDITIONAL_GO_FIXED_PRINT_STLS; ORIGINAL_MAIN_AUTO_BRIDGE_DIAGNOSTIC_PROCESS_NOT_ACCEPTED",
+  "geometry_change_required_by_this_subreview": false,
+  "fixed_print_stls": [
+    {
+      "part": "main_body",
+      "quantity": 1,
+      "sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "unchanged_at_finalization": true
+    },
+    {
+      "part": "roof",
+      "quantity": 1,
+      "sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb",
+      "unchanged_at_finalization": true
+    },
+    {
+      "part": "column",
+      "quantity": 10,
+      "sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+      "unchanged_at_finalization": true
+    },
+    {
+      "part": "mast_brace_frame",
+      "quantity": 10,
+      "sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+      "unchanged_at_finalization": true
+    }
+  ],
+  "original_four_unique_reslices_exit_zero": true,
+  "original_four_unique_reslices_identical_except_timestamp": true,
+  "original_gcode_sha_bindings_match": true,
+  "original_main": {
+    "bridge_tagged_segments": 6725,
+    "longest_previous_object_only_centerline_gap_mm": 179.27600218657267,
+    "longest_including_near_support_centerline_gap_mm": 174.28871912133684,
+    "support_positive_xy_segments": 26586,
+    "finite_access_sample_points": 83924,
+    "eight_horizontal_directions_no_clear_count": 580,
+    "followup_piecewise_point_routes_clear": true
+  },
+  "review_only_short_axis_main": {
+    "profile_sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+    "gcode_sha256": "9aa5d56634a0fc9a99a17f3c9a02588eb6987613facb2ea99ae2e625dd5e842c",
+    "exit_code": 0,
+    "changes_only": {
+      "bridge_angle": 90,
+      "dont_support_bridges": 0
+    },
+    "z12p6_longest_centerline_gap_with_near_support_mm": 1.7040004999999963,
+    "all_main_longest_centerline_gap_with_near_support_mm": 8.22491271252096,
+    "support_positive_xy_segments": 30369,
+    "finite_access_sample_points": 95890,
+    "eight_horizontal_directions_no_clear_count": 580,
+    "flagged_points_exactly_match_original": true,
+    "followup_piecewise_point_routes_clear": true,
+    "not_a_validated_machine_profile": true
+  },
+  "roof": {
+    "blind_socket_openings": 30,
+    "socket_actual_centerline_span_mm": 2.6000110755685952,
+    "other_infill_closure_max_centerline_span_mm": 8.036026605238602,
+    "bridge_tagged_segments": 4108
+  },
+  "required_print_conditions": [
+    "Use supplied bed orientations, 100% scale, four unique files in physical quantities 1+1+10+10; not overview STL.",
+    "Main body must be re-sliced with transverse/short-axis platform bridges and support not skipped for those bridges; inspect the actual path coordinates and all added support at real-machine settings. Original auto bridge profile is not accepted manufacturing proof.",
+    "Generic reference assumes 0.4mm nozzle, 0.2mm layers, 0.45mm specified line width, 3 perimeters, 15% stars infill, PLA, 250x210mm bed. Real printer calibration required.",
+    "The approximately 8.225mm main and 8.036mm canopy internal closures require calibrated flow/cooling/bridge ability; otherwise use denser local infill or solid layers and re-slice. Do not describe all bridges as 2.6mm sockets.",
+    "Before gluing, fragment shallow-window support from the side via the 4.5x9.4mm exterior corridor with fine angled tools. Do not pull a whole block forward or lever stairs/mullions. If access/adhesion is unsuitable, change support strategy and re-slice.",
+    "Canopy warp/bed adhesion and delicate upper frames remain risks. No brim was used in the reference G-code; any added brim must be separately removed and fit rechecked."
+  ],
+  "limitations": [
+    "No machine execution, physical trial print, dry fit, support removal, brim removal, glue-strength or large-canopy warp test.",
+    "Centerline capsule coverage describes planned bead footprints; it does not validate molten-bead shape, adhesion or sag.",
+    "At-most-1mm point samples, eight direction rays and selected radius rays are finite checks, not all-surface/all-direction support-removal or swept-tool proof.",
+    "The same geometry is open to the exterior, but support mass can obstruct the route; progressive fragmentation and the complete tool shape were not simulated."
+  ],
+  "report": "SLICING-SUPPORT-REVIEW.md",
+  "evidence_png": "independent-path-evidence.png"
+}

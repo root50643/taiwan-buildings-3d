@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "purpose": "Supplemental exact-rational evidence; preserved initial report is not modified.",
+  "script_sha256": "bda0b481b751fae65a13f67a84e7318386d30ea69b4b822ed419856540a36220",
+  "initial_screen_script_sha256": "b34277d7c813060d1ba9f623608ba8bc0b212e4674a5720a0b50999333ff95b7",
+  "initial_report_sha256": "ecb827ca88643f1ae8e15c85ded28f6a0f67487dd9a579a07f133542a8294c56",
+  "stl_sha256": "6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a",
+  "stl_bytes": 198784,
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.5.4"
+  },
+  "coordinate_representation": "Saved float32 values promoted without change and represented as Python integers on a common power-of-two scale; intersection coordinates use fractions.Fraction.",
+  "integer_units_per_mm": 19342813113834066795298816,
+  "controls": {
+    "passed": true,
+    "cases": [
+      {
+        "name": "crossing_nonadjacent",
+        "expected_invalid_intersection": true,
+        "detected_invalid_intersection": true,
+        "matches_expected": true,
+        "detail": {
+          "kind": "exact_noncoplanar_intersection",
+          "shared_vertices": 0,
+          "points_mm": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              0.0
+            ]
+          ],
+          "segment_length_mm": 1.0
+        }
+      },
+      {
+        "name": "coplanar_area_overlap",
+        "expected_invalid_intersection": true,
+        "detected_invalid_intersection": true,
+        "matches_expected": true,
+        "detail": {
+          "kind": "exact_coplanar_area_overlap",
+          "projected_area_mm2": 0.49999999999999994,
+          "shared_vertices": 0
+        }
+      },
+      {
+        "name": "duplicate_triangle",
+        "expected_invalid_intersection": true,
+        "detected_invalid_intersection": true,
+        "matches_expected": true,
+        "detail": {
+          "kind": "exact_coplanar_area_overlap",
+          "projected_area_mm2": 2.0,
+          "shared_vertices": 3
+        }
+      },
+      {
+        "name": "nonadjacent_point_contact",
+        "expected_invalid_intersection": true,
+        "detected_invalid_intersection": true,
+        "matches_expected": true,
+        "detail": {
+          "kind": "exact_noncoplanar_intersection",
+          "shared_vertices": 0,
+          "points_mm": [
+            [
+              1.0,
+              1.0,
+              0.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "segment_length_mm": 0.0
+        }
+      },
+      {
+        "name": "shared_vertex_but_also_crossing",
+        "expected_invalid_intersection": true,
+        "detected_invalid_intersection": true,
+        "matches_expected": true,
+        "detail": {
+          "kind": "exact_noncoplanar_intersection",
+          "shared_vertices": 1,
+          "points_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "segment_length_mm": 1.4142135623730951
+        }
+      },
+      {
+        "name": "shared_edge_coplanar_overlap",
+        "expected_invalid_intersection": true,
+        "detected_invalid_intersection": true,
+        "matches_expected": true,
+        "detail": {
+          "kind": "exact_coplanar_area_overlap",
+          "projected_area_mm2": 0.5,
+          "shared_vertices": 2
+        }
+      },
+      {
+        "name": "separated",
+        "expected_invalid_intersection": false,
+        "detected_invalid_intersection": false,
+        "matches_expected": true,
+        "detail": null
+      },
+      {
+        "name": "parallel_separated",
+        "expected_invalid_intersection": false,
+        "detected_invalid_intersection": false,
+        "matches_expected": true,
+        "detail": null
+      },
+      {
+        "name": "shared_edge_coplanar",
+        "expected_invalid_intersection": false,
+        "detected_invalid_intersection": false,
+        "matches_expected": true,
+        "detail": null
+      },
+      {
+        "name": "shared_edge_folded",
+        "expected_invalid_intersection": false,
+        "detected_invalid_intersection": false,
+        "matches_expected": true,
+        "detail": null
+      },
+      {
+        "name": "shared_vertex_only",
+        "expected_invalid_intersection": false,
+        "detected_invalid_intersection": false,
+        "matches_expected": true,
+        "detail": null
+      },
+      {
+        "name": "aabb_overlaps_but_disjoint",
+        "expected_invalid_intersection": false,
+        "detected_invalid_intersection": false,
+        "matches_expected": true,
+        "detail": null
+      }
+    ],
+    "method": "The same 12 synthetic crossing, coplanar, duplicate, nonadjacent contact, normal adjacency and disjoint cases as the initial screen, evaluated by exact rational predicates."
+  },
+  "all_aabb_overlapping_pairs_checked_including_adjacent": 45039,
+  "invalid_intersection_count": 0,
+  "findings": [],
+  "exact_triangle_contact_check_passed": true,
+  "initial_findings_adjudicated": [
+    {
+      "faces": [
+        155,
+        165
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        158,
+        192
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        1300,
+        1302
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        406,
+        441
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        441,
+        755
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        471,
+        488
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        488,
+        792
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        476,
+        490
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        490,
+        793
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        1199,
+        1201
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        1451,
+        1450
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        3619,
+        3620
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        3641,
+        3642
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        3667,
+        3668
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        3691,
+        3692
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        1431,
+        1443
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        162,
+        164
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        165,
+        166
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        192,
+        171
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        205,
+        195
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        193,
+        203
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        214,
+        215
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        239,
+        246
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        548,
+        553
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        553,
+        560
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        548,
+        562
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        553,
+        562
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        560,
+        562
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        553,
+        572
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        560,
+        572
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    },
+    {
+      "faces": [
+        561,
+        572
+      ],
+      "initial_kind": "noncoplanar_intersection",
+      "exact_invalid_intersection": false,
+      "exact_detail": null
+    }
+  ],
+  "initial_findings_confirmed": 0,
+  "initial_report_retained": "variant-extended-checks.json",
+  "elapsed_seconds": 2.784455699962564,
+  "formal_slicer_run": false,
+  "physical_print_test": false,
+  "limitations": [
+    "The stated check concerns stored triangles and exact shared-vertex/shared-edge contact, subject to implementation correctness; it does not verify architectural accuracy.",
+    "It does not make the initial sampled thickness or support warnings disappear and does not prove minimum thickness, support feasibility or printability.",
+    "Synthetic controls exercise important cases but are not a formal verification of the implementation."
+  ]
+}

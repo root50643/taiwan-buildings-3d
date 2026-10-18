@@ -1,0 +1,69 @@
+{
+  "original_eight_horizontal_ray_no_clear_count": 580,
+  "original_flags_preserved": true,
+  "flagged_bbox_mm": [
+    [
+      -42.55,
+      -30.7375,
+      5.6
+    ],
+    [
+      42.55,
+      -30.045,
+      10.867
+    ]
+  ],
+  "flagged_sample_points_inside_body_count": 0,
+  "point_route_legs": "Each original point -> same X/Z,Y=-33 -> X=sign*65 -> Y=-60. Geometry-only finite line segments; no support mass, cutter shape or force modeling.",
+  "blocked_point_routes_by_leg": [
+    0,
+    0,
+    0
+  ],
+  "all_flagged_point_routes_clear": true,
+  "point_route_example": [
+    [
+      -42.55,
+      -30.25,
+      6.35
+    ],
+    [
+      -42.55,
+      -33.0,
+      6.35
+    ],
+    [
+      -65.0,
+      -33.0,
+      6.35
+    ],
+    [
+      -65.0,
+      -60.0,
+      6.35
+    ]
+  ],
+  "shaft_corridor_limited_radius_checks": [
+    {
+      "side": -1,
+      "offset_rays": 65,
+      "radius_mm": 0.5,
+      "blocked_rays": 0
+    },
+    {
+      "side": 1,
+      "offset_rays": 65,
+      "radius_mm": 0.5,
+      "blocked_rays": 0
+    }
+  ],
+  "known_corridor_between_wall_and_stairs_mm": 4.5,
+  "known_corridor_vertical_from_base_to_balcony_mm": 9.4,
+  "required_operation": "Do not pull these shallow-window supports as one block straight forward. Remove canopy/columns are not assembled yet. Fragment and peel the support from the side of the open 4.5mm corridor using a slender angled pick/fine cutter; a tip must turn into the approximately 1.2mm-deep exterior window relief. The shaft sample does not validate that full bent tool or a gripped support chunk can turn. If physical access/adhesion prevents clean fragmentation, revise support placement/profile or use a compatible soluble-support process, re-slice and inspect.",
+  "limitations": [
+    "Finite centerline routes and 65 radial shaft rays are evidence of open exterior space, not a continuous swept-tool proof.",
+    "No physical print/support removal, fit, adhesive strength or acceptable surface damage test.",
+    "Supports themselves may obstruct the corridor and must be fragmented progressively; no whole-block extraction claim."
+  ],
+  "source_report": "REVIEW-ONLY-support-access-and-bridge.json"
+}

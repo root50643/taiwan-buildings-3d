@@ -1,0 +1,411 @@
+{
+  "pass": true,
+  "pass_scope": "Integration completeness and unchanged fixed inputs only. Manufacturing remains CONDITIONAL_GO_FIXED_STLS_ONLY; the original main automatic-direction route is NOT approved.",
+  "manufacturing_status": "CONDITIONAL_GO_FIXED_STLS_ONLY",
+  "old_main_route_accepted": false,
+  "decision": "PASS_INCREMENTAL_INTEGRATION_ONLY_CONDITIONAL_GO_FIXED_STLS",
+  "scope": "Independent read-only delta review of guidance, unchanged fixed geometry/source files, two-setting profile revision and actual integrated diagnostic toolpath identity. No new slicing, rendering, bridge/support numeric computation or physical test was performed.",
+  "original_candidate_commit": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
+  "integration_base_commit": "1976d60d5e1621dac2ce6a5d904e74796c38be0e",
+  "limitations": "Final seal, manifest refresh, candidate commit and Library backup/official download receipt are outside this reviewer scope. This is not an unconditional manufacturing approval.",
+  "reviewer_tool_attempts": [
+    {
+      "action": "Enumerate original Git paths",
+      "initial_result": "Filename enumeration stopped because default Git quotePath encoded non-ASCII path names; no model check result was produced.",
+      "correction": "Use NUL-delimited git ls-tree -rz to obtain the exact UTF-8 paths. No geometry, threshold or evidence input changed."
+    }
+  ],
+  "fixed_inputs": [
+    {
+      "path": "model.stl",
+      "same_bytes": true,
+      "original_git_blob": "6ef5c74f361ff3a1ad869ff944d89c422573c251",
+      "sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
+      "bytes": 269884
+    },
+    {
+      "path": "build_model.py",
+      "same_bytes": true,
+      "original_git_blob": "f06428273e0e301fabded6b89991b4501284ac2d",
+      "sha256": "6022e5495e3f63c00a8d1de5ba311223b65bc76e98aca5890eb3024ad5a99fbe",
+      "bytes": 8403
+    },
+    {
+      "path": "parameters.json",
+      "same_bytes": true,
+      "original_git_blob": "aff107d499d29b58699dc25f36d6a5e416d73759",
+      "sha256": "b26cb3f965f0f811f685d6b3b7bc8ccade54460f268879bf1f43293f47b2711d",
+      "bytes": 1353
+    },
+    {
+      "path": "assembly.json",
+      "same_bytes": true,
+      "original_git_blob": "005bb6e4010f1deb7bb1f3634cee8209a8998fa3",
+      "sha256": "bcc2e565ae4cca8973ed31af85ea4b62ccd77c5c886266f43bf06e03c320aad2",
+      "bytes": 5817
+    },
+    {
+      "path": "scene.blend",
+      "same_bytes": true,
+      "original_git_blob": "a4c1ab29af20e416fa0c3a29a666d12cd849afce",
+      "sha256": "d7317f777f1c1a5e541ae7f70d505fa0d9dad72fd6b79385c76a848d3c77a048",
+      "bytes": 933080
+    },
+    {
+      "path": "render_preview.py",
+      "same_bytes": true,
+      "original_git_blob": "89422d77b8aac2e56a23ef68647ca5a5de2e06e3",
+      "sha256": "7c5ea9c22edaf87b2f626a06875fdb21edf56bc4644cde6881440a7079615584",
+      "bytes": 5858
+    },
+    {
+      "path": "sanitize_scene.py",
+      "same_bytes": true,
+      "original_git_blob": "283f2ef8537247d5ab6c26bed29539c9cd07ddfe",
+      "sha256": "6c5df542290d28cf2eab37057609978bf1bef78cea31de011369448279b11c03",
+      "bytes": 931
+    },
+    {
+      "path": "render-manifest.json",
+      "same_bytes": true,
+      "original_git_blob": "f1d65094e4774d9d5583cdd0f5276c19245a5358",
+      "sha256": "ae9aad63ed9a0042d0b49dfba7c20c94bec374ab4bf0c397ca6f9ddfad2f22e4",
+      "bytes": 848
+    },
+    {
+      "path": "parts/column-assembly.stl",
+      "same_bytes": true,
+      "original_git_blob": "8671bab64e9a09a76f22be324e5ffe1797bb4f5b",
+      "sha256": "04547f8b073e8505ba44ac4c97b223dffe7b114c59f7ae88ffb8aae932c1f843",
+      "bytes": 2284
+    },
+    {
+      "path": "parts/column-print.stl",
+      "same_bytes": true,
+      "original_git_blob": "eb5c00aa99c8ddbfe56b727b617caf5bccccee60",
+      "sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+      "bytes": 2284
+    },
+    {
+      "path": "parts/main_body-assembly.stl",
+      "same_bytes": true,
+      "original_git_blob": "4d2addfe7291869f3e327f9a499eb9a59599db3e",
+      "sha256": "754ffd15497bffe9e69eac3d0a3930484eecea7ce53e43ba29106baf75b5d116",
+      "bytes": 109684
+    },
+    {
+      "path": "parts/main_body-print.stl",
+      "same_bytes": true,
+      "original_git_blob": "5469f563666bf245e706d335c0c0a09c0b30aef5",
+      "sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "bytes": 109684
+    },
+    {
+      "path": "parts/mast_brace_frame-assembly.stl",
+      "same_bytes": true,
+      "original_git_blob": "7f32f041d0e29d0683bcfcbbc1208dcef4645dc0",
+      "sha256": "55aea8763090a78f238059c984166139fb7484c8e2bef2bc5e1572328d3f0a4b",
+      "bytes": 8084
+    },
+    {
+      "path": "parts/mast_brace_frame-print.stl",
+      "same_bytes": true,
+      "original_git_blob": "6b1c4a27a7294f7d5b54102f4f6cbc2386e96a30",
+      "sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+      "bytes": 8084
+    },
+    {
+      "path": "parts/roof-assembly.stl",
+      "same_bytes": true,
+      "original_git_blob": "4c2c01993f76ca433389e35ee74c579c3a4d7afc",
+      "sha256": "15583c0f4c27d3fc73bf15870067b17de4ab78394afa447d835404060b07b147",
+      "bytes": 58284
+    },
+    {
+      "path": "parts/roof-print.stl",
+      "same_bytes": true,
+      "original_git_blob": "0ff6d6069ff6782a23e24c1068bb6723d3be5dc8",
+      "sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb",
+      "bytes": 58284
+    }
+  ],
+  "all_16_fixed_files_byte_identical": true,
+  "four_print_and_four_assembly_stls_plus_model_unchanged": true,
+  "original_evidence_preservation": {
+    "original_files_count": 58,
+    "missing_original_paths": [],
+    "raw_qa_checks": [
+      {
+        "path": "qa/README.md",
+        "same_bytes": true,
+        "original_git_blob": "c9be84caa28b0327bde65ae16e4a9469384e42ad",
+        "sha256": "573b8166b97970853d93e619774d0cec8362a07b0b9cc3fb502e5d0c63f74f19",
+        "bytes": 2143
+      },
+      {
+        "path": "qa/check_geometry.py",
+        "same_bytes": true,
+        "original_git_blob": "357814814b1f5ddfde4e604d17c5bb43a7992af2",
+        "sha256": "7ab505f72f85550ef4dccf379d43b63edb33d0166f4d3fc2b1e1d522f4a62c89",
+        "bytes": 13673
+      },
+      {
+        "path": "qa/check_scene.py",
+        "same_bytes": true,
+        "original_git_blob": "f18e62fd3575bea9e6cf2482148c9618249ded8b",
+        "sha256": "01e4e44d876572190cafdf70180064b50e698ab14f1aec6bc3d7de41cdbf7aa5",
+        "bytes": 2915
+      },
+      {
+        "path": "qa/geometry-review-superseded-pre-freeze.json",
+        "same_bytes": true,
+        "original_git_blob": "f1e0c0b3500eeaf357514f539708d00d4f4b04a9",
+        "sha256": "4846d7009d0cbaff8c0993b553d3687447a28029c03149c7d29d309c99f5071a",
+        "bytes": 12528
+      },
+      {
+        "path": "qa/geometry-review.json",
+        "same_bytes": true,
+        "original_git_blob": "bd0b37d78dae673ea56afe88e6aa069c62b7577e",
+        "sha256": "7e92ffcfff0c939b0f8885553d3ed077b7002c13a1787127daa32d16dc79fcc2",
+        "bytes": 12468
+      },
+      {
+        "path": "qa/manufacturing-review/column-slice.log",
+        "same_bytes": true,
+        "original_git_blob": "4e621cb60d0f12c49af4f8b6073bf3aab58af68b",
+        "sha256": "54b7cef6276d199dad8de5e1a00dd51ff772f03840ee4a7b95e88835bf049f9d",
+        "bytes": 511
+      },
+      {
+        "path": "qa/manufacturing-review/diagnostic-main-support.ini",
+        "same_bytes": true,
+        "original_git_blob": "7c6467672fc158fa870e10c55d2e66685f16754b",
+        "sha256": "5c81bd9b223a05c3cb649beec52a42a465907513a25a0b517f3a095ea7d4ddf2",
+        "bytes": 10286
+      },
+      {
+        "path": "qa/manufacturing-review/diagnostic-no-support.ini",
+        "same_bytes": true,
+        "original_git_blob": "a00c751c5f257cdc5567f9c85ef9db84a8ea59e5",
+        "sha256": "f463221759e65388eae4587af9b6fe132bc7102757f4fc183536d817e70ec61d",
+        "bytes": 10286
+      },
+      {
+        "path": "qa/manufacturing-review/geometry-review.json",
+        "same_bytes": true,
+        "original_git_blob": "a9f668891f08565e97bc1bfa3592cf457440ace4",
+        "sha256": "b29aa09d6d80b98986ecbeb2d3e98967ae10a8eb3e7f1344f9815c77c4713297",
+        "bytes": 23027
+      },
+      {
+        "path": "qa/manufacturing-review/main_body-slice.log",
+        "same_bytes": true,
+        "original_git_blob": "07f63820669e9840e31997e0075e32d12c4a16af",
+        "sha256": "820e3775e5ab47d5fea85df7751607def43245dd70c3493aba2c16a050415ac1",
+        "bytes": 552
+      },
+      {
+        "path": "qa/manufacturing-review/mast_brace_frame-slice.log",
+        "same_bytes": true,
+        "original_git_blob": "0c57fbe163dc12938ffc0323b7d3678834270406",
+        "sha256": "84955314b52ff3fd6518b9abfb3c65826d63cdd84d2326cd1b8e51ba7f4e8984",
+        "bytes": 531
+      },
+      {
+        "path": "qa/manufacturing-review/plot_slice_evidence.py",
+        "same_bytes": true,
+        "original_git_blob": "35b3b21bace096881c970784bd129ea3a14bbaf3",
+        "sha256": "765935885fd4b7b3c9bf1adcc8cd9a6db24e77b4147a210223a4baf10639de04",
+        "bytes": 3609
+      },
+      {
+        "path": "qa/manufacturing-review/review_geometry.py",
+        "same_bytes": true,
+        "original_git_blob": "680c51de1e1a93356c266e92efa8a4a618b98b32",
+        "sha256": "1130232d7d5807b7c7fb094ac23f30bfd7a094ae7556fc324d082daf82448a06",
+        "bytes": 8040
+      },
+      {
+        "path": "qa/manufacturing-review/roof-slice.log",
+        "same_bytes": true,
+        "original_git_blob": "2bda2b1d47c73a8b26431b4e22586cfe4f6f7cc2",
+        "sha256": "30bbd42c78a640cf9c14a57ecdd87a20ab5a155abbeb5f7d4197b452df71bf46",
+        "bytes": 507
+      },
+      {
+        "path": "qa/manufacturing-review/slice-evidence.json",
+        "same_bytes": true,
+        "original_git_blob": "f80f3a93d8a8f82617df866d2139e4d621a2b6f0",
+        "sha256": "d0bfc2473260249e0a705f7e5435ac65723d9c5cf80e2b3c3d95c3e2738f5959",
+        "bytes": 305
+      },
+      {
+        "path": "qa/manufacturing-review/slice-evidence.png",
+        "same_bytes": true,
+        "original_git_blob": "8adc2a8779fc0b347fa3ce24e7178f267cb35643",
+        "sha256": "253766f4684b19b8675e521df46003783781adfce1fdb6020f8cbdb9f43ab9b3",
+        "bytes": 122633
+      },
+      {
+        "path": "qa/manufacturing-review/slice_diagnostics.py",
+        "same_bytes": true,
+        "original_git_blob": "15b677c95eeeeb640a0fad98c725f69bc1c39105",
+        "sha256": "2c22a6a6ac2d4177093108b4b700012c545e3ab48228bcd40938a8479c9f1f19",
+        "bytes": 5500
+      },
+      {
+        "path": "qa/manufacturing-review/slicing-summary.json",
+        "same_bytes": true,
+        "original_git_blob": "084a09a81966a4676a7584de32914bbd78792d59",
+        "sha256": "ce9230556ff0a0c2243955dfd7f596fffd028d410e9a777a21c0357b93a46f84",
+        "bytes": 16812
+      },
+      {
+        "path": "qa/manufacturing-review/tool-version.txt",
+        "same_bytes": true,
+        "original_git_blob": "8572fcf5d39868eeba5999800701111fcdd111b7",
+        "sha256": "e8ed17d6de95a3f1d4fc81368453a36c277761c3270502428bb4af753cf060e4",
+        "bytes": 231
+      },
+      {
+        "path": "qa/privacy-review.json",
+        "same_bytes": true,
+        "original_git_blob": "6be9b171b41d94ddbf2322e7d368ac8f5b5317d9",
+        "sha256": "8aa13e932b9846bfcc7f39b61145f64ee5daac7221dc0d160282955ced3153d4",
+        "bytes": 563
+      },
+      {
+        "path": "qa/scene-review-superseded-coordinate-sort.json",
+        "same_bytes": true,
+        "original_git_blob": "7d522c80ae8b9319ddeddf0fb902efc6977b86f7",
+        "sha256": "a56dae58269fc06b2231b235f47629d754b609c930543d5a1d180c366e55b9a0",
+        "bytes": 523
+      },
+      {
+        "path": "qa/scene-review.json",
+        "same_bytes": true,
+        "original_git_blob": "2c0254d36d4ac50adc1a8e51fffb2da298609479",
+        "sha256": "0ffa460cec1e2976b3f743fb933a63055abe4ff21300130cb9963cb67bbfc4ad",
+        "bytes": 711
+      },
+      {
+        "path": "qa/tool-failures.json",
+        "same_bytes": true,
+        "original_git_blob": "0ab4407a8caf8809115b59f836c02f269dca5912",
+        "sha256": "d7820f752a8839fc5c2789498c279af14536df1767c84bfd8aa8ea92e06853f8",
+        "bytes": 455
+      },
+      {
+        "path": "qa/visual-source-review.json",
+        "same_bytes": true,
+        "original_git_blob": "6f7d16f89df4258b09c6d60207510cbb563f273e",
+        "sha256": "05fb6306422bce824acc8cc2d528a7070931ffa6b3197b80b0959ec5e93df190",
+        "bytes": 7819
+      }
+    ],
+    "all_raw_qa_byte_identical": true,
+    "history_copies": [
+      {
+        "path": "qa/history/original-manufacturing-README.md",
+        "original_path": "qa/manufacturing-review/README.md",
+        "same_original_bytes": true,
+        "sha256": "bb03c447d06c3bf32fec47c843889f242f5244a473184823181b6792ab149271"
+      },
+      {
+        "path": "qa/history/original-qa-summary.json",
+        "original_path": "qa-summary.json",
+        "same_original_bytes": true,
+        "sha256": "9c05da0ee37e7d7e1af407077071542daa381b4c8045509eca99696d897f9329"
+      },
+      {
+        "path": "qa/history/original-freeze-record.json",
+        "original_path": "freeze-record.json",
+        "same_original_bytes": true,
+        "sha256": "1de586cb53005a7febab6d61730ab7370b607473450d9b8a4f8f7b0a941815d4"
+      },
+      {
+        "path": "qa/history/original-repository-scope.json",
+        "original_path": "qa/repository-scope.json",
+        "same_original_bytes": true,
+        "sha256": "821efccbc6662f9901f93d304bcf336d22d52f9bef0c305982d5e0b35a7b836c"
+      }
+    ],
+    "all_history_copies_exact": true
+  },
+  "reviewed_profile": {
+    "path": "manufacturing/reviewed-support/main-short-axis-support.ini",
+    "sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+    "matches_independent_profile_bytes": true,
+    "actual_config_changes": {
+      "bridge_angle": {
+        "old": "0",
+        "new": "90"
+      },
+      "dont_support_bridges": {
+        "old": "1",
+        "new": "0"
+      }
+    },
+    "exactly_two_required_config_changes": true,
+    "diff_record_matches_actual": true
+  },
+  "actual_gcode_identity_check": {
+    "integrated_bytes": 8540991,
+    "integrated_sha256": "896a8e3dcd229b515025ccb4c110344c725c7f67e82a1dc20ab0e2fc28974c98",
+    "reference_sha256": "9aa5d56634a0fc9a99a17f3c9a02588eb6987613facb2ea99ae2e625dd5e842c",
+    "same_line_count": true,
+    "line_count": 213761,
+    "different_lines": [
+      {
+        "line_1based": 1,
+        "new": "; generated by PrusaSlicer 2.9.6 on 2026-10-18 at 17:05:25 UTC",
+        "reference": "; generated by PrusaSlicer 2.9.6 on 2026-10-18 at 16:50:34 UTC"
+      }
+    ],
+    "only_generated_time_line_differs": true,
+    "one_generation_line_per_input": true,
+    "canonical_bytes_equal": true,
+    "canonical_sha256": "dec08162c81c48cde9081124088a249a34de8133ecaf89e3b1a48baeb23ab053",
+    "matches_integration_record": true,
+    "raw_gcode_delivered": false
+  },
+  "integrated_independent_evidence": {
+    "validation_report": "qa/independent-support-review/integration-validation.json",
+    "validation_report_sha256": "6be0e5058826ddf0a8c6a56dfbc0163fc10150039a85f2667c8d4a211b3da478",
+    "source_manifest_sha256": "dc5f4776ed7a276c83239662d08d199ad988be087dc798dd1124f387ab330461",
+    "copied_source_files": 69,
+    "all_source_and_integrated_hashes_independently_rechecked": true,
+    "validation_report_records_all_numeric_boolean_null_leaves_preserved": true,
+    "validation_report_records_local_links_resolve": true,
+    "validation_report_private_absolute_path_files": [],
+    "validation_report_excluded_file_type_violations": [],
+    "numerical_computation_and_finite_support_replay_repeated_by_delta_reviewer": false
+  },
+  "manual_document_review": {
+    "files": [
+      "README.md",
+      "qa-summary.json",
+      "qa/manufacturing-review/README.md",
+      "manufacturing/reviewed-support/README.md",
+      "qa/independent-support-review/INTEGRATION-README.md"
+    ],
+    "all_required_conditions_retained": true,
+    "conditions_checked": [
+      "Original automatic-direction main-body route NOT approved; exit 0/no warning does not prove the original printing method.",
+      "Platform must bridge its short axis with support retained below bridges; saved angle 90 is orientation-specific; actual printer reslice and affected-layer inspection required.",
+      "Original ~174.289mm and corrected ~1.704001mm intervals are toolpath centerline/support-band abstractions, not measured physical bridge performance.",
+      "Internal ~8.224913mm main and ~8.036027mm canopy bridging remains; 2.600011mm socket bridge is not the largest. Adjust infill/solid layers and reslice if capability is absent.",
+      "Corrected 30,369 support segments / 95,890 unique points are separate from original 26,586 / 83,924; 580 restricted points require staged lateral removal in shallow front windows.",
+      "Finite point/ray/polyline finding of no new enclosed region is limited; no full-tool, captured-block, other-support, adhesion or force guarantee. No straight-front block pull; unsafe access requires changed/soluble support and reslice.",
+      "Remove body support before columns/canopy/frames; 50 interfaces are clearance-fit adhesive positioning, not snaps. Clean sockets/elephant foot, align ten columns and canopy, use compatible gap-filling adhesive and temporary jig.",
+      "Nominal overview height 53.4mm differs from analytical natural shoulder seating ~53.25mm, not physical fit evidence.",
+      "100% means size, 15% stars is infill; PLA, 0.4mm nozzle, 0.2mm layer, nominal 0.45mm width, 3 perimeters, 250x210mm bed. Diagnostic has skirt only/no brim.",
+      "No physical print, actual support/brim removal, dry fit or adhesive-strength test. Warping, frame handling, bending and transport remain unverified.",
+      "Both original and corrected diagnostic G-code are not machine-ready or recommended universal printer files; raw G-code remains outside package.",
+      "Historical 2006/2010/2012 plus undated-photo composite, not 2026 current state; estimated dimensions and representative far-side stairs remain disclosed."
+    ],
+    "findings": []
+  },
+  "blocking_findings": []
+}

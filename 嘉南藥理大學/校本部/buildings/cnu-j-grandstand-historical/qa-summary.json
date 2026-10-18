@@ -1,0 +1,104 @@
+{
+  "status": "four fixed print STLs conditionally GO under the independent support-review requirements; integrated incremental parent review still required before publication",
+  "one_building_model_set": true,
+  "unique_print_parts": 4,
+  "physical_piece_count": 22,
+  "model_sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
+  "checks": {
+    "geometry": "pass: 8 meshes closed, positive, single-connected; actual triangle self-intersection check 0; 22 assembled components, 231 pair tests, 0 volume collision",
+    "manufacturing": "conditional GO for unchanged fixed STLs: platform must bridge along its short axis with support retained below bridges; approximately 8.3mm internal bridging capability, staged lateral support removal and gap-filling adhesive alignment remain required; no physical validation",
+    "slicing": "Original automatic-direction main-body slice remains NOT approved. Integrated short-axis main rerun exits 0 without warnings; complete G-code except generated-time comment matches the independent corrected diagnostic. This binds its conditional bridge/support evidence, not physical printability.",
+    "scene": "exact coordinates and mapped triangles equal STL; no external linked libraries or reference photos",
+    "visual_sources": "major historical exterior features covered; official photographs viewed locally",
+    "privacy": "payload scan passed, no source photo, raw HTML, raw G-code, credential or private directory",
+    "integrated_revision": "pass for unchanged geometry and copied evidence integrity; manufacturing remains conditional and original main slicing not accepted"
+  },
+  "remaining_risks": [
+    "No physical print, actual support removal, dry fit or glue-strength test; bending and transport strength are unverified",
+    "Large 192x60mm flat roof may warp; bed adhesion, full cooling before removal and fine-frame handling need machine confirmation",
+    "Corrected slicing still requires about 8.224913mm main-body and 8.036027mm canopy internal bridging; the 2.600011mm canopy socket span is not the overall maximum",
+    "Main support must be removed before assembly by staged break-up and lateral access; the 580 restricted samples cannot be treated as a straight front extraction route",
+    "The new 95,890-point support-access audit found no added enclosed region in its finite samples; it does not guarantee complete-tool or support-block passage, other-support clearance, adhesion or removal force",
+    "Nominal assembled height is 53.4mm; approximately 53.25mm natural shoulder seating is a geometry estimate, not a physical fit measurement",
+    "Relative dimensions have at least 25% uncertainty; far-side stair routing is representative symmetry",
+    "Historical source composite, not a 2026 current-state claim"
+  ],
+  "publication_scope": "No push, PR, public inventory/count edit or external publication performed.",
+  "original_diagnostic_result_preserved": {
+    "manufacturing_claim_before_independent_review": "pass under documented 100% PLA 0.4mm nozzle / 0.2mm layer diagnostic conditions; 50 interface sockets measured",
+    "slicing_claim_before_independent_review": "4 unique parts exit 0, no warnings; main support enabled, other 3 support disabled",
+    "disposition": "The original main-body printing method is NOT approved. These historical claims and qa/manufacturing-review/slicing-summary.json remain as reference-only evidence of the original diagnostic run; exit 0 does not establish printable bridges. They are superseded for printing guidance by the independent support-review conditions, without changing or deleting the original raw results."
+  },
+  "independent_support_review": {
+    "report": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+    "slicing_report": "qa/independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+    "corrected_reference_profile": "qa/independent-support-review/slicing-support-audit/REVIEW-ONLY-main-short-axis-support.ini",
+    "fixed_stl_geometry_changed": false,
+    "conditions": {
+      "scale_percent": 100,
+      "material": "PLA",
+      "nozzle_mm": 0.4,
+      "layer_height_mm": 0.2,
+      "nominal_line_width_mm": 0.45,
+      "perimeters": 3,
+      "infill_percent": 15,
+      "bed_mm": [
+        250,
+        210
+      ],
+      "main_bridge_angle_degrees_for_saved_orientation": 90,
+      "dont_support_bridges": 0,
+      "machine_limit": "Diagnostic reference only, without valid machine start/end code. Re-slice for the intended machine and verify actual short-axis platform bridges, removable support below bridges and every affected layer. Rotation or another slicer may change angle semantics."
+    },
+    "toolpath_centerline_support_gaps_mm": {
+      "original_main_platform_z_12_6_max_approx": 174.289,
+      "corrected_main_platform_z_12_6_max": 1.704001,
+      "corrected_main_internal_infill_top_max": 8.224913,
+      "canopy_internal_infill_top_z_1_8_max": 8.036027,
+      "canopy_socket_z_1_0_max": 2.600011,
+      "interpretation": "Extrusion-line/width support abstraction, not measured physical bridge performance or a thermal/material simulation. Increase infill or solid layers and re-slice if the selected setup cannot bridge the internal spans reliably."
+    },
+    "finite_support_access_audit": {
+      "new_support_segments": 30369,
+      "new_unique_points": 95890,
+      "points_with_a_direct_horizontal_exit": 95310,
+      "restricted_points_in_two_outer_open_shallow_windows": 580,
+      "restricted_point_route": "Y=-33, then X=+/-65, then Y=-60; all 580 sampled three-leg centerlines avoid model obstruction",
+      "outer_slot_width_mm": 4.5,
+      "outer_slot_height_mm": 9.4,
+      "shallow_window_depth_mm_approx": 1.2,
+      "new_support_max_z_mm": 23.4,
+      "interpretation": "No added enclosed region was found in finite point/ray/polyline samples. This supports staged fragmentation and lateral removal geometry only; not full-tool or captured-block passage, a straight front pull, other-support clearance, adhesion or removal force. Remove support before columns/canopy/frames; if access is unsafe, revise support or use compatible soluble support and re-slice."
+    },
+    "assembly": {
+      "joint_type": "50 clearance-fit adhesive positioning sockets, not snap fits",
+      "nominal_total_xy_clearance_mm": 0.4,
+      "nominal_per_side_xy_clearance_mm": 0.2,
+      "nominal_shoulder_gap_mm": 0.05,
+      "nominal_overview_height_mm": 53.4,
+      "estimated_natural_shoulder_seated_height_mm": 53.25,
+      "instructions": "Clean support, socket openings and elephant foot; dry-align ten columns and canopy together, then use material-compatible gap-filling adhesive and a temporary parallel jig. Natural seating is an analytical estimate; fit and adhesive strength remain untested."
+    },
+    "integrated_route": "manufacturing/reviewed-support/README.md",
+    "actual_profile": "manufacturing/reviewed-support/main-short-axis-support.ini",
+    "integration_reslice": "manufacturing/reviewed-support/integration-reslice.json"
+  },
+  "report_sha256": {
+    "qa/geometry-review.json": "7e92ffcfff0c939b0f8885553d3ed077b7002c13a1787127daa32d16dc79fcc2",
+    "qa/scene-review.json": "0ffa460cec1e2976b3f743fb933a63055abe4ff21300130cb9963cb67bbfc4ad",
+    "qa/manufacturing-review/geometry-review.json": "b29aa09d6d80b98986ecbeb2d3e98967ae10a8eb3e7f1344f9815c77c4713297",
+    "qa/manufacturing-review/slicing-summary.json": "ce9230556ff0a0c2243955dfd7f596fffd028d410e9a777a21c0357b93a46f84",
+    "qa/visual-source-review.json": "05fb6306422bce824acc8cc2d528a7070931ffa6b3197b80b0959ec5e93df190",
+    "qa/privacy-review.json": "8aa13e932b9846bfcc7f39b61145f64ee5daac7221dc0d160282955ced3153d4",
+    "manufacturing/reviewed-support/integration-reslice.json": "fbd08788ef05c333a32faf08e05f13a3e2a541b3512d038ef53bd9c8d56a3afe",
+    "manufacturing/reviewed-support/profile-diff.json": "b63528fcf67d8bebf3771f3961c8d70c68e8aaf7845dc05f22155ba2db26cb06",
+    "qa/independent-support-review/INDEPENDENT-REVIEW.md": "4a1805b8afc037297517f8ffd88430da7a7b78af01368fa12786006328f9b5ac",
+    "qa/independent-support-review/integration-validation.json": "6be0e5058826ddf0a8c6a56dfbc0163fc10150039a85f2667c8d4a211b3da478",
+    "qa/independent-support-review/integration-source-manifest.json": "dc5f4776ed7a276c83239662d08d199ad988be087dc798dd1124f387ab330461",
+    "qa/revision-delta-review.json": "82aa5f7a65b679c3173f6a2a25113930772d5ac60e370728f0b6b8bc36c46ee5",
+    "qa/revision-integration.json": "142ccf1ff1889410372b6c8f3bbb2a9dee50df80ecfb644fe6df0c45fadadf9c",
+    "qa/revision-whitespace-check.json": "79ac6928f73e970b940f4713c569b69be2f51bb01da68f7011edcf97f6fde852"
+  },
+  "original_candidate_commit": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
+  "base_main": "1976d60d5e1621dac2ce6a5d904e74796c38be0e"
+}

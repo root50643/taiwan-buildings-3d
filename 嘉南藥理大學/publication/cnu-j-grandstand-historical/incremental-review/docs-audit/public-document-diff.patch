@@ -1,0 +1,332 @@
+diff --git a/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/README.md b/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/README.md
+index 169aca4..9a48353 100644
+--- a/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/README.md
++++ b/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/README.md
+@@ -1,60 +1,70 @@
+-# 嘉南藥理大學 J 司令台／運動場看台：歷史外觀代表模型
+-
+-這是一套低細節、可分件膠合的外觀候選，依校方 2006、2010、2012 年照片及拍攝年未知的高視角棚面照片組合。**不是 2026 即時現況、精密測繪或工程模型；尚未試印及試合。** 本候選未推送，未更新公開數量。
+-
+-| 正面 | 後面 |
+-|---|---|
+-| ![正面](previews/front.png) | ![後面](previews/rear.png) |
+-
+-| 正面低視角 | 側面 |
+-|---|---|
+-| ![正面低視角](previews/front-low.png) | ![側面](previews/side.png) |
+-
+-保留長方薄棚、10 站柱／桅杆與斜撐節奏、棚下開放空間、座階、中央平司令平台、斜側牆、雙前梯、側梯／露台，以及**後側兩層封閉量體與跨層中央玻璃段**。背景高樓、田徑場、球場及 U 紹宗體育館均排除；CN11427 研究對象是 U 棟，未用作本件依據。
+-
+-整體展示外框為 **214 × 90 × 53.4 mm**（含 3 mm 底座）；主體寬 180 mm、屋棚 192 × 60 mm。約以每估計公尺 3 mm 安排，但所有長寬高都是依圖估計，至少保留 25% 尺寸不確定性，不能反推精密實尺寸。座階及兩端外梯作代表性配置，遠側精確動線尚未證實。
+-
+-## 分件與組裝
+-
+-`model.stl` 是組裝位置總覽，含 22 個相互留膠縫的封閉零件，**勿直接整體列印**。每種唯一幾何各有一份 `*-assembly.stl`（原設計座標）及 `*-print.stl`（已定向、最小座標為零）。
+-
+-| 列印檔 | 數量 | 已存方向 |
+-|---|---:|---|
+-| [主體](parts/main_body-print.stl) | 1 | 底座朝床 |
+-| [屋棚](parts/roof-print.stl) | 1 | 棚頂面朝床，肋梁向上 |
+-| [下柱](parts/column-print.stl) | 10 | 側面平放 |
+-| [桅杆／雙斜撐框](parts/mast_brace_frame-print.stl) | 10 | 平面側放 |
+-
+-![四種唯一零件及列印方向](previews/unique-print-parts.png)
+-
+-先乾排主體及十根下柱，利用屋棚底盲槽同時對齊柱列，再逐一黏上屋棚頂的十組桅杆斜撐框。上框有前、桅杆、後三個腳；前後位置不同，不可反向。所有插接均為**膠合定位，非卡扣**。先在廢料或少量零件試合，再選適合材料的膠。未驗證材料收縮、象腳或真實黏接強度。
+-
+-主體槽為 3.2 × 4.8 × 2.5 mm；柱腳 2.8 × 4.4 mm，槽底留 0.3 mm 膠縫。棚底槽深 0.8 mm；棚上框腳槽為 2.6 × 3.8 × 0.8 mm，框腳為 2.2 × 3.4 mm。XY 總間隙均為 0.4 mm，棚槽底／鍵端留 0.15 mm，座面膠膜間隔 0.05 mm。下柱腳平面 12.32 mm²；每組上框三腳合計 22.44 mm²。接口座標與配置見 [assembly.json](assembly.json)、[parameters.json](parameters.json) 及製造覆核。
+-
+-## 列印條件與限制
+-
+-以 **100% 尺寸、0.4 mm 噴嘴、0.2 mm 層高、0.45 mm 線寬、PLA、至少 250 × 210 mm 工作床**作診斷條件。非任意機型通用設定。主體前平台約 5 mm 懸挑及淺門窗上緣需按切片覆核配置前方可達支撐；不應為支撐整棚而將棚與看台一體列印。棚頂朝床的 2.6 × 3.8 mm 盲槽封頂屬短橋，柱和上框全形側放。製造報告中的實際切片條件與結果優先；未承諾全面免支撐。
+-
+-屋棚板厚 2.4 mm；實際肋梁深 1.2 mm。下柱最窄 2.8 mm；框側厚 2.2 mm、斜撐垂直截面寬 1.8 mm；盲槽在肋梁區的剩餘側壁最薄 1.2 mm，頂槽離一般棚底至少 1.6 mm，對向槽投影重疊處剩餘 2.0 mm。細門窗、欄杆、旗幟、索線、設備省略，玻璃格作閉背淺浮雕；梁柱與斜撐均明示加粗。座階下方與室內填實僅為列印簡化，棚下主要開放空間未加虛構支撐。
+-
+-長平棚可能翹曲；細框脫模、拆床與運送時可能折斷。較小比例、其他噴嘴或材料須重新評估。診斷 G-code 僅用於覆核，未提供作真機通用檔。
+-
+-## 重建及 QA
+-
+-安裝 [requirements.txt](requirements.txt)，在此資料夾執行 `python build_model.py` 重建所有 STL 和組裝記錄；`python render_preview.py` 以 Blender CPU Cycles 產生預覽和 `scene.blend`。腳本使用相對路徑，不需要原照片或私有工具路徑。
+-
+-`parameters.json` 是本版尺寸及接口設計紀錄；生成器另含座階、立面及外梯的固定構形常數，並非所有欄位都能單獨改值自動連動。調整尺寸時須同步生成器並重做 QA。完整診斷工具依賴可用 `requirements-qa.txt`。
+-
+-幾何、連通、自交、零件碰撞、重建及製造結果見 `qa/`。各檢查保存精確 STL SHA、座標與容差，失敗及工具限制不被改門檻掩蓋。`MANIFEST.sha256` 列出本包檔案雜湊（不含自身）；`render-manifest.json` 綁定實際 STL、場景與預覽。`scene.blend` 匯入交付 STL，預覽著色僅用於辨識材質，不影響 STL 幾何。
+-
+-## 官方來源與年代
+-
+-來源逐圖記錄、相簿綁定、EXIF、下載大小和 SHA 見 [sources.json](sources.json)。四張原圖已在本機下載並實際觀看，原照片及原始 HTML 不隨模型再散布。
+-
+-- [J 棟司令台相簿](https://libcvod.cnu.edu.tw/media/1207)：正面座階／雙前梯；2006 後側兩層與中央玻璃。
+-- [運動場相簿](https://libcvod.cnu.edu.tw/media/1226)：未定年完整棚面；2010 側梯與露台。
+-- [校方運動及休閒設施](https://www.cnu.edu.tw/content-text.asp?fid=10&id=203)：田徑場在司令台前方；U 棟為紹宗體育館，與 J 分開。
+-
+-後照 EXIF 2006-11-16；側照 2010-12-17；正面 EXIF 2012-06-30。正面相簿 caption 含 20250308，但 EXIF／createTime 支持 2012，已保留此衝突。高視角無有效拍攝日期，2020 只是上傳年。
+-
+-本包只含原創代表幾何、生成器、場景、預覽及文字證據；不授予第三方建築／照片／校徽權利。模型用於外觀研究與個人列印參考，非校方授權產品。
++# 嘉南藥理大學 J 司令台／運動場看台：歷史外觀代表模型
++
++這是一套低細節、可分件膠合的外觀候選，依校方 2006、2010、2012 年照片及拍攝年未知的高視角棚面照片組合。**不是 2026 即時現況、精密測繪或工程模型；尚未試印、拆支撐、試合或測膠強度。** 四個固定列印 STL 經獨立覆核有條件 GO，必須遵守下述橋向、支撐及組裝條件；原主體自動橋向診斷切片不放行。本候選未推送，未更新公開數量。
++
++| 正面 | 後面 |
++|---|---|
++| ![正面](previews/front.png) | ![後面](previews/rear.png) |
++
++| 正面低視角 | 側面 |
++|---|---|
++| ![正面低視角](previews/front-low.png) | ![側面](previews/side.png) |
++
++保留長方薄棚、10 站柱／桅杆與斜撐節奏、棚下開放空間、座階、中央平司令平台、斜側牆、雙前梯、側梯／露台，以及**後側兩層封閉量體與跨層中央玻璃段**。背景高樓、田徑場、球場及 U 紹宗體育館均排除；CN11427 研究對象是 U 棟，未用作本件依據。
++
++整體展示名義外框為 **214 × 90 × 53.4 mm**（含 3 mm 底座）；主體寬 180 mm、屋棚 192 × 60 mm。若膠合肩部自然乾落座，柱、棚及上框分別累計下降約 0.05、0.10、0.15 mm，最高約 **53.25 mm**；這是接口幾何推算，非試合實測。約以每估計公尺 3 mm 安排，但所有長寬高都是依圖估計，至少保留 25% 尺寸不確定性，不能反推精密實尺寸。座階及兩端外梯作代表性配置，遠側精確動線尚未證實。
++
++## 分件與組裝
++
++`model.stl` 是組裝位置總覽，含 22 個相互留膠縫的封閉零件，**勿直接整體列印**。每種唯一幾何各有一份 `*-assembly.stl`（原設計座標）及 `*-print.stl`（已定向、最小座標為零）。
++
++| 列印檔 | 數量 | 已存方向 |
++|---|---:|---|
++| [主體](parts/main_body-print.stl) | 1 | 底座朝床 |
++| [屋棚](parts/roof-print.stl) | 1 | 棚頂面朝床，肋梁向上 |
++| [下柱](parts/column-print.stl) | 10 | 側面平放 |
++| [桅杆／雙斜撐框](parts/mast_brace_frame-print.stl) | 10 | 平面側放 |
++
++![四種唯一零件及列印方向](previews/unique-print-parts.png)
++
++先完成主體的支撐清理及槽口／象腳處理，再乾排主體與十根下柱，利用屋棚底盲槽同時對齊柱列，最後逐一黏上屋棚頂的十組桅杆斜撐框。上框有前、桅杆、後三個腳；前後位置不同，不可反向。所有插接均為**留縫膠合定位，非卡扣**。先在廢料或少量零件試合，再用適合材料的補隙膠及臨時平行治具固化。未驗證材料收縮、象腳、真實黏接、抗彎或運送強度。
++
++主體槽為 3.2 × 4.8 × 2.5 mm；柱腳 2.8 × 4.4 mm，槽底留 0.3 mm 膠縫。棚底槽深 0.8 mm；棚上框腳槽為 2.6 × 3.8 × 0.8 mm，框腳為 2.2 × 3.4 mm。XY 總間隙均為 0.4 mm，棚槽底／鍵端留 0.15 mm，座面膠膜間隔 0.05 mm。下柱腳平面 12.32 mm²；每組上框三腳合計 22.44 mm²。接口座標與配置見 [assembly.json](assembly.json)、[parameters.json](parameters.json) 及製造覆核。
++
++## 列印條件與限制
++
++診斷條件為 **100% 尺寸、PLA、0.4 mm 噴嘴、0.2 mm 層高、名義 0.45 mm 線寬、3 周壁、15% 填充、250 × 210 mm 工作床**。100% 指尺寸，不是實心填充。這些是切片覆核條件，非任意機型通用設定；診斷 profile 沒有有效真機起終碼，須依實際機器重切並逐層核對。柱和上框全形側放；不應為支撐整棚而將棚與看台一體列印。
++
++**主體必須讓前平台沿短向橋接，並保留橋下可拆支撐。** 原 `diagnostic-main-support.ini` 雖 exit 0、無 warning，Z=12.6 mm 平台長向橋仍有約 174.289 mm 連續中心線未承托空段，因此原主體印法不放行。覆核改用 `bridge_angle=90`、`dont_support_bridges=0`，同層最大空段降至約 **1.704001 mm**。角度數字只適用保存的方向；旋轉模型或更換切片器後，仍須確認實際走線沿平台短向、橋下支撐可拆。上述空段是依擠出線及線寬計算的承托抽象，非實測橋接能力。
++
++仍需穩定處理約 8.3 mm 內部橋接：修正後主體其他內填充封頂最大空段約 **8.224913 mm**，屋棚 Z=1.8 mm 的 15% stars 內填充封頂約 **8.036027 mm**。棚頂朝床的 30 個 2.6 × 3.8 mm 盲槽在 Z=1.0 mm 跨孔約 **2.600011 mm**，不是全件最大橋長。若材料、冷卻及流量設定沒有相應能力，增加內填充／實心層後重切，再檢查封頂及槽形。
++
++主體前平台約 5 mm 懸挑及淺門窗上緣仍需支撐。新版實際支撐 30,369 段以 ≤1 mm 間距取得 95,890 個唯一樣點，其中 95,310 點至少一水平向可出，其餘 580 點位於雙前梯背後兩個外開淺窗。這 580 點的三段路徑（先至 Y=−33，再側向 X=±65，最後向前至 Y=−60）未見模型交擋；牆梯間槽寬約 4.5 mm、高約 9.4 mm，淺窗深約 1.2 mm。**須用細工具逐段破碎、側向拆除，不能整塊直向前抽。** 新支撐樣點覆核未見新增封閉區，只是有限點／射線／折線檢查，不保證完整工具、抓住的支撐塊或所有支撐均可通過，也未模擬其他支撐阻擋、黏附及拆除力。若工具無法安全轉入淺窗，須調整支撐配置或採相容的可溶支撐後重切，不能硬拆或封入組裝。
++
++完整條件、原失敗結果及補證見 [獨立覆核](qa/independent-support-review/INDEPENDENT-REVIEW.md) 與 [切片及支撐報告](qa/independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md)。製造報告中的實際切片條件與結果優先；未承諾全面免支撐或已完成實拆驗證。
++
++本輪整合的 [短向橋接設定、重切腳本及校驗](manufacturing/reviewed-support/README.md) 以獨立修正 profile 實際重切主體，並核對除生成時間外的完整 G-code 路徑。它仍是診斷參考，須依實際機器重切，不能直接送機。
++
++屋棚板厚 2.4 mm；實際肋梁深 1.2 mm。下柱最窄 2.8 mm；框側厚 2.2 mm、斜撐垂直截面寬 1.8 mm；盲槽在肋梁區的剩餘側壁最薄 1.2 mm，頂槽離一般棚底至少 1.6 mm，對向槽投影重疊處剩餘 2.0 mm。細門窗、欄杆、旗幟、索線、設備省略，玻璃格作閉背淺浮雕；梁柱與斜撐均明示加粗。座階下方與室內填實僅為列印簡化，棚下主要開放空間未加虛構支撐。
++
++192 × 60 mm 長平棚可能翹曲，須控制床附著並完全冷卻後拆床；細框搬動、膠合與運送時可能折斷。本次診斷只有 skirt、沒有 brim；若真機另加 brim，拆除與配合面也須重新核對。較小比例、其他噴嘴或材料須重新評估。原及修正診斷 G-code 僅用於覆核，均非推薦真機列印檔；原失敗結果保留，未提供作真機通用檔。
++
++## 重建及 QA
++
++安裝 [requirements.txt](requirements.txt)，在此資料夾執行 `python build_model.py` 重建所有 STL 和組裝記錄；`python render_preview.py` 以 Blender CPU Cycles 產生預覽和 `scene.blend`。腳本使用相對路徑，不需要原照片或私有工具路徑。
++
++`parameters.json` 是本版尺寸及接口設計紀錄；生成器另含座階、立面及外梯的固定構形常數，並非所有欄位都能單獨改值自動連動。調整尺寸時須同步生成器並重做 QA。完整診斷工具依賴可用 `requirements-qa.txt`。
++
++幾何、連通、自交、零件碰撞、重建及製造結果見 `qa/`。各檢查保存精確 STL SHA、座標與容差，失敗及工具限制不被改門檻掩蓋。`MANIFEST.sha256` 列出本包檔案雜湊（不含自身）；`render-manifest.json` 綁定實際 STL、場景與預覽。`scene.blend` 匯入交付 STL，預覽著色僅用於辨識材質，不影響 STL 幾何。
++
++## 官方來源與年代
++
++來源逐圖記錄、相簿綁定、EXIF、下載大小和 SHA 見 [sources.json](sources.json)。四張原圖已在本機下載並實際觀看，原照片及原始 HTML 不隨模型再散布。
++
++- [J 棟司令台相簿](https://libcvod.cnu.edu.tw/media/1207)：正面座階／雙前梯；2006 後側兩層與中央玻璃。
++- [運動場相簿](https://libcvod.cnu.edu.tw/media/1226)：未定年完整棚面；2010 側梯與露台。
++- [校方運動及休閒設施](https://www.cnu.edu.tw/content-text.asp?fid=10&id=203)：田徑場在司令台前方；U 棟為紹宗體育館，與 J 分開。
++
++後照 EXIF 2006-11-16；側照 2010-12-17；正面 EXIF 2012-06-30。正面相簿 caption 含 20250308，但 EXIF／createTime 支持 2012，已保留此衝突。高視角無有效拍攝日期，2020 只是上傳年。
++
++本包只含原創代表幾何、生成器、場景、預覽及文字證據；不授予第三方建築／照片／校徽權利。模型用於外觀研究與個人列印參考，非校方授權產品。
+diff --git a/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa-summary.json b/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa-summary.json
+index 268cc34..8541022 100644
+--- a/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa-summary.json
++++ b/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa-summary.json
+@@ -1,31 +1,104 @@
+-{
+-  "status": "fixed local candidate; independent final parent review still required before publication",
+-  "one_building_model_set": true,
+-  "unique_print_parts": 4,
+-  "physical_piece_count": 22,
+-  "model_sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
+-  "checks": {
+-    "geometry": "pass: 8 meshes closed, positive, single-connected; actual triangle self-intersection check 0; 22 assembled components, 231 pair tests, 0 volume collision",
+-    "manufacturing": "pass under documented 100% PLA 0.4mm nozzle / 0.2mm layer diagnostic conditions; 50 interface sockets measured",
+-    "slicing": "4 unique parts exit 0, no warnings; main support enabled, other 3 support disabled",
+-    "scene": "exact coordinates and mapped triangles equal STL; no external linked libraries or reference photos",
+-    "visual_sources": "major historical exterior features covered; official photographs viewed locally",
+-    "privacy": "payload scan passed, no source photo, raw HTML, raw G-code, credential or private directory"
+-  },
+-  "remaining_risks": [
+-    "No physical print, dry fit or glue-strength test",
+-    "Large flat roof may warp; bed adhesion and support cleanup need machine confirmation",
+-    "Main front deck and shallow facade recesses need externally removable support; fine tools needed",
+-    "Relative dimensions have at least 25% uncertainty; far-side stair routing is representative symmetry",
+-    "Historical source composite, not a 2026 current-state claim"
+-  ],
+-  "publication_scope": "No push, PR, public inventory/count edit or external publication performed.",
+-  "report_sha256": {
+-    "qa/geometry-review.json": "7e92ffcfff0c939b0f8885553d3ed077b7002c13a1787127daa32d16dc79fcc2",
+-    "qa/scene-review.json": "0ffa460cec1e2976b3f743fb933a63055abe4ff21300130cb9963cb67bbfc4ad",
+-    "qa/manufacturing-review/geometry-review.json": "b29aa09d6d80b98986ecbeb2d3e98967ae10a8eb3e7f1344f9815c77c4713297",
+-    "qa/manufacturing-review/slicing-summary.json": "ce9230556ff0a0c2243955dfd7f596fffd028d410e9a777a21c0357b93a46f84",
+-    "qa/visual-source-review.json": "05fb6306422bce824acc8cc2d528a7070931ffa6b3197b80b0959ec5e93df190",
+-    "qa/privacy-review.json": "8aa13e932b9846bfcc7f39b61145f64ee5daac7221dc0d160282955ced3153d4"
+-  }
+-}
++{
++  "status": "four fixed print STLs conditionally GO under the independent support-review requirements; integrated incremental parent review still required before publication",
++  "one_building_model_set": true,
++  "unique_print_parts": 4,
++  "physical_piece_count": 22,
++  "model_sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
++  "checks": {
++    "geometry": "pass: 8 meshes closed, positive, single-connected; actual triangle self-intersection check 0; 22 assembled components, 231 pair tests, 0 volume collision",
++    "manufacturing": "conditional GO for unchanged fixed STLs: platform must bridge along its short axis with support retained below bridges; approximately 8.3mm internal bridging capability, staged lateral support removal and gap-filling adhesive alignment remain required; no physical validation",
++    "slicing": "Original automatic-direction main-body slice remains NOT approved. Integrated short-axis main rerun exits 0 without warnings; complete G-code except generated-time comment matches the independent corrected diagnostic. This binds its conditional bridge/support evidence, not physical printability.",
++    "scene": "exact coordinates and mapped triangles equal STL; no external linked libraries or reference photos",
++    "visual_sources": "major historical exterior features covered; official photographs viewed locally",
++    "privacy": "payload scan passed, no source photo, raw HTML, raw G-code, credential or private directory",
++    "integrated_revision": "pass for unchanged geometry and copied evidence integrity; manufacturing remains conditional and original main slicing not accepted"
++  },
++  "remaining_risks": [
++    "No physical print, actual support removal, dry fit or glue-strength test; bending and transport strength are unverified",
++    "Large 192x60mm flat roof may warp; bed adhesion, full cooling before removal and fine-frame handling need machine confirmation",
++    "Corrected slicing still requires about 8.224913mm main-body and 8.036027mm canopy internal bridging; the 2.600011mm canopy socket span is not the overall maximum",
++    "Main support must be removed before assembly by staged break-up and lateral access; the 580 restricted samples cannot be treated as a straight front extraction route",
++    "The new 95,890-point support-access audit found no added enclosed region in its finite samples; it does not guarantee complete-tool or support-block passage, other-support clearance, adhesion or removal force",
++    "Nominal assembled height is 53.4mm; approximately 53.25mm natural shoulder seating is a geometry estimate, not a physical fit measurement",
++    "Relative dimensions have at least 25% uncertainty; far-side stair routing is representative symmetry",
++    "Historical source composite, not a 2026 current-state claim"
++  ],
++  "publication_scope": "No push, PR, public inventory/count edit or external publication performed.",
++  "original_diagnostic_result_preserved": {
++    "manufacturing_claim_before_independent_review": "pass under documented 100% PLA 0.4mm nozzle / 0.2mm layer diagnostic conditions; 50 interface sockets measured",
++    "slicing_claim_before_independent_review": "4 unique parts exit 0, no warnings; main support enabled, other 3 support disabled",
++    "disposition": "The original main-body printing method is NOT approved. These historical claims and qa/manufacturing-review/slicing-summary.json remain as reference-only evidence of the original diagnostic run; exit 0 does not establish printable bridges. They are superseded for printing guidance by the independent support-review conditions, without changing or deleting the original raw results."
++  },
++  "independent_support_review": {
++    "report": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
++    "slicing_report": "qa/independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
++    "corrected_reference_profile": "qa/independent-support-review/slicing-support-audit/REVIEW-ONLY-main-short-axis-support.ini",
++    "fixed_stl_geometry_changed": false,
++    "conditions": {
++      "scale_percent": 100,
++      "material": "PLA",
++      "nozzle_mm": 0.4,
++      "layer_height_mm": 0.2,
++      "nominal_line_width_mm": 0.45,
++      "perimeters": 3,
++      "infill_percent": 15,
++      "bed_mm": [
++        250,
++        210
++      ],
++      "main_bridge_angle_degrees_for_saved_orientation": 90,
++      "dont_support_bridges": 0,
++      "machine_limit": "Diagnostic reference only, without valid machine start/end code. Re-slice for the intended machine and verify actual short-axis platform bridges, removable support below bridges and every affected layer. Rotation or another slicer may change angle semantics."
++    },
++    "toolpath_centerline_support_gaps_mm": {
++      "original_main_platform_z_12_6_max_approx": 174.289,
++      "corrected_main_platform_z_12_6_max": 1.704001,
++      "corrected_main_internal_infill_top_max": 8.224913,
++      "canopy_internal_infill_top_z_1_8_max": 8.036027,
++      "canopy_socket_z_1_0_max": 2.600011,
++      "interpretation": "Extrusion-line/width support abstraction, not measured physical bridge performance or a thermal/material simulation. Increase infill or solid layers and re-slice if the selected setup cannot bridge the internal spans reliably."
++    },
++    "finite_support_access_audit": {
++      "new_support_segments": 30369,
++      "new_unique_points": 95890,
++      "points_with_a_direct_horizontal_exit": 95310,
++      "restricted_points_in_two_outer_open_shallow_windows": 580,
++      "restricted_point_route": "Y=-33, then X=+/-65, then Y=-60; all 580 sampled three-leg centerlines avoid model obstruction",
++      "outer_slot_width_mm": 4.5,
++      "outer_slot_height_mm": 9.4,
++      "shallow_window_depth_mm_approx": 1.2,
++      "new_support_max_z_mm": 23.4,
++      "interpretation": "No added enclosed region was found in finite point/ray/polyline samples. This supports staged fragmentation and lateral removal geometry only; not full-tool or captured-block passage, a straight front pull, other-support clearance, adhesion or removal force. Remove support before columns/canopy/frames; if access is unsafe, revise support or use compatible soluble support and re-slice."
++    },
++    "assembly": {
++      "joint_type": "50 clearance-fit adhesive positioning sockets, not snap fits",
++      "nominal_total_xy_clearance_mm": 0.4,
++      "nominal_per_side_xy_clearance_mm": 0.2,
++      "nominal_shoulder_gap_mm": 0.05,
++      "nominal_overview_height_mm": 53.4,
++      "estimated_natural_shoulder_seated_height_mm": 53.25,
++      "instructions": "Clean support, socket openings and elephant foot; dry-align ten columns and canopy together, then use material-compatible gap-filling adhesive and a temporary parallel jig. Natural seating is an analytical estimate; fit and adhesive strength remain untested."
++    },
++    "integrated_route": "manufacturing/reviewed-support/README.md",
++    "actual_profile": "manufacturing/reviewed-support/main-short-axis-support.ini",
++    "integration_reslice": "manufacturing/reviewed-support/integration-reslice.json"
++  },
++  "report_sha256": {
++    "qa/geometry-review.json": "7e92ffcfff0c939b0f8885553d3ed077b7002c13a1787127daa32d16dc79fcc2",
++    "qa/scene-review.json": "0ffa460cec1e2976b3f743fb933a63055abe4ff21300130cb9963cb67bbfc4ad",
++    "qa/manufacturing-review/geometry-review.json": "b29aa09d6d80b98986ecbeb2d3e98967ae10a8eb3e7f1344f9815c77c4713297",
++    "qa/manufacturing-review/slicing-summary.json": "ce9230556ff0a0c2243955dfd7f596fffd028d410e9a777a21c0357b93a46f84",
++    "qa/visual-source-review.json": "05fb6306422bce824acc8cc2d528a7070931ffa6b3197b80b0959ec5e93df190",
++    "qa/privacy-review.json": "8aa13e932b9846bfcc7f39b61145f64ee5daac7221dc0d160282955ced3153d4",
++    "manufacturing/reviewed-support/integration-reslice.json": "fbd08788ef05c333a32faf08e05f13a3e2a541b3512d038ef53bd9c8d56a3afe",
++    "manufacturing/reviewed-support/profile-diff.json": "b63528fcf67d8bebf3771f3961c8d70c68e8aaf7845dc05f22155ba2db26cb06",
++    "qa/independent-support-review/INDEPENDENT-REVIEW.md": "4a1805b8afc037297517f8ffd88430da7a7b78af01368fa12786006328f9b5ac",
++    "qa/independent-support-review/integration-validation.json": "6be0e5058826ddf0a8c6a56dfbc0163fc10150039a85f2667c8d4a211b3da478",
++    "qa/independent-support-review/integration-source-manifest.json": "dc5f4776ed7a276c83239662d08d199ad988be087dc798dd1124f387ab330461",
++    "qa/revision-delta-review.json": "82aa5f7a65b679c3173f6a2a25113930772d5ac60e370728f0b6b8bc36c46ee5",
++    "qa/revision-integration.json": "142ccf1ff1889410372b6c8f3bbb2a9dee50df80ecfb644fe6df0c45fadadf9c",
++    "qa/revision-whitespace-check.json": "79ac6928f73e970b940f4713c569b69be2f51bb01da68f7011edcf97f6fde852"
++  },
++  "original_candidate_commit": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
++  "base_main": "1976d60d5e1621dac2ce6a5d904e74796c38be0e"
++}
+diff --git a/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa/manufacturing-review/README.md b/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa/manufacturing-review/README.md
+index 5d0faef..c7b2a15 100644
+--- a/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa/manufacturing-review/README.md
++++ b/嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical/qa/manufacturing-review/README.md
+@@ -1,21 +1,43 @@
+-# Independent manufacturing review
++# Manufacturing review and conditional printing requirements
+ 
+-The frozen candidate passes the analytical checks below for the documented split-and-glue workflow. This is not a physical print or fit test.
++The four unchanged, fixed print STLs have a conditional GO under the independent review requirements below. **The original automatic-bridge-direction main-body slice is not approved for printing.** Its successful slicer exit and the original broad manufacturing-pass claim do not establish a usable printing method. No physical print, support removal, dry fit, adhesive-strength, bending or transport test has been performed.
++
++The original `geometry-review.json`, `slicing-summary.json`, logs, profiles and `slice-evidence.png` remain unchanged as historical diagnostic evidence. The original main-body profile and G-code are reference-only, superseded for printing guidance by the [independent review](../independent-support-review/INDEPENDENT-REVIEW.md) and [slicing/support audit](../independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md). Neither the original nor the corrected diagnostic G-code is a recommended machine print file.
++
++## Fixed geometry and assembly
+ 
+ - Inventory: 22 pieces, four unique geometries: body 1, canopy 1, column 10, upper mast/brace frame 10.
+ - Each exported assembly STL is closed, consistently wound, one connected component and positive volume. Manifold3D accepts each with `Error.NoError`.
+ - All 231 pairs of placed assembly pieces were intersected in their original coordinates. Maximum overlap is 0 mm³; failure threshold is 0.0001 mm³.
+ - Direct triangle-ray measurements on exported STL give brace widths 1.7999997–1.8000002 mm, frame side thickness 2.2000000 mm, column thickness 2.8000000 mm, canopy field thickness 2.4000015 mm, and 2.0000000 mm web between aligned upper/lower sockets.
+-- All 50 sockets were independently measured. Total X/Y key clearance is approximately 0.4 mm, within STL float precision. Body key bottoms have a 0.30 mm gap; canopy key bottoms/ceilings have 0.15 mm gaps. Shoulders clear by 0.05 mm. These are adhesive positioning joints. They require a suitable gap-filling adhesive and an unglued fit check.
++- All 50 sockets were independently measured. Total X/Y key clearance is approximately 0.4 mm, or 0.2 mm per side, within STL float precision. Body key bottoms have a 0.30 mm gap; canopy key bottoms/ceilings have 0.15 mm gaps. Shoulders clear by 0.05 mm. These are clearance-fit adhesive positioning joints, not snap fits.
++
++Print the body upright, canopy top down, and columns/upper frames on their flat side. Clean all body support, socket openings and elephant foot before assembly. Dry-align body → ten columns → canopy, then add the ten upper frames, respecting their different front and rear feet. This order leaves all sockets accessible and avoids threading braces through the canopy. Use material-compatible gap-filling adhesive and a temporary parallel jig after the unglued alignment check. The side-flat frame and column STLs retain a common flat face over their complete shapes.
++
++The overview's 214 × 90 × 53.4 mm envelope is nominal. Natural dry seating at the shoulders lowers the columns by approximately 0.05 mm, canopy by a cumulative 0.10 mm, and upper frames by a cumulative 0.15 mm, giving approximately 53.25 mm maximum height. This is an interface-geometry estimate, not a measured physical fit. The assembled overview STL is not the manufacturing orientation and must not be printed as one piece.
++
++## Required bridge direction and retained support
++
++The main body has a measured 5 mm front balcony projection and needs support. At Z=12.6 mm, the original `diagnostic-main-support.ini` placed platform bridges along the long direction. Its longest bridge-labelled segment was approximately 179.28 mm, with approximately 174.289 mm of continuous centerline remaining unsupported after projected support bands from preceding object extrusion and nearby support extrusion were deducted. A successful exit and absence of warnings therefore do not approve the original method. The number is an extrusion-line/width support abstraction, not a measured 174 mm free-bridge failure.
++
++The corrected [reference profile](../independent-support-review/slicing-support-audit/REVIEW-ONLY-main-short-axis-support.ini) uses `bridge_angle=90` and `dont_support_bridges=0`. In the saved orientation it bridges the platform along its short axis and retains support below bridges, reducing the same platform-layer maximum unsupported centerline interval to approximately **1.704001 mm**. Re-slice for the intended printer and inspect actual short-axis paths, support below bridges and every affected layer. Do not copy only the angle number: rotation or another slicer may change its meaning. The diagnostic profile has no valid machine start/end code.
++
++The corrected body still has a maximum internal infill-top support gap of approximately **8.224913 mm**. At Z=1.8 mm, the canopy's 15% stars infill-top paths have approximately **8.036027 mm** gaps. The thirty bed-facing canopy sockets close at Z=1.0 mm with approximately **2.600011 mm** across their 2.6 × 3.8 mm openings; this is not the largest bridge in the part. Use material, cooling and flow settings already able to handle approximately 8.23 mm internal bridges. Otherwise increase infill or solid layers, re-slice, and inspect infill closure and socket shape. The canopy, column and upper frame diagnostic slices used supports disabled.
++
++## Staged support removal before assembly
++
++The original slice's 26,586 actual support-extrusion segments produced 83,924 unique samples at spacing ≤1 mm. Eight horizontal rays left 580 samples without a direct route; these original flags remain in the evidence. All 580 lie in two outward-open shallow windows behind the front stairs. Their three-leg routes first reach Y=−33, then X=±65, then Y=−60 without model obstruction. The wall/stair outer slots are approximately 4.5 mm wide and 9.4 mm high; the audit also records radius-0.5 mm axial samples.
++
++The new short-axis profile was checked separately: **30,369 support segments and 95,890 unique samples**, with 95,310 having at least one direct horizontal exit. The remaining 580 are again in those two shallow windows and their sampled three-leg routes are clear. The new support reaches Z=23.4 mm. No added enclosed region was found in this finite check; the original and corrected flags and supplementary evidence are preserved separately.
+ 
+-Print the body upright, canopy top down, and columns/upper frames on their flat side. Assemble body → ten columns → canopy → ten upper frames. This order leaves all sockets accessible and avoids threading braces through the canopy. The side-flat frame and column STLs retain a common flat face over their complete shapes.
++This evidence supports only the geometric possibility of fine-tool access, staged fragmentation and lateral removal. **Do not pull the support out as one block straight toward the front.** The checks do not prove that a complete bent tool or captured support block can pass, and do not model other support blocking the route, adhesion or removal force. Clear the body before attaching columns, canopy and frames. If tools cannot safely turn into the approximately 1.2 mm-deep shallow windows, revise support placement or use compatible soluble support, then re-slice; do not force removal or enclose support during assembly. Actual removal remains untested.
+ 
+-The main body has a measured 5 mm front balcony projection. A conservative automatic-support profile was used for that piece; support also appears in some shallow front/back window reliefs. These reliefs open to the exterior, but removal may need fine cutters. Support removal and adhesive fit remain untested physical operations.
++## Diagnostic conditions and evidence limits
+ 
+-The top-down canopy has thirty bed-facing blind sockets. Their 2.6 × 3.8 mm openings close with short bridge paths at print Z=1.00 mm. The originally lower sockets face up during printing. The canopy, column and upper frame were sliced with supports disabled. The assembled overview STL is not the manufacturing orientation.
++Diagnostic slicing used PrusaSlicer 2.9.6 at **100% size**, PLA, 0.4 mm nozzle, 0.2 mm layer height, nominal 0.45 mm line width, 3 perimeters, **15% infill**, generic 205/60 °C temperatures and a 250 × 210 mm bed. The 100% value refers to scale, not solid infill. These are reference conditions, not a machine-independent recommendation.
+ 
+-PrusaSlicer 2.9.6 exited successfully for all four unique pieces with no warning/error/repair lines. Object extrusion heights are 140 / 18 / 14 / 11 layers at 0.2 mm for body / canopy / column / frame. The body has 189 total layer-change records because independent support layers are interleaved; it still has 140 distinct object extrusion heights and reaches Z=28.0 mm. Each part used a separate new settings directory. The explicit diagnostic profiles assume 0.4 mm nozzle, 0.45 mm extrusion width, 3 perimeters, 15% infill and generic PLA at 205/60 °C on a 250 × 210 mm bed.
++The four original unique-part slices exited successfully without warning/error/repair lines. Object extrusion heights are 140 / 18 / 14 / 11 layers at 0.2 mm for body / canopy / column / frame. The original body has 189 total layer-change records because independent support layers are interleaved; it still has 140 distinct object extrusion heights and reaches Z=28.0 mm. Each part used a separate new settings directory. These original results are retained for provenance and do not overrule the rejected main-body bridge direction. The independent audit separately preserves the corrected slice, profile/G-code hashes, commands, parser methods and its own failed runs and corrections.
+ 
+-`geometry-review.json` records raw coordinates, thresholds, measurements and all collision/clearance results. `slicing-summary.json` records STL/G-code hashes, commands, toolpaths, support bounds and layer evidence. `slice-evidence.png` shows actual balcony-support and canopy bridge paths. Full logs and reproducible scripts/profiles are included. Executable G-code is deliberately outside this deliverable; its checksums remain in the summary, and it is not a validated machine profile.
++`geometry-review.json` records raw coordinates, thresholds, measurements and all collision/clearance results. `slicing-summary.json` records the original STL/G-code hashes, commands, toolpaths, support bounds and layer evidence. `slice-evidence.png` shows the original balcony-support and canopy bridge paths, not a verified removal operation. Full logs and reproducible scripts/profiles are included. Executable diagnostic G-code remains outside the deliverable.
+ 
+-This review does not substitute for the package's separate triangle self-intersection QA. The caliper rays are explicitly located feature checks, not a claim of a complete arbitrary-direction wall-thickness proof. No physical trial print, adhesive test, or machine-specific thermal/warping test has been performed. The broad canopy may need bed adhesion tuning on the selected printer.
++This review does not substitute for the separate triangle self-intersection QA. Caliper rays are located feature checks, not complete arbitrary-direction minimum-wall proof. Centerline support intervals are not thermal, sag or material simulations; support-access samples are not a comprehensive removability guarantee. The 192 × 60 mm canopy needs warping/bed-adhesion control and full cooling before bed removal. Thin frames may break during brim removal, handling or gluing. Physical support removal, fit, adhesive strength and machine-specific thermal/warping behavior remain unverified.

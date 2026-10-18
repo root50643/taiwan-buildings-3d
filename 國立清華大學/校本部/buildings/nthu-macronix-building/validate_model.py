@@ -6,7 +6,7 @@ from pathlib import Path
 import argparse, hashlib, json, os, shutil, struct, subprocess, sys, tempfile
 import numpy as np
 import trimesh
-p=argparse.ArgumentParser();p.add_argument('--output',default='validation.json');p.add_argument('--blender',default='blender');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--output',default='validation.json');p.add_argument('--blender',default='blender');p.add_argument('--bpy-module',action='store_true');a=p.parse_args()
 root=Path(__file__).resolve().parent; path=root/'model.stl';raw=path.read_bytes()
 sha=lambda b:hashlib.sha256(b).hexdigest()
 # Validate the original binary STL's saved normal vectors before any mesh processing.
@@ -50,7 +50,11 @@ with tempfile.TemporaryDirectory() as td:
  rebuild=sha((tmp/'model.stl').read_bytes());checks['source_rebuild_hash_matches']=rebuild==sha(raw)
  # Inspect mesh data from saved editable scene, never rely on the image alone.
  expr="import bpy,json; from pathlib import Path; objs=[o for o in bpy.context.scene.objects if o.type=='MESH']; assert len(objs)==1; o=objs[0]; Path("+repr(str(tmp/'blend.json'))+").write_text(json.dumps({'vertices':[list(o.matrix_world@v.co) for v in o.data.vertices],'faces':[list(p.vertices) for p in o.data.polygons]}))"
- subprocess.run([a.blender,'-b',str(root/'scene.blend'),'-t','2','--python-expr',expr],check=True,capture_output=True,text=True)
+ if a.bpy_module:
+  expr="import bpy; bpy.ops.wm.open_mainfile(filepath="+repr(str(root/'scene.blend'))+");"+expr
+  subprocess.run([sys.executable,'-c',expr],check=True,capture_output=True)
+ else:
+  subprocess.run([a.blender,'-b',str(root/'scene.blend'),'-t','2','--python-expr',expr],check=True,capture_output=True)
  b=json.loads((tmp/'blend.json').read_text());bv=np.array(b['vertices']);bf=np.array(b['faces'])
  def geometry_hash(t):
   # Compare orientation-independent exact printed triangle positions to 0.00001 mm.
@@ -59,6 +63,6 @@ with tempfile.TemporaryDirectory() as td:
   return sha(json.dumps(sorted(records),separators=(',',':')).encode())
  stl_geom=geometry_hash(tri);blend_geom=geometry_hash(bv[bf]);checks['blend_stl_geometry_agree']=stl_geom==blend_geom
 bottom=np.isclose(mesh.triangles[:,:,2],0,atol=1e-6).all(axis=1)
-report={'passed':all(checks.values()),'checks':checks,'dimensions_mm':mesh.extents.tolist(),'triangles':len(mesh.faces),'vertices':len(mesh.vertices),'surface_shells':comps,'nonmanifold_edges':int((cnt!=2).sum()),'bad_vertex_links':badlinks,'volume_mm3':float(mesh.volume),'base_contact_area_mm2':float(mesh.area_faces[bottom].sum()),'stl_sha256':sha(raw),'rebuild_stl_sha256':rebuild,'stl_geometry_sha256':stl_geom,'blend_geometry_sha256':blend_geom,'limitations':['Not a slicer validation or physical print test.','Exterior photo-based miniature; depth and unseen elevations are estimates.','One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed.']}
+report={'passed':all(checks.values()),'checks':checks,'dimensions_mm':mesh.extents.tolist(),'triangles':len(mesh.faces),'vertices':len(mesh.vertices),'surface_shells':comps,'nonmanifold_edges':int((cnt!=2).sum()),'bad_vertex_links':badlinks,'volume_mm3':float(mesh.volume),'base_contact_area_mm2':float(mesh.area_faces[bottom].sum()),'stl_sha256':sha(raw),'scene_sha256':sha((root/'scene.blend').read_bytes()),'source_sha256':sha((root/'build_model.py').read_bytes()),'rebuild_stl_sha256':rebuild,'stl_geometry_sha256':stl_geom,'blend_geometry_sha256':blend_geom,'limitations':['Not a slicer validation or physical print test.','Exterior photo-based miniature; depth and unseen elevations are estimates.','One connected surface shell excludes separate hidden cavity shells; exhaustive self-intersection testing is not claimed.','passed covers these listed checks only; thin, intersection and support screens are separate qa records.']}
 (root/a.output).write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,ensure_ascii=False,indent=2));raise SystemExit(0 if report['passed'] else 1)
 

@@ -1,0 +1,6 @@
+{
+  "failures_preserved": [
+    {"script":"support-route-followup.py","attempt":1,"exit_code":1,"error":"IndexError: invalid index to scalar variable at l[:,None]","cause":"Review script used scalar norm rather than per-row norm","resolution":"Changed np.linalg.norm(delta) to np.linalg.norm(delta,axis=1); no candidate or G-code altered"},
+    {"script":"inline helper extraction command","attempt":1,"exit_code":1,"error":"PowerShell ParserError: Missing ] at end of attribute or type literal","cause":"Inline Python regular-expression quoting","resolution":"Moved extraction into make_helpers.py; no candidate or G-code altered"}
+  ]
+}

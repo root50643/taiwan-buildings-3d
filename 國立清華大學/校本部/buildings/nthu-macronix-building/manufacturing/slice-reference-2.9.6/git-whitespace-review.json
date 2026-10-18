@@ -1,0 +1,17 @@
+{
+  "full_check_exit_code": 2,
+  "full_output": "raw-runs/git-diff-check-full.txt",
+  "only_exceptions": [
+    "國立清華大學/校本部/buildings/nthu-macronix-building/manufacturing/slice-reference-2.9.6/source-profile.ini",
+    "國立清華大學/校本部/buildings/nthu-macronix-building/manufacturing/slice-reference-2.9.6/derived-single-material-snug-REFERENCE.ini"
+  ],
+  "reason": "Preserve the exact source profile and exact INI actually used by PrusaSlicer. Its empty-value serialization has spaces after equals; do not rewrite these inputs to make whitespace screening green.",
+  "check_excluding_only_these_raw_profiles_exit_code": 0,
+  "initial_check_scope": "Staged profiles before adding the exact raw diff output as an additional preserved file.",
+  "final_check_exceptions": [
+    "國立清華大學/校本部/buildings/nthu-macronix-building/manufacturing/slice-reference-2.9.6/source-profile.ini",
+    "國立清華大學/校本部/buildings/nthu-macronix-building/manufacturing/slice-reference-2.9.6/derived-single-material-snug-REFERENCE.ini",
+    "國立清華大學/校本部/buildings/nthu-macronix-building/manufacturing/slice-reference-2.9.6/raw-runs/git-diff-check-full.txt"
+  ],
+  "raw_diff_log_exception_reason": "The preserved raw diff contains the literal trailing spaces from the INI lines it reports. Keep those bytes; excluding this raw log does not suppress profile or implementation failures."
+}

@@ -1,0 +1,124 @@
+{
+  "status": "complete_unpushed_integrated_candidate_waiting_for_parent_incremental_review",
+  "candidate_commit": "7cf0563a06858137f51751600348a35198c8f6f2",
+  "base_main": "1976d60d5e1621dac2ce6a5d904e74796c38be0e",
+  "branch": "candidate/cnu-j-reviewed-support",
+  "original_candidate_commit": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
+  "working_tree_clean": true,
+  "pushed": false,
+  "public_counts_modified": false,
+  "git_credentials_changed": false,
+  "local_checkout": "${REPOSITORY}",
+  "package_path": "嘉南藥理大學/校本部/buildings/cnu-j-grandstand-historical",
+  "package_files": 145,
+  "geometry_changed": false,
+  "fixed_print_stl_sha256": {
+    "column-print.stl": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+    "main_body-print.stl": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+    "mast_brace_frame-print.stl": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+    "roof-print.stl": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb"
+  },
+  "model_sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
+  "package_manifest_sha256": "db80e27eab2e38c0c9265e272a24e2bc2d6bc3bf8220823e0dd28a0d7ea2b55d",
+  "decision": "CONDITIONAL_GO_FIXED_STLS_ONLY",
+  "original_main_diagnostic_slicing_accepted": false,
+  "integrated_main_profile_sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+  "actual_integration_reslice": {
+    "decision": "CONDITIONAL_GO_FIXED_STLS_ONLY",
+    "old_main_route_accepted": false,
+    "machine_ready": false,
+    "physical_print_or_fit_or_glue_test": false,
+    "conditions": "100% size; PLA; 0.4mm nozzle; 0.2mm layer; nominal 0.45mm width; 3 perimeters; 15% stars infill; 250x210mm bed; no brim in this diagnostic.",
+    "results": [
+      {
+        "part": "main_body",
+        "input_sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+        "profile": "manufacturing/reviewed-support/main-short-axis-support.ini",
+        "profile_sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+        "exit_code": 0,
+        "warning_lines": [],
+        "gcode_sha256": "896a8e3dcd229b515025ccb4c110344c725c7f67e82a1dc20ab0e2fc28974c98",
+        "gcode_bytes": 8540991,
+        "gcode_canonical_sha256": "dec08162c81c48cde9081124088a249a34de8133ecaf89e3b1a48baeb23ab053",
+        "support_extrusion_segments": 30369,
+        "bridge_extrusion_segments": 8132,
+        "command_template": [
+          "${PRUSA_SLICER}",
+          "--datadir",
+          "${PRIVATE_SLICE_DIR}/main_body-isolated-settings",
+          "--load",
+          "manufacturing/reviewed-support/main-short-axis-support.ini",
+          "--center",
+          "125,105",
+          "--export-gcode",
+          "--output",
+          "${PRIVATE_SLICE_DIR}/main_body-REVIEWED-DIAGNOSTIC-DO-NOT-PRINT.gcode",
+          "parts/main_body-print.stl"
+        ],
+        "raw_gcode_in_package": false,
+        "reference_review_gcode_sha256": "9aa5d56634a0fc9a99a17f3c9a02588eb6987613facb2ea99ae2e625dd5e842c",
+        "identical_to_independent_review_except_generated_time": true
+      }
+    ],
+    "limitations": [
+      "Check actual bridge direction across the short platform span, not angle number alone; rotation/slicer changes affect meaning.",
+      "Retain support under bridges. The main platform centerline coverage gap is about 1.704001mm only under the linked independent toolpath analysis.",
+      "About 8.224913mm main / 8.036027mm roof internal bridges still require demonstrated machine/material capability or a revised reslice.",
+      "95,890 support points and staged routes are finite geometric checks, not a full removal, tool-turning, adhesion or strength simulation.",
+      "Break support into small pieces and remove laterally before assembly; do not pull the two shallow-window support blocks straight forward.",
+      "Fit and adhesive strength are untested; 50 joints are glue alignment, not snap fits."
+    ]
+  },
+  "independent_evidence": {
+    "copied_source_files": 69,
+    "integrated_evidence_files": 73,
+    "source_and_copy_hashes_verified": true,
+    "numeric_boolean_null_leaves_exactly_preserved": true,
+    "validation_sha256": "6be0e5058826ddf0a8c6a56dfbc0163fc10150039a85f2667c8d4a211b3da478",
+    "independent_original_candidate_report": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+    "revision_delta_review": "qa/revision-delta-review.json",
+    "revision_delta_review_sha256": "82aa5f7a65b679c3173f6a2a25113930772d5ac60e370728f0b6b8bc36c46ee5",
+    "original_failure_and_580_flags_preserved": true
+  },
+  "required_remaining_conditions": [
+    "Actual short-axis platform bridges and support below bridges; angle number alone is insufficient after rotation/slicer change",
+    "About 8.3mm internal bridging capability or revised infill/solid layers and reslice",
+    "Staged lateral removal through the exterior slot before assembly; no straight front pull of shallow-window support blocks",
+    "95,890 point/ray/polyline audit with 580 restricted points is finite, not complete tool/support-block/adhesion/removal-force simulation",
+    "50 clearance glue-positioning interfaces, not snap fits; clean, dry-align and jig; nominal 53.4mm versus estimated natural seating 53.25mm",
+    "No print, actual support removal, fit, glue-strength or transport-strength test; roof warp and fine-frame handling remain risks"
+  ],
+  "nonblocking_format_check": "Preserved source INI empty-value spaces and archival/diagnostic EOF blank lines are retained with git diff --check exit2 evidence in qa/revision-whitespace-check.json; not reclassified as passed.",
+  "library_receipt": {
+    "operation": "replace_library_file",
+    "status": "succeeded",
+    "path": "/cnu-j-grandstand-reviewed-support-7cf0563a0685.zip",
+    "file_id": "file_000000003fd081f48448c946d262210c",
+    "library_file_id": "libfile_03684283aedc8191900c89f2971270aa",
+    "file_name": "cnu-j-grandstand-reviewed-support-7cf0563a0685.zip",
+    "current_version_number": 1,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "1"
+      }
+    ],
+    "directory_id": "libdir_461871e7c09081919eb79bf1eb28957f",
+    "mime_type": "application/zip",
+    "library_artifact_type": "other",
+    "file_size_bytes": 20366995,
+    "external_connectors_accessed": false
+  },
+  "archive_local_path": "${AUTHOR_LIBRARY_V1_ARCHIVE}",
+  "archive_bytes": 20366995,
+  "archive_sha256": "a968fc9648b03936ba4d61f5f9032545aa3eb958ce1a94144e5306b02394064d",
+  "official_download_verified": true,
+  "official_download_verification": "${AUTHOR_LIBRARY_DOWNLOAD_RECEIPT}",
+  "official_download_verification_sha256": "17d605fb8efb844ee21c2ca0bf1793a8ae679897d990615f99239458bcdcda69",
+  "zip_entries": 149,
+  "outer_manifest_files_verified": 148,
+  "package_files_verified": 145,
+  "native_ntfs_identity_and_version_verified": true,
+  "blockers": []
+}

@@ -1,0 +1,252 @@
+{
+  "baseline_commit": "08604e70212673240173660584236e361221533f",
+  "remote_url": "https://github.com/root50643/taiwan-buildings-3d.git",
+  "remote_verified_head": "08604e70212673240173660584236e361221533f",
+  "remote_verified_main": "08604e70212673240173660584236e361221533f",
+  "check_date_utc": "2026-10-18",
+  "rules": "Read root, school, campus and package README. git tree found no AGENTS.md, SKILL.md, .agents/ or .codex/ entries; ancestor AGENTS.md files absent.",
+  "read_only_comparison": {
+    "report_readable": true,
+    "archive_readable": true,
+    "archive_sha256": "31d362378ebaef8057536b19728a32d8261db218dea260aca7413dc65efd3783",
+    "archive_crc_test": "all entries readable; ZipFile.testzip() returned None"
+  },
+  "initial_environment_failures": [
+    {
+      "action": "git ls-remote public repo in sandbox",
+      "result": "Could not resolve host: github.com",
+      "resolution": "Read-only escalated ls-remote succeeded; fixed HEAD/main recorded above."
+    },
+    {
+      "action": "read prior review-repo Git status",
+      "result": "Permission denied",
+      "resolution": "Not retried; created independent filtered clone in this workspace."
+    },
+    {
+      "action": "load_workspace_dependencies",
+      "result": "Workspace dependency tools are only supported for local threads.",
+      "resolution": "Used explicit local Anaconda Python and isolated target libraries."
+    },
+    {
+      "action": "import geometry libraries in system Python",
+      "result": "ModuleNotFoundError: No module named trimesh",
+      "resolution": "Installed isolated runtime-libs in task workspace."
+    },
+    {
+      "action": "pip isolated install",
+      "result": "Succeeded with installed-system numba/numpy dependency warning.",
+      "resolution": "Use isolated PYTHONPATH; numba not used."
+    },
+    {
+      "action": "sandbox import existing bpy runtime",
+      "result": "ImportError: DLL load failed while importing bpy: Access denied.",
+      "resolution": "Escalated read/execute succeeded, version 5.2.2 LTS; all render outputs/resources redirected to candidate/workspace."
+    }
+  ],
+  "baseline_files": {
+    "build_model.py": {
+      "bytes": 3634,
+      "sha256": "aece889332c91626da048adfc5e181bfd82c78fa92f494fd3fedee3aa2a07dc4"
+    },
+    "check_layers.py": {
+      "bytes": 3691,
+      "sha256": "37b98d3a4897ef45882611362ec15d377f9f531d0ea75652ad8eefb62ed8ce4d"
+    },
+    "hash-manifest.json": {
+      "bytes": 2115,
+      "sha256": "5bd7f3f8a942e740af38408b49f1d0ca8d37eaccb6758bd82ebcf6d64e0cbe37"
+    },
+    "layer-check.json": {
+      "bytes": 62068,
+      "sha256": "0125c6e5c8330097b59aa5fc6d38ef1fef2bf69e6b3dabe334bca73db607259f"
+    },
+    "model.obj": {
+      "bytes": 111788,
+      "sha256": "e3283cc2fa443ec926626df8a49d1ee0de6aa7cdc2206b3efe7fa1f506246257"
+    },
+    "model.stl": {
+      "bytes": 163584,
+      "sha256": "801b9d6dedd0b8242dfea97938207b435c48f741a5d76195dcd7157881e29fa0"
+    },
+    "previews/elevation.png": {
+      "bytes": 1411328,
+      "sha256": "f0f1af8d5102e2a2e3ef1619c67727ec865aa9c9be43c5286ccea0e4b76728c2"
+    },
+    "previews/front.png": {
+      "bytes": 1558801,
+      "sha256": "c14d9cbdea172a32cf0724ad95586636ef6fc04bf680b2622d33260d15afa6ba"
+    },
+    "previews/rear.png": {
+      "bytes": 1433888,
+      "sha256": "a090f8ab5351e8e3644f0a4996588d6c794f90fff66c320c4aaad40b1d17fc33"
+    },
+    "README.zh-TW.md": {
+      "bytes": 4554,
+      "sha256": "c8dd805d75bf3bc2ba523aaabecb511e25fb6b0e520abaccbe1f90ce97cc568d"
+    },
+    "render_preview.py": {
+      "bytes": 3191,
+      "sha256": "c751f73861633087c735b3937088c303944a6c533051b02a22ebf7ffcb505f1d"
+    },
+    "requirements.txt": {
+      "bytes": 46,
+      "sha256": "7d4a2da23f7b50809b7c98b274035bf5ea9c0a5a3b4a9726a01f32722200c193"
+    },
+    "scene.blend": {
+      "bytes": 609724,
+      "sha256": "a78181fd0206647ebce30d5c51c65e52fa080095bde71ea554fecfd785eb0eca"
+    },
+    "sources.json": {
+      "bytes": 1672,
+      "sha256": "7f06aff5b58ac4654008ad67293a1f2a9acba4c4f906ea00d5e135032798aa73"
+    },
+    "validate_model.py": {
+      "bytes": 5222,
+      "sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95"
+    },
+    "validation.json": {
+      "bytes": 1515,
+      "sha256": "d7200a2286139911a16f747d3e06cb8eb6adfb41759ee4e24bbc875269222963"
+    }
+  },
+  "initial_checkout_files": {
+    "build_model.py": {
+      "bytes": 3710,
+      "sha256": "e30d6807ddee4e6ae132bcd3908b780bc805d867bf0b467e5f7a54b5e0ebf40b"
+    },
+    "check_layers.py": {
+      "bytes": 3743,
+      "sha256": "1a2d18a9390156ac6b3c2460a42bed7c95e03ccdcc6d5e4447995e256a73c1d2"
+    },
+    "hash-manifest.json": {
+      "bytes": 2192,
+      "sha256": "1e942099c6ab34eee7ebdf394daf328f8fa60042dc6a8e5c07d590360f76d189"
+    },
+    "layer-check.json": {
+      "bytes": 65030,
+      "sha256": "97ebb47014519bf782a3f5f0df47f32652ea78ca1554503b5f93cade37663ed6"
+    },
+    "model.obj": {
+      "bytes": 116679,
+      "sha256": "74e1e2ea11a159b1472f38a486931366d870a4a8d569b85e2fca1ee48269773b"
+    },
+    "model.stl": {
+      "bytes": 163584,
+      "sha256": "801b9d6dedd0b8242dfea97938207b435c48f741a5d76195dcd7157881e29fa0"
+    },
+    "previews/elevation.png": {
+      "bytes": 1411328,
+      "sha256": "f0f1af8d5102e2a2e3ef1619c67727ec865aa9c9be43c5286ccea0e4b76728c2"
+    },
+    "previews/front.png": {
+      "bytes": 1558801,
+      "sha256": "c14d9cbdea172a32cf0724ad95586636ef6fc04bf680b2622d33260d15afa6ba"
+    },
+    "previews/rear.png": {
+      "bytes": 1433888,
+      "sha256": "a090f8ab5351e8e3644f0a4996588d6c794f90fff66c320c4aaad40b1d17fc33"
+    },
+    "README.zh-TW.md": {
+      "bytes": 4615,
+      "sha256": "9b3b2c9177dea1e46ec364b5a3f44c1b8cce04bf37ec2f0036dbce0304de1f3c"
+    },
+    "render_preview.py": {
+      "bytes": 3231,
+      "sha256": "9563dfa9af912f2da0913be61595d13134dc56c690196a9b46067c4ffa876456"
+    },
+    "requirements.txt": {
+      "bytes": 49,
+      "sha256": "cd7ec2101174583e34f30f197c001ca0c9e5e9d1dda393afa581e53d5c1599fa"
+    },
+    "scene.blend": {
+      "bytes": 609724,
+      "sha256": "a78181fd0206647ebce30d5c51c65e52fa080095bde71ea554fecfd785eb0eca"
+    },
+    "sources.json": {
+      "bytes": 1690,
+      "sha256": "3ceac3d901d46035e00a0ca397d23842c2d402d30bd03c0c6725b46179855544"
+    },
+    "validate_model.py": {
+      "bytes": 5286,
+      "sha256": "846e83d5ae92e475acb1e58b191d5b5846f576dac65763d9e09b7e738d2935de"
+    },
+    "validation.json": {
+      "bytes": 1556,
+      "sha256": "25bfb67edc4fef35a643f83ed8697a335de759bfb2fc626986112d23c79b84db"
+    }
+  },
+  "line_ending_audit": {
+    "initial_clone_core_autocrlf": true,
+    "initial_checkout_text_variants_preserved_in_backup": "original-checkout-eol/",
+    "variants": [
+      {
+        "path": "build_model.py",
+        "checkout_sha256": "e30d6807ddee4e6ae132bcd3908b780bc805d867bf0b467e5f7a54b5e0ebf40b",
+        "git_blob_sha256": "aece889332c91626da048adfc5e181bfd82c78fa92f494fd3fedee3aa2a07dc4",
+        "line_endings_only": true
+      },
+      {
+        "path": "check_layers.py",
+        "checkout_sha256": "1a2d18a9390156ac6b3c2460a42bed7c95e03ccdcc6d5e4447995e256a73c1d2",
+        "git_blob_sha256": "37b98d3a4897ef45882611362ec15d377f9f531d0ea75652ad8eefb62ed8ce4d",
+        "line_endings_only": true
+      },
+      {
+        "path": "hash-manifest.json",
+        "checkout_sha256": "1e942099c6ab34eee7ebdf394daf328f8fa60042dc6a8e5c07d590360f76d189",
+        "git_blob_sha256": "5bd7f3f8a942e740af38408b49f1d0ca8d37eaccb6758bd82ebcf6d64e0cbe37",
+        "line_endings_only": true
+      },
+      {
+        "path": "layer-check.json",
+        "checkout_sha256": "97ebb47014519bf782a3f5f0df47f32652ea78ca1554503b5f93cade37663ed6",
+        "git_blob_sha256": "0125c6e5c8330097b59aa5fc6d38ef1fef2bf69e6b3dabe334bca73db607259f",
+        "line_endings_only": true
+      },
+      {
+        "path": "model.obj",
+        "checkout_sha256": "74e1e2ea11a159b1472f38a486931366d870a4a8d569b85e2fca1ee48269773b",
+        "git_blob_sha256": "e3283cc2fa443ec926626df8a49d1ee0de6aa7cdc2206b3efe7fa1f506246257",
+        "line_endings_only": true
+      },
+      {
+        "path": "README.zh-TW.md",
+        "checkout_sha256": "9b3b2c9177dea1e46ec364b5a3f44c1b8cce04bf37ec2f0036dbce0304de1f3c",
+        "git_blob_sha256": "c8dd805d75bf3bc2ba523aaabecb511e25fb6b0e520abaccbe1f90ce97cc568d",
+        "line_endings_only": true
+      },
+      {
+        "path": "render_preview.py",
+        "checkout_sha256": "9563dfa9af912f2da0913be61595d13134dc56c690196a9b46067c4ffa876456",
+        "git_blob_sha256": "c751f73861633087c735b3937088c303944a6c533051b02a22ebf7ffcb505f1d",
+        "line_endings_only": true
+      },
+      {
+        "path": "requirements.txt",
+        "checkout_sha256": "cd7ec2101174583e34f30f197c001ca0c9e5e9d1dda393afa581e53d5c1599fa",
+        "git_blob_sha256": "7d4a2da23f7b50809b7c98b274035bf5ea9c0a5a3b4a9726a01f32722200c193",
+        "line_endings_only": true
+      },
+      {
+        "path": "sources.json",
+        "checkout_sha256": "3ceac3d901d46035e00a0ca397d23842c2d402d30bd03c0c6725b46179855544",
+        "git_blob_sha256": "7f06aff5b58ac4654008ad67293a1f2a9acba4c4f906ea00d5e135032798aa73",
+        "line_endings_only": true
+      },
+      {
+        "path": "validate_model.py",
+        "checkout_sha256": "846e83d5ae92e475acb1e58b191d5b5846f576dac65763d9e09b7e738d2935de",
+        "git_blob_sha256": "38d38e2f58f0030e765c7130bb9469028b9bb1b6462315bfe2b6b2a9cacd3e95",
+        "line_endings_only": true
+      },
+      {
+        "path": "validation.json",
+        "checkout_sha256": "25bfb67edc4fef35a643f83ed8697a335de759bfb2fc626986112d23c79b84db",
+        "git_blob_sha256": "d7200a2286139911a16f747d3e06cb8eb6adfb41759ee4e24bbc875269222963",
+        "line_endings_only": true
+      }
+    ],
+    "baseline_restored_from_exact_git_blobs": true,
+    "candidate_policy": "Package .gitattributes * -text preserves exact hashes across checkout."
+  }
+}

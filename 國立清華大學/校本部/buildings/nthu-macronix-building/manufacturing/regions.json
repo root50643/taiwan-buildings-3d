@@ -1,0 +1,626 @@
+{
+  "schema": "nthu-manufacturing-region-map-v1",
+  "status": "fixed original R2 and optional 6801f9c4 infill for independent scope review; no slicing or physical print validation",
+  "units": "mm",
+  "source_stl_sha256": "00f6bbdd09196fba873d843bb9d50a1c3aad4e19e760978333dce6f49740627c",
+  "extents_mm": [
+    150,
+    124,
+    68
+  ],
+  "base_bbox": [
+    [
+      -75,
+      -62,
+      0
+    ],
+    [
+      75,
+      62,
+      3
+    ]
+  ],
+  "model_axes": {
+    "front": [
+      0,
+      -1,
+      0
+    ],
+    "rear": [
+      0,
+      1,
+      0
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ]
+  },
+  "local_wings": [
+    {
+      "name": "left",
+      "translation": [
+        -30,
+        30,
+        0
+      ],
+      "rotation_z_deg": -14,
+      "outward": [
+        -0.241921896,
+        -0.970295726,
+        0
+      ]
+    },
+    {
+      "name": "right",
+      "translation": [
+        30,
+        30,
+        0
+      ],
+      "rotation_z_deg": 14,
+      "outward": [
+        0.241921896,
+        -0.970295726,
+        0
+      ]
+    }
+  ],
+  "local_to_global": "X=x0+u*cos(a)-v*sin(a); Y=30+u*sin(a)+v*cos(a); Z=z",
+  "flag_bbox_warning": "flag bbox encloses flagged source triangles only; it is not a cavity envelope; source face ids apply only to original R2 STL",
+  "regions": [
+    {
+      "id": "A",
+      "name_zh": "前曲屋簷",
+      "view_bbox": [
+        [
+          -52,
+          -44,
+          39.55
+        ],
+        [
+          8,
+          -7,
+          50.55
+        ]
+      ],
+      "flag_count": 11,
+      "flag_bbox": [
+        [
+          -10.781495,
+          -10.918525,
+          47.107033
+        ],
+        [
+          0.555194,
+          -7,
+          50.549999
+        ]
+      ],
+      "label_anchor": [
+        -4,
+        -9,
+        49
+      ],
+      "candidate_access_arrows": [
+        {
+          "from": [
+            -4,
+            -20,
+            46
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "meaning": "exterior terrace access candidate; no tool clearance guarantee"
+        }
+      ],
+      "action": "slice roof edges and locally accessible support; stop at unverified trapped support"
+    },
+    {
+      "id": "B",
+      "name_zh": "高側窗帶上蓋／淺槽",
+      "view_bbox": [
+        [
+          -40,
+          -11.5,
+          50.8
+        ],
+        [
+          -4,
+          -4.5,
+          55.4
+        ]
+      ],
+      "slot_bbox": [
+        [
+          -37,
+          -10.5,
+          50.8
+        ],
+        [
+          -7,
+          -10,
+          53.3
+        ]
+      ],
+      "slot_opening_mm": [
+        30,
+        2.5
+      ],
+      "slot_depth_mm": 0.5,
+      "flag_count": 8,
+      "flag_bbox": [
+        [
+          -18.280003,
+          -7.112504,
+          54.099998
+        ],
+        [
+          -7.25,
+          -5.164446,
+          54.099998
+        ]
+      ],
+      "label_anchor": [
+        -14,
+        -6,
+        54.1
+      ],
+      "candidate_access_arrows": [
+        {
+          "from": [
+            -22,
+            -10.5,
+            52.05
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "meaning": "shallow blind slot opening; does not prove washout"
+        }
+      ],
+      "action": "check 1mm cap projection and 0.5mm slot; unresolved rear support requires verified soluble full support or local split"
+    },
+    {
+      "id": "C",
+      "name_zh": "入口右翼格柵／窗簷及地面穿廊",
+      "view_bbox": [
+        [
+          33.5,
+          -22.5,
+          3.2
+        ],
+        [
+          62.5,
+          -18.4,
+          50
+        ]
+      ],
+      "flag_count": 9,
+      "flag_bbox": [
+        [
+          36.5,
+          -20.9,
+          32
+        ],
+        [
+          55.5,
+          -20,
+          41
+        ]
+      ],
+      "window_z_ranges": [
+        [
+          25,
+          32
+        ],
+        [
+          34,
+          41
+        ],
+        [
+          43,
+          50
+        ]
+      ],
+      "fin_centers_x": [
+        37,
+        43,
+        49,
+        55,
+        61
+      ],
+      "nominal_bay_mm": {
+        "height": 7,
+        "width": 5,
+        "last_width": 4.5
+      },
+      "original_back_slots": {
+        "x_ranges": [
+          [
+            36.5,
+            37.5
+          ],
+          [
+            42.5,
+            43.5
+          ],
+          [
+            48.5,
+            49.5
+          ],
+          [
+            54.5,
+            55.5
+          ]
+        ],
+        "y_range": [
+          -20.9,
+          -19.1
+        ],
+        "z_ranges": [
+          [
+            25,
+            32
+          ],
+          [
+            34,
+            41
+          ],
+          [
+            43,
+            50
+          ]
+        ],
+        "depth": 1.8
+      },
+      "proposed_variant_fill_overlap_y_range": [
+        -20.95,
+        -19.05
+      ],
+      "candidate_access_arrows": [
+        {
+          "from": [
+            46,
+            -20,
+            28.5
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "meaning": "bay opening; hard-support finite tool path still unverified"
+        }
+      ],
+      "label_anchor": [
+        49,
+        -20.6,
+        32
+      ],
+      "action": "backfill only hidden fin slots; keep open bays under external-only reachable support rule",
+      "subregions": [
+        {
+          "id": "C0",
+          "name_zh": "入口地面穿廊底／柱周",
+          "downface_bbox": [
+            [
+              36,
+              -21.5,
+              13.2
+            ],
+            [
+              60,
+              -18.4,
+              13.2
+            ]
+          ],
+          "action": "verify overhang path and accessible support, no support wrapped around columns"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "name_zh": "前棟橢圓窗帶及外梯平台",
+      "view_bbox": [
+        [
+          -50.5,
+          -54.5,
+          14
+        ],
+        [
+          7,
+          -36.774,
+          30.3
+        ]
+      ],
+      "flag_count": 18,
+      "flag_bbox": [
+        [
+          -10.5,
+          -48.122684,
+          18
+        ],
+        [
+          4.5,
+          -38.759087,
+          29
+        ]
+      ],
+      "window_z_ranges": [
+        [
+          14,
+          18
+        ],
+        [
+          25,
+          29
+        ]
+      ],
+      "label_anchor": [
+        -3,
+        -43,
+        25
+      ],
+      "action": "curved exterior window pocket support route must follow local outward side; stop at trapped turn",
+      "subregions": [
+        {
+          "id": "D0",
+          "name_zh": "外梯平台底",
+          "downface_bbox": [
+            [
+              4.1,
+              -54.5,
+              28
+            ],
+            [
+              7,
+              -37.99,
+              28
+            ]
+          ],
+          "action": "verify overhang path and accessible outer support; stop at unverified stair/landing trapped support"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "name_zh": "後棟窗帶／頂簷",
+      "view_bbox": [
+        [
+          -65.529,
+          9.645,
+          17
+        ],
+        [
+          65.529,
+          50.233,
+          63.2
+        ]
+      ],
+      "flag_count": 3,
+      "flag_bbox": [
+        [
+          -0.762343,
+          10.858176,
+          62
+        ],
+        [
+          0.762343,
+          13.915767,
+          62
+        ]
+      ],
+      "window_local": {
+        "x_range": [
+          -27.5,
+          27.5
+        ],
+        "y_range": [
+          -13.25,
+          -9.75
+        ],
+        "z_ranges": [
+          [
+            18,
+            24
+          ],
+          [
+            29,
+            35
+          ],
+          [
+            40,
+            46
+          ],
+          [
+            51,
+            57
+          ]
+        ],
+        "opening_height_approx": 5.9,
+        "recess_depth": 1.75
+      },
+      "top_eave_z": [
+        62,
+        63.2
+      ],
+      "label_anchor": [
+        0,
+        12,
+        62
+      ],
+      "action": "inspect each wing outward eave and central-spine support; 59mm vertical gap is not bridge span"
+    },
+    {
+      "id": "F",
+      "name_zh": "後窗台背微縫（支撐禁入）",
+      "coordinate_system": "each wing local",
+      "local_bbox_per_level": {
+        "x_range": [
+          -27.5,
+          27.5
+        ],
+        "y_range": [
+          -9.8,
+          -9.75
+        ],
+        "z_ranges": [
+          [
+            18,
+            18.1
+          ],
+          [
+            29,
+            29.1
+          ],
+          [
+            40,
+            40.1
+          ],
+          [
+            51,
+            51.1
+          ]
+        ]
+      },
+      "original_gap_mm": [
+        0.05,
+        0.1
+      ],
+      "original_sill_front_y": -13,
+      "original_sill_back_y": -9.8,
+      "proposed_variant_sill_back_y": -9.7,
+      "wall_y": -9.75,
+      "proposed_overlap_mm": 0.05,
+      "action": "no support/interface even soluble in original microgap; variant fills gap only",
+      "proposed_variant_fill_local": {
+        "y_range": [
+          -9.81,
+          -9.7
+        ],
+        "z_ranges": [
+          [
+            18,
+            18.1
+          ],
+          [
+            29,
+            29.1
+          ],
+          [
+            40,
+            40.1
+          ],
+          [
+            51,
+            51.1
+          ]
+        ],
+        "x_range": [
+          -32,
+          32
+        ],
+        "piece_count": 8,
+        "note": "64mm fill width does not assert actual microgap length"
+      }
+    },
+    {
+      "id": "G",
+      "name_zh": "0.8mm貼背格柵浮雕",
+      "view_bbox": [
+        [
+          16.5,
+          -20.1,
+          7
+        ],
+        [
+          33.5,
+          -18.1,
+          38
+        ]
+      ],
+      "vertical_fin_centers_x": [
+        18,
+        23,
+        28,
+        33
+      ],
+      "nominal_feature_width_mm": 0.8,
+      "horizontal_z_ranges": [
+        [
+          14,
+          14.8
+        ],
+        [
+          21,
+          21.8
+        ],
+        [
+          28,
+          28.8
+        ],
+        [
+          35,
+          35.8
+        ]
+      ],
+      "label_anchor": [
+        25,
+        -20,
+        24
+      ],
+      "action": "verify continuous nonzero extrusion attached to wall; stop if missing or isolated"
+    }
+  ],
+  "diagram_guidance": [
+    "Use top view with X/Y axes and A-G labels; use front elevation with Z values; do not imply building compass direction.",
+    "Add C close section at original X=37 and Z=28.5 showing fin, 1.8mm back slot and proposed fill; use grey original shell and hatched fill.",
+    "Add F close section in each wing local Y/Z; exaggerate 0.05x0.10mm microgap for visibility and explicitly label not to scale.",
+    "Show outward arrows as candidate access directions, not proven tool/solvent routes.",
+    "Use amber for A-E inspection boxes, including C; F red line is the microgap with all support/interface prohibited. C inset red hatch depicts added solid infill only. Original C fin-back hard support is prohibited without verified removal; the full-soluble C exception requires the equipment and verified fluid route in section 5. F has no soluble exception. Blue marks G path continuity.",
+    "Retain 49 original zero-radius route flags; never relabel them as 49 sealed cavities."
+  ],
+  "primary_method_sources": [
+    {
+      "title": "Support material",
+      "url": "https://help.prusa3d.com/article/support-material_1698",
+      "accessed": "2026-10-18"
+    },
+    {
+      "title": "Paint-on supports",
+      "url": "https://help.prusa3d.com/article/paint-on-supports_168584",
+      "accessed": "2026-10-18"
+    },
+    {
+      "title": "PrusaSlicer G-code viewer",
+      "url": "https://help.prusa3d.com/article/prusaslicer-g-code-viewer_193152",
+      "accessed": "2026-10-18"
+    },
+    {
+      "title": "Water soluble (BVOH/PVA)",
+      "url": "https://help.prusa3d.com/article/water-soluble-bvoh-pva_167012",
+      "accessed": "2026-10-18"
+    },
+    {
+      "title": "Cut tool",
+      "url": "https://help.prusa3d.com/article/cut-tool_1779",
+      "accessed": "2026-10-18"
+    }
+  ],
+  "proposed_variant": {
+    "appearance": "front fin planes and bay boundaries retained; side/rear fin surfaces and oblique recess appearance change",
+    "fill_rear_sill_piece_count": 8,
+    "observed_only": "Final QA and fixed identity remain root responsibility",
+    "observed_sha256": "6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a",
+    "fill_fin_back_piece_count": 12,
+    "path": "manufacturing/fill-hidden-gaps/model.stl"
+  },
+  "diagram_color_semantics": "Amber outer boxes are inspection regions; F red line is support-prohibited microgap; C red hatched inset denotes new solid infill, not a prohibition on all C bays. Original C fin-back hard supports require verified removal or the explicit full-soluble exception."
+}

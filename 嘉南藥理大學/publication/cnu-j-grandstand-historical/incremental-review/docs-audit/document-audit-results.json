@@ -1,0 +1,643 @@
+{
+  "scope": "Final incremental document/configuration audit only; no rendering, no reslice, no repeated unchanged full geometry, no physical tests; manual semantic reading plus narrow mechanical binding/link checks.",
+  "reviewed_at_utc": "2026-10-18T17:20:34.762278+00:00",
+  "fixed_candidate_commit": "7cf0563a06858137f51751600348a35198c8f6f2",
+  "old_independently_reviewed_candidate_commit": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
+  "observed_head": "7cf0563a06858137f51751600348a35198c8f6f2",
+  "decision": "GO_WITH_EXISTING_FIXED_STL_AND_MANUFACTURING_CONDITIONS",
+  "required_publication_blockers": [],
+  "manual_semantic_criteria": [
+    {
+      "topic": "Original main route remains rejected; exit 0 is insufficient",
+      "locations": [
+        "README.md:3",
+        "README.md:38",
+        "qa/manufacturing-review/README.md:3",
+        "qa/manufacturing-review/README.md:21",
+        "qa-summary.json:10",
+        "manufacturing/reviewed-support/README.md:3"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "Actual short-axis bridges plus retained support; angle is orientation specific; machine reslice required",
+      "locations": [
+        "README.md:38",
+        "README.md:46",
+        "qa/manufacturing-review/README.md:23",
+        "manufacturing/reviewed-support/README.md:8",
+        "manufacturing/reviewed-support/README.md:16"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "100% scale is distinct from 15% infill; actual reference configuration disclosed",
+      "locations": [
+        "README.md:36",
+        "qa/manufacturing-review/README.md:37",
+        "manufacturing/reviewed-support/README.md:13",
+        "qa-summary.json:38"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "8.224913 mm body and 8.036027 mm roof internal bridges retained; 2.600011 mm roof socket is not maximum",
+      "locations": [
+        "README.md:40",
+        "qa/manufacturing-review/README.md:25",
+        "manufacturing/reviewed-support/README.md:36",
+        "qa-summary.json:19"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "Old/new support samples separated; all 580 restricted flags retained; finite checks do not prove full removability",
+      "locations": [
+        "README.md:42",
+        "qa/manufacturing-review/README.md:29",
+        "qa/manufacturing-review/README.md:31",
+        "qa/manufacturing-review/README.md:33",
+        "manufacturing/reviewed-support/README.md:40",
+        "qa-summary.json:61"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "Staged side removal before assembly; no straight-forward block extraction; revise support if access unsafe",
+      "locations": [
+        "README.md:30",
+        "README.md:42",
+        "qa/manufacturing-review/README.md:33",
+        "manufacturing/reviewed-support/README.md:44"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "50 clearance adhesive positioning interfaces, not snap fits; jig and gap-filling adhesive; analytical 53.25 mm seating",
+      "locations": [
+        "README.md:15",
+        "README.md:30",
+        "README.md:32",
+        "qa/manufacturing-review/README.md:13",
+        "qa/manufacturing-review/README.md:17",
+        "manufacturing/reviewed-support/README.md:49",
+        "qa-summary.json:73"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "Four unique geometries / 22 physical pieces; overview is not print file",
+      "locations": [
+        "README.md:19",
+        "README.md:21",
+        "manufacturing/reviewed-support/README.md:21",
+        "qa-summary.json:4"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "No physical print, support removal, dry fit or adhesive/transport strength proof; roof warping and thin frames",
+      "locations": [
+        "README.md:3",
+        "README.md:50",
+        "qa/manufacturing-review/README.md:43",
+        "manufacturing/reviewed-support/README.md:54",
+        "qa-summary.json:17"
+      ],
+      "manual_result": "retained"
+    },
+    {
+      "topic": "Historical reports and raw passes scoped to old candidate; present printing guidance supersedes them",
+      "locations": [
+        "qa/history/README.md:3",
+        "qa/manufacturing-review/README.md:5",
+        "qa/independent-support-review/INTEGRATION-README.md:3",
+        "qa/independent-support-review/INTEGRATION-README.md:20",
+        "qa-summary.json:27"
+      ],
+      "manual_result": "clear precedence; no manufacturing acceptance inferred from geometry pass"
+    },
+    {
+      "topic": "2006/2010/2012 plus undated historical source composite, not 2026 measured current state",
+      "locations": [
+        "README.md:3",
+        "README.md:15",
+        "README.md:68",
+        "qa-summary.json:23"
+      ],
+      "manual_result": "retained"
+    }
+  ],
+  "input_bindings": [
+    {
+      "path": "README.md",
+      "bytes": 8921,
+      "sha256": "867089cc063a574dbbbec1e26346a78665d5fa02d6c4115cca43b4d5d558eabb",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa-summary.json",
+      "bytes": 8840,
+      "sha256": "d35e724e0067d2bb6b7ab8eb39db62da8fdcdff8db96d9b90ca70efd5e0e2ce5",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/README.md",
+      "bytes": 2143,
+      "sha256": "573b8166b97970853d93e619774d0cec8362a07b0b9cc3fb502e5d0c63f74f19",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/manufacturing-review/README.md",
+      "bytes": 8822,
+      "sha256": "8da01f6836614caf5681ac58a1fb406ad7b1b5f3201166795433ac313606a24d",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/history/README.md",
+      "bytes": 738,
+      "sha256": "cd1a8ac1f526560faeacc2dea0c9436d6d5ac9f1085fb585a3f7d55d3d5941c8",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "manufacturing/reviewed-support/README.md",
+      "bytes": 3643,
+      "sha256": "e265e147f47852a72ba49fbef643b19e41223b3b61432beb94f59b3f01d073d9",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "manufacturing/reviewed-support/main-short-axis-support.ini",
+      "bytes": 10287,
+      "sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "manufacturing/reviewed-support/profile-diff.json",
+      "bytes": 517,
+      "sha256": "b63528fcf67d8bebf3771f3961c8d70c68e8aaf7845dc05f22155ba2db26cb06",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "manufacturing/reviewed-support/integration-reslice.json",
+      "bytes": 2468,
+      "sha256": "fbd08788ef05c333a32faf08e05f13a3e2a541b3512d038ef53bd9c8d56a3afe",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "manufacturing/reviewed-support/slice_reviewed_parts.py",
+      "bytes": 5519,
+      "sha256": "a908cfeb081a3cf2b45d1e557fdd5b8077201d51a437c03fd1d05196dfee1dc8",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/manufacturing-review/diagnostic-main-support.ini",
+      "bytes": 10286,
+      "sha256": "5c81bd9b223a05c3cb649beec52a42a465907513a25a0b517f3a095ea7d4ddf2",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/independent-support-review/INTEGRATION-README.md",
+      "bytes": 5352,
+      "sha256": "7d9a25da0cdee2cc652b1a67257ff3e7a707a4225c9beaf7fa061847b2a63205",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "bytes": 11667,
+      "sha256": "4a1805b8afc037297517f8ffd88430da7a7b78af01368fa12786006328f9b5ac",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+      "bytes": 8876,
+      "sha256": "efc11f9cd7bcf69897bd72b9bc18b641b1cc8370e328059d29f03f64faed1694",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/independent-support-review/slicing-support-audit/REVIEW-ONLY-main-short-axis-support.ini",
+      "bytes": 10287,
+      "sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+      "matches_fixed_commit_bytes": true
+    },
+    {
+      "path": "qa/revision-delta-review.json",
+      "bytes": 18192,
+      "sha256": "82aa5f7a65b679c3173f6a2a25113930772d5ac60e370728f0b6b8bc36c46ee5",
+      "matches_fixed_commit_bytes": true
+    }
+  ],
+  "all_input_documents_match_fixed_commit": true,
+  "configuration_check": {
+    "actual_config_delta": {
+      "bridge_angle": {
+        "old": "0",
+        "new": "90"
+      },
+      "dont_support_bridges": {
+        "old": "1",
+        "new": "0"
+      }
+    },
+    "exactly_required_two_changes": true,
+    "actual_profile_matches_integrated_independent_reference_bytes": true,
+    "actual_profile_sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+    "selected_actual_settings": {
+      "bridge_angle": "90",
+      "dont_support_bridges": "0",
+      "support_material": "1",
+      "support_material_auto": "1",
+      "fill_density": "15%",
+      "fill_pattern": "stars",
+      "nozzle_diameter": "0.4",
+      "layer_height": "0.2",
+      "first_layer_height": "0.2",
+      "perimeters": "3",
+      "extrusion_width": "0.45",
+      "bed_shape": "0x0,250x0,250x210,0x210",
+      "brim_width": "0",
+      "start_gcode": "; DIAGNOSTIC ONLY - NOT A MACHINE PROFILE",
+      "end_gcode": "; DIAGNOSTIC ONLY - NO VALIDATED MACHINE ENDING"
+    }
+  },
+  "four_fixed_print_stls": [
+    {
+      "path": "parts/main_body-print.stl",
+      "expected_sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "actual_sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "matches": true
+    },
+    {
+      "path": "parts/roof-print.stl",
+      "expected_sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb",
+      "actual_sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb",
+      "matches": true
+    },
+    {
+      "path": "parts/column-print.stl",
+      "expected_sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+      "actual_sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+      "matches": true
+    },
+    {
+      "path": "parts/mast_brace_frame-print.stl",
+      "expected_sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+      "actual_sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+      "matches": true
+    }
+  ],
+  "markdown_links": [
+    {
+      "source": "qa/independent-support-review/assembly-geometry-audit/GEOMETRY-REVIEW.md",
+      "line": 11,
+      "target": "FIXED-STLS.sha256",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/assembly-geometry-audit/GEOMETRY-REVIEW.md",
+      "line": 44,
+      "target": "dry-seating-interpretation.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/assembly-geometry-audit/GEOMETRY-REVIEW.md",
+      "line": 44,
+      "target": "geometry-summary.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/assembly-geometry-audit/GEOMETRY-REVIEW.md",
+      "line": 54,
+      "target": "geometry-summary.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 9,
+      "target": "package-provenance.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 9,
+      "target": "scope-check.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 9,
+      "target": "no-change-check.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 24,
+      "target": "slicing-support-audit/REVIEW-ONLY-main-short-axis-support.ini",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 38,
+      "target": "slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 46,
+      "target": "assembly-geometry-audit/GEOMETRY-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 46,
+      "target": "assembly-geometry-audit/geometry-summary.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 50,
+      "target": "rebuild-scene-audit/REBUILD-SCENE-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 58,
+      "target": "source-audit/SOURCE-VISUAL-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 68,
+      "target": "review-summary.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "line": 68,
+      "target": "delivery-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INTEGRATION-README.md",
+      "line": 3,
+      "target": "INDEPENDENT-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INTEGRATION-README.md",
+      "line": 3,
+      "target": "slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INTEGRATION-README.md",
+      "line": 18,
+      "target": "integration-source-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INTEGRATION-README.md",
+      "line": 26,
+      "target": "replay_support_access.py",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/INTEGRATION-README.md",
+      "line": 35,
+      "target": "integration-validation.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+      "line": 60,
+      "target": "independent-path-evidence.png",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/source-audit/SOURCE-VISUAL-REVIEW.md",
+      "line": 9,
+      "target": "SOURCE-VISUAL-RESULTS.json",
+      "exists": true
+    },
+    {
+      "source": "qa/independent-support-review/source-audit/SOURCE-VISUAL-REVIEW.md",
+      "line": 9,
+      "target": "photo-hash-checks.json",
+      "exists": true
+    },
+    {
+      "source": "qa/manufacturing-review/README.md",
+      "line": 5,
+      "target": "../independent-support-review/INDEPENDENT-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/manufacturing-review/README.md",
+      "line": 5,
+      "target": "../independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "qa/manufacturing-review/README.md",
+      "line": 23,
+      "target": "../independent-support-review/slicing-support-audit/REVIEW-ONLY-main-short-axis-support.ini",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 7,
+      "target": "previews/front.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 7,
+      "target": "previews/rear.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 11,
+      "target": "previews/front-low.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 11,
+      "target": "previews/side.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 23,
+      "target": "parts/main_body-print.stl",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 24,
+      "target": "parts/roof-print.stl",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 25,
+      "target": "parts/column-print.stl",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 26,
+      "target": "parts/mast_brace_frame-print.stl",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 28,
+      "target": "previews/unique-print-parts.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 32,
+      "target": "assembly.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 32,
+      "target": "parameters.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 44,
+      "target": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 44,
+      "target": "qa/independent-support-review/slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 46,
+      "target": "manufacturing/reviewed-support/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 54,
+      "target": "requirements.txt",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "line": 62,
+      "target": "sources.json",
+      "exists": true
+    }
+  ],
+  "broken_local_markdown_links": [],
+  "qa_summary_report_sha_bindings": [
+    {
+      "path": "qa/geometry-review.json",
+      "expected_sha256": "7e92ffcfff0c939b0f8885553d3ed077b7002c13a1787127daa32d16dc79fcc2",
+      "actual_sha256": "7e92ffcfff0c939b0f8885553d3ed077b7002c13a1787127daa32d16dc79fcc2",
+      "matches": true
+    },
+    {
+      "path": "qa/scene-review.json",
+      "expected_sha256": "0ffa460cec1e2976b3f743fb933a63055abe4ff21300130cb9963cb67bbfc4ad",
+      "actual_sha256": "0ffa460cec1e2976b3f743fb933a63055abe4ff21300130cb9963cb67bbfc4ad",
+      "matches": true
+    },
+    {
+      "path": "qa/manufacturing-review/geometry-review.json",
+      "expected_sha256": "b29aa09d6d80b98986ecbeb2d3e98967ae10a8eb3e7f1344f9815c77c4713297",
+      "actual_sha256": "b29aa09d6d80b98986ecbeb2d3e98967ae10a8eb3e7f1344f9815c77c4713297",
+      "matches": true
+    },
+    {
+      "path": "qa/manufacturing-review/slicing-summary.json",
+      "expected_sha256": "ce9230556ff0a0c2243955dfd7f596fffd028d410e9a777a21c0357b93a46f84",
+      "actual_sha256": "ce9230556ff0a0c2243955dfd7f596fffd028d410e9a777a21c0357b93a46f84",
+      "matches": true
+    },
+    {
+      "path": "qa/visual-source-review.json",
+      "expected_sha256": "05fb6306422bce824acc8cc2d528a7070931ffa6b3197b80b0959ec5e93df190",
+      "actual_sha256": "05fb6306422bce824acc8cc2d528a7070931ffa6b3197b80b0959ec5e93df190",
+      "matches": true
+    },
+    {
+      "path": "qa/privacy-review.json",
+      "expected_sha256": "8aa13e932b9846bfcc7f39b61145f64ee5daac7221dc0d160282955ced3153d4",
+      "actual_sha256": "8aa13e932b9846bfcc7f39b61145f64ee5daac7221dc0d160282955ced3153d4",
+      "matches": true
+    },
+    {
+      "path": "manufacturing/reviewed-support/integration-reslice.json",
+      "expected_sha256": "fbd08788ef05c333a32faf08e05f13a3e2a541b3512d038ef53bd9c8d56a3afe",
+      "actual_sha256": "fbd08788ef05c333a32faf08e05f13a3e2a541b3512d038ef53bd9c8d56a3afe",
+      "matches": true
+    },
+    {
+      "path": "manufacturing/reviewed-support/profile-diff.json",
+      "expected_sha256": "b63528fcf67d8bebf3771f3961c8d70c68e8aaf7845dc05f22155ba2db26cb06",
+      "actual_sha256": "b63528fcf67d8bebf3771f3961c8d70c68e8aaf7845dc05f22155ba2db26cb06",
+      "matches": true
+    },
+    {
+      "path": "qa/independent-support-review/INDEPENDENT-REVIEW.md",
+      "expected_sha256": "4a1805b8afc037297517f8ffd88430da7a7b78af01368fa12786006328f9b5ac",
+      "actual_sha256": "4a1805b8afc037297517f8ffd88430da7a7b78af01368fa12786006328f9b5ac",
+      "matches": true
+    },
+    {
+      "path": "qa/independent-support-review/integration-validation.json",
+      "expected_sha256": "6be0e5058826ddf0a8c6a56dfbc0163fc10150039a85f2667c8d4a211b3da478",
+      "actual_sha256": "6be0e5058826ddf0a8c6a56dfbc0163fc10150039a85f2667c8d4a211b3da478",
+      "matches": true
+    },
+    {
+      "path": "qa/independent-support-review/integration-source-manifest.json",
+      "expected_sha256": "dc5f4776ed7a276c83239662d08d199ad988be087dc798dd1124f387ab330461",
+      "actual_sha256": "dc5f4776ed7a276c83239662d08d199ad988be087dc798dd1124f387ab330461",
+      "matches": true
+    },
+    {
+      "path": "qa/revision-delta-review.json",
+      "expected_sha256": "82aa5f7a65b679c3173f6a2a25113930772d5ac60e370728f0b6b8bc36c46ee5",
+      "actual_sha256": "82aa5f7a65b679c3173f6a2a25113930772d5ac60e370728f0b6b8bc36c46ee5",
+      "matches": true
+    },
+    {
+      "path": "qa/revision-integration.json",
+      "expected_sha256": "142ccf1ff1889410372b6c8f3bbb2a9dee50df80ecfb644fe6df0c45fadadf9c",
+      "actual_sha256": "142ccf1ff1889410372b6c8f3bbb2a9dee50df80ecfb644fe6df0c45fadadf9c",
+      "matches": true
+    },
+    {
+      "path": "qa/revision-whitespace-check.json",
+      "expected_sha256": "79ac6928f73e970b940f4713c569b69be2f51bb01da68f7011edcf97f6fde852",
+      "actual_sha256": "79ac6928f73e970b940f4713c569b69be2f51bb01da68f7011edcf97f6fde852",
+      "matches": true
+    }
+  ],
+  "all_qa_summary_report_sha_bindings_match": true,
+  "public_document_diff_sha256": "b13cff5c4e8c5e3e0f6c2a732dea520c7d3cca787a8cd575539a2df4998ca407",
+  "reviewed_inputs_unchanged_after_audit": true,
+  "tool_attempt_record": [
+    {
+      "action": "Two parallel read-only document/git batches",
+      "outcome": "CreateProcess rejected before process creation: exec-server transport disconnected; no file absence inferred; later small read-only retries succeeded."
+    }
+  ],
+  "limitations": [
+    "The support and bridge numeric analyses are carried forward through unchanged inputs and exact toolpath evidence, not recomputed by this document audit.",
+    "The integrated old report still names the old commit and old review-only location; INTEGRATION-README expressly labels it historical, and current README plus reviewed-support entry carry the new route.",
+    "The frozen qa-summary still states final parent incremental review was pending at author freeze; this report is subsequent evidence, not a change to that historical timestamped claim."
+  ]
+}

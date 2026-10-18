@@ -1,0 +1,110 @@
+{
+  "candidate_commit": "7cf0563a06858137f51751600348a35198c8f6f2",
+  "base_commit": "1976d60d5e1621dac2ce6a5d904e74796c38be0e",
+  "previous_full_review_candidate": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
+  "reviewed_at_utc": "2026-10-18T17:23:19.383013+00:00",
+  "decision": "GO_UNDER_EXISTING_FIXED_STL_CONDITIONS",
+  "mandatory_publication_blockers": [],
+  "environment_or_file_transfer_blockers": [],
+  "original_main_automatic_bridge_route_accepted": false,
+  "unconditional_physical_manufacturing_certification": false,
+  "print_files": [
+    {
+      "path": "parts/main_body-print.stl",
+      "bytes": 109684,
+      "sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "quantity": 1
+    },
+    {
+      "path": "parts/roof-print.stl",
+      "bytes": 58284,
+      "sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb",
+      "quantity": 1
+    },
+    {
+      "path": "parts/column-print.stl",
+      "bytes": 2284,
+      "sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+      "quantity": 10
+    },
+    {
+      "path": "parts/mast_brace_frame-print.stl",
+      "bytes": 8084,
+      "sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+      "quantity": 10
+    }
+  ],
+  "unique_part_geometries": 4,
+  "physical_piece_count": 22,
+  "package_file_count": 145,
+  "unchanged_old_files": 52,
+  "changed_old_text_seal_files": 6,
+  "added_files": 87,
+  "removed_old_files": 0,
+  "geometry_scene_sources_and_all_previews_byte_unchanged": true,
+  "profile_sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+  "profile_byte_identical_to_previous_independent_correction": true,
+  "actual_profile_changes": {
+    "bridge_angle": {
+      "old": "0",
+      "new": "90"
+    },
+    "dont_support_bridges": {
+      "old": "1",
+      "new": "0"
+    }
+  },
+  "actual_gcode_sha256": "896a8e3dcd229b515025ccb4c110344c725c7f67e82a1dc20ab0e2fc28974c98",
+  "actual_gcode_only_first_generated_time_line_differs": true,
+  "gcode_canonical_sha256": "dec08162c81c48cde9081124088a249a34de8133ecaf89e3b1a48baeb23ab053",
+  "gcode_compared_lines": 213761,
+  "evidence_integration": {
+    "source_files": 69,
+    "integrated_files": 73,
+    "byte_identical_files": 52,
+    "strict_path_role_substitution_only_files": 17,
+    "numeric_boolean_null_JSON_leaves_preserved": 898548,
+    "original_failures_and_580_restricted_points_preserved": true
+  },
+  "documentation": {
+    "valid_local_links": 42,
+    "referenced_report_hashes_verified": 14,
+    "current_guidance_supersedes_original_main_pass": true,
+    "100_percent_scale_15_percent_infill_clear": true,
+    "finite_sampling_not_claimed_as_complete_validation": true
+  },
+  "backup": {
+    "bytes": 20366995,
+    "sha256": "a968fc9648b03936ba4d61f5f9032545aa3eb958ce1a94144e5306b02394064d",
+    "ZIP_entries_CRC_checked": 149,
+    "outer_manifest_files_verified": 148,
+    "package_files_against_fixed_git_blobs": 145,
+    "already_materialized_official_ZIP_bytes_match": true,
+    "retained_Library_receipt": {
+      "id": "libfile_03684283aedc8191900c89f2971270aa",
+      "version": 1
+    },
+    "fresh_Library_download_or_native_metadata_query": false
+  },
+  "conditions_remaining": [
+    "Machine-specific reslice: actual short-axis platform bridge direction and retained removable bridge support; angle number alone is insufficient after rotation/slicer change.",
+    "Approximately 8.3mm internal bridging capability, or revised infill/solid layers with reslice and inspection.",
+    "Staged lateral support fragmentation before assembly; finite point/ray/dogleg evidence is not complete tool, captured-block, other-support, adhesion or force validation. Unsafe access requires revised/compatible soluble support and reslice.",
+    "50 clearance adhesive positioning joints; clean sockets/elephant foot, dry-align, use compatible gap-filling glue and jig. Nominal53.4mm versus estimated natural seating53.25mm are not measured fit.",
+    "No physical print, support/brim removal, dry fit, glue/bending/transport strength tests. Broad canopy warping and fine-frame handling risks remain.",
+    "Historical photograph composite and at least25% dimensional uncertainty; not2026 current-state precision survey."
+  ],
+  "work_not_repeated": [
+    "Full geometry/self-intersection/pair collisions/interface measurements",
+    "Generator rebuild",
+    "Scene rerender",
+    "Photo acquisition",
+    "Slicing",
+    "Bridge/support numerical recomputation",
+    "Physical tests"
+  ],
+  "all_145_original_files_unchanged_during_review": true,
+  "original_candidate_or_remote_writes": false,
+  "publication_performed": false,
+  "report": "INCREMENTAL-REVIEW.md"
+}

@@ -1,0 +1,399 @@
+{
+  "format": 1,
+  "fixed_review_candidate_commit": "7cf0563a06858137f51751600348a35198c8f6f2",
+  "source_role": "INCREMENTAL_REVIEW_ROOT",
+  "scope": "22 original top-level/docs-audit/evidence-audit reports/results/scripts; excludes duplicate candidate and repo-context trees. Original source manifest hashes remain historical; copied hashes below identify this sanitized integration.",
+  "sanitization": "Only literal host absolute-path to declared semantic-role substitutions; no numeric, boolean, null, coordinate, threshold, failure flag, review conclusion or other string edits.",
+  "role_manifest": [
+    {
+      "role": "INCREMENTAL_REVIEW_ARCHIVE",
+      "meaning": "Historical local archive of the incremental reviewer outputs; not duplicated here.",
+      "occurrences": 1
+    },
+    {
+      "role": "INCREMENTAL_REVIEW_ROOT",
+      "meaning": "Original independent incremental review output directory; copied reports are in this directory.",
+      "occurrences": 2
+    },
+    {
+      "role": "PACKAGE",
+      "meaning": "Fixed 145-file building package, at ../../../校本部/buildings/cnu-j-grandstand-historical from this directory.",
+      "occurrences": 1
+    },
+    {
+      "role": "REPOSITORY",
+      "meaning": "Original repository checkout used by the fixed-candidate reviewer.",
+      "occurrences": 2
+    },
+    {
+      "role": "AUTHOR_LIBRARY_DOWNLOAD_RECEIPT",
+      "meaning": "Retained official-download receipt for Library version 1; historical receipt input is not duplicated here.",
+      "occurrences": 1
+    },
+    {
+      "role": "AUTHOR_LIBRARY_V1_ARCHIVE",
+      "meaning": "Author Library version 1 staged ZIP; historical hash and size remain in the reports.",
+      "occurrences": 2
+    },
+    {
+      "role": "MATERIALIZED_OFFICIAL_LIBRARY_V1_ARCHIVE",
+      "meaning": "Already downloaded official Library version 1 ZIP used by the reviewer; no fresh download was performed in that review.",
+      "occurrences": 1
+    },
+    {
+      "role": "PRIVATE_INTEGRATED_DIAGNOSTIC_GCODE",
+      "meaning": "Private diagnostic G-code input, excluded from the public package; not a machine print recommendation.",
+      "occurrences": 1
+    },
+    {
+      "role": "HISTORICAL_WORKSPACE_ROOT",
+      "meaning": "Historical audit script workspace root. The preserved scripts require original private inputs and layout; this role is not a runnable path.",
+      "occurrences": 1
+    }
+  ],
+  "source_files": [
+    {
+      "path": "audit_incremental.py",
+      "source_bytes": 11126,
+      "source_sha256": "a49af703864665d5b29e5e276936a06fe512f3e00f30a324bcec43e3b1f877a6",
+      "copied_bytes": 11126,
+      "copied_sha256": "a49af703864665d5b29e5e276936a06fe512f3e00f30a324bcec43e3b1f877a6",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {}
+    },
+    {
+      "path": "author-delivery.json",
+      "source_bytes": 7248,
+      "source_sha256": "e978538e7a85cebda6f8e9ea0ce58291aaae9a8221ca1b7ff07c61872783d006",
+      "copied_bytes": 7009,
+      "copied_sha256": "0f20f0a8c2b45de976df59b3a71076ee3adf16e06bd5c0818adb4047e06fd7e8",
+      "byte_identical": false,
+      "sanitized_role_occurrences": {
+        "AUTHOR_LIBRARY_DOWNLOAD_RECEIPT": 1,
+        "AUTHOR_LIBRARY_V1_ARCHIVE": 1,
+        "REPOSITORY": 1
+      },
+      "json_numeric_boolean_null_sha256": "c02c10aa5ca1ac4fa4c3df48427c4e459af097bcdb5fee6ee6fe9cce7ddb31be",
+      "json_counts": {
+        "array": 7,
+        "boolean": 17,
+        "integer": 13,
+        "null": 1,
+        "object": 7,
+        "string": 67
+      }
+    },
+    {
+      "path": "delivery-manifest.json",
+      "source_bytes": 4357,
+      "source_sha256": "a75e5d03d701627499f12f1d1d8833c1dbc4d86f123548a0246f51aaba84d737",
+      "copied_bytes": 4357,
+      "copied_sha256": "a75e5d03d701627499f12f1d1d8833c1dbc4d86f123548a0246f51aaba84d737",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "f0e6101fa6123b42cfcb32bc8c20406c831c5e0cd7211301de3919ff48752c43",
+      "json_counts": {
+        "array": 1,
+        "integer": 25,
+        "object": 24,
+        "string": 49
+      }
+    },
+    {
+      "path": "delivery.json",
+      "source_bytes": 913,
+      "source_sha256": "2f108a492102250dcf27b1d3a0e433cf7f79a058023694baf1d619fd5a21c607",
+      "copied_bytes": 737,
+      "copied_sha256": "f02313d52b26b1487dd1e9da34703493592b6c20162610530528680991d8a363",
+      "byte_identical": false,
+      "sanitized_role_occurrences": {
+        "INCREMENTAL_REVIEW_ARCHIVE": 1,
+        "INCREMENTAL_REVIEW_ROOT": 2
+      },
+      "json_numeric_boolean_null_sha256": "ba0bec2fdb73101c10df49023fe8b220a79a3e39b58c4b5ee0b531ee6f1536db",
+      "json_counts": {
+        "array": 2,
+        "boolean": 3,
+        "integer": 2,
+        "object": 1,
+        "string": 7
+      }
+    },
+    {
+      "path": "docs-audit/audit_documents.py",
+      "source_bytes": 11088,
+      "source_sha256": "1bc0190fe37b860072cb0b71f6ee3b9cb1d3dae41f6682146d4389c93e3b80e8",
+      "copied_bytes": 11039,
+      "copied_sha256": "db787ceb41302a0c24c047061aed78c412931732d4aedf36690600f83e09d2e1",
+      "byte_identical": false,
+      "sanitized_role_occurrences": {
+        "REPOSITORY": 1
+      }
+    },
+    {
+      "path": "docs-audit/document-audit-results.json",
+      "source_bytes": 23003,
+      "source_sha256": "7e4f86a00cdf9396682635e4a916a5098cc1964fbc30bac224a3d7aed2200aa8",
+      "copied_bytes": 23003,
+      "copied_sha256": "7e4f86a00cdf9396682635e4a916a5098cc1964fbc30bac224a3d7aed2200aa8",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "f172375627d2222a2883f556d48091ddca5e60f4074b70c24d44be906cc7e7d7",
+      "json_counts": {
+        "array": 20,
+        "boolean": 81,
+        "integer": 58,
+        "object": 94,
+        "string": 278
+      }
+    },
+    {
+      "path": "docs-audit/DOCUMENT-REVIEW.md",
+      "source_bytes": 4986,
+      "source_sha256": "0c99671d073dcc501e9742f601cb8a1ef2ee3e0ca54ebd89af648f21ffe0a2e9",
+      "copied_bytes": 4986,
+      "copied_sha256": "0c99671d073dcc501e9742f601cb8a1ef2ee3e0ca54ebd89af648f21ffe0a2e9",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {}
+    },
+    {
+      "path": "docs-audit/public-document-diff.patch",
+      "source_bytes": 39329,
+      "source_sha256": "b13cff5c4e8c5e3e0f6c2a732dea520c7d3cca787a8cd575539a2df4998ca407",
+      "copied_bytes": 39329,
+      "copied_sha256": "b13cff5c4e8c5e3e0f6c2a732dea520c7d3cca787a8cd575539a2df4998ca407",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {}
+    },
+    {
+      "path": "evidence-audit/attempt-log.json",
+      "source_bytes": 1247,
+      "source_sha256": "6c1666ba2e32424da124bc5530755f48884f5902a9eb9616d30b09bdea9bec81",
+      "copied_bytes": 1247,
+      "copied_sha256": "6c1666ba2e32424da124bc5530755f48884f5902a9eb9616d30b09bdea9bec81",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "json_counts": {
+        "array": 2,
+        "object": 3,
+        "string": 13
+      }
+    },
+    {
+      "path": "evidence-audit/audit_evidence.py",
+      "source_bytes": 13345,
+      "source_sha256": "63d6f92038b694cc80b29c8c431f894cc60d631b1f2a0907439d0c053478188b",
+      "copied_bytes": 13343,
+      "copied_sha256": "e35ed6a0bfc99b763dd6c4fd995474fbfe7edf5d6c6a84c3d9496a3677f6d998",
+      "byte_identical": false,
+      "sanitized_role_occurrences": {
+        "HISTORICAL_WORKSPACE_ROOT": 1
+      }
+    },
+    {
+      "path": "evidence-audit/EVIDENCE-AUDIT-MANIFEST.json",
+      "source_bytes": 734,
+      "source_sha256": "0081f3f6d03c1237129ab0962fc4b7dea807cd1bafdf91151c2deeef058fd1e6",
+      "copied_bytes": 734,
+      "copied_sha256": "0081f3f6d03c1237129ab0962fc4b7dea807cd1bafdf91151c2deeef058fd1e6",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "f6f2b4827a9ae2fa21e8796355e4d1f995fac856f56a13786ff8dd44d9194223",
+      "json_counts": {
+        "array": 1,
+        "integer": 4,
+        "object": 5,
+        "string": 9
+      }
+    },
+    {
+      "path": "evidence-audit/evidence-audit-results.json",
+      "source_bytes": 84564,
+      "source_sha256": "e75fe88c0668122ec07a7897455b35f2f9c353ac8b5c03f548bf153d5809b4be",
+      "copied_bytes": 84564,
+      "copied_sha256": "e75fe88c0668122ec07a7897455b35f2f9c353ac8b5c03f548bf153d5809b4be",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "c4f9e3255c2bc6e77f181397b804cd3eb8c72815f10ab454d655139f0918a2ee",
+      "json_counts": {
+        "array": 79,
+        "boolean": 510,
+        "integer": 401,
+        "object": 264,
+        "string": 508
+      }
+    },
+    {
+      "path": "evidence-audit/EVIDENCE-REVIEW.md",
+      "source_bytes": 5108,
+      "source_sha256": "84c9caffb985bfbb6f4072aa80f7b4f9c3392351a253bafaa7c4bb0c7232595a",
+      "copied_bytes": 5108,
+      "copied_sha256": "84c9caffb985bfbb6f4072aa80f7b4f9c3392351a253bafaa7c4bb0c7232595a",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {}
+    },
+    {
+      "path": "finalize_incremental.py",
+      "source_bytes": 10184,
+      "source_sha256": "ad6719b57ed10fd56b22246f56b75b0fc8ebc3949014f383b33c4d56710df5ea",
+      "copied_bytes": 10184,
+      "copied_sha256": "ad6719b57ed10fd56b22246f56b75b0fc8ebc3949014f383b33c4d56710df5ea",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {}
+    },
+    {
+      "path": "identity-profile-gcode.json",
+      "source_bytes": 11612,
+      "source_sha256": "8257ab7494fabd3c5c9ee09a8ad1078c3f99860975de17bb804a1550867ee489",
+      "copied_bytes": 11522,
+      "copied_sha256": "4f94fdbcad8fa5ae9cfa046ad8ae1040ae3ac2f77efed38bffe1c1ac648e92ca",
+      "byte_identical": false,
+      "sanitized_role_occurrences": {
+        "PRIVATE_INTEGRATED_DIAGNOSTIC_GCODE": 1
+      },
+      "json_numeric_boolean_null_sha256": "06c955715ee92f19c8148e46624acbab5ff522df9b4d0c77dc9f6b1307173334",
+      "json_counts": {
+        "array": 5,
+        "boolean": 2,
+        "integer": 65,
+        "number": 3,
+        "object": 62,
+        "string": 132
+      }
+    },
+    {
+      "path": "INCREMENTAL-REVIEW.md",
+      "source_bytes": 6971,
+      "source_sha256": "1c9e144d6946dfa6ccd3e04da8df307e17e3f6474df522dcd4fb7c0894d35c4e",
+      "copied_bytes": 6971,
+      "copied_sha256": "1c9e144d6946dfa6ccd3e04da8df307e17e3f6474df522dcd4fb7c0894d35c4e",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {}
+    },
+    {
+      "path": "no-change-check.json",
+      "source_bytes": 53643,
+      "source_sha256": "1463e050f32b6854c2a15e7f804af933695c6231231a9acc2fdfeeebc03eb260",
+      "copied_bytes": 53643,
+      "copied_sha256": "1463e050f32b6854c2a15e7f804af933695c6231231a9acc2fdfeeebc03eb260",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "5f5dc77b22a9cb816cb72c61aa50a2603cb453d256954cc1f1fe59a334f87de3",
+      "json_counts": {
+        "array": 1,
+        "boolean": 1,
+        "integer": 1,
+        "object": 146,
+        "string": 584
+      }
+    },
+    {
+      "path": "package-and-archive.json",
+      "source_bytes": 57351,
+      "source_sha256": "e81d36b775d2916be0e7fef65d991478b7a98890a8961e29c1be3406f5c4891f",
+      "copied_bytes": 57153,
+      "copied_sha256": "f4b6ebb2e8c1415d9da029be663fc831ef6e52725b250ea92217034c54441c6c",
+      "byte_identical": false,
+      "sanitized_role_occurrences": {
+        "AUTHOR_LIBRARY_V1_ARCHIVE": 1,
+        "MATERIALIZED_OFFICIAL_LIBRARY_V1_ARCHIVE": 1
+      },
+      "json_numeric_boolean_null_sha256": "5a50ddc97170088d6bfabe3b0ef0e5985b05eda4a91d9d1f9d3192a525eff24b",
+      "json_counts": {
+        "array": 4,
+        "boolean": 5,
+        "integer": 10,
+        "object": 297,
+        "string": 612
+      }
+    },
+    {
+      "path": "provenance.json",
+      "source_bytes": 86225,
+      "source_sha256": "7b2c342f521597a7533dbbf471da122c4c9b2a920b9e3f21a3adc8dc9ae5aae0",
+      "copied_bytes": 86095,
+      "copied_sha256": "5bec4d91baeb4739793c548bec98bd262d2a69a1474e96a5a69ff7aaaa2b9a08",
+      "byte_identical": false,
+      "sanitized_role_occurrences": {
+        "PACKAGE": 1
+      },
+      "json_numeric_boolean_null_sha256": "67cfcbdb9cc94ffcf14edf259710f77a9cd09ff5d0cd6cd9577f63ad0ac4cce0",
+      "json_counts": {
+        "array": 4,
+        "boolean": 1,
+        "integer": 147,
+        "null": 87,
+        "object": 384,
+        "string": 1014
+      }
+    },
+    {
+      "path": "review-summary.json",
+      "source_bytes": 4831,
+      "source_sha256": "61cbd77e695106c7f8ea88ec5a2b760c0213c13e9dc30189f3e2fb7c25c0c6e7",
+      "copied_bytes": 4831,
+      "copied_sha256": "61cbd77e695106c7f8ea88ec5a2b760c0213c13e9dc30189f3e2fb7c25c0c6e7",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "04ecef2d8035011b7cddf41957d4cc1213c1b007e0311d2a026d9897d17e3d1b",
+      "json_counts": {
+        "array": 5,
+        "boolean": 14,
+        "integer": 28,
+        "object": 12,
+        "string": 36
+      }
+    },
+    {
+      "path": "scope-check.json",
+      "source_bytes": 815,
+      "source_sha256": "fe1fb3b24f71134109dc87c30bd1473da122e593a50b1341f9f495ba9419a588",
+      "copied_bytes": 815,
+      "copied_sha256": "fe1fb3b24f71134109dc87c30bd1473da122e593a50b1341f9f495ba9419a588",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "624c76725d035c17bea3c73cf22bca352e14a8e947c3cf624d69ccffe706c61c",
+      "json_counts": {
+        "array": 2,
+        "boolean": 3,
+        "object": 4,
+        "string": 8
+      }
+    },
+    {
+      "path": "tool-attempts.json",
+      "source_bytes": 446,
+      "source_sha256": "b6f2435b2b771f2ffa034d58fe8bfe35de78ea5653ae931f5753291164009f17",
+      "copied_bytes": 446,
+      "copied_sha256": "b6f2435b2b771f2ffa034d58fe8bfe35de78ea5653ae931f5753291164009f17",
+      "byte_identical": true,
+      "sanitized_role_occurrences": {},
+      "json_numeric_boolean_null_sha256": "2c1b199015b34d15d94879dd6e3fd01167c8dd137dbf08069383e201695a4e87",
+      "json_counts": {
+        "array": 1,
+        "boolean": 1,
+        "object": 2,
+        "string": 3
+      }
+    }
+  ],
+  "integration_additions_with_checksums": [
+    {
+      "path": "README.md",
+      "bytes": 3467,
+      "sha256": "270455dec1eb4d85e55b15e7c336cf3bb85795605ea434b9ec51017d5e8f15f2"
+    },
+    {
+      "path": "verify_integration.py",
+      "bytes": 2631,
+      "sha256": "1ac212e9c2066981943bf534ef6e766e9e5265c678b8301353255c989d621cbb"
+    },
+    {
+      "path": "integration-validation.json",
+      "bytes": 10054,
+      "sha256": "58ed41ff5d4270c64e1863242d0e2ee3e30a48c2110529c6d9fac58e5d3484cd"
+    }
+  ],
+  "self_hash_excluded": "This manifest cannot include its own SHA; hash externally after integration is frozen."
+}

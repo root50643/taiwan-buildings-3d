@@ -1,0 +1,335 @@
+{
+  "scope": "Actual supplied diagnostic G-code read and byte-compared; no fresh slicing or machine execution. Only one generated-time comment at first line may differ.",
+  "fixed_commit": "7cf0563a06858137f51751600348a35198c8f6f2",
+  "unchanged_original_files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 83,
+      "sha256": "409e0f6a4534672ea560301bc186252a9c9b2d3400c1b66fe70a0bba5e1c6ea6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "assembly.json",
+      "bytes": 5817,
+      "sha256": "bcc2e565ae4cca8973ed31af85ea4b62ccd77c5c886266f43bf06e03c320aad2"
+    },
+    {
+      "path": "build_model.py",
+      "bytes": 8403,
+      "sha256": "6022e5495e3f63c00a8d1de5ba311223b65bc76e98aca5890eb3024ad5a99fbe"
+    },
+    {
+      "path": "model.stl",
+      "bytes": 269884,
+      "sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f"
+    },
+    {
+      "path": "parameters.json",
+      "bytes": 1353,
+      "sha256": "b26cb3f965f0f811f685d6b3b7bc8ccade54460f268879bf1f43293f47b2711d"
+    },
+    {
+      "path": "parts/column-assembly.stl",
+      "bytes": 2284,
+      "sha256": "04547f8b073e8505ba44ac4c97b223dffe7b114c59f7ae88ffb8aae932c1f843"
+    },
+    {
+      "path": "parts/column-print.stl",
+      "bytes": 2284,
+      "sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da"
+    },
+    {
+      "path": "parts/main_body-assembly.stl",
+      "bytes": 109684,
+      "sha256": "754ffd15497bffe9e69eac3d0a3930484eecea7ce53e43ba29106baf75b5d116"
+    },
+    {
+      "path": "parts/main_body-print.stl",
+      "bytes": 109684,
+      "sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c"
+    },
+    {
+      "path": "parts/mast_brace_frame-assembly.stl",
+      "bytes": 8084,
+      "sha256": "55aea8763090a78f238059c984166139fb7484c8e2bef2bc5e1572328d3f0a4b"
+    },
+    {
+      "path": "parts/mast_brace_frame-print.stl",
+      "bytes": 8084,
+      "sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef"
+    },
+    {
+      "path": "parts/roof-assembly.stl",
+      "bytes": 58284,
+      "sha256": "15583c0f4c27d3fc73bf15870067b17de4ab78394afa447d835404060b07b147"
+    },
+    {
+      "path": "parts/roof-print.stl",
+      "bytes": 58284,
+      "sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb"
+    },
+    {
+      "path": "previews/front-low.png",
+      "bytes": 856468,
+      "sha256": "40ba038aab19afab9b1e263492265f3715a0e259363214f0a639715fa7ea25db"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 937054,
+      "sha256": "3987eae649e5e3565dcf8426291cda0537c0399babe154b510d0f791741f2e79"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 915898,
+      "sha256": "43942e365c773abf8021654323df9205ccb3fc8aa5c29ba5469da2db6945c89c"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 970563,
+      "sha256": "4a651ac8a881e298ffd127bd7728c3f5f8dc5330ac95a3bdb71a55e3fac95754"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 841585,
+      "sha256": "6c7c654969546bc319b6933528fc80f88b1b5cbc71c34d2a282a2c280b65b9ab"
+    },
+    {
+      "path": "previews/unique-print-parts.png",
+      "bytes": 861488,
+      "sha256": "c4a4f46b567ea6e311e304fcf2238eacd137a8ad4f57617b7cefe3017d8490ca"
+    },
+    {
+      "path": "qa/check_geometry.py",
+      "bytes": 13673,
+      "sha256": "7ab505f72f85550ef4dccf379d43b63edb33d0166f4d3fc2b1e1d522f4a62c89"
+    },
+    {
+      "path": "qa/check_scene.py",
+      "bytes": 2915,
+      "sha256": "01e4e44d876572190cafdf70180064b50e698ab14f1aec6bc3d7de41cdbf7aa5"
+    },
+    {
+      "path": "qa/geometry-review-superseded-pre-freeze.json",
+      "bytes": 12528,
+      "sha256": "4846d7009d0cbaff8c0993b553d3687447a28029c03149c7d29d309c99f5071a"
+    },
+    {
+      "path": "qa/geometry-review.json",
+      "bytes": 12468,
+      "sha256": "7e92ffcfff0c939b0f8885553d3ed077b7002c13a1787127daa32d16dc79fcc2"
+    },
+    {
+      "path": "qa/manufacturing-review/column-slice.log",
+      "bytes": 511,
+      "sha256": "54b7cef6276d199dad8de5e1a00dd51ff772f03840ee4a7b95e88835bf049f9d"
+    },
+    {
+      "path": "qa/manufacturing-review/diagnostic-main-support.ini",
+      "bytes": 10286,
+      "sha256": "5c81bd9b223a05c3cb649beec52a42a465907513a25a0b517f3a095ea7d4ddf2"
+    },
+    {
+      "path": "qa/manufacturing-review/diagnostic-no-support.ini",
+      "bytes": 10286,
+      "sha256": "f463221759e65388eae4587af9b6fe132bc7102757f4fc183536d817e70ec61d"
+    },
+    {
+      "path": "qa/manufacturing-review/geometry-review.json",
+      "bytes": 23027,
+      "sha256": "b29aa09d6d80b98986ecbeb2d3e98967ae10a8eb3e7f1344f9815c77c4713297"
+    },
+    {
+      "path": "qa/manufacturing-review/main_body-slice.log",
+      "bytes": 552,
+      "sha256": "820e3775e5ab47d5fea85df7751607def43245dd70c3493aba2c16a050415ac1"
+    },
+    {
+      "path": "qa/manufacturing-review/mast_brace_frame-slice.log",
+      "bytes": 531,
+      "sha256": "84955314b52ff3fd6518b9abfb3c65826d63cdd84d2326cd1b8e51ba7f4e8984"
+    },
+    {
+      "path": "qa/manufacturing-review/plot_slice_evidence.py",
+      "bytes": 3609,
+      "sha256": "765935885fd4b7b3c9bf1adcc8cd9a6db24e77b4147a210223a4baf10639de04"
+    },
+    {
+      "path": "qa/manufacturing-review/review_geometry.py",
+      "bytes": 8040,
+      "sha256": "1130232d7d5807b7c7fb094ac23f30bfd7a094ae7556fc324d082daf82448a06"
+    },
+    {
+      "path": "qa/manufacturing-review/roof-slice.log",
+      "bytes": 507,
+      "sha256": "30bbd42c78a640cf9c14a57ecdd87a20ab5a155abbeb5f7d4197b452df71bf46"
+    },
+    {
+      "path": "qa/manufacturing-review/slice-evidence.json",
+      "bytes": 305,
+      "sha256": "d0bfc2473260249e0a705f7e5435ac65723d9c5cf80e2b3c3d95c3e2738f5959"
+    },
+    {
+      "path": "qa/manufacturing-review/slice-evidence.png",
+      "bytes": 122633,
+      "sha256": "253766f4684b19b8675e521df46003783781adfce1fdb6020f8cbdb9f43ab9b3"
+    },
+    {
+      "path": "qa/manufacturing-review/slice_diagnostics.py",
+      "bytes": 5500,
+      "sha256": "2c22a6a6ac2d4177093108b4b700012c545e3ab48228bcd40938a8479c9f1f19"
+    },
+    {
+      "path": "qa/manufacturing-review/slicing-summary.json",
+      "bytes": 16812,
+      "sha256": "ce9230556ff0a0c2243955dfd7f596fffd028d410e9a777a21c0357b93a46f84"
+    },
+    {
+      "path": "qa/manufacturing-review/tool-version.txt",
+      "bytes": 231,
+      "sha256": "e8ed17d6de95a3f1d4fc81368453a36c277761c3270502428bb4af753cf060e4"
+    },
+    {
+      "path": "qa/privacy-review.json",
+      "bytes": 563,
+      "sha256": "8aa13e932b9846bfcc7f39b61145f64ee5daac7221dc0d160282955ced3153d4"
+    },
+    {
+      "path": "qa/README.md",
+      "bytes": 2143,
+      "sha256": "573b8166b97970853d93e619774d0cec8362a07b0b9cc3fb502e5d0c63f74f19"
+    },
+    {
+      "path": "qa/scene-review-superseded-coordinate-sort.json",
+      "bytes": 523,
+      "sha256": "a56dae58269fc06b2231b235f47629d754b609c930543d5a1d180c366e55b9a0"
+    },
+    {
+      "path": "qa/scene-review.json",
+      "bytes": 711,
+      "sha256": "0ffa460cec1e2976b3f743fb933a63055abe4ff21300130cb9963cb67bbfc4ad"
+    },
+    {
+      "path": "qa/tool-failures.json",
+      "bytes": 455,
+      "sha256": "d7820f752a8839fc5c2789498c279af14536df1767c84bfd8aa8ea92e06853f8"
+    },
+    {
+      "path": "qa/visual-source-review.json",
+      "bytes": 7819,
+      "sha256": "05fb6306422bce824acc8cc2d528a7070931ffa6b3197b80b0959ec5e93df190"
+    },
+    {
+      "path": "render-manifest.json",
+      "bytes": 848,
+      "sha256": "ae9aad63ed9a0042d0b49dfba7c20c94bec374ab4bf0c397ca6f9ddfad2f22e4"
+    },
+    {
+      "path": "render_preview.py",
+      "bytes": 5858,
+      "sha256": "7c5ea9c22edaf87b2f626a06875fdb21edf56bc4644cde6881440a7079615584"
+    },
+    {
+      "path": "requirements-qa.txt",
+      "bytes": 168,
+      "sha256": "4adfa1bdb7e3caa093189086616916549aaff1d6cea1a6ef2fe24833ed9b7056"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 91,
+      "sha256": "18e79daa6e80d5b5036f9a41c7f7c8a3483eb3a254d2f968ee0459027363431e"
+    },
+    {
+      "path": "sanitize_scene.py",
+      "bytes": 931,
+      "sha256": "6c5df542290d28cf2eab37057609978bf1bef78cea31de011369448279b11c03"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 933080,
+      "sha256": "d7317f777f1c1a5e541ae7f70d505fa0d9dad72fd6b79385c76a848d3c77a048"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 10060,
+      "sha256": "a75ff26811bbb81dfe9930201d447487455a96c982a1f4bd8b7d2a77b33a2c6d"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 914,
+      "sha256": "78f5f742e1d5862dd042f8edcbe28cb45e61db60eb0bacfab92e6f7e44b16fcf"
+    }
+  ],
+  "unchanged_original_file_count": 52,
+  "changed_original_text_or_seal_files": [
+    "MANIFEST.sha256",
+    "README.md",
+    "freeze-record.json",
+    "qa-summary.json",
+    "qa/manufacturing-review/README.md",
+    "qa/repository-scope.json"
+  ],
+  "added_package_files": 87,
+  "removed_original_files": [],
+  "fixed_print_stls": [
+    {
+      "path": "parts/column-print.stl",
+      "bytes": 2284,
+      "sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da"
+    },
+    {
+      "path": "parts/main_body-print.stl",
+      "bytes": 109684,
+      "sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c"
+    },
+    {
+      "path": "parts/mast_brace_frame-print.stl",
+      "bytes": 8084,
+      "sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef"
+    },
+    {
+      "path": "parts/roof-print.stl",
+      "bytes": 58284,
+      "sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb"
+    }
+  ],
+  "reviewed_profile_sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+  "profile_byte_identical_to_previous_independent_correction": true,
+  "actual_setting_changes_from_original": {
+    "bridge_angle": {
+      "old": "0",
+      "new": "90"
+    },
+    "dont_support_bridges": {
+      "old": "1",
+      "new": "0"
+    }
+  },
+  "actual_gcode": {
+    "source": "${PRIVATE_INTEGRATED_DIAGNOSTIC_GCODE}",
+    "bytes": 8540991,
+    "sha256": "896a8e3dcd229b515025ccb4c110344c725c7f67e82a1dc20ab0e2fc28974c98",
+    "previous_independent_reference_sha256": "9aa5d56634a0fc9a99a17f3c9a02588eb6987613facb2ea99ae2e625dd5e842c",
+    "line_count": 213761,
+    "differing_lines_1based": [
+      1
+    ],
+    "new_first_line": "; generated by PrusaSlicer 2.9.6 on 2026-10-18 at 17:05:25 UTC",
+    "reference_first_line": "; generated by PrusaSlicer 2.9.6 on 2026-10-18 at 16:50:34 UTC",
+    "all_remaining_bytes_identical": true,
+    "canonical_sha256": "dec08162c81c48cde9081124088a249a34de8133ecaf89e3b1a48baeb23ab053"
+  },
+  "inherited_numeric_toolpath_findings_not_recomputed": {
+    "main_platform_max_gap_mm": 1.704001,
+    "main_internal_max_gap_mm": 8.224913,
+    "roof_internal_max_gap_mm": 8.036027,
+    "main_support_segments": 30369,
+    "main_bridge_segments": 8132,
+    "main_support_sample_points": 95890,
+    "restricted_points": 580
+  },
+  "basis_for_inheritance": "Identical STL, exact profile bytes and all G-code bytes other than the single generation-time comment."
+}

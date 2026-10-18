@@ -1,0 +1,22 @@
+{
+  "scope": "Tool/inspection attempts made during this evidence-fidelity subreview; no candidate/evidence mutation.",
+  "attempts": [
+    {
+      "action": "Print selected integration-validation JSON and README to the inspection console",
+      "target": "qa/independent-support-review",
+      "outcome": "Console output failed with UnicodeEncodeError under cp950 after partial display",
+      "reason": "Console encoding could not represent a mathematical glyph",
+      "correction": "Subsequent inspections explicitly used UTF-8 stdout; original files were not changed",
+      "status": "resolved"
+    },
+    {
+      "action": "Start a read-only Python inspection process for selected integration and historical QA metadata",
+      "target": "local source and candidate evidence files",
+      "outcome": "exec_command process creation failed: exec-server transport disconnected",
+      "reason": "Temporary execution transport failure; this did not establish any file loss or environment replacement",
+      "correction": "Rechecked an existing report at the original path successfully, then resumed small read-only commands with login=false",
+      "status": "resolved; no denied or uncertain mutation"
+    }
+  ],
+  "remaining_blockers": []
+}

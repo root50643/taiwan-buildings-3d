@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "checks": {
+    "exactly_one_changed_FileSelectParams_dir_array": true,
+    "all_decoded_difference_bytes_within_that_array": true,
+    "all_other_decoded_bytes_identical": true,
+    "replacement_relative_double_slash_and_NUL_padding": true,
+    "old_decoded_binary_scan_detects_one_private_host_path": true,
+    "new_decoded_binary_scan_has_no_private_host_path": true
+  },
+  "source_compressed_sha256": "18736d0ee70384fba9a20f83d3632b9a237c0f1d01f1d4eaf28ec85bf837e750",
+  "delivered_compressed_sha256": "fc0c4ac3a4106a8f7c28ec4b526d6cac33ec433297329c69e7dbccea76be99a3",
+  "source_decoded_sha256": "3da783b8cb18df5e230dc4fc055de19eda40546905a45111a9d836a83fd8401a",
+  "delivered_decoded_sha256": "dda01af9789e0c7f9eb2b443d7b13e16d2dc396261eb825e2304d492c8c7627a",
+  "decoded_length": 1038228,
+  "decoded_changed_byte_count": 42,
+  "changed_field_regions": [
+    {
+      "block_code": "DATA",
+      "block_header_offset": 176204,
+      "instance": 0,
+      "field_start": 176332,
+      "field_end_exclusive": 177614,
+      "field_capacity": 1282,
+      "field_type": "char",
+      "field_name": "dir[1282]",
+      "struct_name": "FileSelectParams",
+      "struct_size": 2280,
+      "sdna_index": 849,
+      "original_nonzero_prefix_length": 30,
+      "source_field_sha256": "cda629814771d55348e7d467f577855e4d0c9ea405ba5189ee1cb059d073a8c0",
+      "delivered_field_sha256": "f299b45327ec6caf157855222c0f00f2ff6ffa482399a223c13194e15edf354f",
+      "replacement_is_double_slash_then_NULs": true,
+      "original_private_findings_in_field": 1
+    }
+  ],
+  "source_binary_scan_passed": false,
+  "source_binary_scan_findings": 1,
+  "delivered_binary_scan_passed": true,
+  "delivered_binary_scan_findings": 0,
+  "masked_decoded_sha256": "602cf0f99a779737e8d13a507dfd0ed168cc050e404bf471dedfc19e4a60c0ff",
+  "method": "Independent BHead32 walk and SDNA NAME/TYPE/TLEN/STRC interpretation; exact field-size sums and byte comparison. No scene save, repair, rendering or inherited checker call.",
+  "limits": "This byte audit excludes no data besides the exact named char array. Blender semantic signatures must be compared separately. Earlier raw-byte-only hygiene results did not inspect decompressed BLEND internals.",
+  "path": "models/v1/scene.blend",
+  "frames": {
+    "passed": true,
+    "method": "Manually walk zstd frame descriptor and three-byte block headers, then decompress each bounded frame; independently check seek-table count/size entries against actual frame spans.",
+    "frame_count": 4,
+    "data_frame_count": 3,
+    "frames": [
+      {
+        "index": 0,
+        "kind": "data",
+        "expanded_range": [
+          0,
+          1561
+        ],
+        "old_compressed_bytes": 233,
+        "new_compressed_bytes": 233,
+        "old_frame_sha256": "fb9f63afc6baee74bca0c419db0a6adcedb532efd6ec14dc855b5edbc924bea6",
+        "new_frame_sha256": "fb9f63afc6baee74bca0c419db0a6adcedb532efd6ec14dc855b5edbc924bea6",
+        "decoded_payload_changed": false,
+        "untouched_data_frame_byte_identical": true
+      },
+      {
+        "index": 1,
+        "kind": "data",
+        "expanded_range": [
+          1561,
+          903592
+        ],
+        "old_compressed_bytes": 169390,
+        "new_compressed_bytes": 169347,
+        "old_frame_sha256": "3bbb1d9493f09f049ec4a064d18bac7648caeca2689e1134f12f470468109912",
+        "new_frame_sha256": "220f3f38c765839be406e05dc31b5eefe3eecb1ed5542404d33d384bb3a2f650",
+        "decoded_payload_changed": true,
+        "untouched_data_frame_byte_identical": true
+      },
+      {
+        "index": 2,
+        "kind": "data",
+        "expanded_range": [
+          903592,
+          1038228
+        ],
+        "old_compressed_bytes": 60793,
+        "new_compressed_bytes": 60793,
+        "old_frame_sha256": "b1ae3fef66cff1b4fb1eee3d919b9ffeba45ef4d52a4cba5bb73be8662fa61cb",
+        "new_frame_sha256": "b1ae3fef66cff1b4fb1eee3d919b9ffeba45ef4d52a4cba5bb73be8662fa61cb",
+        "decoded_payload_changed": false,
+        "untouched_data_frame_byte_identical": true
+      },
+      {
+        "index": 3,
+        "kind": "skippable",
+        "expanded_range": [
+          1038228,
+          1038228
+        ],
+        "old_compressed_bytes": 41,
+        "new_compressed_bytes": 41,
+        "old_frame_sha256": "cdec855d0c807f0b5755e6b8b68eec32c119fddb8bbc4a31f1bf31cd60ff1ea8",
+        "new_frame_sha256": "e4843ef32ad22429c50cd621ce5551c0533dd4c8105943070e55f28d7380284c",
+        "decoded_payload_changed": false,
+        "untouched_data_frame_byte_identical": true
+      }
+    ],
+    "seek_table_original_and_new_entries_match_actual_frames": true,
+    "seek_table_header_footer_identical": true,
+    "all_untouched_data_frames_byte_identical": true
+  }
+}

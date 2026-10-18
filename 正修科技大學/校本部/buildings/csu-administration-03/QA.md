@@ -1,5 +1,7 @@
 # v2 QA 與列印限制
 
+**首版後場景metadata修正：** v1／v2 BLEND的存檔對話框UI目錄欄位另作[最小遮蔽與解碼／語義核對](qa/scene-path-redaction-1/README.md)。原text／PNG衛生檢查漏掉壓縮BLEND內的兩個私人目錄，原排除宣告不當完整binary證明。原幾何、製造判定及舊manifest保留；現版scene全檔hash改變，須以新舊映射銜接，不能聲稱仍等於舊scene bytes。STL、生成器、參數、G-code與預覽均不變，也沒有把嚴格false或實印false改成true。
+
 **76681 獨立覆核後的文件勘誤（幾何不變）：** 普通窗凹約 0.4 mm；入口門凹另為名義 0.65 mm，raw STL 量測 `−28.549999237 − (−29.200000763) = 0.650001526 mm`。舊參數 0.45 mm 是未控制生成器的錯誤聲明，不能代表實際最深凹面。門背同線約 46.55 mm 連續實體，所以這不是 0.65 mm 薄牆；但門頂有獨立成形／支撐影響。現用參數的控制／聲明欄位及增量校驗見 [documentation-revision-1](qa/documentation-revision-1/README.md)，舊生成／渲染紀錄綁定原參數快照而非新聲明。
 
 真實 G-code 的唯一 Overhang perimeter 從模型 `(-8.3,-28.975,20.2)` 至 `(8.3,-28.975,20.2)`，長 **16.6 mm**，WIDTH 0.4／HEIGHT 0.4。凹深、投影最小外接寬或包絡面積都不是這條路徑長；沒有 Bridge infill 角色也不能免除橋接／懸垂評估。auto45 的門凹區有 305 段支撐／介面、45 個沉積 strata，最高支撐頂 z19.8 對門頂下表面 z20，為名義 0.2 mm gap；足跡或名義 gap 不證明真實黏連、下垂或去除力。

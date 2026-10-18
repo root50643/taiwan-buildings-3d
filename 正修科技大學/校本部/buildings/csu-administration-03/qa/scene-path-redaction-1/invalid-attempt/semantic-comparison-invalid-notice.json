@@ -1,0 +1,19 @@
+{
+  "invalid_report": "semantic-comparison.json",
+  "invalid_report_sha256": "48f5ec716c41ce5615bb2057184a3927cabd1179dbb7b510385f45787456f553",
+  "invalid_tool_snapshot": "compare_scene_semantics_invalid_new_vs_new.py",
+  "reason": "Author integrated staged scenes into the repository while this comparison was running; both input locations therefore supplied the new scene bytes. This is an invalid new-vs-new attempt and must not be used as original-vs-redacted equivalence evidence.",
+  "recorded_identities": [
+    {
+      "path": "models/v1/scene.blend",
+      "original_scene_sha256": "fc0c4ac3a4106a8f7c28ec4b526d6cac33ec433297329c69e7dbccea76be99a3",
+      "delivered_scene_sha256": "fc0c4ac3a4106a8f7c28ec4b526d6cac33ec433297329c69e7dbccea76be99a3"
+    },
+    {
+      "path": "models/v2/scene.blend",
+      "original_scene_sha256": "d852f85363988a986e7ed225ebfeb39433e9e8fe6a1d8e48fb8d09f6fec0f01c",
+      "delivered_scene_sha256": "d852f85363988a986e7ed225ebfeb39433e9e8fe6a1d8e48fb8d09f6fec0f01c"
+    }
+  ],
+  "replacement_report": "semantic-comparison-corrected.json"
+}

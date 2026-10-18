@@ -1,0 +1,294 @@
+{
+  "tool": "redact_scene_paths.py",
+  "tool_sha256": "5ad3958bed4cdabfdee9c6d9ed812b90521e5a115984bb1e20957ad11f39cdb7",
+  "zstandard_version": "0.24.0",
+  "new_compression_level_for_changed_frames": 3,
+  "original_compression_level": "Unknown; not claimed to be reproduced",
+  "replacement": "// followed by NUL fill of FileSelectParams.dir[1282]",
+  "scope": "Staging only; input deliverable scenes remain untouched",
+  "files": [
+    {
+      "path": "models/v1/scene.blend",
+      "original_bytes": 230457,
+      "original_sha256": "18736d0ee70384fba9a20f83d3632b9a237c0f1d01f1d4eaf28ec85bf837e750",
+      "delivered_bytes": 230414,
+      "delivered_sha256": "fc0c4ac3a4106a8f7c28ec4b526d6cac33ec433297329c69e7dbccea76be99a3",
+      "expanded_bytes": 1038228,
+      "original_expanded_sha256": "3da783b8cb18df5e230dc4fc055de19eda40546905a45111a9d836a83fd8401a",
+      "delivered_expanded_sha256": "dda01af9789e0c7f9eb2b443d7b13e16d2dc396261eb825e2304d492c8c7627a",
+      "field": {
+        "structure": "FileSelectParams",
+        "name": "dir[1282]",
+        "sdna_index": 849,
+        "block_header_offset": 176204,
+        "block_payload_offset": 176236,
+        "structure_bytes": 2280,
+        "field_relative_offset": 96,
+        "expanded_range": [
+          176332,
+          177614
+        ],
+        "original_value_bytes": 30,
+        "original_value_sha256": "7531fb86726a682e4db082f99f61a83227571e1ed2bee9eb5e565cfa650f46c1",
+        "original_field_sha256": "cda629814771d55348e7d467f577855e4d0c9ea405ba5189ee1cb059d073a8c0",
+        "delivered_field_sha256": "f299b45327ec6caf157855222c0f00f2ff6ffa482399a223c13194e15edf354f",
+        "delivered_value": "//",
+        "nul_filled": true
+      },
+      "FileGlobal_filename": {
+        "expanded_range": [
+          425,
+          1449
+        ],
+        "effective_value_empty": true
+      },
+      "changed_byte_count": 42,
+      "expanded_diff_ranges": [
+        [
+          176332,
+          176362
+        ],
+        [
+          176364,
+          176368
+        ],
+        [
+          176369,
+          176375
+        ],
+        [
+          176376,
+          176378
+        ]
+      ],
+      "all_expanded_bytes_outside_field_identical": true,
+      "frame_count_before": 4,
+      "frame_count_after": 4,
+      "data_frame_count_before": 3,
+      "data_frame_count_after": 3,
+      "seek_table_updated_for_new_compressed_sizes": true,
+      "expanded_frame_boundaries_identical": true,
+      "frames": [
+        {
+          "index": 0,
+          "expanded_range": [
+            0,
+            1561
+          ],
+          "original_compressed_offset": 0,
+          "original_compressed_bytes": 233,
+          "delivered_compressed_bytes": 233,
+          "original_compressed_sha256": "fb9f63afc6baee74bca0c419db0a6adcedb532efd6ec14dc855b5edbc924bea6",
+          "delivered_compressed_sha256": "fb9f63afc6baee74bca0c419db0a6adcedb532efd6ec14dc855b5edbc924bea6",
+          "kind": "zstd_data_frame",
+          "seek_table_updated": false,
+          "content_changed": false,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": 1561,
+          "original_frame_window_size": 1561,
+          "original_frame_checksum": false
+        },
+        {
+          "index": 1,
+          "expanded_range": [
+            1561,
+            903592
+          ],
+          "original_compressed_offset": 233,
+          "original_compressed_bytes": 169390,
+          "delivered_compressed_bytes": 169347,
+          "original_compressed_sha256": "3bbb1d9493f09f049ec4a064d18bac7648caeca2689e1134f12f470468109912",
+          "delivered_compressed_sha256": "220f3f38c765839be406e05dc31b5eefe3eecb1ed5542404d33d384bb3a2f650",
+          "kind": "zstd_data_frame",
+          "seek_table_updated": false,
+          "content_changed": true,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": 902031,
+          "original_frame_window_size": 902031,
+          "original_frame_checksum": false
+        },
+        {
+          "index": 2,
+          "expanded_range": [
+            903592,
+            1038228
+          ],
+          "original_compressed_offset": 169623,
+          "original_compressed_bytes": 60793,
+          "delivered_compressed_bytes": 60793,
+          "original_compressed_sha256": "b1ae3fef66cff1b4fb1eee3d919b9ffeba45ef4d52a4cba5bb73be8662fa61cb",
+          "delivered_compressed_sha256": "b1ae3fef66cff1b4fb1eee3d919b9ffeba45ef4d52a4cba5bb73be8662fa61cb",
+          "kind": "zstd_data_frame",
+          "seek_table_updated": false,
+          "content_changed": false,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": 134636,
+          "original_frame_window_size": 134636,
+          "original_frame_checksum": false
+        },
+        {
+          "index": 3,
+          "expanded_range": [
+            1038228,
+            1038228
+          ],
+          "original_compressed_offset": 230416,
+          "original_compressed_bytes": 41,
+          "delivered_compressed_bytes": 41,
+          "original_compressed_sha256": "cdec855d0c807f0b5755e6b8b68eec32c119fddb8bbc4a31f1bf31cd60ff1ea8",
+          "delivered_compressed_sha256": "e4843ef32ad22429c50cd621ce5551c0533dd4c8105943070e55f28d7380284c",
+          "kind": "skippable_seek_table",
+          "seek_table_updated": true,
+          "content_changed": false,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": null,
+          "original_frame_window_size": null,
+          "original_frame_checksum": null
+        }
+      ],
+      "input_file_unchanged": true
+    },
+    {
+      "path": "models/v2/scene.blend",
+      "original_bytes": 225656,
+      "original_sha256": "b9b0cf0a1411b4c29a69656888610223d5952a6b0fbb8b91c58b30bf6908c056",
+      "delivered_bytes": 225613,
+      "delivered_sha256": "d852f85363988a986e7ed225ebfeb39433e9e8fe6a1d8e48fb8d09f6fec0f01c",
+      "expanded_bytes": 1024956,
+      "original_expanded_sha256": "0571ef0727a290e81fd47b0940902ec5c8ba867005f57fc7d0777f2fb63e665d",
+      "delivered_expanded_sha256": "49ddd542b0a1f3b4489d0de7cc18934863318c3b0ce2724dae7ad2c38c8bcd77",
+      "field": {
+        "structure": "FileSelectParams",
+        "name": "dir[1282]",
+        "sdna_index": 849,
+        "block_header_offset": 176204,
+        "block_payload_offset": 176236,
+        "structure_bytes": 2280,
+        "field_relative_offset": 96,
+        "expanded_range": [
+          176332,
+          177614
+        ],
+        "original_value_bytes": 30,
+        "original_value_sha256": "7531fb86726a682e4db082f99f61a83227571e1ed2bee9eb5e565cfa650f46c1",
+        "original_field_sha256": "cda629814771d55348e7d467f577855e4d0c9ea405ba5189ee1cb059d073a8c0",
+        "delivered_field_sha256": "f299b45327ec6caf157855222c0f00f2ff6ffa482399a223c13194e15edf354f",
+        "delivered_value": "//",
+        "nul_filled": true
+      },
+      "FileGlobal_filename": {
+        "expanded_range": [
+          425,
+          1449
+        ],
+        "effective_value_empty": true
+      },
+      "changed_byte_count": 42,
+      "expanded_diff_ranges": [
+        [
+          176332,
+          176362
+        ],
+        [
+          176364,
+          176368
+        ],
+        [
+          176369,
+          176375
+        ],
+        [
+          176376,
+          176378
+        ]
+      ],
+      "all_expanded_bytes_outside_field_identical": true,
+      "frame_count_before": 4,
+      "frame_count_after": 4,
+      "data_frame_count_before": 3,
+      "data_frame_count_after": 3,
+      "seek_table_updated_for_new_compressed_sizes": true,
+      "expanded_frame_boundaries_identical": true,
+      "frames": [
+        {
+          "index": 0,
+          "expanded_range": [
+            0,
+            1561
+          ],
+          "original_compressed_offset": 0,
+          "original_compressed_bytes": 233,
+          "delivered_compressed_bytes": 233,
+          "original_compressed_sha256": "fb9f63afc6baee74bca0c419db0a6adcedb532efd6ec14dc855b5edbc924bea6",
+          "delivered_compressed_sha256": "fb9f63afc6baee74bca0c419db0a6adcedb532efd6ec14dc855b5edbc924bea6",
+          "kind": "zstd_data_frame",
+          "seek_table_updated": false,
+          "content_changed": false,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": 1561,
+          "original_frame_window_size": 1561,
+          "original_frame_checksum": false
+        },
+        {
+          "index": 1,
+          "expanded_range": [
+            1561,
+            890320
+          ],
+          "original_compressed_offset": 233,
+          "original_compressed_bytes": 164589,
+          "delivered_compressed_bytes": 164546,
+          "original_compressed_sha256": "13c8975ca7a6ee642e8d6aafa9e3b75f4b5c9c0076cee67eaddf45a251f6bb36",
+          "delivered_compressed_sha256": "f3a4c39809c8962ee148a6a1f86af12c0a8fbd6d6c8a8755e095a1214a9f28e3",
+          "kind": "zstd_data_frame",
+          "seek_table_updated": false,
+          "content_changed": true,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": 888759,
+          "original_frame_window_size": 888759,
+          "original_frame_checksum": false
+        },
+        {
+          "index": 2,
+          "expanded_range": [
+            890320,
+            1024956
+          ],
+          "original_compressed_offset": 164822,
+          "original_compressed_bytes": 60793,
+          "delivered_compressed_bytes": 60793,
+          "original_compressed_sha256": "b1ae3fef66cff1b4fb1eee3d919b9ffeba45ef4d52a4cba5bb73be8662fa61cb",
+          "delivered_compressed_sha256": "b1ae3fef66cff1b4fb1eee3d919b9ffeba45ef4d52a4cba5bb73be8662fa61cb",
+          "kind": "zstd_data_frame",
+          "seek_table_updated": false,
+          "content_changed": false,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": 134636,
+          "original_frame_window_size": 134636,
+          "original_frame_checksum": false
+        },
+        {
+          "index": 3,
+          "expanded_range": [
+            1024956,
+            1024956
+          ],
+          "original_compressed_offset": 225615,
+          "original_compressed_bytes": 41,
+          "delivered_compressed_bytes": 41,
+          "original_compressed_sha256": "81403996e24c6bae2c8f3b5ddf0f8a4926251423188ea9f60f4cd298eb252200",
+          "delivered_compressed_sha256": "d18e2e605b7e227c53d88ee2cafbfdfee697e6956d6428ac5fdc4c74c13eef9c",
+          "kind": "skippable_seek_table",
+          "seek_table_updated": true,
+          "content_changed": false,
+          "unaffected_data_frame_preserved": true,
+          "original_frame_content_size": null,
+          "original_frame_window_size": null,
+          "original_frame_checksum": null
+        }
+      ],
+      "input_file_unchanged": true
+    }
+  ],
+  "passed": true
+}

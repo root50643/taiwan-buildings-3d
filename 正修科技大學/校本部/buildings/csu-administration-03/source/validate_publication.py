@@ -1,4 +1,8 @@
-"""Read-only publication delta checks; no geometry, slicing or historical QA rerun."""
+"""Historical 6e68368 publication delta checks; no geometry or slicing rerun.
+
+The later scene metadata redaction has a separate integrity workflow. Check out
+the original publication commit to reproduce this fixed-input history.
+"""
 from pathlib import Path
 import argparse,csv,hashlib,io,json,re,subprocess
 
@@ -10,6 +14,8 @@ INDEXES=['README.md','model-packages.json','正修科技大學/README.md','正�
  '全國大專院校/README.md','全國大專院校/coverage.json','全國大專院校/institutions.json','全國大專院校/institutions.csv']
 
 def main():
+    if (MODEL/'qa/scene-path-redaction-1/README.md').exists():
+        raise SystemExit('Historical 6e68368 validation only. Read qa/scene-path-redaction-1/README.md for the current scene metadata integrity workflow; old reports are not overwritten.')
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args()

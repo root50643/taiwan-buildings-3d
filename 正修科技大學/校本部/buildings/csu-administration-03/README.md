@@ -2,6 +2,8 @@
 
 **正式交付版：固定幾何及文書修正已獨立增量 GO；保留製造條件與嚴格 false。** 03A/B/C 為同棟三區，本件只算一套，含主體與截頂屋蓋兩個列印分件。外觀依實看公開影像作相對估計，非測繪、BIM、工程圖或 2026 現況紀錄。[發布範圍與核對](PUBLICATION.md)。
 
+**場景metadata修正：** 初版 `6e68368` 的v1／v2壓縮BLEND各留有一個私人存檔對話框目錄，原text／PNG檢查漏掉這層。現用場景只遮蔽 `FileSelectParams.dir[1282]` 為相對目錄 `//`；解碼後其餘資料及場景語義不變，STL、G-code、參數與預覽原檔不變。詳見[修正前後核對與新hash](qa/scene-path-redaction-1/README.md)。舊build／render／QA與Library v2回條均是其固定時點的歷史證據，舊scene hash及原排除私人路徑宣告不作現版完整二進位檢查證明。
+
 | 組裝正面 | 組裝背面 |
 |---|---|
 | ![正面](previews/v2/front-three-quarter.png) | ![背面](previews/v2/rear-three-quarter.png) |

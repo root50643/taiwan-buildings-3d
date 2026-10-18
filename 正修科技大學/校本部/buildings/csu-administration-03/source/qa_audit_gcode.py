@@ -3,7 +3,8 @@
 Reads linear G0/G1 motion and extrusion modes, retains every TYPE per layer,
 and renders actual first-layer extrusion paths. Bridge infill is reported
 separately from support material. A zero support count alone is not evidence
-that a mesh needs no support: this run deliberately disables support.
+that a mesh needs no support. Read the actual embedded support configuration;
+both no-support baselines and enabled auto-support runs are accepted inputs.
 """
 import argparse
 from collections import Counter, defaultdict

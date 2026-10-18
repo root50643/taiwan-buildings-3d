@@ -1,0 +1,656 @@
+{
+  "script_sha256": "e1a20f5f65ac537d21856c6d791053237af2de4135452cc9a3e7666cd9e9b6fa",
+  "topology_helper_sha256": "caae158c2527030293d29c6695193b96917de1b4adcbe52415d83d27b2b60f79",
+  "exact_helper_sha256": "63c6569b1d971ebe0d17cf475f26864d5e0c20cb2d21e85cbca9720812f87941",
+  "controls": [
+    {
+      "name": "crossing",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "coplanar_overlap",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "duplicate",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "unshared_point_touch",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "shared_vertex_extra_crossing",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "shared_edge_coplanar_overlap",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "separated",
+      "expected_invalid": false,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "parallel_distinct",
+      "expected_invalid": false,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "shared_edge_coplanar",
+      "expected_invalid": false,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "shared_edge_folded",
+      "expected_invalid": false,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "shared_vertex",
+      "expected_invalid": false,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "overlapping_boxes_disjoint",
+      "expected_invalid": false,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "tiny_exact_separation",
+      "expected_invalid": false,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "tiny_exact_crossing",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "unshared_collinear_edge_contact",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    },
+    {
+      "name": "degenerate",
+      "expected_invalid": true,
+      "all_permutations_and_pair_swaps_match": true,
+      "evaluations": 72
+    }
+  ],
+  "controls_evaluations": 1152,
+  "parts": {
+    "body": {
+      "sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+      "raw_topology": {
+        "input": "<MODEL_ROOT>\\models\\v2\\parts\\body.stl",
+        "sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+        "bytes": 334884,
+        "method": "Independent struct parser; exact stored-coordinate identity only; integer cross products, edge incidence and multigraph vertex links; exact rational signed volume; no repair, proximity welding, mesh library or source validator.",
+        "all_listed_checks_passed": true,
+        "checks": {
+          "binary_length_exact": true,
+          "coordinates_and_saved_normals_finite": true,
+          "zero_exact_degenerate_triangles": true,
+          "zero_duplicate_triangles": true,
+          "every_raw_exact_coordinate_edge_two_faces": true,
+          "every_raw_vertex_link_one_cycle_multigraph": true,
+          "opposite_directed_incidence_on_each_edge": true,
+          "one_edge_connected_surface_component": true,
+          "every_component_positive_exact_signed_volume": true,
+          "saved_normals_unit_within_1e_5": true,
+          "saved_normals_match_computed_direction_within_1e_5": true
+        },
+        "faces": 6696,
+        "vertices": 3350,
+        "edges": 10044,
+        "surface_components": 1,
+        "component_face_counts": [
+          6696
+        ],
+        "component_exact_signed_volume_rationals": [
+          "4054155443015589548085151/9223372036854775808"
+        ],
+        "component_signed_volumes_mm3": [
+          439552.4138911435
+        ],
+        "integer_units_per_mm": 16777216,
+        "euler_characteristic": 2,
+        "orientable_genus_if_one_closed_component": 0,
+        "bounds_mm": [
+          [
+            -100.0,
+            -36.0,
+            0.0
+          ],
+          [
+            100.0,
+            36.0,
+            85.0
+          ]
+        ],
+        "dimensions_mm": [
+          200.0,
+          72.0,
+          85.0
+        ],
+        "max_saved_normal_length_error": 1.6281744175117296e-08,
+        "max_saved_normal_component_error": 1.3664687492642713e-08,
+        "minimum_saved_normal_direction_cosine": 1.0,
+        "non_two_face_edges": [],
+        "bad_vertex_links": [],
+        "inconsistent_directed_edges": [],
+        "exact_degenerate_faces": [],
+        "duplicate_triangles": [],
+        "nonzero_stl_attribute_count": 0,
+        "limitations": [
+          "Does not prove self-intersection freedom by itself; separate exact contact check addresses that property.",
+          "Positive volume and manifold topology do not prove a printable minimum feature, removable support, slicer success or physical print."
+        ]
+      },
+      "exact_self_contact": {
+        "aabb_candidate_pairs": 73993,
+        "sorted_pairs_sha256": "9111562628fe2b41d834a27afe39913e6a94c8af8ee92275eba14c132825d9f1",
+        "counts": {
+          "allowed_shared_simplex_contact": 47299,
+          "disjoint": 26694
+        },
+        "invalid_contact_count": 0,
+        "findings": []
+      },
+      "integer_units_per_mm": 16777216,
+      "comparison_to_saved_exact": {
+        "report_sha256": "ac5ae908c1d53ea24653b64c289fe613896468f2c3225638e23a0d0e099335c4",
+        "input_sha_matches": true,
+        "saved_candidate_pairs": 73993,
+        "saved_bad_pairs": 0,
+        "saved_actual_contact_pairs": 47299,
+        "independent_candidate_pairs_match": true,
+        "independent_contact_count_matches": true
+      }
+    },
+    "roof": {
+      "sha256": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+      "raw_topology": {
+        "input": "<MODEL_ROOT>\\models\\v2\\parts\\roof.stl",
+        "sha256": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+        "bytes": 1484,
+        "method": "Independent struct parser; exact stored-coordinate identity only; integer cross products, edge incidence and multigraph vertex links; exact rational signed volume; no repair, proximity welding, mesh library or source validator.",
+        "all_listed_checks_passed": true,
+        "checks": {
+          "binary_length_exact": true,
+          "coordinates_and_saved_normals_finite": true,
+          "zero_exact_degenerate_triangles": true,
+          "zero_duplicate_triangles": true,
+          "every_raw_exact_coordinate_edge_two_faces": true,
+          "every_raw_vertex_link_one_cycle_multigraph": true,
+          "opposite_directed_incidence_on_each_edge": true,
+          "one_edge_connected_surface_component": true,
+          "every_component_positive_exact_signed_volume": true,
+          "saved_normals_unit_within_1e_5": true,
+          "saved_normals_match_computed_direction_within_1e_5": true
+        },
+        "faces": 28,
+        "vertices": 16,
+        "edges": 42,
+        "surface_components": 1,
+        "component_face_counts": [
+          28
+        ],
+        "component_exact_signed_volume_rationals": [
+          "11066"
+        ],
+        "component_signed_volumes_mm3": [
+          11066.0
+        ],
+        "integer_units_per_mm": 2,
+        "euler_characteristic": 2,
+        "orientable_genus_if_one_closed_component": 0,
+        "bounds_mm": [
+          [
+            -24.0,
+            -18.0,
+            0.0
+          ],
+          [
+            24.0,
+            18.0,
+            11.0
+          ]
+        ],
+        "dimensions_mm": [
+          48.0,
+          36.0,
+          11.0
+        ],
+        "max_saved_normal_length_error": 3.364759959545438e-08,
+        "max_saved_normal_component_error": 2.3559433737219138e-08,
+        "minimum_saved_normal_direction_cosine": 0.9999999999999999,
+        "non_two_face_edges": [],
+        "bad_vertex_links": [],
+        "inconsistent_directed_edges": [],
+        "exact_degenerate_faces": [],
+        "duplicate_triangles": [],
+        "nonzero_stl_attribute_count": 0,
+        "limitations": [
+          "Does not prove self-intersection freedom by itself; separate exact contact check addresses that property.",
+          "Positive volume and manifold topology do not prove a printable minimum feature, removable support, slicer success or physical print."
+        ]
+      },
+      "exact_self_contact": {
+        "aabb_candidate_pairs": 208,
+        "sorted_pairs_sha256": "0a3e3f6fc1e34f9072db42b76603a69383c0d87949df382036bf8824d9ce15db",
+        "counts": {
+          "allowed_shared_simplex_contact": 154,
+          "disjoint": 54
+        },
+        "invalid_contact_count": 0,
+        "findings": []
+      },
+      "integer_units_per_mm": 2,
+      "comparison_to_saved_exact": {
+        "report_sha256": "d0c43dee190e72d09db1cdc0880bf68939302f193949a464731fe1993bc0f800",
+        "input_sha_matches": true,
+        "saved_candidate_pairs": 208,
+        "saved_bad_pairs": 0,
+        "saved_actual_contact_pairs": 154,
+        "independent_candidate_pairs_match": true,
+        "independent_contact_count_matches": true
+      }
+    }
+  },
+  "assembly_joint": {
+    "placement_translation_mm": [
+      0,
+      0,
+      85
+    ],
+    "proof_of_zero_positive_volume_interference": "Every raw body vertex has Z<=85 and every placed roof vertex Z>=85. Each triangle and enclosed solid remains in its corresponding closed Z halfspace, so interiors cannot overlap. Any contact is restricted to Z=85; independent of display assembly union.",
+    "body_max_Z_mm": 85.0,
+    "placed_roof_min_Z_mm": 85.0,
+    "positive_volume_interference_mm3": 0,
+    "body_joint_plane_face_ids": [
+      6455,
+      6496
+    ],
+    "roof_bottom_face_ids": [
+      1,
+      6,
+      8,
+      14,
+      16,
+      22
+    ],
+    "body_joint_surface_area_mm2": 1120.0,
+    "roof_bottom_area_mm2": 1630.0,
+    "exact_contact_area_mm2": "1120",
+    "contact_area_mm2": 1120.0,
+    "roof_bottom_area_outside_body_support_mm2": 510.0,
+    "roof_bottom_supported_area_fraction": 0.6871165644171779,
+    "body_joint_XY_bounds_mm": [
+      -20.0,
+      -14.0,
+      20.0,
+      14.0
+    ],
+    "roof_bottom_XY_bounds_mm": [
+      -24.0,
+      -18.0,
+      24.0,
+      18.0
+    ],
+    "body_joint_unique_vertices_mm": [
+      [
+        -20.0,
+        -14.0
+      ],
+      [
+        -20.0,
+        14.0
+      ],
+      [
+        20.0,
+        -14.0
+      ],
+      [
+        20.0,
+        14.0
+      ]
+    ],
+    "roof_bottom_unique_vertices_mm": [
+      [
+        -24.0,
+        -11.0
+      ],
+      [
+        -24.0,
+        11.0
+      ],
+      [
+        -17.0,
+        -18.0
+      ],
+      [
+        -17.0,
+        18.0
+      ],
+      [
+        17.0,
+        -18.0
+      ],
+      [
+        17.0,
+        18.0
+      ],
+      [
+        24.0,
+        -11.0
+      ],
+      [
+        24.0,
+        11.0
+      ]
+    ],
+    "positive_area_contact_triangle_pairs": [
+      {
+        "body_face": 6455,
+        "roof_face": 1,
+        "exact_area_mm2": "3481/406",
+        "area_mm2": 8.573891625615763,
+        "exact_xy_polygon": [
+          [
+            "-20",
+            "-39/7"
+          ],
+          [
+            "-20",
+            "-14"
+          ],
+          [
+            "-521/29",
+            "-14"
+          ]
+        ]
+      },
+      {
+        "body_face": 6455,
+        "roof_face": 6,
+        "exact_area_mm2": "293441/4060",
+        "area_mm2": 72.27610837438424,
+        "exact_xy_polygon": [
+          [
+            "-20",
+            "-39/7"
+          ],
+          [
+            "-521/29",
+            "-14"
+          ],
+          [
+            "-17",
+            "-14"
+          ],
+          [
+            "-17",
+            "119/10"
+          ],
+          [
+            "-20",
+            "14"
+          ]
+        ]
+      },
+      {
+        "body_face": 6455,
+        "roof_face": 8,
+        "exact_area_mm2": "44387/180",
+        "area_mm2": 246.59444444444443,
+        "exact_xy_polygon": [
+          [
+            "-17",
+            "-14"
+          ],
+          [
+            "-119/9",
+            "-14"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-17",
+            "119/10"
+          ]
+        ]
+      },
+      {
+        "body_face": 6455,
+        "roof_face": 14,
+        "exact_area_mm2": "9025/714",
+        "area_mm2": 12.640056022408963,
+        "exact_xy_polygon": [
+          [
+            "45/7",
+            "-14"
+          ],
+          [
+            "20",
+            "-14"
+          ],
+          [
+            "6190/357",
+            "-619/51"
+          ]
+        ]
+      },
+      {
+        "body_face": 6455,
+        "roof_face": 16,
+        "exact_area_mm2": "956930447/5973681",
+        "area_mm2": 160.19108603221363,
+        "exact_xy_polygon": [
+          [
+            "-329/29",
+            "-14"
+          ],
+          [
+            "45/7",
+            "-14"
+          ],
+          [
+            "6190/357",
+            "-619/51"
+          ],
+          [
+            "2450/577",
+            "-1715/577"
+          ]
+        ]
+      },
+      {
+        "body_face": 6455,
+        "roof_face": 22,
+        "exact_area_mm2": "17988635/301194",
+        "area_mm2": 59.724413500932954,
+        "exact_xy_polygon": [
+          [
+            "-119/9",
+            "-14"
+          ],
+          [
+            "-329/29",
+            "-14"
+          ],
+          [
+            "2450/577",
+            "-1715/577"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "body_face": 6496,
+        "roof_face": 6,
+        "exact_area_mm2": "63/20",
+        "area_mm2": 3.15,
+        "exact_xy_polygon": [
+          [
+            "-17",
+            "14"
+          ],
+          [
+            "-20",
+            "14"
+          ],
+          [
+            "-17",
+            "119/10"
+          ]
+        ]
+      },
+      {
+        "body_face": 6496,
+        "roof_face": 8,
+        "exact_area_mm2": "41293/180",
+        "area_mm2": 229.40555555555557,
+        "exact_xy_polygon": [
+          [
+            "119/9",
+            "14"
+          ],
+          [
+            "-17",
+            "14"
+          ],
+          [
+            "-17",
+            "119/10"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "body_face": 6496,
+        "roof_face": 14,
+        "exact_area_mm2": "45125/14637",
+        "area_mm2": 3.082940493270479,
+        "exact_xy_polygon": [
+          [
+            "6190/357",
+            "-619/51"
+          ],
+          [
+            "20",
+            "-14"
+          ],
+          [
+            "20",
+            "-479/41"
+          ]
+        ]
+      },
+      {
+        "body_face": 6496,
+        "roof_face": 16,
+        "exact_area_mm2": "1448874460/8445549",
+        "area_mm2": 171.55479886505898,
+        "exact_xy_polygon": [
+          [
+            "2450/577",
+            "-1715/577"
+          ],
+          [
+            "6190/357",
+            "-619/51"
+          ],
+          [
+            "20",
+            "-479/41"
+          ],
+          [
+            "20",
+            "335/41"
+          ]
+        ]
+      },
+      {
+        "body_face": 6496,
+        "roof_face": 22,
+        "exact_area_mm2": "32534534/212913",
+        "area_mm2": 152.806705086115,
+        "exact_xy_polygon": [
+          [
+            "119/9",
+            "14"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "2450/577",
+            "-1715/577"
+          ],
+          [
+            "20",
+            "335/41"
+          ],
+          [
+            "20",
+            "14"
+          ]
+        ]
+      }
+    ],
+    "roof_volume_centroid_local_mm": [
+      0.0,
+      0.0,
+      4.461232604373757
+    ],
+    "joint_design": "Plain flat butt contact; no positive XY or yaw location, no pegs/sockets/stops. Nominal centering only; adhesive layer, bonding strength, warp and clearance are not modeled.",
+    "nominal_overhang_at_axis_extrema_mm": {
+      "negative_X": 4.0,
+      "negative_Y": 4.0,
+      "positive_X": 4.0,
+      "positive_Y": 4.0
+    }
+  },
+  "elapsed_seconds": 11.10139619995607,
+  "formal_slicer_run": false,
+  "physical_print_test": false,
+  "limitations": [
+    "Exact predicates and synthetic controls are not formal verification of the implementation.",
+    "Contact area and zero nominal interference do not certify glue strength, assembly accuracy, warp, surface finish or mechanical retention.",
+    "Existing raw manufacturing flags and previous failed reports are not rewritten or canceled.",
+    "This audit reads printable parts directly; display assembly union is not used for collision or mating-area conclusions."
+  ]
+}

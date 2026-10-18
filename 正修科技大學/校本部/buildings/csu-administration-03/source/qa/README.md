@@ -1,5 +1,7 @@
 # 原始 STL 與切片檢查工具
 
+**文書勘誤：** 此資料夾的可執行程式是原檢查用的凍結快照。`run_slice.py` 雖接受 auto45 profile，仍呼叫歷史 `audit_gcode.py` 並在 summary 硬編 no-support limits；那兩處不能當作 auto45 的支撐狀態。本輪保留原源碼／原輸出及 SHA，正式交接讀[修正 audit](../../qa/v2/slicing/body-auto45/corrected-audit/gcode-audit.json)、[本輪勘誤與校驗](../../qa/documentation-revision-1/README.md)及[現用工具說明](../QA-TOOLING-NOTES.md)。下列原指令的完成不等於所有 profile 的支撐語義正確。
+
 在模型資料夾執行，使用 Python 3.13、NumPy 2.5.4、Shapely 2.1.2、Trimesh 4.12.2 與 Pillow。產生模型另外需要 Manifold3D；本檢查不修補網格。
 
 ```text

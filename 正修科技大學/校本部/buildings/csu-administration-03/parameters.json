@@ -9,7 +9,17 @@
   "clerestory": {"width": 40, "depth": 28, "height": 7},
   "roof": {"bottom_width": 48, "bottom_depth": 36, "bottom_chamfer": 7, "top_width": 29, "top_depth": 18, "top_chamfer": 4, "height": 11, "assembly_bottom_z": 85},
   "parapet": {"thickness": 2, "height": 2, "inset": 2.4},
-  "entrance": {"width": 34, "depth": 13, "front_y": -29, "wall_height": 24, "gable_rise": 9, "door_recess_depth": 0.45},
+  "entrance": {"width": 34, "depth": 13, "front_y": -29, "wall_height": 24, "gable_rise": 9, "door_recess_depth": 0.65},
   "relief": {"window_depth": 0.4, "window_height": 2.4, "min_retained_pier": 1.6},
-  "manufacturing": {"parts": 2, "roof_interface": "Plain flat butt joint; no pegs, sockets, internal supports or snap fit. Center manually; glue after trial placement.", "nominal_nozzle": 0.4, "nominal_layer": 0.2, "minimum_design_wall": 1.6, "minimum_parapet": 2, "maximum_shallow_facade_recess": 0.45}
+  "manufacturing": {"parts": 2, "roof_interface": "Plain flat butt joint; no pegs, sockets, internal supports or snap fit. Center manually; glue after trial placement.", "nominal_nozzle": 0.4, "nominal_layer": 0.2, "minimum_design_wall": 1.6, "minimum_parapet": 2, "maximum_shallow_facade_recess": 0.65},
+  "parameter_semantics": {
+    "statement_revision": "documentation-revision-1; fixed v2 geometry unchanged",
+    "geometry_control_fields": ["base.width", "base.depth", "base.thickness", "wings.span", "wings.inner_x", "wings.front_y", "wings.rear_y", "wings.height", "center.width", "center.depth", "center.height", "clerestory.width", "clerestory.depth", "clerestory.height", "roof.bottom_width", "roof.bottom_depth", "roof.bottom_chamfer", "roof.top_width", "roof.top_depth", "roof.top_chamfer", "roof.height", "roof.assembly_bottom_z", "parapet.thickness", "parapet.height", "entrance.width", "entrance.depth", "entrance.front_y", "entrance.wall_height", "entrance.gable_rise"],
+    "declaration_only_fields": ["entrance.door_recess_depth", "parapet.inset", "relief.window_depth", "relief.window_height", "relief.min_retained_pier", "manufacturing.*"],
+    "geometry_control_limit": "The listed fields are read by the generator; other fixed coordinates remain in source. This is not a fully constrained free-form parametric building model. Declaration-only values do not resize geometry.",
+    "fixed_door_construction": "Source uses porch depth+0.4 and door cut center_y=-28.9, depth=0.7. Raw STL front_y=-29.200000763 and door_back_y=-28.549999237 give depth=0.650001526mm (nominal declaration 0.65mm).",
+    "fixed_window_construction": "Ordinary window relief is nominally 0.4mm and is made by fixed source coordinates; relief.window_depth/window_height are declarations, not active dimensions.",
+    "door_top_gcode_path": "Saved body G-code Overhang perimeter runs from model(-8.3,-28.975,20.2) to(8.3,-28.975,20.2), length16.6mm; recess depth is not bridge/overhang path length.",
+    "wall_limit": "minimum_design_wall is a design statement, not a global thickness certificate; solid roof eaves taper to sharp thin edges."
+  }
 }

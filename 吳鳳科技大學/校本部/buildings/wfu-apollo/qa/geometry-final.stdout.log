@@ -1,0 +1,88 @@
+{
+  "json": "<workspace>/apollo-review\\吳鳳科技大學\\校本部\\buildings\\wfu-apollo\\qa\\qa-report.json",
+  "topology": {
+    "vertices": 126,
+    "faces": 248,
+    "bounds_mm": [
+      [
+        -95.0,
+        -44.0,
+        0.0
+      ],
+      [
+        95.0,
+        44.0,
+        40.189998626708984
+      ]
+    ],
+    "extents_mm": [
+      190.0,
+      88.0,
+      40.189998626708984
+    ],
+    "surface_area_mm2": 51965.48083520563,
+    "signed_volume_mm3": 520103.81179131917,
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_triangles": 0,
+    "duplicate_triangles": 0,
+    "nonmanifold_vertex_links": 0,
+    "nonmanifold_vertex_indices": [],
+    "connected_components": 1,
+    "component_signed_volumes_mm3": [
+      520103.81179131917
+    ],
+    "euler_number": 2,
+    "passes_basic_solid_checks": true
+  },
+  "self_intersections": {
+    "method": "All triangle pairs with overlapping AABBs; noncoplanar plane-cut intervals and coplanar 2-D polygon intersections. Shared mesh edge/vertex contact is permitted.",
+    "tolerance_mm": 1e-06,
+    "total_triangle_pairs": 30628,
+    "aabb_candidate_pairs_checked": 3029,
+    "unexpected_contacts_or_intersections": [],
+    "passes_numerical_pair_screen": true,
+    "limitation": "Floating-point geometric screening, not a formal exact-arithmetic certificate."
+  },
+  "sections": {
+    "method": "Actual horizontal mesh intersections at layer midpoints; 2-D material parity; previous-layer buffered support envelope.",
+    "layer_height_mm": 0.2,
+    "support_angle_from_vertical_deg": 45,
+    "per_layer_horizontal_reach_mm": 0.19999999999999998,
+    "support_area_reporting_tolerance_mm2": 0.01,
+    "first_section_treated_as_build_plate_supported": true,
+    "feature_screen_width_mm": 0.8,
+    "feature_screen_method": "Erode each material section by half feature width; report empty or disconnected core. No universal 3-D thickness guarantee.",
+    "boundary_distance_sampling_interval_max_mm": 0.1,
+    "boundary_distance_sampling_error_bound_mm": 0.05,
+    "section_count": 201,
+    "invalid_or_open_section_count": 0,
+    "max_section_components": 1,
+    "unsupported_envelope_layer_count": 0,
+    "worst_unsupported_envelope_area_mm2": 0,
+    "sampled_max_boundary_expansion_mm": 0.20000000000000287,
+    "vanished_core_layers": [],
+    "split_core_layers": [],
+    "limitations": [
+      "Sampled sections can miss features narrower in Z than the layer spacing.",
+      "Support test is a 45-degree style geometric envelope, not extrusion or bridge simulation.",
+      "Erosion detects missing/disconnected section cores, but attached thin protrusions may survive this screen unnoticed.",
+      "No nozzle path generation, adhesion, cooling, material shrinkage or physical print tested."
+    ]
+  },
+  "negative_controls_detected": {
+    "missing_triangle": true,
+    "all_faces_reversed": true,
+    "detached_cube": true
+  },
+  "geometric_controls": {
+    "clean_cube_has_no_unexpected_intersections": true,
+    "overlapping_cubes_crossing_pairs_detected": 18,
+    "overlapping_cubes_negative_control_detected": true,
+    "vertex_touching_cubes_nonmanifold_vertex_links": 1,
+    "vertex_touching_cubes_negative_control_detected": true
+  }
+}

@@ -1,0 +1,6 @@
+Initial independent QA attempt failed before producing a report:
+Command: python qa-independent.py <model.stl> --json apollo-independent-qa/qa-report.json --negative-controls
+Failure: trimesh.split(only_watertight=False) -> ImportError: no graph engines available!
+Cause: optional scipy/networkx graph engine unavailable in tool-libs.
+Correction: replace trimesh.split with explicit face adjacency BFS; replace trimesh path graph construction with direct mesh_plane segments plus local closed-loop traversal.
+The model was not changed. A successful rerun follows in qa-report.json.

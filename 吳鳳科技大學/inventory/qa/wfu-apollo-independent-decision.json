@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-18",
+  "decision": "GO",
+  "blocking_findings": [],
+  "candidate_commit": "c3b57a7ab6f11c963118e3e15aab077427e8cb2a",
+  "base_commit": "a74674a22cc0b09082a16869776db752455ee506",
+  "fixed_stl_sha256": "9f748b6c8347bc8faaa1a9dd1194a164fff272510614c8a0629958a15ac67b87",
+  "fixed_scene_sha256": "22c8e3620d004559fcb87f86c02c603112c5b5a201df10658d0aeb259990472c",
+  "fixed_all_29_candidate_files": "provenance.json contains SHA-256, lengths and Git blobs; original and copy both match commit",
+  "original_candidate_unchanged": true,
+  "remote_or_publication_actions": false,
+  "independence": {
+    "author_rebuild": "Existing submitted claim only; retained separately from this review.",
+    "reviewer_rebuild": "Reviewer invoked the unchanged author generator into a fresh output and compared complete STL bytes. Same modelling algorithm; not a second independently authored model.",
+    "reviewer_geometry": "Separate struct parser, exact binary32 equal-coordinate merging, topology, integer/Fraction exhaustive pair intersection; no author QA/trimesh/manifold3d used for these tests.",
+    "reviewer_sections": "Separate segment/plane intersections, polygonization and material parity; finite sampling.",
+    "reviewer_scene": "Separate evaluated world mesh/oriented multiset and actual units/object inspection, one front render and decoded pixel comparison.",
+    "author_qa_execution_audit": "Tracing and rerunning the submitted QA is execution/claim auditing, not an independent algorithm."
+  },
+  "results": {
+    "exact_topology": {
+      "vertices": 126,
+      "triangles": 248,
+      "edges": 372,
+      "bounds_mm": [
+        [
+          -95.0,
+          -44.0,
+          0.0
+        ],
+        [
+          95.0,
+          44.0,
+          40.189998626708984
+        ]
+      ],
+      "extents_mm": [
+        190.0,
+        88.0,
+        40.189998626708984
+      ],
+      "exact_signed_volume_mm3_fraction": "9149763019442810717/17592186044416",
+      "signed_volume_mm3": 520103.81179131917,
+      "surface_area_mm2": 51965.48083520563,
+      "min_triangle_area_mm2": 1.153745689392963,
+      "edge_incidence_histogram": {
+        "2": 372
+      },
+      "winding_conflict_edges": [],
+      "boundary_edges": [],
+      "nonmanifold_edges": [],
+      "degenerate_triangles": [],
+      "duplicate_triangles": 0,
+      "nonmanifold_vertex_links": [],
+      "face_connected_components": 1,
+      "component_face_counts": [
+        248
+      ],
+      "euler": 2,
+      "stored_normals_opposed_to_geometry": [],
+      "merge_policy": "Exact equality of binary32 coordinate triples; no rounding, repair, or trimesh processing",
+      "passes": true
+    },
+    "exact_triangle_pairs": {
+      "method": "Every unordered pair: exact integer AABB exclusion, then all six edge/closed-triangle intersection tests using rational segment-plane and 2-D segment tests. Any contact beyond the exact indexed shared edge or vertex is rejected.",
+      "coordinate_arithmetic": "Python integers and fractions, exact for binary32 STL coordinates; no floating tolerance in pair tests",
+      "counts": {
+        "total_pairs": 30628,
+        "exact_aabb_candidates": 3029,
+        "coplanar_contact": 564,
+        "expected_edge_contacts": 372,
+        "expected_vertex_contacts": 1444,
+        "exact_aabb_disjoint": 27599,
+        "candidate_disjoint": 1213,
+        "noncoplanar_contact": 1252
+      },
+      "unexpected_contacts": [],
+      "passes": true,
+      "limitation": "A reproducible exact-coordinate algorithmic check, not an independently machine-verified formal proof or a physical-print guarantee."
+    },
+    "dense_sections": {
+      "method": "Own triangle/plane segments (XY rounded to 1e-8 mm), polygonize and odd crossing material parity; no candidate QA or trimesh functions used.",
+      "section_count": 2043,
+      "sampling": "0.02 mm midpoint grid plus every vertex-event interval midpoint and points 1e-6 mm above/below events, excluding exactly coplanar event levels.",
+      "first_section_build_plate_supported": true,
+      "feature_core_width_mm": 0.8,
+      "max_components": 1,
+      "invalid_or_open_sections": [],
+      "vanished_core_z_mm": [
+        40.13,
+        40.15,
+        40.17,
+        40.18999762670899
+      ],
+      "split_core_z_mm": [],
+      "maximum_outside_support_envelope_mm2": 1.0582024856375938e-06,
+      "support_violations_over_1e_5_mm2": [],
+      "shapely_version": "2.1.2",
+      "limitations": [
+        "Still finite section sampling; event-augmented grid examines all mesh vertex-height intervals but does not certify arbitrary 3-D minimum thickness.",
+        "The 45 degree envelope is a geometric support rule, not extrusion paths, bridges, cooling, shrinkage, adhesion, strength, or a test print.",
+        "A section core may survive while an attached taper is thinner than the test width; exact roof and eave tips converge to zero thickness."
+      ]
+    },
+    "independent_controls_all_pass": true,
+    "author_qa_trace": {
+      "aabb_candidates": 3029,
+      "coplanar": 823,
+      "noncoplanar": 2206,
+      "every_candidate_accounted_for": true
+    },
+    "rebuilt_stl_bytes_identical": true,
+    "evaluated_scene_equals_stl": true,
+    "actual_scene_units": {
+      "system": "METRIC",
+      "length_unit": "MILLIMETERS",
+      "scale_length": 0.0010000000474974513
+    },
+    "five_previews_framed": true,
+    "five_preview_hashes_match": true,
+    "independent_render_count": 1,
+    "independent_front_decoded_pixels_identical": true,
+    "different_pixels": 0
+  },
+  "retained_limitations": [
+    "No physical test print or machine-specific slicer/G-code verification.",
+    "201 author sections and 2043 reviewer sections are finite samples, not a global 3D minimum-thickness proof.",
+    "Dense sections expose thin mathematical ridge tip; last 0.074849 mm is below 0.8 mm horizontal width, accepted with existing disclosure.",
+    "Facade details, unknown faces, eave/ridge heights and print base are explicitly simplified or estimated.",
+    "Numerical checks do not certify extrusion, cooling, strength, adhesion, all scales, materials or machines.",
+    "Generic verifier hardening suggestions remain nonblocking because this fixed candidate was separately checked."
+  ],
+  "source_acquisition": "Official URLs opened with web; direct shell download DNS failed. Local readable PDF copies independently hashed to both requested SHAs and rendered/viewed.",
+  "supplied_library_backup": "Not downloaded or independently checked in this review; local handoff was readable.",
+  "report": "INDEPENDENT-REVIEW.md",
+  "report_sha256": "8823901d2363fae1f6ebb3fea226b28d70f6734e6ffa23ada17397da21bb3ee1"
+}

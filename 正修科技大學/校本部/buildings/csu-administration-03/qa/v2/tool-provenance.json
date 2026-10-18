@@ -1,0 +1,23 @@
+{
+  "tool": "PrusaSlicer portable console",
+  "version_from_actual_help_banner": "PrusaSlicer-2.9.6 based on Slic3r (with GUI support)",
+  "console_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "verification": "Independently hashed the existing executable and ran its actual --help successfully. No installation or system-profile mutation was performed.",
+  "data_directories": "Independent local CLI data directories; no user printer profile was edited.",
+  "baseline_profile": "source/qa/geometry-review-0.4mm-0.2mm-solid100-no-support.ini",
+  "auto_support_profile": "source/qa/geometry-review-0.4mm-0.2mm-solid100-auto45.ini",
+  "profile_generation": "Saved by the verified PrusaSlicer binary from an existing generic 0.4mm/0.2mm geometry review profile. Baseline explicitly uses 100% rectilinear and no supports; auto profile explicitly enables support_material, support_material_auto and threshold45.",
+  "geometry_runtime_observed": {
+    "python": "3.13.9",
+    "numpy": "2.5.4",
+    "shapely": "2.1.2",
+    "trimesh": "4.12.2"
+  },
+  "original_stl_checker_provenance": {
+    "repository_commit": "c311bc824e91dfa610164924cae51ef47ac8b3ab",
+    "source_directory": "吳鳳科技大學/校本部/buildings/wfu-shengyou/qa/verification/",
+    "unchanged_copied_modules": ["qa_common.py", "check_raw_mesh.py", "check_sections.py", "check_original_intersections.py", "check_intersection_controls.py"],
+    "file_sha256_evidence": "Each original report contains the actual checker source inventory; exact-contact reports bind their source independently. final-evidence-validation.json verifies actual current dependencies."
+  },
+  "scope": "Actual CLI slicing and digital geometry review only. No machine execution, physical print, support-removal or assembly trial."
+}

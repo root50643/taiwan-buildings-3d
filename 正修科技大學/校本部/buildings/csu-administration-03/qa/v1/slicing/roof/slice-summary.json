@@ -1,0 +1,73 @@
+{
+  "completed": true,
+  "passed": true,
+  "input_stl": "roof.stl",
+  "input_sha256": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+  "input_sha256_after": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+  "tool": "PrusaSlicer 2.9.6 portable console",
+  "tool_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "profile": "geometry-review-0.4mm-0.2mm-solid100-no-support.ini",
+  "profile_sha256": "8256c71d0a0147c028d2370feb44621d549b7ae522d744acbf86a8c4a276d929",
+  "commands": [
+    {
+      "stage": "info",
+      "exit_code": 0,
+      "seconds": 0.06988644599914551,
+      "log": "info.log",
+      "diagnostic_lines": []
+    },
+    {
+      "stage": "slice",
+      "exit_code": 0,
+      "seconds": 0.28174400329589844,
+      "log": "slice.log",
+      "diagnostic_lines": [
+        "65 => Searching support spots",
+        "69 => Alert if supports needed",
+        "89 => Calculating overhanging perimeters"
+      ]
+    },
+    {
+      "stage": "audit",
+      "exit_code": 0,
+      "seconds": 0.5237636566162109,
+      "log": "audit.log",
+      "diagnostic_lines": [
+        "  \"unsupported_arc_commands\": [],",
+        "  \"support_extrusion_segments\": 0,",
+        "  \"support_positive_filament_mm\": 0,",
+        "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+        "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+      ]
+    }
+  ],
+  "gcode": "QA-NOT-MACHINE-READY.gcode",
+  "gcode_sha256": "ba1eada489156a2657819aecb190c625d80f3d9c18aa37d09cb9023a0ad8b7f2",
+  "limits": "Actual generic 0.4mm nozzle / 0.2mm layer / 100% rectilinear / no-support slicing only. Not machine-calibrated Gcode and no physical print, adhesion, tolerance or assembly trial.",
+  "artifact_inventory": {
+    "audit.log": {
+      "bytes": 2751,
+      "sha256": "50a4f351b16c31e085f0f251cc82d82a06b385d37f3c11052b5f2f32beb89b4a"
+    },
+    "first-layer-toolpaths.png": {
+      "bytes": 49454,
+      "sha256": "fa8e633a29353a193f7de7b8d3162d04ee5953f9bf3ce2a2d4f79817e6bb165f"
+    },
+    "gcode-audit.json": {
+      "bytes": 43316,
+      "sha256": "7fd5b53f2529047c99503bb0098e660ce1b386795ff9401fecaf05a0d2ec736a"
+    },
+    "info.log": {
+      "bytes": 410,
+      "sha256": "045fe6045e83bca3ad25b66c94d7e8f66d86c6f6db28ca759d1b50429dbcfcc9"
+    },
+    "QA-NOT-MACHINE-READY.gcode": {
+      "bytes": 418284,
+      "sha256": "ba1eada489156a2657819aecb190c625d80f3d9c18aa37d09cb9023a0ad8b7f2"
+    },
+    "slice.log": {
+      "bytes": 522,
+      "sha256": "6411c6817acbdb97ce8feda0cc7fddfa455267494485e066f5d737733404db0b"
+    }
+  }
+}

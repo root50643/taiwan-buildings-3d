@@ -1,0 +1,85 @@
+{
+  "passed": false,
+  "completed": true,
+  "checks": {
+    "normal_chords_screen_passed": false,
+    "layer_support_screen_passed": false,
+    "no_downward_faces_above_plate": false,
+    "input_unchanged": true
+  },
+  "stl_sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+  "checker_sources_sha256": {
+    "audit_gcode.py": "aac539d203791dbc28e25cd5619093e708f68e98e54f0ee3c860df05aa906ec9",
+    "check_intersection_controls.py": "baae6f0012966a3fb539f2dd18c19573016959f426f6ba25ce2e26dacdf31ca9",
+    "check_manufacturing.py": "98973ca81693049eb2e1c5dfd15ca6765526e4271eb1d31c762b53a1ab81a403",
+    "check_manufacturing_controls.py": "092abdc8d0040a69e7c0672c274b6639225b79616e9dd241ef725c9ea4bef90f",
+    "check_original_intersections.py": "d0c85b55c4d6cc06030696ba2bb97da749fc8604d44a7360854d26a28c7ec50d",
+    "check_raw_mesh.py": "5e8881bca87271d923f83fa0dbcf6e249a801ef820fc08995c0a7da1ef026da0",
+    "check_sections.py": "8046c447e01724726545686e9015a1da2e9b4db52b7d328ab5e083f01c114f02",
+    "qa_common.py": "4ceedd3b4d60e871513ab8e4ddd8da3c29b5cf17e34610e84edc4fa9bea6d5db",
+    "run_part_qa.py": "74e238ddb4ac70aa1a53733b88c8b0c0b3490c3b063e8f23844ee3fa9c440817",
+    "run_slice.py": "bdb0fda71568f8e572283666556b8919c1525c2d1a05de3feefb79e53d33cdc5",
+    "supplement_body_flags.py": "228e3729a401b2c27cc4f2501615fbb7e85b2b57278cc7a818c91653057110b5",
+    "supplement_flag_endpoints.py": "ed01d0821399b2b9361cf2f204886d37f8201aebf3b36d605bb08c2c0dc16c46"
+  },
+  "normal_chords": {
+    "samples": 66960,
+    "samples_per_original_face": 10,
+    "minimum_required_chord_mm": 0.8,
+    "minimum_first_solid_chord_mm": 1.8999938964843746,
+    "flagged_sample_count": 6,
+    "short_sample_count": 0,
+    "passed": false,
+    "detail": "normal-chords.jsonl.gz",
+    "detail_sha256": "781fd46e49dd3e76bdee5e7e96bebb537a3cf40f132bd1f632568a1baaa8717f",
+    "flags": "normal-chord-flags.json.gz",
+    "short_samples": "normal-chord-short.json.gz",
+    "ray_origin_outside_offset_mm": 1e-05,
+    "intersection_event_grouping_tolerance_mm": 1e-06,
+    "limits": "Finite numerical original-normal rays; not global minimum thickness. Shared-face intersections grouped only at stated numerical tolerance. All flags remain failures."
+  },
+  "layer_support": {
+    "passed": false,
+    "sampled_layers": 1275,
+    "flagged_layers": 97,
+    "downward_faces_above_plate": 806,
+    "downward_area_above_plate_mm2": 725.5298777055021,
+    "worst_outside_envelope_mm2": 28.039950873843534,
+    "pitch_mm": 0.2,
+    "offsets_from_z_min_mm": [
+      0.031,
+      0.071,
+      0.137
+    ],
+    "angle_from_vertical_deg": 45,
+    "horizontal_reach_per_layer_mm": 0.19999999999999998,
+    "reporting_tolerance_mm2": 0.01,
+    "limits": "Three finite layer schedules; first section assumed plate-supported. Geometric envelope cannot simulate extrusion, bridging, cooling, adhesion or arbitrary sublayer details. Downward faces are separately flagged without waiver."
+  },
+  "artifacts": {
+    "downward-face-flags.json.gz": {
+      "bytes": 10048,
+      "sha256": "6bf618e3edb5744cba28a730fb8daa6b0d13eaacdb565962c9c20257b01126b1"
+    },
+    "normal-chord-flags.json.gz": {
+      "bytes": 504,
+      "sha256": "d2c6e7fc739b3e618da61192dad196ffc135138d7c1d49b4fb2e034f3b09ea23"
+    },
+    "normal-chord-short.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal-chords.jsonl.gz": {
+      "bytes": 1813309,
+      "sha256": "781fd46e49dd3e76bdee5e7e96bebb537a3cf40f132bd1f632568a1baaa8717f"
+    },
+    "support-layer-details.json.gz": {
+      "bytes": 65778,
+      "sha256": "d5d54e1351a7349909e7a63e622c88c616bce5f743b647860de84095008236fe"
+    },
+    "support-layer-flags.json.gz": {
+      "bytes": 389699,
+      "sha256": "08936d476cf79d67ab009afb409ec140e77175cbc66076c662704945a27b5050"
+    }
+  }
+}

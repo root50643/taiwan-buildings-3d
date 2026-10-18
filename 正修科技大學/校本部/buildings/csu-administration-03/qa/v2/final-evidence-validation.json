@@ -1,0 +1,81 @@
+{
+  "passed": false,
+  "strict_geometry_passed": false,
+  "evidence_integrity_passed": true,
+  "parts": [
+    {
+      "part": "body",
+      "stl_sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+      "qa_directory": "qa/v2/body",
+      "topology_passed": true,
+      "exact_contacts_passed": true,
+      "sections_passed": true,
+      "manufacturing_passed": false,
+      "manufacturing_checks": {
+        "normal_chords_screen_passed": false,
+        "layer_support_screen_passed": false,
+        "no_downward_faces_above_plate": false,
+        "input_unchanged": true
+      },
+      "normal_short_samples": 0,
+      "normal_ambiguous_samples": 6,
+      "layer_support_flags": 97
+    },
+    {
+      "part": "roof",
+      "stl_sha256": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+      "qa_directory": "qa/v1/roof",
+      "topology_passed": true,
+      "exact_contacts_passed": true,
+      "sections_passed": true,
+      "manufacturing_passed": false,
+      "manufacturing_checks": {
+        "normal_chords_screen_passed": false,
+        "layer_support_screen_passed": true,
+        "no_downward_faces_above_plate": true,
+        "input_unchanged": true
+      },
+      "normal_short_samples": 71,
+      "normal_ambiguous_samples": 0,
+      "layer_support_flags": 0
+    }
+  ],
+  "slices": [
+    {
+      "part": "body",
+      "qa_directory": "qa/v2/slicing/body",
+      "execution_passed": true,
+      "support_extrusion_segments": 0,
+      "bridge_infill_segments": 0,
+      "overhang_perimeter_segments": 1
+    },
+    {
+      "part": "roof",
+      "qa_directory": "qa/v1/slicing/roof",
+      "execution_passed": true,
+      "support_extrusion_segments": 0,
+      "bridge_infill_segments": 0,
+      "overhang_perimeter_segments": 0
+    }
+  ],
+  "checks": {
+    "roof_reuse_same_actual_stl_sha256": true,
+    "actual_geometry_reports_and_all_detail_hashes_current": true,
+    "positive_negative_control_dependency_hashes_unchanged": true,
+    "actual_slice_inputs_profiles_gcode_and_audits_current": true,
+    "v2_full_recorded_checker_inventory_current": true,
+    "assembly_display_raw_solid_binding_current": true
+  },
+  "validator_source_sha256": "170461554d700d91642ee2e98742d24b8af08ef3c9afeb2605d808d2cc539bbc",
+  "retained_initial_v1_body_checks": {
+    "all_stages_pass": false,
+    "stl_unchanged": true,
+    "checker_sources_unchanged": false
+  },
+  "retained_initial_v1_roof_checks": {
+    "all_stages_pass": false,
+    "stl_unchanged": true,
+    "checker_sources_unchanged": true
+  },
+  "interpretation": "Evidence-integrity checks validate bindings only. They do not waive original failed thin/normal/support gates. v1 wrapper full-folder inventory changed while unrelated slicing tools were added; historical failure remains. Reuse depends explicitly on unchanged algorithms and actual STL hashes. No physical print or machine validation."
+}

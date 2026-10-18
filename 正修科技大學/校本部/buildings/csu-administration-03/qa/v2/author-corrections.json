@@ -1,0 +1,28 @@
+{
+  "version": "v2",
+  "previous_version": "v1",
+  "geometry_change": "Removed four optional 1.8x1.2mm protruding front piers after window subtraction left 0.8mm section edges. Between-pane facade mass retained.",
+  "preserved_evidence": [
+    "models/v1/",
+    "qa/v1/",
+    "qa/v1/source-snapshot/"
+  ],
+  "retained_issues": "Shallow relief lintel support and convex roof-edge finite ray flags remain actual diagnostic failures; not reclassified as strict pass.",
+  "author_tooling_failures": [
+    {
+      "operation": "rebuild output path",
+      "status": "failed before output generation",
+      "reason": "Initial relative destination traversed outside workspace write boundary",
+      "evidence": "qa/v1/rebuild.log",
+      "correction": "Explicit fresh directory within model qa folder"
+    },
+    {
+      "operation": "default OS temporary directory rebuild",
+      "status": "failed before STL generation",
+      "reason": "Sandbox redirected TEMP path not writable by child runtime",
+      "evidence": "qa/v1/rebuild-temp-denied.json",
+      "correction": "Explicit fresh directory within model qa folder; final independent rebuild succeeded"
+    }
+  ],
+  "privacy_note": "Host-home prefixes redacted in retained error logs. No coordinates or failure/pass status changed."
+}

@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "passed": true,
+  "input_stl": "body.stl",
+  "input_sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+  "input_sha256_after": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+  "tool": "PrusaSlicer 2.9.6 portable console",
+  "tool_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "profile": "geometry-review-0.4mm-0.2mm-solid100-auto45.ini",
+  "profile_sha256": "ecf4958fe46d81a102cd66c27d8978462c4c74e2c3dc010f5a1d44140d08d027",
+  "commands": [
+    {
+      "stage": "info",
+      "exit_code": 0,
+      "seconds": 0.06876158714294434,
+      "log": "info.log",
+      "diagnostic_lines": []
+    },
+    {
+      "stage": "slice",
+      "exit_code": 0,
+      "seconds": 4.8459765911102295,
+      "log": "slice.log",
+      "diagnostic_lines": [
+        "65 => Searching support spots",
+        "69 => Alert if supports needed",
+        "70 => Generating support material",
+        "89 => Calculating overhanging perimeters"
+      ]
+    },
+    {
+      "stage": "audit",
+      "exit_code": 0,
+      "seconds": 7.2746357917785645,
+      "log": "audit.log",
+      "diagnostic_lines": [
+        "  \"unsupported_arc_commands\": [],",
+        "    \"Support material interface\": 874,",
+        "    \"Support material\": 950,",
+        "    \"Overhang perimeter\": 1",
+        "    \"Support material interface\": 61223,",
+        "    \"Support material\": 20930,",
+        "    \"Overhang perimeter\": 1",
+        "  \"support_extrusion_segments\": 82153,",
+        "  \"support_positive_filament_mm\": 7273.39394,",
+        "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+        "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+      ]
+    }
+  ],
+  "gcode": "QA-NOT-MACHINE-READY.gcode",
+  "gcode_sha256": "6ab11d448e2978b1cf51464251a34623e8413f6e89e8d98df70001ea38ebc6ad",
+  "limits": "Actual generic 0.4mm nozzle / 0.2mm layer / 100% rectilinear / no-support slicing only. Not machine-calibrated Gcode and no physical print, adhesion, tolerance or assembly trial.",
+  "artifact_inventory": {
+    "audit.log": {
+      "bytes": 3010,
+      "sha256": "65766fe3232f6e7caf502b9e6499a0cf111b0cc3e1e62d0d7c9cc7630ecdf4f2"
+    },
+    "first-layer-toolpaths.png": {
+      "bytes": 33911,
+      "sha256": "c616e60e7d3e0e3a8a811c8b712acff31bdd92555d8503e89543690316f9499b"
+    },
+    "gcode-audit.json": {
+      "bytes": 373925,
+      "sha256": "2c2ed381c6a214e53c7d9e956c58e7e994af5d84d6bbc696ecda936502657900"
+    },
+    "info.log": {
+      "bytes": 416,
+      "sha256": "87c6d5ae905a1803122e83aa3cceb1e4c9eeee21b2155765858efab1769ab5ba"
+    },
+    "QA-NOT-MACHINE-READY.gcode": {
+      "bytes": 17582910,
+      "sha256": "6ab11d448e2978b1cf51464251a34623e8413f6e89e8d98df70001ea38ebc6ad"
+    },
+    "slice.log": {
+      "bytes": 558,
+      "sha256": "e13f86821b84388d5d1335e5b7292f36880693267984544285fb2e9686d1bb6a"
+    }
+  }
+}

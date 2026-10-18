@@ -1,0 +1,75 @@
+{
+  "completed": true,
+  "passed": true,
+  "input_stl": "body.stl",
+  "input_sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+  "input_sha256_after": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+  "tool": "PrusaSlicer 2.9.6 portable console",
+  "tool_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "profile": "geometry-review-0.4mm-0.2mm-solid100-no-support.ini",
+  "profile_sha256": "8256c71d0a0147c028d2370feb44621d549b7ae522d744acbf86a8c4a276d929",
+  "commands": [
+    {
+      "stage": "info",
+      "exit_code": 0,
+      "seconds": 0.08356094360351562,
+      "log": "info.log",
+      "diagnostic_lines": []
+    },
+    {
+      "stage": "slice",
+      "exit_code": 0,
+      "seconds": 4.324883222579956,
+      "log": "slice.log",
+      "diagnostic_lines": [
+        "65 => Searching support spots",
+        "69 => Alert if supports needed",
+        "89 => Calculating overhanging perimeters"
+      ]
+    },
+    {
+      "stage": "audit",
+      "exit_code": 0,
+      "seconds": 5.563469171524048,
+      "log": "audit.log",
+      "diagnostic_lines": [
+        "  \"unsupported_arc_commands\": [],",
+        "    \"Overhang perimeter\": 1",
+        "    \"Overhang perimeter\": 1",
+        "  \"support_extrusion_segments\": 0,",
+        "  \"support_positive_filament_mm\": 0,",
+        "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+        "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+      ]
+    }
+  ],
+  "gcode": "QA-NOT-MACHINE-READY.gcode",
+  "gcode_sha256": "494d2183e6cfb471b3023181c84724400312ebacf26d7154dc56711f562e878d",
+  "limits": "Actual generic 0.4mm nozzle / 0.2mm layer / 100% rectilinear / no-support slicing only. Not machine-calibrated Gcode and no physical print, adhesion, tolerance or assembly trial.",
+  "artifact_inventory": {
+    "audit.log": {
+      "bytes": 2849,
+      "sha256": "36a720ee0b639841d71dc36c8e5025c8a6c18ff265f1a2a6b6d9c55b1fe1ad60"
+    },
+    "first-layer-toolpaths.png": {
+      "bytes": 33911,
+      "sha256": "c616e60e7d3e0e3a8a811c8b712acff31bdd92555d8503e89543690316f9499b"
+    },
+    "gcode-audit.json": {
+      "bytes": 280607,
+      "sha256": "2e7408b3800e0327104082feb6b2407b6e51dd3011c2157541bed1a394da5298"
+    },
+    "info.log": {
+      "bytes": 416,
+      "sha256": "87c6d5ae905a1803122e83aa3cceb1e4c9eeee21b2155765858efab1769ab5ba"
+    },
+    "QA-NOT-MACHINE-READY.gcode": {
+      "bytes": 14896357,
+      "sha256": "494d2183e6cfb471b3023181c84724400312ebacf26d7154dc56711f562e878d"
+    },
+    "slice.log": {
+      "bytes": 522,
+      "sha256": "6411c6817acbdb97ce8feda0cc7fddfa455267494485e066f5d737733404db0b"
+    }
+  }
+}

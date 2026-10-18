@@ -1,0 +1,60 @@
+{
+  "passed": false,
+  "strict_passed": false,
+  "checks": {
+    "all_three_offsets_have_layers": true,
+    "all_original_sections_valid_without_repair": true,
+    "every_original_polygon_checked": true,
+    "all_original_polygons_survive_erosion_and_opening": true,
+    "no_original_polygon_splits_after_erosion_or_opening": true,
+    "all_opened_and_eroded_polygons_valid": true,
+    "all_individual_polygon_losses_le_one_percent": false
+  },
+  "stl_sha256": "469a394f6e20ef6bd854c8cedba1bcbe3627dd37ca0a05cf8ea3a88db0ba834c",
+  "z_min_mm": 0.0,
+  "z_max_mm": 85.0,
+  "pitch_mm": 0.2,
+  "offsets_from_z_min_mm": [
+    0.031,
+    0.071,
+    0.137
+  ],
+  "opening_reference_width_mm": 0.8,
+  "per_polygon_loss_limit": 0.01,
+  "per_offset": [
+    {
+      "offset_mm": 0.031,
+      "sampled_layers": 425
+    },
+    {
+      "offset_mm": 0.071,
+      "sampled_layers": 425
+    },
+    {
+      "offset_mm": 0.137,
+      "sampled_layers": 425
+    }
+  ],
+  "sampled_layers": 1275,
+  "original_polygon_count": 1563,
+  "failed_layer_count": 288,
+  "failed_polygon_count": 288,
+  "maximum_individual_polygon_loss_fraction": 0.09551867689959798,
+  "detail_file": "section-details.json.gz",
+  "detail_sha256": "d46cb94470b053dca438b0c4cca30a8f3cae5fdbae4799933898ccd1f22e6fb9",
+  "failure_file": "section-failures.json.gz",
+  "failure_sha256": "71485eaf17b4f8053aa8a8ee9954b45ccf25271a9bce62b4373bf937469ba33a",
+  "checker_sources_sha256": {
+    "audit_gcode.py": "aac539d203791dbc28e25cd5619093e708f68e98e54f0ee3c860df05aa906ec9",
+    "check_intersection_controls.py": "baae6f0012966a3fb539f2dd18c19573016959f426f6ba25ce2e26dacdf31ca9",
+    "check_manufacturing.py": "98973ca81693049eb2e1c5dfd15ca6765526e4271eb1d31c762b53a1ab81a403",
+    "check_manufacturing_controls.py": "092abdc8d0040a69e7c0672c274b6639225b79616e9dd241ef725c9ea4bef90f",
+    "check_original_intersections.py": "d0c85b55c4d6cc06030696ba2bb97da749fc8604d44a7360854d26a28c7ec50d",
+    "check_raw_mesh.py": "5e8881bca87271d923f83fa0dbcf6e249a801ef820fc08995c0a7da1ef026da0",
+    "check_sections.py": "8046c447e01724726545686e9015a1da2e9b4db52b7d328ab5e083f01c114f02",
+    "qa_common.py": "4ceedd3b4d60e871513ab8e4ddd8da3c29b5cf17e34610e84edc4fa9bea6d5db",
+    "run_part_qa.py": "fb382cb4d9edb24a513c90a5c3e94fe76a783f551e982cbb037d242a0b8ad91d"
+  },
+  "method": "Exact original triangles; canonical shared-edge interpolation; closed degree-two contour graphs; strict nesting and explicit valid Polygon holes. Each original Polygon independently eroded and opened with radius 0.4 mm. All per-polygon losses recorded; no area-averaging exemption, contour repair, coordinate rounding or lost-component omission.",
+  "limitations": "Three finite XY layer schedules and morphological screen, not a slicer path or global wall-thickness proof. Original vertex coincidences are rejected rather than displaced."
+}

@@ -1,0 +1,5985 @@
+{
+  "version": "v1",
+  "units": "mm",
+  "parameter_sha256": "2d86733a6e4eec067c7d070f00ad1cf0b1592af02451642036c7ba085656bc33",
+  "libraries": {
+    "numpy": "2.5.4",
+    "trimesh": "4.12.2",
+    "manifold3d": "3.3.2"
+  },
+  "parts": {
+    "body": {
+      "path": "parts/body.stl",
+      "sha256": "469a394f6e20ef6bd854c8cedba1bcbe3627dd37ca0a05cf8ea3a88db0ba834c",
+      "bounds_mm": [
+        [
+          -100.0,
+          -36.0,
+          0.0
+        ],
+        [
+          100.0,
+          36.0,
+          85.0
+        ]
+      ],
+      "triangles": 6960,
+      "volume_mm3": 439953.214,
+      "manifold_status": "NoError",
+      "printable_route": true
+    },
+    "roof": {
+      "path": "parts/roof.stl",
+      "sha256": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+      "bounds_mm": [
+        [
+          -24.0,
+          -18.0,
+          0.0
+        ],
+        [
+          24.0,
+          18.0,
+          11.0
+        ]
+      ],
+      "triangles": 28,
+      "volume_mm3": 11066.0,
+      "manifold_status": "NoError",
+      "printable_route": true
+    },
+    "assembly": {
+      "path": "assembly.stl",
+      "sha256": "1cd22ae733573969a2764b7352abc9740ee291d3d12a0d6cfec90d46596fe1a1",
+      "bounds_mm": [
+        [
+          -100.0,
+          -36.0,
+          0.0
+        ],
+        [
+          100.0,
+          36.0,
+          96.0
+        ]
+      ],
+      "triangles": 6992,
+      "volume_mm3": 451019.214,
+      "manifold_status": "NoError",
+      "printable_route": false
+    }
+  },
+  "feature_ledger": [
+    {
+      "name": "display plinth",
+      "kind": "solid",
+      "center_xy": [
+        0,
+        0
+      ],
+      "bottom": 0,
+      "extents": [
+        200,
+        72,
+        3
+      ]
+    },
+    {
+      "name": "central higher main block",
+      "kind": "solid",
+      "center_xy": [
+        0,
+        0
+      ],
+      "bottom": 3,
+      "extents": [
+        52,
+        36,
+        75
+      ]
+    },
+    {
+      "name": "long wing -1",
+      "kind": "solid",
+      "center_xy": [
+        -58.5,
+        2.5
+      ],
+      "bottom": 3,
+      "extents": [
+        67.0,
+        27,
+        64
+      ]
+    },
+    {
+      "name": "end vertical stair pier -1",
+      "kind": "solid",
+      "center_xy": [
+        -86,
+        -0.5
+      ],
+      "bottom": 3,
+      "extents": [
+        12,
+        33,
+        65
+      ]
+    },
+    {
+      "name": "wing terrace parapet -1",
+      "kind": "wall",
+      "thickness": 2,
+      "bottom": 67,
+      "top": 69
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -76.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -70.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -65.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -59.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -54.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -48.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -43.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -37.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        -32.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        -92,
+        1
+      ],
+      "bottom": 12,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        -92,
+        1
+      ],
+      "bottom": 21,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        -92,
+        1
+      ],
+      "bottom": 30,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        -92,
+        1
+      ],
+      "bottom": 39,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        -92,
+        1
+      ],
+      "bottom": 48,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        -92,
+        1
+      ],
+      "bottom": 57,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "grounded front wing pier",
+      "kind": "solid",
+      "center_xy": [
+        -32,
+        -11.4
+      ],
+      "bottom": 3,
+      "extents": [
+        1.8,
+        1.2,
+        57
+      ]
+    },
+    {
+      "name": "grounded front wing pier",
+      "kind": "solid",
+      "center_xy": [
+        -79,
+        -11.4
+      ],
+      "bottom": 3,
+      "extents": [
+        1.8,
+        1.2,
+        57
+      ]
+    },
+    {
+      "name": "long wing 1",
+      "kind": "solid",
+      "center_xy": [
+        58.5,
+        2.5
+      ],
+      "bottom": 3,
+      "extents": [
+        67.0,
+        27,
+        64
+      ]
+    },
+    {
+      "name": "end vertical stair pier 1",
+      "kind": "solid",
+      "center_xy": [
+        86,
+        -0.5
+      ],
+      "bottom": 3,
+      "extents": [
+        12,
+        33,
+        65
+      ]
+    },
+    {
+      "name": "wing terrace parapet 1",
+      "kind": "wall",
+      "thickness": 2,
+      "bottom": 67,
+      "top": 69
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 9.4,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 15.8,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 22.200000000000003,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 28.6,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 35.0,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 41.400000000000006,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 47.800000000000004,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        30.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        35.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        41.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        46.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        52.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        57.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        63.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        68.5,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "front wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        -10.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "rear wing pane",
+      "kind": "cut",
+      "center_xy": [
+        74.0,
+        15.9
+      ],
+      "bottom": 54.2,
+      "extents": [
+        3.6,
+        0.6,
+        2.4
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        92,
+        1
+      ],
+      "bottom": 12,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        92,
+        1
+      ],
+      "bottom": 21,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        92,
+        1
+      ],
+      "bottom": 30,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        92,
+        1
+      ],
+      "bottom": 39,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        92,
+        1
+      ],
+      "bottom": 48,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "end vertical recessed bay",
+      "kind": "cut",
+      "center_xy": [
+        92,
+        1
+      ],
+      "bottom": 57,
+      "extents": [
+        0.8,
+        20,
+        5
+      ]
+    },
+    {
+      "name": "grounded front wing pier",
+      "kind": "solid",
+      "center_xy": [
+        32,
+        -11.4
+      ],
+      "bottom": 3,
+      "extents": [
+        1.8,
+        1.2,
+        57
+      ]
+    },
+    {
+      "name": "grounded front wing pier",
+      "kind": "solid",
+      "center_xy": [
+        79,
+        -11.4
+      ],
+      "bottom": 3,
+      "extents": [
+        1.8,
+        1.2,
+        57
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -19,
+        -17.9
+      ],
+      "bottom": 37.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -12,
+        -17.9
+      ],
+      "bottom": 37.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -5,
+        -17.9
+      ],
+      "bottom": 37.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        5,
+        -17.9
+      ],
+      "bottom": 37.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        12,
+        -17.9
+      ],
+      "bottom": 37.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        19,
+        -17.9
+      ],
+      "bottom": 37.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -19,
+        -17.9
+      ],
+      "bottom": 43.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -12,
+        -17.9
+      ],
+      "bottom": 43.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -5,
+        -17.9
+      ],
+      "bottom": 43.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        5,
+        -17.9
+      ],
+      "bottom": 43.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        12,
+        -17.9
+      ],
+      "bottom": 43.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        19,
+        -17.9
+      ],
+      "bottom": 43.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -19,
+        -17.9
+      ],
+      "bottom": 49.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -12,
+        -17.9
+      ],
+      "bottom": 49.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -5,
+        -17.9
+      ],
+      "bottom": 49.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        5,
+        -17.9
+      ],
+      "bottom": 49.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        12,
+        -17.9
+      ],
+      "bottom": 49.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        19,
+        -17.9
+      ],
+      "bottom": 49.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -19,
+        -17.9
+      ],
+      "bottom": 55.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -12,
+        -17.9
+      ],
+      "bottom": 55.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -5,
+        -17.9
+      ],
+      "bottom": 55.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        5,
+        -17.9
+      ],
+      "bottom": 55.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        12,
+        -17.9
+      ],
+      "bottom": 55.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        19,
+        -17.9
+      ],
+      "bottom": 55.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -19,
+        -17.9
+      ],
+      "bottom": 61.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -12,
+        -17.9
+      ],
+      "bottom": 61.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -5,
+        -17.9
+      ],
+      "bottom": 61.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        5,
+        -17.9
+      ],
+      "bottom": 61.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        12,
+        -17.9
+      ],
+      "bottom": 61.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        19,
+        -17.9
+      ],
+      "bottom": 61.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -19,
+        -17.9
+      ],
+      "bottom": 67.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -12,
+        -17.9
+      ],
+      "bottom": 67.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        -5,
+        -17.9
+      ],
+      "bottom": 67.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        5,
+        -17.9
+      ],
+      "bottom": 67.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        12,
+        -17.9
+      ],
+      "bottom": 67.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central front pane",
+      "kind": "cut",
+      "center_xy": [
+        19,
+        -17.9
+      ],
+      "bottom": 67.0,
+      "extents": [
+        4.4,
+        0.6,
+        3.8
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 10.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 10.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 10.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 10.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 10.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 16.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 16.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 16.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 16.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 16.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 22.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 22.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 22.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 22.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 22.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 28.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 28.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 28.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 28.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 28.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 34.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 34.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 34.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 34.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 34.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 40.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 40.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 40.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 40.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 40.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 46.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 46.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 46.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 46.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 46.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 52.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 52.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 52.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 52.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 52.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 58.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 58.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 58.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 58.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 58.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 64.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 64.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 64.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 64.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 64.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -18,
+        17.9
+      ],
+      "bottom": 70.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -10,
+        17.9
+      ],
+      "bottom": 70.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        -2,
+        17.9
+      ],
+      "bottom": 70.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        6,
+        17.9
+      ],
+      "bottom": 70.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "central rear pane",
+      "kind": "cut",
+      "center_xy": [
+        14,
+        17.9
+      ],
+      "bottom": 70.0,
+      "extents": [
+        5.4,
+        0.6,
+        3.3
+      ]
+    },
+    {
+      "name": "clerestory solid support",
+      "kind": "solid",
+      "center_xy": [
+        0,
+        0
+      ],
+      "bottom": 78,
+      "extents": [
+        40,
+        28,
+        7
+      ]
+    },
+    {
+      "name": "clerestory front relief",
+      "kind": "cut",
+      "center_xy": [
+        -15,
+        -13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory rear relief",
+      "kind": "cut",
+      "center_xy": [
+        -15,
+        13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory front relief",
+      "kind": "cut",
+      "center_xy": [
+        -7.5,
+        -13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory rear relief",
+      "kind": "cut",
+      "center_xy": [
+        -7.5,
+        13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory front relief",
+      "kind": "cut",
+      "center_xy": [
+        0,
+        -13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory rear relief",
+      "kind": "cut",
+      "center_xy": [
+        0,
+        13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory front relief",
+      "kind": "cut",
+      "center_xy": [
+        7.5,
+        -13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory rear relief",
+      "kind": "cut",
+      "center_xy": [
+        7.5,
+        13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory front relief",
+      "kind": "cut",
+      "center_xy": [
+        15,
+        -13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "clerestory rear relief",
+      "kind": "cut",
+      "center_xy": [
+        15,
+        13.9
+      ],
+      "bottom": 80,
+      "extents": [
+        5.4,
+        0.6,
+        3
+      ]
+    },
+    {
+      "name": "central shoulder",
+      "kind": "solid",
+      "center_xy": [
+        -23.5,
+        -2
+      ],
+      "bottom": 67,
+      "extents": [
+        5,
+        32,
+        11
+      ]
+    },
+    {
+      "name": "central shoulder",
+      "kind": "solid",
+      "center_xy": [
+        23.5,
+        -2
+      ],
+      "bottom": 67,
+      "extents": [
+        5,
+        32,
+        11
+      ]
+    },
+    {
+      "name": "filled entrance porch",
+      "kind": "solid",
+      "center_xy": [
+        0,
+        -22.5
+      ],
+      "bottom": 3,
+      "extents": [
+        34,
+        13.4,
+        24
+      ]
+    },
+    {
+      "name": "filled front gable",
+      "kind": "solid_prism",
+      "bounds": [
+        [
+          -17,
+          -29,
+          27
+        ],
+        [
+          17,
+          -15.5,
+          36
+        ]
+      ],
+      "simplification": "Solid-backed porch; no hidden interior or trapped support"
+    },
+    {
+      "name": "entrance shallow door",
+      "kind": "cut",
+      "center_xy": [
+        0,
+        -28.9
+      ],
+      "bottom": 7,
+      "extents": [
+        17,
+        0.7,
+        13
+      ]
+    },
+    {
+      "name": "entry step 0",
+      "kind": "solid",
+      "center_xy": [
+        0,
+        -29.8
+      ],
+      "bottom": 3,
+      "extents": [
+        23,
+        2.8,
+        3.6
+      ]
+    },
+    {
+      "name": "entry step 1",
+      "kind": "solid",
+      "center_xy": [
+        0,
+        -30.6
+      ],
+      "bottom": 3,
+      "extents": [
+        23,
+        5.199999999999999,
+        2.6
+      ]
+    },
+    {
+      "name": "entry step 2",
+      "kind": "solid",
+      "center_xy": [
+        0,
+        -31.400000000000002
+      ],
+      "bottom": 3,
+      "extents": [
+        23,
+        7.6,
+        1.6
+      ]
+    }
+  ],
+  "assembly_placement": {
+    "body_translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "roof_translation_mm": [
+      0,
+      0,
+      85
+    ],
+    "roof_joint": "flat butt contact at z85; centered in x and y; glue after trial fit",
+    "counting": "One representative building model set, two physical print parts"
+  }
+}

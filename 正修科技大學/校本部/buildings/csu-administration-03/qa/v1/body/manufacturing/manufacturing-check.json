@@ -1,0 +1,83 @@
+{
+  "passed": false,
+  "completed": true,
+  "checks": {
+    "normal_chords_screen_passed": false,
+    "layer_support_screen_passed": false,
+    "no_downward_faces_above_plate": false,
+    "input_unchanged": true
+  },
+  "stl_sha256": "469a394f6e20ef6bd854c8cedba1bcbe3627dd37ca0a05cf8ea3a88db0ba834c",
+  "checker_sources_sha256": {
+    "audit_gcode.py": "aac539d203791dbc28e25cd5619093e708f68e98e54f0ee3c860df05aa906ec9",
+    "check_intersection_controls.py": "baae6f0012966a3fb539f2dd18c19573016959f426f6ba25ce2e26dacdf31ca9",
+    "check_manufacturing.py": "98973ca81693049eb2e1c5dfd15ca6765526e4271eb1d31c762b53a1ab81a403",
+    "check_manufacturing_controls.py": "092abdc8d0040a69e7c0672c274b6639225b79616e9dd241ef725c9ea4bef90f",
+    "check_original_intersections.py": "d0c85b55c4d6cc06030696ba2bb97da749fc8604d44a7360854d26a28c7ec50d",
+    "check_raw_mesh.py": "5e8881bca87271d923f83fa0dbcf6e249a801ef820fc08995c0a7da1ef026da0",
+    "check_sections.py": "8046c447e01724726545686e9015a1da2e9b4db52b7d328ab5e083f01c114f02",
+    "qa_common.py": "4ceedd3b4d60e871513ab8e4ddd8da3c29b5cf17e34610e84edc4fa9bea6d5db",
+    "run_part_qa.py": "fb382cb4d9edb24a513c90a5c3e94fe76a783f551e982cbb037d242a0b8ad91d",
+    "run_slice.py": "bdb0fda71568f8e572283666556b8919c1525c2d1a05de3feefb79e53d33cdc5"
+  },
+  "normal_chords": {
+    "samples": 69600,
+    "samples_per_original_face": 10,
+    "minimum_required_chord_mm": 0.8,
+    "minimum_first_solid_chord_mm": 0.8000001907348633,
+    "flagged_sample_count": 8,
+    "short_sample_count": 0,
+    "passed": false,
+    "detail": "normal-chords.jsonl.gz",
+    "detail_sha256": "ba5df6cff7865cfef90e3961958dfaea80e140edc557a40d3da90b51b4c1b594",
+    "flags": "normal-chord-flags.json.gz",
+    "short_samples": "normal-chord-short.json.gz",
+    "ray_origin_outside_offset_mm": 1e-05,
+    "intersection_event_grouping_tolerance_mm": 1e-06,
+    "limits": "Finite numerical original-normal rays; not global minimum thickness. Shared-face intersections grouped only at stated numerical tolerance. All flags remain failures."
+  },
+  "layer_support": {
+    "passed": false,
+    "sampled_layers": 1275,
+    "flagged_layers": 97,
+    "downward_faces_above_plate": 852,
+    "downward_area_above_plate_mm2": 729.5298738908049,
+    "worst_outside_envelope_mm2": 28.039950435151127,
+    "pitch_mm": 0.2,
+    "offsets_from_z_min_mm": [
+      0.031,
+      0.071,
+      0.137
+    ],
+    "angle_from_vertical_deg": 45,
+    "horizontal_reach_per_layer_mm": 0.19999999999999998,
+    "reporting_tolerance_mm2": 0.01,
+    "limits": "Three finite layer schedules; first section assumed plate-supported. Geometric envelope cannot simulate extrusion, bridging, cooling, adhesion or arbitrary sublayer details. Downward faces are separately flagged without waiver."
+  },
+  "artifacts": {
+    "downward-face-flags.json.gz": {
+      "bytes": 10932,
+      "sha256": "1277c59b5017ada99a0dfb400b34ab9e70d200cceb7090f5c3381d0f8bfc031b"
+    },
+    "normal-chord-flags.json.gz": {
+      "bytes": 1401,
+      "sha256": "5076ef7a563dd9c951aa90a19973f376572901667769a43aeb82cd1afd885cd2"
+    },
+    "normal-chord-short.json.gz": {
+      "bytes": 22,
+      "sha256": "64406e753d82e11c6bd63d1d04bb6aa083eefa0a46949bbfce994d556b989f0f"
+    },
+    "normal-chords.jsonl.gz": {
+      "bytes": 1894939,
+      "sha256": "ba5df6cff7865cfef90e3961958dfaea80e140edc557a40d3da90b51b4c1b594"
+    },
+    "support-layer-details.json.gz": {
+      "bytes": 69530,
+      "sha256": "14464e830763d39f59024f4ae6ac6e0b165d409f825ac492af2276680841ba63"
+    },
+    "support-layer-flags.json.gz": {
+      "bytes": 485878,
+      "sha256": "4fdbfe422a0c2bff6ded27196c2980816e0eeb3a5b17a3b7fa137a0fa34a4207"
+    }
+  }
+}

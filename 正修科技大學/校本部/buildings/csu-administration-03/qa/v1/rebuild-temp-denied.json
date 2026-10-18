@@ -1,0 +1,28 @@
+{
+  "command": "python -B source/build_model.py --output-dir <fresh-temporary-directory>",
+  "exit_code": 1,
+  "generator_sha256": "5f31db7008e89d69389a6f5c2372823cadc1d94b07c4b5f47f198c1148923d4a",
+  "parameter_sha256": "2d86733a6e4eec067c7d070f00ad1cf0b1592af02451642036c7ba085656bc33",
+  "files": [
+    {
+      "file": "parts/body.stl",
+      "fixed_sha256": "469a394f6e20ef6bd854c8cedba1bcbe3627dd37ca0a05cf8ea3a88db0ba834c",
+      "rebuilt_sha256": null,
+      "bytes_equal": false
+    },
+    {
+      "file": "parts/roof.stl",
+      "fixed_sha256": "7d1c8840ee11649ec4c57984ff1a0cc2c2a3916f37fc21888e7ead0f631fed04",
+      "rebuilt_sha256": null,
+      "bytes_equal": false
+    },
+    {
+      "file": "assembly.stl",
+      "fixed_sha256": "1cd22ae733573969a2764b7352abc9740ee291d3d12a0d6cfec90d46596fe1a1",
+      "rebuilt_sha256": null,
+      "bytes_equal": false
+    }
+  ],
+  "passed": false,
+  "stderr": "Traceback (most recent call last):\r\n  File \"<model-root>\\source\\build_model.py\", line 128, in <module>\r\n    if __name__=='__main__': main()\r\n                             ~~~~^^\r\n  File \"<model-root>\\source\\build_model.py\", line 118, in main\r\n    p=json.loads((ROOT/'parameters.json').read_text(encoding='utf8'));out=args.output_dir;out.mkdir(parents=True,exist_ok=True);(out/'parts').mkdir(exist_ok=True)\r\n                                                                                                                                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\r\n  File \"<user-home>\\anaconda3\\Lib\\pathlib\\_local.py\", line 722, in mkdir\r\n    os.mkdir(self, mode)\r\n    ~~~~~~~~^^^^^^^^^^^^\r\nPermissionError: [WinError 5] \u5b58\u53d6\u88ab\u62d2\u3002: '<user-home>\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{468dfe2a-327d-433d-b72d-fed9c0cad89b}\\\\AC\\\\Temp\\\\csu-03-rebuild-v_m3vrju\\\\parts'\r\n"
+}

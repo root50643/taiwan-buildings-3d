@@ -1,0 +1,38 @@
+{
+  "evidence_integrity_passed": true,
+  "checks": {
+    "slice_and_both_audits_bound_to_actual_input": true,
+    "actual_gcode_unchanged": true,
+    "profile_current": true,
+    "original_slice_artifacts_unchanged": true,
+    "auto_support_enabled_and_threshold_45": true,
+    "corrected_audit_source_current": true,
+    "all_original_motion_extrusion_measurements_unchanged": true
+  },
+  "input_stl_sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+  "original_audit": "qa/v2/slicing/body-auto45/gcode-audit.json",
+  "original_audit_sha256": "2c2ed381c6a214e53c7d9e956c58e7e994af5d84d6bbc696ecda936502657900",
+  "corrected_audit": "qa/v2/slicing/body-auto45/corrected-audit/gcode-audit.json",
+  "corrected_audit_sha256": "1bfcc383b370f66ef5b056652531d84af727fb3050f50b7869ce9b6b1ae6b3b4",
+  "gcode_sha256": "6ab11d448e2978b1cf51464251a34623e8413f6e89e8d98df70001ea38ebc6ad",
+  "profile_sha256": "ecf4958fe46d81a102cd66c27d8978462c4c74e2c3dc010f5a1d44140d08d027",
+  "validator_source_sha256": "25e511a0bf150b6460e8726cc1bdb3f1f955ec1593258774c359c0b75e084463",
+  "support_extrusion_segments": 82153,
+  "support_positive_filament_mm": 7273.39394,
+  "support_extrusion_xy_bounds_mm": [
+    [
+      16.982,
+      80.683
+    ],
+    [
+      203.018,
+      130.779
+    ]
+  ],
+  "support_extrusion_z_bounds_mm": [
+    3.6,
+    82.8
+  ],
+  "erratum": "The initial inherited audit contained a hardcoded support-disabled limitation sentence. Its measurements and embedded config were correct, and it is retained. The corrected audit reads the actual embedded support state; every original motion/extrusion measurement is unchanged.",
+  "interpretation": "Auto-support45 generated actual supports. The no-support baseline cannot establish support-free printability. Exterior relief is open to the outside, but physical support removal, adhesion, finish and assembly have not been tested. Generic Gcode must be re-sliced for the actual machine."
+}

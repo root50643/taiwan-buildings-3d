@@ -1,0 +1,90 @@
+{
+  "passed": false,
+  "completed": true,
+  "stl_sha256": "e388dff1247334ec5e79530e45a1b7e5e85d1a630aff0a9d6d53720f1362ee6c",
+  "expected_longest_mm": 200.0,
+  "checks": {
+    "all_stages_pass": false,
+    "stl_unchanged": true,
+    "checker_sources_unchanged": true
+  },
+  "stages": [
+    {
+      "stage": "raw",
+      "exit_code": 0,
+      "report": "raw\\raw-mesh-check.json",
+      "report_sha256": "0dbc0cc4681ba0bfd72f1f1d077ff056465e6f9fc18b0e83207f03907dd71da9",
+      "passed": true,
+      "checks": {
+        "binary_length_exact": true,
+        "finite_original_data": true,
+        "all_original_faces_nondegenerate": true,
+        "no_duplicate_original_faces": true,
+        "original_stored_normals_unit": true,
+        "original_stored_normals_agree_with_directed_faces": true,
+        "exact_coordinate_edges_two_faces": true,
+        "exact_coordinate_consistent_winding": true,
+        "exact_coordinate_vertex_links_single_cycles": true,
+        "single_surface_no_internal_shell": true,
+        "positive_signed_volume": true,
+        "requested_longest_extent_mm": true
+      },
+      "error": null
+    },
+    {
+      "stage": "sections",
+      "exit_code": 0,
+      "report": "sections\\section-check.json",
+      "report_sha256": "309737a67e845e323fffcd76970aeaa7a064375aa56930dc2a4a48ac6fca3d7f",
+      "passed": true,
+      "checks": {
+        "all_three_offsets_have_layers": true,
+        "all_original_sections_valid_without_repair": true,
+        "every_original_polygon_checked": true,
+        "all_original_polygons_survive_erosion_and_opening": true,
+        "no_original_polygon_splits_after_erosion_or_opening": true,
+        "all_opened_and_eroded_polygons_valid": true,
+        "all_individual_polygon_losses_le_one_percent": true
+      },
+      "error": null
+    },
+    {
+      "stage": "exact-contacts",
+      "exit_code": 0,
+      "report": "exact-contacts.json",
+      "report_sha256": "ac5ae908c1d53ea24653b64c289fe613896468f2c3225638e23a0d0e099335c4",
+      "passed": true,
+      "checks": null,
+      "error": null
+    },
+    {
+      "stage": "manufacturing",
+      "exit_code": 1,
+      "report": "manufacturing\\manufacturing-check.json",
+      "report_sha256": "138a9f495ce72e00a9443d59453b9a17c89beb3c72fad2754d5b5c9999461710",
+      "passed": false,
+      "checks": {
+        "normal_chords_screen_passed": false,
+        "layer_support_screen_passed": false,
+        "no_downward_faces_above_plate": false,
+        "input_unchanged": true
+      },
+      "error": null
+    }
+  ],
+  "checker_sources_sha256": {
+    "audit_gcode.py": "aac539d203791dbc28e25cd5619093e708f68e98e54f0ee3c860df05aa906ec9",
+    "check_intersection_controls.py": "baae6f0012966a3fb539f2dd18c19573016959f426f6ba25ce2e26dacdf31ca9",
+    "check_manufacturing.py": "98973ca81693049eb2e1c5dfd15ca6765526e4271eb1d31c762b53a1ab81a403",
+    "check_manufacturing_controls.py": "092abdc8d0040a69e7c0672c274b6639225b79616e9dd241ef725c9ea4bef90f",
+    "check_original_intersections.py": "d0c85b55c4d6cc06030696ba2bb97da749fc8604d44a7360854d26a28c7ec50d",
+    "check_raw_mesh.py": "5e8881bca87271d923f83fa0dbcf6e249a801ef820fc08995c0a7da1ef026da0",
+    "check_sections.py": "8046c447e01724726545686e9015a1da2e9b4db52b7d328ab5e083f01c114f02",
+    "qa_common.py": "4ceedd3b4d60e871513ab8e4ddd8da3c29b5cf17e34610e84edc4fa9bea6d5db",
+    "run_part_qa.py": "74e238ddb4ac70aa1a53733b88c8b0c0b3490c3b063e8f23844ee3fa9c440817",
+    "run_slice.py": "bdb0fda71568f8e572283666556b8919c1525c2d1a05de3feefb79e53d33cdc5",
+    "supplement_body_flags.py": "228e3729a401b2c27cc4f2501615fbb7e85b2b57278cc7a818c91653057110b5",
+    "supplement_flag_endpoints.py": "ed01d0821399b2b9361cf2f204886d37f8201aebf3b36d605bb08c2c0dc16c46"
+  },
+  "scope": "Original raw STL exact topology and exact triangle contacts; finite XY morphology and numerical normal/support screens. No repairs/waivers, global thickness claim or physical trial."
+}

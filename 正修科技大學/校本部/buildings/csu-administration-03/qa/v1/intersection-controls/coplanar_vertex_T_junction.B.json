@@ -1,0 +1,126 @@
+{
+  "checker": "exact_original_triangle_intersections_v1",
+  "passed": false,
+  "strict_passed": false,
+  "completed": true,
+  "stl_path": "coplanar_vertex_T_junction.stl",
+  "stl_sha256": "2725b9608e654ed54f89e1649712a895e600250f1c69365cb0f64e148154aa83",
+  "original_face_count": 2,
+  "face_index_base": 0,
+  "total_unordered_original_face_pairs": 1,
+  "tools": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "arithmetic": "unbounded Python int and fractions.Fraction",
+    "external_geometry_dependencies": [],
+    "source_sha256": "d0c85b55c4d6cc06030696ba2bb97da749fc8604d44a7360854d26a28c7ec50d",
+    "optimization_level": 0
+  },
+  "lattice": {
+    "denominator": "1",
+    "denominator_power_of_two": 0,
+    "exact_coordinate_round_trips_checked": 18,
+    "all_original_coordinates_round_trip_exactly": true,
+    "maximum_coordinate_integer_bits": 2
+  },
+  "scope_and_limitations": [
+    "Checks every unordered original-triangle pair whose closed exact AABBs overlap.",
+    "No repair, welding, coordinate rounding, dropped faces, epsilon, tiny-face filter, or adjacency exclusions.",
+    "Allows only empty intersection, exactly one shared original vertex, or exactly the full edge between two shared original vertices.",
+    "Rejects coplanar positive-area overlap, crossing segments, nonshared point/segment contacts, and intersections exceeding shared vertices or edges.",
+    "Binary STL stores no connectivity: exact coordinate equality defines a geometrically shared vertex; signed zero has the same geometric value.",
+    "This geometric pair check does not establish manifoldness, orientation, watertightness, minimum wall thickness, connectedness, mechanical strength, or slicer/printer suitability.",
+    "No global printability guarantee; combine with separate topology, dimensional, material, and slicer checks."
+  ],
+  "degenerate_original_faces": [],
+  "bad_pairs": [
+    {
+      "face_indices": [
+        0,
+        1
+      ],
+      "reason": "coplanar_nonshared_point_contact",
+      "shared_original_vertex_count": 0,
+      "intersection": {
+        "dimension": 0,
+        "vertices_exact_original_units": [
+          [
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "vertices_approx_original_units": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "original_vertices": [
+        [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            2.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            -1.0,
+            0.0
+          ],
+          [
+            2.0,
+            -1.0,
+            0.0
+          ]
+        ]
+      ],
+      "shared_original_vertices": []
+    }
+  ],
+  "broad_phase": {
+    "method": "exact integer closed-AABB sweep, each unordered pair once",
+    "sweep_axis": 0,
+    "axis_active_pair_costs": [
+      1,
+      1,
+      1
+    ],
+    "all_bbox_overlapping_pairs_completed": true,
+    "candidate_pairs_checked": 1,
+    "candidate_sequence_sha256": "01acecb507abfe1a354aa8064f4af5d3f1acd019e37db3c11c97523b71c76e9d"
+  },
+  "actual_intersection_pair_count": 1,
+  "all_actual_intersections": {
+    "format": "gzip JSON Lines; one exact intersection per line",
+    "path": "coplanar_vertex_T_junction.B.json.contacts.jsonl.gz",
+    "sha256": "51d7eb76ff94035f7a202983a8bb5fd14f2971e3cfbaadf24f07efb6dffd4d31",
+    "record_count": 1
+  },
+  "classification_counts": {
+    "coplanar_nonshared_point_contact": 1
+  },
+  "bad_pair_count": 1,
+  "stl_sha256_after_check": "2725b9608e654ed54f89e1649712a895e600250f1c69365cb0f64e148154aa83",
+  "input_unchanged_during_check": true,
+  "elapsed_seconds": 0.19709157943725586
+}

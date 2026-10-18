@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "strict_passed": true,
+  "checks": {
+    "binary_length_exact": true,
+    "finite_original_data": true,
+    "all_original_faces_nondegenerate": true,
+    "no_duplicate_original_faces": true,
+    "original_stored_normals_unit": true,
+    "original_stored_normals_agree_with_directed_faces": true,
+    "exact_coordinate_edges_two_faces": true,
+    "exact_coordinate_consistent_winding": true,
+    "exact_coordinate_vertex_links_single_cycles": true,
+    "single_surface_no_internal_shell": true,
+    "positive_signed_volume": true,
+    "requested_longest_extent_mm": true
+  },
+  "stl_sha256": "6d3a8796831cd83bd7e012664dd8f094b6e700998031e71db38567fc1ecff416",
+  "triangles": 6728,
+  "vertices_exact": 3366,
+  "edges_exact": 10092,
+  "surface_shells": 1,
+  "bounds_mm": [
+    [
+      -100.0,
+      -36.0,
+      0.0
+    ],
+    [
+      100.0,
+      36.0,
+      96.0
+    ]
+  ],
+  "extents_mm": [
+    200.0,
+    72.0,
+    96.0
+  ],
+  "signed_volume_mm3": 450618.41389114346,
+  "shell_face_counts": [
+    6728
+  ],
+  "shell_signed_volumes_mm3": [
+    450618.4138911435
+  ],
+  "bad_edges": [],
+  "bad_winding_edges": [],
+  "bad_vertex_links": [],
+  "degenerate_original_face_indices": [],
+  "bad_stored_normal_face_indices": [],
+  "nonzero_attribute_face_count": 0,
+  "expected_longest_mm": 200.0,
+  "checker_sources_sha256": {
+    "audit_gcode.py": "aac539d203791dbc28e25cd5619093e708f68e98e54f0ee3c860df05aa906ec9",
+    "check_intersection_controls.py": "baae6f0012966a3fb539f2dd18c19573016959f426f6ba25ce2e26dacdf31ca9",
+    "check_manufacturing.py": "98973ca81693049eb2e1c5dfd15ca6765526e4271eb1d31c762b53a1ab81a403",
+    "check_manufacturing_controls.py": "092abdc8d0040a69e7c0672c274b6639225b79616e9dd241ef725c9ea4bef90f",
+    "check_original_intersections.py": "d0c85b55c4d6cc06030696ba2bb97da749fc8604d44a7360854d26a28c7ec50d",
+    "check_raw_mesh.py": "5e8881bca87271d923f83fa0dbcf6e249a801ef820fc08995c0a7da1ef026da0",
+    "check_sections.py": "8046c447e01724726545686e9015a1da2e9b4db52b7d328ab5e083f01c114f02",
+    "qa_common.py": "4ceedd3b4d60e871513ab8e4ddd8da3c29b5cf17e34610e84edc4fa9bea6d5db",
+    "run_part_qa.py": "74e238ddb4ac70aa1a53733b88c8b0c0b3490c3b063e8f23844ee3fa9c440817",
+    "run_slice.py": "bdb0fda71568f8e572283666556b8919c1525c2d1a05de3feefb79e53d33cdc5",
+    "supplement_body_flags.py": "228e3729a401b2c27cc4f2501615fbb7e85b2b57278cc7a818c91653057110b5",
+    "supplement_flag_endpoints.py": "ed01d0821399b2b9361cf2f204886d37f8201aebf3b36d605bb08c2c0dc16c46"
+  },
+  "method": "Original little-endian binary records, exact numeric float32 coordinate indexing, directed edges, multigraph vertex links, face-edge BFS, translation-stable signed volume. No repair, rounding, face filtering, or model-specific dimension assumption.",
+  "limitations": "Topology checks do not prove absence of geometric self-intersection or global printable wall thickness."
+}

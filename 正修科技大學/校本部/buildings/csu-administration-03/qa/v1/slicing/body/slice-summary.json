@@ -1,0 +1,75 @@
+{
+  "completed": true,
+  "passed": true,
+  "input_stl": "body.stl",
+  "input_sha256": "469a394f6e20ef6bd854c8cedba1bcbe3627dd37ca0a05cf8ea3a88db0ba834c",
+  "input_sha256_after": "469a394f6e20ef6bd854c8cedba1bcbe3627dd37ca0a05cf8ea3a88db0ba834c",
+  "tool": "PrusaSlicer 2.9.6 portable console",
+  "tool_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "profile": "geometry-review-0.4mm-0.2mm-solid100-no-support.ini",
+  "profile_sha256": "8256c71d0a0147c028d2370feb44621d549b7ae522d744acbf86a8c4a276d929",
+  "commands": [
+    {
+      "stage": "info",
+      "exit_code": 0,
+      "seconds": 0.07935667037963867,
+      "log": "info.log",
+      "diagnostic_lines": []
+    },
+    {
+      "stage": "slice",
+      "exit_code": 0,
+      "seconds": 4.604551076889038,
+      "log": "slice.log",
+      "diagnostic_lines": [
+        "65 => Searching support spots",
+        "69 => Alert if supports needed",
+        "89 => Calculating overhanging perimeters"
+      ]
+    },
+    {
+      "stage": "audit",
+      "exit_code": 0,
+      "seconds": 5.736988067626953,
+      "log": "audit.log",
+      "diagnostic_lines": [
+        "  \"unsupported_arc_commands\": [],",
+        "    \"Overhang perimeter\": 41",
+        "    \"Overhang perimeter\": 73",
+        "  \"support_extrusion_segments\": 0,",
+        "  \"support_positive_filament_mm\": 0,",
+        "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+        "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+      ]
+    }
+  ],
+  "gcode": "QA-NOT-MACHINE-READY.gcode",
+  "gcode_sha256": "79abdc0e54416bc27dd9c74eb91dca3a210cbab98ad75ac286d21cc1d594ee08",
+  "limits": "Actual generic 0.4mm nozzle / 0.2mm layer / 100% rectilinear / no-support slicing only. Not machine-calibrated Gcode and no physical print, adhesion, tolerance or assembly trial.",
+  "artifact_inventory": {
+    "audit.log": {
+      "bytes": 2851,
+      "sha256": "b23cd45f5b47c00d8c83aac01aa7b4566005a26f4c779ba808e428c86236ba2a"
+    },
+    "first-layer-toolpaths.png": {
+      "bytes": 33911,
+      "sha256": "c616e60e7d3e0e3a8a811c8b712acff31bdd92555d8503e89543690316f9499b"
+    },
+    "gcode-audit.json": {
+      "bytes": 281918,
+      "sha256": "af2660c2b61f60c7e2718bae5014eed0165734f7765c986cac422c996273edb7"
+    },
+    "info.log": {
+      "bytes": 416,
+      "sha256": "d6c889483f5253caeb075d853656d4fc3bf970c6b9609208603010ba06637e3e"
+    },
+    "QA-NOT-MACHINE-READY.gcode": {
+      "bytes": 15827632,
+      "sha256": "79abdc0e54416bc27dd9c74eb91dca3a210cbab98ad75ac286d21cc1d594ee08"
+    },
+    "slice.log": {
+      "bytes": 522,
+      "sha256": "6411c6817acbdb97ce8feda0cc7fddfa455267494485e066f5d737733404db0b"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "review_type": "Independent major exterior feature coverage review against four official photographs",
+  "review_date_utc": "2026-10-18",
+  "reviewer_role": "source-audit subagent; did not edit model geometry",
+  "model_id": "cnu-j-grandstand-historical",
+  "verdict": "pass_for_low_detail_historical_representative_candidate_with_documented_estimates",
+  "major_omissions_found": [],
+  "blocking_visual_findings": [],
+  "reviewed_model_sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
+  "render_manifest": {
+    "path": "render-manifest.json",
+    "sha256": "ae9aad63ed9a0042d0b49dfba7c20c94bec374ab4bf0c397ca6f9ddfad2f22e4",
+    "assembly_sha256_matches_actual_model_stl": true,
+    "all_six_manifest_preview_hashes_verified": true,
+    "metadata_rebind_note": "scene privacy metadata sanitation, no rerender/no geometry change",
+    "note": "The manifest is at the package root, not inside previews/. Five assembly views were actually inspected with view_image."
+  },
+  "actually_viewed_previews": [
+    {
+      "path": "previews/front.png",
+      "sha256": "3987eae649e5e3565dcf8426291cda0537c0399babe154b510d0f791741f2e79",
+      "observation": "Wide thin roof, ten repeated mast/brace frames, open tiered seating, central command platform, front stair pair and sloped end walls are visible."
+    },
+    {
+      "path": "previews/front-low.png",
+      "sha256": "40ba038aab19afab9b1e263492265f3715a0e259363214f0a639715fa7ea25db",
+      "observation": "The low front elevation confirms a continuous lower floor/front platform, paired inward-rising front stairs, tiered seating, end access stairs and an open strip below the canopy with actual columns."
+    },
+    {
+      "path": "previews/rear.png",
+      "sha256": "43942e365c773abf8021654323df9205ccb3fc8aa5c29ba5469da2db6945c89c",
+      "observation": "Two horizontal levels of the enclosed rear mass are legible through the broad opening bands. A taller central glass motif crosses the level division; the rear is not reduced to a single-storey service strip. The open canopy/column strip remains above it."
+    },
+    {
+      "path": "previews/side.png",
+      "sha256": "4a651ac8a881e298ffd127bd7728c3f5f8dc5330ac95a3bdb71a55e3fac95754",
+      "observation": "Roof projection, triangular mast/brace profiles, tiered seat slope, substantial sloped side wall, end access steps and lower external stair/terrace motif are visible."
+    },
+    {
+      "path": "previews/top.png",
+      "sha256": "6c7c654969546bc319b6933528fc80f88b1b5cbc71c34d2a282a2c280b65b9ab",
+      "observation": "A broad rectangular single-plane canopy and repeated frame locations are clear. The canopy is slightly wider than the main body; the model contains only the stand and its display base."
+    }
+  ],
+  "official_photo_basis": [
+    {
+      "url": "https://libcvod.cnu.edu.tw/sysdata/album/111/82448cae40d079801b591e9cd78f7506_l.jpg",
+      "sha256": "a73f2f5ea87c3ecf7f3820f9d987de534af5ed2e20b5826e6d4aa1f9704a4368",
+      "actual_local_view_completed": true,
+      "supports": "Full thin rectangular roof, rear mast/brace row, overall body footprint and end terraces.",
+      "capture_date": "unknown; 2020 is upload time only"
+    },
+    {
+      "url": "https://libcvod.cnu.edu.tw/sysdata/album/111/95d3282041dda1496f05e244c72561c2_l.jpg",
+      "sha256": "611b9c787435659f49571bcfe8a2b23ebddade6d6e757807ce9267739aad822b",
+      "actual_local_view_completed": true,
+      "supports": "Thin projected canopy, triangular bracing, sloped side wall and lower external stair/terrace.",
+      "capture_date_exif": "2010-12-17"
+    },
+    {
+      "url": "https://libcvod.cnu.edu.tw/sysdata/album/68/321b8f83c42b95033614c0a7d2622900_l.jpg",
+      "sha256": "b18dbbfe14f7fb8dd1f326f542e66a740f322693c6d984f09805f83b66ecab86",
+      "actual_local_view_completed": true,
+      "supports": "Open tiered front seating, column/mast rhythm, central command platform, paired inward-rising front stairs and sloped end walls.",
+      "capture_date_exif": "2012-06-30",
+      "date_caveat": "Album caption contains 2025, but EXIF and createTime identify 2012; this conflict is preserved in sources.json."
+    },
+    {
+      "url": "https://libcvod.cnu.edu.tw/sysdata/album/68/81208d5f201524027773715c8ce47951_l.jpg",
+      "sha256": "e4b114fc2c33e91c8d69e134bae31817a02bb38df72eb782a921fce114c08a92",
+      "actual_local_view_completed": true,
+      "supports": "Two-storey enclosed rear volume, tall central glass portion, upper open canopy space and end terrace/stair motifs.",
+      "capture_date_exif": "2006-11-16"
+    }
+  ],
+  "required_feature_coverage": [
+    {"feature": "large thin rectangular canopy", "status": "covered", "views": ["front", "side", "top"]},
+    {"feature": "rear mast and diagonal brace rhythm", "status": "covered_as_thickened_frames", "views": ["front", "rear", "side", "top"]},
+    {"feature": "actual canopy column row and open space", "status": "covered", "views": ["front-low", "rear", "side"]},
+    {"feature": "open stepped seating and central command platform", "status": "covered", "views": ["front", "front-low", "side"]},
+    {"feature": "sloped end walls", "status": "covered", "views": ["front", "front-low", "side"]},
+    {"feature": "two enclosed rear storeys plus central tall glass", "status": "covered_as_low_relief_exterior_motifs", "views": ["rear"]},
+    {"feature": "paired front stairs", "status": "covered", "views": ["front", "front-low"]},
+    {"feature": "side exterior stair and terrace", "status": "covered_as_representative_symmetric_motifs", "views": ["side", "front", "rear"]},
+    {"feature": "background towers, sports field, U gym excluded", "status": "covered_by_exclusion", "views": ["front", "rear", "side", "top"]}
+  ],
+  "documentation_review": {
+    "README_sha256": "16d3bd755237df3721fa3975290cf67fd89b54373defbdbee50e32e4b58cfdff",
+    "parameters_sha256": "b26cb3f965f0f811f685d6b3b7bc8ccade54460f268879bf1f43293f47b2711d",
+    "sources_sha256": "d4e7d581cea89e032673d2cd3c31e2637a1f87d8e90c91ee638206e525d6e55f",
+    "historical_representative_label_present": true,
+    "not_2026_current_state_or_survey_claim_present": true,
+    "estimated_dimensions_and_at_least_25_percent_uncertainty_present": true,
+    "roof_mast_and_brace_thickening_declared": true,
+    "small_windows_flags_cables_equipment_omissions_declared": true,
+    "filled_seating_substructure_and_shallow_openings_declared": true,
+    "symmetric_far_end_stair_routing_unverified_declared": true,
+    "no_physical_print_or_fit_test_claim_present": true
+  },
+  "nonblocking_caveats": [
+    "The selected 192:60 canopy plan ratio (3.2:1) is broader than the initial approximately 4:1 perspective-based visual guide. It is at the broad end of that rough estimate and is explicitly documented with at least 25 percent dimensional uncertainty; no survey accuracy is inferred.",
+    "The large central rear glass area is represented by a shallow pane-grid motif rather than a transparent component. Its cross-level extent and relation to the two-storey mass remain legible.",
+    "Exact seat row count, window subdivisions, far-side stair routing and internal circulation are not verified from the photographs. The symmetric exterior stair treatment and other simplifications are declared.",
+    "The review verifies exterior feature coverage only. It does not independently certify mesh geometry, manufacturing support removal, glued fit, material strength or physical print success; those require their separate QA records and eventual physical validation."
+  ],
+  "review_changes": "Only this review JSON was added. No model, generator, STL, scene or preview geometry was changed.",
+  "publication_status": "fixed local candidate only; this review does not authorize a push or a public count update"
+}

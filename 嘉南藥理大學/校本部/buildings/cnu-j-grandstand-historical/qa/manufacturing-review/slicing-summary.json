@@ -1,0 +1,571 @@
+{
+  "slicer_version": "PrusaSlicer 2.9.6",
+  "gcode_is_machine_ready": false,
+  "physical_print_or_fit_test": false,
+  "conditions": {
+    "nozzle_mm": 0.4,
+    "layer_mm": 0.2,
+    "extrusion_width_mm": 0.45,
+    "perimeters": 3,
+    "infill_percent": 15,
+    "material": "generic PLA diagnostic assumption",
+    "nominal_nozzle_temperature_C": 205,
+    "bed_C": 60,
+    "bed_mm": [
+      250,
+      210
+    ],
+    "center_mm": [
+      125,
+      105
+    ]
+  },
+  "data_policy": "Separate datadir per unique piece; full diagnostic G-code retained only outside the deliverable. Logs, explicit profiles, hashes and path summaries are in the package.",
+  "results": [
+    {
+      "part": "main_body",
+      "quantity": 1,
+      "exit_code": 0,
+      "support_enabled": true,
+      "profile": "diagnostic-main-support.ini",
+      "command_template": [
+        "${PRUSA_SLICER}",
+        "--datadir",
+        "${PRIVATE_SLICE_DIR}/main_body-isolated-datadir",
+        "--load",
+        "qa/manufacturing-review/diagnostic-main-support.ini",
+        "--center",
+        "125,105",
+        "--export-gcode",
+        "--output",
+        "${PRIVATE_SLICE_DIR}/main_body-DIAGNOSTIC-ONLY.gcode",
+        "parts/main_body-print.stl"
+      ],
+      "input_sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "warning_lines": [],
+      "raw_gcode_in_deliverable": false,
+      "gcode_sha256": "81b2f6ea446aace3a50792517fd33b8866b618dc8d50410d12d83e70d9529031",
+      "gcode_bytes": 8236895,
+      "feature_extrusions": {
+        "Skirt/Brim": {
+          "extruding_xy_moves": 20,
+          "filament_mm_in_xy_moves": 21.88843,
+          "xy_path_mm": 646.6527386479827,
+          "bounds_min_xyz": [
+            11.796,
+            53.796,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            238.204,
+            156.204,
+            0.2
+          ]
+        },
+        "Perimeter": {
+          "extruding_xy_moves": 40674,
+          "filament_mm_in_xy_moves": 5876.772819999942,
+          "xy_path_mm": 172846.53541150026,
+          "bounds_min_xyz": [
+            18.632,
+            60.632,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            231.368,
+            149.368,
+            27.6
+          ]
+        },
+        "External perimeter": {
+          "extruding_xy_moves": 16779,
+          "filament_mm_in_xy_moves": 3136.5763899998883,
+          "xy_path_mm": 92662.38149526982,
+          "bounds_min_xyz": [
+            18.225,
+            60.225,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            231.775,
+            149.775,
+            28.0
+          ]
+        },
+        "Solid infill": {
+          "extruding_xy_moves": 41554,
+          "filament_mm_in_xy_moves": 10260.917460001256,
+          "xy_path_mm": 302882.8920295056,
+          "bounds_min_xyz": [
+            19.116,
+            61.13,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            230.884,
+            148.87,
+            27.0
+          ]
+        },
+        "Internal infill": {
+          "extruding_xy_moves": 24498,
+          "filament_mm_in_xy_moves": 13427.852359999579,
+          "xy_path_mm": 396700.90184569964,
+          "bounds_min_xyz": [
+            19.344,
+            61.344,
+            1.0
+          ],
+          "bounds_max_xyz": [
+            230.656,
+            148.656,
+            25.8
+          ]
+        },
+        "Bridge infill": {
+          "extruding_xy_moves": 6725,
+          "filament_mm_in_xy_moves": 2590.143870000025,
+          "xy_path_mm": 48500.219374275715,
+          "bounds_min_xyz": [
+            19.163,
+            61.163,
+            2.4
+          ],
+          "bounds_max_xyz": [
+            230.837,
+            148.634,
+            25.4
+          ]
+        },
+        "Top solid infill": {
+          "extruding_xy_moves": 12926,
+          "filament_mm_in_xy_moves": 1670.104399999931,
+          "xy_path_mm": 49115.95130252364,
+          "bounds_min_xyz": [
+            19.161,
+            61.161,
+            3.0
+          ],
+          "bounds_max_xyz": [
+            230.656,
+            148.656,
+            26.0
+          ]
+        },
+        "Support material interface": {
+          "extruding_xy_moves": 18027,
+          "filament_mm_in_xy_moves": 1095.486230000037,
+          "xy_path_mm": 26781.93026847845,
+          "bounds_min_xyz": [
+            31.982,
+            72.776,
+            3.6
+          ],
+          "bounds_max_xyz": [
+            218.018,
+            137.408,
+            23.0
+          ]
+        },
+        "Support material": {
+          "extruding_xy_moves": 8559,
+          "filament_mm_in_xy_moves": 1805.972199999999,
+          "xy_path_mm": 42996.75872409974,
+          "bounds_min_xyz": [
+            31.995,
+            73.044,
+            4.35
+          ],
+          "bounds_max_xyz": [
+            218.005,
+            136.956,
+            23.1
+          ]
+        },
+        "Overhang perimeter": {
+          "extruding_xy_moves": 80,
+          "filament_mm_in_xy_moves": 56.90836999999999,
+          "xy_path_mm": 1089.2625743042934,
+          "bounds_min_xyz": [
+            34.225,
+            75.225,
+            12.0
+          ],
+          "bounds_max_xyz": [
+            215.775,
+            134.775,
+            23.8
+          ]
+        }
+      },
+      "estimated_time_comments": [
+        "estimated printing time (normal mode) = 10h 3m 38s",
+        "estimated printing time (silent mode) = 10h 14m 34s"
+      ],
+      "measurement_note": "Positive absolute-E extrusion on nonzero XY segments only; retraction-only and unretraction-only moves excluded. This is diagnostic path evidence, not a physical print.",
+      "toolpath_layer_change_records": 189,
+      "object_extrusion_z_count": 140,
+      "object_max_extrusion_z_mm": 28.0
+    },
+    {
+      "part": "roof",
+      "quantity": 1,
+      "exit_code": 0,
+      "support_enabled": false,
+      "profile": "diagnostic-no-support.ini",
+      "command_template": [
+        "${PRUSA_SLICER}",
+        "--datadir",
+        "${PRIVATE_SLICE_DIR}/roof-isolated-datadir",
+        "--load",
+        "qa/manufacturing-review/diagnostic-no-support.ini",
+        "--center",
+        "125,105",
+        "--export-gcode",
+        "--output",
+        "${PRIVATE_SLICE_DIR}/roof-DIAGNOSTIC-ONLY.gcode",
+        "parts/roof-print.stl"
+      ],
+      "input_sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb",
+      "warning_lines": [],
+      "raw_gcode_in_deliverable": false,
+      "gcode_sha256": "8dad6fd342c48dd042461b539ce3832f5850fd4bac99ca5055a98f8d3c3bc52b",
+      "gcode_bytes": 2411632,
+      "feature_extrusions": {
+        "Skirt/Brim": {
+          "extruding_xy_moves": 20,
+          "filament_mm_in_xy_moves": 18.36815,
+          "xy_path_mm": 542.6527386479827,
+          "bounds_min_xyz": [
+            22.796,
+            68.796,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            227.204,
+            141.204,
+            0.2
+          ]
+        },
+        "Perimeter": {
+          "extruding_xy_moves": 9766,
+          "filament_mm_in_xy_moves": 1129.5508800000398,
+          "xy_path_mm": 33001.812084109755,
+          "bounds_min_xyz": [
+            29.632,
+            75.632,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            220.368,
+            134.368,
+            3.6
+          ]
+        },
+        "External perimeter": {
+          "extruding_xy_moves": 3826,
+          "filament_mm_in_xy_moves": 626.3128999999977,
+          "xy_path_mm": 18417.857944668875,
+          "bounds_min_xyz": [
+            29.225,
+            75.225,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            220.775,
+            134.775,
+            3.6
+          ]
+        },
+        "Solid infill": {
+          "extruding_xy_moves": 24478,
+          "filament_mm_in_xy_moves": 5414.562950001119,
+          "xy_path_mm": 159778.12435987167,
+          "bounds_min_xyz": [
+            30.141,
+            76.13,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            219.87,
+            133.87,
+            3.4
+          ]
+        },
+        "Internal infill": {
+          "extruding_xy_moves": 3189,
+          "filament_mm_in_xy_moves": 668.4869599999926,
+          "xy_path_mm": 19749.19798330451,
+          "bounds_min_xyz": [
+            30.344,
+            76.344,
+            1.0
+          ],
+          "bounds_max_xyz": [
+            219.656,
+            133.656,
+            2.8
+          ]
+        },
+        "Bridge infill": {
+          "extruding_xy_moves": 4108,
+          "filament_mm_in_xy_moves": 1582.9722200000047,
+          "xy_path_mm": 29863.79474896413,
+          "bounds_min_xyz": [
+            30.163,
+            76.163,
+            1.0
+          ],
+          "bounds_max_xyz": [
+            219.837,
+            133.837,
+            3.0
+          ]
+        },
+        "Top solid infill": {
+          "extruding_xy_moves": 5197,
+          "filament_mm_in_xy_moves": 924.8541699999839,
+          "xy_path_mm": 27150.039405620795,
+          "bounds_min_xyz": [
+            30.344,
+            76.161,
+            2.4
+          ],
+          "bounds_max_xyz": [
+            219.839,
+            133.839,
+            3.6
+          ]
+        }
+      },
+      "estimated_time_comments": [
+        "estimated printing time (normal mode) = 3h 38m 55s",
+        "estimated printing time (silent mode) = 3h 40m 41s"
+      ],
+      "measurement_note": "Positive absolute-E extrusion on nonzero XY segments only; retraction-only and unretraction-only moves excluded. This is diagnostic path evidence, not a physical print.",
+      "toolpath_layer_change_records": 18,
+      "object_extrusion_z_count": 18,
+      "object_max_extrusion_z_mm": 3.6
+    },
+    {
+      "part": "column",
+      "quantity": 10,
+      "exit_code": 0,
+      "support_enabled": false,
+      "profile": "diagnostic-no-support.ini",
+      "command_template": [
+        "${PRUSA_SLICER}",
+        "--datadir",
+        "${PRIVATE_SLICE_DIR}/column-isolated-datadir",
+        "--load",
+        "qa/manufacturing-review/diagnostic-no-support.ini",
+        "--center",
+        "125,105",
+        "--export-gcode",
+        "--output",
+        "${PRIVATE_SLICE_DIR}/column-DIAGNOSTIC-ONLY.gcode",
+        "parts/column-print.stl"
+      ],
+      "input_sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da",
+      "warning_lines": [],
+      "raw_gcode_in_deliverable": false,
+      "gcode_sha256": "396195b19cc0396384d03d51dc6d74a8dde7aa049bda21312a9658476894c280",
+      "gcode_bytes": 97420,
+      "feature_extrusions": {
+        "Skirt/Brim": {
+          "extruding_xy_moves": 26,
+          "filament_mm_in_xy_moves": 2.3489899999999997,
+          "xy_path_mm": 69.39630075532109,
+          "bounds_min_xyz": [
+            113.471,
+            95.996,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            136.529,
+            114.004,
+            0.2
+          ]
+        },
+        "Perimeter": {
+          "extruding_xy_moves": 504,
+          "filament_mm_in_xy_moves": 23.359140000000036,
+          "xy_path_mm": 690.1012176382958,
+          "bounds_min_xyz": [
+            120.307,
+            102.832,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            129.693,
+            107.168,
+            2.8
+          ]
+        },
+        "External perimeter": {
+          "extruding_xy_moves": 280,
+          "filament_mm_in_xy_moves": 14.336840000000011,
+          "xy_path_mm": 423.5662152989411,
+          "bounds_min_xyz": [
+            119.9,
+            102.425,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            130.1,
+            107.575,
+            2.8
+          ]
+        },
+        "Solid infill": {
+          "extruding_xy_moves": 893,
+          "filament_mm_in_xy_moves": 27.398610000000016,
+          "xy_path_mm": 806.726085906824,
+          "bounds_min_xyz": [
+            120.865,
+            103.33,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            129.164,
+            106.67,
+            2.6
+          ]
+        },
+        "Top solid infill": {
+          "extruding_xy_moves": 35,
+          "filament_mm_in_xy_moves": 2.06271,
+          "xy_path_mm": 59.241442340959644,
+          "bounds_min_xyz": [
+            121.019,
+            103.361,
+            2.8
+          ],
+          "bounds_max_xyz": [
+            129.164,
+            106.456,
+            2.8
+          ]
+        }
+      },
+      "estimated_time_comments": [
+        "estimated printing time (normal mode) = 2m 10s",
+        "estimated printing time (silent mode) = 2m 11s"
+      ],
+      "measurement_note": "Positive absolute-E extrusion on nonzero XY segments only; retraction-only and unretraction-only moves excluded. This is diagnostic path evidence, not a physical print.",
+      "toolpath_layer_change_records": 14,
+      "object_extrusion_z_count": 14,
+      "object_max_extrusion_z_mm": 2.8
+    },
+    {
+      "part": "mast_brace_frame",
+      "quantity": 10,
+      "exit_code": 0,
+      "support_enabled": false,
+      "profile": "diagnostic-no-support.ini",
+      "command_template": [
+        "${PRUSA_SLICER}",
+        "--datadir",
+        "${PRIVATE_SLICE_DIR}/mast_brace_frame-isolated-datadir",
+        "--load",
+        "qa/manufacturing-review/diagnostic-no-support.ini",
+        "--center",
+        "125,105",
+        "--export-gcode",
+        "--output",
+        "${PRIVATE_SLICE_DIR}/mast_brace_frame-DIAGNOSTIC-ONLY.gcode",
+        "parts/mast_brace_frame-print.stl"
+      ],
+      "input_sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef",
+      "warning_lines": [],
+      "raw_gcode_in_deliverable": false,
+      "gcode_sha256": "0e134927063d2b5532017d5f673ca8f4fbf887726530c0efa5a323139a9a3e86",
+      "gcode_bytes": 155077,
+      "feature_extrusions": {
+        "Skirt/Brim": {
+          "extruding_xy_moves": 24,
+          "filament_mm_in_xy_moves": 5.5316,
+          "xy_path_mm": 163.42144245568429,
+          "bounds_min_xyz": [
+            110.471,
+            70.796,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            139.529,
+            139.204,
+            0.2
+          ]
+        },
+        "Perimeter": {
+          "extruding_xy_moves": 1672,
+          "filament_mm_in_xy_moves": 82.75388000000024,
+          "xy_path_mm": 2231.582539542595,
+          "bounds_min_xyz": [
+            117.307,
+            77.665,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            132.693,
+            132.368,
+            2.2
+          ]
+        },
+        "External perimeter": {
+          "extruding_xy_moves": 638,
+          "filament_mm_in_xy_moves": 60.74429999999994,
+          "xy_path_mm": 1794.5841196894698,
+          "bounds_min_xyz": [
+            116.9,
+            77.225,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            133.1,
+            132.775,
+            2.2
+          ]
+        },
+        "Solid infill": {
+          "extruding_xy_moves": 531,
+          "filament_mm_in_xy_moves": 10.483630000000002,
+          "xy_path_mm": 319.91008553935404,
+          "bounds_min_xyz": [
+            117.995,
+            117.967,
+            0.2
+          ],
+          "bounds_max_xyz": [
+            132.017,
+            130.582,
+            2.0
+          ]
+        },
+        "Top solid infill": {
+          "extruding_xy_moves": 56,
+          "filament_mm_in_xy_moves": 0.9419400000000002,
+          "xy_path_mm": 27.03472741617848,
+          "bounds_min_xyz": [
+            118.007,
+            117.967,
+            2.2
+          ],
+          "bounds_max_xyz": [
+            131.981,
+            119.149,
+            2.2
+          ]
+        }
+      },
+      "estimated_time_comments": [
+        "estimated printing time (normal mode) = 3m 4s",
+        "estimated printing time (silent mode) = 3m 9s"
+      ],
+      "measurement_note": "Positive absolute-E extrusion on nonzero XY segments only; retraction-only and unretraction-only moves excluded. This is diagnostic path evidence, not a physical print.",
+      "toolpath_layer_change_records": 11,
+      "object_extrusion_z_count": 11,
+      "object_max_extrusion_z_mm": 2.2
+    }
+  ]
+}

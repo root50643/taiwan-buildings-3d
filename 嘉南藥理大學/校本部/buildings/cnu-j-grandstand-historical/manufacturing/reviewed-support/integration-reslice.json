@@ -1,0 +1,46 @@
+{
+  "decision": "CONDITIONAL_GO_FIXED_STLS_ONLY",
+  "old_main_route_accepted": false,
+  "machine_ready": false,
+  "physical_print_or_fit_or_glue_test": false,
+  "conditions": "100% size; PLA; 0.4mm nozzle; 0.2mm layer; nominal 0.45mm width; 3 perimeters; 15% stars infill; 250x210mm bed; no brim in this diagnostic.",
+  "results": [
+    {
+      "part": "main_body",
+      "input_sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c",
+      "profile": "manufacturing/reviewed-support/main-short-axis-support.ini",
+      "profile_sha256": "c387a77a029149fa376a76f6930fae75f4317e4682774401ef79119243362d69",
+      "exit_code": 0,
+      "warning_lines": [],
+      "gcode_sha256": "896a8e3dcd229b515025ccb4c110344c725c7f67e82a1dc20ab0e2fc28974c98",
+      "gcode_bytes": 8540991,
+      "gcode_canonical_sha256": "dec08162c81c48cde9081124088a249a34de8133ecaf89e3b1a48baeb23ab053",
+      "support_extrusion_segments": 30369,
+      "bridge_extrusion_segments": 8132,
+      "command_template": [
+        "${PRUSA_SLICER}",
+        "--datadir",
+        "${PRIVATE_SLICE_DIR}/main_body-isolated-settings",
+        "--load",
+        "manufacturing/reviewed-support/main-short-axis-support.ini",
+        "--center",
+        "125,105",
+        "--export-gcode",
+        "--output",
+        "${PRIVATE_SLICE_DIR}/main_body-REVIEWED-DIAGNOSTIC-DO-NOT-PRINT.gcode",
+        "parts/main_body-print.stl"
+      ],
+      "raw_gcode_in_package": false,
+      "reference_review_gcode_sha256": "9aa5d56634a0fc9a99a17f3c9a02588eb6987613facb2ea99ae2e625dd5e842c",
+      "identical_to_independent_review_except_generated_time": true
+    }
+  ],
+  "limitations": [
+    "Check actual bridge direction across the short platform span, not angle number alone; rotation/slicer changes affect meaning.",
+    "Retain support under bridges. The main platform centerline coverage gap is about 1.704001mm only under the linked independent toolpath analysis.",
+    "About 8.224913mm main / 8.036027mm roof internal bridges still require demonstrated machine/material capability or a revised reslice.",
+    "95,890 support points and staged routes are finite geometric checks, not a full removal, tool-turning, adhesion or strength simulation.",
+    "Break support into small pieces and remove laterally before assembly; do not pull the two shallow-window support blocks straight forward.",
+    "Fit and adhesive strength are untested; 50 joints are glue alignment, not snap fits."
+  ]
+}

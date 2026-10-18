@@ -1,0 +1,168 @@
+{
+  "building": "嘉南藥理大學／校本部／J 司令台歷史外觀代表模型",
+  "reviewed_at_utc": "2026-10-18T16:58:41.204462+00:00",
+  "candidate_commit": "3a9a6041c5fde9ef2d6e9e96b02f24f025c8be5a",
+  "base_commit": "c311bc824e91dfa610164924cae51ef47ac8b3ab",
+  "decision": "CONDITIONAL_GO_FIXED_STLS",
+  "as_delivered_main_slicing_process": "NOT_ACCEPTED",
+  "unconditional_package_GO": false,
+  "decision_explanation": "四個固定列印 STL 無需改模；原主體自動橋向診斷印法不放行。須採短向橋接、保留橋下支撐，真機重切逐層檢查，並保留約8.3mm橋接與支撐拆除、膠合限制。原製造通過概括需修正文案。",
+  "print_files": [
+    {
+      "file": "parts/main_body-print.stl",
+      "quantity": 1,
+      "sha256": "64205a0515ec83e40e56a2f855a256556490a1d759481741cef177d42b0b133c"
+    },
+    {
+      "file": "parts/roof-print.stl",
+      "quantity": 1,
+      "sha256": "dbb9dfc7850219f8d40213cfb6c0cd944c1f30225dec2f6f3ae358370a9166cb"
+    },
+    {
+      "file": "parts/column-print.stl",
+      "quantity": 10,
+      "sha256": "010e3512e0b420d9f40ae1ad7679314cfd841a931aa30a4d6e9ae05a8dd169da"
+    },
+    {
+      "file": "parts/mast_brace_frame-print.stl",
+      "quantity": 10,
+      "sha256": "a0cb933ab1bdf6a26ccc20b573a1ea9a5f8a22df93868f6395885c8be3d80cef"
+    }
+  ],
+  "unique_print_geometries": 4,
+  "physical_piece_inventory": 22,
+  "assembled_bounds_mm": [
+    [
+      -107,
+      -51,
+      0
+    ],
+    [
+      107,
+      39,
+      53.400001525878906
+    ]
+  ],
+  "overview_is_not_print_file": true,
+  "overview_sha256": "a759a7e25e8a4818e1802668d51c1d21db88b312200ddc1406dbb968aee5343f",
+  "structural_or_source_STL_blockers": [],
+  "necessary_conditions": [
+    "Main platform first bridge layer must cross short axis with bridge support retained. Review-only bridge_angle=90 and dont_support_bridges=0 is a demonstrated diagnostic correction; actual orientation/toolpaths must be inspected after machine-specific re-slicing.",
+    "Qualify approximately 8.3mm internal bridges with actual PLA/cooling/flow, or increase infill/solid layers then re-slice and inspect.",
+    "Remove exterior supports progressively before assembly; front stair/window corridor requires angled fine tools and fragmentation. If safe access fails, revise support layout/contact or use compatible soluble support, re-slice.",
+    "Print body1+roof1+column10+frame10 at 100% scale in supplied orientations; overview is not printable whole.",
+    "Clean socket/elephant foot, dry align, use suitable gap-filling adhesive and temporary jig. Broad canopy warping and thin-frame handling remain risks."
+  ],
+  "candidate_documentation_corrections_required": [
+    "Do not retain original main automatic-support manufacturing pass as proof of a viable print process; document required short-axis bridge and bridge-support conditions.",
+    "State 100% SCALE and 15% INFILL; 100% PLA is ambiguous.",
+    "Do not describe all canopy bridges as 2.6mm blind-socket bridges; 8.036027mm internal-infill closure remains."
+  ],
+  "independent_geometry": {
+    "exported_part_STLs_checked": 8,
+    "closed_single_connected_positive_volume": true,
+    "illegal_triangle_intersections": 0,
+    "overview_triangles": 5396,
+    "overview_vertices": 2738,
+    "overview_possible_triangle_pairs": 14555710,
+    "overview_exact_AABB_candidate_pairs_checked": 68378,
+    "assembly_instances_match_overview_binary32_triangles": true,
+    "solid_pair_tests": 231,
+    "nonempty_solid_intersections": 0,
+    "interfaces_measured": 50,
+    "minimum_total_XY_gap_mm": 0.3999969959259033,
+    "minimum_one_side_gap_mm": 0.19999849796295166,
+    "nominal_shoulder_glue_gap_mm": 0.05,
+    "natural_dry_seated_top_approx_mm": 53.25,
+    "minimum_thickness_scope": "Located actual-STL calipers; not a global arbitrary-direction thickness proof"
+  },
+  "rebuild_scene": {
+    "generator_executed_in_isolated_copy": true,
+    "byte_identical_outputs": [
+      "8 part STLs",
+      "model.stl",
+      "assembly.json"
+    ],
+    "blend_world_oriented_binary32_triangles_exact": true,
+    "independent_renders": 1,
+    "front_pixels_equal_after_renderer_camera_restored": true,
+    "saved_camera_ortho_scale": 250,
+    "rendered_front_ortho_scale": 257.6317700195313,
+    "assembly_previews": 5,
+    "unique_part_orientation_previews": 1,
+    "historical_pre_sanitize_buffer_removal_independently_repeated": false
+  },
+  "slicing": {
+    "slicer": "PrusaSlicer 2.9.6",
+    "original_unique_part_reslice_jobs": 4,
+    "additional_main_feasibility_reslice_jobs": 1,
+    "all_exit_0_no_warning_error_repair": true,
+    "original_reslices_differ_only_generation_timestamp": true,
+    "original_object_extrusion_z_counts": [
+      140,
+      18,
+      14,
+      11
+    ],
+    "original_main_total_layer_change_records": 189,
+    "original_main_longitudinal_projected_centerline_gap_mm": 174.288719,
+    "review_main_platform_gap_mm": 1.704001,
+    "review_main_all_bridges_max_gap_mm": 8.224913,
+    "roof_internal_bridge_gap_mm": 8.036027,
+    "roof_blind_socket_bridge_gap_mm": 2.6000110755685952,
+    "coverage_method": "Analytic query-line intervals against union of prior extrusion capsules, with near support separately recorded. Toolpath abstraction, not actual bead/thermal/sagging simulation."
+  },
+  "support_access": {
+    "original": {
+      "actual_positive_E_XY_segments": 26586,
+      "unique_samples_at_most_1mm_spacing": 83924,
+      "no_direct_eight_horizontal_ray_samples": 580
+    },
+    "review_short_axis_profile": {
+      "actual_positive_E_XY_segments": 30369,
+      "unique_samples_at_most_1mm_spacing": 95890,
+      "no_direct_eight_horizontal_ray_samples": 580
+    },
+    "flagged_points_three_leg_routes_clear": true,
+    "exterior_corridor_mm": {
+      "width": 4.5,
+      "height": 9.4
+    },
+    "physical_removal_or_continuous_swept_tool_proof": false,
+    "limitations": "Model-only finite point/ray/dogleg checks; no other-support obstruction, gripped chunk, tool turn, force or adhesion simulation. All initial flags retained."
+  },
+  "source_visual": {
+    "official_photos_actually_viewed": 4,
+    "all_six_candidate_previews_actually_viewed": true,
+    "rear_two_storeys_and_cross_storey_central_glazing_preserved": true,
+    "historical_years": [
+      2006,
+      2010,
+      2012,
+      "undated high roof view"
+    ],
+    "front_caption_20250308_vs_EXIF_2012_conflict_preserved": true,
+    "2026_current_state_claim": false,
+    "dimensional_uncertainty_at_least_percent": 25,
+    "far_side_stairs_representative_symmetry": true,
+    "precision_survey_required_for_this_simplified_model": false
+  },
+  "not_performed": [
+    "Physical print",
+    "Support removal",
+    "Dry fit",
+    "Glue strength",
+    "Machine-specific thermal or warping qualification",
+    "Remote write or publication",
+    "New Library download"
+  ],
+  "original_and_copy_58_files_unchanged": true,
+  "environment_or_file_transfer_blockers": [],
+  "report": "INDEPENDENT-REVIEW.md",
+  "subreports": [
+    "assembly-geometry-audit/GEOMETRY-REVIEW.md",
+    "rebuild-scene-audit/REBUILD-SCENE-REVIEW.md",
+    "source-audit/SOURCE-VISUAL-REVIEW.md",
+    "slicing-support-audit/SLICING-SUPPORT-REVIEW.md"
+  ]
+}

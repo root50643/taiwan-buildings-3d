@@ -1,0 +1,1422 @@
+{
+  "scope": "Only pairs listed by the existing floating-point report are evaluated for intersection. No whole-mesh pair QA or render is performed; an exact degeneracy input guard scans all triangles.",
+  "method": "Exact rational arithmetic on finite float32 STL coordinates promoted to Python float. Unnormalized plane normals and exact plane cuts. Noncoplanar line interval overlap is compared with shared topology. Coplanar polygons are clipped using exact 2D orientation and rational crossings.",
+  "input_sha256": "bc2ac743cacb4cb9584a62d79df2541b2cb75a463e4bc43d10b2ad9e280f0243",
+  "diagnostic_script_sha256": "c8e9771b1c9dba285ae796e29d806b9f49fd681e06c098965e3cbccd3141b42c",
+  "versions": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "trimesh": "4.12.2"
+  },
+  "report_declared_input_sha256": "bc2ac743cacb4cb9584a62d79df2541b2cb75a463e4bc43d10b2ad9e280f0243",
+  "report_sha256": "ba1e39a645293c6cb7211ff842201cb51d19551d8cc4e65197c8431a641ea78e",
+  "loaded_face_count": 340,
+  "triangle_order_equal_to_raw_stl": true,
+  "coordinates_exactly_float32_representable": true,
+  "exact_degenerate_triangle_indices": [],
+  "source_flag_count": 6,
+  "unique_source_pair_count": 6,
+  "guard_errors": [],
+  "exact_controls": {
+    "method": "Independent small cases for shared edge/vertex, disjoint, proper crossing, coplanar overlap and near-coplanar contact; no model mesh required.",
+    "controls": {
+      "disjoint_parallel": {
+        "expected_classification": "disjoint",
+        "actual_classification": "disjoint",
+        "expectation_passed": true,
+        "triangles_mm": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              1
+            ]
+          ]
+        ],
+        "shared_coordinates_mm": [],
+        "exact": {
+          "signed_a_to_b_plane_exact": [
+            "-4",
+            "-4",
+            "-4"
+          ],
+          "signed_b_to_a_plane_exact": [
+            "4",
+            "4",
+            "4"
+          ],
+          "exactly_parallel": true,
+          "exactly_coplanar": false,
+          "plane_cut_a_points": [],
+          "plane_cut_b_points": [],
+          "exact_intersection_points": [],
+          "intersection_confined_to_shared_topology": true,
+          "classification": "disjoint"
+        }
+      },
+      "shared_edge_noncoplanar": {
+        "expected_classification": "shared_edge_only",
+        "actual_classification": "shared_edge_only",
+        "expectation_passed": true,
+        "triangles_mm": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2
+            ]
+          ]
+        ],
+        "shared_coordinates_mm": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "exact": {
+          "signed_a_to_b_plane_exact": [
+            "0",
+            "0",
+            "-8"
+          ],
+          "signed_b_to_a_plane_exact": [
+            "0",
+            "0",
+            "8"
+          ],
+          "exactly_parallel": false,
+          "exactly_coplanar": false,
+          "plane_cut_a_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "plane_cut_b_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "exact_interval_axis": 0,
+          "exact_interval_low": "0",
+          "exact_interval_high": "2",
+          "exact_intersection_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "intersection_confined_to_shared_topology": true,
+          "classification": "shared_edge_only"
+        }
+      },
+      "shared_vertex_noncoplanar": {
+        "expected_classification": "shared_vertex_only",
+        "actual_classification": "shared_vertex_only",
+        "expectation_passed": true,
+        "triangles_mm": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ]
+        ],
+        "shared_coordinates_mm": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "exact": {
+          "signed_a_to_b_plane_exact": [
+            "0",
+            "2",
+            "2"
+          ],
+          "signed_b_to_a_plane_exact": [
+            "0",
+            "4",
+            "4"
+          ],
+          "exactly_parallel": false,
+          "exactly_coplanar": false,
+          "plane_cut_a_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "plane_cut_b_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "exact_interval_axis": 0,
+          "exact_interval_low": "0",
+          "exact_interval_high": "0",
+          "exact_intersection_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "intersection_confined_to_shared_topology": true,
+          "classification": "shared_vertex_only"
+        }
+      },
+      "true_noncoplanar_crossing": {
+        "expected_classification": "unexpected_intersection",
+        "actual_classification": "unexpected_intersection",
+        "expectation_passed": true,
+        "triangles_mm": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.5,
+              -1
+            ],
+            [
+              0.5,
+              0.5,
+              1
+            ],
+            [
+              1.5,
+              0.5,
+              0
+            ]
+          ]
+        ],
+        "shared_coordinates_mm": [],
+        "exact": {
+          "signed_a_to_b_plane_exact": [
+            "-1",
+            "-1",
+            "3"
+          ],
+          "signed_b_to_a_plane_exact": [
+            "-4",
+            "4",
+            "0"
+          ],
+          "exactly_parallel": false,
+          "exactly_coplanar": false,
+          "plane_cut_a_points": [
+            [
+              1.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0
+            ]
+          ],
+          "plane_cut_b_points": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              0.0
+            ]
+          ],
+          "exact_interval_axis": 0,
+          "exact_interval_low": "1/2",
+          "exact_interval_high": "3/2",
+          "exact_intersection_points": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              0.0
+            ]
+          ],
+          "intersection_confined_to_shared_topology": false,
+          "classification": "unexpected_intersection"
+        }
+      },
+      "coplanar_area_overlap": {
+        "expected_classification": "unexpected_intersection",
+        "actual_classification": "unexpected_intersection",
+        "expectation_passed": true,
+        "triangles_mm": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.5,
+              0
+            ],
+            [
+              2,
+              0.5,
+              0
+            ],
+            [
+              0.5,
+              2,
+              0
+            ]
+          ]
+        ],
+        "shared_coordinates_mm": [],
+        "exact": {
+          "signed_a_to_b_plane_exact": [
+            "0",
+            "0",
+            "0"
+          ],
+          "signed_b_to_a_plane_exact": [
+            "0",
+            "0",
+            "0"
+          ],
+          "exactly_parallel": true,
+          "exactly_coplanar": true,
+          "plane_cut_a_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ]
+          ],
+          "plane_cut_b_points": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              2.0,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              2.0,
+              0.0
+            ]
+          ],
+          "exact_intersection_points": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              1.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              1.5,
+              0.0
+            ]
+          ],
+          "intersection_confined_to_shared_topology": false,
+          "classification": "unexpected_intersection"
+        }
+      },
+      "coplanar_shared_edge": {
+        "expected_classification": "shared_edge_only",
+        "actual_classification": "shared_edge_only",
+        "expectation_passed": true,
+        "triangles_mm": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              -1,
+              0
+            ]
+          ]
+        ],
+        "shared_coordinates_mm": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "exact": {
+          "signed_a_to_b_plane_exact": [
+            "0",
+            "0",
+            "0"
+          ],
+          "signed_b_to_a_plane_exact": [
+            "0",
+            "0",
+            "0"
+          ],
+          "exactly_parallel": true,
+          "exactly_coplanar": true,
+          "plane_cut_a_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              2.0,
+              0.0
+            ]
+          ],
+          "plane_cut_b_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              -1.0,
+              0.0
+            ]
+          ],
+          "exact_intersection_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "intersection_confined_to_shared_topology": true,
+          "classification": "shared_edge_only"
+        }
+      },
+      "near_coplanar_shared_edge": {
+        "expected_classification": "shared_edge_only",
+        "actual_classification": "shared_edge_only",
+        "expectation_passed": true,
+        "triangles_mm": [
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              -2,
+              2.384185791015625e-07
+            ]
+          ]
+        ],
+        "shared_coordinates_mm": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "exact": {
+          "signed_a_to_b_plane_exact": [
+            "0",
+            "0",
+            "-1/1048576"
+          ],
+          "signed_b_to_a_plane_exact": [
+            "0",
+            "0",
+            "1/1048576"
+          ],
+          "exactly_parallel": false,
+          "exactly_coplanar": false,
+          "plane_cut_a_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "plane_cut_b_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "exact_interval_axis": 0,
+          "exact_interval_low": "0",
+          "exact_interval_high": "2",
+          "exact_intersection_points": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "intersection_confined_to_shared_topology": true,
+          "classification": "shared_edge_only"
+        }
+      },
+      "degenerate_triangle_guard": {
+        "expectation_passed": true,
+        "degenerate_input_rejected": true
+      }
+    },
+    "all_control_expectations_passed": true
+  },
+  "pairs": [
+    {
+      "original_flag": {
+        "faces": [
+          153,
+          159
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "shared_vertex_indices": [
+        89
+      ],
+      "shared_coordinates_mm": [
+        [
+          -18.407407760620117,
+          -1.3695987462997437,
+          11.300000190734863
+        ]
+      ],
+      "triangles_mm": [
+        [
+          [
+            -19.123456954956055,
+            -1.9195988178253174,
+            10.75
+          ],
+          [
+            -19.123456954956055,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -0.36959877610206604,
+            12.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ]
+      ],
+      "unit_normal_cross_norm": 6.156464501831413e-08,
+      "float_signed_a_to_b_plane_mm": [
+        5.578140940233214e-08,
+        8.876051833694128e-09,
+        0.0
+      ],
+      "float_signed_b_to_a_plane_mm": [
+        -5.995405079784345e-17,
+        1.321878041427007e-07,
+        0.0
+      ],
+      "exact": {
+        "signed_a_to_b_plane_exact": [
+          "32558283/70368744177664",
+          "169762505149/2305843009213693952",
+          "0"
+        ],
+        "signed_b_to_a_plane_exact": [
+          "0",
+          "169762505149/2305843009213693952",
+          "0"
+        ],
+        "exactly_parallel": false,
+        "exactly_coplanar": false,
+        "plane_cut_a_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "plane_cut_b_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ],
+        "exact_interval_axis": 0,
+        "exact_interval_low": "-9650783/524288",
+        "exact_interval_high": "-9650783/524288",
+        "exact_intersection_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "intersection_confined_to_shared_topology": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          153,
+          161
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "shared_vertex_indices": [
+        89
+      ],
+      "shared_coordinates_mm": [
+        [
+          -18.407407760620117,
+          -1.3695987462997437,
+          11.300000190734863
+        ]
+      ],
+      "triangles_mm": [
+        [
+          [
+            -19.123456954956055,
+            -1.9195988178253174,
+            10.75
+          ],
+          [
+            -19.123456954956055,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -18.407407760620117,
+            -0.36959877610206604,
+            12.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -0.36959877610206604,
+            12.300000190734863
+          ]
+        ]
+      ],
+      "unit_normal_cross_norm": 9.347089413580534e-08,
+      "float_signed_a_to_b_plane_mm": [
+        7.270331077596625e-08,
+        0.0,
+        0.0
+      ],
+      "float_signed_b_to_a_plane_mm": [
+        -5.995405079784345e-17,
+        1.321878041427007e-07,
+        1.321878041427007e-07
+      ],
+      "exact": {
+        "signed_a_to_b_plane_exact": [
+          "897107312195/2305843009213693952",
+          "0",
+          "0"
+        ],
+        "signed_b_to_a_plane_exact": [
+          "0",
+          "169762505149/2305843009213693952",
+          "169762505149/2305843009213693952"
+        ],
+        "exactly_parallel": false,
+        "exactly_coplanar": false,
+        "plane_cut_a_points": [
+          [
+            -19.123456954956055,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "plane_cut_b_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "exact_interval_axis": 0,
+        "exact_interval_low": "-9650783/524288",
+        "exact_interval_high": "-9650783/524288",
+        "exact_intersection_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "intersection_confined_to_shared_topology": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          158,
+          159
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 3.8630666559318154
+      },
+      "shared_vertex_indices": [
+        86,
+        89
+      ],
+      "shared_coordinates_mm": [
+        [
+          -14.623456954956055,
+          -1.9195988178253174,
+          10.75
+        ],
+        [
+          -18.407407760620117,
+          -1.3695987462997437,
+          11.300000190734863
+        ]
+      ],
+      "triangles_mm": [
+        [
+          [
+            -19.123456954956055,
+            -1.9195988178253174,
+            10.75
+          ],
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ],
+        [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -0.36959877610206604,
+            12.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ]
+      ],
+      "unit_normal_cross_norm": 6.156464501831413e-08,
+      "float_signed_a_to_b_plane_mm": [
+        5.578140940233214e-08,
+        0.0,
+        2.1881190368183527e-17
+      ],
+      "float_signed_b_to_a_plane_mm": [
+        -5.995405079784345e-17,
+        1.321878041427007e-07,
+        0.0
+      ],
+      "exact": {
+        "signed_a_to_b_plane_exact": [
+          "32558283/70368744177664",
+          "0",
+          "0"
+        ],
+        "signed_b_to_a_plane_exact": [
+          "0",
+          "32558283/70368744177664",
+          "0"
+        ],
+        "exactly_parallel": false,
+        "exactly_coplanar": false,
+        "plane_cut_a_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ],
+        "plane_cut_b_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ],
+        "exact_interval_axis": 0,
+        "exact_interval_low": "-9650783/524288",
+        "exact_interval_high": "-7666903/524288",
+        "exact_intersection_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ],
+        "intersection_confined_to_shared_topology": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          158,
+          161
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 3.7839508056640625
+      },
+      "shared_vertex_indices": [
+        89
+      ],
+      "shared_coordinates_mm": [
+        [
+          -18.407407760620117,
+          -1.3695987462997437,
+          11.300000190734863
+        ]
+      ],
+      "triangles_mm": [
+        [
+          [
+            -19.123456954956055,
+            -1.9195988178253174,
+            10.75
+          ],
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -1.9195988178253174,
+            10.75
+          ]
+        ],
+        [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ],
+          [
+            -18.407407760620117,
+            -0.36959877610206604,
+            12.300000190734863
+          ],
+          [
+            -14.623456954956055,
+            -0.36959877610206604,
+            12.300000190734863
+          ]
+        ]
+      ],
+      "unit_normal_cross_norm": 9.347089413580534e-08,
+      "float_signed_a_to_b_plane_mm": [
+        7.270331077596625e-08,
+        0.0,
+        7.270331077596625e-08
+      ],
+      "float_signed_b_to_a_plane_mm": [
+        -5.995405079784345e-17,
+        1.321878041427007e-07,
+        1.321878041427007e-07
+      ],
+      "exact": {
+        "signed_a_to_b_plane_exact": [
+          "897107312195/2305843009213693952",
+          "0",
+          "897107312195/2305843009213693952"
+        ],
+        "signed_b_to_a_plane_exact": [
+          "0",
+          "32558283/70368744177664",
+          "32558283/70368744177664"
+        ],
+        "exactly_parallel": false,
+        "exactly_coplanar": false,
+        "plane_cut_a_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "plane_cut_b_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "exact_interval_axis": 0,
+        "exact_interval_low": "-9650783/524288",
+        "exact_interval_high": "-9650783/524288",
+        "exact_intersection_points": [
+          [
+            -18.407407760620117,
+            -1.3695987462997437,
+            11.300000190734863
+          ]
+        ],
+        "intersection_confined_to_shared_topology": true,
+        "classification": "shared_vertex_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          230,
+          290
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 15.251125721262298
+      },
+      "shared_vertex_indices": [
+        130,
+        135
+      ],
+      "shared_coordinates_mm": [
+        [
+          29.145061492919922,
+          17.037809371948242,
+          3.0
+        ],
+        [
+          21.69444465637207,
+          8.735692024230957,
+          13.399999618530273
+        ]
+      ],
+      "triangles_mm": [
+        [
+          [
+            21.475309371948242,
+            8.491512298583984,
+            3.0
+          ],
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ],
+          [
+            29.145061492919922,
+            17.037809371948242,
+            3.0
+          ]
+        ],
+        [
+          [
+            29.145061492919922,
+            17.037809371948242,
+            3.0
+          ],
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ],
+          [
+            29.145061492919922,
+            17.037809371948242,
+            13.399999618530273
+          ]
+        ]
+      ],
+      "unit_normal_cross_norm": 3.123864249197989e-08,
+      "float_signed_a_to_b_plane_mm": [
+        -2.4461730485178146e-07,
+        8.206264833654107e-16,
+        0.0
+      ],
+      "float_signed_b_to_a_plane_mm": [
+        -2.246373727765767e-16,
+        -2.051999871829409e-17,
+        -2.3762824956064956e-07
+      ],
+      "exact": {
+        "signed_a_to_b_plane_exact": [
+          "-8179650410705/288230376151711744",
+          "0",
+          "0"
+        ],
+        "signed_b_to_a_plane_exact": [
+          "0",
+          "0",
+          "-8179650410705/288230376151711744"
+        ],
+        "exactly_parallel": false,
+        "exactly_coplanar": false,
+        "plane_cut_a_points": [
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ],
+          [
+            29.145061492919922,
+            17.037809371948242,
+            3.0
+          ]
+        ],
+        "plane_cut_b_points": [
+          [
+            29.145061492919922,
+            17.037809371948242,
+            3.0
+          ],
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ]
+        ],
+        "exact_interval_axis": 2,
+        "exact_interval_low": "3",
+        "exact_interval_high": "7025459/524288",
+        "exact_intersection_points": [
+          [
+            29.145061492919922,
+            17.037809371948242,
+            3.0
+          ],
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ]
+        ],
+        "intersection_confined_to_shared_topology": true,
+        "classification": "shared_edge_only"
+      }
+    },
+    {
+      "original_flag": {
+        "faces": [
+          284,
+          290
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 0
+      },
+      "shared_vertex_indices": [
+        135
+      ],
+      "shared_coordinates_mm": [
+        [
+          21.69444465637207,
+          8.735692024230957,
+          13.399999618530273
+        ]
+      ],
+      "triangles_mm": [
+        [
+          [
+            21.475309371948242,
+            8.491512298583984,
+            3.0
+          ],
+          [
+            21.475309371948242,
+            8.491512298583984,
+            13.399999618530273
+          ],
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ]
+        ],
+        [
+          [
+            29.145061492919922,
+            17.037809371948242,
+            3.0
+          ],
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ],
+          [
+            29.145061492919922,
+            17.037809371948242,
+            13.399999618530273
+          ]
+        ]
+      ],
+      "unit_normal_cross_norm": 7.455765514419177e-07,
+      "float_signed_a_to_b_plane_mm": [
+        -2.4461730485178146e-07,
+        -2.4461730485178146e-07,
+        8.206264833654107e-16
+      ],
+      "float_signed_b_to_a_plane_mm": [
+        -8.317000629503645e-06,
+        -2.445384118723165e-18,
+        -8.317000629503645e-06
+      ],
+      "exact": {
+        "signed_a_to_b_plane_exact": [
+          "-8179650410705/288230376151711744",
+          "-8179650410705/288230376151711744",
+          "0"
+        ],
+        "signed_b_to_a_plane_exact": [
+          "-8179650410705/288230376151711744",
+          "0",
+          "-8179650410705/288230376151711744"
+        ],
+        "exactly_parallel": false,
+        "exactly_coplanar": false,
+        "plane_cut_a_points": [
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ]
+        ],
+        "plane_cut_b_points": [
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ]
+        ],
+        "exact_interval_axis": 2,
+        "exact_interval_low": "7025459/524288",
+        "exact_interval_high": "7025459/524288",
+        "exact_intersection_points": [
+          [
+            21.69444465637207,
+            8.735692024230957,
+            13.399999618530273
+          ]
+        ],
+        "intersection_confined_to_shared_topology": true,
+        "classification": "shared_vertex_only"
+      }
+    }
+  ],
+  "classification_counts": {
+    "shared_edge_only": 2,
+    "shared_vertex_only": 4
+  },
+  "diagnosed_pair_count": 6,
+  "all_flags_covered_once": true,
+  "all_flagged_pairs_have_only_expected_contact": true,
+  "passes_flag_diagnosis": true,
+  "generic_report_unchanged": true,
+  "does_not_override_generic_report_exit_status": true
+}

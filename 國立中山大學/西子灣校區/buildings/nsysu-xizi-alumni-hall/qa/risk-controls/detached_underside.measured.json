@@ -1,0 +1,134 @@
+{
+  "scope": "Original binary32 facet and existing sampled-layer risk quantification; no geometry repair or gate override.",
+  "stl_sha256": "d428b138fa47073b4b61f75206d79175f285f2b8608802e52de9781ea17714cd",
+  "generic_report_sha256": "2b072def692c1107724c980672538201f7ba5da6e6f44eac6b9f8650fababb6c",
+  "diagnostic_script_sha256": "cda792a31aaa56cbcf51c4ac515ecd925f5d6846d2e5610adc44483b6865c55b",
+  "generic_report_passes_bounded_geometry_screen": false,
+  "support_threshold_mm2_unchanged": 0.01,
+  "support_angle_from_vertical_deg_unchanged": 45,
+  "first_sampled_layer_assumed_plate_supported": true,
+  "actual_bottom_z_mm": 0.0,
+  "nonbase_downward_face_count": 2,
+  "nonbase_horizontal_underside_face_count": 2,
+  "exact_over_45_degree_face_indices": [
+    15,
+    20
+  ],
+  "maximum_downward_facet_angle_from_vertical_deg": 90.0,
+  "connected_horizontal_underside_patches": [
+    {
+      "face_indices": [
+        15,
+        20
+      ],
+      "area_mm2": 4.0,
+      "bounds_by_axis_mm": [
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          3.0,
+          3.0
+        ]
+      ],
+      "xy_bounding_box_mm": [
+        2.0,
+        2.0
+      ],
+      "interpretation": "Connected horizontal underside patch. Bounding box is not a verified unsupported bridge span; consult actual layer/support evidence."
+    }
+  ],
+  "support_flagged_layer_count": 1,
+  "support_flagged_layers": [
+    {
+      "z_mm": 3.1,
+      "area_mm2": 4.0,
+      "components": 1,
+      "smallest_component_area_mm2": 4.0,
+      "feature_core_area_mm2": 1.44,
+      "feature_core_components": 1,
+      "core_vanished": false,
+      "core_split": false,
+      "material_component_core_counts": [
+        1
+      ],
+      "vanished_component_core_count": 0,
+      "split_component_core_count": 0,
+      "section_issues": [],
+      "outside_support_envelope_area_mm2": 4.0,
+      "sampled_max_upper_boundary_distance_to_lower_mm": NaN
+    }
+  ],
+  "nonbase_downward_facets": [
+    {
+      "stl_record_face_index": 15,
+      "vertices_mm": [
+        [
+          -1.0,
+          1.0,
+          3.0
+        ],
+        [
+          1.0,
+          -1.0,
+          3.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          3.0
+        ]
+      ],
+      "unnormalized_normal_exact": [
+        "0",
+        "0",
+        "-4"
+      ],
+      "area_mm2": 2.0,
+      "xy_projected_area_mm2": 2.0,
+      "angle_from_vertical_deg": 90.0,
+      "exact_within_45_degrees": false,
+      "horizontal_underside": true,
+      "z_span_mm_exact": "0"
+    },
+    {
+      "stl_record_face_index": 20,
+      "vertices_mm": [
+        [
+          1.0,
+          1.0,
+          3.0
+        ],
+        [
+          1.0,
+          -1.0,
+          3.0
+        ],
+        [
+          -1.0,
+          1.0,
+          3.0
+        ]
+      ],
+      "unnormalized_normal_exact": [
+        "0",
+        "0",
+        "-4"
+      ],
+      "area_mm2": 2.0,
+      "xy_projected_area_mm2": 2.0,
+      "angle_from_vertical_deg": 90.0,
+      "exact_within_45_degrees": false,
+      "horizontal_underside": true,
+      "z_span_mm_exact": "0"
+    }
+  ],
+  "thin_feature_interpretation": "Per-component 0.8 mm erosion is retained in generic report; surviving cores do not prove every-point minimum XY wall or Z relief thickness.",
+  "remaining_print_checks": "No target-printer slicing, bridge path, support removal, bed adhesion, material shrinkage, G-code inspection or physical print performed.",
+  "does_not_override_generic_report_exit_status": true
+}

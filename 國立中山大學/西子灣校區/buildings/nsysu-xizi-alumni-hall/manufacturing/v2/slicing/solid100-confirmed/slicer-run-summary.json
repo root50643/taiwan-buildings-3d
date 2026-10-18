@@ -1,0 +1,444 @@
+{
+  "python": "3.13.9",
+  "tool_exe": "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+  "tool_exe_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "profile": "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+  "profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+  "source_build_report_sha256": "b7c78d7447493858b770362b40e3d06c55c4e10000733cbc4ccab7bfab2b3b49",
+  "parts": [
+    {
+      "id": "01-base-floor1-upright",
+      "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\01-base-floor1-upright.stl",
+      "input_stl_sha256": "bc2ac743cacb4cb9584a62d79df2541b2cb75a463e4bc43d10b2ad9e280f0243",
+      "expected_stl_sha256": "bc2ac743cacb4cb9584a62d79df2541b2cb75a463e4bc43d10b2ad9e280f0243",
+      "input_bytes": 17084,
+      "profile": "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+      "profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+      "info": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\01-base-floor1-upright\\cli-data",
+          "--info",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\01-base-floor1-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.09552955627441406,
+        "stdout_log": "01-base-floor1-upright\\info.stdout.log",
+        "diagnostic_lines": []
+      },
+      "slice": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\01-base-floor1-upright\\cli-data",
+          "--load",
+          "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+          "--threads",
+          "2",
+          "--center",
+          "110,110",
+          "--export-gcode",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\01-base-floor1-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\01-base-floor1-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.7473361492156982,
+        "stdout_log": "01-base-floor1-upright\\slice.stdout.log",
+        "diagnostic_lines": [
+          "65 => Searching support spots",
+          "69 => Alert if supports needed",
+          "89 => Calculating overhanging perimeters"
+        ]
+      },
+      "input_sha256_after": "bc2ac743cacb4cb9584a62d79df2541b2cb75a463e4bc43d10b2ad9e280f0243",
+      "gcode": "<WORKSPACE>\\slicer-review-solid-staging\\01-base-floor1-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "gcode_exists": true,
+      "audit": {
+        "argv": [
+          "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "-B",
+          "<WORKSPACE>\\slicer-review-solid-staging\\audit_gcode.py",
+          "<WORKSPACE>\\slicer-review-solid-staging\\01-base-floor1-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "--stl",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\01-base-floor1-upright.stl",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\01-base-floor1-upright"
+        ],
+        "returncode": 0,
+        "seconds": 1.1330211162567139,
+        "stdout_log": "01-base-floor1-upright\\audit.stdout.log",
+        "diagnostic_lines": [
+          "  \"unsupported_arc_commands\": [],",
+          "  \"support_extrusion_segments\": 0,",
+          "  \"support_positive_filament_mm\": 0,",
+          "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+          "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+        ]
+      }
+    },
+    {
+      "id": "02-floor2-slab-inverted",
+      "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\02-floor2-slab-inverted.stl",
+      "input_stl_sha256": "4440eeca45530769bf11b8e4094c82a0744e6ba160d692fda7fbf9f8f0f30ddd",
+      "expected_stl_sha256": "4440eeca45530769bf11b8e4094c82a0744e6ba160d692fda7fbf9f8f0f30ddd",
+      "input_bytes": 15484,
+      "profile": "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+      "profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+      "info": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\02-floor2-slab-inverted\\cli-data",
+          "--info",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\02-floor2-slab-inverted.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.0867455005645752,
+        "stdout_log": "02-floor2-slab-inverted\\info.stdout.log",
+        "diagnostic_lines": []
+      },
+      "slice": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\02-floor2-slab-inverted\\cli-data",
+          "--load",
+          "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+          "--threads",
+          "2",
+          "--center",
+          "110,110",
+          "--export-gcode",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\02-floor2-slab-inverted\\geometry-review-NOT-MACHINE-READY.gcode",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\02-floor2-slab-inverted.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.2633383274078369,
+        "stdout_log": "02-floor2-slab-inverted\\slice.stdout.log",
+        "diagnostic_lines": [
+          "65 => Searching support spots",
+          "69 => Alert if supports needed",
+          "89 => Calculating overhanging perimeters"
+        ]
+      },
+      "input_sha256_after": "4440eeca45530769bf11b8e4094c82a0744e6ba160d692fda7fbf9f8f0f30ddd",
+      "gcode": "<WORKSPACE>\\slicer-review-solid-staging\\02-floor2-slab-inverted\\geometry-review-NOT-MACHINE-READY.gcode",
+      "gcode_exists": true,
+      "audit": {
+        "argv": [
+          "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "-B",
+          "<WORKSPACE>\\slicer-review-solid-staging\\audit_gcode.py",
+          "<WORKSPACE>\\slicer-review-solid-staging\\02-floor2-slab-inverted\\geometry-review-NOT-MACHINE-READY.gcode",
+          "--stl",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\02-floor2-slab-inverted.stl",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\02-floor2-slab-inverted"
+        ],
+        "returncode": 0,
+        "seconds": 0.593574047088623,
+        "stdout_log": "02-floor2-slab-inverted\\audit.stdout.log",
+        "diagnostic_lines": [
+          "  \"unsupported_arc_commands\": [],",
+          "  \"support_extrusion_segments\": 0,",
+          "  \"support_positive_filament_mm\": 0,",
+          "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+          "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+        ]
+      }
+    },
+    {
+      "id": "03-floor2-upper-upright",
+      "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl",
+      "input_stl_sha256": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+      "expected_stl_sha256": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+      "input_bytes": 15584,
+      "profile": "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+      "profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+      "info": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\03-floor2-upper-upright\\cli-data",
+          "--info",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.09377932548522949,
+        "stdout_log": "03-floor2-upper-upright\\info.stdout.log",
+        "diagnostic_lines": []
+      },
+      "slice": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\03-floor2-upper-upright\\cli-data",
+          "--load",
+          "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+          "--threads",
+          "2",
+          "--center",
+          "110,110",
+          "--export-gcode",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\03-floor2-upper-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.552924394607544,
+        "stdout_log": "03-floor2-upper-upright\\slice.stdout.log",
+        "diagnostic_lines": [
+          "65 => Searching support spots",
+          "69 => Alert if supports needed",
+          "89 => Calculating overhanging perimeters"
+        ]
+      },
+      "input_sha256_after": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+      "gcode": "<WORKSPACE>\\slicer-review-solid-staging\\03-floor2-upper-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "gcode_exists": true,
+      "audit": {
+        "argv": [
+          "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "-B",
+          "<WORKSPACE>\\slicer-review-solid-staging\\audit_gcode.py",
+          "<WORKSPACE>\\slicer-review-solid-staging\\03-floor2-upper-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "--stl",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\03-floor2-upper-upright"
+        ],
+        "returncode": 0,
+        "seconds": 0.9403927326202393,
+        "stdout_log": "03-floor2-upper-upright\\audit.stdout.log",
+        "diagnostic_lines": [
+          "  \"unsupported_arc_commands\": [],",
+          "  \"support_extrusion_segments\": 0,",
+          "  \"support_positive_filament_mm\": 0,",
+          "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+          "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+        ]
+      }
+    },
+    {
+      "id": "04-floor3-slab-inverted",
+      "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\04-floor3-slab-inverted.stl",
+      "input_stl_sha256": "720c05949b35a68535a5aff298507e32b78b2a449335b64a0661eafa749d8957",
+      "expected_stl_sha256": "720c05949b35a68535a5aff298507e32b78b2a449335b64a0661eafa749d8957",
+      "input_bytes": 11284,
+      "profile": "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+      "profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+      "info": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\04-floor3-slab-inverted\\cli-data",
+          "--info",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\04-floor3-slab-inverted.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.07632589340209961,
+        "stdout_log": "04-floor3-slab-inverted\\info.stdout.log",
+        "diagnostic_lines": []
+      },
+      "slice": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\04-floor3-slab-inverted\\cli-data",
+          "--load",
+          "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+          "--threads",
+          "2",
+          "--center",
+          "110,110",
+          "--export-gcode",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\04-floor3-slab-inverted\\geometry-review-NOT-MACHINE-READY.gcode",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\04-floor3-slab-inverted.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.2263178825378418,
+        "stdout_log": "04-floor3-slab-inverted\\slice.stdout.log",
+        "diagnostic_lines": [
+          "65 => Searching support spots",
+          "69 => Alert if supports needed",
+          "89 => Calculating overhanging perimeters"
+        ]
+      },
+      "input_sha256_after": "720c05949b35a68535a5aff298507e32b78b2a449335b64a0661eafa749d8957",
+      "gcode": "<WORKSPACE>\\slicer-review-solid-staging\\04-floor3-slab-inverted\\geometry-review-NOT-MACHINE-READY.gcode",
+      "gcode_exists": true,
+      "audit": {
+        "argv": [
+          "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "-B",
+          "<WORKSPACE>\\slicer-review-solid-staging\\audit_gcode.py",
+          "<WORKSPACE>\\slicer-review-solid-staging\\04-floor3-slab-inverted\\geometry-review-NOT-MACHINE-READY.gcode",
+          "--stl",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\04-floor3-slab-inverted.stl",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\04-floor3-slab-inverted"
+        ],
+        "returncode": 0,
+        "seconds": 0.5324056148529053,
+        "stdout_log": "04-floor3-slab-inverted\\audit.stdout.log",
+        "diagnostic_lines": [
+          "  \"unsupported_arc_commands\": [],",
+          "  \"support_extrusion_segments\": 0,",
+          "  \"support_positive_filament_mm\": 0,",
+          "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+          "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+        ]
+      }
+    },
+    {
+      "id": "05-floor3-main-and-tower-upright",
+      "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\05-floor3-main-and-tower-upright.stl",
+      "input_stl_sha256": "8ecc913447812bc613f469be6572bd56f9fdd1de6555a62886b7927ac3507bd1",
+      "expected_stl_sha256": "8ecc913447812bc613f469be6572bd56f9fdd1de6555a62886b7927ac3507bd1",
+      "input_bytes": 20384,
+      "profile": "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+      "profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+      "info": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\05-floor3-main-and-tower-upright\\cli-data",
+          "--info",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\05-floor3-main-and-tower-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.08054566383361816,
+        "stdout_log": "05-floor3-main-and-tower-upright\\info.stdout.log",
+        "diagnostic_lines": []
+      },
+      "slice": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\05-floor3-main-and-tower-upright\\cli-data",
+          "--load",
+          "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+          "--threads",
+          "2",
+          "--center",
+          "110,110",
+          "--export-gcode",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\05-floor3-main-and-tower-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\05-floor3-main-and-tower-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.7460227012634277,
+        "stdout_log": "05-floor3-main-and-tower-upright\\slice.stdout.log",
+        "diagnostic_lines": [
+          "65 => Searching support spots",
+          "69 => Alert if supports needed",
+          "89 => Calculating overhanging perimeters"
+        ]
+      },
+      "input_sha256_after": "8ecc913447812bc613f469be6572bd56f9fdd1de6555a62886b7927ac3507bd1",
+      "gcode": "<WORKSPACE>\\slicer-review-solid-staging\\05-floor3-main-and-tower-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "gcode_exists": true,
+      "audit": {
+        "argv": [
+          "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "-B",
+          "<WORKSPACE>\\slicer-review-solid-staging\\audit_gcode.py",
+          "<WORKSPACE>\\slicer-review-solid-staging\\05-floor3-main-and-tower-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "--stl",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\05-floor3-main-and-tower-upright.stl",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\05-floor3-main-and-tower-upright"
+        ],
+        "returncode": 0,
+        "seconds": 0.9214568138122559,
+        "stdout_log": "05-floor3-main-and-tower-upright\\audit.stdout.log",
+        "diagnostic_lines": [
+          "  \"unsupported_arc_commands\": [],",
+          "  \"support_extrusion_segments\": 0,",
+          "  \"support_positive_filament_mm\": 0,",
+          "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+          "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+        ]
+      }
+    },
+    {
+      "id": "06-floor3-diagonal-rail-upright",
+      "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl",
+      "input_stl_sha256": "c2527780d644eef28a4a5431a40b6027541123d9c29eef0dc60be83da615b8ea",
+      "expected_stl_sha256": "c2527780d644eef28a4a5431a40b6027541123d9c29eef0dc60be83da615b8ea",
+      "input_bytes": 1484,
+      "profile": "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+      "profile_sha256": "7c300f9ea4a193facecf8c88c8aee94da19630b79f5d1cfb56da204fb4966442",
+      "info": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\06-floor3-diagonal-rail-upright\\cli-data",
+          "--info",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.07601046562194824,
+        "stdout_log": "06-floor3-diagonal-rail-upright\\info.stdout.log",
+        "diagnostic_lines": []
+      },
+      "slice": {
+        "argv": [
+          "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+          "--datadir",
+          "<WORKSPACE>\\slicer-review-solid-staging\\06-floor3-diagonal-rail-upright\\cli-data",
+          "--load",
+          "<WORKSPACE>\\slicer-review-solid-staging\\geometry-review-0.4mm-0.15mm-solid-rectilinear-no-support.ini",
+          "--threads",
+          "2",
+          "--center",
+          "110,110",
+          "--export-gcode",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\06-floor3-diagonal-rail-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl"
+        ],
+        "returncode": 0,
+        "seconds": 0.2558724880218506,
+        "stdout_log": "06-floor3-diagonal-rail-upright\\slice.stdout.log",
+        "diagnostic_lines": [
+          "65 => Searching support spots",
+          "69 => Alert if supports needed",
+          "89 => Calculating overhanging perimeters"
+        ]
+      },
+      "input_sha256_after": "c2527780d644eef28a4a5431a40b6027541123d9c29eef0dc60be83da615b8ea",
+      "gcode": "<WORKSPACE>\\slicer-review-solid-staging\\06-floor3-diagonal-rail-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "gcode_exists": true,
+      "audit": {
+        "argv": [
+          "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+          "-B",
+          "<WORKSPACE>\\slicer-review-solid-staging\\audit_gcode.py",
+          "<WORKSPACE>\\slicer-review-solid-staging\\06-floor3-diagonal-rail-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+          "--stl",
+          "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl",
+          "--output",
+          "<WORKSPACE>\\slicer-review-solid-staging\\06-floor3-diagonal-rail-upright"
+        ],
+        "returncode": 0,
+        "seconds": 0.4322352409362793,
+        "stdout_log": "06-floor3-diagonal-rail-upright\\audit.stdout.log",
+        "diagnostic_lines": [
+          "  \"unsupported_arc_commands\": [],",
+          "  \"support_extrusion_segments\": 0,",
+          "  \"support_positive_filament_mm\": 0,",
+          "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+          "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+        ]
+      }
+    }
+  ],
+  "claims": "Actual CLI slicing only; not a physical print, printer calibration or ready-to-print G-code.",
+  "all_slices_and_audits_exit_zero": true
+}

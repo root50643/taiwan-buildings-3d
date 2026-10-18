@@ -1,0 +1,30 @@
+{
+  "scope": "Only pairs listed by the existing floating-point report are evaluated for intersection. No whole-mesh pair QA or render is performed; an exact degeneracy input guard scans all triangles.",
+  "method": "Exact rational arithmetic on finite float32 STL coordinates promoted to Python float. Unnormalized plane normals and exact plane cuts. Noncoplanar line interval overlap is compared with shared topology. Coplanar polygons are clipped using exact 2D orientation and rational crossings.",
+  "input_sha256": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+  "diagnostic_script_sha256": "c8e9771b1c9dba285ae796e29d806b9f49fd681e06c098965e3cbccd3141b42c",
+  "versions": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "trimesh": "4.12.2"
+  },
+  "report_declared_input_sha256": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+  "report_sha256": "321893def1ea726751c23bd3026c5f102656c139059ea328da497fcd8b287d96",
+  "loaded_face_count": 310,
+  "triangle_order_equal_to_raw_stl": true,
+  "coordinates_exactly_float32_representable": true,
+  "exact_degenerate_triangle_indices": [],
+  "source_flag_count": 8,
+  "unique_source_pair_count": 8,
+  "guard_errors": [],
+  "classification_counts": {
+    "shared_edge_only": 2,
+    "shared_vertex_only": 6
+  },
+  "diagnosed_pair_count": 8,
+  "all_flags_covered_once": true,
+  "all_flagged_pairs_have_only_expected_contact": true,
+  "passes_flag_diagnosis": true,
+  "generic_report_unchanged": true,
+  "does_not_override_generic_report_exit_status": true
+}

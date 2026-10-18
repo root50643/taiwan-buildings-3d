@@ -1,0 +1,87 @@
+{
+  "json": "<WORKSPACE>\\qa-staging\\risk-controls\\detached_underside.generic.json",
+  "topology": {
+    "vertices": 16,
+    "faces": 24,
+    "bounds_mm": [
+      [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        5.0
+      ]
+    ],
+    "extents_mm": [
+      2.0,
+      2.0,
+      5.0
+    ],
+    "surface_area_mm2": 48.0,
+    "signed_volume_mm3": 16.0,
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_triangles": 0,
+    "duplicate_triangles": 0,
+    "nonmanifold_vertex_links": 0,
+    "nonmanifold_vertex_indices": [],
+    "connected_components": 2,
+    "component_signed_volumes_mm3": [
+      8.0,
+      8.0
+    ],
+    "euler_number": 4,
+    "passes_basic_solid_checks": false
+  },
+  "self_intersections": {
+    "method": "All triangle pairs with overlapping AABBs; noncoplanar plane-cut intervals and coplanar 2-D polygon intersections. Shared mesh edge/vertex contact is permitted.",
+    "tolerance_mm": 1e-06,
+    "total_triangle_pairs": 276,
+    "aabb_candidate_pairs_checked": 108,
+    "unexpected_contacts_or_intersections": [],
+    "passes_numerical_pair_screen": true,
+    "limitation": "Floating-point geometric screening, not a formal exact-arithmetic certificate."
+  },
+  "sections": {
+    "method": "Actual horizontal mesh intersections at layer midpoints; 2-D material parity; previous-layer buffered support envelope.",
+    "layer_height_mm": 0.2,
+    "support_angle_from_vertical_deg": 45,
+    "per_layer_horizontal_reach_mm": 0.19999999999999998,
+    "support_area_reporting_tolerance_mm2": 0.01,
+    "first_section_treated_as_build_plate_supported": true,
+    "feature_screen_width_mm": 0.8,
+    "feature_screen_method": "Erode each material component separately by half feature width; reject if any component core vanishes or splits. No universal 3-D thickness guarantee.",
+    "boundary_distance_sampling_interval_max_mm": 0.1,
+    "boundary_distance_sampling_error_bound_mm": 0.05,
+    "section_count": 25,
+    "nonempty_section_count": 20,
+    "invalid_or_open_section_count": 0,
+    "max_section_components": 1,
+    "unsupported_envelope_layer_count": 1,
+    "worst_unsupported_envelope_area_mm2": 4.0,
+    "sampled_max_boundary_expansion_mm": 0,
+    "vanished_core_layers": [],
+    "split_core_layers": [],
+    "thin_feature_flagged_layer_count": 0,
+    "vanished_component_core_layers": [],
+    "split_component_core_layers": [],
+    "passes_sampled_thin_feature_screen": false,
+    "passes_sampled_support_screen": false,
+    "limitations": [
+      "Sampled sections can miss features narrower in Z than the layer spacing.",
+      "Support test is a 45-degree style geometric envelope, not extrusion or bridge simulation.",
+      "Per-component erosion detects missing/disconnected section cores, but attached thin protrusions may survive this screen unnoticed; it does not test local thickness everywhere.",
+      "Convex corners and mathematical tips need explicit judgment; a surviving core does not show every point is wider than feature_width.",
+      "XY core erosion does not establish minimum Z thickness, mechanical strength or adequate layer count for horizontal relief.",
+      "First sampled section is assumed build-plate-supported; geometry below it is not analyzed by the support comparison.",
+      "No nozzle path generation, adhesion, cooling, material shrinkage or physical print tested."
+    ]
+  },
+  "passes_bounded_geometry_screen": false
+}

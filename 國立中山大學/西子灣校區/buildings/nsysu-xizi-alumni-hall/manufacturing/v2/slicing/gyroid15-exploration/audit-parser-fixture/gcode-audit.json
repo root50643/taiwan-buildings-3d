@@ -1,0 +1,115 @@
+{
+  "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\01-base-floor1-upright.stl",
+  "input_stl_sha256": "bc2ac743cacb4cb9584a62d79df2541b2cb75a463e4bc43d10b2ad9e280f0243",
+  "gcode": "<WORKSPACE>\\slicer-review-staging\\audit-parser-fixture\\SYNTHETIC-NOT-SLICER-OUTPUT.gcode",
+  "gcode_sha256": "19cc1088a3228083deb870972bb16470ef46005d1c4c7d8084fb4add86bf4129",
+  "gcode_bytes": 292,
+  "parser": "Linear G0/G1, G90/G91, M82/M83, G92; counts XY moves with positive filament. No printer execution.",
+  "unsupported_arc_commands": [],
+  "actual_extruding_segment_count": 5,
+  "type_marker_counts": {
+    "External perimeter": 1,
+    "Support material": 1,
+    "Support material interface": 1,
+    "Bridge infill": 1,
+    "Perimeter": 1
+  },
+  "positive_extrusion_segment_counts_by_type": {
+    "External perimeter": 1,
+    "Support material": 1,
+    "Support material interface": 1,
+    "Bridge infill": 1,
+    "Perimeter": 1
+  },
+  "support_extrusion_segments": 2,
+  "support_positive_filament_mm": 2.0,
+  "bridge_infill_segments": 1,
+  "bridge_infill_positive_filament_mm": 1.0,
+  "bridge_layers": [
+    0
+  ],
+  "bridge_interpretation": "Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.",
+  "layer_count_with_positive_xy_extrusion": 2,
+  "all_extrusion_xy_bounds_mm": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      10.0,
+      10.0
+    ]
+  ],
+  "first_model_layer_index": 0,
+  "first_layer_z_values_mm": [
+    0.2
+  ],
+  "first_layer_extruding_segments": 4,
+  "first_layer_xy_bounds_mm": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      10.0,
+      10.0
+    ]
+  ],
+  "first_layer_model_xy_bounds_mm": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      10.0,
+      10.0
+    ]
+  ],
+  "first_layer_image": "first-layer-toolpaths.png",
+  "support_related_embedded_config": {},
+  "estimated_time_comments": [],
+  "per_layer": [
+    {
+      "layer_index": 0,
+      "declared_z_mm": 0.2,
+      "types": {
+        "External perimeter": {
+          "segments": 1,
+          "positive_filament_mm": 1.0,
+          "xy_path_mm": 10.0
+        },
+        "Support material": {
+          "segments": 1,
+          "positive_filament_mm": 1.0,
+          "xy_path_mm": 10.0
+        },
+        "Support material interface": {
+          "segments": 1,
+          "positive_filament_mm": 1.0,
+          "xy_path_mm": 10.0
+        },
+        "Bridge infill": {
+          "segments": 1,
+          "positive_filament_mm": 1.0,
+          "xy_path_mm": 10.0
+        }
+      }
+    },
+    {
+      "layer_index": 1,
+      "declared_z_mm": 0.4,
+      "types": {
+        "Perimeter": {
+          "segments": 1,
+          "positive_filament_mm": 1.0,
+          "xy_path_mm": 10.0
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.",
+    "G-code has not been sent to a printer. Generic geometry-review settings are not a calibrated machine profile.",
+    "First-layer image contains actual extruding XY path centerlines, including brim; it does not model bead squish or bed adhesion."
+  ]
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>\slicer-review-staging\classify_bridge_paths-attempt01.py", line 115, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "<WORKSPACE>\slicer-review-staging\classify_bridge_paths-attempt01.py", line 80, in main
+    cache[z]=(footprint(mesh,z-LAYER*1.5),footprint(mesh,z-LAYER*.5))
+              ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "<WORKSPACE>\slicer-review-staging\classify_bridge_paths-attempt01.py", line 60, in footprint
+    if area.is_empty or not area.is_valid:raise RuntimeError('Invalid layer footprint at '+str(z))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Invalid layer footprint at 2.3249999999999997

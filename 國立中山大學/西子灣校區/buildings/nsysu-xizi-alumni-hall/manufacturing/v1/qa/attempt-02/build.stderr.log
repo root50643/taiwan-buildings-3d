@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>\candidate\??銝剖控憭批飛\镼踹????\buildings\nsysu-xizi-alumni-hall\manufacturing\v1\source\build_print_parts.py", line 84, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "<WORKSPACE>\candidate\??銝剖控憭批飛\镼踹????\buildings\nsysu-xizi-alumni-hall\manufacturing\v1\source\build_print_parts.py", line 82, in main
+    print(json.dumps(build(MODEL_ROOT/'models/v4/model.stl',params,a.output_dir)))
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKSPACE>\candidate\??銝剖控憭批飛\镼踹????\buildings\nsysu-xizi-alumni-hall\manufacturing\v1\source\build_print_parts.py", line 61, in build
+    if not(row['watertight'] and row['winding_consistent'] and row['components']==1 and row['volume_mm3']>0):raise ValueError(row)
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: {'name': 'A-base-and-1F', 'file': 'A-base-and-1F.stl', 'sha256': '3661da5aa0637071e963b43df39d82ed6eb9b7784b63435828f064363bb2354b', 'assembly_translation_mm': [0, 0, 0], 'bounds_mm': [[-75.0, -50.730709075927734, 0.0], [75.0, 50.730709075927734, 13.399999618530273]], 'extents_mm': [150.0, 101.46141815185547, 13.399999618530273], 'vertices': 182, 'triangles': 384, 'watertight': False, 'winding_consistent': True, 'components': 1, 'volume_mm3': 95919.7392024694, 'removed_original_volume_mm3': 0.0005890924811999113, 'added_floor_volume_mm3': 2.7286547695975396e-07, 'floor_projection_preserves_original_xy_envelope': True, 'orientation': 'as supplied, flat z=0 on bed'}

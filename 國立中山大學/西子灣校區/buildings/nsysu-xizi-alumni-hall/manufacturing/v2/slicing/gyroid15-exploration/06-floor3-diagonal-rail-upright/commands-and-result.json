@@ -1,0 +1,72 @@
+{
+  "id": "06-floor3-diagonal-rail-upright",
+  "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl",
+  "input_stl_sha256": "c2527780d644eef28a4a5431a40b6027541123d9c29eef0dc60be83da615b8ea",
+  "expected_stl_sha256": "c2527780d644eef28a4a5431a40b6027541123d9c29eef0dc60be83da615b8ea",
+  "input_bytes": 1484,
+  "profile": "<WORKSPACE>\\slicer-review-staging\\geometry-review-0.4mm-0.15mm-no-support.ini",
+  "profile_sha256": "f7293ef8e22e06890d880524ffa8fb67c9aa7bc2f3c5ede2accb63c364706e24",
+  "info": {
+    "argv": [
+      "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+      "--datadir",
+      "<WORKSPACE>\\slicer-review-staging\\06-floor3-diagonal-rail-upright\\cli-data",
+      "--info",
+      "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl"
+    ],
+    "returncode": 0,
+    "seconds": 0.07612371444702148,
+    "stdout_log": "06-floor3-diagonal-rail-upright\\info.stdout.log",
+    "diagnostic_lines": []
+  },
+  "slice": {
+    "argv": [
+      "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+      "--datadir",
+      "<WORKSPACE>\\slicer-review-staging\\06-floor3-diagonal-rail-upright\\cli-data",
+      "--load",
+      "<WORKSPACE>\\slicer-review-staging\\geometry-review-0.4mm-0.15mm-no-support.ini",
+      "--threads",
+      "2",
+      "--center",
+      "110,110",
+      "--export-gcode",
+      "--output",
+      "<WORKSPACE>\\slicer-review-staging\\06-floor3-diagonal-rail-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl"
+    ],
+    "returncode": 0,
+    "seconds": 0.2317352294921875,
+    "stdout_log": "06-floor3-diagonal-rail-upright\\slice.stdout.log",
+    "diagnostic_lines": [
+      "65 => Searching support spots",
+      "69 => Alert if supports needed",
+      "89 => Calculating overhanging perimeters"
+    ]
+  },
+  "input_sha256_after": "c2527780d644eef28a4a5431a40b6027541123d9c29eef0dc60be83da615b8ea",
+  "gcode": "<WORKSPACE>\\slicer-review-staging\\06-floor3-diagonal-rail-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+  "gcode_exists": true,
+  "audit": {
+    "argv": [
+      "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+      "-B",
+      "<WORKSPACE>\\slicer-review-staging\\audit_gcode.py",
+      "<WORKSPACE>\\slicer-review-staging\\06-floor3-diagonal-rail-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "--stl",
+      "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\06-floor3-diagonal-rail-upright.stl",
+      "--output",
+      "<WORKSPACE>\\slicer-review-staging\\06-floor3-diagonal-rail-upright"
+    ],
+    "returncode": 0,
+    "seconds": 0.3992342948913574,
+    "stdout_log": "06-floor3-diagonal-rail-upright\\audit.stdout.log",
+    "diagnostic_lines": [
+      "  \"unsupported_arc_commands\": [],",
+      "  \"support_extrusion_segments\": 0,",
+      "  \"support_positive_filament_mm\": 0,",
+      "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+      "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "failures_and_revisions": [
+    {
+      "action": "first independent geometry probe",
+      "failure": "ModuleNotFoundError: scipy; the venv did not include the numerical graph engine",
+      "correction": "Added existing read-only Anaconda site-packages to the staging probe search path; no geometry or thresholds changed."
+    },
+    {
+      "action": "five horizontal bands initially treated as five physical pieces",
+      "failure": "Upper band had two connected components",
+      "correction": "Exported those original disconnected solids as separate parts 05 and 06; final deliverable is six closed physical pieces. No invented connector."
+    },
+    {
+      "action": "auxiliary assembled-union verification",
+      "failure": "Native re-union generated two exact zero-area triangles; exported verification STL was non-watertight and failed topology. See assembly-union-failure-diagnosis.json for original-coordinate repeated vertices.",
+      "correction": "No repair and no pass relabeling. Artifact retained exclusively as a failed QA intermediate. Six closed print parts remain the fixed deliverables."
+    },
+    {
+      "action": "first auxiliary union diagnosis staging run",
+      "failure": "Incorrect staging import path caused ModuleNotFoundError: trimesh",
+      "correction": "Corrected the task dependency path; formal diagnostic uses package-relative checker and ordinary environment dependencies."
+    }
+  ],
+  "original_v4_and_v1_failures": "Original v4 checker false/exit 1 and parent three-part v1 failed clips remain outside this v2 evidence; this variant does not rewrite them."
+}

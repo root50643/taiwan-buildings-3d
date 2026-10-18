@@ -1,0 +1,158 @@
+{
+  "review_date_utc": "2026-10-18",
+  "review_scope": "Independent read-only review of official-source GO and eight actual v4 previews; not a mesh, slicing or physical-print certificate.",
+  "result": "No major source-GO blocker identified in final eight previews.",
+  "inputs": {
+    "stl_path": "models/v4/model.stl",
+    "stl_sha256": "05c1714f8b363075a2eb72cde39d21ef06eb0720f1b46336579eb48edbb1444f",
+    "stl_matches_manifest": true,
+    "scene_path": "models/v4/scene.blend",
+    "scene_sha256": "7e36ff21f3a234d528f16ca17f8f58658dbdfa8a8fa3e91f52ee39ee591cdd0a",
+    "scene_matches_manifest": true,
+    "parameters_path": "parameters.json",
+    "parameters_sha256": "465a3b0b02a12ed00fb0bb269985411e72e6df6b176b883b146e425ed1b3ed31",
+    "parameters_match_build_report": true,
+    "render_manifest_path": "previews/v4/render-manifest.json",
+    "render_manifest_sha256": "6a2bcb11882f196d3e178948081b7f5bf1196d57472cc225654c243ecbbb1ec0",
+    "source_evidence_path": "evidence/source-evidence.json",
+    "source_evidence_sha256": "ce0dbc0811941e3a2509a1fd232a85e9b75ed07ab4aec58c1584837f953fde2f"
+  },
+  "actual_view_count": 8,
+  "actually_viewed_previews": [
+    {
+      "name": "front",
+      "path": "previews/v4/front.png",
+      "actually_viewed": true,
+      "sha256": "25fe6e92d41a6ef23ce097b0e0663288033093d2e03f93ff7d387b91607c9a9a",
+      "manifest_sha_matches": true,
+      "ortho_scale": 195
+    },
+    {
+      "name": "rear",
+      "path": "previews/v4/rear.png",
+      "actually_viewed": true,
+      "sha256": "c7a074177dd692b6605d9181e7cce2b4bf730f808351f83674e02623b3a4c1a4",
+      "manifest_sha_matches": true,
+      "ortho_scale": 195
+    },
+    {
+      "name": "elevation-positive-y",
+      "path": "previews/v4/elevation-positive-y.png",
+      "actually_viewed": true,
+      "sha256": "2d5d4b9552b35a209a2dd3b954fdc83e2bbb48c9c1b9ce08bf79ee7ca160057b",
+      "manifest_sha_matches": true,
+      "ortho_scale": 175
+    },
+    {
+      "name": "elevation-negative-y",
+      "path": "previews/v4/elevation-negative-y.png",
+      "actually_viewed": true,
+      "sha256": "0ce4fb5560fe937cde2a39514115d8332a7d439babe33c60051940b8109174a3",
+      "manifest_sha_matches": true,
+      "ortho_scale": 175
+    },
+    {
+      "name": "end-negative-x",
+      "path": "previews/v4/end-negative-x.png",
+      "actually_viewed": true,
+      "sha256": "7c47deeff1c5fc14f18164b044059d9ff724ce9ba2fb99f83ade999aa5f6238f",
+      "manifest_sha_matches": true,
+      "ortho_scale": 175
+    },
+    {
+      "name": "end-positive-x",
+      "path": "previews/v4/end-positive-x.png",
+      "actually_viewed": true,
+      "sha256": "37c9084562845ee5bca063fcc14ccba7de1255c76806b6252c8f14a8cafd47e2",
+      "manifest_sha_matches": true,
+      "ortho_scale": 175
+    },
+    {
+      "name": "top",
+      "path": "previews/v4/top.png",
+      "actually_viewed": true,
+      "sha256": "9f93a3c5d32410d51eaf133e62fc304550a213f88d54288e363acc9d51055b56",
+      "manifest_sha_matches": true,
+      "ortho_scale": 165
+    },
+    {
+      "name": "terraces",
+      "path": "previews/v4/terraces.png",
+      "actually_viewed": true,
+      "sha256": "ca56d0b2f1863a9f769c343354af2668d283bb33255c3e88cd7052fb7c1f9733",
+      "manifest_sha_matches": true,
+      "ortho_scale": 195
+    }
+  ],
+  "source_go_checks": [
+    "Three above-ground levels, connected rectangular and diagonally oriented wings are preserved.",
+    "Both rectangular and diagonal terrace groups remain open above the decks; the outer floor silhouette has not been extruded into fully enclosed rooms.",
+    "The 2F rectangular terrace extends farther out than the 3F terrace and retains the stepped perimeter.",
+    "The 3F diagonal enclosed strip retreats to the traced room/terrace boundary around (1150,610)-(1310,743), leaving an open end terrace around the glass tower.",
+    "The higher glass corner mass remains at the traced diamond junction. Flat roofs and representative parapets remain visible.",
+    "The local 2.4 mm diagonal rail-joint reinforcement does not create a new room, rear wing or blocked terrace.",
+    "Omissions are consistent with scope: 1F additional upper-right hall/courtyard connection, detached toilet block, basement interiors, fine terrain/retaining walls, equipment and unverified fine rear details."
+  ],
+  "framing_failure_and_correction": {
+    "initial_issue": "Terraces view with orthographic scale 185 clipped the plinth left edge. This is a real preview framing failure, not a mesh failure.",
+    "correction": "Only terraces camera framing was changed to orthographic scale 195 and that PNG was rerendered; reviewer then actually viewed the replacement. Other seven PNG hashes remain as first inspected.",
+    "model_inputs_unchanged": "STL and scene byte hashes stayed unchanged across this camera/render correction.",
+    "independent_coordinate_evidence": [
+      {
+        "ortho_scale": 185,
+        "plinth_projected_min_xy_px": [
+          -4.461061795494288,
+          179.1088040423552
+        ],
+        "plinth_projected_max_xy_px": [
+          935.2567732550218,
+          690.9645502059325
+        ]
+      },
+      {
+        "ortho_scale": 195,
+        "plinth_projected_min_xy_px": [
+          20.383095219659253,
+          188.38527562992672
+        ],
+        "plinth_projected_max_xy_px": [
+          911.9102720624566,
+          673.9920091697307
+        ]
+      }
+    ],
+    "method": "Orthographic camera right/up vectors derived from position (160,240,220), target (0,5,22); project eight plinth corners x=+-75,y=+-50.730709075927734,z=0 or3 at 960x720 with horizontal orthographic span. Initial min x -4.4610618 px; corrected min x20.3830952 px.",
+    "final_visual_result": "Complete plinth visible with margin in the replacement terraces preview."
+  },
+  "baseline_and_counts": {
+    "remote_check": "git ls-remote origin refs/heads/main; successful escalated read-only network request after sandbox DNS failure",
+    "remote_main_sha": "08604e70212673240173660584236e361221533f",
+    "local_origin_main_sha": "08604e70212673240173660584236e361221533f",
+    "model_index_git_blob": "a6c15b7107c4dad5e1fab65efe9f771aecc79fdf",
+    "total_packages": 492,
+    "legacy_packages": 71,
+    "new_campus_packages": 421,
+    "higher_education_model_packages": 460,
+    "non_higher_education_model_packages": 32,
+    "all_repository_institutions_with_models": 107,
+    "independent_tree_building_roots": 421,
+    "independent_tree_catalog_institutions": 106,
+    "index_schools_entries": 106,
+    "index_schools_count_sum": 421,
+    "nsysu_existing_roots": [
+      "國立中山大學/西子灣校區/buildings/nsysu-administration",
+      "國立中山大學/西子灣校區/buildings/nsysu-library-information",
+      "國立中山大學/西子灣校區/buildings/nsysu-yatsen-hall"
+    ],
+    "xizi_present_on_remote_main": false,
+    "interpretation": "492 total = 71 legacy + 421 catalog packages; 460 higher-education + 32 other packages; 107 repository institutions. Catalog roots cover106 institutions. Candidate remains unpublished and public counts were not changed by this review."
+  },
+  "remaining_limits": [
+    "No measured exterior heights or exact real-world scale; floor12 mm and tower44 mm above the3 mm plinth are representative estimates.",
+    "Photo capture dates are unknown; no verified2026 as-built condition claim.",
+    "Railings/glass/posts are simplified or thickened. Source drawings do not exactly register across floors; stated pixel residuals remain.",
+    "Long terrace slabs and supported/unsupported overhang regions require actual slicer support planning. This visual review does not replace the separate strict geometry, thin-wall or overhang evidence.",
+    "No slicing or physical test print was performed or claimed by this reviewer."
+  ],
+  "file_mutation_scope": "Only evidence/previews-v4-review.json and evidence/PREVIEW-REVIEW.md written. No generator, parameters, model, scene, preview, public count or QA file changed."
+}

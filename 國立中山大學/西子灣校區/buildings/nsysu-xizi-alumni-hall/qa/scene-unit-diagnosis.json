@@ -1,0 +1,17 @@
+{
+  "scope": "Read-only diagnostic of original saved scene units; no scene or model mutation.",
+  "scene_sha256": "7e36ff21f3a234d528f16ca17f8f58658dbdfa8a8fa3e91f52ee39ee591cdd0a",
+  "system": "METRIC",
+  "length_unit": "MILLIMETERS",
+  "actual_scale_length": 0.0010000000474974513,
+  "actual_scale_length_hex": "0x1.0624de0000000p-10",
+  "actual_scale_length_exact": "8589935/8589934592",
+  "intended_source_literal": 0.001,
+  "intended_source_literal_exact": "1152921504606847/1152921504606846976",
+  "actual_minus_python_source_literal": 4.749745128457272e-11,
+  "actual_minus_source_literal_exact": "54760833/1152921504606846976",
+  "binary32_of_intended_literal": 0.0010000000474974513,
+  "actual_exactly_equals_binary32_of_intended_literal": true,
+  "first_repro_check_abs_difference_lt_1e_12": false,
+  "interpretation": "Blender stores scale_length as a binary32 FloatProperty. Comparing its value to the exact expected binary32 of the source literal is appropriate; a 1e-12 tolerance against the Python binary64 literal produces a false verification failure. Original failed report is preserved; geometry checker thresholds are unchanged."
+}

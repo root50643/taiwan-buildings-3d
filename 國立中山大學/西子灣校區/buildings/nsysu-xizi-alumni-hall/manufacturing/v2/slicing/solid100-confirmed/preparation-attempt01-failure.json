@@ -1,0 +1,5 @@
+{
+  "action": "Read UTF-8 run script with implicit locale cp950 during solid staging preparation",
+  "outcome": "exit 1; UnicodeDecodeError at byte 0xe5, then missing generated script; no solid slicer invocation executed",
+  "correction": "Explicit encoding=utf-8 on source and auditor text reads; original 15% files unchanged"
+}

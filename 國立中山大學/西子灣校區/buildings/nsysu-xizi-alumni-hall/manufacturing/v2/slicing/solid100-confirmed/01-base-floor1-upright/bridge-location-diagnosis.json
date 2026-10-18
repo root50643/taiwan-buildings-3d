@@ -1,0 +1,807 @@
+{
+  "id": "01-base-floor1-upright",
+  "input_stl_sha256": "bc2ac743cacb4cb9584a62d79df2541b2cb75a463e4bc43d10b2ad9e280f0243",
+  "gcode_sha256": "10ab4dde23a5ff1e6e5cafa8aff94dc243e4e849cd25831c44cec7913565ff6f",
+  "bridge_segments": 19,
+  "xy_translation_stl_to_gcode_mm": [
+    110.0,
+    110.0
+  ],
+  "method": "Nominal STL XY cross sections at previous/current layer midplanes; compare actual Bridge infill line centerlines after reversing documented single-object center110,110 placement.",
+  "explicit_xy_rounding_allowance_mm": 0.0,
+  "previous_planned_extrusion_sweep_radius_mm": 0.225,
+  "sweep_buffer_quad_segments": 16,
+  "sweep_polygon_max_radial_approximation_mm": 0.00027102235383620886,
+  "support_sweep_interpretation": "Planned positive XY G-code extrusion from immediately preceding layer, swept at fixed requested width 0.45mm. Every resulting continuous gap is measured separately, not the full Bridge line. First layer supported by bed. This is a planned-path geometric diagnostic, not observed printed plastic.",
+  "max_extruding_z_mm": 13.35,
+  "max_motion_z_mm": 13.35,
+  "stl_z_max_mm": 13.399999618530273,
+  "z_quantization_difference_mm": -0.04999961853027379,
+  "layer_height_mm": 0.15,
+  "per_layer": {
+    "81": {
+      "segments": 19,
+      "total_xy_length_mm": 22.856962557186506,
+      "outside_previous_nominal_footprint_centerline_mm": 1.1250010353037718,
+      "outside_current_nominal_footprint_centerline_mm": 0.3750009844003265,
+      "max_outside_previous_segment_mm": 0.22500024213070763,
+      "outside_reference_previous_nominal_centerline_mm": 1.1250010353037718,
+      "longest_continuous_gap_without_previous_planned_extrusion_mm": 0.22500005810133467,
+      "total_gap_without_previous_planned_extrusion_mm": 1.3423573040601733,
+      "longest_gap_witness": {
+        "gcode_line": 78105,
+        "continuous_gap_length_mm": 0.22500005810133467,
+        "xy_gcode_mm": [
+          [
+            93.24811534315486,
+            109.63000000000001
+          ],
+          [
+            93.24795364714336,
+            109.405
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -16.751884656845135,
+            -0.36999999999999034
+          ],
+          [
+            -16.752046352856638,
+            -0.5949999999999989
+          ]
+        ]
+      },
+      "z_mm": 12.3
+    }
+  },
+  "actual_bridge_paths": [
+    {
+      "gcode_line": 78105,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        93.249,
+        110.861
+      ],
+      "xy1_gcode_mm": [
+        93.247,
+        108.078
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -16.751000000000005,
+        0.8610000000000042
+      ],
+      "xy1_stl_print_mm": [
+        -16.753,
+        -1.921999999999997
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.22500024213070763,
+      "outside_current_nominal_footprint_centerline_mm": 0.07500020786683932,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.22500024213070763,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [
+        0.22500005810133467
+      ],
+      "longest_gap_witness": {
+        "gcode_line": 78105,
+        "continuous_gap_length_mm": 0.22500005810133467,
+        "xy_gcode_mm": [
+          [
+            93.24811534315486,
+            109.63000000000001
+          ],
+          [
+            93.24795364714336,
+            109.405
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -16.751884656845135,
+            -0.36999999999999034
+          ],
+          [
+            -16.752046352856638,
+            -0.5949999999999989
+          ]
+        ]
+      }
+    },
+    {
+      "gcode_line": 78106,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        93.247,
+        108.078
+      ],
+      "xy1_gcode_mm": [
+        93.698,
+        108.078
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -16.753,
+        -1.921999999999997
+      ],
+      "xy1_stl_print_mm": [
+        -16.302000000000007,
+        -1.921999999999997
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [
+        0.09890599542895018
+      ],
+      "longest_gap_witness": {
+        "gcode_line": 78106,
+        "continuous_gap_length_mm": 0.09890599542895018,
+        "xy_gcode_mm": [
+          [
+            93.29589900684977,
+            108.078
+          ],
+          [
+            93.39480500227872,
+            108.078
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -16.704100993150234,
+            -1.921999999999997
+          ],
+          [
+            -16.605194997721284,
+            -1.921999999999997
+          ]
+        ]
+      }
+    },
+    {
+      "gcode_line": 78107,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        93.698,
+        108.078
+      ],
+      "xy1_gcode_mm": [
+        93.699,
+        110.658
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -16.302000000000007,
+        -1.921999999999997
+      ],
+      "xy1_stl_print_mm": [
+        -16.301000000000002,
+        0.6580000000000013
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.22500020093037476,
+      "outside_current_nominal_footprint_centerline_mm": 0.07500019413337179,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.22500020093037476,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [
+        0.22500001690103547
+      ],
+      "longest_gap_witness": {
+        "gcode_line": 78107,
+        "continuous_gap_length_mm": 0.22500001690103547,
+        "xy_gcode_mm": [
+          [
+            93.69851434108527,
+            109.405
+          ],
+          [
+            93.6986015503876,
+            109.63000000000001
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -16.30148565891473,
+            -0.5949999999999989
+          ],
+          [
+            -16.301398449612407,
+            -0.36999999999999034
+          ]
+        ]
+      }
+    },
+    {
+      "gcode_line": 78108,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        93.699,
+        110.658
+      ],
+      "xy1_gcode_mm": [
+        94.15,
+        110.658
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -16.301000000000002,
+        0.6580000000000013
+      ],
+      "xy1_stl_print_mm": [
+        -15.849999999999994,
+        0.6580000000000013
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78109,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        94.15,
+        110.658
+      ],
+      "xy1_gcode_mm": [
+        94.149,
+        108.078
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -15.849999999999994,
+        0.6580000000000013
+      ],
+      "xy1_stl_print_mm": [
+        -15.850999999999999,
+        -1.921999999999997
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.22500020093037476,
+      "outside_current_nominal_footprint_centerline_mm": 0.07500019413337179,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.22500020093037476,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [
+        0.22500001690103547
+      ],
+      "longest_gap_witness": {
+        "gcode_line": 78109,
+        "continuous_gap_length_mm": 0.22500001690103547,
+        "xy_gcode_mm": [
+          [
+            94.1496015503876,
+            109.63000000000001
+          ],
+          [
+            94.14951434108528,
+            109.405
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -15.850398449612399,
+            -0.36999999999999034
+          ],
+          [
+            -15.850485658914721,
+            -0.5949999999999989
+          ]
+        ]
+      }
+    },
+    {
+      "gcode_line": 78110,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        94.149,
+        108.078
+      ],
+      "xy1_gcode_mm": [
+        94.6,
+        108.078
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -15.850999999999999,
+        -1.921999999999997
+      ],
+      "xy1_stl_print_mm": [
+        -15.400000000000006,
+        -1.921999999999997
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [
+        0.09865538498696935
+      ],
+      "longest_gap_witness": {
+        "gcode_line": 78110,
+        "continuous_gap_length_mm": 0.09865538498696935,
+        "xy_gcode_mm": [
+          [
+            94.47914961729174,
+            108.078
+          ],
+          [
+            94.57780500227871,
+            108.078
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -15.520850382708261,
+            -1.921999999999997
+          ],
+          [
+            -15.422194997721292,
+            -1.921999999999997
+          ]
+        ]
+      }
+    },
+    {
+      "gcode_line": 78111,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        94.6,
+        108.078
+      ],
+      "xy1_gcode_mm": [
+        94.601,
+        110.658
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -15.400000000000006,
+        -1.921999999999997
+      ],
+      "xy1_stl_print_mm": [
+        -15.399000000000001,
+        0.6580000000000013
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.22500019960926398,
+      "outside_current_nominal_footprint_centerline_mm": 0.07500019413337179,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.22500019960926398,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [
+        0.019795797938777136,
+        0.22500001690103547
+      ],
+      "longest_gap_witness": {
+        "gcode_line": 78111,
+        "continuous_gap_length_mm": 0.22500001690103547,
+        "xy_gcode_mm": [
+          [
+            94.60051434108527,
+            109.405
+          ],
+          [
+            94.6006015503876,
+            109.63000000000001
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -15.399485658914728,
+            -0.5949999999999989
+          ],
+          [
+            -15.399398449612406,
+            -0.36999999999999034
+          ]
+        ]
+      }
+    },
+    {
+      "gcode_line": 78112,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        94.601,
+        110.658
+      ],
+      "xy1_gcode_mm": [
+        95.052,
+        110.658
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -15.399000000000001,
+        0.6580000000000013
+      ],
+      "xy1_stl_print_mm": [
+        -14.947999999999993,
+        0.6580000000000013
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78113,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        95.052,
+        110.658
+      ],
+      "xy1_gcode_mm": [
+        95.051,
+        108.078
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -14.947999999999993,
+        0.6580000000000013
+      ],
+      "xy1_stl_print_mm": [
+        -14.948999999999998,
+        -1.921999999999997
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.2250001917030508,
+      "outside_current_nominal_footprint_centerline_mm": 0.07500019413337179,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.2250001917030508,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [
+        0.22500001690103547
+      ],
+      "longest_gap_witness": {
+        "gcode_line": 78113,
+        "continuous_gap_length_mm": 0.22500001690103547,
+        "xy_gcode_mm": [
+          [
+            95.0516015503876,
+            109.63000000000001
+          ],
+          [
+            95.05151434108528,
+            109.405
+          ]
+        ],
+        "xy_stl_print_mm": [
+          [
+            -14.948398449612398,
+            -0.36999999999999034
+          ],
+          [
+            -14.94848565891472,
+            -0.5949999999999989
+          ]
+        ]
+      }
+    },
+    {
+      "gcode_line": 78114,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        95.051,
+        108.078
+      ],
+      "xy1_gcode_mm": [
+        95.502,
+        108.088
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -14.948999999999998,
+        -1.921999999999997
+      ],
+      "xy1_stl_print_mm": [
+        -14.498000000000005,
+        -1.9120000000000061
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78115,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        95.502,
+        108.088
+      ],
+      "xy1_gcode_mm": [
+        95.503,
+        110.649
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -14.498000000000005,
+        -1.9120000000000061
+      ],
+      "xy1_stl_print_mm": [
+        -14.497,
+        0.6490000000000009
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78116,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        95.503,
+        110.649
+      ],
+      "xy1_gcode_mm": [
+        95.72,
+        110.603
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -14.497,
+        0.6490000000000009
+      ],
+      "xy1_stl_print_mm": [
+        -14.280000000000001,
+        0.6029999999999944
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78117,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        95.72,
+        110.603
+      ],
+      "xy1_gcode_mm": [
+        95.954,
+        110.483
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -14.280000000000001,
+        0.6029999999999944
+      ],
+      "xy1_stl_print_mm": [
+        -14.046000000000006,
+        0.4830000000000041
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78118,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        95.954,
+        110.483
+      ],
+      "xy1_gcode_mm": [
+        95.953,
+        108.248
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -14.046000000000006,
+        0.4830000000000041
+      ],
+      "xy1_stl_print_mm": [
+        -14.046999999999997,
+        -1.7519999999999953
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78119,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        95.953,
+        108.248
+      ],
+      "xy1_gcode_mm": [
+        96.071,
+        108.341
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -14.046999999999997,
+        -1.7519999999999953
+      ],
+      "xy1_stl_print_mm": [
+        -13.929000000000002,
+        -1.659000000000006
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78120,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        96.071,
+        108.341
+      ],
+      "xy1_gcode_mm": [
+        96.246,
+        108.548
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -13.929000000000002,
+        -1.659000000000006
+      ],
+      "xy1_stl_print_mm": [
+        -13.754000000000005,
+        -1.4519999999999982
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78121,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        96.246,
+        108.548
+      ],
+      "xy1_gcode_mm": [
+        96.364,
+        108.807
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -13.754000000000005,
+        -1.4519999999999982
+      ],
+      "xy1_stl_print_mm": [
+        -13.635999999999996,
+        -1.1929999999999978
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78122,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        96.364,
+        108.807
+      ],
+      "xy1_gcode_mm": [
+        96.392,
+        108.933
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -13.635999999999996,
+        -1.1929999999999978
+      ],
+      "xy1_stl_print_mm": [
+        -13.608000000000004,
+        -1.066999999999993
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    },
+    {
+      "gcode_line": 78123,
+      "layer": 81,
+      "z_mm": 12.3,
+      "xy0_gcode_mm": [
+        96.392,
+        108.933
+      ],
+      "xy1_gcode_mm": [
+        96.405,
+        110.316
+      ],
+      "type": "Bridge infill",
+      "xy0_stl_print_mm": [
+        -13.608000000000004,
+        -1.066999999999993
+      ],
+      "xy1_stl_print_mm": [
+        -13.594999999999999,
+        0.3160000000000025
+      ],
+      "previous_mesh_sample_z_mm": 12.075000000000001,
+      "current_mesh_sample_z_mm": 12.225000000000001,
+      "outside_previous_nominal_footprint_centerline_mm": 0.0,
+      "outside_current_nominal_footprint_centerline_mm": 0.0,
+      "reference_previous_assembled_z_mm": 12.075000000000001,
+      "outside_reference_previous_nominal_centerline_mm": 0.0,
+      "continuous_gap_lengths_without_previous_planned_extrusion_mm": [],
+      "longest_gap_witness": null
+    }
+  ],
+  "limitations": "Nominal interior material includes sparse infill voids. Covered centerlines can bridge across sparse infill; this is not a test of extrusion, adhesion, sagging, machine settings or support-removal force. Does not change any geometry-check result."
+}

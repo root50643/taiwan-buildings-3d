@@ -1,0 +1,72 @@
+{
+  "scope": "QA preparation and synthetic controls only; no building candidate result is represented by this file.",
+  "fixed_defaults": {
+    "layer_height_mm": 0.2,
+    "angle_from_vertical_degrees": 45,
+    "feature_width_mm": 0.8,
+    "support_area_flag_threshold_mm2": 0.01,
+    "intersection_tolerance_mm": 1e-06
+  },
+  "copied_unmodified_files": {
+    "independent_geometry_qa.py": {
+      "sha256": "0c0ca4e69386b2a5d7a531415eb4ca3ca16c599177c8ffdd8cfee37ed657b43c",
+      "upstream_sha256": "0c0ca4e69386b2a5d7a531415eb4ca3ca16c599177c8ffdd8cfee37ed657b43c",
+      "byte_identical_to_existing_candidate_qa": true,
+      "upstream_relative_path": "亞東科技大學/校本部/buildings/aeust-chengqin-2021/qa/independent_geometry_qa.py"
+    },
+    "run_controls.py": {
+      "sha256": "94b26ba514f6b35f7f58138817c4ef4cfbe9f5a8de0b28446ec981460de7e703",
+      "upstream_sha256": "94b26ba514f6b35f7f58138817c4ef4cfbe9f5a8de0b28446ec981460de7e703",
+      "byte_identical_to_existing_candidate_qa": true,
+      "upstream_relative_path": "亞東科技大學/校本部/buildings/aeust-chengqin-2021/qa/run_controls.py"
+    },
+    "flag_diagnosis.py": {
+      "sha256": "c8e9771b1c9dba285ae796e29d806b9f49fd681e06c098965e3cbccd3141b42c",
+      "upstream_sha256": "c8e9771b1c9dba285ae796e29d806b9f49fd681e06c098965e3cbccd3141b42c",
+      "byte_identical_to_existing_candidate_qa": true,
+      "upstream_relative_path": "亞東科技大學/校本部/buildings/aeust-chengqin-2021/qa/flag_diagnosis.py"
+    },
+    "run_diagnosis_controls.py": {
+      "sha256": "4efc9fca23f402b7e0fe1b463536b32e7c88218a7583970b3d214eccac3808d0",
+      "upstream_sha256": "4efc9fca23f402b7e0fe1b463536b32e7c88218a7583970b3d214eccac3808d0",
+      "byte_identical_to_existing_candidate_qa": true,
+      "upstream_relative_path": "亞東科技大學/校本部/buildings/aeust-chengqin-2021/qa/run_diagnosis_controls.py"
+    },
+    "CHECKER-METHOD.md": {
+      "sha256": "4734161b3d1b9f90d45c44a1d0d2e998d08499f4f876a08650537e0ed56b2666",
+      "upstream_sha256": "4734161b3d1b9f90d45c44a1d0d2e998d08499f4f876a08650537e0ed56b2666",
+      "byte_identical_to_existing_candidate_qa": true,
+      "upstream_relative_path": "亞東科技大學/校本部/buildings/aeust-chengqin-2021/qa/CHECKER-METHOD.md"
+    }
+  },
+  "versions": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "trimesh": "4.12.2",
+    "numpy": "2.5.4",
+    "shapely": "2.1.2"
+  },
+  "synthetic_control_evidence": {
+    "control-evidence.json": {
+      "sha256": "fe3870b39244b39be561c330ec33d0dc36c444bf0eda257e5642e16761fdb072",
+      "all_control_expectations_passed": true
+    },
+    "diagnosis-controls/controls.json": {
+      "sha256": "6418799cf14d0f9fcf253a7cf5c599a2aacf5cb7af6c04456aeef0a7c0f4da04",
+      "all_control_expectations_passed": true
+    },
+    "risk-controls/controls.json": {
+      "sha256": "419fc45d40cd7989ef5c8041d1abdea52c8a5383b775e44726060aaf8a7c4007",
+      "all_control_expectations_passed": true
+    }
+  },
+  "all_preparation_expectations_passed": true,
+  "executed_commands": [
+    "python -B run_controls.py",
+    "python -B run_diagnosis_controls.py --json diagnosis-controls/controls.json",
+    "python -B run_risk_controls.py"
+  ],
+  "external_methods": {
+    "measure_print_risks.py": "cda792a31aaa56cbcf51c4ac515ecd925f5d6846d2e5610adc44483b6865c55b"
+  },
+  "slicer_or_physical_print_performed": false
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "Synthetic risk measurement controls; generic CLI failures are retained and are expected for the overhang/detached specimens.",
+  "script_sha256": "cda792a31aaa56cbcf51c4ac515ecd925f5d6846d2e5610adc44483b6865c55b",
+  "cases": {
+    "clean_plate_supported_cube": {
+      "expectation_passed": true,
+      "generic_exit_status_retained": 0,
+      "measurer_exit_status": 0,
+      "stl_sha256": "09ab23463bd85c418791c958367ef9608d2e7ad1c4318bae1c29c3d825f98abe",
+      "exact_over_45_face_count": 0,
+      "support_flagged_layer_count": 0,
+      "maximum_axis_aligned_plane_excess_mm": null,
+      "horizontal_underside_patch_count": 0,
+      "measurement_report": "risk-controls/clean_plate_supported_cube.measured.json"
+    },
+    "exactly_45_degree_frustum": {
+      "expectation_passed": true,
+      "generic_exit_status_retained": 0,
+      "measurer_exit_status": 0,
+      "stl_sha256": "b5bc35ac29ba4f33a23e9e9bc91704f9c267d5fb5d9715c71305f4037aecc71d",
+      "exact_over_45_face_count": 0,
+      "support_flagged_layer_count": 0,
+      "maximum_axis_aligned_plane_excess_mm": 0.0,
+      "horizontal_underside_patch_count": 0,
+      "measurement_report": "risk-controls/exactly_45_degree_frustum.measured.json"
+    },
+    "quantized_45_degree_excess": {
+      "expectation_passed": true,
+      "generic_exit_status_retained": 0,
+      "measurer_exit_status": 0,
+      "stl_sha256": "f139a252c024440cccba46be87b1bcd84f2de33f29bd77363f9c04d5a99cb8a2",
+      "exact_over_45_face_count": 4,
+      "support_flagged_layer_count": 0,
+      "maximum_axis_aligned_plane_excess_mm": 9.5367431640625e-07,
+      "horizontal_underside_patch_count": 0,
+      "measurement_report": "risk-controls/quantized_45_degree_excess.measured.json"
+    },
+    "large_overhang_frustum": {
+      "expectation_passed": true,
+      "generic_exit_status_retained": 1,
+      "measurer_exit_status": 0,
+      "stl_sha256": "fc27103ffa3eb15447de546c15160b29057b831d4924c5c4cb35e21e8836456c",
+      "exact_over_45_face_count": 4,
+      "support_flagged_layer_count": 4,
+      "maximum_axis_aligned_plane_excess_mm": 1.0,
+      "horizontal_underside_patch_count": 0,
+      "measurement_report": "risk-controls/large_overhang_frustum.measured.json"
+    },
+    "detached_underside": {
+      "expectation_passed": true,
+      "generic_exit_status_retained": 1,
+      "measurer_exit_status": 0,
+      "stl_sha256": "d428b138fa47073b4b61f75206d79175f285f2b8608802e52de9781ea17714cd",
+      "exact_over_45_face_count": 2,
+      "support_flagged_layer_count": 1,
+      "maximum_axis_aligned_plane_excess_mm": null,
+      "horizontal_underside_patch_count": 1,
+      "measurement_report": "risk-controls/detached_underside.measured.json"
+    }
+  },
+  "all_control_expectations_passed": true
+}

@@ -1,0 +1,72 @@
+{
+  "id": "03-floor2-upper-upright",
+  "input_stl": "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl",
+  "input_stl_sha256": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+  "expected_stl_sha256": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+  "input_bytes": 15584,
+  "profile": "<WORKSPACE>\\slicer-review-staging\\geometry-review-0.4mm-0.15mm-no-support.ini",
+  "profile_sha256": "f7293ef8e22e06890d880524ffa8fb67c9aa7bc2f3c5ede2accb63c364706e24",
+  "info": {
+    "argv": [
+      "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+      "--datadir",
+      "<WORKSPACE>\\slicer-review-staging\\03-floor2-upper-upright\\cli-data",
+      "--info",
+      "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl"
+    ],
+    "returncode": 0,
+    "seconds": 0.09358453750610352,
+    "stdout_log": "03-floor2-upper-upright\\info.stdout.log",
+    "diagnostic_lines": []
+  },
+  "slice": {
+    "argv": [
+      "<WORKSPACE>\\manufacturing-tools\\PrusaSlicer-2.9.6\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe",
+      "--datadir",
+      "<WORKSPACE>\\slicer-review-staging\\03-floor2-upper-upright\\cli-data",
+      "--load",
+      "<WORKSPACE>\\slicer-review-staging\\geometry-review-0.4mm-0.15mm-no-support.ini",
+      "--threads",
+      "2",
+      "--center",
+      "110,110",
+      "--export-gcode",
+      "--output",
+      "<WORKSPACE>\\slicer-review-staging\\03-floor2-upper-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl"
+    ],
+    "returncode": 0,
+    "seconds": 0.7054834365844727,
+    "stdout_log": "03-floor2-upper-upright\\slice.stdout.log",
+    "diagnostic_lines": [
+      "65 => Searching support spots",
+      "69 => Alert if supports needed",
+      "89 => Calculating overhanging perimeters"
+    ]
+  },
+  "input_sha256_after": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+  "gcode": "<WORKSPACE>\\slicer-review-staging\\03-floor2-upper-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+  "gcode_exists": true,
+  "audit": {
+    "argv": [
+      "<RUNTIME_WORKSPACE>\\.venv\\Scripts\\python.exe",
+      "-B",
+      "<WORKSPACE>\\slicer-review-staging\\audit_gcode.py",
+      "<WORKSPACE>\\slicer-review-staging\\03-floor2-upper-upright\\geometry-review-NOT-MACHINE-READY.gcode",
+      "--stl",
+      "<WORKSPACE>\\candidate\\\u570b\u7acb\u4e2d\u5c71\u5927\u5b78\\\u897f\u5b50\u7063\u6821\u5340\\buildings\\nsysu-xizi-alumni-hall\\manufacturing\\v2\\models\\03-floor2-upper-upright.stl",
+      "--output",
+      "<WORKSPACE>\\slicer-review-staging\\03-floor2-upper-upright"
+    ],
+    "returncode": 0,
+    "seconds": 1.8661620616912842,
+    "stdout_log": "03-floor2-upper-upright\\audit.stdout.log",
+    "diagnostic_lines": [
+      "  \"unsupported_arc_commands\": [],",
+      "  \"support_extrusion_segments\": 0,",
+      "  \"support_positive_filament_mm\": 0,",
+      "  \"bridge_interpretation\": \"Bridge infill is reported separately; it is not support material and is not automatically an external unprintable overhang.\",",
+      "    \"Support was deliberately disabled. Zero support extrusion is not by itself a proof that supports are unnecessary.\","
+    ]
+  }
+}

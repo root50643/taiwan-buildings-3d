@@ -1,0 +1,1096 @@
+{
+  "input_file": "03-floor2-upper-upright.stl",
+  "input_identification": "Filename and SHA-256; local workstation paths intentionally omitted.",
+  "mesh_loading": "trimesh process=True merges coincident STL vertices; topology is evaluated after loading, not on raw STL record indices. No holes filled, booleans applied, or normals repaired by this script.",
+  "sha256": "b1d6d8e1ffa61198adc1898d8fe5ff5f47e7ea011fbc67d1b87108075d80d6e6",
+  "versions": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "trimesh": "4.12.2",
+    "numpy": "2.5.4",
+    "shapely": "2.1.2"
+  },
+  "topology": {
+    "vertices": 155,
+    "faces": 310,
+    "bounds_mm": [
+      [
+        -70.7808609008789,
+        -43.66280746459961,
+        0.0
+      ],
+      [
+        71.72298431396484,
+        47.330711364746094,
+        10.399999618530273
+      ]
+    ],
+    "extents_mm": [
+      142.50384521484375,
+      90.9935188293457,
+      10.399999618530273
+    ],
+    "surface_area_mm2": 16013.632043753196,
+    "signed_volume_mm3": 53631.66208944377,
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_triangles": 0,
+    "duplicate_triangles": 0,
+    "nonmanifold_vertex_links": 0,
+    "nonmanifold_vertex_indices": [],
+    "connected_components": 1,
+    "component_signed_volumes_mm3": [
+      53631.66208944377
+    ],
+    "euler_number": 0,
+    "passes_basic_solid_checks": true
+  },
+  "self_intersections": {
+    "method": "All triangle pairs with overlapping AABBs; noncoplanar plane-cut intervals and coplanar 2-D polygon intersections. Shared mesh edge/vertex contact is permitted.",
+    "tolerance_mm": 1e-06,
+    "total_triangle_pairs": 47895,
+    "aabb_candidate_pairs_checked": 3136,
+    "unexpected_contacts_or_intersections": [
+      {
+        "faces": [
+          203,
+          254
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 7.420215817655414
+      },
+      {
+        "faces": [
+          203,
+          257
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 7.239898747164142
+      },
+      {
+        "faces": [
+          205,
+          254
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 7.420215817655415
+      },
+      {
+        "faces": [
+          205,
+          257
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 7.239898747164141
+      },
+      {
+        "faces": [
+          232,
+          258
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 33.68477021564772
+      },
+      {
+        "faces": [
+          232,
+          259
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 7.19999885559082
+      },
+      {
+        "faces": [
+          233,
+          258
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 33.68477021564772
+      },
+      {
+        "faces": [
+          233,
+          259
+        ],
+        "kind": "noncoplanar_contact_or_crossing",
+        "intersection_length_mm": 7.19999885559082
+      }
+    ],
+    "passes_numerical_pair_screen": false,
+    "limitation": "Floating-point geometric screening, not a formal exact-arithmetic certificate."
+  },
+  "sections": {
+    "method": "Actual horizontal mesh intersections at layer midpoints; 2-D material parity; previous-layer buffered support envelope.",
+    "layer_height_mm": 0.2,
+    "support_angle_from_vertical_deg": 45,
+    "per_layer_horizontal_reach_mm": 0.19999999999999998,
+    "support_area_reporting_tolerance_mm2": 0.01,
+    "first_section_treated_as_build_plate_supported": true,
+    "feature_screen_width_mm": 0.8,
+    "feature_screen_method": "Erode each material component separately by half feature width; reject if any component core vanishes or splits. No universal 3-D thickness guarantee.",
+    "boundary_distance_sampling_interval_max_mm": 0.1,
+    "boundary_distance_sampling_error_bound_mm": 0.05,
+    "section_count": 52,
+    "nonempty_section_count": 52,
+    "invalid_or_open_section_count": 0,
+    "max_section_components": 1,
+    "unsupported_envelope_layer_count": 0,
+    "worst_unsupported_envelope_area_mm2": 4.976452885330216e-06,
+    "sampled_max_boundary_expansion_mm": 0.20000030344224906,
+    "vanished_core_layers": [],
+    "split_core_layers": [],
+    "thin_feature_flagged_layer_count": 0,
+    "vanished_component_core_layers": [],
+    "split_component_core_layers": [],
+    "passes_sampled_thin_feature_screen": true,
+    "passes_sampled_support_screen": true,
+    "rows": [
+      {
+        "z_mm": 0.1,
+        "area_mm2": 5357.283856118564,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118564,
+        "feature_core_area_mm2": 5032.749857659658,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": []
+      },
+      {
+        "z_mm": 0.3,
+        "area_mm2": 5357.283856118564,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118564,
+        "feature_core_area_mm2": 5032.749857659659,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.0436809381711354e-14
+      },
+      {
+        "z_mm": 0.5,
+        "area_mm2": 5357.283856118564,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118564,
+        "feature_core_area_mm2": 5032.749857659659,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.48310077725286e-15
+      },
+      {
+        "z_mm": 0.7,
+        "area_mm2": 5357.283856118563,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118563,
+        "feature_core_area_mm2": 5032.749857659657,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 8.388102049095257e-15
+      },
+      {
+        "z_mm": 0.9,
+        "area_mm2": 5357.283856118563,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118563,
+        "feature_core_area_mm2": 5032.749857659657,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.382691079957984e-15
+      },
+      {
+        "z_mm": 1.1,
+        "area_mm2": 5357.283856118563,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118563,
+        "feature_core_area_mm2": 5032.749857659658,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 6.333706862340996e-15
+      },
+      {
+        "z_mm": 1.3,
+        "area_mm2": 5357.283856118564,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118564,
+        "feature_core_area_mm2": 5032.749857659657,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.821781963511336e-15
+      },
+      {
+        "z_mm": 1.5,
+        "area_mm2": 5357.283856118565,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118565,
+        "feature_core_area_mm2": 5032.749857659659,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 8.74961097997685e-15
+      },
+      {
+        "z_mm": 1.7,
+        "area_mm2": 5357.283856118566,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118566,
+        "feature_core_area_mm2": 5032.749857659657,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.7700612896113162e-14
+      },
+      {
+        "z_mm": 1.9,
+        "area_mm2": 5357.283856118562,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118562,
+        "feature_core_area_mm2": 5032.749857659658,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 7.0409695496602784e-15
+      },
+      {
+        "z_mm": 2.1,
+        "area_mm2": 5357.283856118563,
+        "components": 1,
+        "smallest_component_area_mm2": 5357.283856118563,
+        "feature_core_area_mm2": 5032.749857659657,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.799558546443426e-15
+      },
+      {
+        "z_mm": 2.3,
+        "area_mm2": 5335.008871997243,
+        "components": 1,
+        "smallest_component_area_mm2": 5335.008871997243,
+        "feature_core_area_mm2": 5006.514877227269,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.388471464229127e-15
+      },
+      {
+        "z_mm": 2.5,
+        "area_mm2": 5335.008871997242,
+        "components": 1,
+        "smallest_component_area_mm2": 5335.008871997242,
+        "feature_core_area_mm2": 5006.514876361215,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.436609472225036e-15
+      },
+      {
+        "z_mm": 2.7,
+        "area_mm2": 5335.008871997241,
+        "components": 1,
+        "smallest_component_area_mm2": 5335.008871997241,
+        "feature_core_area_mm2": 5006.514876361216,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.099585501414809e-15
+      },
+      {
+        "z_mm": 2.9,
+        "area_mm2": 5335.008871997241,
+        "components": 1,
+        "smallest_component_area_mm2": 5335.008871997241,
+        "feature_core_area_mm2": 5006.514876361215,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 6.674663386889418e-15
+      },
+      {
+        "z_mm": 3.1,
+        "area_mm2": 5335.008871997241,
+        "components": 1,
+        "smallest_component_area_mm2": 5335.008871997241,
+        "feature_core_area_mm2": 5006.514876361216,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.8083831109044437e-14
+      },
+      {
+        "z_mm": 3.3,
+        "area_mm2": 5063.263844975764,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263844975764,
+        "feature_core_area_mm2": 4914.741432194312,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 6.896919436816091e-07
+      },
+      {
+        "z_mm": 3.5,
+        "area_mm2": 5063.263847388172,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263847388172,
+        "feature_core_area_mm2": 4914.741434606723,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.3426866515372474e-06
+      },
+      {
+        "z_mm": 3.7,
+        "area_mm2": 5063.26384973172,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.26384973172,
+        "feature_core_area_mm2": 4914.741436950271,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.3060875479550545e-06
+      },
+      {
+        "z_mm": 3.9,
+        "area_mm2": 5063.26385200641,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.26385200641,
+        "feature_core_area_mm2": 4914.741439224959,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.267203177496439e-06
+      },
+      {
+        "z_mm": 4.1,
+        "area_mm2": 5063.2638542122395,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.2638542122395,
+        "feature_core_area_mm2": 4914.74144143079,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.2306002664743993e-06
+      },
+      {
+        "z_mm": 4.3,
+        "area_mm2": 5063.263856349209,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263856349209,
+        "feature_core_area_mm2": 4914.741443567759,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.1917139520448658e-06
+      },
+      {
+        "z_mm": 4.5,
+        "area_mm2": 5063.26385841732,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.26385841732,
+        "feature_core_area_mm2": 4914.741445635869,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.1531028001237956e-06
+      },
+      {
+        "z_mm": 4.7,
+        "area_mm2": 5063.263860416571,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263860416571,
+        "feature_core_area_mm2": 4914.741447635123,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.1162235586886322e-06
+      },
+      {
+        "z_mm": 4.9,
+        "area_mm2": 5063.263862346962,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263862346962,
+        "feature_core_area_mm2": 4914.741449565513,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.0774032306811321e-06
+      },
+      {
+        "z_mm": 5.1,
+        "area_mm2": 5063.263864208495,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263864208495,
+        "feature_core_area_mm2": 4914.741451427044,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.0407327243680572e-06
+      },
+      {
+        "z_mm": 5.3,
+        "area_mm2": 5063.263866001167,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263866001167,
+        "feature_core_area_mm2": 4914.741453219717,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.001911617189432e-06
+      },
+      {
+        "z_mm": 5.5,
+        "area_mm2": 5063.263867724978,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263867724978,
+        "feature_core_area_mm2": 4914.741454943529,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.652416815155212e-07
+      },
+      {
+        "z_mm": 5.7,
+        "area_mm2": 5063.263869379931,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263869379931,
+        "feature_core_area_mm2": 4914.741456598482,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.264200531291115e-07
+      },
+      {
+        "z_mm": 5.9,
+        "area_mm2": 5063.263870966024,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263870966024,
+        "feature_core_area_mm2": 4914.741458184574,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 8.897505240323034e-07
+      },
+      {
+        "z_mm": 6.1,
+        "area_mm2": 5063.263872483258,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263872483258,
+        "feature_core_area_mm2": 4914.741459701809,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 8.509285306437661e-07
+      },
+      {
+        "z_mm": 6.3,
+        "area_mm2": 5063.263873931633,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263873931633,
+        "feature_core_area_mm2": 4914.741461150182,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 8.127987604687973e-07
+      },
+      {
+        "z_mm": 6.5,
+        "area_mm2": 5063.263875311147,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263875311147,
+        "feature_core_area_mm2": 4914.741462529695,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 7.754370201575974e-07
+      },
+      {
+        "z_mm": 6.7,
+        "area_mm2": 5063.2638766218015,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.2638766218015,
+        "feature_core_area_mm2": 4914.741463840351,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 7.365531135317773e-07
+      },
+      {
+        "z_mm": 6.9,
+        "area_mm2": 5063.263877863596,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263877863596,
+        "feature_core_area_mm2": 4914.741465082145,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 6.999455366386433e-07
+      },
+      {
+        "z_mm": 7.1,
+        "area_mm2": 5063.26387903653,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.26387903653,
+        "feature_core_area_mm2": 4914.741466255082,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 6.610612547096092e-07
+      },
+      {
+        "z_mm": 7.3,
+        "area_mm2": 5063.263880140605,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263880140605,
+        "feature_core_area_mm2": 4914.7414673591575,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 6.244540642158937e-07
+      },
+      {
+        "z_mm": 7.5,
+        "area_mm2": 5063.263881175823,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263881175823,
+        "feature_core_area_mm2": 4914.741468394373,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 5.855694630451832e-07
+      },
+      {
+        "z_mm": 7.7,
+        "area_mm2": 5063.263882142178,
+        "components": 1,
+        "smallest_component_area_mm2": 5063.263882142178,
+        "feature_core_area_mm2": 4914.741469360729,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 5.48962582483828e-07
+      },
+      {
+        "z_mm": 7.9,
+        "area_mm2": 5069.3388871361485,
+        "components": 1,
+        "smallest_component_area_mm2": 5069.3388871361485,
+        "feature_core_area_mm2": 4921.896475082958,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 0.15000022758168785
+      },
+      {
+        "z_mm": 8.1,
+        "area_mm2": 5077.438893426744,
+        "components": 1,
+        "smallest_component_area_mm2": 5077.438893426744,
+        "feature_core_area_mm2": 4931.436482344568,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 4.976452885330216e-06,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 0.20000030344224906
+      },
+      {
+        "z_mm": 8.3,
+        "area_mm2": 5085.538868749414,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.538868749414,
+        "feature_core_area_mm2": 4940.9764531450855,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 0.19999954050163682
+      },
+      {
+        "z_mm": 8.5,
+        "area_mm2": 5085.538869440334,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.538869440334,
+        "feature_core_area_mm2": 4940.976453836003,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 3.9570324832916696e-07
+      },
+      {
+        "z_mm": 8.7,
+        "area_mm2": 5085.53887006239,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.53887006239,
+        "feature_core_area_mm2": 4940.976454458061,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 3.590944166562323e-07
+      },
+      {
+        "z_mm": 8.9,
+        "area_mm2": 5085.538870615591,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.538870615591,
+        "feature_core_area_mm2": 4940.97645501126,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 3.2021127802241483e-07
+      },
+      {
+        "z_mm": 9.1,
+        "area_mm2": 5085.53887109993,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.53887109993,
+        "feature_core_area_mm2": 4940.9764554956,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 2.836027991151286e-07
+      },
+      {
+        "z_mm": 9.3,
+        "area_mm2": 5085.538871515409,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.538871515409,
+        "feature_core_area_mm2": 4940.976455911079,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 2.447193763573178e-07
+      },
+      {
+        "z_mm": 9.5,
+        "area_mm2": 5085.538871862029,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.538871862029,
+        "feature_core_area_mm2": 4940.976456257699,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 2.0811120042388802e-07
+      },
+      {
+        "z_mm": 9.7,
+        "area_mm2": 5085.5388721397885,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.5388721397885,
+        "feature_core_area_mm2": 4940.97645653546,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.6922753387621978e-07
+      },
+      {
+        "z_mm": 9.9,
+        "area_mm2": 5085.538872348689,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.538872348689,
+        "feature_core_area_mm2": 4940.976456744362,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 1.3040213278607464e-07
+      },
+      {
+        "z_mm": 10.1,
+        "area_mm2": 5085.53887248873,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.53887248873,
+        "feature_core_area_mm2": 4940.976456884399,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 9.373573621350444e-08
+      },
+      {
+        "z_mm": 10.3,
+        "area_mm2": 5085.538872559911,
+        "components": 1,
+        "smallest_component_area_mm2": 5085.538872559911,
+        "feature_core_area_mm2": 4940.976456955581,
+        "feature_core_components": 1,
+        "core_vanished": false,
+        "core_split": false,
+        "material_component_core_counts": [
+          1
+        ],
+        "vanished_component_core_count": 0,
+        "split_component_core_count": 0,
+        "section_issues": [],
+        "outside_support_envelope_area_mm2": 0.0,
+        "sampled_max_upper_boundary_distance_to_lower_mm": 5.49104155484022e-08
+      }
+    ],
+    "limitations": [
+      "Sampled sections can miss features narrower in Z than the layer spacing.",
+      "Support test is a 45-degree style geometric envelope, not extrusion or bridge simulation.",
+      "Per-component erosion detects missing/disconnected section cores, but attached thin protrusions may survive this screen unnoticed; it does not test local thickness everywhere.",
+      "Convex corners and mathematical tips need explicit judgment; a surviving core does not show every point is wider than feature_width.",
+      "XY core erosion does not establish minimum Z thickness, mechanical strength or adequate layer count for horizontal relief.",
+      "First sampled section is assumed build-plate-supported; geometry below it is not analyzed by the support comparison.",
+      "No nozzle path generation, adhesion, cooling, material shrinkage or physical print tested."
+    ]
+  },
+  "passes_bounded_geometry_screen": false
+}

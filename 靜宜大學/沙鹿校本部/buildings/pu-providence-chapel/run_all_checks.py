@@ -23,6 +23,7 @@ def publication_review_state(stl_sha256):
 
 # A stopped rerun must not leave a previous run's passed summary as its result.
 initial={'passed':None,'status':'author_digital_QA_incomplete','scope':'This invocation has started but has not completed the checks; inspect its exit status and diagnostics.'}
+(R/'qa-summary.json').write_text(json.dumps(initial,indent=2),encoding='utf8',newline='\n')
 initial.update(publication_review_state(sha(R/'model.stl') if (R/'model.stl').is_file() else None))
 (R/'qa-summary.json').write_text(json.dumps(initial,indent=2),encoding='utf8',newline='\n')
 expected='df84e1b7a4290b799082c7d2a2d23427fd6bb5cb3719ee2c82f73c152c84847b'

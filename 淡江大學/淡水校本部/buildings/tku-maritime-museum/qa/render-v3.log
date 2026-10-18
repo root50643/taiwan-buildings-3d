@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "[local-path-redacted]", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "[local-path-redacted]", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "[local-path-redacted]", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "[local-path-redacted]", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "[local-path-redacted]", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Traceback (most recent call last):
+  File "[local-path-redacted]", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "[local-path-redacted]", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "[local-path-redacted]", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+[local-path-redacted]'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True
+[local-path-redacted]'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('neutral studio');scene.world.use_nodes=True
+00:08.343  render           | Saved: '[local-path-redacted]'
+00:15.734  render           | Saved: '[local-path-redacted]'
+00:23.343  render           | Saved: '[local-path-redacted]'
+00:31.531  render           | Saved: '[local-path-redacted]'
+00:41.093  render           | Saved: '[local-path-redacted]'
+00:51.156  render           | Saved: '[local-path-redacted]'
+01:03.703  render           | Saved: '[local-path-redacted]'
+01:17.984  render           | Saved: '[local-path-redacted]'
+01:32.015  render           | Saved: '[local-path-redacted]'
+01:40.453  render           | Saved: '[local-path-redacted]'
+Exception in module register(): [local-path-redacted]
+Exception in module register(): [local-path-redacted]
+Info: Saved as "scene.blend"
+Timer 'STL Import' took 14.92 ms

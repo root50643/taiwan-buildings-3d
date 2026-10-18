@@ -1,0 +1,5 @@
+Packaging freeze attempt 1, 2026-10-18: stopped before git add/commit.
+Exact exception from the first run:
+UnicodeDecodeError: 'cp950' codec can't decode byte 0xb1 in position 23127: illegal multibyte sequence
+Location: freeze_candidate.py line 8, reading candidate-v3-algorithm-v2.json with default Windows encoding.
+Correction: explicitly read the existing JSON as UTF-8. No model, QA result, or failure flag was changed.

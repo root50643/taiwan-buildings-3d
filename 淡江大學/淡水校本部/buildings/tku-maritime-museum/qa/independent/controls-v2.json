@@ -1,0 +1,558 @@
+{
+  "control_checks": {
+    "closed_box_topology_passes": true,
+    "closed_box_intersections_passes": true,
+    "open_box_detected": true,
+    "disconnected_detected": true,
+    "intersection_detected": true,
+    "thin_plate_detected": true,
+    "float32_rounded_shared_point_coplanar_triangles_accepted": true
+  },
+  "controls_passed": true,
+  "reports": {
+    "closed_box": {
+      "label": "closed_box",
+      "topology": {
+        "vertices_before_coordinate_merge": 8,
+        "merged_vertices": 8,
+        "faces": 12,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "degenerate_face_count": 0,
+        "face_component_count": 1,
+        "winding_consistent": true,
+        "signed_volume_mm3": 1000.0,
+        "bounds_mm": [
+          [
+            -5.0,
+            -5.0,
+            0.0
+          ],
+          [
+            5.0,
+            5.0,
+            10.0
+          ]
+        ],
+        "extents_mm": [
+          10.0,
+          10.0,
+          10.0
+        ],
+        "passed": true
+      },
+      "self_intersections": {
+        "method": "AABB broad phase; plane-section intervals; Shapely coplanar intersections; shared topology subtraction",
+        "tolerance_mm": 1e-07,
+        "broad_phase_pairs": 54,
+        "intersection_pair_count": 0,
+        "first_pairs": [],
+        "passed": true
+      },
+      "thickness": {
+        "method": "one inward-normal ray per face centroid; local corners can yield short chords",
+        "sample_count": 12,
+        "finite_exit_count": 12,
+        "missing_exit_count": 0,
+        "threshold_mm": 1.2,
+        "minimum_mm": 10.0,
+        "percentile_1_mm": 10.0,
+        "below_threshold_face_count": 0,
+        "below_threshold_face_area_mm2": 0.0,
+        "samples": [],
+        "screening_passed": true,
+        "limitation": "Centroid rays are a finite sample, not an exhaustive medial-axis wall-thickness proof. Short corner chords require inspection; they are not automatically dismissed."
+      },
+      "overhangs": {
+        "orientation": "as supplied, +Z up; 45-degree screening threshold",
+        "face_count": 0,
+        "projected_area_mm2": 0.0,
+        "horizontal_area_mm2": 0.0,
+        "has_true_unsupported_undersides": false,
+        "samples_with_at_least_one_open_cardinal_horizontal_ray": 0,
+        "largest_faces": [],
+        "support_removal_status": "ray access screen only; must inspect width, neighboring walls, and actual generated supports",
+        "sliced": false,
+        "test_printed": false
+      }
+    },
+    "open_box": {
+      "label": "open_box",
+      "topology": {
+        "vertices_before_coordinate_merge": 8,
+        "merged_vertices": 8,
+        "faces": 11,
+        "boundary_edge_count": 3,
+        "nonmanifold_edge_count": 0,
+        "degenerate_face_count": 0,
+        "face_component_count": 1,
+        "winding_consistent": true,
+        "signed_volume_mm3": 750.0,
+        "bounds_mm": [
+          [
+            -5.0,
+            -5.0,
+            0.0
+          ],
+          [
+            5.0,
+            5.0,
+            10.0
+          ]
+        ],
+        "extents_mm": [
+          10.0,
+          10.0,
+          10.0
+        ],
+        "passed": false
+      },
+      "self_intersections": {
+        "method": "AABB broad phase; plane-section intervals; Shapely coplanar intersections; shared topology subtraction",
+        "tolerance_mm": 1e-07,
+        "broad_phase_pairs": 45,
+        "intersection_pair_count": 0,
+        "first_pairs": [],
+        "passed": true
+      },
+      "thickness": {
+        "method": "one inward-normal ray per face centroid; local corners can yield short chords",
+        "sample_count": 11,
+        "finite_exit_count": 11,
+        "missing_exit_count": 0,
+        "threshold_mm": 1.2,
+        "minimum_mm": 10.0,
+        "percentile_1_mm": 10.0,
+        "below_threshold_face_count": 0,
+        "below_threshold_face_area_mm2": 0.0,
+        "samples": [],
+        "screening_passed": true,
+        "limitation": "Centroid rays are a finite sample, not an exhaustive medial-axis wall-thickness proof. Short corner chords require inspection; they are not automatically dismissed."
+      },
+      "overhangs": {
+        "orientation": "as supplied, +Z up; 45-degree screening threshold",
+        "face_count": 0,
+        "projected_area_mm2": 0.0,
+        "horizontal_area_mm2": 0.0,
+        "has_true_unsupported_undersides": false,
+        "samples_with_at_least_one_open_cardinal_horizontal_ray": 0,
+        "largest_faces": [],
+        "support_removal_status": "ray access screen only; must inspect width, neighboring walls, and actual generated supports",
+        "sliced": false,
+        "test_printed": false
+      }
+    },
+    "two_disconnected_boxes": {
+      "label": "two_disconnected_boxes",
+      "topology": {
+        "vertices_before_coordinate_merge": 16,
+        "merged_vertices": 16,
+        "faces": 24,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "degenerate_face_count": 0,
+        "face_component_count": 2,
+        "winding_consistent": true,
+        "signed_volume_mm3": 2000.0,
+        "bounds_mm": [
+          [
+            -5.0,
+            -5.0,
+            0.0
+          ],
+          [
+            25.0,
+            5.0,
+            10.0
+          ]
+        ],
+        "extents_mm": [
+          30.0,
+          10.0,
+          10.0
+        ],
+        "passed": false
+      },
+      "self_intersections": {
+        "method": "AABB broad phase; plane-section intervals; Shapely coplanar intersections; shared topology subtraction",
+        "tolerance_mm": 3e-07,
+        "broad_phase_pairs": 108,
+        "intersection_pair_count": 0,
+        "first_pairs": [],
+        "passed": true
+      },
+      "thickness": {
+        "method": "one inward-normal ray per face centroid; local corners can yield short chords",
+        "sample_count": 24,
+        "finite_exit_count": 24,
+        "missing_exit_count": 0,
+        "threshold_mm": 1.2,
+        "minimum_mm": 10.0,
+        "percentile_1_mm": 10.0,
+        "below_threshold_face_count": 0,
+        "below_threshold_face_area_mm2": 0.0,
+        "samples": [],
+        "screening_passed": true,
+        "limitation": "Centroid rays are a finite sample, not an exhaustive medial-axis wall-thickness proof. Short corner chords require inspection; they are not automatically dismissed."
+      },
+      "overhangs": {
+        "orientation": "as supplied, +Z up; 45-degree screening threshold",
+        "face_count": 0,
+        "projected_area_mm2": 0.0,
+        "horizontal_area_mm2": 0.0,
+        "has_true_unsupported_undersides": false,
+        "samples_with_at_least_one_open_cardinal_horizontal_ray": 0,
+        "largest_faces": [],
+        "support_removal_status": "ray access screen only; must inspect width, neighboring walls, and actual generated supports",
+        "sliced": false,
+        "test_printed": false
+      }
+    },
+    "overlapping_closed_boxes": {
+      "label": "overlapping_closed_boxes",
+      "topology": {
+        "vertices_before_coordinate_merge": 16,
+        "merged_vertices": 16,
+        "faces": 24,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "degenerate_face_count": 0,
+        "face_component_count": 2,
+        "winding_consistent": true,
+        "signed_volume_mm3": 2000.0,
+        "bounds_mm": [
+          [
+            -5.0,
+            -5.0,
+            0.0
+          ],
+          [
+            9.0,
+            8.0,
+            12.0
+          ]
+        ],
+        "extents_mm": [
+          14.0,
+          13.0,
+          12.0
+        ],
+        "passed": false
+      },
+      "self_intersections": {
+        "method": "AABB broad phase; plane-section intervals; Shapely coplanar intersections; shared topology subtraction",
+        "tolerance_mm": 1.4e-07,
+        "broad_phase_pairs": 132,
+        "intersection_pair_count": 15,
+        "first_pairs": [
+          {
+            "faces": [
+              4,
+              12
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 6.0
+          },
+          {
+            "faces": [
+              6,
+              12
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 1.0
+          },
+          {
+            "faces": [
+              6,
+              13
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 2.0
+          },
+          {
+            "faces": [
+              6,
+              17
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 4.0
+          },
+          {
+            "faces": [
+              7,
+              12
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 1.0
+          },
+          {
+            "faces": [
+              7,
+              14
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 5.0
+          },
+          {
+            "faces": [
+              9,
+              14
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 2.0
+          },
+          {
+            "faces": [
+              9,
+              15
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 3.0
+          },
+          {
+            "faces": [
+              9,
+              20
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 3.0
+          },
+          {
+            "faces": [
+              10,
+              13
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 4.0
+          },
+          {
+            "faces": [
+              10,
+              15
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 4.0
+          },
+          {
+            "faces": [
+              10,
+              17
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 1.0
+          },
+          {
+            "faces": [
+              10,
+              20
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 1.0
+          },
+          {
+            "faces": [
+              11,
+              17
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 3.0
+          },
+          {
+            "faces": [
+              11,
+              20
+            ],
+            "shared_vertex_count": 0,
+            "kind": "noncoplanar_intersection_or_touch",
+            "intersection_length": 2.0
+          }
+        ],
+        "passed": false
+      },
+      "thickness": {
+        "method": "one inward-normal ray per face centroid; local corners can yield short chords",
+        "sample_count": 24,
+        "finite_exit_count": 24,
+        "missing_exit_count": 0,
+        "threshold_mm": 1.2,
+        "minimum_mm": 2.0,
+        "percentile_1_mm": 2.0,
+        "below_threshold_face_count": 0,
+        "below_threshold_face_area_mm2": 0.0,
+        "samples": [],
+        "screening_passed": true,
+        "limitation": "Centroid rays are a finite sample, not an exhaustive medial-axis wall-thickness proof. Short corner chords require inspection; they are not automatically dismissed."
+      },
+      "overhangs": {
+        "orientation": "as supplied, +Z up; 45-degree screening threshold",
+        "face_count": 2,
+        "projected_area_mm2": 100.0,
+        "horizontal_area_mm2": 100.0,
+        "has_true_unsupported_undersides": true,
+        "samples_with_at_least_one_open_cardinal_horizontal_ray": 1,
+        "largest_faces": [
+          {
+            "face": 15,
+            "centroid_mm": [
+              2.3333333333333335,
+              1.3333333333333333,
+              2.0
+            ],
+            "projected_area_mm2": 50.0,
+            "vertical_clearance_to_geometry_mm": 1.9999993,
+            "open_horizontal_directions": []
+          },
+          {
+            "face": 20,
+            "centroid_mm": [
+              5.666666666666667,
+              4.666666666666667,
+              2.0
+            ],
+            "projected_area_mm2": 50.0,
+            "vertical_clearance_to_geometry_mm": null,
+            "open_horizontal_directions": [
+              "+X",
+              "+Y",
+              "-Y"
+            ]
+          }
+        ],
+        "support_removal_status": "ray access screen only; must inspect width, neighboring walls, and actual generated supports",
+        "sliced": false,
+        "test_printed": false
+      }
+    },
+    "thin_plate_0_6mm": {
+      "label": "thin_plate_0_6mm",
+      "topology": {
+        "vertices_before_coordinate_merge": 8,
+        "merged_vertices": 8,
+        "faces": 12,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "degenerate_face_count": 0,
+        "face_component_count": 1,
+        "winding_consistent": true,
+        "signed_volume_mm3": 60.0,
+        "bounds_mm": [
+          [
+            -5.0,
+            -5.0,
+            0.0
+          ],
+          [
+            5.0,
+            5.0,
+            0.6
+          ]
+        ],
+        "extents_mm": [
+          10.0,
+          10.0,
+          0.6
+        ],
+        "passed": true
+      },
+      "self_intersections": {
+        "method": "AABB broad phase; plane-section intervals; Shapely coplanar intersections; shared topology subtraction",
+        "tolerance_mm": 1e-07,
+        "broad_phase_pairs": 54,
+        "intersection_pair_count": 0,
+        "first_pairs": [],
+        "passed": true
+      },
+      "thickness": {
+        "method": "one inward-normal ray per face centroid; local corners can yield short chords",
+        "sample_count": 12,
+        "finite_exit_count": 12,
+        "missing_exit_count": 0,
+        "threshold_mm": 1.2,
+        "minimum_mm": 0.6,
+        "percentile_1_mm": 0.6,
+        "below_threshold_face_count": 4,
+        "below_threshold_face_area_mm2": 200.0,
+        "samples": [
+          {
+            "face": 3,
+            "opposite_face": 4,
+            "thickness_mm": 0.6,
+            "centroid_mm": [
+              -1.6666666666666667,
+              -1.6666666666666667,
+              0.0
+            ],
+            "area_mm2": 50.0
+          },
+          {
+            "face": 4,
+            "opposite_face": 3,
+            "thickness_mm": 0.6,
+            "centroid_mm": [
+              -1.6666666666666667,
+              1.6666666666666667,
+              0.6
+            ],
+            "area_mm2": 50.0
+          },
+          {
+            "face": 6,
+            "opposite_face": 3,
+            "thickness_mm": 0.6,
+            "centroid_mm": [
+              1.6666666666666667,
+              -1.6666666666666667,
+              0.6
+            ],
+            "area_mm2": 50.0
+          },
+          {
+            "face": 8,
+            "opposite_face": 4,
+            "thickness_mm": 0.6,
+            "centroid_mm": [
+              1.6666666666666667,
+              1.6666666666666667,
+              0.0
+            ],
+            "area_mm2": 50.0
+          }
+        ],
+        "screening_passed": false,
+        "limitation": "Centroid rays are a finite sample, not an exhaustive medial-axis wall-thickness proof. Short corner chords require inspection; they are not automatically dismissed."
+      },
+      "overhangs": {
+        "orientation": "as supplied, +Z up; 45-degree screening threshold",
+        "face_count": 0,
+        "projected_area_mm2": 0.0,
+        "horizontal_area_mm2": 0.0,
+        "has_true_unsupported_undersides": false,
+        "samples_with_at_least_one_open_cardinal_horizontal_ray": 0,
+        "largest_faces": [],
+        "support_removal_status": "ray access screen only; must inspect width, neighboring walls, and actual generated supports",
+        "sliced": false,
+        "test_printed": false
+      }
+    }
+  },
+  "toolchain": {
+    "python": "3.13.9",
+    "trimesh": "4.12.2",
+    "numpy": "2.5.4",
+    "qa_revision": "v2 point-to-plane coplanarity"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "purpose": "Publication wording check and independent replay of the retained support script against the unchanged fixed STL. This is not slicing or support generation.",
+  "fixed_stl_sha256": "42097fab9a62dccd4042ba18bc49d3c5b9a44e66ff71e91962e68b56d74bc8b1",
+  "candidate_stl_modified": false,
+  "support_replay_exit_code": 0,
+  "retained_support_json_semantically_identical": true,
+  "retained_support_json_bytes_identical": true,
+  "retained_support_csv_bytes_identical": true,
+  "original_false_paths_preserved": [
+    "bridge_end_lip_3mm_tool_limitation",
+    "lower_arm_left_support_rearward_funnel_obstruction"
+  ],
+  "privacy_static_scan_issues": [],
+  "relative_markdown_link_issues": [],
+  "runtime_initial_probe": {
+    "status": "failed before model execution",
+    "reason": "Initial Python 3.12 interpreter was incompatible with the installed cp313 numpy extension. Retried with Python 3.13.9; numerical replay completed. No report pass/fail fields were modified."
+  },
+  "not_performed": [
+    "support shape generation",
+    "slicing",
+    "G-code inspection",
+    "physical support removal",
+    "test printing"
+  ],
+  "limits": "Same algorithm replay verifies reproducibility of these measurements only. It is not a second independent algorithm or full support-removal proof."
+}

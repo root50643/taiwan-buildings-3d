@@ -1,0 +1,955 @@
+{
+  "label": "model.stl",
+  "topology": {
+    "vertices_before_coordinate_merge": 3792,
+    "merged_vertices": 634,
+    "faces": 1264,
+    "boundary_edge_count": 0,
+    "nonmanifold_edge_count": 0,
+    "degenerate_face_count": 0,
+    "face_component_count": 1,
+    "winding_consistent": true,
+    "signed_volume_mm3": 836040.7636831651,
+    "bounds_mm": [
+      [
+        -91.0,
+        -70.0,
+        0.0
+      ],
+      [
+        57.0,
+        70.0,
+        130.0
+      ]
+    ],
+    "extents_mm": [
+      148.0,
+      140.0,
+      130.0
+    ],
+    "passed": true
+  },
+  "self_intersections": {
+    "method": "AABB broad phase; plane-section intervals; Shapely coplanar intersections; shared topology subtraction",
+    "tolerance_mm": 1.48e-06,
+    "broad_phase_pairs": 13898,
+    "intersection_pair_count": 0,
+    "first_pairs": [],
+    "passed": true
+  },
+  "thickness": {
+    "method": "one inward-normal ray per face centroid; local corners can yield short chords",
+    "sample_count": 1264,
+    "finite_exit_count": 1264,
+    "missing_exit_count": 0,
+    "threshold_mm": 1.2,
+    "minimum_mm": 1.1166667408413307,
+    "percentile_1_mm": 1.499999999999999,
+    "below_threshold_face_count": 5,
+    "below_threshold_face_area_mm2": 1.650001507252746,
+    "samples": [
+      {
+        "face": 1176,
+        "opposite_face": 383,
+        "thickness_mm": 1.1166667408413307,
+        "centroid_mm": [
+          -18.633333206176758,
+          -16.799999872843426,
+          58.0
+        ],
+        "area_mm2": 0.33000032424934034
+      },
+      {
+        "face": 1186,
+        "opposite_face": 383,
+        "thickness_mm": 1.1166667408413307,
+        "centroid_mm": [
+          -9.633333206176758,
+          -16.799999872843426,
+          58.0
+        ],
+        "area_mm2": 0.33000032424934034
+      },
+      {
+        "face": 1196,
+        "opposite_face": 383,
+        "thickness_mm": 1.1166667408413307,
+        "centroid_mm": [
+          -0.633333332836628,
+          -16.799999872843426,
+          58.0
+        ],
+        "area_mm2": 0.33000021025538473
+      },
+      {
+        "face": 1206,
+        "opposite_face": 383,
+        "thickness_mm": 1.1166667408413307,
+        "centroid_mm": [
+          8.366666793823242,
+          -16.799999872843426,
+          58.0
+        ],
+        "area_mm2": 0.33000032424934034
+      },
+      {
+        "face": 1216,
+        "opposite_face": 383,
+        "thickness_mm": 1.1166667408413307,
+        "centroid_mm": [
+          17.366666793823242,
+          -16.799999872843426,
+          58.0
+        ],
+        "area_mm2": 0.33000032424934034
+      }
+    ],
+    "screening_passed": false,
+    "limitation": "Centroid rays are a finite sample, not an exhaustive medial-axis wall-thickness proof. Short corner chords require inspection; they are not automatically dismissed."
+  },
+  "overhangs": {
+    "orientation": "as supplied, +Z up; 45-degree screening threshold",
+    "face_count": 140,
+    "projected_area_mm2": 1944.5793427074518,
+    "horizontal_area_mm2": 1944.5793427074518,
+    "has_true_unsupported_undersides": true,
+    "samples_with_at_least_one_open_cardinal_horizontal_ray": 138,
+    "largest_faces": [
+      {
+        "face": 289,
+        "centroid_mm": [
+          -49.333333333333336,
+          40.666666666666664,
+          64.0
+        ],
+        "projected_area_mm2": 230.0,
+        "vertical_clearance_to_geometry_mm": 19.9999926,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 525,
+        "centroid_mm": [
+          49.333333333333336,
+          47.333333333333336,
+          64.0
+        ],
+        "projected_area_mm2": 230.0,
+        "vertical_clearance_to_geometry_mm": 19.9999926,
+        "open_horizontal_directions": [
+          "+X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 523,
+        "centroid_mm": [
+          41.666666666666664,
+          40.666666666666664,
+          64.0
+        ],
+        "projected_area_mm2": 230.0,
+        "vertical_clearance_to_geometry_mm": 1.9999925999999988,
+        "open_horizontal_directions": [
+          "+X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 293,
+        "centroid_mm": [
+          -41.666666666666664,
+          47.333333333333336,
+          64.0
+        ],
+        "projected_area_mm2": 230.0,
+        "vertical_clearance_to_geometry_mm": 1.9999925999999988,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 95,
+        "centroid_mm": [
+          -63.73333231608073,
+          -1.3333333333333333,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 117.94998931884764,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 94,
+        "centroid_mm": [
+          -63.56666564941406,
+          -4.666666666666667,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 48.799995422363274,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 24,
+        "centroid_mm": [
+          -78.13333129882812,
+          -4.733333309491475,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 48.39999245405215,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 93,
+        "centroid_mm": [
+          -66.73333231608073,
+          -6.200000007947286,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 41.99999988079071,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 539,
+        "centroid_mm": [
+          -11.333333333333334,
+          24.333333333333332,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 35.0,
+        "vertical_clearance_to_geometry_mm": 17.79999565175781,
+        "open_horizontal_directions": [
+          "+X",
+          "-X",
+          "-Y"
+        ]
+      },
+      {
+        "face": 601,
+        "centroid_mm": [
+          11.333333333333334,
+          65.66666666666667,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 35.0,
+        "vertical_clearance_to_geometry_mm": 17.79999565175781,
+        "open_horizontal_directions": [
+          "+X",
+          "-X",
+          "+Y"
+        ]
+      },
+      {
+        "face": 558,
+        "centroid_mm": [
+          11.666666666666666,
+          24.666666666666668,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 34.0,
+        "vertical_clearance_to_geometry_mm": 17.79999565175781,
+        "open_horizontal_directions": [
+          "+X",
+          "-X",
+          "-Y"
+        ]
+      },
+      {
+        "face": 568,
+        "centroid_mm": [
+          -11.666666666666666,
+          65.33333333333333,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 34.0,
+        "vertical_clearance_to_geometry_mm": 17.79999565175781,
+        "open_horizontal_directions": [
+          "+X",
+          "-X",
+          "+Y"
+        ]
+      },
+      {
+        "face": 23,
+        "centroid_mm": [
+          -78.13333129882812,
+          -7.0,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 33.87999803543062,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 26,
+        "centroid_mm": [
+          -74.7999979654948,
+          -2.8666666746139526,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 27.359997966289484,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 21,
+        "centroid_mm": [
+          -80.66666666666667,
+          -8.46666669845581,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 23.19999861717224,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 355,
+        "centroid_mm": [
+          -34.666666666666664,
+          51.666666666666664,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 21.0,
+        "vertical_clearance_to_geometry_mm": 12.599998703515624,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 826,
+        "centroid_mm": [
+          34.666666666666664,
+          38.333333333333336,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 21.0,
+        "vertical_clearance_to_geometry_mm": 12.599998703515624,
+        "open_horizontal_directions": [
+          "+X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 352,
+        "centroid_mm": [
+          -34.333333333333336,
+          38.0,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 20.0,
+        "vertical_clearance_to_geometry_mm": 12.599998703515624,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 828,
+        "centroid_mm": [
+          34.333333333333336,
+          52.0,
+          79.80000305175781
+        ],
+        "projected_area_mm2": 20.0,
+        "vertical_clearance_to_geometry_mm": 12.599998703515624,
+        "open_horizontal_directions": [
+          "+X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 617,
+        "centroid_mm": [
+          3.5333334604899087,
+          41.0,
+          109.0
+        ],
+        "projected_area_mm2": 19.040021286011324,
+        "vertical_clearance_to_geometry_mm": 27.599991074121093,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 851,
+        "centroid_mm": [
+          24.46666653951009,
+          41.0,
+          109.0
+        ],
+        "projected_area_mm2": 19.040021286011324,
+        "vertical_clearance_to_geometry_mm": 27.599991074121093,
+        "open_horizontal_directions": [
+          "+X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 868,
+        "centroid_mm": [
+          -51.199999491373696,
+          -21.333333333333332,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 878,
+        "centroid_mm": [
+          -51.199999491373696,
+          7.666666666666667,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 870,
+        "centroid_mm": [
+          -51.59999974568685,
+          -13.666666666666666,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 1021,
+        "centroid_mm": [
+          51.59999974568685,
+          -21.333333333333332,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1023,
+        "centroid_mm": [
+          51.199999491373696,
+          -13.666666666666666,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1031,
+        "centroid_mm": [
+          51.59999974568685,
+          7.666666666666667,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1033,
+        "centroid_mm": [
+          51.199999491373696,
+          15.333333333333334,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 880,
+        "centroid_mm": [
+          -51.59999974568685,
+          15.333333333333334,
+          37.0
+        ],
+        "projected_area_mm2": 13.800008773803711,
+        "vertical_clearance_to_geometry_mm": 5.999992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 858,
+        "centroid_mm": [
+          20.46666653951009,
+          41.0,
+          120.0
+        ],
+        "projected_area_mm2": 10.640012130737887,
+        "vertical_clearance_to_geometry_mm": 8.199989548242186,
+        "open_horizontal_directions": [
+          "+X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 676,
+        "centroid_mm": [
+          7.533333460489909,
+          41.0,
+          120.0
+        ],
+        "projected_area_mm2": 10.640012130737887,
+        "vertical_clearance_to_geometry_mm": 8.199989548242186,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 15,
+        "centroid_mm": [
+          -90.33333333333333,
+          -4.199999968210856,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 10.0,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "-X",
+          "+Y",
+          "-Y"
+        ]
+      },
+      {
+        "face": 1162,
+        "centroid_mm": [
+          -51.13333384195963,
+          -6.0,
+          30.0
+        ],
+        "projected_area_mm2": 7.799995422363281,
+        "vertical_clearance_to_geometry_mm": 9.999992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 1164,
+        "centroid_mm": [
+          -51.56666692097982,
+          -2.0,
+          30.0
+        ],
+        "projected_area_mm2": 7.799995422363281,
+        "vertical_clearance_to_geometry_mm": 9.999992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 972,
+        "centroid_mm": [
+          -51.36666615804037,
+          -3.6666666666666665,
+          18.5
+        ],
+        "projected_area_mm2": 5.950002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": []
+      },
+      {
+        "face": 18,
+        "centroid_mm": [
+          -88.06666564941406,
+          -3.266666611035665,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 5.600005936622438,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 19,
+        "centroid_mm": [
+          -87.13333129882812,
+          -1.9333333174387615,
+          16.799999237060547
+        ],
+        "projected_area_mm2": 5.600005936622438,
+        "vertical_clearance_to_geometry_mm": null,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 1094,
+        "centroid_mm": [
+          51.199999491373696,
+          -27.333333333333332,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1093,
+        "centroid_mm": [
+          51.59999974568685,
+          -29.666666666666668,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1104,
+        "centroid_mm": [
+          51.199999491373696,
+          -14.333333333333334,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1013,
+        "centroid_mm": [
+          -51.59999974568685,
+          50.666666666666664,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 994,
+        "centroid_mm": [
+          -51.59999974568685,
+          24.666666666666668,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 1103,
+        "centroid_mm": [
+          51.59999974568685,
+          -16.666666666666668,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1002,
+        "centroid_mm": [
+          -51.199999491373696,
+          35.333333333333336,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 992,
+        "centroid_mm": [
+          -51.199999491373696,
+          22.333333333333332,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 984,
+        "centroid_mm": [
+          -51.59999974568685,
+          11.666666666666666,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 1011,
+        "centroid_mm": [
+          -51.199999491373696,
+          48.333333333333336,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 1004,
+        "centroid_mm": [
+          -51.59999974568685,
+          37.666666666666664,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 941,
+        "centroid_mm": [
+          -51.59999974568685,
+          -27.333333333333332,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 958,
+        "centroid_mm": [
+          -51.59999974568685,
+          -14.333333333333334,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 939,
+        "centroid_mm": [
+          -51.199999491373696,
+          -29.666666666666668,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 956,
+        "centroid_mm": [
+          -51.199999491373696,
+          -16.666666666666668,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 971,
+        "centroid_mm": [
+          -51.766666412353516,
+          -1.3333333333333333,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": []
+      },
+      {
+        "face": 982,
+        "centroid_mm": [
+          -51.199999491373696,
+          9.333333333333334,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "-X"
+        ]
+      },
+      {
+        "face": 1113,
+        "centroid_mm": [
+          51.199999491373696,
+          -1.3333333333333333,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1112,
+        "centroid_mm": [
+          51.59999974568685,
+          -3.6666666666666665,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1134,
+        "centroid_mm": [
+          51.199999491373696,
+          24.666666666666668,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1133,
+        "centroid_mm": [
+          51.59999974568685,
+          22.333333333333332,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1144,
+        "centroid_mm": [
+          51.199999491373696,
+          37.666666666666664,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      },
+      {
+        "face": 1153,
+        "centroid_mm": [
+          51.199999491373696,
+          50.666666666666664,
+          18.5
+        ],
+        "projected_area_mm2": 4.200002670288086,
+        "vertical_clearance_to_geometry_mm": 5.499992599999999,
+        "open_horizontal_directions": [
+          "+X"
+        ]
+      }
+    ],
+    "support_removal_status": "ray access screen only; must inspect width, neighboring walls, and actual generated supports",
+    "sliced": false,
+    "test_printed": false
+  },
+  "stl": {
+    "path": "candidate-repo\\淡江大學\\淡水校本部\\buildings\\tku-maritime-museum\\model.stl",
+    "size_bytes": 63284,
+    "sha256": "0ff10b87852c4727402ad26495a7f5455f9dc2cf635dba24e4fdaddf834402a4",
+    "unchanged_after_checks": true
+  },
+  "toolchain": {
+    "python": "3.13.9",
+    "trimesh": "4.12.2",
+    "numpy": "2.5.4",
+    "qa_revision": "v2 point-to-plane coplanarity"
+  }
+}

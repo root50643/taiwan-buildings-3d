@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "[local-path-redacted]", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "[local-path-redacted]", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "[local-path-redacted]", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "[local-path-redacted]", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "[local-path-redacted]", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+00:00.312  blend            | Read blend: "[local-path-redacted]"
+Exception in module register(): [local-path-redacted]
+{"stl_sha256": "42097fab9a62dccd4042ba18bc49d3c5b9a44e66ff71e91962e68b56d74bc8b1", "scene_sha256": "d39b554911396d239d6327e836ada6755cd4ad203958a49dd700ef19b325fefb", "one_mesh": true, "scene_matches_stl_float32_triangles": true, "scene_triangles": 1290, "stl_triangles": 1290, "image_datablocks": [], "scene_units_scale_length": 0.0010000000474974513, "textures_in_scene": 0, "rebuild_returncode": 0, "rebuild_stdout": "{\"stl_sha256\": \"42097fab9a62dccd4042ba18bc49d3c5b9a44e66ff71e91962e68b56d74bc8b1\", \"triangles\": 1290, \"volume_mm3\": 836906.213565635, \"bounds\": [[-91.0, -70.0, 0.0], [57.0, 70.0, 130.0]]}\n", "rebuild_stl_byte_identical": true, "preview_manifest_bound_to_current_stl": true, "preview_hash_matches": {"previews/front.png": true, "previews/rear.png": true, "previews/deck-end.png": true, "previews/back-end.png": true, "previews/left.png": true, "previews/right.png": true, "previews/top.png": true, "previews/roof-detail.png": true, "previews/bridge-detail.png": true, "previews/underside.png": true}}

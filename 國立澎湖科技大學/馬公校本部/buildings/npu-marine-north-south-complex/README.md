@@ -2,11 +2,11 @@
 
 外觀研究／拆件列印候選。北棟4F、南棟3F、轉折二樓架空連廊與北端單層國際會議廳合為一包；這是有估計與製造簡化的外觀模型，未實印或試合。來源、幾何、裝配與檔案條件 GO；有界切片補核已完成，未取得無支撐實體製造放行。
 
-![候選組裝模型](previews/front.png)
+![候選組裝模型](appearance/previews/front.png)
 
 | 背向 | 俯視 | 拆件 |
 |---|---|---|
-| ![背向](previews/rear.png) | ![俯視](previews/top.png) | ![拆件](previews/exploded.png) |
+| ![背向](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) | ![拆件](appearance/previews/exploded.png) |
 
 北棟入口上方3/4F突出翼保留下方兩層通空和六根模型柱；橋底9mm通空、不加整片院地底板。會議廳只有低主體和估計坡頂，沒有2/3F房間，4F不延伸。南側S1附屬只做低入口平台／回折坡道足跡／兩短階，沒有猜作通往2F的外梯。
 
@@ -23,9 +23,9 @@
 | [07橋柱](models/07-bridge-pier.stl) | 正立×3；附著需brim條件 |
 | [08南側低入口](models/08-south-low-access.stl) | 平底朝下；高程估計示意 |
 
-[可編輯場景](scene.blend) · [原創生成碼](source/build_model.py) · [渲染碼](source/build_scene.py) · [完整裝配矩陣](assembly.json) · [來源](sources.json) · [來源／模型對照](qa/source-correspondence.md) · [估計界線](ESTIMATES.md) · [製造與裝配](MANUFACTURING.md) · [發布接續](INTEGRATION-NOTES.md)
+[五材質外觀／3MF](appearance/) · [最新可編輯場景](appearance/scene.blend) · [原始四色基準場景](scene.blend) · [原創生成碼](source/build_model.py) · [渲染碼](source/build_scene.py) · [完整裝配矩陣](assembly.json) · [來源](sources.json) · [來源／模型對照](qa/source-correspondence.md) · [估計界線](ESTIMATES.md) · [製造與裝配](MANUFACTURING.md) · [發布接續](INTEGRATION-NOTES.md)
 
-米白外牆、灰藍窗、赭黃欄帶、橘紅入口色區依照片近似，場景材質與[可編輯色區](source/color-regions.json)保留。STL本身無色；四色預覽沒有驗證未決的四獨立噴頭機，也不代表四色可列印。診斷G-code僅留私人完整證據，不隨公開包配送；保留其SHA、實切紀錄與重切程式，不能直接送真機。
+最新[彩色外觀母版](appearance/)提供組裝 3MF、8 種原印向零件 3MF 與 5 個可編輯材質：米白牆、藍灰一般窗、灰色梯塔玻璃、黃欄帶、橘紅入口。顏色數不受四噴頭限制，均為未校色照片近似；原幾何、原場景與[原始色區](source/color-regions.json)保留。STL 本身無色；3MF 的表面材質不是閉合分色實體或噴頭映射，尚無多色實印驗證。診斷G-code僅留私人完整證據，不隨公開包配送；保留其SHA、實切紀錄與重切程式，不能直接送真機。
 
 [製造QA](qa/MANUFACTURING_QA.md)涵蓋8,428三角形的全量自交／接觸、4,200頂點link、45裝配配對、622零件截面、9組裝配截面及9項算法控制。[實切片證據](qa/final_slice_evidence.json)逐件綁定最終STL；柱件補測3mm brim。原失敗、薄端截面、短懸挑與單一射線漏擊旗標仍保留，這是有條件候選；切片成功不能代替實印與試合。[完整性報告](qa/package-integrity.json)與[精確資產SHA](SHA256SUMS)供獨立複查。另見[獨立整合覆核](qa/independent-review/README.md)，保留三筆極小數值重疊、薄尖端、長屋緣／短眉簷缺承托與原始失敗。
 

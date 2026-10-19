@@ -1,8 +1,8 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **498 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 427 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **499 組模型／列印包**：原有國立聯合大學 38 組、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 428 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
-全庫有 **107 所大專校院至少一套模型**，合計 **466 套校園相關模型**；另有 **32 套非大專校園模型**。下方新增目錄為106校／427套，另計原有國立聯合大學38套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標23套不列入高教校數。
+全庫有 **107 所大專校院至少一套模型**，合計 **467 套校園相關模型**；另有 **32 套非大專校園模型**。下方新增目錄為106校／428套，另計原有國立聯合大學38套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標23套不列入高教校數。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -30,7 +30,7 @@
 | [<img src="弘光科技大學/校本部/buildings/hku-a-administration/previews/front.png" alt="弘光科技大學實際模型預覽" width="260">](弘光科技大學/README.md)<br>**[弘光科技大學｜10 組](弘光科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="文藻外語大學/校本部/buildings/wzu-administration/previews/front.png" alt="文藻外語大學實際模型預覽" width="260">](文藻外語大學/README.md)<br>**[文藻外語大學｜17 組](文藻外語大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="明志科技大學/泰山校本部/buildings/mcut-gymnasium/previews/front.png" alt="明志科技大學實際模型預覽" width="260">](明志科技大學/README.md)<br>**[明志科技大學｜3 組](明志科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="輔仁大學/新莊校本部/buildings/fju-chung-mei-auditorium/previews/front.png" alt="輔仁大學實際模型預覽" width="260">](輔仁大學/README.md)<br>**[輔仁大學｜5 組](輔仁大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="長榮大學/歸仁校本部/buildings/cjcu-administration/previews/front.png" alt="長榮大學實際模型預覽" width="260">](長榮大學/README.md)<br>**[長榮大學｜5 組](長榮大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立勤益科技大學/太平校本部/buildings/ncut-machine-tool-complex/previews/front.png" alt="國立勤益科技大學實際模型預覽" width="260">](國立勤益科技大學/README.md)<br>**[國立勤益科技大學｜3 組](國立勤益科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立虎尾科技大學/校本部（第一教學區）/buildings/nfu-main-gate/previews/front.png" alt="國立虎尾科技大學實際模型預覽" width="260">](國立虎尾科技大學/README.md)<br>**[國立虎尾科技大學｜2 組](國立虎尾科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺北教育大學/臺北校區/buildings/ntue-assembly-hall/previews/front.png" alt="國立臺北教育大學實際模型預覽" width="260">](國立臺北教育大學/README.md)<br>**[國立臺北教育大學｜22 組](國立臺北教育大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺北商業大學/臺北校區/buildings/ntub-student-center-west-facade/previews/front.png" alt="國立臺北商業大學實際模型預覽" width="260">](國立臺北商業大學/README.md)<br>**[國立臺北商業大學｜4 組](國立臺北商業大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
-| [<img src="國立臺中教育大學/柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/previews/front.png" alt="國立臺中教育大學實際模型預覽" width="260">](國立臺中教育大學/README.md)<br>**[國立臺中教育大學｜3 組](國立臺中教育大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立體育大學/桃園校區/buildings/ntsu-arena/previews/front.png" alt="國立體育大學實際模型預覽" width="260">](國立體育大學/README.md)<br>**[國立體育大學｜6 組](國立體育大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立澎湖科技大學/馬公校本部/buildings/npu-library-rotunda-front/previews/front.png" alt="國立澎湖科技大學實際模型預覽" width="260">](國立澎湖科技大學/README.md)<br>**[國立澎湖科技大學｜2 組](國立澎湖科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
+| [<img src="國立臺中教育大學/柳川校屬館舍/buildings/ntcu-lin-atelier-courtyard-section/previews/front.png" alt="國立臺中教育大學實際模型預覽" width="260">](國立臺中教育大學/README.md)<br>**[國立臺中教育大學｜3 組](國立臺中教育大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立體育大學/桃園校區/buildings/ntsu-arena/previews/front.png" alt="國立體育大學實際模型預覽" width="260">](國立體育大學/README.md)<br>**[國立體育大學｜6 組](國立體育大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立澎湖科技大學/馬公校本部/buildings/npu-marine-north-south-complex/previews/front.png" alt="國立澎湖科技大學實際模型預覽" width="260">](國立澎湖科技大學/README.md)<br>**[國立澎湖科技大學｜3 組](國立澎湖科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立金門大學/金寧校本部/buildings/nqu-library-tower-segment/previews/front.png" alt="國立金門大學實際模型預覽" width="260">](國立金門大學/README.md)<br>**[國立金門大學｜1 組](國立金門大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="中原大學/中壢校區/buildings/cycu-chang-ching-yu-library-1985/previews/front.png" alt="中原大學實際模型預覽" width="260">](中原大學/README.md)<br>**[中原大學｜2 組](中原大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺北護理健康大學/城區校區/buildings/ntunhs-wenjiao-1965/previews/front.png" alt="國立臺北護理健康大學實際模型預覽" width="260">](國立臺北護理健康大學/README.md)<br>**[國立臺北護理健康大學｜2 組](國立臺北護理健康大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="真理大學/淡水校區/buildings/au-oxford-1999-core/previews/front.png" alt="真理大學實際模型預覽" width="260">](真理大學/README.md)<br>**[真理大學｜1 組](真理大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立空中大學/蘆洲校本部/buildings/nou-north-courtyard/previews/front.png" alt="國立空中大學實際模型預覽" width="260">](國立空中大學/README.md)<br>**[國立空中大學｜2 組](國立空中大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺灣體育運動大學/臺中校區/buildings/ntus-changqi-building/previews/front.png" alt="國立臺灣體育運動大學實際模型預覽" width="260">](國立臺灣體育運動大學/README.md)<br>**[國立臺灣體育運動大學｜1 組](國立臺灣體育運動大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立臺南護理專科學校/臺南校區/buildings/ntin-xinxin-building/previews/front.png" alt="國立臺南護理專科學校實際模型預覽" width="260">](國立臺南護理專科學校/README.md)<br>**[國立臺南護理專科學校｜1 組](國立臺南護理專科學校/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺東專科學校/誠樸校區/buildings/ntc-student-complex/previews/front.png" alt="國立臺東專科學校實際模型預覽" width="260">](國立臺東專科學校/README.md)<br>**[國立臺東專科學校｜1 組](國立臺東專科學校/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="實踐大學/臺北校區/buildings/usc-c-human-ecology/previews/front.png" alt="實踐大學實際模型預覽" width="260">](實踐大學/README.md)<br>**[實踐大學｜2 組](實踐大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
@@ -77,11 +77,13 @@
 
 ## 模型範圍與限制
 
+- 澎科新增[海洋科技大樓南北棟與二樓連廊](國立澎湖科技大學/馬公校本部/buildings/npu-marine-north-south-complex/README.md)，與圖資／實驗入口兩件合計3套；南北棟、架空橋及單層會議廳共計1包、8種STL／10件。來源與數位幾何條件GO，保留短懸挑、尖端、微重疊及有界切片限制；需真機重切與試印，不稱2026現況或全校完成。
+
 - 聯大 A1 新增[四色／四工具分色檔](國立聯合大學/buildings/bajia-a1-science-engineering-1/multicolor/README.zh-TW.md)，沿用既有單色母體，不增加套件數。分色檔案條件 GO；無支撐路線 NO-GO，開支撐僅完成生成比較。四主色占滿四工具，獨立支撐材須先騰出工具；真機設定、支撐清除、材料黏結與實體試印未驗。
 
 - 國立宜蘭大學新增[農林修養室（2016修復後近似）](國立宜蘭大學/神農校總區/buildings/niu-cultivation-hall-restored/README.md)，累計6套；166 × 111 × 54.4mm單件，主四披屋頂與凸入口雙坡分開。固定STL獨立有條件GO，保留切片邊界差異、橋跨和支撐可達性限制，未試印／實拆；G-code僅QA，須真機重切。
 - 正修科技大學新增[綜合行政大樓03A/B/C](正修科技大學/校本部/buildings/csu-administration-03/)，與圖書科技大樓合計2套；03三區是一套、分印主體／屋蓋兩件。獨立條件GO保留嚴格false、門頂16.6mm懸垂路徑與auto45外部支撐；未實證支撐清除、尖緣成形、翹曲或平面膠合，generic G-code須真機重切，非全校完成。
-- 498 組是模型／列印包數量，並不等於已核實且彼此獨立的建築棟數。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
+- 499 組是模型／列印包數量，並不等於已核實且彼此獨立的建築棟數。聯大尚未涵蓋全校；國衛院 R1／R2 合為一件，部分量體仍有身分或外觀證據限制。
 - 國立中山大學西子樓校友會館推薦[六件製造方案](國立中山大學/西子灣校區/buildings/nsysu-xizi-alumni-hall/manufacturing/v2/README.md)：保留供應印向，以0.4mm噴嘴、0.15mm層高與100% rectilinear逐件列印後組裝；指定條件下已切片且支撐擠出為0，尚未試印、拆brim、乾組或膠合。原單件仍需支撐，與六件變體合計只算一套；generic G-code僅供覆核，須依真機重切。
 - 均為依公開資料建立的外觀近似模型，不是官方模型、測繪成果、BIM 或工程圖；背面、屋頂與細節可能含推估、簡化或加粗。
 - 各件採獨立展示尺寸，沒有共同校園／院區比例尺。STL 不含預覽材質或色彩。

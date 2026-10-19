@@ -1,0 +1,767 @@
+{
+  "status": "SOURCE_COMPARISON_COMPLETE_WITH_RETAINED_DEVIATIONS",
+  "review_date_utc": "2026-10-19",
+  "source_pixels_in_figure": false,
+  "inputs": {
+    "build_model.py_sha256": "113513a7f5de77a0c8751f0fadcb4b522a3dfc6250efe5e7e94cca3898fa74e7",
+    "plan-trace.json_sha256": "176b633c5fb48135c5e236c732ee23c5673393dc9b375951d2322eb52a8c6467",
+    "plan-review.json_sha256": "1db9a032f6b9221a9798f65bca00c05ad3f9a1e1dab63910c82e79258028a7bb"
+  },
+  "model_code_trace_literal_match": {
+    "N": true,
+    "NU": true,
+    "S": true,
+    "H": true,
+    "B": true
+  },
+  "source_coordinate_accuracy": "Manual trace about2 rendered pixels; modeled dimensions are normalized mm display coordinates, not measured building dimensions.",
+  "coordinate_registration": {
+    "source_south2_to_north2_px": [
+      218,
+      261
+    ],
+    "candidate_translation_px": [
+      217,
+      261
+    ],
+    "delta_px": [
+      -1,
+      0
+    ],
+    "declared_tolerance_px": 2,
+    "within_tolerance": true
+  },
+  "bridge_elbow": {
+    "source_centerline_mm": [
+      88.8,
+      91.4
+    ],
+    "model_centerline_mm": [
+      88.9,
+      91.1
+    ],
+    "difference_mm": [
+      0.1,
+      -0.3
+    ]
+  },
+  "pages": [
+    {
+      "source": "north",
+      "page": 1,
+      "checks": [
+        {
+          "feature": "Long bar + image-right return",
+          "result": "SUPPORTED_APPROXIMATE_OUTLINE",
+          "evidence": "N polygon preserves long bar100 x34.1 and short return to48; independent trace about100 x34.1 and47.7."
+        },
+        {
+          "feature": "Lobby-connected fan conference hall, single occupied level",
+          "result": "SUPPORTED_TOPOLOGY_HEIGHT_ESTIMATED",
+          "evidence": "H is unioned only into north-lower z0..11; separate roof z11..15. No additional room body at z18 or above."
+        },
+        {
+          "feature": "Entrance beneath west upper wing",
+          "result": "SUPPORTED_VOID_COLUMNS_ESTIMATED",
+          "evidence": "N has no filled body in x0..22,y34.1..48; six enlarged columns and narrow ground ties are explicitly generated. Exact count/thickness not measured."
+        },
+        {
+          "feature": "Fine fan shell/entry steps",
+          "result": "SIMPLIFIED",
+          "evidence": "H is an eight-vertex approximation; source polygon has secondary stairs/entrances. Image-left extent model41.2 versus trace41.8 and south depth about1.1mm shorter."
+        }
+      ]
+    },
+    {
+      "source": "north",
+      "page": 2,
+      "checks": [
+        {
+          "feature": "Second-floor bridge at right-return end",
+          "result": "SUPPORTED",
+          "evidence": "B starts near(88.9,48), runs to(88.9,91.1), then right to x106.2. Source approximately(88.8,47.7) to(88.8,91.4) to106.4."
+        },
+        {
+          "feature": "Bridge turn nubs",
+          "result": "RESTORED_IN_CURRENT_CANDIDATE",
+          "flag": "BRIDGE_ELBOW_STUBS_OMITTED"
+        },
+        {
+          "feature": "Conference hall projection, not 2F room",
+          "result": "SUPPORTED",
+          "evidence": "Roof is a low separate part; no hall room stacked with upper floors."
+        },
+        {
+          "feature": "West porch remains unfilled at 2F",
+          "result": "SUPPORTED",
+          "evidence": "Upper west wing begins at z18, corresponding to modeled3F; lower piloti extend through two modeled levels."
+        }
+      ]
+    },
+    {
+      "source": "north",
+      "page": 3,
+      "checks": [
+        {
+          "feature": "West occupied wing above porch",
+          "result": "SUPPORTED_APPROXIMATE_OUTLINE",
+          "evidence": "NU includes x0..22,y34.1..48 from z18; source independent trace width22.2 and end y48."
+        },
+        {
+          "feature": "Hall radial roof projection",
+          "result": "SUPPORTED_INTERPRETATION_ROOF_ESTIMATED",
+          "evidence": "Low polygon roof, no hall3F room. The rendered roof slope is a design estimate; plans only constrain horizontal fan shell/roof."
+        }
+      ]
+    },
+    {
+      "source": "north",
+      "page": 4,
+      "checks": [
+        {
+          "feature": "Fourth floor bar and end wings",
+          "result": "SUPPORTED",
+          "evidence": "NU spans z18..36 across two model stories; bar does not incorrectly shorten at4F."
+        },
+        {
+          "feature": "No hall extension at4F",
+          "result": "SUPPORTED",
+          "evidence": "H roof ends atz15; hall does not extend to the main roof."
+        },
+        {
+          "feature": "Roof fins and parapets",
+          "result": "ESTIMATE_NOT_MEASUREMENT",
+          "evidence": "Heights37.2/38.3/43mm are explicit generated estimates, not extracted from this plan."
+        }
+      ]
+    },
+    {
+      "source": "south",
+      "page": 1,
+      "checks": [
+        {
+          "feature": "Principal L body and inner stair/lobby return",
+          "result": "SUPPORTED_APPROXIMATE_OUTLINE",
+          "evidence": "S preserves53.6mm total width,34.1mm mainleg width,68.9mm body length; west return is simplified."
+        },
+        {
+          "feature": "No ground-floor bridge room",
+          "result": "SUPPORTED",
+          "evidence": "Bridge startsz9; no common slab or body fills the courtyard/undercroft."
+        },
+        {
+          "feature": "Exterior1F entry ramp/short stairs/platform",
+          "result": "LOW_RELIEF_ADDED_HEIGHTS_AND_ROUTE_SIMPLIFIED",
+          "flag": "SOUTH_EXTERNAL_ENTRY_APPENDAGE"
+        },
+        {
+          "feature": "Southern terminal stair position",
+          "result": "WITHIN_MANUAL_TRACE_TOLERANCE",
+          "flag": "SOUTH_TERMINAL_STAIR_POSITION"
+        }
+      ]
+    },
+    {
+      "source": "south",
+      "page": 2,
+      "checks": [
+        {
+          "feature": "Bridge enters left tip of short wing",
+          "result": "SUPPORTED",
+          "evidence": "B right end x106.2 shares the S western edge around y88.9..93.3."
+        },
+        {
+          "feature": "Shared scale and two-plan registration",
+          "result": "WITHIN_MANUAL_TRACE_TOLERANCE",
+          "evidence": "Candidate translation[217, 261]; independent trace[218,261]. Difference in x is -1px; declared uncertainty2px."
+        },
+        {
+          "feature": "Bridge elbow small branches",
+          "result": "RESTORED_IN_CURRENT_CANDIDATE",
+          "flag": "BRIDGE_ELBOW_STUBS_OMITTED"
+        },
+        {
+          "feature": "Inner west return and grid projection",
+          "result": "SIMPLIFIED",
+          "evidence": "Return endsy102.7 versus trace103.7; grid/roof projection below is omitted as secondary roof detail, not occupied room evidence."
+        },
+        {
+          "feature": "Terminal stair",
+          "result": "WITHIN_MANUAL_TRACE_TOLERANCE",
+          "flag": "SOUTH_TERMINAL_STAIR_POSITION"
+        }
+      ]
+    },
+    {
+      "source": "south",
+      "page": 3,
+      "checks": [
+        {
+          "feature": "Three-story L",
+          "result": "SUPPORTED_HEIGHT_ESTIMATED",
+          "evidence": "S bodyz0..27 is three9mm model stories; floor count supported, height unknown."
+        },
+        {
+          "feature": "No3F bridge",
+          "result": "SUPPORTED",
+          "evidence": "Bridge lid top17.5 is below modeled3F startingz18; no bridge stacked to3F."
+        },
+        {
+          "feature": "Terminal stair and small corridor-end protrusions",
+          "result": "SIMPLIFIED_WITH_RETAINED_FLAG",
+          "evidence": "Terminal stair remains part of S; small corridor-end protrusions are simplified and the stair displacement flag remains in QA history."
+        }
+      ]
+    }
+  ],
+  "retained_flags": [
+    {
+      "id": "SOUTH_TERMINAL_STAIR_POSITION",
+      "status": "WITHIN_MANUAL_TRACE_TOLERANCE",
+      "source_x_mm": [
+        140,
+        145.7
+      ],
+      "model_x_mm": [
+        140,
+        145.7
+      ],
+      "center_shift_x_mm": 0.0,
+      "significance": "The original x136.5..142.8 candidate was displaced about -3.2 mm (13 source pixels); retain this original flag even after a correction.",
+      "original_candidate_x_mm": [
+        136.5,
+        142.8
+      ],
+      "original_candidate_center_shift_x_mm": -3.2
+    },
+    {
+      "id": "BRIDGE_ELBOW_STUBS_OMITTED",
+      "status": "RESTORED_IN_CURRENT_CANDIDATE",
+      "original_status": "OMITTED_IN_INITIAL_CANDIDATE",
+      "source": "The official 2F plans show a short image-left nub and a short image-down nub at the elbow.",
+      "model": "Current B polygon includes the two short nubs.",
+      "limit": "Restoring the main horizontal outline does not turn the manual trace into an exact dimensioned footprint."
+    },
+    {
+      "id": "SOUTH_EXTERNAL_ENTRY_APPENDAGE",
+      "status": "LOW_RELIEF_ADDED_HEIGHTS_AND_ROUTE_SIMPLIFIED",
+      "original_status": "OMITTED_IN_INITIAL_CANDIDATE",
+      "source": "South1 PNG approximately x614..684,y347..585 shows exterior entrance platforms, two short tread bands, long parallel ramp-like lines/arrows and a curved/reversing lower landing. This cannot be read as a multistorey external stair from the source.",
+      "model": "08-south-low-access adds a separate low ring/ramp footprint, two short step sets and links at1F, approximate boundsx159.5..175.4,y83..127,z0..2mm.",
+      "limit": "The current ring greatly simplifies the source reversals, mid-side branch and curved lower landing. Only low entry topology and approximate envelope are represented; no exact continuous accessible route or2F connection is asserted. No readable level heights or long continuously stepped flight are supplied.",
+      "conservative_reconstruction": "Separate low1F entry platform/short steps/reversing-ramp footprint only. Step solid thickness1.2-2mm and0.4mm rises are explicit display estimates, never measured.",
+      "source_envelope_approx_model_units": [
+        [
+          162,
+          82.6
+        ],
+        [
+          175.4,
+          127
+        ]
+      ]
+    },
+    {
+      "id": "SOUTH_WEST_RETURN_DEPTH",
+      "status": "APPROXIMATE_SIMPLIFICATION",
+      "source_y_max_mm": 103.7,
+      "model_y_max_mm": 102.7,
+      "delta_mm": -1.0,
+      "limit": "Short stair/lobby return appears about 1 mm shallower than the independent trace; no dimension chain supports precision."
+    },
+    {
+      "id": "HEIGHTS_AND_DETAILS_ESTIMATED",
+      "status": "ESTIMATE_NOT_MEASUREMENT",
+      "items": [
+        "9 mm model story pitch",
+        "north porch column count and enlarged thickness",
+        "9 mm bridge undercroft and 17.5 mm lid top",
+        "hall shell 11 mm / roof peak 15 mm",
+        "roof fins, parapets, blind windows, solid enlarged railing bands",
+        "bridge pier locations"
+      ]
+    },
+    {
+      "id": "SOURCE_BOUNDARY",
+      "status": "NOT_A_MANUFACTURING_PASS",
+      "limit": "Outline correspondence does not prove mesh validity, physical fit, accessible supports, slicer success, printed success or multiple-material feasibility."
+    }
+  ],
+  "estimated_dimensions_not_asbuilt": true,
+  "source_trace_polygons_model_units": {
+    "north": [
+      [
+        0,
+        0
+      ],
+      [
+        100,
+        0
+      ],
+      [
+        100,
+        47.7
+      ],
+      [
+        86.9,
+        47.7
+      ],
+      [
+        86.9,
+        34.1
+      ],
+      [
+        0,
+        34.1
+      ]
+    ],
+    "north_upper": [
+      [
+        0,
+        0
+      ],
+      [
+        100,
+        0
+      ],
+      [
+        100,
+        47.7
+      ],
+      [
+        86.9,
+        47.7
+      ],
+      [
+        86.9,
+        34.1
+      ],
+      [
+        22.2,
+        34.1
+      ],
+      [
+        22.2,
+        48
+      ],
+      [
+        0,
+        48
+      ]
+    ],
+    "south": [
+      [
+        106.4,
+        80.7
+      ],
+      [
+        160,
+        80.7
+      ],
+      [
+        160,
+        93.6
+      ],
+      [
+        159.8,
+        93.6
+      ],
+      [
+        159.8,
+        149.6
+      ],
+      [
+        145.7,
+        149.6
+      ],
+      [
+        145.7,
+        162.7
+      ],
+      [
+        140,
+        162.7
+      ],
+      [
+        140,
+        149.6
+      ],
+      [
+        125.7,
+        149.6
+      ],
+      [
+        125.7,
+        103.7
+      ],
+      [
+        106.4,
+        103.7
+      ]
+    ],
+    "hall": [
+      [
+        -41.81818181818182,
+        7.07070707070707
+      ],
+      [
+        -24.848484848484848,
+        -4.444444444444445
+      ],
+      [
+        -4.040404040404041,
+        4.444444444444445
+      ],
+      [
+        0.0,
+        4.444444444444445
+      ],
+      [
+        0.0,
+        31.11111111111111
+      ],
+      [
+        -4.040404040404041,
+        31.11111111111111
+      ],
+      [
+        -24.646464646464647,
+        39.39393939393939
+      ],
+      [
+        -41.81818181818182,
+        27.87878787878788
+      ]
+    ],
+    "bridge": [
+      [
+        86.4,
+        47.7
+      ],
+      [
+        91.1,
+        47.7
+      ],
+      [
+        91.1,
+        89.4
+      ],
+      [
+        106.4,
+        89.4
+      ],
+      [
+        106.4,
+        94.1
+      ],
+      [
+        91.1,
+        94.1
+      ],
+      [
+        91.1,
+        98.3
+      ],
+      [
+        86.4,
+        98.3
+      ],
+      [
+        86.4,
+        94.1
+      ],
+      [
+        82,
+        94.1
+      ],
+      [
+        82,
+        89.4
+      ],
+      [
+        86.4,
+        89.4
+      ]
+    ]
+  },
+  "candidate_polygons_model_units": {
+    "north": [
+      [
+        0,
+        0
+      ],
+      [
+        100,
+        0
+      ],
+      [
+        100,
+        48
+      ],
+      [
+        87.2,
+        48
+      ],
+      [
+        87.2,
+        34.1
+      ],
+      [
+        0,
+        34.1
+      ]
+    ],
+    "north_upper": [
+      [
+        0,
+        0
+      ],
+      [
+        100,
+        0
+      ],
+      [
+        100,
+        48
+      ],
+      [
+        87.2,
+        48
+      ],
+      [
+        87.2,
+        34.1
+      ],
+      [
+        22,
+        34.1
+      ],
+      [
+        22,
+        48
+      ],
+      [
+        0,
+        48
+      ]
+    ],
+    "south": [
+      [
+        106.2,
+        80.7
+      ],
+      [
+        159.8,
+        80.7
+      ],
+      [
+        159.8,
+        93.6
+      ],
+      [
+        159.5,
+        93.6
+      ],
+      [
+        159.5,
+        149.6
+      ],
+      [
+        145.7,
+        149.6
+      ],
+      [
+        145.7,
+        162.8
+      ],
+      [
+        140,
+        162.8
+      ],
+      [
+        140,
+        149.6
+      ],
+      [
+        125.4,
+        149.6
+      ],
+      [
+        125.4,
+        102.7
+      ],
+      [
+        106.2,
+        102.7
+      ]
+    ],
+    "hall": [
+      [
+        -41.2,
+        7
+      ],
+      [
+        -24,
+        -4.4
+      ],
+      [
+        -3.6,
+        4
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        30
+      ],
+      [
+        -3.6,
+        30
+      ],
+      [
+        -24,
+        38.3
+      ],
+      [
+        -41.2,
+        27
+      ]
+    ],
+    "bridge": [
+      [
+        86.7,
+        48
+      ],
+      [
+        91.1,
+        48
+      ],
+      [
+        91.1,
+        88.9
+      ],
+      [
+        106.2,
+        88.9
+      ],
+      [
+        106.2,
+        93.3
+      ],
+      [
+        91.1,
+        93.3
+      ],
+      [
+        91.1,
+        97.8
+      ],
+      [
+        86.7,
+        97.8
+      ],
+      [
+        86.7,
+        93.3
+      ],
+      [
+        82.1,
+        93.3
+      ],
+      [
+        82.1,
+        88.9
+      ],
+      [
+        86.7,
+        88.9
+      ]
+    ]
+  },
+  "current_low_1f_access": {
+    "present": true,
+    "source_approx_envelope_only": [
+      [
+        162,
+        82.6
+      ],
+      [
+        175.4,
+        127
+      ]
+    ],
+    "model_outer_outline": [
+      [
+        162.2,
+        83
+      ],
+      [
+        169.5,
+        83
+      ],
+      [
+        169.5,
+        122
+      ],
+      [
+        175.4,
+        122
+      ],
+      [
+        175.4,
+        127
+      ],
+      [
+        162.2,
+        127
+      ],
+      [
+        162.2,
+        123
+      ],
+      [
+        159.5,
+        123
+      ],
+      [
+        159.5,
+        120
+      ],
+      [
+        162.2,
+        120
+      ],
+      [
+        162.2,
+        92
+      ],
+      [
+        159.8,
+        92
+      ],
+      [
+        159.8,
+        89
+      ],
+      [
+        162.2,
+        89
+      ]
+    ],
+    "source_route_is_not_exactly_reconstructed": true,
+    "platform_step_thickness_mm_estimated": [
+      1.2,
+      2
+    ],
+    "step_rise_mm_estimated": 0.4,
+    "base_z_mm": 0
+  },
+  "limits": [
+    "No source raster page/photograph is embedded in the original comparison image.",
+    "This pass examines supplied7plan pages and the candidate generation code; exterior photographic color/material matching was handled separately by the parent.",
+    "No geometry is modified by this comparison script.",
+    "Manufacturing QA, slicer QA and physical print/fit must be judged separately."
+  ]
+}

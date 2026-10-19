@@ -1,0 +1,1120 @@
+{
+  "schema_version": 1,
+  "all_controls_pass": true,
+  "case_count": 9,
+  "trimesh_version": "4.12.2",
+  "python_version": "3.13.9",
+  "implementation_sha256": "0ac4a551883d3cc98dab5d9e9cc8055181e4c3b51b11d8eca50a2e452340f575",
+  "control_script_sha256": "0ddcc1a51b35367962172a368fbc18f3a3c6da49e10c7747993ada54f3de2f2a",
+  "cases": [
+    {
+      "case": "single_closed_box",
+      "expected_no_non_topological_contact": true,
+      "expected_positive_counter": null,
+      "control_pass": true,
+      "counts": {
+        "all_faces": 12,
+        "aabb_pairs": 54,
+        "plane_rejected": 0,
+        "coplanar_pairs": 6,
+        "expected_topological_contacts": 46,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "records": [],
+      "input_vertices_mm": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          -1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "input_faces": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          7,
+          3
+        ],
+        [
+          5,
+          1,
+          4
+        ],
+        [
+          5,
+          7,
+          1
+        ],
+        [
+          3,
+          7,
+          2
+        ],
+        [
+          6,
+          4,
+          2
+        ],
+        [
+          2,
+          7,
+          6
+        ],
+        [
+          6,
+          5,
+          4
+        ],
+        [
+          7,
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "case": "two_separated_boxes",
+      "expected_no_non_topological_contact": true,
+      "expected_positive_counter": null,
+      "control_pass": true,
+      "counts": {
+        "all_faces": 24,
+        "aabb_pairs": 108,
+        "plane_rejected": 0,
+        "coplanar_pairs": 12,
+        "expected_topological_contacts": 92,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "records": [],
+      "input_vertices_mm": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          -1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          4.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          4.0,
+          -1.0,
+          1.0
+        ],
+        [
+          4.0,
+          1.0,
+          -1.0
+        ],
+        [
+          4.0,
+          1.0,
+          1.0
+        ],
+        [
+          6.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          6.0,
+          -1.0,
+          1.0
+        ],
+        [
+          6.0,
+          1.0,
+          -1.0
+        ],
+        [
+          6.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "input_faces": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          7,
+          3
+        ],
+        [
+          5,
+          1,
+          4
+        ],
+        [
+          5,
+          7,
+          1
+        ],
+        [
+          3,
+          7,
+          2
+        ],
+        [
+          6,
+          4,
+          2
+        ],
+        [
+          2,
+          7,
+          6
+        ],
+        [
+          6,
+          5,
+          4
+        ],
+        [
+          7,
+          5,
+          6
+        ],
+        [
+          9,
+          11,
+          8
+        ],
+        [
+          12,
+          9,
+          8
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          10,
+          12,
+          8
+        ],
+        [
+          9,
+          15,
+          11
+        ],
+        [
+          13,
+          9,
+          12
+        ],
+        [
+          13,
+          15,
+          9
+        ],
+        [
+          11,
+          15,
+          10
+        ],
+        [
+          14,
+          12,
+          10
+        ],
+        [
+          10,
+          15,
+          14
+        ],
+        [
+          14,
+          13,
+          12
+        ],
+        [
+          15,
+          13,
+          14
+        ]
+      ]
+    },
+    {
+      "case": "two_crossing_closed_boxes",
+      "expected_no_non_topological_contact": false,
+      "expected_positive_counter": "proper_intersections",
+      "control_pass": true,
+      "counts": {
+        "all_faces": 24,
+        "aabb_pairs": 132,
+        "plane_rejected": 0,
+        "coplanar_pairs": 12,
+        "expected_topological_contacts": 92,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 15,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": false
+      },
+      "records": [
+        {
+          "faces": [
+            4,
+            12
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 1.3,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            6,
+            12
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.09999999999999998,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            6,
+            13
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.5,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            6,
+            17
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.8,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            7,
+            12
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.10000000000000009,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            7,
+            14
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 1.2,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            9,
+            14
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.19999999999999996,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            9,
+            15
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.6000000000000001,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            9,
+            20
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.7,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            10,
+            13
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.7,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            10,
+            15
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.7000000000000001,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            10,
+            17
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.19999999999999996,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            10,
+            20
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.20000000000000007,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            11,
+            17
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.6,
+          "shared_vertices": 0
+        },
+        {
+          "faces": [
+            11,
+            20
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 0.5,
+          "shared_vertices": 0
+        }
+      ],
+      "input_vertices_mm": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          -1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          -0.30000000000000004,
+          -0.4,
+          -0.5
+        ],
+        [
+          -0.30000000000000004,
+          -0.4,
+          1.5
+        ],
+        [
+          -0.30000000000000004,
+          1.6,
+          -0.5
+        ],
+        [
+          -0.30000000000000004,
+          1.6,
+          1.5
+        ],
+        [
+          1.7,
+          -0.4,
+          -0.5
+        ],
+        [
+          1.7,
+          -0.4,
+          1.5
+        ],
+        [
+          1.7,
+          1.6,
+          -0.5
+        ],
+        [
+          1.7,
+          1.6,
+          1.5
+        ]
+      ],
+      "input_faces": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          4,
+          0
+        ],
+        [
+          1,
+          7,
+          3
+        ],
+        [
+          5,
+          1,
+          4
+        ],
+        [
+          5,
+          7,
+          1
+        ],
+        [
+          3,
+          7,
+          2
+        ],
+        [
+          6,
+          4,
+          2
+        ],
+        [
+          2,
+          7,
+          6
+        ],
+        [
+          6,
+          5,
+          4
+        ],
+        [
+          7,
+          5,
+          6
+        ],
+        [
+          9,
+          11,
+          8
+        ],
+        [
+          12,
+          9,
+          8
+        ],
+        [
+          8,
+          11,
+          10
+        ],
+        [
+          10,
+          12,
+          8
+        ],
+        [
+          9,
+          15,
+          11
+        ],
+        [
+          13,
+          9,
+          12
+        ],
+        [
+          13,
+          15,
+          9
+        ],
+        [
+          11,
+          15,
+          10
+        ],
+        [
+          14,
+          12,
+          10
+        ],
+        [
+          10,
+          15,
+          14
+        ],
+        [
+          14,
+          13,
+          12
+        ],
+        [
+          15,
+          13,
+          14
+        ]
+      ]
+    },
+    {
+      "case": "proper_non_coplanar_triangle_cross",
+      "expected_no_non_topological_contact": false,
+      "expected_positive_counter": "proper_intersections",
+      "control_pass": true,
+      "counts": {
+        "all_faces": 2,
+        "aabb_pairs": 1,
+        "plane_rejected": 0,
+        "coplanar_pairs": 0,
+        "expected_topological_contacts": 0,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 1,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": false
+      },
+      "records": [
+        {
+          "faces": [
+            0,
+            1
+          ],
+          "kind": "proper_intersections",
+          "measure_mm_or_mm2": 1.2,
+          "shared_vertices": 0
+        }
+      ],
+      "input_vertices_mm": [
+        [
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.5,
+          -1.0
+        ],
+        [
+          0.0,
+          -0.5,
+          1.0
+        ],
+        [
+          0.0,
+          0.7,
+          0.0
+        ]
+      ],
+      "input_faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "case": "coplanar_area_overlap",
+      "expected_no_non_topological_contact": false,
+      "expected_positive_counter": "coplanar_overlap",
+      "control_pass": true,
+      "counts": {
+        "all_faces": 2,
+        "aabb_pairs": 1,
+        "plane_rejected": 0,
+        "coplanar_pairs": 1,
+        "expected_topological_contacts": 0,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 1,
+        "pass_no_non_topological_contact": false
+      },
+      "records": [
+        {
+          "faces": [
+            0,
+            1
+          ],
+          "kind": "coplanar_overlap",
+          "measure_mm_or_mm2": 0.5,
+          "shared_vertices": 0
+        }
+      ],
+      "input_vertices_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.2,
+          0.0
+        ],
+        [
+          1.2,
+          0.2,
+          0.0
+        ],
+        [
+          0.2,
+          1.2,
+          0.0
+        ]
+      ],
+      "input_faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "case": "non_topological_point_touch",
+      "expected_no_non_topological_contact": false,
+      "expected_positive_counter": "nonadjacent_point_contacts",
+      "control_pass": true,
+      "counts": {
+        "all_faces": 2,
+        "aabb_pairs": 1,
+        "plane_rejected": 0,
+        "coplanar_pairs": 1,
+        "expected_topological_contacts": 0,
+        "nonadjacent_point_contacts": 1,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": false
+      },
+      "records": [
+        {
+          "faces": [
+            0,
+            1
+          ],
+          "kind": "nonadjacent_point_contacts",
+          "measure_mm_or_mm2": 0.0,
+          "shared_vertices": 0
+        }
+      ],
+      "input_vertices_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "input_faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "case": "non_topological_edge_touch",
+      "expected_no_non_topological_contact": false,
+      "expected_positive_counter": "nonadjacent_line_contacts",
+      "control_pass": true,
+      "counts": {
+        "all_faces": 2,
+        "aabb_pairs": 1,
+        "plane_rejected": 0,
+        "coplanar_pairs": 1,
+        "expected_topological_contacts": 0,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 1,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": false
+      },
+      "records": [
+        {
+          "faces": [
+            0,
+            1
+          ],
+          "kind": "nonadjacent_line_contacts",
+          "measure_mm_or_mm2": 1.4142135623730951,
+          "shared_vertices": 0
+        }
+      ],
+      "input_vertices_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "input_faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "case": "legal_shared_edge",
+      "expected_no_non_topological_contact": true,
+      "expected_positive_counter": null,
+      "control_pass": true,
+      "counts": {
+        "all_faces": 2,
+        "aabb_pairs": 1,
+        "plane_rejected": 0,
+        "coplanar_pairs": 1,
+        "expected_topological_contacts": 1,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "records": [],
+      "input_vertices_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "input_faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "legal_shared_vertex",
+      "expected_no_non_topological_contact": true,
+      "expected_positive_counter": null,
+      "control_pass": true,
+      "counts": {
+        "all_faces": 2,
+        "aabb_pairs": 1,
+        "plane_rejected": 0,
+        "coplanar_pairs": 1,
+        "expected_topological_contacts": 1,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "records": [],
+      "input_vertices_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "input_faces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ]
+      ]
+    }
+  ],
+  "scope": "Controls validate crossing, planar overlap, non-topological point/edge contacts, expected shared topology and ordinary boxes. They do not prove the algorithm correct for every degenerate numerical configuration. Complete candidate topology, positive-volume components, triangle-pair tests and assembly booleans remain separate checks."
+}

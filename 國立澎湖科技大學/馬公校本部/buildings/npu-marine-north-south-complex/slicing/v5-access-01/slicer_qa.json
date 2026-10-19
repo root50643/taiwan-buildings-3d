@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "qa_only": true,
+  "machine_ready": false,
+  "physical_print_performed": false,
+  "trial_fit_performed": false,
+  "manifest_sha256": "0fa91ce2f33efae625d05665deba96850cb95772f243a48110e1502965cb868d",
+  "profile_sha256": "25580cc0b47befb2aa4eca76846f173cea56c55c273c6a7d99d9d475c37022dd",
+  "tool_version": "PrusaSlicer 2.9.6",
+  "tool_executable_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "parts": [
+    {
+      "id": "08-south-low-access",
+      "input_stl": "models/08-south-low-access.stl",
+      "input_sha256": "00af5b407f0428f8f0b565952ad4b9afc1d0720138c1a8ad06228a226c5ce850",
+      "exit_code": 0,
+      "elapsed_seconds": 0.68,
+      "supports_enabled": false,
+      "supports_buildplate_only": true,
+      "qa_brim_width_mm": 0.0,
+      "output_exists": true,
+      "log": "08-south-low-access_slicer.log",
+      "raw_flags": [],
+      "gcode_metadata_redacted": false,
+      "gcode_sha256": "0883315c2a2626facccc4f9c8881933d062f4305efe555084863c37c2abfcfb1",
+      "gcode": "08-south-low-access_QA_ONLY.gcode",
+      "toolpath": {
+        "layer_count": 10,
+        "z_min_mm": 0.2,
+        "z_max_mm": 2.0,
+        "layer_z_values_mm": [
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          2.0
+        ],
+        "extruding_move_count": 1728,
+        "extrusion_bounds_mm": [
+          [
+            98.846,
+            84.796,
+            0.2
+          ],
+          [
+            121.154,
+            135.204,
+            2.0
+          ]
+        ],
+        "positive_extrusion_mm": 145.00878000000023,
+        "roles": {
+          "Custom": 2,
+          "Skirt/Brim": 1,
+          "External perimeter": 22,
+          "Perimeter": 14,
+          "Solid infill": 10,
+          "Top solid infill": 5
+        },
+        "extrusion_mm_by_role": {
+          "Skirt/Brim": 4.402799999999999,
+          "External perimeter": 55.53360000000005,
+          "Perimeter": 58.44313999999995,
+          "Solid infill": 22.258269999999982,
+          "Top solid infill": 4.370970000000003
+        },
+        "extrusion_mm_by_layer": {
+          "0.2": 22.299609999999976,
+          "0.4": 18.015370000000008,
+          "0.6": 17.96748000000001,
+          "0.8": 18.015370000000008,
+          "1.0": 17.96748000000001,
+          "1.2": 17.847150000000028,
+          "1.4": 14.525469999999993,
+          "1.6": 14.447689999999996,
+          "1.8": 1.9615799999999999,
+          "2.0": 1.9615799999999999
+        },
+        "estimates": {
+          "estimated printing time": [
+            "; estimated printing time (normal mode) = 3m 59s",
+            "; estimated printing time (silent mode) = 4m 3s"
+          ],
+          "filament used": [
+            "; filament used [mm] = 145.01",
+            "; filament used [cm3] = 0.35",
+            "; filament used [g] = 0.43"
+          ],
+          "total filament used": [
+            "; total filament used [g] = 0.43",
+            "; total filament used for wipe tower [g] = 0.00"
+          ]
+        },
+        "private_absolute_path_found": false,
+        "qa_only": true
+      },
+      "slice_success": true,
+      "log_sha256": "398a70256239958181bdc4617eae1aea2d82f00d64b264726fd4e0403d6f113a"
+    }
+  ],
+  "all_parts_slice_success": true,
+  "limitations": [
+    "Toolpaths use a generic single-material PLA QA profile, not the undecided four-toolhead configuration.",
+    "No machine start/end code; do not send these QA G-code files to a printer.",
+    "A successful slice does not prove support removal, surface quality, adhesion, strength, fit, or print success.",
+    "Buildplate-only support setting may leave enclosed overhangs unsupported; inspect geometry and overhang evidence.",
+    "Each trial remains separate, including all nonzero exits and warnings."
+  ]
+}

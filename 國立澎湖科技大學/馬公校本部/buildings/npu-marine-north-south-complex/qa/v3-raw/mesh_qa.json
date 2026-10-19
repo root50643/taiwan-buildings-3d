@@ -1,0 +1,1316 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "d004fdbbf117c4fef5129a2ecf2768c1b79cc7681aa15db0623c5434c0fe7189",
+  "units": "mm",
+  "versions": {
+    "python": "3.13.9",
+    "trimesh": "4.12.2",
+    "shapely": "2.1.2"
+  },
+  "parts": [
+    {
+      "id": "01-north-lower",
+      "stl": "models/01-north-lower.stl",
+      "sha256": "029f27248e5047bb465b4cd05420911d6b219d408813e1458b60828ac40536a3",
+      "vertices_raw": 5934,
+      "vertices_merged": 991,
+      "faces": 1978,
+      "dimensions_mm": [
+        141.1999969482422,
+        52.400001525878906,
+        18.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          141.1999969482422,
+          52.400001525878906,
+          18.0
+        ]
+      ],
+      "volume_mm3": 79101.96170341884,
+      "surface_area_mm2": 18039.176332390933,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        1978
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 1978,
+        "aabb_pairs": 27426,
+        "plane_rejected": 4,
+        "coplanar_pairs": 8110,
+        "expected_topological_contacts": 14817,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 1978,
+        "missed_rays": 0,
+        "minimum_mm": 0.8999996185302738,
+        "percentiles_mm": [
+          0.8999996185302738,
+          0.8999996185302738,
+          11.0,
+          35.00000071525574
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 95,
+        "step_mm": 0.2,
+        "detail_file": "01-north-lower_sections.json",
+        "max_area_mm2": 5016.520015220648,
+        "nonempty_layers": 95,
+        "raw_45deg_outward_layer_flags": [
+          {
+            "z_mm": 1.3000000000000003,
+            "area_mm2": 23.181665269518152
+          },
+          {
+            "z_mm": 6.500000000000001,
+            "area_mm2": 50.590977163258316
+          },
+          {
+            "z_mm": 10.300000000000002,
+            "area_mm2": 23.181665269518106
+          },
+          {
+            "z_mm": 15.500000000000002,
+            "area_mm2": 50.59097716325838
+          }
+        ],
+        "raw_opening_0p8mm_flags": 0,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 220,
+      "raw_flags": [
+        "SECTION_45DEG_OVERHANG_SCREEN"
+      ],
+      "elapsed_seconds": 7.057
+    },
+    {
+      "id": "02-north-upper",
+      "stl": "models/02-north-upper.stl",
+      "sha256": "bd224c4a3d283f8b113e5e226415bf9a5d734fec440492aa9d12e99d47307346",
+      "vertices_raw": 6516,
+      "vertices_merged": 1088,
+      "faces": 2172,
+      "dimensions_mm": [
+        100.0,
+        49.54999923706055,
+        25.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          49.54999923706055,
+          25.0
+        ]
+      ],
+      "volume_mm3": 69997.81829201365,
+      "surface_area_mm2": 15834.092133473645,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        2172
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 2172,
+        "aabb_pairs": 30839,
+        "plane_rejected": 0,
+        "coplanar_pairs": 9121,
+        "expected_topological_contacts": 16638,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 2172,
+        "missed_rays": 1,
+        "minimum_mm": 0.8999996185302733,
+        "percentiles_mm": [
+          0.8999996185302733,
+          0.8999996185302733,
+          9.0,
+          48.00000077486038
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [
+          {
+            "face": 1817,
+            "original_centroid_mm": [
+              55.199999491373696,
+              34.54999923706055,
+              7.75
+            ],
+            "tangential_offset_mm": 0.0001,
+            "offset_distances_mm": [
+              34.099999248981476,
+              34.099999248981476,
+              34.099999248981476,
+              34.099999248981476
+            ]
+          }
+        ],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 131,
+        "step_mm": 0.2,
+        "detail_file": "02-north-upper_sections.json",
+        "max_area_mm2": 3942.1400438880864,
+        "nonempty_layers": 131,
+        "raw_45deg_outward_layer_flags": [
+          {
+            "z_mm": 1.3000000000000003,
+            "area_mm2": 25.773629838550143
+          },
+          {
+            "z_mm": 6.500000000000001,
+            "area_mm2": 56.219458818040984
+          },
+          {
+            "z_mm": 10.300000000000002,
+            "area_mm2": 25.7725632527371
+          },
+          {
+            "z_mm": 15.500000000000002,
+            "area_mm2": 56.21945881804104
+          },
+          {
+            "z_mm": 18.100000000000005,
+            "area_mm2": 77.23430658191451
+          },
+          {
+            "z_mm": 19.100000000000005,
+            "area_mm2": 58.05000000000003
+          }
+        ],
+        "raw_opening_0p8mm_flags": 1,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 260,
+      "raw_flags": [
+        "THICKNESS_RAY_MISS",
+        "SECTION_THIN_OPENING_SCREEN",
+        "SECTION_45DEG_OVERHANG_SCREEN"
+      ],
+      "elapsed_seconds": 4.05
+    },
+    {
+      "id": "03-south-body",
+      "stl": "models/03-south-body.stl",
+      "sha256": "f0f1dff41b58b640d836e3d77ec52dbe9be95427745654b7611f879522201950",
+      "vertices_raw": 10356,
+      "vertices_merged": 1728,
+      "faces": 3452,
+      "dimensions_mm": [
+        53.75,
+        82.55000305175781,
+        34.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          53.75,
+          82.55000305175781,
+          34.0
+        ]
+      ],
+      "volume_mm3": 76278.2509364561,
+      "surface_area_mm2": 15506.898589786404,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        3452
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 3452,
+        "aabb_pairs": 44488,
+        "plane_rejected": 0,
+        "coplanar_pairs": 12363,
+        "expected_topological_contacts": 25774,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 3452,
+        "missed_rays": 0,
+        "minimum_mm": 0.8999996185302738,
+        "percentiles_mm": [
+          0.8999996185302738,
+          0.8999996185302738,
+          8.68561529734778,
+          68.90000915527344
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 178,
+        "step_mm": 0.2,
+        "detail_file": "03-south-body_sections.json",
+        "max_area_mm2": 2902.9752979277414,
+        "nonempty_layers": 178,
+        "raw_45deg_outward_layer_flags": [
+          {
+            "z_mm": 1.3000000000000003,
+            "area_mm2": 27.61916923816486
+          },
+          {
+            "z_mm": 6.500000000000001,
+            "area_mm2": 61.43067525369634
+          },
+          {
+            "z_mm": 10.300000000000002,
+            "area_mm2": 27.619076188168762
+          },
+          {
+            "z_mm": 15.500000000000002,
+            "area_mm2": 61.43067525369638
+          },
+          {
+            "z_mm": 19.300000000000004,
+            "area_mm2": 27.61907618816903
+          },
+          {
+            "z_mm": 24.500000000000007,
+            "area_mm2": 61.43067525369638
+          },
+          {
+            "z_mm": 26.900000000000006,
+            "area_mm2": 25.117951968383935
+          },
+          {
+            "z_mm": 28.300000000000008,
+            "area_mm2": 28.560041614864403
+          }
+        ],
+        "raw_opening_0p8mm_flags": 1,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 425,
+      "raw_flags": [
+        "SECTION_THIN_OPENING_SCREEN",
+        "SECTION_45DEG_OVERHANG_SCREEN"
+      ],
+      "elapsed_seconds": 5.078
+    },
+    {
+      "id": "04-hall-roof",
+      "stl": "models/04-hall-roof.stl",
+      "sha256": "a351d6ea6b80b7a38f9e82447573afa381bc8fe1527b31f4cd1de2b7db40db0c",
+      "vertices_raw": 162,
+      "vertices_merged": 29,
+      "faces": 54,
+      "dimensions_mm": [
+        41.20000076293945,
+        42.70000076293945,
+        4.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          41.20000076293945,
+          42.70000076293945,
+          4.0
+        ]
+      ],
+      "volume_mm3": 2786.58301454992,
+      "surface_area_mm2": 2847.757752143303,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        54
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 54,
+        "aabb_pairs": 406,
+        "plane_rejected": 22,
+        "coplanar_pairs": 58,
+        "expected_topological_contacts": 305,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 54,
+        "missed_rays": 0,
+        "minimum_mm": 1.1999998092651367,
+        "percentiles_mm": [
+          1.1999998092651367,
+          1.1999998092651367,
+          2.3094305028463142,
+          41.20000076293945
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 21,
+        "step_mm": 0.2,
+        "detail_file": "04-hall-roof_sections.json",
+        "max_area_mm2": 1333.5600771300928,
+        "nonempty_layers": 21,
+        "raw_45deg_outward_layer_flags": [],
+        "raw_opening_0p8mm_flags": 0,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 0,
+      "raw_flags": [],
+      "elapsed_seconds": 0.071
+    },
+    {
+      "id": "05-bridge-tray",
+      "stl": "models/05-bridge-tray.stl",
+      "sha256": "e6b524731b0e4674e3a3322935e61906d398374f430c5baa2b904465d72a967a",
+      "vertices_raw": 1308,
+      "vertices_merged": 188,
+      "faces": 436,
+      "dimensions_mm": [
+        24.099998474121094,
+        49.80000305175781,
+        7.299999237060547
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.099998474121094,
+          49.80000305175781,
+          7.299999237060547
+        ]
+      ],
+      "volume_mm3": 1379.0806918333983,
+      "surface_area_mm2": 2496.2000026703026,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        436
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 436,
+        "aabb_pairs": 6168,
+        "plane_rejected": 0,
+        "coplanar_pairs": 1628,
+        "expected_topological_contacts": 3785,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 436,
+        "missed_rays": 0,
+        "minimum_mm": 1.1999969482421844,
+        "percentiles_mm": [
+          1.1999969482421844,
+          1.1999969482421844,
+          1.2000045776367192,
+          7.299999237060547
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 38,
+        "step_mm": 0.2,
+        "detail_file": "05-bridge-tray_sections.json",
+        "max_area_mm2": 305.80010604858404,
+        "nonempty_layers": 38,
+        "raw_45deg_outward_layer_flags": [
+          {
+            "z_mm": 5.500000000000001,
+            "area_mm2": 30.33601928710935
+          }
+        ],
+        "raw_opening_0p8mm_flags": 0,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 32,
+      "raw_flags": [
+        "SECTION_45DEG_OVERHANG_SCREEN"
+      ],
+      "elapsed_seconds": 0.67
+    },
+    {
+      "id": "06-bridge-lid",
+      "stl": "models/06-bridge-lid.stl",
+      "sha256": "fef2c04dc051d500606e650c6df5949ffae954c9e06dd0badac60f437f946ecb",
+      "vertices_raw": 132,
+      "vertices_merged": 24,
+      "faces": 44,
+      "dimensions_mm": [
+        24.100000381469727,
+        49.79999923706055,
+        1.2000000476837158
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.100000381469727,
+          49.79999923706055,
+          1.2000000476837158
+        ]
+      ],
+      "volume_mm3": 366.9599636554688,
+      "surface_area_mm2": 788.9599212551102,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        44
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 44,
+        "aabb_pairs": 358,
+        "plane_rejected": 0,
+        "coplanar_pairs": 86,
+        "expected_topological_contacts": 258,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 44,
+        "missed_rays": 0,
+        "minimum_mm": 1.2000000476837156,
+        "percentiles_mm": [
+          1.2000000476837156,
+          1.2000000476837156,
+          4.399997711181637,
+          49.79999923706055
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 7,
+        "step_mm": 0.2,
+        "detail_file": "06-bridge-lid_sections.json",
+        "max_area_mm2": 305.7999575614922,
+        "nonempty_layers": 7,
+        "raw_45deg_outward_layer_flags": [],
+        "raw_opening_0p8mm_flags": 0,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 0,
+      "raw_flags": [],
+      "elapsed_seconds": 0.05
+    },
+    {
+      "id": "07-pier-instance-1",
+      "stl": "models/07-bridge-pier.stl",
+      "sha256": "c1b6c4b378f3c2fafed4e9281a67768cf5fb69dd7a2c9f3f1d34bbc3e9cf809a",
+      "vertices_raw": 84,
+      "vertices_merged": 16,
+      "faces": 28,
+      "dimensions_mm": [
+        3.4000000953674316,
+        3.4000000953674316,
+        9.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          3.4000000953674316,
+          3.4000000953674316,
+          9.0
+        ]
+      ],
+      "volume_mm3": 39.14399648857145,
+      "surface_area_mm2": 95.59999685287481,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        28
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 28,
+        "aabb_pairs": 182,
+        "plane_rejected": 0,
+        "coplanar_pairs": 30,
+        "expected_topological_contacts": 142,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 28,
+        "missed_rays": 0,
+        "minimum_mm": 1.2000000476837156,
+        "percentiles_mm": [
+          1.2000000476837156,
+          1.2000000476837156,
+          1.7999998331069946,
+          9.0
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 47,
+        "step_mm": 0.2,
+        "detail_file": "07-pier-instance-1_sections.json",
+        "max_area_mm2": 11.560000648498546,
+        "nonempty_layers": 47,
+        "raw_45deg_outward_layer_flags": [],
+        "raw_opening_0p8mm_flags": 0,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 0,
+      "raw_flags": [],
+      "elapsed_seconds": 0.074
+    },
+    {
+      "id": "07-pier-instance-2",
+      "stl": "models/07-bridge-pier.stl",
+      "sha256": "c1b6c4b378f3c2fafed4e9281a67768cf5fb69dd7a2c9f3f1d34bbc3e9cf809a",
+      "vertices_raw": 84,
+      "vertices_merged": 16,
+      "faces": 28,
+      "dimensions_mm": [
+        3.4000000953674316,
+        3.4000000953674316,
+        9.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          3.4000000953674316,
+          3.4000000953674316,
+          9.0
+        ]
+      ],
+      "volume_mm3": 39.14399648857145,
+      "surface_area_mm2": 95.59999685287481,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        28
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 28,
+        "aabb_pairs": 182,
+        "plane_rejected": 0,
+        "coplanar_pairs": 30,
+        "expected_topological_contacts": 142,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 28,
+        "missed_rays": 0,
+        "minimum_mm": 1.2000000476837156,
+        "percentiles_mm": [
+          1.2000000476837156,
+          1.2000000476837156,
+          1.7999998331069946,
+          9.0
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 47,
+        "step_mm": 0.2,
+        "detail_file": "07-pier-instance-2_sections.json",
+        "max_area_mm2": 11.560000648498546,
+        "nonempty_layers": 47,
+        "raw_45deg_outward_layer_flags": [],
+        "raw_opening_0p8mm_flags": 0,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 0,
+      "raw_flags": [],
+      "elapsed_seconds": 0.075
+    },
+    {
+      "id": "07-pier-instance-3",
+      "stl": "models/07-bridge-pier.stl",
+      "sha256": "c1b6c4b378f3c2fafed4e9281a67768cf5fb69dd7a2c9f3f1d34bbc3e9cf809a",
+      "vertices_raw": 84,
+      "vertices_merged": 16,
+      "faces": 28,
+      "dimensions_mm": [
+        3.4000000953674316,
+        3.4000000953674316,
+        9.0
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          3.4000000953674316,
+          3.4000000953674316,
+          9.0
+        ]
+      ],
+      "volume_mm3": 39.14399648857145,
+      "surface_area_mm2": 95.59999685287481,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "component_faces": [
+        28
+      ],
+      "degenerate_face_ids": [],
+      "duplicate_face_count": 0,
+      "triangle_contact_counts": {
+        "all_faces": 28,
+        "aabb_pairs": 182,
+        "plane_rejected": 0,
+        "coplanar_pairs": 30,
+        "expected_topological_contacts": 142,
+        "nonadjacent_point_contacts": 0,
+        "nonadjacent_line_contacts": 0,
+        "proper_intersections": 0,
+        "coplanar_overlap": 0,
+        "pass_no_non_topological_contact": true
+      },
+      "thickness_summary": {
+        "method": "inward normal first-hit ray from every face centroid, unsampled; offset 0.00001 mm",
+        "faces_tested": 28,
+        "missed_rays": 0,
+        "minimum_mm": 1.2000000476837156,
+        "percentiles_mm": [
+          1.2000000476837156,
+          1.2000000476837156,
+          1.7999998331069946,
+          9.0
+        ],
+        "threshold_mm": 0.9,
+        "raw_thin_face_count": 0,
+        "supplemental_original_misses": [],
+        "limitations": "All face centroids tested; this is evidence at those rays, not a proof of arbitrary-point minimum thickness. Acute bevels/roof tips can report short distances."
+      },
+      "sections": {
+        "count": 47,
+        "step_mm": 0.2,
+        "detail_file": "07-pier-instance-3_sections.json",
+        "max_area_mm2": 11.560000648498546,
+        "nonempty_layers": 47,
+        "raw_45deg_outward_layer_flags": [],
+        "raw_opening_0p8mm_flags": 0,
+        "limitations": "0.8 mm morphological opening is a screening signal, not a proven minimum wall thickness; taper corners can flag. 45-degree outward layer areas include bridgeable decorative ledges; evaluate slicing and support access separately."
+      },
+      "downward_45deg_face_count_above_bed": 0,
+      "raw_flags": [],
+      "elapsed_seconds": 0.074
+    }
+  ],
+  "assembly": {
+    "method": "all part pairs; manifold intersection volume; bidirectional all-vertex/triangle distances and all potentially closer edge/edge pairs",
+    "pairs": [
+      {
+        "a": "01-north-lower",
+        "b": "02-north-upper",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.0,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 19,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "01-north-lower",
+          "b": "02-north-upper",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "01-north-lower",
+        "b": "03-south-body",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 33.276153928064154,
+        "bbox_gap_mm": 32.84056054930338,
+        "edge_pairs_tested": 11030,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "01-north-lower",
+        "b": "04-hall-roof",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.0,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 11,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "01-north-lower",
+          "b": "04-hall-roof",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "01-north-lower",
+        "b": "05-bridge-tray",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 1.430511474609375e-06,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 108,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "01-north-lower",
+          "b": "05-bridge-tray",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "01-north-lower",
+        "b": "06-bridge-lid",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 1.430511474609375e-06,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 69,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "01-north-lower",
+          "b": "06-bridge-lid",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "01-north-lower",
+        "b": "07-pier-instance-1",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 12.299998569488523,
+        "bbox_gap_mm": 12.299998569488523,
+        "edge_pairs_tested": 276,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "01-north-lower",
+        "b": "07-pier-instance-2",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 28.299998569488523,
+        "bbox_gap_mm": 28.299998569488523,
+        "edge_pairs_tested": 368,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "01-north-lower",
+        "b": "07-pier-instance-3",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 41.39999856948852,
+        "bbox_gap_mm": 41.39999856948852,
+        "edge_pairs_tested": 368,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "02-north-upper",
+        "b": "03-south-body",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 33.18433082269426,
+        "bbox_gap_mm": 31.76102184985028,
+        "edge_pairs_tested": 21513,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "02-north-upper",
+        "b": "04-hall-roof",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 5.800000190734863,
+        "bbox_gap_mm": 3.0,
+        "edge_pairs_tested": 527,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "02-north-upper",
+        "b": "05-bridge-tray",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 1.7000007629394531,
+        "bbox_gap_mm": 1.7000007629394531,
+        "edge_pairs_tested": 302,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "02-north-upper",
+        "b": "06-bridge-lid",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.49999995231628347,
+        "bbox_gap_mm": 0.49999995231628347,
+        "edge_pairs_tested": 60,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "02-north-upper",
+        "b": "07-pier-instance-1",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 15.89370886774476,
+        "bbox_gap_mm": 14.368020629955103,
+        "edge_pairs_tested": 234,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "02-north-upper",
+        "b": "07-pier-instance-2",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 30.45997306410356,
+        "bbox_gap_mm": 28.650306121495596,
+        "edge_pairs_tested": 798,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "02-north-upper",
+        "b": "07-pier-instance-3",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 43.149043333989944,
+        "bbox_gap_mm": 41.292736171536184,
+        "edge_pairs_tested": 1450,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "03-south-body",
+        "b": "04-hall-roof",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 117.68147219211937,
+        "bbox_gap_mm": 114.18512072856672,
+        "edge_pairs_tested": 23636,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "03-south-body",
+        "b": "05-bridge-tray",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.0,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 35,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "03-south-body",
+          "b": "05-bridge-tray",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "03-south-body",
+        "b": "06-bridge-lid",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 3.433227533378158e-06,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 26,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "03-south-body",
+          "b": "06-bridge-lid",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "03-south-body",
+        "b": "07-pier-instance-1",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 23.072923412681234,
+        "bbox_gap_mm": 22.74340340962716,
+        "edge_pairs_tested": 6598,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "03-south-body",
+        "b": "07-pier-instance-2",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 15.632015081730877,
+        "bbox_gap_mm": 15.609689353244606,
+        "edge_pairs_tested": 320,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "03-south-body",
+        "b": "07-pier-instance-3",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 10.499996852874759,
+        "bbox_gap_mm": 10.499996852874759,
+        "edge_pairs_tested": 346,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "04-hall-roof",
+        "b": "05-bridge-tray",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 88.54879682596932,
+        "bbox_gap_mm": 82.67103323716105,
+        "edge_pairs_tested": 6359,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "04-hall-roof",
+        "b": "06-bridge-lid",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 88.64366832170757,
+        "bbox_gap_mm": 82.6812553548209,
+        "edge_pairs_tested": 1065,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "04-hall-roof",
+        "b": "07-pier-instance-1",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 92.83302166996616,
+        "bbox_gap_mm": 89.95465508036163,
+        "edge_pairs_tested": 1669,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "04-hall-roof",
+        "b": "07-pier-instance-2",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 99.21476637376131,
+        "bbox_gap_mm": 95.1411580193584,
+        "edge_pairs_tested": 1890,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "04-hall-roof",
+        "b": "07-pier-instance-3",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 110.19841119145337,
+        "bbox_gap_mm": 105.52013993439422,
+        "edge_pairs_tested": 2184,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "05-bridge-tray",
+        "b": "06-bridge-lid",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.0,
+        "bbox_gap_mm": 7.629394538355427e-07,
+        "edge_pairs_tested": 9,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "05-bridge-tray",
+          "b": "06-bridge-lid",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "05-bridge-tray",
+        "b": "07-pier-instance-1",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.0,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 13,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "07-pier-instance-1",
+          "b": "05-bridge-tray",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "05-bridge-tray",
+        "b": "07-pier-instance-2",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.0,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 13,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "07-pier-instance-2",
+          "b": "05-bridge-tray",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "05-bridge-tray",
+        "b": "07-pier-instance-3",
+        "expected_contact": true,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 0.0,
+        "bbox_gap_mm": 0.0,
+        "edge_pairs_tested": 13,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": {
+          "a": "07-pier-instance-3",
+          "b": "05-bridge-tray",
+          "max_intersection_mm3": 0.002,
+          "min_clearance_mm": 0,
+          "max_clearance_mm": 0.02,
+          "kind": "designed planar butt/glue joint, no press fit"
+        }
+      },
+      {
+        "a": "06-bridge-lid",
+        "b": "07-pier-instance-1",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 7.300000000000001,
+        "bbox_gap_mm": 7.300000000000001,
+        "edge_pairs_tested": 65,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "06-bridge-lid",
+        "b": "07-pier-instance-2",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 7.300000000000001,
+        "bbox_gap_mm": 7.300000000000001,
+        "edge_pairs_tested": 65,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "06-bridge-lid",
+        "b": "07-pier-instance-3",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 7.300000000000001,
+        "bbox_gap_mm": 7.300000000000001,
+        "edge_pairs_tested": 362,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "07-pier-instance-1",
+        "b": "07-pier-instance-2",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 12.599999904632568,
+        "bbox_gap_mm": 12.599999904632568,
+        "edge_pairs_tested": 256,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "07-pier-instance-1",
+        "b": "07-pier-instance-3",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 25.756164209250265,
+        "bbox_gap_mm": 25.756164209250265,
+        "edge_pairs_tested": 256,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      },
+      {
+        "a": "07-pier-instance-2",
+        "b": "07-pier-instance-3",
+        "expected_contact": false,
+        "intersection_mm3": 0.0,
+        "surface_clearance_mm": 9.847842292889466,
+        "bbox_gap_mm": 9.847842292889466,
+        "edge_pairs_tested": 256,
+        "flags": [],
+        "boolean_error": null,
+        "expectation": null
+      }
+    ],
+    "pass": true
+  },
+  "limitations": [
+    "No physical print or trial fit performed.",
+    "Screen flags remain raw. Any subsequent disposition must cite separate evidence; raw findings are not overwritten.",
+    "Input STL is not repaired, remeshed, simplified, or rescaled. Identical STL vertex positions are merged only for topology analysis."
+  ]
+}

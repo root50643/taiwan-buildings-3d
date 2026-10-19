@@ -1,0 +1,16 @@
+{
+  "run_status": "Interrupted at parent request before assembly stage; all nine per-instance mesh analyses had completed.",
+  "reason": "Source footprint registration revisions were in progress.",
+  "raw_report": "qa/v1-raw/mesh_qa.json",
+  "exact_original_inputs": "qa/history/v1-reproduction",
+  "sha_comparison": "qa/v1-raw/reproduction_sha_comparison.json",
+  "failures_retained": [
+    "03-south-body: seven disconnected shells/components, including three roof eyebrows unsupported by the main roof and three enclosed window-cutter shells.",
+    "04-hall-roof: thin convex-hull overhang wedges; minimum face-centroid normal thickness 0.03369833 mm."
+  ],
+  "fixed_in_v3_and_retested_v4": [
+    "03 moved recess to actual exterior, connected roof eyebrows with support wall; now one component.",
+    "04 convex hull clipped to hall footprint; current face-centroid normal minimum 1.19999981 mm."
+  ],
+  "partial_early_snapshot_note": "v1-raw/input-snapshot contains only the files whose hashes still matched at early snapshot time. Its manifest was already revised; use the complete, SHA-verified history/v1-reproduction instead."
+}

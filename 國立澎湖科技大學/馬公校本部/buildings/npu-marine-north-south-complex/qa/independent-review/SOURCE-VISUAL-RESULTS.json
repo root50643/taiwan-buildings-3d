@@ -1,0 +1,435 @@
+{
+  "review_kind": "Independent source-pixel review",
+  "fixed_candidate_commit_supplied_by_parent": "c2172ad91cbfb8189d02615a03dfe2ddf3f15bc1",
+  "decision": "CONDITIONAL_GO_SOURCE_VISUAL",
+  "required_geometry_changes": [],
+  "minimum_required_edits": [],
+  "major_source_contradictions_found": [],
+  "decision_limits": "Only source/visual bounded-approximation compatibility. Does not approve geometry, assembly, slicing, support removal, physical printing, fit, public release or source-pixel redistribution.",
+  "mandatory_retained_conditions": [
+    "Keep north4F/south3F, L group, single2F elbow bridge and open space below, north entrance two-level void below3/4F wing.",
+    "Hall is one occupied level; north2/3F hall outlines are roof/projection evidence and hall does not extend at4F.",
+    "Story/bridge/hall roof heights, fins, columns, fenestration and low-entry height/route remain estimates, not survey dimensions.",
+    "South low-entry component represents simplified low footprint/short stairs, not2F exterior stair or certified accessible route.",
+    "Photo dates unknown;2018 map historical. Do not claim2026 as-built or invent photovoltaic count/arrangement from text.",
+    "Source images/PDFs/private render pages/crops remain outside public model package."
+  ],
+  "nonblocking_editorial_suggestions": [
+    {
+      "file": "README.md",
+      "text": "Prefer 8種列印用STL over 8種實印STL to avoid ambiguity with explicit unprinted status.",
+      "mandatory_for_source_GO": false
+    },
+    {
+      "file": "sources.json",
+      "json_pointer": "/date_limits",
+      "text": "Optionally cite corresponding tour/project pages when retaining update/copyright year explanation.",
+      "mandatory_for_source_GO": false
+    }
+  ],
+  "actual_work": {
+    "official_plan_pages_independently_rendered_and_viewed": 7,
+    "historical_campus_map_pages_independently_rendered_and_viewed": 1,
+    "all_seven_photos_actually_viewed": true,
+    "all_ten_candidate_pngs_actually_viewed": true,
+    "independent_private_crops_created_and_viewed": 5,
+    "renderer": "Poppler pdftoppm -r144 -png",
+    "renderer_exit_codes": {
+      "north": 0,
+      "south": 0,
+      "campus2018": 0
+    },
+    "renderer_stderr_diagnostics": [
+      "Syntax Error: No display font for 'Symbol'",
+      "Syntax Error: No display font for 'ArialUnicode'"
+    ],
+    "font_diagnostic_limit": "Key Chinese titles, floor labels, linework, seats, doors, stairs and bridge are visible in independently rendered pixels. No claim of every glyph's exact rendering.",
+    "new_HTTP_URL_to_byte_verification_performed": false,
+    "fresh_photo_date_verification_performed": false,
+    "independent_quantitative_plan_trace_registration_performed": false,
+    "Blender_preview_rerender_performed": false,
+    "geometry_or_slicing_tests_performed": false
+  },
+  "core_checks": {
+    "north_four_floors": true,
+    "south_three_floors": true,
+    "L_footprints_and_relative_group_supported": true,
+    "single_second_floor_turning_bridge": true,
+    "bridge_turn_short_nubs_supported": true,
+    "bridge_ground_space_open": true,
+    "north_entry_two_floor_undercroft_and_upper_two_floor_wing": true,
+    "north_hall_single_occupied_level": true,
+    "north_hall_second_third_floor_roof_projection_not_rooms": true,
+    "north_hall_not_extended_at_fourth_floor": true,
+    "south_low_entry_not_invented_as_second_floor_stair": true,
+    "unsubstantiated_photovoltaic_roof_array_added": false,
+    "metric_survey_or_true_fixed_scale_claimed": false,
+    "photo_capture_dates_unknown_and_2018_map_limit_disclosed": true
+  },
+  "per_page_evidence": [
+    {
+      "source": "north",
+      "page": 1,
+      "evidence": "Clearly labeled first floor. Fan-shaped seated international conference hall connects to lobby; long main bar and right return visible; entrance porch drawn as column/dashed space.",
+      "model_views": [
+        "front",
+        "end-hall",
+        "top"
+      ],
+      "finding": "SUPPORTED_BOUNDED_APPROXIMATION",
+      "limits": "Hall roof height/pitch, six modeled columns and exact entrance details are estimates."
+    },
+    {
+      "source": "north",
+      "page": 2,
+      "evidence": "Hall area has unoccupied crossed roof/projection outline; right-end bridge is a long segment then right turn, with left and downward short nubs; porch below upper west wing remains unfilled.",
+      "model_views": [
+        "top",
+        "bridge-detail",
+        "exploded"
+      ],
+      "finding": "SUPPORTED_TOPOLOGY",
+      "limits": "2F route supported; bridge clearance/height and exact small-window rhythm not measured."
+    },
+    {
+      "source": "north",
+      "page": 3,
+      "evidence": "Occupied west projecting wing first appears above lower porch; fan area contains radial roof linework, not a third-floor room plan.",
+      "model_views": [
+        "front",
+        "courtyard",
+        "end-hall"
+      ],
+      "finding": "SUPPORTED_UPPER_WING_AND_ROOF_INTERPRETATION",
+      "limits": "Radial roof plan does not give the candidate roof's exact vertical shape or panel subdivision."
+    },
+    {
+      "source": "north",
+      "page": 4,
+      "evidence": "Fourth-floor title and room layout remain across the main bar and end returns; no fan hall extension.",
+      "model_views": [
+        "elevation",
+        "rear",
+        "top"
+      ],
+      "finding": "SUPPORTED_FOUR_FLOORS_NO_HALL_EXTENSION",
+      "limits": "All exact story heights, fins/parapets and regularized fenestration remain model estimates."
+    },
+    {
+      "source": "south",
+      "page": 1,
+      "evidence": "L footprint, lobby/stair in short wing and terminal stair; exterior appendage has two short stair zones, long parallel runs/arrows, turnback and curved landing.",
+      "model_views": [
+        "front",
+        "top",
+        "elevation"
+      ],
+      "finding": "SUPPORTED_LOW_ENTRY_ENVELOPE_WITH_DECLARED_ROUTE_SIMPLIFICATION",
+      "limits": "Low relief does not reproduce full ramp circulation, step count, vertical levels or accessibility compliance; not a 2F external stair."
+    },
+    {
+      "source": "south",
+      "page": 2,
+      "evidence": "Bridge reaches short-wing left tip; long bridge, elbow and two nubs agree with north 2F relation; L body, inner stair return and terminal stair visible.",
+      "model_views": [
+        "top",
+        "bridge-detail",
+        "plan-comparison"
+      ],
+      "finding": "SUPPORTED_BRIDGE_CONNECTION_AND_L_FOOTPRINT",
+      "limits": "No independent quantitative pixel-registration optimization was performed here; author's plus/minus2px tolerance is not recertified."
+    },
+    {
+      "source": "south",
+      "page": 3,
+      "evidence": "Three-floor title/layout and L body; no bridge main segment on third floor; terminal stair remains.",
+      "model_views": [
+        "rear",
+        "elevation",
+        "top"
+      ],
+      "finding": "SUPPORTED_THREE_FLOORS_SINGLE_SECOND_FLOOR_BRIDGE",
+      "limits": "Equal model story height is not an official metric dimension."
+    },
+    {
+      "source": "campus2018",
+      "page": 1,
+      "evidence": "Named north/south marine buildings and relative site configuration, wind and photovoltaic training facilities visible.",
+      "model_views": [
+        "top"
+      ],
+      "finding": "SUPPORTED_HISTORICAL_SITE_CONTEXT_ONLY",
+      "limits": "Historical map is not2026 as-built; photovoltaic wording cannot establish arrays on these roofs."
+    }
+  ],
+  "per_photo_evidence": [
+    {
+      "id": "entry",
+      "observation": "Open two-level entrance colonnade under two occupied projecting upper levels; orange recess, regular facade and a single enclosed connector with open ground below.",
+      "finding": "Main relationships supported; exact column/window numbers are not certified.",
+      "actually_pixels_viewed": true,
+      "date_taken": "unknown"
+    },
+    {
+      "id": "tower_bridge",
+      "observation": "Glazed stair tower, connector-side small windows, columns and open ground; adjacent entrance canopy visible.",
+      "finding": "Supports stair/bridge relationship, not exact height or pier count/positions.",
+      "actually_pixels_viewed": true,
+      "date_taken": "unknown"
+    },
+    {
+      "id": "courtyard",
+      "observation": "Reverse courtyard view shows bridge, small windows and open passage beneath; cream/yellow/orange facade cues.",
+      "finding": "Candidate leaves courtyard/undercroft open; wind devices/containers/plantings excluded as context.",
+      "actually_pixels_viewed": true,
+      "date_taken": "unknown"
+    },
+    {
+      "id": "rear",
+      "observation": "Opposite elevations show both main blocks and connector amid wind-test apparatus.",
+      "finding": "Relative tall/low blocks and connector supported; peripheral apparatus not inferred as building wings.",
+      "actually_pixels_viewed": true,
+      "date_taken": "unknown"
+    },
+    {
+      "id": "group",
+      "observation": "Oblique higher view shows four-/three-level group, separation and connector; background low structures and blue panels.",
+      "finding": "Supports group massing; background panels are not evidence of these buildings' roof arrays.",
+      "actually_pixels_viewed": true,
+      "date_taken": "unknown"
+    },
+    {
+      "id": "lobby_interior",
+      "observation": "Interior columns, glazing edge, decoration and furniture.",
+      "finding": "Context only; does not independently measure exterior geometry or justify interior modeling.",
+      "actually_pixels_viewed": true,
+      "date_taken": "unknown"
+    },
+    {
+      "id": "hall_interior",
+      "observation": "Raked fan seating, stage and continuous ceiling within a single hall volume.",
+      "finding": "Consistent with1F seated hall; seating tiers are not extra occupied exterior stories.",
+      "actually_pixels_viewed": true,
+      "date_taken": "unknown"
+    }
+  ],
+  "viewed_model_previews": [
+    "front.png",
+    "rear.png",
+    "courtyard.png",
+    "end-hall.png",
+    "top.png",
+    "elevation.png",
+    "exploded.png",
+    "bridge-detail.png",
+    "contact-sheet.png",
+    "plan-comparison.png"
+  ],
+  "fixed_source_inputs": [
+    {
+      "id": "north",
+      "kind": "official_plan",
+      "private_relative_path": "north.pdf",
+      "bytes": 664115,
+      "sha256": "b5aa8a8c286db16098ea1296e1227dfff7c15fac7a0709bb28330c2b3818bf13",
+      "matches_author_manifest": true,
+      "source_url": "https://www.npu.edu.tw/df_ufiles/034/海洋科技大樓北棟平面圖.pdf",
+      "expected_pages": 4
+    },
+    {
+      "id": "south",
+      "kind": "official_plan",
+      "private_relative_path": "south.pdf",
+      "bytes": 438313,
+      "sha256": "a8552724e7f0d3a51a1e666d08037b6292e5a0a59af82f55851c1e4bf4dd87a6",
+      "matches_author_manifest": true,
+      "source_url": "https://www.npu.edu.tw/df_ufiles/034/海洋科技大樓南棟平面圖.pdf",
+      "expected_pages": 3
+    },
+    {
+      "id": "campus2018",
+      "kind": "historic_campus_map",
+      "private_relative_path": "campus2018.pdf",
+      "bytes": 425249,
+      "sha256": "4d56c3bba5efd29352b5893b0621b619f88f6abccbe8d3b0f45ee3a884d4c6f9",
+      "matches_author_manifest": true,
+      "source_url": "https://www.npu.edu.tw/df_ufiles/034/107-0911無障礙空間地圖.pdf",
+      "expected_pages": 1
+    },
+    {
+      "id": "entry",
+      "kind": "exterior_photo",
+      "private_relative_path": "photos/entry.jpg",
+      "bytes": 1112135,
+      "sha256": "6bee9c7c314f445c9a61987b2df4f9d0e973d84f52a293fd771c1d817a1d04d5",
+      "matches_author_manifest": true,
+      "source_url": "https://670b8cce94.clvaw-cdnwnd.com/1d870f33f284e39d0d0c4533633f08ac/200001122-21e7b21e7d/DPP_029.jpeg?ph=670b8cce94",
+      "dimensions": [
+        1600,
+        920
+      ],
+      "date_taken": "unknown"
+    },
+    {
+      "id": "tower_bridge",
+      "kind": "exterior_photo",
+      "private_relative_path": "photos/tower_bridge.jpg",
+      "bytes": 1171559,
+      "sha256": "4b47f9ad7ca9214971031ae10b56908e26a09928ad814898a327dbc40835e698",
+      "matches_author_manifest": true,
+      "source_url": "https://670b8cce94.clvaw-cdnwnd.com/1d870f33f284e39d0d0c4533633f08ac/200001120-d3d9bd3d9c/DPP_012.jpeg?ph=670b8cce94",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "date_taken": "unknown"
+    },
+    {
+      "id": "courtyard",
+      "kind": "exterior_photo",
+      "private_relative_path": "photos/courtyard.jpg",
+      "bytes": 1347282,
+      "sha256": "b27a3dea8f1473eabdea0836544a100970668f157a7349072b45eb1ab9e68523",
+      "matches_author_manifest": true,
+      "source_url": "https://670b8cce94.clvaw-cdnwnd.com/1d870f33f284e39d0d0c4533633f08ac/200001124-4034c4034e/DPP_034-7.jpeg?ph=670b8cce94",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "date_taken": "unknown"
+    },
+    {
+      "id": "rear",
+      "kind": "exterior_photo",
+      "private_relative_path": "photos/rear.jpg",
+      "bytes": 1178093,
+      "sha256": "da27ffa14a4c66ad7335df0effb92c6cb1741576fd2a0a098536c52c92edb7ff",
+      "matches_author_manifest": true,
+      "source_url": "https://670b8cce94.clvaw-cdnwnd.com/1d870f33f284e39d0d0c4533633f08ac/200001130-a7075a7077/DPP_037.jpeg?ph=670b8cce94",
+      "dimensions": [
+        1600,
+        920
+      ],
+      "date_taken": "unknown"
+    },
+    {
+      "id": "group",
+      "kind": "exterior_photo",
+      "private_relative_path": "photos/group.jpg",
+      "bytes": 1388246,
+      "sha256": "ddc71864df2e088ac86703be735693446c224733cde199813966542857db328e",
+      "matches_author_manifest": true,
+      "source_url": "https://670b8cce94.clvaw-cdnwnd.com/1d870f33f284e39d0d0c4533633f08ac/200001125-59dd759dd9/DPP_038.jpeg?ph=670b8cce94",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "date_taken": "unknown"
+    },
+    {
+      "id": "lobby_interior",
+      "kind": "interior_photo",
+      "private_relative_path": "photos/lobby_interior.jpg",
+      "bytes": 1403170,
+      "sha256": "d9fc15fabcb0dddda7f5815d09c732d915bac1a440131fe593fc9d66c4f825b6",
+      "matches_author_manifest": true,
+      "source_url": "https://670b8cce94.clvaw-cdnwnd.com/1d870f33f284e39d0d0c4533633f08ac/200001134-358c5358c6/DPP_053-2.jpeg?ph=670b8cce94",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "date_taken": "unknown"
+    },
+    {
+      "id": "hall_interior",
+      "kind": "interior_photo",
+      "private_relative_path": "photos/hall_interior.jpg",
+      "bytes": 1581868,
+      "sha256": "bae2c2db143ebd4866e07322ffed20f800f0e284ac714f10cb249e4892df5c10",
+      "matches_author_manifest": true,
+      "source_url": "https://670b8cce94.clvaw-cdnwnd.com/1d870f33f284e39d0d0c4533633f08ac/200002206-9255292553/DPP_069-73.jpeg?ph=670b8cce94",
+      "dimensions": [
+        1600,
+        1067
+      ],
+      "date_taken": "unknown"
+    }
+  ],
+  "candidate_text_and_generation_inputs": [
+    {
+      "relative_path": "README.md",
+      "bytes": 3243,
+      "sha256": "736e873aefc9f0ac57d736fe01a4423c5a01f0fd41a9e4e3f03699e015faf0a3"
+    },
+    {
+      "relative_path": "sources.json",
+      "bytes": 6844,
+      "sha256": "65a4410e48e2f59900b50c3c163eaab2271eb312510eb606adc70f603c5ba60a"
+    },
+    {
+      "relative_path": "qa/source-correspondence.md",
+      "bytes": 7386,
+      "sha256": "180841feda93e1963d206a26899b5aefe0bea8d9cf7b769509f70f92eaa23fef"
+    },
+    {
+      "relative_path": "source/build_model.py",
+      "bytes": 11537,
+      "sha256": "113513a7f5de77a0c8751f0fadcb4b522a3dfc6250efe5e7e94cca3898fa74e7"
+    },
+    {
+      "relative_path": "source/plan-trace.json",
+      "bytes": 2340,
+      "sha256": "176b633c5fb48135c5e236c732ee23c5673393dc9b375951d2322eb52a8c6467"
+    },
+    {
+      "relative_path": "source/plan-review.json",
+      "bytes": 21122,
+      "sha256": "1db9a032f6b9221a9798f65bca00c05ad3f9a1e1dab63910c82e79258028a7bb"
+    },
+    {
+      "relative_path": "ESTIMATES.md",
+      "bytes": 2014,
+      "sha256": "b27413aeacb892ec134b77a8b3d511d58337d7d9f57e27366e70336009268516"
+    }
+  ],
+  "private_manifest": "SOURCE-INPUT-MANIFEST.json",
+  "private_full_report": "SOURCE-VISUAL-REVIEW.md",
+  "privacy_and_mutation_scope": {
+    "task5_candidate_or_reference_files_written": false,
+    "Git_operations_performed": false,
+    "Library_operations_performed": false,
+    "private_source_pixels_publicly_redistributed": false,
+    "report_output_root": "task-3/npu-marine-independent-review/source"
+  },
+  "independent_URL_document_crosschecks": [
+    {
+      "id": "north",
+      "route": "web open of official npu.edu.tw PDF",
+      "observed_content_type": "application/pdf",
+      "observed_page_count": 4,
+      "floor_titles_and_2F_bridge_text_match_provided_copy": true,
+      "fresh_origin_bytes_downloaded_and_hashed": false,
+      "tool_content_is_previously_crawled": true
+    },
+    {
+      "id": "south",
+      "route": "web open of official npu.edu.tw PDF",
+      "observed_content_type": "application/pdf",
+      "observed_page_count": 3,
+      "floor_titles_and_2F_bridge_text_match_provided_copy": true,
+      "fresh_origin_bytes_downloaded_and_hashed": false,
+      "tool_content_is_previously_crawled": true
+    },
+    {
+      "id": "group",
+      "route": "web open of provided CDN image URL",
+      "outcome": "not accessible via this tool",
+      "source_origin_failure_inferred": false,
+      "fresh_remote_photo_pixels_verified": false,
+      "provided_copy_SHA_and_pixels_used": true
+    }
+  ],
+  "fresh_URL_to_byte_or_architect_site_ownership_verification_claimed": false,
+  "source_pixel_evidence_root": "private/",
+  "provided_input_root_description": "task-5/reference-private, read-only; original PDFs/JPGs were not copied into public or review output"
+}

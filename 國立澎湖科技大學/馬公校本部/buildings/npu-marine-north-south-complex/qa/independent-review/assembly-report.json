@@ -1,0 +1,2058 @@
+{
+  "scope_commit_requested": "c2172ad91cbfb8189d02615a03dfe2ddf3f15bc1",
+  "candidate_path": "[reviewed package root; private execution path omitted]",
+  "input_sha256": {
+    "assembly.json": "59374202108525afdefa869474b3a786abdad592e9dcd8454341822a9c6b98e8",
+    "source/build_model.py": "113513a7f5de77a0c8751f0fadcb4b522a3dfc6250efe5e7e94cca3898fa74e7",
+    "MANUFACTURING.md": "0da31bd29abbfc639b8c3038edc3cf0e60ede27f55085cd656a3440ffa541260",
+    "models/01-north-lower.stl": "29cd5e0f498bf7e6f733e01e528689bff9b2b80f7d7771f1a152ca8b20c65426",
+    "models/02-north-upper.stl": "ca3748b3558943f09e4d7634d59007b67da704f34087c72be635b313626fb822",
+    "models/03-south-body.stl": "f0f1dff41b58b640d836e3d77ec52dbe9be95427745654b7611f879522201950",
+    "models/04-hall-roof.stl": "a351d6ea6b80b7a38f9e82447573afa381bc8fe1527b31f4cd1de2b7db40db0c",
+    "models/05-bridge-tray.stl": "e6b524731b0e4674e3a3322935e61906d398374f430c5baa2b904465d72a967a",
+    "models/06-bridge-lid.stl": "fef2c04dc051d500606e650c6df5949ffae954c9e06dd0badac60f437f946ecb",
+    "models/07-bridge-pier.stl": "c1b6c4b378f3c2fafed4e9281a67768cf5fb69dd7a2c9f3f1d34bbc3e9cf809a",
+    "models/08-south-low-access.stl": "00af5b407f0428f8f0b565952ad4b9afc1d0720138c1a8ad06228a226c5ce850"
+  },
+  "created_utc": "2026-10-19T03:10:55.169189+00:00",
+  "review_script_sha256": "dfcde96e0a4313fc02f303e163e66cfb24bdda4a2dc038b1895250ffa6ffab9e",
+  "runtime_versions": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "shapely": "2.1.2",
+    "manifold3d": "3.3.2"
+  },
+  "physical_parts": 10,
+  "distinct_stl_files": 8,
+  "pair_count": 45,
+  "all_manifest_stl_sha256_match": true,
+  "method": {
+    "raw_input": "binary STL float32 numerical values exactly widened; assembly matrix applied in float64 without rounding or welding; no candidate generator or QA imported",
+    "volume": "manifold3d Mesh64 full solid intersection for all 45 pairs; separately raw triangle-plane polygonization and section-area integration for pairs with positive AABB extents",
+    "area": "all exact axis-aligned raw triangle-face groups unioned in projection; every opposing-normal plane pair within stated tolerance intersected; no buffering, rounding or grid snapping",
+    "contact_plane_comparison_tolerance_mm": 1e-05,
+    "section_plane_adjustment_mm": 0,
+    "zero_volume_rule": "report raw signed volume values, including tiny float-coordinate overlaps; 0.002 mm3 is author-declared allowable maximum, not numeric zero"
+  },
+  "controls": [
+    {
+      "id": "separated",
+      "expected_volume_mm3": 0,
+      "boolean64_volume_mm3": 0.0,
+      "raw_section_integral_mm3": 0.0,
+      "expected_projected_area_within_tolerance_mm2": 0,
+      "projected_area_within_tolerance_mm2": 0,
+      "expected_exact_coplanar_area_mm2": 0,
+      "exact_coplanar_area_mm2": 0,
+      "signed_plane_gaps_mm": [],
+      "section_flags": [],
+      "pass": true
+    },
+    {
+      "id": "face_touch",
+      "expected_volume_mm3": 0,
+      "boolean64_volume_mm3": 0.0,
+      "raw_section_integral_mm3": 0.0,
+      "expected_projected_area_within_tolerance_mm2": 4,
+      "projected_area_within_tolerance_mm2": 4.0,
+      "expected_exact_coplanar_area_mm2": 4,
+      "exact_coplanar_area_mm2": 4.0,
+      "signed_plane_gaps_mm": [
+        0.0
+      ],
+      "section_flags": [],
+      "pass": true
+    },
+    {
+      "id": "penetrating",
+      "expected_volume_mm3": 4,
+      "boolean64_volume_mm3": 4.0,
+      "raw_section_integral_mm3": 4.0,
+      "expected_projected_area_within_tolerance_mm2": 0,
+      "projected_area_within_tolerance_mm2": 0,
+      "expected_exact_coplanar_area_mm2": 0,
+      "exact_coplanar_area_mm2": 0,
+      "signed_plane_gaps_mm": [],
+      "section_flags": [],
+      "pass": true
+    },
+    {
+      "id": "edge_touch",
+      "expected_volume_mm3": 0,
+      "boolean64_volume_mm3": 0.0,
+      "raw_section_integral_mm3": 0.0,
+      "expected_projected_area_within_tolerance_mm2": 0,
+      "projected_area_within_tolerance_mm2": 0,
+      "expected_exact_coplanar_area_mm2": 0,
+      "exact_coplanar_area_mm2": 0,
+      "signed_plane_gaps_mm": [],
+      "section_flags": [],
+      "pass": true
+    },
+    {
+      "id": "micro_gap",
+      "expected_volume_mm3": 0,
+      "boolean64_volume_mm3": 0.0,
+      "raw_section_integral_mm3": 0.0,
+      "expected_projected_area_within_tolerance_mm2": 4,
+      "projected_area_within_tolerance_mm2": 4.0,
+      "expected_exact_coplanar_area_mm2": 0,
+      "exact_coplanar_area_mm2": 0,
+      "signed_plane_gaps_mm": [
+        1.000000000139778e-06
+      ],
+      "section_flags": [],
+      "pass": true
+    },
+    {
+      "id": "micro_overlap",
+      "expected_volume_mm3": 3.9999999996709334e-06,
+      "boolean64_volume_mm3": 4.000000000559112e-06,
+      "raw_section_integral_mm3": 4.000000000559112e-06,
+      "expected_projected_area_within_tolerance_mm2": 4,
+      "projected_area_within_tolerance_mm2": 4.0,
+      "expected_exact_coplanar_area_mm2": 0,
+      "exact_coplanar_area_mm2": 0,
+      "signed_plane_gaps_mm": [
+        -1.000000000139778e-06
+      ],
+      "section_flags": [],
+      "pass": true
+    }
+  ],
+  "all_controls_pass": true,
+  "pairs": [
+    {
+      "a": "01-north-lower",
+      "b": "02-north-upper",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "z",
+          "a_coordinate_mm": 18.0,
+          "b_coordinate_mm": 18.0,
+          "a_outward_sign": 1,
+          "signed_gap_mm": 0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 3607.3598016881997,
+          "patch_count": 7,
+          "projected_bounds_mm": [
+            0.0,
+            0.0,
+            99.99999618530273,
+            48.00000077486038
+          ],
+          "patches": [
+            {
+              "area_mm2": 3587.9198181676884,
+              "bounds_mm": [
+                0.0,
+                0.0,
+                99.99999618530273,
+                48.00000077486038
+              ]
+            },
+            {
+              "area_mm2": 3.239997253418551,
+              "bounds_mm": [
+                0.2999992370605469,
+                35.30000066757202,
+                2.0999984741210938,
+                37.09999990463257
+              ]
+            },
+            {
+              "area_mm2": 3.239997253418551,
+              "bounds_mm": [
+                0.2999992370605469,
+                45.500001430511475,
+                2.0999984741210938,
+                47.30000066757202
+              ]
+            },
+            {
+              "area_mm2": 3.239990386966383,
+              "bounds_mm": [
+                10.10000228881836,
+                35.30000066757202,
+                11.89999771118164,
+                37.09999990463257
+              ]
+            },
+            {
+              "area_mm2": 3.239990386966383,
+              "bounds_mm": [
+                10.10000228881836,
+                45.500001430511475,
+                11.89999771118164,
+                47.30000066757202
+              ]
+            },
+            {
+              "area_mm2": 3.2400041198707186,
+              "bounds_mm": [
+                19.89999771118164,
+                35.30000066757202,
+                21.700000762939453,
+                37.09999990463257
+              ]
+            },
+            {
+              "area_mm2": 3.2400041198707186,
+              "bounds_mm": [
+                19.89999771118164,
+                45.500001430511475,
+                21.700000762939453,
+                47.30000066757202
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 3607.3598016881997,
+      "exact_coplanar_contact_area_mm2": 3607.3598016881997,
+      "max_absolute_contact_plane_gap_mm": 0.0
+    },
+    {
+      "a": "01-north-lower",
+      "b": "03-south-body",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        6.200000762939453,
+        32.249998569488525,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 32.84056054930338,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "01-north-lower",
+      "b": "04-hall-roof",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "raw triangle-edge sections at 3 Gauss nodes in every raw vertex-height interval; no adjusted sample plane",
+        "sample_count": 18,
+        "max_intersection_section_area_mm2": 0.0,
+        "nonzero_sections": [],
+        "section_flags": [],
+        "limitation": "Exact integration is conditional on unchanged projected-intersection topology inside an interval. Candidate overlapping regions are axis-aligned prismatic joints; sloped fins/roof are not among positive-volume joint overlaps. Boolean64 is the separate full-mesh check."
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "x",
+          "a_coordinate_mm": 0.0,
+          "b_coordinate_mm": 0.0,
+          "a_outward_sign": -1,
+          "signed_gap_mm": -0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 31.19999732971155,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            3.999999523162842,
+            11.0,
+            30.000001430511475,
+            12.199999809265137
+          ],
+          "patches": [
+            {
+              "area_mm2": 31.19999732971155,
+              "bounds_mm": [
+                3.999999523162842,
+                11.0,
+                30.000001430511475,
+                12.199999809265137
+              ]
+            }
+          ]
+        },
+        {
+          "axis": "z",
+          "a_coordinate_mm": 11.0,
+          "b_coordinate_mm": 11.0,
+          "a_outward_sign": 1,
+          "signed_gap_mm": 0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 1333.560077323913,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            -41.20000076293945,
+            -4.400000095367432,
+            0.0,
+            38.30000066757202
+          ],
+          "patches": [
+            {
+              "area_mm2": 1333.560077323913,
+              "bounds_mm": [
+                -41.20000076293945,
+                -4.400000095367432,
+                0.0,
+                38.30000066757202
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 1364.7600746536245,
+      "exact_coplanar_contact_area_mm2": 1364.7600746536245,
+      "max_absolute_contact_plane_gap_mm": 0.0
+    },
+    {
+      "a": "01-north-lower",
+      "b": "05-bridge-tray",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 2.240184295928052e-05,
+      "boolean64_intersection_triangle_count": 20,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 2.2401842952600098e-05,
+        "basis": "raw triangle-edge sections at 3 Gauss nodes in every raw vertex-height interval; no adjusted sample plane",
+        "sample_count": 30,
+        "max_intersection_section_area_mm2": 5.579002390732057e-06,
+        "nonzero_sections": [
+          {
+            "z_mm": 9.135241976958973,
+            "area_mm2": 5.579002390732057e-06
+          },
+          {
+            "z_mm": 9.599999904632568,
+            "area_mm2": 5.579002390732057e-06
+          },
+          {
+            "z_mm": 10.064757832306164,
+            "area_mm2": 5.579002390732057e-06
+          },
+          {
+            "z_mm": 10.205634914030236,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.224999904632568,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.2443648952349,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.289445625875015,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.425000190734863,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.560554755594712,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.645081004629157,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.800000190734863,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 10.95491937684057,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.016905206814615,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.074999809265137,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.133094411715659,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.155634723295373,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.174999713897705,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.194364704500037,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.312701474644395,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 11.699999809265137,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 12.087298143885878,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 12.459213661133568,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 13.349999904632568,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 14.24078614813157,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 14.612701665379259,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 15.0,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 15.387298334620741,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 15.59016124631886,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 15.899999618530273,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 16.209837990741686,
+            "area_mm2": 2.5749250198714435e-06
+          }
+        ],
+        "section_flags": [],
+        "limitation": "Exact integration is conditional on unchanged projected-intersection topology inside an interval. Candidate overlapping regions are axis-aligned prismatic joints; sloped fins/roof are not among positive-volume joint overlaps. Boolean64 is the separate full-mesh check."
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "y",
+          "a_coordinate_mm": 48.000001430511475,
+          "b_coordinate_mm": 48.0,
+          "a_outward_sign": 1,
+          "signed_gap_mm": -1.430511474609375e-06,
+          "exact_same_coordinate": false,
+          "projected_overlap_area_mm2": 15.66002325057707,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            87.19999313354492,
+            9.0,
+            91.0999984741211,
+            16.299999237060547
+          ],
+          "patches": [
+            {
+              "area_mm2": 15.66002325057707,
+              "bounds_mm": [
+                87.19999313354492,
+                9.0,
+                91.0999984741211,
+                16.299999237060547
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 15.66002325057707,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": 1.430511474609375e-06
+    },
+    {
+      "a": "01-north-lower",
+      "b": "06-bridge-lid",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 5.192768272588397e-06,
+      "boolean64_intersection_triangle_count": 20,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 5.192768269357737e-06,
+        "basis": "raw triangle-edge sections at 3 Gauss nodes in every raw vertex-height interval; no adjusted sample plane",
+        "sample_count": 6,
+        "max_intersection_section_area_mm2": 5.5790045735193335e-06,
+        "nonzero_sections": [
+          {
+            "z_mm": 16.356350746705083,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 16.549999618530272,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 16.74364849035546,
+            "area_mm2": 2.5749250198714435e-06
+          },
+          {
+            "z_mm": 16.878890494184606,
+            "area_mm2": 5.5790045735193335e-06
+          },
+          {
+            "z_mm": 17.14999964237213,
+            "area_mm2": 5.5790045735193335e-06
+          },
+          {
+            "z_mm": 17.421108790559654,
+            "area_mm2": 5.5790045735193335e-06
+          }
+        ],
+        "section_flags": [],
+        "limitation": "Exact integration is conditional on unchanged projected-intersection topology inside an interval. Candidate overlapping regions are axis-aligned prismatic joints; sloped fins/roof are not among positive-volume joint overlaps. Boolean64 is the separate full-mesh check."
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "y",
+          "a_coordinate_mm": 48.000001430511475,
+          "b_coordinate_mm": 48.0,
+          "a_outward_sign": 1,
+          "signed_gap_mm": -1.430511474609375e-06,
+          "exact_same_coordinate": false,
+          "projected_overlap_area_mm2": 3.6300081205400394,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            87.19999313354492,
+            16.3,
+            91.1,
+            17.500000047683717
+          ],
+          "patches": [
+            {
+              "area_mm2": 3.6300081205400394,
+              "bounds_mm": [
+                87.19999313354492,
+                16.3,
+                91.1,
+                17.500000047683717
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 3.6300081205400394,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": 1.430511474609375e-06
+    },
+    {
+      "a": "01-north-lower",
+      "b": "07-pier-instance-1",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        12.299998569488523,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 12.299998569488523,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "01-north-lower",
+      "b": "07-pier-instance-2",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        28.299998569488523,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 28.299998569488523,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "01-north-lower",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        41.39999856948852,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 41.39999856948852,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "01-north-lower",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        59.500003814697266,
+        34.999998569488525,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 69.03079279432613,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "03-south-body",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        6.1999969482421875,
+        31.150000751018524,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 31.76102184985028,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "04-hall-roof",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 3.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "05-bridge-tray",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        1.7000007629394531
+      ],
+      "raw_aabb_separation_lower_bound_mm": 1.7000007629394531,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "06-bridge-lid",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.49999995231628347
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.49999995231628347,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "07-pier-instance-1",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        11.200000751018521,
+        9.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 14.368020629955103,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "07-pier-instance-2",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        27.20000075101852,
+        9.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 28.650306121495596,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        40.300000751018516,
+        9.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 41.292736171536184,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "02-north-upper",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        59.5,
+        33.900000751018524,
+        16.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 70.3239649829207,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "03-south-body",
+      "b": "04-hall-roof",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        106.19999694824219,
+        41.94999933242798,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 114.18512072856672,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "03-south-body",
+      "b": "05-bridge-tray",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "x",
+          "a_coordinate_mm": 106.19999694824219,
+          "b_coordinate_mm": 106.19999694824219,
+          "a_outward_sign": -1,
+          "signed_gap_mm": -0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 32.12000778198126,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            88.9000015258789,
+            9.0,
+            93.30000305175781,
+            16.299999237060547
+          ],
+          "patches": [
+            {
+              "area_mm2": 32.12000778198126,
+              "bounds_mm": [
+                88.9000015258789,
+                9.0,
+                93.30000305175781,
+                16.299999237060547
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 32.12000778198126,
+      "exact_coplanar_contact_area_mm2": 32.12000778198126,
+      "max_absolute_contact_plane_gap_mm": 0.0
+    },
+    {
+      "a": "03-south-body",
+      "b": "06-bridge-lid",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 1.8127432676692256e-05,
+      "boolean64_intersection_triangle_count": 12,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 1.812743266691505e-05,
+        "basis": "raw triangle-edge sections at 3 Gauss nodes in every raw vertex-height interval; no adjusted sample plane",
+        "sample_count": 3,
+        "max_intersection_section_area_mm2": 1.5106193288829685e-05,
+        "nonzero_sections": [
+          {
+            "z_mm": 16.435242003829146,
+            "area_mm2": 1.5106193288829685e-05
+          },
+          {
+            "z_mm": 16.90000002384186,
+            "area_mm2": 1.5106193288829685e-05
+          },
+          {
+            "z_mm": 17.36475804385457,
+            "area_mm2": 1.5106193288829685e-05
+          }
+        ],
+        "section_flags": [],
+        "limitation": "Exact integration is conditional on unchanged projected-intersection topology inside an interval. Candidate overlapping regions are axis-aligned prismatic joints; sloped fins/roof are not among positive-volume joint overlaps. Boolean64 is the separate full-mesh check."
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "x",
+          "a_coordinate_mm": 106.19999694824219,
+          "b_coordinate_mm": 106.20000038146972,
+          "a_outward_sign": -1,
+          "signed_gap_mm": -3.433227533378158e-06,
+          "exact_same_coordinate": false,
+          "projected_overlap_area_mm2": 5.279997463226209,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            88.9000015258789,
+            16.3,
+            93.29999923706055,
+            17.500000047683717
+          ],
+          "patches": [
+            {
+              "area_mm2": 5.279997463226209,
+              "bounds_mm": [
+                88.9000015258789,
+                16.3,
+                93.29999923706055,
+                17.500000047683717
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 5.279997463226209,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": 3.433227533378158e-06
+    },
+    {
+      "a": "03-south-body",
+      "b": "07-pier-instance-1",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        15.599996852874753,
+        16.54999990463257,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 22.74340340962716,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "03-south-body",
+      "b": "07-pier-instance-2",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        15.599996852874753,
+        0.5499999046325712,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 15.609689353244606,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "03-south-body",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        10.499996852874759,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 10.499996852874759,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "03-south-body",
+      "b": "08-south-low-access",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "raw triangle-edge sections at 3 Gauss nodes in every raw vertex-height interval; no adjusted sample plane",
+        "sample_count": 12,
+        "max_intersection_section_area_mm2": 0.0,
+        "nonzero_sections": [],
+        "section_flags": [],
+        "limitation": "Exact integration is conditional on unchanged projected-intersection topology inside an interval. Candidate overlapping regions are axis-aligned prismatic joints; sloped fins/roof are not among positive-volume joint overlaps. Boolean64 is the separate full-mesh check."
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "x",
+          "a_coordinate_mm": 159.8000030517578,
+          "b_coordinate_mm": 159.8000030517578,
+          "a_outward_sign": 1,
+          "signed_gap_mm": 0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 3.6000001430511475,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            89.0,
+            0.0,
+            92.0,
+            1.2000000476837158
+          ],
+          "patches": [
+            {
+              "area_mm2": 3.6000001430511475,
+              "bounds_mm": [
+                89.0,
+                0.0,
+                92.0,
+                1.2000000476837158
+              ]
+            }
+          ]
+        },
+        {
+          "axis": "x",
+          "a_coordinate_mm": 159.5,
+          "b_coordinate_mm": 159.5,
+          "a_outward_sign": 1,
+          "signed_gap_mm": 0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 3.6000001430511475,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            120.0,
+            0.0,
+            123.0,
+            1.2000000476837158
+          ],
+          "patches": [
+            {
+              "area_mm2": 3.6000001430511475,
+              "bounds_mm": [
+                120.0,
+                0.0,
+                123.0,
+                1.2000000476837158
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 7.200000286102295,
+      "exact_coplanar_contact_area_mm2": 7.200000286102295,
+      "max_absolute_contact_plane_gap_mm": 0.0
+    },
+    {
+      "a": "04-hall-roof",
+      "b": "05-bridge-tray",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        82.0999984741211,
+        9.699999332427979,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 82.67103323716105,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "04-hall-roof",
+      "b": "06-bridge-lid",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        82.1,
+        9.699999332427979,
+        1.3000000000000007
+      ],
+      "raw_aabb_separation_lower_bound_mm": 82.6812553548209,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "04-hall-roof",
+      "b": "07-pier-instance-1",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        87.2,
+        21.999999332427976,
+        2.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 89.95465508036163,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "04-hall-roof",
+      "b": "07-pier-instance-2",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        87.2,
+        37.999999332427976,
+        2.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 95.1411580193584,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "04-hall-roof",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        92.3,
+        51.09999933242797,
+        2.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 105.52013993439422,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "04-hall-roof",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        159.5,
+        44.69999933242798,
+        9.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 165.88954138317177,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "05-bridge-tray",
+      "b": "06-bridge-lid",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        7.629394538355427e-07
+      ],
+      "raw_aabb_separation_lower_bound_mm": 7.629394538355427e-07,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "z",
+          "a_coordinate_mm": 16.299999237060547,
+          "b_coordinate_mm": 16.3,
+          "a_outward_sign": 1,
+          "signed_gap_mm": 7.629394538355427e-07,
+          "exact_same_coordinate": false,
+          "projected_overlap_area_mm2": 171.5998838615527,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            82.1,
+            48.0,
+            106.19999694824219,
+            97.79999923706055
+          ],
+          "patches": [
+            {
+              "area_mm2": 171.5998838615527,
+              "bounds_mm": [
+                82.1,
+                48.0,
+                106.19999694824219,
+                97.79999923706055
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 171.5998838615527,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": 7.629394538355427e-07
+    },
+    {
+      "a": "05-bridge-tray",
+      "b": "07-pier-instance-1",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "z",
+          "a_coordinate_mm": 9.0,
+          "b_coordinate_mm": 9.0,
+          "a_outward_sign": -1,
+          "signed_gap_mm": -0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 3.2399993991852085,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            88.00000007152558,
+            61.10000007152557,
+            89.79999990463257,
+            62.899999904632566
+          ],
+          "patches": [
+            {
+              "area_mm2": 3.2399993991852085,
+              "bounds_mm": [
+                88.00000007152558,
+                61.10000007152557,
+                89.79999990463257,
+                62.899999904632566
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 3.2399993991852085,
+      "exact_coplanar_contact_area_mm2": 3.2399993991852085,
+      "max_absolute_contact_plane_gap_mm": 0.0
+    },
+    {
+      "a": "05-bridge-tray",
+      "b": "07-pier-instance-2",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "z",
+          "a_coordinate_mm": 9.0,
+          "b_coordinate_mm": 9.0,
+          "a_outward_sign": -1,
+          "signed_gap_mm": -0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 3.2399993991852085,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            88.00000007152558,
+            77.10000007152557,
+            89.79999990463257,
+            78.89999990463257
+          ],
+          "patches": [
+            {
+              "area_mm2": 3.2399993991852085,
+              "bounds_mm": [
+                88.00000007152558,
+                77.10000007152557,
+                89.79999990463257,
+                78.89999990463257
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 3.2399993991852085,
+      "exact_coplanar_contact_area_mm2": 3.2399993991852085,
+      "max_absolute_contact_plane_gap_mm": 0.0
+    },
+    {
+      "a": "05-bridge-tray",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": true,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 0.0,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [
+        {
+          "axis": "z",
+          "a_coordinate_mm": 9.0,
+          "b_coordinate_mm": 9.0,
+          "a_outward_sign": -1,
+          "signed_gap_mm": -0.0,
+          "exact_same_coordinate": true,
+          "projected_overlap_area_mm2": 3.2399993991852085,
+          "patch_count": 1,
+          "projected_bounds_mm": [
+            93.10000007152557,
+            90.20000007152557,
+            94.89999990463257,
+            91.99999990463256
+          ],
+          "patches": [
+            {
+              "area_mm2": 3.2399993991852085,
+              "bounds_mm": [
+                93.10000007152557,
+                90.20000007152557,
+                94.89999990463257,
+                91.99999990463256
+              ]
+            }
+          ]
+        }
+      ],
+      "projected_contact_area_mm2": 3.2399993991852085,
+      "exact_coplanar_contact_area_mm2": 3.2399993991852085,
+      "max_absolute_contact_plane_gap_mm": 0.0
+    },
+    {
+      "a": "05-bridge-tray",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        53.30000305175781,
+        0.0,
+        7.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 53.757700149070665,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "06-bridge-lid",
+      "b": "07-pier-instance-1",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        7.300000000000001
+      ],
+      "raw_aabb_separation_lower_bound_mm": 7.300000000000001,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "06-bridge-lid",
+      "b": "07-pier-instance-2",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        7.300000000000001
+      ],
+      "raw_aabb_separation_lower_bound_mm": 7.300000000000001,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "06-bridge-lid",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        0.0,
+        7.300000000000001
+      ],
+      "raw_aabb_separation_lower_bound_mm": 7.300000000000001,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "06-bridge-lid",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        53.29999961853028,
+        0.0,
+        14.3
+      ],
+      "raw_aabb_separation_lower_bound_mm": 55.184961351217126,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "07-pier-instance-1",
+      "b": "07-pier-instance-2",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        0.0,
+        12.599999904632568,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 12.599999904632568,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "07-pier-instance-1",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        1.6999999046325627,
+        25.699999904632563,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 25.756164209250265,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "07-pier-instance-1",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        68.89999990463257,
+        19.29999990463257,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 71.5520788179993,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "07-pier-instance-2",
+      "b": "07-pier-instance-3",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        1.6999999046325627,
+        9.699999904632563,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 9.847842292889466,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "07-pier-instance-2",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        68.89999990463257,
+        3.299999904632571,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 68.97898220638619,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    },
+    {
+      "a": "07-pier-instance-3",
+      "b": "08-south-low-access",
+      "expected_glue_contact": false,
+      "boolean64_intersection_volume_mm3": 0.0,
+      "boolean64_intersection_triangle_count": 0,
+      "raw_aabb_axis_gaps_mm": [
+        63.79999990463257,
+        0.0,
+        0.0
+      ],
+      "raw_aabb_separation_lower_bound_mm": 63.79999990463257,
+      "aabb_distance_meaning": "certified lower bound on mesh-surface separation; not a claim of exact nearest-surface distance",
+      "raw_section_integral": {
+        "volume_mm3": 0.0,
+        "basis": "nonpositive raw assembled AABB overlap extent",
+        "sample_count": 0,
+        "max_intersection_section_area_mm2": 0.0,
+        "section_flags": []
+      },
+      "opposing_face_patches_within_1e_minus5_mm": [],
+      "projected_contact_area_mm2": 0,
+      "exact_coplanar_contact_area_mm2": 0,
+      "max_absolute_contact_plane_gap_mm": null
+    }
+  ],
+  "north_entry_six_column_top_contacts": {
+    "plane_z_mm": 18.0,
+    "selection_region_xy_mm": [
+      -1,
+      34.10001,
+      23,
+      49
+    ],
+    "selection_does_not_move_vertices": true,
+    "count": 6,
+    "area_mm2": 19.439983520511305,
+    "raw_top_area_mm2": 19.439983520511305,
+    "contact_coverage_fraction": 1.0,
+    "patches": [
+      {
+        "area_mm2": 3.239997253418551,
+        "raw_column_top_area_mm2": 3.239997253418551,
+        "contact_coverage_fraction": 1.0,
+        "uncovered_column_top_area_mm2": 0.0,
+        "bounds_xy_mm": [
+          0.2999992370605469,
+          35.30000066757202,
+          2.0999984741210938,
+          37.09999990463257
+        ],
+        "raw_top_width_depth_mm": [
+          1.7999992370605469,
+          1.7999992370605469
+        ]
+      },
+      {
+        "area_mm2": 3.239997253418551,
+        "raw_column_top_area_mm2": 3.239997253418551,
+        "contact_coverage_fraction": 1.0,
+        "uncovered_column_top_area_mm2": 0.0,
+        "bounds_xy_mm": [
+          0.2999992370605469,
+          45.500001430511475,
+          2.0999984741210938,
+          47.30000066757202
+        ],
+        "raw_top_width_depth_mm": [
+          1.7999992370605469,
+          1.7999992370605469
+        ]
+      },
+      {
+        "area_mm2": 3.239990386966383,
+        "raw_column_top_area_mm2": 3.239990386966383,
+        "contact_coverage_fraction": 1.0,
+        "uncovered_column_top_area_mm2": 0.0,
+        "bounds_xy_mm": [
+          10.10000228881836,
+          35.30000066757202,
+          11.89999771118164,
+          37.09999990463257
+        ],
+        "raw_top_width_depth_mm": [
+          1.7999954223632812,
+          1.7999992370605469
+        ]
+      },
+      {
+        "area_mm2": 3.239990386966383,
+        "raw_column_top_area_mm2": 3.239990386966383,
+        "contact_coverage_fraction": 1.0,
+        "uncovered_column_top_area_mm2": 0.0,
+        "bounds_xy_mm": [
+          10.10000228881836,
+          45.500001430511475,
+          11.89999771118164,
+          47.30000066757202
+        ],
+        "raw_top_width_depth_mm": [
+          1.7999954223632812,
+          1.7999992370605469
+        ]
+      },
+      {
+        "area_mm2": 3.2400041198707186,
+        "raw_column_top_area_mm2": 3.2400041198707186,
+        "contact_coverage_fraction": 1.0,
+        "uncovered_column_top_area_mm2": 0.0,
+        "bounds_xy_mm": [
+          19.89999771118164,
+          35.30000066757202,
+          21.700000762939453,
+          37.09999990463257
+        ],
+        "raw_top_width_depth_mm": [
+          1.8000030517578125,
+          1.7999992370605469
+        ]
+      },
+      {
+        "area_mm2": 3.2400041198707186,
+        "raw_column_top_area_mm2": 3.2400041198707186,
+        "contact_coverage_fraction": 1.0,
+        "uncovered_column_top_area_mm2": 0.0,
+        "bounds_xy_mm": [
+          19.89999771118164,
+          45.500001430511475,
+          21.700000762939453,
+          47.30000066757202
+        ],
+        "raw_top_width_depth_mm": [
+          1.8000030517578125,
+          1.7999992370605469
+        ]
+      }
+    ],
+    "meaning": "six actual upward lower-body footprints meet the upper-body downward face at identical z18; mathematical support only, not measured adhesive strength"
+  },
+  "bridge_pier_top_contacts": [
+    {
+      "id": "07-pier-instance-1",
+      "plane_z_mm": 9.0,
+      "raw_top_area_mm2": 3.2399993991852085,
+      "contact_area_mm2": 3.2399993991852085,
+      "contact_coverage_fraction": 1.0,
+      "uncovered_top_area_mm2": 0.0,
+      "bounds_xy_mm": [
+        88.00000007152558,
+        61.10000007152557,
+        89.79999990463257,
+        62.899999904632566
+      ],
+      "raw_top_width_depth_mm": [
+        1.7999998331069946,
+        1.7999998331069946
+      ]
+    },
+    {
+      "id": "07-pier-instance-2",
+      "plane_z_mm": 9.0,
+      "raw_top_area_mm2": 3.2399993991852085,
+      "contact_area_mm2": 3.2399993991852085,
+      "contact_coverage_fraction": 1.0,
+      "uncovered_top_area_mm2": 0.0,
+      "bounds_xy_mm": [
+        88.00000007152558,
+        77.10000007152557,
+        89.79999990463257,
+        78.89999990463257
+      ],
+      "raw_top_width_depth_mm": [
+        1.7999998331069946,
+        1.7999998331069946
+      ]
+    },
+    {
+      "id": "07-pier-instance-3",
+      "plane_z_mm": 9.0,
+      "raw_top_area_mm2": 3.2399993991852085,
+      "contact_area_mm2": 3.2399993991852085,
+      "contact_coverage_fraction": 1.0,
+      "uncovered_top_area_mm2": 0.0,
+      "bounds_xy_mm": [
+        93.10000007152557,
+        90.20000007152557,
+        94.89999990463257,
+        91.99999990463256
+      ],
+      "raw_top_width_depth_mm": [
+        1.7999998331069946,
+        1.7999998331069946
+      ]
+    }
+  ],
+  "summary": {
+    "expected_contacts_count": 11,
+    "expected_contacts_with_projected_area": 11,
+    "expected_contacts_with_exact_coplanar_area": 7,
+    "all_declared_intersection_allowances_met": true,
+    "unexpected_positive_area_contacts": [],
+    "unexpected_positive_boolean64_intersections": [],
+    "nonexpected_pair_count": 34,
+    "all_nonexpected_pairs_have_positive_aabb_separation": true,
+    "nonexpected_minimum_aabb_separation_lower_bound_mm": 0.49999995231628347,
+    "nonexpected_pairs_with_aabb_distance_lower_bound_under_5mm": [
+      {
+        "a": "02-north-upper",
+        "b": "04-hall-roof",
+        "aabb_distance_lower_bound_mm": 3.0
+      },
+      {
+        "a": "02-north-upper",
+        "b": "05-bridge-tray",
+        "aabb_distance_lower_bound_mm": 1.7000007629394531
+      },
+      {
+        "a": "02-north-upper",
+        "b": "06-bridge-lid",
+        "aabb_distance_lower_bound_mm": 0.49999995231628347
+      }
+    ],
+    "positive_boolean64_intersections": [
+      {
+        "a": "01-north-lower",
+        "b": "05-bridge-tray",
+        "volume_mm3": 2.240184295928052e-05
+      },
+      {
+        "a": "01-north-lower",
+        "b": "06-bridge-lid",
+        "volume_mm3": 5.192768272588397e-06
+      },
+      {
+        "a": "03-south-body",
+        "b": "06-bridge-lid",
+        "volume_mm3": 1.8127432676692256e-05
+      }
+    ],
+    "raw_section_flags_count": 0
+  },
+  "limitations": [
+    "This review evaluates assembled geometry, not physical printed fit, shrinkage, adhesive access/strength or handling strength.",
+    "Zero designed joint clearance has no fit tolerance, pin, socket or mechanical registration. Dry fitting/finishing is required by manufacturing instructions and remains untested.",
+    "Raw float32 STL normalization and literal assembly offsets create sub-micrometre gaps/overlaps; all measured signed distances and volumes remain in report.",
+    "Face-area method covers axis-aligned planar mating faces; does not assert arbitrary curved/non-axis contact detection. Full solid Boolean covers all faces."
+  ],
+  "runtime_seconds": 3.1429316997528076
+}

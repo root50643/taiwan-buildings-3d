@@ -1,0 +1,791 @@
+{
+  "geometry_file_sha256": "402d35f76b7fb735ce4ad599be739e6b5821451f7029d422dc755e79ade8706f",
+  "parts": [
+    {
+      "part": "01-base-gatehouse-pylon",
+      "sha256": "ac90d919fd22c62a5efa1668384abbcf526d5045b9732d3a2855e36c015e14a4",
+      "STL_float32_values_exact": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "zero_area_triangles": 0,
+      "volume_mm3": 60057.4737031626,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          42.0,
+          62.400001525878906
+        ]
+      ],
+      "bed_section_area_mm2": 6544.0,
+      "downward_facing_area_over_45deg_mm2_including_bed": 6659.89703948748
+    },
+    {
+      "part": "02-thin-canopy",
+      "sha256": "bfa6ea85857f937a4092530cd15cd4ebb0eb069b7543387014477aa9f370667b",
+      "STL_float32_values_exact": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "zero_area_triangles": 0,
+      "volume_mm3": 4025.596160888672,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          68.0,
+          37.0,
+          1.5999984741210938
+        ]
+      ],
+      "bed_section_area_mm2": 2516.0,
+      "downward_facing_area_over_45deg_mm2_including_bed": 2516.0
+    },
+    {
+      "part": "03-fixed-gate-panel",
+      "sha256": "fd5848bba785ec239d9eb04c2c95786fa468e88c4f01c4821f68109a14bffccb",
+      "STL_float32_values_exact": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "zero_area_triangles": 0,
+      "volume_mm3": 761.7640098161686,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          55.099998474121094,
+          22.799999237060547,
+          1.2999999523162842
+        ]
+      ],
+      "bed_section_area_mm2": 690.2800210666649,
+      "downward_facing_area_over_45deg_mm2_including_bed": 690.2800210666649
+    },
+    {
+      "part": "04-upper-louver-panel",
+      "sha256": "3cd52abf673ca035e08524f98955f753ae64d677471d62ab7c114efb0c27a057",
+      "STL_float32_values_exact": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "zero_area_triangles": 0,
+      "volume_mm3": 150.33599617767433,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          23.5,
+          10.0,
+          1.2000000476837158
+        ]
+      ],
+      "bed_section_area_mm2": 125.27999183654902,
+      "downward_facing_area_over_45deg_mm2_including_bed": 125.27999183654902
+    }
+  ],
+  "assembly_pairs": [
+    {
+      "parts": [
+        "01-base-gatehouse-pylon",
+        "02-thin-canopy"
+      ],
+      "minimum_surface_gap_mm_search_1000": 2.1316282072803006e-14,
+      "intersection_volume_mm3": 0.0,
+      "opposing_axis_aligned_contact_faces_within_0_0001mm": [
+        {
+          "axis": "z",
+          "plane_coordinate_mm": 42.4,
+          "opposing_plane_gap_mm": 0.0,
+          "overlapping_planar_area_mm2": 13.719960479735164
+        }
+      ]
+    },
+    {
+      "parts": [
+        "01-base-gatehouse-pylon",
+        "03-fixed-gate-panel"
+      ],
+      "minimum_surface_gap_mm_search_1000": 0.0,
+      "intersection_volume_mm3": 4.553079516211938e-05,
+      "opposing_axis_aligned_contact_faces_within_0_0001mm": [
+        {
+          "axis": "x",
+          "plane_coordinate_mm": 54.0,
+          "opposing_plane_gap_mm": 0.0,
+          "overlapping_planar_area_mm2": 14.169998984336864
+        },
+        {
+          "axis": "x",
+          "plane_coordinate_mm": -1.1,
+          "opposing_plane_gap_mm": 0.0,
+          "overlapping_planar_area_mm2": 29.37999941825865
+        }
+      ]
+    },
+    {
+      "parts": [
+        "01-base-gatehouse-pylon",
+        "04-upper-louver-panel"
+      ],
+      "minimum_surface_gap_mm_search_1000": 0.0,
+      "intersection_volume_mm3": 1.7763568394002505e-15,
+      "opposing_axis_aligned_contact_faces_within_0_0001mm": [
+        {
+          "axis": "z",
+          "plane_coordinate_mm": 32.4,
+          "opposing_plane_gap_mm": 0.0,
+          "overlapping_planar_area_mm2": 2.8800019454956782
+        },
+        {
+          "axis": "x",
+          "plane_coordinate_mm": -63.5,
+          "opposing_plane_gap_mm": 0.0,
+          "overlapping_planar_area_mm2": 9.999996423721294
+        },
+        {
+          "axis": "x",
+          "plane_coordinate_mm": -40.0,
+          "opposing_plane_gap_mm": 0.0,
+          "overlapping_planar_area_mm2": 9.999996423721294
+        }
+      ]
+    },
+    {
+      "parts": [
+        "02-thin-canopy",
+        "03-fixed-gate-panel"
+      ],
+      "minimum_surface_gap_mm_search_1000": 16.624381971846656,
+      "intersection_volume_mm3": 0.0,
+      "opposing_axis_aligned_contact_faces_within_0_0001mm": []
+    },
+    {
+      "parts": [
+        "02-thin-canopy",
+        "04-upper-louver-panel"
+      ],
+      "minimum_surface_gap_mm_search_1000": 0.0,
+      "intersection_volume_mm3": 0.0,
+      "opposing_axis_aligned_contact_faces_within_0_0001mm": [
+        {
+          "axis": "z",
+          "plane_coordinate_mm": 42.4,
+          "opposing_plane_gap_mm": 0.0,
+          "overlapping_planar_area_mm2": 2.8800019454956782
+        }
+      ]
+    },
+    {
+      "parts": [
+        "03-fixed-gate-panel",
+        "04-upper-louver-panel"
+      ],
+      "minimum_surface_gap_mm_search_1000": 39.45592513625186,
+      "intersection_volume_mm3": 0.0,
+      "opposing_axis_aligned_contact_faces_within_0_0001mm": []
+    }
+  ],
+  "analytic_layer_screen": [
+    {
+      "part": "01-base-gatehouse-pylon",
+      "layers_sampled": 312,
+      "step_mm": 0.2,
+      "first_plane_mm": 0.1,
+      "previous_section_radial_dilation_mm": 0.2,
+      "flag_area_threshold_mm2": 0.05,
+      "flagged_planes": [
+        {
+          "z_mm": 8.900000000000002,
+          "beyond_previous_0_2mm_dilation_area_mm2": 22.60303472361207,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              33.29999923706055,
+              4.099999904632568
+            ],
+            [
+              54.70000076293945,
+              27.617157071828842
+            ]
+          ]
+        },
+        {
+          "z_mm": 22.500000000000007,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.25644575206467746,
+          "contours": 3,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.55718994140625,
+              7.650001049041748
+            ],
+            [
+              147.05308174341917,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 23.900000000000006,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.08959420629885506,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.96675308793783,
+              7.650001049041748
+            ],
+            [
+              147.16200256347656,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 24.500000000000007,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.24950691706817452,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              145.16030883789062,
+              7.650001049041748
+            ],
+            [
+              146.82369995117188,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 25.300000000000008,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.1490413144339522,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              145.4850952103734,
+              7.650001049041748
+            ],
+            [
+              146.47871094197035,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 26.500000000000007,
+          "beyond_previous_0_2mm_dilation_area_mm2": 4.600001846253445,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              22.900000758469105,
+              7.849999904632568
+            ],
+            [
+              32.099999241530895,
+              8.350000187754631
+            ]
+          ]
+        },
+        {
+          "z_mm": 26.700000000000006,
+          "beyond_previous_0_2mm_dilation_area_mm2": 2.940787167634582,
+          "contours": 4,
+          "flag_native_XY_bounds_mm": [
+            [
+              44.549998469650745,
+              4.474999904632568
+            ],
+            [
+              54.32500076293945,
+              24.449999623000622
+            ]
+          ]
+        },
+        {
+          "z_mm": 27.500000000000007,
+          "beyond_previous_0_2mm_dilation_area_mm2": 17.309490149719558,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              6.599998474121094,
+              5.199998565018177
+            ],
+            [
+              54.157107166945934,
+              35.0
+            ]
+          ]
+        },
+        {
+          "z_mm": 27.900000000000006,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.129411488620919,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.63319017738104,
+              7.650001049041748
+            ],
+            [
+              145.49593948572874,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 28.500000000000007,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.41729581007949257,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.464599609375,
+              7.650001049041748
+            ],
+            [
+              147.12179565429688,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 29.300000000000008,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.2882593531158507,
+          "contours": 4,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.537109375,
+              7.650001049041748
+            ],
+            [
+              147.06939697265625,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 29.900000000000006,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.32968274546016474,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.1922027617693,
+              7.650001049041748
+            ],
+            [
+              146.39010314643383,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 30.300000000000008,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.10043902101172864,
+          "contours": 4,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.48545797914267,
+              7.650001049041748
+            ],
+            [
+              146.10930082947016,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 31.300000000000008,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.07747671021579672,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.5038335174322,
+              7.650001049041748
+            ],
+            [
+              146.18456669151783,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 33.30000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.4066011521972541,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.94790649414062,
+              7.650001049041748
+            ],
+            [
+              146.65859985351562,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 33.900000000000006,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.2082434737838934,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.59900207817554,
+              7.650001049041748
+            ],
+            [
+              145.98730164021254,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 34.30000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.2082434737838934,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.59900207817554,
+              7.650001049041748
+            ],
+            [
+              145.98730164021254,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 34.70000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.2082434737838934,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.59900207817554,
+              7.650001049041748
+            ],
+            [
+              145.98730164021254,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 35.30000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.08135442523532088,
+          "contours": 4,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.48512867093086,
+              7.650001049041748
+            ],
+            [
+              146.37928166240454,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 36.50000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.07753494727058519,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.83259887993336,
+              7.650001049041748
+            ],
+            [
+              146.18151620030403,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 38.70000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.4627935376313417,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.77468872070312,
+              7.650001049041748
+            ],
+            [
+              146.86000061035156,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 39.30000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.24345846975460494,
+          "contours": 4,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.88609918951988,
+              7.650001049041748
+            ],
+            [
+              147.02895805239677,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 40.10000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.2689866586932248,
+          "contours": 3,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.41220092773438,
+              7.650001049041748
+            ],
+            [
+              147.18218994140625,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 40.70000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.13030288771307497,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.86889953911304,
+              7.650001049041748
+            ],
+            [
+              145.73759154975414,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 41.10000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.13030288771307497,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.86889953911304,
+              7.650001049041748
+            ],
+            [
+              145.73759154975414,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 41.70000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.23644289059091017,
+          "contours": 3,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.62969970703125,
+              7.650001049041748
+            ],
+            [
+              146.98480224609375,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 44.10000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.1485610123990937,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.54288148134947,
+              7.650001049041748
+            ],
+            [
+              146.62394984066486,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 44.30000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.08348014478985877,
+          "contours": 3,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.02409467846155,
+              7.650001049041748
+            ],
+            [
+              146.948769018054,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 46.30000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.11015730801617174,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.5089111328125,
+              7.650001049041748
+            ],
+            [
+              144.24329833686352,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 46.50000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.12829377749520354,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              146.1819030791521,
+              7.650001049041748
+            ],
+            [
+              147.03720092773438,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 49.500000000000014,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.5292397573998642,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.54110717773438,
+              7.650001049041748
+            ],
+            [
+              147.06939697265625,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 50.90000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.07411508100118036,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.55319213867188,
+              7.650001049041748
+            ],
+            [
+              147.04519653320312,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 51.90000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.20099941336531302,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.62720032036304,
+              7.650001049041748
+            ],
+            [
+              145.96720580756664,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 52.30000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.43922802908059566,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.83509826660156,
+              7.650001049041748
+            ],
+            [
+              146.7633056640625,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 52.70000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.4039910022701019,
+          "contours": 2,
+          "flag_native_XY_bounds_mm": [
+            [
+              143.51290893554688,
+              7.650001049041748
+            ],
+            [
+              147.09359741210938,
+              7.799999997019768
+            ]
+          ]
+        },
+        {
+          "z_mm": 56.90000000000001,
+          "beyond_previous_0_2mm_dilation_area_mm2": 0.07477713605193159,
+          "contours": 1,
+          "flag_native_XY_bounds_mm": [
+            [
+              144.6268595457077,
+              7.739999771118164
+            ],
+            [
+              145.8731404542923,
+              7.799999997019768
+            ]
+          ]
+        }
+      ],
+      "max_flagged_area_mm2": 22.60303472361207
+    },
+    {
+      "part": "02-thin-canopy",
+      "layers_sampled": 8,
+      "step_mm": 0.2,
+      "first_plane_mm": 0.1,
+      "previous_section_radial_dilation_mm": 0.2,
+      "flag_area_threshold_mm2": 0.05,
+      "flagged_planes": [],
+      "max_flagged_area_mm2": 0
+    },
+    {
+      "part": "03-fixed-gate-panel",
+      "layers_sampled": 6,
+      "step_mm": 0.2,
+      "first_plane_mm": 0.1,
+      "previous_section_radial_dilation_mm": 0.2,
+      "flag_area_threshold_mm2": 0.05,
+      "flagged_planes": [],
+      "max_flagged_area_mm2": 0
+    },
+    {
+      "part": "04-upper-louver-panel",
+      "layers_sampled": 6,
+      "step_mm": 0.2,
+      "first_plane_mm": 0.1,
+      "previous_section_radial_dilation_mm": 0.2,
+      "flag_area_threshold_mm2": 0.05,
+      "flagged_planes": [],
+      "max_flagged_area_mm2": 0
+    }
+  ],
+  "contact_tolerance_mm": 0.0001,
+  "contact_limits": "Coplanar axis-aligned geometric contact area only; no adhesive, tolerance, press-fit or physical verification. Tiny float32 gaps/overlaps retained and quantified.",
+  "screen_limits": "Analytic section changes after 0.2 mm dilation are risk flags, not unsupported bridge lengths, extrusion paths, a slicer simulation or a support-free verdict. Sub-0.2 mm features can be missed.",
+  "physical_print_or_fit_verified": false,
+  "actual_slicing_status": "DEFERRED_PER_USER_PRIORITY_FFF_UNVERIFIED"
+}

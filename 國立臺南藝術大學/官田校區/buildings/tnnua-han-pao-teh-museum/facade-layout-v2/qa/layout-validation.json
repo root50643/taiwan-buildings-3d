@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "baseline_commit": "794cf7db91f422e88ac9eec6c5bb06f4e2a7c79c",
+  "baseline_STL_sha256": "e4f25a2d8c02e58a57a263ee7ac93289e8818c456be86c251a1a26f9e0337e8e",
+  "revised_STL_sha256": "5953c9fa1e57317ef29702cc0a9239a71c0d68f81b276d85caf87cbd5896cf71",
+  "checks": {
+    "whole_stair_and_doors_rotated_180_in_actual_mesh": true,
+    "both_balconies_and_doors_mapped_to_adjacent_x_positive_face": true,
+    "former_rear_balcony_and_door_sites_restored_to_plain_original_cube": true,
+    "former_low_stair_door_closed": true,
+    "former_high_stair_door_closed": true,
+    "changes_bounded_to_stair_balcony_and_door_regions": true,
+    "front_projecting_box_unchanged": true,
+    "roof_unchanged": true,
+    "display_base_unchanged": true,
+    "dimensions_unchanged": true,
+    "base_contact_unchanged": true,
+    "same_volume_within_1e_4_mm3": true
+  },
+  "measurements": {
+    "whole_stair_and_doors_rotated_180_in_actual_mesh_symmetric_difference_mm3": 1.4210854715202004e-14,
+    "both_balconies_and_doors_mapped_to_adjacent_x_positive_face_symmetric_difference_mm3": 8.526512829121202e-14,
+    "former_rear_balcony_and_door_sites_restored_to_plain_original_cube_symmetric_difference_mm3": 0.0,
+    "former_low_stair_door_closed_symmetric_difference_mm3": 0.0,
+    "former_high_stair_door_closed_symmetric_difference_mm3": 0.0,
+    "total_added_volume_mm3": 2481.585882445952,
+    "total_removed_volume_mm3": 2481.585882445952,
+    "difference_outside_declared_regions_mm3": 0.0,
+    "front_projecting_box_unchanged_symmetric_difference_mm3": 0.0,
+    "roof_unchanged_symmetric_difference_mm3": 0.0,
+    "display_base_unchanged_symmetric_difference_mm3": 0.0
+  },
+  "coordinate_registration": {
+    "model_axes_not_geographic": true,
+    "front_projecting_box_wall": "y=-45 (unchanged)",
+    "left_stair_wall": "x=-45 (was x=+45)",
+    "stair_low_door_base_center_mm": [
+      -45,
+      34,
+      20
+    ],
+    "stair_high_door_base_center_mm": [
+      -45,
+      -34,
+      61
+    ],
+    "stair_ascent": "from rear y>0 to front y<0",
+    "right_two_balconies_wall": "x=+45 (was y=+45)",
+    "balcony_slab_base_centers_xyz_mm": [
+      [
+        47,
+        6,
+        12
+      ],
+      [
+        47,
+        6,
+        70
+      ]
+    ],
+    "rear_y_positive_wall": "now plain neutral approximate surface; no new unseen detail",
+    "retained_estimates": "Nominal z heights, stair span/tread count/rail thickness and +6mm balcony along-wall offset retain legacy estimates; this is not a full resurvey."
+  },
+  "mesh_unit": "millimeter",
+  "geometry_comparison_tolerance_mm3": 1e-05,
+  "historical_QA_modified": false,
+  "FFF_sliced": false,
+  "physical_print": false
+}

@@ -1,43 +1,26 @@
 # 國立臺南藝術大學｜漢寶德紀念館
 
-公開外觀影像推估的獨立縮尺建築模型，含底座最長150 mm。不是測繪、竣工圖或同比例全校模型；無可信實際尺寸，故不標示1:N。
+## 最新版：立面配置修訂 v2
 
-## 辨識量體與證據
-素混凝土立方體、斜向穿出的大方盒、窄陰影縫、底層退縮玻璃、外牆懸梯和反側兩個小陽臺。採校方正面照與建築師的側面、反面和航拍；不建模內部懸浮展廳。外部踏階加厚且以細斜樑相連，可能需要支撐。
+**請下載 [修訂 STL](facade-layout-v2/model-v2.stl) 或 [七材質 3MF](facade-layout-v2/model.3mf)。本層 model.stl／scene.blend 與 appearance 資料夾保留的是修訂前歷史版本。**
 
-## 最新外觀與下載
+依官方平面與實照修正外梯、雙陽臺及門洞所在立面，並修正外梯升向。以凸盒為模型正面 y−，外梯在 x− 左側往正面上升，雙陽臺在 x+ 右鄰面；不是地理方位。[來源、修訂細節、可重建源碼與新版檢查](facade-layout-v2/README.md)。原高度、細部尺寸仍是近似，不能稱為完整比例校準。
 
-[七材質通用 3MF](appearance/han-appearance.3mf) · [彩色 scene](appearance/scene.blend) · [照片來源、四視圖及配色限制](appearance/README.md)。依可見混凝土灰、外伸盒紅側／紅底與深玻璃近似配色，不限四色；原 STL、幾何與製造限制不變。未確認面中性，尚未 FFF／實體試印驗證。
-
-航拍可見屋面女兒牆／採光狹縫，但原模型頂部採實心平面簡化；本次保留，沒有用色塊假造孔縫。室內懸浮展廳仍依原範圍省略，亦未增加水池或景觀。
-
-## 交付
-- model.stl：毫米單件列印網格
-- scene.blend：可編輯的實際STL網格、攝影機與材質
-- build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：歷史單色實際 STL QA 渲染；最新展示改用 appearance/
-- sources.json：公開來源與查閱日期
-- validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
-- layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
-
-## 使用與限制
-執行 python build_model.py；再以 blender -b -t 2 -P render_preview.py 產生場景與預覽。python validate_model.py --output validation.json 重驗；python check_layers.py 做幾何篩查。程式不依賴本機其他工作目錄或參考照片。
-
-底座平面朝下；可先以0.4 mm噴嘴、0.2 mm層高在真正切片軟體檢查。懸挑、窗簷、柱廊、入口頂部與裝飾可能需要支撐，不能保證免支撐。最小肋板約1 mm，細節經加厚；仍應依自己的材料及切片參數檢查。薄特徵篩查只檢測水平切面的局部0.8 mm XY開運算損失，不是完整三維壁厚或真正切片器驗證。
-
-未使用第三方原3D資產，不含室內、設備或安全細節。原始照片未收入此公開套件。未知屋頂與背面只作明示近似，不能作工程或安全用途。尚未實機試印，亦未執行正式切片器/G-code驗證。
-
-
-## 本件實際檢查摘要
-原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共490層均封閉；0.8mm XY薄特徵篩查有11層警示（最高局部面積损失2.7367 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
-
-
-## 最新外觀正背並排
-
-| 正面七材質外觀 | 背面原幾何，未確認色區中性 |
+| 凸盒正面 y− 與右鄰陽臺面 x+ | 左側外梯 x−，往正面上升 |
 |---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| ![修訂正面](facade-layout-v2/previews/front.png) | ![修訂外梯](facade-layout-v2/previews/stairs.png) |
 
-## 歷史單色與重建證據
+| 後面 y+ 保守中性 | 俯視 x− 左／x+ 右／y− 下 |
+|---|---|
+| ![修訂後面](facade-layout-v2/previews/rear.png) | ![修訂俯視](facade-layout-v2/previews/top.png) |
 
-原 scene.blend、render_preview.py、三張單色圖與製造資料完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)。它們是更新前幾何與驗證記錄，不是最新配色展示；原 validation.json／layer-check.json 的數位檢查與警示仍適用。
+含底座仍為 150 × 142 × 98 mm；752 頂點、1524 三角面。新版重新檢查水密／流形／法線／退化面、重建一致性及 490 個截層；仍有 11 層薄特徵警示（最大局部損失 2.7367 mm²）。[新版 QA](facade-layout-v2/qa/geometry-validation.json)、[新版截層](facade-layout-v2/qa/layer-check.json)。尚未正式 FFF 切片或實體試印，不能保證免支撐。
+
+灰混凝土、紅外伸盒側／底、深玻璃和框欄的七材質為照片近似，不是封閉多色體或機器設定。原實心平頂、未知後面與加厚欄板仍明示簡化；沒有補室內懸浮展廳、水池或屋頂設備。南藝仍為 14 包，本件不增加包數或校數。
+
+## 保留的修訂前資料
+
+- [原 STL](model.stl)、[原 scene](scene.blend)、[原建模源碼](build_model.py)
+- [原網格驗證](validation.json)、[原截層紀錄](layer-check.json)：歷史證據，未覆寫，不能代替新版 QA
+- [七材質舊幾何版](appearance/README.md)：保留配色來源與先前交換檔，其立面配置尚未修正
+- [基準檔案雜湊](facade-layout-v2/baseline-manifest.json)、[原來源](sources.json)、[全包雜湊](hash-manifest.json)

@@ -14,7 +14,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/bajia-t3-north-gate-guardhouse/previews/front.png" alt="八甲北大門與中央警衛室：正面" width="220">](buildings/bajia-t3-north-gate-guardhouse/)<br>**[八甲北大門與中央警衛室](buildings/bajia-t3-north-gate-guardhouse/)** | [<img src="buildings/guoding-library/front_perspective.png" alt="國鼎圖書館 3D 模型正面透視" width="220">](buildings/guoding-library/README.md)<br>**[八甲校區 L1｜國鼎圖書館](buildings/guoding-library/README.md)** | [<img src="buildings/bajia-a1-science-engineering-1/previews/front.png" alt="八甲校區 A1｜理工學院一館實際模型正面" width="220">](buildings/bajia-a1-science-engineering-1/README.zh-TW.md)<br>**[八甲校區 A1｜理工學院一館](buildings/bajia-a1-science-engineering-1/README.zh-TW.md)** |
+| [<img src="buildings/bajia-t3-north-gate-guardhouse/previews/front.png" alt="八甲北大門與中央警衛室：正面" width="220">](buildings/bajia-t3-north-gate-guardhouse/)<br>**[八甲北大門與中央警衛室](buildings/bajia-t3-north-gate-guardhouse/)** | [<img src="buildings/guoding-library/front_perspective.png" alt="國鼎圖書館 3D 模型正面透視" width="220">](buildings/guoding-library/README.md)<br>**[八甲校區 L1｜國鼎圖書館](buildings/guoding-library/README.md)** | [<img src="buildings/bajia-a1-science-engineering-1/appearance/previews/front.png" alt="八甲校區 A1｜理工學院一館實照近似多材質展示正面" width="220">](buildings/bajia-a1-science-engineering-1/README.zh-TW.md)<br>**[八甲校區 A1｜理工學院一館](buildings/bajia-a1-science-engineering-1/README.zh-TW.md)** |
 | [<img src="buildings/bajia-a2-science-engineering-2/previews/front.png" alt="八甲校區 A2｜理工學院二館實際模型正面" width="220">](buildings/bajia-a2-science-engineering-2/README.md)<br>**[八甲校區 A2｜理工學院二館](buildings/bajia-a2-science-engineering-2/README.md)** | [<img src="buildings/erping-c1-lide/previews/front.png" alt="二坪山校區 C1｜立德樓（管理學院）實際模型正面" width="220">](buildings/erping-c1-lide/README.zh-TW.md)<br>**[二坪山校區 C1｜立德樓（管理學院）](buildings/erping-c1-lide/README.zh-TW.md)** | [<img src="buildings/bajia-b1-electrical-engineering/previews/front.png" alt="電機工程館實際模型正面" width="220">](buildings/bajia-b1-electrical-engineering/README.zh-TW.md)<br>**[八甲校區 B1｜電機工程館](buildings/bajia-b1-electrical-engineering/README.zh-TW.md)** |
 | [<img src="buildings/bajia-b2-electronics-engineering/previews/front.png" alt="電子工程館實際模型正面" width="220">](buildings/bajia-b2-electronics-engineering/README.md)<br>**[八甲校區 B2｜電子工程館](buildings/bajia-b2-electronics-engineering/README.md)** | [<img src="buildings/bajia-b3-photonics-engineering/previews/front.png" alt="光電館實際模型正面" width="220">](buildings/bajia-b3-photonics-engineering/README.zh-TW.md)<br>**[八甲校區 B3｜光電館](buildings/bajia-b3-photonics-engineering/README.zh-TW.md)** | [<img src="buildings/bajia-b4-computer-science/previews/front.png" alt="八甲校區 B4 資訊工程館：正面" width="220">](buildings/bajia-b4-computer-science/)<br>**[八甲校區 B4 資訊工程館](buildings/bajia-b4-computer-science/)** |
 | [<img src="buildings/bajia-d1-d2-hakka-complex/previews/front.png" alt="國立聯合大學八甲校區客家研究學院 D1 前棟＋D2 後棟：正面" width="220">](buildings/bajia-d1-d2-hakka-complex/)<br>**[國立聯合大學八甲校區客家研究學院 D1 前棟＋D2 後棟](buildings/bajia-d1-d2-hakka-complex/)** | [<img src="buildings/bajia-e1-e2-e3-humanities/previews/front.png" alt="國立聯合大學八甲校區人文與社會學院 E1前棟＋E2中棟＋E3後棟：正面" width="220">](buildings/bajia-e1-e2-e3-humanities/)<br>**[國立聯合大學八甲校區人文與社會學院 E1前棟＋E2中棟＋E3後棟](buildings/bajia-e1-e2-e3-humanities/)** | [<img src="buildings/bajia-g1-g2-g3-common-education/previews/front.png" alt="國立聯合大學八甲校區 G1／G2／G3 共同教育館舍組：正面" width="220">](buildings/bajia-g1-g2-g3-common-education/)<br>**[國立聯合大學八甲校區 G1／G2／G3 共同教育館舍組](buildings/bajia-g1-g2-g3-common-education/)** |
@@ -78,13 +78,14 @@
 
 包含 A1a、A1b、A1c 建築群；保留三面主翼、中庭、前端入口量體與分段山牆屋頂。比例按公開外觀估算，未見立面及連廊採簡化處理。 含底座尺寸約 **150 × 148 × 57.1 mm**。
 
+- [實照近似配色展示主版：七細材質、八語意網格，可繼續編輯](buildings/bajia-a1-science-engineering-1/appearance/README.zh-TW.md)：灰綠屋面、深藍PV與灰立面分開顯示，展示不受四色限制。
 - [建築說明、來源與列印限制](buildings/bajia-a1-science-engineering-1/README.zh-TW.md)
-- [四色／四工具分色檔、實際預覽與完整限制](buildings/bajia-a1-science-engineering-1/multicolor/README.zh-TW.md)：沿用此套母體，不另計一套。檔案條件 GO；無支撐路線 NO-GO，支撐生成比較未達真機放行。
+- 可選製造衍生版：[四色／四工具分色檔、實際預覽與完整限制](buildings/bajia-a1-science-engineering-1/multicolor/README.zh-TW.md)：沿用此套母體，不另計一套。檔案條件 GO；無支撐路線 NO-GO，支撐生成比較未達真機放行。
 - [STL 模型](buildings/bajia-a1-science-engineering-1/model.stl)・[Blender 場景](buildings/bajia-a1-science-engineering-1/scene.blend)・[網格驗證](buildings/bajia-a1-science-engineering-1/validation.json)
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
-| [<img src="buildings/bajia-a1-science-engineering-1/previews/front.png" alt="八甲校區 A1｜理工學院一館實際模型正面" width="320">](buildings/bajia-a1-science-engineering-1/previews/front.png) | [<img src="buildings/bajia-a1-science-engineering-1/previews/rear.png" alt="八甲校區 A1｜理工學院一館實際模型背面" width="320">](buildings/bajia-a1-science-engineering-1/previews/rear.png) |
+| [<img src="buildings/bajia-a1-science-engineering-1/appearance/previews/front.png" alt="八甲校區 A1｜理工學院一館實照近似多材質展示正面" width="320">](buildings/bajia-a1-science-engineering-1/appearance/previews/front.png) | [<img src="buildings/bajia-a1-science-engineering-1/appearance/previews/rear.png" alt="八甲校區 A1｜理工學院一館實照近似多材質展示背面" width="320">](buildings/bajia-a1-science-engineering-1/appearance/previews/rear.png) |
 
 </details>
 

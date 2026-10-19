@@ -2,10 +2,14 @@
 
 校本部／公開外觀近似模型。每棟獨立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 140.00 × 90.00 mm。
 
-![實際STL正面](previews/front.png)
-![實際STL背面](previews/rear.png)
+![實際STL正面](appearance/previews/front.png)
+![實際STL背面](appearance/previews/rear.png)
 
-![實際STL俯視（如適用）](previews/top.png)
+![實際STL俯視（如適用）](appearance/previews/top.png)
+
+## 最新配色與下載
+
+[七材質通用 3MF](appearance/huayu-appearance.3mf) · [彩色 Blender scene](appearance/scene.blend) · [四視圖、照片與共面細分說明](appearance/README.md)。兩堂主要磚白區、短門廊橘紅坡頂與深窗按實照近似；未確認側後／大屋面中性。原 STL 完整保留，外觀交換網格由 2,448 面共面細分為 3,008 面，外包絡及體積不變，不能稱原面序不變。尚未 FFF／實印。
 
 ## 外觀與範圍
 多邊形禮堂量體、斜向主入口、非對稱階梯山牆與圓窗、大片格窗、帶短坡頂入口門框；左側詠穌堂的高窄窗、十字浮雕與圓窗。
@@ -33,3 +37,7 @@ Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景�
 STL SHA-256：f00727291f2ad83bf84b95f260ab252fa5089c47b2a0d52b6fd8ee97d038382e
 
 [校區圖鑑](../../README.md)／[學校](../../../README.md)
+
+## 歷史單色與原網格 QA
+
+原 scene.blend、render_preview.py 與四張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)、[頂視](previews/top.png)。它們是原模型的重建及製造檢查記錄；最新展示位於 appearance/。原 QA 不覆寫，新細分網格的拓撲、外包絡與數值精度另行檢查，沒有新切片或試印。

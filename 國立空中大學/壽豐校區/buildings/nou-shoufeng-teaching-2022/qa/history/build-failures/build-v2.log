@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<package>/source/build_model.py", line 115, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "<package>/source/build_model.py", line 107, in main
+    full=union(assembled);full.export(MODELS/'assembly-reference-do-not-print.stl')
+  File "<package>/source/build_model.py", line 21, in union
+    def union(items): return tm.boolean.union(items, engine='manifold', check_volume=True)
+                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<runtime>/tool-libs/trimesh/boolean.py", line 82, in union
+    return _engines[engine](
+           ~~~~~~~~~~~~~~~~^
+        meshes, operation="union", check_volume=check_volume, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "<runtime>/tool-libs/trimesh/boolean.py", line 142, in boolean_manifold
+    raise ValueError("Not all meshes are volumes!")
+ValueError: Not all meshes are volumes!

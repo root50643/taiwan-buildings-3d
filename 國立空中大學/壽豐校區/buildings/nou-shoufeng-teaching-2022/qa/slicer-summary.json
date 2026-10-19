@@ -1,0 +1,4060 @@
+{
+  "schema": 1,
+  "purpose": "Manufacturability QA only; G-code is NOT machine-ready",
+  "created_utc": "2026-10-18T18:30:42.993965+00:00",
+  "slicer_executable": "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+  "slicer_executable_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "base_config_sha256": "88462b596d9ef826bafd9678f1ece7380f2ebb6d9d391787ec4d3316589cc0fb",
+  "qa_config_sha256": "8e4cd8ed2ad3ff2d26bc99cbc8d1131715245276fd534e6bf18835d55863f4c7",
+  "qa_config": "slicer/qa-0p20mm.ini",
+  "profile_selection_reason": "0.20 mm puts primary planar adhesive interfaces at exact full-layer Z values; 0.15 mm complete evidence retained in history.",
+  "settings": {
+    "layer_height": "0.2",
+    "first_layer_height": "0.2",
+    "nozzle_diameter": "0.4",
+    "perimeters": "3",
+    "fill_density": "100%",
+    "fill_pattern": "rectilinear",
+    "top_solid_layers": "4",
+    "bottom_solid_layers": "4",
+    "brim_width": "3",
+    "support_material": "0",
+    "support_material_auto": "0",
+    "raft_layers": "0",
+    "skirts": "0",
+    "gcode_comments": "1",
+    "binary_gcode": "0",
+    "temperature": "0",
+    "first_layer_temperature": "0",
+    "bed_temperature": "0",
+    "first_layer_bed_temperature": "0",
+    "autoemit_temperature_commands": "0",
+    "start_gcode": "; QA ONLY - NOT MACHINE READY - no machine startup supplied",
+    "end_gcode": "; QA ONLY - no machine shutdown supplied",
+    "start_filament_gcode": "",
+    "end_filament_gcode": "",
+    "notes": "QA ONLY; uncalibrated generic profile; never send directly to a printer",
+    "external_perimeter_extrusion_width": "0.45",
+    "extrusion_width": "0.45",
+    "first_layer_extrusion_width": "0.45",
+    "infill_extrusion_width": "0.45",
+    "perimeter_extrusion_width": "0.45",
+    "solid_infill_extrusion_width": "0.45",
+    "support_material_extrusion_width": "0.45",
+    "top_infill_extrusion_width": "0.45"
+  },
+  "bed_mm": [
+    220,
+    220
+  ],
+  "orientation_policy": "Each of nine original STL print orientations, scale=100%; XY center only.",
+  "temperature_and_machine_limitations": "Temperatures zero; no startup/shutdown or machine calibration. QA only.",
+  "parameters_sha256": "33683e28a40d5f4d9721cbdccdb2f383c22fff1457889501f13115d8e4a4621b",
+  "physical_validation": "No physical print, support removal, or fit test performed.",
+  "parameters_unchanged_after_slicing": true,
+  "all_nine_exported": true,
+  "parts": [
+    {
+      "gcode_sha256": "fdf02e50faef171e6ada3e5ed04340b8191f9110bb9df92e580afff5e00ac3fb",
+      "gcode_bytes": 3701663,
+      "layer_count_declared": 54,
+      "layers_with_model_extrusion": 54,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 84500,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 15118,
+        "External perimeter": 9786,
+        "Solid infill": 12013,
+        "Internal infill": 45614,
+        "Top solid infill": 1777,
+        "Overhang perimeter": 38
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0502,
+        "Perimeter": 63176.1106,
+        "External perimeter": 35131.7264,
+        "Solid infill": 122139.3036,
+        "Internal infill": 606048.8916,
+        "Top solid infill": 17018.9601,
+        "Overhang perimeter": 237.3887
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {
+        "Overhang perimeter": 38
+      },
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          10.8
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.917767,
+          46.917767000000005,
+          0.0
+        ],
+        [
+          188.082233,
+          173.082233,
+          10.8
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          31.998456500000003,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          173.017865,
+          10.8
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          10.800000190734863
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1645,
+        0.1645
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 10.8,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000107,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 28684.91567,
+      "filament_volume_from_positive_E_mm3": 68995.30775856283,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "69.00",
+      "slicer_filament_used_mm": "28684.92",
+      "estimated_print_time": "5h 18m 4s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 6.6,
+        "worst_run_location": {
+          "layer_index": 45,
+          "z_mm": 9.2,
+          "type": "Overhang perimeter",
+          "path_id": 5074
+        },
+        "total_sampled_unsupported_length_mm": 271.6669,
+        "extrusion_segments_with_unsupported_samples": 215,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.1817,
+            "unsupported_sampled_path_length_mm": 0.2815
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.0999,
+            "unsupported_sampled_path_length_mm": 0.0999
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.1996,
+            "unsupported_sampled_path_length_mm": 2.8787
+          },
+          {
+            "layer_index": 16,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 17,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 18,
+            "maximum_sampled_run_mm": 0.1923,
+            "unsupported_sampled_path_length_mm": 24.5376
+          },
+          {
+            "layer_index": 19,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 20,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 21,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 22,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 23,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.541
+          },
+          {
+            "layer_index": 24,
+            "maximum_sampled_run_mm": 0.0821,
+            "unsupported_sampled_path_length_mm": 0.2349
+          },
+          {
+            "layer_index": 25,
+            "maximum_sampled_run_mm": 0.2695,
+            "unsupported_sampled_path_length_mm": 0.8764
+          },
+          {
+            "layer_index": 26,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 27,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 28,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 29,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 30,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 31,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 32,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 33,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 34,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 35,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 36,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 37,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 38,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 39,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 40,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 41,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 42,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 43,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 44,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 45,
+            "maximum_sampled_run_mm": 6.6,
+            "unsupported_sampled_path_length_mm": 241.0349
+          },
+          {
+            "layer_index": 46,
+            "maximum_sampled_run_mm": 0.0821,
+            "unsupported_sampled_path_length_mm": 0.2349
+          },
+          {
+            "layer_index": 47,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.4486
+          },
+          {
+            "layer_index": 48,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.1993
+          },
+          {
+            "layer_index": 49,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 50,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 51,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          },
+          {
+            "layer_index": 52,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 53,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          2,
+          3,
+          4,
+          15,
+          18,
+          23,
+          24,
+          25,
+          45,
+          46,
+          47,
+          48,
+          51,
+          53
+        ],
+        "maximum_lateral_distance_mm": 0.5,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.2,
+          "External perimeter": 0.2,
+          "Solid infill": 0.2,
+          "Internal infill": 0.2,
+          "Overhang perimeter": 0.5,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 45,
+          "z_mm": 9.2,
+          "type": "Overhang perimeter",
+          "sample_xy_mm": [
+            180.5537313432836,
+            68.775
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 2.0,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 2.0
+          },
+          {
+            "required_z_mm": 3.6,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 3.6
+          },
+          {
+            "required_z_mm": 10.8,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 10.8
+          }
+        ],
+        "slab_top_z_mm": 3.6,
+        "slab_layer_count": 18,
+        "expected_slab_layer_count_for_0p20mm": 18,
+        "probe_stl_xy_mm": [
+          70.0,
+          26.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          73.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 3.6,
+          "signed_distance_to_actual_bead_edge_mm": -0.05306294539048256,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 3.8,
+          "signed_distance_to_actual_bead_edge_mm": 4.000000499999994,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/01-floor1-lower-upright-paths.png",
+      "path_preview_sha256": "19c77291bab432b01e8a276ed063fa36d5409e935ce33dfd03b4233da0aa635c",
+      "part": "01-floor1-lower-upright",
+      "input_stl_sha256": "939bc8b80290e9d062174908507dc8528b5692108e3a751b468ce9b8d771f314",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/01-floor1-lower-upright.gcode",
+        "<runtime>/slicer-staging/01-floor1-lower-upright.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.9659,
+      "log": "slicer/01-floor1-lower-upright.log",
+      "log_sha256": "93f84239ed9aedeb2272a9f149611606675528c99d9b253950ff12fcb04d9121",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "10.800000",
+        "min_x": "0.000000",
+        "min_y": "0.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "126.000000",
+        "max_z": "10.800000",
+        "number_of_facets": "980",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "68291.000000",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/01-floor1-lower-upright.gcode"
+      },
+      "gcode": "slicer/01-floor1-lower-upright.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          10.800000190734863
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "31a6b053a08cb7bebeb9ff11a642ce86766a6055b10b9ead489631be95380ced",
+      "gcode_bytes": 283110,
+      "layer_count_declared": 16,
+      "layers_with_model_extrusion": 16,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 6404,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 222,
+        "External perimeter": 164,
+        "Solid infill": 4908,
+        "Top solid infill": 956
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0561,
+        "Perimeter": 7427.1446,
+        "External perimeter": 3660.0747,
+        "Solid infill": 85015.3914,
+        "Top solid infill": 16447.4626
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {},
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          3.2
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.919313000000002,
+          46.919313,
+          0.0
+        ],
+        [
+          188.080687,
+          173.080687,
+          3.2
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          32.0000005,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          172.9999995,
+          3.2
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1614,
+        0.1614
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 3.2,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000018,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 3945.06639,
+      "filament_volume_from_positive_E_mm3": 9488.996685135191,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "9.49",
+      "slicer_filament_used_mm": "3945.07",
+      "estimated_print_time": "1h 32m 31s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 0.2172,
+        "worst_run_location": {
+          "layer_index": 5,
+          "z_mm": 1.2,
+          "type": "Top solid infill",
+          "path_id": 146
+        },
+        "total_sampled_unsupported_length_mm": 0.317,
+        "extrusion_segments_with_unsupported_samples": 3,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.2172,
+            "unsupported_sampled_path_length_mm": 0.2172
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          3,
+          5
+        ],
+        "maximum_lateral_distance_mm": 0.2,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.1,
+          "External perimeter": 0.0,
+          "Solid infill": 0.2,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 3,
+          "z_mm": 0.8,
+          "type": "Solid infill",
+          "sample_xy_mm": [
+            60.183050518134706,
+            48.731949481865286
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.2
+          },
+          {
+            "required_z_mm": 3.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 3.2
+          }
+        ],
+        "slab_top_z_mm": 1.2,
+        "slab_layer_count": 6,
+        "expected_slab_layer_count_for_0p20mm": 6,
+        "probe_stl_xy_mm": [
+          70.0,
+          4.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          147.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.2,
+          "signed_distance_to_actual_bead_edge_mm": -0.07719297960374974,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.4,
+          "signed_distance_to_actual_bead_edge_mm": 68.84989644635667,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/02-floor1-ceiling-inverted-paths.png",
+      "path_preview_sha256": "104d3ce9f7b4aa3366dfbb1828ad7597f4615d945ead27aca184ebec5e2ea81d",
+      "part": "02-floor1-ceiling-inverted",
+      "input_stl_sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/02-floor1-ceiling-inverted.gcode",
+        "<runtime>/slicer-staging/02-floor1-ceiling-inverted.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.199496,
+      "log": "slicer/02-floor1-ceiling-inverted.log",
+      "log_sha256": "913fff60e38fd01b2e49706522791a628b2c09243ca7a225ea027451b114eec2",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "3.200000",
+        "min_x": "0.000000",
+        "min_y": "-96.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "30.000000",
+        "max_z": "3.200000",
+        "number_of_facets": "248",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "9111.588867",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/02-floor1-ceiling-inverted.gcode"
+      },
+      "gcode": "slicer/02-floor1-ceiling-inverted.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "4e11166e6a1aaf50094cca1a90842e6dfcb655582aafabf48b626e6418bf6396",
+      "gcode_bytes": 3954498,
+      "layer_count_declared": 44,
+      "layers_with_model_extrusion": 44,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 86393,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 22286,
+        "External perimeter": 14224,
+        "Solid infill": 11872,
+        "Internal infill": 36042,
+        "Top solid infill": 1777,
+        "Overhang perimeter": 38
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0502,
+        "Perimeter": 57837.9042,
+        "External perimeter": 35111.9311,
+        "Solid infill": 122012.0393,
+        "Internal infill": 436217.7072,
+        "Top solid infill": 17018.9601,
+        "Overhang perimeter": 237.3887
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {
+        "Overhang perimeter": 38
+      },
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          8.8
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.917767,
+          46.917767000000005,
+          0.0
+        ],
+        [
+          188.082233,
+          173.082233,
+          8.8
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          31.998456500000003,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          173.017865,
+          8.8
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          8.800000190734863
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1645,
+        0.1645
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 8.8,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000107,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 22715.92433,
+      "filament_volume_from_positive_E_mm3": 54638.20107401332,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "54.64",
+      "slicer_filament_used_mm": "22715.93",
+      "estimated_print_time": "4h 40m 29s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 6.6,
+        "worst_run_location": {
+          "layer_index": 35,
+          "z_mm": 7.2,
+          "type": "Overhang perimeter",
+          "path_id": 7529
+        },
+        "total_sampled_unsupported_length_mm": 289.0596,
+        "extrusion_segments_with_unsupported_samples": 254,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.1817,
+            "unsupported_sampled_path_length_mm": 0.2815
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.1868,
+            "unsupported_sampled_path_length_mm": 0.1868
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.2,
+            "unsupported_sampled_path_length_mm": 7.7606
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.1923,
+            "unsupported_sampled_path_length_mm": 24.5337
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.5415
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0707,
+            "unsupported_sampled_path_length_mm": 0.0707
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.2695,
+            "unsupported_sampled_path_length_mm": 1.1701
+          },
+          {
+            "layer_index": 16,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 17,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 18,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 19,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 20,
+            "maximum_sampled_run_mm": 0.2999,
+            "unsupported_sampled_path_length_mm": 12.2978
+          },
+          {
+            "layer_index": 21,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 22,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 23,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 24,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 25,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 26,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 27,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 28,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 29,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 30,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 31,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 32,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 33,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 34,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 35,
+            "maximum_sampled_run_mm": 6.6,
+            "unsupported_sampled_path_length_mm": 241.0349
+          },
+          {
+            "layer_index": 36,
+            "maximum_sampled_run_mm": 0.0821,
+            "unsupported_sampled_path_length_mm": 0.2349
+          },
+          {
+            "layer_index": 37,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.4486
+          },
+          {
+            "layer_index": 38,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.1993
+          },
+          {
+            "layer_index": 39,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 40,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 41,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          },
+          {
+            "layer_index": 42,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 43,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          2,
+          3,
+          4,
+          5,
+          8,
+          13,
+          14,
+          15,
+          20,
+          35,
+          36,
+          37,
+          38,
+          41,
+          43
+        ],
+        "maximum_lateral_distance_mm": 0.5,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.2,
+          "External perimeter": 0.2,
+          "Solid infill": 0.223606797749979,
+          "Internal infill": 0.223606797749979,
+          "Overhang perimeter": 0.5,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 35,
+          "z_mm": 7.2,
+          "type": "Overhang perimeter",
+          "sample_xy_mm": [
+            180.5537313432836,
+            68.775
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.6,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.6
+          },
+          {
+            "required_z_mm": 8.8,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 8.8
+          }
+        ],
+        "slab_top_z_mm": 1.6,
+        "slab_layer_count": 8,
+        "expected_slab_layer_count_for_0p20mm": 8,
+        "probe_stl_xy_mm": [
+          70.0,
+          26.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          73.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.6,
+          "signed_distance_to_actual_bead_edge_mm": -0.05306294539048256,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.8,
+          "signed_distance_to_actual_bead_edge_mm": 2.5000004999999943,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/03-floor2-lower-upright-paths.png",
+      "path_preview_sha256": "c6acecb7a30a750e888eb79031eb6fb1ff1fcae14c7578059f0bf257228597f5",
+      "part": "03-floor2-lower-upright",
+      "input_stl_sha256": "064f1c9963b70358309ace75af82282ef21cecea701500bee211f187ba39212e",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/03-floor2-lower-upright.gcode",
+        "<runtime>/slicer-staging/03-floor2-lower-upright.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.360518,
+      "log": "slicer/03-floor2-lower-upright.log",
+      "log_sha256": "538ac8f5f901a51916f75e777772b370738c5861d3888537a08ec908ae22357c",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "8.800000",
+        "min_x": "0.000000",
+        "min_y": "0.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "126.000000",
+        "max_z": "8.800000",
+        "number_of_facets": "2322",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "53970.343750",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/03-floor2-lower-upright.gcode"
+      },
+      "gcode": "slicer/03-floor2-lower-upright.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          8.800000190734863
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "71d056a63a34c8930049ac851351a97d43387e5665c1cedbf78ef8ef1ba94efc",
+      "gcode_bytes": 283110,
+      "layer_count_declared": 16,
+      "layers_with_model_extrusion": 16,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 6404,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 222,
+        "External perimeter": 164,
+        "Solid infill": 4908,
+        "Top solid infill": 956
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0561,
+        "Perimeter": 7427.1446,
+        "External perimeter": 3660.0747,
+        "Solid infill": 85015.3914,
+        "Top solid infill": 16447.4626
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {},
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          3.2
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.919313000000002,
+          46.919313,
+          0.0
+        ],
+        [
+          188.080687,
+          173.080687,
+          3.2
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          32.0000005,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          172.9999995,
+          3.2
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1614,
+        0.1614
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 3.2,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000018,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 3945.06639,
+      "filament_volume_from_positive_E_mm3": 9488.996685135191,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "9.49",
+      "slicer_filament_used_mm": "3945.07",
+      "estimated_print_time": "1h 32m 31s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 0.2172,
+        "worst_run_location": {
+          "layer_index": 5,
+          "z_mm": 1.2,
+          "type": "Top solid infill",
+          "path_id": 146
+        },
+        "total_sampled_unsupported_length_mm": 0.317,
+        "extrusion_segments_with_unsupported_samples": 3,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.2172,
+            "unsupported_sampled_path_length_mm": 0.2172
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          3,
+          5
+        ],
+        "maximum_lateral_distance_mm": 0.2,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.1,
+          "External perimeter": 0.0,
+          "Solid infill": 0.2,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 3,
+          "z_mm": 0.8,
+          "type": "Solid infill",
+          "sample_xy_mm": [
+            60.183050518134706,
+            48.731949481865286
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.2
+          },
+          {
+            "required_z_mm": 3.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 3.2
+          }
+        ],
+        "slab_top_z_mm": 1.2,
+        "slab_layer_count": 6,
+        "expected_slab_layer_count_for_0p20mm": 6,
+        "probe_stl_xy_mm": [
+          70.0,
+          4.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          147.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.2,
+          "signed_distance_to_actual_bead_edge_mm": -0.07719297960374974,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.4,
+          "signed_distance_to_actual_bead_edge_mm": 68.84989644635667,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/04-floor2-ceiling-inverted-paths.png",
+      "path_preview_sha256": "8e3bb223e68c435923484f35cb0732c5481137c29aeb296ddda8029552386564",
+      "part": "04-floor2-ceiling-inverted",
+      "input_stl_sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/04-floor2-ceiling-inverted.gcode",
+        "<runtime>/slicer-staging/04-floor2-ceiling-inverted.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.222974,
+      "log": "slicer/04-floor2-ceiling-inverted.log",
+      "log_sha256": "873b88c6a4257b6c78b5db3c4ac653b2832681973f0f1cc7de73f9963fce4cf9",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "3.200000",
+        "min_x": "0.000000",
+        "min_y": "-96.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "30.000000",
+        "max_z": "3.200000",
+        "number_of_facets": "248",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "9111.588867",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/04-floor2-ceiling-inverted.gcode"
+      },
+      "gcode": "slicer/04-floor2-ceiling-inverted.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "7cc6c69c430150ecf1d70bde464e0a10d644d02c7738798ac3c0392106e72ac6",
+      "gcode_bytes": 3954498,
+      "layer_count_declared": 44,
+      "layers_with_model_extrusion": 44,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 86393,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 22286,
+        "External perimeter": 14224,
+        "Solid infill": 11872,
+        "Internal infill": 36042,
+        "Top solid infill": 1777,
+        "Overhang perimeter": 38
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0502,
+        "Perimeter": 57837.9042,
+        "External perimeter": 35111.9311,
+        "Solid infill": 122012.0393,
+        "Internal infill": 436217.7072,
+        "Top solid infill": 17018.9601,
+        "Overhang perimeter": 237.3887
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {
+        "Overhang perimeter": 38
+      },
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          8.8
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.917767,
+          46.917767000000005,
+          0.0
+        ],
+        [
+          188.082233,
+          173.082233,
+          8.8
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          31.998456500000003,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          173.017865,
+          8.8
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          8.800000190734863
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1645,
+        0.1645
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 8.8,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000107,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 22715.92433,
+      "filament_volume_from_positive_E_mm3": 54638.20107401332,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "54.64",
+      "slicer_filament_used_mm": "22715.93",
+      "estimated_print_time": "4h 40m 29s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 6.6,
+        "worst_run_location": {
+          "layer_index": 35,
+          "z_mm": 7.2,
+          "type": "Overhang perimeter",
+          "path_id": 7529
+        },
+        "total_sampled_unsupported_length_mm": 289.0596,
+        "extrusion_segments_with_unsupported_samples": 254,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.1817,
+            "unsupported_sampled_path_length_mm": 0.2815
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.1868,
+            "unsupported_sampled_path_length_mm": 0.1868
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.2,
+            "unsupported_sampled_path_length_mm": 7.7606
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.1923,
+            "unsupported_sampled_path_length_mm": 24.5337
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.5415
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0707,
+            "unsupported_sampled_path_length_mm": 0.0707
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.2695,
+            "unsupported_sampled_path_length_mm": 1.1701
+          },
+          {
+            "layer_index": 16,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 17,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 18,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 19,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 20,
+            "maximum_sampled_run_mm": 0.2999,
+            "unsupported_sampled_path_length_mm": 12.2978
+          },
+          {
+            "layer_index": 21,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 22,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 23,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 24,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 25,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 26,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 27,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 28,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 29,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 30,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 31,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 32,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 33,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 34,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 35,
+            "maximum_sampled_run_mm": 6.6,
+            "unsupported_sampled_path_length_mm": 241.0349
+          },
+          {
+            "layer_index": 36,
+            "maximum_sampled_run_mm": 0.0821,
+            "unsupported_sampled_path_length_mm": 0.2349
+          },
+          {
+            "layer_index": 37,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.4486
+          },
+          {
+            "layer_index": 38,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.1993
+          },
+          {
+            "layer_index": 39,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 40,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 41,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          },
+          {
+            "layer_index": 42,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 43,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          2,
+          3,
+          4,
+          5,
+          8,
+          13,
+          14,
+          15,
+          20,
+          35,
+          36,
+          37,
+          38,
+          41,
+          43
+        ],
+        "maximum_lateral_distance_mm": 0.5,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.2,
+          "External perimeter": 0.2,
+          "Solid infill": 0.223606797749979,
+          "Internal infill": 0.223606797749979,
+          "Overhang perimeter": 0.5,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 35,
+          "z_mm": 7.2,
+          "type": "Overhang perimeter",
+          "sample_xy_mm": [
+            180.5537313432836,
+            68.775
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.6,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.6
+          },
+          {
+            "required_z_mm": 8.8,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 8.8
+          }
+        ],
+        "slab_top_z_mm": 1.6,
+        "slab_layer_count": 8,
+        "expected_slab_layer_count_for_0p20mm": 8,
+        "probe_stl_xy_mm": [
+          70.0,
+          26.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          73.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.6,
+          "signed_distance_to_actual_bead_edge_mm": -0.05306294539048256,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.8,
+          "signed_distance_to_actual_bead_edge_mm": 2.5000004999999943,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/05-floor3-lower-upright-paths.png",
+      "path_preview_sha256": "0d72ddd6eb69444a9b85cb206d39058923ef9582e0a05d6dae71edc522b7c822",
+      "part": "05-floor3-lower-upright",
+      "input_stl_sha256": "064f1c9963b70358309ace75af82282ef21cecea701500bee211f187ba39212e",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/05-floor3-lower-upright.gcode",
+        "<runtime>/slicer-staging/05-floor3-lower-upright.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.312416,
+      "log": "slicer/05-floor3-lower-upright.log",
+      "log_sha256": "8bddf8b6d2b67b9df53a4895f048474f678a485e0172f56876e5547291e6e169",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "8.800000",
+        "min_x": "0.000000",
+        "min_y": "0.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "126.000000",
+        "max_z": "8.800000",
+        "number_of_facets": "2322",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "53970.343750",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/05-floor3-lower-upright.gcode"
+      },
+      "gcode": "slicer/05-floor3-lower-upright.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          8.800000190734863
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "10dd3f5bd5b0a03114e997c39a664c80f3f451ae1abfc7b430447c9c2803e4a0",
+      "gcode_bytes": 283110,
+      "layer_count_declared": 16,
+      "layers_with_model_extrusion": 16,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 6404,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 222,
+        "External perimeter": 164,
+        "Solid infill": 4908,
+        "Top solid infill": 956
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0561,
+        "Perimeter": 7427.1446,
+        "External perimeter": 3660.0747,
+        "Solid infill": 85015.3914,
+        "Top solid infill": 16447.4626
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {},
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          3.2
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.919313000000002,
+          46.919313,
+          0.0
+        ],
+        [
+          188.080687,
+          173.080687,
+          3.2
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          32.0000005,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          172.9999995,
+          3.2
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1614,
+        0.1614
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 3.2,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000018,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 3945.06639,
+      "filament_volume_from_positive_E_mm3": 9488.996685135191,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "9.49",
+      "slicer_filament_used_mm": "3945.07",
+      "estimated_print_time": "1h 32m 31s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 0.2172,
+        "worst_run_location": {
+          "layer_index": 5,
+          "z_mm": 1.2,
+          "type": "Top solid infill",
+          "path_id": 146
+        },
+        "total_sampled_unsupported_length_mm": 0.317,
+        "extrusion_segments_with_unsupported_samples": 3,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.2172,
+            "unsupported_sampled_path_length_mm": 0.2172
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          3,
+          5
+        ],
+        "maximum_lateral_distance_mm": 0.2,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.1,
+          "External perimeter": 0.0,
+          "Solid infill": 0.2,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 3,
+          "z_mm": 0.8,
+          "type": "Solid infill",
+          "sample_xy_mm": [
+            60.183050518134706,
+            48.731949481865286
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.2
+          },
+          {
+            "required_z_mm": 3.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 3.2
+          }
+        ],
+        "slab_top_z_mm": 1.2,
+        "slab_layer_count": 6,
+        "expected_slab_layer_count_for_0p20mm": 6,
+        "probe_stl_xy_mm": [
+          70.0,
+          4.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          147.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.2,
+          "signed_distance_to_actual_bead_edge_mm": -0.07719297960374974,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.4,
+          "signed_distance_to_actual_bead_edge_mm": 68.84989644635667,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/06-floor3-ceiling-inverted-paths.png",
+      "path_preview_sha256": "394aaa99f2f72686f703124d47b791e4e045c3d86878fe26002ead614777de74",
+      "part": "06-floor3-ceiling-inverted",
+      "input_stl_sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/06-floor3-ceiling-inverted.gcode",
+        "<runtime>/slicer-staging/06-floor3-ceiling-inverted.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.20714,
+      "log": "slicer/06-floor3-ceiling-inverted.log",
+      "log_sha256": "c987655f43271d8f83b293bf5d499ac4db76fc8b7897b782d9565d8171586d6e",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "3.200000",
+        "min_x": "0.000000",
+        "min_y": "-96.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "30.000000",
+        "max_z": "3.200000",
+        "number_of_facets": "248",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "9111.588867",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/06-floor3-ceiling-inverted.gcode"
+      },
+      "gcode": "slicer/06-floor3-ceiling-inverted.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "5204ff95348a3e9d6e14dcfc668217e3e1b58c468bdd4f893dc020232797b50e",
+      "gcode_bytes": 3954498,
+      "layer_count_declared": 44,
+      "layers_with_model_extrusion": 44,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 86393,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 22286,
+        "External perimeter": 14224,
+        "Solid infill": 11872,
+        "Internal infill": 36042,
+        "Top solid infill": 1777,
+        "Overhang perimeter": 38
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0502,
+        "Perimeter": 57837.9042,
+        "External perimeter": 35111.9311,
+        "Solid infill": 122012.0393,
+        "Internal infill": 436217.7072,
+        "Top solid infill": 17018.9601,
+        "Overhang perimeter": 237.3887
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {
+        "Overhang perimeter": 38
+      },
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          8.8
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.917767,
+          46.917767000000005,
+          0.0
+        ],
+        [
+          188.082233,
+          173.082233,
+          8.8
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          31.998456500000003,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          173.017865,
+          8.8
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          8.800000190734863
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1645,
+        0.1645
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 8.8,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000107,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 22715.92433,
+      "filament_volume_from_positive_E_mm3": 54638.20107401332,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "54.64",
+      "slicer_filament_used_mm": "22715.93",
+      "estimated_print_time": "4h 40m 29s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 6.6,
+        "worst_run_location": {
+          "layer_index": 35,
+          "z_mm": 7.2,
+          "type": "Overhang perimeter",
+          "path_id": 7529
+        },
+        "total_sampled_unsupported_length_mm": 289.0596,
+        "extrusion_segments_with_unsupported_samples": 254,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.1817,
+            "unsupported_sampled_path_length_mm": 0.2815
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.1868,
+            "unsupported_sampled_path_length_mm": 0.1868
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.2,
+            "unsupported_sampled_path_length_mm": 7.7606
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.1923,
+            "unsupported_sampled_path_length_mm": 24.5337
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.5415
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0707,
+            "unsupported_sampled_path_length_mm": 0.0707
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.2695,
+            "unsupported_sampled_path_length_mm": 1.1701
+          },
+          {
+            "layer_index": 16,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 17,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 18,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 19,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 20,
+            "maximum_sampled_run_mm": 0.2999,
+            "unsupported_sampled_path_length_mm": 12.2978
+          },
+          {
+            "layer_index": 21,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 22,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 23,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 24,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 25,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 26,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 27,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 28,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 29,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 30,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 31,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 32,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 33,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 34,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 35,
+            "maximum_sampled_run_mm": 6.6,
+            "unsupported_sampled_path_length_mm": 241.0349
+          },
+          {
+            "layer_index": 36,
+            "maximum_sampled_run_mm": 0.0821,
+            "unsupported_sampled_path_length_mm": 0.2349
+          },
+          {
+            "layer_index": 37,
+            "maximum_sampled_run_mm": 0.3487,
+            "unsupported_sampled_path_length_mm": 0.4486
+          },
+          {
+            "layer_index": 38,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.1993
+          },
+          {
+            "layer_index": 39,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 40,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 41,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          },
+          {
+            "layer_index": 42,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 43,
+            "maximum_sampled_run_mm": 0.0997,
+            "unsupported_sampled_path_length_mm": 0.0997
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          2,
+          3,
+          4,
+          5,
+          8,
+          13,
+          14,
+          15,
+          20,
+          35,
+          36,
+          37,
+          38,
+          41,
+          43
+        ],
+        "maximum_lateral_distance_mm": 0.5,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.2,
+          "External perimeter": 0.2,
+          "Solid infill": 0.223606797749979,
+          "Internal infill": 0.223606797749979,
+          "Overhang perimeter": 0.5,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 35,
+          "z_mm": 7.2,
+          "type": "Overhang perimeter",
+          "sample_xy_mm": [
+            180.5537313432836,
+            68.775
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.6,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.6
+          },
+          {
+            "required_z_mm": 8.8,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 8.8
+          }
+        ],
+        "slab_top_z_mm": 1.6,
+        "slab_layer_count": 8,
+        "expected_slab_layer_count_for_0p20mm": 8,
+        "probe_stl_xy_mm": [
+          70.0,
+          26.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          73.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.6,
+          "signed_distance_to_actual_bead_edge_mm": -0.05306294539048256,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.8,
+          "signed_distance_to_actual_bead_edge_mm": 2.5000004999999943,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/07-floor4-lower-upright-paths.png",
+      "path_preview_sha256": "26c83f918f6fff86eb0923a538dddd312cbd4fcce946691b9e98ac9fe7b8564a",
+      "part": "07-floor4-lower-upright",
+      "input_stl_sha256": "064f1c9963b70358309ace75af82282ef21cecea701500bee211f187ba39212e",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/07-floor4-lower-upright.gcode",
+        "<runtime>/slicer-staging/07-floor4-lower-upright.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.306352,
+      "log": "slicer/07-floor4-lower-upright.log",
+      "log_sha256": "17f31dfa87e2318df379ad6d69774c5d5447d7f5e507251fbb3d41f6b31284ec",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "8.800000",
+        "min_x": "0.000000",
+        "min_y": "0.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "126.000000",
+        "max_z": "8.800000",
+        "number_of_facets": "2322",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "53970.343750",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/07-floor4-lower-upright.gcode"
+      },
+      "gcode": "slicer/07-floor4-lower-upright.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          8.800000190734863
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "424d689f1785b36198fd529e12aa5a4c0dd6db6dd311962432517ecdb684ef05",
+      "gcode_bytes": 283110,
+      "layer_count_declared": 16,
+      "layers_with_model_extrusion": 16,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 6404,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 222,
+        "External perimeter": 164,
+        "Solid infill": 4908,
+        "Top solid infill": 956
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0561,
+        "Perimeter": 7427.1446,
+        "External perimeter": 3660.0747,
+        "Solid infill": 85015.3914,
+        "Top solid infill": 16447.4626
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {},
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          3.2
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.919313000000002,
+          46.919313,
+          0.0
+        ],
+        [
+          188.080687,
+          173.080687,
+          3.2
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          32.0000005,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          172.9999995,
+          3.2
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1614,
+        0.1614
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 3.2,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000018,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 3945.06639,
+      "filament_volume_from_positive_E_mm3": 9488.996685135191,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "9.49",
+      "slicer_filament_used_mm": "3945.07",
+      "estimated_print_time": "1h 32m 31s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 0.2172,
+        "worst_run_location": {
+          "layer_index": 5,
+          "z_mm": 1.2,
+          "type": "Top solid infill",
+          "path_id": 146
+        },
+        "total_sampled_unsupported_length_mm": 0.317,
+        "extrusion_segments_with_unsupported_samples": 3,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.2172,
+            "unsupported_sampled_path_length_mm": 0.2172
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          3,
+          5
+        ],
+        "maximum_lateral_distance_mm": 0.2,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.1,
+          "External perimeter": 0.0,
+          "Solid infill": 0.2,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 3,
+          "z_mm": 0.8,
+          "type": "Solid infill",
+          "sample_xy_mm": [
+            60.183050518134706,
+            48.731949481865286
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.2
+          },
+          {
+            "required_z_mm": 3.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 3.2
+          }
+        ],
+        "slab_top_z_mm": 1.2,
+        "slab_layer_count": 6,
+        "expected_slab_layer_count_for_0p20mm": 6,
+        "probe_stl_xy_mm": [
+          70.0,
+          4.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          147.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.2,
+          "signed_distance_to_actual_bead_edge_mm": -0.07719297960374974,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.4,
+          "signed_distance_to_actual_bead_edge_mm": 68.84989644635667,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/08-floor4-ceiling-inverted-paths.png",
+      "path_preview_sha256": "413a2657b9ce357dd001ef1c348d382c9dfcbad8cf6d3c06833ad1c0522e834d",
+      "part": "08-floor4-ceiling-inverted",
+      "input_stl_sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/08-floor4-ceiling-inverted.gcode",
+        "<runtime>/slicer-staging/08-floor4-ceiling-inverted.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.180866,
+      "log": "slicer/08-floor4-ceiling-inverted.log",
+      "log_sha256": "7d9cd59400d8f62c392d35d58a3bf5bf4e4aa67aff436dd18af8212adfd56865",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "3.200000",
+        "min_x": "0.000000",
+        "min_y": "-96.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "30.000000",
+        "max_z": "3.200000",
+        "number_of_facets": "248",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "9111.588867",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/08-floor4-ceiling-inverted.gcode"
+      },
+      "gcode": "slicer/08-floor4-ceiling-inverted.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          -96.0,
+          0.0
+        ],
+        [
+          156.0,
+          30.0,
+          3.1999998092651367
+        ]
+      ]
+    },
+    {
+      "gcode_sha256": "00349f985a98a4d9b787f78a2255123ffc5081a4c1846efdd2d4f496caac4b6b",
+      "gcode_bytes": 683224,
+      "layer_count_declared": 30,
+      "layers_with_model_extrusion": 30,
+      "empty_model_layer_indices": [],
+      "extrusion_segment_count": 15583,
+      "feature_segment_counts": {
+        "Skirt/Brim": 154,
+        "Perimeter": 1373,
+        "External perimeter": 666,
+        "Solid infill": 6094,
+        "Internal infill": 5792,
+        "Top solid infill": 1504
+      },
+      "feature_deposited_lengths_mm": {
+        "Skirt/Brim": 4007.0502,
+        "Perimeter": 20883.4117,
+        "External perimeter": 20010.6475,
+        "Solid infill": 87661.7108,
+        "Internal infill": 28622.9248,
+        "Top solid infill": 16936.0036
+      },
+      "support_feature_present": false,
+      "bridge_or_overhang_features": {},
+      "model_extrusion_centerline_bounds_mm": [
+        [
+          32.225,
+          47.225,
+          0.2
+        ],
+        [
+          187.775,
+          172.775,
+          6.0
+        ]
+      ],
+      "conservative_model_bead_bounds_mm": [
+        [
+          31.930397000000003,
+          46.930397,
+          0.0
+        ],
+        [
+          188.069603,
+          173.069603,
+          6.0
+        ]
+      ],
+      "model_bead_sweep_bounds_mm": [
+        [
+          32.0000005,
+          47.0000005,
+          0.0
+        ],
+        [
+          187.9999995,
+          172.9999995,
+          6.0
+        ]
+      ],
+      "bed_centering_mm": [
+        110,
+        110
+      ],
+      "original_print_envelope_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          6.0
+        ]
+      ],
+      "xy_envelope_size_error_mm": [
+        0.1392,
+        0.1392
+      ],
+      "first_extrusion_z_mm": 0.2,
+      "last_extrusion_z_mm": 6.0,
+      "maximum_vertical_deposition_gap_mm": 0.20000000000000018,
+      "nominal_layer_height_mm": 0.2,
+      "vertical_gap_threshold_mm": 0.201,
+      "vertical_gap_over_profile_tolerance": false,
+      "positive_E_filament_mm": 5998.86767,
+      "filament_volume_from_positive_E_mm3": 14428.967679602134,
+      "slicer_filament_volume_mm3": null,
+      "slicer_filament_volume_cm3": "14.43",
+      "slicer_filament_used_mm": "5998.87",
+      "estimated_print_time": "1h 58m 29s",
+      "temperature_commands": [],
+      "nonzero_temperature_command": false,
+      "unsupported_path_screen": {
+        "method": "Rasterized previous actual deposited bead footprints at 0.1 mm; path samples <=0.1 mm; fixed 0.15 mm lateral growth allowance for comparison across profiles. Excludes brim.",
+        "resolution_mm": 0.1,
+        "raster_error_estimate_mm": 0.15,
+        "horizontal_growth_allowance_mm": 0.15,
+        "maximum_sampled_unsupported_run_mm": 0.1995,
+        "worst_run_location": {
+          "layer_index": 6,
+          "z_mm": 1.4,
+          "type": "Perimeter",
+          "path_id": 298
+        },
+        "total_sampled_unsupported_length_mm": 12.1138,
+        "extrusion_segments_with_unsupported_samples": 79,
+        "layers": [
+          {
+            "layer_index": 0,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 1,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 2,
+            "maximum_sampled_run_mm": 0.1817,
+            "unsupported_sampled_path_length_mm": 0.2815
+          },
+          {
+            "layer_index": 3,
+            "maximum_sampled_run_mm": 0.0998,
+            "unsupported_sampled_path_length_mm": 0.0998
+          },
+          {
+            "layer_index": 4,
+            "maximum_sampled_run_mm": 0.0996,
+            "unsupported_sampled_path_length_mm": 0.0996
+          },
+          {
+            "layer_index": 5,
+            "maximum_sampled_run_mm": 0.1555,
+            "unsupported_sampled_path_length_mm": 0.4505
+          },
+          {
+            "layer_index": 6,
+            "maximum_sampled_run_mm": 0.1995,
+            "unsupported_sampled_path_length_mm": 11.1824
+          },
+          {
+            "layer_index": 7,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 8,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 9,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 10,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 11,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 12,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 13,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 14,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 15,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 16,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 17,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 18,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 19,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 20,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 21,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 22,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 23,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 24,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 25,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 26,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 27,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 28,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          },
+          {
+            "layer_index": 29,
+            "maximum_sampled_run_mm": 0.0,
+            "unsupported_sampled_path_length_mm": 0.0
+          }
+        ],
+        "limitation": "Screening only; overlap, cooling, sagging, adhesion, strength, and physical bridging are unverified."
+      },
+      "lateral_support_distance_followup": {
+        "supplement_to": "unsupported_path_screen; same G-code, no geometry or slicer change",
+        "measurement": "Shortest in-plane distance from each sampled current-layer extrusion centerline to rasterized previous-layer bead footprint. Distinct from along-path unsupported run length.",
+        "screened_flagged_layer_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "maximum_lateral_distance_mm": 0.223606797749979,
+        "maximum_lateral_distance_upper_bound_mm": null,
+        "maximum_lateral_distance_by_feature_mm": {
+          "Perimeter": 0.2,
+          "External perimeter": 0.1,
+          "Solid infill": 0.2,
+          "Internal infill": 0.223606797749979,
+          "Top solid infill": 0.2
+        },
+        "worst_location": {
+          "layer_index": 6,
+          "z_mm": 1.4,
+          "type": "Internal infill",
+          "sample_xy_mm": [
+            51.656,
+            169.45291666666668
+          ]
+        },
+        "raster_error_estimate_mm": 0.15,
+        "sampling_interval_max_mm": 0.1,
+        "interpretation": "Window-lip path can be long along the facade while shallow laterally. This is not a test of bridge sag or adhesion."
+      },
+      "mesh_flags": {
+        "slicer_reported_manifold": "yes",
+        "slicer_reported_number_of_parts": "1",
+        "repair_log_messages": [],
+        "needed_repair_flag_available_in_cli_info": false,
+        "limitation": "CLI --info exposes manifold/part count but no explicit needed_repair boolean; absence of repair messages is not proof no internal repair occurred."
+      },
+      "embedded_profile_verification": {
+        "actual_gcode_footer_settings": {
+          "layer_height": "0.2",
+          "first_layer_height": "0.2",
+          "nozzle_diameter": "0.4",
+          "extrusion_width": "0.45",
+          "first_layer_extrusion_width": "0.45",
+          "perimeters": "3",
+          "fill_density": "100%",
+          "fill_pattern": "rectilinear",
+          "top_solid_layers": "4",
+          "bottom_solid_layers": "4",
+          "brim_width": "3",
+          "support_material": "0",
+          "support_material_auto": "0",
+          "raft_layers": "0",
+          "temperature": "0",
+          "first_layer_temperature": "0",
+          "bed_temperature": "0",
+          "first_layer_bed_temperature": "0",
+          "autoemit_temperature_commands": "0"
+        },
+        "mismatches_against_qa_config": [],
+        "print_orientation_evidence": "Original STL orientation; no rotate/cut transform in recorded command; --scale 100%; --info bounds match original STL and deposited envelope preserves size."
+      },
+      "planar_interface_verification": {
+        "method": "Actual G-code deposition-layer Z values plus 100%-infill slab-interior probe footprint immediately below/above its top plane.",
+        "required_print_z_planes": [
+          {
+            "required_z_mm": 1.2,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 1.2
+          },
+          {
+            "required_z_mm": 3.4,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 3.4
+          },
+          {
+            "required_z_mm": 6.0,
+            "present_as_actual_deposition_z": true,
+            "nearest_actual_z_mm": 6.0
+          }
+        ],
+        "slab_top_z_mm": 1.2,
+        "slab_layer_count": 6,
+        "expected_slab_layer_count_for_0p20mm": 6,
+        "probe_stl_xy_mm": [
+          70.0,
+          15.0
+        ],
+        "probe_gcode_xy_mm": [
+          102.0,
+          62.0
+        ],
+        "probe_at_slab_top": {
+          "actual_z_mm": 1.2,
+          "signed_distance_to_actual_bead_edge_mm": -0.1802020450210893,
+          "covered_by_deposited_bead": true
+        },
+        "probe_next_layer": {
+          "actual_z_mm": 1.4,
+          "signed_distance_to_actual_bead_edge_mm": 13.8000005,
+          "covered_by_deposited_bead": false
+        },
+        "primary_interface_z_matches_stl": true,
+        "slab_footprint_transition_confirmed": true,
+        "limitation": "Toolpath Z/footprint checks only; no physical flatness, glue-gap or fit verification."
+      },
+      "path_preview": "slicer/09-roof-parapet-upright-paths.png",
+      "path_preview_sha256": "cd3fdf5fa640b3ff4cb929600206e985ea2ac080385fd204ad490a5082ae7004",
+      "part": "09-roof-parapet-upright",
+      "input_stl_sha256": "84e785772ce5b9070072d77fd9528a3d5c4447d99ec5efc479f9032c240663a7",
+      "stl_unchanged_after_slice": true,
+      "command": [
+        "<runtime>/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "--datadir",
+        "<runtime>/slicer-tools/nou-data",
+        "--load",
+        "<runtime>/slicer-staging/qa-0p20mm.ini",
+        "--threads",
+        "2",
+        "--loglevel",
+        "2",
+        "--scale",
+        "100%",
+        "--center",
+        "110,110",
+        "--info",
+        "--export-gcode",
+        "--output",
+        "<runtime>/slicer-staging/09-roof-parapet-upright.gcode",
+        "<runtime>/slicer-staging/09-roof-parapet-upright.stl"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.282459,
+      "log": "slicer/09-roof-parapet-upright.log",
+      "log_sha256": "b641917cfd326114c0d5e55f5261f81c9698a90b764429cc112d8bd4b326750c",
+      "warnings": [],
+      "model_info": {
+        "size_x": "156.000000",
+        "size_y": "126.000000",
+        "size_z": "6.000000",
+        "min_x": "0.000000",
+        "min_y": "0.000000",
+        "min_z": "0.000000",
+        "max_x": "156.000000",
+        "max_y": "126.000000",
+        "max_z": "6.000000",
+        "number_of_facets": "128",
+        "manifold": "yes",
+        "number_of_parts": "1",
+        "volume": "14077.918945",
+        "10": "> Processing triangulated mesh",
+        "20": "> Generating perimeters",
+        "30": "> Preparing infill",
+        "45": "> Making infill",
+        "65": "> Searching support spots",
+        "69": "> Alert if supports needed",
+        "89": "> Calculating overhanging perimeters",
+        "88": "> Generating skirt and brim",
+        "90": "> Exporting G-code to <runtime>/slicer-staging/09-roof-parapet-upright.gcode"
+      },
+      "gcode": "slicer/09-roof-parapet-upright.gcode",
+      "source_print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          156.0,
+          126.0,
+          6.0
+        ]
+      ]
+    }
+  ],
+  "all_nine_inspected": true
+}

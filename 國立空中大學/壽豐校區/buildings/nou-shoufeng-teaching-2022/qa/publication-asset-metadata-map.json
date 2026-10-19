@@ -1,0 +1,800 @@
+{
+  "schema_version": 1,
+  "scope": "Metadata-only publication transition from the accepted unpublished candidate; historical manufacturing QA is retained and was not rerun.",
+  "original_candidate_commit": "347ab012d32f6fd7252cd5073e7966e79b12e2f0",
+  "no_rendering": true,
+  "no_geometry_generation": true,
+  "no_slicing_rerun": true,
+  "no_library_calls": true,
+  "no_push": true,
+  "original_candidate_unchanged": true,
+  "scene": {
+    "file": "scene.blend",
+    "original_sha256": "2936fec315460cdb0da8c45bbb3d1d99ea2dd53c3de89ef275c149edf95b576e",
+    "publication_sha256": "709127543bbd9d9477fee42d69d4399681406addacd1a7bd0bef8ec796a09bd4",
+    "uncompressed_original_sha256": "d984f86b3094a69155446ce7200cad5deea50da5fbdd4b3d29c20bcaa34c4583",
+    "uncompressed_publication_sha256": "f811c1e9f3967b0f99a15975054188e23547e9be65d164ac9c585efa3b03c44d",
+    "final_method": "Direct SDNA-derived three fixed character array edits to original candidate bytes; no bpy re-save used for the final scene.",
+    "outside_authorized_arrays_byte_equal": true,
+    "sdna_edits": [
+      {
+        "block_code": "DATA",
+        "structure": "FileSelectParams",
+        "structure_tlen": 2280,
+        "field": "dir",
+        "field_name": "dir[1282]",
+        "schema_offset_in_element": 96,
+        "absolute_begin": 242108,
+        "length": 1282,
+        "before_field_sha256": "cda629814771d55348e7d467f577855e4d0c9ea405ba5189ee1cb059d073a8c0",
+        "after_field_sha256": "564d5fe84bddf081396d6021ed386acbef1d91d2c12fc15e60e258141739622f",
+        "new_value": "",
+        "changed": true
+      },
+      {
+        "block_code": "SC\u0000\u0000",
+        "structure": "Scene",
+        "structure_tlen": 6928,
+        "field": "r.pic",
+        "field_name": "pic[1024]",
+        "schema_offset_in_element": 1196,
+        "absolute_begin": 301728,
+        "length": 1024,
+        "before_field_sha256": "33c1cfb8b0bba70389ac9666252775bf3b1979d1d2913d3fa9244108df2634a3",
+        "after_field_sha256": "d5fbd94fbdb4a19a43467e84aac70dc67ed17cdb410b81f23656ff717058e30b",
+        "new_value": "//previews/front.png",
+        "changed": true
+      },
+      {
+        "block_code": "DATA",
+        "structure": "LibraryWeakReference",
+        "structure_tlen": 1284,
+        "field": "library_filepath",
+        "field_name": "library_filepath[1024]",
+        "schema_offset_in_element": 0,
+        "absolute_begin": 915348,
+        "length": 1024,
+        "before_field_sha256": "bef01be70a4584a40e949298a3dfac257fff89d0aa9fdbcca9d9bb8ad461cf20",
+        "after_field_sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+        "new_value": "",
+        "changed": true
+      }
+    ],
+    "fileglobal_filename_zero_and_unchanged": true,
+    "original_and_publication_stamp_flags_identical": true,
+    "allowed_rna_metadata_changes": [
+      {
+        "field": "scenes[Scene].render.filepath",
+        "new_stored_value": "//previews/front.png",
+        "windows_readback": "//previews\\front.png"
+      },
+      {
+        "field": "screens[Shading].areas[4].spaces[0].params.directory",
+        "new_stored_value": "All 1282 bytes zero",
+        "runtime_note": "Blender may initialize an empty saved file-browser directory to a runtime default on load. The persisted SDNA directory array is independently required to be entirely zero."
+      },
+      {
+        "field": "materials[Material].library_weak_reference.filepath",
+        "new_stored_value": "All 1024 bytes zero",
+        "meaning": "Local append/reuse provenance only; no linked library dependency; library_id_name and weak-reference structure retained."
+      }
+    ],
+    "remaining_raw_host_path_findings": 0,
+    "remaining_raw_secret_pattern_findings": 0,
+    "independent_reopen_exact_numeric_geometry_units_visual_settings_equal": true,
+    "meshes": 9,
+    "materials_including_unused": 5,
+    "cameras": 1,
+    "lights": 3,
+    "canonical_equal_digests": {
+      "geometry": "2fad70efffea8d5f8c11404c9ec1303a348852d13f429470392513f37a35ce00",
+      "full_numeric_visual_units": "2ba444b78b98cc409ced82455cd8d7a4ef65126260ae230ab491b9bf57562553",
+      "mesh_arrays_material_assignment": "fd29d6c0cbee49a19e862de32a08110522a9412f7e859f4aa2db21bcb5e4a561",
+      "physical_units": "bf172974398804d610b6fe304b3c77c43d120b0d4a6b81bf0829fbf08b1af9dc",
+      "materials": "8b9d8d81c46f76b68589539e1cfb282654c167f5fcdf2a8660a45e4ef49a3ebb",
+      "cameras": "f8196807b22a6b67e35e742f8e2075f212019f986a11e456036f3b5867f89ac4",
+      "lights": "2f6d7ebbc899f62f4428e6ac38f5845d07e07ae288aad44d2a43b831208c061e",
+      "worlds": "df9718289969e8957d62c94a87077e17a69b08e549ab29ffe1e2d3fdcc47daa7"
+    },
+    "local_dependency_preflight": {
+      "all_datablocks_local": true,
+      "id_count": 61,
+      "linked_libraries": 0,
+      "linked_ids": 0,
+      "weak_reference_owners": [
+        {
+          "type": "Material",
+          "name": "Material",
+          "local": true
+        }
+      ]
+    },
+    "library_id_name_preserved": [
+      {
+        "field": "library_id_name[258]",
+        "bytes": 258,
+        "unchanged": true,
+        "sha256": "5bbe51e99ebf19cdb1ef971fa338846afa7c705e3e5c50c39c3612b215a54bc9"
+      }
+    ],
+    "supersedes_two_field_scene_sha256": "8cae606612df08c4f071b170bf062d399ebb156e602caa3b7fed38440046c564",
+    "superseded_privacy_result": "The earlier two-field zero-match claim is superseded: the generalized detector found a relative local provenance path, now cleared in the third precise metadata array."
+  },
+  "pngs": [
+    {
+      "file": "previews/exploded.png",
+      "original_sha256": "ffc54a94766f2bb3a04f90ee0a4afd7e2531abf6e7ed39be51cc9e55c518dc8e",
+      "publication_sha256": "c765cda24be3e67a993d18f1ee0bb9baffef4fd0078917af33c9dc4b0a2dc5eb",
+      "rgba_pixel_sha256": "a67c47d04a2ece5bcb142a9cbd4de76fc1e621bafc62f30102da11dd11538b11",
+      "pixels_equal": true,
+      "idat_sha256": "7b1c6c76837df87340600967a62d2a8f0d95d5700bc2a9ffb3d456321514ec5a",
+      "color_chunks_sha256": "a038f8b03b31941c096675d7752a07f7843e3c371422f3b72929582a8f171365",
+      "retained_chunks_sha256": "27c5ba03fb499eeffaf96ace8ff8cd1316e96a1bb37bcfd13a27507f37432ac7",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "eXIf",
+          "key": null
+        },
+        {
+          "type": "tEXt",
+          "key": "File"
+        },
+        {
+          "type": "tEXt",
+          "key": "Date"
+        },
+        {
+          "type": "tEXt",
+          "key": "Time"
+        },
+        {
+          "type": "tEXt",
+          "key": "Frame"
+        },
+        {
+          "type": "tEXt",
+          "key": "Camera"
+        },
+        {
+          "type": "tEXt",
+          "key": "Scene"
+        },
+        {
+          "type": "tEXt",
+          "key": "RenderTime"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.samples"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.total_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.render_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.synchronization_time"
+        }
+      ]
+    },
+    {
+      "file": "previews/front.png",
+      "original_sha256": "07e0c60df95c51cda5c34bcc8ed67bcdf92936733e8a913fc2a1a46c9b8f3ff1",
+      "publication_sha256": "decb74f0b74bd11f76a6d4f55e664a4acc9c6bbcee9a15c12a612b08e4a02a04",
+      "rgba_pixel_sha256": "d5d606221ba526651af7907f2ceef4df4a506c32ff0566f3ebaa6cf76ef123ce",
+      "pixels_equal": true,
+      "idat_sha256": "cf585129ac7bdb2f54f28affdfbb15a3f6afb932b5731adc0b409dba9d92d522",
+      "color_chunks_sha256": "a038f8b03b31941c096675d7752a07f7843e3c371422f3b72929582a8f171365",
+      "retained_chunks_sha256": "9eaec0f5b6105c08eac50c78db926101f920d12c9faa790f5775d4899be1bacd",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "eXIf",
+          "key": null
+        },
+        {
+          "type": "tEXt",
+          "key": "File"
+        },
+        {
+          "type": "tEXt",
+          "key": "Date"
+        },
+        {
+          "type": "tEXt",
+          "key": "Time"
+        },
+        {
+          "type": "tEXt",
+          "key": "Frame"
+        },
+        {
+          "type": "tEXt",
+          "key": "Camera"
+        },
+        {
+          "type": "tEXt",
+          "key": "Scene"
+        },
+        {
+          "type": "tEXt",
+          "key": "RenderTime"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.samples"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.total_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.render_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.synchronization_time"
+        }
+      ]
+    },
+    {
+      "file": "previews/rear.png",
+      "original_sha256": "4175ad77913713ccb99311e0faa6b55d665c32288704a8e7a69ef4301fdcca03",
+      "publication_sha256": "3fdac7ac7f4ecf10253c0b5b299172a0149385f5f5acd69912d0bf40279fcaae",
+      "rgba_pixel_sha256": "a7fb8775e579bd50f3a8be044e1eff88805b3fec15c83503c5662284c610f360",
+      "pixels_equal": true,
+      "idat_sha256": "64a8a777827c12f4b4b5677c30638d595c54cdd091a1d206fe0068dd84c2388c",
+      "color_chunks_sha256": "a038f8b03b31941c096675d7752a07f7843e3c371422f3b72929582a8f171365",
+      "retained_chunks_sha256": "34d4af5ec93fdc55d20d168d539ff84e70987f06dd5233adbc96431e5573b525",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "eXIf",
+          "key": null
+        },
+        {
+          "type": "tEXt",
+          "key": "File"
+        },
+        {
+          "type": "tEXt",
+          "key": "Date"
+        },
+        {
+          "type": "tEXt",
+          "key": "Time"
+        },
+        {
+          "type": "tEXt",
+          "key": "Frame"
+        },
+        {
+          "type": "tEXt",
+          "key": "Camera"
+        },
+        {
+          "type": "tEXt",
+          "key": "Scene"
+        },
+        {
+          "type": "tEXt",
+          "key": "RenderTime"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.samples"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.total_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.render_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.synchronization_time"
+        }
+      ]
+    },
+    {
+      "file": "previews/top.png",
+      "original_sha256": "bec0064dd6b91ebd1cab9ccef00e97d1b10d88dc76cdfb1f199507bbded7d2fe",
+      "publication_sha256": "4e8a367cfbbf1f4e88278adc1b5f3622f525e2b7fcecc547c97c8621795fe28f",
+      "rgba_pixel_sha256": "ce64c0def74283a6f7967de2f1acb4abd69a46be6cc7be092fac3ee15fcac936",
+      "pixels_equal": true,
+      "idat_sha256": "2ea3bddb8a33cc33ece07331255a5c5def5d54b7b3a79b77c51cb7ddc134d142",
+      "color_chunks_sha256": "a038f8b03b31941c096675d7752a07f7843e3c371422f3b72929582a8f171365",
+      "retained_chunks_sha256": "250c4259a15cc7a220a6f4f6bc23f56e51d90fb3f15c13e1c9367ec70d96aa68",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "eXIf",
+          "key": null
+        },
+        {
+          "type": "tEXt",
+          "key": "File"
+        },
+        {
+          "type": "tEXt",
+          "key": "Date"
+        },
+        {
+          "type": "tEXt",
+          "key": "Time"
+        },
+        {
+          "type": "tEXt",
+          "key": "Frame"
+        },
+        {
+          "type": "tEXt",
+          "key": "Camera"
+        },
+        {
+          "type": "tEXt",
+          "key": "Scene"
+        },
+        {
+          "type": "tEXt",
+          "key": "RenderTime"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.samples"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.total_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.render_time"
+        },
+        {
+          "type": "tEXt",
+          "key": "cycles.ViewLayer.synchronization_time"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/intermediate-snapshot-before-final-binding/sections.png",
+      "original_sha256": "6d7302879e8af1726f914bdffe20370108d766eddc4a3ac86827c67d7b940d6b",
+      "publication_sha256": "499b19e39dae39cf78a888e2531c0227e27888c789a00c574e8334e50639fd77",
+      "rgba_pixel_sha256": "3046ba93bce0fea2374913eeca059663353506d1ccc29807880366d579b054c6",
+      "pixels_equal": true,
+      "idat_sha256": "25053b480dd8433038ae38a25a9c51153147e7af8895a473fc23426ac58a8022",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "9afbaa4a44e6097b6f6bb5d9a2793117d0bd63f093d208971dd24c60252d7044",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/01-floor1-lower-upright-paths.png",
+      "original_sha256": "55858b039b6a13e1d83ea2f2ea9aa2de568563a5a9665ae0f6266153cca5ecd3",
+      "publication_sha256": "a9457f540b9a50b3ca9cf8490795cee7f9f1f442b00b897e410e12589b28bf44",
+      "rgba_pixel_sha256": "91faa01cec801bf750cb35c7a6ee65beb8abab7836e3d7b67e72bcf6ff05edc5",
+      "pixels_equal": true,
+      "idat_sha256": "be22024729625671f9d65449545015483b01069ba180f55686a7c93cc8043b41",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "938bb217d9fd3aa229eec5b6e9370ad7d4fc780fa9bf1899bfe8f014c5a2adaa",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/02-floor1-ceiling-inverted-paths.png",
+      "original_sha256": "38961e4c7a44ac2dde15c01abddb040483876fd9110de748140f4ab23d065d76",
+      "publication_sha256": "ec7037149656c93d98c625d1c204fa20b2791bdbe339d0a2fb06c189dac38e43",
+      "rgba_pixel_sha256": "cd3a47d64833ed81148cba46e6e6b28ae9a09836d23ab82110f5b55e536260e7",
+      "pixels_equal": true,
+      "idat_sha256": "524783b9255d0f5dc189138e2246e2af115ad43fa1f7e3c18bea7b00e1ed52a0",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "f87b3987bbf74e6f7424348da6014f59964e33534cef362b327db498123970c8",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/03-floor2-lower-upright-paths.png",
+      "original_sha256": "45939e8d3171833fe65533e011f345b0179c85a2cbdf3d734406b63bb6da93aa",
+      "publication_sha256": "ceee5cbc4b348c64b81c6fcdeb5c8dcfe6ea54717dcfb969889c3ab7301490d9",
+      "rgba_pixel_sha256": "589cdee9260974f6a09f33e3c58d477564f682da0b0b07ca42d4ec82eb037716",
+      "pixels_equal": true,
+      "idat_sha256": "e947511343a30c40c73fb838f7f6183da87d088e9241f7c48d61abbd97ded037",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "c699da2bfebc484bec585e55964a1a1b2717d4debec4e3d73f1b6aa84f56ee70",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/04-floor2-ceiling-inverted-paths.png",
+      "original_sha256": "9646a63ccff588f115b646d4dd0256d43e4db43dccc1408a9401fbc88bc53bc8",
+      "publication_sha256": "4ed6a15acde8b54e5e818ff07b7ac88e115227d6cf2a41bb7846b662fb0a316c",
+      "rgba_pixel_sha256": "41b2a6449c9bf35933d9cca5c3fe07486b398fad17b5df7cd98b81d4b1b05fb6",
+      "pixels_equal": true,
+      "idat_sha256": "5e654ecbf47b5146bec81d06c560ca703c216e8b4fe910bbf7d09cd30e69b374",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "5bf3d40fb030ef861ee7784883e7451939e6851f7117bcf9191e4e39473b9ed6",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/05-floor3-lower-upright-paths.png",
+      "original_sha256": "af6036c08274058cd5d87a830be415fb10d16b54101d02e649a1b8d37e3b6f28",
+      "publication_sha256": "aa40a15e736b253c4afd652792781af88796e2e7e2e5a5484cef4fd2f1bc446a",
+      "rgba_pixel_sha256": "f91850bf19611475348133e1a5dcbb5c23d662179db92e08598aed608d28ac32",
+      "pixels_equal": true,
+      "idat_sha256": "2033736f0b1ccca9ddf575cd11b612aa623d6c35e72ae426068ff0f6f83fa8d1",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "6c23d0315693d841cf8c60a05dd536b964871bc771b70e8f69f3f16639a96284",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/06-floor3-ceiling-inverted-paths.png",
+      "original_sha256": "97baea6fec78b75f27f8cdb5e8411bb54b77219fdd728301a7f33f32310cf268",
+      "publication_sha256": "399ec7aae2d1a904530c7ee7b10db7203c2d3f31261170c858f126c858e8191d",
+      "rgba_pixel_sha256": "0ac6c817bba7511be796176c89361e8c32e3204faae0bd3a94ed978f33ac839c",
+      "pixels_equal": true,
+      "idat_sha256": "0948cc5cd605fc6b2d8415db9f7d6414a24e770d40555a4c66508eb110108c76",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "c955f6b7654200adf56a2911104374599f35fc3995788d127ba29f8a3e8d6a72",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/07-floor4-lower-upright-paths.png",
+      "original_sha256": "f62b5315c993838c1362fd5258864950b6c330e039ed443d4fbf4780ad3650e6",
+      "publication_sha256": "5e042a7be041b2c1ebaced08e00951a6e58ca014210a739b2ed448935faad1ce",
+      "rgba_pixel_sha256": "4ac924d04e9b3a9b94f85524d59ec0b54c81328726da93080752506bbe8e9914",
+      "pixels_equal": true,
+      "idat_sha256": "bbdbf52e8e4ca6fb90709e43f4e2ae9eabe4d29320d29fa138198435ff7ed0b9",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "330e5c2562e53580b1f78f0fc481e98b00826fc9792d7cb4c897bfe233936b21",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/08-floor4-ceiling-inverted-paths.png",
+      "original_sha256": "f5e16fc3470f998fa8f04492ecdecddbbdc1239092f0099784d307779d948f76",
+      "publication_sha256": "6daab0d10ee26b0eed6a985f5bfe38a0ba36e3156ca4c65756e2a302ca04e36d",
+      "rgba_pixel_sha256": "68112aef50b9a58fee4db6b0fbe2311e0b83e6d3afdba4f5d8af925883a70cf8",
+      "pixels_equal": true,
+      "idat_sha256": "a841f3bbac0b8d692650da9e1779373f1b47156dd649bc073741c99d960d2cf0",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "3eba2555bec0efda519bcbb1154ab8083cf5cc364a91d0bb614575327991bf2b",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-0.15mm/slicer/09-roof-parapet-upright-paths.png",
+      "original_sha256": "eebec5b49c33ddcc01ff11137dc3e2f8d7501b68a3b37114e46a0c580afdc674",
+      "publication_sha256": "1698538d87dc1725c3cef7106bfeda185d50c202aa994ab23bbfa22fab3494cc",
+      "rgba_pixel_sha256": "5639a085b7630e62591754474b3932f1c6504b2d8bf37413d8a430793de146b9",
+      "pixels_equal": true,
+      "idat_sha256": "55f0b69b253f58ee73b443ac190b604fd84cfcb71d61fa5be30e3bc748ee8d53",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "6479dc246cd0296f8eac53c84120aa74443956223e231ade8b737297e985cb35",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/history/slicer-v3/09-roof-parapet-upright-paths.png",
+      "original_sha256": "fdbd750ccdea258c42473c3dd23f7547506344d9b2799c39ecadd0eda7113af2",
+      "publication_sha256": "322c4657d236cf2d16e0581e1eaba5b40f8ad5b977b25053900693f558052ac6",
+      "rgba_pixel_sha256": "8c8cd937651c9abb18cba60c3788a09f5522763bba8bc5ff951c44f1601a8be6",
+      "pixels_equal": true,
+      "idat_sha256": "4889a317ff4ad30b53dedc1622d8a92fa23d29c07951f04cf117fda71610334a",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "8a60968bafd11208b1b33d2236b6cc6e948543e1caf04255dee75c799776c678",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/sections.png",
+      "original_sha256": "6d7302879e8af1726f914bdffe20370108d766eddc4a3ac86827c67d7b940d6b",
+      "publication_sha256": "499b19e39dae39cf78a888e2531c0227e27888c789a00c574e8334e50639fd77",
+      "rgba_pixel_sha256": "3046ba93bce0fea2374913eeca059663353506d1ccc29807880366d579b054c6",
+      "pixels_equal": true,
+      "idat_sha256": "25053b480dd8433038ae38a25a9c51153147e7af8895a473fc23426ac58a8022",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "9afbaa4a44e6097b6f6bb5d9a2793117d0bd63f093d208971dd24c60252d7044",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/01-floor1-lower-upright-paths.png",
+      "original_sha256": "19c77291bab432b01e8a276ed063fa36d5409e935ce33dfd03b4233da0aa635c",
+      "publication_sha256": "94210432fe8ab88a03a719001be86d0bd29a5353948837e09bdeffcc42fd8958",
+      "rgba_pixel_sha256": "f176d3b6d30f40009712f15bb90cc039262e99fa688eaccebcd954ba5cb8f729",
+      "pixels_equal": true,
+      "idat_sha256": "883b3da2467c62bd55ff84961ea0d5f933331ef3e91be2cc37c65cf4a699e2e0",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "31681319c734087cf9c031c7b4deb070921cf769d01568db96011012b1c7a724",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/02-floor1-ceiling-inverted-paths.png",
+      "original_sha256": "104d3ce9f7b4aa3366dfbb1828ad7597f4615d945ead27aca184ebec5e2ea81d",
+      "publication_sha256": "f2973c530a06958719cd1b2d1b46e4b48e1d5b64e6e5831c0c4cbda6beb31dc5",
+      "rgba_pixel_sha256": "46825d3aac31b266cff3e96b80919662ef6e54dec0be69d755e1ec9de3383082",
+      "pixels_equal": true,
+      "idat_sha256": "df80ad004c008b45f1208639f1d1d5504dc3b20e8243b80d3b1f63e00fefec1f",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "053833b2515e3b4283f52e30e39c7e2bb0e161141635f205cae702b2e38eb846",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/03-floor2-lower-upright-paths.png",
+      "original_sha256": "c6acecb7a30a750e888eb79031eb6fb1ff1fcae14c7578059f0bf257228597f5",
+      "publication_sha256": "192eb334f00d7268877948d72b218f538a04cb83645ba5ab2a1f2c6b0fd08a60",
+      "rgba_pixel_sha256": "6e471155de6bc878c82b4198b296543d2c7b1d27055cbb0647f2ca880d54a1b4",
+      "pixels_equal": true,
+      "idat_sha256": "2a53cb197cb8315267661dc66243bac09ca98f708c858c490600ea6dd589d0d9",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "f075f216b340a47a766a3ff84a1e59990979e5764fb1a07dac106f0ca418fc5e",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/04-floor2-ceiling-inverted-paths.png",
+      "original_sha256": "8e3bb223e68c435923484f35cb0732c5481137c29aeb296ddda8029552386564",
+      "publication_sha256": "aef250bb911098a4ac4c8163b3831beba63ef8c8adc7f5c79f698c97c5941226",
+      "rgba_pixel_sha256": "8aebe223b8201dd260157ab3a114a88f62ebb39168c166e7e86c85cc12b508f3",
+      "pixels_equal": true,
+      "idat_sha256": "d59af7b9c5af708862417670aeaedfd7a2d54d36df9c3d7e78d36aa0c6b18f2e",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "a29a7019bb34ab4cc19c7b52425b78a745effac876fbc26afb5fb09a6f969e00",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/05-floor3-lower-upright-paths.png",
+      "original_sha256": "0d72ddd6eb69444a9b85cb206d39058923ef9582e0a05d6dae71edc522b7c822",
+      "publication_sha256": "02908f6d830be118ecb91a09f92a80583be353f5311ae1d9f893ef4d41af1830",
+      "rgba_pixel_sha256": "52e9ad622e49a23d7b1c18ab0c223ba06a8ac05fb873d03ced49716fbd1c6b2a",
+      "pixels_equal": true,
+      "idat_sha256": "2fcc04a53736a4412f02dd170376b8d70946888da185941c335c3d7ed0e5e0a8",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "d7cee6931d0c651afa0d67db85abc95e68fc372a1e3b667d9050262571117e10",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/06-floor3-ceiling-inverted-paths.png",
+      "original_sha256": "394aaa99f2f72686f703124d47b791e4e045c3d86878fe26002ead614777de74",
+      "publication_sha256": "12b8794fdfc5e923c6e0b646ecb35f81a6a3ea289f6b7ebf3331d9181189d3de",
+      "rgba_pixel_sha256": "c542c0fbcd97ec28b898a1bb42dd42d38fc87676b9b26d7dbe571f36bafe7f2f",
+      "pixels_equal": true,
+      "idat_sha256": "27a2e24c71c30b65dea4808f1c193dd989d7561798f336aea322819d0409f6a1",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "71bc5f0d07a8d2caea3f7158038c9ce741e9eabbd5fa0e829c29c0645fbff252",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/07-floor4-lower-upright-paths.png",
+      "original_sha256": "26c83f918f6fff86eb0923a538dddd312cbd4fcce946691b9e98ac9fe7b8564a",
+      "publication_sha256": "971d40b321478f56dafc1e6144364da766c2e0edaf2dd1214b303bdc12e21727",
+      "rgba_pixel_sha256": "77d2abfc3eaef437f2af64f64a0472192a78aef4695734695ba1759b3555e490",
+      "pixels_equal": true,
+      "idat_sha256": "5ccb99804db5686e2fb95b2f76eee36c9ceba1bcb98511b000483cb9ab2e22ea",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "3837bda54afc2b6a7f8149ba9c348089e3e4ec5cba0b973ed6329ebdb9519bc6",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/08-floor4-ceiling-inverted-paths.png",
+      "original_sha256": "413a2657b9ce357dd001ef1c348d382c9dfcbad8cf6d3c06833ad1c0522e834d",
+      "publication_sha256": "60dffb2de1f5c0e4fcb1d22799428deef104ba2088ca0453b636d18b9c722de1",
+      "rgba_pixel_sha256": "b03524f2fc5df4ce9ca444149333c749e20172b48894848ccec095de9e5ef218",
+      "pixels_equal": true,
+      "idat_sha256": "1db25016cad01ee4ad36761c5e723abb43e23d3bff6df7a9b51a7963cd452a3d",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "9775499bb64b34c127033f19f30e2c903761942fdbc0886a5c650115ba330d09",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    },
+    {
+      "file": "qa/slicer/09-roof-parapet-upright-paths.png",
+      "original_sha256": "cd3fdf5fa640b3ff4cb929600206e985ea2ac080385fd204ad490a5082ae7004",
+      "publication_sha256": "a7d3dc7df5be15ae46c606c5e894b42e19a4c970f3e6fad8241ed524ed17d5b4",
+      "rgba_pixel_sha256": "ad8de9890a64391dd353be6a5d15dda568a6ebc6ba66bcda1402b5cfd4e773aa",
+      "pixels_equal": true,
+      "idat_sha256": "799f3dd0c2fd14cd581e0cef4c811415fe7c9dc41cf84a64f7cd361c02f95e75",
+      "color_chunks_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained_chunks_sha256": "850335550354c4098f21262a287c9ced5c5a3a56d0f73164cbdd1cc7c36910fd",
+      "idat_color_and_all_other_retained_chunks_byte_equal": true,
+      "removed_metadata_chunks": [
+        {
+          "type": "tEXt",
+          "key": "Software"
+        }
+      ]
+    }
+  ],
+  "png_pixel_proof_count": 25,
+  "source_reproducibility": {
+    "metadata_only_ast_comparison_pass": true,
+    "future_generator_stamp_flags": "New renders disable use_stamp and all boolean use_stamp_* descriptive metadata fields; existing delivered scene stamp fields remain original.",
+    "future_pngs": "sanitize_png_metadata runs immediately after rendering and before preview manifest hashes.",
+    "future_scene": "sanitize_scene_metadata runs after final save, derives offsets from the saved DNA and zeroes only the same metadata arrays.",
+    "new_metadata_only_dependency": "zstandard==0.24.0",
+    "historical_runtime_versions_unchanged": true,
+    "host_fragment_detector": "Generic ISO-date and task-number directory patterns; Users/Documents/AppData checks retained. No task-specific date or task directory constants.",
+    "files": {
+      "source/build_scene.py": "300de05f8bb05ab5df28c1e0ad0b3be93bac9cf50cb931563a4ad21bb15a568b",
+      "source/sanitize_scene_metadata.py": "2fb98c340f51ce9882cc037a71f522a6c90944a442842b1a8befc04e4abdfdab",
+      "source/blend_dna.py": "d56b4d47877774fe047617aefc27f407779b94c376f24b540d535399cdd7bf0f",
+      "requirements.txt": "db73b6bf571749441ac652ebdb33ac411b4d48cfd7456b0e47426149f04c3bc6"
+    }
+  },
+  "print_stls": [
+    {
+      "file": "01-floor1-lower-upright.stl",
+      "sha256": "939bc8b80290e9d062174908507dc8528b5692108e3a751b468ce9b8d771f314",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "02-floor1-ceiling-inverted.stl",
+      "sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "03-floor2-lower-upright.stl",
+      "sha256": "064f1c9963b70358309ace75af82282ef21cecea701500bee211f187ba39212e",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "04-floor2-ceiling-inverted.stl",
+      "sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "05-floor3-lower-upright.stl",
+      "sha256": "064f1c9963b70358309ace75af82282ef21cecea701500bee211f187ba39212e",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "06-floor3-ceiling-inverted.stl",
+      "sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "07-floor4-lower-upright.stl",
+      "sha256": "064f1c9963b70358309ace75af82282ef21cecea701500bee211f187ba39212e",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "08-floor4-ceiling-inverted.stl",
+      "sha256": "ce4a3ea2d331d1172fac7fa95699fb150a320974233cb204cacc2e95d9702c95",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "09-roof-parapet-upright.stl",
+      "sha256": "84e785772ce5b9070072d77fd9528a3d5c4447d99ec5efc479f9032c240663a7",
+      "identical_fixed_candidate": true
+    },
+    {
+      "file": "assembly-reference-do-not-print.stl",
+      "sha256": "180af3b77464e4714fca47b1592fa6a8e81a6e6abcbb13c230ce33d68bb46ce5",
+      "identical_fixed_candidate": true
+    }
+  ],
+  "retained_limits": [
+    "No physical print, fit or support-removal test was performed.",
+    "Manufacturing thin-feature residuals and overhang limits remain unchanged.",
+    "Official Library upload and round-trip verification were not performed; parent removed that publication prerequisite."
+  ],
+  "rejected_private_stage_note": "An intermediate standard bpy re-save removed an unused zero-user Material and was rejected. It is not the delivered scene and is not claimed as an equality PASS."
+}

@@ -78,7 +78,7 @@
 
 包含 A1a、A1b、A1c 建築群；保留三面主翼、中庭、前端入口量體與分段山牆屋頂。比例按公開外觀估算，未見立面及連廊採簡化處理。 含底座尺寸約 **150 × 148 × 57.1 mm**。
 
-- [實照近似配色展示主版：七細材質、八語意網格，可繼續編輯](buildings/bajia-a1-science-engineering-1/appearance/README.zh-TW.md)：灰綠屋面、深藍PV與灰立面分開顯示，展示不受四色限制。
+- [實照近似配色展示主版：七細材質、八語意網格，可繼續編輯](buildings/bajia-a1-science-engineering-1/appearance/README.zh-TW.md)：灰綠屋面、深藍PV與灰立面分開顯示，展示不受四色限制。另附 [通用七材質 3MF](buildings/bajia-a1-science-engineering-1/appearance/a1-appearance-core.3mf)，保留八區可編輯材質指派，未配置列印工具。
 - [建築說明、來源與列印限制](buildings/bajia-a1-science-engineering-1/README.zh-TW.md)
 - 可選製造衍生版：[四色／四工具分色檔、實際預覽與完整限制](buildings/bajia-a1-science-engineering-1/multicolor/README.zh-TW.md)：沿用此套母體，不另計一套。檔案條件 GO；無支撐路線 NO-GO，支撐生成比較未達真機放行。
 - [STL 模型](buildings/bajia-a1-science-engineering-1/model.stl)・[Blender 場景](buildings/bajia-a1-science-engineering-1/scene.blend)・[網格驗證](buildings/bajia-a1-science-engineering-1/validation.json)

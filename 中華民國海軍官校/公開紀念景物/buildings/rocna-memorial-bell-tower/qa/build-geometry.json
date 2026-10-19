@@ -1,0 +1,306 @@
+{
+  "units": "millimeter",
+  "real_world_scale": "not measured; all model dimensions are proportional estimates",
+  "materials": [
+    {
+      "id": "paint_warm_white",
+      "srgb": "#E5E7DD",
+      "interpretation": "白柱、環梁及屋帽底面近似"
+    },
+    {
+      "id": "cap_red",
+      "srgb": "#C82327",
+      "interpretation": "紅帽頂與頂珠近似"
+    },
+    {
+      "id": "upper_stone_gray_green",
+      "srgb": "#858D83",
+      "interpretation": "上層圓台鋪面近似"
+    },
+    {
+      "id": "dark_step_fascia",
+      "srgb": "#434B46",
+      "interpretation": "階台深色立邊近似"
+    },
+    {
+      "id": "lower_paving_slate",
+      "srgb": "#6C7770",
+      "interpretation": "下層圓台灰綠鋪面近似，省略石板紋理"
+    },
+    {
+      "id": "bell_dark_bronze",
+      "srgb": "#292B24",
+      "interpretation": "逆光吊鐘深色近似，非合金鑑定"
+    },
+    {
+      "id": "emblem_gold",
+      "srgb": "#B89844",
+      "interpretation": "可見徽記金色側葉的低細節替代"
+    },
+    {
+      "id": "emblem_silver",
+      "srgb": "#A4AAA4",
+      "interpretation": "可見徽記灰銀形狀的低細節替代"
+    },
+    {
+      "id": "emblem_blue",
+      "srgb": "#24465C",
+      "interpretation": "可見徽記中央深藍近似"
+    }
+  ],
+  "assembled_bounds_mm": [
+    [
+      -50.0,
+      -50.0,
+      0.0
+    ],
+    [
+      50.0,
+      50.0,
+      111.94999980926514
+    ]
+  ],
+  "assembled_dimensions_mm": [
+    100.0,
+    100.0,
+    111.94999980926514
+  ],
+  "source_scope": "Three official public memorial views; four curved columns, circular open ring, two-tier round plinth, photo-interpreted octagonal cap and suspended bell. Two visible emblem positions simplified; hidden embellishments omitted.",
+  "manufacturing": "Four separate candidates; native orientations are not slicer-validated. No physical print, fitted joint, support removal or tool mapping verified.",
+  "parts": [
+    {
+      "id": "01-two-tier-circular-plinth",
+      "stl": "parts/01-two-tier-circular-plinth.stl",
+      "stl_sha256": "d0d6b47be0c288a06e95969c3fbaeadbfcc4c8c7eeb50e874f692121226a8af2",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -50.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -50.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          100.0,
+          5.0
+        ]
+      ],
+      "assembly_note": "upright circular plinth; estimated stone thickness",
+      "geometry_check": {
+        "triangles": 1532,
+        "vertices": 768,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 28437.661705879163,
+        "connected_components": 1,
+        "zero_area_triangles": 0,
+        "pre_export_simplification_tolerance_mm": 0.0001
+      },
+      "material_triangle_counts": {
+        "dark_step_fascia": 638,
+        "lower_paving_slate": 512,
+        "upper_stone_gray_green": 382
+      }
+    },
+    {
+      "id": "02-four-curved-columns-ring-and-crossbeam",
+      "stl": "parts/02-four-curved-columns-ring-and-crossbeam.stl",
+      "stl_sha256": "7cc8112cafd90e2052e997cbe0bb431364d8b718c90b02e7d421162dc092cd6c",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -17.359472274780273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -17.359472274780273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          34.71894454956055,
+          34.71894454956055,
+          93.5
+        ]
+      ],
+      "assembly_note": "upright frame candidate; intermediate ring and top beams need support assessment",
+      "geometry_check": {
+        "triangles": 4648,
+        "vertices": 2318,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 8597.601983450613,
+        "connected_components": 1,
+        "zero_area_triangles": 0,
+        "pre_export_simplification_tolerance_mm": 0.0001
+      },
+      "material_triangle_counts": {
+        "paint_warm_white": 3362,
+        "emblem_gold": 228,
+        "emblem_silver": 552,
+        "emblem_blue": 506
+      }
+    },
+    {
+      "id": "03-octagonal-red-cap",
+      "stl": "parts/03-octagonal-red-cap.stl",
+      "stl_sha256": "943afbd6db4789fdbe7b0cd6b5605d60bec397f17f7cb6fa99b52c6d928f532b",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -20.325349807739258
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -20.325349807739258
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          98.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          40.650699615478516,
+          40.650699615478516,
+          13.449999809265137
+        ]
+      ],
+      "assembly_note": "cap underside down; estimated solid roof with white underside and red top",
+      "geometry_check": {
+        "triangles": 1182,
+        "vertices": 593,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 6346.378948382756,
+        "connected_components": 1,
+        "zero_area_triangles": 0,
+        "pre_export_simplification_tolerance_mm": 0.0001
+      },
+      "material_triangle_counts": {
+        "cap_red": 1176,
+        "paint_warm_white": 6
+      }
+    },
+    {
+      "id": "04-suspended-bell",
+      "stl": "parts/04-suspended-bell.stl",
+      "stl_sha256": "f7bcf06ef074de539ad5dbc3effe2360b07ea6aa151a1f9c465e3a6d36e1128b",
+      "assembly_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.6500000953674316
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.6500000953674316
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          88.3
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          5.300000190734863,
+          5.300000190734863,
+          7.5
+        ]
+      ],
+      "assembly_note": "bell mouth rim on bed; hollow mouth, thickened rigid suspension pin, not a working mechanism",
+      "geometry_check": {
+        "triangles": 1814,
+        "vertices": 909,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 38.337910970868016,
+        "connected_components": 1,
+        "zero_area_triangles": 0,
+        "pre_export_simplification_tolerance_mm": 0.0001
+      },
+      "material_triangle_counts": {
+        "bell_dark_bronze": 1814
+      }
+    }
+  ]
+}

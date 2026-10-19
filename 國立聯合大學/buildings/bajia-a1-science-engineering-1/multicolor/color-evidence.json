@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "status": "public documentation draft; candidate colors only",
+  "building_id": "bajia-a1-science-engineering-1",
+  "building_name": "國立聯合大學八甲校區 A1 理工學院一館建築群",
+  "scope": "依官方真實建築照片，對既有近似模型提出材質色區；不是測繪、校準色、施工材質鑑定或現況普查。",
+  "rgb_policy": {
+    "encoding": "sRGB 8-bit RGB, each channel 0–255",
+    "method": "人工視覺選擇的候選顯示色；不是照片取樣後得到的校準反射色。",
+    "not_claimed": [
+      "RAL、NCS 或塗料色號",
+      "真實材料的精確 RGB、反射率或施工規格",
+      "耗材實樣與螢幕顏色完全一致",
+      "2026 年全棟現況配色"
+    ]
+  },
+  "source_pages": [
+    {
+      "id": "official_album",
+      "title": "聯大秘書室：建築風貌 A.理工學院",
+      "url": "https://secretary.nuu.edu.tw/p/132-1003-1097.php?Lang=zh-tw"
+    },
+    {
+      "id": "official_history",
+      "title": "聯大校史：校園規劃／理工學院完工後",
+      "url": "https://nuuarchives.nuu.edu.tw/p/16-1097-27990.php?Lang=zh-tw"
+    }
+  ],
+  "source_photos": [
+    {
+      "id": "P23",
+      "title": "理工學院館外觀 (23)",
+      "page_id": "official_album",
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/97/1097/gallery_1097_9145857_26024.jpg",
+      "view": "前斜空拍，可見 U 翼、中庭、前低棟、屋面及太陽能板。",
+      "exif_capture_date_self_reported": "2025-03-10"
+    },
+    {
+      "id": "P24",
+      "title": "理工學院館外觀 (24)",
+      "page_id": "official_album",
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/97/1097/gallery_1097_8510044_26024.jpg",
+      "view": "較接近正面的高視角，前兩端低棟、入口低棟及中庭後翼分區清楚。",
+      "exif_capture_date_self_reported": "2025-03-10"
+    },
+    {
+      "id": "P16",
+      "title": "理工學院館外觀 (16)",
+      "page_id": "official_album",
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/97/1097/gallery_1097_2688330_26022.jpg",
+      "view": "前側較低斜視，補充低棟、側牆、基部與青綠玻璃。",
+      "exif_capture_date_self_reported": "2025-03-10"
+    },
+    {
+      "id": "P22",
+      "title": "理工學院館外觀 (22)",
+      "page_id": "official_album",
+      "url": "https://secretary.nuu.edu.tw/var/file/3/1003/gallery/97/1097/gallery_1097_4054454_26024.jpg",
+      "view": "中庭近視，可辨窗間紅磚色、灰色柱帶、機械工程系前廊及屋面與板列差色。",
+      "exif_capture_date_self_reported": "2025-03-10"
+    },
+    {
+      "id": "H1",
+      "title": "校史：理工學院完工後",
+      "page_id": "official_history",
+      "url": "https://nuuarchives.nuu.edu.tw/var/file/97/1097/img/828/06image043.jpg",
+      "view": "較早外觀的低解析交叉參考。",
+      "exif_capture_date_self_reported": null
+    }
+  ],
+  "date_and_color_limits": [
+    "P16、P22、P23、P24 的 EXIF 自述拍攝日期為 2025-03-10；未核實原始相機檔或時區，不能據此保證目前配色。",
+    "H1 的照片拍攝日期未知；所在校史頁的工程／驗收年代不是該照片的已核實拍攝日期。",
+    "光照、陰影、曝光、後製、污漬、老化、玻璃反射和窗簾都會改變可見色；沒有現場色卡或油漆規格。",
+    "照片只支持可見表面的定性色區；未知背面、精確色帶高度、邊界與材料施工規格仍未核實。"
+  ],
+  "fine_material_identities": [
+    {
+      "id": "wall_and_light_frame",
+      "name": "米白／淺暖灰牆與淺色框線",
+      "candidate_rgb": [216, 214, 207],
+      "logical_tool": 1,
+      "source_ids": ["P23", "P24", "P16", "P22"],
+      "regions": [
+        "前兩端低棟兩排小窗附近的上部亮牆。",
+        "前偏左入口低棟的大部分亮牆、U 翼上部及可辨淺色柱梁。",
+        "多數銀白／淺灰窗框及較亮的檐口收邊；與亮牆合併是本示範的色數近似。"
+      ],
+      "limits": "不是全棟牆面同色，也不是每條框線都已逐一定位；未知面採中性近似時須保留估計說明。"
+    },
+    {
+      "id": "brick_terracotta",
+      "name": "磚橘紅／紅褐貼面",
+      "candidate_rgb": [169, 103, 84],
+      "logical_tool": 2,
+      "source_ids": ["P23", "P24", "P16", "P22"],
+      "regions": [
+        "前兩端低棟各一條較厚的中段腰帶，位於上部米白區與下部深灰大窗基部之間；可見轉角延續。",
+        "U 翼朝中庭下部跨數層的紅磚色窗間區，被灰色直柱及水平樓帶切分。",
+        "後翼朝中庭下幾層的紅磚色窗間區；中央機械工程系前廊中間窄直窗附近的局部貼面。"
+      ],
+      "limits": "不能套成全模型等高細紅帶，不能把前低棟整個下半部塗紅；照片不足以確證結構紅磚或貼面施工規格。"
+    },
+    {
+      "id": "dark_facade",
+      "name": "深／中灰立面、柱帶與基部",
+      "candidate_rgb": [99, 106, 108],
+      "logical_tool": 3,
+      "source_ids": ["P16", "P22", "P23", "P24"],
+      "regions": [
+        "前兩端低棟下部灰牆與高直玻璃窗周邊較大框帶。",
+        "U 翼可見的大灰色柱帶及水平區。",
+        "中庭機械工程系前廊下部與入口柱框。"
+      ],
+      "limits": "灰色斑點與粗顆粒外觀不足以鑑定石材、洗石子、磁磚或塗裝；陰影不自動視為另一材質。"
+    },
+    {
+      "id": "metal_roof_gray_green",
+      "name": "灰綠／藍灰金屬外觀屋面",
+      "candidate_rgb": [112, 132, 126],
+      "logical_tool": 3,
+      "source_ids": ["P23", "P24", "P16", "P22"],
+      "regions": [
+        "主翼分段斜屋面、前低棟斜蓋、兩端塔亭頂及部分連廊頂。"
+      ],
+      "limits": "屋面不是橘紅色；平屋頂裸露處較中性灰。四色列印中與深灰合併，數位材質身分仍分開。"
+    },
+    {
+      "id": "photovoltaic_blue_violet",
+      "name": "深藍／藍紫太陽能板",
+      "candidate_rgb": [57, 73, 108],
+      "logical_tool": 3,
+      "source_ids": ["P23", "P24", "P22"],
+      "regions": [
+        "既有屋面板列凸條所代表的太陽能板區，照片有淺色格線與銀白邊框。"
+      ],
+      "limits": "太陽能板和灰綠屋面實際不同色；四色合併是製造取捨，不能說原建築全屋頂同色。"
+    },
+    {
+      "id": "display_plinth",
+      "name": "中性深灰展示底板",
+      "candidate_rgb": [82, 88, 92],
+      "logical_tool": 3,
+      "source_ids": [],
+      "regions": [
+        "模型的整片展示底板。"
+      ],
+      "limits": "這是展示選擇，不是由照片量得的實景基座、場地鋪面或地形顏色；不得冒稱建築原材料。"
+    },
+    {
+      "id": "glass_teal",
+      "name": "青綠／藍綠窗玻璃近似",
+      "candidate_rgb": [36, 142, 145],
+      "logical_tool": 4,
+      "source_ids": ["P23", "P24", "P16", "P22"],
+      "regions": [
+        "前兩端高直窗、入口低棟及 U 翼／後翼可辨的窗玻璃區。"
+      ],
+      "limits": "玻璃可見色受反射、窗簾與陰影影響，不是每片實測同色或已驗證透明耗材；淺色窗框不一律改黑。"
+    }
+  ],
+  "four_tool_merge": [
+    {
+      "logical_tool": 1,
+      "name": "米白／淺暖灰",
+      "candidate_rgb": [216, 214, 207],
+      "fine_material_ids": ["wall_and_light_frame"],
+      "tradeoff": "亮牆、淺柱梁及銀白框線的小色差合併。"
+    },
+    {
+      "logical_tool": 2,
+      "name": "磚橘紅／低飽和紅褐",
+      "candidate_rgb": [169, 103, 84],
+      "fine_material_ids": ["brick_terracotta"],
+      "tradeoff": "按部件與表面保留紅磚色區，不能使用一組全局等高紅帶。"
+    },
+    {
+      "logical_tool": 3,
+      "name": "深板岩灰",
+      "candidate_rgb": [86, 97, 102],
+      "fine_material_ids": ["dark_facade", "metal_roof_gray_green", "photovoltaic_blue_violet", "display_plinth"],
+      "tradeoff": "有意合併灰綠屋頂、藍紫PV、灰立面及展示底板；這些原本不是同色，細材質身分不得刪成同一來源材質。"
+    },
+    {
+      "logical_tool": 4,
+      "name": "青綠／藍綠",
+      "candidate_rgb": [36, 142, 145],
+      "fine_material_ids": ["glass_teal"],
+      "tradeoff": "玻璃反射、窗簾及暗窗差異簡化為一組可辨青綠色。"
+    }
+  ],
+  "implementation_limits": [
+    "七個細材質身分是色區的語義分組；工具3仍合併四種不同來源／展示身分。",
+    "logical_tool 1–4 只是四色對照，不是任何特定機器的噴頭、工具碼、換色或耗材設定。",
+    "只對既有近似幾何作有界材質分區；不為重現照片色帶而新增未知建築量體。",
+    "來源照片不隨本草稿提供、不作貼圖、不嵌入對外模型；公開連結不等於重製授權。"
+  ]
+}

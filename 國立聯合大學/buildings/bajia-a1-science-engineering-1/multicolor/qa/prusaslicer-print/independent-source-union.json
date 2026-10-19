@@ -1,0 +1,131 @@
+{
+  "source_path_relative": "model.stl",
+  "source_sha256_before": "f25654284af62f9f454421da0dbb1a21bcd9b0645bbfc7c6deb2df3f327f0023",
+  "native_path_relative": "multicolor/a1-four-tool-PRINT.3mf",
+  "native_sha256_before": "7cf863dd73dfa74fefd9522455cc79f01fcf0e58ca348cdda406884a760ee2df",
+  "roundtrip_sha256": "0049cc71204eaaaa13ec5d747ee98372d0c87c0a5cabdd9a673ffa51ec2cc530",
+  "method": "Parse raw source binary STL as exact float32 coordinates promoted to float64. Reconstruct fixed native and actual-export volume triangles in world coordinates; merge exact equal vertices, construct Manifold Mesh64, and boolean-union groups. Manifold may simplify degenerate/unnecessary vertices internally; raw topology/zero-area results are reported separately.",
+  "source_binary_stl_triangles": 10638,
+  "source_manifold": {
+    "status": "Error.NoError",
+    "is_empty": false,
+    "volume_mm3": 502730.8731529508,
+    "triangles_after_boolean_kernel_simplification": 10638
+  },
+  "native_parts": {
+    "01-light-wall": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 374578.1281424228,
+      "triangles_after_boolean_kernel_simplification": 14280
+    },
+    "02-brick": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 9132.282766849732,
+      "triangles_after_boolean_kernel_simplification": 5600
+    },
+    "03-slate": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 113698.6113006084,
+      "triangles_after_boolean_kernel_simplification": 9484
+    },
+    "04-glazing": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 5321.850943069814,
+      "triangles_after_boolean_kernel_simplification": 5192
+    }
+  },
+  "roundtrip_parts": {
+    "01-light-wall": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 374578.12644296675,
+      "triangles_after_boolean_kernel_simplification": 14280
+    },
+    "02-brick": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 9132.289469989559,
+      "triangles_after_boolean_kernel_simplification": 5600
+    },
+    "03-slate": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 113698.60721655576,
+      "triangles_after_boolean_kernel_simplification": 9484
+    },
+    "04-glazing": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 5321.859496118896,
+      "triangles_after_boolean_kernel_simplification": 5192
+    }
+  },
+  "native_group_union": {
+    "status": "Error.NoError",
+    "is_empty": false,
+    "volume_mm3": 502730.8731529508,
+    "triangles_after_boolean_kernel_simplification": 14426
+  },
+  "roundtrip_group_union": {
+    "status": "Error.NoError",
+    "is_empty": false,
+    "volume_mm3": 502730.870114371,
+    "triangles_after_boolean_kernel_simplification": 16518
+  },
+  "source_vs_native_union": {
+    "reference_minus_test": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 1.1368683772161603e-13,
+      "triangles_after_boolean_kernel_simplification": 28
+    },
+    "test_minus_reference": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": -1.3043038871174417e-13,
+      "triangles_after_boolean_kernel_simplification": 26
+    },
+    "symmetric_difference_volume_mm3": 2.441172264333602e-13
+  },
+  "source_vs_actual_prusa_union": {
+    "reference_minus_test": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 0.008950940547387203,
+      "triangles_after_boolean_kernel_simplification": 22440
+    },
+    "test_minus_reference": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 0.005912360910575607,
+      "triangles_after_boolean_kernel_simplification": 9662
+    },
+    "symmetric_difference_volume_mm3": 0.014863301457962809
+  },
+  "native_union_vs_actual_prusa_union": {
+    "reference_minus_test": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 0.008950940601565859,
+      "triangles_after_boolean_kernel_simplification": 24214
+    },
+    "test_minus_reference": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 0.005912360911337351,
+      "triangles_after_boolean_kernel_simplification": 10666
+    },
+    "symmetric_difference_volume_mm3": 0.01486330151290321
+  },
+  "source_sha256_after": "f25654284af62f9f454421da0dbb1a21bcd9b0645bbfc7c6deb2df3f327f0023",
+  "native_sha256_after": "7cf863dd73dfa74fefd9522455cc79f01fcf0e58ca348cdda406884a760ee2df",
+  "limitations": [
+    "This numeric boolean comparison is not exact arithmetic or machine print validation",
+    "Raw mesh manifold/zero-area checks are independent evidence; boolean-kernel simplification is not a repair delivered to the candidate",
+    "No slicing, G-code or physical print"
+  ]
+}

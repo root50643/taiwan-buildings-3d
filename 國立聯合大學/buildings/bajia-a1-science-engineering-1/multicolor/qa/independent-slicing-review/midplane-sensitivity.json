@@ -1,0 +1,43 @@
+{
+  "source_3mf_sha256": "7cf863dd73dfa74fefd9522455cc79f01fcf0e58ca348cdda406884a760ee2df",
+  "gcode_sha256": "566d882067a42b2c85ddc7e219e48b07f20c1a7e5f4540323e0918cb97b19102",
+  "raw_report_retained": "toolpath-analysis.json",
+  "raw_13_layer_check": {
+    "midpoints": "see toolpath-analysis.json",
+    "outliers_at_exact_8p1_plane": 39
+  },
+  "diagnosis": "Exact z=8.1 coincides with original porch-roof apex coordinate and the Trimesh section construction loses a loop at that plane. Both immediately adjacent section planes include the paths; retain the original 39 flags as a sampling-method sensitivity, not as demonstrated wrong-tool deposition. No input or toolpath altered.",
+  "bracketing_planes": [
+    {
+      "source_section_z_mm": 8.0999,
+      "section_area_mm2": 1579.4373620679748,
+      "section_is_valid": true,
+      "tool_one_based": 3,
+      "layer_z_mm": 8.2,
+      "centerlines_checked": 654,
+      "outside_width_half_plus_0p08mm_count": 0,
+      "maximum_midpoint_distance_outside_mm": 0.0
+    },
+    {
+      "source_section_z_mm": 8.1,
+      "section_area_mm2": 1417.8163289423828,
+      "section_is_valid": true,
+      "tool_one_based": 3,
+      "layer_z_mm": 8.2,
+      "centerlines_checked": 654,
+      "outside_width_half_plus_0p08mm_count": 39,
+      "maximum_midpoint_distance_outside_mm": 11.13413595620098
+    },
+    {
+      "source_section_z_mm": 8.1001,
+      "section_area_mm2": 1579.422535807682,
+      "section_is_valid": true,
+      "tool_one_based": 3,
+      "layer_z_mm": 8.2,
+      "centerlines_checked": 654,
+      "outside_width_half_plus_0p08mm_count": 0,
+      "maximum_midpoint_distance_outside_mm": 0.0
+    }
+  ],
+  "is_continuous_or_all_layer_proof": false
+}

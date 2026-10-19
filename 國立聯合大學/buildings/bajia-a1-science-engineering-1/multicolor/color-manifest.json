@@ -1,0 +1,110 @@
+{
+  "source_stl_sha256": "f25654284af62f9f454421da0dbb1a21bcd9b0645bbfc7c6deb2df3f327f0023",
+  "source_main_commit": "4923f28803b51be6da8c4017f412be9592719c14",
+  "source_stl_unchanged": true,
+  "coordinate_unit": "millimeter",
+  "original_coordinates_retained": true,
+  "print_tools": {
+    "1": {
+      "approximate_srgb": "#D8D6CF",
+      "physical_printer_mapping": "unassigned; unknown four-nozzle machine"
+    },
+    "2": {
+      "approximate_srgb": "#A96754",
+      "physical_printer_mapping": "unassigned; unknown four-nozzle machine"
+    },
+    "3": {
+      "approximate_srgb": "#566166",
+      "physical_printer_mapping": "unassigned; unknown four-nozzle machine"
+    },
+    "4": {
+      "approximate_srgb": "#248E91",
+      "physical_printer_mapping": "unassigned; unknown four-nozzle machine"
+    }
+  },
+  "fine_regions": {
+    "light_frames": {
+      "object_id": 1,
+      "logical_tool": 1,
+      "triangles": 1376,
+      "volume_mm3": 257.9630504469455,
+      "approximate_srgb": "#D8D6CF"
+    },
+    "glass": {
+      "object_id": 2,
+      "logical_tool": 4,
+      "triangles": 5192,
+      "volume_mm3": 5321.850943069814,
+      "approximate_srgb": "#248E91"
+    },
+    "pv": {
+      "object_id": 3,
+      "logical_tool": 3,
+      "triangles": 2520,
+      "volume_mm3": 1994.2318755281533,
+      "approximate_srgb": "#566166"
+    },
+    "roof": {
+      "object_id": 4,
+      "logical_tool": 3,
+      "triangles": 2260,
+      "volume_mm3": 25217.543842262123,
+      "approximate_srgb": "#566166"
+    },
+    "dark_facade": {
+      "object_id": 5,
+      "logical_tool": 3,
+      "triangles": 5188,
+      "volume_mm3": 26600.870584683038,
+      "approximate_srgb": "#566166"
+    },
+    "plinth": {
+      "object_id": 6,
+      "logical_tool": 3,
+      "triangles": 228,
+      "volume_mm3": 59885.96499813509,
+      "approximate_srgb": "#566166"
+    },
+    "brick": {
+      "object_id": 7,
+      "logical_tool": 2,
+      "triangles": 5600,
+      "volume_mm3": 9132.282766849732,
+      "approximate_srgb": "#A96754"
+    },
+    "wall": {
+      "object_id": 8,
+      "logical_tool": 1,
+      "triangles": 12940,
+      "volume_mm3": 374320.1650919759,
+      "approximate_srgb": "#D8D6CF"
+    }
+  },
+  "selector_role_counts": {
+    "roof": 28,
+    "pv": 6,
+    "dark_facade": 59,
+    "plinth": 1,
+    "brick": 9,
+    "glass": 422,
+    "light_frames": 15
+  },
+  "note": "Semantic fine regions remain separately editable; multiple regions share one of four logical tools. Components are for simultaneous co-printing, not separate bed-laid assembly.",
+  "primary_3mf": {
+    "a1-four-tool-PRINT.3mf": {
+      "sha256": "7cf863dd73dfa74fefd9522455cc79f01fcf0e58ca348cdda406884a760ee2df",
+      "bytes": 308795
+    },
+    "a1-four-tool-core.3mf": {
+      "sha256": "a9929cb9259c3c18c87b2653af119035e35bbc26f93d72ba4332552b0d3dc5b6",
+      "bytes": 318267
+    },
+    "a1-four-tool-prusaslicer.3mf": {
+      "sha256": "80e665598c3d39e0e0dfb572622b6c44fda4222613b2dea8ed07645625e454de",
+      "bytes": 315673
+    }
+  },
+  "primary_print_file": "a1-four-tool-PRINT.3mf",
+  "editable_fine_file": "a1-four-tool-prusaslicer.3mf",
+  "same_tool_interface_merge": "The PRINT file unions fine regions sharing a tool; the eight-region edit file remains unchanged, including documented f32 interface flags."
+}

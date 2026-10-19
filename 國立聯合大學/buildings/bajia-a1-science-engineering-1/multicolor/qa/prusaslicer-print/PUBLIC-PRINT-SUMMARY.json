@@ -1,0 +1,342 @@
+{
+  "review": "A1 PRINT one-round actual PrusaSlicer 2.9.6 independent check",
+  "date": "2026-10-19",
+  "result": "GO for the four-tool editable PRINT demonstration at file/geometry level; physical manufacture remains conditional on a real printer/profile and slicing/print validation",
+  "native": {
+    "path": "multicolor/a1-four-tool-PRINT.3mf",
+    "sha256": "7cf863dd73dfa74fefd9522455cc79f01fcf0e58ca348cdda406884a760ee2df",
+    "bytes": 308795,
+    "units": "millimeter",
+    "resource_objects": 1,
+    "build_items": 1,
+    "printable_volumes": 4,
+    "bounds_mm": [
+      [
+        -75.0,
+        -74.0,
+        0.0
+      ],
+      [
+        75.0,
+        74.0,
+        57.099998474121094
+      ]
+    ],
+    "triangle_range_coverage": [
+      {
+        "object_id": "1",
+        "triangle_count": 34556,
+        "uncovered": 0,
+        "multiply_covered": 0
+      }
+    ]
+  },
+  "actual_console": {
+    "name": "prusa-slicer-console.exe",
+    "version": "2.9.6",
+    "sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "input_unchanged": true
+  },
+  "roundtrip": {
+    "path_relative_to_review": "roundtrip.3mf",
+    "sha256": "0049cc71204eaaaa13ec5d747ee98372d0c87c0a5cabdd9a673ffa51ec2cc530",
+    "resource_objects": 1,
+    "build_items": 1,
+    "printable_volumes": 4,
+    "bounds_mm": [
+      [
+        -75.0,
+        -74.0,
+        0.0
+      ],
+      [
+        75.0,
+        74.0,
+        57.0999985
+      ]
+    ],
+    "embedded_full_profile": false
+  },
+  "parts": [
+    {
+      "name": "01-light-wall",
+      "tool_before": 1,
+      "tool_after": 1,
+      "triangles_before": 14280,
+      "triangles_after": 14280,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "source_winding_consistent": true,
+      "roundtrip_winding_consistent": true,
+      "source_signed_volume_mm3": 374578.1281424228,
+      "roundtrip_signed_volume_mm3": 374578.12644296704,
+      "source_exact_zero_area_facets": 0,
+      "roundtrip_exact_zero_area_facets": 0,
+      "source_edge_valence_counts": {
+        "2": 21420
+      },
+      "roundtrip_edge_valence_counts": {
+        "2": 21420
+      },
+      "max_corresponding_coordinate_delta_mm": 3.4333333474023675e-06
+    },
+    {
+      "name": "02-brick",
+      "tool_before": 2,
+      "tool_after": 2,
+      "triangles_before": 5600,
+      "triangles_after": 5600,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "source_winding_consistent": true,
+      "roundtrip_winding_consistent": true,
+      "source_signed_volume_mm3": 9132.282766849736,
+      "roundtrip_signed_volume_mm3": 9132.28946998961,
+      "source_exact_zero_area_facets": 0,
+      "roundtrip_exact_zero_area_facets": 0,
+      "source_edge_valence_counts": {
+        "2": 8400
+      },
+      "roundtrip_edge_valence_counts": {
+        "2": 8400
+      },
+      "max_corresponding_coordinate_delta_mm": 3.862939450982594e-06
+    },
+    {
+      "name": "03-slate",
+      "tool_before": 3,
+      "tool_after": 3,
+      "triangles_before": 9484,
+      "triangles_after": 9484,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "source_winding_consistent": true,
+      "roundtrip_winding_consistent": true,
+      "source_signed_volume_mm3": 113698.61130060838,
+      "roundtrip_signed_volume_mm3": 113698.60721655567,
+      "source_exact_zero_area_facets": 0,
+      "roundtrip_exact_zero_area_facets": 0,
+      "source_edge_valence_counts": {
+        "2": 14226
+      },
+      "roundtrip_edge_valence_counts": {
+        "2": 14226
+      },
+      "max_corresponding_coordinate_delta_mm": 3.4333333474023675e-06
+    },
+    {
+      "name": "04-glazing",
+      "tool_before": 4,
+      "tool_after": 4,
+      "triangles_before": 5192,
+      "triangles_after": 5192,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "source_winding_consistent": true,
+      "roundtrip_winding_consistent": true,
+      "source_signed_volume_mm3": 5321.850943069799,
+      "roundtrip_signed_volume_mm3": 5321.859496118724,
+      "source_exact_zero_area_facets": 0,
+      "roundtrip_exact_zero_area_facets": 0,
+      "source_edge_valence_counts": {
+        "2": 7788
+      },
+      "roundtrip_edge_valence_counts": {
+        "2": 7788
+      },
+      "max_corresponding_coordinate_delta_mm": 7.625878907902006e-06
+    }
+  ],
+  "profile": {
+    "path": "multicolor/generic-four-tool-REFERENCE.ini",
+    "sha256_before": "dbeb712b44d1f35b81bb4764a446e0699207529ced0752d68a010c4034d22adc",
+    "sha256_after": "dbeb712b44d1f35b81bb4764a446e0699207529ced0752d68a010c4034d22adc",
+    "effective_nozzles": 4,
+    "effective_reference_settings": {
+      "printer_technology": "FFF",
+      "nozzle_diameter": "0.4,0.4,0.4,0.4",
+      "single_extruder_multi_material": "0",
+      "extruder_offset": "0x0,0x0,0x0,0x0",
+      "extruder_colour": "#D8D6CF;#A96754;#566166;#248E91",
+      "filament_colour": "#D8D6CF;#A96754;#566166;#248E91",
+      "support_material_extruder": "1",
+      "support_material_interface_extruder": "1"
+    },
+    "print_embedded_config_sha256": "df8eceb106873d700b3a356b4c4833cc8a3fb240cd262d274744175eca0ac717",
+    "editable_r2_embedded_config_sha256": "df8eceb106873d700b3a356b4c4833cc8a3fb240cd262d274744175eca0ac717",
+    "same_embedded_config_bytes_as_previously_reopened_r2": true,
+    "note": "This PRINT run used --load explicitly. Embedded configuration bytes were compared to the R2 project that was independently reopened without --load; no second PRINT CLI run was performed."
+  },
+  "source_union_probe": {
+    "source_path_relative": "model.stl",
+    "source_sha256_before": "f25654284af62f9f454421da0dbb1a21bcd9b0645bbfc7c6deb2df3f327f0023",
+    "native_path_relative": "multicolor/a1-four-tool-PRINT.3mf",
+    "native_sha256_before": "7cf863dd73dfa74fefd9522455cc79f01fcf0e58ca348cdda406884a760ee2df",
+    "roundtrip_sha256": "0049cc71204eaaaa13ec5d747ee98372d0c87c0a5cabdd9a673ffa51ec2cc530",
+    "method": "Parse raw source binary STL as exact float32 coordinates promoted to float64. Reconstruct fixed native and actual-export volume triangles in world coordinates; merge exact equal vertices, construct Manifold Mesh64, and boolean-union groups. Manifold may simplify degenerate/unnecessary vertices internally; raw topology/zero-area results are reported separately.",
+    "source_binary_stl_triangles": 10638,
+    "source_manifold": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 502730.8731529508,
+      "triangles_after_boolean_kernel_simplification": 10638
+    },
+    "native_parts": {
+      "01-light-wall": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 374578.1281424228,
+        "triangles_after_boolean_kernel_simplification": 14280
+      },
+      "02-brick": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 9132.282766849732,
+        "triangles_after_boolean_kernel_simplification": 5600
+      },
+      "03-slate": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 113698.6113006084,
+        "triangles_after_boolean_kernel_simplification": 9484
+      },
+      "04-glazing": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 5321.850943069814,
+        "triangles_after_boolean_kernel_simplification": 5192
+      }
+    },
+    "roundtrip_parts": {
+      "01-light-wall": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 374578.12644296675,
+        "triangles_after_boolean_kernel_simplification": 14280
+      },
+      "02-brick": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 9132.289469989559,
+        "triangles_after_boolean_kernel_simplification": 5600
+      },
+      "03-slate": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 113698.60721655576,
+        "triangles_after_boolean_kernel_simplification": 9484
+      },
+      "04-glazing": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 5321.859496118896,
+        "triangles_after_boolean_kernel_simplification": 5192
+      }
+    },
+    "native_group_union": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 502730.8731529508,
+      "triangles_after_boolean_kernel_simplification": 14426
+    },
+    "roundtrip_group_union": {
+      "status": "Error.NoError",
+      "is_empty": false,
+      "volume_mm3": 502730.870114371,
+      "triangles_after_boolean_kernel_simplification": 16518
+    },
+    "source_vs_native_union": {
+      "reference_minus_test": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 1.1368683772161603e-13,
+        "triangles_after_boolean_kernel_simplification": 28
+      },
+      "test_minus_reference": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": -1.3043038871174417e-13,
+        "triangles_after_boolean_kernel_simplification": 26
+      },
+      "symmetric_difference_volume_mm3": 2.441172264333602e-13
+    },
+    "source_vs_actual_prusa_union": {
+      "reference_minus_test": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 0.008950940547387203,
+        "triangles_after_boolean_kernel_simplification": 22440
+      },
+      "test_minus_reference": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 0.005912360910575607,
+        "triangles_after_boolean_kernel_simplification": 9662
+      },
+      "symmetric_difference_volume_mm3": 0.014863301457962809
+    },
+    "native_union_vs_actual_prusa_union": {
+      "reference_minus_test": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 0.008950940601565859,
+        "triangles_after_boolean_kernel_simplification": 24214
+      },
+      "test_minus_reference": {
+        "status": "Error.NoError",
+        "is_empty": false,
+        "volume_mm3": 0.005912360911337351,
+        "triangles_after_boolean_kernel_simplification": 10666
+      },
+      "symmetric_difference_volume_mm3": 0.01486330151290321
+    },
+    "source_sha256_after": "f25654284af62f9f454421da0dbb1a21bcd9b0645bbfc7c6deb2df3f327f0023",
+    "native_sha256_after": "7cf863dd73dfa74fefd9522455cc79f01fcf0e58ca348cdda406884a760ee2df",
+    "limitations": [
+      "This numeric boolean comparison is not exact arithmetic or machine print validation",
+      "Raw mesh manifold/zero-area checks are independent evidence; boolean-kernel simplification is not a repair delivered to the candidate",
+      "No slicing, G-code or physical print"
+    ]
+  },
+  "preserved_r2_files": {
+    "a1-four-tool-prusaslicer.3mf": {
+      "expected_r2_sha256": "80e665598c3d39e0e0dfb572622b6c44fda4222613b2dea8ed07645625e454de",
+      "observed_sha256": "80e665598c3d39e0e0dfb572622b6c44fda4222613b2dea8ed07645625e454de",
+      "matches": true
+    },
+    "a1-four-tool-core.3mf": {
+      "expected_r2_sha256": "a9929cb9259c3c18c87b2653af119035e35bbc26f93d72ba4332552b0d3dc5b6",
+      "observed_sha256": "a9929cb9259c3c18c87b2653af119035e35bbc26f93d72ba4332552b0d3dc5b6",
+      "matches": true
+    }
+  },
+  "reproduction_argv_relative": [
+    "prusa-slicer-console.exe",
+    "--datadir",
+    "qa/prusa-print/native/cli-data",
+    "--config-compatibility",
+    "disable",
+    "--load",
+    "multicolor/generic-four-tool-REFERENCE.ini",
+    "--dont-arrange",
+    "--no-ensure-on-bed",
+    "--info",
+    "--save",
+    "qa/prusa-print/native/effective.ini",
+    "--export-3mf",
+    "--output",
+    "qa/prusa-print/native/roundtrip.3mf",
+    "multicolor/a1-four-tool-PRINT.3mf"
+  ],
+  "limits": [
+    "No GUI, slicing, G-code or physical print",
+    "Unknown real four-head printer; 0.4 mm nozzle diameters and zero offsets are reference placeholders",
+    "Support/interface use existing tool 1; a fifth dedicated support tool is not provided",
+    "No proof of physical tool registration, material bonding, purge behavior or support removal",
+    "Float precision differences are recorded; do not claim exact geometry equality or interpret rounded-hash mismatch as an unquantified shape change",
+    "CLI exported 3MF omits full embedded print profile, so retain the original fixed PRINT project",
+    "Numeric boolean residuals are not exact-arithmetic emptiness certification"
+  ]
+}

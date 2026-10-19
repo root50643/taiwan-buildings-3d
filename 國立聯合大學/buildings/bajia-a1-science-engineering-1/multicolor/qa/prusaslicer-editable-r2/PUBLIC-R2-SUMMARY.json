@@ -1,0 +1,441 @@
+{
+  "review": "A1 R2 independent Prusa CLI multipart/tool-assignment check",
+  "date": "2026-10-19",
+  "scope_result": "Conditional GO for four-tool editable demonstration; not zero-degenerate certification or machine-ready print validation",
+  "fixed_native": {
+    "path": "multicolor/a1-four-tool-prusaslicer.3mf",
+    "sha256": "80e665598c3d39e0e0dfb572622b6c44fda4222613b2dea8ed07645625e454de",
+    "bytes": 315673,
+    "unit": "millimeter",
+    "mesh_objects": 1,
+    "build_items": 1,
+    "editable_volumes": 8,
+    "bounds_mm": [
+      [
+        -75.0,
+        -74.0,
+        0.0
+      ],
+      [
+        75.0,
+        74.0,
+        57.099998474121094
+      ]
+    ],
+    "volume_range_coverage": [
+      {
+        "object_id": "1",
+        "triangle_count": 35304,
+        "uncovered": 0,
+        "multiply_covered": 0
+      }
+    ]
+  },
+  "fixed_core": {
+    "path": "multicolor/a1-four-tool-core.3mf",
+    "sha256": "a9929cb9259c3c18c87b2653af119035e35bbc26f93d72ba4332552b0d3dc5b6",
+    "source_resource_objects": 9,
+    "source_build_items": 1,
+    "prusa_export_objects": 8,
+    "prusa_export_build_items": 8,
+    "explicit_tool_assignments_preserved": false,
+    "limitation": "Prusa imported the generic assembly as eight separate objects, with no explicit part extruder overrides; use the native project for intended editable tool assignments."
+  },
+  "prusa": {
+    "version": "2.9.6",
+    "executable_name": "prusa-slicer-console.exe",
+    "executable_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+    "native_cli_exit": 0,
+    "core_cli_exit": 0,
+    "embedded_only_cli_exit": 0,
+    "native_input_sha_unchanged": true,
+    "core_input_sha_unchanged": true,
+    "roundtrip_sha256": "57ab6a537dc3edaec87f4cd408db3de36372af8f38e1823b0267e01047365965",
+    "roundtrip_embedded_full_profile": false,
+    "roundtrip_bounds_mm": [
+      [
+        -75.0,
+        -74.0,
+        0.0
+      ],
+      [
+        75.0,
+        74.0,
+        57.0999985
+      ]
+    ]
+  },
+  "reference_profile": {
+    "path": "multicolor/generic-four-tool-REFERENCE.ini",
+    "sha256": "dbeb712b44d1f35b81bb4764a446e0699207529ced0752d68a010c4034d22adc",
+    "external_profile_unchanged": true,
+    "explicit_load_effective_settings": {
+      "printer_technology": "FFF",
+      "nozzle_diameter": "0.4,0.4,0.4,0.4",
+      "single_extruder_multi_material": "0",
+      "extruder_offset": "0x0,0x0,0x0,0x0",
+      "extruder_colour": "#D8D6CF;#A96754;#566166;#248E91",
+      "filament_colour": "#D8D6CF;#A96754;#566166;#248E91",
+      "support_material_extruder": "1",
+      "support_material_interface_extruder": "1"
+    },
+    "native_embedded_only_effective_settings": {
+      "printer_technology": "FFF",
+      "nozzle_diameter": "0.4,0.4,0.4,0.4",
+      "single_extruder_multi_material": "0",
+      "extruder_offset": "0x0,0x0,0x0,0x0",
+      "extruder_colour": "#D8D6CF;#A96754;#566166;#248E91",
+      "filament_colour": "#D8D6CF;#A96754;#566166;#248E91",
+      "support_material_extruder": "1",
+      "support_material_interface_extruder": "1"
+    },
+    "embedded_only_no_external_profile": true,
+    "embedded_only_nozzle_count": 4
+  },
+  "parts": [
+    {
+      "name": "light_frames",
+      "tool_before": 1,
+      "tool_after": 1,
+      "triangles_before": 1376,
+      "triangles_after": 1376,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 257.9630588357386,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 0,
+      "roundtrip_zero_area_face_indices": [],
+      "roundtrip_edge_valence_counts": {
+        "2": 2064
+      },
+      "max_corresponding_coordinate_delta_mm": 9.90734863037801e-07
+    },
+    {
+      "name": "glass",
+      "tool_before": 4,
+      "tool_after": 4,
+      "triangles_before": 5192,
+      "triangles_after": 5192,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 5321.859496118724,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 0,
+      "roundtrip_zero_area_face_indices": [],
+      "roundtrip_edge_valence_counts": {
+        "2": 7788
+      },
+      "max_corresponding_coordinate_delta_mm": 7.625878907902006e-06
+    },
+    {
+      "name": "pv",
+      "tool_before": 3,
+      "tool_after": 3,
+      "triangles_before": 2520,
+      "triangles_after": 2520,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 1994.236730761774,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 2,
+      "roundtrip_zero_area_face_indices": [
+        2216,
+        2350
+      ],
+      "roundtrip_edge_valence_counts": {
+        "2": 3780
+      },
+      "max_corresponding_coordinate_delta_mm": 5.722885369152664e-06
+    },
+    {
+      "name": "roof",
+      "tool_before": 3,
+      "tool_after": 3,
+      "triangles_before": 2260,
+      "triangles_after": 2260,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 25217.543791092397,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 2,
+      "roundtrip_zero_area_face_indices": [
+        1800,
+        1980
+      ],
+      "roundtrip_edge_valence_counts": {
+        "2": 3390
+      },
+      "max_corresponding_coordinate_delta_mm": 4.300000000512227e-06
+    },
+    {
+      "name": "dark_facade",
+      "tool_before": 3,
+      "tool_after": 3,
+      "triangles_before": 5188,
+      "triangles_after": 5188,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 26600.869824070975,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 0,
+      "roundtrip_zero_area_face_indices": [],
+      "roundtrip_edge_valence_counts": {
+        "2": 7782
+      },
+      "max_corresponding_coordinate_delta_mm": 1.9185302733149e-06
+    },
+    {
+      "name": "plinth",
+      "tool_before": 3,
+      "tool_after": 3,
+      "triangles_before": 228,
+      "triangles_after": 228,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 59885.9650466205,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 0,
+      "roundtrip_zero_area_face_indices": [],
+      "roundtrip_edge_valence_counts": {
+        "2": 342
+      },
+      "max_corresponding_coordinate_delta_mm": 4.824218535759428e-08
+    },
+    {
+      "name": "brick",
+      "tool_before": 2,
+      "tool_after": 2,
+      "triangles_before": 5600,
+      "triangles_after": 5600,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 9132.28946998961,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 0,
+      "roundtrip_zero_area_face_indices": [],
+      "roundtrip_edge_valence_counts": {
+        "2": 8400
+      },
+      "max_corresponding_coordinate_delta_mm": 3.862939450982594e-06
+    },
+    {
+      "name": "wall",
+      "tool_before": 1,
+      "tool_after": 1,
+      "triangles_before": 12940,
+      "triangles_after": 12940,
+      "source_watertight_exact_merge": true,
+      "roundtrip_watertight_exact_merge": true,
+      "roundtrip_positive_signed_volume_mm3": 374320.16331203125,
+      "source_zero_area_exact": 0,
+      "roundtrip_zero_area_exact": 0,
+      "roundtrip_zero_area_face_indices": [],
+      "roundtrip_edge_valence_counts": {
+        "2": 19410
+      },
+      "max_corresponding_coordinate_delta_mm": 3.4333333474023675e-06
+    }
+  ],
+  "four_flag_interface_probe": {
+    "source_sha256": "80e665598c3d39e0e0dfb572622b6c44fda4222613b2dea8ed07645625e454de",
+    "roundtrip_sha256": "57ab6a537dc3edaec87f4cd408db3de36372af8f38e1823b0267e01047365965",
+    "face_index_base": 0,
+    "units": "millimeter",
+    "pairs": [
+      {
+        "pv_face_index": 2216,
+        "roof_face_index": 1800,
+        "pv_tool": 3,
+        "roof_tool": 3,
+        "source_pv_vertices_mm": [
+          [
+            -57.17022286082688,
+            36.32500076293945,
+            48.02
+          ],
+          [
+            -57.17022247314452,
+            43.13999999999994,
+            48.02
+          ],
+          [
+            -57.17022286082688,
+            42.54334316667499,
+            48.02
+          ]
+        ],
+        "source_roof_vertices_mm": [
+          [
+            -57.17022286082688,
+            36.32500076293945,
+            48.02
+          ],
+          [
+            -57.17022286082688,
+            42.54334316667499,
+            48.02
+          ],
+          [
+            -57.17022247314452,
+            43.13999999999994,
+            48.02
+          ]
+        ],
+        "source_point_multisets_exact_equal": true,
+        "source_max_matched_coordinate_difference_mm": 0.0,
+        "source_pv_doubled_area_mm2": 2.4107416748901535e-06,
+        "source_roof_doubled_area_mm2": 2.4107416748901535e-06,
+        "source_normal_cosine": -1.0,
+        "roundtrip_pv_vertices_mm": [
+          [
+            -57.1702232,
+            36.3250008,
+            48.0199966
+          ],
+          [
+            -57.1702232,
+            43.1399994,
+            48.0199966
+          ],
+          [
+            -57.1702232,
+            42.5433426,
+            48.0199966
+          ]
+        ],
+        "roundtrip_roof_vertices_mm": [
+          [
+            -57.1702232,
+            36.3250008,
+            48.0200005
+          ],
+          [
+            -57.1702232,
+            42.5433426,
+            48.0200005
+          ],
+          [
+            -57.1702232,
+            43.1399994,
+            48.0200005
+          ]
+        ],
+        "roundtrip_pv_doubled_area_mm2": 0.0,
+        "roundtrip_roof_doubled_area_mm2": 0.0,
+        "roundtrip_max_matched_coordinate_difference_mm": 3.900000002943216e-06
+      },
+      {
+        "pv_face_index": 2350,
+        "roof_face_index": 1980,
+        "pv_tool": 3,
+        "roof_tool": 3,
+        "source_pv_vertices_mm": [
+          [
+            47.82977713917312,
+            36.32500076293945,
+            48.02
+          ],
+          [
+            47.82977752685548,
+            43.13999999999994,
+            48.02
+          ],
+          [
+            47.82977713917312,
+            42.543343166674994,
+            48.02
+          ]
+        ],
+        "source_roof_vertices_mm": [
+          [
+            47.82977713917312,
+            36.32500076293945,
+            48.02
+          ],
+          [
+            47.82977713917312,
+            42.543343166674994,
+            48.02
+          ],
+          [
+            47.82977752685548,
+            43.13999999999994,
+            48.02
+          ]
+        ],
+        "source_point_multisets_exact_equal": true,
+        "source_max_matched_coordinate_difference_mm": 0.0,
+        "source_pv_doubled_area_mm2": 2.4107416748901565e-06,
+        "source_roof_doubled_area_mm2": 2.4107416748901565e-06,
+        "source_normal_cosine": -1.0,
+        "roundtrip_pv_vertices_mm": [
+          [
+            47.8297768,
+            36.3250008,
+            48.0199966
+          ],
+          [
+            47.8297768,
+            43.1399994,
+            48.0199966
+          ],
+          [
+            47.8297768,
+            42.5433426,
+            48.0199966
+          ]
+        ],
+        "roundtrip_roof_vertices_mm": [
+          [
+            47.8297768,
+            36.3250008,
+            48.0200005
+          ],
+          [
+            47.8297768,
+            42.5433426,
+            48.0200005
+          ],
+          [
+            47.8297768,
+            43.1399994,
+            48.0200005
+          ]
+        ],
+        "roundtrip_pv_doubled_area_mm2": 0.0,
+        "roundtrip_roof_doubled_area_mm2": 0.0,
+        "roundtrip_max_matched_coordinate_difference_mm": 3.900000002943216e-06
+      }
+    ],
+    "method": "Read corresponding unchanged triangle slots. Match each three-point multiset and compare cross-product orientation in the f64 source. The corresponding triangles collapse to lines after actual Prusa import/export. This identifies geometric interface facets, not a printable wall-thickness measurement.",
+    "source_sha256_after": "80e665598c3d39e0e0dfb572622b6c44fda4222613b2dea8ed07645625e454de",
+    "all_source_flags_paired_exactly_opposite": true,
+    "interpretation": "The source flags are paired opposing PV/roof material-interface triangles (same print tool), rather than unpaired exterior-hole facets or wall-thickness samples."
+  },
+  "known_limits": [
+    "Four exact zero-area faces remain after Prusa roundtrip: two PV and two roof, all using tool 3. Every unique edge of each part still has incidence 2. These are disclosed triangulation degeneracies, not a demonstrated millimeter-scale thin wall.",
+    "Coordinate changes are quantified, not claimed exact equality; rounded triangle hashes can differ at bin boundaries.",
+    "A concatenated multicolor triangle soup contains shared/internal material interfaces and is not a boolean-unioned exterior manifold test.",
+    "CLI model export omits embedded full profile; keep original native project and effective settings separately.",
+    "No GUI validation, slicing, G-code, physical print, tool registration, support-removal or material-bonding validation."
+  ],
+  "public_reproduction_argv_relative": [
+    "prusa-slicer-console.exe",
+    "--datadir",
+    "qa/prusa-r2/native/cli-data",
+    "--config-compatibility",
+    "disable",
+    "--load",
+    "multicolor/generic-four-tool-REFERENCE.ini",
+    "--dont-arrange",
+    "--no-ensure-on-bed",
+    "--info",
+    "--save",
+    "qa/prusa-r2/native/effective.ini",
+    "--export-3mf",
+    "--output",
+    "qa/prusa-r2/native/roundtrip.3mf",
+    "multicolor/a1-four-tool-prusaslicer.3mf"
+  ],
+  "public_evidence_note": "Commands here normalize review output paths for publication; exact executed absolute argv and raw logs are retained privately."
+}

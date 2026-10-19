@@ -2,9 +2,13 @@
 
 樹人醫護管理專科學校，路竹校本部。MAYU 平面與多向照片支持的有界外觀近似；不是測繪模型，也不代表全校建物已完成。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 
-| 草坪／操場側正向 actual STL | 池塘／長翼側反向 actual STL |
+| 草坪／操場側六材質外觀 | 池塘／長翼側原幾何（未見色區中性） |
 |---|---|
-| ![正向](previews/front.png) | ![反向](previews/rear.png) |
+| ![正向](appearance/previews/front.png) | ![反向](appearance/previews/rear.png) |
+
+## 最新外觀與下載
+
+[六材質可編輯通用 3MF](appearance/szmc-appearance.3mf) · [彩色 scene](appearance/scene.blend) · [配色說明、四視圖及限制](appearance/README.md)。依 2017 公開空拍的可見白折板、灰白邊及灰綠玻璃近似配色，不限制四色；背面未確認區保留中性，深穿廊以陰影呈現。原 STL、量體和製造證據未改；尚未 FFF／實體試印驗證。
 
 ## 模型重點
 - L形大跨主屋面及長翼、不同高低的四角折板、長條設備／採光開口、半覆土地景、真正凹入的穿廊與兩道外梯。
@@ -20,9 +24,13 @@
 - 不宜任意縮小後沿用QA。未做實體試印或切片器路徑驗證，不能保證無支撐；大出簷、穿廊與外梯請依材料／機台另行切片試印。
 
 ## 附件及重建
-build_model.py 原創參數源；model.stl；由實際STL匯入的可編輯 scene.blend；7張 actual STL PNG；來源、數值控制、各項原面檢查與SHA清單。原照片、PDF及來源對照只私人核對，不隨包散布。
+build_model.py 原創參數源；model.stl；由實際STL匯入的可編輯 scene.blend；7張歷史單色 actual STL QA PNG；另附 appearance 四張最新外觀圖與六材質 3MF／scene；來源、數值控制、各項原面檢查與SHA清單。原照片、PDF及來源對照只私人核對，不隨包散布。
 
 使用 requirements.txt 的Python環境及 Blender 4.3.2：依序執行 build_model.py、blender -b -t 5 --python render_preview.py、run_all_checks.py。詳 QA.md。left/right是與來源相近低視角草坪面／操場面，不能誤當北箭頭測量；top為俯視，兩張detail為屋面及穿廊。
+
+## 歷史製造／單色預覽
+
+舊圖保留供原 QA 與重建證據核對，不是目前配色展示：[正向](previews/front.png)、[反向](previews/rear.png)、[低角度左](previews/left.png)、[低角度右](previews/right.png)、[頂視](previews/top.png)、[屋頂局部](previews/roof-detail.png)、[穿廊局部](previews/porch-detail.png)。原 render_preview.py／scene.blend 是歷史單色版；新外觀用 appearance/source/render_appearance.py／appearance/scene.blend。
 
 ## 獨立薄損特定例外
 113層217原Polygon皆保持單一侵蝕與opening核心，零消失／分裂。46個跨層警告樣本須分開判讀：44個穿廊矩形柱截面，實際X/Y原面寬1.4427947×1.8034935mm，最大損失5.30932005688%、保留94.6906799431%，損失在矩形四角0.41mm區域內；這不是44根柱。另兩個連續斜屋角截面z13.071／13.271mm，損失分別2.66272530443%／1.63327113624%。固定0.6mm轉角區外仍有最高0.2419528085mm²損失，不能概稱全是純小角。

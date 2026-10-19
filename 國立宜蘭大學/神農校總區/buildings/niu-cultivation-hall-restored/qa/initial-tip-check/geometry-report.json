@@ -1,0 +1,368 @@
+{
+  "model_relative_path": "models/v1/model.stl",
+  "model_sha256": "d78cce5eac6db4f9a1e1cfb739a4ee37fd5306ddec6cc4ef70186ed3b45cdf76",
+  "parameters_sha256": "26f5c4fd7e32671cfca311767f07dd753ca3b85a8f95db80b8c37c1af4524149",
+  "source_sha256": "2beac4ca792470da4e204f74ed1414763387409a43f8fdad398f75089ce3f974",
+  "script_sha256": "c3f41a4063d42ac0c21ded2ae33fe26996379962ad97ac6d8e467c8caddd7973",
+  "versions": {
+    "numpy": "2.5.4",
+    "shapely": "2.1.2"
+  },
+  "distance_tolerance_mm": 1e-06,
+  "topology": {
+    "raw_triangle_count": 1824,
+    "exact_coordinate_welded_vertices": 914,
+    "raw_coordinate_records": 5472,
+    "finite_coordinates": true,
+    "duplicate_triangles_ignoring_winding": 0,
+    "degenerate_triangles": [],
+    "minimum_triangle_area_mm2": 0.0011764346854761243,
+    "edge_count": 2736,
+    "edge_incidence_histogram": {
+      "2": 2736
+    },
+    "bad_edge_count": 0,
+    "bad_edge_examples": [],
+    "bad_vertex_link_count": 0,
+    "bad_vertex_link_examples": [],
+    "face_connected_components": 1,
+    "component_triangle_counts": [
+      1824
+    ],
+    "euler_characteristic": 2,
+    "signed_volume_mm3": 578640.4643967912,
+    "surface_area_mm2": 60710.99454202169,
+    "bounds_mm": [
+      [
+        -83.0,
+        -67.0,
+        0.0
+      ],
+      [
+        83.0,
+        44.0,
+        54.400001525878906
+      ]
+    ],
+    "stored_normal_opposed_face_count": 0,
+    "stored_normal_zero_count": 0,
+    "passed": true,
+    "method": "Read raw binary records; exact float-coordinate deduplication only, no tolerance welding or repair. Each edge must have two oppositely directed uses, and each vertex link must be one cycle."
+  },
+  "triangle_collisions": {
+    "all_unordered_triangle_pairs": 1662576,
+    "all_aabb_candidate_pairs_refined": 21796,
+    "aabb_excluded_pairs": 1640780,
+    "classifications": {
+      "permitted_shared_simplex": 13447,
+      "none": 8349
+    },
+    "unexpected_pair_count": 0,
+    "unexpected_pairs": [],
+    "elapsed_seconds": 1.757,
+    "controls": [
+      {
+        "name": "separate",
+        "expected": "none",
+        "actual": "none",
+        "passed": true
+      },
+      {
+        "name": "noncoplanar_crossing",
+        "expected": "unexpected_noncoplanar",
+        "actual": "unexpected_noncoplanar",
+        "passed": true
+      },
+      {
+        "name": "coplanar_overlap",
+        "expected": "unexpected_coplanar",
+        "actual": "unexpected_coplanar",
+        "passed": true
+      },
+      {
+        "name": "legal_shared_edge",
+        "expected": "permitted_shared_simplex",
+        "actual": "permitted_shared_simplex",
+        "passed": true
+      },
+      {
+        "name": "legal_shared_vertex",
+        "expected": "permitted_shared_simplex",
+        "actual": "permitted_shared_simplex",
+        "passed": true
+      },
+      {
+        "name": "shared_vertex_but_crossing",
+        "expected": "unexpected_noncoplanar",
+        "actual": "unexpected_noncoplanar",
+        "passed": true
+      },
+      {
+        "name": "almost_coplanar_separate_faces",
+        "expected": "none",
+        "actual": "none",
+        "passed": true
+      },
+      {
+        "name": "warped_shared_vertex_only",
+        "expected": "permitted_shared_simplex",
+        "actual": "permitted_shared_simplex",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "method": "Every unordered pair tested against inclusive AABBs. All AABB candidates refined: signed triangle planes, line/triangle interval overlap; parallel coplanar faces projected to dominant plane and GEOS intersected. Only the geometric intersection lying on the actual shared STL vertex/edge is permitted. No candidate cap, early exit, or broad exemption for adjacent faces.",
+    "limitation": "Exhaustive floating-point refinement at 1e-6mm final contact / 1e-10mm arithmetic plane-zero / 1e-10mm2 projected-area tolerance. Plane clipping uses arithmetic-zero tolerance, not contact tolerance, so nearly coplanar triangles are not broadened to their whole planes. Not an exact-arithmetic robust-predicate proof; features below tolerance and pathological near-parallel cases are not certified."
+  },
+  "sections_and_thin_feature_screening": {
+    "layer_height_mm": 0.2,
+    "planes": "Layer centres z=0.1+0.2*i mm, below max model z; vertex coincidences nudged +0.00001 mm and individually logged.",
+    "section_count": 272,
+    "first_z_mm": 0.1,
+    "last_z_mm": 54.30000000000001,
+    "valid_section_count": 272,
+    "invalid_sections": [],
+    "area_range_mm2": [
+      39.467198217744006,
+      18426.0
+    ],
+    "component_histogram": {
+      "1": 272
+    },
+    "hole_histogram": {
+      "0": 272
+    },
+    "section_area_integrated_volume_mm3": 578623.9718306711,
+    "morphology_controls": {
+      "diameter_mm": 0.8,
+      "negative_thin_finger_width_mm": 0.4,
+      "negative_thin_finger_length_mm": 4,
+      "negative_thin_finger_opening_loss_mm2": 1.5999999999999943,
+      "positive_broad_finger_width_mm": 2,
+      "positive_broad_finger_opening_loss_mm2": 0.0,
+      "negative_slot_width_mm": 0.4,
+      "negative_slot_closing_fill_mm2": 1.5999999999999965,
+      "passed": true
+    },
+    "method": "Raw triangle-plane intersections; snapped endpoint keys at 1e-6mm. Require graph degree exactly 2, no duplicate segments, simple valid loops and no crossing/touching loop boundaries. Nested rings combined by parity. No contour repair or union to conceal raw defects.",
+    "morphology_method": "For every actual polygon section: erosion/dilation opening and dilation/erosion closing at diameters 0.6,0.8,1.0,1.2mm using GEOS mitre joins, and original-minus-opened / closed-minus-original areas. Mitre joins reduce corner-rounding artefacts; all layer data retained in CSV.",
+    "thin_wall_interpretation": "Opening loss is a screening observation of narrow protrusions/tips, not a universal minimum 3D wall-thickness measurement. Closing fill screens narrow void/recess widths. Small roof apex sections may vanish. This cannot establish layer adhesion, material strength, nozzle recovery, supports, or measured as-built wall thickness.",
+    "passed_contour_legality": true,
+    "morphology_summary": {
+      "0.6": {
+        "layers_with_loss_above_0_01_mm2": 3,
+        "layers_opened_empty": [
+          54.3
+        ],
+        "maximum_loss_mm2": 39.46719821774401,
+        "maximum_loss_percent": 100.00000000000001,
+        "maximum_closing_fill_mm2": 0.9445209497594712,
+        "top_loss_layers": [
+          {
+            "z_mm": 54.3,
+            "loss_mm2": 39.46719821774401,
+            "loss_percent": 100.00000000000001
+          },
+          {
+            "z_mm": 46.9,
+            "loss_mm2": 17.727083080375596,
+            "loss_percent": 0.39451572978912175
+          },
+          {
+            "z_mm": 22.5,
+            "loss_mm2": 0.012159220737607923,
+            "loss_percent": 9.900726488562381e-05
+          },
+          {
+            "z_mm": 38.9,
+            "loss_mm2": 0.006049798328517153,
+            "loss_percent": 4.52773224329257e-05
+          },
+          {
+            "z_mm": 41.5,
+            "loss_mm2": 0.005225637728189406,
+            "loss_percent": 5.09834350549994e-05
+          },
+          {
+            "z_mm": 21.3,
+            "loss_mm2": 0.004160788514997536,
+            "loss_percent": 3.399295830231572e-05
+          },
+          {
+            "z_mm": 21.5,
+            "loss_mm2": 0.0035033100630049606,
+            "loss_percent": 2.862103540888019e-05
+          },
+          {
+            "z_mm": 15.5,
+            "loss_mm2": 0.0033356408880025586,
+            "loss_percent": 2.7295745227915028e-05
+          }
+        ]
+      },
+      "0.8": {
+        "layers_with_loss_above_0_01_mm2": 5,
+        "layers_opened_empty": [
+          54.3
+        ],
+        "maximum_loss_mm2": 39.46719821774401,
+        "maximum_loss_percent": 100.00000000000001,
+        "maximum_closing_fill_mm2": 0.9445209497594793,
+        "top_loss_layers": [
+          {
+            "z_mm": 54.3,
+            "loss_mm2": 39.46719821774401,
+            "loss_percent": 100.00000000000001
+          },
+          {
+            "z_mm": 46.9,
+            "loss_mm2": 17.72708363874913,
+            "loss_percent": 0.39451574221570884
+          },
+          {
+            "z_mm": 29.3,
+            "loss_mm2": 0.09061520103202726,
+            "loss_percent": 0.0007388702809822251
+          },
+          {
+            "z_mm": 22.1,
+            "loss_mm2": 0.021530150438002136,
+            "loss_percent": 0.00017530997059649352
+          },
+          {
+            "z_mm": 22.5,
+            "loss_mm2": 0.012159243408143493,
+            "loss_percent": 9.900744948196998e-05
+          },
+          {
+            "z_mm": 38.9,
+            "loss_mm2": 0.006049798328512479,
+            "loss_percent": 4.5277322432890724e-05
+          },
+          {
+            "z_mm": 20.9,
+            "loss_mm2": 0.005430304039996675,
+            "loss_percent": 4.443515321005218e-05
+          },
+          {
+            "z_mm": 41.5,
+            "loss_mm2": 0.005225637732812878,
+            "loss_percent": 5.0983435100107856e-05
+          }
+        ]
+      },
+      "1.0": {
+        "layers_with_loss_above_0_01_mm2": 140,
+        "layers_opened_empty": [
+          54.3
+        ],
+        "maximum_loss_mm2": 39.46719821774401,
+        "maximum_loss_percent": 100.00000000000001,
+        "maximum_closing_fill_mm2": 0.9445209497594763,
+        "top_loss_layers": [
+          {
+            "z_mm": 54.3,
+            "loss_mm2": 39.46719821774401,
+            "loss_percent": 100.00000000000001
+          },
+          {
+            "z_mm": 46.9,
+            "loss_mm2": 17.72708364532505,
+            "loss_percent": 0.3945157423620557
+          },
+          {
+            "z_mm": 20.5,
+            "loss_mm2": 8.02217503998802,
+            "loss_percent": 0.06564592934834063
+          },
+          {
+            "z_mm": 20.7,
+            "loss_mm2": 8.02198019838801,
+            "loss_percent": 0.06564334252934086
+          },
+          {
+            "z_mm": 20.9,
+            "loss_mm2": 8.021781019988008,
+            "loss_percent": 0.06564072030133952
+          },
+          {
+            "z_mm": 21.1,
+            "loss_mm2": 8.021576621588013,
+            "loss_percent": 0.065638055438993
+          },
+          {
+            "z_mm": 15.5,
+            "loss_mm2": 8.020861898928015,
+            "loss_percent": 0.06563518383794974
+          },
+          {
+            "z_mm": 13.9,
+            "loss_mm2": 8.02053394613002,
+            "loss_percent": 0.0656062445593717
+          }
+        ]
+      },
+      "1.2": {
+        "layers_with_loss_above_0_01_mm2": 141,
+        "layers_opened_empty": [
+          54.3
+        ],
+        "maximum_loss_mm2": 39.46719821774401,
+        "maximum_loss_percent": 100.00000000000001,
+        "maximum_closing_fill_mm2": 0.9445209497594733,
+        "top_loss_layers": [
+          {
+            "z_mm": 54.3,
+            "loss_mm2": 39.46719821774401,
+            "loss_percent": 100.00000000000001
+          },
+          {
+            "z_mm": 46.9,
+            "loss_mm2": 17.727085479240674,
+            "loss_percent": 0.39451578317579583
+          },
+          {
+            "z_mm": 15.5,
+            "loss_mm2": 9.162941496330014,
+            "loss_percent": 0.07498088823700819
+          },
+          {
+            "z_mm": 13.9,
+            "loss_mm2": 9.16053514613002,
+            "loss_percent": 0.0749312094591543
+          },
+          {
+            "z_mm": 9.5,
+            "loss_mm2": 9.160015099988017,
+            "loss_percent": 0.07492695559343861
+          },
+          {
+            "z_mm": 10.1,
+            "loss_mm2": 9.160015099988017,
+            "loss_percent": 0.07492695559343866
+          },
+          {
+            "z_mm": 10.3,
+            "loss_mm2": 9.160015099988017,
+            "loss_percent": 0.07492695559343869
+          },
+          {
+            "z_mm": 8.1,
+            "loss_mm2": 9.160015099988016,
+            "loss_percent": 0.07492695559343866
+          }
+        ]
+      }
+    },
+    "section_volume_vs_mesh_relative_difference_percent": -0.0028502268912882086
+  },
+  "elapsed_seconds": 9.39,
+  "overall_assessment": "Numerical geometry checks and limited manufacturing screens only; NOT a complete quality or printability pass. Thin-feature losses are retained and require slicer/independent review. No physical print performed.",
+  "remaining_limits": [
+    "No exact rational arithmetic intersection proof; raw-STL tests are finite tolerance numerical tests.",
+    "Horizontal 0.2mm sections can miss sub-layer or near-vertical details. Morphological screening is not a global 3D local-thickness certificate.",
+    "No printer, filament, adhesion, strength, support removal or physical-print validation in this script.",
+    "Support accessibility and real PrusaSlicer validation are separate checks, not implied by manifold topology.",
+    "This QA does not establish architectural fidelity, measured scale, unseen rear openings, or omitted northeast corner geometry."
+  ]
+}

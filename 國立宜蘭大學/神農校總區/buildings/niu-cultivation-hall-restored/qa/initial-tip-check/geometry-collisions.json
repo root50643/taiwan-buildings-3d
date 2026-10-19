@@ -1,0 +1,66 @@
+{
+  "model_sha256": "d78cce5eac6db4f9a1e1cfb739a4ee37fd5306ddec6cc4ef70186ed3b45cdf76",
+  "all_unordered_triangle_pairs": 1662576,
+  "all_aabb_candidate_pairs_refined": 21796,
+  "aabb_excluded_pairs": 1640780,
+  "classifications": {
+    "permitted_shared_simplex": 13447,
+    "none": 8349
+  },
+  "unexpected_pair_count": 0,
+  "unexpected_pairs": [],
+  "elapsed_seconds": 1.757,
+  "controls": [
+    {
+      "name": "separate",
+      "expected": "none",
+      "actual": "none",
+      "passed": true
+    },
+    {
+      "name": "noncoplanar_crossing",
+      "expected": "unexpected_noncoplanar",
+      "actual": "unexpected_noncoplanar",
+      "passed": true
+    },
+    {
+      "name": "coplanar_overlap",
+      "expected": "unexpected_coplanar",
+      "actual": "unexpected_coplanar",
+      "passed": true
+    },
+    {
+      "name": "legal_shared_edge",
+      "expected": "permitted_shared_simplex",
+      "actual": "permitted_shared_simplex",
+      "passed": true
+    },
+    {
+      "name": "legal_shared_vertex",
+      "expected": "permitted_shared_simplex",
+      "actual": "permitted_shared_simplex",
+      "passed": true
+    },
+    {
+      "name": "shared_vertex_but_crossing",
+      "expected": "unexpected_noncoplanar",
+      "actual": "unexpected_noncoplanar",
+      "passed": true
+    },
+    {
+      "name": "almost_coplanar_separate_faces",
+      "expected": "none",
+      "actual": "none",
+      "passed": true
+    },
+    {
+      "name": "warped_shared_vertex_only",
+      "expected": "permitted_shared_simplex",
+      "actual": "permitted_shared_simplex",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "method": "Every unordered pair tested against inclusive AABBs. All AABB candidates refined: signed triangle planes, line/triangle interval overlap; parallel coplanar faces projected to dominant plane and GEOS intersected. Only the geometric intersection lying on the actual shared STL vertex/edge is permitted. No candidate cap, early exit, or broad exemption for adjacent faces.",
+  "limitation": "Exhaustive floating-point refinement at 1e-6mm final contact / 1e-10mm arithmetic plane-zero / 1e-10mm2 projected-area tolerance. Plane clipping uses arithmetic-zero tolerance, not contact tolerance, so nearly coplanar triangles are not broadened to their whole planes. Not an exact-arithmetic robust-predicate proof; features below tolerance and pathological near-parallel cases are not certified."
+}

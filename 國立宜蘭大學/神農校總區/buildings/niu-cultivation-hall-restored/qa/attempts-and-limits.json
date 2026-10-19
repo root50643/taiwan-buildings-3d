@@ -1,0 +1,26 @@
+{
+  "record_scope": "Historical author candidate phase. Prior no-push and backup/review status statements describe that phase; see PUBLICATION.md and qa/publication/provenance.json for current release scope.",
+  "revision": "v1-candidate",
+  "retained_attempts": [
+    {
+      "action": "import Blender runtime in restricted shell",
+      "result": "failed",
+      "error": "ImportError: DLL load failed while importing bpy: access denied",
+      "resolution": "Same existing runtime and candidate renderer executed with approved environment access; render completed. No geometry change."
+    },
+    {
+      "action": "visual material review",
+      "result": "corrected",
+      "finding": "First render assigned wood material to the plaster front gable due to a height-only eave classifier.",
+      "resolution": "Restrict eave wood to downward-facing facets and rerender all views. STL unchanged."
+    }
+  ],
+  "limitations": [
+    "No official measured dimensions or restoration drawings.",
+    "Northeast corner cut not precisely located or dimensioned; not carved in this approximate envelope.",
+    "Open entrance porch represented by shallow relief on solid body; no usable interior model.",
+    "Digital analysis does not prove physical print quality or support removal.",
+    "Generic QA G-code is not machine-ready.",
+    "Author-team checks do not replace the requested independent review; no GitHub push in this phase."
+  ]
+}

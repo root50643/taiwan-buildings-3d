@@ -1,0 +1,57 @@
+{
+  "history": [
+    {
+      "attempt": 1,
+      "status": "qa_script_failed_before_final_report",
+      "model_sha256": "d78cce5eac6db4f9a1e1cfb739a4ee37fd5306ddec6cc4ef70186ed3b45cdf76",
+      "completed_before_exception": [
+        "raw STL parsing",
+        "topology computation",
+        "all-pairs collision computation",
+        "all layer section and morphology computation",
+        "layer CSV"
+      ],
+      "exception": "TypeError: coordinate list must contain at least 2 coordinates",
+      "location": "draw_sections.paint: Pillow draw.polygon on empty opening-loss Polygon",
+      "interpretation": "QA visualization bug; this attempt did not produce a completed geometry report and does not constitute a geometry pass.",
+      "repair": "Skip empty polygons and exterior rings containing fewer than three coordinates; save topology and collision reports before visualization. Re-run whole geometry workflow."
+    },
+    {
+      "attempt": 2,
+      "status": "completed_initial_float_report_with_18_flags",
+      "model_sha256": "d78cce5eac6db4f9a1e1cfb739a4ee37fd5306ddec6cc4ef70186ed3b45cdf76",
+      "result": "18 near-coplanar flags retained. Per-pair plane-distance diagnosis found misuse of contact EPS as plane-zero EPS. All 18 later classified by exact arithmetic; no unexpected intersection."
+    },
+    {
+      "attempt": 3,
+      "status": "completed_initial_corrected_float_and_exact_checks",
+      "model_sha256": "d78cce5eac6db4f9a1e1cfb739a4ee37fd5306ddec6cc4ef70186ed3b45cdf76",
+      "float_unexpected_pairs": 0,
+      "exact_aabb_candidates": 21796,
+      "exact_unexpected_pairs": 0,
+      "exact_controls_passed": 12,
+      "manufacturing_flag": "0.8mm opening removes complete 39.467198mm2 tip section at z54.3mm; original evidence retained."
+    },
+    {
+      "attempt": 4,
+      "status": "completed_final_full_workflow",
+      "completed_utc": "2026-10-18T17:22:24.959702+00:00",
+      "model_sha256": "0827a741ec86c047708d5698c540d353a223347f25a1d883256b236bf495b70c",
+      "script_sha256": "b5a99349dc97c73304461abf81bd26016f0207e1062d73e3546dc936dc52ad43",
+      "topology_passed": true,
+      "all_pairs": 1677196,
+      "exact_candidates": 22225,
+      "exact_unexpected_pairs": 0,
+      "exact_controls_passed": 12,
+      "legal_sections": 272,
+      "morphology_flags_retained": true
+    },
+    {
+      "supplement": "thin-feature-localization-first-attempt",
+      "status": "qa_tooling_failure",
+      "exception": "AttributeError: NoneType object has no attribute buffer",
+      "reason": "Called raw section at a nominal plane coinciding with an exact vertex without using the pipeline nudged actual_z. This supplemental attempt is not a contour failure in the completed 272-plane workflow.",
+      "correction": "Read the actual_z_mm from the existing layer CSV, including the recorded +0.00001mm nudge, then successfully wrote geometry-thin-feature-locations.json."
+    }
+  ]
+}

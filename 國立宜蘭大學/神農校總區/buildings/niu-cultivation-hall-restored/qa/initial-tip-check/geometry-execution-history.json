@@ -1,0 +1,14 @@
+{
+  "history": [
+    {
+      "attempt": 1,
+      "status": "qa_script_failed_before_final_report",
+      "model_sha256": "d78cce5eac6db4f9a1e1cfb739a4ee37fd5306ddec6cc4ef70186ed3b45cdf76",
+      "completed_before_exception": ["raw STL parsing", "topology computation", "all-pairs collision computation", "all layer section and morphology computation", "layer CSV"],
+      "exception": "TypeError: coordinate list must contain at least 2 coordinates",
+      "location": "draw_sections.paint: Pillow draw.polygon on empty opening-loss Polygon",
+      "interpretation": "QA visualization bug; this attempt did not produce a completed geometry report and does not constitute a geometry pass.",
+      "repair": "Skip empty polygons and exterior rings containing fewer than three coordinates; save topology and collision reports before visualization. Re-run whole geometry workflow."
+    }
+  ]
+}

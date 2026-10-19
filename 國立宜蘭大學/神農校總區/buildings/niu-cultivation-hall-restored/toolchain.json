@@ -1,0 +1,43 @@
+{
+  "scope": "Author candidate only; no GitHub push, no physical print",
+  "platform": "Windows Agent, original environment retained",
+  "python": "3.13.9 Anaconda packaged runtime",
+  "packages": {
+    "numpy": "2.5.4",
+    "trimesh": "4.12.2",
+    "manifold3d": "3.3.2",
+    "shapely": "2.1.2",
+    "Pillow": "12.0.0",
+    "bpy": "5.2.2",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.6"
+  },
+  "slicer": {
+    "name": "PrusaSlicer",
+    "version": "2.9.6",
+    "executable_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+    "mode": "FFF console, own --datadir and profile/output paths",
+    "profile": "qa/slicer/qa-generic-0.4mm-0.2mm-support-auto.ini"
+  },
+  "rebuild": {
+    "geometry": "source/build_model.py requires no photograph or web access",
+    "preview": "source/render_preview.py loads exact STL, source/contact_sheet.py combines six rendered views",
+    "slicing": "source/slice_candidate.py requires user-provided slicer executable and private output directory",
+    "raw_gcode": "Compressed losslessly for review; not machine-ready"
+  },
+  "workspace_instructions": "No .agents/skills directory exists in this checkout or the checked ancestor .agents directory; no applicable extra SKILL.md was found there. Current PDF and Library skill instructions were read for source inspection and backup.",
+  "git_credentials": "Existing credentials left unchanged; no credential configuration modified. Local candidate commit uses a command-scoped Codex author identity.",
+  "scene_units": {
+    "system": "METRIC",
+    "scale_length": 0.001,
+    "length_unit": "MILLIMETERS",
+    "coordinates_and_object_scale_unchanged": true
+  },
+  "independent_review": {
+    "fixed_stl": "conditional GO",
+    "original_package": "NO-GO",
+    "current_delta": "Awaiting incremental review of unit correction and evidence integration; Library remains blocked"
+  },
+  "library_workflow": "No further retry, helper change, environment switch, create or replace. Original ID/version and archive preserved; new candidate local only.",
+  "record_scope": "Toolchain and candidate-era status record. Historical independent_review/current_delta and library_workflow fields below describe candidate 6f28b34; current publication scope is in PUBLICATION.md and qa/publication/provenance.json."
+}

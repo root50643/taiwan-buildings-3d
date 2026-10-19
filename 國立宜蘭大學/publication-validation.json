@@ -3,27 +3,19 @@
   "checks": {
     "all_relative_links_exist": true,
     "all_sha256_entries_match": true,
-    "all_model_checks_true": true,
+    "legacy_five_model_reports_pass": true,
+    "six_packages_present": true,
+    "new_fixed_STL_and_cleaned_scene_bindings_match": true,
     "no_private_or_source_images": true,
     "previous_building_files_unchanged": true,
-    "canonical_v3_all_models": true,
-    "saved_blend_matches_report_hash": true
+    "canonical_v3_legacy_five_models": true,
+    "legacy_five_saved_blend_matches_report_hash": true
   },
-  "relative_links_checked": 137,
-  "checksum_entries_checked": 224,
+  "relative_links_checked": 173,
+  "checksum_entries_checked": 326,
   "bad_links": [],
   "bad_checksums": [],
   "models": [
-    {
-      "name": "niu-jingde-building",
-      "passed": true,
-      "stl_sha256": "1621b5d9a863db687ba9b426bef0c7d014a9330138dbdb3a6858bdda71e359c4"
-    },
-    {
-      "name": "niu-library-information-building",
-      "passed": true,
-      "stl_sha256": "e4eb49168b41ecccd6711d51a9243aac85f3b708bc74805804b842f735375cd3"
-    },
     {
       "name": "niu-administration-teaching-complex",
       "passed": true,
@@ -35,10 +27,27 @@
       "stl_sha256": "fc4b9a6c3f70cab96370d2b903a3ebced04e8c7052e356f3ebab9da6e22c8ee3"
     },
     {
+      "name": "niu-jingde-building",
+      "passed": true,
+      "stl_sha256": "1621b5d9a863db687ba9b426bef0c7d014a9330138dbdb3a6858bdda71e359c4"
+    },
+    {
+      "name": "niu-library-information-building",
+      "passed": true,
+      "stl_sha256": "e4eb49168b41ecccd6711d51a9243aac85f3b708bc74805804b842f735375cd3"
+    },
+    {
       "name": "niu-shixi-building",
       "passed": true,
       "stl_sha256": "324a01a88a87d9d8182b6eeedc0e8a53ccca38c60f4935b27f63468f996b249e"
+    },
+    {
+      "name": "niu-cultivation-hall-restored",
+      "stl_sha256": "0827a741ec86c047708d5698c540d353a223347f25a1d883256b236bf495b70c",
+      "scene_sha256": "4851c8500121e67658af1f5a6d73c4609aca22ecad9d3a7b2e321d3cf8fe2265",
+      "integrity_checks_passed": true,
+      "manufacturing_decision": "Independent fixed-STL CONDITIONAL GO; no physical print or support-removal test"
     }
   ],
-  "scope": "5 cumulative original models; 2 new in increment02; school and national scope incomplete."
+  "scope": "Six packages: original five legacy reports preserved, one new package with fixed STL conditional GO. This checks package integrity/report bindings, not physical manufacturing success. School and national scope remain incomplete."
 }

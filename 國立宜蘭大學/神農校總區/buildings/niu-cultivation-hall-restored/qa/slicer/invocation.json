@@ -1,0 +1,21 @@
+{
+  "returncode": 0,
+  "command": [
+    "prusa-slicer-console.exe",
+    "--datadir",
+    "<own-output-directory>/runtime-data",
+    "--load",
+    "qa/slicer/qa-generic-0.4mm-0.2mm-support-auto.ini",
+    "--threads",
+    "2",
+    "--export-gcode",
+    "--output",
+    "<own-output-directory>/candidate-support-auto.gcode",
+    "models/v1/model.stl"
+  ],
+  "slicer_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+  "model_sha256": "0827a741ec86c047708d5698c540d353a223347f25a1d883256b236bf495b70c",
+  "profile_sha256": "cdeff30a9b656c62b09e813ceee8cd541a6d0c0023898ccee2fbb7580fc4b1b2",
+  "purpose": "Generic QA only; G-code is not machine-ready. No physical print, support removal or fit verified.",
+  "command_path_policy": "Machine-local operands removed for publication; executable/model/profile digests and outcome retained. Use source/slice_candidate.py with own executable/output directory."
+}

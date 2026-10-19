@@ -1,0 +1,402 @@
+{
+  "record_scope": "Historical candidate freeze/review transcription retained; not the current release status. See ../../PUBLICATION.md or ../PUBLICATION.md as applicable and qa/publication/provenance.json.",
+  "schema_version": "1.0",
+  "integration_role": "Author-team transcription and restriction integration of an external independent review; not a new independent approval.",
+  "external_evidence_root_label": "niu-independent-review",
+  "original_review": {
+    "reviewed_at_utc": "2026-10-18T17:47:11.879971+00:00",
+    "fixed_commit": "7d334d942bcb56b02e5c77c970e61591720a9296",
+    "base_commit": "1976d60d5e1621dac2ce6a5d904e74796c38be0e",
+    "main_report": "INDEPENDENT-REVIEW.md",
+    "main_report_sha256": "9f32ecffdc9cf00e2eb663fb3b626bf140c9617723dd4922f7b5a4eeaacf5f0f",
+    "summary_sha256": "32ac4d619cf52d98981e5055b60db754f4ef56ea877e3bd9e96cd05ab6e9527a",
+    "overall_package_decision": "NO_GO_PENDING_SCENE_UNITS_AND_OFFICIAL_LIBRARY_VERIFICATION",
+    "fixed_STL_decision": "CONDITIONAL_GO",
+    "required_STL_geometry_changes": [],
+    "publication_performed": false
+  },
+  "fixed_STL": {
+    "path": "models/v1/model.stl",
+    "bytes": 91684,
+    "sha256": "0827a741ec86c047708d5698c540d353a223347f25a1d883256b236bf495b70c",
+    "dimensions_mm": [
+      166,
+      111,
+      54.400001525878906
+    ],
+    "author_working_STL_hash_checked_during_integration": true,
+    "author_working_STL_matches_fixed_review_hash": true,
+    "geometry_recomputed_during_integration": false
+  },
+  "delta_review": {
+    "required": true,
+    "author_delta_commit": null,
+    "author_delta_scene_sha256": null,
+    "current_package_release_status": "NO_GO_PENDING_DELTA_INDEPENDENT_REVIEW_AND_SUPPORTED_OFFICIAL_LIBRARY_VERIFICATION",
+    "note": "Original review decisions are retained. Concurrent author unit corrections and this documentation integration are not independently accepted by this record.",
+    "scene_unit_requirement": {
+      "original_scene_sha256": "566ea07fdcc5e48347686a0dd60222ba61345dbae6458ab6a86c4fb19c0957f7",
+      "required_system": "METRIC",
+      "required_scale_length": 0.001,
+      "required_length_unit": "MILLIMETERS",
+      "mesh_or_object_scaling_permitted": false,
+      "required_delta_checks": [
+        "New commit and affected file hashes",
+        "Saved/reopened scene units",
+        "Exact oriented binary32 world triangles versus unchanged STL",
+        "Affected manifest and QA consistency"
+      ],
+      "unchanged_STL_full_geometry_evidence_may_be_reused": true
+    }
+  },
+  "inherited_independent_geometry": {
+    "scope": "Reported by original independent reviewer; not rerun during this integration.",
+    "triangles": 1832,
+    "vertices": 918,
+    "edges": 2748,
+    "all_unordered_triangle_pairs": 1677196,
+    "exact_AABB_candidates_refined": 22225,
+    "unexpected_intersections": 0,
+    "regular_horizontal_sections_valid": 272,
+    "additional_vertex_event_interval_midpoints_valid": 77,
+    "continuous_all_height_or_arbitrary_direction_proof": false,
+    "thin_features": {
+      "mullion_width_mm_approx": 0.9,
+      "mullions_are_backed_relief_not_independent_load_bearing_walls": true,
+      "main_and_entry_ridge_flat_width_mm_approx": 1.200000048,
+      "opening_0p8mm": {
+        "flagged_layers_over_0p01_mm2": 3,
+        "maximum_local_loss_mm2": 0.09061623,
+        "whole_section_disappearance_count": 0
+      },
+      "opening_1p0mm": {
+        "flagged_layers_over_0p01_mm2": 138,
+        "maximum_local_loss_mm2": 8.022174188,
+        "whole_section_disappearance_count": 0
+      },
+      "opening_1p2mm": {
+        "independent_original_coordinate_maximum_local_loss_mm2": 8.022939609,
+        "author_maximum_local_loss_mm2": 9.162941496,
+        "diagnostic_rounding_mm": 1e-06,
+        "diagnostic_rounded_copy_reproduces_author_value": true,
+        "original_results_preserved": true,
+        "interpretation": "Critical-width and snap sensitivity, not a global wall-thickness pass or a strength certificate."
+      },
+      "global_3D_minimum_wall_thickness_certified": false,
+      "original_tip_failure_preserved": true
+    }
+  },
+  "inherited_independent_slicing_support": {
+    "scope": "Fixed STL and original diagnostic slice. Results transcribed from read independent reports; no reslicing performed during integration.",
+    "slicer": "PrusaSlicer 2.9.6",
+    "original_gcode_sha256": "c66d2eed9bd6fb0a6f1a46dfacaa064162ed9f775962102b777367dc0418eb20",
+    "original_gcode_bytes": 71282238,
+    "original_config_sha256": "cdeff30a9b656c62b09e813ceee8cd541a6d0c0023898ccee2fbb7580fc4b1b2",
+    "slicer_executable_sha256": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704",
+    "independent_reslices_in_original_review": 1,
+    "independently_parsed_lines": 1820276,
+    "model_layers": 272,
+    "support_only_layers": 60,
+    "layer_change_blocks": 332,
+    "strict_boundary_difference": {
+      "segments": 5,
+      "length_mm": 69.8000029563904,
+      "gcode_Z_mm": [
+        23.6,
+        40.2
+      ],
+      "features": [
+        "Entry door-relief horizontal frame top",
+        "Front gable circular-recess horizontal slat top"
+      ],
+      "adjacent_plus_minus_0p0001_mm_sections_union_difference_count": 0,
+      "original_strict_differences_preserved": true,
+      "interpretation": "Vertex/top-face and binary32 section-boundary explanation does not replace the strict comparison or certify complete per-line equality."
+    },
+    "actual_overhang": {
+      "bridge_infill_segments": 1831,
+      "overhang_perimeter_segments": 89,
+      "longest_whole_bridge_label_path_mm": 55.365286,
+      "internal_gyroid_closure": {
+        "Z_mm": 1.8,
+        "max_unsupported_centerline_gap_mm": 4.719216,
+        "location": "Base top closes sparse gyroid infill",
+        "whole_label_path_is_not_free_span": true
+      },
+      "entry_shallow_relief_lintel": {
+        "Z_mm": 22.8,
+        "max_prior_layer_or_near_support_projection_centerline_gap_mm": 8.1,
+        "orientation": "Along wall",
+        "solid_backing_adjacent": true,
+        "endpoint_or_side_attachment_present": true,
+        "same_layer_side_adhesion_possible_not_physically_proven": true,
+        "isolated_detached_component_claimed": false,
+        "sagging_or_surface_mark_risk_retained": true
+      }
+    },
+    "support_proxies": {
+      "actual_support_segments": 45905,
+      "model_centerline_intrusions": 0,
+      "diameter_0p45_mm_external_corridor_segments": 45905,
+      "diameter_1_mm_blocked_segments": 304,
+      "blocked_regions": {
+        "front_window_sill": 206,
+        "left_window_recess": 54,
+        "entry_door_relief": 6,
+        "main_eave_transition": 8,
+        "entry_round_recess_front_gable_eave": 30
+      },
+      "best_external_proxy_radius_range_mm_approx": [
+        0.419999,
+        0.478541
+      ],
+      "scope": "Continuous full planar segment sweep in actual-height slab shadows; polygon-circle proxies. Not a full three-dimensional tool or support-removal simulation.",
+      "omitted_physics_and_obstacles": [
+        "Other support-branch interlock",
+        "Complete real tool and hand geometry",
+        "Captured fragments",
+        "Material adhesion",
+        "Fracture and removal forces"
+      ],
+      "one_mm_tool_access_certified": false,
+      "whole_support_block_removal_certified": false,
+      "physical_support_removal_tested": false
+    }
+  },
+  "necessary_manufacturing_conditions": {
+    "orientation": "Base down",
+    "scale_percent": 100,
+    "diagnostic_starting_profile": {
+      "nozzle_mm": 0.4,
+      "layer_height_mm": 0.2,
+      "nominal_line_width_mm": 0.45,
+      "perimeters": 3,
+      "top_solid_layers": 4,
+      "bottom_solid_layers": 4,
+      "infill_percent": 20,
+      "infill_pattern": "gyroid",
+      "support_style": "automatic grid",
+      "support_threshold_degrees": 45,
+      "support_xy_gap_mm": 0.4,
+      "support_z_contact_gap_mm": 0.2,
+      "support_interface_layers": 3,
+      "dont_support_bridges": 1
+    },
+    "actual_machine_and_material_reslicing_required": true,
+    "retain_removable_external_eave_window_and_recess_support": true,
+    "support_free_claim_permitted": false,
+    "bridge_capability_requirement": "Handle approximately 4.719216 mm internal infill closure and 8.1 mm shallow entry-relief path with adjacent backing/end or side attachment, or revise local support/infill/solid layers/bridge direction and reslice.",
+    "removal_sequence": [
+      "Cut and peel exposed front/left/outer grid into small pieces",
+      "Clean exposed shallow-recess interface strands gradually",
+      "Protect 0.9 mm backed mullions, recess edges and eaves; no hard-prying or intact-block pull"
+    ],
+    "unsafe_access_response": "Revise support placement/interface/gaps/direction, or use a compatible soluble process, then reslice and inspect.",
+    "scaling_down_invalidates_current_small_feature_conclusions": true,
+    "supplied_gcode_machine_ready": false,
+    "physical_tests_completed": {
+      "printing": false,
+      "support_removal": false,
+      "bed_adhesion": false,
+      "warping": false,
+      "surface_or_detail_fidelity": false,
+      "material_strength": false
+    }
+  },
+  "official_Library": {
+    "library_file_id": "<private-library-identity>",
+    "version": 0,
+    "remote_create": "Succeeded according to original receipt; outcome is not uncertain.",
+    "local_identity_writeback": "Known failure: official unmodified helper calls os.setxattr, absent in current Windows Python.",
+    "official_download_or_materialization": "Not attempted in the original reviewed workflow.",
+    "official_download_verified": false,
+    "auto_review_denial": false,
+    "supported_workflow_resolution_required": true,
+    "no_retry_duplicate_upload_or_helper_modification_in_this_integration": true,
+    "do_not_bypass_or_simulate_metadata": true,
+    "required_completion": "Officially supported identity persistence and official download, then verify same ID/version/size/SHA and item-by-item payload; independent delta review required.",
+    "original_local_archive_only": {
+      "bytes": 39894415,
+      "sha256": "c369de053179a9d2a75b56c9233dbead27943542ee143e4416eb314abf83befb",
+      "verified_as_service_download": false,
+      "covers_new_author_delta": false
+    }
+  },
+  "integration_limits": {
+    "files_changed_only": [
+      "PRINTING-LIMITS.md",
+      "qa/INDEPENDENT-REVIEW-INTEGRATION.md",
+      "qa/independent-review-summary.json"
+    ],
+    "original_external_review_modified": false,
+    "git_operations_performed": false,
+    "library_operations_performed": false,
+    "copied_private_photos_pdf_gcode_models_or_large_raw_evidence": false,
+    "evidence_inventory_contains_metadata_only": true,
+    "raw_evidence_not_fully_read_is_labeled_hash_only": true,
+    "new_full_geometry_slicing_or_source_review_claimed": false
+  },
+  "evidence_files": [
+    {
+      "relative_path": "INDEPENDENT-REVIEW.md",
+      "bytes": 12728,
+      "sha256": "9f32ecffdc9cf00e2eb663fb3b626bf140c9617723dd4922f7b5a4eeaacf5f0f",
+      "integration_inspection": "full_text_read",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "review-summary.json",
+      "bytes": 7456,
+      "sha256": "32ac4d619cf52d98981e5055b60db754f4ef56ea877e3bd9e96cd05ab6e9527a",
+      "integration_inspection": "full_text_read",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "geometry-audit/GEOMETRY-REVIEW.md",
+      "bytes": 6575,
+      "sha256": "cfaf5baaa965246095ad8995109addd39adeff2f9a7bbf9cc90965b755d99e77",
+      "integration_inspection": "full_text_read",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "geometry-audit/geometry-results.json",
+      "bytes": 10816,
+      "sha256": "c39d73927fc879c059707064660ae6639abcccbf23d61f6f4e8ad42c436c2e1e",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "geometry-audit/exact-collisions.json",
+      "bytes": 2391,
+      "sha256": "62e9c49b8436c50620ec89a482466aabab74a371085d5e1401a40b3d01d12703",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "geometry-audit/morphology-controls.json",
+      "bytes": 167,
+      "sha256": "9fc58f3b3755d7eb8eebb09cc9487043da88c0db3e6fb471ff1ef254ea14c870",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "geometry-audit/supplemental-measurements.json",
+      "bytes": 1598,
+      "sha256": "071562d86f16b1a079e7e43fa71183409c849875d13a4d9670415abec40c4e7a",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "slicing-support-audit/SLICING-SUPPORT-REVIEW.md",
+      "bytes": 10032,
+      "sha256": "5b6a1338b4092d10ea5414b37c49db76c8232dab3662e80e9028c35150ddb161",
+      "integration_inspection": "full_text_read",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "slicing-support-audit/reslice-result.json",
+      "bytes": 1530,
+      "sha256": "b5556cff2ae39dae97acb3fcbf1ff01e95b1b96fd86c42a33444e6a9c51c1c44",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "slicing-support-audit/parse-summary.json",
+      "bytes": 15168,
+      "sha256": "9eafdc477fe8bbff797eab877e0ccb08d087f730f60649ef69a4d2992a2cf2ba",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "slicing-support-audit/outliers.json",
+      "bytes": 1560,
+      "sha256": "bdb31babd1cf7f0b01ebf268a604c841e5b3042230c111fde39857803a61f39b",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "slicing-support-audit/bridge-results.json",
+      "bytes": 4374394,
+      "sha256": "41fe159e0a3b2680da5b3293b44d9b56846a10761fd46a38184eaddabb5eb420",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "slicing-support-audit/same-layer-entry-lintel.json",
+      "bytes": 3040,
+      "sha256": "7843a546dbe2d6b23ebf57d22ebce93a902b23756e81632e094b694c7db4201a",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "slicing-support-audit/support-boundary-followup.json",
+      "bytes": 213425,
+      "sha256": "777e97f83d0618d05ad595e8b316c5144302286e2420d009443b450416198a54",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "source-audit/SOURCE-VISUAL-REVIEW.md",
+      "bytes": 5837,
+      "sha256": "c67b0f4ad8d77be855b6a48808403474a373cf4b10c0382448e82c209f169554",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "source-audit/SOURCE-VISUAL-RESULTS.json",
+      "bytes": 6645,
+      "sha256": "f04218344afb08965286d53a28ef3a5d8951bdcfd86f14d47e059dcfbaba90fc",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "rebuild-scene-audit/REBUILD-SCENE-REVIEW.md",
+      "bytes": 7105,
+      "sha256": "9d030e37cb71ece0a9b71b8342ec54fc7492dc3975c227dd0c18b8e279f99ccd",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "rebuild-scene-audit/unit-only-fix-proof.json",
+      "bytes": 12822,
+      "sha256": "a3a360c7fc0fcdd0be9299e8d214b051cc2a2a7e71f0e9947e5b9b50fd4dc653",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "package-local-archive-and-library-status.json",
+      "bytes": 30666,
+      "sha256": "be307bcd82b82de2dd3828160f76cb5a0ee630d919b8a286fc179dcd69b8846c",
+      "integration_inspection": "referenced_evidence_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "candidate/source/build_model.py",
+      "bytes": 5825,
+      "sha256": "a73688dc2e145fec537783a57f764453d65fb82b76952b944967e42ff182584b",
+      "integration_inspection": "fixed_candidate_source_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "candidate/source/render_preview.py",
+      "bytes": 4042,
+      "sha256": "627c733f64a1a7393208100d54976af56f74badb0ec4378c7c9c4ddec8389a0a",
+      "integration_inspection": "fixed_candidate_source_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "candidate/parameters.json",
+      "bytes": 1830,
+      "sha256": "e7d0a8f7b16a9038b0501d148b3448664846c2183d173dd6291c9ac4c929c2e7",
+      "integration_inspection": "fixed_candidate_source_hash_only",
+      "content_copied_into_package": false
+    },
+    {
+      "relative_path": "candidate/models/v1/model.stl",
+      "bytes": 91684,
+      "sha256": "0827a741ec86c047708d5698c540d353a223347f25a1d883256b236bf495b70c",
+      "integration_inspection": "fixed_candidate_hash_only",
+      "content_copied_into_package": false
+    }
+  ]
+}

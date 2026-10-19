@@ -1,6 +1,6 @@
 # 國立宜蘭大學｜建築外觀3D列印模型
 
-第二批新增2件，累計5件自建近似外觀模型；首批3件附件全部保持原樣。含底座最長150mm，各館獨立比例。全校及全國尚未完成，53個研究項目不能稱為53棟建築。
+本批新增農林修養室1件，累計6件外觀近似模型；既有5件附件原樣保存。各館獨立比例、毫米；既有五件含底座最長150mm，修養室166mm。全校與全國仍未完成，研究項目不能視為精確棟數。
 
 ## 模型圖鑑
 
@@ -8,9 +8,9 @@
 |---|---|---|
 | [![綜合行政教學大樓](神農校總區/buildings/niu-administration-teaching-complex/previews/front.png)](神農校總區/buildings/niu-administration-teaching-complex/README.md) | [![經德大樓](神農校總區/buildings/niu-jingde-building/previews/front.png)](神農校總區/buildings/niu-jingde-building/README.md) | [![時習大樓](神農校總區/buildings/niu-shixi-building/previews/front.png)](神農校總區/buildings/niu-shixi-building/README.md) |
 
-| [體育館（校史近似）](神農校總區/buildings/niu-gymnasium/README.md) | [圖書資訊大樓](神農校總區/buildings/niu-library-information-building/README.md) | 尚有建築待續作 |
+| [體育館（校史近似）](神農校總區/buildings/niu-gymnasium/README.md) | [圖書資訊大樓](神農校總區/buildings/niu-library-information-building/README.md) | [農林修養室（2016修復後近似）](神農校總區/buildings/niu-cultivation-hall-restored/README.md) |
 |---|---|---|
-| [![體育館（校史近似）](神農校總區/buildings/niu-gymnasium/previews/front.png)](神農校總區/buildings/niu-gymnasium/README.md) | [![圖書資訊大樓](神農校總區/buildings/niu-library-information-building/previews/front.png)](神農校總區/buildings/niu-library-information-building/README.md) | 全校尚未完成 |
+| [![體育館（校史近似）](神農校總區/buildings/niu-gymnasium/previews/front.png)](神農校總區/buildings/niu-gymnasium/README.md) | [![圖書資訊大樓](神農校總區/buildings/niu-library-information-building/previews/front.png)](神農校總區/buildings/niu-library-information-building/README.md) | [![農林修養室](神農校總區/buildings/niu-cultivation-hall-restored/previews/v1/front.png)](神農校總區/buildings/niu-cultivation-hall-restored/README.md) |
 
 [神農校總區入口](神農校總區/README.md) · [逐項續接清單](FOLLOW-UP.md) · [研究清單JSON](campus-building-inventory.json) · [五件圖鑑](gallery.png)
 
@@ -33,12 +33,14 @@
 
 ## 列印與驗證
 
-毫米、底座朝下。橋、露台、穿堂、弧拱門、開框與挑簷可能需要支撐，先在實際切片器檢查可移除性。未做Cura/Prusa工具路徑或實體試印，不保證免支撐或直接成功列印。
+毫米、底座朝下。橋、露台、穿堂、弧拱門、開框與挑簷可能需要支撐，先在實際切片器檢查可移除性。既有五件未做Cura/Prusa工具路徑或實體試印，不保證免支撐或直接成功列印。
 
-所有件有原STL法向/拓樸、每邊兩面、vertex link單環、單一連通表面、重建SHA、saved Blend幾何、0.2mm逐層閉合/Polygon valid、canonical fail-closed v3薄特徵輔助篩檢。
+既有五件有原STL法向/拓樸、每邊兩面、vertex link單環、單一連通表面、重建SHA、saved Blend幾何、0.2mm逐層閉合/Polygon valid、canonical fail-closed v3薄特徵輔助篩檢。
 
 行政模型54.071mm單層opening損失約1.027%，是四個最窄2.3mm矩形屋突的角部圓化損失，已獨立定位並接受警示；不能改寫成全部層零>1%或全面最小壁厚通過。次批兩件沒有>1%抽樣層。opening不是完整壁厚量測。
 
 來源原照片與PDF不隨公開包散布；圖鑑均為actual STL渲染。不是校方官方測繪成果。
 
 [整包驗證](publication-validation.json) · [驗證腳本](verify_publication.py) · [逐檔SHA](SHA256SUMS) · [首批附件保持證據](previous-model-preservation.json)
+
+修養室新增一套，採2016修復後低細節外觀、166mm長單件，已有PrusaSlicer數位QA並有支撐，尚未試印／實拆；4.72mm封頂、8.1mm淺凹走線、5條邊界差異及304條探入受阻見模型頁。舊gallery.png為既有五件合覽。Library未回驗，依使用者取消額外備份門檻而不作本次發布阻擋。既有五件的尺寸／未切片說明不套用到新增修養室。

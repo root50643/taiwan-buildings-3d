@@ -2,8 +2,12 @@
 
 校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 91.00 × 115.10 mm。
 
-![實際STL正面](previews/front.png)
-![實際STL背面](previews/rear.png)
+![實際STL正面](appearance/previews/front.png)
+![實際STL背面](appearance/previews/rear.png)
+
+## 最新配色與下載
+
+[八材質通用 3MF](appearance/wzu-appearance.3mf) · [彩色 Blender scene](appearance/scene.blend) · [四視圖、來源及配色界線](appearance/README.md)。正面實照支持紅磚橫帶、青綠玻璃與米白柱檐；未確認側後／屋面中性，原 STL 與歷史 QA 不變，未經 FFF／實體試印。
 
 ## 外觀與範圍
 八層主體、上段四道連續帶窗、中央招牌框、下段兩層柱廊及退縮陽台、屋頂大出簷、側後服務塔與十字架。
@@ -31,3 +35,7 @@ Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景�
 STL SHA-256：46fd8857dab8dadca6bc429ef697d4dbfe4a797c0b541347d331480a664c0a3c
 
 [校區圖鑑](../../README.md)／[學校](../../../README.md)
+
+## 歷史單色記錄
+
+原 scene.blend、render_preview.py 與三張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)。它們是原模型重建及製造檢查的歷史證據，最新配色展示與交換檔位於 appearance/。原 8 層薄篩警示仍保留，沒有被本次外觀檢查取代。

@@ -5,11 +5,17 @@
 ## 辨識量體與證據
 素混凝土立方體、斜向穿出的大方盒、窄陰影縫、底層退縮玻璃、外牆懸梯和反側兩個小陽臺。採校方正面照與建築師的側面、反面和航拍；不建模內部懸浮展廳。外部踏階加厚且以細斜樑相連，可能需要支撐。
 
+## 最新外觀與下載
+
+[七材質通用 3MF](appearance/han-appearance.3mf) · [彩色 scene](appearance/scene.blend) · [照片來源、四視圖及配色限制](appearance/README.md)。依可見混凝土灰、外伸盒紅側／紅底與深玻璃近似配色，不限四色；原 STL、幾何與製造限制不變。未確認面中性，尚未 FFF／實體試印驗證。
+
+航拍可見屋面女兒牆／採光狹縫，但原模型頂部採實心平面簡化；本次保留，沒有用色塊假造孔縫。室內懸浮展廳仍依原範圍省略，亦未增加水池或景觀。
+
 ## 交付
 - model.stl：毫米單件列印網格
 - scene.blend：可編輯的實際STL網格、攝影機與材質
 - build_model.py：可攜獨立Python建模程式，旁邊requirements.txt列出已用依賴
-- previews/front.png、rear.png、elevation.png：實際STL渲染
+- previews/front.png、rear.png、elevation.png：歷史單色實際 STL QA 渲染；最新展示改用 appearance/
 - sources.json：公開來源與查閱日期
 - validation.json：原檔法線、水密、邊及頂點流形、單表面、體積、尺寸、獨立重建hash及Blender一致性
 - layer-check.json：每0.2 mm截面封閉與0.8 mm XY薄特徵幾何篩查
@@ -26,8 +32,12 @@
 原STL與Blender幾何一致，獨立重建hash相同；原網格驗證全部通過。0.2mm截面共490層均封閉；0.8mm XY薄特徵篩查有11層警示（最高局部面積损失2.7367 mm²）。細薄警示可能是裝飾尖端、斜板相交或凹口邊緣，不能當作試印成功。
 
 
-## 實際STL正背並排
+## 最新外觀正背並排
 
-| 正面 | 背面（未見部分按詳頁明示簡化） |
+| 正面七材質外觀 | 背面原幾何，未確認色區中性 |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+## 歷史單色與重建證據
+
+原 scene.blend、render_preview.py、三張單色圖與製造資料完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)。它們是更新前幾何與驗證記錄，不是最新配色展示；原 validation.json／layer-check.json 的數位檢查與警示仍適用。

@@ -2,7 +2,14 @@
 
 國立雲林科技大學／斗六校區。本件為公開來源推估的外觀縮模，不是測繪成果。涵蓋範圍：學生活動中心與東側相連表演廳同建築群外觀；不包括雲夢湖對岸員生餐廳、湖面景觀及北校區雲泰表演廳。
 
-![交付STL正背視圖](previews/front-rear.png)
+## 最新雙立面四材質外觀版（2026-10-20）
+
+![學生活動中心外觀](appearance/previews/front.png)
+
+[配色、來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/student-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+只改善2014湖側與2017道路入口可登錄立面及玻璃屋頂；未見端面與中央簡化圓筒保持中性，屋頂不是PV。原STL與歷史QA保留，不是新增幾何。[原單色正背合圖](previews/front-rear.png)
+
 
 [頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
 

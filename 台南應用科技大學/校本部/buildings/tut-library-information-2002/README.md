@@ -1,4 +1,24 @@
-# 台南應用科技大學｜圖書資訊大樓（2002）
+# 台南應用科技大學｜圖書資訊大樓（跨年有界近似）
+
+## 2026-10-20 原貌配色重建
+
+[可編輯8材質Blender](appearance.blend) · [標準彩色3MF](appearance.3mf) · [最小獨立重建源包](appearance-rebuild-source.zip)
+
+| 正面配色 | 未確認背面保持中性 |
+|---|---|
+| ![正面配色](previews/appearance-front.png) | ![背面中性](previews/appearance-rear.png) |
+
+[完整俯斜](previews/appearance-aerial.png) · [北上頂圖](previews/appearance-top.png)
+
+2002-12-08 Flickr照片已實際開圖並核對SHA256。可見正面與兩側的粉紅磚、綠藍玻璃、淺色帶／既有框、灰色彎曲雨棚據圖近似配色。色值未經色卡校正，帶寬與位置非測繪；未知北背面及屋頂保持中性，不把陰影當黑漆，不猜遮蔽立面。原幾何仍由2002／2018／2022／2025跨年來源組合，不能稱整棟2002原狀或2026現況。原照片不放公開包。
+
+原STL與正式source／歷史QA原封保留。本次只對表面共面細分，原6,058面對應新25,150面、12,569頂點；8材質不受4色限制。原包圍盒完全相同，signed-volume差0 mm³，最大共面誤差1.84e−14 mm，最大單原面面積差9.10e−13 mm²。全域水平切線防止T接，未使用網格repair。
+
+實際Blender float32與lib3mf 2.5.0嚴格讀回，均零退化、零重合頂點。兩者均實際編輯單一材質、存檔、重開驗證。lib3mf使用預設6位小數，0警告；重存後最大座標變動7.63e−6 mm，面索引與拓撲不變，因此不宣稱其座標bitwise相同。小三角面仍存在，最小面積2.507e−6 mm²；數位測試不是最小可印特徵或實體試印證據。
+
+[幾何QA](appearance-geometry-qa.json) · [格式讀回](appearance-roundtrip-qa.json) · [實際材質編輯QA](appearance-edit-roundtrip-qa.json) · [逐面mapping](appearance-mesh.json) · [材質與照片證據](material-evidence.json) · [本輪說明](APPEARANCE-QA.md)
+
+以下保留原模型說明與歷史QA，與上方新配色QA分開。全庫件數維持502／高教470／110校。
 
 來源限定有界近似，非測繪、未試印。單棟，不含藝術中心85坪附展場、乃建堂及鄰樓。圖書館1–5F用途不等於整棟，官方另有7/8F電腦教室平面及9F其他教室用途。
 

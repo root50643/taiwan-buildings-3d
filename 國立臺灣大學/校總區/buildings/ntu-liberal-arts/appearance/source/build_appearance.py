@@ -27,6 +27,7 @@ def classify(tri):
  paint((hi[:,1]<-27.8)&zz(2.8,4.9),2,'existing_entry_steps_gray_stone')
  paint((n[:,2]>.05)&(n[:,1]<-.05)&(lo[:,2]>=27.9998)&(hi[:,2]<=34.0002),4,'source_visible_front_main_roof_slope_charcoal')
  paint((n[:,2]>.05)&(lo[:,2]>=30.9998)&(hi[:,2]<=40.0002)&(hi[:,1]<=-10.4998)&(lo[:,0]>=-17.501)&(hi[:,0]<=17.501),2,'existing_central_gable_top_edge_gray_proxy_not_new_detail')
+ paint(np.all(abs(t[:,:,2]-17.6)<.0002,axis=1)&(n[:,2]>.9),0,'unseen_portico_terrace_top_neutral')
  paint(hi[:,2]<=3.0001,5,'display_base_not_landscape')
  return color,why
 

@@ -2,9 +2,16 @@
 
 第二批獨立外觀模型；校區：光復校區。不是全校完成。尺寸含底座：79 × 150 × 37.3 mm；最長邊150 mm，各件獨立比例。
 
-![正面](previews/front.png)
+## 最新七材質外觀版（2026-10-20）
 
-![背面](previews/rear.png)
+| 正面原幾何配色 | 背面與未見面保持中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/artifact-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方照片登錄紅棕正面與左長側、奶油窗楣雨遮及灰色已見屋頂坡；深入口不是玻璃。另一長側、後端與遠側屋頂中性，不增加白牆基分界或磚瓦紋理。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 ## 來源及實際像素觀察
 

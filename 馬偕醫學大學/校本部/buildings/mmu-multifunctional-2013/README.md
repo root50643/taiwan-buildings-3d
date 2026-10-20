@@ -4,9 +4,13 @@
 
 | 坡下長玻璃面 | 坡上入口與教室翼 |
 |---|---|
-| ![同件坡下正面](previews/front.png) | ![同件坡上背面](previews/rear.png) |
+| ![同件坡下正面](appearance/previews/front.png) | ![同件坡上背面](appearance/previews/rear.png) |
 
 [原STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數源碼](build_model.py) · [來源](sources.json) · [完整QA](qa-summary.json) · [原面ray](architectural-ray-check.json) · [逐構件loss](feature-loss-locations.json)
+
+## 最新可見外觀配色
+
+[六材質通用 3MF](appearance/mmu-appearance.3mf) · [彩色 Blender scene](appearance/scene.blend) · [四圖、來源與色界限制](appearance/README.md)。依既有坡下實照補低層／右端紅磚、白框、深玻璃與細窗格，未確認屋後中性。原 STL 位元保留；僅交換網格為右端主要磚白色界作共面細分，2,881 頂點／5,778 面，並非原面序不變。原兩柱 78 筆角損樣本與歷史 QA 仍適用，未作新 FFF／試印。
 
 ## 建模依據與範圍
 
@@ -43,10 +47,14 @@
 
 ## 補充視角
 
-| 坡上低角度 | 屋頂 |
+| 坡下正立面 | 屋頂：未確認中性 |
 |---|---|
-| ![入口與外廊](previews/rear-elevation.png) | ![設備槽與折面頂](previews/top.png) |
+| ![坡下正立面](appearance/previews/elevation.png) | ![設備槽與折面頂](appearance/previews/top.png) |
 
-[坡下正視](previews/elevation.png) · [側視一](previews/west.png) · [側視二](previews/east.png)
+[歷史坡下正視](previews/elevation.png) · [歷史側視一](previews/west.png) · [歷史側視二](previews/east.png)
 
 獨立補充：192層482原Polygon零侵蝕／opening分裂或消失；兩方柱78個跨層樣本最大損失2.39848241135%、保留97.6015175886%，原四角0.41mm鄰域外損失為0。指定原三角面法線最小量得2.3999977mm，上下根實連重現。整層最大損失0.12703223848%不能取代此構件警告。禮堂局部平頂實際面積38.39061226mm²、旋轉外接框最窄5.40912916mm；指定點從z38.199向下連續28.199mm才出實體，這只證明該點根接，不能當全域壁厚。外廊、入口與折面禮堂仍須評估支撐及拆除，不得任意縮小，尚未實際試印。
+
+## 保留的歷史展示
+
+原 scene.blend 與七張舊圖完整保留：[坡下](previews/front.png)、[坡上](previews/rear.png)、[坡下正視](previews/elevation.png)、[西側](previews/west.png)、[東側](previews/east.png)、[坡上低角](previews/rear-elevation.png)、[頂視](previews/top.png)。歷史 QA 仍指原 STL／scene／舊圖；本次新圖與表面細分交換網格另行驗證，沒有改寫舊製造紀錄。

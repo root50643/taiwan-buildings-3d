@@ -4,9 +4,16 @@
 
 ## 實際 STL 正面與背面
 
-| 正面 | 背面 |
+## 最新七材質外觀版（2026-10-20）
+
+| 正面原幾何配色 | 背面與未見面保持中性 |
 |---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/geology-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方 2010 來源影像登錄正面紅磚、淡灰構造帶、原深拱罩白色與灰雨遮；玻璃只配原凹格背面，不染深罩內緣。背面、兩端和屋頂平面中性，不含後方建築群。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
 

@@ -1,5 +1,16 @@
 # 八甲校區客家研究學院：D1 前棟＋D2 後棟
 
+## 七材質外觀版（2026-10-20）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuud12-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+已見正面灰／奶油結構、既有獨立窗槽、綠色雨棚與光伏板。D2 走廊不當玻璃，D1 右端紅磚／奶油帶缺乏原面界而保守中性；不是完整實景配色還原。後側與未知屋頂中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依國立聯合大學官方照片與校區教學配置圖製作的建築辨識微縮模型。這是一個雙棟共底座的 STL，包含兩棟不同建築；不是新增第三棟，也不是精密測繪模型。
 
 ![模型正面](previews/front.png)

@@ -2,9 +2,16 @@
 
 第二批獨立外觀模型；校區：光復校區。不是全校完成。尺寸含底座：150 × 49 × 40.3 mm；最長邊150 mm，各件獨立比例。
 
-![正面](previews/front.png)
+## 最新六材質外觀版（2026-10-20）
 
-![背面](previews/rear.png)
+| 正面原幾何配色 | 另一已登錄長面 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nckudacheng-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方前後長面照片登錄磚牆、六石柱與實心欄板；凹拱代表開放走廊而非玻璃，屋頂與短端中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 ## 來源及實際像素觀察
 

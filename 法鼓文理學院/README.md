@@ -6,8 +6,10 @@
 
 | 正面 actual STL | 背面 actual STL |
 |---|---|
-| ![正面](金山校本部/buildings/dila-yangsheng-hall/previews/front.png) | ![背面](金山校本部/buildings/dila-yangsheng-hall/previews/rear.png) |
+| ![正面](金山校本部/buildings/dila-yangsheng-hall/appearance/previews/front.png) | ![背面](金山校本部/buildings/dila-yangsheng-hall/appearance/previews/rear.png) |
 
 [模型、來源及數位檢查](金山校本部/buildings/dila-yangsheng-hall/README.md)。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 
 本批僅揚生館；其他教學、行政、住宿與宗教空間未建模，不代表全校完成。後續可延續建築師整體校園來源逐棟研究，先釐清法鼓文理學院與僧伽大學／寺院棟界。
+
+揚生館已補[可見外觀五材質交換版](金山校本部/buildings/dila-yangsheng-hall/appearance/README.md)：可見混凝土灰、窗凹與灰金屬欄框，陰影不當黑漆，未確認屋後中性。原幾何、351 筆 >1% 薄損樣本及特定例外完整保留，未經新 FFF／試印；仍為既有單包，不代表全校完成。

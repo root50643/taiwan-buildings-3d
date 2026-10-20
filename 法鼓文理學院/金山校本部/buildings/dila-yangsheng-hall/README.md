@@ -4,7 +4,11 @@
 
 | 正面 actual STL | 背面 actual STL |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+## 最新配色與下載
+
+[五材質通用 3MF](appearance/yangsheng-appearance.3mf) · [彩色 Blender scene](appearance/scene.blend) · [四視圖、來源及配色界線](appearance/README.md)。建築師正面實照支持可見混凝土、窗凹與灰金屬欄框；陰影不當黑漆、屋後未確認面中性。原 STL、所有歷史 QA 與 351 筆特定薄損樣本保留，未經新的 FFF／試印。
 
 ## 檔案與重現
 
@@ -41,3 +45,7 @@
 ## 獨立特定薄損例外
 原始235層770個Polygon逐件侵蝕及opening零消失／分裂。351個>1%是8族跨層樣本，不是351根柱；原WKT及正式opening數值完整保留，沒有改用理想矩形取代。原截面矩形身份只作佐證，原面法線及根另測：東橋102筆最小1.5376511mm、南下擋牆2筆1.5376510mm、南角墩67筆1.2301178mm、西北角墩117筆1.2301216mm、北橋51筆1.5376511mm、南上擋牆2筆1.5376492mm、內退欄杆兩柱9筆1.0250988mm、西北屋簷角1筆1.7426681mm。所有警告探測起點在原實體內；兩欄柱向下接樓板、向上接欄帶，其餘指定樣本根連至基底，336原面控制射線重現。
 9筆欄柱樣本最大損失13.14696384744%、保留86.85303615256%，細欄不得以全層最大0.14996534288%掩蓋。8筆原作者0.6mm角區外直邊微殘差最高0.006287658521mm²保留；獨立真四角0.41mm區外最高0.006852099738mm²／原構件0.1025258520%，完全在原邊界0.005mm內，不能稱純角零損或抹除數值。上述有限尺寸及根證據支持本件特定例外，非全方向／全域最小壁厚或實體可印保證。細欄、橋欄、挑簷仍須切片評估支撐和拆除，不得任意縮小，未實際試印。
+
+## 歷史單色與展示檢查
+
+原 scene.blend 與八張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[左側](previews/left.png)、[右側](previews/right.png)、[頂視](previews/top.png)、[屋面細節](previews/roof-detail.png)、[南框細節](previews/porch-detail.png)、[北端細節](previews/north-detail.png)。原 readme-view-check.json 是當時單色展示的路徑與 SHA 記錄，未覆寫；現行 README 圖片另由此次外觀發布檢查驗證。上列原製造警示與特定例外沒有被配色 QA 取代。

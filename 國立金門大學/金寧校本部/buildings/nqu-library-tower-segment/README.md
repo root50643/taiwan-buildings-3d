@@ -2,9 +2,16 @@
 
 本修版補入2024-09-23新側面實拍證據；本件僅為圖資大樓的**銃樓局部外觀近似**，不是獨立建物、全館測繪或全校完成。以建築師實拍、校方簡報和2019年記者實拍交叉核對，自行以 Python / manifold3d 建立；沒有擷取第三方3D網格。
 
-| 實際STL正面 | 未知背面留白 |
+## 最新七材質外觀版（2026-10-20）
+
+| 正面原幾何配色 | 背面保持中性 |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nqu-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+只對建築師實景可登錄正面與右側配色；凸角石和窗框淡色，前瓦坡炭灰，未覆核左側與未知背面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 [正立面](previews/elevation.png) · [頂視](previews/top.png) · [屋頂低視角](previews/roof-detail.png)
 

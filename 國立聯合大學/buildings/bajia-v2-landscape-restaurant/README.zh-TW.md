@@ -1,5 +1,16 @@
 # 國立聯合大學 八甲景觀餐廳
 
+## 七材質外觀版（2026-10-20）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuv2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+原斜柱黃色、腰帶紅色、塔樓凹背深玻璃、原 PV 藍色。正面大凹背三角面跨兩層，保守中性，不把下層入口染成整面玻璃；上層藍玻璃為明列未還原區，後側與其他屋頂中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依官方外觀照片製作的近似列印模型。最長邊獨立設定150 mm，並非全校統一縮尺或實測模型。正面朝-Y。只建外觀，不建內部配置。
 
 ## 外形與來源

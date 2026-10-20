@@ -2,9 +2,16 @@
 
 第十批，力行校區。尺寸 150 × 86 × 43 mm，底座最長邊150 mm，每件比例獨立。
 
-![正面](previews/front.png)
+## 最新七材質外觀版（2026-10-20）
 
-![背面](previews/rear.png)
+| 正面原幾何配色 | 背面與未見面保持中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/e101-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方 2017／2010 歷史照片登錄七拱磚牆、原白肩飾與灰綠窗格、前坡灰棕屋面；深廊口不是整片玻璃，中央門口中性。後面及小突出未知面保留中性，不捏造山牆斜飾邊。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 ## 來源與像素檢視
 

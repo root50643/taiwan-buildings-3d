@@ -2,7 +2,14 @@
 
 國立雲林科技大學／斗六校區。本件為公開來源推估的外觀縮模，不是測繪成果。涵蓋範圍：古蹟群中三層主樓與兩端樓梯；不含斜接連廊、工場、附屬房舍及後增電梯。
 
-![交付STL正背視圖](previews/front-rear.png)
+## 最新修復後正面七材質外觀版（2026-10-20）
+
+![主樓正面外觀](appearance/previews/front.png)
+
+[配色、來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/yunsyu-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+只改善2023修復後照片可登錄的主樓正面；背面、深處端梯及折板屋頂保持中性。原STL與歷史QA保留，不是新增幾何。[原單色正背合圖](previews/front-rear.png)
+
 
 [頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
 

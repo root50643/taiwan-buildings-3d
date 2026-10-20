@@ -2,7 +2,14 @@
 
 國立雲林科技大學／斗六校區。本件為公開來源推估的外觀縮模，不是測繪成果。涵蓋範圍：圖書館高層長條量體、階退低層藝術中心及前伸入口翼的整體外觀近似；不含藝術雕塑、景觀植栽及室內空間。
 
-![交付STL正背視圖](previews/front-rear.png)
+## 最新來源限定前面六材質外觀版（2026-10-20）
+
+![圖書館前立面外觀](appearance/previews/front.png)
+
+[配色、來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/library-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+只改善2008官方照片13013可登錄的前面與左端藝術中心雨棚；背面、屋頂與右入口保持中性。原STL與歷史QA保留，不是新增幾何。[原單色正背合圖](previews/front-rear.png)
+
 
 [頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
 

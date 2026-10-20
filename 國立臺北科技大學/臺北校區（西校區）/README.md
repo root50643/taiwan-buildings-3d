@@ -6,3 +6,7 @@
 - [一大川堂校史館南端六開間段](buildings/ntut-yida-south-section/)：2024修復後南端局部；北段與L形橫翼未建
 
 [返回學校圖鑑](../README.md) · [其餘建物續接](../coverage/README.md)
+
+[八材質外觀與來源界線](buildings/ntut-red-house/appearance/README.md)
+
+![紅樓外觀](buildings/ntut-red-house/appearance/previews/front.png)

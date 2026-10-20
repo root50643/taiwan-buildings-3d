@@ -1,6 +1,6 @@
 # 彰師大全校建築續接清單
 
-初查：2026-10-13；白沙入口、王金平湖面側與綜合中心入口局部更新：2026-10-20。**全校未完成，已做7件局部外觀段。** 一列可能是群棟、歷史項或棟界待核名稱，不能加總為現存建築棟數。
+初查：2026-10-13；白沙入口、王金平湖面側與綜合中心入口局部更新：2026-10-20。**全校未完成，已做8件局部外觀段。** 一列可能是群棟、歷史項或棟界待核名稱，不能加總為現存建築棟數。
 
 ## 名稱與年代先決事項
 
@@ -33,7 +33,7 @@
 | 學生餐廳 | **已核名稱，未研究外觀**。 | 尋找至少兩個真實角度；核定建物邊界、屋頂與背面後建模 | [來源1](https://www.ncue.edu.tw/p/412-1000-1884.php?Lang=zh-tw) |
 | 理學一館 | **已做局部：正立面段**。2025-05-01使用執照；地下1/地上6層。首批只做主立面和入口側角，不是全棟。 | 補背面、全深度與屋頂實拍後另作完整棟；不可直接沿用截段進深 | [來源1](https://www.ncue.edu.tw/p/412-1000-1884.php?Lang=zh-tw)、[來源2](https://www.ncue.edu.tw/p/406-1000-34740,r93.php?Lang=zh-tw)、[來源3](https://science.ncue.edu.tw/news_detail/152/) |
 | 圖資大樓（總圖書館、圖書資訊大樓） | **已做局部：入口轉角段**。圖書館與資訊服務設於同棟，不拆成兩件；2016名稱會議、典藏完工照及2018另一側實拍。 | 取得新近外觀、完整周邊與屋頂；目前背側只是模型收邊 | [來源1](https://www.ncue.edu.tw/p/412-1000-1884.php?Lang=zh-tw)、[來源2](https://olis.ncue.edu.tw/public/Data/61230675571.pdf)、[來源3](https://www.mplus.org.hk/tc/collection/objects/project-file-main-library-national-changhua-university-of-education-19861989-chang-hua-changhua-taiwan-ca39-4-6-1/) |
-| 弘道館 | **已研究，尚缺多角度實拍**。已查看2018-01-11正面實拍：深直柱、中央大階梯、校徽位置；較新官方介紹及2020清冊為修澤蘭設計。舊活動導覽誤載井手薰，不沿用。 | 補另一外觀角度及平面形狀，再做完整棟或明示主立面段 | [來源1](https://www.ncue.edu.tw/p/412-1000-1884.php?Lang=zh-tw)、[來源2](https://impeweb.ncue.edu.tw/p/404-1040-25909.php)、[來源3](https://commons.wikimedia.org/wiki/File:弘道館.JPG)、[來源4](https://sdg.ncue.edu.tw/var/file/32/1032/img/1133/11.2.1B.pdf) |
+| 弘道館 | **已做局部入口柱廊段**；中央與兩側各兩跨，白斜扶壁、平懸挑簷、高細柱。規則窗格與展示封口明示，非全棟或2026現況，未實印。 | 補側背實拍、測量及全棟輪廓後再擴建 | [模型](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/)、[來源](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/SOURCES.md) |
 | 第三宿舍（審問樓） | **已核名稱，未研究外觀**。 | 尋找至少兩個真實角度；核定建物邊界、屋頂與背面後建模 | [來源1](https://www.ncue.edu.tw/p/412-1000-1884.php?Lang=zh-tw)、[來源2](https://impeweb.ncue.edu.tw/p/404-1040-25909.php) |
 | 第五宿舍（定靜樓） | **已核名稱，未研究外觀**。 | 尋找至少兩個真實角度；核定建物邊界、屋頂與背面後建模 | [來源1](https://www.ncue.edu.tw/p/412-1000-1884.php?Lang=zh-tw)、[來源2](https://impeweb.ncue.edu.tw/p/404-1040-25909.php) |
 | 第六宿舍（慎思樓） | **已核名稱，未研究外觀**。 | 尋找至少兩個真實角度；核定建物邊界、屋頂與背面後建模 | [來源1](https://www.ncue.edu.tw/p/412-1000-1884.php?Lang=zh-tw)、[來源2](https://impeweb.ncue.edu.tw/p/404-1040-25909.php) |

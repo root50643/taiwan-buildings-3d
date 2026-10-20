@@ -36,3 +36,9 @@
 [![游泳館九材質局部](buildings/ncue-wang-jin-pyng-swimming-entry-segment/previews/front.png)](buildings/ncue-wang-jin-pyng-swimming-entry-segment/)
 
 官方空拍版本的四跨五黃柱與黃綠入口塔，2017近景補充格線／色彩。任意展示尺寸，後側封口；規則窗框與直方黃柱是明示代理。0.75 mm橫框和0.375 mm屋縫保留局部細節侵蝕警告，非全棟、2026現況或實印驗證。
+
+### [弘道館入口柱廊片段](buildings/ncue-hongdao-entry-colonnade-segment/)
+
+[![弘道館八材質片段](buildings/ncue-hongdao-entry-colonnade-segment/previews/front.png)](buildings/ncue-hongdao-entry-colonnade-segment/)
+
+2018 正面照片及官方航拍約束的中央入口與兩側各兩跨；實體階梯、白斜扶壁、高細柱、紅褐直帶與退縮入口。8 色 3MF／Blend／STL，503 層數位 QA；窗框、比例和樹遮窗格近似，後板為展示封口，非全棟或 2026 現況，未實印。

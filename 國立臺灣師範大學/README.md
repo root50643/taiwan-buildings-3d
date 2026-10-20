@@ -4,7 +4,7 @@
 
 | 行政大樓 | 禮堂 | 文薈廳 |
 |---|---|---|
-| [![行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/previews/front.png)](和平校區I/buildings/ntnu-administration-central-entry-segment/)<br>[行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/) | [![禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/previews/front.png)](和平校區I/buildings/ntnu-auditorium-front-block-segment/)<br>[禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/) | [![文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/)<br>[文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/) |
+| [![行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/previews/front.png)](和平校區I/buildings/ntnu-administration-central-entry-segment/)<br>[行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/) | [![禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-auditorium-front-block-segment/)<br>[禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/) | [![文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/)<br>[文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/) |
 
 以上預覽皆由交付STL直接渲染。每件資料夾有 STL、可編輯 scene.blend、參數腳本、來源、數位QA及SHA。
 

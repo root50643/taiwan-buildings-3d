@@ -3,9 +3,16 @@
 國立臺灣師範大學 · 和平校區I · 校圖 H113  
 這是依公開外觀照片自建的局部近似模型，**不是完整單棟、測繪模型或2026現況複製品**。未使用第三方3D mesh。
 
-| 正面（實際 STL） | 背面／截斷面（實際 STL） |
+## 最新六材質外觀版（2026-10-20）
+
+| 正面原幾何配色 | 背面保持中性 |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/auditorium-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+只對校方正面照片與2022刊物可登錄前立面配色；塔樓下部飾板為石質，屋頂大面、背面及側返中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 [俯視](previews/top.png) · [正立面](previews/elevation.png)
 

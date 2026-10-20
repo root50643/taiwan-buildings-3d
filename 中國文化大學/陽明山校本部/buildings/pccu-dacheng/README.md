@@ -4,7 +4,13 @@
 
 | 正面 | 背面 |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+## 最新正面八材質外觀版（2026-10-20）
+
+[材質、四視角與來源界線](appearance/README.md) · [表面色 3MF](appearance/pccu-appearance.3mf) · [可編輯材質場景](appearance/scene.blend)
+
+只改善可辨識的前屋頂與前立面配色；其他三屋頂與未知側背保持中性。原 STL、建模程式、原場景與歷史 QA 未改，不是新增幾何。[原單色正面](previews/front.png) · [原單色背面](previews/rear.png)
 
 ## 版本與限制
 

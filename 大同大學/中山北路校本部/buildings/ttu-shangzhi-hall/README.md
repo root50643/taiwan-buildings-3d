@@ -1,12 +1,18 @@
 # 大同大學尚志教育研究館（白宮）｜完整主體外觀近似
 
-狀態：外觀已核准、作者硬QA全部通過；凍結候選，待獨立審核，未發布。這是尚志教育研究館，不是志生紀念館。
+原幾何歷史紀錄（非本次外觀交付狀態）：外觀已核准、作者硬QA全部通過；凍結候選，待獨立審核，未發布。這是尚志教育研究館，不是志生紀念館。
 
 | 東面入口側 | 西面背側 |
 |---|---|
-| ![東面入口側](previews/front.png) | ![西面背側](previews/rear.png) |
+| ![東面入口側](appearance/previews/front.png) | ![西面背側](appearance/previews/rear.png) |
 
 [東入口低視角](previews/elevation.png) · [西面低視角](previews/west_elevation.png) · [南側](previews/left.png) · [北側](previews/right.png) · [頂視](previews/top.png) · [高視角](previews/aerial.png)
+
+## 最新東入口六材質外觀版（2026-10-20）
+
+[材質、四視角與來源界線](appearance/README.md) · [表面色 3MF](appearance/ttu-appearance.3mf) · [可編輯材質場景](appearance/scene.blend)
+
+只改善東入口淺石柱／山牆、灰牆／階梯與深色開口；圓頂、西側與院內未知處仍中性。原 STL、建模程式、原場景與歷史 QA 未改，不是新增幾何。[原單色正面](previews/front.png) · [原單色背面](previews/rear.png)
 
 ## 主體與版本
 

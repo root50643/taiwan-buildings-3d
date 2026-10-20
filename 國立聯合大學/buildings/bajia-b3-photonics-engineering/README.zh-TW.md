@@ -1,5 +1,16 @@
 # 八甲校區 B3｜電機資訊學院光電館
 
+## 八材質外觀版（2026-10-20）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuub3-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方 2025 照片 12／13／15 登錄青綠翼板與低入口、淡黃上層內填牆、灰色主體及原光伏板。這三張來源明確屬 B3 而非 B4；開放走廊與梯塔凹背不是玻璃，未見背牆及其他屋頂中性，不新增文字或設備。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依國立聯合大學官方校園地圖及外觀照片製作的近似建築模型；不是測繪模型，尚未做實體試印。
 
 ![光電館實際 STL 正面預覽](previews/front.png)

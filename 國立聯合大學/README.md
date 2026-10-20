@@ -2,7 +2,7 @@
 
 本專案收錄國立聯合大學建築物的 3D 模型、可編輯原始檔與實際模型預覽。說明與建築名稱使用繁體中文。
 
-目前已完成並收錄 **38 組近似外觀模型**；以下逐項列出已收錄的館舍及建築群。其餘館舍仍持續整理；本專案不宣稱已涵蓋全校建築。
+目前已完成並收錄 **39 組近似外觀模型**；以下逐項列出已收錄的館舍及建築群。其餘館舍仍持續整理；本專案不宣稱已涵蓋全校建築。
 
 [早期兩校區建築研究目錄](docs/CATALOG.zh-TW.md)整理了 **50 筆建物／附屬量體候選**；這不是 50 棟現存獨立建築的斷言，也不是完成率分母。部分歷史館舍、代碼與附屬量體仍待確認；該研究目錄的舊完成狀態不代表目前模型收錄數，最新收錄以本頁與各模型資料夾為準。另提供 [JSON 清單](docs/catalog.json)與 [CSV 清單](docs/catalog.csv)。
 
@@ -705,3 +705,13 @@
 [B1 電機工程館八材質外觀與來源界線](buildings/bajia-b1-electrical-engineering/appearance/README.md)
 
 [B3 光電館八材質外觀與來源界線](buildings/bajia-b3-photonics-engineering/appearance/README.md)
+
+## 新增：二坪山校名柱與附連警衛亭段
+
+[![二坪山校名柱與附連亭實際網格](buildings/erping-main-gate-tower-guardhouse-segment/previews/front.png)](buildings/erping-main-gate-tower-guardhouse-segment/README.md)
+
+新增二坪山校名柱與附連小警衛亭有界外觀近似，不含J1、左側另一亭或完整校門。43×55×123mm含3mm中性展示底座，尺寸估計非測繪；書法與NUU標誌留白，長槽為有背淺凹而非確認穿孔，未知後面與頂面採簡化閉合。7材質3MF/Blend/STL與五圖；1520面原始拓撲、615層全域截面、局部窗梃橫桿及簷邊篩查通過；來源限定外觀PASS，非全局壁厚或免支撐保證，未切片支撐驗證或實印。
+
+[模型、來源與 QA](buildings/erping-main-gate-tower-guardhouse-segment/README.md)｜[現行39套索引](model-index.json)
+
+原早期50筆研究候選清冊保持歷史內容，不作目前完成數分母。

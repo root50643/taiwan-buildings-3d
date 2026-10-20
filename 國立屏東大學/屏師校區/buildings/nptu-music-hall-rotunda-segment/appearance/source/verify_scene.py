@@ -9,6 +9,7 @@ me=r.find('m:resources/m:object/m:mesh',NS);v=np.array([[float(t.get(k)) for k i
 def check_mesh(o):
  assert np.array_equal(np.array([list(p.co) for p in o.data.vertices]),v);assert np.array_equal(np.array([list(p.vertices) for p in o.data.polygons]),f);assert [p.material_index for p in o.data.polygons]==colors;assert np.array_equal(np.array(o.matrix_world),np.eye(4))
 check_mesh(ob);pal=json.loads((A/'palette.json').read_text())['materials'];assert [m.name for m in ob.data.materials]==[p['id'] for p in pal]
+assert set(colors)==set(range(len(pal)))
 expected=[]
 for m,p in zip(ob.data.materials,pal):
  rgba=[lin(int(p['srgb'][i:i+2],16)/255) for i in [1,3,5]]+[1];expected.append(rgba);assert max(abs(a-b) for a,b in zip(m.diffuse_color,rgba))<1e-7;assert max(abs(a-b) for a,b in zip(m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value,rgba))<1e-7
@@ -18,4 +19,4 @@ with tempfile.TemporaryDirectory() as td:
  p=Path(td)/'edit.blend';bpy.ops.wm.save_as_mainfile(filepath=str(p));bpy.ops.wm.open_mainfile(filepath=str(p));o=[x for x in bpy.data.objects if x.type=='MESH'][0];check_mesh(o)
  for i,m in enumerate(o.data.materials):
   rgba=(.1,.2,.3,1) if i==2 else expected[i];assert max(abs(a-b) for a,b in zip(m.diffuse_color,rgba))<1e-7;assert max(abs(a-b) for a,b in zip(m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value,rgba))<1e-7
-(A/'qa/scene-validation.json').write_text(json.dumps({'scene_sha256':hashlib.sha256((A/'scene.blend').read_bytes()).hexdigest(),'vertices':len(v),'triangles':len(f),'original_triangle_geometry_exact':True,'material_names_and_srgb_verified':True,'seven_materials_used':True,'identity_transform':True,'single_material_edit_save_reopen_verified':True,'other_materials_and_geometry_preserved_on_edit':True,'external_assets_or_embedded_scripts':0,'physical_print_tested':False},indent=2)+'\n')
+(A/'qa/scene-validation.json').write_text(json.dumps({'scene_sha256':hashlib.sha256((A/'scene.blend').read_bytes()).hexdigest(),'vertices':len(v),'triangles':len(f),'original_triangle_geometry_exact':True,'material_names_and_srgb_verified':True,'material_count':len(pal),'all_palette_materials_used':True,'identity_transform':True,'single_material_edit_save_reopen_verified':True,'other_materials_and_geometry_preserved_on_edit':True,'external_assets_or_embedded_scripts':0,'physical_print_tested':False},indent=2)+'\n')

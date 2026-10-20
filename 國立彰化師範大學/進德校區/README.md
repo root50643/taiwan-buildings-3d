@@ -30,3 +30,9 @@
 [![綜合中心七材質局部](buildings/ncue-comprehensive-curved-entry-segment/previews/front.png)](buildings/ncue-comprehensive-curved-entry-segment/)
 
 曲屏、8道長縫、5小孔、中央後退玻璃及弧形前階；歷史照片的未測量局部，不是全棟。細節開運算損失與跨空支撐需求保留，未實際列印。
+
+### [王金平游泳館入口立面與淺弧屋簷前段](buildings/ncue-wang-jin-pyng-swimming-entry-segment/)
+
+[![游泳館九材質局部](buildings/ncue-wang-jin-pyng-swimming-entry-segment/previews/front.png)](buildings/ncue-wang-jin-pyng-swimming-entry-segment/)
+
+官方空拍版本的四跨五黃柱與黃綠入口塔，2017近景補充格線／色彩。任意展示尺寸，後側封口；規則窗框與直方黃柱是明示代理。0.75 mm橫框和0.375 mm屋縫保留局部細節侵蝕警告，非全棟、2026現況或實印驗證。

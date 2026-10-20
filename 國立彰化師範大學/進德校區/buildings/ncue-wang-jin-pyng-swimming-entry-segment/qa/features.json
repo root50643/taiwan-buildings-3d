@@ -1,0 +1,90 @@
+{
+  "stl_sha256": "dd76caeae53d5d7a65a6cabe620f85bfff1caab554877b28fc03e06067b79dca",
+  "recess_checks": [
+    {
+      "feature": "upper_glass_panel",
+      "front_y_mm": -10,
+      "tested_x_minus_z_bounds": [
+        5,
+        -31.5,
+        10,
+        -29.25
+      ],
+      "clear_area_mm2": 11.25,
+      "occupied_area_mm2": 0.0,
+      "true_recess_not_building_passthrough": true
+    },
+    {
+      "feature": "lower_window_panel",
+      "front_y_mm": -10,
+      "tested_x_minus_z_bounds": [
+        5,
+        -12.75,
+        7,
+        -12
+      ],
+      "clear_area_mm2": 1.5,
+      "occupied_area_mm2": 0.0,
+      "true_recess_not_building_passthrough": true
+    },
+    {
+      "feature": "entrance_door_panel",
+      "front_y_mm": -10,
+      "tested_x_minus_z_bounds": [
+        -9,
+        -9,
+        -5,
+        -4
+      ],
+      "clear_area_mm2": 20.0,
+      "occupied_area_mm2": 0.0,
+      "true_recess_not_building_passthrough": true
+    }
+  ],
+  "normalized_dimensions_not_real_scale": true,
+  "nominal_minimum_features_mm": {
+    "roof_skin_vertical": 1.5,
+    "roof_rib_width": 1,
+    "roof_rib_height": 0.375,
+    "upper_horizontal_frames_height": 0.75,
+    "vertical_frames_width": 1,
+    "tower_horizontal_frames_height": 0.75,
+    "display_base": 2.25
+  },
+  "roof_top_local_tests": [
+    {
+      "z_mm": 56.26,
+      "components": 20,
+      "vanished_components": [],
+      "morphological_opening_loss_mm2": 2.763044830252964
+    },
+    {
+      "z_mm": 56.4,
+      "components": 20,
+      "vanished_components": [],
+      "morphological_opening_loss_mm2": 2.763044830252958
+    },
+    {
+      "z_mm": 56.6,
+      "components": 20,
+      "vanished_components": [],
+      "morphological_opening_loss_mm2": 2.763044830252995
+    },
+    {
+      "z_mm": 56.624,
+      "components": 20,
+      "vanished_components": [],
+      "morphological_opening_loss_mm2": 2.763044830252989
+    }
+  ],
+  "upper_grid_frontal_area_mm2": 176.9999999999999,
+  "upper_grid_0_8mm_opening_loss_mm2": 133.87145928533621,
+  "tower_grid_frontal_area_mm2": 223.04993104934692,
+  "tower_grid_0_8mm_opening_loss_mm2": 52.13241566677675,
+  "warnings": [
+    "0.75 mm horizontal frame bars and 0.375 mm roof rib rise are below the 0.8 mm detail screen, even though every whole horizontal component survives.",
+    "Morphological opening removes local corners and thin edges. Not a no-thin-feature or toolpath guarantee.",
+    "Roof overhang and recessed entrances need orientation/support planning in a real slicer.",
+    "No physical print, survey, engineering, dimensional-restoration or 2026 current-state claim."
+  ]
+}

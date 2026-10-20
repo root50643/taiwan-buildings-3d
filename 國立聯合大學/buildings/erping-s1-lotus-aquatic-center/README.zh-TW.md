@@ -1,5 +1,16 @@
 # 國立聯合大學 二坪山蓮荷水世界游泳館
 
+## 七材質外觀版（2026-10-20）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuus1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依完整官方照片 1 登錄灰色前牆、綠雨棚、入口灰青玻璃、暖灰褐實門與銀灰拱框；主館銀灰屋頂右坡為明列同屋面材質推估。側窗／後牆及前廳屋頂中性，不添水塔設備或招牌。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依官方外觀照片製作的近似列印模型。最長邊獨立設定150 mm，並非全校統一縮尺或實測模型。正面朝-Y。只建外觀，不建內部配置。
 
 ## 外形與來源

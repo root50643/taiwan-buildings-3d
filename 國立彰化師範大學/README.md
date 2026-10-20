@@ -1,22 +1,24 @@
 # 國立彰化師範大學｜3D列印外觀模型
 
-目前4件，全部是有實拍依據的局部外觀段；**全校與全棟均尚未完成**。2026-10-20新增白沙大樓歷史入口片段；截至2026-10-13已核對兩校區主要地圖/清單，另保留臺中校外宿舍的歷史範圍。
+目前5件，全部是有實拍依據的局部外觀段；**全校與全棟均尚未完成**。2026-10-20新增白沙大樓歷史入口片段及王金平活動中心湖面側局部；截至2026-10-13已核對兩校區主要地圖/清單，另保留臺中校外宿舍的歷史範圍。
 
-每件含底座最長150 mm，獨立比例；可下載STL、Blender及參數程式。第三方照片與PDF不重新散布。數位網格/逐層輪廓检查不等於實際切片工具路徑或實體試印，凸簷、柱廊可能需要支撐。
+各件採獨立展示尺寸；舊件最長150 mm，本次王金平局部含底座184 mm，均非已知實測比例；可下載STL、Blender及參數程式。第三方照片與PDF不重新散布。數位網格/逐層輪廓检查不等於實際切片工具路徑或實體試印，凸簷、柱廊可能需要支撐。
 
 | [理學一館正立面段](進德校區/buildings/ncue-science1-front-segment/) | [圖資大樓入口轉角段](進德校區/buildings/ncue-library-entry-corner-segment/) | [工學院大樓主立面段](師大校區/buildings/ncue-engineering-front-segment/) |
 |---|---|---|
 | [![理學一館正立面段](進德校區/buildings/ncue-science1-front-segment/previews/front.png)](進德校區/buildings/ncue-science1-front-segment/) | [![圖資大樓入口轉角段](進德校區/buildings/ncue-library-entry-corner-segment/previews/front.png)](進德校區/buildings/ncue-library-entry-corner-segment/) | [![工學院大樓主立面段](師大校區/buildings/ncue-engineering-front-segment/previews/front.png)](師大校區/buildings/ncue-engineering-front-segment/) |
 
-| [白沙大樓入口正面片段](進德校區/buildings/ncue-baisha-entry-front-segment/) |  |  |
+| [白沙大樓入口正面片段](進德校區/buildings/ncue-baisha-entry-front-segment/) | [王金平活動中心湖面側與淺拱屋頂局部](進德校區/buildings/ncue-wang-jin-pyng-lakeside-roof-segment/) |  |
 |---|---|---|
-| [![白沙大樓入口正面片段](進德校區/buildings/ncue-baisha-entry-front-segment/previews/front.png)](進德校區/buildings/ncue-baisha-entry-front-segment/) |  |  |
+| [![白沙大樓入口正面片段](進德校區/buildings/ncue-baisha-entry-front-segment/previews/front.png)](進德校區/buildings/ncue-baisha-entry-front-segment/) | [![王金平活動中心湖面側局部](進德校區/buildings/ncue-wang-jin-pyng-lakeside-roof-segment/previews/lake_right.png)](進德校區/buildings/ncue-wang-jin-pyng-lakeside-roof-segment/) |  |
 
 歷史照片限定的入口與短左翼，並非2026現況或全棟；提供多色3MF、可編輯Blender、STL及5張實際網格預覽。
 
+王金平局部含兩個斜收口真窗洞、內退玻璃帶及淺拱屋頂；後封板／底座為展示支撐，不是全棟或測繪。屋頂肋尖有局部0.8 mm篩查損失，未做實體列印，未把規劃PV當成現況。
+
 ## 校區與續接
 
-- [進德校區](進德校區/)：理學一館、圖資大樓入口、白沙大樓入口局部。
+- [進德校區](進德校區/)：理學一館、圖資大樓入口、白沙大樓入口及王金平活動中心湖面側局部。
 - [師大校區](師大校區/)：原寶山校區；工學院主立面局部。
 - [完整續接清單](CONTINUATION.md) · [結構化範圍紀錄](coverage.json)：53列範圍，含群棟及歷史待核項；不是53棟已核現存建築。
 

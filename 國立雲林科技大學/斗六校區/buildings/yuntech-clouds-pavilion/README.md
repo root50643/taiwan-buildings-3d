@@ -2,9 +2,16 @@
 
 國立雲林科技大學／斗六校區。本件為公開來源推估的外觀縮模，不是測繪成果。涵蓋範圍：全塔外觀近似，含底層柱廊；不含天線、機電內部或周邊宿舍。
 
-![交付STL正背視圖](previews/front-rear.png)
+## 最新七材質外觀版（2026-10-20）
 
-[頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
+![七材質外觀正面](appearance/previews/front.png)
+
+[七材質外觀說明與來源界線](appearance/README.md) · [表面色 3MF](appearance/yuntech-appearance.3mf) · [可編輯材質場景](appearance/scene.blend) · [背面](appearance/previews/rear.png) · [頂視](appearance/previews/top.png)
+
+只增加外觀材質；原 STL、幾何、原場景與歷史 QA 均保留。背面屬有限對稱配色外推，不是新測繪。3MF 非已完成切片或保證可印。
+
+### 原單色預覽（保留歷史）
+[原正背合圖](previews/front-rear.png) · [原頂視圖](previews/top.png) · [原正面大圖](previews/front.png) · [原背面大圖](previews/rear.png)
 
 ## 下載與重建
 - [可列印模型 model.stl](model.stl)：單位毫米，含底座最大邊不超過150毫米，本件尺寸約 76 × 76 × 150 毫米。
@@ -35,3 +42,4 @@ Python 3.12安裝 requirements.txt 後執行 python build_model.py。Blender 4.3
 驗證命令依序為 python validate_model.py、python check_layers.py、python check_thin_features.py。只有三項exit 0且validation／layer-check的checks全true才算這一版通過。
 
 參考照片、平面與PDF的權利仍屬各原作者／機關，本資料夾只分享自建幾何、腳本、實際STL渲染與來源連結。
+

@@ -9,7 +9,7 @@
 | 建築一 | 建築二 | 建築三 |
 |---|---|---|
 | [![第一行政大樓（歷史前棟）](buildings/ntu-administration/appearance/previews/front.png)](buildings/ntu-administration/README.md)<br>[第一行政大樓（歷史前棟）](buildings/ntu-administration/README.md) | [![農業陳列館](buildings/ntu-agricultural-exhibition/previews/front.png)](buildings/ntu-agricultural-exhibition/README.md)<br>[農業陳列館](buildings/ntu-agricultural-exhibition/README.md) | [![文學院歷史館舍](buildings/ntu-liberal-arts/appearance/previews/front.png)](buildings/ntu-liberal-arts/README.md)<br>[文學院歷史館舍](buildings/ntu-liberal-arts/README.md) |
-| [![總圖書館](buildings/ntu-main-library/previews/front.png)](buildings/ntu-main-library/README.md)<br>[總圖書館](buildings/ntu-main-library/README.md) | [![舊總圖書館／校史館（歷史前棟）](buildings/ntu-old-main-library/previews/front.png)](buildings/ntu-old-main-library/README.md)<br>[舊總圖書館／校史館（歷史前棟）](buildings/ntu-old-main-library/README.md) | [![博雅教學館](buildings/ntu-boya-lecture/previews/front.png)](buildings/ntu-boya-lecture/README.md)<br>[博雅教學館](buildings/ntu-boya-lecture/README.md) |
+| [![總圖書館](buildings/ntu-main-library/previews/front.png)](buildings/ntu-main-library/README.md)<br>[總圖書館](buildings/ntu-main-library/README.md) | [![舊總圖書館／校史館（歷史前棟）](buildings/ntu-old-main-library/appearance/previews/front.png)](buildings/ntu-old-main-library/README.md)<br>[舊總圖書館／校史館（歷史前棟）](buildings/ntu-old-main-library/README.md) | [![博雅教學館](buildings/ntu-boya-lecture/previews/front.png)](buildings/ntu-boya-lecture/README.md)<br>[博雅教學館](buildings/ntu-boya-lecture/README.md) |
 | [![第一學生活動中心（歷史前棟）](buildings/ntu-first-student-center/previews/front.png)](buildings/ntu-first-student-center/README.md)<br>[第一學生活動中心（歷史前棟）](buildings/ntu-first-student-center/README.md) | [![新月台](buildings/ntu-new-moon-pavilion/previews/front.png)](buildings/ntu-new-moon-pavilion/README.md)<br>[新月台](buildings/ntu-new-moon-pavilion/README.md) | [![普通教學館](buildings/ntu-putong-lecture/previews/front.png)](buildings/ntu-putong-lecture/README.md)<br>[普通教學館](buildings/ntu-putong-lecture/README.md) |
 | [![綜合體育館](buildings/ntu-sports-center/previews/front.png)](buildings/ntu-sports-center/README.md)<br>[綜合體育館](buildings/ntu-sports-center/README.md) | [![電機一館（主要前棟）](buildings/ntu-electrical-engineering-one/previews/front.png)](buildings/ntu-electrical-engineering-one/README.md)<br>[電機一館（主要前棟）](buildings/ntu-electrical-engineering-one/README.md) | [![舊體育館](buildings/ntu-old-gymnasium/previews/front.png)](buildings/ntu-old-gymnasium/README.md)<br>[舊體育館](buildings/ntu-old-gymnasium/README.md) |
 | [![新生教學館](buildings/ntu-xinsheng-lecture/previews/front.png)](buildings/ntu-xinsheng-lecture/README.md)<br>[新生教學館](buildings/ntu-xinsheng-lecture/README.md) | [![農藝館](buildings/ntu-agronomy/previews/front.png)](buildings/ntu-agronomy/README.md)<br>[農藝館](buildings/ntu-agronomy/README.md) | [![生化科學研究所（歷史前棟）](buildings/ntu-biochemical-sciences-front/previews/front.png)](buildings/ntu-biochemical-sciences-front/README.md)<br>[生化科學研究所（歷史前棟）](buildings/ntu-biochemical-sciences-front/README.md) |
@@ -30,3 +30,7 @@
 [六材質外觀與來源界線](buildings/ntu-administration/appearance/README.md)
 
 ![行政大樓外觀](buildings/ntu-administration/appearance/previews/front.png)
+
+[七材質外觀與來源界線](buildings/ntu-old-main-library/appearance/README.md)
+
+![舊總圖書館外觀](buildings/ntu-old-main-library/appearance/previews/front.png)

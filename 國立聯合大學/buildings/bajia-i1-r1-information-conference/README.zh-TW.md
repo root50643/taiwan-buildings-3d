@@ -1,5 +1,16 @@
 # 國立聯合大學 I1-R1 資訊大樓與國際會議中心低層連通部分
 
+## 八材質外觀版（2026-10-20）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuui1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+已見淡褐主牆、灰黑塔樓、淺色鰭片與入口、橙色前弧牆和淡磚橘 R1 梯側牆；原弧牆過長凹槽不染全高玻璃，未見背面與右側保持中性，L1 圖書館不在此包範圍。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依官方外觀照片製作的獨立建築縮印模型，含底座 **150 × 110 × 103.9 mm**。照片比例詮釋，未實測，不是與其他館舍共同比例的校園模型。STL 單位為毫米且無顏色；預覽單色只是材質。
 
 ## 建物範圍與照片判讀

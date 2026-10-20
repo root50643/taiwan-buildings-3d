@@ -6,4 +6,8 @@
 
 | 建築一 | 建築二 | 建築三 |
 |---|---|---|
-| [![醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/previews/front.png)](buildings/ntu-medical-humanities-museum/README.md)<br>[醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/README.md) |  |  |
+| [![醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/appearance/previews/front.png)](buildings/ntu-medical-humanities-museum/README.md)<br>[醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/README.md) |  |  |
+
+[八材質外觀與來源界線](buildings/ntu-medical-humanities-museum/appearance/README.md)
+
+![臺大醫學人文博物館外觀](buildings/ntu-medical-humanities-museum/appearance/previews/front.png)

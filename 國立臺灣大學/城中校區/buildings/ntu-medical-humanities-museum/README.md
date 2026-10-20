@@ -4,9 +4,16 @@
 
 ## 實際 STL 正面與背面
 
-| 正面 | 背面 |
+## 最新八材質外觀版（2026-10-20）
+
+| 正面原幾何配色 | 背面與未見面保持中性 |
 |---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/medical-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方立面與原攝影者空拍登錄薄荷綠金屬屋面、中央磚山牆、奶白柱與拱圈及原上層窗格。西翼和下層凹格是廊道，不染成玻璃；圓章淺色，未知牆面中性。來源發表年份不等於拍攝日期，不宣稱現況。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
 

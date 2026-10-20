@@ -4,9 +4,16 @@
 
 ## 實際 STL 正面與背面
 
-| 正面 | 背面 |
+## 最新六材質外觀版（2026-10-20）
+
+| 正面原幾何配色 | 背面與未見面保持中性 |
 |---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/admin-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方照片登錄紅橘磚牆、淡灰四柱與柱頭、凹窗及前屋坡；深門廊和未知背面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
 

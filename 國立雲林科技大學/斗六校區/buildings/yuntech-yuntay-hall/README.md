@@ -2,7 +2,14 @@
 
 國立雲林科技大學／斗六校區。本件為公開來源推估的外觀縮模，不是測繪成果。涵蓋範圍：扇形禮堂主體、弧形展演迴廊、街道入口與兩個直角後台翼；不含旁側雲科精神鐘塔及廣場景觀。
 
-![交付STL正背視圖](previews/front-rear.png)
+## 最新曲面正立面七材質外觀版（2026-10-20）
+
+![曲面立面外觀](appearance/previews/front.png)
+
+[配色、來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/yuntay-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+只改善2024照片可登錄的弧形立面；直角翼、屋頂及原機電／太陽能簡化體保持中性。原STL與歷史QA保留，不是新增幾何。[原單色正背合圖](previews/front-rear.png)
+
 
 [頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
 

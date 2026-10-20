@@ -2,8 +2,12 @@
 
 校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 86.00 × 102.80 mm。
 
-![實際STL正面](previews/front.png)
-![實際STL背面](previews/rear.png)
+![實際STL正面](appearance/previews/front.png)
+![實際STL背面](appearance/previews/rear.png)
+
+## 最新配色與下載
+
+[六材質通用 3MF](appearance/millennium-appearance.3mf) · [彩色 Blender scene](appearance/scene.blend) · [四視圖、來源與簡化界線](appearance/README.md)。正面實照支持紅磚、灰帶／塔面、深窗與窄塔頂朝前坡面橘瓦；原窄帶及塔盒簡化保留，側後與未確認屋面中性。原 STL 和歷史 QA 不變，尚未 FFF／實體試印。
 
 ## 外觀與範圍
 長紅磚宿舍主體、偏心弧形窗塔、兩端與中央不同高度屋頂塔、低樓層水平帶、規律小窗與入口雨遮。
@@ -31,3 +35,7 @@ Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景�
 STL SHA-256：ba8cec3cadb311a60aad2ea0efd669c761f98a9f73b4df87c5ffbf29009d216a
 
 [校區圖鑑](../../README.md)／[學校](../../../README.md)
+
+## 歷史單色記錄
+
+原 scene.blend、render_preview.py 與三張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)。它們是原模型重建及製造檢查的歷史證據；最新配色展示位於 appearance/。原薄篩沒有超過 1% 損失的抽樣層，不代表列印保證，亦未被本次外觀 QA 重新測試。

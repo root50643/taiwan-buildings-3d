@@ -7,7 +7,7 @@
 | [圖書館大樓](校本部/buildings/wzu-library/README.md)<br>![圖書館大樓實際STL](校本部/buildings/wzu-library/appearance/previews/front.png) | [求真樓](校本部/buildings/wzu-qiuzhen/README.md)<br>![求真樓實際STL](校本部/buildings/wzu-qiuzhen/previews/front.png) | [文瑞樓](校本部/buildings/wzu-wenrui/README.md)<br>![文瑞樓實際STL](校本部/buildings/wzu-wenrui/previews/front.png) |
 | [學生活動中心](校本部/buildings/wzu-student-activities/README.md)<br>![學生活動中心實際STL](校本部/buildings/wzu-student-activities/previews/front.png) | [聚賢館](校本部/buildings/wzu-juxian/README.md)<br>![聚賢館實際STL](校本部/buildings/wzu-juxian/previews/front.png) | [公簡廳](校本部/buildings/wzu-gongjian/README.md)<br>![公簡廳實際STL](校本部/buildings/wzu-gongjian/previews/front.png) |
 | [至善樓](校本部/buildings/wzu-zhishan/README.md)<br>![至善樓實際STL](校本部/buildings/wzu-zhishan/previews/front.png) | [育美體育館](校本部/buildings/wzu-yumei-gym/README.md)<br>![育美體育館實際STL](校本部/buildings/wzu-yumei-gym/previews/front.png) | [明園](校本部/buildings/wzu-mingyuan/README.md)<br>![明園實際STL](校本部/buildings/wzu-mingyuan/previews/front.png) |
-| [莊敬樓](校本部/buildings/wzu-zhuangjing/README.md)<br>![莊敬樓實際STL](校本部/buildings/wzu-zhuangjing/previews/front.png) | [千禧樓](校本部/buildings/wzu-millennium/README.md)<br>![千禧樓實際STL](校本部/buildings/wzu-millennium/previews/front.png) | [自強樓](校本部/buildings/wzu-ziqiang/README.md)<br>![自強樓實際STL](校本部/buildings/wzu-ziqiang/previews/front.png) |
+| [莊敬樓](校本部/buildings/wzu-zhuangjing/README.md)<br>![莊敬樓實際STL](校本部/buildings/wzu-zhuangjing/previews/front.png) | [千禧樓](校本部/buildings/wzu-millennium/README.md)<br>![千禧樓實際STL](校本部/buildings/wzu-millennium/appearance/previews/front.png) | [自強樓](校本部/buildings/wzu-ziqiang/README.md)<br>![自強樓實際STL](校本部/buildings/wzu-ziqiang/previews/front.png) |
 | [文園](校本部/buildings/wzu-wenyuan/README.md)<br>![文園實際STL](校本部/buildings/wzu-wenyuan/previews/front.png) | [修院暨教職員宿舍](校本部/buildings/wzu-convent/README.md)<br>![修院暨教職員宿舍實際STL](校本部/buildings/wzu-convent/previews/front.png) | [露德樓](校本部/buildings/wzu-lourdes/README.md)<br>![露德樓實際STL](校本部/buildings/wzu-lourdes/previews/front.png) |
 | [行政大樓](校本部/buildings/wzu-administration/README.md)<br>![行政大樓實際STL](校本部/buildings/wzu-administration/previews/front.png) | [化雨堂暨詠穌堂](校本部/buildings/wzu-huayu-chapel/README.md)<br>![化雨堂暨詠穌堂實際STL](校本部/buildings/wzu-huayu-chapel/appearance/previews/front.png) |  |
 
@@ -18,3 +18,5 @@
 圖書館大樓已補[正面八材質外觀交換版](校本部/buildings/wzu-library/appearance/README.md)：紅磚橫帶、青綠玻璃與米白柱檐近似配色；側後／屋面未確認部分中性。原幾何、8 層薄篩警示及尚未 FFF／實印的限制保留，仍為既有 17 包。
 
 化雨堂暨詠穌堂已補[七材質外觀交換版](校本部/buildings/wzu-huayu-chapel/appearance/README.md)：兩堂主要磚白區、短門廊頂與深窗按實照近似。保留原 STL，僅共面細分交換網格、不改外包絡；未確認側後／屋面中性，未 FFF／實印。仍為同一包，文藻仍 17 件。
+
+千禧樓已補[正面六材質外觀交換版](校本部/buildings/wzu-millennium/appearance/README.md)：紅磚、灰帶／塔面、深窗及窄塔頂朝前坡面橘瓦近似。原帶寬與塔盒簡化、未知側後／屋面中性及製造限制保留；未經 FFF／實體試印，仍是既有 17 包之一。

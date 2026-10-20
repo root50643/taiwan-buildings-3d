@@ -2,9 +2,16 @@
 
 國立陽明交通大學｜六家校區。完整主圓樓及相連外圈低翼之外觀近似；非測繪，鄰近古厝與永昌宮不包含。
 
-| 實際 STL 正面 | 實際 STL 背面 |
+## 最新六材質外觀版（2026-10-20）
+
+| 正面原幾何配色 | 後側與高扇形屋頂 |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/hakka-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方內院與空拍照片登錄後扇形屋頂、主環凹窗和前露臺草坪代理；不假造草地與步道精細邊界，外圈低翼混合面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 [俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py)
 

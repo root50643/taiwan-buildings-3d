@@ -1,0 +1,54 @@
+{
+  "stl_sha256": "67408c4277fc7128616060d754b9eb2b4c7874994cd3692f4e83409b9708aff0",
+  "through_portal_samples": [
+    {
+      "z_mm": 9.1,
+      "center_line_full_depth_clear": true
+    },
+    {
+      "z_mm": 15,
+      "center_line_full_depth_clear": true
+    },
+    {
+      "z_mm": 30,
+      "center_line_full_depth_clear": true
+    },
+    {
+      "z_mm": 45,
+      "center_line_full_depth_clear": true
+    },
+    {
+      "z_mm": 60,
+      "center_line_full_depth_clear": true
+    },
+    {
+      "z_mm": 65,
+      "center_line_full_depth_clear": true
+    },
+    {
+      "z_mm": 70,
+      "center_line_full_depth_clear": true
+    },
+    {
+      "z_mm": 74,
+      "center_line_full_depth_clear": true
+    }
+  ],
+  "window_frames_solid_backed": true,
+  "design_feature_widths_mm": {
+    "upper_and_side_mullion": 0.9,
+    "wing_mullion": 1.0,
+    "coffer_beam": 1.4,
+    "floor_band_height": 3.0,
+    "base": 3.0,
+    "step_rise": 0.75
+  },
+  "thin_feature_reasoning": "0.9/1.0 mm mullions are bonded relief on solid backing, not free-standing printable wires. Component erosion alone does not certify local feature thickness; dimensions are explicit in generator. 0.75 mm step rise is a height, not wall width. 1.4 mm grid beams bridge the opening overhead and require support assessment.",
+  "support_warning": "Open portal spans about 43 mm; chamfered shoulders and ceiling coffers create overhang/bridge areas. Orient/split/support in slicer; no claim of support-free printing.",
+  "not_tested": [
+    "machine slicer toolpaths",
+    "extruder assignment",
+    "physical printing",
+    "calibrated real dimensions"
+  ]
+}

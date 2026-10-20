@@ -12,3 +12,9 @@
 
 [![圖資大樓入口轉角段](buildings/ncue-library-entry-corner-segment/previews/front.png)](buildings/ncue-library-entry-corner-segment/)
 
+
+### [白沙大樓入口正面片段](buildings/ncue-baisha-entry-front-segment/)
+
+[![白沙大樓入口正面片段](buildings/ncue-baisha-entry-front-segment/previews/front.png)](buildings/ncue-baisha-entry-front-segment/)
+
+歷史影像限定入口與短左翼，非全棟或2026現況；未知右翼、後側與屋頂不補建。

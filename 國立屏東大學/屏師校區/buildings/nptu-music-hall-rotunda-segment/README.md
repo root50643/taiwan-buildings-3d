@@ -2,9 +2,16 @@
 
 這是依公開完成照片自建的局部外觀模型，非全館測繪、全校模型或精確比例復原。所屬實體建物：**音樂館**。
 
-| 實際 STL 正面 | 實際 STL 背面 |
+## 最新六材質外觀版（2026-10-20）
+
+| 正面原幾何配色 | 後側與高扇形屋頂 |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nptu-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方照片登錄淡玫瑰實牆、白色柱肋、深灰藍凹窗與灰色橫帶；中央實牆不當玻璃，屋頂與未知背面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
 
 ![實際STL頂視](previews/top.png)
 

@@ -4,7 +4,7 @@
 
 ## 最新六材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 後側與高扇形屋頂 |
+| 正面原幾何配色 | 背面與未知屋頂保持中性 |
 |---|---|
 | ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
 

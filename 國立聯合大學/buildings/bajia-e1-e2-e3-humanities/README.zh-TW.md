@@ -1,5 +1,16 @@
 # 國立聯合大學八甲校區人文與社會學院 E1／E2／E3
 
+## 9 材質外觀版（2026-10-20）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuue-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+原奶油／冷灰框架、左端磚牆、有限窗凹與光電板頂面配色；深走廊不染成玻璃，淡藍框是混凝土。原加厚欄帶僅褐灰代理，草坪、門窗混合及未知區域不虛構。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 本組把三棟相鄰建築做成可獨立擺放、共用底板的建築縮景：
 
 - E1：人文與社會學院前棟。保留低矮弧形教室翼、大露台、前方寬階梯及右側第二段上樓階梯。

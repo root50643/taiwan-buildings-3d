@@ -8,7 +8,7 @@
 
 | 正向 actual STL | 反向 actual STL |
 |---|---|
-| ![正向](buildings/tku-palace-classrooms/previews/front.png) | ![反向](buildings/tku-palace-classrooms/previews/rear.png) |
+| ![正向](buildings/tku-palace-classrooms/appearance/previews/front.png) | ![反向](buildings/tku-palace-classrooms/appearance/previews/rear.png) |
 
 [模型、來源與列印限制](buildings/tku-palace-classrooms/README.md) · [數位驗證](buildings/tku-palace-classrooms/QA.md)
 

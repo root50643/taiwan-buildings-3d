@@ -24,3 +24,9 @@
 [![王金平活動中心七色局部](buildings/ncue-wang-jin-pyng-lakeside-roof-segment/previews/lake_right.png)](buildings/ncue-wang-jin-pyng-lakeside-roof-segment/)
 
 官方照片限定的局部展示模型，任意正規化尺寸；兩個斜收口真窗洞、內退玻璃帶、成對柱與淺拱屋頂。後封板／底座是展示連接，規劃PV未建入；薄屋頂肋尖有局部0.8 mm篩查損失，非全棟、實測或實體列印驗證。
+
+### [綜合中心弧形入口屏牆與階梯段](buildings/ncue-comprehensive-curved-entry-segment/)
+
+[![綜合中心七材質局部](buildings/ncue-comprehensive-curved-entry-segment/previews/front.png)](buildings/ncue-comprehensive-curved-entry-segment/)
+
+曲屏、8道長縫、5小孔、中央後退玻璃及弧形前階；歷史照片的未測量局部，不是全棟。細節開運算損失與跨空支撐需求保留，未實際列印。

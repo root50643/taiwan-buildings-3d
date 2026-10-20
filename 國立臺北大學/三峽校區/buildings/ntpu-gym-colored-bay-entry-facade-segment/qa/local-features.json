@@ -1,0 +1,213 @@
+{
+  "occupancy": [
+    {
+      "feature": "blue deep projection",
+      "xyz_mm": [
+        52,
+        -9,
+        32
+      ],
+      "solid_expected": true,
+      "solid_actual": true,
+      "pass": true
+    },
+    {
+      "feature": "blue front recessed glazing pocket",
+      "xyz_mm": [
+        63,
+        -10.7,
+        33
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "blue glazing backed not transparent",
+      "xyz_mm": [
+        63,
+        -9.5,
+        33
+      ],
+      "solid_expected": true,
+      "solid_actual": true,
+      "pass": true
+    },
+    {
+      "feature": "blue right glazed return recess",
+      "xyz_mm": [
+        78.8,
+        -2,
+        33
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "yellow independent shallower projection",
+      "xyz_mm": [
+        146,
+        -6,
+        30
+      ],
+      "solid_expected": true,
+      "solid_actual": true,
+      "pass": true
+    },
+    {
+      "feature": "yellow recessed pane",
+      "xyz_mm": [
+        152,
+        -7.8,
+        30
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "red entrance frame",
+      "xyz_mm": [
+        112,
+        -5,
+        21
+      ],
+      "solid_expected": true,
+      "solid_actual": true,
+      "pass": true
+    },
+    {
+      "feature": "red recessed pane",
+      "xyz_mm": [
+        119,
+        -5.8,
+        21
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "upper beam true sky slot",
+      "xyz_mm": [
+        105,
+        4,
+        46
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "upper beam material",
+      "xyz_mm": [
+        105,
+        4,
+        49
+      ],
+      "solid_expected": true,
+      "solid_actual": true,
+      "pass": true
+    },
+    {
+      "feature": "left balcony true recess",
+      "xyz_mm": [
+        9,
+        0,
+        24
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "ground floor recessed arcade",
+      "xyz_mm": [
+        26,
+        0,
+        8
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "upper vertical narrow glazing recess",
+      "xyz_mm": [
+        89,
+        1,
+        32
+      ],
+      "solid_expected": false,
+      "solid_actual": false,
+      "pass": true
+    },
+    {
+      "feature": "plain cut back not authentic exterior",
+      "xyz_mm": [
+        100,
+        7,
+        32
+      ],
+      "solid_expected": true,
+      "solid_actual": true,
+      "pass": true
+    }
+  ],
+  "local_erosion": [
+    {
+      "feature": "blue_front_mullion",
+      "z_mm": 33,
+      "clip_mm": [
+        63.375,
+        -10.56,
+        64.125,
+        -9.72
+      ],
+      "area_mm2": 0.622500143051147,
+      "survives_0_8mm_local_erosion": false,
+      "eroded_area_mm2": 0.0
+    },
+    {
+      "feature": "blue_frame_left",
+      "z_mm": 33,
+      "clip_mm": [
+        49,
+        -11,
+        59.4,
+        -9.7
+      ],
+      "area_mm2": 13.520000000000007,
+      "survives_0_8mm_local_erosion": true,
+      "eroded_area_mm2": 4.800000000000001
+    },
+    {
+      "feature": "sky_beam",
+      "z_mm": 49,
+      "clip_mm": [
+        100,
+        1.5,
+        110,
+        5.5
+      ],
+      "area_mm2": 40.0,
+      "survives_0_8mm_local_erosion": true,
+      "eroded_area_mm2": 29.439999999999962
+    },
+    {
+      "feature": "left_balcony_rail",
+      "z_mm": 30,
+      "clip_mm": [
+        2,
+        -3.6,
+        16,
+        -2.4
+      ],
+      "area_mm2": 16.799997329711914,
+      "survives_0_8mm_local_erosion": true,
+      "eroded_area_mm2": 5.279997482299807
+    }
+  ],
+  "warning": "Local loss is reported, not excused by whole-component survival. 0.75mm mullions may merge or vanish in FFF. No slicer or physical test."
+}

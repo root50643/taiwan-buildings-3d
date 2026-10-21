@@ -1,5 +1,16 @@
 # 國立屏東大學｜民生校區｜五育樓主體與中庭
 
+## 4 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 來源支持後幕牆／其餘中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nptuwuyu-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+僅來源支持中央前後幕牆、後弧窗、塔內側與上部離散窗凹，以及入口銀灰屋坡；主石牆、混合陽台、肩部通風百葉、低翼與未知區域中性。跨年來源研究，不宣稱完整現況還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依官方完成照片自建的外觀近似模型。實體建物為**五育樓**；不代表精確測繪、全校完成或所有附屬設施皆已收錄。
 
 | 交付STL正面 | 交付STL背面 |

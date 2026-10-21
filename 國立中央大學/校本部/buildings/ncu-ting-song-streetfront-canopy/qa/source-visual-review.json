@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "reviewer": "research_next_robust_campus_model",
+  "reviewed_at_utc": "2026-10-21T13:03:30Z",
+  "decision": "PASS_WITH_DECLARED_LIMITATIONS",
+  "scope": "NCU Ting-Song street-facing canopy, brick waiting bay, single stair, ATM frontage and open end bay only; not complete observation deck or parking structure",
+  "reviewed_artifacts": {
+    "model.stl": {
+      "sha256": "a8a3cf21ef123c5db0a625748282d8a44482c5c312b01c43df279d482dbc1abd"
+    },
+    "previews/front.png": {
+      "sha256": "6d9b7be1225596c5b649294b2acd55bd600d7e3d82305e69cee23ca2e1e03cc1"
+    },
+    "previews/left_oblique.png": {
+      "sha256": "b3f4c3bd3b618ddab0035ad0a9ef9a98251378955ff8613bb8e7a5f3ce654916"
+    },
+    "previews/elevation.png": {
+      "sha256": "a616188d5696acc6ecfd100b1b49ec5616770bb2d697384ea6b5b211ef66d08e"
+    },
+    "previews/rear.png": {
+      "sha256": "9a27b3619ed23f6db7ec9bdc0e26453b37c05e55b3db862170a67e920dd8b036"
+    },
+    "previews/top.png": {
+      "sha256": "83942d89eb1978af702b2ead5e9bd532ac20b7c365fb13456ad240d71cc1de1b"
+    }
+  },
+  "reviewed_documents": {
+    "README.md": {
+      "sha256": "30e539c12fcaeb8ddaee6615fb826442f43367e578c873d3ba3f696b348454fa"
+    },
+    "SOURCES.md": {
+      "sha256": "d1f8e858b1293eaf0330344e9461e9b5c04ef96e0519be4574c9a7fe31882d59"
+    },
+    "QA.md": {
+      "sha256": "e9159a8d65e32a197d4b0ca5aecb5da8a96f7c0b54b60ae79c0d41ccc9cd2082"
+    }
+  },
+  "source_photographs": [
+    {
+      "url": "https://ncusec.ncu.edu.tw/news/thumbs/1090624-002.jpg",
+      "sha256": "e6f6b2cba96c9c78cbac2b6b908dd352400d3c97587d99afbc2947a3d7391a83",
+      "personally_viewed_complete_image": true,
+      "role": "left-oblique street frontage"
+    },
+    {
+      "url": "https://ncusec.ncu.edu.tw/news/thumbs/1090624-003.jpg",
+      "sha256": "9d9216458adc0d757a8ccb7986c7424af6bcb9652c1100053eedac3c79eaaf59",
+      "personally_viewed_complete_image": true,
+      "role": "complementary right street frontage; not rear elevation"
+    },
+    {
+      "url": "https://ncusec.ncu.edu.tw/news/thumbs/1090624-01.jpg",
+      "sha256": "c7c0867ab6cf68eb4940f7f310c6ecd7f9fc5dc8123ee0c9ea11e40996bce227",
+      "personally_viewed_complete_image": true,
+      "role": "outward terrace railing/bench context only; not full rear footprint"
+    }
+  ],
+  "method": "Personally inspected all five final rendered views and re-opened all three complete official source photographs; read README.md, SOURCES.md and QA.md. Qualitative architectural evidence review, not photogrammetric registration or independent mesh/manufacturing validation. STL hash binds the reviewed rendered model version, not a claim of separate STL topology testing.",
+  "findings": [
+    "Asymmetric higher left end, depressed middle and gentler right rise preserved; no symmetric gable invented.",
+    "Streetfront sequence brick side wall/perforated return and bench, one stair, long open canopy section, ATM massing and right open bay matches complementary street views.",
+    "Same stair is not duplicated from the two photos; stair is left of overall center.",
+    "Neutral rear cutoff and small stair landing are visibly incomplete rather than a fabricated whole rear deck. Background old guardhouse excluded.",
+    "Brown frame/fascia, brick red bay, gray ATM surround and dark recessed panels are plausible broad material families; not measured color samples.",
+    "No source-photo texture or original photographs observed in rendered views.",
+    "Re-inspected all five final views after ATM correction: central entrance is a continuous tall dark recess, with horizontal glazing divisions limited to flanking fields. This is closer to official003 than the superseded three-window appearance."
+  ],
+  "remaining_approximations": [
+    "Seven column alignments, ten steps, bay widths, overall220mm scale, canopy depth and piecewise roof profile are visual estimates, not surveyed dimensions.",
+    "ATM central entrance and flanking glass fields now distinguish doorway from windows, but recess depth, pane divisions and rear solid fill remain simplified, not measured real interior geometry.",
+    "Brick joint/pore pattern, fascia strips, rail and bench dimensions are simplified and thickened; no exact counts claimed.",
+    "Large rear deck, ramps, parking footprint, unseen structures and contemporary2026 condition are not established.",
+    "Top view is conservative model geometry, not a reconstructed plan derived from aerial evidence."
+  ],
+  "required_geometry_changes": [],
+  "physical_print_tested": false,
+  "print_certification": false,
+  "manufacturing_note": "Visual pass does not override documented28 global erosion-failing layers,3 local thin-fascia failures, overhang/bridging and220mm base warping risks. Requires machine/material-specific slicing and trial print.",
+  "revision_note": "Supersedes the prior pending review after personally opening all five ATM-revised final images. Sources002/003/01 were personally re-opened during this review cycle; unchanged source hashes remain recorded."
+}

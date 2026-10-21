@@ -1,0 +1,87 @@
+{
+  "status": "PASS_SOURCE_BOUND_VISUAL_APPROXIMATION",
+  "reviewer": "research_next_verified_full_structure",
+  "reviewed_at_utc": "2026-10-21T21:37:00Z",
+  "scope": "Independent source-photo and five-view appearance review, not a survey, engineering certification, slicer certification or actual-print test. Model not edited.",
+  "artifacts": {
+    "model.stl": {
+      "sha256": "ea0f02edacdc05aea91eed49af003d9ba6983bc979d65ae93d4ff02a00756bc6",
+      "bytes": 1008084
+    },
+    "previews/front.png": {
+      "sha256": "bfa8f90d721a08c86bf43a6542f10bd721e5361f04b2792a5c701d507c51e43e",
+      "bytes": 1585181
+    },
+    "previews/rear.png": {
+      "sha256": "021a8c6d4d02a2554d660279a774e5a49ec2d97ac496c8d969faf4970908b0f8",
+      "bytes": 1566164
+    },
+    "previews/elevation.png": {
+      "sha256": "57512d6530b15a47473c0975b0546f20cdf1123e9ac7fcf023555484c350a8ee",
+      "bytes": 1536592
+    },
+    "previews/top.png": {
+      "sha256": "d9681b5f763edf9897136cdba6965fb32cac30c8273ce094541efedaf0674e01",
+      "bytes": 1487208
+    },
+    "previews/left_oblique.png": {
+      "sha256": "8c1055aef040f428f5d0d2ba7edd7828b05b3918ad1f56cb8a19084c049041a4",
+      "bytes": 1553130
+    }
+  },
+  "source_images": {
+    "gate-0.jpg": {
+      "sha256": "469775286930a00a8be4b41bc963a5da0f7c33c5714bdd918305a467ebc9e014",
+      "bytes": 558124
+    },
+    "gate-1.jpg": {
+      "sha256": "0687e1b60c9c8f103f4593cbe03c56b4581d85636e7b5073f03853e06678e335",
+      "bytes": 1788500
+    },
+    "gate-2.jpg": {
+      "sha256": "9dedb1194da5a014c2156d2df5477fc721120e54adb4f99d0ff43e3eb164a53f",
+      "bytes": 972223
+    },
+    "gate-3.jpg": {
+      "sha256": "a1859599f83ab331b29caf137c1df79ae490183b0cef52b3c14c307bdc92d2cc",
+      "bytes": 77093
+    },
+    "rear-contest.jpg": {
+      "sha256": "665424b3f129f657c1e2c6c8d119d79846d09ca52ad1967c6dbdf1191286f095",
+      "bytes": 472649
+    },
+    "moc-image-003.png": {
+      "sha256": "8d9d492ce4a423401fc1fe41dd025fa706700785cdbc5372875e0c8f575ca5fa",
+      "bytes": 1402098
+    }
+  },
+  "personally_viewed_sources": true,
+  "personally_viewed_all_five_previews": true,
+  "code_read": [
+    "build_model.py",
+    "qa/design-features.json"
+  ],
+  "findings": [
+    "The entire freestanding single-span gate is represented, not a cropped component or the Suzhou triple gate.",
+    "Two deep chamfered/faceted piers extend above the straight capped spandrel; one broad shallow arch retains long upright legs and curved shoulders. Approximate width/height and side depth are credible across front and oblique sources.",
+    "Front text reads 學 大 [seal] 吳 東 from viewer left to right, matching the source right-to-left school name. Noto Serif substitution is visible and disclosed, not claimed as Sun Ke calligraphy.",
+    "Central front beveled plaque and circular two-ring emblem are simplified but located correctly; fine seal lettering is intentionally omitted.",
+    "Rear spandrel has no replicated characters, seal or central plaque. Small rectangle visible above the cap in rear high-oblique view is the back edge of the FRONT-only plaque; top view and build coordinates confirm this.",
+    "Top and left-oblique views establish pier depth, thinner beam, faceted heads and genuine open passage. Exact cross-sections and top facet slopes remain photo-based estimates.",
+    "The low 194 x 40 x 3.5 mm joining platform is an explicitly invented printing/display plinth, not site geometry.",
+    "Five images include the complete model without clipping. No mandatory geometry revision found at the source-bound approximation scope."
+  ],
+  "required_release_disclosures": [
+    "All dimensions, precise pier cross-section, cap facets, hidden joints and micro mouldings are estimated, not surveyed.",
+    "Noto Serif CJK TC Bold substitutes for the source calligraphy; two-ring seal is not a full emblem reproduction.",
+    "Printing platform is added, not a real gate footing or road survey.",
+    "2003-2019 dated photographs differ from capture-unknown rear contest photo; 2023 CDN path and 2024 PDF creation metadata are not camera capture dates. No 2026 survey/current-condition claim.",
+    "No actual-print or support-free certification; retain separate mesh/layer/thin-feature QA results and warnings."
+  ],
+  "limitations": [
+    "Photographs contain perspective and sloping ground, so no exact dimensional tolerance is certified.",
+    "Aerial/top micro details are not directly surveyed.",
+    "This review does not replace mesh exchange, connectivity, slicing, minimum feature or printer-specific support checks."
+  ],
+  "mandatory_geometry_changes": []
+}

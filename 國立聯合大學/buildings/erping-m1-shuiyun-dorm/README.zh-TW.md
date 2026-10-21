@@ -1,5 +1,16 @@
 # M1 第一宿舍（水雲樓）｜可列印外觀近似模型
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依 2023／2025 官方完整照片限定內院與短端紅磚、淡灰窗格、銀灰空白牌匾及碗形浮飾；屋頂與未知背側中性，不加金字或額外窗室。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 國立聯合大學二坪山校區。2026-10-11 核對官方校區名錄與外觀照片後建模。這是獨立縮尺展示模型，不是測繪、建築竣工或精確復原資料。
 
 ## 名稱與範圍

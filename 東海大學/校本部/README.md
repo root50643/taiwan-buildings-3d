@@ -1,6 +1,6 @@
 # 東海大學｜校本部
 
-本校區新增目錄 **4 套**；既有路思義教堂另由學校主圖鑑連結地標分類，不重複計入此數。套件不等於整棟建築，亦非全校完成。
+本校區新增目錄 **5 套**；既有路思義教堂另由學校主圖鑑連結地標分類，不重複計入此數。套件不等於整棟建築，亦非全校完成。
 
 既有原藝術中心歷史外觀研究模型：不是現況測繪，也不代表全校建物已完成。尺寸、殼頂形式與部分細節的史料推定限制詳見模型說明。
 
@@ -15,6 +15,10 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="buildings/thu-alumni-bell-tower/previews/front.png" alt="東海大學 文理大道校友鐘樓：實際模型預覽" width="220">](buildings/thu-alumni-bell-tower/README.md)<br>**[東海大學 文理大道校友鐘樓](buildings/thu-alumni-bell-tower/README.md)** |  |  |
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/thu-dongmei-pavilion/previews/front.png" alt="東海大學東美亭｜歷史照片外觀近似模型：實際模型預覽" width="220">](buildings/thu-dongmei-pavilion/README.md)<br>**[東海大學東美亭｜歷史照片外觀近似模型](buildings/thu-dongmei-pavilion/README.md)** |  |  |
 
 [指定版本限定條件獨立覆核](../inventory/qa/thu-original-arts-center-1964-v1.1-review.md)；保留 98 個柱頭過渡截面超限等原始診斷，未正式切片或實體試印。
 

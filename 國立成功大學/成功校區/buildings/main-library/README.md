@@ -1,5 +1,16 @@
 # 國立成功大學｜總圖書館
 
+## 5 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nckulib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+以官方日照辨識粉灰磁磚、銀灰遮陽與暖白細柱廊；粗承重柱保持同主體粉灰，夜照只用註冊，未知後左側屋頂與未建細線均保守處理。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第三批外觀近似模型；校區：成功校區。最長邊150 mm（含底座），各模型獨立比例。尺寸：150 × 116 × 67 mm。
 
 ![正面](previews/front.png)

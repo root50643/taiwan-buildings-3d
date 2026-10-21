@@ -2,7 +2,7 @@
 
 [返回學校總覽](../README.md)
 
-本校區目前收錄 16 件數位外觀近似模型；包含局部段或同一財產不同量體，件數不等於完整建物棟數。各件含底座最長150mm、獨立縮尺。尚未完成全校，未實體試印或進行印表機切片驗證。
+本校區目前收錄 17 件數位外觀近似模型；包含局部段或同一財產不同量體，件數不等於完整建物棟數。原16件含底座最長150mm；波簷尖峰片段為104mm展示底座寬、獨立縮尺。尚未完成全校，未實體試印或進行印表機切片驗證。
 
 ## 三欄模型圖鑑
 
@@ -36,3 +36,11 @@
 [五材質外觀與來源界線](buildings/chinese-department-building/appearance/README.md)
 
 ![中文系館外觀](buildings/chinese-department-building/appearance/previews/front.png)
+
+## 新增：波簷高尖峰上部木格片段（非完整亭）
+
+[![波簷尖峰片段實際模型](buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png)](buildings/ncku-wave-eaves-apex-fragment-2021/README.md)
+
+波簷（2021）高尖峰上部木格片段，非完整亭或完整雙曲面。來源可見並列矩形邊木、偏置Y與開孔；相片投影描線非測繪，深度與搭接估計，無未知腳或第二曲面。藍色全為截斷展示支架，非現場建築。104×36×100.70mm；3材質Blend/3MF/STL與五張真實網格圖。508面單殼拓樸／格式與編輯重開通過，504層中6層薄截面及局部警示保留；未切片實印、不稱免支撐。
+
+[來源、五視圖與完整 QA](buildings/ncku-wave-eaves-apex-fragment-2021/README.md)

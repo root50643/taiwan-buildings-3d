@@ -1,5 +1,7 @@
 # 國立臺灣大學：公開外觀3D列印模型
 
+本校 **44 套**，其中校總區 **41 套**；套件數不等於整棟建築數，非全校完成。
+
 目前收錄44件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區。不是全校完成，也不是44棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
 
 既有43件含STL、OBJ、Blender場景、可攜式參數化來源、原STL正背預覽及繁體中文來源說明。既有件獨立最長150mm；新增校門段為154mm展示寬，不能當同一比例校園拼接；來源照片未重新散布。
@@ -42,16 +44,6 @@
 [全校待辦與來源缺口](inventory/README.zh-TW.md) · [44件版本索引](model-index.json) · [完整SHA256](SHA256SUMS) · [批次紀錄](batches/)
 
 [下一階段逐項來源與缺口](inventory/CONTINUE.zh-TW.md) · [第12批補查](qa/batch12-20261013/README.zh-TW.md) · [第13批補查](qa/batch13-20261013/README.zh-TW.md)
-
-## 新增：歷史校門弧形前牆暨內側雙行人門段
-
-本校 **44 套**，其中校總區 **41 套**；套件數不等於整棟建築數，非全校完成。
-
-[![歷史校門前段模型](校總區/buildings/ntu-historic-gate-front-segment/previews/front.png)](校總區/buildings/ntu-historic-gate-front-segment/README.md)
-
-新增淺弧前牆、三凹窗、三階旗座、兩個真穿透行人門與兩根內側燈柱；不是整棟警衛室或完整四柱校門。54 mm寬／6.5 mm弓高為照片估計，灰色後切面與低頂為展示支承、不是屋頂；空白牌匾，不杜撰文字。7材質3MF/Blend/STL與五圖，獨立來源審查通過。原始單殼拓樸、272層輪廓與37取樣通過，但燈帽尖端z41.6 mm嚴格0.8 mm侵蝕失敗，局部41.799 mm亦消失；跨門樑需支撐評估，未實印。
-
-[模型、來源與 QA](校總區/buildings/ntu-historic-gate-front-segment/README.md)
 
 [臺大地質標本館小屋外觀與來源界線](校總區/buildings/ntu-geological-specimen-cottage/appearance/README.md)
 

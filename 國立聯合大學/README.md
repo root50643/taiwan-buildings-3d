@@ -4,6 +4,8 @@
 
 目前已完成並收錄 **42 組近似外觀模型**；以下逐項列出已收錄的館舍及建築群。其餘館舍仍持續整理；本專案不宣稱已涵蓋全校建築。
 
+[現行 42 套 JSON 索引](model-index.json)。各模型來源、範圍與 QA 請由下方主圖鑑進入詳頁。
+
 [早期兩校區建築研究目錄](docs/CATALOG.zh-TW.md)整理了 **50 筆建物／附屬量體候選**；這不是 50 棟現存獨立建築的斷言，也不是完成率分母。部分歷史館舍、代碼與附屬量體仍待確認；該研究目錄的舊完成狀態不代表目前模型收錄數，最新收錄以本頁與各模型資料夾為準。另提供 [JSON 清單](docs/catalog.json)與 [CSV 清單](docs/catalog.csv)。
 
 所有模型都是獨立展示小模型，**並非全校統一比例尺**；均已做數位網格檢查，但尚未實體試印。
@@ -707,16 +709,6 @@
 
 [B3 光電館八材質外觀與來源界線](buildings/bajia-b3-photonics-engineering/appearance/README.md)
 
-## 新增：二坪山校名柱與附連警衛亭段
-
-[![二坪山校名柱與附連亭實際網格](buildings/erping-main-gate-tower-guardhouse-segment/previews/front.png)](buildings/erping-main-gate-tower-guardhouse-segment/README.md)
-
-新增二坪山校名柱與附連小警衛亭有界外觀近似，不含J1、左側另一亭或完整校門。43×55×123mm含3mm中性展示底座，尺寸估計非測繪；書法與NUU標誌留白，長槽為有背淺凹而非確認穿孔，未知後面與頂面採簡化閉合。7材質3MF/Blend/STL與五圖；1520面原始拓撲、615層全域截面、局部窗梃橫桿及簷邊篩查通過；來源限定外觀PASS，非全局壁厚或免支撐保證，未切片支撐驗證或實印。
-
-[模型、來源與 QA](buildings/erping-main-gate-tower-guardhouse-segment/README.md)｜[現行42套索引](model-index.json)
-
-原早期50筆研究候選清冊保持歷史內容，不作目前完成數分母。
-
 [B4 資訊工程館八材質與來源更正外觀與來源界線](buildings/bajia-b4-computer-science/appearance/README.md)
 
 [B2 電子工程館八材質外觀與來源界線](buildings/bajia-b2-electronics-engineering/appearance/README.md)
@@ -783,32 +775,11 @@
 
 [聯大二坪教職員宿舍可見群外觀與來源界線](buildings/erping-faculty-housing-visible-complex/appearance/README.md)
 
-## 新增：八甲校區 2 候車亭左端單跨
+## 歷史發布校驗紀錄
 
-[![候車亭單跨實際模型](buildings/bajia-bus-stop-2-left-bay-segment/previews/front.png)](buildings/bajia-bus-stop-2-left-bay-segment/README.md)
+早期候選研究目錄與歷次校驗檔保持原始快照，不代表本頁最新內容的校驗值：
 
-八甲校區2候車亭最左單跨外觀近似；保留斜側框、側玻璃代理、雙告示板、後上與椅下開口及中央椅腿，右端為共用支承人工切界。154×58×94mm含展示底座，尺寸／深度／未見頂背估計；告示及花卉省略。8材質Blend/3MF/STL與五圖，366面單殼拓樸、交換格式、編輯重開驗證通過；470層輪廓合法但屋頂尖端薄截面失敗，局部椅架尖端亦失敗，需支撐與方向評估，未實印。
-
-[模型、來源與 QA](buildings/bajia-bus-stop-2-left-bay-segment/README.md)｜[現行42套索引](model-index.json)
-
-歷史候選清冊及 SHA256SUMS_GATE_20261020.txt 為各次發布快照，並非本次現行頁面校驗值；站2發布時的頁面快照見 SHA256SUMS_BUS_SHELTER_20261021.txt；現行頁面校驗見本頁最下方最新發布項目。
-
-## 新增：八甲校區 1 弧形候車亭端部雙框
-
-[![站1弧形端部雙框實際模型](buildings/bajia-bus-stop-1-curved-end-segment/previews/front.png)](buildings/bajia-bus-stop-1-curved-end-segment/README.md)
-
-八甲校區1左翼白櫃旁端柱至第二根內柱的兩個連續框板外觀段；平面弧形屋面及石牆、3後柱與三角懸臂、窄下縫、內木椅和短端返牆，不含前腳、玻璃、設備或公告藝術。132×74×93.5mm含新增底板，曲率／深度／未見頂部推估。8材質Blend/3MF/STL與五張真實網格圖，1236面單殼與468全域切層通過；局部斜撐起點薄截面警示保留，懸挑需支撐評估，未實印。
-
-[模型、來源與 QA](buildings/bajia-bus-stop-1-curved-end-segment/README.md)｜[現行42套索引](model-index.json)
-
-站1弧形候車亭發布時的頁面校驗快照見 SHA256SUMS_CURVED_SHELTER_20261021.txt；歷史快照保持，現行頁面校驗見本頁最下方最新發布項目。
-
-## 新增：八甲南大門中央三段門牆
-
-[![南大門中央門牆實際模型](buildings/bajia-south-gate-central-wall-segment/previews/front.png)](buildings/bajia-south-gate-central-wall-segment/README.md)
-
-八甲南大門兩車道間中央三段實心門牆外觀段；白色校名面留白、紅磚立邊、兩低灰牆與三淺凹平頂。排除行人門、伸縮門、警衛亭等，不代表完整南大門。152×52×73mm含新增底板，比例與深度估計，未見背面中性封閉。6材質Blend/3MF/STL與五張實際網格圖；148面單殼、365全域層與18實體局部截面通過，白面0.6mm上唇向下面仍需切片評估，未實印。
-
-[模型、來源與 QA](buildings/bajia-south-gate-central-wall-segment/README.md)｜[現行42套索引](model-index.json)
-
-歷史發布校驗快照保持；本次現行頁面見 SHA256SUMS_SOUTH_GATE_WALL_20261021.txt。
+- [二坪山校名柱與警衛亭發布快照](SHA256SUMS_GATE_20261020.txt)
+- [站 2 候車亭發布快照](SHA256SUMS_BUS_SHELTER_20261021.txt)
+- [站 1 弧形候車亭發布快照](SHA256SUMS_CURVED_SHELTER_20261021.txt)
+- [南大門中央門牆發布快照](SHA256SUMS_SOUTH_GATE_WALL_20261021.txt)

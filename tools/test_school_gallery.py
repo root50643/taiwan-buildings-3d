@@ -42,6 +42,15 @@ class GalleryTests(unittest.TestCase):
     def test_complete_non_table_sync_is_unchanged(self):
         t='# 圖鑑\n\n### [A](buildings/a/)\n\n### [B](buildings/b/)\n'
         with patch.object(g,'read',return_value=t):self.assertFalse(g.sync(PAGE,[R1,R2]))
+    def test_latest_footer_is_not_non_table_primary(self):
+        t='- [A](buildings/a/)\n\n## 最新新增：B\n[B](buildings/b/)'
+        self.assertEqual(g.primary_list(t,PAGE,[R1,R2])[1],{R1})
+    def test_new_footer_duplicate_is_rejected(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'\n## 最新新增：A\n'+CARD('a')
+        self.assertIn('duplicate_new_model_footer',self.run_audit(text)['errors'])
+    def test_detailed_qa_and_expandable_history_are_preserved(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'\n## 新增A限定覆核\n[A QA](buildings/a/README.md)\n\n## 新增館舍與建築群\n<details>\n'+CARD('a')+'\n</details>'
+        self.assertEqual(self.run_audit(text)['errors'],[])
     def test_stale_appearance_detected(self):
         text=TABLE([CARD('a'),CARD('b'),'']);fs={R1+'/previews/front.png',R1+'/appearance/previews/front.png',R1+'/README.md',R2+'/previews/front.png',R2+'/README.md'}
         with patch.object(g,'read',return_value=text),patch.object(g,'FILES',fs):self.assertIn('stale_preview',g.audit(PAGE,[R1,R2])['errors'])

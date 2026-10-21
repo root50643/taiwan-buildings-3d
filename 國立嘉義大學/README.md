@@ -13,15 +13,6 @@
 | :---: | :---: | :---: |
 | [<img src="民雄校區/buildings/ncyu-minxiong-university-hall/previews/front.png" alt="國立嘉義大學｜民雄校區大學館：實際模型預覽" width="220">](民雄校區/buildings/ncyu-minxiong-university-hall/README.md)<br>**[國立嘉義大學｜民雄校區大學館](民雄校區/buildings/ncyu-minxiong-university-hall/README.md)** |  |  |
 
-## 民雄校區圖鑑
-
-| 建築模型 | 建築模型 | 建築模型 |
-| :---: | :---: | :---: |
-| [<img src="民雄校區/buildings/ncyu-minxiong-university-hall/previews/front.png" alt="大學館外殼近似實際STL預覽" width="260">](民雄校區/buildings/ncyu-minxiong-university-hall/README.md)<br>**[大學館外殼近似](民雄校區/buildings/ncyu-minxiong-university-hall/README.md)** |  |  |
-
-
-[大學館](民雄校區/buildings/ncyu-minxiong-university-hall/)：切角前廳、採光屋頂及不對稱高低量體；高度近似、部分立面簡化。
-
 每個資料夾包含STL、參數重建來源、可編輯Blend、actual STL正背／頂視圖、來源URL及數位驗證。原照片／PDF不隨包散布。
 
 ## 範圍

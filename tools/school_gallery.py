@@ -109,7 +109,7 @@ def pages():
 
 def primary_list(text,page,expected):
     # Preserve complete non-table catalogs; appended 'new/update' logs are not the primary list.
-    primary=re.split(r'(?m)^#{1,3}\s*(?:新增|更新紀錄|歷史紀錄)',text,maxsplit=1)[0]
+    primary=re.split(r'(?m)^#{1,3}\s*(?:(?:最新|本次)?新增|補建|更新紀錄|歷史紀錄)',text,maxsplit=1)[0]
     return primary,identities(primary,page,expected)
 
 def sync(page,expected):
@@ -151,6 +151,31 @@ def sync(page,expected):
     if text==original:return False
     p=ROOT/page;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text);return True
 
+def duplicate_new_footer_entries(text,page,expected):
+    """Reject new-model footer cards once the same model is in the primary gallery.
+
+    Existing detailed <details> documentation and explicitly labeled QA/revision
+    records are not duplicate catalog cards and must not be deleted automatically.
+    """
+    lines,a,b=table(text,page,expected)
+    if a is None:return []
+    primary=identities(''.join(lines[a:b]),page,expected)
+    offset=len(''.join(lines[:b]));heads=list(re.finditer(r'(?m)^(#{1,4})\s+[^\n]+',text));duplicates=[]
+    for i,h in enumerate(heads):
+        if h.start()<offset or not re.search('新增|補建',h[0]):continue
+        if re.search('覆核|驗證|修版|歷史紀錄',h[0]):continue
+        end=next((n.start() for n in heads[i+1:] if len(n[1])<=len(h[1])),len(text))
+        section=text[h.start():end]
+        if '<details>' in section:continue
+        # Match root-level model navigation, not unrelated appearance/QA footnotes.
+        roots=set()
+        for u in urls(section):
+            target=resolve(u,page)
+            for root in expected:
+                if target in (root,root+'/README.md',root+'/README.zh-TW.md'):roots.add(root)
+        duplicates.extend(sorted(roots & primary))
+    return sorted(set(duplicates))
+
 def audit(page,expected):
     text=read(page);lines,a,b=table(text,page,expected);errors=[]
     if a is None:
@@ -188,8 +213,10 @@ def audit(page,expected):
                 new_cards.extend(ids)
     duplicate_cards=sorted(k for k,n in collections.Counter(new_cards).items() if n>1)
     if duplicate_cards:errors.append('duplicate_generated_cards')
+    repeated_footer=duplicate_new_footer_entries(text,page,expected)
+    if repeated_footer:errors.append('duplicate_new_model_footer')
     errors+=structural
-    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),missing=missing,extra=extra,duplicates=duplicate_cards,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),errors=sorted(set(errors)))
+    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),missing=missing,extra=extra,duplicates=duplicate_cards,duplicate_new_footer_packages=repeated_footer,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),errors=sorted(set(errors)))
 
 def main():
     ap=argparse.ArgumentParser(__doc__);ap.add_argument('--sync',action='store_true');ap.add_argument('--check',action='store_true');ap.add_argument('--report');ap.add_argument('--text-cache', help='Optional UTF-8 JSON path→text cache at the same reviewed Git ref (for offline sparse checkout)');args=ap.parse_args()

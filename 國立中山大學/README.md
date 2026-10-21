@@ -18,11 +18,3 @@
 [西子灣校區](西子灣校區/README.md) · [校區、別名及逐項續接](inventory/README.md) · [精確來源佇列](inventory/continuation.json)
 
 原照片和PDF不隨公開包散布，所有本地圖鑑圖均由交付STL渲染。
-
-## 新增：橋上涼亭
-
-[![橋上涼亭實際模型](西子灣校區/buildings/nsysu-bridge-pavilion/previews/front.png)](西子灣校區/buildings/nsysu-bridge-pavilion/README.md)
-
-橋上涼亭全亭及直接平台之照片近似；七真柱可辨，第八柱與八屋面、隱藏面按多角度與規則對稱推定，非測繪。粗圓柱、黃綠曲簷、穿孔欄板；不含長橋池塘。115.97×115.97×115.90mm，五材質Blend/3MF/STL及五圖；87770面單殼、580全域截面，保留5層及2局部瓦端薄件警示與3693個高懸垂面。來源日期未知、原紋飾簡化、短支撐人工化，未實印。
-
-[來源、五視圖與完整 QA](西子灣校區/buildings/nsysu-bridge-pavilion/README.md)

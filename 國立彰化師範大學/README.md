@@ -28,22 +28,4 @@
 
 README與sources清楚區分已觀測立面、未知背面、來源年代和模型收邊。只發布逐件核准版本，不含早期平直幕牆模型。
 
-### [綜合中心弧形入口屏牆與階梯段](進德校區/buildings/ncue-comprehensive-curved-entry-segment/)
-
-[![綜合中心弧形入口七材質模型](進德校區/buildings/ncue-comprehensive-curved-entry-segment/previews/front.png)](進德校區/buildings/ncue-comprehensive-curved-entry-segment/)
-
-2018照片及官方空拍支持的局部；8長縫、5小孔和中央真開口／後退玻璃。曲率與7階為近似，後側為截斷展示邊界；非全棟或2026現況。整體截面存活不代表局部細節全通過，保留0.6457%局部開運算最大損失，未實際列印。
-
-### [王金平游泳館入口與淺弧屋簷前段](進德校區/buildings/ncue-wang-jin-pyng-swimming-entry-segment/)
-
-[![游泳館九材質前段](進德校區/buildings/ncue-wang-jin-pyng-swimming-entry-segment/previews/front.png)](進德校區/buildings/ncue-wang-jin-pyng-swimming-entry-segment/)
-
-官方空拍版本的四跨五黃柱、黃綠入口塔與旁側條狀罩；2017近景只補充格線與色彩。非全棟或2026現況；展示封口、任意比例、直方柱代理及規則窗格有明示。0.75 mm橫框／0.375 mm屋縫有局部細節損失，未實印。
-
-### [弘道館入口柱廊片段](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/)
-
-[![弘道館八材質片段](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/previews/front.png)](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/)
-
-2018 正面照片及官方航拍約束的中央入口與兩側各兩跨；實體階梯、白斜扶壁、高細柱、紅褐直帶與退縮入口。8 色 3MF／Blend／STL，503 層數位 QA；窗框、比例和樹遮窗格近似，後板為展示封口，非全棟或 2026 現況，未實印。
-
 [理學一館主立面段黃棚與棕帶點色外觀與來源界線](進德校區/buildings/ncue-science1-front-segment/appearance/README.md)

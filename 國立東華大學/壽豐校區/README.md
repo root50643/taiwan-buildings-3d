@@ -26,11 +26,3 @@
 S05補強7/21竣工確認、9/18驗收，圖書館4–6F另8/27開工、預計2027-02-25完成。理工一D與B舊頂樓山牆已拆；湖玻璃屋修繕等逐項保留，不把舊照當震後現況。
 
 [逐項續接與年代](../inventory/CONTINUE.zh-TW.md) · [返回學校圖鑑](../README.md)
-
-## 新增：忠興亭／東華之眼有界亭架
-
-[![忠興亭實際模型](buildings/ndhu-zhongxing-pavilion/previews/front.png)](buildings/ndhu-zhongxing-pavilion/README.md)
-
-忠興亭／東華之眼有界亭架：兩片向外上揚半橢圓葉、共直徑低梁、四寬曲腿與開放亭下；不是兩完整橢圓盤。2025-12啟用／2026-01官方照片導向近似，尺寸、曲率、格線及材質未知部分明示；座椅、場地與隱藏接頭省略。128.2×104×83.96mm，3材質Blend/3MF/STL及五張實際網格圖；8646面單殼拓樸／格式通過，420全域層中3層薄截面及局部3個警示保留，須支撐方向評估、未實印。
-
-[來源、五視圖與完整 QA](buildings/ndhu-zhongxing-pavilion/README.md)

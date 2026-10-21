@@ -15,9 +15,3 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png" alt="國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段：實際模型預覽" width="220">](buildings/research-center-atrium-canopy-two-bay-segment/README.md)<br>**[國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段](buildings/research-center-atrium-canopy-two-bay-segment/README.md)** |  |  |
-
-## 新增共享中庭弧棚局部
-
-[![弧棚三榀兩跨](buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png)](buildings/research-center-atrium-canopy-two-bay-segment/README.md)
-
-研究總中心共享中庭弧棚三榀兩跨局部；淺弧薄皮、開放三角桁架及縱向檁條、左短支承右分叉斜撐。藍色端座為新增展示物，非建築或落地柱；不含兩翼與連橋。164×62×62.46mm估算展示尺度，照片日期未知，2003為完工年。4材質Blend/3MF/STL及五張實際網格圖；29222面單殼拓樸與格式通過，313全局切層輪廓有效但4層0.8mm薄截面失敗，局部薄件與過懸垂警示保留，未實印。

@@ -13,11 +13,3 @@
 研三舍的[指定版本獨立覆核](../inventory/qa/nycu-graduate-dormitory-3-fresh-v2-review.md)保留 137 筆原始嚴格失敗與限定根部證據；未實體試印，不保證免支撐或所有方向壁厚。
 
 [回學校圖鑑](../README.md)
-
-## 新增：蜷蜷亭（2024）
-
-[![蜷蜷亭完整可見外觀近似](buildings/nycu-rolling-pavilion-2024/previews/front.png)](buildings/nycu-rolling-pavilion-2024/README.md)
-
-蜷蜷亭（2024）完整可見外觀觀察近似：偏斜開放竹肋殼、成帶雙邊短橫條、前蜷曲寬座與後低橫凳。非精確NURBS／測繪，八組肋與細條減量為照片判讀；農業膜厚化0.9mm並以半透明展示材質替代，隱藏基礎不建。藍底板非現場構造。244×196×97.73mm，Blend／3MF／STL與五張實際網格圖；拓樸／交換與編輯重開通過，489層中119層薄截面及局部警示保留；未實印，不稱免支撐。
-
-[來源、五視圖與完整 QA](buildings/nycu-rolling-pavilion-2024/README.md)

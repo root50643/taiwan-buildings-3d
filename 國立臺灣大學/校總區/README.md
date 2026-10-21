@@ -1,5 +1,7 @@
 # 國立臺灣大學 校總區
 
+本校 **44 套**，其中校總區 **41 套**；套件數不等於整棟建築數，非全校完成。
+
 [返回臺大總圖鑑](../README.md)
 
 本校區目前41件外觀近似，不代表全部建築完成。既有件獨立150mm；新增校門段154mm展示寬；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
@@ -38,16 +40,6 @@
 [七材質外觀與來源界線](buildings/ntu-old-main-library/appearance/README.md)
 
 ![舊總圖書館外觀](buildings/ntu-old-main-library/appearance/previews/front.png)
-
-## 新增：歷史校門弧形前牆暨內側雙行人門段
-
-本校 **44 套**，其中校總區 **41 套**；套件數不等於整棟建築數，非全校完成。
-
-[![歷史校門前段模型](buildings/ntu-historic-gate-front-segment/previews/front.png)](buildings/ntu-historic-gate-front-segment/README.md)
-
-新增淺弧前牆、三凹窗、三階旗座、兩個真穿透行人門與兩根內側燈柱；不是整棟警衛室或完整四柱校門。54 mm寬／6.5 mm弓高為照片估計，灰色後切面與低頂為展示支承、不是屋頂；空白牌匾，不杜撰文字。7材質3MF/Blend/STL與五圖，獨立來源審查通過。原始單殼拓樸、272層輪廓與37取樣通過，但燈帽尖端z41.6 mm嚴格0.8 mm侵蝕失敗，局部41.799 mm亦消失；跨門樑需支撐評估，未實印。
-
-[模型、來源與 QA](buildings/ntu-historic-gate-front-segment/README.md)
 
 [七材質外觀與來源界線](buildings/ntu-geology-front/appearance/README.md)
 

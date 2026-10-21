@@ -60,15 +60,7 @@
 
 東棟保留 1,430 筆原始法向短弦與逐例背襯證據；西棟的有限採樣與重現檢查通過，均不是全域壁厚或實體試印保證。兩件獨立覆核摘要、未見部位和列印限制均在各自模型包內。舊批次清單與校驗檔保留其歷史內容；本次替換請以模型內的最新 SHA256SUMS 及[此次更新紀錄](inventory_updates_garden_20261015.json)為準。
 
-## 新增：紀念校門（窮理致知牌坊）
-
-該次發布後本校 **42 套**（歷史紀錄，現行43套）；官方VR勝利分類目前 **4 套**，非全校完成。
-
-[![紀念校門實際網格](勝利校區/buildings/ncku-commemorative-gate-1956/previews/front.png)](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)
-
-新增1956紀念校門／窮理致知牌坊地上整體外觀近似：黑須彌座、寬白柱、內退留白門楣及五排錯列原創雲紋。160×27×128mm為展示尺寸非測繪尺度；210朵僅總數一致、各面配置與輪廓非逐朵復刻；書法省略、未見頂部平整封口。3材質3MF/Blend/STL及五圖；原始單殼拓撲、640層全域輪廓與交換格式驗證通過，獨立來源外觀限定PASS；局部雲尖19個高度未通過0.8mm篩查，106mm門楣跨距須支撐評估，未實印。依官方VR歸勝利分類，但實體在大學路／勝利路口，不屬圍合校區。
-
-[模型、來源與 QA](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)
+歷史發布註記：紀念校門發布後本校為 42 套、勝利分類為 4 套；這是當次快照，不是現行全校件數，現行以本頁主圖鑑為準。
 
 [現行43套索引](model-index.json) · [本次新增清冊](inventory_updates_gate_20261020.json) · [本次檔案校驗](SHA256SUMS_GATE_20261020.txt)。舊 inventory／批次 manifest 及校驗檔保留歷史快照，不冒充現況總表。
 
@@ -86,18 +78,4 @@
 
 [理學南高棟原百葉構件限定配色外觀與來源界線](成功校區/buildings/science-south-high-wing/appearance/README.md)
 
-## 新增：安南校區共享中庭弧棚雙跨構架段
-
-[![弧棚實際網格](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png)](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/README.md)
-
-研究總中心共享中庭弧棚三榀兩跨局部；淺弧薄皮、開放三角桁架及縱向檁條、左短支承右分叉斜撐。藍色端座為新增展示物，非建築或落地柱；不含兩翼與連橋。164×62×62.46mm估算展示尺度，照片日期未知，2003為完工年。4材質Blend/3MF/STL及五張實際網格圖；29222面單殼拓樸與格式通過，313全局切層輪廓有效但4層0.8mm薄截面失敗，局部薄件與過懸垂警示保留，未實印。
-
 [現行43套索引](model-index.json) · [本次新增清冊](inventory_updates_canopy_20261021.json) · [本次校驗](SHA256SUMS_CANOPY_20261021.txt)。舊清冊及批次校驗維持歷史快照；本件另用 QA.md 與 qa/ 報告，不套用舊 validation.json 全通過敘述。
-
-## 新增：波簷高尖峰上部木格片段（非完整亭）
-
-[![波簷尖峰片段實際模型](光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png)](光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)
-
-波簷（2021）高尖峰上部木格片段，非完整亭或完整雙曲面。來源可見並列矩形邊木、偏置Y與開孔；相片投影描線非測繪，深度與搭接估計，無未知腳或第二曲面。藍色全為截斷展示支架，非現場建築。104×36×100.70mm；3材質Blend/3MF/STL與五張真實網格圖。508面單殼拓樸／格式與編輯重開通過，504層中6層薄截面及局部警示保留；未切片實印、不稱免支撐。
-
-[來源、五視圖與完整 QA](光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)

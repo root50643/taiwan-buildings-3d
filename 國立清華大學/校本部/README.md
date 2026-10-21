@@ -17,35 +17,3 @@
 | :---: | :---: | :---: |
 | [<img src="buildings/nthu-mei-pavilion/previews/front.png" alt="國立清華大學 梅亭／機亭：實際模型預覽" width="220">](buildings/nthu-mei-pavilion/README.md)<br>**[國立清華大學 梅亭／機亭](buildings/nthu-mei-pavilion/README.md)** | [<img src="buildings/nthu-north-gate-bamboo-slip-pillar/previews/front.png" alt="國立清華大學北校門簡冊立柱｜三片牆體外觀近似：實際模型預覽" width="220">](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)<br>**[國立清華大學北校門簡冊立柱｜三片牆體外觀近似](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)** | [<img src="buildings/nthu-yi-pavilion/previews/front.png" alt="國立清華大學｜奕亭：實際模型預覽" width="220">](buildings/nthu-yi-pavilion/README.md)<br>**[國立清華大學｜奕亭](buildings/nthu-yi-pavilion/README.md)** |
 | [<img src="buildings/nthu-yue-han-pavilion/previews/front.png" alt="國立清華大學月涵亭：實際模型預覽" width="220">](buildings/nthu-yue-han-pavilion/README.md)<br>**[國立清華大學月涵亭](buildings/nthu-yue-han-pavilion/README.md)** |  |  |
-
-## 新增：北校門簡冊立柱本體
-
-[![簡冊立柱實際模型](buildings/nthu-north-gate-bamboo-slip-pillar/previews/front.png)](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)
-
-北校門簡冊立柱本體外觀近似：三片等高平行輪廓、兩道有背板側槽、照片所見三組雙橫飾。校名字體省略，背面簡化；非完整北校門，排除警衛亭、新光廊、天線、樹木與地下基礎。49×35×153mm含人工展示底板，非測繪縮尺。三材質Blend/3MF/STL與五張網格圖，668面單殼、765全域層通過；18局部0.8mm外唇截面警示保留，未實印，不稱免支撐。
-
-[來源、五視圖與完整 QA](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)
-
-## 新增：月涵亭
-
-[![月涵亭實際模型](buildings/nthu-yue-han-pavilion/previews/front.png)](buildings/nthu-yue-han-pavilion/README.md)
-
-月涵亭完整亭體之2016來源外觀近似：淺圓挑簷、十二開口多邊內環、寬柱深楣板及窄高窗。120×140×67.6mm，五材質Blend/3MF/STL、五張實際網格圖；5044面單殼、338全域層及30實體／7空氣局部測試通過。背側、頂面與規則環圈推定；高窗不透明加厚、地形座人工化，無題字／校徽假造。1476個高懸垂面保留支撐警示，未實印，非測繪及非已核實2026現況。
-
-[來源、五視圖與完整 QA](buildings/nthu-yue-han-pavilion/README.md)
-
-## 新增：梅亭／機亭
-
-[![梅亭／機亭實際模型](buildings/nthu-mei-pavilion/previews/front.png)](buildings/nthu-mei-pavilion/README.md)
-
-梅亭／機亭完整雙曲薄殼主體近似：單片連續鞍面、兩對角低支墩、兩自由高角與內縮深肋、簡化石桌。136×116×84.6mm，四材質Blend/3MF/STL及五張實際網格圖；14868面單殼、423全域層，最高尖端5層與局部6樣本0.8mm侵蝕失敗照實保留。尺寸、規則曲率與對稱高角為近似；背頂來源僅421×286且遠角貼邊，不是360測繪。人工底座，省略凳字環境；懸挑需支撐規劃，未實印，非2026現況核實。
-
-[來源、五視圖與完整 QA](buildings/nthu-mei-pavilion/README.md)
-
-## 最新新增：奕亭
-
-[![奕亭實際模型](buildings/nthu-yi-pavilion/previews/front.png)](buildings/nthu-yi-pavilion/README.md)
-
-奕亭完整簡化木亭：低四坡方屋頂、四角木柱、柱旁梯格、屋架與長凳低欄，正面中央通道開放。138×138×98mm、五材質Blend/3MF/STL與五張實際網格圖；4110面單殼，490全域層有6薄截面失敗層、局部40實體/7空氣樣本有1薄頂尖失敗及0佔據不符，保留風險不稱免支撐。2010/2012/2013/2018歷史照片；2021是展覽年，不是全景拍攝年。後欄無獨立外觀照片，後欄規律化及前欄分段/開口寬度近似；不是整座奕園、不是2026現況測繪、未實印。
-
-[來源、五視圖與完整QA](buildings/nthu-yi-pavilion/README.md)

@@ -1,5 +1,16 @@
 # 國立清華大學｜台達館
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未知後牆中性／來源支持右側 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthudelta-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方照片限定淡桃直框、橘紅入口框與側盒、灰柱及離散窗色；混合灰帶主牆和白內門廊凹背中性，保留原薄層警戒。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 公開外觀照片導出的獨立桌上建築小模型。類別：**外觀近似，不是測繪模型**。校本部；首批的一件，不代表全校已完成。
 
 ## 檔案與尺寸

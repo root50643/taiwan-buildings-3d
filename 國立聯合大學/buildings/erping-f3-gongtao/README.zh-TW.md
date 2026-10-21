@@ -1,5 +1,16 @@
 # F3 公弢樓｜可列印外觀近似模型
 
+## 8 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuf3-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方雙照配置淡灰牆、深灰既有格柵與灰藍窗凹背；關閉入口採奶油色，原跨入口窗梃保留並同色。照片未證實 PV 頂面，屋頂維持中性，不沿歷史腳本猜測深藍電池板。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 二坪山校區，官方相簿照片比對版。這是照片辨識後獨立建模的外觀小模型，並非建築測量、竣工圖或精確復原。
 
 ## 檔案

@@ -1,5 +1,16 @@
 # 國立清華大學｜清齋 AB 雙翼外觀群（非整個清齋）
 
+## 5 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthuqing-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+僅第三張 A/B 正面來源註冊的中央藍玻璃、銀梃、淡色大柱與離散窗；大片灰窗裙／米白混牆及圓弧平台保守中性，不假造黑欄杆。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第十批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 100.00 × 129.00mm，最長150mm含底座。全校尚未完成。
 
 ## 來源與觀察

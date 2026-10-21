@@ -1,5 +1,16 @@
 # 國立屏東大學｜屏商校區｜圖資大樓主塔段
 
+## 5 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nptutower-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+來源支持正面白牆、離散窗凹底、頂層及中央高槽藍綠窗、前左頂冠棕簷；未分界的左牆、低裙樓、入口及最低遮屏保持中性，未知屋頂右側與背面不推色。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 這是依公開完成照片自建的局部外觀模型，非全館測繪、全校模型或精確比例復原。所屬實體建物：**圖資大樓**。
 
 | 實際 STL 正面 | 實際 STL 背面 |

@@ -1,5 +1,16 @@
 # F2 建築二館｜可列印外觀近似模型
 
+## 8 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuf2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方高角與正面照片區分紅磚寬柱、灰窄柱及兩條白直帶，門廊灰柱配原有紅柱頭／柱腳；兩排可證實 PV 頂面深藍，原水平幾何不改坡度，未知側背及入口中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 二坪山校區，官方相簿照片比對版。這是照片辨識後獨立建模的外觀小模型，並非建築測量、竣工圖或精確復原。
 
 ## 檔案

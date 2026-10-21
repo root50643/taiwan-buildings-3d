@@ -1,5 +1,16 @@
 # M4 第四宿舍（霽齋樓）｜可列印外觀近似模型
 
+## 7 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 背牆中性／整體凸簷材質延伸 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum4-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方空拍與近照限定淺灰前／右牆、銀框、灰藍離散窗與綠小棚；PV 僅原上面深藍，保留屋頂開口，不造水箱或金字。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 國立聯合大學二坪山校區。2026-10-11 核對官方校區名錄與外觀照片後建模。這是獨立縮尺展示模型，不是測繪、建築竣工或精確復原資料。
 
 ## 名稱與範圍

@@ -1,8 +1,8 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **526 組模型／列印包**：國立聯合大學 42 組（原38組加二坪山校名柱警衛亭、八甲站2單跨、站1弧形端段與南大門中央門牆共4組）、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 451 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **527 組模型／列印包**：國立聯合大學 42 組（原38組加二坪山校名柱警衛亭、八甲站2單跨、站1弧形端段與南大門中央門牆共4組）、國家衛生研究院竹南院區 9 組、臺灣各地地標 24 組，另新增下列大專校院 452 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
-全庫有 **110 所大專校院至少一套模型**，合計 **494 套校園相關模型**；另有 **32 套非大專校園模型**。下方新增目錄為109校／451套，另計國立聯合大學42套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標23套不列入高教校數。
+全庫有 **110 所大專校院至少一套模型**，合計 **495 套校園相關模型**；另有 **32 套非大專校園模型**。下方新增目錄為109校／452套，另計國立聯合大學42套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標23套不列入高教校數。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -18,7 +18,7 @@
 | :---: | :---: | :---: |
 | [<img src="國立臺灣大學/城中校區/buildings/ntu-medical-humanities-museum/appearance/previews/front.png" alt="國立臺灣大學實際模型預覽" width="260">](國立臺灣大學/README.md)<br>**[國立臺灣大學｜44 組](國立臺灣大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立成功大學/光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png" alt="國立成功大學實際模型預覽" width="260">](國立成功大學/README.md)<br>**[國立成功大學｜44 組](國立成功大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立臺東大學/知本校區/buildings/zhiben-administration/previews/front.png" alt="國立臺東大學實際模型預覽" width="260">](國立臺東大學/README.md)<br>**[國立臺東大學｜11 組](國立臺東大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立中央大學/校本部/buildings/ncu-ting-song-streetfront-canopy/previews/front.png" alt="國立中央大學實際模型預覽" width="260">](國立中央大學/README.md)<br>**[國立中央大學｜21 組](國立中央大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="景文科技大學/校本部/buildings/just-abc-complex/previews/front.png" alt="景文科技大學實際模型預覽" width="260">](景文科技大學/README.md)<br>**[景文科技大學｜7 組](景文科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="美和科技大學/校本部/buildings/meiho-bangxing/previews/front.png" alt="美和科技大學實際模型預覽" width="260">](美和科技大學/README.md)<br>**[美和科技大學｜8 組](美和科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
-| [<img src="萬能科技大學/校本部/buildings/vnu-fitness-ph/previews/front.png" alt="萬能科技大學實際模型預覽" width="260">](萬能科技大學/README.md)<br>**[萬能科技大學｜7 組](萬能科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="中華醫事科技大學/校本部/buildings/hwai-activity-h/previews/front.png" alt="中華醫事科技大學實際模型預覽" width="260">](中華醫事科技大學/README.md)<br>**[中華醫事科技大學｜5 組](中華醫事科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立中山大學/西子灣校區/buildings/nsysu-administration/previews/front.png" alt="國立中山大學實際模型預覽" width="260">](國立中山大學/README.md)<br>**[國立中山大學｜4 組](國立中山大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
+| [<img src="萬能科技大學/校本部/buildings/vnu-fitness-ph/previews/front.png" alt="萬能科技大學實際模型預覽" width="260">](萬能科技大學/README.md)<br>**[萬能科技大學｜7 組](萬能科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="中華醫事科技大學/校本部/buildings/hwai-activity-h/previews/front.png" alt="中華醫事科技大學實際模型預覽" width="260">](中華醫事科技大學/README.md)<br>**[中華醫事科技大學｜5 組](中華醫事科技大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立中山大學/西子灣校區/buildings/nsysu-bridge-pavilion/previews/front.png" alt="國立中山大學實際模型預覽" width="260">](國立中山大學/README.md)<br>**[國立中山大學｜5 組](國立中山大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立中正大學/民雄校本部/buildings/ccu-administration-complex/previews/front.png" alt="國立中正大學實際模型預覽" width="260">](國立中正大學/README.md)<br>**[國立中正大學｜4 組](國立中正大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立中興大學/校本部/buildings/nchu-administration-front/previews/front.png" alt="國立中興大學實際模型預覽" width="260">](國立中興大學/README.md)<br>**[國立中興大學｜3 組](國立中興大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立嘉義大學/民雄校區/buildings/ncyu-minxiong-university-hall/previews/front.png" alt="國立嘉義大學實際模型預覽" width="260">](國立嘉義大學/README.md)<br>**[國立嘉義大學｜4 組](國立嘉義大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立宜蘭大學/神農校總區/buildings/niu-administration-teaching-complex/previews/front.png" alt="國立宜蘭大學實際模型預覽" width="260">](國立宜蘭大學/README.md)<br>**[國立宜蘭大學｜6 組](國立宜蘭大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立屏東大學/屏商校區/buildings/nptu-library-tower-segment/appearance/previews/front.png" alt="國立屏東大學實際模型預覽" width="260">](國立屏東大學/README.md)<br>**[國立屏東大學｜5 組](國立屏東大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立彰化師範大學/進德校區/buildings/ncue-wang-jin-pyng-lakeside-roof-segment/previews/lake_right.png" alt="國立彰化師範大學實際模型預覽" width="260">](國立彰化師範大學/README.md)<br>**[國立彰化師範大學｜8 組](國立彰化師範大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
 | [<img src="國立政治大學/山下校區/buildings/nccu-administration/previews/front.png" alt="國立政治大學實際模型預覽" width="260">](國立政治大學/README.md)<br>**[國立政治大學｜9 組](國立政治大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立暨南國際大學/埔里校區/buildings/ncnu-library-entrance-segment/previews/front.png" alt="國立暨南國際大學實際模型預覽" width="260">](國立暨南國際大學/README.md)<br>**[國立暨南國際大學｜4 組](國立暨南國際大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 | [<img src="國立東華大學/壽豐校區/buildings/ndhu-administration-courtyard/previews/front.png" alt="國立東華大學實際模型預覽" width="260">](國立東華大學/README.md)<br>**[國立東華大學｜8 組](國立東華大學/README.md)**<br>部分建築／量體的外觀研究模型，非全校完成 |
@@ -167,3 +167,9 @@
 [![月涵亭實際模型](國立清華大學/校本部/buildings/nthu-yue-han-pavilion/previews/front.png)](國立清華大學/校本部/buildings/nthu-yue-han-pavilion/README.md)
 
 月涵亭完整亭體之2016來源外觀近似：淺圓挑簷、十二開口多邊內環、寬柱深楣板及窄高窗。120×140×67.6mm，五材質Blend/3MF/STL、五張實際網格圖；5044面單殼、338全域層及30實體／7空氣局部測試通過。背側、頂面與規則環圈推定；高窗不透明加厚、地形座人工化，無題字／校徽假造。1476個高懸垂面保留支撐警示，未實印，非測繪及非已核實2026現況。
+
+## 最新新增：中山橋上涼亭
+
+[![橋上涼亭實際模型](國立中山大學/西子灣校區/buildings/nsysu-bridge-pavilion/previews/front.png)](國立中山大學/西子灣校區/buildings/nsysu-bridge-pavilion/README.md)
+
+橋上涼亭全亭及直接平台之照片近似；七真柱可辨，第八柱與八屋面、隱藏面按多角度與規則對稱推定，非測繪。粗圓柱、黃綠曲簷、穿孔欄板；不含長橋池塘。115.97×115.97×115.90mm，五材質Blend/3MF/STL及五圖；87770面單殼、580全域截面，保留5層及2局部瓦端薄件警示與3693個高懸垂面。來源日期未知、原紋飾簡化、短支撐人工化，未實印。

@@ -1,5 +1,16 @@
 # 國立屏東大學｜屏商校區｜學生活動中心入口段
 
+## 3 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nptustudententry-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依 2010／2019 官方來源，只將既有入口白折板、框柱與橄欖灰階梯踏面及正面賦色；上層深槽與下層混合門廊不冒充玻璃，未見側背與屋頂保持中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 這是依公開完成照片自建的局部外觀模型，非全館測繪、全校模型或精確比例復原。所屬實體建物：**活動中心**。
 
 | 實際 STL 正面 | 實際 STL 背面 |

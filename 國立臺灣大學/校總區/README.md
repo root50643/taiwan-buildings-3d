@@ -1,12 +1,12 @@
 # 國立臺灣大學 校總區
 
-本校 **44 套**，其中校總區 **41 套**；套件數不等於整棟建築數，非全校完成。
+本校 **45 套**，其中校總區 **42 套**；套件數不等於整棟建築數，非全校完成。
 
 [返回臺大總圖鑑](../README.md)
 
-本校區目前41件外觀近似，不代表全部建築完成。既有件獨立150mm；新增校門段154mm展示寬；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
+本校區目前42件外觀近似，不代表全部建築完成。既有件獨立150mm；新增校門段154mm展示寬；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
 
-原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為44件整合版本的校區入口。
+原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為45件現行版本的校區入口。
 
 | 建築一 | 建築二 | 建築三 |
 |---|---|---|
@@ -28,6 +28,10 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](buildings/ntu-historic-gate-front-segment/README.md)** |  |  |
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](buildings/ntu-fu-bell-pavilion/README.md)** |  |  |
 
 [六材質外觀與來源界線](buildings/ntu-liberal-arts/appearance/README.md)
 

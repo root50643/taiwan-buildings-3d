@@ -2,7 +2,7 @@
 
 沿用原 **3,832 三角面／1,900 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
-| 正面 | 背面保持中性 |
+| 正面 | 背牆窗面中性／支撐構件材質有界延伸 |
 |---|---|
 | ![正面](previews/front.png) | ![背面](previews/rear.png) |
 | ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |

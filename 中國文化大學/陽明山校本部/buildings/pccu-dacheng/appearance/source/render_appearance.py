@@ -12,7 +12,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 for p in json.loads((A/'palette.json').read_text())['materials']:
  m=bpy.data.materials.new(p['id']);m.use_nodes=True;rgba=[lin(int(p['srgb'][i:i+2],16)/255) for i in [1,3,5]]+[1];m.diffuse_color=rgba;m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=rgba;m.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.4 if 'glazing' in p['id'] else .78;me.materials.append(m)
 for poly,t in zip(me.polygons,ts):poly.material_index=int(t.get('p1'))
-ob['original_STL_sha256']='07da76ed20707136c210dd8322674695ce0090a56ba4bc4d4ed10ab7bdc7f4cf';ob['limitations']='Uncalibrated source colors; front-only registration, other roofs and rear neutral; unchanged approximate geometry; no physical print test.'
+ob['original_STL_sha256']='07da76ed20707136c210dd8322674695ce0090a56ba4bc4d4ed10ab7bdc7f4cf';ob['limitations']='Uncalibrated source colors; front facade and front roof registration; bounded continuity on the front roof rear slope and front terrace railing; other roofs, rear walls, unregistered sides and court neutral; unchanged approximate geometry; no physical print test.'
 scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=.001;scene.unit_settings.length_unit='MILLIMETERS'
 world=bpy.data.worlds.new('Neutral studio');scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.36,.40,.46,1);world.node_tree.nodes['Background'].inputs[1].default_value=.7
 # Studio lights only; no floor mesh that could be mistaken for delivered geometry.

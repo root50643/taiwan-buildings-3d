@@ -1,5 +1,5 @@
 {
-  "method": "Independent extraction of rebuild-source.zip and all four documented commands",
+  "method": "Initial independent extraction and four-command rebuild; subsequent metadata-only correction validated by normalized renderer AST equivalence, actual Blender scene save/reopen, semantic content equality and material-edit roundtrip. Rendering was not rerun for this metadata-only revision.",
   "exact_sha256_matches": {
     "palette.json": true,
     "face-materials.json": true,
@@ -12,5 +12,13 @@
   "independent_exchange_and_scene_validation_passed": true,
   "scene_semantic_checks_match": true,
   "blend_binary_determinism_claimed": false,
-  "all_four_previews_visually_reviewed": true
+  "all_four_previews_visually_reviewed": true,
+  "metadata_only_revision": {
+    "renderer_AST_equivalent_except_limitation_constant": true,
+    "all_original_geometry_color_and_preview_bytes_unchanged": true,
+    "scene_mesh_materials_camera_lights_world_render_settings_equal": true,
+    "scene_property_save_reopen_verified": true,
+    "existing_material_edit_save_reopen_validation_rerun": true,
+    "rendering_rerun_for_metadata_revision": false
+  }
 }

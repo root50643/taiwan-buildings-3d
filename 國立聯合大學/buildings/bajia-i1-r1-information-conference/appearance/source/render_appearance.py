@@ -12,7 +12,7 @@ def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
 for p in json.loads((A/'palette.json').read_text())['materials']:
  m=bpy.data.materials.new(p['id']);m.use_nodes=True;rgba=[lin(int(p['srgb'][i:i+2],16)/255) for i in [1,3,5]]+[1];m.diffuse_color=rgba;m.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=rgba;m.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.4 if 'glazing' in p['id'] else .78;me.materials.append(m)
 for poly,t in zip(me.polygons,ts):poly.material_index=int(t.get('p1'))
-ob['original_STL_sha256']='d9cf4cdf30717b38c4020395a48a407ad5f97ba61d403871e322fe502021bdd3';ob['limitations']='Uncalibrated source colors; registered NUU I1 Information and R1 Conference Segment front; rear and unseen surfaces neutral; unchanged approximate geometry; no physical print test.'
+ob['original_STL_sha256']='d9cf4cdf30717b38c4020395a48a407ad5f97ba61d403871e322fe502021bdd3';ob['limitations']='Uncalibrated source colors; source-registered regions and explicitly bounded material extensions per README; all other regions use neutral proxies; unchanged approximate geometry; no physical print test.'
 scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=.001;scene.unit_settings.length_unit='MILLIMETERS'
 world=bpy.data.worlds.new('Neutral studio');scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.36,.40,.46,1);world.node_tree.nodes['Background'].inputs[1].default_value=.7
 # Studio lights only; no floor mesh that could be mistaken for delivered geometry.

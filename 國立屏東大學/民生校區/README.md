@@ -6,7 +6,7 @@
 
 | 圖鑑 1 | 圖鑑 2 | 圖鑑 3 |
 |---|---|---|
-| [![五育樓主體與中庭](buildings/nptu-wuyu-courtyard-complex/previews/front.png)](buildings/nptu-wuyu-courtyard-complex/README.md)<br>[五育樓主體與中庭](buildings/nptu-wuyu-courtyard-complex/README.md)<br>民生校區 | [![學習輔助犬訓練教室主屋](buildings/nptu-learning-assistance-dog-classroom/previews/front.png)](buildings/nptu-learning-assistance-dog-classroom/README.md)<br>[學習輔助犬訓練教室主屋](buildings/nptu-learning-assistance-dog-classroom/README.md)<br>民生校區 |  |
+| [![五育樓主體與中庭](buildings/nptu-wuyu-courtyard-complex/previews/front.png)](buildings/nptu-wuyu-courtyard-complex/README.md)<br>[五育樓主體與中庭](buildings/nptu-wuyu-courtyard-complex/README.md)<br>民生校區 | [![學習輔助犬訓練教室主屋](buildings/nptu-learning-assistance-dog-classroom/appearance/previews/front.png)](buildings/nptu-learning-assistance-dog-classroom/README.md)<br>[學習輔助犬訓練教室主屋](buildings/nptu-learning-assistance-dog-classroom/README.md)<br>民生校區 |  |
 
 尚未製作的人文館、教學科技館、禮堂、體育館、宿舍群及其他設施繼續保留於續接清單；民生校區尚未完成。
 

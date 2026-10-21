@@ -1,5 +1,16 @@
 # 國立屏東大學｜民生校區｜學習輔助犬訓練教室主屋
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 背牆中性／來源支持屋坡 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nptudog-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方2018–2019照片限定白側板、紅磚基腳與深灰屋坡；三角山牆不是屋面，混合門及受圍籬遮擋背牆中性，原後屋坡穿出的水平牆頂保留中性並揭露。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依官方完成照片自建的外觀近似模型。實體建物為**學習輔助犬訓練教室**；不代表精確測繪、全校完成或所有附屬設施皆已收錄。
 
 | 交付STL正面 | 交付STL背面 |

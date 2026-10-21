@@ -1,5 +1,16 @@
 # 僑光科技大學圖資大樓
 
+## 4 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 來源支持構件／未知牆面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/oculib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方歷史日照，僅原獨立黃色遮陽、圓筒玻璃凹背及精確銀灰框環；大牆、未註冊面與冠部打印補強中性，不宣稱完整立面或現況復原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 2007 年完工主體的公開影像比例近似模型，包括西圓筒冠環、後長高翼、東突出高翼與屋突、南低館退台及北低附體。這是單棟階段成果，不代表全校完成，也不是測繪、結構或施工模型。
 
 | 正面（實際 STL） | 背面（實際 STL） |

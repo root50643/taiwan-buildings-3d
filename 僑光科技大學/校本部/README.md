@@ -4,7 +4,7 @@
 
 | 圖資大樓正面 | 同件背面 |
 |---|---|
-| [![正面](buildings/ocu-library-information/previews/front.png)](buildings/ocu-library-information/README.md) | [![背面](buildings/ocu-library-information/previews/rear.png)](buildings/ocu-library-information/README.md) |
+| [![正面](buildings/ocu-library-information/appearance/previews/front.png)](buildings/ocu-library-information/README.md) | [![背面](buildings/ocu-library-information/appearance/previews/rear.png)](buildings/ocu-library-information/README.md) |
 
 含底最長 150 mm，毫米；名義高度、未知立面與冠梁列印補強限制見模型 README。尚未實體試印，需支撐檢查。嚴格短弦與 opening 警告保留，已獨立裁定並接受限定例外。
 

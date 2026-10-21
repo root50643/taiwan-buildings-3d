@@ -18,7 +18,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/zhunan-administration/appearance/previews/front.png" alt="國家衛生研究院竹南院區行政大樓：正面預覽" width="220">](buildings/zhunan-administration/README.zh-TW.md)<br>**[國家衛生研究院竹南院區行政大樓](buildings/zhunan-administration/README.zh-TW.md)** | [<img src="buildings/zhunan-library-information/previews/front.png" alt="國家衛生研究院竹南院區圖書資訊大樓：正面預覽" width="220">](buildings/zhunan-library-information/README.zh-TW.md)<br>**[國家衛生研究院竹南院區圖書資訊大樓](buildings/zhunan-library-information/README.zh-TW.md)** | [<img src="buildings/zhunan-r1-r2-research-complex/previews/front.png" alt="國家衛生研究院竹南院區研究大樓 R1／R2：正面預覽" width="220">](buildings/zhunan-r1-r2-research-complex/README.zh-TW.md)<br>**[國家衛生研究院竹南院區研究大樓 R1／R2](buildings/zhunan-r1-r2-research-complex/README.zh-TW.md)** |
+| [<img src="buildings/zhunan-administration/appearance/previews/front.png" alt="國家衛生研究院竹南院區行政大樓：正面預覽" width="220">](buildings/zhunan-administration/README.zh-TW.md)<br>**[國家衛生研究院竹南院區行政大樓](buildings/zhunan-administration/README.zh-TW.md)** | [<img src="buildings/zhunan-library-information/appearance/previews/front.png" alt="國家衛生研究院竹南院區圖書資訊大樓：正面預覽" width="220">](buildings/zhunan-library-information/README.zh-TW.md)<br>**[國家衛生研究院竹南院區圖書資訊大樓](buildings/zhunan-library-information/README.zh-TW.md)** | [<img src="buildings/zhunan-r1-r2-research-complex/previews/front.png" alt="國家衛生研究院竹南院區研究大樓 R1／R2：正面預覽" width="220">](buildings/zhunan-r1-r2-research-complex/README.zh-TW.md)<br>**[國家衛生研究院竹南院區研究大樓 R1／R2](buildings/zhunan-r1-r2-research-complex/README.zh-TW.md)** |
 | [<img src="buildings/zhunan-dorm-phase2/previews/front.png" alt="國家衛生研究院竹南院區二期單人宿舍：正面預覽" width="220">](buildings/zhunan-dorm-phase2/README.zh-TW.md)<br>**[國家衛生研究院竹南院區二期單人宿舍](buildings/zhunan-dorm-phase2/README.zh-TW.md)** | [<img src="buildings/zhunan-family-dorm/previews/front.png" alt="國衛院竹南院區有眷宿舍：正面預覽" width="220">](buildings/zhunan-family-dorm/README.zh-TW.md)<br>**[國衛院竹南院區有眷宿舍](buildings/zhunan-family-dorm/README.zh-TW.md)** | [<img src="buildings/zhunan-biologics-pilot-main/previews/front.png" alt="國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼：正面預覽" width="220">](buildings/zhunan-biologics-pilot-main/README.zh-TW.md)<br>**[國衛院竹南院區既有生物製劑先導工廠：主量體與附接低翼](buildings/zhunan-biologics-pilot-main/README.zh-TW.md)** |
 | [<img src="buildings/zhunan-station48-exterior-mass/front.png" alt="國衛院竹南院區 station 48 白色塔狀外觀量體：正面預覽" width="220">](buildings/zhunan-station48-exterior-mass/README.zh-TW.md)<br>**[國衛院竹南院區 station 48 白色塔狀外觀量體](buildings/zhunan-station48-exterior-mass/README.zh-TW.md)** | [<img src="buildings/zhunan-waste-treatment-center/previews/front.png" alt="國衛院竹南院區廢棄物處理中心：公開外殼：正面預覽" width="220">](buildings/zhunan-waste-treatment-center/README.zh-TW.md)<br>**[國衛院竹南院區廢棄物處理中心：公開外殼](buildings/zhunan-waste-treatment-center/README.zh-TW.md)** | [<img src="buildings/zhunan-mep-center-preliminary/previews/front.png" alt="國衛院竹南院區機電中心：初步近似外觀量體：正面預覽" width="220">](buildings/zhunan-mep-center-preliminary/README.zh-TW.md)<br>**[國衛院竹南院區機電中心：初步近似外觀量體](buildings/zhunan-mep-center-preliminary/README.zh-TW.md)** |
 
@@ -56,7 +56,7 @@
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
-| [<img src="buildings/zhunan-library-information/previews/front.png" alt="國家衛生研究院竹南院區圖書資訊大樓：正面預覽" width="320">](buildings/zhunan-library-information/previews/front.png) | [<img src="buildings/zhunan-library-information/previews/rear.png" alt="國家衛生研究院竹南院區圖書資訊大樓：背面預覽" width="320">](buildings/zhunan-library-information/previews/rear.png) |
+| [<img src="buildings/zhunan-library-information/appearance/previews/front.png" alt="國家衛生研究院竹南院區圖書資訊大樓：正面預覽" width="320">](buildings/zhunan-library-information/appearance/previews/front.png) | [<img src="buildings/zhunan-library-information/appearance/previews/rear.png" alt="國家衛生研究院竹南院區圖書資訊大樓：背面預覽" width="320">](buildings/zhunan-library-information/appearance/previews/rear.png) |
 
 來源與證據：請見本件 README 及 model-info.json；未經實體試印。
 
@@ -197,3 +197,5 @@ R1／R2 與中間可見中央量體合為一件列印包；中央量體不另增
 
 
 [國衛院竹南行政大樓外觀與來源界線](buildings/zhunan-administration/appearance/README.md)
+
+[國衛院竹南圖書資訊大樓外觀與來源界線](buildings/zhunan-library-information/appearance/README.md)

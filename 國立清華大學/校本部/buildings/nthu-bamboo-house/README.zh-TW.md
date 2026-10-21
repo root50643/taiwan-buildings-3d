@@ -1,5 +1,16 @@
 # 國立清華大學｜竹屋（原住民族科學發展中心）
 
+## 5 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 來源支持屋坡／牆面保守中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthubamboo-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+有限配色重點為來源支持金色竹屋坡與棕屋脊橫檁、離散窗和灰平台；牆面跨深色橫帶／院內灰腳而未分界，刻意中性，不冒充全牆實景還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第九批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 140.00 × 37.50mm，最長150mm含底座。全校尚未完成。
 
 ## 來源與觀察

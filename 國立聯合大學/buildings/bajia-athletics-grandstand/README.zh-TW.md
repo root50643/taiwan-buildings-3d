@@ -1,5 +1,16 @@
 # 國立聯合大學 八甲田徑運動場司令台
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 背牆中性／棚同材料推估 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuustand-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方完整兩照限定下層桃紅磚牆、窗凹背、銀灰棚與灰混凝土階梯；原模型無紅椅與玻璃欄面，故不染台階假裝椅子，未分色帶的圓／方核心保守中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依官方外觀照片製作的近似列印模型。最長邊獨立設定150 mm，並非全校統一縮尺或實測模型。正面朝-Y。只建外觀，不建內部配置。
 
 ## 外形與來源

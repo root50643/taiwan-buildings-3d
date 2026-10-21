@@ -1,5 +1,16 @@
 # 國立臺灣大學 普通教學館
 
+## 3 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntuputong-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依2010官方照片，只處理中央拱窗淡灰玻璃代理及藍灰細框；外圈建築飾邊、紅灰混合牆面、開放走廊與簷棚中性，不冒充完整立面復原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 官方索引代碼 N11。公開外觀近似模型，非測繪或BIM。
 
 ## 範圍與比例

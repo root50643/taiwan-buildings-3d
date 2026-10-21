@@ -1,5 +1,16 @@
 # M2 第二宿舍（紅夢樓）｜可列印外觀近似模型
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 背牆中性／棚頂保守銀灰代理 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+暖灰實牆、淡色窗格、灰青電梯玻璃及連橋；只有內窗背染玻璃，棚頂 PV 未證實故保守銀灰，不把未分面綠帶染成整面綠牆。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 國立聯合大學二坪山校區。2026-10-11 核對官方校區名錄與外觀照片後建模。這是獨立縮尺展示模型，不是測繪、建築竣工或精確復原資料。
 
 ## 名稱與範圍

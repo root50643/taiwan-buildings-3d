@@ -20,3 +20,11 @@
 北校門簡冊立柱本體外觀近似：三片等高平行輪廓、兩道有背板側槽、照片所見三組雙橫飾。校名字體省略，背面簡化；非完整北校門，排除警衛亭、新光廊、天線、樹木與地下基礎。49×35×153mm含人工展示底板，非測繪縮尺。三材質Blend/3MF/STL與五張網格圖，668面單殼、765全域層通過；18局部0.8mm外唇截面警示保留，未實印，不稱免支撐。
 
 [來源、五視圖與完整 QA](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)
+
+## 新增：月涵亭
+
+[![月涵亭實際模型](buildings/nthu-yue-han-pavilion/previews/front.png)](buildings/nthu-yue-han-pavilion/README.md)
+
+月涵亭完整亭體之2016來源外觀近似：淺圓挑簷、十二開口多邊內環、寬柱深楣板及窄高窗。120×140×67.6mm，五材質Blend/3MF/STL、五張實際網格圖；5044面單殼、338全域層及30實體／7空氣局部測試通過。背側、頂面與規則環圈推定；高窗不透明加厚、地形座人工化，無題字／校徽假造。1476個高懸垂面保留支撐警示，未實印，非測繪及非已核實2026現況。
+
+[來源、五視圖與完整 QA](buildings/nthu-yue-han-pavilion/README.md)

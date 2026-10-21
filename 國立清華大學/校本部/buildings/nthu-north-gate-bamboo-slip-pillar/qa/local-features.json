@@ -1,0 +1,1008 @@
+{
+  "stl_sha256": "21cab735fdf74acce02d7b3e2c42c44cec49009d6c446b44646c8e98badf7c56",
+  "method": "Raw STL exact-coordinate weld only. Intersection crops of exported mesh, unrounded horizontal sections, exact -0.4mm geometric erosion, no thin-feature exemptions. Crops isolate molding projection rather than including thick main body.",
+  "tests": [
+    {
+      "feature": "equal-height profile 1 top",
+      "crop_origin": [
+        12,
+        -7.5,
+        150
+      ],
+      "crop_size": [
+        4,
+        4.4,
+        3
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 150.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 17.599999994039536,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            11.519999995231625
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 152.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 17.599999994039536,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            11.519999995231625
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 152.999,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 17.599999994039536,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            11.515254944159514
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "equal-height profile 2 top",
+      "crop_origin": [
+        12,
+        -1.9,
+        150
+      ],
+      "crop_size": [
+        4,
+        3.8,
+        3
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 150.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.199999970197695,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.599999990463253
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 152.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.19999991655351,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.59999993284544
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 152.999,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.199999889731416,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.597998413289638
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "equal-height profile 3 top",
+      "crop_origin": [
+        12,
+        3.1,
+        150
+      ],
+      "crop_size": [
+        4,
+        4.4,
+        3
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 150.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 17.599999994039536,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            11.519999995231625
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 152.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 17.599999994039536,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            11.519999995231625
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 152.999,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 17.599999994039536,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            11.512855825704312
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "return groove air x-1 y-2.5",
+      "crop_origin": [
+        -16.4,
+        -3.0,
+        10
+      ],
+      "crop_size": [
+        0.7,
+        1,
+        130
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "solid backing behind groove x-1 y-2.5",
+      "crop_origin": [
+        -15.5,
+        -3.0,
+        10
+      ],
+      "crop_size": [
+        2,
+        1,
+        130
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "return groove air x-1 y2.5",
+      "crop_origin": [
+        -16.4,
+        2.0,
+        10
+      ],
+      "crop_size": [
+        0.7,
+        1,
+        130
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "solid backing behind groove x-1 y2.5",
+      "crop_origin": [
+        -15.5,
+        2.0,
+        10
+      ],
+      "crop_size": [
+        2,
+        1,
+        130
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "return groove air x1 y-2.5",
+      "crop_origin": [
+        15.7,
+        -3.0,
+        10
+      ],
+      "crop_size": [
+        0.7,
+        1,
+        130
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "solid backing behind groove x1 y-2.5",
+      "crop_origin": [
+        13.5,
+        -3.0,
+        10
+      ],
+      "crop_size": [
+        2,
+        1,
+        130
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "return groove air x1 y2.5",
+      "crop_origin": [
+        15.7,
+        2.0,
+        10
+      ],
+      "crop_size": [
+        0.7,
+        1,
+        130
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "solid backing behind groove x1 y2.5",
+      "crop_origin": [
+        13.5,
+        2.0,
+        10
+      ],
+      "crop_size": [
+        2,
+        1,
+        130
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 20.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 75.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 120.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.24000000000000007
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "molding isolated front projection z47",
+      "crop_origin": [
+        -10,
+        -8.3,
+        47
+      ],
+      "crop_size": [
+        20,
+        0.8,
+        1.1
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 47.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 47.55,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 48.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "molding isolated front projection z49.1",
+      "crop_origin": [
+        -10,
+        -8.3,
+        49.1
+      ],
+      "crop_size": [
+        20,
+        0.8,
+        1.1
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 49.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 49.65,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 50.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "molding isolated front projection z96",
+      "crop_origin": [
+        -10,
+        -8.3,
+        96
+      ],
+      "crop_size": [
+        20,
+        0.8,
+        1.1
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 96.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 96.55,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 97.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "molding isolated front projection z98.1",
+      "crop_origin": [
+        -10,
+        -8.3,
+        98.1
+      ],
+      "crop_size": [
+        20,
+        0.8,
+        1.1
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 98.19999999999999,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 98.64999999999999,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 99.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "molding isolated front projection z143",
+      "crop_origin": [
+        -10,
+        -8.3,
+        143
+      ],
+      "crop_size": [
+        20,
+        0.8,
+        1.1
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 143.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 143.55,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 144.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "molding isolated front projection z145.1",
+      "crop_origin": [
+        -10,
+        -8.3,
+        145.1
+      ],
+      "crop_size": [
+        20,
+        0.8,
+        1.1
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 145.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 145.65,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 146.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 15.999999940395355,
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "paired band external gap z48.1",
+      "crop_origin": [
+        -10,
+        -8.2,
+        48.2
+      ],
+      "crop_size": [
+        20,
+        0.6,
+        0.8
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 48.300000000000004,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 48.6,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 48.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "paired band external gap z97.1",
+      "crop_origin": [
+        -10,
+        -8.2,
+        97.19999999999999
+      ],
+      "crop_size": [
+        20,
+        0.6,
+        0.8
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 97.3,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 97.6,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 97.89999999999999,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "paired band external gap z144.1",
+      "crop_origin": [
+        -10,
+        -8.2,
+        144.2
+      ],
+      "crop_size": [
+        20,
+        0.6,
+        0.8
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 144.29999999999998,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 144.6,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 144.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "artificial display base",
+      "crop_origin": [
+        -20,
+        -14,
+        0
+      ],
+      "crop_size": [
+        40,
+        28,
+        3
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 0.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1120.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1066.24
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 1.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1120.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1066.24
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 2.9,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1120.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1066.24
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    }
+  ],
+  "solid_samples": 42,
+  "air_samples": 21,
+  "occupancy_mismatches": 0,
+  "solid_failed_0_8mm_samples": 18,
+  "downward_faces_over_45deg_above_base": 144,
+  "downward_area_mm2": 502.0799146842928,
+  "nominal_molding_projection_mm": 0.8,
+  "nominal_molding_height_mm": 1.1,
+  "nominal_molding_clear_gap_mm": 1,
+  "nominal_groove_width_mm": 1.2,
+  "nominal_groove_depth_mm": 0.9,
+  "marginal_width_warning": "Molding projection is nominally exactly 0.8mm: zero process allowance. Exact crop erosion may collapse even though the attached solid lip is not an independent wall. Do not treat whole-body slice survival as all-feature minimum-width proof.",
+  "actual_print_tested": false,
+  "support_free_certified": false,
+  "limitations": "Tall slender 150mm pillar above added base; tipping/adhesion and horizontal band underside support/orientation need target-slicer checks. Groove air/backing samples check approximation only, not real hidden connections. Finite crops are not exhaustive minimum-wall analysis, strength testing or FFF simulation; no physical print."
+}

@@ -8,7 +8,7 @@
 
 | 紅樓 | 一大川堂南端段 | 先鋒大樓前側段 |
 | --- | --- | --- |
-| [![紅樓](臺北校區（西校區）/buildings/ntut-red-house/appearance/previews/front.png)](臺北校區（西校區）/buildings/ntut-red-house/) | [![川堂局部](臺北校區（西校區）/buildings/ntut-yida-south-section/previews/front.png)](臺北校區（西校區）/buildings/ntut-yida-south-section/) | [![先鋒局部](臺北校區（南校區）/buildings/ntut-pioneer-north-section/previews/front.png)](臺北校區（南校區）/buildings/ntut-pioneer-north-section/) |
+| [![紅樓](臺北校區（西校區）/buildings/ntut-red-house/appearance/previews/front.png)](臺北校區（西校區）/buildings/ntut-red-house/) | [![川堂局部](臺北校區（西校區）/buildings/ntut-yida-south-section/appearance/previews/front.png)](臺北校區（西校區）/buildings/ntut-yida-south-section/) | [![先鋒局部](臺北校區（南校區）/buildings/ntut-pioneer-north-section/previews/front.png)](臺北校區（南校區）/buildings/ntut-pioneer-north-section/) |
 | [臺北工業學校紅樓](臺北校區（西校區）/buildings/ntut-red-house/) | [一大川堂校史館南端六開間段](臺北校區（西校區）/buildings/ntut-yida-south-section/) | [先鋒國際研發大樓臨忠孝東路前側段](臺北校區（南校區）/buildings/ntut-pioneer-north-section/) |
 
 | 億光大樓 | 後續 | 後續 |
@@ -35,3 +35,5 @@
 ## 驗證程式修訂
 
 四件均使用canonical-v3 fail-closed輔助篩檢，無效組合Polygon即非零退出，不再走buffer(0)修補。4件重跑成功、篩檢數值完全不變；這是驗證程式與文件修訂，所有STL/OBJ/Blend幾何附件保持不變。詳見[逐檔替換對照與重跑結果](validator-revision-v4.json)。
+
+[一大川堂南段修復外觀限定配色外觀與來源界線](臺北校區（西校區）/buildings/ntut-yida-south-section/appearance/README.md)

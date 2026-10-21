@@ -1,5 +1,16 @@
 # 一大川堂校史館南端六開間段
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 來源支持外長牆／未知頂面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntutyida-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+廣角與柱廊近照分別註冊外長牆及內廊：白牆窗框與鋼棚、灰八角柱、黑窄踢腳及鏽紅牌匾，未加文字；未知屋頂、混色簷邊、北截面保持中性，僅既有南端六開間段。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 國立臺北科技大學／臺北校區（西校區）
 
 ## 範圍與年代

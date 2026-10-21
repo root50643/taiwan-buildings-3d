@@ -1,5 +1,16 @@
 # 國立清華大學｜第二綜合大樓
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthugeneral2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+來源註冊正面象牙白牆、淺灰窗梃與灰綠窗背、深灰入口格框、灰石階；未證實反側定位，後窗及後牆中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第五批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 122.00 × 109.00mm，最長150mm含底座。全校尚未完成。
 
 ## 來源與觀察

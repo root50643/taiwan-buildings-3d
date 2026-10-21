@@ -1,5 +1,16 @@
 # 理學一館正立面段
 
+## 3 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ncuescience-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+僅 59 個原面做暖黃雙挑棚可見面與棕橫帶前緣；混合窗簾、樹形灰白柱、陽台、白牆與未知面全中性，不宣稱完整立面配色還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 國立彰化師範大學・進德校區。依公開實拍自建的局部外觀近似模型，非全館測繪；每館獨立比例，無法以本件直接推算現地尺寸。
 
 | 正面（實際 STL） | 背側收邊（實際 STL） |

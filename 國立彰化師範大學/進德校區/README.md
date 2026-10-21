@@ -6,7 +6,7 @@
 
 ### [理學一館正立面段](buildings/ncue-science1-front-segment/)
 
-[![理學一館正立面段](buildings/ncue-science1-front-segment/previews/front.png)](buildings/ncue-science1-front-segment/)
+[![理學一館正立面段](buildings/ncue-science1-front-segment/appearance/previews/front.png)](buildings/ncue-science1-front-segment/)
 
 ### [圖資大樓入口轉角段](buildings/ncue-library-entry-corner-segment/)
 

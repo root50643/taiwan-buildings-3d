@@ -6,7 +6,7 @@
 
 | [理學一館正立面段](進德校區/buildings/ncue-science1-front-segment/) | [圖資大樓入口轉角段](進德校區/buildings/ncue-library-entry-corner-segment/) | [工學院大樓主立面段](師大校區/buildings/ncue-engineering-front-segment/) |
 |---|---|---|
-| [![理學一館正立面段](進德校區/buildings/ncue-science1-front-segment/previews/front.png)](進德校區/buildings/ncue-science1-front-segment/) | [![圖資大樓入口轉角段](進德校區/buildings/ncue-library-entry-corner-segment/previews/front.png)](進德校區/buildings/ncue-library-entry-corner-segment/) | [![工學院大樓主立面段](師大校區/buildings/ncue-engineering-front-segment/previews/front.png)](師大校區/buildings/ncue-engineering-front-segment/) |
+| [![理學一館正立面段](進德校區/buildings/ncue-science1-front-segment/appearance/previews/front.png)](進德校區/buildings/ncue-science1-front-segment/) | [![圖資大樓入口轉角段](進德校區/buildings/ncue-library-entry-corner-segment/previews/front.png)](進德校區/buildings/ncue-library-entry-corner-segment/) | [![工學院大樓主立面段](師大校區/buildings/ncue-engineering-front-segment/previews/front.png)](師大校區/buildings/ncue-engineering-front-segment/) |
 
 | [白沙大樓入口正面片段](進德校區/buildings/ncue-baisha-entry-front-segment/) | [王金平活動中心湖面側與淺拱屋頂局部](進德校區/buildings/ncue-wang-jin-pyng-lakeside-roof-segment/) |  |
 |---|---|---|
@@ -41,3 +41,5 @@ README與sources清楚區分已觀測立面、未知背面、來源年代和模�
 [![弘道館八材質片段](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/previews/front.png)](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/)
 
 2018 正面照片及官方航拍約束的中央入口與兩側各兩跨；實體階梯、白斜扶壁、高細柱、紅褐直帶與退縮入口。8 色 3MF／Blend／STL，503 層數位 QA；窗框、比例和樹遮窗格近似，後板為展示封口，非全棟或 2026 現況，未實印。
+
+[理學一館主立面段黃棚與棕帶點色外觀與來源界線](進德校區/buildings/ncue-science1-front-segment/appearance/README.md)

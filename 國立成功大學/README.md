@@ -1,6 +1,6 @@
-# 國立成功大學｜44 件數位外觀近似模型
+# 國立成功大學｜45 件數位外觀近似模型
 
-本整合包收錄原首批至第十三批、大新園更新、紀念校門、共享弧棚及波簷尖峰片段新增的 **44 件模型**。部分是同一財產的高低棟或局部量體，不等於 44 棟完整建築，也不是全校完成。既有41件含底座最長邊150mm；紀念校門為160mm展示寬，新增弧棚為164mm展示寬，波簷尖峰片段為104mm展示底座寬；各自獨立比例，不能直接拼接。
+本整合包收錄原首批至第十三批、大新園更新、紀念校門、共享弧棚、波簷尖峰片段及小西門完整門樓新增的 **45 件模型**。部分是同一財產的高低棟或局部量體，不等於 45 棟完整建築，也不是全校完成。既有41件含底座最長邊150mm；紀念校門為160mm展示寬，新增弧棚為164mm展示寬，波簷尖峰片段為104mm展示底座寬，小西門為108mm展示寬；各自獨立比例，不能直接拼接。
 
 每件提供 STL、可攜 Python 原始程式、可編輯 Blender、由實際 STL 產生的正面／背面／立面預覽、來源與近似之處、支撐需求及驗證報告。原始參考照片及 GIS 地圖影像不隨包散布；請循各件來源 URL 核對。未實體試印、未切片驗證。
 
@@ -28,6 +28,10 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png" alt="國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）：實際模型預覽" width="220">](光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)<br>**[國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）](光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)** | [<img src="勝利校區/buildings/ncku-commemorative-gate-1956/previews/front.png" alt="國立成功大學｜紀念校門（窮理致知牌坊）：實際模型預覽" width="220">](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)<br>**[國立成功大學｜紀念校門（窮理致知牌坊）](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)** | [<img src="安南校區/buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png" alt="國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段：實際模型預覽" width="220">](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/README.md)<br>**[國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/README.md)** |
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="光復校區/buildings/ncku-minor-west-gate/previews/front.png" alt="國立成功大學・光復校區小西門（靖波門）：實際模型預覽" width="220">](光復校區/buildings/ncku-minor-west-gate/README.md)<br>**[國立成功大學・光復校區小西門（靖波門）](光復校區/buildings/ncku-minor-west-gate/README.md)** |  |  |
 
 ## 幾何與驗證
 

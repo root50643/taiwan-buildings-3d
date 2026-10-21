@@ -2,7 +2,7 @@
 
 [返回學校總覽](../README.md)
 
-本校區目前收錄 17 件數位外觀近似模型；包含局部段或同一財產不同量體，件數不等於完整建物棟數。原16件含底座最長150mm；波簷尖峰片段為104mm展示底座寬、獨立縮尺。尚未完成全校，未實體試印或進行印表機切片驗證。
+本校區目前收錄 18 件數位外觀近似模型；包含局部段或同一財產不同量體，件數不等於完整建物棟數。原16件含底座最長150mm；波簷尖峰片段為104mm展示底座寬，小西門為108mm展示寬、獨立縮尺。尚未完成全校，未實體試印或進行印表機切片驗證。
 
 ## 三欄模型圖鑑
 
@@ -20,6 +20,10 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png" alt="國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）：實際模型預覽" width="220">](buildings/ncku-wave-eaves-apex-fragment-2021/README.md)<br>**[國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）](buildings/ncku-wave-eaves-apex-fragment-2021/README.md)** |  |  |
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ncku-minor-west-gate/previews/front.png" alt="國立成功大學・光復校區小西門（靖波門）：實際模型預覽" width="220">](buildings/ncku-minor-west-gate/README.md)<br>**[國立成功大學・光復校區小西門（靖波門）](buildings/ncku-minor-west-gate/README.md)** |  |  |
 
 [六材質外觀與來源界線](buildings/dacheng-hall/appearance/README.md)
 

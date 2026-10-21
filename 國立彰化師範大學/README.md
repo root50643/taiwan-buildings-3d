@@ -12,6 +12,10 @@
 |---|---|---|
 | [![白沙大樓入口正面片段](進德校區/buildings/ncue-baisha-entry-front-segment/previews/front.png)](進德校區/buildings/ncue-baisha-entry-front-segment/) | [![王金平活動中心湖面側局部](進德校區/buildings/ncue-wang-jin-pyng-lakeside-roof-segment/previews/lake_right.png)](進德校區/buildings/ncue-wang-jin-pyng-lakeside-roof-segment/) |  |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="進德校區/buildings/ncue-comprehensive-curved-entry-segment/previews/front.png" alt="國立彰化師範大學・綜合中心弧形入口屏牆與階梯段：實際模型預覽" width="220">](進德校區/buildings/ncue-comprehensive-curved-entry-segment/README.md)<br>**[國立彰化師範大學・綜合中心弧形入口屏牆與階梯段](進德校區/buildings/ncue-comprehensive-curved-entry-segment/README.md)** | [<img src="進德校區/buildings/ncue-hongdao-entry-colonnade-segment/previews/front.png" alt="國立彰化師範大學｜進德校區｜弘道館入口柱廊片段：實際模型預覽" width="220">](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/README.md)<br>**[國立彰化師範大學｜進德校區｜弘道館入口柱廊片段](進德校區/buildings/ncue-hongdao-entry-colonnade-segment/README.md)** | [<img src="進德校區/buildings/ncue-wang-jin-pyng-swimming-entry-segment/previews/front.png" alt="國立彰化師範大學進德校區｜王金平游泳館入口立面與淺弧屋簷前段：實際模型預覽" width="220">](進德校區/buildings/ncue-wang-jin-pyng-swimming-entry-segment/README.md)<br>**[國立彰化師範大學進德校區｜王金平游泳館入口立面與淺弧屋簷前段](進德校區/buildings/ncue-wang-jin-pyng-swimming-entry-segment/README.md)** |
+
 歷史照片限定的入口與短左翼，並非2026現況或全棟；提供多色3MF、可編輯Blender、STL及5張實際網格預覽。
 
 王金平局部含兩個斜收口真窗洞、內退玻璃帶及淺拱屋頂；後封板／底座為展示支撐，不是全棟或測繪。屋頂肋尖有局部0.8 mm篩查損失，未做實體列印，未把規劃PV當成現況。

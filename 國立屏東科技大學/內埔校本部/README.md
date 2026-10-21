@@ -8,6 +8,10 @@
 |---|---|
 | ![述耘堂正面](buildings/npust-shuyun-hall/previews/front.png) | ![述耘堂背面](buildings/npust-shuyun-hall/previews/rear.png) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/npust-yukang-library/previews/front.png" alt="玉崗紀念圖書館（圖書與會展館）：實際模型預覽" width="220">](buildings/npust-yukang-library/README.md)<br>**[玉崗紀念圖書館（圖書與會展館）](buildings/npust-yukang-library/README.md)** |  |  |
+
 ## [玉崗紀念圖書館｜跨年有界近似](buildings/npust-yukang-library/README.md)
 
 | 正面 | 背面 |

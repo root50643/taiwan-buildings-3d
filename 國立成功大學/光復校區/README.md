@@ -17,6 +17,10 @@
 | **國立成功大學｜學生活動中心（連續L形建築）**<br>[![正面](buildings/student-activity-center/previews/front.png)](buildings/student-activity-center/README.md)<br>[正面](buildings/student-activity-center/previews/front.png) · [背面](buildings/student-activity-center/previews/rear.png)<br>[說明與來源](buildings/student-activity-center/README.md) · [STL](buildings/student-activity-center/model.stl) | **國立成功大學｜唯農大樓**<br>[![正面](buildings/wei-nong-building/previews/front.png)](buildings/wei-nong-building/README.md)<br>[正面](buildings/wei-nong-building/previews/front.png) · [背面](buildings/wei-nong-building/previews/rear.png)<br>[說明與來源](buildings/wei-nong-building/README.md) · [STL](buildings/wei-nong-building/model.stl) | **國立成功大學｜雲平大樓東棟**<br>[![正面](buildings/yunping-east/previews/front.png)](buildings/yunping-east/README.md)<br>[正面](buildings/yunping-east/previews/front.png) · [背面](buildings/yunping-east/previews/rear.png)<br>[說明與來源](buildings/yunping-east/README.md) · [STL](buildings/yunping-east/model.stl) |
 | **國立成功大學｜雲平大樓西棟**<br>[![正面](buildings/yunping-west/previews/front.png)](buildings/yunping-west/README.md)<br>[正面](buildings/yunping-west/previews/front.png) · [背面](buildings/yunping-west/previews/rear.png)<br>[說明與來源](buildings/yunping-west/README.md) · [STL](buildings/yunping-west/model.stl) |  |  |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png" alt="國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）：實際模型預覽" width="220">](buildings/ncku-wave-eaves-apex-fragment-2021/README.md)<br>**[國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）](buildings/ncku-wave-eaves-apex-fragment-2021/README.md)** |  |  |
+
 [六材質外觀與來源界線](buildings/dacheng-hall/appearance/README.md)
 
 ![大成館外觀](buildings/dacheng-hall/appearance/previews/front.png)

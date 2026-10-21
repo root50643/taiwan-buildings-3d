@@ -23,6 +23,10 @@
 | [![萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/previews/front.png)](buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/README.md) | [![博理館](buildings/ntu-bory-hall/appearance/previews/front.png)](buildings/ntu-bory-hall/README.md)<br>[博理館](buildings/ntu-bory-hall/README.md) | [![化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/previews/front.png)](buildings/ntu-chemical-engineering-entry/README.md)<br>[化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/README.md) |
 | [![社會科學院主棟](buildings/ntu-social-sciences-main/previews/front.png)](buildings/ntu-social-sciences-main/README.md)<br>[社會科學院主棟](buildings/ntu-social-sciences-main/README.md) |  |  |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](buildings/ntu-historic-gate-front-segment/README.md)** |  |  |
+
 [六材質外觀與來源界線](buildings/ntu-liberal-arts/appearance/README.md)
 
 ![文學院外觀](buildings/ntu-liberal-arts/appearance/previews/front.png)

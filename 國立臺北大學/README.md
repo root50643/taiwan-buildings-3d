@@ -7,6 +7,10 @@
 | [![心湖會館](三峽校區/buildings/ntpu-mind-lake-hall/appearance/previews/front.png)](三峽校區/buildings/ntpu-mind-lake-hall/) | [![圖書館主體段](三峽校區/buildings/ntpu-library-main-block-segment/appearance/previews/front.png)](三峽校區/buildings/ntpu-library-main-block-segment/) |
 | [檔案與正背預覽](三峽校區/buildings/ntpu-mind-lake-hall/) | [檔案與正背預覽](三峽校區/buildings/ntpu-library-main-block-segment/) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="三峽校區/buildings/ntpu-gym-colored-bay-entry-facade-segment/previews/front.png" alt="國立臺北大學綜合體育館彩色凸窗入口立面段：實際模型預覽" width="220">](三峽校區/buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)<br>**[國立臺北大學綜合體育館彩色凸窗入口立面段](三峽校區/buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)** |  |  |
+
 - [三峽校區入口](三峽校區/)
 - [全校範圍、歷史拆除與未完成工作](inventory/)
 - [獨立數位審核摘要](qa/)

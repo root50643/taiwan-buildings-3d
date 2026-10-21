@@ -6,6 +6,10 @@
 | :---: | :---: | :---: |
 | [<img src="校本部/buildings/thu-original-arts-center-1964/output/preview-entrance.png" alt="原藝術中心（1962–1964 年史料外觀研究版本）實際STL預覽" width="260">](校本部/buildings/thu-original-arts-center-1964/README.md)<br>**[原藝術中心（1962–1964 年史料外觀研究版本）](校本部/buildings/thu-original-arts-center-1964/README.md)**<br>依歷史圖面與照片建立的原藝術中心外觀研究近似；非現況測繪，推定尺寸與殼頂細節逐件揭露 |  |  |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="校本部/buildings/thu-green-heart-curved-fin-facade-segment/previews/front.png" alt="東海大學綠之心・曲面遮陽翼片立面片段：實際模型預覽" width="220">](校本部/buildings/thu-green-heart-curved-fin-facade-segment/README.md)<br>**[東海大學綠之心・曲面遮陽翼片立面片段](校本部/buildings/thu-green-heart-curved-fin-facade-segment/README.md)** | [<img src="校本部/buildings/thu-priest-bell-tower/previews/front.png" alt="東海大學 畢律斯鐘樓：實際模型預覽" width="220">](校本部/buildings/thu-priest-bell-tower/README.md)<br>**[東海大學 畢律斯鐘樓](校本部/buildings/thu-priest-bell-tower/README.md)** | [<img src="../臺灣地標/luce-chapel/previews/front.png" alt="路思義教堂｜150 mm FDM 外觀模型：實際模型預覽" width="220">](../臺灣地標/luce-chapel/README.md)<br>**[路思義教堂｜150 mm FDM 外觀模型](../臺灣地標/luce-chapel/README.md)** |
+
 本件已通過[指定版本獨立限定條件數位覆核](inventory/qa/thu-original-arts-center-1964-v1.1-review.md)。保留 98 個柱頭過渡截面超過 1% 面積損失的嚴格失敗，以及原始精確邊界判定；只對具體根部與數值包絡作限定覆核，不代表全部檢查無失敗或全域壁厚證明。數位檢查不等於實際切片或實體試印，仍須依設備、材料與列印方向檢查支撐。
 
 [路思義教堂既有地標模型](../臺灣地標/luce-chapel/)另存於地標分類，未重複計入本次新增包。

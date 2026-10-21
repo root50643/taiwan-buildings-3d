@@ -34,6 +34,10 @@
 | [![萬才館（主棟與前階梯段）](校總區/buildings/ntu-wancai-main/previews/front.png)](校總區/buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](校總區/buildings/ntu-wancai-main/README.md) | [![博理館](校總區/buildings/ntu-bory-hall/appearance/previews/front.png)](校總區/buildings/ntu-bory-hall/README.md)<br>[博理館](校總區/buildings/ntu-bory-hall/README.md) | [![化學工程館正門入口段](校總區/buildings/ntu-chemical-engineering-entry/previews/front.png)](校總區/buildings/ntu-chemical-engineering-entry/README.md)<br>[化學工程館正門入口段](校總區/buildings/ntu-chemical-engineering-entry/README.md) |
 | [![社會科學院主棟](校總區/buildings/ntu-social-sciences-main/previews/front.png)](校總區/buildings/ntu-social-sciences-main/README.md)<br>[社會科學院主棟](校總區/buildings/ntu-social-sciences-main/README.md) |  |  |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="校總區/buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](校總區/buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](校總區/buildings/ntu-historic-gate-front-segment/README.md)** |  |  |
+
 ## 清冊與版本
 [全校待辦與來源缺口](inventory/README.zh-TW.md) · [44件版本索引](model-index.json) · [完整SHA256](SHA256SUMS) · [批次紀錄](batches/)
 

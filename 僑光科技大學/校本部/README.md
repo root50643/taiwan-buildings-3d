@@ -6,6 +6,10 @@
 |---|---|
 | [![正面](buildings/ocu-library-information/appearance/previews/front.png)](buildings/ocu-library-information/README.md) | [![背面](buildings/ocu-library-information/appearance/previews/rear.png)](buildings/ocu-library-information/README.md) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ocu-sports-folded-stair-pavilion/previews/front.png" alt="僑光科技大學多功能休閒運動中心折板入口棚：實際模型預覽" width="220">](buildings/ocu-sports-folded-stair-pavilion/README.md)<br>**[僑光科技大學多功能休閒運動中心折板入口棚](buildings/ocu-sports-folded-stair-pavilion/README.md)** |  |  |
+
 含底最長 150 mm，毫米；名義高度、未知立面與冠梁列印補強限制見模型 README。尚未實體試印，需支撐檢查。嚴格短弦與 opening 警告保留，已獨立裁定並接受限定例外。
 
 ## 新增：多功能休閒運動中心折板入口棚

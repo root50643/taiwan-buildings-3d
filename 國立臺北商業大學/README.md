@@ -6,6 +6,10 @@
 |---|---|---|
 | [![活動中心實際STL](臺北校區/buildings/ntub-student-center-west-facade/previews/front.png)](臺北校區/buildings/ntub-student-center-west-facade/) | [![公能樓實際STL](桃園校區/buildings/ntub-gongneng/previews/front.png)](桃園校區/buildings/ntub-gongneng/) | [![北商學舍實際STL](桃園校區/buildings/ntub-dormitory/previews/front.png)](桃園校區/buildings/ntub-dormitory/) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="桃園校區/buildings/ntub-hongyi/previews/front.png" alt="國立臺北商業大學｜桃園校區弘毅樓：實際模型預覽" width="220">](桃園校區/buildings/ntub-hongyi/README.md)<br>**[國立臺北商業大學｜桃園校區弘毅樓](桃園校區/buildings/ntub-hongyi/README.md)** |  |  |
+
 - [臺北校區](臺北校區/README.md)
 - [桃園校區](桃園校區/README.md)
 - [全校研究清單](inventory.json)：10主要建築、附屬及校外範圍，區分已做／局部／未研究／缺證。

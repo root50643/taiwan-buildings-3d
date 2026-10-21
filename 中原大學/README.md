@@ -8,6 +8,10 @@
 | :---: | :---: |
 | <img src="中壢校區/buildings/cycu-huai-en-hall-2021/appearance/previews/front.png" alt="懷恩樓南面" width="420"> | <img src="中壢校區/buildings/cycu-huai-en-hall-2021/appearance/previews/rear.png" alt="懷恩樓北面" width="420"> |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="中壢校區/buildings/cycu-chang-ching-yu-library-1985/previews/front.png" alt="中原大學 張靜愚紀念圖書館（1985）有界近似列印模型：實際模型預覽" width="220">](中壢校區/buildings/cycu-chang-ching-yu-library-1985/README.md)<br>**[中原大學 張靜愚紀念圖書館（1985）有界近似列印模型](中壢校區/buildings/cycu-chang-ching-yu-library-1985/README.md)** | [<img src="中壢校區/buildings/cycu-m-gate-relocated/previews/front.png" alt="中原大學 M 字舊校門（2011 遷移後外觀近似）：實際模型預覽" width="220">](中壢校區/buildings/cycu-m-gate-relocated/README.md)<br>**[中原大學 M 字舊校門（2011 遷移後外觀近似）](中壢校區/buildings/cycu-m-gate-relocated/README.md)** |  |
+
 [模型、來源與驗證](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)
 
 ## 補建：張靜愚紀念圖書館（1985，有界近似）

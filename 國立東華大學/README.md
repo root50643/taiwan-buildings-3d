@@ -17,6 +17,10 @@
 | [![模型預覽](壽豐校區/buildings/ndhu-education-courtyard-bell-pavilion/previews/front.png)](壽豐校區/buildings/ndhu-education-courtyard-bell-pavilion/) |
 | [STL、Blend、來源與正背／頂視](壽豐校區/buildings/ndhu-education-courtyard-bell-pavilion/) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="壽豐校區/buildings/ndhu-zhongxing-pavilion/previews/front.png" alt="國立東華大學｜壽豐校區｜忠興亭有界亭架外觀近似：實際模型預覽" width="220">](壽豐校區/buildings/ndhu-zhongxing-pavilion/README.md)<br>**[國立東華大學｜壽豐校區｜忠興亭有界亭架外觀近似](壽豐校區/buildings/ndhu-zhongxing-pavilion/README.md)** |  |  |
+
 - [壽豐校區](壽豐校區/)
 - [美崙校區／東華創新研究園區](美崙校區/)
 - [屏東校區／海生館共享科研設施](屏東校區/)

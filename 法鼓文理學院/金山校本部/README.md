@@ -8,6 +8,10 @@
 |---|---|
 | ![正面](buildings/dila-yangsheng-hall/appearance/previews/front.png) | ![背面](buildings/dila-yangsheng-hall/appearance/previews/rear.png) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/dila-great-vow-bridge-middle-span-segment/previews/front.png" alt="法鼓文理學院・大願橋中央裁切片段：實際模型預覽" width="220">](buildings/dila-great-vow-bridge-middle-span-segment/README.md)<br>**[法鼓文理學院・大願橋中央裁切片段](buildings/dila-great-vow-bridge-middle-span-segment/README.md)** |  |  |
+
 [模型、來源及數位檢查](buildings/dila-yangsheng-hall/README.md)。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 
 既有揚生館之外新增下列橋段；其他教學、行政、住宿與宗教空間未建模，不代表全校完成。後續可延續建築師整體校園來源逐棟研究，先釐清法鼓文理學院與僧伽大學／寺院棟界。

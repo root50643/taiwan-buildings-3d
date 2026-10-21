@@ -10,6 +10,10 @@
 |---|---|
 | ![正向](淡水校本部/buildings/tku-palace-classrooms/appearance/previews/front.png) | ![反向](淡水校本部/buildings/tku-palace-classrooms/appearance/previews/rear.png) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="淡水校本部/buildings/tku-maritime-museum/previews/front.png" alt="淡江大學海事博物館｜低細節外觀代表模型：實際模型預覽" width="220">](淡水校本部/buildings/tku-maritime-museum/README.md)<br>**[淡江大學海事博物館｜低細節外觀代表模型](淡水校本部/buildings/tku-maritime-museum/README.md)** |  |  |
+
 [模型、來源與列印限制](淡水校本部/buildings/tku-palace-classrooms/README.md) · [數位驗證](淡水校本部/buildings/tku-palace-classrooms/QA.md)
 
 ## 海事博物館

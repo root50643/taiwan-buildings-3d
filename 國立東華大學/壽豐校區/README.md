@@ -17,6 +17,10 @@
 | [![模型預覽](buildings/ndhu-education-courtyard-bell-pavilion/previews/front.png)](buildings/ndhu-education-courtyard-bell-pavilion/) |
 | [STL、Blend、來源與正背／頂視](buildings/ndhu-education-courtyard-bell-pavilion/) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ndhu-zhongxing-pavilion/previews/front.png" alt="國立東華大學｜壽豐校區｜忠興亭有界亭架外觀近似：實際模型預覽" width="220">](buildings/ndhu-zhongxing-pavilion/README.md)<br>**[國立東華大學｜壽豐校區｜忠興亭有界亭架外觀近似](buildings/ndhu-zhongxing-pavilion/README.md)** |  |  |
+
 不是2026現況測繪。圖資北面施工期參考不能說成完成面；花師2F／4F完整平面缺口仍明示，塔門增設未查得竣工證據。細部及遮蔽面依各件README列限制。
 
 S05補強7/21竣工確認、9/18驗收，圖書館4–6F另8/27開工、預計2027-02-25完成。理工一D與B舊頂樓山牆已拆；湖玻璃屋修繕等逐項保留，不把舊照當震後現況。

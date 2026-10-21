@@ -10,6 +10,10 @@
 |---|---|
 | ![入口側](沙鹿校本部/buildings/pu-providence-chapel/previews/front.png) | ![背面](沙鹿校本部/buildings/pu-providence-chapel/previews/rear.png) |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/previews/front.png" alt="靜宜大學蓋夏圖書館舊館・入口格構轉角片段：實際模型預覽" width="220">](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/README.md)<br>**[靜宜大學蓋夏圖書館舊館・入口格構轉角片段](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/README.md)** |  |  |
+
 單件正背並排；不以同館不同角度冒充多棟。獨立避靜中心未建模，其餘建築研究狀態見下列更新。本包不含第三方原圖與PDF。
 
 列印警示：主顧聖母堂十字架有44個超過1% opening面積損失的細件警告層，最高6.407799248768964%；已作固定STL的特定例外審查。仍需評估支撐及拆除、勿任意縮小，尚未實體試印；[精確數據與限制](沙鹿校本部/buildings/pu-providence-chapel/README.md)。

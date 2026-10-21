@@ -1,5 +1,16 @@
 # H1 產研創新暨推廣大樓｜可列印外觀近似模型
 
+## 8 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuh1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方雙照配置淡牆格、離散灰青窗背、中央灰淡紫實窗下帶與暖灰入口石材；只對曲面原窗凹背上色，右側離散窗依可見來源，未知左背與未證實 PV 的棚頂中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 國立聯合大學二坪山校區。依學校官方相簿逐張辨識外觀，再以適合小型 FDM 列印的實體幾何重建。本模型不是測量成果、竣工圖、精確 BIM 或完整內部模型。
 
 ## 檔案與預覽

@@ -1,5 +1,16 @@
 # 國立成功大學｜C-Hub成大創意基地高量體
 
+## 3 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nckuchub-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+僅高折面量體的已註冊正面／右側清水混凝土及原窗背代理；未知後側屋頂中性，不含低連接屋頂，也不新增板模線或細鋁框。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第十三批；光復校區。校方GIS A042，財產校碼R1J-2-0。尺寸約 112 × 94 × 150 mm，含底座最長邊150 mm，各件獨立比例。
 
 ![正面](previews/front.png)

@@ -1,5 +1,16 @@
 # 心湖會館
 
+## 3 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 來源支持屋坡／混合牆面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntpumind-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+僅原網格四組折面金屬屋坡採來源支持的銅紅色代理，中央四柱淺灰；混合材質牆面、未分草坪與鋪面、屋頂厚邊及未知區域保持中性，不聲稱整棟還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 整體外觀近似。依公開竣工實拍手工參數化重建的建築外觀近似模型，沒有抓取現成3D mesh，也不是測繪或工程用模型。
 
 ## 模型與下載

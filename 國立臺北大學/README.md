@@ -4,7 +4,7 @@
 
 | 心湖會館 | 圖書資訊大樓：圖書館主體段 |
 |---|---|
-| [![心湖會館](三峽校區/buildings/ntpu-mind-lake-hall/previews/front.png)](三峽校區/buildings/ntpu-mind-lake-hall/) | [![圖書館主體段](三峽校區/buildings/ntpu-library-main-block-segment/previews/front.png)](三峽校區/buildings/ntpu-library-main-block-segment/) |
+| [![心湖會館](三峽校區/buildings/ntpu-mind-lake-hall/appearance/previews/front.png)](三峽校區/buildings/ntpu-mind-lake-hall/) | [![圖書館主體段](三峽校區/buildings/ntpu-library-main-block-segment/previews/front.png)](三峽校區/buildings/ntpu-library-main-block-segment/) |
 | [檔案與正背預覽](三峽校區/buildings/ntpu-mind-lake-hall/) | [檔案與正背預覽](三峽校區/buildings/ntpu-library-main-block-segment/) |
 
 - [三峽校區入口](三峽校區/)
@@ -25,3 +25,5 @@
 依2019建築師正面照與校方低斜角照片建立的彩色凸窗入口立面薄切段，非完整四棟體育館。藍深凸窗有左實牆及右玻璃回折，黃窄凸窗、紅色低入口框、左凹陽台與穿空梁均為幾何；7材質3MF/Blend/STL，任意照片尺度及背面展示切面明列。原始單殼拓撲與252層截面通過，但0.75mm窗櫺局部0.8mm侵蝕失敗如實保留；須支撐與細節評估，未實印。
 
 [模型、來源與 QA](三峽校區/buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)
+
+[心湖會館折面屋頂限定配色外觀與來源界線](三峽校區/buildings/ntpu-mind-lake-hall/appearance/README.md)

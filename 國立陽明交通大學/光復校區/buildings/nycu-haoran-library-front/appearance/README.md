@@ -1,0 +1,42 @@
+# 陽明交大浩然圖資廣場立面段：五材質外觀版
+
+沿用原 **4,566 三角面／2,269 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
+
+| 正面 | 背面保持中性 |
+|---|---|
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
+
+[表面色 3MF](nycuhaoran-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
+
+## 來源與配色邊界
+
+本件是**浩然圖書資訊中心廣場立面段**，不是完整圖書館。親看校方博物館完整日間柱廊與夜間正面兩張照片、原單色網格及生成器。[精確 URL、SHA 與日期欄](qa/source-review.json)。兩照 nested EXIF Original 均為 2020-06-22（分別 11:42:31／18:03:20），相機自報未獨立認證；2020-07-07 修改日及媒體 URL 的 2020/09 均不是拍攝日，不聲稱 2026 現況。原照私有研究，不入包。
+
+- 日間照片支持米灰磁磚柱、圓廳與灰暗玻璃；夜景只註冊正面四窗帶、入口突出窗、上層開廊位置，不烘焙夜間黃燈、藍暮色、室內反光。上層同系統磁磚與玻璃以日間低飽和代理有界延伸，不聲稱逐窗顏色量測。
+- 僅四長窗條、突出入口與下方圓廳原離散凹背採暗玻璃代理；原厚窗梃銀灰。原圓廳沒有完整細網格，不新增細框；不把整圓柱體當玻璃。
+- 頂部九洞是開放廊，保持中性與幾何陰影，非玻璃。屋頂上面、未註冊側牆與 y=24 截斷背面中性。柱及原入口支撐構件同材料有界延伸，非背牆復原。
+- 梯級為原簡化灰石代理；地板、圓柱磁磚縫、臨時招牌、前景雕塑大字、樹與室內全不新增。比例／層高／深度均仍是原照片估算，不作實體列印保證。
+
+[原幾何與歷史來源限制](../README.md)
+
+## 重建與核驗
+
+安裝 [依賴](source/requirements.txt)，Blender 使用 4.3.2。由本資料夾上層提供原 model.stl：
+
+1. `python appearance/source/build_appearance.py`
+2. `python appearance/source/verify_exchange.py`
+3. `blender -b -t 3 --python-exit-code 1 -P appearance/source/render_appearance.py`
+4. `blender -b -t 3 --python-exit-code 1 -P appearance/source/verify_scene.py`
+
+[獨立重建 ZIP](rebuild-source.zip)含原 STL、四支程式及依賴，不含第三方照片；不取代原建模腳本。[逐檔 SHA256](SHA256SUMS)
+
+[交換／拓撲 QA](qa/exchange-validation.json)核對原座標與面序、全部面材質、單連通、有向水密邊、頂點 link 單環、正體積與零退化／重複面；lib3mf 嚴格讀取零警告，實際編輯單材質再存讀，其他材質及面指派不變。SDK 六位小數量化誤差另列。
+
+[Blender 存讀與編輯](qa/scene-validation.json) · [渲染記錄](qa/render-manifest.json) · [獨立重建](qa/rebuild-validation.json)
+
+## 製造限制照舊
+
+尺寸仍為 150 × 89 × 97 mm；原 STL、建模程式、場景及歷史 QA 保留。原層檢與薄特徵檢查本次未重跑，不能由材質 QA 代替。
+
+3MF 是同一網格的表面色，不是各材質各自封閉的分色實體、切片專案、噴頭映射或 G-code。切片 GUI、多材料路徑與實體列印未測；柱頭、屋簷、窗框及薄邊仍須評估材料、支撐及拆除風險，沒有保證可印或免支撐。

@@ -1,5 +1,16 @@
 # 國家衛生研究院竹南院區：二期單人宿舍
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nhridorm2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依瑞助營造公開工程照限定暖白立面、灰米凸窗、藍綠窗凹背及深灰入口弧棚；未見背側與屋頂中性，中央實體格網不冒稱精確玻璃帷幕。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 這是依公開竣工外觀照片製作的獨立可列印微縮模型。不是測量模型，也不是整個院區的等比例縮圖。
 
 ## 識別與證據

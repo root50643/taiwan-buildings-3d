@@ -1,5 +1,16 @@
 # 國立聯合大學｜二坪山 M8 第八宿舍（國鼎館）
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 背牆中性／棚頂保守銀灰代理 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum8-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+暖赭磚與中央方窗、淡薄荷上窗；高窗帶混合面中性。實景 PV 已證實但原屋面未分陣列間隙，保守銀灰代理，不造整頂藍色覆蓋。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 這是依公開官方外觀照片製作的近似建築微縮模型，供觀賞及 FDM 列印。不是校方工程圖、實測復原或統一校園比例。只含外殼造型，不含房間、住戶、門禁、設備配置或第三方照片。
 
 ## 身分與範圍

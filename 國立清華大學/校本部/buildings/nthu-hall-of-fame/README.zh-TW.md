@@ -1,5 +1,16 @@
 # 國立清華大學｜清華名人堂
 
+## 7 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未知背牆屋頂中性／構件有限延伸 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthufame-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+橘三高肋、上簷奶油灰、原銀梃與離散窗、深褐棚底百葉及空白灰浮雕牆；混合下弧牆和上陽台背不強染，原屋頂與背牆中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第二批外觀近似建築模型，並非測繪模型。獨立比例、最長150mm含底座；全校尚未完成。
 
 ## 交付與尺寸

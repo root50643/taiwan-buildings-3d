@@ -1,5 +1,16 @@
 # 圖書資訊大樓：圖書館主體段
 
+## 2 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 兩側外皮有來源／幕牆中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntpulib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依五張設計者實照與原 loft 面平面精確定位兩側白 S 外皮，共 4379 個完整原面；混合幕牆、三座斜橋、屋頂及地坪中性，不宣稱整棟玻璃或現況還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 局部主體段；非全圖資大樓。依公開竣工實拍手工參數化重建的建築外觀近似模型，沒有抓取現成3D mesh，也不是測繪或工程用模型。
 
 ## 模型與下載

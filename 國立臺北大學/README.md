@@ -4,7 +4,7 @@
 
 | 心湖會館 | 圖書資訊大樓：圖書館主體段 |
 |---|---|
-| [![心湖會館](三峽校區/buildings/ntpu-mind-lake-hall/appearance/previews/front.png)](三峽校區/buildings/ntpu-mind-lake-hall/) | [![圖書館主體段](三峽校區/buildings/ntpu-library-main-block-segment/previews/front.png)](三峽校區/buildings/ntpu-library-main-block-segment/) |
+| [![心湖會館](三峽校區/buildings/ntpu-mind-lake-hall/appearance/previews/front.png)](三峽校區/buildings/ntpu-mind-lake-hall/) | [![圖書館主體段](三峽校區/buildings/ntpu-library-main-block-segment/appearance/previews/front.png)](三峽校區/buildings/ntpu-library-main-block-segment/) |
 | [檔案與正背預覽](三峽校區/buildings/ntpu-mind-lake-hall/) | [檔案與正背預覽](三峽校區/buildings/ntpu-library-main-block-segment/) |
 
 - [三峽校區入口](三峽校區/)
@@ -27,3 +27,5 @@
 [模型、來源與 QA](三峽校區/buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)
 
 [心湖會館折面屋頂限定配色外觀與來源界線](三峽校區/buildings/ntpu-mind-lake-hall/appearance/README.md)
+
+[臺北大圖書館白 S 外皮限定配色外觀與來源界線](三峽校區/buildings/ntpu-library-main-block-segment/appearance/README.md)

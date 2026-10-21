@@ -1,5 +1,16 @@
 # 國立清華大學｜宏亮美術館
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未知後牆屋頂中性／左側來源構件 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthuhong-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+官方照片支持銀灰金屬盒、暖混凝土中段、離散玻璃與原窗梃及左端低磚牆；未知右端、屋頂和後面中性，低磚頂和圓柱周面僅同構件有界延伸。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第四批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 100.00 × 39.00mm，最長150mm含底座。全校尚未完成。
 
 ## 來源與觀察

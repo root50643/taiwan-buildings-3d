@@ -1,5 +1,16 @@
 # 懷恩樓（約2021外觀近似，未含2024光電）
 
+## 2 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 歷史主屋面同系統／牆面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/cycuhuaien-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+僅8個原主屋坡與扁脊面採2021文章空照支持的暗灰屋面代理，遮樹端部明示同系統有界延伸；所有牆窗、低屋面、門廊及簷邊中性。維持原約2021歷史模型，不增2024光電、不宣稱2026現況。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 中原大學・中壢校區。完整長條建築量體的歷史外觀近似；1983整修圖補形，與2023屋頂圖、2021屋面及背面實照交叉核對。不是2021精密復原，也不是2026現況。這是一棟模型，不代表全校完成。
 
 ![南側實際STL](previews/front.png)

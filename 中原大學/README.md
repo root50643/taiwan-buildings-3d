@@ -6,7 +6,7 @@
 
 | 南面實際模型 | 北面實際模型 |
 | :---: | :---: |
-| <img src="中壢校區/buildings/cycu-huai-en-hall-2021/previews/front.png" alt="懷恩樓南面" width="420"> | <img src="中壢校區/buildings/cycu-huai-en-hall-2021/previews/rear.png" alt="懷恩樓北面" width="420"> |
+| <img src="中壢校區/buildings/cycu-huai-en-hall-2021/appearance/previews/front.png" alt="懷恩樓南面" width="420"> | <img src="中壢校區/buildings/cycu-huai-en-hall-2021/appearance/previews/rear.png" alt="懷恩樓北面" width="420"> |
 
 [模型、來源與驗證](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)
 
@@ -29,3 +29,5 @@
 2018 官方文章所刊遷移後照片約束，歷史側照補三桶拱／四穿孔深墩與八腳；3 色 3MF／Blend／STL。無實測尺度，背頂平滑延續與後緣同構為限定推估；521 層分量核心存活但極頂切片局部圓角損失 6.7933%，非全體積損失；未實印。獨立門體不在既有懷恩樓模型中。
 
 [模型、來源與 QA](中壢校區/buildings/cycu-m-gate-relocated/README.md)
+
+[懷恩樓約2021歷史主屋面暗色限定研究外觀與來源界線](中壢校區/buildings/cycu-huai-en-hall-2021/appearance/README.md)

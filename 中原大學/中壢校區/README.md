@@ -6,7 +6,7 @@
 
 | 南面實際模型 | 北面實際模型 |
 | :---: | :---: |
-| <img src="buildings/cycu-huai-en-hall-2021/previews/front.png" alt="南面" width="420"> | <img src="buildings/cycu-huai-en-hall-2021/previews/rear.png" alt="北面" width="420"> |
+| <img src="buildings/cycu-huai-en-hall-2021/appearance/previews/front.png" alt="南面" width="420"> | <img src="buildings/cycu-huai-en-hall-2021/appearance/previews/rear.png" alt="北面" width="420"> |
 
 1983圖說補形、2023屋頂外廓、2021屋面／北面資料與2018南面照片交叉核對。完整量體近似，並非2021精密復原或2026現況。來源、限制、STL、Blend與QA詳見建物頁。
 

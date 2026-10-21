@@ -2,7 +2,7 @@
 
 本專案收錄國立聯合大學建築物的 3D 模型、可編輯原始檔與實際模型預覽。說明與建築名稱使用繁體中文。
 
-目前已完成並收錄 **40 組近似外觀模型**；以下逐項列出已收錄的館舍及建築群。其餘館舍仍持續整理；本專案不宣稱已涵蓋全校建築。
+目前已完成並收錄 **41 組近似外觀模型**；以下逐項列出已收錄的館舍及建築群。其餘館舍仍持續整理；本專案不宣稱已涵蓋全校建築。
 
 [早期兩校區建築研究目錄](docs/CATALOG.zh-TW.md)整理了 **50 筆建物／附屬量體候選**；這不是 50 棟現存獨立建築的斷言，也不是完成率分母。部分歷史館舍、代碼與附屬量體仍待確認；該研究目錄的舊完成狀態不代表目前模型收錄數，最新收錄以本頁與各模型資料夾為準。另提供 [JSON 清單](docs/catalog.json)與 [CSV 清單](docs/catalog.csv)。
 
@@ -712,7 +712,7 @@
 
 新增二坪山校名柱與附連小警衛亭有界外觀近似，不含J1、左側另一亭或完整校門。43×55×123mm含3mm中性展示底座，尺寸估計非測繪；書法與NUU標誌留白，長槽為有背淺凹而非確認穿孔，未知後面與頂面採簡化閉合。7材質3MF/Blend/STL與五圖；1520面原始拓撲、615層全域截面、局部窗梃橫桿及簷邊篩查通過；來源限定外觀PASS，非全局壁厚或免支撐保證，未切片支撐驗證或實印。
 
-[模型、來源與 QA](buildings/erping-main-gate-tower-guardhouse-segment/README.md)｜[現行40套索引](model-index.json)
+[模型、來源與 QA](buildings/erping-main-gate-tower-guardhouse-segment/README.md)｜[現行41套索引](model-index.json)
 
 原早期50筆研究候選清冊保持歷史內容，不作目前完成數分母。
 
@@ -788,6 +788,16 @@
 
 八甲校區2候車亭最左單跨外觀近似；保留斜側框、側玻璃代理、雙告示板、後上與椅下開口及中央椅腿，右端為共用支承人工切界。154×58×94mm含展示底座，尺寸／深度／未見頂背估計；告示及花卉省略。8材質Blend/3MF/STL與五圖，366面單殼拓樸、交換格式、編輯重開驗證通過；470層輪廓合法但屋頂尖端薄截面失敗，局部椅架尖端亦失敗，需支撐與方向評估，未實印。
 
-[模型、來源與 QA](buildings/bajia-bus-stop-2-left-bay-segment/README.md)｜[現行40套索引](model-index.json)
+[模型、來源與 QA](buildings/bajia-bus-stop-2-left-bay-segment/README.md)｜[現行41套索引](model-index.json)
 
-歷史候選清冊及 SHA256SUMS_GATE_20261020.txt 為各次發布快照，並非本次現行頁面校驗值；本次頁面見 SHA256SUMS_BUS_SHELTER_20261021.txt。
+歷史候選清冊及 SHA256SUMS_GATE_20261020.txt 為各次發布快照，並非本次現行頁面校驗值；站2發布時的頁面快照見 SHA256SUMS_BUS_SHELTER_20261021.txt；現行頁面校驗見本頁最下方最新發布項目。
+
+## 新增：八甲校區 1 弧形候車亭端部雙框
+
+[![站1弧形端部雙框實際模型](buildings/bajia-bus-stop-1-curved-end-segment/previews/front.png)](buildings/bajia-bus-stop-1-curved-end-segment/README.md)
+
+八甲校區1左翼白櫃旁端柱至第二根內柱的兩個連續框板外觀段；平面弧形屋面及石牆、3後柱與三角懸臂、窄下縫、內木椅和短端返牆，不含前腳、玻璃、設備或公告藝術。132×74×93.5mm含新增底板，曲率／深度／未見頂部推估。8材質Blend/3MF/STL與五張真實網格圖，1236面單殼與468全域切層通過；局部斜撐起點薄截面警示保留，懸挑需支撐評估，未實印。
+
+[模型、來源與 QA](buildings/bajia-bus-stop-1-curved-end-segment/README.md)｜[現行41套索引](model-index.json)
+
+歷史發布校驗快照保持；本次現行頁面見 SHA256SUMS_CURVED_SHELTER_20261021.txt。

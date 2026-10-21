@@ -1,8 +1,8 @@
 # 國立臺灣大學：公開外觀3D列印模型
 
-本校 **45 套**，其中校總區 **42 套**；套件數不等於整棟建築數，非全校完成。
+本校 **46 套**，其中校總區 **43 套**；套件數不等於整棟建築數，非全校完成。
 
-目前收錄45件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區。不是全校完成，也不是45棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
+目前收錄46件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區。不是全校完成，也不是46棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
 
 既有43件含STL、OBJ、Blender場景、可攜式參數化來源、原STL正背預覽及繁體中文來源說明。既有件獨立最長150mm；新增校門段為154mm展示寬，不能當同一比例校園拼接；來源照片未重新散布。
 
@@ -44,8 +44,12 @@
 | :---: | :---: | :---: |
 | [<img src="校總區/buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](校總區/buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](校總區/buildings/ntu-fu-bell-pavilion/README.md)** |  |  |
 
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="校總區/buildings/ntu-si-nian-memorial-hall/previews/front.png" alt="國立臺灣大學｜傅園斯年堂：實際模型預覽" width="220">](校總區/buildings/ntu-si-nian-memorial-hall/README.md)<br>**[國立臺灣大學｜傅園斯年堂](校總區/buildings/ntu-si-nian-memorial-hall/README.md)** |  |  |
+
 ## 清冊與版本
-[全校待辦與來源缺口](inventory/README.zh-TW.md) · [44件版本索引](model-index.json) · [完整SHA256](SHA256SUMS) · [批次紀錄](batches/)
+[全校待辦與來源缺口](inventory/README.zh-TW.md) · [46件現行索引](model-index.json) · [完整SHA256](SHA256SUMS) · [批次紀錄](batches/)
 
 [下一階段逐項來源與缺口](inventory/CONTINUE.zh-TW.md) · [第12批補查](qa/batch12-20261013/README.zh-TW.md) · [第13批補查](qa/batch13-20261013/README.zh-TW.md)
 

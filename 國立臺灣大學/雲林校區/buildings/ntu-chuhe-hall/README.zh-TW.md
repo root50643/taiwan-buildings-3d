@@ -1,5 +1,16 @@
 # 國立臺灣大學 鋤禾館（雲林分部農業育成推廣中心）
 
+## 5 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 來源支持後側木屏／混合牆中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntuchuhe-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依 2019／2022／2023 官方照片，僅原斜翼木屏、入口與凸窗木框、奶白簷框及獨立凸窗背；主牆木灰混面、入口格柵玻璃混面、後百葉與未知屋坡均中性，不假造綠布棚。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 官方索引代碼 雲林校區；無臺北索引代碼。公開外觀近似模型，非測繪或BIM。
 
 ## 範圍與比例

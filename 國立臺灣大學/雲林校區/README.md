@@ -6,4 +6,4 @@
 
 | 建築一 | 建築二 | 建築三 |
 |---|---|---|
-| [![鋤禾館（雲林分部農業育成推廣中心）](buildings/ntu-chuhe-hall/previews/front.png)](buildings/ntu-chuhe-hall/README.md)<br>[鋤禾館（雲林分部農業育成推廣中心）](buildings/ntu-chuhe-hall/README.md) |  |  |
+| [![鋤禾館（雲林分部農業育成推廣中心）](buildings/ntu-chuhe-hall/appearance/previews/front.png)](buildings/ntu-chuhe-hall/README.md)<br>[鋤禾館（雲林分部農業育成推廣中心）](buildings/ntu-chuhe-hall/README.md) |  |  |

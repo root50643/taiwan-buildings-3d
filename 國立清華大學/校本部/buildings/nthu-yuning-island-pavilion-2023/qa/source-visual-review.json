@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "reviewer": "research_next_complete_campus_exterior",
+  "reviewed_at_utc": "2026-10-21T20:43:17.597710+00:00",
+  "status": "PASS_WITH_DOCUMENTED_SIMPLIFICATIONS",
+  "scope": "人工親看三張官方完整實建照片與全部五張最終預覽，評估可見外觀拓樸；不是實測、工程鑑定或實際列印認證。",
+  "model_stl_sha256": "00e0bee04b6973e85ca4b97d157235f7bdb84f71b8d25db4cc43ddc8be088040",
+  "scene_blend_sha256": "166d1cbc95dc516f0adede5ae471e22a68ae994a24df046524f3818535ba1652",
+  "preview_sha256": {
+    "previews/elevation.png": "53c325f2d354394b96256b70b96c181a46adc61b1e5ee66bcf9329e9dd15ac87",
+    "previews/front.png": "8c2617c2eb9ff7f2873863efcb83368282b378e6de5da84fb38374b17e5a00d1",
+    "previews/left_oblique.png": "58f32c920c5d6497abe0fe37c495a7829dbb8371d5c96d43d58fce0581d7da4f",
+    "previews/rear.png": "5faa5005efbf217d8abe960071a10e81537af9f09daefb4b580e59b4099705f0",
+    "previews/top.png": "97f8b07493bd77973fe4d49829c27b32e75e24224d5a8e6d2c7e0c439eda41b0"
+  },
+  "sources": [
+    {
+      "url": "https://www.lib.nthu.edu.tw/events/2023/scenery/image/L02%20(4).jpg",
+      "sha256": "e690f1a640d596eb4051d4b78e05e081c61d3653e158c34e6ca7e686add9ed64",
+      "observed": "完整四坡屋頂、湖側三柱兩跨、斜背椅、灰白平台與三方墩。"
+    },
+    {
+      "url": "https://alumni.site.nthu.edu.tw/var/file/346/1346/img/397679497.jpg",
+      "sha256": "4a712a45418d15d26ac4af6fc55c03ba759a20ed44ac679287f95cde4bf9975f",
+      "observed": "陸側開放入口、相反短端局部斜格欄、近側短端斜背椅、昱寧島實體標牌；部分樹遮擋。"
+    },
+    {
+      "url": "https://alumni.site.nthu.edu.tw/var/file/346/1346/img/895372152.jpg",
+      "sha256": "b5123484a8224ad06b92a9e1c1f30bf7799f6f9d7060ba21abd8b3426957549e",
+      "observed": "完整獨立涼亭與島岸環境、無附加建築翼。"
+    }
+  ],
+  "identity": "國立清華大學成功湖昱寧島涼亭，2023實建外觀；官方校友名錄確認名稱與完工年。照片精確拍攝日期未知。",
+  "checks": {
+    "roof": "PASS：四坡頂，兩長側梯形與兩端三角形；短水平脊平行X長向三柱兩跨。不採2022開放山牆提案。",
+    "columns": "PASS：兩列各三柱，六根主要方柱；不把椅腳或樹幹算作柱。",
+    "lake_piers": "PASS：rear視圖呈現湖側三方墩與出挑灰白平台。",
+    "approach": "PASS：Y−陸側長向兩跨開放，front/left_oblique可見，沒有整面封欄。",
+    "benches": "PASS：Y+湖側長邊與X+短端形成L形斜靠背椅，座面與支腳可辨識。",
+    "opposite_railing": "PASS_WITH_SIMPLIFICATION：X−對端保留低斜格欄位置；簡化為粗X格，沒有復刻實景複合斜格花樣。",
+    "overall": "PASS：完整單一涼亭外觀，五圖沒有切掉模型；沒有虛構標牌、湖水、橋或照片背景。"
+  },
+  "limitations": [
+    "粗化橫向瓦列浮雕只表示屋面分節；實景波瓦表面並未復原，不能稱瓦形、瓦數或細節精確。",
+    "陸側隱藏地基採人工連續支撐連接展示底板；不代表實際基礎、墩網、土層或湖底。",
+    "六柱、屋頂和平台整體比例為照片參考近似；所有模型毫米為設計尺寸，沒有實測或比例尺1:N依據。",
+    "欄杆花樣、椅背條數、樑接頭、椽條和遮擋部分簡化，不主張逐件實景一致。",
+    "模型較厚構件及底座服務於展示與列印設計；屋簷、座椅和欄杆仍可能需要支撐，未實際列印驗證。",
+    "原始照片與2022提案僅私人研究留存，不應隨模型、貼圖或預覽再散布。"
+  ]
+}

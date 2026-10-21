@@ -17,3 +17,7 @@
 | :---: | :---: | :---: |
 | [<img src="buildings/nthu-mei-pavilion/previews/front.png" alt="國立清華大學 梅亭／機亭：實際模型預覽" width="220">](buildings/nthu-mei-pavilion/README.md)<br>**[國立清華大學 梅亭／機亭](buildings/nthu-mei-pavilion/README.md)** | [<img src="buildings/nthu-north-gate-bamboo-slip-pillar/previews/front.png" alt="國立清華大學北校門簡冊立柱｜三片牆體外觀近似：實際模型預覽" width="220">](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)<br>**[國立清華大學北校門簡冊立柱｜三片牆體外觀近似](buildings/nthu-north-gate-bamboo-slip-pillar/README.md)** | [<img src="buildings/nthu-yi-pavilion/previews/front.png" alt="國立清華大學｜奕亭：實際模型預覽" width="220">](buildings/nthu-yi-pavilion/README.md)<br>**[國立清華大學｜奕亭](buildings/nthu-yi-pavilion/README.md)** |
 | [<img src="buildings/nthu-yue-han-pavilion/previews/front.png" alt="國立清華大學月涵亭：實際模型預覽" width="220">](buildings/nthu-yue-han-pavilion/README.md)<br>**[國立清華大學月涵亭](buildings/nthu-yue-han-pavilion/README.md)** |  |  |
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/nthu-yuning-island-pavilion-2023/previews/front.png" alt="國立清華大學成功湖昱寧島涼亭：實際模型預覽" width="220">](buildings/nthu-yuning-island-pavilion-2023/README.md)<br>**[國立清華大學成功湖昱寧島涼亭](buildings/nthu-yuning-island-pavilion-2023/README.md)** |  |  |

@@ -1,6 +1,6 @@
-# 國立成功大學｜42 件數位外觀近似模型
+# 國立成功大學｜43 件數位外觀近似模型
 
-本整合包收錄原首批至第十三批、大新園更新及紀念校門新增的 **42 件模型**。部分是同一財產的高低棟或局部量體，不等於 42 棟完整建築，也不是全校完成。既有41件含底座最長邊150mm；新增紀念校門為160mm展示寬，各自獨立比例。
+本整合包收錄原首批至第十三批、大新園更新、紀念校門及共享弧棚新增的 **43 件模型**。部分是同一財產的高低棟或局部量體，不等於 43 棟完整建築，也不是全校完成。既有41件含底座最長邊150mm；紀念校門為160mm展示寬，新增弧棚為164mm展示寬，各自獨立比例，不能直接拼接。
 
 每件提供 STL、可攜 Python 原始程式、可編輯 Blender、由實際 STL 產生的正面／背面／立面預覽、來源與近似之處、支撐需求及驗證報告。原始參考照片及 GIS 地圖影像不隨包散布；請循各件來源 URL 核對。未實體試印、未切片驗證。
 
@@ -58,7 +58,7 @@
 
 ## 新增：紀念校門（窮理致知牌坊）
 
-本校 **42 套**；官方VR勝利分類目前 **4 套**，非全校完成。
+該次發布後本校 **42 套**（歷史紀錄，現行43套）；官方VR勝利分類目前 **4 套**，非全校完成。
 
 [![紀念校門實際網格](勝利校區/buildings/ncku-commemorative-gate-1956/previews/front.png)](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)
 
@@ -66,7 +66,7 @@
 
 [模型、來源與 QA](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)
 
-[現行42套索引](model-index.json) · [本次新增清冊](inventory_updates_gate_20261020.json) · [本次檔案校驗](SHA256SUMS_GATE_20261020.txt)。舊 inventory／批次 manifest 及校驗檔保留歷史快照，不冒充現況總表。
+[現行43套索引](model-index.json) · [本次新增清冊](inventory_updates_gate_20261020.json) · [本次檔案校驗](SHA256SUMS_GATE_20261020.txt)。舊 inventory／批次 manifest 及校驗檔保留歷史快照，不冒充現況總表。
 
 [C-Hub 高量體有限配色外觀與來源界線](光復校區/buildings/c-hub-high-volume/appearance/README.md)
 
@@ -81,3 +81,11 @@
 [統一健康大樓前弧窗背限定配色外觀與來源界線](力行校區/buildings/uni-president-health-building/appearance/README.md)
 
 [理學南高棟原百葉構件限定配色外觀與來源界線](成功校區/buildings/science-south-high-wing/appearance/README.md)
+
+## 新增：安南校區共享中庭弧棚雙跨構架段
+
+[![弧棚實際網格](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png)](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/README.md)
+
+研究總中心共享中庭弧棚三榀兩跨局部；淺弧薄皮、開放三角桁架及縱向檁條、左短支承右分叉斜撐。藍色端座為新增展示物，非建築或落地柱；不含兩翼與連橋。164×62×62.46mm估算展示尺度，照片日期未知，2003為完工年。4材質Blend/3MF/STL及五張實際網格圖；29222面單殼拓樸與格式通過，313全局切層輪廓有效但4層0.8mm薄截面失敗，局部薄件與過懸垂警示保留，未實印。
+
+[現行43套索引](model-index.json) · [本次新增清冊](inventory_updates_canopy_20261021.json) · [本次校驗](SHA256SUMS_CANOPY_20261021.txt)。舊清冊及批次校驗維持歷史快照；本件另用 QA.md 與 qa/ 報告，不套用舊 validation.json 全通過敘述。

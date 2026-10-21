@@ -1,0 +1,508 @@
+{
+  "stl_sha256": "241d870010ac091acdf5c745713a4bf35f297567363386ca56cc40c62d22e09d",
+  "method": "Raw STL exact-coordinate weld only. Actual mesh crop intersections and unrounded horizontal sections; exact -0.4mm erosion; no thin exemptions.",
+  "tests": [
+    {
+      "feature": "filled main exterior envelope",
+      "crop_origin": [
+        -2,
+        -2,
+        6
+      ],
+      "crop_size": [
+        4,
+        4,
+        80
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 8.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.240000000000002
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 30.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.240000000000002
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 50.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.240000000000002
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 80.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.240000000000002
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "rear wing two storeys",
+      "crop_origin": [
+        96,
+        54,
+        6
+      ],
+      "crop_size": [
+        4,
+        4,
+        58
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 10.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.239999999999974
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 40.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.239999999999974
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 60.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.239999999999974
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "rear terrace open above 3F floor",
+      "crop_origin": [
+        94,
+        52,
+        73
+      ],
+      "crop_size": [
+        8,
+        8,
+        20
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 75.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 83.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 90.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "front raised turret",
+      "crop_origin": [
+        82,
+        -21,
+        95
+      ],
+      "crop_size": [
+        4,
+        4,
+        16
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 96.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.239999999999974
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 103.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.239999999999974
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 110.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.239999999999974
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "front turret wide cap",
+      "crop_origin": [
+        104,
+        -20,
+        112
+      ],
+      "crop_size": [
+        1.4,
+        2,
+        1.7
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 112.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.7999999970197678,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.7199999982118487
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 112.8,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.7999999970197678,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.7199999982118487
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 113.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.7999999970197678,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.7199999982118487
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "rectilinear canopy",
+      "crop_origin": [
+        60,
+        -50,
+        31.8
+      ],
+      "crop_size": [
+        8,
+        2,
+        1.1
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 32.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            8.640000000000015
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 32.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            8.640000000000015
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 32.8,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            8.640000000000015
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "air below front canopy",
+      "crop_origin": [
+        60,
+        -51,
+        10
+      ],
+      "crop_size": [
+        8,
+        2,
+        15
+      ],
+      "expected": "air",
+      "rows": [
+        {
+          "plane_mm": 12.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 20.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 24.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "rear terrace rim",
+      "crop_origin": [
+        121.5,
+        54,
+        67
+      ],
+      "crop_size": [
+        3,
+        4,
+        4
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 67.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.608845191358128,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1.1228916452745992
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 69.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.608845190814691,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1.1228916452751763
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 70.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.608845191358128,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1.1228916452745503
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "main roof rim",
+      "crop_origin": [
+        -2,
+        49.2,
+        95
+      ],
+      "crop_size": [
+        4,
+        2.2,
+        4
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 96.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.247385659312083,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.8636625960622968
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 97.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.247385654317179,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.8636625918860561
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 98.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.247385662545556,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.8636625992899676
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "display plinth",
+      "crop_origin": [
+        -2,
+        -2,
+        0
+      ],
+      "crop_size": [
+        4,
+        4,
+        3
+      ],
+      "expected": "solid",
+      "rows": [
+        {
+          "plane_mm": 0.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.240000000000002
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 1.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.240000000000002
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 2.8,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 16.0,
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            10.240000000000002
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    }
+  ],
+  "solid_samples": 25,
+  "air_samples": 6,
+  "occupancy_mismatches": 0,
+  "solid_failed_0_8mm_samples": 0,
+  "downward_faces_over_45deg_above_base": 23707,
+  "downward_area_mm2": 10327.767763090647,
+  "nominal_glazing_bar_diameter_mm": 1.24,
+  "nominal_balcony_wall_mm": 1.15,
+  "minimum_local_crop_can_be_narrower_than_feature": true,
+  "thin_warning": "Horizontal sections can become thin near arc stair treads, curved mullions and bracket ends. Global connected-section erosion can conceal narrow attached details. Retain every failure.",
+  "actual_print_tested": false,
+  "support_free_certified": false,
+  "limitations": "Broad roof soffits, canopy, stair treads, balcony ledges and circular cap require slicer support/orientation planning. No exhaustive normal wall thickness/strength/FFF simulation; no physical print."
+}

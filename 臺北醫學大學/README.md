@@ -1,12 +1,16 @@
 # 臺北醫學大學建築模型圖鑑
 
-目前收錄1套：信義校區教學大樓2021–2022修復後主體，以2023–2024公開照片為依據，未含廣場鐘樓。本校為教育部115學年度正式大學，代碼1028；前身臺北醫學院不另計學校。其他建物、雙和校區及全校逐棟清單仍未完成。
+目前收錄2套：信義校區教學大樓2021–2022修復後主體，以及君蔚樓完整有限細節外觀；均為來源引導的近似模型，未含廣場鐘樓。本校為教育部115學年度正式大學，代碼1028；前身臺北醫學院不另計學校。其他建物、雙和校區及全校逐棟清單仍未完成。
 
 ## 建築圖鑑
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="信義校區/buildings/tmu-teaching-building-restored/previews/v3/front.png" alt="信義校區教學大樓NE格柵側模型" width="260">](信義校區/buildings/tmu-teaching-building-restored/README.md)<br>**[教學大樓｜修復後外觀](信義校區/buildings/tmu-teaching-building-restored/README.md)**<br>中段格柵、紅磚端區、開通廊與側凸電梯<br>220 × 70 × 約38.65 mm |  |  |
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="信義校區/buildings/tmu-dream-way-building/previews/front.png" alt="臺北醫學大學信義校區｜君蔚樓 Dream-Way Building：實際模型預覽" width="220">](信義校區/buildings/tmu-dream-way-building/README.md)<br>**[臺北醫學大學信義校區｜君蔚樓 Dream-Way Building](信義校區/buildings/tmu-dream-way-building/README.md)** |  |  |
 
 [完整模型、正反並排預覽與下載](信義校區/buildings/tmu-teaching-building-restored/README.md) · [來源摘要](inventory/sources/tmu-teaching-building-restored-source-summary.md) · [QA摘要](inventory/qa/tmu-teaching-building-restored-review.md)
 

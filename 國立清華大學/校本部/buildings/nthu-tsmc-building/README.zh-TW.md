@@ -1,5 +1,16 @@
 # 國立清華大學｜台積館
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthutsmc-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方地面與空拍來源限定前右赭紅磚牆、灰飾帶陽台、奶油廊頂與離散窗；未知屋頂左後側中性，不新增藝術線管。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第二批外觀近似建築模型，並非測繪模型。獨立比例、最長150mm含底座；全校尚未完成。
 
 ## 交付與尺寸

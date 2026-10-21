@@ -1,5 +1,16 @@
 # 國立臺灣大學 綜合體育館
 
+## 4 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 來源支持金屬屋蓋／後牆中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntusports-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方前後照片，只處理原金屬屋蓋與兩入口塔玻璃／金屬橫條；以原凸包支撐平面定位 Boolean 截面，粉褐牆帶、圓窗格柵、底層入口和後圓柱混面中性，不新增屋頂桁架。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 官方索引代碼 N5。公開外觀近似模型，非測繪或BIM。
 
 ## 範圍與比例

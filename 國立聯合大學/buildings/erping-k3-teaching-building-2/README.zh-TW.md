@@ -1,5 +1,16 @@
 # 國立聯合大學 K3 教學大樓（二）
 
+## 7 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 開放走廊／內窗材質有界延伸 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuk3-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方照片限定灰牆、灰遮陽帽、綠窗格與單斜棚 PV 上面；外廊不是整片玻璃，內窗代理色只作明示有界延伸。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 依官方外觀照片製作的獨立建築縮印模型，含底座 **150 × 64 × 59.99 mm**。照片比例詮釋，未實測，不是與其他館舍共同比例的校園模型。STL 單位為毫米且無顏色；預覽單色只是材質。
 
 ## 建物範圍與照片判讀

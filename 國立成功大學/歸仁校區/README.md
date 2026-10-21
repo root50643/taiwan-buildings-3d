@@ -10,4 +10,4 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| **國立成功大學｜航太中心辦公大樓**<br>[![正面](buildings/aerospace-center-office/previews/front.png)](buildings/aerospace-center-office/README.md)<br>[正面](buildings/aerospace-center-office/previews/front.png) · [背面](buildings/aerospace-center-office/previews/rear.png)<br>[說明與來源](buildings/aerospace-center-office/README.md) · [STL](buildings/aerospace-center-office/model.stl) |  |  |
+| **國立成功大學｜航太中心辦公大樓**<br>[![正面](buildings/aerospace-center-office/appearance/previews/front.png)](buildings/aerospace-center-office/README.md)<br>[正面](buildings/aerospace-center-office/appearance/previews/front.png) · [背面](buildings/aerospace-center-office/appearance/previews/rear.png)<br>[說明與來源](buildings/aerospace-center-office/README.md) · [STL](buildings/aerospace-center-office/model.stl) |  |  |

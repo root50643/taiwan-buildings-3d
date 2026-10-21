@@ -1,5 +1,16 @@
 # 國立成功大學｜航太中心辦公大樓
 
+## 5 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nckuaero-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方2010歷史照片配暖白短端、灰窗與兩道灰金屬捲門；右長側材料系統有界延伸，未見對側／後端／屋頂中性，不把關閉捲門當玻璃。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第八批；歸仁校區。尺寸 150 × 150 × 56 mm，含底座最長邊150 mm，每件比例獨立。
 
 ![正面](previews/front.png)

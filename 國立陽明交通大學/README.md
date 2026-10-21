@@ -5,7 +5,7 @@
 | 建物 | 建物 | 建物 |
 |---|---|---|
 | [![客家文化學院圓樓](六家校區/buildings/nycu-hakka-round-building/appearance/previews/front.png)](六家校區/buildings/nycu-hakka-round-building/) <br> [客家文化學院圓樓](六家校區/buildings/nycu-hakka-round-building/) | [![浩然圖書資訊中心・廣場立面段](光復校區/buildings/nycu-haoran-library-front/appearance/previews/front.png)](光復校區/buildings/nycu-haoran-library-front/) <br> [浩然圖書資訊中心・廣場立面段](光復校區/buildings/nycu-haoran-library-front/) | [![致遠樓產學共創中心](歸仁校區/buildings/nycu-chihyuan-coinnovation/previews/front.png)](歸仁校區/buildings/nycu-chihyuan-coinnovation/) <br> [致遠樓產學共創中心](歸仁校區/buildings/nycu-chihyuan-coinnovation/) |
-| [![圖書資訊暨研究大樓](陽明校區/buildings/nycu-yangming-library-research/previews/front.png)](陽明校區/buildings/nycu-yangming-library-research/) <br> [圖書資訊暨研究大樓](陽明校區/buildings/nycu-yangming-library-research/) | [<img src="光復校區/buildings/nycu-graduate-dormitory-3/front.png" alt="研三舍雙翼外觀量體（遮蔽連接簡化）實際STL預覽" width="260">](光復校區/buildings/nycu-graduate-dormitory-3/README.md)<br>**[研三舍雙翼外觀量體（遮蔽連接簡化）](光復校區/buildings/nycu-graduate-dormitory-3/README.md)**<br>雙折翼外觀近似；已知三樓連接空間因遮蔽而省略，南側外牆保留素面，非完整測繪 |  |
+| [![圖書資訊暨研究大樓](陽明校區/buildings/nycu-yangming-library-research/appearance/previews/front.png)](陽明校區/buildings/nycu-yangming-library-research/) <br> [圖書資訊暨研究大樓](陽明校區/buildings/nycu-yangming-library-research/) | [<img src="光復校區/buildings/nycu-graduate-dormitory-3/front.png" alt="研三舍雙翼外觀量體（遮蔽連接簡化）實際STL預覽" width="260">](光復校區/buildings/nycu-graduate-dormitory-3/README.md)<br>**[研三舍雙翼外觀量體（遮蔽連接簡化）](光復校區/buildings/nycu-graduate-dormitory-3/README.md)**<br>雙折翼外觀近似；已知三樓連接空間因遮蔽而省略，南側外牆保留素面，非完整測繪 |  |
 
 [光復校區](光復校區/) · [六家校區](六家校區/) · [歸仁校區](歸仁校區/) · [陽明校區](陽明校區/) · [覆蓋範圍](coverage.json) · [續接清單](research-handoff/)
 
@@ -18,3 +18,5 @@
 本件已通過[指定版本獨立限定條件數位覆核](inventory/qa/nycu-graduate-dormitory-3-fresh-v2-review.md)。保留 137 筆原始嚴格法向失敗與指定角點根部證據，不能解讀為全方向壁厚合格。已知三樓連接空間省略、南側外牆素面等限制均在模型內明列；尚未實體試印。
 
 [浩然圖資廣場立面段外觀與來源界線](光復校區/buildings/nycu-haoran-library-front/appearance/README.md)
+
+[陽明圖資暨研究大樓有限配色外觀與來源界線](陽明校區/buildings/nycu-yangming-library-research/appearance/README.md)

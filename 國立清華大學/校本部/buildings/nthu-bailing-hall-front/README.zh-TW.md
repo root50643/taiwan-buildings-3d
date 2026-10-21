@@ -1,5 +1,16 @@
 # 國立清華大學｜百齡堂前棟（2025整備前歷史外觀版）
 
+## 6 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthubailing-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+2025 整備前歷史照片支持前與左側白簷窗格、淡灰柱及灰綠玻璃；右背、屋頂上面、平台中性，不含後方名人堂。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 第十一批公開外觀近似模型，並非測繪成果。每件獨立比例，130.00 × 150.00 × 47.90mm，最長150mm含底座。全校尚未完成。
 
 ## 來源與觀察

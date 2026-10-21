@@ -26,7 +26,7 @@
 | [<img src="buildings/erping-k3-teaching-building-2/appearance/previews/front.png" alt="教學大樓（二）：正面" width="220">](buildings/erping-k3-teaching-building-2/)<br>**[教學大樓（二）](buildings/erping-k3-teaching-building-2/)** | [<img src="buildings/bajia-i1-r1-information-conference/appearance/previews/front.png" alt="資訊大樓與國際會議中心低層連通部分：正面" width="220">](buildings/bajia-i1-r1-information-conference/)<br>**[資訊大樓與國際會議中心低層連通部分](buildings/bajia-i1-r1-information-conference/)** | [<img src="buildings/bajia-q1-arts-teaching-center/appearance/previews/front.png" alt="藝文教學中心（藝術中心）：正面" width="220">](buildings/bajia-q1-arts-teaching-center/)<br>**[藝文教學中心（藝術中心）](buildings/bajia-q1-arts-teaching-center/)** |
 | [<img src="buildings/erping-v1-landscape-restaurant/appearance/previews/front.png" alt="二坪山景觀餐廳：正面" width="220">](buildings/erping-v1-landscape-restaurant/)<br>**[二坪山景觀餐廳](buildings/erping-v1-landscape-restaurant/)** | [<img src="buildings/bajia-v2-landscape-restaurant/appearance/previews/front.png" alt="八甲景觀餐廳：正面" width="220">](buildings/bajia-v2-landscape-restaurant/)<br>**[八甲景觀餐廳](buildings/bajia-v2-landscape-restaurant/)** | [<img src="buildings/bajia-t2-mep-center/appearance/previews/front.png" alt="八甲機電中心：正面" width="220">](buildings/bajia-t2-mep-center/)<br>**[八甲機電中心](buildings/bajia-t2-mep-center/)** |
 | [<img src="buildings/erping-s1-lotus-aquatic-center/appearance/previews/front.png" alt="二坪山蓮荷水世界游泳館：正面" width="220">](buildings/erping-s1-lotus-aquatic-center/)<br>**[二坪山蓮荷水世界游泳館](buildings/erping-s1-lotus-aquatic-center/)** | [<img src="buildings/bajia-s2-covered-court/appearance/previews/front.png" alt="八甲風雨球場：正面" width="220">](buildings/bajia-s2-covered-court/)<br>**[八甲風雨球場](buildings/bajia-s2-covered-court/)** | [<img src="buildings/bajia-athletics-grandstand/appearance/previews/front.png" alt="八甲田徑運動場司令台：正面" width="220">](buildings/bajia-athletics-grandstand/)<br>**[八甲田徑運動場司令台](buildings/bajia-athletics-grandstand/)** |
-| [<img src="buildings/bajia-v3-round-hall/appearance/previews/front.png" alt="八甲生活館圓廳：正面" width="220">](buildings/bajia-v3-round-hall/)<br>**[八甲生活館圓廳](buildings/bajia-v3-round-hall/)** | [<img src="buildings/erping-faculty-housing-visible-complex/previews/front.png" alt="二坪山教職員宿舍可見建築群：正面" width="220">](buildings/erping-faculty-housing-visible-complex/)<br>**[二坪山教職員宿舍可見建築群](buildings/erping-faculty-housing-visible-complex/)** |  |
+| [<img src="buildings/bajia-v3-round-hall/appearance/previews/front.png" alt="八甲生活館圓廳：正面" width="220">](buildings/bajia-v3-round-hall/)<br>**[八甲生活館圓廳](buildings/bajia-v3-round-hall/)** | [<img src="buildings/erping-faculty-housing-visible-complex/appearance/previews/front.png" alt="二坪山教職員宿舍可見建築群：正面" width="220">](buildings/erping-faculty-housing-visible-complex/)<br>**[二坪山教職員宿舍可見建築群](buildings/erping-faculty-housing-visible-complex/)** |  |
 
 ## 已完成建築
 
@@ -686,7 +686,7 @@
 
 | 正面預覽 | 背面預覽 |
 | :---: | :---: |
-| [<img src="buildings/erping-faculty-housing-visible-complex/previews/front.png" alt="二坪山教職員宿舍可見建築群：正面" width="320">](buildings/erping-faculty-housing-visible-complex/previews/front.png) | [<img src="buildings/erping-faculty-housing-visible-complex/previews/rear.png" alt="二坪山教職員宿舍可見建築群：背面" width="320">](buildings/erping-faculty-housing-visible-complex/previews/rear.png) |
+| [<img src="buildings/erping-faculty-housing-visible-complex/appearance/previews/front.png" alt="二坪山教職員宿舍可見建築群：正面" width="320">](buildings/erping-faculty-housing-visible-complex/appearance/previews/front.png) | [<img src="buildings/erping-faculty-housing-visible-complex/appearance/previews/rear.png" alt="二坪山教職員宿舍可見建築群：背面" width="320">](buildings/erping-faculty-housing-visible-complex/appearance/previews/rear.png) |
 
 外觀與背側細節含推估及簡化；非實測復刻，未經實體試印。
 
@@ -779,3 +779,5 @@
 [聯大二坪 M7 雙巔樓外觀與來源界線](buildings/erping-m7-shuangdian-dorm/appearance/README.md)
 
 [聯大二坪 M8 國鼎館宿舍外觀與來源界線](buildings/erping-m8-kuoting-dorm/appearance/README.md)
+
+[聯大二坪教職員宿舍可見群外觀與來源界線](buildings/erping-faculty-housing-visible-complex/appearance/README.md)

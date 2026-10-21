@@ -12,10 +12,18 @@
 
 ## 新增：綠之心曲面遮陽翼片立面片段
 
-目前本校新增目錄 **2 套**，套件數不等於整棟建築數，非全校完成；路思義教堂仍列地標類，不重複計入此數。
+目前本校新增目錄 **3 套**，套件數不等於整棟建築數，非全校完成；路思義教堂仍列地標類，不重複計入此數。
 
 [![曲面翼片模型](buildings/thu-green-heart-curved-fin-facade-segment/previews/front.png)](buildings/thu-green-heart-curved-fin-facade-segment/README.md)
 
 2016刊載建築師照片的九跨曲面遮陽翼片立面截取；逐跨像素登記、向外翻曲葉片、懸挑板底與退縮入口。5色3MF／Blend／STL；相對尺度、非全棟或2026實況，未重建屋頂與後面，淺色背板為中性截斷。531切片與原始拓撲通過，最差單切片局部開運算損失0.2863%；懸挑需另評估支撐，未實印。
 
 [模型、來源與 QA](buildings/thu-green-heart-curved-fin-facade-segment/README.md)
+
+## 新增：畢律斯鐘樓
+
+[![畢律斯鐘樓實際模型](buildings/thu-priest-bell-tower/previews/front.png)](buildings/thu-priest-bell-tower/README.md)
+
+畢律斯鐘樓依官方公開照片近似：兩排各兩片厚牆、兩側細縫與中央通道、黃菱格與灰端面、鐘口鐘舌、簡化固定鐘架軸座。90×90×123mm，六材質Blend/3MF/STL及五張實際網格圖；27206面單一連通表面，615全域層中0層及局部8樣本0.8mm侵蝕失敗照實保留。9張官方照片拍攝年代未知，2022曾整修，不宣稱2026現況。尺寸、格數、機械接合與底座近似；懸挑需支撐規劃，未實印。新增目錄3套；地標類既有路思義教堂另1套，不重複計入新增目錄。
+
+[來源、五視圖與完整 QA](buildings/thu-priest-bell-tower/README.md)

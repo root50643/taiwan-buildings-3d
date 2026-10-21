@@ -1,5 +1,16 @@
 # F1 建築一館｜可列印外觀近似模型
 
+## 7 材質外觀版（2026-10-21）
+
+| 正面與來源支持區域 | 未見外側背面中性 |
+|---|---|
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+
+[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuf1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+
+依官方正面與斜面照片限定灰混凝土、淡窗凸框、青綠窗凹背與附屋斜頂；中央高窗是玻璃和不透明板混合的代理色，招牌留白、未知側背與平屋頂中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+
 二坪山校區，官方相簿照片比對版。這是照片辨識後獨立建模的外觀小模型，並非建築測量、竣工圖或精確復原。
 
 ## 檔案

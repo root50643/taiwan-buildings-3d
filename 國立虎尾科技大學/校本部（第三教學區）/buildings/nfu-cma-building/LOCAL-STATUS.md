@@ -1,0 +1,3 @@
+# 私有交付狀態
+
+新版Blend實改頂點／材料存讀、原場景重開前圖byte一致、乾淨目錄4核心＋5PNG共9檔byte一致均通過。獨立審員親看5張外觀與同mesh中庭圖，並獨立重查raw拓樸、3MF逐面座標及22個空實點，結論為`PASS_SOURCE_BOUND_EXTERIOR_APPROXIMATION`。仍保留上述小膜切線薄島、需支撐、未實印與非現況測繪限制。完整凍結hash與逐項證據在qa目錄；LOCAL READY只表示私有交付包就緒，不代表已上傳Library或已發布。

@@ -1,0 +1,199 @@
+{
+  "status": "PASS_INDEPENDENT_IMMUTABLE_GEOMETRY_AND_WHOLE_TRIANGULAR_FACE_BOUNDARY",
+  "reviewer": "review_cjcu_bell_frames",
+  "checked_utc": "2026-10-22T19:29:48.154006+00:00",
+  "artifacts": [
+    {
+      "path": "ccu-auditorium-front-section-appearance.3mf",
+      "bytes": 32355,
+      "sha256": "9d3d83c125adea3ac602dc1d32980b668802e18fcb9712c0058067ac46ae17df"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 778,
+      "sha256": "fbdc63d8f887965800dd1c9cfc7b6a4348214cd131761085716cb38049a88c75"
+    },
+    {
+      "path": "face-materials.json",
+      "bytes": 218621,
+      "sha256": "70827fa96b9276515e4b0d5759d0e21d453c29c38d6be42ddbe4693666261135"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 655016,
+      "sha256": "8b3658d2662294fae9fb25e8a55a8c80c0e566b8a3a3cfb49c4cf188f2b78de9"
+    },
+    {
+      "path": "source/build_appearance.py",
+      "bytes": 4482,
+      "sha256": "9da891f73e6e24d854aa41c815ddb280fe49430196aafc63d37607166c5472bf"
+    },
+    {
+      "path": "source/render_appearance.py",
+      "bytes": 4769,
+      "sha256": "556dc8849558c9d2f06154e5ab1d428780e3f38408f4a6fa30b417efc3bdd490"
+    },
+    {
+      "path": "source/requirements.txt",
+      "bytes": 70,
+      "sha256": "6eae4b49d91d5a7c6670bacb4425b8b2b0932803c3a4b742df760fc328b98cd5"
+    },
+    {
+      "path": "source/verify_exchange.py",
+      "bytes": 5752,
+      "sha256": "97f340d01d9da246edf208fca273fdc31d81fed9361718852a25d7052a8f0783"
+    },
+    {
+      "path": "source/verify_material_boundaries.py",
+      "bytes": 1328,
+      "sha256": "a32f5a0d8c636c816e13934e22a58ffb05bb23b8586436ab430989085a97a907"
+    },
+    {
+      "path": "source/verify_scene.py",
+      "bytes": 3049,
+      "sha256": "29c215dec950beca55210b90798c4ab9cb53d1fc06f8ff9f465224b4943c32bd"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1676981,
+      "sha256": "d5bc6afa10d31e423ff04854fc7b9b29ffe6dbcc7d9d23177d3ebb61cdb3d7ab"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1568949,
+      "sha256": "b9da189eacd94616ae297e62b4c038cf422f9f3d19738888344bb6623178b43d"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1719928,
+      "sha256": "6dc0f818b1755240fe4a659b666a9934f4b54ba540be83909b21c682ec2b8b58"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 1560206,
+      "sha256": "54e453931383cb7031c3c7c332ae893724c0ef21e424f5f40665841c01024def"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1580774,
+      "sha256": "446b232c2d52ee73fe9cb9084ee9b870bacb8d3d503cbfaf119e5bd12ee55183"
+    }
+  ],
+  "original_stl": {
+    "path": "../model.stl",
+    "bytes": 176184,
+    "sha256": "6916e17e798b646ea36eaca7d8e1cf5867fa49d5eb6d31a6b9db8e5122b0bf79"
+  },
+  "original_7_files_bytes_and_git_blobs_verified": true,
+  "fixed_base_commit": "b5fad7b30b570adb9bf356ede62230eed681a1e7",
+  "original_triangles": 3522,
+  "vertices_3mf": 1603,
+  "ordered_coordinates_and_winding_exact": true,
+  "whole_face_material_assignments_exact": true,
+  "selected": [
+    725
+  ],
+  "selected_original_coordinates_mm": [
+    [
+      -28.0,
+      -12.149999618530273,
+      55.0
+    ],
+    [
+      28.0,
+      -12.149999618530273,
+      55.0
+    ],
+    [
+      0.0,
+      -12.149999618530273,
+      74.0
+    ]
+  ],
+  "area_mm2": 532.0,
+  "bounded_triangle_vertices_mm": [
+    [
+      -28.0,
+      -12.15,
+      55.0
+    ],
+    [
+      28.0,
+      -12.15,
+      55.0
+    ],
+    [
+      0.0,
+      -12.15,
+      74.0
+    ]
+  ],
+  "boundary_tolerance_mm": 0.0002,
+  "max_all_vertex_plane_distance_mm": 3.8146972691777137e-07,
+  "all_vertices_tested_not_centroids": true,
+  "neutral_triangles": 3521,
+  "derivation": "Original triangular recess profile xz(-28,55),(28,55),(0,74), centered y-13.5 depth2.7 yields back plane y-12.15. Tested entire original surface with 3 edge halfspaces plus support plane and outward -Y normal, then identified sole matching face725. Separate projecting frame geometry cannot satisfy selected back-plane boundary.",
+  "framing": [
+    {
+      "path": "previews/front.png",
+      "max_normalized_xy": 0.7111563640664995,
+      "all_original_vertices_in_frame": true
+    },
+    {
+      "path": "previews/rear.png",
+      "max_normalized_xy": 0.7154439228346594,
+      "all_original_vertices_in_frame": true
+    },
+    {
+      "path": "previews/elevation.png",
+      "max_normalized_xy": 0.7894736842105263,
+      "all_original_vertices_in_frame": true
+    },
+    {
+      "path": "previews/side.png",
+      "max_normalized_xy": 0.6766534306424951,
+      "all_original_vertices_in_frame": true
+    },
+    {
+      "path": "previews/top.png",
+      "max_normalized_xy": 0.7894736842105263,
+      "all_original_vertices_in_frame": true
+    }
+  ],
+  "photos": [
+    {
+      "path": "637202457.jpg",
+      "bytes": 68324,
+      "sha256": "ec0fdd18f37c92aae3975da17b84d64b0d4a81d4a5c27d76609f652e7eb4b492",
+      "pixels": [
+        640,
+        480
+      ],
+      "date_exif": {
+        "DateTime": "2005:12:04 18:33:17",
+        "DateTimeOriginal": "2003:08:09 17:18:21",
+        "DateTimeDigitized": "2003:08:09 17:18:21"
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "629279318.jpg",
+      "bytes": 82147,
+      "sha256": "4928763c9b83c64855a085075c5e6e1f3c04ee53e059a022a8bbc4020b8b5fed",
+      "pixels": [
+        640,
+        480
+      ],
+      "date_exif": {
+        "DateTime": "2005:12:04 18:33:36",
+        "DateTimeOriginal": "2003:10:25 12:17:24",
+        "DateTimeDigitized": "2003:10:25 12:17:24"
+      },
+      "full_decode_passed": true
+    }
+  ],
+  "side_photo_not_glass_evidence": true,
+  "model_scope": "Front porch/elevation section only, not whole auditorium",
+  "no_geometry_changes": true,
+  "physical_print_tested": false
+}

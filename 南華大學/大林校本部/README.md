@@ -6,4 +6,6 @@
 
 | 正面 | 背面 |
 |---|---|
-| ![正面](buildings/nhu-wujinzang-library/previews/front.png) | ![背面](buildings/nhu-wujinzang-library/previews/rear.png) |
+| <img src="buildings/nhu-wujinzang-library/appearance/previews/front.png" alt="正面（屋頂限域配色）" width="220"> | <img src="buildings/nhu-wujinzang-library/appearance/previews/rear.png" alt="背面（屋頂限域配色）" width="220"> |
+
+白覆蓋與前紅坡為官方實景支持的限域配色；其餘未確認面保持中性，攝影年月限制見模型配色說明。

@@ -1,0 +1,210 @@
+{
+  "status": "PASS_SOURCE_BOUND_LIMITED_APPEARANCE",
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "reviewed_at_utc": "2026-10-22T17:56:07.685756+00:00",
+  "scope": "國立政治大學指南校區湖濱悅讀小屋既有獨立二層模型之正面與右前窗背限域配色；不是司徒達賢圖書館主樓，不擴增套數。",
+  "source_commit": "857b59ddd8ab4a5987a25a991737edeb6658a7e0",
+  "source_handoff": "research-uncolored-batch5-20261022/NCCU-LAKESIDE-READY.md",
+  "sources_personally_viewed": [
+    {
+      "path": "research-uncolored-batch5-20261022/nccu-lakeside-reading-house/architect3.jpg",
+      "bytes": 229197,
+      "sha256": "8644c11554d04d0d7cae8025253426399933fc4593971c908fe279fb5e2fb8a4",
+      "dimensions": [
+        957,
+        638
+      ],
+      "personally_viewed": true
+    },
+    {
+      "path": "nccu-lakeside-appearance-20261022/original-model/previews/front.png",
+      "bytes": 906240,
+      "sha256": "92a17ba2db14dd56e0097b7ad019f931558314cca0f1649790b8d6ce345cf134",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "personally_viewed": true
+    }
+  ],
+  "source_urls": [
+    "https://www.twarchitect.org.tw/works/政治大學司徒達賢圖書館/",
+    "https://www.twarchitect.org.tw/web2015/wp-content/uploads/2022/02/202203a6-3.jpg"
+  ],
+  "source_dates": "建築師作者供稿2022/03刊載；專案資料列2019/10完成。照片曝光日期未提供，不把網頁/檔名月份當拍攝日，不聲稱2026現況。",
+  "identity_and_source_observations": "實拍前景為獨立兩層小屋，湖向兩層玻璃與相鄰折板簷側、淺色框及欄板相符；背景高主樓橘色百葉不屬本限域。architect1/2並未用作小屋材質證據。照片中玻璃反光/陰影不可直接當實測材料色。",
+  "per_view_review": [
+    {
+      "path": "previews/front.png",
+      "personally_viewed": true,
+      "status": "PASS",
+      "observation": "Full lakeward windowbacks and four front bays of adjacent folded-fascia side colored; all bars/reveals/balcony parapets/side fascia and base neutral. No main-library orange louvers or landscape copied."
+    },
+    {
+      "path": "previews/rear.png",
+      "personally_viewed": true,
+      "status": "PASS",
+      "observation": "Service wall, recessed rear openings, stair side and left window bands remain neutral. Whole structure/base uncropped."
+    },
+    {
+      "path": "previews/elevation.png",
+      "personally_viewed": true,
+      "status": "PASS",
+      "observation": "Right side exactly four bays per level deep cool gray; rear two bays per level neutral, including folded-fascia termination region. No diagonal fascia colored."
+    },
+    {
+      "path": "previews/side.png",
+      "personally_viewed": true,
+      "status": "PASS",
+      "observation": "Lakeward front twelve full windows per level colored behind existing horizontal bars; frames and parapets not dyed. Full supports/base in frame."
+    },
+    {
+      "path": "previews/top.png",
+      "personally_viewed": true,
+      "status": "PASS",
+      "observation": "Roof entire top and base neutral; no inferred roof hue, lake texture or hidden-side color. Full footprint uncropped."
+    }
+  ],
+  "independent_checks": {
+    "triangles": 3404,
+    "vertices": 1568,
+    "original_package_files_verified": 18,
+    "source_stl_git_blob": "b9660aa1f66d74c7e9eff44108f8ce7de998ae9f",
+    "source_stl_bytes_unchanged": true,
+    "3mf_ordered_triangles_coordinates_exact": true,
+    "all_triangles_uniform_material": true,
+    "3mf_face_map_exact": true,
+    "3mf_palette_exact": [
+      "#AAA79FFF",
+      "#465C61FF"
+    ],
+    "colored_faces": 64,
+    "neutral_faces": 3340,
+    "front_complete_windows": 24,
+    "right_front_complete_windows": 8,
+    "each_colored_window_exact_two_triangles_and_four_corners": true,
+    "front_area_mm2": 3671.9998054504395,
+    "right_front_area_mm2": 1353.599991369244,
+    "max_plane_error_mm": 7.629394502828291e-07,
+    "camera_frames": [
+      {
+        "path": "previews/front.png",
+        "all_vertices_in_frame": true,
+        "max_normalized_extent": 0.8329996285338782
+      },
+      {
+        "path": "previews/rear.png",
+        "all_vertices_in_frame": true,
+        "max_normalized_extent": 0.8329996285338782
+      },
+      {
+        "path": "previews/elevation.png",
+        "all_vertices_in_frame": true,
+        "max_normalized_extent": 0.5888888888888889
+      },
+      {
+        "path": "previews/side.png",
+        "all_vertices_in_frame": true,
+        "max_normalized_extent": 0.8333333333333334
+      },
+      {
+        "path": "previews/top.png",
+        "all_vertices_in_frame": true,
+        "max_normalized_extent": 0.8333333333333334
+      }
+    ]
+  },
+  "selection_method": "Independently parses raw binary STL and actual delivered 3MF XML without importing builder classifier. Reconstructs finite window bounds from original cut geometry: front y=-32.2, 12 x centers -55..55 by10 with halfwidth4.25; right x=59.2, four y centers -26,-15,-4,7 with halfwidth4.7; z14.1..32.1 and38.1..56.1. Tests all three vertices and outward normal, then verifies each selected pair has exactly four original finite-rectangle corners and full rectangle area. Exact64-face set equals 3MF and face-map; no centroid/splitting/remeshing.",
+  "material_scope": "48 front triangles/24 windows +16 right-front triangles/8 windows, total64;3340 neutral. Frames/reveals/bars, left staircase side, two right-rear bays at y18/29, rear wall/openings, roof/fascia, undercroft/foundations/base excluded.",
+  "camera_check": "All five personally viewed without cropping; independent orthographic projection of all indexed vertices also remains inside all five frusta.",
+  "mandatory_corrections": [],
+  "limitations": [
+    "#465C61 is an opaque uncalibrated display proxy for observed cool dark glazing, not measured tint, transparent glass, reflected vegetation, material coating or slicer assignment.",
+    "Neutral #AAA79F denotes unresolved material, not an assertion that the rest of the physical building is gray. Right-rear two uncolored bays are a conservative evidence limit, not a claim they are opaque.",
+    "Original photographed/model window subdivisions and exaggerated frames are inherited; no geometry correction or new claim of precise complete-building reconstruction. The actual material boundary remains on complete original windowback faces behind existing bars.",
+    "Original3404 triangles/1568 indexed vertices, coordinates and face order unchanged. A colored3MF surface model is not separate watertight material volumes, toolhead channels or proven multicolor manufacture.",
+    "Original manufacturing QA preserved but not rerun by reviewer; no slicer/FFF/physical-print or support-removal test, no printability guarantee."
+  ],
+  "builder_reports_read_not_rerun": [
+    "qa/exchange-validation.json: strict0warnings, connected/oriented geometry, lib3mf import/edit/save/reopen and preserved other colors.",
+    "qa/scene-validation.json: original vertices/material assignments stored in Blend; actual material edit/reopen and preserved geometry; hash bound here.",
+    "qa/rebuild-validation.json: clean directory rebuild, semantic Blend validation; no binary Blend determinism claim."
+  ],
+  "independent_rebuild_byte_checks": [
+    "nccu-lakeside-appearance.3mf",
+    "face-materials.json",
+    "palette.json",
+    "previews/front.png",
+    "previews/rear.png",
+    "previews/elevation.png",
+    "previews/side.png",
+    "previews/top.png"
+  ],
+  "artifacts": [
+    {
+      "path": "nccu-lakeside-appearance.3mf",
+      "bytes": 30863,
+      "sha256": "0b33b2ec72fbd3e6beb656ad678adf941872bd130edb2f7953b1d205c963f30f"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 648952,
+      "sha256": "b88ce0f2227b4411dc24ef25e3079eb4b3fb3e9c63293f7bfd88f93c338b318d"
+    },
+    {
+      "path": "face-materials.json",
+      "bytes": 210645,
+      "sha256": "a18b2ccaadc669d0d73930f6f7fbd084a5ceccee0100502e906b85b859a5a6b5"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 530,
+      "sha256": "1534037896fc6c47c17b990934bc3b807f63dc20cdf7466e52ed50d12afcb8c8"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1692558,
+      "sha256": "f881b810f57753c1c7ae07e2d815cf94a1b783a1213b09b78442ce781519a749"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1655924,
+      "sha256": "5936b9e3e74a3f735c4e35c0e3dce6cde6f23e48776f7f464854172a6a578b61"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1556914,
+      "sha256": "54c7615621ace71fc513c7b506df8204267b16f72d15f8c7b98d96501695bd8c"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 1651584,
+      "sha256": "c57a03aa6064697f8ed803fe15a424d7e4869bcb7a69e6ee45f5eabbce41e015"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1546183,
+      "sha256": "f28dc1f5008f212ce87ff29808a507d05c0feb8cb41e6d924e394920b6da52ca"
+    },
+    {
+      "path": "../model.stl",
+      "bytes": 170284,
+      "sha256": "30769931f58c5095803700b6462694aa6485b42c6979ca540da8d834d3767320"
+    }
+  ],
+  "reviewer_evidence": [
+    {
+      "path": "reviewer_verify.py",
+      "bytes": 4918,
+      "sha256": "41267aa482f960ff2c61e52d2574d3df2e8e807dc323b58cb1809644421af4b3"
+    },
+    {
+      "path": "reviewer-independent-checks.json",
+      "bytes": 11404,
+      "sha256": "8471bd81e83e25ddbdc4a15a38ef22c9ce066852c760e13a7637152a306d7acd"
+    }
+  ],
+  "candidate_core_frozen": true,
+  "private_review_only": true,
+  "main_repository_modified": false
+}

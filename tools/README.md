@@ -30,3 +30,9 @@ python tools/school_gallery.py --check --text-cache verified-text-cache.json
 ```
 
 工具逐一核對缺少本機檔案的快取文字之 Git blob SHA-1 是否等於 index；不接受來源不符的文字。快取只是操作環境資料，不必提交。圖片路徑存在性不等於圖片解碼或瀏覽器呈現驗證，發布時應另外確認實際影像與介面。
+
+## 固定首頁代表模型
+
+`homepage-representatives.json` 是每校首頁代表模型／預覽路徑的明確選擇，不是最新模型清單。新增模型或更新件數時，必須保留既有代表；只有使用者明確要求更換，才同步修改此檔、`model-packages.json` 對應 `cover` 與首頁圖片路徑。不要按新增時間、排序或校級圖鑑首張自動選圖。同一預覽路徑的圖片內容更新不視為更換代表模型。
+
+`--check` 核對全部學校選擇、路徑存在性、首頁唯一圖片及 registry 一致性；`--sync` 不重選也不修復首頁代表圖片，選擇不符時會失敗，需先確認使用者授權。新學校同樣須先確認代表選擇再加入鎖定清單。少數既有首頁與 registry 預覽路徑不同，清單以 `cover` 保存實際首頁選擇、`registry_cover` 保存既有 metadata，避免順手改動其他學校。

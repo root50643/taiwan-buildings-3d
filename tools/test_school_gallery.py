@@ -8,6 +8,37 @@ R1='國立聯合大學/buildings/a'
 R2='國立聯合大學/buildings/b'
 CARD=lambda r: f'[<img src="buildings/{r}/previews/front.png">](buildings/{r}/README.md)'
 TABLE=lambda cells:'| 建築模型 | 建築模型 | 建築模型 |\n| :---: | :---: | :---: |\n| '+' | '.join(cells)+' |\n'
+class RepresentativeTests(unittest.TestCase):
+    def setUp(self):
+        self.choice={'A':{'gallery':'A/README.md','cover':'A/buildings/old/previews/front.png'}}
+        self.registry={'schools':{'A':dict(self.choice['A'],count=2)}}
+        self.files=set(self.choice['A'].values())|{'A/buildings/new/previews/front.png'}
+        self.text='[<img src="A/buildings/old/previews/front.png" width="260">](A/README.md)'
+    def check(self):
+        return g.homepage_representative_errors(self.text,self.choice,self.registry,{'A'},self.files)
+    def test_adding_model_keeps_selection(self):
+        self.assertEqual(self.check(),[])
+    def test_homepage_reselection_rejected(self):
+        self.text=self.text.replace('/old/','/new/');self.assertIn('homepage_representative_changed:A',self.check())
+    def test_registry_reselection_rejected(self):
+        self.registry['schools']['A']['cover']='A/buildings/new/previews/front.png'
+        self.assertIn('registry_representative_changed:A',self.check())
+    def test_joint_automatic_reselection_rejected(self):
+        self.text=self.text.replace('/old/','/new/');self.registry['schools']['A']['cover']='A/buildings/new/previews/front.png'
+        self.assertEqual(len(self.check()),2)
+    def test_explicit_selection_update_accepted(self):
+        self.text=self.text.replace('/old/','/new/')
+        self.choice['A']['cover']=self.registry['schools']['A']['cover']='A/buildings/new/previews/front.png'
+        self.assertEqual(self.check(),[])
+    def test_missing_selected_path_rejected(self):
+        self.files.remove(self.choice['A']['cover']);self.assertIn('representative_missing_path:A',self.check())
+    def test_duplicate_homepage_card_rejected(self):
+        self.text+=self.text;self.assertIn('homepage_representative_changed:A',self.check())
+    def test_missing_school_selection_rejected(self):
+        self.choice={};self.assertEqual(self.check(),['representative_school_set'])
+    def test_image_bytes_not_locked(self):
+        self.assertEqual(set(self.choice['A']),{'gallery','cover'});self.assertEqual(self.check(),[])
+
 class GalleryTests(unittest.TestCase):
     def sync_text(self,text,expected):
         with tempfile.TemporaryDirectory() as tmp:

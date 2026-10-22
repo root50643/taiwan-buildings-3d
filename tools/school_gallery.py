@@ -379,6 +379,25 @@ def homepage_recent_sections(text):
     # Do not confuse the permanent "新增大專校院圖鑑" with recent-model sections.
     return re.findall(r'(?m)^#{1,4}\s+((?:最新新增|最近新增(?:的)?建築物|最近新增)(?:[：:\s].*|$))',text)
 
+def homepage_representative_errors(text, locked, registry, schools, files):
+    """Check explicit choices, never infer replacements from new packages or bytes."""
+    errors=[]
+    if set(locked) != set(schools):errors.append('representative_school_set')
+    cards=collections.defaultdict(list)
+    for image, link in re.findall(r'\[(<img\b[^>]*>)\]\(([^\n]*?)\)',text):
+        src=preview_images(image)
+        if len(src)==1:cards[resolve(link,'README.md')].append(resolve(src[0]['src'],'README.md'))
+    for school, choice in locked.items():
+        gallery=choice.get('gallery');cover=choice.get('cover')
+        if not gallery or not cover or gallery not in files or cover not in files:
+            errors.append('representative_missing_path:'+school)
+        if cards.get(gallery)!=[cover]:errors.append('homepage_representative_changed:'+school)
+        if school in registry.get('schools',{}):
+            entry=registry['schools'][school]
+            if entry.get('cover')!=choice.get('registry_cover',cover) or entry.get('gallery')!=gallery:
+                errors.append('registry_representative_changed:'+school)
+    return sorted(errors)
+
 def main():
     ap=argparse.ArgumentParser(__doc__);ap.add_argument('--sync',action='store_true');ap.add_argument('--check',action='store_true');ap.add_argument('--report');ap.add_argument('--text-cache', help='Optional UTF-8 JSON path→text cache at the same reviewed Git ref (for offline sparse checkout)');args=ap.parse_args()
     if args.text_cache:
@@ -409,8 +428,9 @@ def main():
     for school,roots in BY_SCHOOL.items():
         if school in REGISTRY['schools'] and REGISTRY['schools'][school]['count']!=len(roots)-len(LEGACY.get(school,[])):count_errors.append('registry_school_count:'+school)
     recent_sections=homepage_recent_sections(read('README.md'))
-    report={'count_errors':count_errors,'homepage_recent_sections':recent_sections,'scope':'primary school/campus galleries; exact package-root equality, not full-page mentions; no homepage recent-building feed','school_count':len(SCHOOLS),'higher_education_packages':sum(map(len,BY_SCHOOL.values())),'all_repository_packages':len(set(ROOTS).union(*(set(v) for v in OTHER_ROOTS.values()))),'pages':results,'changed':changed,'passed':not count_errors and not recent_sections and all(not r['errors'] for r in results)}
+    representative_errors=homepage_representative_errors(read('README.md'),json.loads(read('homepage-representatives.json'))['schools'],REGISTRY,SCHOOLS,FILES)
+    report={'homepage_representative_errors':representative_errors,'count_errors':count_errors,'homepage_recent_sections':recent_sections,'scope':'primary school/campus galleries; exact package-root equality, not full-page mentions; no homepage recent-building feed','school_count':len(SCHOOLS),'higher_education_packages':sum(map(len,BY_SCHOOL.values())),'all_repository_packages':len(set(ROOTS).union(*(set(v) for v in OTHER_ROOTS.values()))),'pages':results,'changed':changed,'passed':not representative_errors and not count_errors and not recent_sections and all(not r['errors'] for r in results)}
     if args.report:pathlib.Path(args.report).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({'schools':len(SCHOOLS),'pages':len(results),'packages':report['higher_education_packages'],'changed':len(changed),'count_errors':count_errors,'homepage_recent_sections':recent_sections,'failures':[r for r in results if r['errors']]},ensure_ascii=False,indent=2))
+    print(json.dumps({'schools':len(SCHOOLS),'pages':len(results),'packages':report['higher_education_packages'],'changed':len(changed),'homepage_representative_errors':representative_errors,'count_errors':count_errors,'homepage_recent_sections':recent_sections,'failures':[r for r in results if r['errors']]},ensure_ascii=False,indent=2))
     return 0 if report['passed'] else 1
 if __name__=='__main__':raise SystemExit(main())

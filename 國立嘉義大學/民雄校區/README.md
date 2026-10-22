@@ -2,7 +2,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/ncyu-minxiong-university-hall/previews/front.png" alt="大學館外殼近似實際STL預覽" width="260">](buildings/ncyu-minxiong-university-hall/README.md)<br>**[大學館外殼近似](buildings/ncyu-minxiong-university-hall/README.md)** |  |  |
+| [<img src="buildings/ncyu-minxiong-university-hall/appearance/previews/front.png" alt="大學館外殼近似實際STL預覽" width="220">](buildings/ncyu-minxiong-university-hall/README.md)<br>**[大學館外殼近似](buildings/ncyu-minxiong-university-hall/README.md)** |  |  |
 
 分批製作公開資料支持的建築外觀近似模型，未完成全校區。
 

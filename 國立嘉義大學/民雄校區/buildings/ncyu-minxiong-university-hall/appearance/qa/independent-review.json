@@ -1,0 +1,207 @@
+{
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "at_utc": "2026-10-22T20:41:50.747063+00:00",
+  "status": "PASS_SOURCE_BOUND_LIMITED_APPEARANCE",
+  "passed": true,
+  "subject": "國立嘉義大學民雄校區大學館；原模型前廳磚紅簷帶及白色主館前牆限域配色",
+  "scope": "只為原2536三角整面指定材料，非新增完整館模型，不擴大歷史模型身份/精度；主庫只讀。",
+  "source_pixels": [
+    {
+      "path": "research-ncyu-hall-color-20261022/official-front.jpg",
+      "bytes": 11146900,
+      "sha256": "22129054feb0d345f2e7a404018cbeb9f89cd64c7770517125df4611680d681b",
+      "personally_viewed_or_read": true,
+      "dates": {
+        "DateTime": "2019:02:10 12:08:04",
+        "DateTimeOriginal": "2019:02:10 12:08:04",
+        "DateTimeDigitized": "2019:02:10 12:08:04",
+        "OffsetTimeOriginal": null
+      }
+    },
+    {
+      "path": "research-ncyu-hall-color-20261022/official-angle.jpg",
+      "bytes": 112673,
+      "sha256": "dde38b1ac78c47cf38c0d1923b47ed99913675b70ef54cf4acf994a71d0407f5",
+      "personally_viewed_or_read": true,
+      "dates": {
+        "DateTime": null,
+        "DateTimeOriginal": null,
+        "DateTimeDigitized": null,
+        "OffsetTimeOriginal": null
+      }
+    },
+    {
+      "path": "research-ncyu-hall-color-20261022/previews_front.png",
+      "bytes": 878316,
+      "sha256": "16f2c445b06cdd44c16e931161c6113f6b59d85dd855b3349bcdeb14ec88f2ce",
+      "personally_viewed_or_read": true
+    },
+    {
+      "path": "research-ncyu-hall-color-20261022/READY.md",
+      "bytes": 4615,
+      "sha256": "b93ca4f9da0921d1997cc5f74dec8bc7f2f64ca6ad3484675b207fee40288cee",
+      "personally_viewed_or_read": true
+    }
+  ],
+  "views": [
+    {
+      "path": "previews/front.png",
+      "personally_viewed": true,
+      "conclusion": "親看修後+x/−y視角；三段磚紅上簷連接清楚，白色主館前牆限域，沒有擴到採光錐、屋頂、窗框與入口。全模型/底板入鏡。"
+    },
+    {
+      "path": "previews/rear.png",
+      "personally_viewed": true,
+      "conclusion": "親看，所有後立面/後窗/後屋面維持中性，未把前照顏色外推。"
+    },
+    {
+      "path": "previews/elevation.png",
+      "personally_viewed": true,
+      "conclusion": "親看，完整白前牆與紅磚上簷；柱/窗框留中性，跨界小片造成保守色邊缺口可見且已披露。"
+    },
+    {
+      "path": "previews/side.png",
+      "personally_viewed": true,
+      "conclusion": "親看，未知側面保持中性，不偽作另一面照片已證配色；無裁切。"
+    },
+    {
+      "path": "previews/top.png",
+      "personally_viewed": true,
+      "conclusion": "親看，水平屋頂、女兒牆頂及採光錐均中性；未以紅色蓋滿前廳頂，無裁切。"
+    }
+  ],
+  "independent_geometry": {
+    "source_original_stl_work_copy_and_research_copy_exact": true,
+    "original_stl_to_3mf_coordinates_triangle_order_winding_exact": true,
+    "faces": 2536,
+    "unique_vertices": 1232,
+    "counts": {
+      "neutral": 2490,
+      "white": 8,
+      "brick": 38
+    },
+    "method": "自行用scalar點距/有限線段投影/高程與外法向重算全部三角，不呼叫builder classifier；XML重組每個3MF三角逐座標與原STL比對。",
+    "white_plane": "y=0,x[-6.25,43.75],z[29.8,50.1],8完整原面",
+    "brick_planes": "(47.875,-4.75)→(47.875,-21.375)→(32.25,-38.375)→(11.875,-38.375),z[18.2,22.9]；各段13/14/11完整原面",
+    "white_area_mm2": 1014.9999618530273,
+    "brick_area_mm2": 271.7971715178603,
+    "geometry_split_move_add_remove": false,
+    "palette_xml_map_equal": true,
+    "original_seven_files_git_blob_SHA_independently_verified": true
+  },
+  "resolved_issue": {
+    "description": "原文字將理論矩形面積差10.62507mm²全部歸因跨界面，獨立clip不支持該歸因；builder已修披露，無須改幾何或選面。",
+    "finite_domain_clipped_crossing_faces": [
+      855,
+      866,
+      867,
+      932,
+      933
+    ],
+    "rejected_crossing_intersection_area_mm2": 2.400003612695169,
+    "theoretical_rectangle_minus_selected_area_mm2": 10.625067706411116,
+    "new_wording": "差值包含跨界完整原面拒選以及無對應共面外表面的缺口，不冒稱全差值為跨界原面面積。",
+    "fixed": true
+  },
+  "limitations": [
+    "兩官照僅前方兩角度；未提供側背同期證據。中性是未知/未配色，不表示實際灰色。",
+    "第一照EXIF三日期均2019-02-10 12:08:04，無offset不轉UTC；第二照無日期，不能套用2019。相機時鐘未獨核。",
+    "原幾何有2011街景來源，這是跨年限域外觀研究，非2026現況測繪。",
+    "色票為未校準視覺proxy，沒有新增磚紋/金字/薄深灰頂唇/雕塑；白門框、玻璃、採光錐、水平頂及側背不染。",
+    "原幾何粗化、細材質界線未獨立建面；不切跨界面補色，故局部小三角保留中性。",
+    "Blend及核心實檔hash已綁；builder之Blend實編/重開與乾淨重建QA已讀，不冒稱本reviewer又重渲。",
+    "未做實體試印，不新增免支撐/列印成功保證；不重寫原幾何QA。"
+  ],
+  "core_manifest": {
+    "path": "../../review-core-hashes.json",
+    "bytes": 1448,
+    "sha256": "4f0648a9c1ae94c3c24cf1ec34aadea64d7e26ed746ee472b5db7601346d808a"
+  },
+  "independent_checks": {
+    "path": "qa/reviewer-independent-checks.json",
+    "bytes": 8584,
+    "sha256": "cca4c9c7e4c6ba91b8aef55e826ce4d4811bfd358609d844f2b12ecc62ed793a"
+  },
+  "artifacts": [
+    {
+      "path": "../model.stl",
+      "bytes": 126884,
+      "sha256": "b9e1584fdcaba19e2aab8b6205612e98a793fcbd7ef86d9fa394503623482c9c"
+    },
+    {
+      "path": "ncyu-minxiong-university-hall-appearance.3mf",
+      "bytes": 25076,
+      "sha256": "e224dcb50b89482dfbff40c84e867bd48510669ca95299b00246f2b61580e5c4"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 869,
+      "sha256": "2d60c8e215486446597a215d25accc44fe73eb94249ac8cb8b54f8b1a8192462"
+    },
+    {
+      "path": "face-materials.json",
+      "bytes": 157317,
+      "sha256": "089dac2103d672658b7ea2344d8a83b61d80533ce7ad1bb77d2c8fda3d380027"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 626536,
+      "sha256": "9e4b174905f261fb9f4b3afe622fe7792d24d16c801dc65c65ab90f6ec9e058f"
+    },
+    {
+      "path": "source/build_appearance.py",
+      "bytes": 5009,
+      "sha256": "4870300fb00934ebcfe60832f644ad6781b0a19f0013cff385d9e149cd020866"
+    },
+    {
+      "path": "source/render_appearance.py",
+      "bytes": 4765,
+      "sha256": "771783e7e220229d8e4a0626c17410d25942dcbae703d866aab7a0b9670e6ea0"
+    },
+    {
+      "path": "source/requirements.txt",
+      "bytes": 70,
+      "sha256": "6eae4b49d91d5a7c6670bacb4425b8b2b0932803c3a4b742df760fc328b98cd5"
+    },
+    {
+      "path": "source/verify_exchange.py",
+      "bytes": 5755,
+      "sha256": "d189749e1786c0f76a2e02144c2914c6511a9d9455b849a319022199069ab0de"
+    },
+    {
+      "path": "source/verify_material_boundaries.py",
+      "bytes": 2152,
+      "sha256": "72b057c0489a7a14bd888a3ff4db73a86e6152725a39bfd03237d2c33ee3a2cd"
+    },
+    {
+      "path": "source/verify_scene.py",
+      "bytes": 3050,
+      "sha256": "85aa8fb55515bc27669197a87ddc64f6653ef545822b0e73717ef333fba698dc"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1594466,
+      "sha256": "0978acc7d74eba9964d0e1be1505fd75d504326a2cba75d1348f2b0accb176f5"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1588042,
+      "sha256": "0d61f2b7c6221ef0b1c0c61fa8809a18fad521b80b9c26b9552d6ad66079faa7"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1528884,
+      "sha256": "b4a088100af7074d431c38edcbdf52ed2db3bdbe6599882a42e445440880e7b6"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 1551345,
+      "sha256": "7d5bb76885df18e0755aa0a940729120d22f88530dc623aa870854ba1a5d6546"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1675571,
+      "sha256": "3ff819937d48bca2917beb96019fe6945ab33462f2e9b43bc8ae0f53106d7305"
+    }
+  ]
+}

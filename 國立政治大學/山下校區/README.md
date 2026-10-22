@@ -2,7 +2,7 @@
 
 本區6件完整建物外觀近似，並非全區完成；各件獨立比例，包含底座最長150mm。
 
-- [果夫樓](buildings/nccu-guofu/)
+- [果夫樓](buildings/nccu-guofu/) — [兩個可見瓦坡限域配色](buildings/nccu-guofu/appearance/)
 - [志希樓](buildings/nccu-zhixi/)
 - [四維堂（修復前外觀近似）](buildings/nccu-siwei/)
 - [井塘樓](buildings/nccu-jingtang/)

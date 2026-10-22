@@ -1,5 +1,16 @@
 # K棟 民生大樓
 
+## 三層綠弧陽臺外欄板限域配色（2026-10-22）
+
+[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/hwai-minsheng-k-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
+| 正面限域配色 | 未確認後側保持中性 |
+|---|---|
+| ![三層綠弧陽臺外欄板限域配色](appearance/previews/front.png) | ![後側保持中性](appearance/previews/rear.png) |
+
+僅三層弧形陽臺外側垂直欄板108個完整facet面（每層36面）綠色配色；內弧、上沿、底面、側封口、平台非欄板區、玻璃、混材牆、屋面、後側與底板維持中性，不是整棟精準彩色。原STL bytes、3004三角面、幾何及歷史QA不變，不增套數。3MF為單網格表面色，非分色封閉體、切片或G-code；原薄處與支撐限制保留，未實體試印。照片日期未知，不代表完整2026現況；第三方照片不分發。
+
+
 公開外觀近似模型。別名／去重：民生科技大樓。
 
 ![實際STL正面（左）與背面（右）](previews/front-rear.png)

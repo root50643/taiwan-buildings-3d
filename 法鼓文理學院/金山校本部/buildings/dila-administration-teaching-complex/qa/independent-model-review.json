@@ -1,0 +1,263 @@
+{
+  "status": "PASS_SOURCE_BOUND_EXTERIOR_APPROXIMATION",
+  "passed": true,
+  "reviewer": "review_cjcu_bell_frames",
+  "reviewed_at": "2026-10-22T22:19:34.586071+00:00",
+  "identity": "法鼓文理學院綜合大樓（GA／GB／GC），金山校本部；完整相連三翼一套，不是整校或大願橋。",
+  "scope": "Source-bound complete principal exterior approximation, including observable court levels, galleries, stairs and lightwell negative spaces. Not a survey/as-built model or a physical-print certification.",
+  "review_method": "Personally viewed all five final PNGs plus the uncut/unhidden supplementary courtyard rendering. Compared with the separately reviewed original plans/sections and completion photographs, including renewed viewing of architect-12/14/19 and mag-2. Read final generator and documentation. Independently parsed actual STL/mesh.json/3MF and ran non-axis ray tests on 46 final mesh points; did not rely solely on screenshots or builder assertions.",
+  "revisions_verified": [
+    {
+      "issue": "Two unsupported full-court GC–GB bridges",
+      "result": "REMOVED. Front/top/left_oblique and courtyard-detail show open central stairs/landings; independent actual-STL air tests at both former crossing locations pass. Genuine longitudinal side galleries, local links and branch stairs remain."
+    },
+    {
+      "issue": "GC front short end overglazed",
+      "result": "Large upper blind panel with a narrow darker band/lower glazing now replaces the two fully glazed-storey simplification. Corresponds to architect-12; panel/opening proportions remain approximate."
+    },
+    {
+      "issue": "GB exterior side reduced to a plain box",
+      "result": "Deep upper frame, narrow high glazing, projecting opaque two-window box, adjacent tall glazing and lower glazed colonnade now visible in rear and left_oblique, consistent with architect-14."
+    },
+    {
+      "issue": "Upper grand stair overly steep",
+      "result": "Three broad shallower runs and intermediate landings now connect court levels; the near-vertical terminal flight is gone. Stair tread count, precise rise/run and planting widths remain model approximations, not measured architectural dimensions."
+    },
+    {
+      "issue": "GA rear top glazing flush with outer frame",
+      "result": "Rear top-storey glass is recessed behind the substantial frame, consistent with mag-2 and high oblique photos; front and rear are not simply duplicated."
+    },
+    {
+      "issue": "Roof cap and lecture-hall roof distinction",
+      "result": "Neutral dark flat cap added where visible on GA roof, not claimed to be PV; fan-shaped green roofs raised above surrounding terrace, preserving their curved walls rather than flattening them into paving."
+    }
+  ],
+  "per_view": {
+    "front": "Correct left GC / right GB / rear GA handedness, GA four main above-grade levels, GC three two-storey classroom groups and three quarter-sector lecture halls, GB tall two-level hall/low connecting wing, three round rooflights and open stepped court. No bridge or other campus building added.",
+    "rear": "Different outward elevation composition and top-level GA recess, long/short top frames with actual separating gap/link, GB projecting box and glazing, roof service approximation. Rear small-window grids are not claimed to be measured.",
+    "elevation": "GC blind-panel short end, GB shaded front hall and multi-level GA/gallery frame read coherently. Frame and stairs are not obstructed by invented full-court bridge slabs.",
+    "top": "Three distinct classroom green-roof zones, diagonal surface paths, inter-group slots, three quarter-sector lecture roofs and adjacent sunken lightwells, GA split top frames and GB roof strips are visible; source site-plan future landscape/buildings excluded.",
+    "left_oblique": "Genuine wing-side galleries and branches remain while central court stays open. GB exterior frame/two-window box, GA top gap, GC/classroom and curved lecture roofs remain distinct.",
+    "qa/courtyard-detail.png": "Personally viewed supplementary real-mesh image. It exposes court floor, platforms, three broad flights, branch stair and side-gallery undersides without a clipping plane or hidden model parts. Two studio fill lights/64 samples/no denoising are recorded by builder; this is a model QA view, not a source photograph."
+  },
+  "independent_geometry_result": {
+    "triangles": 70652,
+    "vertices": 33722,
+    "single_connected_surface": true,
+    "positive_volume_mm3": 950783.181312895,
+    "all_edges_two_opposed_faces": true,
+    "zero_area_and_duplicate_triangles": 0,
+    "finite_vertices_and_normals": true,
+    "stl_mesh_json_3mf_coordinates_order_winding_exact": true,
+    "material_count": 7,
+    "actual_mesh_air_solid_points": 46
+  },
+  "limits": [
+    "Author project dates to 2015; completion-photo DateTimeOriginal is absent/unknown. Official usage handbook is 2020; its 2025/10 URL is upload metadata. Not asserted as photographed in 2015, fully surveyed as-built, or current in 2026.",
+    "No complete reliable dimensioned measurement set: plan is proportionally read, window/grid/railing counts, small equipment and planted details are approximate. Roof colours and opaque glass are miniature proxies rather than calibrated material measurements.",
+    "Interior rooms and buried structures are simplified closed masses. The cutaway drawing does not license permanent garage cutaway facades. Display base/grade support is not a full terrain survey.",
+    "Three lecture-hall roofs are quarter-sector/fan-like, not three generic semicircles; rooflight drums are opaque glass proxies with voids below, not asserted solid ventilation cylinders.",
+    "Actual builder layer report retains 10 failing horizontal thin-island levels out of 299 global slices; local 0.378 mm rooflight cap / 0.525 mm crossbar / other fine mullions may merge or disappear in FFF. Gallery slabs/frame overhangs/stairs need support planning. No physical print, slicer/toolpath or engineering safety certification.",
+    "Own raw checks establish edge incidence/orientation, connected surface, normals and exact exchange, not an exhaustive self-intersection or vertex-link proof. Blender edit/save/reopen, strict lib3mf roundtrip and isolated reconstruction reports are builder evidence inspected, not independently rerun here.",
+    "No original third-party source images/PDFs are authorized for inclusion in the public model package. Subsequent package closure must verify actual ZIP members; this visual PASS alone is not upload authority."
+  ],
+  "artifacts": [
+    {
+      "path": "model.stl",
+      "bytes": 3532684,
+      "sha256": "d633ceb9f2d6062ccc0b74212d9f116430e77f10b6c3c0ce207ee9ace40e5423"
+    },
+    {
+      "path": "model.3mf",
+      "bytes": 723186,
+      "sha256": "49cb9c84bb05f02a0bee7356d3a1a36e3188029c0c7fa138a4feda0985bec9e2"
+    },
+    {
+      "path": "mesh.json",
+      "bytes": 3422043,
+      "sha256": "921c0758dfd94a8734e20dfe7bd6efee493d6a893ca8a3a66bb2b6239332f0d1"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 635,
+      "sha256": "5e2b3a7ea8f3f89623e4f39fb63e089b9b25d47221834b05e6b0c022fffb6107"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 4378956,
+      "sha256": "f5aa683f15b77f209a741bd2583c0530e5f4b38fa2ee7038549ce8d91e08eab4"
+    },
+    {
+      "path": "build_model.py",
+      "bytes": 19450,
+      "sha256": "cb4547a0912211e6b65fe371973dc339fe7438a0837466c4125fe04c03dd17e7"
+    },
+    {
+      "path": "render_model.py",
+      "bytes": 5162,
+      "sha256": "30be79ec5072cde38fc36d9b753f7101c2ed1cb2dc95ae3e6e7d9b4c11e3b522"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1787398,
+      "sha256": "500896f152e57aa9754310a6dff049c3e3164dda8e6a5965e4f8fc55da17bff9"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1690492,
+      "sha256": "f627f9fe06cd14863887725ea3e9dabf11029d38ec0e7ec870d0b2995f1e3c47"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1580235,
+      "sha256": "c8a0b4fe592628e971729c387ff20a1936eeaee179c17a67bfd3a5a109e09227"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1963059,
+      "sha256": "7465603ed8e96bc583150f33d86f42d0af77ec45a681e4c2094a0b5388e50852"
+    },
+    {
+      "path": "previews/left_oblique.png",
+      "bytes": 1764916,
+      "sha256": "d18cfbdd5df1c105148c69feb3fdc242e5e1cecf0a57d97a56a419a4374cf64a"
+    }
+  ],
+  "supplementary_qa_artifacts": [
+    {
+      "path": "qa/courtyard-detail.png",
+      "bytes": 1780502,
+      "sha256": "ffe7b95e626fe52c4dadd136e2e793814b9c13bb66642baab26886a6ab611c81"
+    },
+    {
+      "path": "qa/courtyard-detail.json",
+      "bytes": 694,
+      "sha256": "9cf24290440c1dc3f265c8897eb04b78076b9cf19c399652ad285a648238e608"
+    },
+    {
+      "path": "qa/reviewer-independent-checks.json",
+      "bytes": 12856,
+      "sha256": "f7e8647f05210f9bc8acf42638f0c4601a7b83dcf8e1bfaa057b80db74d0077e"
+    }
+  ],
+  "core_manifest": {
+    "path": "dila-admin-complex-20261022/REVIEW-CORE-HASHES.json",
+    "bytes": 1956,
+    "sha256": "0586a9728886424b9569fd052ba37decbf693b4a872ab9db1b2cbfa3be1cee05"
+  },
+  "source_images_personally_reviewed": [
+    {
+      "path": "research-round-ab5cc331/dila-administration/drawing-0.jpg",
+      "bytes": 2158938,
+      "sha256": "d2f1f6b083dc91e0d40e7ebe233a088bb703c5b6a0fb61a06b15add8712af8e1"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/drawing-1.jpg",
+      "bytes": 919715,
+      "sha256": "7a4f3cfd50cc49799c13ce35999b3accb1a3815e4530ab422119b886070c4aca"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/drawing-2.jpg",
+      "bytes": 462257,
+      "sha256": "fd774d4ad2c6bc4f0d2970d738f0ba0b6cfe0a9ee42913f6fbe945fed4ce1ab2"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/drawing-3.jpg",
+      "bytes": 547089,
+      "sha256": "39b6e38e483cdf997a60716a76de75e76bf95a5265de976f19136607ecb1131c"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/drawing-4.jpg",
+      "bytes": 825894,
+      "sha256": "5d88d48b982a96c4b43548dabaa1fbef951cf59179b0072fb00c9a9e5082928f"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-12.jpg",
+      "bytes": 1746777,
+      "sha256": "9fed646ebf84cf39c4734352eca7d62a6e565c625f759ec3fdb6932e5656f88b"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-13.jpg",
+      "bytes": 671763,
+      "sha256": "cabcf8b9f6e025869e813d0fcd1f8ee9715df156ab6c748f99ca713527eb49bb"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-14.jpg",
+      "bytes": 402002,
+      "sha256": "ecc0c8056a5d5157e1c6a3b38308fc4235966c9e2dfd25c0473e2ae93c1597e1"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-15.jpg",
+      "bytes": 792801,
+      "sha256": "344f8ea6a6d8ab9260f73c044101ce8862d00e0bdcd7039b8d41f92bf203f36a"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-16.jpg",
+      "bytes": 1005382,
+      "sha256": "3c000acaf1fbb0c0dd633b5a096e8cfa1ff5b322076468e764106b4dc41f0314"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-17.jpg",
+      "bytes": 769626,
+      "sha256": "36b06bd21c2c5a439fee8bee093f133720e1a721c668d10964c647a1b147a4a3"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-18.jpg",
+      "bytes": 1466195,
+      "sha256": "9ed5d8718d6a07d9028af6e36bf2ca2400e86687a08489a98d5891e7b3dc8e50"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-19.jpg",
+      "bytes": 1032372,
+      "sha256": "a77f42f5ed8918364459f928251c8de3f2d0eb3aac6a42b312daeec2e853302b"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-20.jpg",
+      "bytes": 685618,
+      "sha256": "41a7a2734ae9dc5b25e2e255e5bab482292461487cbf46f8b0e0c8c116aec734"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/architect-27.jpg",
+      "bytes": 1801425,
+      "sha256": "eb16678ead68fa2c5af46e5b6748af4ce92aea4b326799dc9d3fea1234bfffcc"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/mag-2.jpg",
+      "bytes": 489848,
+      "sha256": "bf661a075dda81409fd4801960ae57748fb81e812a2c72564fce89c19af671c4"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/mag-3.jpg",
+      "bytes": 253850,
+      "sha256": "50212f17609ddecb41194b16a4c36a1e2f0298c167c2efc0f6e8dde1530ed0c3"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/official-building-A1.jpg",
+      "bytes": 295412,
+      "sha256": "f0a292d42f28b6ac2b5f430d8cc224107daffcdc884deab2d93b44ad82bb59a3"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/handbook-p99.png",
+      "bytes": 735052,
+      "sha256": "2a447584d9d0e7915ebddfbb5c14d3fa23d69e146d0b8132df0131072fdb5b13"
+    }
+  ],
+  "source_handoff_and_prior_review": [
+    {
+      "path": "research-round-ab5cc331/dila-administration/SOURCE-HANDOFF.md",
+      "bytes": 10169,
+      "sha256": "2c9b54a98487f7f2a33953332c2a69efaf88f650c1ed829dfda7c571cc21d745"
+    },
+    {
+      "path": "research-round-ab5cc331/dila-administration/independent-source-review.json",
+      "bytes": 10195,
+      "sha256": "1b1dc40c694ac6a94a8c431d6bfd46822cc2ffeb369eec4de8208bb1cd369853"
+    }
+  ],
+  "private_draft_history": {
+    "path": "independent-draft-model-review.json",
+    "status": "CHANGES_REQUIRED_DRAFT_NOT_FROZEN",
+    "resolved_by": "The final bound model in this report, not the initial draft PNGs."
+  },
+  "main_repository_modified_by_reviewer": false
+}

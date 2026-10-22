@@ -4,6 +4,6 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 |---|---|---|
-| [<img src="buildings/nccu-seetoo-library/previews/front.png" alt="達賢圖書館主棟" width="220">](buildings/nccu-seetoo-library/) <br> [達賢圖書館主棟](buildings/nccu-seetoo-library/) | [<img src="buildings/nccu-lakeside-reading-house/appearance/previews/front.png" alt="湖濱悅讀小屋（窗背限域配色）" width="220">](buildings/nccu-lakeside-reading-house/) <br> [湖濱悅讀小屋（窗背限域配色）](buildings/nccu-lakeside-reading-house/) | |
+| [<img src="buildings/nccu-seetoo-library/appearance/previews/rear.png" alt="達賢圖書館主棟" width="220">](buildings/nccu-seetoo-library/) <br> [達賢圖書館主棟](buildings/nccu-seetoo-library/) | [<img src="buildings/nccu-lakeside-reading-house/appearance/previews/front.png" alt="湖濱悅讀小屋（窗背限域配色）" width="220">](buildings/nccu-lakeside-reading-house/) <br> [湖濱悅讀小屋（窗背限域配色）](buildings/nccu-lakeside-reading-house/) | |
 
 各模型有实际STL正背俯視與來源、重建及QA。未實體試印。

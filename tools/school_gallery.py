@@ -389,6 +389,34 @@ def homepage_representative_errors(text, locked, registry, schools, files):
         if len(src)==1:cards[resolve(link,'README.md')].append(resolve(src[0]['src'],'README.md'))
     for school, choice in locked.items():
         gallery=choice.get('gallery');cover=choice.get('cover')
+        entry=registry.get('schools',{}).get(school,{})
+        if choice.get('status')=='pending_user_selection':
+            # A new school is not implicit permission to select its first model.
+            if ('cover' not in choice or cover is not None or 'registry_cover' in choice
+                    or 'cover' not in entry or entry.get('cover') is not None
+                    or entry.get('status')!='pending_user_selection'
+                    or gallery!=school+'/README.md' or gallery not in files or entry.get('gallery')!=gallery):
+                errors.append('pending_representative_state:'+school)
+            cells=[cell for line in text.splitlines() if line.startswith('|')
+                   for cell in splitrow(line)
+                   if gallery and gallery in [resolve(u,'README.md') for u in urls(cell)]]
+            links=[u for u in urls(text) if gallery and resolve(u,'README.md')==gallery]
+            if (len(cells)!=1 or len(links)!=1
+                    or cells[0].count('代表圖待指定')!=1
+                    or re.search(r'<(?!br\s*/?>)[^>]*>',cells[0],flags=re.I)
+                    or not re.search(r'(?:^|<br\s*/?>)\s*代表圖待指定\s*(?:<br\s*/?>|$)',
+                                     re.sub(r'<!--.*?-->','',cells[0],flags=re.S))):
+                errors.append('pending_representative_card:'+school)
+            if any(preview_images(cell)!=[] or re.search(r'!\[',cell) for cell in cells):
+                errors.append('pending_representative_image:'+school)
+            images=preview_images(text)
+            # Reference-image syntax is outside this small parser: fail closed while pending.
+            if (re.search(r'!\[[^\]]*\](?!\()',text) or images is None
+                    or any((resolve(i['src'],'README.md') or '').startswith(school+'/') for i in images)):
+                errors.append('pending_representative_image:'+school)
+            continue
+        if choice.get('status') is not None or entry.get('status') is not None:
+            errors.append('representative_invalid_status:'+school)
         if not gallery or not cover or gallery not in files or cover not in files:
             errors.append('representative_missing_path:'+school)
         if cards.get(gallery)!=[cover]:errors.append('homepage_representative_changed:'+school)

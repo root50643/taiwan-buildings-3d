@@ -1,0 +1,265 @@
+{
+  "status": "PASS_INDEPENDENT_DELIVERY_GEOMETRY_AND_FEATURE_PROBES",
+  "reviewer": "review_cjcu_bell_frames",
+  "method": "Read raw binary STL, no repair or mesh-processing; independently parse3MF/XML and mesh JSON; exact triangle coordinate+order+winding comparison; ray-test delivered mesh, not generator primitive assertions; independently project every vertex to five orthographic frames.",
+  "core_manifest_sha256": "6f1839552436851004880e4203f9178a5b44c889ab277956cfdef62bd6968f15",
+  "stl_sha256": "6b0713aec0cb19c9e5d73222a56fe2b142c70283b58be5b35b6130da676ae9f0",
+  "raw_faces": 27992,
+  "exact_welded_vertices": 13920,
+  "finite_coordinates": true,
+  "positive_area_all_faces": true,
+  "minimum_triangle_area_mm2": 0.002453168749525503,
+  "watertight": true,
+  "winding_consistent": true,
+  "positive_volume_mm3": 1636893.7018905517,
+  "connected_shells": 1,
+  "bounds_mm": [
+    [
+      -129.0,
+      -46.0,
+      0.0
+    ],
+    [
+      129.0,
+      46.0,
+      115.94999694824219
+    ]
+  ],
+  "stl_3mf_triangle_order_winding_exact": true,
+  "mesh_json_geometry_and_material_map_exact": true,
+  "material_count": 8,
+  "feature_probes": [
+    {
+      "name": "entry_center_mullion",
+      "ray_origin": [
+        23,
+        100,
+        18
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit": [
+        23.0,
+        30.200000762939453,
+        18.0
+      ],
+      "face_index": 20621,
+      "material": "brown_louvers_frames"
+    },
+    {
+      "name": "entry_left_panel",
+      "ray_origin": [
+        20,
+        100,
+        18
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit": [
+        20.0,
+        29.600000381469727,
+        18.0
+      ],
+      "face_index": 20614,
+      "material": "opaque_glazing"
+    },
+    {
+      "name": "entry_right_panel",
+      "ray_origin": [
+        26,
+        100,
+        18
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit": [
+        26.0,
+        29.600000381469727,
+        18.0
+      ],
+      "face_index": 20623,
+      "material": "opaque_glazing"
+    },
+    {
+      "name": "street_core_brick",
+      "ray_origin": [
+        0,
+        100,
+        50
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit": [
+        0.0,
+        32.5,
+        50.0
+      ],
+      "face_index": 11027,
+      "material": "orange_red_brick"
+    },
+    {
+      "name": "street_narrow_glass",
+      "ray_origin": [
+        8,
+        100,
+        50
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit": [
+        8.0,
+        33.45000076293945,
+        50.0
+      ],
+      "face_index": 21492,
+      "material": "opaque_glazing"
+    },
+    {
+      "name": "lake_wide_glass",
+      "ray_origin": [
+        3,
+        -100,
+        49
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "first_hit": [
+        3.0,
+        -33.5,
+        49.0
+      ],
+      "face_index": 14837,
+      "material": "opaque_glazing"
+    },
+    {
+      "name": "roof_wing_neg",
+      "ray_origin": [
+        -60,
+        0,
+        500
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit": [
+        -60.0,
+        0.0,
+        109.44999694824219
+      ],
+      "face_index": 7211,
+      "material": "gray_metal_roof"
+    },
+    {
+      "name": "roof_central",
+      "ray_origin": [
+        0,
+        0,
+        500
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit": [
+        0.0,
+        0.0,
+        115.94999694824219
+      ],
+      "face_index": 19057,
+      "material": "gray_metal_roof"
+    },
+    {
+      "name": "roof_wing_pos",
+      "ray_origin": [
+        60,
+        0,
+        500
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit": [
+        60.0,
+        0.0,
+        110.94999694824219
+      ],
+      "face_index": 24935,
+      "material": "gray_metal_roof"
+    }
+  ],
+  "five_camera_checks": [
+    {
+      "path": "previews/front.png",
+      "projected_max_absolute_mm": [
+        132.29047316351716,
+        88.00291978303174
+      ],
+      "ortho_halfwidth_mm": 152.5,
+      "all_vertices_in_frame_independently_recomputed": true
+    },
+    {
+      "path": "previews/rear.png",
+      "projected_max_absolute_mm": [
+        132.29047316351716,
+        87.25335989581474
+      ],
+      "ortho_halfwidth_mm": 152.5,
+      "all_vertices_in_frame_independently_recomputed": true
+    },
+    {
+      "path": "previews/elevation.png",
+      "projected_max_absolute_mm": [
+        129.0,
+        60.94999694824219
+      ],
+      "ortho_halfwidth_mm": 145.0,
+      "all_vertices_in_frame_independently_recomputed": true
+    },
+    {
+      "path": "previews/top.png",
+      "projected_max_absolute_mm": [
+        129.0,
+        46.0
+      ],
+      "ortho_halfwidth_mm": 145.0,
+      "all_vertices_in_frame_independently_recomputed": true
+    },
+    {
+      "path": "previews/left_oblique.png",
+      "projected_max_absolute_mm": [
+        132.29047316351716,
+        86.49252873429681
+      ],
+      "ortho_halfwidth_mm": 152.5,
+      "all_vertices_in_frame_independently_recomputed": true
+    }
+  ],
+  "limitations": [
+    "Ray samples only confirm selected visible landmark geometry, not a global minimum thickness certificate.",
+    "Source-proportion exterior approximation; original photos uncalibrated and finer rear windows/terrain terminations not fully observed.",
+    "Manufacturability and real printing are not established by this exterior review."
+  ]
+}

@@ -39,6 +39,81 @@ class RepresentativeTests(unittest.TestCase):
     def test_image_bytes_not_locked(self):
         self.assertEqual(set(self.choice['A']),{'gallery','cover'});self.assertEqual(self.check(),[])
 
+
+class PendingRepresentativeTests(unittest.TestCase):
+    def setUp(self):
+        self.choice={'N':{'gallery':'N/README.md','cover':None,'status':'pending_user_selection'}}
+        self.registry={'schools':{'N':dict(self.choice['N'],count=1)}}
+        self.files={'N/README.md','N/buildings/first/previews/front.png','A/cover.png'}
+        self.text=TABLE(['**[N｜1 組](N/README.md)**<br>代表圖待指定','',''])
+    def check(self):
+        return g.homepage_representative_errors(self.text,self.choice,self.registry,{'N'},self.files)
+    def test_pending_text_only_accepted(self):self.assertEqual(self.check(),[])
+    def test_null_without_marker_rejected(self):
+        del self.choice['N']['status'];self.assertTrue(self.check())
+    def test_missing_null_key_rejected(self):
+        del self.choice['N']['cover'];self.assertIn('pending_representative_state:N',self.check())
+    def test_missing_registry_null_rejected(self):
+        del self.registry['schools']['N']['cover'];self.assertTrue(self.check())
+    def test_registry_state_mismatch_rejected(self):
+        del self.registry['schools']['N']['status'];self.assertTrue(self.check())
+    def test_pending_chosen_cover_rejected(self):
+        self.choice['N']['cover']='N/buildings/first/previews/front.png';self.assertTrue(self.check())
+    def test_registry_autoselection_rejected(self):
+        self.registry['schools']['N']['cover']='N/buildings/first/previews/front.png';self.assertTrue(self.check())
+    def test_registry_cover_bypass_rejected(self):
+        self.choice['N']['registry_cover']=None;self.assertTrue(self.check())
+    def test_missing_gallery_rejected(self):
+        self.files.remove('N/README.md');self.assertTrue(self.check())
+    def test_pending_borrowed_school_gallery_rejected(self):
+        self.choice['N']['gallery']=self.registry['schools']['N']['gallery']='A/README.md'
+        self.files.add('A/README.md');self.text=self.text.replace('N/README.md','A/README.md');self.assertTrue(self.check())
+    def test_duplicate_text_card_rejected(self):
+        self.text+=self.text;self.assertTrue(self.check())
+    def test_missing_text_card_rejected(self):
+        self.text='';self.assertTrue(self.check())
+    def test_missing_visible_marker_rejected(self):
+        self.text=self.text.replace('代表圖待指定','');self.assertTrue(self.check())
+    def test_html_image_in_pending_card_rejected(self):
+        self.text=self.text.replace('代表圖待指定','代表圖待指定<img src="A/cover.png">');self.assertTrue(self.check())
+    def test_markdown_image_in_pending_card_rejected(self):
+        self.text=self.text.replace('代表圖待指定','代表圖待指定 ![借圖](A/cover.png)');self.assertTrue(self.check())
+    def test_reference_image_in_pending_card_rejected(self):
+        self.text=self.text.replace('代表圖待指定','代表圖待指定 ![borrow][borrowed]')+'\n[borrowed]: A/cover.png'
+        self.assertTrue(self.check())
+    def test_collapsed_reference_image_rejected(self):
+        self.text=self.text.replace('代表圖待指定','代表圖待指定 ![borrow][]')+'\n[borrow]: A/cover.png'
+        self.assertTrue(self.check())
+    def test_shortcut_reference_image_rejected(self):
+        self.text=self.text.replace('代表圖待指定','代表圖待指定 ![borrow]')+'\n[borrow]: A/cover.png'
+        self.assertTrue(self.check())
+    def test_collapsed_html_marker_rejected(self):
+        self.text=self.text.replace('代表圖待指定','<details><summary>more</summary><br>代表圖待指定<br></details>');self.assertTrue(self.check())
+    def test_hidden_html_marker_with_breaks_rejected(self):
+        self.text=self.text.replace('代表圖待指定','<span hidden><br>代表圖待指定<br></span>');self.assertTrue(self.check())
+    def test_reference_image_elsewhere_rejected(self):
+        self.text+='\n![own][new]\n[new]: N/buildings/first/previews/front.png';self.assertTrue(self.check())
+    def test_commented_pending_marker_rejected(self):
+        self.text=self.text.replace('代表圖待指定','<!--代表圖待指定-->');self.assertTrue(self.check())
+    def test_hidden_pending_marker_rejected(self):
+        self.text=self.text.replace('代表圖待指定','<span style="display:none">代表圖待指定</span>');self.assertTrue(self.check())
+    def test_own_image_elsewhere_rejected(self):
+        self.text+='\n![own](N/buildings/first/previews/front.png)';self.assertTrue(self.check())
+    def test_html_own_image_elsewhere_rejected(self):
+        self.text+='\n<img src="N/buildings/first/previews/front.png">';self.assertTrue(self.check())
+    def test_unrelated_selected_school_accepted(self):
+        self.choice['A']={'gallery':'A/README.md','cover':'A/cover.png'}
+        self.registry['schools']['A']=dict(self.choice['A'],count=2)
+        self.files.add('A/README.md');self.text+='[<img src="A/cover.png">](A/README.md)'
+        self.assertEqual(g.homepage_representative_errors(self.text,self.choice,self.registry,{'N','A'},self.files),[])
+    def test_unknown_status_rejected(self):
+        self.choice['N']['status']='automatic';self.assertTrue(self.check())
+    def test_coordinated_explicit_selection_accepted(self):
+        for entry in (self.choice['N'],self.registry['schools']['N']):
+            del entry['status'];entry['cover']='N/buildings/first/previews/front.png'
+        self.text='[<img src="N/buildings/first/previews/front.png">](N/README.md)'
+        self.assertEqual(self.check(),[])  # Consent still requires human/history review.
+
 class GalleryTests(unittest.TestCase):
     def sync_text(self,text,expected):
         with tempfile.TemporaryDirectory() as tmp:

@@ -35,4 +35,4 @@ python tools/school_gallery.py --check --text-cache verified-text-cache.json
 
 `homepage-representatives.json` 是每校首頁代表模型／預覽路徑的明確選擇，不是最新模型清單。新增模型或更新件數時，必須保留既有代表；只有使用者明確要求更換，才同步修改此檔、`model-packages.json` 對應 `cover` 與首頁圖片路徑。不要按新增時間、排序或校級圖鑑首張自動選圖。同一預覽路徑的圖片內容更新不視為更換代表模型。
 
-`--check` 核對全部學校選擇、路徑存在性、首頁唯一圖片及 registry 一致性；`--sync` 不重選也不修復首頁代表圖片，選擇不符時會失敗，需先確認使用者授權。新學校同樣須先確認代表選擇再加入鎖定清單。少數既有首頁與 registry 預覽路徑不同，清單以 `cover` 保存實際首頁選擇、`registry_cover` 保存既有 metadata，避免順手改動其他學校。
+`--check` 核對全部學校選擇、路徑存在性、首頁唯一圖片及 registry 一致性；`--sync` 不重選也不修復首頁代表圖片，選擇不符時會失敗，需先確認使用者授權。新學校未獲使用者指定代表圖時，鎖定清單與 registry 都必須明確記錄 `cover: null`、`status: "pending_user_selection"` 及既有校級 `gallery` 路徑。首頁只放一格學校文字連結／件數，標示「代表圖待指定」；不得先挑第一棟、借其他學校圖片或放模型預覽。`--check` 驗證兩份狀態一致、路徑存在、唯一文字卡與無圖（含 Markdown/HTML），不接受省略 cover 或 registry_cover 旁路。待指定標示須是卡片內以 `<br>` 分隔的獨立明文，卡片僅允許 `<br>` HTML 標籤，不可藏在註解或其他 HTML 包裝內；存在待指定學校時，工具對超出小型解析器範圍的 Markdown reference-image 語法採拒絕而非猜測。`--sync` 不會填入首頁代表或清除待指定狀態。待使用者明確指定後，才同步刪除兩份 pending status、設定兩份 cover 與首頁圖片；工具能驗證檔案一致性，不能機器證明使用者授權，仍須核對原始指示及變更差異。少數既有首頁與 registry 預覽路徑不同，清單以 `cover` 保存實際首頁選擇、`registry_cover` 保存既有 metadata，避免順手改動其他學校。

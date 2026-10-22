@@ -1,6 +1,6 @@
-# 國立成功大學｜46 件數位外觀近似模型
+# 國立成功大學｜47 件數位外觀近似模型
 
-本整合包收錄原首批至第十三批、大新園更新、紀念校門、共享弧棚、波簷尖峰片段、小西門完整門樓及成功校區56亭新增的 **46 件模型**。部分是同一財產的高低棟或局部量體，不等於 46 棟完整建築，也不是全校完成。既有41件含底座最長邊150mm；紀念校門為160mm展示寬，新增弧棚為164mm展示寬，波簷尖峰片段為104mm展示底座寬，小西門為108mm展示寬，56亭含局部兩端收尾為228mm展示長；各自獨立比例，不能直接拼接。
+本整合包收錄原首批至第十三批、大新園更新、紀念校門、共享弧棚、波簷尖峰片段、小西門完整門樓、成功校區56亭及光復校區懸鏈・榭歷史實作亭新增的 **47 件模型**。部分是同一財產的高低棟或局部量體，不等於 47 棟完整建築，也不是全校完成。既有41件含底座最長邊150mm；紀念校門為160mm展示寬，新增弧棚為164mm展示寬，波簷尖峰片段為104mm展示底座寬，小西門為108mm展示寬，56亭含局部兩端收尾為228mm展示長，懸鏈・榭為約157mm展示寬；各自獨立比例，不能直接拼接。
 
 每件提供 STL、可攜 Python 原始程式、可編輯 Blender、由實際 STL 產生的正面／背面／立面預覽、來源與近似之處、支撐需求及驗證報告。原始參考照片及 GIS 地圖影像不隨包散布；請循各件來源 URL 核對。未實體試印、未切片驗證。
 
@@ -25,13 +25,15 @@
 | **國立成功大學｜敬業校區教職員單舍**<br>[![正面](敬業校區/buildings/ching-yeh-faculty-dormitory/previews/front.png)](敬業校區/buildings/ching-yeh-faculty-dormitory/README.md)<br>[正面](敬業校區/buildings/ching-yeh-faculty-dormitory/previews/front.png) · [背面](敬業校區/buildings/ching-yeh-faculty-dormitory/previews/rear.png)<br>[說明與來源](敬業校區/buildings/ching-yeh-faculty-dormitory/README.md) · [STL](敬業校區/buildings/ching-yeh-faculty-dormitory/model.stl) | **國立成功大學｜敬業第一宿舍**<br>[![正面](敬業校區/buildings/ching-yeh-first-dormitory/previews/front.png)](敬業校區/buildings/ching-yeh-first-dormitory/README.md)<br>[正面](敬業校區/buildings/ching-yeh-first-dormitory/previews/front.png) · [背面](敬業校區/buildings/ching-yeh-first-dormitory/previews/rear.png)<br>[說明與來源](敬業校區/buildings/ching-yeh-first-dormitory/README.md) · [STL](敬業校區/buildings/ching-yeh-first-dormitory/model.stl) | **國立成功大學｜航太中心辦公大樓**<br>[![正面](歸仁校區/buildings/aerospace-center-office/appearance/previews/front.png)](歸仁校區/buildings/aerospace-center-office/README.md)<br>[正面](歸仁校區/buildings/aerospace-center-office/appearance/previews/front.png) · [背面](歸仁校區/buildings/aerospace-center-office/appearance/previews/rear.png)<br>[說明與來源](歸仁校區/buildings/aerospace-center-office/README.md) · [STL](歸仁校區/buildings/aerospace-center-office/model.stl) |
 | **國立成功大學｜啟端館**<br>[![正面](自強校區/buildings/chi-duan-building/previews/front.png)](自強校區/buildings/chi-duan-building/README.md)<br>[正面](自強校區/buildings/chi-duan-building/previews/front.png) · [背面](自強校區/buildings/chi-duan-building/previews/rear.png)<br>[說明與來源](自強校區/buildings/chi-duan-building/README.md) · [STL](自強校區/buildings/chi-duan-building/model.stl) | **國立成功大學｜大新園東棟（學生藝文沙龍）**<br>[![實際STL正面](成功校區/buildings/new-garden-east-pavilion/previews/front.png)](成功校區/buildings/new-garden-east-pavilion/README.md)<br>[正面](成功校區/buildings/new-garden-east-pavilion/previews/front.png) · [背面](成功校區/buildings/new-garden-east-pavilion/previews/rear.png)<br>[說明與限定覆核](成功校區/buildings/new-garden-east-pavilion/README.md) · [STL](成功校區/buildings/new-garden-east-pavilion/model.stl) | [<img src="光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png" alt="國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）：實際模型預覽" width="220">](光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)<br>**[國立成功大學｜光復校區｜波簷高尖峰上部木格片段（2021）](光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)** |
 | [<img src="勝利校區/buildings/ncku-commemorative-gate-1956/previews/front.png" alt="國立成功大學｜紀念校門（窮理致知牌坊）：實際模型預覽" width="220">](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)<br>**[國立成功大學｜紀念校門（窮理致知牌坊）](勝利校區/buildings/ncku-commemorative-gate-1956/README.md)** | [<img src="安南校區/buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png" alt="國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段：實際模型預覽" width="220">](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/README.md)<br>**[國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段](安南校區/buildings/research-center-atrium-canopy-two-bay-segment/README.md)** | [<img src="光復校區/buildings/ncku-minor-west-gate/previews/front.png" alt="國立成功大學・光復校區小西門（靖波門）：實際模型預覽" width="220">](光復校區/buildings/ncku-minor-west-gate/README.md)<br>**[國立成功大學・光復校區小西門（靖波門）](光復校區/buildings/ncku-minor-west-gate/README.md)** |
-| [<img src="成功校區/buildings/ncku-56-rotate-truss-pavilion/previews/front.png" alt="國立成功大學｜成功校區｜56亭（Rotate Truss Pavilion）：實際模型預覽" width="220">](成功校區/buildings/ncku-56-rotate-truss-pavilion/README.md)<br>**[國立成功大學｜成功校區｜56亭（Rotate Truss Pavilion）](成功校區/buildings/ncku-56-rotate-truss-pavilion/README.md)** |  |  |
+| [<img src="成功校區/buildings/ncku-56-rotate-truss-pavilion/previews/front.png" alt="國立成功大學｜成功校區｜56亭（Rotate Truss Pavilion）：實際模型預覽" width="220">](成功校區/buildings/ncku-56-rotate-truss-pavilion/README.md)<br>**[國立成功大學｜成功校區｜56亭（Rotate Truss Pavilion）](成功校區/buildings/ncku-56-rotate-truss-pavilion/README.md)** | [<img src="光復校區/buildings/ncku-sewn-pavilion/previews/front.png" alt="國立成功大學｜光復校區｜懸鏈・榭（Sewn Pavilion）：實際模型預覽" width="220">](光復校區/buildings/ncku-sewn-pavilion/README.md)<br>**[國立成功大學｜光復校區｜懸鏈・榭（Sewn Pavilion）](光復校區/buildings/ncku-sewn-pavilion/README.md)** |  |
 
 ## 幾何與驗證
 
 既有各件原始 STL 已檢查法線、封閉性、邊與頂點流形、單一連通表面、無額外內部空腔殼、正體積、乾淨重建雜湊及 Blender 幾何一致性；細節見各件 validation.json。新版 0.2 mm 截面以固定共同邊方向計算，並拒絕不閉合輪廓；新增 0.8 mm 薄特徵篩查先驗證輪廓再計算面積。薄篩不是切片或列印保證。博物館、大成館窄屋頂最高取樣層損失約 0.1382 mm²，比例略逾 1%，詳各件報告。
 
 56亭使用獨立的 [QA與保留警告](成功校區/buildings/ncku-56-rotate-truss-pavilion/QA.md)；732個全局切層保留13層／23個薄成分與1169個懸挑面，未實印，不保證免支撐。[此次新增清冊](inventory_updates_56_pavilion_20261022.json)不改寫舊批次快照。
+
+懸鏈・榭為有明示定位推論的歷史實作亭，非2025／2026現存保證；使用獨立的 [QA與保留警告](光復校區/buildings/ncku-sewn-pavilion/QA.md)，452個全局切層保留34層／61個薄成分與11885個懸挑面，未實印、不保證免支撐。[此次新增清冊](inventory_updates_sewn_pavilion_20261022.json)不改寫舊批次快照。
 
 ## 範圍、清冊與未完成工作
 
@@ -62,7 +64,7 @@
 
 歷史發布註記：紀念校門發布後本校為 42 套、勝利分類為 4 套；這是當次快照，不是現行全校件數，現行以本頁主圖鑑為準。
 
-[現行46套索引](model-index.json) · [本次新增清冊](inventory_updates_gate_20261020.json) · [本次檔案校驗](SHA256SUMS_GATE_20261020.txt)。舊 inventory／批次 manifest 及校驗檔保留歷史快照，不冒充現況總表。
+[現行47套索引](model-index.json) · [本次新增清冊](inventory_updates_gate_20261020.json) · [本次檔案校驗](SHA256SUMS_GATE_20261020.txt)。舊 inventory／批次 manifest 及校驗檔保留歷史快照，不冒充現況總表。
 
 [C-Hub 高量體有限配色外觀與來源界線](光復校區/buildings/c-hub-high-volume/appearance/README.md)
 
@@ -78,4 +80,4 @@
 
 [理學南高棟原百葉構件限定配色外觀與來源界線](成功校區/buildings/science-south-high-wing/appearance/README.md)
 
-[現行46套索引](model-index.json) · [本次新增清冊](inventory_updates_canopy_20261021.json) · [本次校驗](SHA256SUMS_CANOPY_20261021.txt)。舊清冊及批次校驗維持歷史快照；本件另用 QA.md 與 qa/ 報告，不套用舊 validation.json 全通過敘述。
+[現行47套索引](model-index.json) · [本次新增清冊](inventory_updates_canopy_20261021.json) · [本次校驗](SHA256SUMS_CANOPY_20261021.txt)。舊清冊及批次校驗維持歷史快照；本件另用 QA.md 與 qa/ 報告，不套用舊 validation.json 全通過敘述。

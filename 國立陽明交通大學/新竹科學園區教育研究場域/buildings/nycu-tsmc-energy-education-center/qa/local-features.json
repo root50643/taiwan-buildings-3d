@@ -1,0 +1,6917 @@
+{
+  "stl_sha256": "d60cacf88eddaf73887e81a46c2cbffb6b0d16d7f753df64358b052ce0e8a7da",
+  "method": "Raw binary STL exact-coordinate weld only; actual mesh intersection crops, unrounded horizontal sections, even-odd nesting; exact -0.4mm erosion for every positive component; no healing or thin-feature exemptions.",
+  "tests": [
+    {
+      "feature": "north lower closed glass",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          61.6,
+          5,
+          14
+        ],
+        "size_mm": [
+          0.8,
+          4,
+          6
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 18.0,
+      "air_volume_is_zero": null,
+      "note": "0.75mm physical glass thickness; alpha is not geometry removal.",
+      "rows": [
+        {
+          "plane_mm": 15.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.0,
+          "component_areas_mm2": [
+            3.0
+          ],
+          "component_bounds_mm": [
+            [
+              61.625,
+              5.0,
+              62.375,
+              9.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 17.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.0,
+          "component_areas_mm2": [
+            3.0
+          ],
+          "component_bounds_mm": [
+            [
+              61.625,
+              5.0,
+              62.375,
+              9.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 19.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.0,
+          "component_areas_mm2": [
+            3.0
+          ],
+          "component_bounds_mm": [
+            [
+              61.625,
+              5.0,
+              62.375,
+              9.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "north upper clerestory",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          61.6,
+          5,
+          43
+        ],
+        "size_mm": [
+          0.8,
+          4,
+          5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 15.0,
+      "air_volume_is_zero": null,
+      "note": "Upper translucent horizontal band distinct from lower glass.",
+      "rows": [
+        {
+          "plane_mm": 43.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.0,
+          "component_areas_mm2": [
+            3.0
+          ],
+          "component_bounds_mm": [
+            [
+              61.625,
+              5.0,
+              62.375,
+              9.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 45.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.0,
+          "component_areas_mm2": [
+            3.0
+          ],
+          "component_bounds_mm": [
+            [
+              61.625,
+              5.0,
+              62.375,
+              9.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 47.9,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.0,
+          "component_areas_mm2": [
+            3.0
+          ],
+          "component_bounds_mm": [
+            [
+              61.625,
+              5.0,
+              62.375,
+              9.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "east sliding glass panel",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          2,
+          -74.4,
+          14
+        ],
+        "size_mm": [
+          4,
+          0.8,
+          10
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 27.999877929687482,
+      "air_volume_is_zero": null,
+      "note": "0.7mm closed sliding-door glazing; no false claim of open doorway.",
+      "rows": [
+        {
+          "plane_mm": 15.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.79998779296875,
+          "component_areas_mm2": [
+            2.79998779296875
+          ],
+          "component_bounds_mm": [
+            [
+              2.0,
+              -74.3499984741211,
+              6.0,
+              -73.6500015258789
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 18.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.79998779296875,
+          "component_areas_mm2": [
+            2.79998779296875
+          ],
+          "component_bounds_mm": [
+            [
+              2.0,
+              -74.3499984741211,
+              6.0,
+              -73.6500015258789
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 23.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.79998779296875,
+          "component_areas_mm2": [
+            2.79998779296875
+          ],
+          "component_bounds_mm": [
+            [
+              2.0,
+              -74.3499984741211,
+              6.0,
+              -73.6500015258789
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "east south translucent field",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -34,
+          -74.4,
+          15
+        ],
+        "size_mm": [
+          4,
+          0.8,
+          10
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 27.999877929687432,
+      "air_volume_is_zero": null,
+      "note": "Opaque/translucent lower left field; not mirrored all-glass front.",
+      "rows": [
+        {
+          "plane_mm": 16.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.79998779296875,
+          "component_areas_mm2": [
+            2.79998779296875
+          ],
+          "component_bounds_mm": [
+            [
+              -34.0,
+              -74.3499984741211,
+              -30.0,
+              -73.6500015258789
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 20.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.79998779296875,
+          "component_areas_mm2": [
+            2.79998779296875
+          ],
+          "component_bounds_mm": [
+            [
+              -34.0,
+              -74.3499984741211,
+              -30.0,
+              -73.6500015258789
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 24.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.79998779296875,
+          "component_areas_mm2": [
+            2.79998779296875
+          ],
+          "component_bounds_mm": [
+            [
+              -34.0,
+              -74.3499984741211,
+              -30.0,
+              -73.6500015258789
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "west narrow vertical opening",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          43,
+          73.6,
+          13
+        ],
+        "size_mm": [
+          2,
+          0.8,
+          12
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 16.799926757812496,
+      "air_volume_is_zero": null,
+      "note": "Physical glass in narrow opening; no claim whether service door.",
+      "rows": [
+        {
+          "plane_mm": 14.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.399993896484375,
+          "component_areas_mm2": [
+            1.399993896484375
+          ],
+          "component_bounds_mm": [
+            [
+              43.0,
+              73.6500015258789,
+              45.0,
+              74.3499984741211
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 19.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.399993896484375,
+          "component_areas_mm2": [
+            1.399993896484375
+          ],
+          "component_bounds_mm": [
+            [
+              43.0,
+              73.6500015258789,
+              45.0,
+              74.3499984741211
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 24.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.399993896484375,
+          "component_areas_mm2": [
+            1.399993896484375
+          ],
+          "component_bounds_mm": [
+            [
+              43.0,
+              73.6500015258789,
+              45.0,
+              74.3499984741211
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "west two sash window clear portion",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          12,
+          73.6,
+          22
+        ],
+        "size_mm": [
+          3,
+          0.8,
+          7
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 14.699935913085938,
+      "air_volume_is_zero": null,
+      "note": "Small real glazing zone distinct from continuous thermal band.",
+      "rows": [
+        {
+          "plane_mm": 23.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0999908447265625,
+          "component_areas_mm2": [
+            2.0999908447265625
+          ],
+          "component_bounds_mm": [
+            [
+              12.0,
+              73.6500015258789,
+              15.0,
+              74.3499984741211
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 25.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0999908447265625,
+          "component_areas_mm2": [
+            2.0999908447265625
+          ],
+          "component_bounds_mm": [
+            [
+              12.0,
+              73.6500015258789,
+              15.0,
+              74.3499984741211
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 28.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.0999908447265625,
+          "component_areas_mm2": [
+            2.0999908447265625
+          ],
+          "component_bounds_mm": [
+            [
+              12.0,
+              73.6500015258789,
+              15.0,
+              74.3499984741211
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "west bottle thermal glazing",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -21,
+          73.55,
+          14
+        ],
+        "size_mm": [
+          3,
+          0.9,
+          9
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 21.82640884565601,
+      "air_volume_is_zero": null,
+      "note": "0.8mm continuous translucent thermal-wall representation. Dense pattern is illustrative, not south louvers.",
+      "rows": [
+        {
+          "plane_mm": 15.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.467541272344415,
+          "component_areas_mm2": [
+            2.467541272344415
+          ],
+          "component_bounds_mm": [
+            [
+              -21.0,
+              73.5999984741211,
+              -18.0,
+              74.45000000298023
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.054382235278486145
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 18.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.4199127229432538,
+          "component_areas_mm2": [
+            2.4199127229432538
+          ],
+          "component_bounds_mm": [
+            [
+              -21.0,
+              73.5999984741211,
+              -18.0,
+              74.45000000298023
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.006957887323925168
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 22.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.448361640639746,
+          "component_areas_mm2": [
+            2.448361640639746
+          ],
+          "component_bounds_mm": [
+            [
+              -21.0,
+              73.5999984741211,
+              -18.0,
+              74.45000000298023
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            0.0354068050204169
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 1 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -60.586046511627906,
+          5,
+          9.2
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353188144846282,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 9.3,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -60.586046509444714,
+              5.0,
+              -59.786046512424946,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 9.45,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -60.586046509444714,
+              5.0,
+              -59.786046512424946,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 9.6,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -60.586046509444714,
+              5.0,
+              -59.786046512424946,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 1",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -60.53604651162791,
+          5,
+          10.129999999999999
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 10.15,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 10.3,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 10.45,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 2 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -60.9031007751938,
+          5,
+          10.904166666666665
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353190144454892,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 11.004166666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -60.90310077369213,
+              5.0,
+              -60.10310077667236,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 11.154166666666665,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -60.90310077369213,
+              5.0,
+              -60.10310077667236,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 11.304166666666665,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -60.90310077369213,
+              5.0,
+              -60.10310077667236,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 2",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -60.8531007751938,
+          5,
+          11.834166666666665
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 11.854166666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 12.004166666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 12.154166666666665,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 3 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -61.220155038759685,
+          5,
+          12.608333333333333
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353186366910275,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 12.708333333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.22015503793955,
+              5.0,
+              -60.42015504091978,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 12.858333333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.22015503793955,
+              5.0,
+              -60.42015504091978,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 13.008333333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.22015503793955,
+              5.0,
+              -60.42015504091978,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 3",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -61.17015503875969,
+          5,
+          13.538333333333334
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 13.558333333333334,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 13.708333333333334,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 13.858333333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 4 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -61.53720930232558,
+          5,
+          14.3125
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353184845867355,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 14.412500000000001,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.537209302186966,
+              5.0,
+              -60.7372093051672,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 14.5625,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.537209302186966,
+              5.0,
+              -60.7372093051672,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 14.7125,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.537209302186966,
+              5.0,
+              -60.7372093051672,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 4",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -61.48720930232558,
+          5,
+          15.2425
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 15.262500000000001,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 15.412500000000001,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 15.5625,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 5 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -61.85426356589147,
+          5,
+          16.016666666666666
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353189264530859,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 16.116666666666667,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.85426356643438,
+              5.0,
+              -61.054263569414616,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 16.266666666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.85426356643438,
+              5.0,
+              -61.054263569414616,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 16.416666666666668,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -61.85426356643438,
+              5.0,
+              -61.054263569414616,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 5",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -61.804263565891475,
+          5,
+          16.946666666666665
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 16.966666666666665,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 17.116666666666667,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 17.266666666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 6 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -62.171317829457365,
+          5,
+          17.72083333333333
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353202025838423,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 17.820833333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.1713178306818,
+              5.0,
+              -61.37131782621145,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 17.97083333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.1713178306818,
+              5.0,
+              -61.37131782621145,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 18.120833333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.1713178306818,
+              5.0,
+              -61.37131782621145,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 6",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -62.12131782945737,
+          5,
+          18.65083333333333
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 18.67083333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 18.820833333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 18.97083333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 7 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -62.48837209302325,
+          5,
+          19.425
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353187565149576,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 19.525000000000002,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.48837209492922,
+              5.0,
+              -61.68837209045887,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 19.675,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.48837209492922,
+              5.0,
+              -61.68837209045887,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 19.825000000000003,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.48837209492922,
+              5.0,
+              -61.68837209045887,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 7",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -62.438372093023254,
+          5,
+          20.355
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 20.375,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 20.525000000000002,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 20.675,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 8 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -62.805426356589145,
+          5,
+          21.129166666666666
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353197124571521,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 21.229166666666668,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.805426359176636,
+              5.0,
+              -62.00542635470629,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 21.379166666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.805426359176636,
+              5.0,
+              -62.00542635470629,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 21.52916666666667,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -62.805426359176636,
+              5.0,
+              -62.00542635470629,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 8",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -62.75542635658915,
+          5,
+          22.059166666666666
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 22.079166666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 22.229166666666668,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 22.379166666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 9 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -63.12248062015504,
+          5,
+          22.833333333333332
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353189952353724,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 22.933333333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -63.12248062342405,
+              5.0,
+              -62.322480618953705,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 23.083333333333332,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -63.12248062342405,
+              5.0,
+              -62.322480618953705,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 23.233333333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -63.12248062342405,
+              5.0,
+              -62.322480618953705,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834772640715524e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 9",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -63.07248062015504,
+          5,
+          23.763333333333332
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 23.78333333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 23.933333333333334,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 24.083333333333332,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 10 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -63.43953488372093,
+          5,
+          24.537499999999998
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353197616556048,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 24.6375,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.399999991059303,
+          "component_areas_mm2": [
+            2.399999991059303
+          ],
+          "component_bounds_mm": [
+            [
+              -63.43953488022089,
+              5.0,
+              -62.63953488320112,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 24.787499999999998,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -63.43953488022089,
+              5.0,
+              -62.63953488320112,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 24.9375,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -63.43953488022089,
+              5.0,
+              -62.63953488320112,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 10",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -63.389534883720934,
+          5,
+          25.467499999999998
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 25.487499999999997,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 25.6375,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 25.787499999999998,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 11 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -63.75658914728682,
+          5,
+          26.241666666666664
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353184929211109,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 26.341666666666665,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -63.75658914446831,
+              5.0,
+              -62.95658914744854,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 26.491666666666664,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -63.75658914446831,
+              5.0,
+              -62.95658914744854,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 26.641666666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -63.75658914446831,
+              5.0,
+              -62.95658914744854,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 11",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -63.70658914728682,
+          5,
+          27.171666666666663
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 27.191666666666663,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 27.341666666666665,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 27.491666666666664,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 12 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -64.07364341085271,
+          5,
+          27.945833333333333
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353200176948568,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 28.045833333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.07364340871572,
+              5.0,
+              -63.27364341169596,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 28.195833333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.07364340871572,
+              5.0,
+              -63.27364341169596,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 28.345833333333335,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.07364340871572,
+              5.0,
+              -63.27364341169596,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 12",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -64.02364341085271,
+          5,
+          28.875833333333333
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 28.895833333333332,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 29.045833333333334,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 29.195833333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 13 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -64.3906976744186,
+          5,
+          29.65
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353188989927594,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 29.75,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.399999991059303,
+          "component_areas_mm2": [
+            2.399999991059303
+          ],
+          "component_bounds_mm": [
+            [
+              -64.39069767296314,
+              5.0,
+              -63.590697675943375,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 29.9,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.39069767296314,
+              5.0,
+              -63.590697675943375,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 30.05,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.39069767296314,
+              5.0,
+              -63.590697675943375,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 13",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -64.3406976744186,
+          5,
+          30.58
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 30.599999999999998,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 30.75,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 30.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 14 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -64.7077519379845,
+          5,
+          31.354166666666664
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353205715815475,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 31.454166666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.70775193721056,
+              5.0,
+              -63.90775194019079,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 31.604166666666664,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.70775193721056,
+              5.0,
+              -63.90775194019079,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 31.754166666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -64.70775193721056,
+              5.0,
+              -63.90775194019079,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 14",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -64.65775193798449,
+          5,
+          32.284166666666664
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 32.30416666666667,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 32.454166666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 32.604166666666664,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 15 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -65.02480620155039,
+          5,
+          33.05833333333334
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.135320265368434,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 33.15833333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -65.02480620145798,
+              5.0,
+              -64.22480620443821,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 33.30833333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -65.02480620145798,
+              5.0,
+              -64.22480620443821,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 33.458333333333336,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -65.02480620145798,
+              5.0,
+              -64.22480620443821,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 15",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -64.97480620155038,
+          5,
+          33.98833333333334
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 34.00833333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 34.15833333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 34.30833333333334,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 16 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -65.34186046511628,
+          5,
+          34.7625
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353182364476408,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 34.8625,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -65.3418604657054,
+              5.0,
+              -64.54186046868563,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 35.0125,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -65.3418604657054,
+              5.0,
+              -64.54186046868563,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 35.1625,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -65.3418604657054,
+              5.0,
+              -64.54186046868563,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 16",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -65.29186046511627,
+          5,
+          35.6925
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 35.7125,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 35.8625,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 36.0125,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 17 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -65.65891472868218,
+          5,
+          36.46666666666667
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353199304826445,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 36.56666666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -65.65891472995281,
+              5.0,
+              -64.85891472548246,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 36.71666666666667,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -65.65891472995281,
+              5.0,
+              -64.85891472548246,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 36.86666666666667,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -65.65891472995281,
+              5.0,
+              -64.85891472548246,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 17",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -65.60891472868217,
+          5,
+          37.39666666666667
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 37.416666666666664,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 37.56666666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 37.71666666666667,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 18 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -65.97596899224807,
+          5,
+          38.170833333333334
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.135319302491996,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 38.27083333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.4000000134110446,
+          "component_areas_mm2": [
+            2.4000000134110446
+          ],
+          "component_bounds_mm": [
+            [
+              -65.97596899420023,
+              5.0,
+              -65.17596898972988,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 38.420833333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -65.97596899420023,
+              5.0,
+              -65.17596898972988,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 38.57083333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -65.97596899420023,
+              5.0,
+              -65.17596898972988,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 18",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -65.92596899224806,
+          5,
+          39.100833333333334
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 39.12083333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 39.27083333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 39.420833333333334,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 19 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -66.29302325581396,
+          5,
+          39.875
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353203699577903,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 39.974999999999994,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -66.29302325844765,
+              5.0,
+              -65.4930232539773,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 40.125,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -66.29302325844765,
+              5.0,
+              -65.4930232539773,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 40.275,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -66.29302325844765,
+              5.0,
+              -65.4930232539773,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 19",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -66.24302325581395,
+          5,
+          40.805
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 40.824999999999996,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 40.974999999999994,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 41.125,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 20 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -66.61007751937984,
+          5,
+          41.579166666666666
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353180617417564,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 41.67916666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -66.61007752269506,
+              5.0,
+              -65.81007751822472,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 41.829166666666666,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -66.61007752269506,
+              5.0,
+              -65.81007751822472,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 41.979166666666664,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.400000013411045,
+          "component_areas_mm2": [
+            2.400000013411045
+          ],
+          "component_bounds_mm": [
+            [
+              -66.61007752269506,
+              5.0,
+              -65.81007751822472,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            9.834741376835151e-09
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 20",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -66.56007751937983,
+          5,
+          42.509166666666665
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 42.52916666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 42.67916666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 42.829166666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 21 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -66.92713178294574,
+          5,
+          43.28333333333333
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353197861251831,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 43.383333333333326,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -66.9271317794919,
+              5.0,
+              -66.12713178247213,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 43.53333333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -66.9271317794919,
+              5.0,
+              -66.12713178247213,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 43.68333333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -66.9271317794919,
+              5.0,
+              -66.12713178247213,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 21",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -66.87713178294572,
+          5,
+          44.21333333333333
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 44.23333333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 44.383333333333326,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 44.53333333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 22 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -67.24418604651163,
+          5,
+          44.987500000000004
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353194211953013,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 45.0875,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.24418604373932,
+              5.0,
+              -66.44418604671955,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 45.237500000000004,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.24418604373932,
+              5.0,
+              -66.44418604671955,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 45.3875,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.24418604373932,
+              5.0,
+              -66.44418604671955,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 22",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -67.19418604651162,
+          5,
+          45.917500000000004
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 45.9375,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 46.0875,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 46.237500000000004,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 23 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -67.56124031007752,
+          5,
+          46.69166666666667
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353198822997737,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 46.791666666666664,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.56124030798674,
+              5.0,
+              -66.76124031096697,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 46.94166666666667,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.56124030798674,
+              5.0,
+              -66.76124031096697,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 47.09166666666667,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.56124030798674,
+              5.0,
+              -66.76124031096697,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 23",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -67.51124031007751,
+          5,
+          47.62166666666667
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 47.641666666666666,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 47.791666666666664,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 47.94166666666667,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 24 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -67.87829457364342,
+          5,
+          48.395833333333336
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1353185870947597,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 48.49583333333333,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.87829457223415,
+              5.0,
+              -67.07829457521439,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 48.645833333333336,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.87829457223415,
+              5.0,
+              -67.07829457521439,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 48.795833333333334,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -67.87829457223415,
+              5.0,
+              -67.07829457521439,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver gap after 24",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -67.8282945736434,
+          5,
+          49.325833333333335
+        ],
+        "size_mm": [
+          0.55,
+          3,
+          0.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Full bounded prism through a genuine leaf gap, clear of inclined white posts.",
+      "rows": [
+        {
+          "plane_mm": 49.34583333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 49.49583333333333,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 49.645833333333336,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "south louver 25 leaf",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -68.19534883720931,
+          5,
+          50.1
+        ],
+        "size_mm": [
+          0.8,
+          3,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 1.1408331050142118,
+      "air_volume_is_zero": null,
+      "note": "Sloped physical leaf;0.55mm vertical thickness, near-horizontal thin feature retained.",
+      "rows": [
+        {
+          "plane_mm": 50.199999999999996,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -68.19534883648157,
+              5.0,
+              -67.3953488394618,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 50.35,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -68.19534883648157,
+              5.0,
+              -67.3953488394618,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 50.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.3999999910593033,
+          "component_areas_mm2": [
+            2.3999999910593033
+          ],
+          "component_bounds_mm": [
+            [
+              -68.19534883648157,
+              5.0,
+              -67.3953488394618,
+              8.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "double_height_east_core",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -15,
+          -35,
+          12
+        ],
+        "size_mm": [
+          30,
+          25,
+          38
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Whole bounded void prism; no assertion that entire house is empty.",
+      "rows": [
+        {
+          "plane_mm": 12.1,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 31.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 49.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "north_passage_beside_greenwall",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          40,
+          15,
+          12
+        ],
+        "size_mm": [
+          10,
+          13,
+          42
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Whole bounded void prism; no assertion that entire house is empty.",
+      "rows": [
+        {
+          "plane_mm": 12.1,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 33.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 53.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "above_L_south_arm",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -54,
+          -30,
+          40
+        ],
+        "size_mm": [
+          7,
+          20,
+          10
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Whole bounded void prism; no assertion that entire house is empty.",
+      "rows": [
+        {
+          "plane_mm": 40.1,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 45.0,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 49.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "L south inner partition",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -43.65,
+          -30,
+          15
+        ],
+        "size_mm": [
+          1.3,
+          6,
+          12
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 86.3997802734375,
+      "air_volume_is_zero": null,
+      "note": "Physical interior wall; simplified L living core not furniture fit-out.",
+      "rows": [
+        {
+          "plane_mm": 16.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 7.199981689453125,
+          "component_areas_mm2": [
+            7.199981689453125
+          ],
+          "component_bounds_mm": [
+            [
+              -43.599998474121094,
+              -30.0,
+              -42.400001525878906,
+              -24.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            2.079984130859391
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 21.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 7.199981689453125,
+          "component_areas_mm2": [
+            7.199981689453125
+          ],
+          "component_bounds_mm": [
+            [
+              -43.599998474121094,
+              -30.0,
+              -42.400001525878906,
+              -24.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            2.079984130859391
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 26.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 7.199981689453125,
+          "component_areas_mm2": [
+            7.199981689453125
+          ],
+          "component_bounds_mm": [
+            [
+              -43.599998474121094,
+              -30.0,
+              -42.400001525878906,
+              -24.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            2.079984130859391
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "L west inner partition",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -14,
+          48.85,
+          15
+        ],
+        "size_mm": [
+          6,
+          1.3,
+          12
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 86.3997802734375,
+      "air_volume_is_zero": null,
+      "note": "Other L arm; no copied 2014 plan.",
+      "rows": [
+        {
+          "plane_mm": 16.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 7.199981689453125,
+          "component_areas_mm2": [
+            7.199981689453125
+          ],
+          "component_bounds_mm": [
+            [
+              -14.0,
+              48.900001525878906,
+              -8.0,
+              50.099998474121094
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            2.0799841308593896
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 21.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 7.199981689453125,
+          "component_areas_mm2": [
+            7.199981689453125
+          ],
+          "component_bounds_mm": [
+            [
+              -14.0,
+              48.900001525878906,
+              -8.0,
+              50.099998474121094
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            2.0799841308593896
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 26.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 7.199981689453125,
+          "component_areas_mm2": [
+            7.199981689453125
+          ],
+          "component_bounds_mm": [
+            [
+              -14.0,
+              48.900001525878906,
+              -8.0,
+              50.099998474121094
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            2.0799841308593896
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "living core low ceiling",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -55,
+          -30,
+          37.05
+        ],
+        "size_mm": [
+          8,
+          8,
+          1.15
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 73.59999999999991,
+      "air_volume_is_zero": null,
+      "note": "Horizontal slab; horizontal erosion not a normal-thickness guarantee.",
+      "rows": [
+        {
+          "plane_mm": 37.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 64.0,
+          "component_areas_mm2": [
+            64.0
+          ],
+          "component_bounds_mm": [
+            [
+              -55.0,
+              -30.0,
+              -47.0,
+              -22.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            51.84000000000004
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 37.6,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 64.0,
+          "component_areas_mm2": [
+            64.0
+          ],
+          "component_bounds_mm": [
+            [
+              -55.0,
+              -30.0,
+              -47.0,
+              -22.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            51.84000000000004
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 38.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 64.0,
+          "component_areas_mm2": [
+            64.0
+          ],
+          "component_bounds_mm": [
+            [
+              -55.0,
+              -30.0,
+              -47.0,
+              -22.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            51.84000000000004
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "green wall backing",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          5,
+          20.4,
+          25
+        ],
+        "size_mm": [
+          5,
+          1.2,
+          6
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 33.92386607445691,
+      "air_volume_is_zero": null,
+      "note": "White wall, simple vegetation attached to visible east side.",
+      "rows": [
+        {
+          "plane_mm": 25.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 5.499992370605469,
+          "component_areas_mm2": [
+            5.499992370605469
+          ],
+          "component_bounds_mm": [
+            [
+              5.0,
+              20.450000762939453,
+              10.0,
+              21.549999237060547
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1.2599935913086056
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 28.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 5.713328976631335,
+          "component_areas_mm2": [
+            5.713328976631335
+          ],
+          "component_bounds_mm": [
+            [
+              5.0,
+              20.399999998509884,
+              10.0,
+              21.549999237060547
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1.4203763078591851
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 30.9,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 5.713328976631335,
+          "component_areas_mm2": [
+            5.713328976631335
+          ],
+          "component_bounds_mm": [
+            [
+              5.0,
+              20.399999998509884,
+              10.0,
+              21.549999237060547
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            1.4203763078591851
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "long_south_roof",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -40.2,
+          -22,
+          63.277272727272724
+        ],
+        "size_mm": [
+          0.4,
+          4,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 0.7890795253670052,
+      "air_volume_is_zero": null,
+      "note": "Narrow roof intersection includes slope/taper fragments; no thin exemptions.",
+      "rows": [
+        {
+          "plane_mm": 63.32727272727273,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.600000023841858,
+          "component_areas_mm2": [
+            1.600000023841858
+          ],
+          "component_bounds_mm": [
+            [
+              -40.20000000298023,
+              -22.0,
+              -39.79999999701977,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 63.527272727272724,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.6000000238418581,
+          "component_areas_mm2": [
+            1.6000000238418581
+          ],
+          "component_bounds_mm": [
+            [
+              -40.20000000298023,
+              -22.0,
+              -39.79999999701977,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 63.72727272727273,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4999998807907104,
+          "component_areas_mm2": [
+            1.4999998807907104
+          ],
+          "component_bounds_mm": [
+            [
+              -40.20000000298023,
+              -22.0,
+              -39.79999999701977,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "short_north_clear_roof",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          48.8,
+          -22,
+          62.93095238095238
+        ],
+        "size_mm": [
+          0.4,
+          4,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 0.6785629851718828,
+      "air_volume_is_zero": null,
+      "note": "Narrow roof intersection includes slope/taper fragments; no thin exemptions.",
+      "rows": [
+        {
+          "plane_mm": 62.98095238095238,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.600000023841858,
+          "component_areas_mm2": [
+            1.600000023841858
+          ],
+          "component_bounds_mm": [
+            [
+              48.79999999701977,
+              -22.0,
+              49.20000000298023,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 63.18095238095238,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.600000023841858,
+          "component_areas_mm2": [
+            1.600000023841858
+          ],
+          "component_bounds_mm": [
+            [
+              48.79999999701977,
+              -22.0,
+              49.20000000298023,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 63.38095238095238,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 0.8000144362449646,
+          "component_areas_mm2": [
+            0.8000144362449646
+          ],
+          "component_bounds_mm": [
+            [
+              48.79999999701977,
+              -22.0,
+              49.00000360608101,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "north_dark_strip",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          27.8,
+          -22,
+          82.93095238095238
+        ],
+        "size_mm": [
+          0.4,
+          4,
+          0.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 0.78280933613949,
+      "air_volume_is_zero": null,
+      "note": "Narrow roof intersection includes slope/taper fragments; no thin exemptions.",
+      "rows": [
+        {
+          "plane_mm": 82.98095238095237,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.600000023841858,
+          "component_areas_mm2": [
+            1.600000023841858
+          ],
+          "component_bounds_mm": [
+            [
+              27.799999997019768,
+              -22.0,
+              28.200000002980232,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 83.18095238095238,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.600000023841858,
+          "component_areas_mm2": [
+            1.600000023841858
+          ],
+          "component_bounds_mm": [
+            [
+              27.799999997019768,
+              -22.0,
+              28.200000002980232,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 83.38095238095238,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4299979507923126,
+          "component_areas_mm2": [
+            1.4299979507923126
+          ],
+          "component_bounds_mm": [
+            [
+              27.799999997019768,
+              -22.0,
+              28.157499484717846,
+              -18.0
+            ]
+          ],
+          "failed_0_8mm": 1,
+          "eroded_areas_mm2": [
+            0.0
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "added print base",
+      "description": {
+        "shape": "axis-aligned box",
+        "origin_mm": [
+          -5,
+          -94,
+          0.05
+        ],
+        "size_mm": [
+          10,
+          3,
+          1.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 45.0,
+      "air_volume_is_zero": null,
+      "note": "Extra thin base, not an architectural site outline.",
+      "rows": [
+        {
+          "plane_mm": 0.1,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 30.0,
+          "component_areas_mm2": [
+            30.0
+          ],
+          "component_bounds_mm": [
+            [
+              -5.0,
+              -94.0,
+              5.0,
+              -91.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            20.239999999999895
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.8,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 30.0,
+          "component_areas_mm2": [
+            30.0
+          ],
+          "component_bounds_mm": [
+            [
+              -5.0,
+              -94.0,
+              5.0,
+              -91.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            20.239999999999895
+          ],
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 1.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 30.0,
+          "component_areas_mm2": [
+            30.0
+          ],
+          "component_bounds_mm": [
+            [
+              -5.0,
+              -94.0,
+              5.0,
+              -91.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "eroded_areas_mm2": [
+            20.239999999999895
+          ],
+          "expected_occupancy_met": true
+        }
+      ]
+    }
+  ],
+  "solid_samples": 120,
+  "air_samples": 81,
+  "occupancy_mismatches": 0,
+  "air_volume_mismatches": 0,
+  "solid_failed_0_8mm_samples": 78,
+  "failed_0_8mm_components": 78,
+  "axis_ray_checks": [
+    {
+      "feature": "north lower glass",
+      "ray_origin_mm": [
+        -100,
+        7,
+        22
+      ],
+      "ray_direction": [
+        1,
+        0,
+        0
+      ],
+      "all_solid_intervals_mm": [
+        [
+          -43.599998474121094,
+          -42.400001525878906
+        ],
+        [
+          61.625,
+          62.375
+        ]
+      ],
+      "selected_interval_mm": [
+        61.625,
+        62.375
+      ],
+      "measured_axis_thickness_mm": 0.75,
+      "nominal_axis_thickness_mm": 0.75,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "east entry glass",
+      "ray_origin_mm": [
+        2,
+        -150,
+        23
+      ],
+      "ray_direction": [
+        0,
+        1,
+        0
+      ],
+      "all_solid_intervals_mm": [
+        [
+          -74.3499984741211,
+          -73.6500015258789
+        ],
+        [
+          20.450000762939453,
+          21.549999237060547
+        ],
+        [
+          48.900001525878906,
+          50.099998474121094
+        ],
+        [
+          73.5999984741211,
+          74.4000015258789
+        ]
+      ],
+      "selected_interval_mm": [
+        -74.3499984741211,
+        -73.6500015258789
+      ],
+      "measured_axis_thickness_mm": 0.6999969482421875,
+      "nominal_axis_thickness_mm": 0.7,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "west small window glass",
+      "ray_origin_mm": [
+        13,
+        -150,
+        24
+      ],
+      "ray_direction": [
+        0,
+        1,
+        0
+      ],
+      "all_solid_intervals_mm": [
+        [
+          -74.3499984741211,
+          -73.6500015258789
+        ],
+        [
+          19.825000762939453,
+          21.549999237060547
+        ],
+        [
+          48.900001525878906,
+          50.099998474121094
+        ],
+        [
+          73.6500015258789,
+          74.3499984741211
+        ]
+      ],
+      "selected_interval_mm": [
+        73.6500015258789,
+        74.3499984741211
+      ],
+      "measured_axis_thickness_mm": 0.6999969482421875,
+      "nominal_axis_thickness_mm": 0.7,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "west bottle thermal plate",
+      "ray_origin_mm": [
+        -20,
+        -150,
+        19
+      ],
+      "ray_direction": [
+        0,
+        1,
+        0
+      ],
+      "all_solid_intervals_mm": [
+        [
+          -74.3499984741211,
+          -73.6500015258789
+        ],
+        [
+          20.450000762939453,
+          21.549999237060547
+        ],
+        [
+          48.900001525878906,
+          50.099998474121094
+        ],
+        [
+          73.5999984741211,
+          74.4000015258789
+        ]
+      ],
+      "selected_interval_mm": [
+        73.5999984741211,
+        74.4000015258789
+      ],
+      "measured_axis_thickness_mm": 0.8000030517578125,
+      "nominal_axis_thickness_mm": 0.8,
+      "within_tolerance": true,
+      "below_0_8mm": false,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "L core south wall",
+      "ray_origin_mm": [
+        -100,
+        -24,
+        22
+      ],
+      "ray_direction": [
+        1,
+        0,
+        0
+      ],
+      "all_solid_intervals_mm": [
+        [
+          -43.599998474121094,
+          -42.400001525878906
+        ],
+        [
+          61.625,
+          62.375
+        ]
+      ],
+      "selected_interval_mm": [
+        -43.599998474121094,
+        -42.400001525878906
+      ],
+      "measured_axis_thickness_mm": 1.1999969482421875,
+      "nominal_axis_thickness_mm": 1.2,
+      "within_tolerance": true,
+      "below_0_8mm": false,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "L core west wall",
+      "ray_origin_mm": [
+        2,
+        -150,
+        23
+      ],
+      "ray_direction": [
+        0,
+        1,
+        0
+      ],
+      "all_solid_intervals_mm": [
+        [
+          -74.3499984741211,
+          -73.6500015258789
+        ],
+        [
+          20.450000762939453,
+          21.549999237060547
+        ],
+        [
+          48.900001525878906,
+          50.099998474121094
+        ],
+        [
+          73.5999984741211,
+          74.4000015258789
+        ]
+      ],
+      "selected_interval_mm": [
+        48.900001525878906,
+        50.099998474121094
+      ],
+      "measured_axis_thickness_mm": 1.1999969482421875,
+      "nominal_axis_thickness_mm": 1.2,
+      "within_tolerance": true,
+      "below_0_8mm": false,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "L core south ceiling",
+      "ray_origin_mm": [
+        -52,
+        -24,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          57.57272517578292,
+          58.42272746460128
+        ]
+      ],
+      "selected_interval_mm": [
+        37.0,
+        38.29999923706055
+      ],
+      "measured_axis_thickness_mm": 1.2999992370605469,
+      "nominal_axis_thickness_mm": 1.3,
+      "within_tolerance": true,
+      "below_0_8mm": false,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 1 vertical thickness",
+      "ray_origin_mm": [
+        -60.18604651162791,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.699999809265137
+        ],
+        [
+          9.206730915678346,
+          9.756731057618964
+        ],
+        [
+          10.97796691293226,
+          11.527967209814634
+        ],
+        [
+          12.749202920355364,
+          13.299202503417892
+        ],
+        [
+          14.520437998111944,
+          15.070438331705684
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          53.851795564869526,
+          54.701797853687886
+        ]
+      ],
+      "selected_interval_mm": [
+        9.206730915678346,
+        9.756731057618964
+      ],
+      "measured_axis_thickness_mm": 0.5500001419406182,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 2 vertical thickness",
+      "ray_origin_mm": [
+        -60.5031007751938,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.699999809265137
+        ],
+        [
+          9.1396613531235,
+          9.68966188334372
+        ],
+        [
+          10.910897350377418,
+          11.460897880597631
+        ],
+        [
+          12.6821333604996,
+          13.232133658115664
+        ],
+        [
+          14.453369405984018,
+          15.003368948672044
+        ],
+        [
+          16.2246053494309,
+          16.77460538690554
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          53.70768001459835,
+          54.55768230341671
+        ]
+      ],
+      "selected_interval_mm": [
+        10.910897350377418,
+        11.460897880597631
+      ],
+      "measured_axis_thickness_mm": 0.5500005302202133,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 3 vertical thickness",
+      "ray_origin_mm": [
+        -60.82015503875969,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.699999809265137
+        ],
+        [
+          9.072592070398166,
+          9.622592364703415
+        ],
+        [
+          10.843828213079997,
+          11.39382831804279
+        ],
+        [
+          12.615064413024843,
+          13.165064315296704
+        ],
+        [
+          14.386300589290304,
+          14.936300106416695
+        ],
+        [
+          16.157534919300904,
+          16.70753553850054
+        ],
+        [
+          17.928771353343937,
+          18.478772252463873
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          53.56356446432718,
+          54.41356675314554
+        ]
+      ],
+      "selected_interval_mm": [
+        12.615064413024843,
+        13.165064315296704
+      ],
+      "measured_axis_thickness_mm": 0.5499999022718605,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 4 vertical thickness",
+      "ray_origin_mm": [
+        -61.13720930232558,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          9.005523978864707,
+          9.555523558785689
+        ],
+        [
+          10.776759006848598,
+          11.326758813004446
+        ],
+        [
+          12.547995029481545,
+          13.097994752741862
+        ],
+        [
+          14.319231026735459,
+          14.869230749995774
+        ],
+        [
+          16.090467023989373,
+          16.640466057447743
+        ],
+        [
+          17.861702271034424,
+          18.41170254065032
+        ],
+        [
+          19.632938319890325,
+          20.182938674745298
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          53.419448914056005,
+          54.269451202874365
+        ]
+      ],
+      "selected_interval_mm": [
+        14.319231026735459,
+        14.869230749995774
+      ],
+      "measured_axis_thickness_mm": 0.5499997232603153,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 5 vertical thickness",
+      "ray_origin_mm": [
+        -61.45426356589147,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          8.938454220213975,
+          9.48845423363767
+        ],
+        [
+          10.709690452776501,
+          11.259690004039841
+        ],
+        [
+          12.480925773950819,
+          13.030925261305475
+        ],
+        [
+          14.252161464180617,
+          14.802161446696969
+        ],
+        [
+          16.023397461434527,
+          16.5733966929675
+        ],
+        [
+          17.79463250501413,
+          18.34463358020615
+        ],
+        [
+          19.56586861435902,
+          20.11586909138718
+        ],
+        [
+          21.3371048363654,
+          21.88710507934606
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          53.27533336378483,
+          54.12533565260319
+        ]
+      ],
+      "selected_interval_mm": [
+        16.023397461434527,
+        16.5733966929675
+      ],
+      "measured_axis_thickness_mm": 0.549999231532972,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 6 vertical thickness",
+      "ray_origin_mm": [
+        -61.77131782945737,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          10.64262132634629,
+          11.192620714992428
+        ],
+        [
+          12.413856898869085,
+          12.963856751254731
+        ],
+        [
+          14.18509222225185,
+          14.735092424519049
+        ],
+        [
+          15.956327898879689,
+          16.506328113768262
+        ],
+        [
+          17.727562942459283,
+          18.277564426353816
+        ],
+        [
+          19.498799949522454,
+          20.04879951689396
+        ],
+        [
+          21.270035939668414,
+          21.820035862344355
+        ],
+        [
+          23.041272232420262,
+          23.591271167772437
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          53.131217813513665,
+          53.981220102332024
+        ]
+      ],
+      "selected_interval_mm": [
+        17.727562942459283,
+        18.277564426353816
+      ],
+      "measured_axis_thickness_mm": 0.5500014838945333,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 7 vertical thickness",
+      "ray_origin_mm": [
+        -62.08837209302325,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          12.346787816199182,
+          12.896788088737257
+        ],
+        [
+          14.118023296979977,
+          14.668023236883386
+        ],
+        [
+          15.889258670552884,
+          16.439259792295648
+        ],
+        [
+          17.66049495584265,
+          18.210494863798974
+        ],
+        [
+          19.431731002047695,
+          19.981729907378572
+        ],
+        [
+          21.202966181372172,
+          21.752966511738826
+        ],
+        [
+          22.9742015893049,
+          23.524202287940223
+        ],
+        [
+          24.745438201474972,
+          25.295438399141837
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          52.98710226324249,
+          53.83710455206085
+        ]
+      ],
+      "selected_interval_mm": [
+        19.431731002047695,
+        19.981729907378572
+      ],
+      "measured_axis_thickness_mm": 0.5499989053308774,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 8 vertical thickness",
+      "ray_origin_mm": [
+        -62.405426356589146,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          14.050953775676438,
+          14.600954103125732
+        ],
+        [
+          15.822190487720263,
+          16.372190146754978
+        ],
+        [
+          17.59342605495665,
+          18.143425556861278
+        ],
+        [
+          19.364661575237726,
+          19.91466103430866
+        ],
+        [
+          21.135896618817327,
+          21.685897295751957
+        ],
+        [
+          22.907133569745557,
+          23.457132528648668
+        ],
+        [
+          24.678369520562057,
+          25.228369369002213
+        ],
+        [
+          26.44960519080408,
+          26.9996044807823
+        ],
+        [
+          37.0,
+          38.29999923706055
+        ],
+        [
+          52.84298671297132,
+          53.69298900178968
+        ]
+      ],
+      "selected_interval_mm": [
+        21.135896618817327,
+        21.685897295751957
+      ],
+      "measured_axis_thickness_mm": 0.55000067693463,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 9 vertical thickness",
+      "ray_origin_mm": [
+        -62.72248062015504,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          15.755120536888565,
+          16.305120583503115
+        ],
+        [
+          17.52635699941486,
+          18.07635654569407
+        ],
+        [
+          19.29759283818259,
+          19.84759265396709
+        ],
+        [
+          21.068828214811514,
+          21.618828035719822
+        ],
+        [
+          22.840064007190712,
+          23.390063281990354
+        ],
+        [
+          24.611299139353406,
+          25.161300250210143
+        ],
+        [
+          26.38253532777622,
+          26.932535679356462
+        ],
+        [
+          28.15377158733672,
+          28.70377138191185
+        ],
+        [
+          52.698871162700144,
+          53.5488734515185
+        ]
+      ],
+      "selected_interval_mm": [
+        22.840064007190712,
+        23.390063281990354
+      ],
+      "measured_axis_thickness_mm": 0.5499992747996423,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 10 vertical thickness",
+      "ray_origin_mm": [
+        -63.03953488372093,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          17.45928765679197,
+          18.0092866758825
+        ],
+        [
+          19.2305225769069,
+          19.780523500694407
+        ],
+        [
+          21.001759294538527,
+          21.551759295332594
+        ],
+        [
+          22.772994945608115,
+          23.322994761791463
+        ],
+        [
+          24.544230191878643,
+          25.09423097211
+        ],
+        [
+          26.315467246103598,
+          26.8654660471994
+        ],
+        [
+          28.086702469973854,
+          28.636702495817286
+        ],
+        [
+          29.85793859717831,
+          30.407938519291594
+        ],
+        [
+          52.55475561242897,
+          53.40475790124733
+        ]
+      ],
+      "selected_interval_mm": [
+        24.544230191878643,
+        25.09423097211
+      ],
+      "measured_axis_thickness_mm": 0.5500007802313576,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 11 vertical thickness",
+      "ray_origin_mm": [
+        -63.35658914728682,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          19.163453830115657,
+          19.713453871797732
+        ],
+        [
+          20.934690618702977,
+          21.48469005235192
+        ],
+        [
+          22.705926154430134,
+          23.25592632260108
+        ],
+        [
+          24.47716194229432,
+          25.02716140955516
+        ],
+        [
+          26.248397683548756,
+          26.798396453134757
+        ],
+        [
+          28.019632727128354,
+          28.569633287497087
+        ],
+        [
+          29.790868259308898,
+          30.340869037379903
+        ],
+        [
+          31.562104536225988,
+          32.11210577880731
+        ],
+        [
+          52.4106400621578,
+          53.26064235097616
+        ]
+      ],
+      "selected_interval_mm": [
+        26.248397683548756,
+        26.798396453134757
+      ],
+      "measured_axis_thickness_mm": 0.5499987695860007,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 12 vertical thickness",
+      "ray_origin_mm": [
+        -63.67364341085271,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          20.867620901464853,
+          21.41762111992918
+        ],
+        [
+          22.63885612182188,
+          23.188856734724258
+        ],
+        [
+          24.410092963172517,
+          24.96009222686527
+        ],
+        [
+          26.18132812099391,
+          26.73132801729546
+        ],
+        [
+          27.952563164573508,
+          28.502564379169936
+        ],
+        [
+          29.723800115501742,
+          30.273799715833395
+        ],
+        [
+          31.495035991762983,
+          32.045035575299956
+        ],
+        [
+          33.26627125967164,
+          33.816271831053804
+        ],
+        [
+          52.26652451188663,
+          53.11652680070499
+        ]
+      ],
+      "selected_interval_mm": [
+        27.952563164573508,
+        28.502564379169936
+      ],
+      "measured_axis_thickness_mm": 0.5500012145964277,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 13 vertical thickness",
+      "ray_origin_mm": [
+        -63.990697674418605,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          22.57178653479291,
+          23.121787498416737
+        ],
+        [
+          24.34302340775659,
+          24.89302275199181
+        ],
+        [
+          26.114259056406368,
+          26.664259991235074
+        ],
+        [
+          27.88549539624355,
+          28.435495085913196
+        ],
+        [
+          29.656730552946897,
+          30.206729581009824
+        ],
+        [
+          31.427965596526498,
+          31.977966920214136
+        ],
+        [
+          33.19920352311789,
+          33.749200971445575
+        ],
+        [
+          34.970439055057795,
+          35.52043780287481
+        ],
+        [
+          52.122408961615456,
+          52.972411250433815
+        ]
+      ],
+      "selected_interval_mm": [
+        29.656730552946897,
+        30.206729581009824
+      ],
+      "measured_axis_thickness_mm": 0.5499990280629277,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 14 vertical thickness",
+      "ray_origin_mm": [
+        -64.30775193798449,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          24.27595333069374,
+          24.82595361385215
+        ],
+        [
+          26.04718924994359,
+          26.59718980726856
+        ],
+        [
+          27.81842663180651,
+          28.368425965336595
+        ],
+        [
+          29.589661534630967,
+          30.139660959472423
+        ],
+        [
+          31.360896033971656,
+          31.91089807715761
+        ],
+        [
+          33.132133311993634,
+          33.68213419445611
+        ],
+        [
+          34.9033690002793,
+          35.45336936853128
+        ],
+        [
+          36.67460625177762,
+          37.224606041457896
+        ],
+        [
+          51.97829341134429,
+          52.82829570016265
+        ]
+      ],
+      "selected_interval_mm": [
+        31.360896033971656,
+        31.91089807715761
+      ],
+      "measured_axis_thickness_mm": 0.5500020431859554,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 15 vertical thickness",
+      "ray_origin_mm": [
+        -64.62480620155038,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          25.980120812768085,
+          26.530120470641833
+        ],
+        [
+          27.75135653846457,
+          28.301356923951893
+        ],
+        [
+          29.52259324665791,
+          30.07259285290652
+        ],
+        [
+          31.29382833842051,
+          31.843828394852892
+        ],
+        [
+          33.06506168050359,
+          33.615064128824784
+        ],
+        [
+          34.836299789131296,
+          35.38629996201488
+        ],
+        [
+          36.60753447744071,
+          37.15753701446085
+        ],
+        [
+          38.378772146189156,
+          38.928772084882254
+        ],
+        [
+          51.834177861073115,
+          52.684180149891475
+        ]
+      ],
+      "selected_interval_mm": [
+        33.06506168050359,
+        33.615064128824784
+      ],
+      "measured_axis_thickness_mm": 0.5500024483211945,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 16 vertical thickness",
+      "ray_origin_mm": [
+        -64.94186046511628,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          27.68428760961121,
+          28.234287208183503
+        ],
+        [
+          29.455522176127964,
+          30.00552402831646
+        ],
+        [
+          31.226759493477957,
+          31.776758896869268
+        ],
+        [
+          32.99799385583467,
+          33.5479947590686
+        ],
+        [
+          34.76923229547371,
+          35.319229595097156
+        ],
+        [
+          36.54046530654546,
+          37.09046550292555
+        ],
+        [
+          38.311700928207706,
+          38.86170245098426
+        ],
+        [
+          40.08293801905111,
+          40.63293811572253
+        ],
+        [
+          51.69006231080194,
+          52.5400645996203
+        ]
+      ],
+      "selected_interval_mm": [
+        34.76923229547371,
+        35.319229595097156
+      ],
+      "measured_axis_thickness_mm": 0.549997299623449,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 17 vertical thickness",
+      "ray_origin_mm": [
+        -65.25891472868217,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          29.388453804862742,
+          29.938454050624546
+        ],
+        [
+          31.159690822129214,
+          31.709689704347326
+        ],
+        [
+          32.93092497063936,
+          33.48092571457797
+        ],
+        [
+          34.702160922315066,
+          35.25216103293356
+        ],
+        [
+          36.47339781288787,
+          37.02339785870258
+        ],
+        [
+          38.24463381083859,
+          38.79463253026279
+        ],
+        [
+          40.01587041894449,
+          40.56586788750766
+        ],
+        [
+          41.78710567580602,
+          42.33710329790351
+        ],
+        [
+          51.59594630598367,
+          52.24594758932195
+        ]
+      ],
+      "selected_interval_mm": [
+        36.47339781288787,
+        37.02339785870258
+      ],
+      "measured_axis_thickness_mm": 0.5500000458147127,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 18 vertical thickness",
+      "ray_origin_mm": [
+        -65.57596899224806,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          31.092621096389884,
+          31.642620178623957
+        ],
+        [
+          32.86385837184153,
+          33.41385514087072
+        ],
+        [
+          34.63509293276443,
+          35.18509226697203
+        ],
+        [
+          36.406329144248616,
+          36.956328474774885
+        ],
+        [
+          38.17756340954667,
+          38.72756378490044
+        ],
+        [
+          39.94879927711097,
+          40.49880181107342
+        ],
+        [
+          41.72003633754727,
+          42.27003686988153
+        ],
+        [
+          43.49127156357937,
+          44.04127117765661
+        ],
+        [
+          51.451831133354624,
+          52.10183211968956
+        ]
+      ],
+      "selected_interval_mm": [
+        38.17756340954667,
+        38.72756378490044
+      ],
+      "measured_axis_thickness_mm": 0.5500003753537683,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 19 vertical thickness",
+      "ray_origin_mm": [
+        -65.89302325581396,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          32.79678920070259,
+          33.34678752362486
+        ],
+        [
+          34.568024030471435,
+          35.11802441568404
+        ],
+        [
+          36.33925973965945,
+          36.889259625916644
+        ],
+        [
+          38.110495836644446,
+          38.660495882459145
+        ],
+        [
+          39.88172887581904,
+          40.43173019577527
+        ],
+        [
+          41.65296689388283,
+          42.20296727189999
+        ],
+        [
+          43.42420181470868,
+          43.97420257525172
+        ],
+        [
+          45.19543742837606,
+          45.745437204449225
+        ],
+        [
+          51.30771596072557,
+          51.95771665005718
+        ]
+      ],
+      "selected_interval_mm": [
+        39.88172887581904,
+        40.43173019577527
+      ],
+      "measured_axis_thickness_mm": 0.5500013199562304,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 20 vertical thickness",
+      "ray_origin_mm": [
+        -66.21007751937984,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          34.500955403593224,
+          35.05095505905645
+        ],
+        [
+          36.272189704916876,
+          36.82218991721408
+        ],
+        [
+          38.04342572030431,
+          38.59342757468455
+        ],
+        [
+          39.81466135405861,
+          40.36466139987332
+        ],
+        [
+          41.585898156788694,
+          42.13589564040996
+        ],
+        [
+          43.35713238966023,
+          43.907132850584105
+        ],
+        [
+          45.128368544825015,
+          45.6783680358087
+        ],
+        [
+          46.89960326890971,
+          47.44960402872893
+        ],
+        [
+          51.163600788096524,
+          51.8136011804248
+        ]
+      ],
+      "selected_interval_mm": [
+        41.585898156788694,
+        42.13589564040996
+      ],
+      "measured_axis_thickness_mm": 0.5499974836212687,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 21 vertical thickness",
+      "ray_origin_mm": [
+        -66.52713178294573,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          36.2051216122462,
+          36.75512120469724
+        ],
+        [
+          37.97635539474366,
+          38.52635544078864
+        ],
+        [
+          39.747592307907354,
+          40.29759305184595
+        ],
+        [
+          41.518827755496766,
+          42.06882691728748
+        ],
+        [
+          43.29006369724179,
+          43.84006535692652
+        ],
+        [
+          45.061300667800495,
+          45.61129836799827
+        ],
+        [
+          46.83253658372877,
+          47.38253362414772
+        ],
+        [
+          48.603771670217874,
+          49.153771908773294
+        ],
+        [
+          51.01948561546748,
+          51.66948571079242
+        ]
+      ],
+      "selected_interval_mm": [
+        43.29006369724179,
+        43.84006535692652
+      ],
+      "measured_axis_thickness_mm": 0.5500016596847317,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 22 vertical thickness",
+      "ray_origin_mm": [
+        -66.84418604651162,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          37.909287826503345,
+          38.45928735837015
+        ],
+        [
+          39.68052419360842,
+          40.230522538982896
+        ],
+        [
+          41.45176054938174,
+          42.00175852900736
+        ],
+        [
+          43.2229962035842,
+          43.77299488222144
+        ],
+        [
+          44.99422921465596,
+          45.54423087434068
+        ],
+        [
+          46.765466570837745,
+          47.315467503630266
+        ],
+        [
+          48.53670206089018,
+          49.08670280482878
+        ],
+        [
+          50.3079366492091,
+          50.8579395457969
+        ],
+        [
+          50.87537044283844,
+          51.52537024116004
+        ]
+      ],
+      "selected_interval_mm": [
+        44.99422921465596,
+        45.54423087434068
+      ],
+      "measured_axis_thickness_mm": 0.5500016596847175,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 23 vertical thickness",
+      "ray_origin_mm": [
+        -67.16124031007752,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          39.61345517374218,
+          40.16345408585819
+        ],
+        [
+          41.384689885155275,
+          41.93469172040917
+        ],
+        [
+          43.155927076927426,
+          43.70592562870444
+        ],
+        [
+          44.92716172099837,
+          45.47716247280454
+        ],
+        [
+          46.69839627131227,
+          47.24839710233834
+        ],
+        [
+          48.469633171709155,
+          49.019632969902645
+        ],
+        [
+          50.240869073478926,
+          51.70000076293945
+        ]
+      ],
+      "selected_interval_mm": [
+        46.69839627131227,
+        47.24839710233834
+      ],
+      "measured_axis_thickness_mm": 0.5500008310260682,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 24 vertical thickness",
+      "ray_origin_mm": [
+        -67.47829457364341,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          41.31762138862603,
+          41.86762157251102
+        ],
+        [
+          43.08885687707695,
+          43.6388572515082
+        ],
+        [
+          44.86009255408883,
+          45.41009329802745
+        ],
+        [
+          46.63132754750989,
+          47.18132889809726
+        ],
+        [
+          48.40256535424665,
+          48.952562568610716
+        ],
+        [
+          50.17379884771192,
+          51.70000076293945
+        ]
+      ],
+      "selected_interval_mm": [
+        48.40256535424665,
+        48.952562568610716
+      ],
+      "measured_axis_thickness_mm": 0.549997214364069,
+      "nominal_axis_thickness_mm": 0.55,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    },
+    {
+      "feature": "south leaf 25 vertical thickness",
+      "ray_origin_mm": [
+        -67.7953488372093,
+        7,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          43.021788077387654,
+          43.57178772892553
+        ],
+        [
+          44.79302258620814,
+          45.34302280311644
+        ],
+        [
+          46.56425803125024,
+          47.11425964355815
+        ],
+        [
+          48.3354937227566,
+          48.88549441551142
+        ],
+        [
+          50.106730845349254,
+          51.849998474121094
+        ]
+      ],
+      "selected_interval_mm": [
+        50.106730845349254,
+        51.849998474121094
+      ],
+      "measured_axis_thickness_mm": 1.7432676287718394,
+      "nominal_axis_thickness_mm": null,
+      "within_tolerance": true,
+      "below_0_8mm": false,
+      "interpretation": "Final leaf is fused into the boundary rail; full combined occupied interval retained, no isolated-leaf nominal equality claimed."
+    },
+    {
+      "feature": "north short clear roof vertical thickness",
+      "ray_origin_mm": [
+        49,
+        -19,
+        -1
+      ],
+      "ray_direction": [
+        0,
+        0,
+        1
+      ],
+      "all_solid_intervals_mm": [
+        [
+          0.0,
+          8.0
+        ],
+        [
+          62.73095252849705,
+          63.380955813393044
+        ]
+      ],
+      "selected_interval_mm": [
+        62.73095252849705,
+        63.380955813393044
+      ],
+      "measured_axis_thickness_mm": 0.6500032848959947,
+      "nominal_axis_thickness_mm": 0.65,
+      "within_tolerance": true,
+      "below_0_8mm": true,
+      "interpretation": "Axis thickness only; not global minimum normal thickness or printability."
+    }
+  ],
+  "axis_thickness_below_0_8mm_samples": 28,
+  "downward_faces_over_45deg_above_base": 6627,
+  "downward_area_mm2": 37526.15265299025,
+  "overhang_height_threshold_mm": 0.0001,
+  "overhang_by_material": {
+    "white_aluminum_structure": {
+      "triangles": 1588,
+      "area_mm2": 1508.8697385009048
+    },
+    "pale_aqua_translucent_envelope": {
+      "triangles": 502,
+      "area_mm2": 9066.947340932033
+    },
+    "clear_glazing_closed_sliding_doors": {
+      "triangles": 3633,
+      "area_mm2": 9274.618464472562
+    },
+    "dark_roof_energy_modules": {
+      "triangles": 214,
+      "area_mm2": 11890.9296881479
+    },
+    "brown_timber_deck_and_steps": {
+      "triangles": 80,
+      "area_mm2": 895.3795641135366
+    },
+    "gray_stone_plinth": {
+      "triangles": 0,
+      "area_mm2": 0.0
+    },
+    "warm_opaque_L_living_core": {
+      "triangles": 72,
+      "area_mm2": 4366.507863677842
+    },
+    "white_bottle_thermal_glazing_pattern": {
+      "triangles": 0,
+      "area_mm2": 0.0
+    },
+    "green_wall_foliage": {
+      "triangles": 448,
+      "area_mm2": 503.99996787309647
+    },
+    "orchid_flower_simplification": {
+      "triangles": 90,
+      "area_mm2": 18.900025272374478
+    }
+  },
+  "thin_warning": "0.55mm louver leaves,0.65-0.8mm glass/roof sheets, slim frames and geometric tangencies retain sub0.8mm warnings. Every crop fragment counted; bounded local checks are not global normal-thickness/strength proof.",
+  "actual_print_tested": false,
+  "support_free_certified": false,
+  "limitations": "No bridge-span, slicer, strength, support-removal or physical-print certification. Large high core and individual louver air gaps remain. Closed translucent glazing is physical material, not air. STEM/architecture teaching approximation, not measured construction or2026 current survey. Module, louver, bottle-pattern counts are approximate."
+}

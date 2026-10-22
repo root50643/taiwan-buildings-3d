@@ -1,33 +1,13 @@
-# 來源與範圍
+# 法鼓文理學院金山校本部大願橋 — 來源與估值界線
 
-僅重建法鼓文理學院金山校本部大願橋、官方高視點照片中研究者自選 A/B 之間的一段；不是整橋、不是既有養生館模型的局部小橋。所有原始圖由研究員及建模者親看，模型包不含原始圖或其裁圖。來源網址詳 `sources.json`。
+正式建築師：https://www.krisyaoartech.com/zh-tw/projects/education/Great-Vow-Pedestrian-Bridge ，8張原圖；設計2000、完工2016、長108m、約522㎡。
 
-## architect
-https://www.krisyaoartech.com/zh-tw/projects/education/Great-Vow-Pedestrian-Bridge
+施工者駿邑工程：https://www.jinyi.com.tw/index.php?act=productsC-data&cid=96&id=192 ，9張原圖。第一張EXIF原拍2015:12:29 12:55:55、無時區；2015施工照片和2016啟用分開。其餘照片原拍日未確認；URL/alt日期不當拍攝日。兩張雙端近景原檔下緣灰塊不作下部證據。
 
-identity, whole bridge 108m,522m²,2016 completion; inclined box girder, wider/higher center; timber touch surfaces。
+官方啟用：https://www-old.dila.edu.tw/node/13285 ，活動2016-04-08、發布2016-05-03。
 
-## official
-https://www.dharmadrum.org/portal_d8_cnt_page.php?cnt_id=397&folder_id=83&up_page=1
+17原圖建模前逐張親看。高航照定雙端、非等寬連續曲線；雙端近景定真正圓通孔；橋內定高木壁/低開欄/橫木板；建築師06/07定圓橫梁雙端外伸和橋底細桿、兩岸雙斜管且上接點不同高，施工者00/04交叉互證。中央無落水墩。
 
-As-built elevated plan, selected A/B run, asymmetric walls, transverse timber deck, approximately13 ribs。
+108m採建築師非量測；本模型橋身270mm，示意比例1:400，但其他尺寸、曲率、寬度變化、木板/90圓橫梁/欄杆數與管徑角度全部照片推估並有列印展示調整，不作精確縮尺測繪。木皮起伏簡化。地下基礎、箱梁內部/TMD、鄰樓、溪谷/階壩/大岸坡省略。底板與短端接塊不是實際地形。
 
-## university-environment
-https://eeg.dila.edu.tw/soil-water-conserv/
-
-As-built companion elevated view; deck/girder curve, low opposite rail, ribs。
-
-## opening
-https://www-old.dila.edu.tw/node/13285
-
-One outward inclined high wall, interior timber patches, lower opposite open railing and transverse deck。
-
-## event-closeup
-https://www.dila.edu.tw/innerpage/123ztD1ZUEhpdiTF/6f9yQ90ZI4pR2pze
-
-Upper collage panels: inclined high wall full-height vertical dark timber strips, transverse plank deck。
-
-## 排除與未知
-建築師伺服器 a1..a8/b1..b3 回傳錯誤 HTML，不能當圖片；steps.jpg 是施工前設計渲染，未使用；drone2 是非橋事件圖；m1..m3 是其他建築，均排除。官方 108 m 是整橋長度，沒有用來宣稱本段比例尺。無實測曲率、寬度、牆厚、欄高、肋距；照片發布日期不能等同拍攝日期。精確端部支承/洞口未知，不虛構。
-
-木條長度、覆蓋範圍與欄杆密度是依不同位置照片推定並為小模型簡化，沒有宣稱 A/B 原位精確剖面。局部木條從橋面上方開始，並非向地面連續包覆。獨立研究員已對照五視圖，詳 `qa/visual-review.md`。
+國震108C4 PDF兩次尾端截斷、0有效頁，未親讀圖、不用作幾何證據；索引110m/3m不覆蓋作者108m/變寬。舊官方照片本輪403已停止，無用於本輪重建。原照片/PDF皆不在交付包。

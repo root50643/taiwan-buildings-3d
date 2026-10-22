@@ -8,7 +8,7 @@ def mesh(model):
 def group(model):
  it=model.GetBaseMaterialGroups();assert it.Count()==1 and it.MoveNext();return it.GetCurrentBaseMaterialGroup()
 def coords(m):return np.array([list(x.Coordinates) for x in m.GetVertices()]),np.array([list(x.Indices) for x in m.GetTriangleIndices()])
-raw=(A/'model.stl').read_bytes();sha=hashlib.sha256(raw).hexdigest()
+raw=(A/'model.stl').read_bytes();sha=hashlib.sha256(raw).hexdigest();assert sha==json.loads((A/'release.json').read_text())['stl_sha256']
 n=struct.unpack_from('<I',raw,80)[0];ref=np.array([struct.unpack_from('<9f',raw,96+50*i) for i in range(n)]).reshape(n,3,3)
 with zipfile.ZipFile(A/'model.3mf') as z:
  assert z.testzip() is None;r=E.fromstring(z.read('3D/3dmodel.model'))
@@ -40,14 +40,14 @@ w=lib3mf.get_wrapper();m=w.CreateModel();rd=m.QueryReader('3mf');rd.SetStrictMod
 g=group(m);ids=g.GetAllPropertyIDs();assert len(ids)==len(pal)
 assert [g.GetName(t.PropertyIDs[0]) for t in mo.GetAllTriangleProperties()]==[pal[x]['id'] for x in colors]
 for i,p in enumerate(pal):
- co=g.GetDisplayColor(ids[i]);assert [co.Red,co.Green,co.Blue,co.Alpha]==[int(p['srgb'][k:k+2],16) for k in [1,3,5]]+[255]
-new=lib3mf.Color();new.Red=12;new.Green=34;new.Blue=56;new.Alpha=255;g.SetDisplayColor(ids[2],new)
+ co=g.GetDisplayColor(ids[i]);assert [co.Red,co.Green,co.Blue,co.Alpha]==[int(p['srgb'][k:k+2],16) for k in [1,3,5]]+[p.get('alpha',255)]
+new=lib3mf.Color();new.Red=12;new.Green=34;new.Blue=56;new.Alpha=173;g.SetDisplayColor(ids[2],new)
 with tempfile.TemporaryDirectory() as td:
  path=Path(td)/'edit.3mf';wr=m.QueryWriter('3mf');prec=wr.GetDecimalPrecision();wr.WriteToFile(str(path));m2=w.CreateModel();rd2=m2.QueryReader('3mf');rd2.SetStrictModeActive(True);rd2.ReadFromFile(str(path));assert rd2.GetWarningCount()==0;mo2=mesh(m2);v2,f2=coords(mo2);err=float(abs(v2[f2]-ref).max());assert err<1e-4 and mo2.IsManifoldAndOriented();assert np.all(np.linalg.norm(np.cross(v2[f2[:,1]]-v2[f2[:,0]],v2[f2[:,2]]-v2[f2[:,0]]),axis=1)>0)
  g2=group(m2);ids2=g2.GetAllPropertyIDs()
  for i,p in enumerate(pal):
-  co=g2.GetDisplayColor(ids2[i]);assert [co.Red,co.Green,co.Blue,co.Alpha]==([12,34,56,255] if i==2 else [int(p['srgb'][k:k+2],16) for k in [1,3,5]]+[255])
+  co=g2.GetDisplayColor(ids2[i]);assert [co.Red,co.Green,co.Blue,co.Alpha]==([12,34,56,173] if i==2 else [int(p['srgb'][k:k+2],16) for k in [1,3,5]]+[p.get('alpha',255)])
  assert [g2.GetName(t.PropertyIDs[0]) for t in mo2.GetAllTriangleProperties()]==[pal[x]['id'] for x in colors]
 files=['model.stl','model.3mf','mesh.json','palette.json'];before={p:hashlib.sha256((A/p).read_bytes()).hexdigest() for p in files};subprocess.run([os.environ.get('BUILD_PYTHON',sys.executable),str(A/'build_model.py')],check=True);assert all(hashlib.sha256((A/p).read_bytes()).hexdigest()==h for p,h in before.items())
-d={'source_STL_SHA256':sha,'source_STL_unchanged':True,'vertices':len(v),'triangles':len(f),'original_triangle_coordinates_and_order_exact':True,'no_subdivision':True,'dimensions_mm':np.ptp(v,axis=0).tolist(),'positive_volume_mm3':vol,'zero_area_faces':0,'duplicate_faces':0,'all_edges_two_opposed_faces':True,'vertex_links_single_cycles':True,'connected_surface':True,'material_count':len(pal),'all_faces_assigned':True,'lib3mf_strict_warnings':0,'lib3mf_valid_manifold_oriented':True,'lib3mf_import_coordinates_exact':True,'lib3mf_writer_decimal_precision':prec,'lib3mf_edit_coordinate_error_mm':err,'single_material_edit_preserves_other_colors_and_assignments':True,'deterministic_3MF_and_manifests':True,'new_geometry_manufacturing_QA_separate_report':True,'FFF_and_physical_print_tested':False}
+d={'source_STL_SHA256':sha,'source_STL_unchanged':True,'vertices':len(v),'triangles':len(f),'original_triangle_coordinates_and_order_exact':True,'no_subdivision':True,'dimensions_mm':np.ptp(v,axis=0).tolist(),'positive_volume_mm3':vol,'zero_area_faces':0,'duplicate_faces':0,'all_edges_two_opposed_faces':True,'vertex_links_single_cycles':True,'connected_surface':True,'material_count':len(pal),'all_faces_assigned':True,'lib3mf_strict_warnings':0,'lib3mf_valid_manifold_oriented':True,'lib3mf_import_coordinates_exact':True,'lib3mf_writer_decimal_precision':prec,'lib3mf_edit_coordinate_error_mm':err,'single_material_edit_preserves_other_colors_alpha_and_assignments':True,'all_materials_opaque':True,'test_edited_material_alpha':173,'STL_has_no_transparency':True,'deterministic_3MF_and_manifests':True,'new_geometry_manufacturing_QA_separate_report':True,'FFF_and_physical_print_tested':False}
 (A/'qa/exchange-validation.json').write_text(json.dumps(d,indent=2)+'\n');print(json.dumps(d))

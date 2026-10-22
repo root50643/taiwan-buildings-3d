@@ -69,4 +69,4 @@ def qa(out):
     (out/'qa-layers.json').write_text(json.dumps(report,indent=2)+'\n');print('LAYER SUMMARY',json.dumps({k:v for k,v in report.items() if k!='layers'}),flush=True)
     return r,report
 if __name__=='__main__':
-    a=argparse.ArgumentParser();a.add_argument('--out',type=Path,default=ROOT/'output');args=a.parse_args();qa(args.out)
+    a=argparse.ArgumentParser();a.add_argument('--out',type=Path,default=ROOT);args=a.parse_args();qa(args.out)

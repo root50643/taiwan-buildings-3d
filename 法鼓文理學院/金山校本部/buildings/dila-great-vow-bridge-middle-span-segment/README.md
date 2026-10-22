@@ -1,29 +1,32 @@
-# 法鼓文理學院・大願橋中央裁切片段
+# 法鼓文理學院金山校本部大願橋
 
-**這是官方實景照片 A/B 間的局部建模，不是完整橋梁。** A/B 是研究者自選展示裁切面，並非真實伸縮縫、橋頭或量測樁號。兩端保留平切，不加入虛構端門或橋墩。
+**整橋完整主要外觀近似方案；不是測繪或工程內構復原。整橋升級版（2026-10-22核准發布）。**
 
-![橋內側預覽](previews/front.png)
+連續變寬彎曲木橋面、單側外傾高箱梁、兩端真圓通孔、低開放欄杆/木扶手、圓橫梁與橋底細支承、兩岸各一組非共頂雙斜管；中央無落水墩。展示底板和最小端接面非實際地形。
 
-## 可辨識幾何
-- 單側高、向外傾斜的實體箱梁外形；內側垂直深色木條。
-- 對側較低的開放金屬欄杆及木扶手，空隙為真穿孔，不是深色貼面。
-- 橋面緩彎、向較寬一端漸變；橫向木板及實體淺板縫。
-- 照片 A/B 之間約 13 根可辨識外伸橫肋；位置採均勻近似，不宣稱實測。
+## 可編輯檔案
+- `scene.blend`：可編輯三角網格、7材質、燈光相機。
+- `model.3mf`：毫米、逐面7材質，同一幾何；並非印表機耗材配置。
+- `model.stl`：同一幾何，STL不保存顏色。
+- 5張`previews/*.png`均為交付mesh實渲染；generator/render/rebuild與QA腳本附上。
 
-尺寸約 **140 × 47.984 × 25 mm**，含外伸肋。任意展示尺度，不可從整橋108m推算本段真實長度。木板、木條、欄杆柱的數量及間距為簡化視覺節奏，不是實際施工表。細部與來源註冊見 `SOURCES.md`、`qa/source-registration.json`。
+全展示約286 × 47 × 28.1mm；橋身270mm，依建築師108m取示意1:400。細杆名義直徑0.34mm、斜撐0.40mm，已低於常見0.8mm薄件篩檢，不適合直接承諾一般FFF實印。長跨、傾牆、圓梁及欄杆需支撐或拆件；未實印、不保證免支撐。實際切層/薄處與懸挑數值見QA。
 
-## 檔案
-- `model.stl`：單一連通封閉表面，無色。
-- `model.3mf`：同一組三角形，5組可改顏色的基礎材質；非多擠出機設定。
-- `scene.blend`：同幾何、可編輯網格和材質、相機及燈光；不是分件CAD。
-- `mesh.json`、`palette.json`、`build_model.py`：可重建和調整曲線、寬高、欄杆、肋及配色。
-- `previews/`：front/rear/elevation/top/side 五張由交付網格直接渲染的視圖。
-- `qa/`、`QA.md`：拓樸、切片、局部損失、格式重讀及獨立視覺審查。
+## 歷史與單一計數
+本方案替代歷史 `dila-great-vow-bridge-middle-span-segment`，不是另一套現行模型，套數不增加。歷史固定commit `4e9dfa531b4b065b9ed16f88ff28bbf2fe87a3d0`；舊STL SHA256 `ab8f4bab8b9e8bf708e9bc386dbfa6b012e06ca4912daaea881dd0839d64c913`。舊片段A/B為人為裁切、不是橋台。本版從17圖新建整體，不重複延長舊gen；舊0.8mm頂層失敗與支撐風險保留在歷史QA，新版獨立重驗。本次整橋替代沿用舊canonical目錄slug避免斷鏈；slug中的middle-span-segment僅為歷史路徑，不表示新版仍為裁切片段。
 
-## 列印警告（請勿視為免支撐或試印完成）
-橋身連通不代表平放即可列印：最低處只是單側箱梁下緣，橋面、橫肋及欄杆需要另行規劃支撐或改朝向。沒有添加冒充真實橋墩的展示柱。沒有實際試印、切片器路徑、強度驗證。
-
-125層輪廓有效，但近最高點 z=24.999mm 的細小斜頂末端截面（約0.147mm²）**未通過0.8mm侵蝕**；未豁免或藏起。0.55mm木條凸起和0.28mm板縫可能被噴嘴/層高抹平。局部面積損失與支撐指標詳 `QA.md`，不能只看單殼通過即稱列印就緒。
+[歷史片段完整來源／QA／STL](https://github.com/root50643/taiwan-buildings-3d/tree/4e9dfa531b4b065b9ed16f88ff28bbf2fe87a3d0/法鼓文理學院/金山校本部/buildings/dila-great-vow-bridge-middle-span-segment)。
 
 ## 重建
-以 Python 安裝 `requirements.txt`，執行 `python build_model.py`、`python qa_model.py --out .`、`python check_features.py`。`verify_exchange.py` 另需 lib3mf；必要時用 `BUILD_PYTHON` 指向具備 trimesh/manifold3d 的 Python。以 Blender 執行 `blender -b --python render_model.py`、`blender -b --python verify_scene.py`。報告紀錄實際版本。來源照片不需下載即可重建模型。
+```sh
+python -m pip install -r requirements.txt
+python build_model.py
+blender -b -t 4 --python-exit-code 1 --python render_model.py
+python qa_model.py
+python check_features.py
+python verify_exchange.py
+blender -b -t 4 --python-exit-code 1 --python verify_scene.py
+blender -b -t 4 --python-exit-code 1 --python verify_render.py
+python rebuild.py --output /tmp/dila-great-vow-clean-rebuild --threads 4
+```
+乾淨重建output必須不存在；比較核心4檔與五PNG byte一致。來源日期、估計與省略詳SOURCES。

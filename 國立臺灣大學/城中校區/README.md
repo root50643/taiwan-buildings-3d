@@ -2,12 +2,14 @@
 
 [返回臺大總圖鑑](../README.md)
 
-本校區目前1件外觀近似，不代表全部建築完成。各件獨立150mm；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
+本校區目前2件外觀近似（含臺大醫院國際會議中心前廣場竹木隧道2018歷史狀態），不代表全部建築完成。各件獨立比例；既有醫學人文博物館150mm，竹木隧道99×187×52.188mm含前階，非校總區且不宣稱2026現況；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
 
 | 建築一 | 建築二 | 建築三 |
 |---|---|---|
 | [![醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/appearance/previews/front.png)](buildings/ntu-medical-humanities-museum/README.md)<br>[醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/README.md) |  |  |
 
-[八材質外觀與來源界線](buildings/ntu-medical-humanities-museum/appearance/README.md)
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ntu-hospital-bam-wood-hut-2018/previews/front.png" alt="臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）：實際模型預覽" width="220">](buildings/ntu-hospital-bam-wood-hut-2018/README.md)<br>**[臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）](buildings/ntu-hospital-bam-wood-hut-2018/README.md)** |  |  |
 
-![臺大醫學人文博物館外觀](buildings/ntu-medical-humanities-museum/appearance/previews/front.png)
+[八材質外觀與來源界線](buildings/ntu-medical-humanities-museum/appearance/README.md)

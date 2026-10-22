@@ -1,5 +1,16 @@
 # J棟 護理大樓
 
+## 左前低翼瓦帽與單豎窗限域配色（2026-10-22）
+
+[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/hwai-nursing-j-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
+| 正面限域配色 | 未確認後側保持中性 |
+|---|---|
+| ![低翼瓦帽及單綠玻璃豎帶](appearance/previews/front.png) | ![後側保持中性](appearance/previews/rear.png) |
+
+僅左前低翼前/左瓦坡16個完整面與單綠玻璃豎槽後壁22面配色；混材牆、山牆、其他窗槽、庭院、後側與未確認坡面維持中性，不是整棟精準彩色。原STL bytes、4516三角面、幾何及歷史QA不變，不增套數。3MF為單網格表面色，非分色封閉體、切片或G-code；原薄處與支撐限制保留，未實體試印。照片日期未知，不代表完整2026現況；第三方照片不分發。
+
+
 公開外觀近似模型。別名／去重：科技教學大樓；體育一館為地下樓層用途，不另計棟。
 
 ![實際STL正面（左）與背面（右）](previews/front-rear.png)

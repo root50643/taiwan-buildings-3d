@@ -1,0 +1,161 @@
+{
+  "status": "PASS_SOURCE_BOUND_LIMITED_APPEARANCE",
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "reviewed_at_utc": "2026-10-22T15:45:53.801784+00:00",
+  "model": "中華醫事科技大學 J棟護理大樓",
+  "scope": "既有原幾何限域配色，非新增建築或整棟實景材質還原；僅私有QA，未修改主庫。",
+  "artifacts": [
+    {
+      "path": "../model.stl",
+      "bytes": 225884,
+      "sha256": "6a529f825d294ee1066af11a9202e2f55214a43a5c91959407cbfc0f9c24b290"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 733564,
+      "sha256": "693361db041776d41375f6aa6e3b9b7c60828f9732860e979cada1d6cb6c7fbc"
+    },
+    {
+      "path": "hwai-nursing-j-appearance.3mf",
+      "bytes": 42490,
+      "sha256": "b024aeb552d01e61ea97c809c0adcfb48ebe5eb5665d90ad0ec50b368860baa3"
+    },
+    {
+      "path": "face-materials.json",
+      "bytes": 339769,
+      "sha256": "7180e4872167c16eea61486eab3d82f1b8aff1b986269aa6353ac281435bfc58"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 653,
+      "sha256": "59cb67863be7d90b6047d4ad610d0eec0adf0a1cc4182dcd30a6f1b61caaa41a"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1879652,
+      "sha256": "6108310c8d4b527d894d32cdc43a022bf37cac27d7bbff25d35b718dd21097fe"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1663976,
+      "sha256": "83974f839d14a7d4d124e929247ef3e57a2c998b4dfc4f218105e2083d400ed2"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1855961,
+      "sha256": "c6eafdc35965b0f96fb1fc582f8705207917b75f2e7761973c7efeb4fded8460"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 1769790,
+      "sha256": "454cb332486f862eea403071fecbf1e90e963817e1746ef0eaa039f786a4e26a"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1753591,
+      "sha256": "0e5b048ca677fcf3b1ab288b441c36c6a0eda932925c8fb7227ab91be3af2f5c"
+    }
+  ],
+  "source_personally_viewed": {
+    "path": "photo2.jpg",
+    "bytes": 3490162,
+    "sha256": "e966b0cc189779ad7ad098b08e453552e4cb16506b0bfca4e759f4132732cb11"
+  },
+  "original_previews_personally_viewed": [
+    {
+      "path": "previews/front.png",
+      "bytes": 948598,
+      "sha256": "335aec03ef790e5b2cd0d67f5226b205476a564a92a353b669752426fc7ec4aa"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 757407,
+      "sha256": "d890747a962af69815552b11afa0b95725852f8137fa32ba9d57e7c0342288ec"
+    }
+  ],
+  "source_context": "親看官方3181×2047原全景與限域交接HWAI-NURSING-J-READY.md；圖示護理J樓不同於右方粉橘樓/學生行政樓。照片原拍日期未知，未以2026查閱日冒稱現況；沒有用未取得的Flickr庭院照補背面。",
+  "per_view": {
+    "front": "紅褐只在左前低翼兩可見原坡面，綠色只在左前高柱單條槽後壁；柱、槽側、橫檔及橫窗群維持中性。",
+    "rear": "背面、庭院外框、後方量體與不可見屋頂未被套色。",
+    "elevation": "單綠豎帶在既有橫檔分隔處中斷；主牆/山牆/右側槽維持中性。",
+    "side": "側向其他長槽不借同材質；瓦帽只有原前左可證坡面，側牆中性。",
+    "top": "中庭、主塔屋坡、屋突皆中性；低帽著色限域沒有擴成所有屋面。五圖均未裁切建築或底座。"
+  },
+  "independent_checks_performed": {
+    "original_stl_bytes_equal_materialized_original": true,
+    "source_stl_sha256": "6a529f825d294ee1066af11a9202e2f55214a43a5c91959407cbfc0f9c24b290",
+    "triangles": 4516,
+    "unique_vertices": 2230,
+    "three_mf_vertices_faces_reconstructed_and_compared_exact_triangle_coordinates_and_order": true,
+    "three_mf_material_indices_equal_face_map": true,
+    "all_three_vertices_plane_and_bounds_recomputed_from_raw_stl": true,
+    "roof_front_full_faces": 12,
+    "roof_left_full_faces": 4,
+    "single_vertical_recess_backwall_full_faces": 22,
+    "neutral_faces": 4478,
+    "no_subdivision_or_centroid_only_paint": true,
+    "five_png_hashes_match_render_manifest_and_frozen_READY": true
+  },
+  "limitations": [
+    "38面有限著色，不代表其餘4478面真實為中性；不把混材柱牆、山牆、窗群整面漆白/紅/綠。",
+    "原低屋帽白/灰窄條為既有非該斜面幾何留下中性，不宣稱照片存在該材質接縫；不為消除它而改幾何或擴色。",
+    "綠色是不透明展示代理，不是光學玻璃；3MF是單mesh表面色，不是各色封閉可分印體。",
+    "此次原STL不變，不重新證成原外形每個細節；未實印，未測FFF/多材料G-code/支撐可拆除性，舊薄處QA不等於實印PASS。",
+    "Blend/strict SDK實編與乾淨重建的執行由builder完成；我讀其QA並核最終hash，未冒稱獨立重跑Blender/製造。"
+  ],
+  "qa_reports_read": [
+    {
+      "path": "qa/material-boundaries.json",
+      "bytes": 811,
+      "sha256": "ae6e3a6b2bfc6a87fef374fcc7e68f4681023df1a14c3cfe4faf46291992207f"
+    },
+    {
+      "path": "qa/exchange-validation.json",
+      "bytes": 981,
+      "sha256": "0d796db392876f88f6c97ff8bf88ec4bba0e54f36d5d1fc47f3520441c6eff76"
+    },
+    {
+      "path": "qa/scene-validation.json",
+      "bytes": 498,
+      "sha256": "cb54b027777092d866eedb4b6ff265b01870a9ced7b58c2fdee9425adaad4890"
+    },
+    {
+      "path": "qa/rebuild-validation.json",
+      "bytes": 675,
+      "sha256": "04cb75f29e80cd2e4f27cb0a2ccb72b8775cb1f828bb16216d6e07ab935f9fca"
+    },
+    {
+      "path": "qa/rebuild-archive-validation.json",
+      "bytes": 1252,
+      "sha256": "5c8ee67947ea271ee598f0ffb34273f513e31b1778641097d7251af3bf8aa680"
+    },
+    {
+      "path": "qa/render-manifest.json",
+      "bytes": 1815,
+      "sha256": "3b651f676b6f1272b0f9d5a16466d857a637141505e0872c0847e5ec35ea88de"
+    },
+    {
+      "path": "qa/personal-frame-review.json",
+      "bytes": 886,
+      "sha256": "a981db132e4016fc121044ce3733cc88a477c15fbe6768ce4a31ccd60a21fdb0"
+    }
+  ],
+  "documents_read": [
+    {
+      "path": "README.md",
+      "bytes": 2952,
+      "sha256": "1f8a8ef4c22c371a2a8f10b09c9436eb479d195c07e814306705302d1f7a5cb3"
+    },
+    {
+      "path": "source/build_appearance.py",
+      "bytes": 4880,
+      "sha256": "c0bc1e0b305a72257a3490f67c97a12d41d9d482c6b8a8cd6ab274b82f9d1a43"
+    }
+  ],
+  "freeze_basis": {
+    "path": "READY.json",
+    "bytes": 1652,
+    "sha256": "8c3b66176eae51be4b5079ab2d42696684594e06acd69efe9f9730f6afd1d9ca"
+  },
+  "required_changes": []
+}

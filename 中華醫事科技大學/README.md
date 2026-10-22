@@ -4,8 +4,8 @@
 
 | J 護理大樓 | K 民生大樓 | H 學生活動中心 |
 |---|---|---|
-| [![J 護理大樓（深庭V2）](校本部/buildings/hwai-nursing-j/previews/front.png)](校本部/buildings/hwai-nursing-j/README.zh-TW.md) | [![K 民生大樓](校本部/buildings/hwai-minsheng-k/previews/front.png)](校本部/buildings/hwai-minsheng-k/README.zh-TW.md) | [![H 學生活動中心](校本部/buildings/hwai-activity-h/previews/front.png)](校本部/buildings/hwai-activity-h/README.zh-TW.md) |
-| [![M 第二宿舍](校本部/buildings/hwai-dormitory-m/previews/front.png)](校本部/buildings/hwai-dormitory-m/README.zh-TW.md) | [![F／F1–F4 連體群](校本部/buildings/hwai-library-departments-f/previews/front.png)](校本部/buildings/hwai-library-departments-f/README.zh-TW.md) | 尚待補充可識別實景 |
+| [<img src="校本部/buildings/hwai-nursing-j/appearance/previews/front.png" alt="J 護理大樓（深庭V2／限域配色）" width="220">](校本部/buildings/hwai-nursing-j/README.zh-TW.md) | [<img src="校本部/buildings/hwai-minsheng-k/previews/front.png" alt="K 民生大樓" width="220">](校本部/buildings/hwai-minsheng-k/README.zh-TW.md) | [<img src="校本部/buildings/hwai-activity-h/previews/front.png" alt="H 學生活動中心" width="220">](校本部/buildings/hwai-activity-h/README.zh-TW.md) |
+| [<img src="校本部/buildings/hwai-dormitory-m/previews/front.png" alt="M 第二宿舍" width="220">](校本部/buildings/hwai-dormitory-m/README.zh-TW.md) | [<img src="校本部/buildings/hwai-library-departments-f/previews/front.png" alt="F／F1–F4 連體群" width="220">](校本部/buildings/hwai-library-departments-f/README.zh-TW.md) | 尚待補充可識別實景 |
 
 每件獨立目估比例，最長含底板150mm。J深庭保留，F群兩個院落保留；M依2019簡報，F相冊屬歷史外觀且2024耐震補強後現況未核。詳頁保留日期、未知面、未試印限制及STL/Blender/Python/驗證。原照片/PDF不公開重製。
 

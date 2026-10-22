@@ -1,0 +1,6244 @@
+{
+  "stl_sha256": "4214da7aaacec82c21e9ee9ba9dd0de94995d5c8170654c1b7efaa452d2e62fe",
+  "input_hashes": {
+    "model.stl": "4214da7aaacec82c21e9ee9ba9dd0de94995d5c8170654c1b7efaa452d2e62fe",
+    "mesh.json": "fcf5860e96b110428eb86ae9744279837db3b73779762a8bb12b3f6676d1b328",
+    "palette.json": "fc5c25ec0ea17ba300077057edf86b168bc2517dc51cf7935b5c24b21f9ded69",
+    "qa/design-features.json": "b649ba3b3635b07a4e2c7861b661b18cc42e07acba74450656fe3c7dbbb987be"
+  },
+  "input_files_unchanged_during_test": true,
+  "method": "Raw STL exact-equality welding only; finite-volume actual-mesh air/solid intersections, true even-odd local slices retaining every component, -0.4mm erosion in planes INCLUDING normal thickness, outside-origin actual-mesh normal rays. No repairs, contour rounding or thin exemptions.",
+  "tests": [
+    {
+      "feature": "A_highest_t0.15_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          14.277412705958515,
+          5.719867404791659,
+          32.605999999999995
+        ],
+        "normal": [
+          0.9685831611286312,
+          0.24868988716485477,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.24868988716485477,
+          -0.9685831611286312,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.9685831611286312,
+            0.24868988716485477,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.24868988716485477,
+            -0.9685831611286312,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888297327585796,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240474279822097,
+          "component_areas_mm2": [
+            3.240474279822097
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6794158965349197,
+              -1.2000000029802322,
+              0.6707817167043686,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398818513748093,
+          "component_areas_mm2": [
+            3.2398818513748093
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758162900805473,
+              -1.2000000029802322,
+              0.6741344779729843,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240277208984587,
+          "component_areas_mm2": [
+            3.240277208984587
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6793796122074127,
+              -1.2000000029802322,
+              0.6707358881831169,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.15_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          14.277412705958515,
+          5.719867404791659,
+          77.24000000000001
+        ],
+        "normal": [
+          0.9685831611286312,
+          0.24868988716485477,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.24868988716485477,
+          -0.9685831611286312,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.9685831611286312,
+            0.24868988716485477,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.24868988716485477,
+            -0.9685831611286312,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888297327585796,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240474279822097,
+          "component_areas_mm2": [
+            3.240474279822097
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6794158965349197,
+              -1.2000000029802322,
+              0.6707817167043686,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398818513748093,
+          "component_areas_mm2": [
+            3.2398818513748093
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758162900805473,
+              -1.2000000029802322,
+              0.6741344779729843,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240277208984587,
+          "component_areas_mm2": [
+            3.240277208984587
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6793796122074127,
+              -1.2000000029802322,
+              0.6707358881831169,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.15_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          14.277412705958515,
+          5.719867404791659,
+          113.57
+        ],
+        "normal": [
+          0.9685831611286312,
+          0.24868988716485477,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.24868988716485477,
+          -0.9685831611286312,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.9685831611286312,
+            0.24868988716485477,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.24868988716485477,
+            -0.9685831611286312,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888297327585796,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240474279822097,
+          "component_areas_mm2": [
+            3.240474279822097
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6794158965349197,
+              -1.2000000029802322,
+              0.6707817167043686,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398818513748093,
+          "component_areas_mm2": [
+            3.2398818513748093
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758162900805473,
+              -1.2000000029802322,
+              0.6741344779729843,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240277208984587,
+          "component_areas_mm2": [
+            3.240277208984587
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6793796122074127,
+              -1.2000000029802322,
+              0.6707358881831169,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.5_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          7.390003946253739,
+          17.092330985980066,
+          31.43
+        ],
+        "normal": [
+          0.6691306063588582,
+          0.7431448254773942,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.7431448254773942,
+          -0.6691306063588582,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.6691306063588582,
+            0.7431448254773942,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.7431448254773942,
+            -0.6691306063588582,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888392641088169,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240434815586693,
+          "component_areas_mm2": [
+            3.240434815586693
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678671307861805,
+              -1.2000000029802322,
+              0.671509861946106,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240001746118073,
+          "component_areas_mm2": [
+            3.240001746118073
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6750004217028618,
+              -1.2000000029802322,
+              0.6750003024935722,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240433957279806,
+          "component_areas_mm2": [
+            3.240433957279806
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6786721721291542,
+              -1.2000000029802322,
+              0.6715086400508881,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.5_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          7.390003946253739,
+          17.092330985980066,
+          71.85
+        ],
+        "normal": [
+          0.6691306063588582,
+          0.7431448254773942,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.7431448254773942,
+          -0.6691306063588582,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.6691306063588582,
+            0.7431448254773942,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.7431448254773942,
+            -0.6691306063588582,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888392641088169,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240434815586693,
+          "component_areas_mm2": [
+            3.240434815586693
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678671307861805,
+              -1.2000000029802322,
+              0.671509861946106,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240001746118073,
+          "component_areas_mm2": [
+            3.240001746118073
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6750004217028618,
+              -1.2000000029802322,
+              0.6750003024935722,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240433957279806,
+          "component_areas_mm2": [
+            3.240433957279806
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6786721721291542,
+              -1.2000000029802322,
+              0.6715086400508881,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.5_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          7.390003946253739,
+          17.092330985980066,
+          104.75
+        ],
+        "normal": [
+          0.6691306063588582,
+          0.7431448254773942,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.7431448254773942,
+          -0.6691306063588582,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.6691306063588582,
+            0.7431448254773942,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.7431448254773942,
+            -0.6691306063588582,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888392641088169,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240434815586693,
+          "component_areas_mm2": [
+            3.240434815586693
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678671307861805,
+              -1.2000000029802322,
+              0.671509861946106,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240001746118073,
+          "component_areas_mm2": [
+            3.240001746118073
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6750004217028618,
+              -1.2000000029802322,
+              0.6750003024935722,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240433957279806,
+          "component_areas_mm2": [
+            3.240433957279806
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6786721721291542,
+              -1.2000000029802322,
+              0.6715086400508881,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.85_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -4.640090343064532,
+          22.753263658148732,
+          30.253999999999998
+        ],
+        "normal": [
+          0.14608302856241165,
+          0.9892723329629883,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.9892723329629883,
+          -0.14608302856241165,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.14608302856241165,
+            0.9892723329629883,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.9892723329629883,
+            -0.14608302856241165,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882979900421337,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240277065933439,
+          "component_areas_mm2": [
+            3.240277065933439
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6793797165155411,
+              -1.2000000029802322,
+              0.6707357242703438,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398830851909595,
+          "component_areas_mm2": [
+            3.2398830851909595
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758160218596458,
+              -1.2000000029802322,
+              0.674135260283947,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240474923552262,
+          "component_areas_mm2": [
+            3.240474923552262
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6794159635901451,
+              -1.2000000029802322,
+              0.6707819178700447,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.85_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -4.640090343064532,
+          22.753263658148732,
+          66.46000000000001
+        ],
+        "normal": [
+          0.14608302856241165,
+          0.9892723329629883,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.9892723329629883,
+          -0.14608302856241165,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.14608302856241165,
+            0.9892723329629883,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.9892723329629883,
+            -0.14608302856241165,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882979900421337,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240277065933439,
+          "component_areas_mm2": [
+            3.240277065933439
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6793797165155411,
+              -1.2000000029802322,
+              0.6707357242703438,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398830851909595,
+          "component_areas_mm2": [
+            3.2398830851909595
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758160218596458,
+              -1.2000000029802322,
+              0.674135260283947,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240474923552262,
+          "component_areas_mm2": [
+            3.240474923552262
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6794159635901451,
+              -1.2000000029802322,
+              0.6707819178700447,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "A_highest_t0.85_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -4.640090343064532,
+          22.753263658148732,
+          95.93
+        ],
+        "normal": [
+          0.14608302856241165,
+          0.9892723329629883,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.9892723329629883,
+          -0.14608302856241165,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.14608302856241165,
+            0.9892723329629883,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.9892723329629883,
+            -0.14608302856241165,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882979900421337,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240277065933439,
+          "component_areas_mm2": [
+            3.240277065933439
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6793797165155411,
+              -1.2000000029802322,
+              0.6707357242703438,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398830851909595,
+          "component_areas_mm2": [
+            3.2398830851909595
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758160218596458,
+              -1.2000000029802322,
+              0.674135260283947,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240474923552262,
+          "component_areas_mm2": [
+            3.240474923552262
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6794159635901451,
+              -1.2000000029802322,
+              0.6707819178700447,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.15_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -8.353130903062713,
+          13.855669219630734,
+          27.584
+        ],
+        "normal": [
+          -0.40354529635239,
+          0.9149596678498249,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.9149596678498249,
+          0.40354529635239,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.40354529635239,
+            0.9149596678498249,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.9149596678498249,
+            0.40354529635239,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882571874338745,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2404349049936605,
+          "component_areas_mm2": [
+            3.2404349049936605
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791739389300346,
+              -1.2000000029802322,
+              0.6710072681307793,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398905417320396,
+          "component_areas_mm2": [
+            3.2398905417320396
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757962256669998,
+              -1.2000000029802322,
+              0.6741581633687019,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240254141987001,
+          "component_areas_mm2": [
+            3.240254141987001
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791629940271378,
+              -1.2000000029802322,
+              0.6709428951144218,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.15_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -8.353130903062713,
+          13.855669219630734,
+          54.222500000000004
+        ],
+        "normal": [
+          -0.40354529635239,
+          0.9149596678498249,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.9149596678498249,
+          0.40354529635239,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.40354529635239,
+            0.9149596678498249,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.9149596678498249,
+            0.40354529635239,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882571874338745,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2404349049936605,
+          "component_areas_mm2": [
+            3.2404349049936605
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791739389300346,
+              -1.2000000029802322,
+              0.6710072681307793,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398905417320396,
+          "component_areas_mm2": [
+            3.2398905417320396
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757962256669998,
+              -1.2000000029802322,
+              0.6741581633687019,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240254141987001,
+          "component_areas_mm2": [
+            3.240254141987001
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791629940271378,
+              -1.2000000029802322,
+              0.6709428951144218,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.15_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -8.353130903062713,
+          13.855669219630734,
+          75.905
+        ],
+        "normal": [
+          -0.40354529635239,
+          0.9149596678498249,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.9149596678498249,
+          0.40354529635239,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.40354529635239,
+            0.9149596678498249,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.9149596678498249,
+            0.40354529635239,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882571874338745,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2404349049936605,
+          "component_areas_mm2": [
+            3.2404349049936605
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791739389300346,
+              -1.2000000029802322,
+              0.6710072681307793,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398905417320396,
+          "component_areas_mm2": [
+            3.2398905417320396
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757962256669998,
+              -1.2000000029802322,
+              0.6741581633687019,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240254141987001,
+          "component_areas_mm2": [
+            3.240254141987001
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791629940271378,
+              -1.2000000029802322,
+              0.6709428951144218,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.5_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -18.735142442407412,
+          5.174960168781232,
+          26.45
+        ],
+        "normal": [
+          -0.8290375725550417,
+          0.5591929034707469,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.5591929034707469,
+          0.8290375725550417,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.8290375725550417,
+            0.5591929034707469,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.5591929034707469,
+            0.8290375725550417,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8883488722252992,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240131421983568,
+          "component_areas_mm2": [
+            3.240131421983568
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6783993616700172,
+              -1.2000000029802322,
+              0.6716553941369057,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239998151957984,
+          "component_areas_mm2": [
+            3.239998151957984
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6749994158744812,
+              -1.2000000029802322,
+              0.6749998107552528,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240129222572171,
+          "component_areas_mm2": [
+            3.240129222572171
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6783985197544098,
+              -1.2000000029802322,
+              0.6716553196310997,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.5_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -18.735142442407412,
+          5.174960168781232,
+          49.025000000000006
+        ],
+        "normal": [
+          -0.8290375725550417,
+          0.5591929034707469,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.5591929034707469,
+          0.8290375725550417,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.8290375725550417,
+            0.5591929034707469,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.5591929034707469,
+            0.8290375725550417,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8883488722252992,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2401314219835684,
+          "component_areas_mm2": [
+            3.2401314219835684
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6783993616700172,
+              -1.2000000029802322,
+              0.6716553941369057,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239998151957984,
+          "component_areas_mm2": [
+            3.239998151957984
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6749994158744812,
+              -1.2000000029802322,
+              0.6749998107552528,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240129222572171,
+          "component_areas_mm2": [
+            3.240129222572171
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6783985197544098,
+              -1.2000000029802322,
+              0.6716553196310997,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.5_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -18.735142442407412,
+          5.174960168781232,
+          67.4
+        ],
+        "normal": [
+          -0.8290375725550417,
+          0.5591929034707469,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.5591929034707469,
+          0.8290375725550417,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.8290375725550417,
+            0.5591929034707469,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.5591929034707469,
+            0.8290375725550417,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8883488722252992,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2401314219835684,
+          "component_areas_mm2": [
+            3.2401314219835684
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6783993616700172,
+              -1.2000000029802322,
+              0.6716553941369057,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239998151957984,
+          "component_areas_mm2": [
+            3.239998151957984
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6749994158744812,
+              -1.2000000029802322,
+              0.6749998107552528,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240129222572171,
+          "component_areas_mm2": [
+            3.240129222572171
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6783985197544098,
+              -1.2000000029802322,
+              0.6716553196310997,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.85_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -22.894585744988245,
+          -7.7029241543986595,
+          25.316
+        ],
+        "normal": [
+          -0.9995065603657316,
+          0.03141075907812823,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.03141075907812823,
+          0.9995065603657316,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.9995065603657316,
+            0.03141075907812823,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.03141075907812823,
+            0.9995065603657316,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888257215553545,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240252496898801,
+          "component_areas_mm2": [
+            3.240252496898801
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791623905301094,
+              -1.2000000029802322,
+              0.6709428131580353,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239890309273924,
+          "component_areas_mm2": [
+            3.239890309273924
+          ],
+          "component_bounds_mm": [
+            [
+              -0.675795778632164,
+              -1.2000000029802322,
+              0.67415851354599,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240436889828336,
+          "component_areas_mm2": [
+            3.240436889828336
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791738420724869,
+              -1.2000000029802322,
+              0.6710081920027733,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.85_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -22.894585744988245,
+          -7.7029241543986595,
+          43.8275
+        ],
+        "normal": [
+          -0.9995065603657316,
+          0.03141075907812823,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.03141075907812823,
+          0.9995065603657316,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.9995065603657316,
+            0.03141075907812823,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.03141075907812823,
+            0.9995065603657316,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888257215553545,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240252496898801,
+          "component_areas_mm2": [
+            3.240252496898801
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791623905301094,
+              -1.2000000029802322,
+              0.6709428131580353,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239890309273924,
+          "component_areas_mm2": [
+            3.239890309273924
+          ],
+          "component_bounds_mm": [
+            [
+              -0.675795778632164,
+              -1.2000000029802322,
+              0.67415851354599,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240436889828336,
+          "component_areas_mm2": [
+            3.240436889828336
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791738420724869,
+              -1.2000000029802322,
+              0.6710081920027733,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "B_second_t0.85_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -22.894585744988245,
+          -7.7029241543986595,
+          58.894999999999996
+        ],
+        "normal": [
+          -0.9995065603657316,
+          0.03141075907812823,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.03141075907812823,
+          0.9995065603657316,
+          -0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.9995065603657316,
+            0.03141075907812823,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.03141075907812823,
+            0.9995065603657316,
+            -0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888257215553545,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240252496898801,
+          "component_areas_mm2": [
+            3.240252496898801
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791623905301094,
+              -1.2000000029802322,
+              0.6709428131580353,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239890309273924,
+          "component_areas_mm2": [
+            3.239890309273924
+          ],
+          "component_bounds_mm": [
+            [
+              -0.675795778632164,
+              -1.2000000029802322,
+              0.67415851354599,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240436889828336,
+          "component_areas_mm2": [
+            3.240436889828336
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6791738420724869,
+              -1.2000000029802322,
+              0.6710081920027733,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.15_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -15.010222452964257,
+          -10.121257372801429,
+          24.787999999999997
+        ],
+        "normal": [
+          -0.8813034520649923,
+          -0.472550764869054,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.472550764869054,
+          0.8813034520649923,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.8813034520649923,
+            -0.472550764869054,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            -0.472550764869054,
+            0.8813034520649923,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888226964624174,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2403985521207215,
+          "component_areas_mm2": [
+            3.2403985521207215
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789529547095299,
+              -1.2000000029802322,
+              0.6712131053209305,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2399011632797645,
+          "component_areas_mm2": [
+            3.2399011632797645
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757715418934822,
+              -1.2000000029802322,
+              0.6741872727870941,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2402337035542574,
+          "component_areas_mm2": [
+            3.2402337035542574
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789593547582626,
+              -1.2000000029802322,
+              0.6711380183696747,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.15_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -15.010222452964257,
+          -10.121257372801429,
+          41.4075
+        ],
+        "normal": [
+          -0.8813034520649923,
+          -0.472550764869054,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.472550764869054,
+          0.8813034520649923,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.8813034520649923,
+            -0.472550764869054,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            -0.472550764869054,
+            0.8813034520649923,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888226964624174,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2403985521207215,
+          "component_areas_mm2": [
+            3.2403985521207215
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789529547095299,
+              -1.2000000029802322,
+              0.6712131053209305,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2399011632797645,
+          "component_areas_mm2": [
+            3.2399011632797645
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757715418934822,
+              -1.2000000029802322,
+              0.6741872727870941,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2402337035542574,
+          "component_areas_mm2": [
+            3.2402337035542574
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789593547582626,
+              -1.2000000029802322,
+              0.6711380183696747,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.15_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -15.010222452964257,
+          -10.121257372801429,
+          54.934999999999995
+        ],
+        "normal": [
+          -0.8813034520649923,
+          -0.472550764869054,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.472550764869054,
+          0.8813034520649923,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.8813034520649923,
+            -0.472550764869054,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            -0.472550764869054,
+            0.8813034520649923,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888226964624174,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2403985521207215,
+          "component_areas_mm2": [
+            3.2403985521207215
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789529547095299,
+              -1.2000000029802322,
+              0.6712131053209305,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2399011632797645,
+          "component_areas_mm2": [
+            3.2399011632797645
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757715418934822,
+              -1.2000000029802322,
+              0.6741872727870941,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2402337035542574,
+          "component_areas_mm2": [
+            3.2402337035542574
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789593547582626,
+              -1.2000000029802322,
+              0.6711380183696747,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.5_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -5.560575722366855,
+          -20.04436399729433,
+          23.57
+        ],
+        "normal": [
+          -0.5150380749100543,
+          -0.8571673007021123,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.8571673007021123,
+          0.5150380749100543,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.5150380749100543,
+            -0.8571673007021123,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            -0.8571673007021123,
+            0.5150380749100543,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8883093238782447,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239997704923147,
+          "component_areas_mm2": [
+            3.239997704923147
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6781994849443436,
+              -1.2000000029802322,
+              0.6717995554208755,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239998545348641,
+          "component_areas_mm2": [
+            3.239998545348641
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6749997138977051,
+              -1.2000000029802322,
+              0.6749996766448021,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240000512301923,
+          "component_areas_mm2": [
+            3.240000512301923
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6781994476914406,
+              -1.2000000029802322,
+              0.6718007624149323,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.5_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -5.560575722366855,
+          -20.04436399729433,
+          35.825
+        ],
+        "normal": [
+          -0.5150380749100543,
+          -0.8571673007021123,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.8571673007021123,
+          0.5150380749100543,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.5150380749100543,
+            -0.8571673007021123,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            -0.8571673007021123,
+            0.5150380749100543,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8883093238782447,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239997704923147,
+          "component_areas_mm2": [
+            3.239997704923147
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6781994849443436,
+              -1.2000000029802322,
+              0.6717995554208755,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239998545348641,
+          "component_areas_mm2": [
+            3.239998545348641
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6749997138977051,
+              -1.2000000029802322,
+              0.6749996766448021,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240000512301923,
+          "component_areas_mm2": [
+            3.240000512301923
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6781994476914406,
+              -1.2000000029802322,
+              0.6718007624149323,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.5_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          -5.560575722366855,
+          -20.04436399729433,
+          45.8
+        ],
+        "normal": [
+          -0.5150380749100543,
+          -0.8571673007021123,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.8571673007021123,
+          0.5150380749100543,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.5150380749100543,
+            -0.8571673007021123,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            -0.8571673007021123,
+            0.5150380749100543,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8883093238782447,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239997704923147,
+          "component_areas_mm2": [
+            3.239997704923147
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6781994849443436,
+              -1.2000000029802322,
+              0.6717995554208755,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239998545348641,
+          "component_areas_mm2": [
+            3.239998545348641
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6749997138977051,
+              -1.2000000029802322,
+              0.6749996766448021,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240000512301923,
+          "component_areas_mm2": [
+            3.240000512301923
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6781994476914406,
+              -1.2000000029802322,
+              0.6718007624149323,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.85_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          7.637347803799775,
+          -23.729290456750828,
+          22.351999999999997
+        ],
+        "normal": [
+          -0.0034906514152237018,
+          -0.9999939076577904,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.9999939076577904,
+          0.0034906514152237018,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.0034906514152237018,
+            -0.9999939076577904,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.9999939076577904,
+            0.0034906514152237018,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888223543858917,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240229876936053,
+          "component_areas_mm2": [
+            3.240229876936053
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678958386182785,
+              -1.2000000029802322,
+              0.6711373925209045,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398979982731193,
+          "component_areas_mm2": [
+            3.2398979982731193
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757709458470345,
+              -1.2000000029802322,
+              0.6741865500807762,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2403970143208825,
+          "component_areas_mm2": [
+            3.2403970143208825
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789522171020508,
+              -1.2000000029802322,
+              0.6712132021784782,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.85_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          7.637347803799775,
+          -23.729290456750828,
+          30.2425
+        ],
+        "normal": [
+          -0.0034906514152237018,
+          -0.9999939076577904,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.9999939076577904,
+          0.0034906514152237018,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.0034906514152237018,
+            -0.9999939076577904,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.9999939076577904,
+            0.0034906514152237018,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888223543858917,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240229876936053,
+          "component_areas_mm2": [
+            3.240229876936053
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678958386182785,
+              -1.2000000029802322,
+              0.6711373925209045,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398979982731193,
+          "component_areas_mm2": [
+            3.2398979982731193
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757709458470345,
+              -1.2000000029802322,
+              0.6741865500807762,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240397014320883,
+          "component_areas_mm2": [
+            3.240397014320883
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789522171020508,
+              -1.2000000029802322,
+              0.6712132021784782,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "C_low_t0.85_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          7.637347803799775,
+          -23.729290456750828,
+          36.665
+        ],
+        "normal": [
+          -0.0034906514152237018,
+          -0.9999939076577904,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.9999939076577904,
+          0.0034906514152237018,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            -0.0034906514152237018,
+            -0.9999939076577904,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.9999939076577904,
+            0.0034906514152237018,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888223543858917,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240229876936053,
+          "component_areas_mm2": [
+            3.240229876936053
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678958386182785,
+              -1.2000000029802322,
+              0.6711373925209045,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398979982731193,
+          "component_areas_mm2": [
+            3.2398979982731193
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6757709458470345,
+              -1.2000000029802322,
+              0.6741865500807762,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240397014320883,
+          "component_areas_mm2": [
+            3.240397014320883
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789522171020508,
+              -1.2000000029802322,
+              0.6712132021784782,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.15_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          10.812734166189253,
+          -16.000655431560524,
+          23.497999999999998
+        ],
+        "normal": [
+          0.47715876025960796,
+          -0.8788171126619656,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.8788171126619656,
+          -0.47715876025960796,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.47715876025960796,
+            -0.8788171126619656,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.8788171126619656,
+            -0.47715876025960796,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888195704838183,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2404161652932966,
+          "component_areas_mm2": [
+            3.2404161652932966
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6788166984915733,
+              -1.2000000029802322,
+              0.671356700360775,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398944756386046,
+          "component_areas_mm2": [
+            3.2398944756386046
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758456006646156,
+              -1.2000000029802322,
+              0.6741104274988174,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240243073404439,
+          "component_areas_mm2": [
+            3.240243073404439
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789172068238258,
+              -1.2000000029802322,
+              0.6711840704083443,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.15_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          10.812734166189253,
+          -16.000655431560524,
+          35.495
+        ],
+        "normal": [
+          0.47715876025960796,
+          -0.8788171126619656,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.8788171126619656,
+          -0.47715876025960796,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.47715876025960796,
+            -0.8788171126619656,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.8788171126619656,
+            -0.47715876025960796,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888195704838183,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240416165293296,
+          "component_areas_mm2": [
+            3.240416165293296
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6788166984915733,
+              -1.2000000029802322,
+              0.671356700360775,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398944756386046,
+          "component_areas_mm2": [
+            3.2398944756386046
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758456006646156,
+              -1.2000000029802322,
+              0.6741104274988174,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240243073404439,
+          "component_areas_mm2": [
+            3.240243073404439
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789172068238258,
+              -1.2000000029802322,
+              0.6711840704083443,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.15_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          10.812734166189253,
+          -16.000655431560524,
+          45.26
+        ],
+        "normal": [
+          0.47715876025960796,
+          -0.8788171126619656,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.8788171126619656,
+          -0.47715876025960796,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.47715876025960796,
+            -0.8788171126619656,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.8788171126619656,
+            -0.47715876025960796,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888195704838183,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240416165293296,
+          "component_areas_mm2": [
+            3.240416165293296
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6788166984915733,
+              -1.2000000029802322,
+              0.671356700360775,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398944756386046,
+          "component_areas_mm2": [
+            3.2398944756386046
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758456006646156,
+              -1.2000000029802322,
+              0.6741104274988174,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240243073404439,
+          "component_areas_mm2": [
+            3.240243073404439
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6789172068238258,
+              -1.2000000029802322,
+              0.6711840704083443,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.5_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          21.312133541359675,
+          -5.772593389687466,
+          22.49
+        ],
+        "normal": [
+          0.8660254037844384,
+          -0.5000000000000006,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.5000000000000006,
+          -0.8660254037844384,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.8660254037844384,
+            -0.5000000000000006,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.5000000000000006,
+            -0.8660254037844384,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882743978501058,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2399988493323297,
+          "component_areas_mm2": [
+            3.2399988493323297
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6782720908522606,
+              -1.2000000029802322,
+              0.6717274263501167,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239999904334545,
+          "component_areas_mm2": [
+            3.239999904334545
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6750005409121513,
+              -1.2000000029802322,
+              0.6749994158744812,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240000619590284,
+          "component_areas_mm2": [
+            3.240000619590284
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6782724559307098,
+              -1.2000000029802322,
+              0.6717277988791466,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.5_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          21.312133541359675,
+          -5.772593389687466,
+          30.875
+        ],
+        "normal": [
+          0.8660254037844384,
+          -0.5000000000000006,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.5000000000000006,
+          -0.8660254037844384,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.8660254037844384,
+            -0.5000000000000006,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.5000000000000006,
+            -0.8660254037844384,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882743978501058,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2399988493323297,
+          "component_areas_mm2": [
+            3.2399988493323297
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6782720908522606,
+              -1.2000000029802322,
+              0.6717274263501167,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239999904334545,
+          "component_areas_mm2": [
+            3.239999904334545
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6750005409121513,
+              -1.2000000029802322,
+              0.6749994158744812,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240000619590284,
+          "component_areas_mm2": [
+            3.240000619590284
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6782724559307098,
+              -1.2000000029802322,
+              0.6717277988791466,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.5_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          21.312133541359675,
+          -5.772593389687466,
+          37.7
+        ],
+        "normal": [
+          0.8660254037844384,
+          -0.5000000000000006,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          -0.5000000000000006,
+          -0.8660254037844384,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.8660254037844384,
+            -0.5000000000000006,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.5000000000000006,
+            -0.8660254037844384,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.8882743978501058,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2399988493323297,
+          "component_areas_mm2": [
+            3.2399988493323297
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6782720908522606,
+              -1.2000000029802322,
+              0.6717274263501167,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.239999904334545,
+          "component_areas_mm2": [
+            3.239999904334545
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6750005409121513,
+              -1.2000000029802322,
+              0.6749994158744812,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240000619590284,
+          "component_areas_mm2": [
+            3.240000619590284
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6782724559307098,
+              -1.2000000029802322,
+              0.6717277988791466,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.85_h0.12_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          24.920195413519885,
+          8.434184214625107,
+          21.482
+        ],
+        "normal": [
+          0.9996573249755574,
+          0.02617694830787261,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.02617694830787261,
+          -0.9996573249755574,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.9996573249755574,
+            0.02617694830787261,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.02617694830787261,
+            -0.9996573249755574,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888196366931228,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2402426800137825,
+          "component_areas_mm2": [
+            3.2402426800137825
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678917296230793,
+              -1.2000000029802322,
+              0.671183817088604,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398962637779523,
+          "component_areas_mm2": [
+            3.2398962637779523
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758461520075798,
+              -1.2000000029802322,
+              0.674110621213913,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240416451395592,
+          "component_areas_mm2": [
+            3.240416451395592
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6788170710206032,
+              -1.2000000029802322,
+              0.6713564470410347,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.85_h0.55_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          24.920195413519885,
+          8.434184214625107,
+          26.255
+        ],
+        "normal": [
+          0.9996573249755574,
+          0.02617694830787261,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.02617694830787261,
+          -0.9996573249755574,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.9996573249755574,
+            0.02617694830787261,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.02617694830787261,
+            -0.9996573249755574,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.888196366931228,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2402426800137825,
+          "component_areas_mm2": [
+            3.2402426800137825
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678917296230793,
+              -1.2000000029802322,
+              0.671183817088604,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2398962637779523,
+          "component_areas_mm2": [
+            3.2398962637779523
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758461520075798,
+              -1.2000000029802322,
+              0.674110621213913,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.240416451395592,
+          "component_areas_mm2": [
+            3.240416451395592
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6788170710206032,
+              -1.2000000029802322,
+              0.6713564470410347,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.85_h0.9_normal_transverse_slice",
+      "description": {
+        "world_center_mm": [
+          24.920195413519885,
+          8.434184214625107,
+          30.14
+        ],
+        "normal": [
+          0.9996573249755574,
+          0.02617694830787261,
+          0.0
+        ],
+        "slice_axis_tangent": [
+          0.02617694830787261,
+          -0.9996573249755574,
+          0.0
+        ],
+        "world_to_local_rotation_rows": [
+          [
+            0.9996573249755574,
+            0.02617694830787261,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0000000000000002
+          ],
+          [
+            0.02617694830787261,
+            -0.9996573249755574,
+            0.0
+          ]
+        ],
+        "local_origin_mm": [
+          -1.2,
+          -1.2,
+          -0.6
+        ],
+        "local_size_mm": [
+          2.4,
+          2.4,
+          1.2
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 3.6669251749032283,
+      "air_volume_is_zero": null,
+      "note": "All positive slice components retained. Plane includes normal thickness; finite crop is diagnostic, not a minimum-thickness certificate.",
+      "rows": [
+        {
+          "plane_mm": -0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 2.8109072352582714,
+          "component_areas_mm2": [
+            2.8109072352582714
+          ],
+          "component_bounds_mm": [
+            [
+              -0.678917296230793,
+              -1.2000000029802322,
+              0.671183817088604,
+              0.8891515731811523
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.1163855032109637,
+          "component_areas_mm2": [
+            3.1163855032109637
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6758461520075798,
+              -1.2000000029802322,
+              0.674110621213913,
+              1.110000103712082
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 3.2404164513955918,
+          "component_areas_mm2": [
+            3.2404164513955918
+          ],
+          "component_bounds_mm": [
+            [
+              -0.6788170710206032,
+              -1.2000000029802322,
+              0.6713564470410347,
+              1.2000000029802322
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "central_space_no_core_or_cap",
+      "description": {
+        "radius_mm": 6.0,
+        "z_range_mm": [
+          20.349999999999998,
+          130.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 20.45,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 50.15,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 85.15,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 125.15,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "adjacent_sheet_gap_A_highest_B_second",
+      "description": {
+        "center_xy_mm": [
+          -1.700442400869664,
+          18.677755083036903
+        ],
+        "radius_mm": 0.45,
+        "z_range_mm": [
+          20.45,
+          58.849999999999994
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Finite column between predeclared centreline nearest points, wholly through both adjacent sheets lower height range.",
+      "rows": [
+        {
+          "plane_mm": 20.55,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 39.65,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 58.74999999999999,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "adjacent_sheet_gap_B_second_C_low",
+      "description": {
+        "center_xy_mm": [
+          -19.79901148869797,
+          -4.077864111457254
+        ],
+        "radius_mm": 0.45,
+        "z_range_mm": [
+          20.45,
+          33.85
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Finite column between predeclared centreline nearest points, wholly through both adjacent sheets lower height range.",
+      "rows": [
+        {
+          "plane_mm": 20.55,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 27.15,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 33.75,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "adjacent_sheet_gap_C_low_D_lowest",
+      "description": {
+        "center_xy_mm": [
+          4.573646678064378,
+          -20.921564063870854
+        ],
+        "radius_mm": 0.45,
+        "z_range_mm": [
+          20.45,
+          27.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Finite column between predeclared centreline nearest points, wholly through both adjacent sheets lower height range.",
+      "rows": [
+        {
+          "plane_mm": 20.55,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 23.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 27.25,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "adjacent_sheet_gap_D_lowest_A_highest",
+      "description": {
+        "center_xy_mm": [
+          18.776402347513432,
+          -1.6739640328385965
+        ],
+        "radius_mm": 0.45,
+        "z_range_mm": [
+          20.45,
+          27.35
+        ]
+      },
+      "expected": "air",
+      "crop_intersection_volume_mm3": 0.0,
+      "air_volume_is_zero": true,
+      "note": "Finite column between predeclared centreline nearest points, wholly through both adjacent sheets lower height range.",
+      "rows": [
+        {
+          "plane_mm": 20.55,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 23.9,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 27.25,
+          "components": 0,
+          "valid": true,
+          "area_mm2": 0.0,
+          "component_areas_mm2": [],
+          "component_bounds_mm": [],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "narrow_step_1_solid",
+      "description": {
+        "origin_mm": [
+          73.4,
+          -0.6,
+          1.9000000000000001
+        ],
+        "size_mm": [
+          1.2,
+          1.2,
+          1.4
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 2.016,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 2.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              73.39999999850988,
+              -0.6000000014901161,
+              74.60000000149012,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 2.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525576,
+          "component_areas_mm2": [
+            1.4400000071525576
+          ],
+          "component_bounds_mm": [
+            [
+              73.39999999850988,
+              -0.6000000014901161,
+              74.60000000149012,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 3.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              73.39999999850988,
+              -0.6000000014901161,
+              74.60000000149012,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "narrow_step_2_solid",
+      "description": {
+        "origin_mm": [
+          67.4,
+          -0.6,
+          3.7
+        ],
+        "size_mm": [
+          1.2,
+          1.2,
+          1.4
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 2.016000000000006,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 3.8000000000000003,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              67.39999999850988,
+              -0.6000000014901161,
+              68.60000000149012,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 4.3,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525576,
+          "component_areas_mm2": [
+            1.4400000071525576
+          ],
+          "component_bounds_mm": [
+            [
+              67.39999999850988,
+              -0.6000000014901161,
+              68.60000000149012,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 5.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              67.39999999850988,
+              -0.6000000014901161,
+              68.60000000149012,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "narrow_step_3_solid",
+      "description": {
+        "origin_mm": [
+          61.4,
+          -0.6,
+          5.5
+        ],
+        "size_mm": [
+          1.2,
+          1.2,
+          1.4
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 2.0160000000000022,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 5.6000000000000005,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              61.399999998509884,
+              -0.6000000014901161,
+              62.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 6.1000000000000005,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525576,
+          "component_areas_mm2": [
+            1.4400000071525576
+          ],
+          "component_bounds_mm": [
+            [
+              61.399999998509884,
+              -0.6000000014901161,
+              62.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 6.800000000000001,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              61.399999998509884,
+              -0.6000000014901161,
+              62.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "narrow_step_4_solid",
+      "description": {
+        "origin_mm": [
+          55.4,
+          -0.6,
+          7.3
+        ],
+        "size_mm": [
+          1.2,
+          1.2,
+          1.4
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 2.0160000000000036,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 7.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              55.399999998509884,
+              -0.6000000014901161,
+              56.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 7.9,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525576,
+          "component_areas_mm2": [
+            1.4400000071525576
+          ],
+          "component_bounds_mm": [
+            [
+              55.399999998509884,
+              -0.6000000014901161,
+              56.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 8.6,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              55.399999998509884,
+              -0.6000000014901161,
+              56.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "narrow_step_5_solid",
+      "description": {
+        "origin_mm": [
+          49.4,
+          -0.6,
+          9.1
+        ],
+        "size_mm": [
+          1.2,
+          1.2,
+          1.4
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 2.0160000000000067,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 9.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              49.399999998509884,
+              -0.6000000014901161,
+              50.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 9.7,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525576,
+          "component_areas_mm2": [
+            1.4400000071525576
+          ],
+          "component_bounds_mm": [
+            [
+              49.399999998509884,
+              -0.6000000014901161,
+              50.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 10.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 1.4400000071525574,
+          "component_areas_mm2": [
+            1.4400000071525574
+          ],
+          "component_bounds_mm": [
+            [
+              49.399999998509884,
+              -0.6000000014901161,
+              50.600000001490116,
+              0.6000000014901161
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "broad_outer_platform_solid",
+      "description": {
+        "origin_mm": [
+          82.0,
+          -1.0,
+          0.1
+        ],
+        "size_mm": [
+          2.0,
+          2.0,
+          1.5
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 5.9999999999999964,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 0.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              82.0,
+              -1.0,
+              84.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 0.8,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              82.0,
+              -1.0,
+              84.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 1.5,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              82.0,
+              -1.0,
+              84.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "sloped_high_drum_solid",
+      "description": {
+        "origin_mm": [
+          35.0,
+          -1.0,
+          11.0
+        ],
+        "size_mm": [
+          2.0,
+          2.0,
+          8.0
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 32.000000000000014,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 11.2,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              35.0,
+              -1.0,
+              37.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 15.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              35.0,
+              -1.0,
+              37.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 18.8,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              35.0,
+              -1.0,
+              37.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    },
+    {
+      "feature": "thin_top_lip_solid",
+      "description": {
+        "origin_mm": [
+          34.0,
+          -1.0,
+          19.35
+        ],
+        "size_mm": [
+          2.0,
+          2.0,
+          0.7
+        ]
+      },
+      "expected": "solid",
+      "crop_intersection_volume_mm3": 2.7999999999999963,
+      "air_volume_is_zero": null,
+      "note": "",
+      "rows": [
+        {
+          "plane_mm": 19.4,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              34.0,
+              -1.0,
+              36.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 19.7,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              34.0,
+              -1.0,
+              36.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        },
+        {
+          "plane_mm": 20.0,
+          "components": 1,
+          "valid": true,
+          "area_mm2": 4.0,
+          "component_areas_mm2": [
+            4.0
+          ],
+          "component_bounds_mm": [
+            [
+              34.0,
+              -1.0,
+              36.0,
+              1.0
+            ]
+          ],
+          "failed_0_8mm": 0,
+          "expected_occupancy_met": true
+        }
+      ]
+    }
+  ],
+  "solid_samples": 132,
+  "air_samples": 16,
+  "occupancy_mismatches": 0,
+  "air_volume_mismatches": 0,
+  "solid_failed_0_8mm_samples": 0,
+  "failed_0_8mm_components": 0,
+  "normal_thickness_ray_checks": [
+    {
+      "feature": "A_highest_t0.15_h0.12",
+      "center_mm": [
+        14.277412705958515,
+        5.719867404791659,
+        32.605999999999995
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499507699140167,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -303.3804306915975,
+        -75.84080430822614,
+        32.605999999999995
+      ],
+      "direction": [
+        0.9685831611286312,
+        0.24868988716485477,
+        0.0
+      ],
+      "center_ray_distance_mm": 327.9613523607086,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -38.65116976676836,
+          -37.15403330528255
+        ],
+        [
+          -0.6758162904666278,
+          0.6741344794473889
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.15_h0.55",
+      "center_mm": [
+        14.277412705958515,
+        5.719867404791659,
+        77.24000000000001
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.34995076991396,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -342.8771289856827,
+        -85.98183280875767,
+        77.24000000000001
+      ],
+      "direction": [
+        0.9685831611286312,
+        0.24868988716485477,
+        0.0
+      ],
+      "center_ray_distance_mm": 368.73916048207025,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6758162904666278,
+          0.6741344794473321
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.15_h0.9",
+      "center_mm": [
+        14.277412705958515,
+        5.719867404791659,
+        113.57
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499507699140736,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -377.424524865172,
+        -94.85209643495833,
+        113.57
+      ],
+      "direction": [
+        0.9685831611286312,
+        0.24868988716485477,
+        0.0
+      ],
+      "center_ray_distance_mm": 404.40713125211056,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6758162904666278,
+          0.6741344794474458
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.5_h0.12",
+      "center_mm": [
+        7.390003946253739,
+        17.092330985980066,
+        31.43
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3500007185819527,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -212.70393501791253,
+        -227.3467520656755,
+        31.43
+      ],
+      "direction": [
+        0.6691306063588582,
+        0.7431448254773942,
+        0.0
+      ],
+      "center_ray_distance_mm": 328.9252305492789,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -35.32582023722006,
+          -33.852428317476324
+        ],
+        [
+          -0.6750004184711997,
+          0.675000300110753
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.5_h0.55",
+      "center_mm": [
+        7.390003946253739,
+        17.092330985980066,
+        71.85
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3500007185819527,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -236.33029961152715,
+        -253.58648826326126,
+        71.85
+      ],
+      "direction": [
+        0.6691306063588582,
+        0.7431448254773942,
+        0.0
+      ],
+      "center_ray_distance_mm": 364.23427839298745,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6750004184711429,
+          0.6750003001108098
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.5_h0.9",
+      "center_mm": [
+        7.390003946253739,
+        17.092330985980066,
+        104.75
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3500007185819527,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -257.69553370414366,
+        -277.3149846287764,
+        104.75
+      ],
+      "direction": [
+        0.6691306063588582,
+        0.7431448254773942,
+        0.0
+      ],
+      "center_ray_distance_mm": 396.16411972677065,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6750004184711997,
+          0.675000300110753
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.85_h0.12",
+      "center_mm": [
+        -4.640090343064532,
+        22.753263658148732,
+        30.253999999999998
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499512787477101,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -53.09829981897859,
+        -305.40508855568,
+        30.253999999999998
+      ],
+      "direction": [
+        0.14608302856241165,
+        0.9892723329629883,
+        0.0
+      ],
+      "center_ray_distance_mm": 331.7169006748176,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -40.29065809034017,
+          -38.61648810045472
+        ],
+        [
+          -8.781611224380697,
+          -7.280879442849425
+        ],
+        [
+          -0.6758160207285755,
+          0.6741352580191347
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.85_h0.55",
+      "center_mm": [
+        -4.640090343064532,
+        22.753263658148732,
+        66.46000000000001
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499512787477101,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -57.33716495304404,
+        -334.1106270536092,
+        66.46000000000001
+      ],
+      "direction": [
+        0.14608302856241165,
+        0.9892723329629883,
+        0.0
+      ],
+      "center_ray_distance_mm": 360.73372197007484,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -8.781611224380526,
+          -7.280879442849368
+        ],
+        [
+          -0.6758160207285755,
+          0.6741352580191347
+        ]
+      ]
+    },
+    {
+      "feature": "A_highest_t0.85_h0.9",
+      "center_mm": [
+        -4.640090343064532,
+        22.753263658148732,
+        95.93
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499512787477101,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -61.40801475779291,
+        -361.6783679686005,
+        95.93
+      ],
+      "direction": [
+        0.14608302856241165,
+        0.9892723329629883,
+        0.0
+      ],
+      "center_ray_distance_mm": 388.600407407868,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6758160207286323,
+          0.6741352580190778
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.15_h0.12",
+      "center_mm": [
+        -8.353130903062713,
+        13.855669219630734,
+        27.584
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.349954389890911,
+      "below_0_8mm": false,
+      "origin_mm": [
+        122.61509779473661,
+        -283.0890557253926,
+        27.584
+      ],
+      "direction": [
+        -0.40354529635239,
+        0.9149596678498249,
+        0.0
+      ],
+      "center_ray_distance_mm": 324.54405956805715,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -41.80253066990406,
+          -40.3390977477539
+        ],
+        [
+          -35.622483260336764,
+          -34.262232081364914
+        ],
+        [
+          -0.6757962249324692,
+          0.6741581649584418
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.15_h0.55",
+      "center_mm": [
+        -8.353130903062713,
+        13.855669219630734,
+        54.222500000000004
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499543898910815,
+      "below_0_8mm": false,
+      "origin_mm": [
+        131.58601256654364,
+        -303.42884229734193,
+        54.222500000000004
+      ],
+      "direction": [
+        -0.40354529635239,
+        0.9149596678498249,
+        0.0
+      ],
+      "center_ray_distance_mm": 346.77431439420513,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6757962249325828,
+          0.6741581649584987
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.15_h0.9",
+      "center_mm": [
+        -8.353130903062713,
+        13.855669219630734,
+        75.905
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499543898909678,
+      "below_0_8mm": false,
+      "origin_mm": [
+        139.9370383000837,
+        -322.3631522755033,
+        75.905
+      ],
+      "direction": [
+        -0.40354529635239,
+        0.9149596678498249,
+        0.0
+      ],
+      "center_ray_distance_mm": 367.46846151727715,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6757962249324692,
+          0.6741581649584987
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.5_h0.12",
+      "center_mm": [
+        -18.735142442407412,
+        5.174960168781232,
+        26.45
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499992262553064,
+      "below_0_8mm": false,
+      "origin_mm": [
+        252.43269795717796,
+        -177.73005767450698,
+        26.45
+      ],
+      "direction": [
+        -0.8290375725550417,
+        0.5591929034707469,
+        0.0
+      ],
+      "center_ray_distance_mm": 327.0875161470223,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -37.58961210888134,
+          -36.099322925784634
+        ],
+        [
+          -0.6749994136262103,
+          0.6749998126290961
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.5_h0.55",
+      "center_mm": [
+        -18.735142442407412,
+        5.174960168781232,
+        49.025000000000006
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499992262553633,
+      "below_0_8mm": false,
+      "origin_mm": [
+        266.2312349390664,
+        -187.0372883887559,
+        49.025000000000006
+      ],
+      "direction": [
+        -0.8290375725550417,
+        0.5591929034707469,
+        0.0
+      ],
+      "center_ray_distance_mm": 343.73155911767105,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.674999413626324,
+          0.6749998126290393
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.5_h0.9",
+      "center_mm": [
+        -18.735142442407412,
+        5.174960168781232,
+        67.4
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499992262553064,
+      "below_0_8mm": false,
+      "origin_mm": [
+        280.10493143945735,
+        -196.39521483835657,
+        67.4
+      ],
+      "direction": [
+        -0.8290375725550417,
+        0.5591929034707469,
+        0.0
+      ],
+      "center_ray_distance_mm": 360.4662608485384,
+      "hit_count": 2,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -0.6749994136262103,
+          0.6749998126290961
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.85_h0.12",
+      "center_mm": [
+        -22.894585744988245,
+        -7.7029241543986595,
+        25.316
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.349954290192045,
+      "below_0_8mm": false,
+      "origin_mm": [
+        308.3279535658703,
+        -18.112011794336013,
+        25.316
+      ],
+      "direction": [
+        -0.9995065603657316,
+        0.03141075907812823,
+        0.0
+      ],
+      "center_ray_distance_mm": 331.3860583262807,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -42.854826316408946,
+          -41.174450836126766
+        ],
+        [
+          -7.58225292059916,
+          -6.097644082861223
+        ],
+        [
+          -0.6757957792171965,
+          0.6741585109748485
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.85_h0.55",
+      "center_mm": [
+        -22.894585744988245,
+        -7.7029241543986595,
+        43.8275
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.349954290192045,
+      "below_0_8mm": false,
+      "origin_mm": [
+        319.47446437138956,
+        -18.462305008365348,
+        43.8275
+      ],
+      "direction": [
+        -0.9995065603657316,
+        0.03141075907812823,
+        0.0
+      ],
+      "center_ray_distance_mm": 342.5380719773373,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -7.58225292059916,
+          -6.0976440828612795
+        ],
+        [
+          -0.6757957792173102,
+          0.6741585109747348
+        ]
+      ]
+    },
+    {
+      "feature": "B_second_t0.85_h0.9",
+      "center_mm": [
+        -22.894585744988245,
+        -7.7029241543986595,
+        58.894999999999996
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.349954290191988,
+      "below_0_8mm": false,
+      "origin_mm": [
+        331.8830606775414,
+        -18.85226085710702,
+        58.894999999999996
+      ],
+      "direction": [
+        -0.9995065603657316,
+        0.03141075907812823,
+        0.0
+      ],
+      "center_ray_distance_mm": 354.95279419948196,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -7.58225292059916,
+          -6.097644082861109
+        ],
+        [
+          -0.6757957792171965,
+          0.6741585109747916
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.15_h0.12",
+      "center_mm": [
+        -15.010222452964257,
+        -10.121257372801429,
+        24.787999999999997
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.349958811873762,
+      "below_0_8mm": false,
+      "origin_mm": [
+        272.21101738631876,
+        143.8854201849326,
+        24.787999999999997
+      ],
+      "direction": [
+        -0.8813034520649923,
+        -0.472550764869054,
+        0.0
+      ],
+      "center_ray_distance_mm": 325.90504345159616,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -45.78812791206968,
+          -44.34361103534394
+        ],
+        [
+          -33.96142153566899,
+          -32.56951308747068
+        ],
+        [
+          -0.6757715405448153,
+          0.6741872713289467
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.15_h0.55",
+      "center_mm": [
+        -15.010222452964257,
+        -10.121257372801429,
+        41.4075
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499588118737051,
+      "below_0_8mm": false,
+      "origin_mm": [
+        282.04458458948534,
+        149.1581326568508,
+        41.4075
+      ],
+      "direction": [
+        -0.8813034520649923,
+        -0.472550764869054,
+        0.0
+      ],
+      "center_ray_distance_mm": 337.0630244853995,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -33.96142153566905,
+          -32.569513087470625
+        ],
+        [
+          -0.6757715405448721,
+          0.674187271328833
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.15_h0.9",
+      "center_mm": [
+        -15.010222452964257,
+        -10.121257372801429,
+        54.934999999999995
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.349958811873762,
+      "below_0_8mm": false,
+      "origin_mm": [
+        292.372797657061,
+        154.69607191418334,
+        54.934999999999995
+      ],
+      "direction": [
+        -0.8813034520649923,
+        -0.472550764869054,
+        0.0
+      ],
+      "center_ray_distance_mm": 348.78227174736753,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -33.96142153566893,
+          -32.56951308747057
+        ],
+        [
+          -0.6757715405447584,
+          0.6741872713290036
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.5_h0.12",
+      "center_mm": [
+        -5.560575722366855,
+        -20.04436399729433,
+        23.57
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499993888331687,
+      "below_0_8mm": false,
+      "origin_mm": [
+        163.53305479182708,
+        261.37469586363807,
+        23.57
+      ],
+      "direction": [
+        -0.5150380749100543,
+        -0.8571673007021123,
+        0.0
+      ],
+      "center_ray_distance_mm": 328.312873846704,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -36.08293554353219,
+          -34.47915984344314
+        ],
+        [
+          -0.674999714499279,
+          0.6749996743338897
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.5_h0.55",
+      "center_mm": [
+        -5.560575722366855,
+        -20.04436399729433,
+        35.825
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499993888332256,
+      "below_0_8mm": false,
+      "origin_mm": [
+        166.942568018454,
+        267.04907877151595,
+        35.825
+      ],
+      "direction": [
+        -0.5150380749100543,
+        -0.8571673007021123,
+        0.0
+      ],
+      "center_ray_distance_mm": 334.9327984556222,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -36.0829355435323,
+          -34.4791598434432
+        ],
+        [
+          -0.6749997144993358,
+          0.6749996743338897
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.5_h0.9",
+      "center_mm": [
+        -5.560575722366855,
+        -20.04436399729433,
+        45.8
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499993888332256,
+      "below_0_8mm": false,
+      "origin_mm": [
+        170.82864026675284,
+        273.51658908129144,
+        45.8
+      ],
+      "direction": [
+        -0.5150380749100543,
+        -0.8571673007021123,
+        0.0
+      ],
+      "center_ray_distance_mm": 342.47801197984074,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -36.08293554353219,
+          -34.47915984344314
+        ],
+        [
+          -0.6749997144993358,
+          0.6749996743338897
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.85_h0.12",
+      "center_mm": [
+        7.637347803799775,
+        -23.729290456750828,
+        22.351999999999997
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499574897455773,
+      "below_0_8mm": false,
+      "origin_mm": [
+        8.795927833382796,
+        308.17809108932516,
+        22.351999999999997
+      ],
+      "direction": [
+        -0.0034906514152237018,
+        -0.9999939076577904,
+        0.0
+      ],
+      "center_ray_distance_mm": 331.90940365174566,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -41.37648157074506,
+          -39.52634087279529
+        ],
+        [
+          -6.997291586894789,
+          -5.5477325960548
+        ],
+        [
+          -0.6757709423986284,
+          0.6741865473469488
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.85_h0.55",
+      "center_mm": [
+        7.637347803799775,
+        -23.729290456750828,
+        30.2425
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499574897455773,
+      "below_0_8mm": false,
+      "origin_mm": [
+        8.806565636090948,
+        311.22558470401907,
+        30.2425
+      ],
+      "direction": [
+        -0.0034906514152237018,
+        -0.9999939076577904,
+        0.0
+      ],
+      "center_ray_distance_mm": 334.95691583292665,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -41.37648157074506,
+          -39.52634087279529
+        ],
+        [
+          -6.997291586894789,
+          -5.5477325960548
+        ],
+        [
+          -0.6757709423986284,
+          0.6741865473469488
+        ]
+      ]
+    },
+    {
+      "feature": "C_low_t0.85_h0.9",
+      "center_mm": [
+        7.637347803799775,
+        -23.729290456750828,
+        36.665
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499574897454636,
+      "below_0_8mm": false,
+      "origin_mm": [
+        8.819356636340501,
+        314.8899214712537,
+        36.665
+      ],
+      "direction": [
+        -0.0034906514152237018,
+        -0.9999939076577904,
+        0.0
+      ],
+      "center_ray_distance_mm": 338.6212749246908,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -41.37648157074506,
+          -39.526340872795174
+        ],
+        [
+          -6.997291586894676,
+          -5.547732596054743
+        ],
+        [
+          -0.6757709423985148,
+          0.6741865473469488
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.15_h0.12",
+      "center_mm": [
+        10.812734166189253,
+        -16.000655431560524,
+        23.497999999999998
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499560280787932,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -145.14495258727678,
+        271.23767148409945,
+        23.497999999999998
+      ],
+      "direction": [
+        0.47715876025960796,
+        -0.8788171126619656,
+        0.0
+      ],
+      "center_ray_distance_mm": 326.84653357011416,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -44.52022430746871,
+          -43.51336428169691
+        ],
+        [
+          -35.714863367257124,
+          -34.340185038442314
+        ],
+        [
+          -0.6758456037603651,
+          0.6741104243184282
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.15_h0.55",
+      "center_mm": [
+        10.812734166189253,
+        -16.000655431560524,
+        35.495
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.34995602807885,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -148.36365294619236,
+        277.1657800960156,
+        35.495
+      ],
+      "direction": [
+        0.47715876025960796,
+        -0.8788171126619656,
+        0.0
+      ],
+      "center_ray_distance_mm": 333.5920879368922,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -44.520224307468766,
+          -43.513364281696965
+        ],
+        [
+          -35.714863367257124,
+          -34.34018503844237
+        ],
+        [
+          -0.6758456037604219,
+          0.6741104243184282
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.15_h0.9",
+      "center_mm": [
+        10.812734166189253,
+        -16.000655431560524,
+        45.26
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.349956028078907,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -151.9706953061842,
+        283.80912569933804,
+        45.26
+      ],
+      "direction": [
+        0.47715876025960796,
+        -0.8788171126619656,
+        0.0
+      ],
+      "center_ray_distance_mm": 341.1515055991172,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -44.52022430746882,
+          -43.51336428169691
+        ],
+        [
+          -35.71486336725707,
+          -34.34018503844243
+        ],
+        [
+          -0.6758456037604219,
+          0.674110424318485
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.5_h0.12",
+      "center_mm": [
+        21.312133541359675,
+        -5.772593389687466,
+        22.49
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.34999995906594,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -263.2583332048788,
+        158.52424218967099,
+        22.49
+      ],
+      "direction": [
+        0.8660254037844384,
+        -0.5000000000000006,
+        0.0
+      ],
+      "center_ray_distance_mm": 328.5936711587166,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -37.696231863085245,
+          -36.13536085486675
+        ],
+        [
+          -0.6750005403071668,
+          0.6749994187587731
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.5_h0.55",
+      "center_mm": [
+        21.312133541359675,
+        -5.772593389687466,
+        30.875
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.34999995906594,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -266.49963538550713,
+        160.39560887618168,
+        30.875
+      ],
+      "direction": [
+        0.8660254037844384,
+        -0.5000000000000006,
+        0.0
+      ],
+      "center_ray_distance_mm": 332.33640453173797,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -37.696231863085245,
+          -36.13536085486675
+        ],
+        [
+          -0.67500054030711,
+          0.67499941875883
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.5_h0.9",
+      "center_mm": [
+        21.312133541359675,
+        -5.772593389687466,
+        37.7
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.34999995906594,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -270.2969053841564,
+        162.58796373208756,
+        37.7
+      ],
+      "direction": [
+        0.8660254037844384,
+        -0.5000000000000006,
+        0.0
+      ],
+      "center_ray_distance_mm": 336.72111424354966,
+      "hit_count": 4,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -37.69623186308519,
+          -36.13536085486675
+        ],
+        [
+          -0.67500054030711,
+          0.67499941875883
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.85_h0.12",
+      "center_mm": [
+        24.920195413519885,
+        8.434184214625107,
+        21.482
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499567695995438,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -306.76511299548207,
+        -0.25130125702441575,
+        21.482
+      ],
+      "direction": [
+        0.9996573249755574,
+        0.02617694830787261,
+        0.0
+      ],
+      "center_ray_distance_mm": 331.79900764205576,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -42.92802478046178,
+          -41.11430142454617
+        ],
+        [
+          -12.127919929927145,
+          -10.697882262008989
+        ],
+        [
+          -0.6758461486357987,
+          0.6741106209637451
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.85_h0.55",
+      "center_mm": [
+        24.920195413519885,
+        8.434184214625107,
+        26.255
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499567695996006,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -308.2469638361463,
+        -0.290104886915282,
+        26.255
+      ],
+      "direction": [
+        0.9996573249755574,
+        0.02617694830787261,
+        0.0
+      ],
+      "center_ray_distance_mm": 333.2813664500607,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -42.92802478046178,
+          -41.11430142454617
+        ],
+        [
+          -12.127919929927089,
+          -10.697882262008875
+        ],
+        [
+          -0.6758461486358556,
+          0.6741106209637451
+        ]
+      ]
+    },
+    {
+      "feature": "D_lowest_t0.85_h0.9",
+      "center_mm": [
+        24.920195413519885,
+        8.434184214625107,
+        30.14
+      ],
+      "nominal_normal_mm": 1.35,
+      "center_inside_solid": true,
+      "thickness_mm": 1.3499567695996575,
+      "below_0_8mm": false,
+      "origin_mm": [
+        -309.96377192533754,
+        -0.33506108888818886,
+        30.14
+      ],
+      "direction": [
+        0.9996573249755574,
+        0.02617694830787261,
+        0.0
+      ],
+      "center_ray_distance_mm": 334.9987630481732,
+      "hit_count": 6,
+      "even_hit_count": true,
+      "all_solid_intervals_relative_to_center_mm": [
+        [
+          -42.92802478046178,
+          -41.11430142454623
+        ],
+        [
+          -12.127919929927089,
+          -10.697882262008875
+        ],
+        [
+          -0.6758461486357987,
+          0.6741106209638588
+        ]
+      ]
+    }
+  ],
+  "normal_ray_occupancy_mismatches": 0,
+  "axis_thickness_below_0_8mm_samples": 0,
+  "four_leaf_separation_slices": [
+    {
+      "z_mm": 20.549999999999997,
+      "components": 4,
+      "valid": true,
+      "areas_mm2": [
+        52.02213413661841,
+        52.8893870529659,
+        57.25296859372231,
+        53.492754406422634
+      ]
+    },
+    {
+      "z_mm": 23.15,
+      "components": 4,
+      "valid": true,
+      "areas_mm2": [
+        52.02213413307146,
+        52.88938703643524,
+        57.25296859771977,
+        53.49275440915494
+      ]
+    },
+    {
+      "z_mm": 26.15,
+      "components": 4,
+      "valid": true,
+      "areas_mm2": [
+        52.02213412657558,
+        52.88938705909497,
+        57.25296859526143,
+        53.49275441149141
+      ]
+    }
+  ],
+  "adjacent_gap_checks": [
+    {
+      "feature": "adjacent_sheet_gap_A_highest_B_second",
+      "estimated_centerline_distance_mm": 6.575376599176149,
+      "estimated_clearance_mm": 5.225376599176149,
+      "center_xy_mm": [
+        -1.700442400869664,
+        18.677755083036903
+      ],
+      "checked_air_radius_mm": 0.45
+    },
+    {
+      "feature": "adjacent_sheet_gap_B_second_C_low",
+      "estimated_centerline_distance_mm": 5.317427358705913,
+      "estimated_clearance_mm": 3.9674273587059132,
+      "center_xy_mm": [
+        -19.79901148869797,
+        -4.077864111457254
+      ],
+      "checked_air_radius_mm": 0.45
+    },
+    {
+      "feature": "adjacent_sheet_gap_C_low_D_lowest",
+      "estimated_centerline_distance_mm": 5.183783096215709,
+      "estimated_clearance_mm": 3.833783096215709,
+      "center_xy_mm": [
+        4.573646678064378,
+        -20.921564063870854
+      ],
+      "checked_air_radius_mm": 0.45
+    },
+    {
+      "feature": "adjacent_sheet_gap_D_lowest_A_highest",
+      "estimated_centerline_distance_mm": 8.261566503646199,
+      "estimated_clearance_mm": 6.911566503646199,
+      "center_xy_mm": [
+        18.776402347513432,
+        -1.6739640328385965
+      ],
+      "checked_air_radius_mm": 0.45
+    }
+  ],
+  "downward_faces_over_45deg_above_base": 512,
+  "downward_area_mm2": 129.17410143644884,
+  "overhang_by_material": {
+    "white_curved_scroll_plates": {
+      "triangles": 0,
+      "area_mm2": 0.0
+    },
+    "dark_stone_step_risers": {
+      "triangles": 0,
+      "area_mm2": 0.0
+    },
+    "stone_tread_and_outer_platform": {
+      "triangles": 0,
+      "area_mm2": 0.0
+    },
+    "sloped_stone_drum": {
+      "triangles": 0,
+      "area_mm2": 0.0
+    },
+    "thin_stone_drum_lip": {
+      "triangles": 512,
+      "area_mm2": 129.17410143644884
+    }
+  },
+  "thin_warning": "Four tall free-edged white sheets are model-strengthened to nominal 1.35mm normal thickness. Upper tips still create arbitrarily narrow horizontal slices; all global/local warnings retained. Thin drum lip has undercut faces, and high unsupported blades may wobble, break or need supports. Stone and top-edge details simplified; not measured original thickness.",
+  "actual_print_tested": false,
+  "support_free_certified": false,
+  "limitations": "Selected finite samples only, not full-surface minimum-thickness, printer slicing, bridge-span, strength, support-removal or physical-print certification."
+}

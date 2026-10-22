@@ -1,0 +1,34 @@
+{
+  "status": "REVISION_REQUIRED",
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "at_utc": "2026-10-22T16:09:52.389928+00:00",
+  "reviewed_stl_sha256": "4f9a5fd2412538bd42ca9befb295cb334512bce59d58578b1d4d8027040c53e4",
+  "current_stl_sha256_at_record": "067095cf78f8fa2b785125a9881420678c4a510d8cdca98380e32d6731303d28",
+  "method": "Direct raw binary STL triangles, exactly corresponding mesh.json, trimesh.section at z=12.0 mm; no repair or intentional geometry weld across gaps.",
+  "observed_section_closed_paths": 54,
+  "expected_primary_column_continuous_sections": 18,
+  "section_center_x": [
+    -53.9,
+    -53,
+    -52.1,
+    52.1,
+    53,
+    53.9
+  ],
+  "section_center_y": [
+    -120,
+    -90,
+    -60,
+    -30,
+    0,
+    30,
+    60,
+    90,
+    120
+  ],
+  "defect": "Each supposed I-column consists of three mutually separated parallel rectangular strips. Web x extent +/-0.375 relative to station; flange nearest x edge +/-0.625 leaves 0.25mm air gap. Global single-shell connectivity through foot/top does not establish connected I cross-section.",
+  "required_change": "Reorient or extend web to connect both flanges at each column; verify one I outline per station at representative shaft heights, preserve 18 locations/9 portals, rerun affected QA and final five views.",
+  "appearance_otherwise": "Five actual PNGs personally viewed; shallow dual slopes, folded shoulder beam, east bent shading, west open stepped side, both end openings and absence of later PV match source-bound approximation. Final approval withheld until revised geometry and exact hashes are reviewed.",
+  "builder_acknowledged": true,
+  "physical_print_certification": false
+}

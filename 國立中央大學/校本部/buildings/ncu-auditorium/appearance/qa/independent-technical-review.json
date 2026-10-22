@@ -1,0 +1,59 @@
+{
+  "reviewer": "review_ncu_final independent technical reviewer",
+  "review_date_utc": "2026-10-22",
+  "result": "PASS_for_partial_appearance_only",
+  "original_STL_git_blob": "af3c1ad579e7bbe4635ce96decdb9109864e32ef",
+  "original_STL_sha256": "50964d7b2b33cb1489a01b8b3198e272d1a1a03c2d537dd9c7fb4030053e9d4b",
+  "triangles": 9614,
+  "material_face_counts": [
+    2378,
+    1056,
+    6028,
+    152
+  ],
+  "independently_checked": [
+    "Original STL byte equality to saved original and Git blob SHA",
+    "Exact original triangle coordinates and order in 3MF",
+    "All material IDs legal and all per-triangle vertex materials uniform",
+    "Full-face glass membership on original ellipse facets, positive-x sector and height range",
+    "Silver region limited to original front relief extents; source classifier reviewed for actual facet/cap membership",
+    "Independent roof full-face z=46.8 and positive x; upper and base neutral",
+    "lib3mf strict read zero warnings, valid manifold and oriented, exact coordinates",
+    "QA scene hash matches final scene; source-STL QA hash matches actual STL",
+    "Independent rebuild 3MF/manifests/five PNG byte matches"
+  ],
+  "important_limits": [
+    "No physical printing or slicer validation",
+    "Edit-save-reopen claims checked against builder QA, not rerun by this read-only independent review",
+    "Blend binary determinism not claimed",
+    "Roof x=0 color cutoff is conservative scope boundary, not a claimed real material seam",
+    "Not whole-building accurate color; upper aluminum patchwork and mixed rear remain neutral"
+  ],
+  "assets_and_reviewed_files_sha256": {
+    "scene.blend": "8d89ae2d45cd8fa53d5fec086e3404315f2db90f635d293d3f6b208a181b0636",
+    "ncu-auditorium-appearance.3mf": "26b9924e8d5bc8f18b95482c1c43c2ee73d5c940a2936d4d10caa124cdf2be8c",
+    "face-materials.json": "4f517f5a8e84aa863c38703106f493614ddc8835c56819a5e24b4cea60860fcc",
+    "palette.json": "549a67adaa6dcc28c1d2956d218470919246f0a054c6039a5f3ed9129291e3ab",
+    "previews/elevation.png": "f422f79568b3632251d1049c9b1ac14adb6873d050d64c16d759bd542309c9ec",
+    "previews/front.png": "ee43f1ab2d47098b660f219cb12b0c3e9060b5c2c0073b3baa06abf621cfcd6b",
+    "previews/rear.png": "0603229d547301f3305bfb459f43814c474dc0fab5b0f375322693d884c79db8",
+    "previews/side.png": "ad36c19d53d727a5621bbdfa3f3dba7762976417583722c30d4cd110ea6d7001",
+    "previews/top.png": "ef2833a177ccd817a7c9770c643cb3ff828d2ef4e323e9dafcf3055e3a89748d",
+    "source/build_appearance.py": "f05f81e0d63239258a86884a798df9af44be4eda5f3320b82258ddffe51df167",
+    "source/render_appearance.py": "17a26aeb34176d44f2293d8da073335d9374da6ed75e8322453d83a6bded3239",
+    "source/requirements.txt": "6eae4b49d91d5a7c6670bacb4425b8b2b0932803c3a4b742df760fc328b98cd5",
+    "source/verify_exchange.py": "78ce356f79df78c82a24946a59a5ff5b9c58afa3143d13fcf079e9e0a7dc4416",
+    "source/verify_material_boundaries.py": "b1f5133537c8d798b37e1be72e9b69015e8d2708235141493678b50b0dcdbaf2",
+    "source/verify_scene.py": "53439d0dcdd39f1449b3342c3ef7556d0b5a6934e9a10351dce83bd73d3ae171",
+    "qa/exchange-validation.json": "94a58ea9cb2b3003fa4933fb95cdc0234bcfadfac10d91e3bf71ca138a88124c",
+    "qa/scene-validation.json": "1cd5faea78f4f3f9b137f4b15892f2c3e36528b0221442295c897b286e60677a",
+    "qa/material-boundary-audit.json": "832fa66095aaaee440e2a6d451254f898bc0c69a1c1bb1e649ada5a6110bfd4a",
+    "qa/rebuild-validation.json": "574654d6465104f98e63880a47b1d45f4117e5e1693ba14e3bf53cfddc59e9a1",
+    "qa/render-manifest.json": "98da3eeff12937ba817403c296b38f30a6b4191c657c1057590b1ef64ad9a907",
+    "qa/source-review.json": "8d52ee522a4495486eff82a7f8ff1288539bc5b2a3bbe4ab8abf516f085ec7ba"
+  },
+  "visual_images_also_personally_viewed": true,
+  "visual_review_primary": "Original assigned reviewer owns final five-view visual signoff; this report scoped to technical checks",
+  "work_files_modified": false,
+  "hash_scope": "Core assets, portable source, and substantive exchange/scene/material-boundary/rebuild/render/source-review QA only. Archive metadata, checksums, review reports, README and self are deliberately excluded to prevent circular hashes."
+}

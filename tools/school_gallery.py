@@ -7,13 +7,14 @@ Uses the complete Git index plus untracked package files, so sparse checkout wor
 Model identity is buildings/<slug>, not an STL/version/appearance file count.
 """
 import argparse, collections, hashlib, html, json, os, pathlib, posixpath, re, subprocess, urllib.parse
+from html.parser import HTMLParser
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
 # Never trigger an implicit large promisor fetch during a navigation check.
 os.environ['GIT_NO_LAZY_FETCH'] = '1'
 
 def git(*args):
-    return subprocess.check_output(['git', '-c', 'core.quotepath=false', *args])
+    return subprocess.check_output(['git', '-c', 'maintenance.auto=false', '-c', 'gc.auto=0', '-c', 'core.quotepath=false', *args])
 
 def inventory():
     return set(git('ls-files', '-z').decode().split('\0')) | set(git('ls-files', '--others', '--exclude-standard', '-z').decode().split('\0')) - {''}
@@ -73,6 +74,74 @@ def gallery_cells(lines,a,b,page,expected):
 
 def splitrow(row):
     return [x.strip() for x in re.split(r'(?<!\\)\|',row.strip())[1:-1]]
+
+# Limit only demonstrably mixed model-preview widths. Uniform special layouts,
+# non-table hero images and deliberately side-by-side views are not rewritten.
+IMAGE = re.compile(r'!\[([^\]]*)\]\(([^\n]*?)\)|<img\b[^>]*>', re.I)
+
+class PreviewTag(HTMLParser):
+    def __init__(self,tag):
+        super().__init__();self.attrs=None;self.feed(tag)
+    def handle_starttag(self,name,attrs):
+        if name=='img':self.attrs=attrs
+
+def preview_images(text):
+    images=[]
+    for match in IMAGE.finditer(text):
+        if match[2] is not None:
+            # Do not guess at Markdown titles/escaped destinations in a rewrite.
+            if re.search(r'[\s<>"\x27\\()]',match[2]) or re.search(r'[*_`\\\[\]]',match[1]):return None
+            src,width=html.unescape(match[2]),None
+        else:
+            parsed=PreviewTag(match[0]).attrs
+            if parsed is None:return None
+            attrs=dict(parsed)
+            src,width=attrs.get('src'),attrs.get('width')
+            if src is None:return None
+        images.append(dict(match=match,src=src,width=width))
+    return images
+
+def is_model_preview(src,page,expected):
+    target=resolve(src,page) or ''
+    for root in expected:
+        if not target.startswith(root+'/'):continue
+        relative=target[len(root)+1:]
+        # Explicit preview paths, plus the two existing legacy image conventions.
+        # A photograph under buildings/<slug>/sources/ is NOT a model preview.
+        return bool(re.fullmatch(r'(?:(?:appearance/)?previews/.+|(?:front|rear|elevation|top|left_oblique)\.png|output/preview-[^/]+\.png)',relative,re.I))
+    return False
+
+def mixed_preview_blocks(text,page,expected):
+    result=[]
+    for block in re.finditer(r'(?m)(?:^\|.*\n?)+',text):
+        body=block[0];images=preview_images(body)
+        if not images or len(images)<2 or len({i['width'] for i in images})<2:continue
+        # Unknown/source photos are not model cards. Never alter them by accident.
+        if any(not is_model_preview(i['src'],page,expected) for i in images):continue
+        inline_pair=False
+        for row in body.splitlines():
+            for cell in splitrow(row):
+                views=preview_images(cell)
+                if views is None:inline_pair=True;continue
+                for first,second in zip(views,views[1:]):
+                    between=cell[first['match'].end():second['match'].start()]
+                    if not re.search(r'<br\s*/?>',between,re.I):inline_pair=True
+        if not inline_pair:result.append((block,images))
+    return result
+
+def normalize_mixed_preview_widths(text,page,expected):
+    for block,images in reversed(mixed_preview_blocks(text,page,expected)):
+        body=block[0]
+        for image in reversed(images):
+            match=image['match']
+            if match[2] is not None:
+                tag=f'<img src="{html.escape(image["src"],quote=True)}" alt="{html.escape(html.unescape(match[1]),quote=True)}" width="220">'
+            else:
+                attrs=[(k,v) for k,v in PreviewTag(match[0]).attrs if k not in ('width','height')]+[('width','220')]
+                tag='<img'+''.join(' '+k+(f'="{html.escape(v,quote=True)}"' if v is not None else '') for k,v in attrs)+'>'
+            body=body[:match.start()]+tag+body[match.end():]
+        text=text[:block.start()]+body+text[block.end():]
+    return text
 
 def standalone_cards(lines,a,b,page,expected):
     """Read only simple three-column galleries whose cells are complete cards.
@@ -229,6 +298,7 @@ def sync(page,expected):
                     preferred=r+'/appearance/'+target[len(r)+1:]
                     if preferred in FILES:
                         group=group.replace(u,posixpath.relpath(preferred,posixpath.dirname(page)))
+        group=normalize_mixed_preview_widths(group,page,expected)
         lines[a:b]=[group];text=''.join(lines)
     if text==original:return False
     p=ROOT/page;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text);return True
@@ -277,6 +347,8 @@ def audit(page,expected):
                 if p.startswith(r+'/previews/') and r+'/appearance/'+p[len(r)+1:] in FILES:stale.append(p)
     if broken:errors.append('broken_relative_links')
     if stale:errors.append('stale_preview')
+    mixed_widths=[i['src'] for _,images in mixed_preview_blocks(primary,page,expected) for i in images]
+    if mixed_widths:errors.append('mixed_preview_widths')
     # Validate each table against its own column schema. Existing two-angle/row catalogs
     # are intentional; the generated catalog blocks always have three columns.
     structural=[];new_cards=[]
@@ -300,7 +372,7 @@ def audit(page,expected):
     repeated_footer=duplicate_new_footer_entries(text,page,expected)
     if repeated_footer:errors.append('duplicate_new_model_footer')
     errors+=structural
-    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),table_blocks=len(blocks),layout_kind='model_cards' if packed is not None else 'preserved_specialized_or_non_table',missing=missing,extra=extra,duplicates=duplicate_cards,duplicate_new_footer_packages=repeated_footer,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),errors=sorted(set(errors)))
+    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),table_blocks=len(blocks),layout_kind='model_cards' if packed is not None else 'preserved_specialized_or_non_table',missing=missing,extra=extra,duplicates=duplicate_cards,duplicate_new_footer_packages=repeated_footer,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),mixed_preview_widths=mixed_widths,errors=sorted(set(errors)))
 
 def homepage_recent_sections(text):
     # The homepage keeps school navigation, not a second recent-building feed.

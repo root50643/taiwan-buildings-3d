@@ -6,4 +6,4 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正面<br>![述耘堂正面](buildings/npust-shuyun-hall/previews/front.png)<br>背面<br>![述耘堂背面](buildings/npust-shuyun-hall/previews/rear.png) | [<img src="buildings/npust-yukang-library/previews/front.png" alt="玉崗紀念圖書館（圖書與會展館）：實際模型預覽" width="220">](buildings/npust-yukang-library/README.md)<br>**[玉崗紀念圖書館（圖書與會展館）](buildings/npust-yukang-library/README.md)** |  |
+| 正面<br><img src="buildings/npust-shuyun-hall/previews/front.png" alt="述耘堂正面" width="220"><br>背面<br><img src="buildings/npust-shuyun-hall/previews/rear.png" alt="述耘堂背面" width="220"> | [<img src="buildings/npust-yukang-library/previews/front.png" alt="玉崗紀念圖書館（圖書與會展館）：實際模型預覽" width="220">](buildings/npust-yukang-library/README.md)<br>**[玉崗紀念圖書館（圖書與會展館）](buildings/npust-yukang-library/README.md)** |  |

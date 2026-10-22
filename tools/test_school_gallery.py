@@ -154,4 +154,65 @@ class GalleryTests(unittest.TestCase):
         self.assertEqual(g.homepage_recent_sections('## 新增大專校院圖鑑\n## 模型範圍與限制\n'),[])
         self.assertEqual(len(g.homepage_recent_sections('## 最新新增：A\n## 最近新增的建築物\n')),2)
         self.assertEqual(g.homepage_recent_sections(g.read('README.md')),[])
+    def test_mixed_markdown_and_bounded_previews_are_normalized_without_other_edits(self):
+        first='[![A & B](buildings/a/previews/front.png)](buildings/a/README.md)<br>[下載](buildings/a/model.stl) · 限定文字'
+        second=CARD('b').replace('front.png"','front.png" width="220"')
+        before='# 圖鑑\n\n'+TABLE([first,second,''])+'\n## 說明\n![來源照](source.jpg)\n'
+        self.assertIn('mixed_preview_widths',self.run_audit(before)['errors'])
+        changed,after=self.sync_text(before,[R1,R2]);self.assertTrue(changed)
+        expected=before.replace('![A & B](buildings/a/previews/front.png)','<img src="buildings/a/previews/front.png" alt="A &amp; B" width="220">')
+        self.assertEqual(after,expected)
+        self.assertNotIn('mixed_preview_widths',self.run_audit(after)['errors'])
+    def test_vertical_views_keep_both_angles_and_proportional_height(self):
+        front=CARD('a').replace('front.png"','front.png" width="420" height="420"')
+        rear=front.replace('front.png','rear.png')
+        other=CARD('b').replace('front.png"','front.png" width="220"')
+        before=TABLE([front+'<br>'+rear,other,''])
+        _,after=self.sync_text(before,[R1,R2])
+        self.assertEqual(after.count('width="220"'),3)
+        self.assertNotIn('height=',after);self.assertIn('rear.png',after)
+    def test_inline_multiview_special_layout_is_not_enlarged(self):
+        front=CARD('a').replace('front.png"','front.png" width="150"')
+        pair=front+front.replace('front.png','rear.png')
+        other=CARD('b').replace('front.png"','front.png" width="220"')
+        before=TABLE([pair,other,''])
+        changed,after=self.sync_text(before,[R1,R2])
+        self.assertFalse(changed);self.assertEqual(after,before)
+        self.assertEqual(g.mixed_preview_blocks(before,PAGE,[R1,R2]),[])
+    def test_uniform_widths_hero_and_unknown_source_images_are_not_reformatted(self):
+        for width in ['260','44%']:
+            before=TABLE([CARD('a'),CARD('b'),'']).replace('front.png"','front.png" width="'+width+'"')
+            self.assertEqual(g.normalize_mixed_preview_widths(before,PAGE,[R1,R2]),before)
+        for before in ['![hero](buildings/a/previews/front.png)\n',TABLE(['![A](buildings/a/previews/front.png)','<img src="source.jpg" width="220">',''])]:
+            self.assertEqual(g.normalize_mixed_preview_widths(before,PAGE,[R1,R2]),before)
+    def test_all_unbounded_views_not_inferred_to_be_different_sizes(self):
+        before=TABLE([CARD('a'),CARD('b'),''])
+        self.assertEqual(g.normalize_mixed_preview_widths(before,PAGE,[R1,R2]),before)
+    def test_new_cards_always_have_bounded_width_and_no_height(self):
+        fs={R1+'/README.md',R1+'/previews/front.png'}
+        with patch.object(g,'FILES',fs),patch.object(g,'read',return_value='# A\n'):
+            card=g.new_card(R1,PAGE)
+        self.assertIn('width="220"',card);self.assertNotIn('height=',card)
+    def test_model_source_photo_is_not_mistaken_for_model_preview(self):
+        before=TABLE(['![來源照](buildings/a/sources/exterior.jpg)',CARD('b').replace('front.png"','front.png" width="220"'),''])
+        self.assertEqual(g.normalize_mixed_preview_widths(before,PAGE,[R1,R2]),before)
+    def test_alt_entities_are_not_double_escaped(self):
+        before=TABLE(['![A &amp; B](buildings/a/previews/front.png)',CARD('b').replace('front.png"','front.png" width="220"'),''])
+        after=g.normalize_mixed_preview_widths(before,PAGE,[R1,R2])
+        self.assertIn('alt="A &amp; B"',after);self.assertNotIn('&amp;amp;',after)
+    def test_markdown_src_entities_are_not_double_escaped(self):
+        before=TABLE(['![A](buildings/a/previews/front.png?raw=1&amp;foo=2)',CARD('b').replace('front.png"','front.png" width="220"'),''])
+        after=g.normalize_mixed_preview_widths(before,PAGE,[R1,R2])
+        self.assertIn('src="buildings/a/previews/front.png?raw=1&amp;foo=2"',after)
+        self.assertEqual(g.preview_images(after)[0]['src'],'buildings/a/previews/front.png?raw=1&foo=2')
+    def test_complex_markdown_image_syntax_is_preserved_conservatively(self):
+        for image in ['![A **B**](buildings/a/previews/front.png)','![A](buildings/a/previews/front.png "title")',r'![A](buildings/a/previews/front\(1\).png)','![A](buildings/a/previews/front(1).png)']:
+            before=TABLE([image,CARD('b').replace('front.png"','front.png" width="220"'),''])
+            self.assertEqual(g.normalize_mixed_preview_widths(before,PAGE,[R1,R2]),before)
+    def test_html_alt_dimension_words_are_not_parsed_as_attributes(self):
+        first='<img src="buildings/a/previews/front.png" alt="Example height=420 and width=300" width="420">'
+        second=CARD('b').replace('front.png"','front.png" width="220"')
+        after=g.normalize_mixed_preview_widths(TABLE([first,second,'']),PAGE,[R1,R2])
+        self.assertIn('alt="Example height=420 and width=300" width="220"',after)
+        self.assertEqual([i['width'] for i in g.preview_images(after)],['220','220'])
 if __name__=='__main__':unittest.main()

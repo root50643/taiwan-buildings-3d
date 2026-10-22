@@ -4,7 +4,7 @@
 
 | 王趁紀念圖書館 | J 司令台／運動場看台 | 逐棟補充 |
 |---|---|---|
-| [![圖書館正面](校本部/buildings/cnu-wang-chen-library/previews/front.png)](校本部/buildings/cnu-wang-chen-library/README.md) | [![J司令台正面](校本部/buildings/cnu-j-grandstand-historical/previews/front.png)](校本部/buildings/cnu-j-grandstand-historical/README.md) | 其他建築仍需逐校查詢來源、建模及驗證。 |
+| [<img src="校本部/buildings/cnu-wang-chen-library/previews/front.png" alt="圖書館正面" width="220">](校本部/buildings/cnu-wang-chen-library/README.md) | [<img src="校本部/buildings/cnu-j-grandstand-historical/previews/front.png" alt="J司令台正面" width="220">](校本部/buildings/cnu-j-grandstand-historical/README.md) | 其他建築仍需逐校查詢來源、建模及驗證。 |
 
 - [王趁紀念圖書館：來源、尺度限制與既有驗證](校本部/buildings/cnu-wang-chen-library/README.md)：保留既有 v2 獨立終核及主審限定例外，未承諾任意縮小或免支撐。
 - [J 司令台：模型、分件及製造條件](校本部/buildings/cnu-j-grandstand-historical/README.md)；[發布與獨立覆核](publication/cnu-j-grandstand-historical/PUBLICATION.md)。**一套建築模型，4 種唯一零件、22 個實體件**；總覽 STL 不可整體列印。

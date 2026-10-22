@@ -6,7 +6,7 @@
 
 | 圖書資訊大樓圓弧入口前段 | 實驗大樓入口門廊暨前兩層立面段 | 海洋科技大樓南北棟與二樓連廊 |
 |---|---|---|
-| [![圖資圓弧段](馬公校本部/buildings/npu-library-rotunda-front/previews/front.png)](馬公校本部/buildings/npu-library-rotunda-front/) | [![實驗入口段](馬公校本部/buildings/npu-laboratory-entrance/previews/front.png)](馬公校本部/buildings/npu-laboratory-entrance/) | [![海科南北棟與架空橋](馬公校本部/buildings/npu-marine-north-south-complex/appearance/previews/front.png)](馬公校本部/buildings/npu-marine-north-south-complex/) |
+| [<img src="馬公校本部/buildings/npu-library-rotunda-front/previews/front.png" alt="圖資圓弧段" width="220">](馬公校本部/buildings/npu-library-rotunda-front/) | [<img src="馬公校本部/buildings/npu-laboratory-entrance/previews/front.png" alt="實驗入口段" width="220">](馬公校本部/buildings/npu-laboratory-entrance/) | [<img src="馬公校本部/buildings/npu-marine-north-south-complex/appearance/previews/front.png" alt="海科南北棟與架空橋" width="220">](馬公校本部/buildings/npu-marine-north-south-complex/) |
 
 前兩件均非整館：圖資後塔未含、2026設備方案未證實完工；實驗大樓高層退縮窗帶、山牆、後翼與整棟屋面未含。海科北4F／南3F／轉折二樓架空橋與單層會議廳合計一包；2018校圖與未定日照片支持歷史配置，比例與未見細節有估計，不稱2026現況。海科8種STL／10件，數位幾何與有界切片條件GO，短懸挑／尖端／brim／膠合仍需真機試印與乾組；未驗四噴頭列印。
 

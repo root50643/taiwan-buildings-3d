@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 心湖會館<br>[![心湖會館](buildings/ntpu-mind-lake-hall/appearance/previews/front.png)](buildings/ntpu-mind-lake-hall/)<br>[模型、STL與正背圖](buildings/ntpu-mind-lake-hall/) | 圖書資訊大樓：圖書館主體段<br>[![圖書館主體段](buildings/ntpu-library-main-block-segment/appearance/previews/front.png)](buildings/ntpu-library-main-block-segment/)<br>[模型、STL與正背圖](buildings/ntpu-library-main-block-segment/) | [<img src="buildings/ntpu-gym-colored-bay-entry-facade-segment/previews/front.png" alt="國立臺北大學綜合體育館彩色凸窗入口立面段：實際模型預覽" width="220">](buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)<br>**[國立臺北大學綜合體育館彩色凸窗入口立面段](buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)** |
+| 心湖會館<br>[<img src="buildings/ntpu-mind-lake-hall/appearance/previews/front.png" alt="心湖會館" width="220">](buildings/ntpu-mind-lake-hall/)<br>[模型、STL與正背圖](buildings/ntpu-mind-lake-hall/) | 圖書資訊大樓：圖書館主體段<br>[<img src="buildings/ntpu-library-main-block-segment/appearance/previews/front.png" alt="圖書館主體段" width="220">](buildings/ntpu-library-main-block-segment/)<br>[模型、STL與正背圖](buildings/ntpu-library-main-block-segment/) | [<img src="buildings/ntpu-gym-colored-bay-entry-facade-segment/previews/front.png" alt="國立臺北大學綜合體育館彩色凸窗入口立面段：實際模型預覽" width="220">](buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)<br>**[國立臺北大學綜合體育館彩色凸窗入口立面段](buildings/ntpu-gym-colored-bay-entry-facade-segment/README.md)** |
 
 每件資料夾含獨立腳本、STL、可編輯Blend、實際STL正背/頂圖、來源與fail-closed檢查。圖書館為局部主體段；資訊中心後棟仍待建模。
 

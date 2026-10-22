@@ -140,7 +140,7 @@
 
 ## 最新新增：成大光復波簷高尖峰木格片段（非完整亭）
 
-[![波簷高尖峰片段實際模型](國立成功大學/光復校區/buildings/ncku-minor-west-gate/previews/front.png)](國立成功大學/光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)
+[![波簷高尖峰片段實際模型](國立成功大學/光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/previews/front.png)](國立成功大學/光復校區/buildings/ncku-wave-eaves-apex-fragment-2021/README.md)
 
 波簷（2021）高尖峰上部木格片段，非完整亭或完整雙曲面。來源可見並列矩形邊木、偏置Y與開孔；相片投影描線非測繪，深度與搭接估計，無未知腳或第二曲面。藍色全為截斷展示支架，非現場建築。104×36×100.70mm；3材質Blend/3MF/STL與五張真實網格圖。508面單殼拓樸／格式與編輯重開通過，504層中6層薄截面及局部警示保留；未切片實印、不稱免支撐。
 

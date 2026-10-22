@@ -1,5 +1,16 @@
 # H棟 學生活動中心
 
+## 兩樓梯塔前框限域配色（2026-10-22）
+
+[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/hwai-activity-h-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
+| 正面限域配色 | 未確認後側保持中性 |
+|---|---|
+| ![兩樓梯塔前框藍綠限域配色](appearance/previews/front.png) | ![後側保持中性](appearance/previews/rear.png) |
+
+僅兩塔實心前框124個完整面及小頂蓋前垂直面4面藍綠配色；玻璃、橫檔、側頰、雙色水平帶、主牆、屋面、後側與底板維持中性，不是整棟精準彩色。原STL bytes、3308三角面、幾何及歷史QA不變，不增套數。3MF為單網格表面色，非分色封閉體、切片或G-code；原薄處與支撐限制保留，未實體試印。照片日期未知，不代表完整2026現況；第三方照片不分發。
+
+
 公開外觀近似模型。別名／去重：第一宿舍（同棟用途）。
 
 ![實際STL正面（左）與背面（右）](previews/front-rear.png)

@@ -1,0 +1,164 @@
+{
+  "status": "PASS_SOURCE_BOUND_LIMITED_APPEARANCE",
+  "passed": true,
+  "checked_at": "2026-10-22T21:19:05.587169+00:00",
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "scope": "輔仁大學新莊校本部淨心堂原模型的歷史照片限域白灰前臉配色；非新建完整測繪、非後方聖言樓、非2026現況。",
+  "source_viewing": {
+    "photo": "FJAC作者自拍Commons原JPEG，不是校方官照；1024×768完整像素已親看。",
+    "photo_observation": "照片中兩厚柱與四外挑柱帽的前臉屬白色類；右柱樹遮部分仍有連續白面。帽底可見棕暗，不可從前白面外推底色。原玻璃/窗網/側牆等均不擴塗。",
+    "original_gray_preview": "完整原灰模已親看，外形與原件保持一致；本次不改善/隱藏既有幾何簡化。",
+    "date_limit": "本人PIL實讀三EXIF時間皆2008:09:08 09:50:53；無offset、相機時鐘未獨立查證。2009-02-21為Commons上傳、2024為頁編輯，不是原拍。原幾何另有2013/2017資料；不宣稱跨年毫無改動或2026現況。",
+    "artifacts": [
+      {
+        "path": "front.jpg",
+        "bytes": 1309149,
+        "sha256": "d3ae4dacc1c169bf20309ef193a2991b8bb7c5559443b8e21ef4692f7fdd72d6"
+      },
+      {
+        "path": "previews_front.png",
+        "bytes": 839180,
+        "sha256": "4a600c9472b1850020f9f557463637ceb345ff41f1ba16d6e2dd25e0ad710c39"
+      },
+      {
+        "path": "READY.md",
+        "bytes": 3948,
+        "sha256": "41625f31e8aac35dbf924a295cdb70dcac57a70fc5fd2c4f5e220c3014aa5086"
+      }
+    ]
+  },
+  "view_by_view": {
+    "front": "已親看：兩大門柱及四帽前臉白灰清楚，其餘側翼/中央格網/階梯仍中性；沒有把玻璃當白板。",
+    "rear": "已親看：背面、屋面、帽後面維持中性，不主張背面照片補證。",
+    "elevation": "已親看：兩白柱各一完整前域、四帽前面與中性窗格分離；不得將原模型符號或細格數當精準實物。",
+    "side": "已親看：柱側/側翼和帽側保持中性，側面通氣縫原簡化未改。",
+    "top": "已親看：帽頂、主屋面與側翼頂面皆未染白，沒有把前臉顏色擴至頂。"
+  },
+  "technical_result": {
+    "original_triangles": 1678,
+    "colored_triangles": 16,
+    "neutral_triangles": 1662,
+    "colored_area_mm2": 702.2000026702881,
+    "full_original_face_only": true,
+    "no_tessellation_or_geometry_change": true,
+    "stl_3mf_coordinates_order_winding_exact": true,
+    "independent_method": "自己的binary STL/3MF XML解析與逐頂點六有限平面域及外法向驗證；沒有調用builder classifier。另實核7原件bytes/SHA256/Git blob及15 core hash，全相機頂點框界通過。",
+    "domain_counts": [
+      2,
+      2,
+      4,
+      2,
+      2,
+      4
+    ],
+    "domain_areas": [
+      303.10000133514404,
+      303.10000133514404,
+      20.0,
+      28.0,
+      28.0,
+      20.0
+    ],
+    "checks": {
+      "path": "qa/reviewer-independent-checks.json",
+      "bytes": 5323,
+      "sha256": "27600b534bf22236c4a2a6fd60bfbf6b0358eacb9a04c3f0649426e2b3480b6c"
+    }
+  },
+  "limitations": [
+    "只有已證前臉使用未校色低飽和白灰proxy；中性灰不代表實際材料或原色。",
+    "帽側/頂/底、柱側、格窗/玻璃、屋面、台階、符號、側背維持中性。",
+    "外帽矩形面積差8mm²為原融合表面不存，不冒稱漏塗跨界面。",
+    "lib3mf/Blend真編輯存讀與乾淨重建為builder QA，本人不冒稱重新運行Blender。",
+    "原製造薄處/支撐限制延續；未實印，不新增可列印保證。",
+    "來源照片僅私有研究，不隨公開包分發；主庫、套數、首頁代表均未改。"
+  ],
+  "artifacts": [
+    {
+      "path": "work/model.stl",
+      "bytes": 83984,
+      "sha256": "0cf88a615d0e75320ebf600917e47a73d57c06433935277829b43e2c5c8e209e"
+    },
+    {
+      "path": "work/appearance/fju-immaculate-conception-chapel-appearance.3mf",
+      "bytes": 16371,
+      "sha256": "4fbf56cd816d02bec1e62622d04f3328ff4e4f6afafa1e3bd0f8aa94665a0a7d"
+    },
+    {
+      "path": "work/appearance/palette.json",
+      "bytes": 626,
+      "sha256": "80ceecf63ee6045ab2df8d1d0634b0d6d50503ceb071d895aba903a0e482b2f1"
+    },
+    {
+      "path": "work/appearance/face-materials.json",
+      "bytes": 104304,
+      "sha256": "f2639e3bfdde1b331eab56a9c81cc01fc11595258a11ff51a9616c2699932548"
+    },
+    {
+      "path": "work/appearance/scene.blend",
+      "bytes": 556768,
+      "sha256": "9e66b5e69eb856c475a8c6cb469fca908ea0b2156241462496c1c4d2d6c670b2"
+    },
+    {
+      "path": "work/appearance/source/build_appearance.py",
+      "bytes": 4489,
+      "sha256": "40b39b4ced386dcbb06af8f2598a0344ed0fdee2c6729058609dfafe8f1d6ade"
+    },
+    {
+      "path": "work/appearance/source/render_appearance.py",
+      "bytes": 4771,
+      "sha256": "e7a3b6b730c877910a1d14634de031eea713564ad0b6abdf8ac9f0b94a45a27f"
+    },
+    {
+      "path": "work/appearance/source/requirements.txt",
+      "bytes": 70,
+      "sha256": "6eae4b49d91d5a7c6670bacb4425b8b2b0932803c3a4b742df760fc328b98cd5"
+    },
+    {
+      "path": "work/appearance/source/verify_exchange.py",
+      "bytes": 5764,
+      "sha256": "25b9f02341b2e97576b943b0852f6d2db685943f7dc6c6f87d449ecca1949974"
+    },
+    {
+      "path": "work/appearance/source/verify_material_boundaries.py",
+      "bytes": 1431,
+      "sha256": "3f8f21055e4ee7af5d67f5037ea651cf50a9aa0099f788022c29b34f4104990e"
+    },
+    {
+      "path": "work/appearance/source/verify_scene.py",
+      "bytes": 3053,
+      "sha256": "96b2c3026b3129931436a27f41de2de344a37eb51ace7015a4b1861c61edac74"
+    },
+    {
+      "path": "work/appearance/previews/front.png",
+      "bytes": 1574801,
+      "sha256": "0fd95f1c9ec75697f93c6ff0bfb557ecbcce6e9ef6a65ca5d865f3034c0262a5"
+    },
+    {
+      "path": "work/appearance/previews/rear.png",
+      "bytes": 1554652,
+      "sha256": "92613ec5009531e89c23ef0b8e3761663bd94af3231df3f24bbd2c63114d14d7"
+    },
+    {
+      "path": "work/appearance/previews/elevation.png",
+      "bytes": 1569372,
+      "sha256": "497a281bb92df491a93bedd1a3e4032fc089a5d54d377cb84a2c0609f1d6a9ed"
+    },
+    {
+      "path": "work/appearance/previews/side.png",
+      "bytes": 1554918,
+      "sha256": "e17fb1aad5e3bd1e207956f21d04d6b2a6dc93e2e7e0d6b9a08a042abded58a0"
+    },
+    {
+      "path": "work/appearance/previews/top.png",
+      "bytes": 1639901,
+      "sha256": "8de933b5791c2f3423d8b77325b20a29579d3f21cd0d5a1b49156b981bdf6929"
+    }
+  ],
+  "core_manifest": {
+    "path": "review-core-hashes.json",
+    "bytes": 1451,
+    "sha256": "e73b26528cfd69ecedd20a1eb2fa76f53d77f20a973eb35b78fa6bc70032fce1"
+  },
+  "required_changes": []
+}

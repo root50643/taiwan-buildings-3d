@@ -8,8 +8,8 @@
 
 原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為43件現行版本的校區入口。
 
-| 建築一 | 建築二 | 建築三 |
-|---|---|---|
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
 | [![第一行政大樓（歷史前棟）](buildings/ntu-administration/appearance/previews/front.png)](buildings/ntu-administration/README.md)<br>[第一行政大樓（歷史前棟）](buildings/ntu-administration/README.md) | [![農業陳列館](buildings/ntu-agricultural-exhibition/appearance/previews/front.png)](buildings/ntu-agricultural-exhibition/README.md)<br>[農業陳列館](buildings/ntu-agricultural-exhibition/README.md) | [![文學院歷史館舍](buildings/ntu-liberal-arts/appearance/previews/front.png)](buildings/ntu-liberal-arts/README.md)<br>[文學院歷史館舍](buildings/ntu-liberal-arts/README.md) |
 | [![總圖書館](buildings/ntu-main-library/previews/front.png)](buildings/ntu-main-library/README.md)<br>[總圖書館](buildings/ntu-main-library/README.md) | [![舊總圖書館／校史館（歷史前棟）](buildings/ntu-old-main-library/appearance/previews/front.png)](buildings/ntu-old-main-library/README.md)<br>[舊總圖書館／校史館（歷史前棟）](buildings/ntu-old-main-library/README.md) | [![博雅教學館](buildings/ntu-boya-lecture/previews/front.png)](buildings/ntu-boya-lecture/README.md)<br>[博雅教學館](buildings/ntu-boya-lecture/README.md) |
 | [![第一學生活動中心（歷史前棟）](buildings/ntu-first-student-center/appearance/previews/front.png)](buildings/ntu-first-student-center/README.md)<br>[第一學生活動中心（歷史前棟）](buildings/ntu-first-student-center/README.md) | [![新月台](buildings/ntu-new-moon-pavilion/previews/front.png)](buildings/ntu-new-moon-pavilion/README.md)<br>[新月台](buildings/ntu-new-moon-pavilion/README.md) | [![普通教學館](buildings/ntu-putong-lecture/appearance/previews/front.png)](buildings/ntu-putong-lecture/README.md)<br>[普通教學館](buildings/ntu-putong-lecture/README.md) |
@@ -23,18 +23,7 @@
 | [![氣象館A館](buildings/ntu-meteorology-a/previews/front.png)](buildings/ntu-meteorology-a/README.md)<br>[氣象館A館](buildings/ntu-meteorology-a/README.md) | [![食品科技館（原館前部）](buildings/ntu-food-science-front/appearance/previews/front.png)](buildings/ntu-food-science-front/README.md)<br>[食品科技館（原館前部）](buildings/ntu-food-science-front/README.md) | [![地理館（前部）](buildings/ntu-geography-front/appearance/previews/front.png)](buildings/ntu-geography-front/README.md)<br>[地理館（前部）](buildings/ntu-geography-front/README.md) |
 | [![地質標本館小屋](buildings/ntu-geological-specimen-cottage/appearance/previews/front.png)](buildings/ntu-geological-specimen-cottage/README.md)<br>[地質標本館小屋](buildings/ntu-geological-specimen-cottage/README.md) | [![語文大樓（前部）](buildings/ntu-language-front/appearance/previews/front.png)](buildings/ntu-language-front/README.md)<br>[語文大樓（前部）](buildings/ntu-language-front/README.md) | [![霖澤館（主棟）](buildings/ntu-linze-main/previews/front.png)](buildings/ntu-linze-main/README.md)<br>[霖澤館（主棟）](buildings/ntu-linze-main/README.md) |
 | [![萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/previews/front.png)](buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/README.md) | [![博理館](buildings/ntu-bory-hall/appearance/previews/front.png)](buildings/ntu-bory-hall/README.md)<br>[博理館](buildings/ntu-bory-hall/README.md) | [![化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/previews/front.png)](buildings/ntu-chemical-engineering-entry/README.md)<br>[化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/README.md) |
-| [![社會科學院主棟](buildings/ntu-social-sciences-main/previews/front.png)](buildings/ntu-social-sciences-main/README.md)<br>[社會科學院主棟](buildings/ntu-social-sciences-main/README.md) |  |  |
-
-| 建築模型 | 建築模型 | 建築模型 |
-| :---: | :---: | :---: |
-| [<img src="buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](buildings/ntu-historic-gate-front-segment/README.md)** |  |  |
-
-| 建築模型 | 建築模型 | 建築模型 |
-| :---: | :---: | :---: |
-| [<img src="buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](buildings/ntu-fu-bell-pavilion/README.md)** |  |  |
-
-| 建築模型 | 建築模型 | 建築模型 |
-| :---: | :---: | :---: |
+| [![社會科學院主棟](buildings/ntu-social-sciences-main/previews/front.png)](buildings/ntu-social-sciences-main/README.md)<br>[社會科學院主棟](buildings/ntu-social-sciences-main/README.md) | [<img src="buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](buildings/ntu-historic-gate-front-segment/README.md)** | [<img src="buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](buildings/ntu-fu-bell-pavilion/README.md)** |
 | [<img src="buildings/ntu-si-nian-memorial-hall/previews/front.png" alt="國立臺灣大學｜傅園斯年堂：實際模型預覽" width="220">](buildings/ntu-si-nian-memorial-hall/README.md)<br>**[國立臺灣大學｜傅園斯年堂](buildings/ntu-si-nian-memorial-hall/README.md)** |  |  |
 
 [六材質外觀與來源界線](buildings/ntu-liberal-arts/appearance/README.md)

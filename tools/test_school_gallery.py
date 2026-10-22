@@ -1,5 +1,5 @@
 """Regression tests for primary navigation, not full-page link presence."""
-import unittest
+import pathlib, re, tempfile, unittest
 from unittest.mock import patch
 import school_gallery as g
 
@@ -9,6 +9,21 @@ R2='國立聯合大學/buildings/b'
 CARD=lambda r: f'[<img src="buildings/{r}/previews/front.png">](buildings/{r}/README.md)'
 TABLE=lambda cells:'| 建築模型 | 建築模型 | 建築模型 |\n| :---: | :---: | :---: |\n| '+' | '.join(cells)+' |\n'
 class GalleryTests(unittest.TestCase):
+    def sync_text(self,text,expected):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=pathlib.Path(tmp);path=root/PAGE;path.parent.mkdir(parents=True);path.write_text(text)
+            fs={r+'/previews/front.png' for r in expected}|{r+'/README.md' for r in expected}
+            with patch.object(g,'ROOT',root),patch.object(g,'read',side_effect=lambda p:(root/p).read_text()),patch.object(g,'FILES',fs),patch.object(g,'new_card',side_effect=lambda r,p:CARD(r.rsplit('/',1)[-1])):
+                changed=g.sync(PAGE,expected)
+                result=path.read_text()
+                self.assertFalse(g.sync(PAGE,expected),'second sync must be idempotent')
+            return changed,result
+    def card_rows(self,text):
+        blocks=re.findall(r'(?m)(?:^\|.*\n?)+',text)
+        self.assertEqual(len(blocks),1)
+        rows=[g.splitrow(row) for row in blocks[0].splitlines()[2:]]
+        self.assertTrue(all(len(row)==3 for row in rows))
+        return rows
     def test_primary_does_not_include_footer(self):
         text=TABLE([CARD('a'),'',''])+'\n## 新增\n'+CARD('b')
         ls,a,b=g.table(text,PAGE,[R1,R2]);self.assertEqual(g.identities(''.join(ls[a:b]),PAGE,[R1,R2]),{R1})
@@ -35,7 +50,7 @@ class GalleryTests(unittest.TestCase):
         self.assertEqual(self.run_audit(TABLE([CARD('a'),CARD('b'),'']))['errors'],[])
     def test_two_angle_same_package_not_duplicate_card(self):
         t='| 正面 | 背面 |\n|---|---|\n| '+CARD('a')+' | '+CARD('a')+' |\n\n'+TABLE([CARD('b'),'',''])
-        self.assertEqual(self.run_audit(t)['errors'],[])
+        self.assertEqual(self.run_audit(t)['errors'],['fragmented_card_gallery'])
     def test_linked_header_image_and_download_rows_are_one_catalog(self):
         t='| [A](buildings/a/) | [B](buildings/b/) | |\n|---|---|---|\n| '+CARD('a')+' | '+CARD('b')+' | |\n| [A來源](buildings/a/README.md) | [B來源](buildings/b/README.md) | |\n'
         self.assertEqual(self.run_audit(t)['errors'],[])
@@ -54,4 +69,89 @@ class GalleryTests(unittest.TestCase):
     def test_stale_appearance_detected(self):
         text=TABLE([CARD('a'),CARD('b'),'']);fs={R1+'/previews/front.png',R1+'/appearance/previews/front.png',R1+'/README.md',R2+'/previews/front.png',R2+'/README.md'}
         with patch.object(g,'read',return_value=text),patch.object(g,'FILES',fs):self.assertIn('stale_preview',g.audit(PAGE,[R1,R2])['errors'])
+    def test_sync_fills_existing_row_and_preserves_full_card_and_footer(self):
+        first=CARD('a')+'<br>**標題 A**<br>[下載](buildings/a/model.stl) · [來源](buildings/a/sources.md) · 外觀近似'
+        footer='\n## 限制\n原有來源與說明不刪除。\n'
+        changed,text=self.sync_text('# 圖鑑\n\n'+TABLE([first,CARD('b'),''])+footer,[R1,R2,R1[:-1]+'c'])
+        self.assertTrue(changed)
+        self.assertEqual(self.card_rows(text),[[first,CARD('b'),CARD('c')]])
+        self.assertTrue(text.endswith(footer))
+    def test_sync_consolidates_fragmented_cards_when_adding_sixth(self):
+        roots=[R1[:-1]+x for x in 'abcdef']
+        before=TABLE([CARD('a'),CARD('b'),'']).replace('建築模型','建物')+'\n'+''.join(TABLE([CARD(x),'',''])+'\n' for x in 'cde')
+        changed,text=self.sync_text(before,roots)
+        self.assertTrue(changed)
+        self.assertEqual(self.card_rows(text),[[CARD(x) for x in 'abc'],[CARD(x) for x in 'def']])
+    def test_sync_seventh_card_only_pads_last_row(self):
+        roots=[R1[:-1]+x for x in 'abcdefg']
+        _,text=self.sync_text(g.card_table([CARD(x) for x in 'abcdef']),roots)
+        self.assertEqual(self.card_rows(text),[[CARD(x) for x in 'abc'],[CARD(x) for x in 'def'],[CARD('g'),'','']])
+    def test_complete_fragmented_card_galleries_are_repaired(self):
+        text=TABLE([CARD('a'),'',''])+'\n'+TABLE([CARD('b'),'',''])
+        changed,result=self.sync_text(text,[R1,R2])
+        self.assertTrue(changed);self.assertEqual(self.card_rows(result),[[CARD('a'),CARD('b'),'']])
+    def test_complete_single_table_is_not_reformatted(self):
+        text=TABLE([CARD('a'),CARD('b'),'']).replace('建築模型','建物')
+        changed,result=self.sync_text(text,[R1,R2])
+        self.assertFalse(changed);self.assertEqual(result,text)
+    def test_specialized_multiline_and_multiangle_catalogs_are_preserved(self):
+        layouts=[
+            '| [A](buildings/a/) |  |  |\n|---|---|---|\n| '+CARD('a')+' |  |  |\n| [下載](buildings/a/model.stl) |  |  |\n',
+            '| 建築模型 | 建築模型 | 建築模型 |\n|---|---|---|\n| '+CARD('a')+' | '+CARD('a')+' |  |\n',
+            '| 正面 | 背面 |\n|---|---|\n| '+CARD('a')+' | '+CARD('a')+' |\n',
+        ]
+        for text in layouts:
+            with self.subTest(text=text):
+                _,result=self.sync_text(text+'\n## 說明\n保留\n',[R1,R2])
+                rows=self.card_rows(result);self.assertEqual(len(rows),1)
+                self.assertEqual(g.identities(rows[0][0],PAGE,[R1,R2]),{R1})
+                self.assertEqual(rows[0][1],CARD('b'))
+                for line in text.splitlines()[2:]:
+                    for cell in g.splitrow(line):
+                        if cell:self.assertIn(cell,rows[0][0])
+                self.assertTrue(result.endswith('\n## 說明\n保留\n'))
+    def test_named_columns_keep_headers_images_downloads_and_source_notes(self):
+        text='| A 的限定名稱 | B 的限定名稱 |\n|---|---|\n| '+CARD('a')+' | '+CARD('b')+' |\n| [下載](buildings/a/model.stl) · 來源限定A | [來源](buildings/b/sources.md) · 限定B |\n\n'+TABLE([CARD('c'),'',''])
+        _,result=self.sync_text(text,[R1,R2,R1[:-1]+'c'])
+        row=self.card_rows(result)[0]
+        self.assertEqual(row[0],'A 的限定名稱<br>'+CARD('a')+'<br>[下載](buildings/a/model.stl) · 來源限定A')
+        self.assertEqual(row[1],'B 的限定名稱<br>'+CARD('b')+'<br>[來源](buildings/b/sources.md) · 限定B')
+    def test_generic_headers_and_special_manufacturing_link_keep_exact_card(self):
+        special=CARD('a').replace('buildings/a/README.md','buildings/a/manufacturing/v2/README.md')
+        for header in ['| 建築一 | 建築二 | 建築三 |','| 模型 | 模型 | 模型 |','| 圖鑑 | 圖鑑 | 圖鑑 |','| 建築／模型 | 建築／模型 | 建築／模型 |']:
+            with self.subTest(header=header):
+                text=TABLE([special,'','']).replace('| 建築模型 | 建築模型 | 建築模型 |',header)+'\n'+TABLE([CARD('b'),'',''])
+                _,result=self.sync_text(text,[R1,R2]);self.assertEqual(self.card_rows(result),[[special,CARD('b'),'']])
+    def test_semantic_section_boundary_is_not_crossed(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'\n## 歷史細節\n'+TABLE([CARD('a'),'',''])
+        changed,result=self.sync_text(text,[R1,R2]);self.assertFalse(changed);self.assertEqual(result,text)
+    def test_named_same_model_views_and_repeat_index_are_one_card(self):
+        rear=CARD('a').replace('/front.png','/rear.png')
+        text='| A 正面 | A 背面 |\n|---|---|\n| '+CARD('a')+' | '+rear+' |\n\n'+TABLE([CARD('b'),'',''])
+        _,result=self.sync_text(text,[R1,R2]);row=self.card_rows(result)[0]
+        self.assertIn('A 正面<br>'+CARD('a'),row[0]);self.assertIn('A 背面<br>'+rear,row[0])
+        self.assertEqual(row[1],CARD('b'))
+    def test_placeholder_notes_do_not_become_fake_model_cards(self):
+        text='| A | 後續 |\n|---|---|\n| '+CARD('a')+' | 尚未交付 |\n| [來源](buildings/a/sources.md) | [工作範圍](coverage/) |\n\n'+TABLE([CARD('b'),'',''])
+        _,result=self.sync_text(text,[R1,R2]);self.assertEqual(len(self.card_rows(result)),1)
+        self.assertIn('\n後續<br>尚未交付<br>[工作範圍](coverage/)\n',result)
+    def test_unknown_model_or_image_is_not_hidden_as_note(self):
+        for extra in [CARD('unknown'),'![unknown](unknown.png)']:
+            text=TABLE([CARD('a'),extra,''])+'\n'+TABLE([CARD('b'),'',''])
+            lines,a,b=g.table(text,PAGE,[R1,R2])
+            self.assertIsNone(g.packed_gallery(lines,a,b,PAGE,[R1,R2]))
+    def test_requested_galleries_have_one_packed_table(self):
+        for page in ['國立陽明交通大學/光復校區/README.md','國立臺灣大學/README.md']:
+            with self.subTest(page=page):
+                expected=g.pages()[page];text=g.read(page)
+                rows=self.card_rows(text);cells=[c for row in rows for c in row]
+                self.assertEqual(len(rows),(len(expected)+2)//3)
+                self.assertTrue(all(cells[:len(expected)]));self.assertFalse(any(cells[len(expected):]))
+                ids=[g.identities(c,page,expected) for c in cells if c]
+                self.assertTrue(all(len(x)==1 for x in ids));self.assertEqual(len(ids),len(expected))
+                self.assertEqual(set().union(*ids),set(expected))
+    def test_homepage_recent_sections_rejected_but_main_catalog_allowed(self):
+        self.assertEqual(g.homepage_recent_sections('## 新增大專校院圖鑑\n## 模型範圍與限制\n'),[])
+        self.assertEqual(len(g.homepage_recent_sections('## 最新新增：A\n## 最近新增的建築物\n')),2)
+        self.assertEqual(g.homepage_recent_sections(g.read('README.md')),[])
 if __name__=='__main__':unittest.main()

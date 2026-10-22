@@ -4,13 +4,10 @@
 
 本批新增農林修養室1件，累計6件外觀近似模型；既有5件附件原樣保存。各館獨立比例、毫米；既有五件含底座最長150mm，修養室166mm。全校與全國仍未完成，研究項目不能視為精確棟數。
 
-| [綜合行政教學大樓](buildings/niu-administration-teaching-complex/README.md) | [經德大樓](buildings/niu-jingde-building/README.md) | [時習大樓](buildings/niu-shixi-building/README.md) |
-|---|---|---|
-| [![綜合行政教學大樓](buildings/niu-administration-teaching-complex/previews/front.png)](buildings/niu-administration-teaching-complex/README.md) | [![經德大樓](buildings/niu-jingde-building/previews/front.png)](buildings/niu-jingde-building/README.md) | [![時習大樓](buildings/niu-shixi-building/previews/front.png)](buildings/niu-shixi-building/README.md) |
-
-| [體育館（校史近似）](buildings/niu-gymnasium/README.md) | [圖書資訊大樓](buildings/niu-library-information-building/README.md) | [農林修養室（2016修復後近似）](buildings/niu-cultivation-hall-restored/README.md) |
-|---|---|---|
-| [![體育館（校史近似）](buildings/niu-gymnasium/previews/front.png)](buildings/niu-gymnasium/README.md) | [![圖書資訊大樓](buildings/niu-library-information-building/previews/front.png)](buildings/niu-library-information-building/README.md) | [![農林修養室](buildings/niu-cultivation-hall-restored/previews/v1/front.png)](buildings/niu-cultivation-hall-restored/README.md) |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [綜合行政教學大樓](buildings/niu-administration-teaching-complex/README.md)<br>[![綜合行政教學大樓](buildings/niu-administration-teaching-complex/previews/front.png)](buildings/niu-administration-teaching-complex/README.md) | [經德大樓](buildings/niu-jingde-building/README.md)<br>[![經德大樓](buildings/niu-jingde-building/previews/front.png)](buildings/niu-jingde-building/README.md) | [時習大樓](buildings/niu-shixi-building/README.md)<br>[![時習大樓](buildings/niu-shixi-building/previews/front.png)](buildings/niu-shixi-building/README.md) |
+| [體育館（校史近似）](buildings/niu-gymnasium/README.md)<br>[![體育館（校史近似）](buildings/niu-gymnasium/previews/front.png)](buildings/niu-gymnasium/README.md) | [圖書資訊大樓](buildings/niu-library-information-building/README.md)<br>[![圖書資訊大樓](buildings/niu-library-information-building/previews/front.png)](buildings/niu-library-information-building/README.md) | [農林修養室（2016修復後近似）](buildings/niu-cultivation-hall-restored/README.md)<br>[![農林修養室](buildings/niu-cultivation-hall-restored/previews/v1/front.png)](buildings/niu-cultivation-hall-restored/README.md) |
 
 [全校逐項續接](../FOLLOW-UP.md) · [屋頂年代補充](../ROOF-STATUS-NOTE.md)
 

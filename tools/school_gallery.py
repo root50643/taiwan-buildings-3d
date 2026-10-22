@@ -74,6 +74,76 @@ def gallery_cells(lines,a,b,page,expected):
 def splitrow(row):
     return [x.strip() for x in re.split(r'(?<!\\)\|',row.strip())[1:-1]]
 
+def standalone_cards(lines,a,b,page,expected):
+    """Read only simple three-column galleries whose cells are complete cards.
+
+    Keep raw card text/order, but discard padding and repeated generic headings.
+    Return None for specialized header/image/download rows or multi-angle views:
+    those cannot be flattened without losing their per-column relationships.
+    """
+    cells=[];seen=set()
+    blocks=re.findall(r'(?m)(?:^\|.*\n?)+',''.join(lines[a:b]))
+    for block in blocks:
+        rows=[splitrow(row) for row in block.splitlines()]
+        if len(rows)<3 or any(len(row)!=3 for row in rows):return None
+        if not generic_card_header(rows[0]):return None
+        if any(not re.fullmatch(r':?-+:?',cell) for cell in rows[1]):return None
+        for row in rows[2:]:
+            for cell in row:
+                if not cell:continue
+                ids=identities(cell,page,expected)
+                if len(ids)!=1 or ids & seen:return None
+                root=next(iter(ids))
+                # Only a card with its own image and model navigation is standalone.
+                targets={resolve(u,page) for u in urls(cell)}
+                if not any(t and (t==root or t.startswith(root+'/') and re.search(r'/README(?:\.zh-TW)?\.md$',t)) for t in targets):return None
+                images=re.findall(r'!\[[^\]]*\]\(([^\n]*?)\)|<img\b[^>]*\bsrc=[\"\']([^\"\']+)',cell)
+                if not any((resolve(x or y,page) or '').startswith(root+'/') for x,y in images):return None
+                cells.append(cell);seen.update(ids)
+    return cells if cells else None
+
+def generic_card_header(cells):
+    return any(cells) and all(not c or re.fullmatch(r'(?:建物|建築模型|建築／模型|校園模型|模型[一二三]?|建築[一二三]|圖鑑(?: [123])?)',c) for c in cells)
+
+def packed_gallery(lines,a,b,page,expected):
+    """Combine adjacent card tables, preserving same-model column relationships.
+
+    Named column headings, images, downloads, sources and notes stay together.
+    Multiple views of one model stay in one card. Narrative/section boundaries
+    are supplied by table(), so separate semantic sections are never crossed.
+    """
+    cards={};notes=[]
+    blocks=re.findall(r'(?m)(?:^\|.*\n?)+',''.join(lines[a:b]))
+    for block in blocks:
+        rows=[splitrow(row) for row in block.splitlines()]
+        if len(rows)<3 or not rows[0] or any(len(row)!=len(rows[0]) for row in rows):return None
+        if any(not re.fullmatch(r':?-+:?',cell) for cell in rows[1]):return None
+        if generic_card_header(rows[0]):
+            fragments=[cell for row in rows[2:] for cell in row if cell]
+        else:
+            fragments=['<br>'.join(c for c in column if c) for column in zip(rows[0],*rows[2:])]
+        for fragment in fragments:
+            if not fragment:continue
+            ids=identities(fragment,page,expected)
+            if not ids:
+                # Unknown model/image content must remain in the audited table,
+                # not be moved outside the primary catalog as a harmless note.
+                if re.search(r'!\[|<img\b',fragment) or any('/buildings/' in (resolve(u,page) or '') for u in urls(fragment)):return None
+                notes.append(fragment);continue
+            if len(ids)!=1:return None
+            root=next(iter(ids))
+            images=re.findall(r'!\[[^\]]*\]\(([^\n]*?)\)|<img\b[^>]*\bsrc=[\"\']([^\"\']+)',fragment)
+            if not images or any(not (resolve(x or y,page) or '').startswith(root+'/') for x,y in images):return None
+            parts=cards.setdefault(root,[])
+            parts.append(fragment)
+    if not cards:return None
+    return ['<br>'.join(parts) for parts in cards.values()],notes
+
+def card_table(cells):
+    """Pack complete cards left-to-right; only the final row may have blanks."""
+    cells=list(cells)+['']*((-len(cells))%3)
+    return '| 建築模型 | 建築模型 | 建築模型 |\n| :---: | :---: | :---: |\n'+''.join('| '+' | '.join(cells[i:i+3])+' |\n' for i in range(0,len(cells),3))
+
 def exists(path):
     return path in FILES or any(p.startswith(path.rstrip('/')+'/') for p in FILES)
 
@@ -121,20 +191,32 @@ def sync(page,expected):
     else:present=identities(''.join(lines[a:b]),page,expected)
     missing=sorted(set(expected)-present)
     if missing:
-        # Keep historical/specialized multi-view tables verbatim; add only missing package cards
-        # INSIDE the same primary gallery group, before the following narrative/section.
         cells=[new_card(r,page) for r in missing]
-        cells+=['']*((-len(cells))%3)
-        body='| 建築模型 | 建築模型 | 建築模型 |\n| :---: | :---: | :---: |\n'+''.join('| '+' | '.join(cells[i:i+3])+' |\n' for i in range(0,len(cells),3))
+        body=card_table(cells)
         if a is None:
             insert=next((i+1 for i,l in enumerate(lines) if l.startswith('# ')),0)
             # Only previously incomplete non-table pages get a primary gallery.
             cells=[new_card(r,page) for r in sorted(expected)]
-            cells+=['']*((-len(cells))%3)
-            body='| 建築模型 | 建築模型 | 建築模型 |\n| :---: | :---: | :---: |\n'+''.join('| '+' | '.join(cells[i:i+3])+' |\n' for i in range(0,len(cells),3))
+            body=card_table(cells)
             lines[insert:insert]=['\n## 現行完整模型圖鑑\n\n'+f'現行收錄 **{len(expected)} 套**；套件不等於整棟建築，亦非全校／校區完成。\n\n'+body+'\n## 既有說明與更新紀錄\n\n']
-        else:lines[b:b]=['\n'+body]
+        else:
+            existing=standalone_cards(lines,a,b,page,expected)
+            if existing is not None:
+                # Fill existing rows instead of appending another mostly empty table.
+                lines[a:b]=[card_table(existing+cells)]
+            else:
+                # Preserve historical/specialized multi-view tables verbatim.
+                lines[b:b]=['\n'+body]
         text=''.join(lines)
+    # Repair existing fragmented galleries too, not only the next missing card.
+    lines,a,b=table(text,page,expected)
+    if a is not None:
+        group=''.join(lines[a:b]);blocks=re.findall(r'(?m)(?:^\|.*\n?)+',group)
+        packed=packed_gallery(lines,a,b,page,expected)
+        if len(blocks)>1 and packed is not None:
+            cards,notes=packed
+            lines[a:b]=[card_table(cards)+''.join('\n'+note+'\n' for note in notes)]
+            text=''.join(lines)
     # Match angle-for-angle appearance previews, rather than demanding front for a rear-view cell.
     lines,a,b=table(text,page,expected)
     if a is not None:
@@ -213,10 +295,17 @@ def audit(page,expected):
                 new_cards.extend(ids)
     duplicate_cards=sorted(k for k,n in collections.Counter(new_cards).items() if n>1)
     if duplicate_cards:errors.append('duplicate_generated_cards')
+    packed=packed_gallery(lines,a,b,page,expected) if a is not None else None
+    if packed is not None and len(blocks)>1:errors.append('fragmented_card_gallery')
     repeated_footer=duplicate_new_footer_entries(text,page,expected)
     if repeated_footer:errors.append('duplicate_new_model_footer')
     errors+=structural
-    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),missing=missing,extra=extra,duplicates=duplicate_cards,duplicate_new_footer_packages=repeated_footer,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),errors=sorted(set(errors)))
+    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),table_blocks=len(blocks),layout_kind='model_cards' if packed is not None else 'preserved_specialized_or_non_table',missing=missing,extra=extra,duplicates=duplicate_cards,duplicate_new_footer_packages=repeated_footer,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),errors=sorted(set(errors)))
+
+def homepage_recent_sections(text):
+    # The homepage keeps school navigation, not a second recent-building feed.
+    # Do not confuse the permanent "新增大專校院圖鑑" with recent-model sections.
+    return re.findall(r'(?m)^#{1,4}\s+((?:最新新增|最近新增(?:的)?建築物|最近新增)(?:[：:\s].*|$))',text)
 
 def main():
     ap=argparse.ArgumentParser(__doc__);ap.add_argument('--sync',action='store_true');ap.add_argument('--check',action='store_true');ap.add_argument('--report');ap.add_argument('--text-cache', help='Optional UTF-8 JSON path→text cache at the same reviewed Git ref (for offline sparse checkout)');args=ap.parse_args()
@@ -247,8 +336,9 @@ def main():
     if REGISTRY.get('higher_education_model_packages')!=actual_higher:count_errors.append('registry_higher_education_packages')
     for school,roots in BY_SCHOOL.items():
         if school in REGISTRY['schools'] and REGISTRY['schools'][school]['count']!=len(roots)-len(LEGACY.get(school,[])):count_errors.append('registry_school_count:'+school)
-    report={'count_errors':count_errors,'scope':'primary school/campus galleries; exact package-root equality, not full-page mentions','school_count':len(SCHOOLS),'higher_education_packages':sum(map(len,BY_SCHOOL.values())),'all_repository_packages':len(set(ROOTS).union(*(set(v) for v in OTHER_ROOTS.values()))),'pages':results,'changed':changed,'passed':not count_errors and all(not r['errors'] for r in results)}
+    recent_sections=homepage_recent_sections(read('README.md'))
+    report={'count_errors':count_errors,'homepage_recent_sections':recent_sections,'scope':'primary school/campus galleries; exact package-root equality, not full-page mentions; no homepage recent-building feed','school_count':len(SCHOOLS),'higher_education_packages':sum(map(len,BY_SCHOOL.values())),'all_repository_packages':len(set(ROOTS).union(*(set(v) for v in OTHER_ROOTS.values()))),'pages':results,'changed':changed,'passed':not count_errors and not recent_sections and all(not r['errors'] for r in results)}
     if args.report:pathlib.Path(args.report).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({'schools':len(SCHOOLS),'pages':len(results),'packages':report['higher_education_packages'],'changed':len(changed),'count_errors':count_errors,'failures':[r for r in results if r['errors']]},ensure_ascii=False,indent=2))
+    print(json.dumps({'schools':len(SCHOOLS),'pages':len(results),'packages':report['higher_education_packages'],'changed':len(changed),'count_errors':count_errors,'homepage_recent_sections':recent_sections,'failures':[r for r in results if r['errors']]},ensure_ascii=False,indent=2))
     return 0 if report['passed'] else 1
 if __name__=='__main__':raise SystemExit(main())

@@ -4,10 +4,6 @@
 
 ## [述耘堂｜當代公開影像近似](內埔校本部/buildings/npust-shuyun-hall/README.md)
 
-| 正面 | 背面 |
-|---|---|
-| ![述耘堂正面](內埔校本部/buildings/npust-shuyun-hall/previews/front.png) | ![述耘堂背面](內埔校本部/buildings/npust-shuyun-hall/previews/rear.png) |
-
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="內埔校本部/buildings/npust-yukang-library/previews/front.png" alt="玉崗紀念圖書館（圖書與會展館）：實際模型預覽" width="220">](內埔校本部/buildings/npust-yukang-library/README.md)<br>**[玉崗紀念圖書館（圖書與會展館）](內埔校本部/buildings/npust-yukang-library/README.md)** |  |  |
+| 正面<br>![述耘堂正面](內埔校本部/buildings/npust-shuyun-hall/previews/front.png)<br>背面<br>![述耘堂背面](內埔校本部/buildings/npust-shuyun-hall/previews/rear.png) | [<img src="內埔校本部/buildings/npust-yukang-library/previews/front.png" alt="玉崗紀念圖書館（圖書與會展館）：實際模型預覽" width="220">](內埔校本部/buildings/npust-yukang-library/README.md)<br>**[玉崗紀念圖書館（圖書與會展館）](內埔校本部/buildings/npust-yukang-library/README.md)** |  |

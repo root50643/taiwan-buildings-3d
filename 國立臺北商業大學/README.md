@@ -2,12 +2,9 @@
 
 累計4件：臺北校區1件主立面局部，桃園校區3件全形量體／局部立面未核近似。**全校尚未完成，沒有宣稱四件皆為完整精確全館。** 原照片／PDF均未放入公開包。
 
-| 學生活動中心西向主立面段（2023） | 公能樓全形量體（局部未核） | 北商學舍U形量體（局部未核） |
-|---|---|---|
-| [![活動中心實際STL](臺北校區/buildings/ntub-student-center-west-facade/previews/front.png)](臺北校區/buildings/ntub-student-center-west-facade/) | [![公能樓實際STL](桃園校區/buildings/ntub-gongneng/previews/front.png)](桃園校區/buildings/ntub-gongneng/) | [![北商學舍實際STL](桃園校區/buildings/ntub-dormitory/previews/front.png)](桃園校區/buildings/ntub-dormitory/) |
-
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
+| 學生活動中心西向主立面段（2023）<br>[![活動中心實際STL](臺北校區/buildings/ntub-student-center-west-facade/previews/front.png)](臺北校區/buildings/ntub-student-center-west-facade/) | 公能樓全形量體（局部未核）<br>[![公能樓實際STL](桃園校區/buildings/ntub-gongneng/previews/front.png)](桃園校區/buildings/ntub-gongneng/) | 北商學舍U形量體（局部未核）<br>[![北商學舍實際STL](桃園校區/buildings/ntub-dormitory/previews/front.png)](桃園校區/buildings/ntub-dormitory/) |
 | [<img src="桃園校區/buildings/ntub-hongyi/previews/front.png" alt="國立臺北商業大學｜桃園校區弘毅樓：實際模型預覽" width="220">](桃園校區/buildings/ntub-hongyi/README.md)<br>**[國立臺北商業大學｜桃園校區弘毅樓](桃園校區/buildings/ntub-hongyi/README.md)** |  |  |
 
 - [臺北校區](臺北校區/README.md)

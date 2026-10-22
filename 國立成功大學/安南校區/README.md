@@ -8,10 +8,6 @@
 
 每格是一件不同模型。範圍、來源年代、近似與薄件警示以各件詳頁為準。
 
-| 模型 | 模型 | 模型 |
-|---|---|---|
-| **國立成功大學｜研究總中心大樓｜大門側低翼部分**<br>[![正面](buildings/research-center-entry-wing/previews/front.png)](buildings/research-center-entry-wing/README.md)<br>[正面](buildings/research-center-entry-wing/previews/front.png) · [背面](buildings/research-center-entry-wing/previews/rear.png)<br>[說明與來源](buildings/research-center-entry-wing/README.md) · [STL](buildings/research-center-entry-wing/model.stl) | **國立成功大學｜研究總中心大樓｜高翼部分**<br>[![正面](buildings/research-center-high-wing/previews/front.png)](buildings/research-center-high-wing/README.md)<br>[正面](buildings/research-center-high-wing/previews/front.png) · [背面](buildings/research-center-high-wing/previews/rear.png)<br>[說明與來源](buildings/research-center-high-wing/README.md) · [STL](buildings/research-center-high-wing/model.stl) |  |
-
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png" alt="國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段：實際模型預覽" width="220">](buildings/research-center-atrium-canopy-two-bay-segment/README.md)<br>**[國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段](buildings/research-center-atrium-canopy-two-bay-segment/README.md)** |  |  |
+| **國立成功大學｜研究總中心大樓｜大門側低翼部分**<br>[![正面](buildings/research-center-entry-wing/previews/front.png)](buildings/research-center-entry-wing/README.md)<br>[正面](buildings/research-center-entry-wing/previews/front.png) · [背面](buildings/research-center-entry-wing/previews/rear.png)<br>[說明與來源](buildings/research-center-entry-wing/README.md) · [STL](buildings/research-center-entry-wing/model.stl) | **國立成功大學｜研究總中心大樓｜高翼部分**<br>[![正面](buildings/research-center-high-wing/previews/front.png)](buildings/research-center-high-wing/README.md)<br>[正面](buildings/research-center-high-wing/previews/front.png) · [背面](buildings/research-center-high-wing/previews/rear.png)<br>[說明與來源](buildings/research-center-high-wing/README.md) · [STL](buildings/research-center-high-wing/model.stl) | [<img src="buildings/research-center-atrium-canopy-two-bay-segment/previews/front.png" alt="國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段：實際模型預覽" width="220">](buildings/research-center-atrium-canopy-two-bay-segment/README.md)<br>**[國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段](buildings/research-center-atrium-canopy-two-bay-segment/README.md)** |

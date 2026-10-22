@@ -4,13 +4,9 @@
 
 [蘆洲校本部](蘆洲校本部/README.md)
 
-| 建築模型 |  |  |
-|:---:|:---:|:---:|
-| <a href="蘆洲校本部/buildings/nou-north-courtyard/README.md"><img src="蘆洲校本部/buildings/nou-north-courtyard/previews/front.png" width="150" alt="北院正面 actual STL"><img src="蘆洲校本部/buildings/nou-north-courtyard/previews/rear.png" width="150" alt="北院背面 actual STL"></a><br>正面／背面<br>[北院｜紅色防漏坡屋蓋版](蘆洲校本部/buildings/nou-north-courtyard/README.md) |  |  |
-
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="壽豐校區/buildings/nou-shoufeng-teaching-2022/previews/front.png" alt="國立空中大學・壽豐校區・教學大樓（2022 外觀參考）：實際模型預覽" width="220">](壽豐校區/buildings/nou-shoufeng-teaching-2022/README.md)<br>**[國立空中大學・壽豐校區・教學大樓（2022 外觀參考）](壽豐校區/buildings/nou-shoufeng-teaching-2022/README.md)** |  |  |
+| <a href="蘆洲校本部/buildings/nou-north-courtyard/README.md"><img src="蘆洲校本部/buildings/nou-north-courtyard/previews/front.png" width="150" alt="北院正面 actual STL"><img src="蘆洲校本部/buildings/nou-north-courtyard/previews/rear.png" width="150" alt="北院背面 actual STL"></a><br>正面／背面<br>[北院｜紅色防漏坡屋蓋版](蘆洲校本部/buildings/nou-north-courtyard/README.md) | [<img src="壽豐校區/buildings/nou-shoufeng-teaching-2022/previews/front.png" alt="國立空中大學・壽豐校區・教學大樓（2022 外觀參考）：實際模型預覽" width="220">](壽豐校區/buildings/nou-shoufeng-teaching-2022/README.md)<br>**[國立空中大學・壽豐校區・教學大樓（2022 外觀參考）](壽豐校區/buildings/nou-shoufeng-teaching-2022/README.md)** |  |
 
 以下原有調查結語僅指**蘆洲校本部**及該輪調查；不適用於下方新增的壽豐教學大樓。
 

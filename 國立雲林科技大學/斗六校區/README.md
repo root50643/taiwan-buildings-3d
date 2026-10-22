@@ -4,13 +4,10 @@
 
 [回學校首頁](../README.md) · [研究續接清單](../coverage/README.md)
 
-| 模型 | 模型 | 模型 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [![觀雲閣（水塔）](buildings/yuntech-clouds-pavilion/appearance/previews/front.png)](buildings/yuntech-clouds-pavilion/README.md)<br>[觀雲閣（水塔）](buildings/yuntech-clouds-pavilion/README.md) | [![雲旭樓主樓段](buildings/yuntech-yunsyu-main-block/appearance/previews/front.png)](buildings/yuntech-yunsyu-main-block/README.md)<br>[雲旭樓主樓段](buildings/yuntech-yunsyu-main-block/README.md) | [![圖書館暨藝術中心建築群](buildings/yuntech-library-art-center/appearance/previews/front.png)](buildings/yuntech-library-art-center/README.md)<br>[圖書館暨藝術中心建築群](buildings/yuntech-library-art-center/README.md) |
 | [![雲泰表演廳](buildings/yuntech-yuntay-hall/appearance/previews/front.png)](buildings/yuntech-yuntay-hall/README.md)<br>[雲泰表演廳](buildings/yuntech-yuntay-hall/README.md) | [![資訊大樓雙層辦公翼與入口段](buildings/yuntech-computing-office-wing/previews/front.png)](buildings/yuntech-computing-office-wing/README.md)<br>[資訊大樓雙層辦公翼與入口段](buildings/yuntech-computing-office-wing/README.md) | [![學生活動中心（含相連表演廳）](buildings/yuntech-student-activity-center/appearance/previews/front.png)](buildings/yuntech-student-activity-center/README.md)<br>[學生活動中心（含相連表演廳）](buildings/yuntech-student-activity-center/README.md) |
-
-| 建築模型 | 建築模型 | 建築模型 |
-| :---: | :---: | :---: |
 | [<img src="buildings/yuntech-spirit-bell-tower/previews/front.png" alt="國立雲林科技大學｜雲科精神鐘塔：實際模型預覽" width="220">](buildings/yuntech-spirit-bell-tower/README.md)<br>**[國立雲林科技大學｜雲科精神鐘塔](buildings/yuntech-spirit-bell-tower/README.md)** |  |  |
 
 每格是不同模型；各資料夾附同件正背並排、頂視、STL、Blend、來源與QA。

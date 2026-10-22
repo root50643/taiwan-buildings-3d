@@ -6,11 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/tmu-teaching-building-restored/previews/v3/front.png" alt="信義校區教學大樓NE格柵側模型" width="260">](buildings/tmu-teaching-building-restored/README.md)<br>**[教學大樓｜修復後外觀](buildings/tmu-teaching-building-restored/README.md)**<br>中段格柵、紅磚端區、開通廊與側凸電梯<br>220 × 70 × 約38.65 mm |  |  |
-
-| 建築模型 | 建築模型 | 建築模型 |
-| :---: | :---: | :---: |
-| [<img src="buildings/tmu-dream-way-building/previews/front.png" alt="臺北醫學大學信義校區｜君蔚樓 Dream-Way Building：實際模型預覽" width="220">](buildings/tmu-dream-way-building/README.md)<br>**[臺北醫學大學信義校區｜君蔚樓 Dream-Way Building](buildings/tmu-dream-way-building/README.md)** |  |  |
+| [<img src="buildings/tmu-teaching-building-restored/previews/v3/front.png" alt="信義校區教學大樓NE格柵側模型" width="260">](buildings/tmu-teaching-building-restored/README.md)<br>**[教學大樓｜修復後外觀](buildings/tmu-teaching-building-restored/README.md)**<br>中段格柵、紅磚端區、開通廊與側凸電梯<br>220 × 70 × 約38.65 mm | [<img src="buildings/tmu-dream-way-building/previews/front.png" alt="臺北醫學大學信義校區｜君蔚樓 Dream-Way Building：實際模型預覽" width="220">](buildings/tmu-dream-way-building/README.md)<br>**[臺北醫學大學信義校區｜君蔚樓 Dream-Way Building](buildings/tmu-dream-way-building/README.md)** |  |
 
 [完整模型、正反並排預覽與下載](buildings/tmu-teaching-building-restored/README.md) · [來源摘要](../inventory/sources/tmu-teaching-building-restored-source-summary.md) · [QA摘要](../inventory/qa/tmu-teaching-building-restored-review.md)
 

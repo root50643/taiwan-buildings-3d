@@ -6,13 +6,9 @@
 
 來源限定外觀近似模型，150 mm最長邊。以建築師平面、公開實景及NLSC屋面交叉判讀；高度與背面局部推估、列印加粗均列於模型文件。未試印，不保證免支撐。
 
-| 正面 actual STL | 背面 actual STL |
-|---|---|
-| ![正面](金山校本部/buildings/dila-yangsheng-hall/appearance/previews/front.png) | ![背面](金山校本部/buildings/dila-yangsheng-hall/appearance/previews/rear.png) |
-
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/previews/front.png" alt="法鼓文理學院・大願橋中央裁切片段：實際模型預覽" width="220">](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)<br>**[法鼓文理學院・大願橋中央裁切片段](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)** |  |  |
+| 正面 actual STL<br>![正面](金山校本部/buildings/dila-yangsheng-hall/appearance/previews/front.png)<br>背面 actual STL<br>![背面](金山校本部/buildings/dila-yangsheng-hall/appearance/previews/rear.png) | [<img src="金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/previews/front.png" alt="法鼓文理學院・大願橋中央裁切片段：實際模型預覽" width="220">](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)<br>**[法鼓文理學院・大願橋中央裁切片段](金山校本部/buildings/dila-great-vow-bridge-middle-span-segment/README.md)** |  |
 
 [模型、來源及數位檢查](金山校本部/buildings/dila-yangsheng-hall/README.md)。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 

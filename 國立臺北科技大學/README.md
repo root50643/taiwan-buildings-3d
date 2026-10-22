@@ -6,15 +6,14 @@
 
 ## 模型圖鑑
 
-| 紅樓 | 一大川堂南端段 | 先鋒大樓前側段 |
-| --- | --- | --- |
-| [![紅樓](臺北校區（西校區）/buildings/ntut-red-house/appearance/previews/front.png)](臺北校區（西校區）/buildings/ntut-red-house/) | [![川堂局部](臺北校區（西校區）/buildings/ntut-yida-south-section/appearance/previews/front.png)](臺北校區（西校區）/buildings/ntut-yida-south-section/) | [![先鋒局部](臺北校區（南校區）/buildings/ntut-pioneer-north-section/appearance/previews/front.png)](臺北校區（南校區）/buildings/ntut-pioneer-north-section/) |
-| [臺北工業學校紅樓](臺北校區（西校區）/buildings/ntut-red-house/) | [一大川堂校史館南端六開間段](臺北校區（西校區）/buildings/ntut-yida-south-section/) | [先鋒國際研發大樓臨忠孝東路前側段](臺北校區（南校區）/buildings/ntut-pioneer-north-section/) |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| 紅樓<br>[![紅樓](臺北校區（西校區）/buildings/ntut-red-house/appearance/previews/front.png)](臺北校區（西校區）/buildings/ntut-red-house/)<br>[臺北工業學校紅樓](臺北校區（西校區）/buildings/ntut-red-house/) | 一大川堂南端段<br>[![川堂局部](臺北校區（西校區）/buildings/ntut-yida-south-section/appearance/previews/front.png)](臺北校區（西校區）/buildings/ntut-yida-south-section/)<br>[一大川堂校史館南端六開間段](臺北校區（西校區）/buildings/ntut-yida-south-section/) | 先鋒大樓前側段<br>[![先鋒局部](臺北校區（南校區）/buildings/ntut-pioneer-north-section/appearance/previews/front.png)](臺北校區（南校區）/buildings/ntut-pioneer-north-section/)<br>[先鋒國際研發大樓臨忠孝東路前側段](臺北校區（南校區）/buildings/ntut-pioneer-north-section/) |
+| 億光大樓<br>[![億光大樓](臺北校區（東校區）/buildings/ntut-everlight/previews/front.png)](臺北校區（東校區）/buildings/ntut-everlight/)<br>[億光大樓](臺北校區（東校區）/buildings/ntut-everlight/) |  |  |
 
-| 億光大樓 | 後續 | 後續 |
-| --- | --- | --- |
-| [![億光大樓](臺北校區（東校區）/buildings/ntut-everlight/previews/front.png)](臺北校區（東校區）/buildings/ntut-everlight/) | 尚未交付更多模型 | 尚未交付更多模型 |
-| [億光大樓](臺北校區（東校區）/buildings/ntut-everlight/) | [其餘建物續接](coverage/) | [其餘建物續接](coverage/) |
+後續<br>尚未交付更多模型<br>[其餘建物續接](coverage/)
+
+後續<br>尚未交付更多模型<br>[其餘建物續接](coverage/)
 
 [東校區](臺北校區（東校區）/) · [西校區](臺北校區（西校區）/) · [南校區](臺北校區（南校區）/) · [模型索引](model-index.json) · [全校範圍與續接](coverage/)
 

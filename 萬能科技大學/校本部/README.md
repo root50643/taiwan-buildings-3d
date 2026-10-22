@@ -6,17 +6,11 @@
 
 ## 每列三座不同建築
 
-| 弘道館（E） | 管理大樓（G） | 育才樓（L） |
-|---|---|---|
-| [![弘道館（E）](buildings/vnu-hongdao-e/previews/front.png)](buildings/vnu-hongdao-e/README.zh-TW.md)<br>[弘道館（E）／詳頁](buildings/vnu-hongdao-e/README.zh-TW.md) | [![管理大樓（G）](buildings/vnu-management-g/previews/front.png)](buildings/vnu-management-g/README.zh-TW.md)<br>[管理大樓（G）／詳頁](buildings/vnu-management-g/README.zh-TW.md) | [![育才樓（L）](buildings/vnu-yucai-l/previews/front.png)](buildings/vnu-yucai-l/README.zh-TW.md)<br>[育才樓（L）／詳頁](buildings/vnu-yucai-l/README.zh-TW.md) |
-
-| 萬芳樓（V） | 體適能中心（PH） | 萬強館（舊圖碼PH008） |
-|---|---|---|
-| [![萬芳樓（V）](buildings/vnu-wanfang-v/previews/front.png)](buildings/vnu-wanfang-v/README.zh-TW.md)<br>[萬芳樓（V）／詳頁](buildings/vnu-wanfang-v/README.zh-TW.md) | [![體適能中心（PH）](buildings/vnu-fitness-ph/previews/front.png)](buildings/vnu-fitness-ph/README.zh-TW.md)<br>[體適能中心（PH）／詳頁](buildings/vnu-fitness-ph/README.zh-TW.md) | [![萬強館（舊圖碼PH008）](buildings/vnu-wanqiang-ph008/previews/front.png)](buildings/vnu-wanqiang-ph008/README.zh-TW.md)<br>[萬強館（舊圖碼PH008）／詳頁](buildings/vnu-wanqiang-ph008/README.zh-TW.md) |
-
-| 仁愛樓（RHB） |  |  |
-|---|---|---|
-| [![仁愛樓（RHB）](buildings/vnu-renai-rhb/previews/front.png)](buildings/vnu-renai-rhb/README.zh-TW.md)<br>[仁愛樓（RHB）／詳頁](buildings/vnu-renai-rhb/README.zh-TW.md) |  |  |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| 弘道館（E）<br>[![弘道館（E）](buildings/vnu-hongdao-e/previews/front.png)](buildings/vnu-hongdao-e/README.zh-TW.md)<br>[弘道館（E）／詳頁](buildings/vnu-hongdao-e/README.zh-TW.md) | 管理大樓（G）<br>[![管理大樓（G）](buildings/vnu-management-g/previews/front.png)](buildings/vnu-management-g/README.zh-TW.md)<br>[管理大樓（G）／詳頁](buildings/vnu-management-g/README.zh-TW.md) | 育才樓（L）<br>[![育才樓（L）](buildings/vnu-yucai-l/previews/front.png)](buildings/vnu-yucai-l/README.zh-TW.md)<br>[育才樓（L）／詳頁](buildings/vnu-yucai-l/README.zh-TW.md) |
+| 萬芳樓（V）<br>[![萬芳樓（V）](buildings/vnu-wanfang-v/previews/front.png)](buildings/vnu-wanfang-v/README.zh-TW.md)<br>[萬芳樓（V）／詳頁](buildings/vnu-wanfang-v/README.zh-TW.md) | 體適能中心（PH）<br>[![體適能中心（PH）](buildings/vnu-fitness-ph/previews/front.png)](buildings/vnu-fitness-ph/README.zh-TW.md)<br>[體適能中心（PH）／詳頁](buildings/vnu-fitness-ph/README.zh-TW.md) | 萬強館（舊圖碼PH008）<br>[![萬強館（舊圖碼PH008）](buildings/vnu-wanqiang-ph008/previews/front.png)](buildings/vnu-wanqiang-ph008/README.zh-TW.md)<br>[萬強館（舊圖碼PH008）／詳頁](buildings/vnu-wanqiang-ph008/README.zh-TW.md) |
+| 仁愛樓（RHB）<br>[![仁愛樓（RHB）](buildings/vnu-renai-rhb/previews/front.png)](buildings/vnu-renai-rhb/README.zh-TW.md)<br>[仁愛樓（RHB）／詳頁](buildings/vnu-renai-rhb/README.zh-TW.md) |  |  |
 
 ## 證據與列印限制
 

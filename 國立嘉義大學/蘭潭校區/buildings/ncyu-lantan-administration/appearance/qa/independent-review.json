@@ -1,0 +1,146 @@
+{
+  "status": "PASS_SOURCE_BOUND_LIMITED_APPEARANCE",
+  "passed": true,
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "checked_at": "2026-10-22T21:49:29.810551+00:00",
+  "scope": "嘉大蘭潭行政中心（中正樓）原有光電粗化群組頂面限域配色，不是全棟材質復原。",
+  "sources_personally_viewed": [
+    {
+      "path": "research-uncolored-batch11-20261022/ncyu-administration/official-aerial.jpg",
+      "bytes": 327407,
+      "sha256": "e364cd1d48be38734a6642264a2a1fbb06faa853d52690e7f10d52f26b99dfc1"
+    },
+    {
+      "path": "research-uncolored-batch11-20261022/ncyu-administration/previews/front.png",
+      "bytes": 909782,
+      "sha256": "e0a78fdbc411e1d678d040c42d2e2e21bcd6a4b3a70d9d8635fc79636b945417"
+    }
+  ],
+  "read_source_handoff": {
+    "path": "research-uncolored-batch11-20261022/NCYU-ADMINISTRATION-PV-READY.md",
+    "bytes": 4305,
+    "sha256": "1b4f854195404e6ec456b34addbdca51de65fdf488e289beb395753ff7dd15c8"
+  },
+  "source_findings": [
+    "官空拍可辨前中央寬階梯、左右低屋頂與後方高U屋面，目標不是鄰棟宿舍。兩低翼屋面藍灰光電陣位置與原模型粗化群組對應。",
+    "實景板框/電池小格與行列比原模型密；只確認群組位置和材料代理，不將40凸片當實際板數，不新建銀框、支架或拓展至空白屋頂。",
+    "五新圖完整顯示底座，front/top/rear可見藍灰僅限原凸片頂面；正立面及側面自然幾乎不見頂面色，未因此額外染立面。板間隙/薄側面/中央露臺/高U屋頂/玻璃保持中性，沒有視覺越界。",
+    "色彩是未校準低飽和藍灰代理，非精測色值/鏡面/發光。原估計外殼、後面未知及屋頂非通天院限制延續，本次沒有以配色假稱完成它們。"
+  ],
+  "per_view": {
+    "front": "兩翼PV頂面辨識改善；空白屋頂/入口/立面保中性。",
+    "rear": "只見兩翼既有PV陣，背牆仍中性；不是後立面新增來源。",
+    "elevation": "全底座與前框完整，PV頂面低角自然不見，不染簷或框。",
+    "side": "側牆/屋頂側唇中性，無越界擴色。",
+    "top": "40粗化群組的80三角藍灰頂面、間隙與中央屋面中性，輪廓未裁切。"
+  },
+  "geometry_and_mapping": {
+    "original_triangles": 4248,
+    "vertices": 2106,
+    "colored_triangles": 80,
+    "neutral_triangles": 4168,
+    "colored_area_mm2": 2210,
+    "coarse_groups": 40,
+    "all_three_vertices_scalar_domains_verified": true,
+    "original_stl_bytes_and_exact_3mf_triangle_order_coordinates_winding_verified": true,
+    "no_cut_remesh_new_geometry": true,
+    "actual_original_seven_fixed_git_blob_verified": true
+  },
+  "dates": {
+    "EXIF_Original_Digitized": "2019:10:25 08:10:25",
+    "EXIF_modify": "2019:11:15 15:34:17",
+    "XMP_Create_Modify": "2019-10-25 (reported source metadata, date-only)",
+    "filename": "1081024 suggests2019-10-24; deliberately not reconciled",
+    "official_page": "2023-04-28 publication/update not capture",
+    "limitations": "No timezone or independent camera calibration; not2026 current survey, not another entrance photo date."
+  },
+  "artifacts": [
+    {
+      "path": "ncyu-lantan-administration-appearance.3mf",
+      "bytes": 38590,
+      "sha256": "b4bdbad93256abe0150a9cb988f5b64d7cb82d6ffaafea86feb2af771e818924"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 631,
+      "sha256": "c9361959a4f1a9632d3e14950b7aea0ba23d1ad1cb68c3a62415dae1e3dbf8ba"
+    },
+    {
+      "path": "face-materials.json",
+      "bytes": 262493,
+      "sha256": "491ae71ef3d4e415ef002a1b6f2448fbbba531f0f3efd78b1d274aee14775f40"
+    },
+    {
+      "path": "scene.blend",
+      "bytes": 696036,
+      "sha256": "4469ba632543f48e4bf9f1525507b6eb446b0f505cc3716c6ca63e24e0af07bf"
+    },
+    {
+      "path": "source/build_appearance.py",
+      "bytes": 4643,
+      "sha256": "91ed744f8635614671b9136f9d88b5cea1683187b12e4e82291fe48e12c2cdd9"
+    },
+    {
+      "path": "source/render_appearance.py",
+      "bytes": 4765,
+      "sha256": "53ce14db62f468885babf44285556847690fa41cbe9a51186967ee8408089a1a"
+    },
+    {
+      "path": "source/verify_exchange.py",
+      "bytes": 5746,
+      "sha256": "e8cfc2b686a3b36d35f2e12475f88c511d5509436a5b5d92320d314ad77701dd"
+    },
+    {
+      "path": "source/verify_material_boundaries.py",
+      "bytes": 1511,
+      "sha256": "6133f53ab27cda48e5870461dc8274305f704ae53a70e1585946c48048602bc9"
+    },
+    {
+      "path": "source/verify_scene.py",
+      "bytes": 3047,
+      "sha256": "72551ea2145aa19a591b35fdde934ddd5d81f5dcbf3568c8c0a553e9a0f602de"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1705743,
+      "sha256": "8ae8ad142d07da56ef77214fdd88fcb206136c4ffee14f34a038f515bd3d23a9"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1617739,
+      "sha256": "380d2a1ff845b6d3dbf508505561ab2ddbd04fed83d779d6945734fbf9548ab6"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1619442,
+      "sha256": "95437490787d9dc845c3262c8f4b8aee830f0eb534e3622c2a9b36f7925604f9"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 1520878,
+      "sha256": "0856b99ce3e485c9ba7235d05e4a792ac12e6037b242e3596f4c848e7e7a1fc1"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1676027,
+      "sha256": "83dde3319da6cf304bcf60910b73c9aec6e1f231fee8d4d06c820480f3cfb9e7"
+    }
+  ],
+  "original_stl": {
+    "path": "/workspace/scratch/0459ddc40ee0/ncyu-administration-appearance-20261022/work/model.stl",
+    "bytes": 212484,
+    "sha256": "46f1c3c65d6d4290e3bbae4059c9a50326284b82c3df2b142c38dc0f998eae9a"
+  },
+  "technical_report": {
+    "path": "ncyu-administration-appearance-20261022/work/appearance/qa/reviewer-independent-checks.json",
+    "bytes": 11825,
+    "sha256": "f1bfd06161afd6a71062fa48af2c22681327c96b260ff49e931e08dbd2703a84"
+  },
+  "limitations": [
+    "Original author/native geometry and all existing fidelity limitations remain; this approval covers limited material assignment only.",
+    "No toolpath or physical print performed, no printable/support-free guarantee.",
+    "Builder native/Blend/lib3mf/rebuild reports inspected but not falsely claimed independently rerun by this visual reviewer.",
+    "Source image private; no main repository edits or publication performed.",
+    "Final actual ZIP/member closure pending builder packaging."
+  ]
+}

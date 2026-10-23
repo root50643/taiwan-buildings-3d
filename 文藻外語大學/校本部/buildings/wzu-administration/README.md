@@ -33,3 +33,7 @@ Python 3.12，安裝requirements.txt，執行build_model.py；Blender以背景�
 STL SHA-256：aeb72efac741a2f0c4e8a878fbef02f7b33d34f7f425c10ac0964d1a3219d81f
 
 [校區圖鑑](../../README.md)／[學校](../../../README.md)
+
+## 歷史限域外觀層
+
+[三材質3MF、可編輯Blend與五視角](appearance/README.md)：只染前紅屋坡9面與綠灰窗背42面，1391面維持未查證中性。官方AAA圖EXIF三日期為2008-09-24 16:08:20，無offset；非2026整樓現況。這項新年代辨識補充上文歷史原始來源說明；本輪未重看2025 PDF。原幾何及製造限制不變。

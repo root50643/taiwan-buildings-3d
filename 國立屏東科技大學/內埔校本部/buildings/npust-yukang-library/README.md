@@ -43,3 +43,7 @@ Python 3.12；requirements另含scipy 1.17.0（trimesh圖連通引擎）與Pillo
 啟動Blender前維持venv的bin在PATH首位，因caption子程序呼叫python3。原完整薄件步驟見qa/README.md；check_all.py彙總已存在的報告，不能代替先重跑各檢查。原兩false與exit1保留，限定裁定不等於所有嚴格門檻通過。字型/套件安裝依使用者環境另行處理。
 
 [獨立覆核與限定例外](INDEPENDENT-AUDIT.md) · [獨立密面原值](independent-dense.csv.gz)
+
+## 前中央有限外觀層
+
+[三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅中央窗背30面＋前柱／名梁14面，其餘7062面中性；非整樓全彩復原。

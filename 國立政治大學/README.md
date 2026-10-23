@@ -5,7 +5,7 @@
 | 建物 | 建物 | 建物 |
 |---|---|---|
 | [<img src="山下校區/buildings/nccu-guofu/appearance/previews/front.png" alt="果夫樓" width="220">](山下校區/buildings/nccu-guofu/) <br> [果夫樓](山下校區/buildings/nccu-guofu/) | [<img src="山下校區/buildings/nccu-zhixi/previews/front.png" alt="志希樓" width="220">](山下校區/buildings/nccu-zhixi/) <br> [志希樓](山下校區/buildings/nccu-zhixi/) | [<img src="山下校區/buildings/nccu-siwei/previews/front.png" alt="四維堂（修復前外觀近似）" width="220">](山下校區/buildings/nccu-siwei/) <br> [四維堂（修復前外觀近似）](山下校區/buildings/nccu-siwei/) |
-| [<img src="指南校區/buildings/nccu-seetoo-library/appearance/previews/rear.png" alt="達賢圖書館主棟" width="220">](指南校區/buildings/nccu-seetoo-library/) <br> [達賢圖書館主棟](指南校區/buildings/nccu-seetoo-library/) | [<img src="指南校區/buildings/nccu-lakeside-reading-house/appearance/previews/front.png" alt="湖濱悅讀小屋（窗背限域配色）" width="220">](指南校區/buildings/nccu-lakeside-reading-house/) <br> [湖濱悅讀小屋](指南校區/buildings/nccu-lakeside-reading-house/) | [<img src="山下校區/buildings/nccu-jingtang/previews/front.png" alt="井塘樓" width="220">](山下校區/buildings/nccu-jingtang/) <br> [井塘樓](山下校區/buildings/nccu-jingtang/) |
+| [<img src="指南校區/buildings/nccu-seetoo-library/appearance/previews/rear.png" alt="達賢圖書館主棟" width="220">](指南校區/buildings/nccu-seetoo-library/) <br> [達賢圖書館主棟](指南校區/buildings/nccu-seetoo-library/) | [<img src="指南校區/buildings/nccu-lakeside-reading-house/appearance/previews/front.png" alt="湖濱悅讀小屋（窗背限域配色）" width="220">](指南校區/buildings/nccu-lakeside-reading-house/) <br> [湖濱悅讀小屋](指南校區/buildings/nccu-lakeside-reading-house/) | [<img src="山下校區/buildings/nccu-jingtang/appearance/previews/front.png" alt="井塘樓前庭有限白牆配色" width="220">](山下校區/buildings/nccu-jingtang/) <br> [井塘樓](山下校區/buildings/nccu-jingtang/) |
 | [<img src="山下校區/buildings/nccu-zhongzheng-library/previews/front.png" alt="中正圖書館" width="220">](山下校區/buildings/nccu-zhongzheng-library/) <br> [中正圖書館](山下校區/buildings/nccu-zhongzheng-library/) | [<img src="山下校區/buildings/nccu-administration/previews/front.png" alt="行政大樓" width="220">](山下校區/buildings/nccu-administration/) <br> [行政大樓](山下校區/buildings/nccu-administration/) | [<img src="金華校區/buildings/nccu-public-center-2021/previews/front.png" alt="公企中心整案（住宿＋會展＋公共連接）" width="220">](金華校區/buildings/nccu-public-center-2021/) <br> [公企中心整案（住宿＋會展＋公共連接）](金華校區/buildings/nccu-public-center-2021/) |
 
 [山下校區](山下校區/) · [指南校區](指南校區/) · [金華校區](金華校區/) · [覆蓋範圍](coverage.json) · [精確續接清單](research-handoff/)
@@ -17,3 +17,5 @@
 主要校區為山下、山上、指南、化南及金華公企中心；桃園創新校區另列籌設/已建成範圍待核。附中、附小、幼兒園非高教用途另判。
 
 公企中心為2021完工、依2021–2022公開影像建立的整案外觀近似，未聲稱2026現況或測繪精度；保留4個原法向共面邊界旗標，獨立審核僅作限定條件接受，不是全域壁厚或無支撐列印保證。尚未實體試印。詳見[模型與來源](金華校區/buildings/nccu-public-center-2021/)及[獨立審核摘要](inventory/qa/nccu-public-center-2021-review.md)。
+
+[井塘樓前庭有限白牆／雨棚配色與五視角](山下校區/buildings/nccu-jingtang/appearance/README.md)（1404完整原面，其餘4772面中性；拍攝年代未知，非整樓現況全彩復原）。

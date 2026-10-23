@@ -1,0 +1,278 @@
+{
+  "status": "SOURCE_CONDITIONAL_READY_LIMITED_APPEARANCE",
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "created_utc": "2026-10-23T05:26:26.420185+00:00",
+  "fixed_original_commit": "2d7d3298754bca2c0071e2cef18ac8b19f7b6242",
+  "review_scope": "Independent private early source, visual benefit, original native/STL exact mapping and complete-face finite-domain review; not a final colored artifact, construction reconstruction, print certificate or publication approval.",
+  "authorization": {
+    "main_repository_modified": false,
+    "original_geometry_or_native_resaved": false,
+    "new_model_or_publication_authorized": false,
+    "parent_must_assign_builder": true,
+    "homepage_representative_change_authorized": false
+  },
+  "original_mesh_method": [
+    "Read the binary STL triangle records without reordering; calculate cross-product normals and areas from actual vertices.",
+    "Open the original native scene read-only in Blender, verify one mesh/all triangles/one material/all material indices zero, then export coordinates only to private reviewer data.",
+    "Check an oriented cyclic exact-coordinate bijection between all native and canonical STL triangles; check scout selected native-to-canonical mappings separately.",
+    "Recompute the selected set with all three vertices on each individually bounded support plane; no centroid-only or global bounding-box selection.",
+    "Verify original materialized bytes, Git blob SHA-1 and the fixed commit paths read-only."
+  ],
+  "delivery_gate_if_parent_assigns_builder": [
+    "Materialize and hash the entire original model package, not only the limited research subset. Preserve original STL bytes, all triangle coordinates and order, existing geometry and identity.",
+    "Recompute canonical-to-native and canonical-to-3MF mappings. Independently verify every 3MF triangle coordinate and order, all material corners and all nonselected faces neutral; never paste native polygon IDs as STL IDs.",
+    "Use only whole original triangles satisfying the stated finite all-vertex domains. Do not cut triangles, add geometry or repaint mixed/unseen materials to increase the color area.",
+    "Produce five final previews and a same-camera/settings neutral comparison from the final deliverable. Reassess actual visual benefit and any misleading isolated color boundaries; this source judgment does not force final PASS.",
+    "Verify editable Blender/3MF by genuine vertex/material change, save and reopen, plus independent clean reconstruction; freeze exact final core and PNG hashes before final independent review.",
+    "Include final independent QA in checksums and actual ZIP members, verify bytes/CRC/checksum closure. Keep source photographs, downloaded pages and private research copies out of the public model package unless separately authorized.",
+    "Keep original geometric approximations, source dates and printing limitations explicit. A material-only change does not validate uncertain shape, structural performance or real print success. No automatic school-count increase or homepage representative replacement."
+  ],
+  "input_stage_note": "The early note is a frozen research input, including its pending-review wording. This independent decision supplies the review result; it does not retroactively make the private probes final deliverables.",
+  "identity": {
+    "school": "國立政治大學",
+    "building": "井塘樓",
+    "not_name": "敬堂",
+    "canonical_root": "國立政治大學/山下校區/buildings/nccu-jingtang"
+  },
+  "decision": {
+    "source_scope_acceptable": true,
+    "benefit_threshold": "PASS_LOCALIZED_FRONT_COURTYARD_BENEFIT",
+    "priority_relative_to_other_reviewed_candidate": "Stronger and more spatially continuous than the Yukang central-window-only candidate; still not a whole-building color reconstruction.",
+    "summary": "兩張官方原照支持凹弧庭院白色牆／柱及灰色雨棚垂直邊。相同相機與光照的中性比較顯示前庭不透明白面連續性有真收益，未靠補深玻璃或未知屋頂增色；後面與頂面幾乎不變是正確的證據限域，不應隱瞞。"
+  },
+  "personally_viewed": [
+    {
+      "file": "source0.jpg",
+      "finding": "完整 1920×1080 正面；中央及右側四層弧牆、白色立柱和窗間不透明面清楚。左側受樹遮，窗內反射／簾影不同，不支持全部凹窗背一律上玻璃色。"
+    },
+    {
+      "file": "source1.jpg",
+      "finding": "640×427 左斜近照補白色柱側與牆面，灰色入口雨棚垂直邊可辨。實物雨棚為弧形，既有模型方板簡化不能因配色被宣稱已修復。"
+    },
+    {
+      "file": "previews/front.png",
+      "finding": "原 mono 預覽僅供歷史形體參考；其光照與研究 probe 不完全相同，不單用此圖作色彩收益判斷。"
+    },
+    {
+      "file": "probe-front.png",
+      "finding": "前庭白色不透明牆／柱與仍中性的窗背可區分；大屋頂與外背弧保持中性。"
+    },
+    {
+      "file": "probe-opposite.png",
+      "finding": "反向斜視仍僅前庭選定面受色，側端及大屋頂未被擴染。"
+    },
+    {
+      "file": "probe-elevation.png",
+      "finding": "正立面白面連續性最清楚；少數未切出的細白框／窗背保持中性，不為視覺完整擴塗。"
+    },
+    {
+      "file": "probe-rear.png",
+      "finding": "外背弧、背突出部和屋頂仍中性；沒有背面來源支持全面白色。"
+    },
+    {
+      "file": "probe-top.png",
+      "finding": "頂視屋頂占主面積，只有前庭的受證立面局部可見；不可把此圖稱全樓配色收益。"
+    },
+    {
+      "file": "reviewer-mono-front.png",
+      "finding": "獨立由相同 probe 匯入、相機、WORKBENCH 光照與設定渲染全部 material index 0；與 probe-front 直接比較，庭院白面對比可辨。"
+    },
+    {
+      "file": "reviewer-mono-elevation.png",
+      "finding": "同條件中性正立面對照確認白牆／柱的改善不是僅換相機或打光；未儲存原 scene。"
+    }
+  ],
+  "approved_finite_scope": {
+    "original_triangles": 6176,
+    "white_complete_triangles": 1395,
+    "white_area_mm2": 7664.171537613791,
+    "gray_complete_triangles": 9,
+    "gray_area_mm2": 76.2087237581436,
+    "neutral_triangles": 4772,
+    "arc_walls": "C=(0,-28); 80 inner chord segments, theta=(i+0.5)*pi/80; all vertices satisfy dot(v.xy-C,u)=43*cos(pi/160), |dot(v.xy-C,t)|<=43*sin(pi/160), z in [2.8,57], eps=0.0003 mm, actual inward horizontal normal.",
+    "finite_chord_halfwidth_mm": 0.844248775807017,
+    "piers": "Angles 2..179 step 13 degrees; radial [40.45,44.95], tangent [-1.25,1.25], z [3,57]. Only the inner front r=40.45 and side t=+/-1.25 planes, all three points bounded and actual vertical normals.",
+    "canopy_fascia": "x [-11.5,11.5], y [1.5,14.5], z [13.5,15.3]; only front y=1.5 and two end x=+/-11.5 planes with outward normals. Top and underside excluded.",
+    "source_indices": "selection.json canonical STL IDs and native-canonical-map.json must be revalidated against the delivered original STL. reviewer-independent-scope.json records all recomputed segment groups.",
+    "additional_tangent_constraint_result": "The initially omitted finite tangential bounds were independently added and produce exactly the same 1029 arc-wall faces and final 1395 white faces. Scout probe.py now contains the bound; existing selection/PNG sets did not change.",
+    "excluded": "Window backs/reveals/fine frames, canopy top/underside, roof and roof lip, outer curved rear facade, end walls, rear protrusions, base and any mixed/unseen surfaces remain neutral."
+  },
+  "source_limits": [
+    "The two full JPEGs were decoded independently. EXIF root/nested DateTime, Original, Digitized and offset fields are absent; no XMP packet/date attributes found. Capture year is unknown.",
+    "1975 start, 1976 completion and 2004 renovation are building events, not photograph dates. Do not imply 2026 current colors.",
+    "The official library-memory page is the source context; direct HTML retrieval was truncated and file-description/history pages were not accessible. No claim of reading an unavailable file history or determining upload/capture time.",
+    "The source supports white/light ceramic surface and gray fascia color families, not calibrated paint codes. Surface dirt, dark drip marks, shade and weathering are not new segmented materials.",
+    "The old model has coarse window divisions, a simplified rectangular canopy and unverified roof/back form. This material-only candidate cannot claim to correct those shapes. Repeated material across the photographed curved frontage is a bounded proxy, not measured restoration."
+  ],
+  "scout_manifest_validation": {
+    "verified_existing_file_count": 32,
+    "result": "All listed current bytes and SHA-256 matched before this report. The manifest is intentionally not embedded as a recursive binding; it may later include this report."
+  },
+  "technical_results": {
+    "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer-independent-scope.json",
+    "bytes": 32955,
+    "sha256": "e4295501ad45e66b2ee8ddd4b5cd9cd9749e41fc64405717b6dab314f201541f"
+  },
+  "bound_files": [
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/EARLY-REVIEW.md",
+      "bytes": 4071,
+      "sha256": "5d696dd43eb81f2463ac343fad29f79c1e79d7a4106fd90b809bfdf292fd37bc"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/source0.jpg",
+      "bytes": 596816,
+      "sha256": "67b1a1806d6c7467be90065369bdadcc4157e670fec4a9663ddf25c42cc5111f"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/source1.jpg",
+      "bytes": 47182,
+      "sha256": "8e80fa75d8233c7fbc0b9ae99028f2b7e22afc237552c9d9a33d61665de6eed9"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/model.stl",
+      "bytes": 308884,
+      "sha256": "4321f4114275c766ac743e0adb1bac9d9626368a9fee920ea4734b805032453f"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/scene.blend",
+      "bytes": 745056,
+      "sha256": "af7f4c4fef0eb8b7546a12e894f3a79b8c46aae0a418666ffe53d6aa6bb6ccfc"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/README.md",
+      "bytes": 2760,
+      "sha256": "5dbbb12309bf048f16533f59dfea2ab6e72fa01f72957d78cbce35c19d6f5cbb"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/sources.json",
+      "bytes": 1659,
+      "sha256": "12bfa2794f6859618d44e7168cb07f6b72ed840ea5e6ca2ce8a901514ca2d255"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/build_model.py",
+      "bytes": 3440,
+      "sha256": "d60f3c062b547d9c5d5043c39d004d61028d10b55e3e9ef739e071955ad4d56f"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/render_preview.py",
+      "bytes": 3222,
+      "sha256": "1bed8c84d5a8e5fbc7d1deec314002f890e1a5fc7691483ae8bbb34110efd09e"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/previews/front.png",
+      "bytes": 860028,
+      "sha256": "598e4f1ee3262f99e696e32ac38a0e13ea8f75233d6574c4abf2f21ec0d2d6ba"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/selection.json",
+      "bytes": 16357,
+      "sha256": "b3f605fee6bcef9949ac5ae12fbcbff547cb12a76baa4e8f4592920c939a1f4e"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/probe.py",
+      "bytes": 1875,
+      "sha256": "fa1b0a73568ccf3a117a9e013469d42d3edb54d6c82a3879d4ec1309ef8818cb"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/probe_render.py",
+      "bytes": 1961,
+      "sha256": "41918b1eee8620dd220c75374bec1f7ca743e9b2be97bf49af329ca8f72fc44c"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/canonical-mapping.json",
+      "bytes": 36005,
+      "sha256": "b4572d107c78395ef65a8656e2327e546d38ea6a970cc2a25468a9c1660c5405"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/native-canonical-map.json",
+      "bytes": 570610,
+      "sha256": "c1acc32e17b0b3b505cfc42a86baf8d49d0859a15e823de1770792a9ae5dcd68"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/sha-audit.json",
+      "bytes": 1120,
+      "sha256": "4bd4f34c42513ce8e5ea94127f876740ba55450dfac56ca60879f4e8a2eb9d84"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/native-audit.json",
+      "bytes": 310,
+      "sha256": "734c96d2af32900b8cfecc43e7580f55d2222344f25edb31e2e49f9e041115cf"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/probe-front.png",
+      "bytes": 561276,
+      "sha256": "4034b0b1d7581079faabf657e0d1f0f4a79d70beb475979b5cc470314b0e92bf"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/probe-opposite.png",
+      "bytes": 571910,
+      "sha256": "769b90e9699e37b0588c9c0758fd5e4bfb6f48efcbb311b7a7126ba5ebd68784"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/probe-elevation.png",
+      "bytes": 501033,
+      "sha256": "43a3f7956873718d3e540a1857ff8acf96cdac8bec944bd8afb3df4263b93d39"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/probe-rear.png",
+      "bytes": 536378,
+      "sha256": "37bd021d2a8ede78d7eb5907cdef24eb30ef45a6c5a42f55fcb82394cbbfa811"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/probe-top.png",
+      "bytes": 485351,
+      "sha256": "b5172317a09b35e9a932aa0438f7d18713a6e01c4cdc3e8f167b603b63c3cc41"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer-mono-front.png",
+      "bytes": 553635,
+      "sha256": "97abfb738acd8aeefdaac504617ce2d43d14e81fb475e89590f9a87d2715e40a"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer-mono-elevation.png",
+      "bytes": 496213,
+      "sha256": "a923c212f194ffb38fe1e1788c9a960ce3722fe1f0b7ba13dd1ccacce3d1630f"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer_mono_probe.py",
+      "bytes": 1761,
+      "sha256": "e5334851baf56bf1b067ab13273530c3667b60215b458546c9e862d5f876b5a9"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer-native-readonly.json",
+      "bytes": 495,
+      "sha256": "0d4abee6b9dbe384ab72f2e5241cf9289a19efa52b0ce71a35f87e7330a30228"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer-native.npz",
+      "bytes": 269640,
+      "sha256": "8279555541ee5c273328943cd23b009ceef9622cd212749feb51b61d711a6dfc"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer-independent-scope.json",
+      "bytes": 32955,
+      "sha256": "e4295501ad45e66b2ee8ddd4b5cd9cd9749e41fc64405717b6dab314f201541f"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/nccu-jingtang/reviewer-source-dates.json",
+      "bytes": 2523,
+      "sha256": "21a670eff076cd2d2d9abd24e4c6ec16445b7b840377a5c538aedb97ffeca506"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/reviewer_independent_scopes.py",
+      "bytes": 7626,
+      "sha256": "94af28e6dc879c563b2e9ee6d5cf57a883c33238f846c39c66852e5836faa231"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/reviewer_read_two_natives.py",
+      "bytes": 1252,
+      "sha256": "b3425b78f217ad6765965e586d92cb335fa9f2f068196cc20dc06df197b50915"
+    },
+    {
+      "path": "research-uncolored-batch13-20261023/reviewer_source_dates.py",
+      "bytes": 1737,
+      "sha256": "ef5b6d87c31d6a2f505e50374a39762aa91e3fe3079d25673f064fc47f362fa1"
+    }
+  ]
+}

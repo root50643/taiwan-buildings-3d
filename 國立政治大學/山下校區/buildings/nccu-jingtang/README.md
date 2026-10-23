@@ -38,3 +38,7 @@ Python執行build_model.py；Blender背景執行render_preview.py產生實際STL
 [thin-feature-check.json](thin-feature-check.json)：canonical邊內插，1 mm取樣，以0.8 mm參考寬度形態opening輔助篩檢；最大面積損失0.12927%，大於1%層數0。不是全面最小壁厚或實際工具路徑。
 
 未做Cura/Prusa实际切片或實體試印，不宣稱保證可印或全校完成。
+
+## 前庭有限外觀層
+
+[三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅內弧白牆／柱1395面＋灰雨棚立邊9面，其餘4772面中性；非整樓全彩復原。

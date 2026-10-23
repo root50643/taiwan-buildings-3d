@@ -1,0 +1,280 @@
+{
+  "status": "PASS_SOURCE_BOUND_LIMITED_APPEARANCE",
+  "passed": true,
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "created_utc": "2026-10-23T05:42:07.611214+00:00",
+  "identity": "國立政治大學井塘樓既有 nccu-jingtang；不是敬堂。保留同一既有建築幾何的前庭有限材質層。",
+  "summary": "Final five images and the same-scene neutral comparison demonstrate a modest but genuine continuous white courtyard-wall/pier distinction and a small gray canopy-edge accent. PASS only for 1395 complete white faces and 9 complete gray fascia faces. Large roof, exterior rear, ends and all window backs remain neutral; this is not whole-building color reconstruction.",
+  "visual_review": {
+    "personally_viewed": [
+      "source0.jpg full official front, source1.jpg official left-oblique close view",
+      "Original previews/front.png and source-stage same-camera neutral comparisons",
+      "All five final actual delivery PNGs: front, opposite, elevation, rear, top",
+      "Final qa/mono-front.png rendered from the actual delivery scene with all polygon material indices temporarily reset to 0"
+    ],
+    "per_view": {
+      "front": "完整模型及底座入鏡。凹弧庭院白色不透明牆與立柱形成較清楚的連續面，與仍中性的窗凹背區分；入口灰雨棚前立邊可辨。未為擴大收益染屋頂、外弧背面或側端。",
+      "opposite": "相反斜視再次見白面僅在來源可支持的內弧牆／柱；端牆、屋頂、外弧及窗背未鏡射擴色。細白框沒有幾何邊界，仍保持中性。",
+      "elevation": "白牆／柱與中性窗背的區分最易閱讀，灰雨棚垂直邊形成小幅入口對比。未把玻璃、門扇或整個入口凹區塗成深色。",
+      "rear": "大部分外背弧、後突出部、屋面和底座維持中性；只有遠側可見的受證庭院面局部有色，不聲稱背面改善。",
+      "top": "水平大屋頂、屋簷頂面與雨棚頂面均中性；頂視收益接近無。側／頂色界為有限證據域而非新增實際材料接縫。"
+    },
+    "same_angle_benefit": "The final neutral comparison uses the same actual scene, cameras, lights, geometry and rendering settings. Only temporary polygon material indices change, and the original scene is not resaved. The white courtyard planes and gray fascia are visibly more distinct than the mono image. No camera change, roof repainting or invented dark glazing is needed to create the observed localized benefit.",
+    "source_alignment": [
+      "The full official front photograph shows white/light tiled inner curved wall and piers across four levels; central/right areas are clear, the left foreground is partly tree-occluded.",
+      "The official close oblique supports white pier sides and wall surfaces and gray canopy edges. Dark streaks, dirt and shade are not separate geometric material bands.",
+      "The real canopy is curved and detailed; the original model is a rectangular simplification. This unchanged simplified shape is disclosed and is not repaired by material assignment.",
+      "Windows have fine frames, mullions, curtains and reflections not separately modeled. They remain neutral rather than being declared uniformly dark glass."
+    ],
+    "palette_interpretation": "#D4D4CA and #666966 are uncalibrated light ceramic and gray fascia color-family proxies. #AAA79F means neutral/unconfirmed model surfaces, not an assertion that all excluded real materials have that color.",
+    "framing": "Each 1200×1200 final image was inspected. Independent camera projection also confirms all original vertices are within all five orthographic frames."
+  },
+  "exact_scope": {
+    "original_triangles": 6176,
+    "original_exact_vertices": 2968,
+    "white_complete_triangles": 1395,
+    "white_area_mm2": 7664.171537613791,
+    "gray_complete_triangles": 9,
+    "gray_area_mm2": 76.2087237581436,
+    "neutral_triangles": 4772,
+    "total_colored_area_mm2": 7740.3802613719345,
+    "selection": "All three vertices on each source-approved support plane and inside its finite bounds; actual cross-product normals, not stored STL normals. No centroid-only or global bounding-box paint, no subdivision.",
+    "inner_arc": "80 segments about C=(0,-28): theta=(i+0.5)*pi/80, radial chord 43*cos(pi/160), individual tangential limit +/-43*sin(pi/160)=+/-0.844248775807017 mm, z [2.8,57], epsilon 0.0003 mm, inward horizontal normal. Independent wall-only count 1029.",
+    "piers": "Angles 2..179 step 13 degrees; radial [40.45,44.95], tangent [-1.25,1.25], z [3,57]; only inner radial plane 40.45 and two tangent side planes +/-1.25. All vertices bounded.",
+    "canopy": "Only y=1.5 front and x=+/-11.5 end vertical fascia, within x [-11.5,11.5], y [1.5,14.5], z [13.5,15.3] and outward normals. Top/underside excluded.",
+    "mapping": "All native triangles independently reconciled to original canonical STL by exact oriented cyclic coordinate bijection. Actual 3MF vertices, triangle order/winding and all material corners match the original surface and recomputed map exactly. Actual delivered Blend independently reopened read-only, with all geometry and material indices verified.",
+    "original_preservation": "Full 18-file original directory materialized and independently verified by size, SHA-256, Git blob and the complete fixed 2d7d3298754bca2c0071e2cef18ac8b19f7b6242 directory tree. Work STL retains original bytes and original triangle order.",
+    "exclusions": "Window backs/reveals/frames, door area, roof and roof lip, canopy horizontal surfaces, outer rear arc, end walls, rear protrusion and display base all remain neutral."
+  },
+  "source_manifest_reconciliation": {
+    "requested_older_hash": "d2b26917cbbb84069afcf9349bcb423ac1a47cd123b960e6d29daa329a55153d",
+    "validated_final_hash": "51c66f65e1d396b3b523a750aa1ac7dd51aa14ab23692d3c87f7eabc0e50a0d2",
+    "result": "The older 6176-byte manifest was reconstructed from the known changes, not presented as a retained historical original; its exact SHA-256 matches d2b. Reviewer independently compared it with the 6602-byte final manifest and verified all 32 final members. No old hash was silently ignored.",
+    "exact_delta": "Two added completed reviewer neutral-comparison PNG entries; EARLY decimal approximation corrected (4068 to 4071 bytes); reviewer render log captured empty in the old snapshot now completed at 961 bytes. Stage and other 28 entries are unchanged, including source photographs, STL/native, selection, bounded probe code and five color probe PNGs. This is completion of research bindings, not a different model or color selection.",
+    "evidence": {
+      "path": "reviewer-source-manifest-reconciliation.json",
+      "bytes": 3224,
+      "sha256": "8fd6214cfd045b189bbe8225310f9207c770c05e00c81fd5deef8610defd529d"
+    }
+  },
+  "dates_and_limitations": [
+    "Two official original JPEGs fully decoded and independently read at root/nested ExifIFD and raw XMP levels: no Original/Digitized/Modify capture dates, offsets or XMP date packet. Capture year is unknown.",
+    "1975 start, 1976 completion and 2004 renovation are building events, not photograph dates. Do not claim current 2026 colors or a dated photographic survey.",
+    "Official page text was obtained by the source researcher, but direct HTML download was incomplete and file-description/history pages inaccessible. No unavailable history or exact upload time is asserted.",
+    "Geometry remains the original coarse approximation, including simplified windows, canopy and unverified roof/rear. Neutral is evidence exclusion, not a surveyed material.",
+    "This is not physical print testing or new slicer qualification. Original historical thin-feature report is a 60-layer sample with a 0.8 mm opening test, explicitly not exhaustive thickness or a slicer. Roof/rim/corners and supports still need review.",
+    "Source photos and private downloaded HTML/native research extracts remain excluded from the public delivery. The public QA may cite source identities/hashes without redistributing photographs."
+  ],
+  "verification": {
+    "own_technical_report": {
+      "path": "work/appearance/qa/reviewer-independent-checks.json",
+      "bytes": 42374,
+      "sha256": "84ce6083df473aa676b845f7cc05f69b8ef03352c76fa6400705378258db44cc"
+    },
+    "own_source_review": {
+      "path": "/workspace/scratch/0459ddc40ee0/research-uncolored-batch13-20261023/nccu-jingtang/independent-source-review.json",
+      "bytes": 15745,
+      "sha256": "ed6e8291d8738f31f27c3f62d04390e9ce61aaf24f98af973b38987b116bc5f3"
+    },
+    "own_readonly_scene": {
+      "path": "reviewer-scene-readonly.json",
+      "bytes": 1493,
+      "sha256": "3582c2146e8f526d1f98bd5aac1a8921d096e36194628bec5afae93782a64d70"
+    },
+    "original_backup_manifest": {
+      "path": "original-materialization.json",
+      "bytes": 6794,
+      "sha256": "b2c8d295946a38dd2d1b6289d462275720e922a188b1b910f88f48d7cf6d556b"
+    },
+    "frozen_core_manifest": {
+      "path": "review-core-hashes.json",
+      "bytes": 833,
+      "sha256": "1bbd4f62cce79b547b338d2dd8136b3c9a22f8a5afc4ecacd308c5da48a7877d"
+    },
+    "clean_rebuild": "Reviewer independently compared eight actual 3MF/palette/map/five PNG files between work and the isolated clean directory; all bytes identical. Scene-validation semantic fields match after excluding their file SHA, with no claim of Blend binary determinism.",
+    "editability": "Bound builder reports demonstrate strict lib3mf zero-warning material edit-save-read and genuine Blend vertex/material edit-save-reopen plus front rerender. Reviewer separately parsed actual 3MF and independently opened the final Blend read-only.",
+    "archive_execution": {
+      "path": "reviewer-source-archive-execution.json",
+      "bytes": 2018,
+      "sha256": "0400a34c73ae8e7210c96cd600bc2e15f9bdc67dd7968540aadf6f15a6ed103e"
+    },
+    "archive_execution_summary": "Actual rebuild-source.zip extracted into a reviewer-owned directory; every member byte compared; build, finite-boundary verifier and strict exchange/edit roundtrip scripts executed successfully. Rebuilt 3MF/palette/map bytes equal the delivery. Reviewer did not duplicate all five renders."
+  },
+  "artifacts": [
+    {
+      "path": "work/appearance/nccu-jingtang-appearance.3mf",
+      "bytes": 68605,
+      "sha256": "853b4f3fe3bd4ca2527e13590a97e9689d2dceaacae603d256fe4d2c87be0ce6"
+    },
+    {
+      "path": "work/appearance/scene.blend",
+      "bytes": 822004,
+      "sha256": "0cf6d9e89e787dab8fb5c7cff0ebb92788c3ab7a72abafc6ea93ac335a5811a1"
+    },
+    {
+      "path": "work/appearance/palette.json",
+      "bytes": 614,
+      "sha256": "f858a87987f686a885bd33fd6a3c1b28b5f18028ca17bc63ce2428fab2f25147"
+    },
+    {
+      "path": "work/appearance/face-materials.json",
+      "bytes": 356383,
+      "sha256": "9f8a5ab7f9dabf8b20a47e2e6fba3b8fc0d6a3ae93b9ab5c1a15550c6f039938"
+    },
+    {
+      "path": "work/appearance/previews/front.png",
+      "bytes": 1613981,
+      "sha256": "865cb23b1a08538f0e5ddec84bd13abe6f2f7903c3dde2fee706f09c3a9ae177"
+    },
+    {
+      "path": "work/appearance/previews/opposite.png",
+      "bytes": 1637206,
+      "sha256": "7b97d3f4765330b9ac89887f06f80d3240add209629d551e5cac9ad18be9dd9d"
+    },
+    {
+      "path": "work/appearance/previews/elevation.png",
+      "bytes": 1575554,
+      "sha256": "0d2abc2b34cc102d7fc1678c70072577490b33dcba9da2c6bb11641c5abc2826"
+    },
+    {
+      "path": "work/appearance/previews/rear.png",
+      "bytes": 1566106,
+      "sha256": "b59c6f906f77d5b6163c1825c3d5f1e3b89ba589f7f1827a19e2393568571132"
+    },
+    {
+      "path": "work/appearance/previews/top.png",
+      "bytes": 1594726,
+      "sha256": "ceeddeb5787da65d487e2e98cbb40346fc1dd9fac2ab023dd8a9fe6fc1b9190e"
+    },
+    {
+      "path": "work/appearance/source/build_appearance.py",
+      "bytes": 5591,
+      "sha256": "28e2f3b8fe800423ca904c045b67de6c36dc490e685e32c0a5dd5e17ebeadde2"
+    },
+    {
+      "path": "work/appearance/source/render_appearance.py",
+      "bytes": 4750,
+      "sha256": "6d1550a530186bf20d5dcdc9262ad5fef300dd0d09127ec2ca6e14c37d20e603"
+    },
+    {
+      "path": "work/appearance/source/verify_exchange.py",
+      "bytes": 5707,
+      "sha256": "b2dfda7f7267d21ae22363bb689a3347be8978914c4a1bc5d925b492b4addf41"
+    },
+    {
+      "path": "work/appearance/source/verify_material_boundaries.py",
+      "bytes": 1241,
+      "sha256": "c85231779f1c6d3627a773b080e4fdb699637f5a532606b4f0d4aab5b23314e7"
+    },
+    {
+      "path": "work/appearance/source/verify_scene.py",
+      "bytes": 4381,
+      "sha256": "b194898ede90027e95f73d1e011a5bdfd33ed65522566df74c9173c1083c0619"
+    },
+    {
+      "path": "work/appearance/source/requirements.txt",
+      "bytes": 27,
+      "sha256": "fb35ed55bf373a4538b96e4a37fd479841dae933957a7d743106a9ae9bc889f6"
+    },
+    {
+      "path": "work/appearance/source/source-selection.json",
+      "bytes": 16357,
+      "sha256": "b3f605fee6bcef9949ac5ae12fbcbff547cb12a76baa4e8f4592920c939a1f4e"
+    },
+    {
+      "path": "work/appearance/qa/mono-front.png",
+      "bytes": 1607431,
+      "sha256": "5d415f4cf40c94123ac76eb07e8413b0167726155a08cffa96ba1dec140acab7"
+    },
+    {
+      "path": "work/appearance/rebuild-source.zip",
+      "bytes": 80956,
+      "sha256": "3ef229ca21888cb39067707077246683fa845d796aa8ef3605b0434e892227ca"
+    },
+    {
+      "path": "work/model.stl",
+      "bytes": 308884,
+      "sha256": "4321f4114275c766ac743e0adb1bac9d9626368a9fee920ea4734b805032453f"
+    }
+  ],
+  "bound_qa_docs": [
+    {
+      "path": "work/appearance/README.md",
+      "bytes": 1937,
+      "sha256": "e7a8d2228436c2b6d79c549f5824cd37acef7ea03f1ca60e89ae2497bcb6ccc0"
+    },
+    {
+      "path": "work/appearance/SOURCES.md",
+      "bytes": 861,
+      "sha256": "e046d3d3e247cd4b0d0cfd59e6e37270f4f0c68408c18bf0af0155c717a21ab6"
+    },
+    {
+      "path": "work/appearance/LICENSE-NOTICE.md",
+      "bytes": 270,
+      "sha256": "bfb49323b698ab5f6dfd207ed5e2e2e8bc5416eeaa173de5a5991334286f9928"
+    },
+    {
+      "path": "work/appearance/source-manifest.json",
+      "bytes": 7462,
+      "sha256": "a9ece73447494367b303f2a31e893a37748c494e4155d152ed0408df856567a2"
+    },
+    {
+      "path": "work/appearance/qa/native-stl-mapping.json",
+      "bytes": 61122,
+      "sha256": "f0674e27195740ec4eab08330c48fe5ddd347876828d6445b8fd9bfedaa26149"
+    },
+    {
+      "path": "work/appearance/qa/original-native-readback.json",
+      "bytes": 60869,
+      "sha256": "bdd5a8270d4b9dcbbb73efbc5e8c5fc1dd27581a234378d967ee79be7b5fb39a"
+    },
+    {
+      "path": "work/appearance/qa/material-boundaries.json",
+      "bytes": 517099,
+      "sha256": "e19cab4036ea286800270b001504cc6c238cb2d880cfb6e5fc54ce1e46d1e68d"
+    },
+    {
+      "path": "work/appearance/qa/exchange-validation.json",
+      "bytes": 982,
+      "sha256": "d48246a4b35e3eec642abf3a55cd23883383bcacbca72ae9c481f4287bdf636f"
+    },
+    {
+      "path": "work/appearance/qa/scene-validation.json",
+      "bytes": 602,
+      "sha256": "5d39c64ffa46e3e0d4388a87232cfc4cd38cb6acb74a5b5dbf38bcf00ae01087"
+    },
+    {
+      "path": "work/appearance/qa/render-manifest.json",
+      "bytes": 1822,
+      "sha256": "1bc7d09c206f018f743af10d1febcad4ec71c9e4c2341786053f64ccdf2cb506"
+    },
+    {
+      "path": "work/appearance/qa/rebuild-validation.json",
+      "bytes": 480,
+      "sha256": "4c7fdbffb03ea89787d8930c53410d8cf1b95d6aa7854e57114639cfbda25bd0"
+    },
+    {
+      "path": "work/appearance/qa/mono-comparison.json",
+      "bytes": 673,
+      "sha256": "61658cf03b930251d7e9843d2d461a186ae63e81ed773e6740d5ad60ee700512"
+    }
+  ],
+  "source_images": [
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-uncolored-batch13-20261023/nccu-jingtang/source0.jpg",
+      "bytes": 596816,
+      "sha256": "67b1a1806d6c7467be90065369bdadcc4157e670fec4a9663ddf25c42cc5111f"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-uncolored-batch13-20261023/nccu-jingtang/source1.jpg",
+      "bytes": 47182,
+      "sha256": "8e80fa75d8233c7fbc0b9ae99028f2b7e22afc237552c9d9a33d61665de6eed9"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-uncolored-batch13-20261023/nccu-jingtang/previews/front.png",
+      "bytes": 860028,
+      "sha256": "598e4f1ee3262f99e696e32ac38a0e13ea8f75233d6574c4abf2f21ec0d2d6ba"
+    }
+  ],
+  "release_gate": "Limited-appearance artifact review PASS. Package closure is still required after these two reviewer reports are included in checksums and the actual ZIP. Reviewer did not edit main or authorize publication/homepage changes."
+}

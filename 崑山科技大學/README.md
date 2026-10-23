@@ -4,9 +4,9 @@
 
 |北面正面|南面背面|
 |---|---|
-|![北面](永康校區/buildings/ksu-library-information-building/previews/front.png)|![南面](永康校區/buildings/ksu-library-information-building/previews/rear.png)|
+|![北面](永康校區/buildings/ksu-library-information-building/appearance/previews/front.png)|![南面](永康校區/buildings/ksu-library-information-building/appearance/previews/rear.png)|
 
-[模型說明](永康校區/buildings/ksu-library-information-building/README.md) · [來源與限制](永康校區/buildings/ksu-library-information-building/sources.md) · [幾何審查](永康校區/buildings/ksu-library-information-building/QA.md)
+[模型說明](永康校區/buildings/ksu-library-information-building/README.md) · [後窗限域外觀](永康校區/buildings/ksu-library-information-building/appearance/README.md) · [來源與限制](永康校區/buildings/ksu-library-information-building/sources.md) · [幾何審查](永康校區/buildings/ksu-library-information-building/QA.md)
 
 官方55m為總高口徑，另頁「長55m」措辭差異保留；分層高程推估、未知短側細窗省略。地下2＋地上11層；帶頂中庭封背簡化，曲玻璃框為厚背體淺刻。原始照片/PDF不隨包散布。已完成獨立數位檢查及具體有限例外核准；數位審核紀錄見模型QA，是否正式發布以統一發布清單為準。
 

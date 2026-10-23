@@ -1,0 +1,2 @@
+# License notice
+Original model licensing and notices remain authoritative in the preserved parent package. Appearance scripts and generated geometry do not transfer rights in source photographs. Architect and university source photographs, HTML and PDFs are private reference evidence only and are not bundled or licensed for redistribution. Material colors are approximate opaque visualization proxies, not sampled calibrated reproductions. Retain original attribution and limitations when redistributing generated artifacts.

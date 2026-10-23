@@ -3,7 +3,7 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="歸仁校本部/buildings/cjcu-hall/previews/front.png" alt="長榮堂實際STL預覽" width="260">](歸仁校本部/buildings/cjcu-hall/README.md)<br>**[長榮堂](歸仁校本部/buildings/cjcu-hall/README.md)** | [<img src="歸仁校本部/buildings/cjcu-administration/previews/front.png" alt="行政大樓實際STL預覽" width="260">](歸仁校本部/buildings/cjcu-administration/README.md)<br>**[行政大樓](歸仁校本部/buildings/cjcu-administration/README.md)** | [<img src="歸仁校本部/buildings/cjcu-library/previews/front.png" alt="蘭大衛紀念圖書館主量體實際STL預覽" width="260">](歸仁校本部/buildings/cjcu-library/README.md)<br>**[蘭大衛紀念圖書館主量體](歸仁校本部/buildings/cjcu-library/README.md)** |
-| [<img src="歸仁校本部/buildings/cjcu-gymnasium/previews/front.png" alt="綜合體育館實際STL預覽" width="260">](歸仁校本部/buildings/cjcu-gymnasium/README.md)<br>**[綜合體育館](歸仁校本部/buildings/cjcu-gymnasium/README.md)** | [<img src="歸仁校本部/buildings/cjcu-gate-cross-tower/previews/front.png" alt="校門十字架鐘塔（地標構造物）實際STL預覽" width="260">](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)<br>**[校門十字架鐘塔（地標構造物）](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)** |  |
+| [<img src="歸仁校本部/buildings/cjcu-gymnasium/previews/front.png" alt="綜合體育館實際STL預覽" width="260">](歸仁校本部/buildings/cjcu-gymnasium/README.md)<br>**[綜合體育館](歸仁校本部/buildings/cjcu-gymnasium/README.md)** | [<img src="歸仁校本部/buildings/cjcu-gate-cross-tower/appearance/previews/front.png" alt="校門十字架鐘塔兩同向寬面限域配色代理" width="260">](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)<br>**[校門十字架鐘塔（地標構造物）](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)** |  |
 
 目前包含長榮堂、行政大樓、蘭大衛紀念圖書館主量體及綜合體育館，共4件樓館模型；另有校門十字架鐘塔1件地標構造物，合計5個模型，不把地標算第5棟樓館。各件自行建構，不使用第三方3D模型；第三方照片只列來源連結，沒有再散布。模型獨立縮尺，含底座最大150mm。
 

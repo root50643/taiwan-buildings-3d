@@ -1,5 +1,14 @@
 # 校門十字架鐘塔（地標構造物）｜長榮大學
 
+## 同向寬面淺磚紅限域配色（2026-10-23）
+
+[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/cjcu-gate-cross-tower-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
+![校門十字架鐘塔兩同向寬面限域代理](appearance/previews/front.png)
+
+只為兩片塔朝+X寬面126個完整原三角配淺磚紅代理，合6744.980026mm²；反面、窄側、灰頂、孔壁、橫繫與底座374面皆中性。原500面座標、面序與STL bytes不變，不切面、不增套。官方航拍拍攝日未知，EXIF三日期空且無XMP；2024-04-24文章日與檔名20240408不是拍攝日，不稱2026現況。第二角本次503未取得，不作配色依據。原孔形與構件近似及未實體試印限制保留，照片不分發；本塔不是慎行鐘或長榮堂。
+
+
 [學校目錄](../../../README.md) · [校區目錄](../../README.md)
 
 ![實際STL正面及背面並排](previews/front-rear.png)

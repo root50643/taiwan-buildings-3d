@@ -35,3 +35,7 @@ Python 3.12 安裝requirements.txt後執行build_model.py，再以Blender 4.3.2�
 - https://museum.ntua.edu.tw/upfiles/HF5/04.jpg
 
 來源照片與PDF權利屬原權利人，未附在本公開模型資料夾；僅提供原始網址。STL、參數程式與預覽皆為本案自行製作。
+
+## 歷史照片限域彩色外觀層
+
+[彩色3MF、可編輯Blend與五視角](appearance/README.md)：1132原面（1002巨字向外正面／130既有實心窗背），7428面中性。全部8560面與原STL bytes不變，不重建玻璃後磚木，不染字側框頂／屋尖／入口。依2007年自報日期官照的淺低飽和不透明代理，不是2026現況測繪或北側新館。原數位QA及估計幾何限制原樣保留。

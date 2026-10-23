@@ -4,7 +4,7 @@
 
 | 圖書館球體入口立面段 | 有章藝術博物館現館 | 臺藝表演廳 |
 |---|---|---|
-| [![圖書館球體入口立面段](板橋校區/buildings/ntua-library-entrance-section/previews/front.png)](板橋校區/buildings/ntua-library-entrance-section/README.md) | [![有章藝術博物館現館](板橋校區/buildings/ntua-you-chang-museum/previews/front.png)](板橋校區/buildings/ntua-you-chang-museum/README.md) | [![臺藝表演廳](板橋校區/buildings/ntua-performing-arts-hall/previews/front.png)](板橋校區/buildings/ntua-performing-arts-hall/README.md) |
+| [![圖書館球體入口立面段](板橋校區/buildings/ntua-library-entrance-section/previews/front.png)](板橋校區/buildings/ntua-library-entrance-section/README.md) | [![有章藝術博物館現館](板橋校區/buildings/ntua-you-chang-museum/appearance/previews/front.png)](板橋校區/buildings/ntua-you-chang-museum/README.md)<br>[歷史照片限域外觀](板橋校區/buildings/ntua-you-chang-museum/appearance/README.md) | [![臺藝表演廳](板橋校區/buildings/ntua-performing-arts-hall/previews/front.png)](板橋校區/buildings/ntua-performing-arts-hall/README.md) |
 
 每件頁面提供STL、可編輯Blender場景、重建程式、前後STL渲染、來源及原始網格數位QA。第三方照片/PDF未再散布，只列來源網址。玻璃為實心曲面或背襯；未知側背、進深及細節估算逐件說明。
 

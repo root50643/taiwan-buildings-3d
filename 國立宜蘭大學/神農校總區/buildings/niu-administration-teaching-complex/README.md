@@ -48,3 +48,7 @@
 幾何QA不等於工具路徑驗證或實體試印。正確處理的source_rebuild_hash_matches及blend_stl_geometry_agree見validation.json。
 
 全校及全國尚未完成。本件不能表示全校建築已製作。
+
+## 有限窗背外觀層
+
+[雙材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅 -Y 上三排 27 窗、54 面；下兩排與其他全部維持中性，非整棟全彩復原。

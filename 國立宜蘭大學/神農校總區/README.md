@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [綜合行政教學大樓](buildings/niu-administration-teaching-complex/README.md)<br>[<img src="buildings/niu-administration-teaching-complex/previews/front.png" alt="綜合行政教學大樓" width="220">](buildings/niu-administration-teaching-complex/README.md) | [經德大樓](buildings/niu-jingde-building/README.md)<br>[<img src="buildings/niu-jingde-building/appearance/previews/front.png" alt="經德大樓有限教室窗背配色" width="220">](buildings/niu-jingde-building/README.md) | [時習大樓](buildings/niu-shixi-building/README.md)<br>[<img src="buildings/niu-shixi-building/previews/front.png" alt="時習大樓" width="220">](buildings/niu-shixi-building/README.md) |
+| [綜合行政教學大樓](buildings/niu-administration-teaching-complex/README.md)<br>[<img src="buildings/niu-administration-teaching-complex/appearance/previews/front.png" alt="綜合行政教學大樓有限窗背配色" width="220">](buildings/niu-administration-teaching-complex/README.md) | [經德大樓](buildings/niu-jingde-building/README.md)<br>[<img src="buildings/niu-jingde-building/appearance/previews/front.png" alt="經德大樓有限教室窗背配色" width="220">](buildings/niu-jingde-building/README.md) | [時習大樓](buildings/niu-shixi-building/README.md)<br>[<img src="buildings/niu-shixi-building/previews/front.png" alt="時習大樓" width="220">](buildings/niu-shixi-building/README.md) |
 | [體育館（校史近似）](buildings/niu-gymnasium/README.md)<br>[<img src="buildings/niu-gymnasium/previews/front.png" alt="體育館（校史近似）" width="220">](buildings/niu-gymnasium/README.md) | [圖書資訊大樓](buildings/niu-library-information-building/README.md)<br>[<img src="buildings/niu-library-information-building/previews/front.png" alt="圖書資訊大樓" width="220">](buildings/niu-library-information-building/README.md) | [農林修養室（2016修復後近似）](buildings/niu-cultivation-hall-restored/README.md)<br>[<img src="buildings/niu-cultivation-hall-restored/previews/v1/front.png" alt="農林修養室" width="220">](buildings/niu-cultivation-hall-restored/README.md) |
 
 [全校逐項續接](../FOLLOW-UP.md) · [屋頂年代補充](../ROOF-STATUS-NOTE.md)
@@ -16,3 +16,5 @@
 修養室新增一套，採2016修復後低細節外觀、166mm長單件，已有PrusaSlicer數位QA並有支撐，尚未試印／實拆；4.72mm封頂、8.1mm淺凹走線、5條邊界差異及304條探入受阻見模型頁。舊gallery.png為既有五件合覽。Library未回驗，依使用者取消額外備份門檻而不作本次發布阻擋。既有五件的尺寸／未切片說明不套用到新增修養室。
 
 [經德大樓有限教室窗背配色／五視角](buildings/niu-jingde-building/appearance/README.md)（230完整原面，其餘中性；拍攝年代未知，非現況全彩復原）。
+
+[綜合行政教學大樓有限窗背配色／五視角](buildings/niu-administration-teaching-complex/appearance/README.md)（54完整原面，其餘中性；拍攝年代未知，非現況全彩復原）。

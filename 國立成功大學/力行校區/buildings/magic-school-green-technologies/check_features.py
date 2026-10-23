@@ -1,0 +1,25 @@
+"""Actual raw STL air/solid, ray, local slice, and thin detail measurements; no healing."""
+from pathlib import Path
+import json,hashlib,numpy as np,trimesh,manifold3d as md
+from shapely.geometry import Polygon,GeometryCollection,box
+A=Path(__file__).resolve().parent;b=(A/'model.stl').read_bytes();r=np.frombuffer(b,dtype=[('n','<f4',(3,)),('v','<f4',(3,3)),('a','<u2')],offset=84);v,i=np.unique(r['v'].reshape(-1,3),axis=0,return_inverse=True);f=i.reshape(-1,3);m=trimesh.Trimesh(v,f,process=False)
+def coord(p):return (np.array(p)-[20,13,0])*5
+samples=[]
+def probe(label,p,solid):
+ actual=bool(m.contains([coord(p)])[0]);assert actual==solid,(label,actual);samples.append(dict(label=label,point_mm=coord(p).tolist(),expected_solid=solid,actual_solid=actual))
+for p,label in [((10,13,2),'central_atrium_lower'),((10,13,6),'central_atrium_upper'),((12,13,10),'atrium_below_roof'),((0,12,2),'entrance_true_open_portal'),((32,5,16.0),'air_between_hall_roof_and_PV'),((42,23.5,5.9),'rain_stair_between_runs'),((22.4,13.6,23),'wind_tower_open_interior'),((13,28.2,6),'source82_recessed_balcony'),((8,0,2),'L_gallery_ground_air'),((8,0,6),'L_gallery_upper_air'),((32,25.3,21.8),'PV_tail_clear_of_gray_tower'),((19.5,-2,6),'no_invented_upper_service_cylinder'),((20,13,13.3),'no_wind_support_dangling_below_roof'),((19.2,13.3,13.3),'no_tank_support_dangling_below_roof')]:probe(label,p,False)
+for p,label in [((10,3,2),'front_office_simplified_interior'),((10,23,4),'rear_office_simplified_interior'),((30,5,4),'hall_lower_classroom'),((32,5,13.6),'separate_hall_roof_skin'),((5,10,11.03),'garden_roof_skin'),((41,22,6),'rain_collector_red_spine'),((40,18.5,22),'third_tall_vent_cap'),((10,6.5,4.5),'atrium_gallery_slab'),((19.5,-2,2),'one_F_semicircular_service_volume'),((19.5,-2,.45),'service_projection_no_floating_base'),((8,0,8.75),'L_gallery_canopy_skin')]:probe(label,p,True)
+rays=[]
+for label,start,direction,length in [('entrance_into_atrium',(-1,12,2),(1,0,0),20),('clear_air_hall_roof_to_PV',(32,5,14.3),(0,0,1),2.0),('central_atrium_long_air',(2,13,6),(1,0,0),17),('PV_tail_separated_from_tower',(32,25.0,21.7),(0,1,0),.6),('unsupported_L_gallery_canopy_clearance',(8,0,5.1),(0,0,1),3.4)]:
+ loc,_,_=m.ray.intersects_location([coord(start)],[direction],multiple_hits=True);ds=np.dot(np.asarray(loc).reshape(-1,3)-coord(start),np.array(direction));hits=ds[(ds>1e-5)&(ds<length*5)];assert len(hits)==0,(label,hits);rays.append(dict(label=label,start_mm=coord(start).tolist(),direction=direction,clear_length_mm=length*5,hits=0))
+rawman=md.Manifold(md.Mesh(v.astype(np.float32),f.astype(np.uint32)));sections=[]
+for label,z,bounds,expect_zero in [('atrium_lower',1.8,(2,19,9,17),True),('atrium_upper',6.2,(2,19,9,17),True),('atrium_under_roof',10,(2,19,9,17),True),('PV_air_layer',15.3,(29,35,2,7),True),('PV_skin_layer',17.25,(29,35,2,7),False),('garden_roof',12.5,(1,20,8,18),False),('rear_stair_ground',2,(18,23,26,29),False)]:
+ g=GeometryCollection()
+ for p in rawman.slice(z*5).to_polygons():g=g.symmetric_difference(Polygon(p))
+ assert g.is_valid;a,bb,c,d=bounds;lo=coord((a,c,z));hi=coord((bb,d,z));q=g.intersection(box(lo[0],lo[1],hi[0],hi[1]));assert q.is_valid;assert (q.area<1e-7)==expect_zero,(label,q.area);sections.append(dict(label=label,z_mm=z*5,area_mm2=q.area,valid=True,expected_air=expect_zero))
+# Actual parallel ray thickness measured on exposed exported surfaces, not nominal alone.
+widths=[]
+for label,start,direction,lower,upper in [('entrance_louver_vertical_thickness',(-.05,22,2.00),(0,0,1),.50,.60),('rain_collector_wall_depth',(41,20,7),(0,1,0),8.4,8.6),('PV_skin_vertical_thickness',(34,5,16.7),(0,0,1),1.1,1.3)]:
+ loc,_,_=m.ray.intersects_location([coord(start)],[direction],multiple_hits=True);ds=np.dot(np.asarray(loc).reshape(-1,3)-coord(start),np.array(direction));ds=np.unique(np.round(ds[ds>1e-5],6));intervals=np.diff(ds);valid=intervals[(intervals>=lower)&(intervals<=upper)];assert len(valid),(label,ds.tolist());widths.append(dict(label=label,ray_start_mm=coord(start).tolist(),direction=direction,positive_hit_distances_mm=ds.tolist(),measured_interval_mm=float(valid[0]),accepted_range_mm=[lower,upper]))
+rpt=dict(stl_sha256=hashlib.sha256(b).hexdigest(),method='Raw STL exact coordinate weld only; multi-hit rays, parity solid probes, unrounded manifold sections; no mesh healing',samples=samples,rays=rays,local_sections=sections,actual_ray_thickness=widths,nominal_thin_features_mm={'PV_grid':.275,'wind_rotor_blades':.55,'guardrails':.65,'garden_retaining_lip':.7,'PV_skin_vertical':1.2},supports_required=['floating PV and backframe','rain stairs and PV service stairs','folded shade','attached boat balcony','atrium gallery and eaves'],physical_print_tested=False,minimum_wall_certification=False,limitations='Global horizontal erosion warnings retained. Rail/canopy orientation may require supports or rescaling; static PV proxy is not mechanically movable; no physical slicer or print certificate.')
+(A/'qa/feature-validation.json').write_text(json.dumps(rpt,indent=2)+'\n');print('FEATURES PASS',len(samples),len(rays),len(sections),len(widths))

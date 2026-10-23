@@ -1,0 +1,2 @@
+# License notice
+Original model licensing and notices remain authoritative in the preserved parent package; no additional photograph license is granted. Appearance scripts and generated model do not transfer rights in reference images. Official NCKU images credit 計網中心行政與諮詢組-陳永川. Source photos, HTML and historical drawings are private evidence only, excluded from distributed artifacts. Colors are approximate opaque proxies, not measured reproductions. Retain original attribution and limitations.

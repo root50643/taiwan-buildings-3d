@@ -28,3 +28,7 @@
 Python 依賴 numpy、trimesh、manifold3d、shapely、Pillow、rtree，Blender 4.3.2。執行 build_model.py 重建原 STL；render_preview.py 由 Blender 執行，render_top_edges.py 以原 STL 可見銳邊補頂圖線。所有檢查腳本只讀交付原 mesh，不 repair；嚴格檢查失敗保留 exit 1。
 
 獨立加密至50260個原面點，發現311個近角短首弦，最小0.0631215666mm；與作者28720點／76筆分列。表面向內0.00001mm起沿實際鄰面角平分線連續實體至少18.1300099mm，1244內點控制通過；不是跨過空氣才找背牆。大柱真角鄰域外存在極小原邊界碎差，不能稱絕對零，精確值見QA。
+
+## 限域外觀層
+
+[雙材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅東面八組完整窗背104面，其餘7076面中性；原strict幾何QA仍false，693角損與作者76／獨審311短弦未修復；非整樓全彩復原。

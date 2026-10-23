@@ -1,72 +1,40 @@
-# 圖書資訊大樓：圖書館主體段
+# 國立臺北大學三峽校區｜圖書資訊大樓全組重建
 
-## 2 材質外觀版（2026-10-21）
+這是既有 `ntpu-library-main-block-segment` 的**整體幾何替代**，不是新增一棟或增加套數。以 2014 成品照片系列及建築師公開 B1–7F 平面，重建雙高圖書館翼、兩層資訊中心、3F 低屋頂露臺、中央橋廊、2F 大道與臨湖梯端、局部 B1 下沉院。不是 2026 現況，也不是測繪或施工模型。
 
-| 正面與來源支持區域 | 兩側外皮有來源／幕牆中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+## 檔案
+- `scene.blend`：可編輯真三角網格、各面材質；沒有嵌入來源照片或外部材質圖。
+- `model.3mf`：毫米單位、逐面八材質，可交換與修改；中央採光頂/橋頂用半透明顯示代理。
+- `model.stl`：與 3MF 同一表面幾何；STL **不保存顏色或透明度**。
+- `previews/`：五張由實際交付網格渲染的 PNG，不是 AI 示意圖。
+- `build_model.py` / `render_model.py` / `rebuild.py`：重建程式；`qa/`、`QA.md` 記錄實驗結果與限制。
 
-[來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntpulib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
+## 版本與範圍
+保留主要雙翼與真正中庭開放空間，中央採光頂和翼屋簷分開；各樓橋廊/斜梯採不同位置，而非層層同一模板。資訊中心只有兩個使用樓層，3F 為露臺。1F 主館與資訊中心的中央量體連續；圓井穿 2F 平台進入有限深度井腔，不全穿底座。局部下沉院不擴成整條地下中軸。保留地面門斗、兩側上 2F 梯與 S 皮側入口。
 
-依五張設計者實照與原 loft 面平面精確定位兩側白 S 外皮，共 4379 個完整原面；混合幕牆、三座斜橋、屋頂及地坪中性，不宣稱整棟玻璃或現況還原。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+S 皮、屋簷弧度、帷幕分格、欄杆與橋身均是來源約束下的縮尺簡化；不同側皮不是直接鏡像。約 12 個井口是比例展示近似，非精確設備盤點。建築師記載 35.95 m 只作整體比例參考；沒有 RF 精尺、全套完工立面/剖面，不宣稱可反算真實尺寸。隱藏設備、室內家具、廣域湖景與鄰棟均不造。
 
+概念圖 39–45 不作尺寸依據，尤其概念 45 的額外低樓層和預留 PV **沒有移入成品模型**。照片著作權仍屬各權利人，包內不附來源原圖。詳見 [SOURCES.md](SOURCES.md)。
 
-局部主體段；非全圖資大樓。依公開竣工實拍手工參數化重建的建築外觀近似模型，沒有抓取現成3D mesh，也不是測繪或工程用模型。
+## 列印限制（重要）
+這是可編輯的彩色建築展示模型，**不是已驗證可直接列印的套件**。密閉玻璃橋廊內存在真實幾何空腔；SLA 可能困住樹脂，FFF 的封閉橋內支撐也未能證明可移除。未加入虛構排孔、拆件或任意封實來換取單外殼測試結果。若要實體列印，須另設計可拆/排液/支撐方案。
 
-## 模型與下載
+細欄、立梃、頂片和投影屋簷可能低於 0.8 mm 局部厚度或需支撐；全局切片的薄島警告完整保留。未實際切片器製程校準、未實印，不提供最小壁厚或結構安全保證。透明顯示也不代表可由一般列印材料直接實現。
 
-![實際STL正面與背面](previews/front-rear.png)
-![頂視](previews/top.png)
-
-- [STL](model.stl)
-- [可編輯 Blender 場景](scene.blend)：匯入實際交付STL的三角網格，單位毫米
-- [參數化重建腳本](build_model.py) 與 [相依版本](requirements.txt)
-- [公開來源與採用特徵](sources.json)
-
-尺寸（含底座）：150 × 115 × 82.942398 mm；最長150mm。本件獨立縮放，與其他館舍不是同一比例。
-
-## 保留的外觀
-
-- 南北雙翼間26mm寬開放穿堂
-- 三層斜向跨橋與屋頂X構件；橋位、跨度和曲率依照片近似
-- 淺上翹曲面大屋頂及退縮頂層
-- 兩側不相同的立體扭曲波形帶；外表面隨高度起伏
-- 正面前突較低量體與小入口階梯
-
-## 範圍與不確定處
-
-- 明確不含後方低層資訊中心、通湖平台及附屬樓梯
-- 本件為圖書館雙翼主體段，不能視為圖資大樓全棟測繪
-- 波形外皮採連接實體基牆的加厚近似，非懸浮薄殼
-- 立面玻璃以凹刻簡化，非透明片；曲帶、橋體、屋頂進深均為照片估算
-- 官方資料指地上7層、35.95m，但本件各向尺寸不是嚴格測繪比例
-- 來源為2013落成後與2014刊登系列；照片無逐張攝影年月，不能稱2026現況測量
-
-## 重建與檢查
-
-以Python 3.12安裝requirements.txt，依序執行：
+## 重建
+Python 3.12，依 `requirements.txt` 安裝依賴，Blender 4.3.2 CPU Cycles，4 threads。
 
 ```sh
 python build_model.py
-blender -b -t 2 -P render_preview.py
-python validate_model.py
-python check_contour_validity.py
-python check_thin_features.py
-python verify_package.py
+blender -b -t 4 --python-exit-code 1 --python render_model.py
+python run_all_checks.py
+python rebuild.py --output /absolute/new-empty-directory --threads 4
 ```
 
-- 原始STL的法向量、繞序、正體積、水密、每邊兩面、vertex link單環及單一連通表面都有檢查；沒有以修復後的STL代替輸入證據。
-- 獨立暫存路徑重建的STL SHA必須一致；saved Blend實際網格也要與交付STL幾何一致。
-- [validation.json](validation.json)、[0.2mm逐層檢查](contour-validity-check.json)與[0.8mm參考寬度篩檢](thin-feature-check.json)分開提供；斷言失敗即非零退出，不能忽略。
-- 輪廓採0.2mm層距、起點z=0.071mm，逐層檢查degree 2閉合及個別/組合Polygon有效性。
-- 薄特徵以canonical shared-edge法，1mm層距、0.4mm半徑形態opening輔助檢查，不等於全面最小壁厚。
+只在全新空目錄進行重建；正常 QA 不修洞、不刪面、不重算法線、不隱藏失敗。完整歷史原件另由固定 Git commit/SHA 保留，歷史原 checksum 的既有不一致亦另披露；不以原 QA 冒充此新網格驗證。
 
-## 列印注意
+## 校級歷史快照與既有首頁選擇
 
-毫米匯入，底座朝下。露臺、屋簷、跨橋等懸挑處可能需要支撐；請在Cura、PrusaSlicer等實際切片器逐層查看橋接、支撐可移除性、細部與首層黏著。欄杆、玻璃格柵等已做粗化或凹刻，勿再任意縮小。
+校級原批次 QA 保留初始版本紀錄，不是此全組升級版的現行幾何或驗證。現行本件請以本目錄、[來源](SOURCES.md)與[QA](QA.md)為準；活 `model-index.json` 同步新版本，套件內 `SHA256SUMS` 核對本版全檔。舊完整 42 檔（含 21 個 appearance 檔）已逐 bytes 核對固定歷史，可由[固定歷史版本](https://github.com/root50643/taiwan-buildings-3d/tree/76586f491e45e5e72d371962efcd5ce69af13689/國立臺北大學/三峽校區/buildings/ntpu-library-main-block-segment)還原。
 
-本件沒有實體試印，也沒有Cura/Prusa的實際工具路徑驗證；數位幾何通過不保證所有機器、材質、噴嘴或設定都可直接印成功。
-
-## 版本
-
-2026-10-13 修訂版已通過外觀覆核並凍結；獨立幾何審核結果另附。來源照片與原始PDF不在公開包重新散布。
+首頁代表仍選原來的同一個圖資大樓 identity，不改選擇路徑；`appearance/previews/front.png` 僅為該既有路徑的相容預覽，bytes 與新版 `previews/front.png` 相同，不是另一套模型，也沒有沿用舊 4379 色面。

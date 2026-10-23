@@ -1,0 +1,371 @@
+{
+  "stl_sha256": "49879ee8d9bf9c82af3e46305e717a6016dfdd6fb4b2a59886691ad971986495",
+  "method": "Raw STL exact-coordinate weld only; parity contains, multi-hit raycasts, unrounded manifold local slices. No geometry healing.",
+  "samples": [
+    {
+      "label": "central_atrium_3F_air",
+      "point_mm": [
+        100.0,
+        0.0,
+        40.0
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "central_atrium_5F_air",
+      "point_mm": [
+        112.5,
+        0.0,
+        62.5
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "central_atrium_7F_air",
+      "point_mm": [
+        25.0,
+        0.0,
+        85.0
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "low_roof_terrace_air",
+      "point_mm": [
+        -75.0,
+        37.5,
+        35.0
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "low_has_no_four_storey_mass",
+      "point_mm": [
+        -75.0,
+        37.5,
+        52.5
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "separation_high_low",
+      "point_mm": [
+        -20.0,
+        42.5,
+        47.5
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "local_B1_sunken_court",
+      "point_mm": [
+        -25.0,
+        0.0,
+        5.0
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "well_mouth_void",
+      "point_mm": [
+        35.0,
+        5.0,
+        20.75
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "lake_platform_underpass",
+      "point_mm": [
+        -137.5,
+        0.0,
+        12.5
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "7F_end_setback",
+      "point_mm": [
+        5.0,
+        40.0,
+        87.5
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "no_PV_on_low_roof",
+      "point_mm": [
+        -75.0,
+        -37.5,
+        40.0
+      ],
+      "expected_solid": false,
+      "actual_solid": false
+    },
+    {
+      "label": "high_wing_envelope",
+      "point_mm": [
+        62.5,
+        42.5,
+        50.0
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    },
+    {
+      "label": "low_wing_envelope",
+      "point_mm": [
+        -75.0,
+        42.5,
+        20.0
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    },
+    {
+      "label": "2F_boulevard_slab",
+      "point_mm": [
+        12.5,
+        0.0,
+        20.75
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    },
+    {
+      "label": "well_bottom_not_through_base",
+      "point_mm": [
+        35.0,
+        5.0,
+        5.0
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    },
+    {
+      "label": "local_B1_court_floor",
+      "point_mm": [
+        -25.0,
+        0.0,
+        3.25
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    },
+    {
+      "label": "roof_glazed_skin",
+      "point_mm": [
+        62.5,
+        2.5,
+        95.5
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    },
+    {
+      "label": "opaque_eave",
+      "point_mm": [
+        62.5,
+        50.0,
+        96.75
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    },
+    {
+      "label": "low_roof_terrace_paving",
+      "point_mm": [
+        -75.0,
+        37.5,
+        32.875
+      ],
+      "expected_solid": true,
+      "actual_solid": true
+    }
+  ],
+  "rays": [
+    {
+      "label": "high_atrium_long_clear_air",
+      "start_mm": [
+        2.5,
+        0.0,
+        27.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "clear_length_mm": 120.0,
+      "hits": 0
+    },
+    {
+      "label": "between_high_and_low",
+      "start_mm": [
+        -20.0,
+        -37.5,
+        50.0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "clear_length_mm": 75.0,
+      "hits": 0
+    },
+    {
+      "label": "under_lake_boulevard",
+      "start_mm": [
+        -145.0,
+        0.0,
+        12.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "clear_length_mm": 30.0,
+      "hits": 0
+    },
+    {
+      "label": "3F_low_terrace_clear_air",
+      "start_mm": [
+        -87.5,
+        37.5,
+        36.75
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "clear_length_mm": 30.0,
+      "hits": 0
+    }
+  ],
+  "local_sections": [
+    {
+      "label": "central_atrium_air_above_2F",
+      "z_mm": 27.5,
+      "area_mm2": 0.0,
+      "valid": true,
+      "expected_air": true
+    },
+    {
+      "label": "local_court_below_ground",
+      "z_mm": 5.0,
+      "area_mm2": 0.0,
+      "valid": true,
+      "expected_air": true
+    },
+    {
+      "label": "low_roof_terrace_air",
+      "z_mm": 40.0,
+      "area_mm2": 0.0,
+      "valid": true,
+      "expected_air": true
+    },
+    {
+      "label": "no_early_concept_extra_low_storeys",
+      "z_mm": 55.0,
+      "area_mm2": 0.0,
+      "valid": true,
+      "expected_air": true
+    },
+    {
+      "label": "low_two_storey_mass",
+      "z_mm": 25.0,
+      "area_mm2": 1700.0,
+      "valid": true,
+      "expected_air": false
+    },
+    {
+      "label": "main_high_wing",
+      "z_mm": 62.5,
+      "area_mm2": 4887.5,
+      "valid": true,
+      "expected_air": false
+    },
+    {
+      "label": "central_glazed_canopy",
+      "z_mm": 95.5,
+      "area_mm2": 2875.0,
+      "valid": true,
+      "expected_air": false
+    }
+  ],
+  "actual_ray_thickness": [
+    {
+      "label": "2F_boulevard_slab",
+      "ray_start_mm": [
+        -137.5,
+        0.0,
+        17.5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "positive_hit_distances_mm": [
+        2.75,
+        4.0
+      ],
+      "measured_interval_mm": 1.25,
+      "accepted_range_mm": [
+        1.24,
+        1.26
+      ]
+    },
+    {
+      "label": "canopy_glazed_skin",
+      "ray_start_mm": [
+        12.5,
+        2.5,
+        94.0
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "positive_hit_distances_mm": [
+        1.300003,
+        1.849998
+      ],
+      "measured_interval_mm": 0.549995,
+      "accepted_range_mm": [
+        0.54,
+        0.56
+      ]
+    }
+  ],
+  "nominal_thin_features_mm": {
+    "guard_posts": 0.325,
+    "canopy_long_mullion": 0.375,
+    "canopy_glass": 0.55,
+    "eave_skin": 1.25,
+    "boulevard_slab": 1.25
+  },
+  "supports_required": [
+    "high projecting eaves",
+    "central bridges and inclined stairs",
+    "lake boulevard",
+    "canopy and guardrails"
+  ],
+  "minimum_wall_certification": false,
+  "physical_print_tested": false,
+  "limitations": "Global horizontal erosion warnings are retained. Thin railings may require rescale or resin; hollow appearance is not proof of support-free manufacture. Window backing is opaque miniature proxy; central canopy is alpha appearance but STL has no transparency."
+}

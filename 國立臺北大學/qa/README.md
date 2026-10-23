@@ -1,4 +1,6 @@
-# 首批獨立數位幾何審核
+# 首批獨立數位幾何審核（歷史快照）
+
+> 2026-10-23：圖資大樓已同 identity 替代為全組近似；以下單殼/150mm/415層是舊主體段結果，不適用新版。新版為1連通solid與7閉橋腔，原單boundary gate FAIL如實保留、cavity-aware另驗；非直接列印就緒。請見[現行圖資大樓 QA](../三峽校區/buildings/ntpu-library-main-block-segment/QA.md)。
 
 兩件原始STL均通過：單一連通表面殼、每邊兩面、vertex link單環、正體積、法向與繞序、含底座最大150mm。獨立暫存重建的STL SHA與交付原件一致；saved Blend實際網格與交付STL一致。
 

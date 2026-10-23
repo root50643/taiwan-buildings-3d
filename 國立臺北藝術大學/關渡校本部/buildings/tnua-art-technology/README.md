@@ -56,3 +56,7 @@ Python 3.12，先依 requirements.txt 安裝依賴，再執行 build_model.py；
 ## 導覽
 
 [關渡校本部](../../README.md) · [國立臺北藝術大學](../../../README.md)
+
+## 限域外觀層
+
+[三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅窄窗背46面＋可見外皮196面，其餘3050面中性；非整樓全彩復原。

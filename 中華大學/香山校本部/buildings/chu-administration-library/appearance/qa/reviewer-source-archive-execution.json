@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "source_archive": {
+    "path": "chu-admin-appearance-20261023/work/appearance/rebuild-source.zip",
+    "bytes": 197143,
+    "sha256": "22776fd6a39a1fcbefd83a0eaa0fff07b1c0456f7be8a768dd1f9d0a8aada464"
+  },
+  "actual_archive_extracted_and_executed": true,
+  "commands": [
+    "python appearance/source/build_appearance.py",
+    "python appearance/source/verify_exchange.py",
+    "blender -b -t 4 --python appearance/source/render_appearance.py",
+    "blender -b -t 4 --python appearance/source/verify_scene.py"
+  ],
+  "all_commands_exit_code": 0,
+  "archive_members_unchanged_after_execution": [
+    {
+      "name": "model.stl",
+      "bytes": 984084,
+      "sha256": "1b03e0865c6f67a69ec8daabd5a42224e4dac6076a50cf750255fcbcd1d5c5e1"
+    },
+    {
+      "name": "appearance/source/build_appearance.py",
+      "bytes": 5499,
+      "sha256": "45bf27974bc70a4cfd4dd15d52f0b82371f984f36023cb99e82ac78ed499eac4"
+    },
+    {
+      "name": "appearance/source/render_appearance.py",
+      "bytes": 5013,
+      "sha256": "546d218bb28bdf01895642324cc86cbfc4b320535dbdd343dd458e3292f77185"
+    },
+    {
+      "name": "appearance/source/requirements.txt",
+      "bytes": 36,
+      "sha256": "7137ce9c4ce70fa1d1120ac9558ac8d0104ba6ee23a57c1fb295bbcb6589188e"
+    },
+    {
+      "name": "appearance/source/source-selection.json",
+      "bytes": 12088,
+      "sha256": "c4692a852c9b7c19ab1052c2833ffa0595687cbcdbb3682429c0948a6190b914"
+    },
+    {
+      "name": "appearance/source/verify_exchange.py",
+      "bytes": 5746,
+      "sha256": "1f69787d42cd45e8a74bd4d4ac6911870dd0d99b999750d0c31c052e228fcc68"
+    },
+    {
+      "name": "appearance/source/verify_scene.py",
+      "bytes": 4394,
+      "sha256": "1fa56ceeb2fa77eb5a3aa77f32f2716690a7113eb8b6d8a65a2f3a78dae16f3c"
+    },
+    {
+      "name": "appearance/README.md",
+      "bytes": 3454,
+      "sha256": "841c5c878fd4a5b137ffa6394e2f90006642f999402de36fe11a1e4e29f1506f"
+    },
+    {
+      "name": "appearance/SOURCES.md",
+      "bytes": 1087,
+      "sha256": "3b186b01205da9fe5c2e9402b0587af9beefdb1ee29fd1e2f74cacd72c9b99e4"
+    },
+    {
+      "name": "appearance/LICENSE-NOTICE.md",
+      "bytes": 888,
+      "sha256": "560dc089ac7472ce9ed0613a433bebe623e209f6980b9c2f5bc38f6640fac1ab"
+    },
+    {
+      "name": "appearance/source-manifest.json",
+      "bytes": 557,
+      "sha256": "0c8831499f0939381b455a3cfe5b4eea9f88d1b07a1afb4b9050b95d37211201"
+    }
+  ],
+  "generated_exact_byte_outputs": [
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/chu-administration-library-appearance.3mf",
+      "bytes": 203619,
+      "sha256": "c6162f5b8276432632de1a4786f2431aa15c6aec6c91fb66c8a6110c49ec0b1a"
+    },
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/palette.json",
+      "bytes": 604,
+      "sha256": "c15e019f2734f30aab99288c88474073377703d9e8081d1ee461f734f1a880a9"
+    },
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/face-materials.json",
+      "bytes": 903584,
+      "sha256": "99c5b478acf08f55d961f7e2128e48c8978ccda58094e7fca3f22d0bc5ae7db8"
+    },
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/previews/front.png",
+      "bytes": 1646939,
+      "sha256": "cbc283a625221c57b9bee60a6f80be2668a588f0210a64defc34645a501d9a5f"
+    },
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/previews/left.png",
+      "bytes": 1643318,
+      "sha256": "b3966208f5f7e1cd58a281139e98e32df60fde31b26772abd9c2ab911fb7fce0"
+    },
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/previews/right.png",
+      "bytes": 1651512,
+      "sha256": "2f8eb529b4ba88d0ea7b99ca01243f1239d285a090557b5b66c589f9f02d84e6"
+    },
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/previews/rear.png",
+      "bytes": 1646115,
+      "sha256": "87b7280155cc48b5b4099f90fab98828483a05c4cf2c25b7317442d2e2c4b89e"
+    },
+    {
+      "path": "chu-admin-appearance-20261023/work/appearance/previews/top.png",
+      "bytes": 1591311,
+      "sha256": "3b1adb8e06c8254b15c3a9c341109eea2039a6904a00ba98867cf2ac3d5528b9"
+    }
+  ],
+  "all_8_outputs_exact": true,
+  "exchange_and_scene_validation_semantics_equal": true,
+  "exchange_strict_warning_count": 0,
+  "Blend_real_material_and_vertex_edits_save_reopen_and_front_render_exact": true,
+  "source_images_not_in_archive": true,
+  "execution_log": {
+    "path": "chu-admin-appearance-20261023/reviewer-source-execution.log",
+    "bytes": 31917,
+    "sha256": "22a4c8103194c852b1b81c26b6723bd41e4af711d22156a52373d1c7a69b900e"
+  }
+}

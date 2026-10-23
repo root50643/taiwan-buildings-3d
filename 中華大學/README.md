@@ -4,9 +4,9 @@
 
 | 正面：南側入口 | 背面：北側長立面 |
 | --- | --- |
-| ![正面](香山校本部/buildings/chu-administration-library/previews/front.png) | ![背面](香山校本部/buildings/chu-administration-library/previews/rear.png) |
+| ![正面](香山校本部/buildings/chu-administration-library/appearance/previews/front.png) | ![背面](香山校本部/buildings/chu-administration-library/appearance/previews/rear.png) |
 
-圖為模型渲染。[建築說明與列印限制](香山校本部/buildings/chu-administration-library/README.md) · [STL](香山校本部/buildings/chu-administration-library/model.stl) · [來源與證據](香山校本部/buildings/chu-administration-library/sources.md)
+圖為模型渲染。[建築說明與列印限制](香山校本部/buildings/chu-administration-library/README.md) · [原面有限彩色外觀](香山校本部/buildings/chu-administration-library/appearance/README.md) · [STL](香山校本部/buildings/chu-administration-library/model.stl) · [來源與證據](香山校本部/buildings/chu-administration-library/sources.md)
 
 主矩形採 60 × 34.5 m，每端半圓另突出約 8.7 m。尺寸以 7F 房間錨與 NLSC 屋面投影雙證估配，並非牆基測量；主屋面 28 m、拱耳 34.4 m、半穹冠最高 28.7 m 皆為照片推估。版本跨 2021 年 8 月環景、帶 2024 水印正射與未標年官方照片，水印不是拍攝日期。竣工日期及設計者未確證。
 

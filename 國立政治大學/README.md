@@ -1,6 +1,6 @@
 # 國立政治大學｜校園建築模型
 
-目前27套建築外觀近似模型：山下19套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
+目前28套建築外觀近似模型：山下20套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -13,6 +13,7 @@
 | [<img src="山下校區/buildings/nccu-xuesi-hall/previews/front.png" alt="學思樓：實際模型預覽" width="220">](山下校區/buildings/nccu-xuesi-hall/README.md)<br>**[學思樓](山下校區/buildings/nccu-xuesi-hall/README.md)** | [<img src="山上校區/buildings/nccu-daofan-hall/previews/front.png" alt="道藩樓：實際模型預覽" width="220">](山上校區/buildings/nccu-daofan-hall/README.md)<br>**[道藩樓](山上校區/buildings/nccu-daofan-hall/README.md)** | [<img src="山下校區/buildings/nccu-journalism-hall/previews/front.png" alt="新聞館：實際模型預覽" width="220">](山下校區/buildings/nccu-journalism-hall/README.md)<br>**[新聞館](山下校區/buildings/nccu-journalism-hall/README.md)** |
 | [<img src="山下校區/buildings/nccu-jiying-hall/previews/front.png" alt="集英樓：實際模型預覽" width="220">](山下校區/buildings/nccu-jiying-hall/README.md)<br>**[集英樓](山下校區/buildings/nccu-jiying-hall/README.md)** | [<img src="山下校區/buildings/nccu-eighth-classroom/previews/front.png" alt="第八教室／校友服務中心：實際模型預覽" width="220">](山下校區/buildings/nccu-eighth-classroom/README.md)<br>**[第八教室／校友服務中心](山下校區/buildings/nccu-eighth-classroom/README.md)** | [<img src="山下校區/buildings/nccu-lohas-shop/previews/front.png" alt="樂活小舖：實際模型預覽" width="220">](山下校區/buildings/nccu-lohas-shop/README.md)<br>**[樂活小舖](山下校區/buildings/nccu-lohas-shop/README.md)** |
 | [<img src="山下校區/buildings/nccu-dazhi-hall/previews/front.png" alt="大智樓：實際模型預覽" width="220">](山下校區/buildings/nccu-dazhi-hall/README.md)<br>**[大智樓](山下校區/buildings/nccu-dazhi-hall/README.md)** | [<img src="山下校區/buildings/nccu-daren-hall/previews/front.png" alt="大仁樓：實際模型預覽" width="220">](山下校區/buildings/nccu-daren-hall/README.md)<br>**[大仁樓](山下校區/buildings/nccu-daren-hall/README.md)** | [<img src="山下校區/buildings/nccu-dayong-hall/previews/front.png" alt="大勇樓：實際模型預覽" width="220">](山下校區/buildings/nccu-dayong-hall/README.md)<br>**[大勇樓](山下校區/buildings/nccu-dayong-hall/README.md)** |
+| [<img src="山下校區/buildings/nccu-swimming-entrance/previews/front-right.png" alt="游泳館入口側服務翼節段（校方調查資料參考外觀；照片年代未定）：實際模型預覽" width="220">](山下校區/buildings/nccu-swimming-entrance/README.md)<br>**[游泳館入口側服務翼節段（校方調查資料參考外觀；照片年代未定）](山下校區/buildings/nccu-swimming-entrance/README.md)** |  |  |
 
 [山下校區](山下校區/) · [山上校區](山上校區/README.md) · [指南校區](指南校區/) · [金華校區](金華校區/) · [覆蓋範圍](coverage.json) · [精確續接清單](research-handoff/)
 

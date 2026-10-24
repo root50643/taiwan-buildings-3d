@@ -1,6 +1,6 @@
 # 山下校區
 
-本區19套建築外觀近似，並非全區完成；各件獨立比例與尺寸見模型說明。
+本區20套建築外觀近似，並非全區完成；各件獨立比例與尺寸見模型說明。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -10,7 +10,7 @@
 | [<img src="buildings/nccu-research-building/previews/front.png" alt="研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況：實際模型預覽" width="220">](buildings/nccu-research-building/README.md)<br>**[研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況](buildings/nccu-research-building/README.md)** | [<img src="buildings/nccu-information-complex/previews/front.png" alt="資訊大樓（含電算中心）：實際模型預覽" width="220">](buildings/nccu-information-complex/README.md)<br>**[資訊大樓（含電算中心）](buildings/nccu-information-complex/README.md)** | [<img src="buildings/nccu-xuesi-hall/previews/front.png" alt="學思樓：實際模型預覽" width="220">](buildings/nccu-xuesi-hall/README.md)<br>**[學思樓](buildings/nccu-xuesi-hall/README.md)** |
 | [<img src="buildings/nccu-journalism-hall/previews/front.png" alt="新聞館：實際模型預覽" width="220">](buildings/nccu-journalism-hall/README.md)<br>**[新聞館](buildings/nccu-journalism-hall/README.md)** | [<img src="buildings/nccu-jiying-hall/previews/front.png" alt="集英樓：實際模型預覽" width="220">](buildings/nccu-jiying-hall/README.md)<br>**[集英樓](buildings/nccu-jiying-hall/README.md)** | [<img src="buildings/nccu-eighth-classroom/previews/front.png" alt="第八教室／校友服務中心：實際模型預覽" width="220">](buildings/nccu-eighth-classroom/README.md)<br>**[第八教室／校友服務中心](buildings/nccu-eighth-classroom/README.md)** |
 | [<img src="buildings/nccu-lohas-shop/previews/front.png" alt="樂活小舖：實際模型預覽" width="220">](buildings/nccu-lohas-shop/README.md)<br>**[樂活小舖](buildings/nccu-lohas-shop/README.md)** | [<img src="buildings/nccu-dazhi-hall/previews/front.png" alt="大智樓：實際模型預覽" width="220">](buildings/nccu-dazhi-hall/README.md)<br>**[大智樓](buildings/nccu-dazhi-hall/README.md)** | [<img src="buildings/nccu-daren-hall/previews/front.png" alt="大仁樓：實際模型預覽" width="220">](buildings/nccu-daren-hall/README.md)<br>**[大仁樓](buildings/nccu-daren-hall/README.md)** |
-| [<img src="buildings/nccu-dayong-hall/previews/front.png" alt="大勇樓：實際模型預覽" width="220">](buildings/nccu-dayong-hall/README.md)<br>**[大勇樓](buildings/nccu-dayong-hall/README.md)** |  |  |
+| [<img src="buildings/nccu-dayong-hall/previews/front.png" alt="大勇樓：實際模型預覽" width="220">](buildings/nccu-dayong-hall/README.md)<br>**[大勇樓](buildings/nccu-dayong-hall/README.md)** | [<img src="buildings/nccu-swimming-entrance/previews/front-right.png" alt="游泳館入口側服務翼節段（校方調查資料參考外觀；照片年代未定）：實際模型預覽" width="220">](buildings/nccu-swimming-entrance/README.md)<br>**[游泳館入口側服務翼節段（校方調查資料參考外觀；照片年代未定）](buildings/nccu-swimming-entrance/README.md)** |  |
 
 每件具STL、可編輯Blend、參數來源、實際STL正背俯視預覽與可重跑QA。數位QA不等於切片軟體驗證或實體試印。
 

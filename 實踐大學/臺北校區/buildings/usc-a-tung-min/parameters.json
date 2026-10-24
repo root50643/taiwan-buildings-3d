@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "title": "實踐大學 A 棟東閔紀念大樓 — whole-A exterior approximation",
+  "units": "display model millimeters; not surveyed building dimensions",
+  "display_scale_mm": 1.0,
+  "main": {
+    "x_min": -90,
+    "x_max": 100,
+    "front_y": 17,
+    "rear_y": 65,
+    "upper_bottom": 78,
+    "roof_z": 114
+  },
+  "tower": {
+    "x_min": -90,
+    "x_max": -41,
+    "front_y": -10,
+    "back_y": 28,
+    "body_bottom": 130,
+    "body_top": 173,
+    "blade_top": 180
+  },
+  "low_wing": {
+    "screen_start": [
+      -107,
+      8
+    ],
+    "screen_end": [
+      -27,
+      -49
+    ],
+    "rear_vertex": [
+      -90,
+      40
+    ],
+    "screen_top": 85,
+    "elevated_bottom": 27
+  },
+  "rear": {
+    "classroom_x": [
+      -70,
+      20
+    ],
+    "open_stair_x": [
+      20,
+      44
+    ],
+    "narrow_glazed_x": [
+      44,
+      100
+    ],
+    "higher_end_x": [
+      -90,
+      -70
+    ],
+    "higher_end_top": 133
+  },
+  "repetition_conventions": {
+    "front_vertical_fin_pitch": 2.8,
+    "horizontal_louver_pitch": 2.8,
+    "rear_window_mullion_pitch": 4.3,
+    "rear_window_rows": [
+      [
+        5,
+        19
+      ],
+      [
+        23,
+        37
+      ],
+      [
+        41,
+        55
+      ],
+      [
+        59,
+        73
+      ]
+    ],
+    "upper_rear_rows": [
+      [
+        88,
+        99
+      ],
+      [
+        102,
+        113
+      ]
+    ]
+  },
+  "manufacturing": {
+    "base_mm": 2.5,
+    "minimum_fin_thickness_mm": 0.9,
+    "minimum_rail_thickness_mm": 0.9,
+    "main_columns_mm": 3.4,
+    "recessed_glass_relief_mm": 0.35,
+    "rear_stair_plate_mm": 1.25,
+    "model_only_plinth": true,
+    "supports_required_for_assessment": [
+      "large main entrance soffit",
+      "tower undercroft",
+      "rear stair flights",
+      "louver fins and balcony ledges",
+      "bridge-end stub"
+    ],
+    "actual_print_test": false
+  },
+  "unknowns": [
+    "Exact full footprint, floor-to-floor heights and full maximum height",
+    "Hidden west return and A/L physical joint",
+    "Complete roof, roof equipment and interiors",
+    "Actual louver and mullion counts",
+    "Engineering 26.4 m record is not established total tower height",
+    "Front/back connection depths are coherence assumptions, not a measured plan"
+  ],
+  "excluded": [
+    "L projecting planted foreground wing",
+    "C, M, N, H and campus landscape",
+    "Full east steel bridge",
+    "Invented roof equipment and basement"
+  ],
+  "parameter_contract": {
+    "driving_fields": [
+      "display_scale_mm",
+      "tower.body_bottom",
+      "tower.body_top",
+      "tower.blade_top",
+      "low_wing.screen_start",
+      "low_wing.screen_end",
+      "low_wing.rear_vertex",
+      "low_wing.screen_top",
+      "repetition_conventions.front_vertical_fin_pitch",
+      "repetition_conventions.horizontal_louver_pitch",
+      "repetition_conventions.rear_window_rows",
+      "repetition_conventions.upper_rear_rows"
+    ],
+    "other_numeric_fields": "Recorded canonical dimensions/manufacturing choices; corresponding detailed coordinates are defined in source/build_geometry.py. They are audit metadata, not all independent CAD controls."
+  }
+}

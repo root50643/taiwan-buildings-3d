@@ -1,14 +1,14 @@
 # 實踐大學・臺北校區
 
-目前收錄2套外觀研究模型：C棟，以及M棟體育館＋N棟圖資大樓＋中央庭院（合計1套）。不代表全校完成；兩套均未實體試印。
+目前收錄3套外觀研究模型：C棟、M棟體育館＋N棟圖資大樓＋中央庭院（合計1套），以及A棟東閔紀念大樓。不代表全校完成；三套均未實體試印。
 
-## C棟民生學院教學大樓
+## 現行模型圖鑑
 
 C棟2016–2017更新版完整外部主體近似，不代表全校完成。往D棟橋廊僅含C棟側4m截段，不含D棟；其他建物仍需另研究。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](buildings/usc-c-human-ecology/previews/front.png)<br>背面<br> | [![實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院：實際模型預覽](buildings/usc-gym-library-courtyard/previews/front.png)](buildings/usc-gym-library-courtyard/README.md)<br>**[實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院](buildings/usc-gym-library-courtyard/README.md)** |  |
+| 正面<br>![正面](buildings/usc-c-human-ecology/previews/front.png)<br>背面<br> | [![實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院：實際模型預覽](buildings/usc-gym-library-courtyard/previews/front.png)](buildings/usc-gym-library-courtyard/README.md)<br>**[實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院](buildings/usc-gym-library-courtyard/README.md)** | [![A棟東閔紀念大樓：實際模型預覽](buildings/usc-a-tung-min/previews/front.png)](buildings/usc-a-tung-min/README.md)<br>**[A 棟東閔紀念大樓｜完整主要外部量體近似版](buildings/usc-a-tung-min/README.md)** |
 
 [C棟民生學院教學大樓：檔案及限制](buildings/usc-c-human-ecology/README.md)
 
@@ -21,3 +21,5 @@ C棟漏窗薄屏有opening高損失例外：7層整層損失超過1%，最大8.0
 [校級QA資料摘要](../inventory/qa/usc-gym-library-courtyard-review.md)
 
 本頁整合於2026-10-16T10:23:00Z由既有main目錄及保存之正式模型包重建；C棟模型檔與上述高損失警示保留，M＋N模型283檔維持原位元組。校級整合文件為新版本，並非先前299檔發布組裝的原樣恢復。
+
+[A 棟東閔紀念大樓｜完整主要外部量體近似版](buildings/usc-a-tung-min/README.md)：A棟東閔紀念大樓：完整主要外部量體比例近似，含高塔、跨入口橫翼、斜向低前翼、穿空入口、內側橋廊、後側長窗帶、教室窗格及外露樓梯；不含L/C/M/N/H鄰棟或整座東側橋。主要後側證據為2015年，其他多張攝日未核實；原設計與公開照片綜合近似，非測繪、竣工或2026實測現況。224×141×180mm為展示／列印尺寸，未知屋頂、西側及接合深度中性簡化；來源樓數/高度/年份衝突分列。提供STL、逐面材質3MF、可編輯Blend、Python重建及9張實際渲染；百葉、欄杆、外梯、入口及橋廊支撐風險明列，未實體試印。

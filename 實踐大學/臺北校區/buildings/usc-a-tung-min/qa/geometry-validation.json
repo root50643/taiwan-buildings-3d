@@ -1,0 +1,70 @@
+{
+  "reload_source": "model.stl",
+  "stl_sha256": "cdbfa3a393399fc4f7ffeb203559918b97ed4855f217249c38e7f9e93d63b15f",
+  "stl_triangle_order_and_coordinates_exact_to_authoritative_mesh": true,
+  "vertices_after_weld": 12625,
+  "triangles": 26002,
+  "watertight": true,
+  "winding_consistent": true,
+  "edge_manifold_all_incidence_2": true,
+  "vertex_manifold_all_links_single_cycles": true,
+  "connected_components": 1,
+  "degenerate_triangles": 0,
+  "duplicate_triangles": 0,
+  "minimum_triangle_area_display_mm2": 2.114367816830054e-05,
+  "euler_number": -376,
+  "positive_volume_display_mm3": 1271606.1892554748,
+  "bounds_display_mm": [
+    [
+      -114.0,
+      -67.0,
+      0.0
+    ],
+    [
+      110.0,
+      74.0,
+      180.0
+    ]
+  ],
+  "maximum_stl_vs_npz_abs_coordinate_drift": 0.0,
+  "slice_preflight": {
+    "layer_height_scenario_mm": 0.2,
+    "first_plane_mm": 0.1,
+    "layers_checked": 900,
+    "closed_valid_sections": 900,
+    "new_unattached_component_starts": [],
+    "max_slice_components": 19,
+    "minimum_component_area_display_mm2": 0.80999,
+    "method": "Exact decimal-centered triangle-plane intersection; endpoint weld tolerance 1e-7 mm; Shapely closed polygons with odd-even rings; not extrusion toolpaths"
+  },
+  "overhang_preflight": {
+    "criterion": "down-facing triangles >45 degrees from vertical, excluding build-plate bottom",
+    "area_display_mm2": 21327.806086549408,
+    "triangle_count": 4234,
+    "support_warning": true
+  },
+  "practical_features": {
+    "base_mm": 2.5,
+    "minimum_fin_thickness_mm": 0.9,
+    "minimum_rail_thickness_mm": 0.9,
+    "main_columns_mm": 3.4,
+    "recessed_glass_relief_mm": 0.35,
+    "rear_stair_plate_mm": 1.25,
+    "model_only_plinth": true,
+    "supports_required_for_assessment": [
+      "large main entrance soffit",
+      "tower undercroft",
+      "rear stair flights",
+      "louver fins and balcony ledges",
+      "bridge-end stub"
+    ],
+    "actual_print_test": false
+  },
+  "physical_print_test": false,
+  "limitations": [
+    "Numerical mesh/slice checks do not guarantee adhesion, strength or support-free printing.",
+    "Supports need assessment under the portal soffit, tower undercroft, stair flights, fins, balcony ledges and bridge interface.",
+    "Color-only window and trim boundaries are actual face assignments, not holes. Fine features may require enlargement or resin; louvers and rails are model-thickened.",
+    "Exterior model with open portal and approximate visible bridges; no full interior halls, basement, site grading, structural simulation or exact real-world scale."
+  ]
+}

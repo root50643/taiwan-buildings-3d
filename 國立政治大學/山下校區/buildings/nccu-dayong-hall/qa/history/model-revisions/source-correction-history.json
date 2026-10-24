@@ -1,0 +1,77 @@
+{
+  "revision": "v2",
+  "old_build_sha256": "d6c4a76342d824c51822e3af8488641fbf88f56477f234d23f4ae704b9fa6284",
+  "new_build_sha256": "7b3b1a3edd6e4de16ecfb39d545abd5e0bf0aebb870a27c99cdc1b3e72a8bea7",
+  "review_sha256": "f6399d8a2b4fd61b92f0965829b6f6d9c533f0cfd3a740b6c499be8b5b5fdfc5",
+  "corrections": [
+    "G1: explicit exterior foot/ramp apron beyond landings, finite slopes to datum instead of raised-cliff lowerblock",
+    "G2: source-visible left alternating/right descending brace fields only, actual facade pier endpoint connections; remove unsupported distant repeated brace"
+  ],
+  "old_model_retained": "v1-pre-grade-correction-history.zip",
+  "old_source_retained": "nccu-dayong-source-v1-6e0091-history.zip",
+  "sealed_source_package_untouched": true,
+  "v3": {
+    "reason": "Source694 left two diagonals meet at low central V joint, not high inverted-V apex. Source-reading indicative pixels (259,174) to (323,342) to (452,175); not metric survey.",
+    "old_build_sha256": "7b3b1a3edd6e4de16ecfb39d545abd5e0bf0aebb870a27c99cdc1b3e72a8bea7",
+    "new_build_sha256": "c7aa3db550ec09f5e862a85d347128f6d35f682f40c94262eee0010c84b355c1",
+    "only_geometry_change": "Reverse two left brace segments; right descending brace, finite grade, all stair/core geometries unchanged",
+    "v2_history_sha256": "fb7234ac56d36b6b8ed217f4a6bad1b7886edae8667b785f98f7fe7f4a16a2bf",
+    "v2_source_full9_executed": {
+      "actual_source_zip_extract_build_render_all_checks": true,
+      "source_zip_sha256": "73bd70b8f02b3b638a9aef0fb7d51e973bd881bcc51371de25ccbebcb524377a",
+      "four_core_five_png_exact": {
+        "model.stl": "90720dea629033900e49c787495cfbc44c1c47346778e63903b12b949892aee2",
+        "model.3mf": "e3588dbaa605ea9e6178707947c356310c0fa56a1198d53051f3a41dd20fec01",
+        "mesh.json": "f1cdd1be05be8475aad05ff74bd97968747115fe3a69c919b34a11200a60bbb8",
+        "palette.json": "24d951238946d645bffc18dd5487a08b1ee2befd1cfb7d287793f26f18754607",
+        "previews/front.png": "501383ae0c300b69e4fae5a6e28fd27b10952d3a1c20fe51327267b09802a258",
+        "previews/rear.png": "12138d90eafa84209d6409a7e049723f40474208a1802d9d0b42b1b7fbd4154f",
+        "previews/elevation.png": "6fbb264db500ed6e97b5bc8e3d7c193be1eae062f90e0ed96177fd63dc61a55e",
+        "previews/top.png": "a073f85c252373cc2b11ad1d3e5a013c43f51daedc2a94d7f2f22ef912ab8662",
+        "previews/left_oblique.png": "6cced5afc2f76b34272b97ca00c1570dcad69175b4c32825ca9113bbe74ebc89"
+      },
+      "source_zip_crc": true,
+      "all_steps_exit_zero": true,
+      "blender_structural_edit_reopen_verified_from_extracted_source": true
+    }
+  },
+  "v4": {
+    "old_build_sha256": "c7aa3db550ec09f5e862a85d347128f6d35f682f40c94262eee0010c84b355c1",
+    "new_build_sha256": "bbc0ac124c3276b86a8ad8a39ca576ece915f47e21fcbd2d533896b6d3298e26",
+    "blocker_sha256": "2cef005b6c4fbcdc56ef97a504ca0120b5d6db206494ace62919f99f9a81b8a7",
+    "v3_history_sha256": "40e17b563dbddff38557e562c92767601209e3674bedb11fb85f02f544bb3ba6",
+    "v3_no_source_zip_sealed": true,
+    "correction": "All ramp and grade hull vertices share q grid with landing solids. Rail Ycentre and width derived exactly from already quantized post Ybounds. No STL face deletion or mesh healing.",
+    "sample_policy": "Keep all route points, include independent microlip locations as directed extra samples; do not discard failures"
+  },
+  "v5": {
+    "reason": "The true landing starts at q(E-2.15)=-12.650390625, earlier than old ramp UX=-12.5. Move ramp and rail endpoint to actual landing edge to remove ~0.04515mm step; shared-grid surfaces retained.",
+    "old_build_sha256": "bbc0ac124c3276b86a8ad8a39ca576ece915f47e21fcbd2d533896b6d3298e26",
+    "new_build_sha256": "fa9367cb60997f5385f5a6e3d0895e0ce8800ef63277a030f8fe82d49c1837b3",
+    "old_ray_script_sha256": "24b254ac396dd9760b5e3ba85268073bcf9a384638d4287c7d3c2eacabd00aff",
+    "new_ray_script_sha256": "f9a4adee29e8bd721612a455902a60b4fa3f2e41e3546913a797fed7ce80f229",
+    "v4_history_sha256": "62b26c55e46393a8734a8db96aaca0735bf4a5396c86c991c757170b782e8c1d",
+    "old759route_ray_origins_retained": true,
+    "old23525occupancy_sample_coordinates_retained": true,
+    "v4_source_full9": {
+      "actual_source_zip_extract_build_render_all_checks": true,
+      "source_zip_sha256": "5776d25e1e5f8e3ca25a2aa26fba614b786c95f27c49327d8edad39dbbbf5bf3",
+      "four_core_five_png_exact": {
+        "model.stl": "371e65f67e1c2ee755487c1900e3344c094f59ec2c4cc26b4187c93887185676",
+        "model.3mf": "e8b4d1dc93f5c813ef2f6f6e2714306cb4bfd8ff1f9d31618eb35c924a0c9744",
+        "mesh.json": "0d00ccca2c269926b15871773d310c3323066656355b64aa2402e77d614cb2fc",
+        "palette.json": "24d951238946d645bffc18dd5487a08b1ee2befd1cfb7d287793f26f18754607",
+        "previews/front.png": "995d0713536f9bd16541c1691cab4c2e951e7534543d4961945084f7dceb9d3b",
+        "previews/rear.png": "12138d90eafa84209d6409a7e049723f40474208a1802d9d0b42b1b7fbd4154f",
+        "previews/elevation.png": "5630ec65513c739667f8890c8ca79269961f2af8392ffdc2c842146e7604cdeb",
+        "previews/top.png": "7a6c88d9c78e65f47010f35b55d2a198c04067c429ac7cbde8ea98a2733da725",
+        "previews/left_oblique.png": "967970676cd44e15d9932658a7f2faf40f84f545e952076f31fb23a091618af2"
+      },
+      "source_zip_crc": true,
+      "all_steps_exit_zero": true,
+      "blender_structural_edit_reopen_verified_from_extracted_source": true
+    },
+    "reviewer_true_landing_blocker_sha256": "30b0d5fc00c87b75111f5aba76fdedd3744a89104414f9e1416cf2d71bd04c3f",
+    "v4_builder_and_independent_source_runs_not_final_acceptance": true
+  }
+}

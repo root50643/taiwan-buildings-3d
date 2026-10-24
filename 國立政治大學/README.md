@@ -1,6 +1,6 @@
 # 國立政治大學｜校園建築模型
 
-目前26套建築外觀近似模型：山下18套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
+目前27套建築外觀近似模型：山下19套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -12,7 +12,7 @@
 | [<img src="山上校區/buildings/nccu-innovation-center/previews/front.png" alt="研究暨創新育成總中心（研創總中心）：實際模型預覽" width="220">](山上校區/buildings/nccu-innovation-center/README.md)<br>**[研究暨創新育成總中心（研創總中心）](山上校區/buildings/nccu-innovation-center/README.md)** | [<img src="山上校區/buildings/nccu-communication-building/previews/front.png" alt="傳播學院主樓：實際模型預覽" width="220">](山上校區/buildings/nccu-communication-building/README.md)<br>**[傳播學院主樓](山上校區/buildings/nccu-communication-building/README.md)** | [<img src="山下校區/buildings/nccu-information-complex/previews/front.png" alt="資訊大樓（含電算中心）：實際模型預覽" width="220">](山下校區/buildings/nccu-information-complex/README.md)<br>**[資訊大樓（含電算中心）](山下校區/buildings/nccu-information-complex/README.md)** |
 | [<img src="山下校區/buildings/nccu-xuesi-hall/previews/front.png" alt="學思樓：實際模型預覽" width="220">](山下校區/buildings/nccu-xuesi-hall/README.md)<br>**[學思樓](山下校區/buildings/nccu-xuesi-hall/README.md)** | [<img src="山上校區/buildings/nccu-daofan-hall/previews/front.png" alt="道藩樓：實際模型預覽" width="220">](山上校區/buildings/nccu-daofan-hall/README.md)<br>**[道藩樓](山上校區/buildings/nccu-daofan-hall/README.md)** | [<img src="山下校區/buildings/nccu-journalism-hall/previews/front.png" alt="新聞館：實際模型預覽" width="220">](山下校區/buildings/nccu-journalism-hall/README.md)<br>**[新聞館](山下校區/buildings/nccu-journalism-hall/README.md)** |
 | [<img src="山下校區/buildings/nccu-jiying-hall/previews/front.png" alt="集英樓：實際模型預覽" width="220">](山下校區/buildings/nccu-jiying-hall/README.md)<br>**[集英樓](山下校區/buildings/nccu-jiying-hall/README.md)** | [<img src="山下校區/buildings/nccu-eighth-classroom/previews/front.png" alt="第八教室／校友服務中心：實際模型預覽" width="220">](山下校區/buildings/nccu-eighth-classroom/README.md)<br>**[第八教室／校友服務中心](山下校區/buildings/nccu-eighth-classroom/README.md)** | [<img src="山下校區/buildings/nccu-lohas-shop/previews/front.png" alt="樂活小舖：實際模型預覽" width="220">](山下校區/buildings/nccu-lohas-shop/README.md)<br>**[樂活小舖](山下校區/buildings/nccu-lohas-shop/README.md)** |
-| [<img src="山下校區/buildings/nccu-dazhi-hall/previews/front.png" alt="大智樓：實際模型預覽" width="220">](山下校區/buildings/nccu-dazhi-hall/README.md)<br>**[大智樓](山下校區/buildings/nccu-dazhi-hall/README.md)** | [<img src="山下校區/buildings/nccu-daren-hall/previews/front.png" alt="大仁樓：實際模型預覽" width="220">](山下校區/buildings/nccu-daren-hall/README.md)<br>**[大仁樓](山下校區/buildings/nccu-daren-hall/README.md)** |  |
+| [<img src="山下校區/buildings/nccu-dazhi-hall/previews/front.png" alt="大智樓：實際模型預覽" width="220">](山下校區/buildings/nccu-dazhi-hall/README.md)<br>**[大智樓](山下校區/buildings/nccu-dazhi-hall/README.md)** | [<img src="山下校區/buildings/nccu-daren-hall/previews/front.png" alt="大仁樓：實際模型預覽" width="220">](山下校區/buildings/nccu-daren-hall/README.md)<br>**[大仁樓](山下校區/buildings/nccu-daren-hall/README.md)** | [<img src="山下校區/buildings/nccu-dayong-hall/previews/front.png" alt="大勇樓：實際模型預覽" width="220">](山下校區/buildings/nccu-dayong-hall/README.md)<br>**[大勇樓](山下校區/buildings/nccu-dayong-hall/README.md)** |
 
 [山下校區](山下校區/) · [山上校區](山上校區/README.md) · [指南校區](指南校區/) · [金華校區](金華校區/) · [覆蓋範圍](coverage.json) · [精確續接清單](research-handoff/)
 
@@ -50,3 +50,5 @@
 大智樓為完整四層窄長主樓（60-19／A24），山下分組依官方PDF第9–10頁圖文。共同兩端梯、柱線、長廊與左單右雙衛生間區固定平面手性；二樓右端保有限平台、完整外直階及接地，不擴成四層新翼。長教室窗面及補強斜撐有界近似，未見廊側以中性實牆有限開口處理，不鏡射已見窗面；低平屋頂包絡不加塔或額外樓層。108內階及18外階、全級與中平台及出口有限寬地板／頭空共4320筆獨立測試通過，非測繪或法規淨高認證。消防簡圖非竣工圖、照片攝年未知，尺寸細窗與色值近似，非已核2026現況。6色Blend／3MF／STL、五張實網格預覽與重建源ZIP齊備；175切層152層薄警，獨立390/768樣本低於0.8mm、最小約0.17324mm，非全域壁厚保證；薄階板、窗框及多層空腔需支撐和困料評估，未實體試印、不保免支撐。實際來源與權利狀態見SOURCES及LICENSE。
 
 大仁樓為完整四層長形主樓（60-20／A25），山下分組依官方PDF第9–10頁。共框單中央回折梯、下側長廊、左細分房間與右端房間固定；二樓中央入口配對為有界候選，完整外階到有限下平台／局部地面，同側有限坡道頂面接齊。兩照片作同廊面兩角候選，未見背側窗與低平屋頂近似，不鏡射或加塔。54內階、18外階及坡道、轉折有限走帶6870獨立路徑點與80首擊測試；靠牆下平台15側界頭空點碰既有柱原報保留，可走帶y−5.7..−4.8另核，非全平台無障礙或法規認證。消防簡圖非竣工、攝年未知，尺寸細節色彩近似，非已核2026現況。6色Blend／3MF／STL、五張實網格預覽與源ZIP；175切層53薄警，獨立422/768法線樣本低於0.8mm、最小約0.17324mm，與builder258/512分列，非全域壁厚保證。薄階板窗框百葉與空腔需支撐／困料評估，未實體試印。實際來源與權利狀態見SOURCES及LICENSE。
+
+大勇樓為完整四層長形主體（60-21／A26），山下分組依官方PDF第9–10頁。長廊及四個突出樓梯核心共框，一樓中核20/22像素示意殘差規整而不逐層斜移。二樓兩門洞保留，只在左候選設單一紅拱簷，照片693/694為同入口兩角，門位配對未唯一確認。完整外階及有限左坡道接腳平台、局部地坪與有界漸降坡；坡頂接真平台左界。入口附近左V／右下降斜撐依可見方向簡化，不擴造全樓結構。未取得RF，低屋面及未知背側封閉近似，不加塔或設備；室內細隔間省略。消防簡圖非竣工、攝年未知，尺寸細節色彩近似，非已核2026現況。7色Blend／3MF／STL、五張實網格預覽與源ZIP；175切層155薄警，獨立376/768法線樣本低於0.8mm、最小約0.22451mm，與builder231/512分列，非全域壁厚保證。薄框階板空腔需支撐／困料評估，未實印，非通行或法規認證。實際來源與權利狀態見SOURCES及LICENSE。

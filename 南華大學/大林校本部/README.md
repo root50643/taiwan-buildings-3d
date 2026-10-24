@@ -1,11 +1,11 @@
 # 南華大學｜大林校本部
 
-本批僅無盡藏圖書館來源比例近似原型，未代表全校完成；2026-10-14二次外觀核准，數位審核狀態見隨附紀錄；是否正式發布以統一發布清單為準。
+目前2套來源比例近似外觀模型：無盡藏圖書館與成均館；不是全校建築清冊或現況測繪。成均館照片年代未定，隱藏面與屋頂簡化、列印支撐限制見模型說明。
 
 [無盡藏圖書館](buildings/nhu-wujinzang-library/README.md)
 
-| 正面 | 背面 |
-|---|---|
-| <img src="buildings/nhu-wujinzang-library/appearance/previews/front.png" alt="正面（屋頂限域配色）" width="220"> | <img src="buildings/nhu-wujinzang-library/appearance/previews/rear.png" alt="背面（屋頂限域配色）" width="220"> |
+| 無盡藏圖書館正面 | 無盡藏圖書館背面 | 成均館 |
+|---|---|---|
+| <img src="buildings/nhu-wujinzang-library/appearance/previews/front.png" alt="正面（屋頂限域配色）" width="220"> | <img src="buildings/nhu-wujinzang-library/appearance/previews/rear.png" alt="背面（屋頂限域配色）" width="220">  | [<img src="buildings/nhu-chengjun-hall/previews/front.png" alt="成均館（校方照片與調查圖參考外觀近似版；照片年代未定）：實際模型預覽" width="220">](buildings/nhu-chengjun-hall/README.md)<br>**[成均館（校方照片與調查圖參考外觀近似版；照片年代未定）](buildings/nhu-chengjun-hall/README.md)** |
 
 白覆蓋與前紅坡為官方實景支持的限域配色；其餘未確認面保持中性，攝影年月限制見模型配色說明。

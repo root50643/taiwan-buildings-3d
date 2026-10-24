@@ -1,0 +1,49 @@
+{
+  "scope": "Declared Blender output and file-browser directory fixed buffers only",
+  "fields": [
+    {
+      "kind": "render_output",
+      "owner": "Scene",
+      "RNA_length_max": 1024,
+      "method": "overwrite length_max-1 with neutral padding, then assign relative value",
+      "value": "//previews/front.png"
+    },
+    {
+      "kind": "file_browser_directory",
+      "owner": "Shading",
+      "RNA_length_max": 1090,
+      "method": "overwrite length_max-1 with neutral padding, then assign relative value",
+      "value": "//"
+    }
+  ],
+  "no_geometry_material_camera_changes_requested": true,
+  "fresh_external_data_only_builder_test": {
+    "render_script_success": true,
+    "no_preexisting_qa_directory": true,
+    "raw_buffer_validation": {
+      "method": "Read-only embedded SDNA field offsets; inspect entire declared fixed buffers including NUL tail",
+      "buffers_checked": 2,
+      "all_pass": true,
+      "fields": [
+        {
+          "field": "FileSelectParams.dir",
+          "offset": 171816,
+          "fixed_buffer_bytes": 1090,
+          "visible_value": "//",
+          "tail_only_NUL_or_neutral_padding": true,
+          "tail_NUL_bytes": 1,
+          "tail_padding_bytes": 1086
+        },
+        {
+          "field": "Scene.r.pic",
+          "offset": 232148,
+          "fixed_buffer_bytes": 1024,
+          "visible_value": "//previews/front.png",
+          "tail_only_NUL_or_neutral_padding": true,
+          "tail_NUL_bytes": 1,
+          "tail_padding_bytes": 1002
+        }
+      ]
+    }
+  }
+}

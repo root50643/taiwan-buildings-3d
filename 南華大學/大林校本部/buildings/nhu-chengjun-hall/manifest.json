@@ -1,0 +1,92 @@
+{
+  "schema": "taiwan-buildings-source-bounded-model-v1",
+  "id": "nhu-chengjun-hall",
+  "name": "南華大學 成均館",
+  "title": "成均館（校方照片與調查圖參考外觀近似版；照片年代未定）",
+  "school": "南華大學",
+  "campus": "大林校本部",
+  "target_repository_path": "南華大學/大林校本部/buildings/nhu-chengjun-hall",
+  "repository_base_verified": "bae57ba4fffaff41987c5efd5ae6c580c9a9ea4c",
+  "repository_check": {
+    "method": "GitHub branches/main read + existing exact-commit tree metadata; no clone",
+    "checked_utc": "2026-10-24T11:25:00Z",
+    "target_absent": true,
+    "existing_nhu_package": "nhu-wujinzang-library"
+  },
+  "status": "READY_FOR_INDEPENDENT_REVIEW_NOT_PUBLISHED",
+  "scope": "Approximate whole exterior massing bounded by official schematic plans and photos; source-matched front and foreground wing; explicit conservative neutral hidden surfaces",
+  "units": "model millimetres, not measured architectural scale",
+  "size_model_mm": [
+    196,
+    184,
+    60
+  ],
+  "construction": "Manifold Boolean union of independently authored solids; no third-party mesh/photographic texture",
+  "render_coordinate_system": "local -Y entrance, +Y rear, +X matched foreground wing; no surveyed compass orientation",
+  "artifacts": {
+    "blend": "nhu-chengjun-hall.blend",
+    "stl": "nhu-chengjun-hall.stl",
+    "material_3mf": "nhu-chengjun-hall.3mf",
+    "footprint": "footprint.svg",
+    "sources": "sources.json",
+    "certainty_map": "evidence-map.json",
+    "footprint_raster": "previews/footprint.png"
+  },
+  "qa": {
+    "topology": "qa/mesh-validation.json",
+    "slice_thickness_screen": "qa/slice-thickness-screen.json",
+    "3mf": "qa/3mf-validation.json",
+    "rebuild": "qa/rebuild-validation.json",
+    "blend_readback": "qa/blend-validation.json",
+    "visual_source_match": "qa/visual-source-match.md"
+  },
+  "software": {
+    "Blender": "4.3.2",
+    "trimesh": "5.1.1",
+    "lib3mf": "2.5.0",
+    "manifold3d": "3.5.4",
+    "numpy": "2.3.5",
+    "shapely": "2.2.0"
+  },
+  "uncertainties": [
+    "photograph capture dates unknown; 2026 upload and 2023 form are not capture dates",
+    "all architectural dimensions approximate; no exterior dimension strings or measured scale",
+    "hidden rear/inner elevations and exact bay counts unknown; detailed mirrored windows deliberately not invented",
+    "central roof geometry and junctions unresolved; simple neutral closure is explicitly hypothetical",
+    "left wing pitched roof continuation inferred from family and topology, not exact surveyed roof plan",
+    "BF exposure and site terrain not reconstructed; 4F gray regions not asserted terraces",
+    "display palette uncalibrated; not exact paint specification or current state"
+  ],
+  "omitted": [
+    "unidentified white rooftop framework",
+    "neighboring background buildings",
+    "photographic texture, signage, banners, vehicles, people",
+    "interior rooms, hidden stairs/lift/machinery, basement geometry"
+  ],
+  "printing": {
+    "actual_printed": false,
+    "slicer_toolpath_validated": false,
+    "watertight_export_checked": true,
+    "supports_may_be_required": true,
+    "no_support_free_claim": true,
+    "notes": "1mm-scale details and 10mm gallery depth require printer-specific support/bridge/slicer review; full-size display base196x184mm"
+  },
+  "rights": {
+    "third_party_source_images_in_package": false,
+    "source_image_open_license_established": false,
+    "source_assets_private_archive_only": true,
+    "independently_authored_geometry_and_renders": true
+  },
+  "previews": [
+    "previews/front.png",
+    "previews/oblique.png",
+    "previews/right.png",
+    "previews/left.png",
+    "previews/rear.png",
+    "previews/top.png",
+    "previews/front-detail.png",
+    "previews/source-side.png"
+  ],
+  "preview_count": 8,
+  "diagram_count": 1
+}

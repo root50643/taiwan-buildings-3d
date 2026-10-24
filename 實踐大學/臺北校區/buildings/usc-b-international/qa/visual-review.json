@@ -1,0 +1,96 @@
+{
+  "review_type": "Visual comparison of actual model renders against the cited plans and exterior photographs; not a measured survey",
+  "viewed_actual_renders": [
+    {
+      "file": "previews/front.png",
+      "sha256": "777f3de3d1d61cb315195036a9f3fddd8f233240e8a4b6f8a8dd91f32c03530b"
+    },
+    {
+      "file": "previews/left.png",
+      "sha256": "f0f3284205790efdac80e9ff7cce7619ea73d189410070460ee5e7108d6e2da9"
+    },
+    {
+      "file": "previews/low-front.png",
+      "sha256": "d43bc75ffa6dccf34f2be523e003e31d8c6b1b7ee7c4fb8ba0e478600e1a032c"
+    },
+    {
+      "file": "previews/oblique.png",
+      "sha256": "670996552b430ed686e60ad6394e96f742553f9d0808d6f2595ee52adcd3fb8b"
+    },
+    {
+      "file": "previews/rear-oblique.png",
+      "sha256": "f5db680464655d28b6171a661fb1df26f3d1a73bfad349e4aac1c56e1368ab28"
+    },
+    {
+      "file": "previews/rear.png",
+      "sha256": "e7b8d9b755801d845015f2e161bbeb3cec26149169ecd37ef0bdbae1068e9e01"
+    },
+    {
+      "file": "previews/right.png",
+      "sha256": "749e17f4af65cecbfe94972872147741ea587c9eb84445984cc6afefbdf486f1"
+    },
+    {
+      "file": "previews/top.png",
+      "sha256": "7506e644856a9a8b4d257a5e42cbaf0e53a51bcfee69b4028751030680a994a1"
+    },
+    {
+      "file": "previews/underside.png",
+      "sha256": "9fe3390f20850ca7ffc06ec774baa753d800c1cbf0af115e04423678bb04b6a9"
+    }
+  ],
+  "source_images_inspected": [
+    "AD01",
+    "AD02",
+    "AD03",
+    "AD06",
+    "AD07",
+    "AD13",
+    "AD17",
+    "AD18",
+    "AD19",
+    "AD20",
+    "AD21",
+    "AD22",
+    "AD23"
+  ],
+  "retained_features": [
+    "Complete three-storey Building B main envelope with top-floor north/south overhang",
+    "Separately traced 1F western rooms, north meeting room, south services and eastern glass pod",
+    "Separately traced 2F inset west classrooms, north colonnade, larger east block and south services",
+    "North L-return external stair, separate lift shaft, open route beside eastern pod and open corridor",
+    "South low black metal canopy and open vertical-bar screen",
+    "Own traced platform, northeast rounded corner, north/east steps and bounded southwest descending entry edge",
+    "Four unequal rooflight footprints: one longer west strip and three shorter east strips",
+    "Conservative west boundary with neutral wall faces and only the small plan-confirmed third-floor landing/stair"
+  ],
+  "excluded_features": [
+    "Western L block and glass connector",
+    "Adjacent A/C/M/N blocks, neighboring stairs and campus bridge",
+    "Central quad, lawn, trees, people and detached structures",
+    "Underground interiors, deep foundations, invented rooftop equipment and extra floor"
+  ],
+  "explicit_unknowns": [
+    "Individual raised/sloped rooflight profiles; shallow neutral abstractions are not an as-built roof reconstruction",
+    "West elevation opening heights and material details; no east-facade mirror",
+    "Exact window, stair and screen counts, joint positions, structural dimensions and metric scale",
+    "Individual photo capture dates and any later changes; this is the published 2018 renovation exterior approximation, not verified 2026 state"
+  ],
+  "visual_iteration": [
+    "Reflected the south-positive source-plan Y coordinate at mesh export and corrected winding/camera positions so the delivered right-handed model renders source-consistent north/east/west orientation.",
+    "Replaced the initially buried small western landing treads with visible shallow step geometry, without extending toward the neighboring block.",
+    "Made unobserved lower west wall faces neutral rather than treating them as verified finishes.",
+    "Preserved actual stair underflight voids rather than adding support columns or a solid core; exposed the resulting unsupported slice start in the printing limitations."
+  ],
+  "numerical_iteration": [
+    "Welded a 0.001 mm display-coordinate grid, removed collapsed index triangles and retessellated one exactly collinear triangle-edge pair without moving surface vertices. Rechecked edge and vertex manifoldness.",
+    "Verified seven clear line samples through the actual delivered STL, including open north circulation, the east-pod gap and the rounded platform exterior.",
+    "Separated actual upward-facing rooflight material patches to verify four light planes and one longer versus three shorter visible lengths."
+  ],
+  "printing_limitations": [
+    "Single connected closed mesh is not a support-free print guarantee.",
+    "One new unsupported section start at model Z=18.3 mm in the north stair / turning landing zone; needs support evaluation.",
+    "0.72 mm principal frames/bars are thickened simplifications; some color boundaries are finer.",
+    "No physical print test or extrusion toolpath validation."
+  ],
+  "all_visual_self_checks_passed": true
+}

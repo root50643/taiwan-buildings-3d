@@ -1,0 +1,383 @@
+{
+  "building": "實踐大學 B 棟國際大樓",
+  "model_scope": "Bounded whole three-storey 2018 renovation exterior approximation, published 2019; not 2026 surveyed condition",
+  "coordinate_system": {
+    "x": "west to east",
+    "y": "north to south",
+    "z": "up; first floor datum z=0 before display translation"
+  },
+  "design_coordinate_unit": "W/1000, where upper-floor east-west length W=1. Coordinates are dimensionless design ratios, not site millimeters.",
+  "display_main_length_mm": 240,
+  "display_z_translation_design_units": 30,
+  "upper_envelope": [
+    0,
+    1000,
+    0,
+    400
+  ],
+  "levels": {
+    "first": 0,
+    "second": 110,
+    "third": 220,
+    "roof": 330,
+    "parapet": 350
+  },
+  "rooflights": [
+    {
+      "id": "west_long",
+      "x": [
+        10,
+        470
+      ],
+      "y": [
+        160,
+        240
+      ]
+    },
+    {
+      "id": "east_north",
+      "x": [
+        580,
+        930
+      ],
+      "y": [
+        70,
+        150
+      ]
+    },
+    {
+      "id": "east_middle",
+      "x": [
+        580,
+        930
+      ],
+      "y": [
+        160,
+        240
+      ]
+    },
+    {
+      "id": "east_south",
+      "x": [
+        580,
+        930
+      ],
+      "y": [
+        260,
+        340
+      ]
+    }
+  ],
+  "rooflight_simplification": {
+    "curb_height": 8,
+    "light_plane_height": 5,
+    "curb_width": 5,
+    "meaning": "Shallow neutral footprint abstractions; individual exterior profiles unverified. No section profile is assigned to any strip."
+  },
+  "floor1_blocks": [
+    {
+      "id": "west_rooms",
+      "rect": [
+        0,
+        470,
+        65,
+        333
+      ]
+    },
+    {
+      "id": "north_meeting",
+      "rect": [
+        465,
+        585,
+        65,
+        170
+      ]
+    },
+    {
+      "id": "south_pantry",
+      "rect": [
+        110,
+        235,
+        333,
+        395
+      ]
+    },
+    {
+      "id": "south_services",
+      "rect": [
+        465,
+        585,
+        235,
+        400
+      ]
+    },
+    {
+      "id": "south_stair_service",
+      "polygon": [
+        [
+          585,
+          235
+        ],
+        [
+          645,
+          235
+        ],
+        [
+          700,
+          285
+        ],
+        [
+          700,
+          333
+        ],
+        [
+          760,
+          333
+        ],
+        [
+          760,
+          400
+        ],
+        [
+          585,
+          400
+        ]
+      ]
+    },
+    {
+      "id": "east_glazed_pod",
+      "rect": [
+        815,
+        935,
+        65,
+        333
+      ]
+    }
+  ],
+  "floor2_blocks": [
+    {
+      "id": "west_classrooms",
+      "rect": [
+        0,
+        470,
+        130,
+        333
+      ]
+    },
+    {
+      "id": "south_service_west",
+      "rect": [
+        470,
+        580,
+        235,
+        333
+      ]
+    },
+    {
+      "id": "south_services",
+      "rect": [
+        580,
+        705,
+        235,
+        400
+      ]
+    },
+    {
+      "id": "east_rooms",
+      "rect": [
+        815,
+        1000,
+        65,
+        333
+      ]
+    }
+  ],
+  "floor2_slab_polygon": [
+    [
+      0,
+      65
+    ],
+    [
+      465,
+      65
+    ],
+    [
+      465,
+      -5
+    ],
+    [
+      580,
+      -5
+    ],
+    [
+      580,
+      165
+    ],
+    [
+      815,
+      165
+    ],
+    [
+      815,
+      65
+    ],
+    [
+      1000,
+      65
+    ],
+    [
+      1000,
+      333
+    ],
+    [
+      760,
+      333
+    ],
+    [
+      760,
+      400
+    ],
+    [
+      110,
+      400
+    ],
+    [
+      110,
+      333
+    ],
+    [
+      0,
+      333
+    ]
+  ],
+  "platform": {
+    "north_y": -35,
+    "east_x": 1050,
+    "south_y": 535,
+    "bottom_z": -30,
+    "flat_south_y": 520,
+    "northeast_corner_radius": 95,
+    "northeast_corner_center": [
+      955,
+      60
+    ],
+    "corner_segments": 16
+  },
+  "north_stair": {
+    "lower_flight_x": [
+      645,
+      700
+    ],
+    "lower_flight_y": [
+      65,
+      180
+    ],
+    "intermediate_z": 55,
+    "upper_flight_x": [
+      580,
+      645
+    ],
+    "upper_flight_y": [
+      -5,
+      60
+    ],
+    "steps_per_flight": 9,
+    "wall_thickness": 6,
+    "guard_height": 25
+  },
+  "lift": {
+    "rect": [
+      585,
+      645,
+      65,
+      145
+    ],
+    "top": 220
+  },
+  "canopy": {
+    "x": [
+      110,
+      815
+    ],
+    "y": [
+      333,
+      420
+    ],
+    "z": [
+      85,
+      90
+    ],
+    "screen_x": [
+      110,
+      760
+    ],
+    "screen_y": 400,
+    "bar_pitch": 11,
+    "bar_width": 3,
+    "fascia_height": 15
+  },
+  "repetition_conventions": {
+    "column_x": [
+      0,
+      115,
+      232,
+      350,
+      465,
+      580,
+      700,
+      815,
+      935
+    ],
+    "column_y": [
+      65,
+      333
+    ],
+    "column_width": 14,
+    "upper_mullion_pitch": 27,
+    "upper_frame_width": 3,
+    "lower_mullion_pitch": 39,
+    "lower_frame_width": 3.5
+  },
+  "manufacturing": {
+    "display_size_note": "Model millimeters only; main length 240 mm is a display choice, not a surveyed scale.",
+    "minimum_primary_screen_bar_mm": 0.72,
+    "minimum_window_mullion_mm": 0.72,
+    "minimum_columns_mm": 3.36,
+    "minimum_stair_guard_wall_mm": 1.44,
+    "platform_thickness_mm": 7.2,
+    "rooflight_curb_width_mm": 1.2,
+    "limitations": [
+      "No physical test print or slicer extrusion toolpath verification.",
+      "Overhangs below the top floor, canopy, landings and steps require support assessment.",
+      "Thin mullions and color regions may require larger display scale, resin or multi-material feature tuning.",
+      "Solid opaque glass and filled rooms are exterior-model simplifications, not real interiors."
+    ]
+  },
+  "parameter_contract": {
+    "driven": [
+      "display_main_length_mm",
+      "display_z_translation_design_units",
+      "upper_envelope",
+      "levels",
+      "rooflights",
+      "rooflight_simplification",
+      "floor2_blocks",
+      "floor2_slab_polygon",
+      "platform",
+      "north_stair",
+      "lift",
+      "canopy",
+      "repetition_conventions"
+    ],
+    "scope": "The listed high-level masses, floor levels, platform, rooflight footprints and feature pitches are parameter-driven. Most floor1_blocks entries are driven, except east_glazed_pod: its mass and glazing are controlled by script constants. Minor glazing intervals, rails and west landing details also remain editable in build_geometry.py.",
+    "not_claimed": "Not every descriptive parameter controls generated geometry. No measured dimensions, exact window counts, individual rooflight profiles or unobserved west elevation details.",
+    "partially_driven": {
+      "floor1_blocks": "All entries except east_glazed_pod are read by the builder. The east_glazed_pod.rect entry is descriptive only: its actual mass and glazing use constants in source/build_geometry.py; editing that entry alone does not change the pod."
+    }
+  },
+  "delivered_mesh_coordinate_system": {
+    "x": "east",
+    "y": "north; source-plan Y reflected on export",
+    "z": "up; first floor offset above platform bottom"
+  }
+}

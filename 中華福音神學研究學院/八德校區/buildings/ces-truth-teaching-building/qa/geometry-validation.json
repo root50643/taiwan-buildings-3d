@@ -1,0 +1,84 @@
+{
+  "reload_source": "model.stl",
+  "stl_sha256": "61fd5c2cbb33bb2f7b5c5a79d79a4ba058d6ff74a11e1d2451e95cd3ad050729",
+  "stl_triangle_order_and_coordinates_exact_to_authoritative_mesh": true,
+  "vertices_after_weld": 16132,
+  "triangles": 34680,
+  "watertight": true,
+  "winding_consistent": true,
+  "edge_manifold_all_incidence_2": true,
+  "vertex_manifold_all_links_single_cycles": true,
+  "connected_components": 1,
+  "degenerate_triangles": 0,
+  "duplicate_triangles": 0,
+  "minimum_triangle_area_display_mm2": 1.1029849702026695e-05,
+  "euler_number": -1208,
+  "positive_volume_display_mm3": 1471460.6637504913,
+  "bounds_display_mm": [
+    [
+      -17.200000762939453,
+      -160.0,
+      0.0
+    ],
+    [
+      233.60000610351562,
+      18.399999618530273,
+      93.5999984741211
+    ]
+  ],
+  "maximum_stl_vs_npz_abs_coordinate_drift": 0.0,
+  "slice_preflight": {
+    "layer_height_scenario_mm": 0.2,
+    "first_plane_mm": 0.1,
+    "layers_checked": 468,
+    "closed_valid_sections": 468,
+    "new_unattached_component_starts": [
+      {
+        "z_display_mm": 22.5,
+        "islands": 1,
+        "area_display_mm2": 6.655993408203358,
+        "component_xy_bounds_display_mm": [
+          [
+            169.60000610351562,
+            -1.6399999856948853,
+            176.0,
+            -0.6000000238418579
+          ]
+        ]
+      }
+    ],
+    "unsupported_start_requires_support": true,
+    "max_slice_components": 99,
+    "minimum_component_area_display_mm2": 0.1792,
+    "method": "Decimal-centered triangle-plane intersections; endpoint weld tolerance 1e-7 mm; Shapely closed odd-even polygons, not extrusion toolpaths"
+  },
+  "overhang_preflight": {
+    "criterion": "down-facing triangles >45 degrees from vertical, excluding display base bottom",
+    "area_display_mm2": 8895.069308499706,
+    "triangle_count": 4625,
+    "support_warning": true
+  },
+  "practical_features": {
+    "display_scale": "4 mm per approximate design-metre; high main length 165.6 mm, overall length about 250 mm including limited base",
+    "min_regular_mullion_display_mm": 0.48,
+    "min_guard_bar_display_mm": 0.52,
+    "ordinary_wall_display_mm": 1.2,
+    "display_base_thickness_mm": 3.2,
+    "slicing_layer_scenario_mm": 0.2,
+    "support_required_under": [
+      "deep front entry",
+      "upper facade overhang above left lower recess",
+      "balcony rails and ceilings",
+      "external stairs and landings"
+    ],
+    "physical_test": false,
+    "warning": "Thin frames/rails are enlarged abstractions, not exact construction dimensions. Resin or further enlargement may be needed. Supports, orientation, nozzle and color workflow must be assessed in a slicer."
+  },
+  "physical_print_test": false,
+  "limitations": [
+    "Numerical preflight is not a support-free print guarantee.",
+    "Thin rails, frames and external stairs need slicer/support assessment; enlarge or use resin as appropriate.",
+    "Solid interiors/opaque glazing are intentionally simplified; total solid mesh volume is not filament consumption.",
+    "No exact terrain, shared basement, structural analysis, current-state verification or surveyed architectural scale."
+  ]
+}

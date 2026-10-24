@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "title": "中原大學體育館 — complete circa 1989–1991 exterior, bounded approximation",
+  "units": "Display millimeters selected for printing; all building dimensions are source-proportional and unmeasured. No metric real-world scale established.",
+  "display_scale_mm": 1.0,
+  "coordinates": {
+    "x_positive": "east",
+    "y_positive": "north",
+    "z_positive": "up",
+    "entrance": "west",
+    "pool_context": "south, excluded"
+  },
+  "hall": {
+    "x": [
+      0,
+      90
+    ],
+    "y": [
+      -87,
+      87
+    ],
+    "north_block_y": [
+      43,
+      87
+    ],
+    "north_block_west_x": 4,
+    "eave_z": 34,
+    "roof_top_z": 43,
+    "base_z": 2.4
+  },
+  "west_roof_edge": {
+    "x": [
+      0,
+      10
+    ],
+    "y": [
+      -87,
+      87
+    ],
+    "low_z": 34,
+    "high_z": 44
+  },
+  "monitor_groups": {
+    "centers_y": [
+      65,
+      22,
+      -21,
+      -64
+    ],
+    "paired_offsets_y": [
+      -8,
+      8
+    ],
+    "profile_NS_length": 14,
+    "x": [
+      17,
+      84
+    ],
+    "glazing_direction": "south",
+    "section_profile_count": 8
+  },
+  "west_wing": {
+    "top_z": 26,
+    "spine_x": [
+      -13,
+      1
+    ],
+    "spine_y": [
+      -87,
+      48
+    ],
+    "steps": [
+      {
+        "x": [
+          -23,
+          1
+        ],
+        "y": [
+          20,
+          48
+        ]
+      },
+      {
+        "x": [
+          -31,
+          1
+        ],
+        "y": [
+          -5,
+          20
+        ]
+      },
+      {
+        "x": [
+          -27,
+          1
+        ],
+        "y": [
+          -28,
+          -5
+        ]
+      },
+      {
+        "x": [
+          -43,
+          1
+        ],
+        "y": [
+          -57,
+          -28
+        ]
+      },
+      {
+        "x": [
+          -55,
+          1
+        ],
+        "y": [
+          -87,
+          -57
+        ]
+      }
+    ]
+  },
+  "entrance": {
+    "front_x": -38,
+    "glass_x": -27.4,
+    "y": [
+      -28,
+      -5
+    ],
+    "column_ys": [
+      -22,
+      -11
+    ],
+    "column_radius": 1.65,
+    "column_top_z": 17,
+    "porch_ground_z": 5.2
+  },
+  "towers": {
+    "south_center": [
+      -9.5,
+      -88.5
+    ],
+    "south_radius": 4.5,
+    "south_top_z": 37.2,
+    "north_center": [
+      -15.5,
+      47
+    ],
+    "north_radius": 4.0,
+    "north_top_z": 35.5
+  },
+  "manufacturing": {
+    "base_mm": 2.4,
+    "model_only_plinth": true,
+    "minimum_standalone_frame_mm": 1.0,
+    "window_mullion_relief_mm": 0.45,
+    "window_mullion_width_mm": 0.55,
+    "entrance_columns_diameter_mm": 3.3,
+    "solid_interiors_opaque_glazing": true,
+    "printable_terrace_and_sunken_edge_approximation": true,
+    "support_assessment": [
+      "Entrance porch canopy and triangular lintel",
+      "Small roof frames and clerestory mullions",
+      "External stair enclosure and small interface lip"
+    ],
+    "actual_print_test": false
+  },
+  "temporal_scope": "Circa 1989–1991 historical design/photo synthesis, not exact completion snapshot or 2026 current state.",
+  "unknowns": [
+    "All precise dimensions and pitches",
+    "North/east as-built window details; simplified design-supported layouts",
+    "Concealed roof caps, joints and service equipment",
+    "Interior floorplan, structural members and exact terrain/basement depth"
+  ],
+  "excluded": [
+    "Separate swimming pool",
+    "South inter-building bridge",
+    "Detached plaza pavilions",
+    "Trees, surroundings, people and source pixels"
+  ],
+  "parameter_contract": {
+    "driving_fields": [
+      "display_scale_mm",
+      "hall",
+      "west_roof_edge",
+      "monitor_groups",
+      "west_wing",
+      "entrance",
+      "towers"
+    ],
+    "other_numeric_fields": "Manufacturing descriptions; detailed facade repetition and stair/frame geometry remain editable in build_geometry.py."
+  }
+}

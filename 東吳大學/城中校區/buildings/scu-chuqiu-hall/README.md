@@ -38,5 +38,3 @@ Python 3.12，numpy、trimesh、manifold3d、shapely、scipy、rtree、lib3mf；
 | ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [來源與使用範圍](LICENSE.txt)
-
-本次依使用者澄清移除模型額外的「非商業研究」標示，保留實際來源、作者及來源自身的授權資訊，不另授第三方權利。先前文書與審核維持原bytes作歷史，並非現行模型用途標示；上一候選文書保存在 `qa/history/pre-user-clarification/`，由 `qa/publication-revision-map.json` 精確對照。現行文字以本README、SOURCES及LICENSE為準。

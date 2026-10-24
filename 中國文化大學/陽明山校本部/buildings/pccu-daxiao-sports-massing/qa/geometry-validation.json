@@ -1,0 +1,66 @@
+{
+  "reload_source": "model.stl",
+  "stl_sha256": "680c15ccc8bccde0a23ebf1ebef0df78048893118da6f6099592adc87283f000",
+  "stl_triangle_order_and_coordinates_exact_to_authoritative_mesh": true,
+  "vertices_after_weld": 9197,
+  "triangles": 18474,
+  "watertight": true,
+  "winding_consistent": true,
+  "edge_manifold_all_incidence_2": true,
+  "vertex_manifold_all_links_single_cycles": true,
+  "connected_components": 1,
+  "degenerate_triangles": 0,
+  "duplicate_triangles": 0,
+  "minimum_triangle_area_display_mm2": 0.0004639625549316406,
+  "euler_number": -40,
+  "positive_volume_display_mm3": 978634.1795781531,
+  "bounds_display_mm": [
+    [
+      -73.50191497802734,
+      -56.907203674316406,
+      0.0
+    ],
+    [
+      79.80000305175781,
+      59.79999923706055,
+      83.0
+    ]
+  ],
+  "maximum_stl_vs_npz_abs_coordinate_drift": 0.0,
+  "slice_preflight": {
+    "layer_height_scenario_mm": 0.2,
+    "first_plane_mm": 0.1,
+    "layers_checked": 415,
+    "closed_valid_sections": 415,
+    "new_unattached_component_starts": [],
+    "max_slice_components": 23,
+    "minimum_component_area_display_mm2": 2.47979,
+    "method": "Exact triangle-plane intersection + Shapely closed polygons, odd-even rings; not actual extrusion toolpaths"
+  },
+  "overhang_preflight": {
+    "criterion": "down-facing triangles >45 degrees from vertical, excluding build-plate bottom",
+    "area_display_mm2": 3444.741553078452,
+    "triangle_count": 868,
+    "support_warning": true
+  },
+  "practical_features": {
+    "model_size_mm": [
+      153.30191802978516,
+      116.70720291137695,
+      83.0
+    ],
+    "free_column_diameter_mm": 1.8,
+    "wing_eave_edge_thickness_mm": 1.2,
+    "sports_eave_edge_thickness_mm": 1.3,
+    "simplified_entrance_opening_height_mm": 13.2,
+    "material_only_fine_mullions_mm": 0.22,
+    "mullions_are_not_free_standing_walls": true
+  },
+  "physical_print_test": false,
+  "limitations": [
+    "Numerical mesh/slice checks do not guarantee adhesion, strength or support-free printing.",
+    "Use supports beneath upper eaves, the entrance recess lintel and colonnaded roof portions; tune orientation and material.",
+    "Color boundaries are real face assignments but some bands are below a 0.4 mm nozzle width.",
+    "Solid massing model; no interior halls, basement, site grading, structural simulation or exact real-world scale."
+  ]
+}

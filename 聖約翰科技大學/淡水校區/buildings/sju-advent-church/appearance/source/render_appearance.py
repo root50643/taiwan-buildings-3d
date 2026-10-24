@@ -57,12 +57,18 @@ def set_view(loc,aim):
     cam.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.12
 for name,loc,aim in views:
     set_view(loc,aim);scene.render.filepath=str(PREV/(name+'.png'));bpy.ops.render.render(write_still=True);strip_png(PREV/(name+'.png'))
-set_view(views[0][1],views[0][2]);scene.render.filepath='//previews/front.png'
+set_view(views[0][1],views[0][2])
+# Overwrite each complete fixed-size path buffer before setting its short relative
+# value; a short assignment alone can leave stale default metadata after NUL.
+scene.render.filepath=' '*(scene.render.bl_rna.properties['filepath'].length_max-1)
+scene.render.filepath='//previews/front.png'
 bpy.ops.object.select_all(action='DESELECT');model.select_set(True);bpy.context.view_layer.objects.active=model
 for screen in bpy.data.screens:
     for area in screen.areas:
         for space in area.spaces:
-            if space.type=='FILE_BROWSER' and space.params:space.params.directory=b'//'
+            if space.type=='FILE_BROWSER' and space.params:
+                space.params.directory=b' '*(space.params.bl_rna.properties['directory'].length_max-1)
+                space.params.directory=b'//'
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'scene.blend'))
 actual_vertices=[tuple(v.co) for v in mesh.vertices];actual_faces=[tuple(p.vertices) for p in mesh.polygons]
 assert triangle_coordinate_sha(actual_vertices,actual_faces)==ann['triangle_coordinate_sha256']

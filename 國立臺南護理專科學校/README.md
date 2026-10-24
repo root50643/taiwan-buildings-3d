@@ -4,8 +4,10 @@
 
 ## 建物圖鑑
 
-| 建物與範圍 | 同件正面 | 同件背面 |
-|---|---|---|
-| [信心樓完整主體](<臺南校區/buildings/ntin-xinxin-building/README.md>) | ![信心樓正面](<臺南校區/buildings/ntin-xinxin-building/previews/front.png>) | ![信心樓背面](<臺南校區/buildings/ntin-xinxin-building/previews/rear.png>) |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![信心樓原網格局部材質外觀](臺南校區/buildings/ntin-xinxin-building/appearance/previews/front.png)](臺南校區/buildings/ntin-xinxin-building/README.md)<br>**[信心樓｜2014–2015整修後外觀近似](臺南校區/buildings/ntin-xinxin-building/README.md)** |  |  |
 
-[臺南校區](臺南校區/README.md)。同棟正背並列；不得把兩個角度當成兩棟。後方文心樓與兩池院不在信心樓範圍。資料與細部簡化、列印警示詳見模型 README。
+[臺南校區](臺南校區/README.md)。每棟僅一張代表圖；完整多視角保留於模型頁，配色不另計建物。後方文心樓與兩池院不在信心樓範圍。資料與細部簡化、列印警示詳見模型 README。
+
+[局部材質外觀與可編修檔](臺南校區/buildings/ntin-xinxin-building/appearance/README.md)：僅198個原三角面加入來源支持的代表色，其餘2,916面維持中性；不加幾何、不推定未見材料，也不是2026現況。原薄件、支撐與64筆角損警示不因配色取消，尚未實體試印。

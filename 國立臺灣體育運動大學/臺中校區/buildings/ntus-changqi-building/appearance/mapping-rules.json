@@ -1,0 +1,5928 @@
+{
+  "coordinate_transform": "source x = mm_x/(150/68)+30; source y = -mm_y/(150/68)+13; source z = mm_z/(150/68)-1.2",
+  "rules": [
+    {
+      "id": "unknown",
+      "material": "N00",
+      "evidence": [],
+      "criterion": "No complete triangle registered to a supported visible material region."
+    },
+    {
+      "id": "high_street_infill",
+      "material": "M01",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.15,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          0,
+          23
+        ],
+        "z": [
+          4.65,
+          26.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_north_infill",
+      "material": "M01",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.15,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          0,
+          11.7
+        ],
+        "z": [
+          4.65,
+          26.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_south_infill",
+      "material": "M01",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 22.85,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          0,
+          5.5
+        ],
+        "z": [
+          4.65,
+          26.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "low_south_infill",
+      "material": "M01",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.79,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          28.6,
+          55.8
+        ],
+        "z": [
+          8.8,
+          20.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "low_north_infill",
+      "material": "M01",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 10.66,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.2,
+          56.2
+        ],
+        "z": [
+          8.9,
+          20.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_connector_wall",
+      "material": "M01",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.5,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          19.7,
+          28.6
+        ],
+        "z": [
+          4.65,
+          20.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_service_wall",
+      "material": "M01",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          19.7,
+          26.2
+        ],
+        "z": [
+          4.65,
+          27.0
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_street_piers",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          0,
+          23
+        ],
+        "z": [
+          4.65,
+          26.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_north_piers",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          0,
+          11.7
+        ],
+        "z": [
+          4.65,
+          26.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_south_piers",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 23,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          0,
+          5.5
+        ],
+        "z": [
+          4.65,
+          26.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "low_south_piers",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          28.6,
+          55.8
+        ],
+        "z": [
+          8.8,
+          20.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "low_north_piers",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 10.5,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.2,
+          56.2
+        ],
+        "z": [
+          8.9,
+          20.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_stair_front",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": -5.5,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          11.7,
+          19.7
+        ],
+        "z": [
+          4.8,
+          31
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_stair_front",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.5,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          5.5,
+          19.2
+        ],
+        "z": [
+          4.8,
+          31
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "east_stair_end",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 60,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          17.8,
+          30.5
+        ],
+        "z": [
+          4.8,
+          25.05
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "east_stair_south",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.5,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          55.8,
+          60
+        ],
+        "z": [
+          4.8,
+          25.05
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_street_parapet",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": -0.45,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          -0.35,
+          23.35
+        ],
+        "z": [
+          26.85,
+          28.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_north_parapet",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": -0.35,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.45,
+          11.25
+        ],
+        "z": [
+          26.85,
+          28.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_south_parapet",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 23.35,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.45,
+          5.05
+        ],
+        "z": [
+          26.85,
+          28.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "low_north_cornice",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 9.95,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.2,
+          60.2
+        ],
+        "z": [
+          20.6,
+          22.2
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "low_south_cornice",
+      "material": "M02",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.3,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          28,
+          56
+        ],
+        "z": [
+          20.55,
+          22.1
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "street_lower_wall",
+      "material": "M03",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          0,
+          23
+        ],
+        "z": [
+          0,
+          4.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_high_lower_wall",
+      "material": "M03",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          0,
+          11.7
+        ],
+        "z": [
+          0,
+          4.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_high_lower_wall",
+      "material": "M03",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 23,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          0,
+          5.5
+        ],
+        "z": [
+          0,
+          4.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_wall",
+      "material": "M03",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          28.6,
+          55.8
+        ],
+        "z": [
+          0,
+          8.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_wall",
+      "material": "M03",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.4,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.2,
+          56.2
+        ],
+        "z": [
+          0,
+          8.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_connector_lower_wall",
+      "material": "M03",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.5,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          19.7,
+          28.6
+        ],
+        "z": [
+          0,
+          4.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_core_lower_wall",
+      "material": "M03",
+      "evidence": [
+        "S01:C-10",
+        "S01:C-11",
+        "S01:C-12",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          19.7,
+          26.2
+        ],
+        "z": [
+          0,
+          4.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_000",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          1.1400000000000001,
+          2.86
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_001",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          1.1400000000000001,
+          2.86
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_002",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          1.1400000000000001,
+          2.86
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_003",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          1.1400000000000001,
+          2.86
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_004",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          1.1400000000000001,
+          2.86
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_005",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          4.9399999999999995,
+          6.66
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_006",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          4.9399999999999995,
+          6.66
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_007",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          4.9399999999999995,
+          6.66
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_008",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          4.9399999999999995,
+          6.66
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_009",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          4.9399999999999995,
+          6.66
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_010",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          8.74,
+          10.459999999999999
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_011",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          8.74,
+          10.459999999999999
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_012",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          8.74,
+          10.459999999999999
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_013",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          8.74,
+          10.459999999999999
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_014",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          8.74,
+          10.459999999999999
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_015",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          12.540000000000001,
+          14.26
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_016",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          12.540000000000001,
+          14.26
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_017",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          12.540000000000001,
+          14.26
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_018",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          12.540000000000001,
+          14.26
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_019",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          12.540000000000001,
+          14.26
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_020",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          16.34,
+          18.06
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_021",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          16.34,
+          18.06
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_022",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          16.34,
+          18.06
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_023",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          16.34,
+          18.06
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_024",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          16.34,
+          18.06
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_025",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          20.14,
+          21.86
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_026",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          20.14,
+          21.86
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_027",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          20.14,
+          21.86
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_028",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          20.14,
+          21.86
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_029",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          20.14,
+          21.86
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_030",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.04,
+          2.76
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_031",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.04,
+          2.76
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_032",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.04,
+          2.76
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_033",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.04,
+          2.76
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_034",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.04,
+          2.76
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_035",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          4.739999999999999,
+          6.46
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_036",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          4.739999999999999,
+          6.46
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_037",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          4.739999999999999,
+          6.46
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_038",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          4.739999999999999,
+          6.46
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_039",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          4.739999999999999,
+          6.46
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_040",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          8.440000000000001,
+          10.16
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_041",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          8.440000000000001,
+          10.16
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_042",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          8.440000000000001,
+          10.16
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_043",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          8.440000000000001,
+          10.16
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_044",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          8.440000000000001,
+          10.16
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_045",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 22.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.54,
+          3.26
+        ],
+        "y": [
+          22.48,
+          23.22
+        ],
+        "z": [
+          5.1,
+          7.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_046",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 22.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.54,
+          3.26
+        ],
+        "y": [
+          22.48,
+          23.22
+        ],
+        "z": [
+          9.3,
+          11.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_047",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 22.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.54,
+          3.26
+        ],
+        "y": [
+          22.48,
+          23.22
+        ],
+        "z": [
+          13.5,
+          15.95
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_048",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 22.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.54,
+          3.26
+        ],
+        "y": [
+          22.48,
+          23.22
+        ],
+        "z": [
+          17.7,
+          20.15
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_049",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 22.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          1.54,
+          3.26
+        ],
+        "y": [
+          22.48,
+          23.22
+        ],
+        "z": [
+          22.1,
+          24.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_050",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 19.18,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          19.18,
+          19.919999999999998
+        ],
+        "y": [
+          8.700000000000001,
+          20.9
+        ],
+        "z": [
+          24.5,
+          25.7
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_051",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.35,
+          36.65
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_052",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.35,
+          36.65
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          5.15,
+          6.8500000000000005
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_053",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.92,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.35,
+          36.65
+        ],
+        "y": [
+          8.18,
+          8.92
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_054",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.92,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.35,
+          36.65
+        ],
+        "y": [
+          8.18,
+          8.92
+        ],
+        "z": [
+          5.1,
+          7.1
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_055",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          39.35,
+          46.65
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_056",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          39.35,
+          46.65
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          5.15,
+          6.8500000000000005
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_057",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.92,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          39.35,
+          46.65
+        ],
+        "y": [
+          8.18,
+          8.92
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_058",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.92,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          39.35,
+          46.65
+        ],
+        "y": [
+          8.18,
+          8.92
+        ],
+        "z": [
+          5.1,
+          7.1
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_059",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          48.35,
+          55.65
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_060",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          48.35,
+          55.65
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          5.15,
+          6.8500000000000005
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_061",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.92,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          48.35,
+          55.65
+        ],
+        "y": [
+          8.18,
+          8.92
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_062",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.92,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          48.35,
+          55.65
+        ],
+        "y": [
+          8.18,
+          8.92
+        ],
+        "z": [
+          5.1,
+          7.1
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_063",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.515,
+          31.185000000000002
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_064",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.515,
+          31.185000000000002
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_065",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.515,
+          31.185000000000002
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_066",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.475,
+          34.145
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_067",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.475,
+          34.145
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_068",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.475,
+          34.145
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_069",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          35.435,
+          37.105000000000004
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_070",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          35.435,
+          37.105000000000004
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_071",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          35.435,
+          37.105000000000004
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_072",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          38.395,
+          40.065000000000005
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_073",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          38.395,
+          40.065000000000005
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_074",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          38.395,
+          40.065000000000005
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_075",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          41.355,
+          43.025
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_076",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          41.355,
+          43.025
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_077",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          41.355,
+          43.025
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_078",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          44.315000000000005,
+          45.98500000000001
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_079",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          44.315000000000005,
+          45.98500000000001
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_080",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          44.315000000000005,
+          45.98500000000001
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_081",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          47.275,
+          48.945
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_082",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          47.275,
+          48.945
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_083",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          47.275,
+          48.945
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_084",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          50.235,
+          51.905
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_085",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          50.235,
+          51.905
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_086",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          50.235,
+          51.905
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_087",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          53.195,
+          54.865
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_088",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          53.195,
+          54.865
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_089",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 31.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          53.195,
+          54.865
+        ],
+        "y": [
+          31.48,
+          32.22
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_090",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          20.15,
+          28.35
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          0.75,
+          3.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_091",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          20.15,
+          28.35
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          5.1,
+          6.8999999999999995
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_092",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          20.15,
+          28.35
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          9.35,
+          10.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_093",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          20.15,
+          28.35
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          13.55,
+          14.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_094",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          20.15,
+          28.35
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          17.75,
+          19.0
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_095",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.475,
+          28.125
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_096",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.475,
+          28.125
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_097",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.475,
+          28.125
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_098",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.345000000000002,
+          30.995
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_099",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.345000000000002,
+          30.995
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_100",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          29.345000000000002,
+          30.995
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_101",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.214999999999996,
+          33.865
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_102",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.214999999999996,
+          33.865
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_103",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.214999999999996,
+          33.865
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_104",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          35.084999999999994,
+          36.735
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_105",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          35.084999999999994,
+          36.735
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_106",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          35.084999999999994,
+          36.735
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_107",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          37.955,
+          39.605000000000004
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_108",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          37.955,
+          39.605000000000004
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_109",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          37.955,
+          39.605000000000004
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_110",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          40.825,
+          42.47500000000001
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_111",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          40.825,
+          42.47500000000001
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_112",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          43.69499999999999,
+          45.345
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_113",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          43.69499999999999,
+          45.345
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_114",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          47.06,
+          47.72
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_115",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          47.06,
+          47.72
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_116",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          49.93000000000001,
+          50.59
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_117",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          49.93000000000001,
+          50.59
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_118",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          52.800000000000004,
+          53.46
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_119",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 11.02,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          52.800000000000004,
+          53.46
+        ],
+        "y": [
+          10.28,
+          11.02
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_120",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 59.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          59.48,
+          60.22
+        ],
+        "y": [
+          21.924999999999997,
+          22.875
+        ],
+        "z": [
+          0.8,
+          2.9000000000000004
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_121",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 59.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          59.48,
+          60.22
+        ],
+        "y": [
+          21.924999999999997,
+          22.875
+        ],
+        "z": [
+          5.15,
+          7.25
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_122",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 59.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          59.48,
+          60.22
+        ],
+        "y": [
+          21.924999999999997,
+          22.875
+        ],
+        "z": [
+          9.35,
+          11.45
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_123",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 59.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          59.48,
+          60.22
+        ],
+        "y": [
+          21.924999999999997,
+          22.875
+        ],
+        "z": [
+          13.55,
+          15.65
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_124",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 59.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          59.48,
+          60.22
+        ],
+        "y": [
+          21.924999999999997,
+          22.875
+        ],
+        "z": [
+          17.75,
+          19.85
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_125",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 59.48,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          59.48,
+          60.22
+        ],
+        "y": [
+          21.924999999999997,
+          22.875
+        ],
+        "z": [
+          22.2,
+          24.3
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_126",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          56.475,
+          58.824999999999996
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          5.15,
+          7.300000000000001
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_127",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          56.475,
+          58.824999999999996
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          9.35,
+          11.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_128",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          56.475,
+          58.824999999999996
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          13.55,
+          15.700000000000001
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_129",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 29.98,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          56.475,
+          58.824999999999996
+        ],
+        "y": [
+          29.98,
+          30.72
+        ],
+        "z": [
+          17.75,
+          19.9
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_130",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.349999999999998,
+          24.45
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          0.95,
+          1.7999999999999998
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_131",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.349999999999998,
+          24.45
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          5.5,
+          6.35
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_132",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.349999999999998,
+          24.45
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          9.7,
+          10.549999999999999
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_133",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.349999999999998,
+          24.45
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          13.9,
+          14.75
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_134",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.349999999999998,
+          24.45
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          18.1,
+          18.950000000000003
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_135",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.349999999999998,
+          24.45
+        ],
+        "y": [
+          -0.22,
+          0.52
+        ],
+        "z": [
+          23.1,
+          23.950000000000003
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_136",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": -5.15,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          12.325,
+          13.175
+        ],
+        "y": [
+          -5.72,
+          -5.15
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_137",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": -5.15,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          14.291666666666666,
+          15.141666666666667
+        ],
+        "y": [
+          -5.72,
+          -5.15
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_138",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": -5.15,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          16.258333333333333,
+          17.108333333333334
+        ],
+        "y": [
+          -5.72,
+          -5.15
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_139",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": -5.15,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          18.224999999999998,
+          19.075
+        ],
+        "y": [
+          -5.72,
+          -5.15
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_140",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          6.2749999999999995,
+          7.325
+        ],
+        "y": [
+          30.15,
+          30.72
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_141",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          8.208333333333332,
+          9.258333333333333
+        ],
+        "y": [
+          30.15,
+          30.72
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_142",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          10.141666666666666,
+          11.191666666666666
+        ],
+        "y": [
+          30.15,
+          30.72
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_143",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          12.074999999999998,
+          13.124999999999998
+        ],
+        "y": [
+          30.15,
+          30.72
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_144",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          14.008333333333331,
+          15.058333333333332
+        ],
+        "y": [
+          30.15,
+          30.72
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_145",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          15.941666666666665,
+          16.991666666666664
+        ],
+        "y": [
+          30.15,
+          30.72
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_146",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          17.875,
+          18.924999999999997
+        ],
+        "y": [
+          30.15,
+          30.72
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_147",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 5.85,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          5.28,
+          5.85
+        ],
+        "y": [
+          22.8,
+          23.8
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_148",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 5.85,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          5.28,
+          5.85
+        ],
+        "y": [
+          24.7,
+          25.7
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_149",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 5.85,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          5.28,
+          5.85
+        ],
+        "y": [
+          26.6,
+          27.6
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_150",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 5.85,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          5.28,
+          5.85
+        ],
+        "y": [
+          28.5,
+          29.5
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_151",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 12.049999999999999,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          11.479999999999999,
+          12.049999999999999
+        ],
+        "y": [
+          -4.8,
+          -3.8
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_152",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 12.049999999999999,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          11.479999999999999,
+          12.049999999999999
+        ],
+        "y": [
+          -2.9,
+          -1.9
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_153",
+      "material": "M09",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 12.049999999999999,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          11.479999999999999,
+          12.049999999999999
+        ],
+        "y": [
+          -1.0,
+          0.0
+        ],
+        "z": [
+          29.1,
+          30.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_154",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          12.475000000000001,
+          14.125
+        ],
+        "z": [
+          0.55,
+          3.3
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_155",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          16.175,
+          17.825
+        ],
+        "z": [
+          0.55,
+          3.3
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "window_back_156",
+      "material": "M05",
+      "evidence": [
+        "S01:C-11",
+        "S01:C-12",
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 0.52,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          -0.22,
+          0.52
+        ],
+        "y": [
+          19.875,
+          21.525
+        ],
+        "z": [
+          0.55,
+          3.3
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_33_-2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          30.54,
+          31.060000000000002
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_33_-2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          30.54,
+          31.060000000000002
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_33_0",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.74,
+          33.26
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_33_0",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          32.74,
+          33.26
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_33_2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          34.940000000000005,
+          35.46
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_33_2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          34.940000000000005,
+          35.46
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_43_-2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          40.54,
+          41.059999999999995
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_43_-2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          40.54,
+          41.059999999999995
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_43_0",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          42.74,
+          43.26
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_43_0",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          42.74,
+          43.26
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_43_2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          44.940000000000005,
+          45.46
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_43_2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          44.940000000000005,
+          45.46
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_52_-2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          49.54,
+          50.059999999999995
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_52_-2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          49.54,
+          50.059999999999995
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_52_0",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          51.74,
+          52.26
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_52_0",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          51.74,
+          52.26
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_library_mullion_52_2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 32.06,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          53.940000000000005,
+          54.46
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "north_library_mullion_52_2.2",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 8.32,
+      "outward_sign": -1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          53.940000000000005,
+          54.46
+        ],
+        "z": [
+          0.75,
+          3.5
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_21.5_0.75",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.25,
+          21.75
+        ],
+        "z": [
+          0.75,
+          3.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_24.25_0.75",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          24.0,
+          24.5
+        ],
+        "z": [
+          0.75,
+          3.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_27_0.75",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.75,
+          27.25
+        ],
+        "z": [
+          0.75,
+          3.55
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_21.5_5.1",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.25,
+          21.75
+        ],
+        "z": [
+          5.1,
+          6.8999999999999995
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_24.25_5.1",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          24.0,
+          24.5
+        ],
+        "z": [
+          5.1,
+          6.8999999999999995
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_27_5.1",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.75,
+          27.25
+        ],
+        "z": [
+          5.1,
+          6.8999999999999995
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_21.5_9.35",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.25,
+          21.75
+        ],
+        "z": [
+          9.35,
+          10.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_24.25_9.35",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          24.0,
+          24.5
+        ],
+        "z": [
+          9.35,
+          10.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_27_9.35",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.75,
+          27.25
+        ],
+        "z": [
+          9.35,
+          10.6
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_21.5_13.55",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.25,
+          21.75
+        ],
+        "z": [
+          13.55,
+          14.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_24.25_13.55",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          24.0,
+          24.5
+        ],
+        "z": [
+          13.55,
+          14.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_27_13.55",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.75,
+          27.25
+        ],
+        "z": [
+          13.55,
+          14.8
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_21.5_17.75",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          21.25,
+          21.75
+        ],
+        "z": [
+          17.75,
+          19.0
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_24.25_17.75",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          24.0,
+          24.5
+        ],
+        "z": [
+          17.75,
+          19.0
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_mullion_27_17.75",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "y",
+      "plane_source_m": 30.57,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          26.75,
+          27.25
+        ],
+        "z": [
+          17.75,
+          19.0
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_rear_mullion_10",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 19.74,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          9.75,
+          10.25
+        ],
+        "z": [
+          24.4,
+          25.9
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_rear_mullion_13",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 19.74,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          12.75,
+          13.25
+        ],
+        "z": [
+          24.4,
+          25.9
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_rear_mullion_16",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 19.74,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          15.75,
+          16.25
+        ],
+        "z": [
+          24.4,
+          25.9
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_rear_mullion_19",
+      "material": "M06",
+      "evidence": [
+        "S01:C-26",
+        "S09"
+      ],
+      "plane_axis": "x",
+      "plane_source_m": 19.74,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "y": [
+          18.75,
+          19.25
+        ],
+        "z": [
+          24.4,
+          25.9
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "high_green",
+      "material": "M07",
+      "evidence": [
+        "S01:C-31"
+      ],
+      "plane_axis": "z",
+      "plane_source_m": 27.85,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          0.7,
+          15.9
+        ],
+        "y": [
+          0.8,
+          21.9
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "connector_green",
+      "material": "M07",
+      "evidence": [
+        "S01:C-31"
+      ],
+      "plane_axis": "z",
+      "plane_source_m": 21.65,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          20.3,
+          27.5
+        ],
+        "y": [
+          11.25,
+          22.4
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "south_green",
+      "material": "M07",
+      "evidence": [
+        "S01:C-31"
+      ],
+      "plane_axis": "z",
+      "plane_source_m": 21.65,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          35,
+          54.8
+        ],
+        "y": [
+          24.2,
+          30.7
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    },
+    {
+      "id": "main_light_roof",
+      "material": "M08",
+      "evidence": [
+        "S01:C-25",
+        "S01:C-31"
+      ],
+      "plane_axis": "z",
+      "plane_source_m": 23.15,
+      "outward_sign": 1,
+      "all_vertex_bounds_source_m": {
+        "x": [
+          28.7,
+          55.8
+        ],
+        "y": [
+          10.5,
+          23
+        ]
+      },
+      "criterion": "All three vertices, exact plane tolerance 0.00002 source m, outward normal; never centroid-only."
+    }
+  ]
+}

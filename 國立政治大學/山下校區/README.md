@@ -1,6 +1,6 @@
 # 山下校區
 
-本區14套建築外觀近似，並非全區完成；各件獨立比例與尺寸見模型說明。
+本區15套建築外觀近似，並非全區完成；各件獨立比例與尺寸見模型說明。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -8,7 +8,7 @@
 | [<img src="buildings/nccu-jingtang/appearance/previews/front.png" alt="井塘樓：實際模型預覽" width="220">](buildings/nccu-jingtang/README.md)<br>**[井塘樓](buildings/nccu-jingtang/README.md)** | [<img src="buildings/nccu-zhongzheng-library/previews/front.png" alt="中正圖書館：實際模型預覽" width="220">](buildings/nccu-zhongzheng-library/README.md)<br>**[中正圖書館](buildings/nccu-zhongzheng-library/README.md)** | [<img src="buildings/nccu-administration/previews/front.png" alt="行政大樓：實際模型預覽" width="220">](buildings/nccu-administration/README.md)<br>**[行政大樓](buildings/nccu-administration/README.md)** |
 | [<img src="buildings/nccu-yixian/previews/front.png" alt="逸仙樓：實際模型預覽" width="220">](buildings/nccu-yixian/README.md)<br>**[逸仙樓](buildings/nccu-yixian/README.md)** | [<img src="buildings/nccu-fengyu/previews/front.png" alt="風雩樓：實際模型預覽" width="220">](buildings/nccu-fengyu/README.md)<br>**[風雩樓](buildings/nccu-fengyu/README.md)** | [<img src="buildings/nccu-health/previews/front.png" alt="健康中心大樓：實際模型預覽" width="220">](buildings/nccu-health/README.md)<br>**[健康中心大樓](buildings/nccu-health/README.md)** |
 | [<img src="buildings/nccu-research-building/previews/front.png" alt="研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況：實際模型預覽" width="220">](buildings/nccu-research-building/README.md)<br>**[研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況](buildings/nccu-research-building/README.md)** | [<img src="buildings/nccu-information-complex/previews/front.png" alt="資訊大樓（含電算中心）：實際模型預覽" width="220">](buildings/nccu-information-complex/README.md)<br>**[資訊大樓（含電算中心）](buildings/nccu-information-complex/README.md)** | [<img src="buildings/nccu-xuesi-hall/previews/front.png" alt="學思樓：實際模型預覽" width="220">](buildings/nccu-xuesi-hall/README.md)<br>**[學思樓](buildings/nccu-xuesi-hall/README.md)** |
-| [<img src="buildings/nccu-journalism-hall/previews/front.png" alt="新聞館：實際模型預覽" width="220">](buildings/nccu-journalism-hall/README.md)<br>**[新聞館](buildings/nccu-journalism-hall/README.md)** | [<img src="buildings/nccu-jiying-hall/previews/front.png" alt="集英樓：實際模型預覽" width="220">](buildings/nccu-jiying-hall/README.md)<br>**[集英樓](buildings/nccu-jiying-hall/README.md)** |  |
+| [<img src="buildings/nccu-journalism-hall/previews/front.png" alt="新聞館：實際模型預覽" width="220">](buildings/nccu-journalism-hall/README.md)<br>**[新聞館](buildings/nccu-journalism-hall/README.md)** | [<img src="buildings/nccu-jiying-hall/previews/front.png" alt="集英樓：實際模型預覽" width="220">](buildings/nccu-jiying-hall/README.md)<br>**[集英樓](buildings/nccu-jiying-hall/README.md)** | [<img src="buildings/nccu-eighth-classroom/previews/front.png" alt="第八教室／校友服務中心：實際模型預覽" width="220">](buildings/nccu-eighth-classroom/README.md)<br>**[第八教室／校友服務中心](buildings/nccu-eighth-classroom/README.md)** |
 
 每件具STL、可編輯Blend、參數來源、實際STL正背俯視預覽與可重跑QA。數位QA不等於切片軟體驗證或實體試印。
 
@@ -23,3 +23,5 @@
 新聞館為完整兩層長條雙翼、中央三層房群及側小房、僅一層後凸門廳的彩色外觀近似模型；山下分組依官方PDF第9–10頁溪流分界及A23圖文聯讀。保留雙翼露平台、白色豎框、紅色實腹、青綠遮陽板，以及真凹入門廳、入口雨簷與接地階梯。669樹遮照片只作局部側角候選，不宣稱完整背面或唯一端頭。照片攝年未知，消防簡圖非測繪竣工圖，層高細窗色值及簷邊近似，非已核2026現況。Blend／3MF／STL、五張實網格預覽及可執行來源ZIP齊備；單正殼、253截面含14層薄件警告，未實體試印，細框欄杆及簷底支撐須另評估。原照片和平面像素不入模型包，實際來源與授權狀態見SOURCES與LICENSE。
 
 集英樓為完整十字式三層主樓與局部B1外露基腳的彩色外觀近似模型；山下分組依官方PDF第9–10頁溪流分界與A22圖文聯讀。保留退縮窗背、開放陽台、真入口凹廊、上層厚外挑與斜肩、北西較深屋簷、兩處折階及有限接地坡道。照片較強為西北／西南同側雙角候選，但東側180度替代尚未唯一排除，未看見立面為規整代理；屋面僅有限平頂，細小構件精位用途未知未添加。攝年未知、簡圖非測繪竣工圖，樓高細窗色值近似，非已核2026現況。Blend／3MF／STL、五張實網格預覽及可執行來源ZIP齊備；單正殼、256截面含56層薄件警告，未實體試印，細框欄杆、外挑簷底及底下空間支撐須另評估。來源像素不入模型包，實際來源與重用權利狀態見SOURCES與LICENSE。
+
+第八教室／校友服務中心為同一棟完整兩層長矩形主樓（60-9／A11），山下分組依官方PDF第9–10頁溪流分界與A11圖文。保留首層真柱廊及背牆、右遠端展示室封廊、左短端與前長側兩個正交短階，上層玻璃只覆前廊及可見廊深短角，其餘白牆及橘色飾面保留。共梯及有限寬上層回廊保持真空間。屋面僅低閉合包絡及可見灰簷／局部短折線，未證完整雙坡四坡、全脊長與背坡；沒有高塔或額外樓層。官方消防簡圖非竣工測繪，照片攝年未知、尺寸細窗色值近似，非已核2026現況。6色Blend／3MF／STL、五張實網格預覽及重建來源ZIP齊備；182截面有2層薄警，細框玻璃及屋脊尖端與柱廊頂板須評估尺度和支撐，未實體試印、不保免支撐。實際來源與權利狀態見SOURCES及LICENSE。

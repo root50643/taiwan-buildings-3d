@@ -1,0 +1,155 @@
+{
+  "status": "FIRST_SHAPE_V1_MAIN_EXTERIOR_SUPPORTED_WITH_BOUNDED_FIXES_REQUIRED",
+  "passed": false,
+  "public_release": false,
+  "time_utc": "2026-10-24T05:51:58.931266+00:00",
+  "basis": "Personally read source photos568/569 and571/572 plans, all5 modelviews, coordinate plan and2same-mesh views; read generator. Not final numeric/printability/package review.",
+  "accepted_bounded_main_form": [
+    "Whole two-storey rectangle with stair-end handedness consistent with569; no added floor/basement/neighbour",
+    "Actual open1F colonnade with recessed opaque backwall, right display room closes far-end bay rather than a full-through arcade",
+    "Separate left short-end and long-front broad grounded stair approaches",
+    "Front glass corridor with left short return limited to corridor depth; remaining short wall opaque with orange panel, farend kept neutral",
+    "Low roof closure with one finite visible fold cue; not a recovered gable/hip or rear roof survey",
+    "Neutral unknown rear; source rights/version/height/window/roof approximation remain mandatory"
+  ],
+  "required_bounded_fixes": [
+    {
+      "id": "upper_stair_route",
+      "finding": "Internal staircase rises toward +Y to abouty2.5/z4.43, immediately against upper_stair_rear_wall. Slab hole ends atx−11.85 while upper occupied mass beginsx−11.8, leaving at most .05design (.2mm) side ledge. An air cavity is not proof of a usable/finite modeled top landing-to-front-corridor route.",
+      "request": "Independently verify tread-top/landing route and add a finite continuous simplified top landing/side-return passage if this internal stair is retained as connected geometry. Preserve exterior envelope; do not fill stairwell just to obtain one shell. Do not claim measured internal arrangement or human-safe dimensions."
+    },
+    {
+      "id": "photo568_camera",
+      "finding": "Original568 visible roof/transom lines rise toward image-right, currentcomparison roof line falls towardright; the oblique camera is not the source-facing direction.",
+      "request": "Correct only the camera to the opposite front oblique relative angle, keep the same unchanged geometry and no mirror. Approximate framing is acceptable; no EXIF camera restoration claim."
+    },
+    {
+      "id": "registration_record",
+      "finding": "Coordinateplan is a normalized30x11 rectangle;571/572 raster outer aspect and stair glyph sizes differ. No explicit private source-overlay/anchor record yet ties each to this regularized common frame.",
+      "request": "Retain private raw envelope/stair/corridor anchor coordinates and an explicit normalized mapping/overlay for both plans. Clearly label regularization and schematics, not exact metric reconstruction. No need to build all interior rooms."
+    }
+  ],
+  "limits": [
+    "Fine tiled cap/joints, openings and frame cadence are coarse; no request to replicate every detail",
+    "No whole-roof taxonomy, ridge length or unseen rear pitch can be proved by these two photos",
+    "Door/window planes are opaque exterior proxies, not complete interiors",
+    "Current raw QA passes do not constitute independent final numerical/native/rebuild/package approval"
+  ],
+  "bound_files": [
+    {
+      "path": "research-round-ab5cc331/nccu-eighth-next/page43-xref568.jpeg",
+      "bytes": 112662,
+      "sha256": "174b0642d7247eb55dbf035980c4f3848289b9afd9826765c302e3d157d73e96"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-eighth-next/page43-xref569.jpeg",
+      "bytes": 126524,
+      "sha256": "484cdcfa2b8d9ada199f3579ef0df48a36f3609e65b72c01aa78160236e15d69"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-eighth-next/page44-xref571-reading.png",
+      "bytes": 62458,
+      "sha256": "090d4589df06f4d47e52bfc0427f08cac0e7c5f414bb03ccdf662ee48985bf9d"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-eighth-next/page44-xref572-reading.png",
+      "bytes": 46602,
+      "sha256": "539e3e87ad07dc0060ccb9a9e3d909b501548383f6a2e07bf2d1ddfd91201459"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-eighth-next/SOURCE-HANDOFF.md",
+      "bytes": 3072,
+      "sha256": "1ee92df33a6dab8e7601a2bf6da0080c5267e33a5619413a71c0eb3ef8456f02"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-eighth-next/independent-source-review.json",
+      "bytes": 13229,
+      "sha256": "c91e4bcbf922c6347b384aabf013e341fd796e7f4d93b96634192c601b58f776"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/build_model.py",
+      "bytes": 11679,
+      "sha256": "a73c8f132ab3095f00b66162b7a46a072bc074c4d7d013aaf7f3e7c6ef790b3c"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/model.stl",
+      "bytes": 230484,
+      "sha256": "3fd6185a6416baeb5be938275ed6f87b19d25a3676672cfdb83385f507771067"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/model.3mf",
+      "bytes": 42959,
+      "sha256": "5452ac8353e7f6cecf03e16a27ec575ab863607ce0f5e55f86d580748f041a98"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/mesh.json",
+      "bytes": 161173,
+      "sha256": "136af866a0d767ecd0c3f7832342968d770fc18054d40f156c90681aaf6ae25d"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/scene.blend",
+      "bytes": 809924,
+      "sha256": "651f9e36e8354817808ececca1ce43e556935b952d06cb0dd18accd710cca303"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/qa/design-features.json",
+      "bytes": 9350,
+      "sha256": "4e9b76a1069704063cb44c7a02f5705d09c880e1664ed7e6dd5689745903513e"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/plan-coordinates.png",
+      "bytes": 16570,
+      "sha256": "7e600bb1f1f3bbba1e316fac59d04d00e359428e55a546dbd18b7003148601bc"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/make_plan.py",
+      "bytes": 1398,
+      "sha256": "06d45d3274d68ed4017e39160511844b015588c597844eb93bb5874b081d2488"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/photo568-comparison.png",
+      "bytes": 1346889,
+      "sha256": "a1338d1a882913c9fe84f0dd1683cc67e5eeeb3e2d11416a6b2419fefa74ccd3"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/photo569-comparison.png",
+      "bytes": 1371839,
+      "sha256": "f82f236c9f58177d2e5f33868d957b85f25ec6838156c05ddb38ce42f70a280d"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/photo-camera-manifest.json",
+      "bytes": 563,
+      "sha256": "5ab6c7cb9ea46c69646427e87706c18d3afdbf387574f5e303dad8718c5e5ac8"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/photo_cameras.py",
+      "bytes": 1059,
+      "sha256": "9598e0d37e03d7cecbb3dd0556dc796061974a557bc91f17149b4fb5a10c3515"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/previews/left_oblique.png",
+      "bytes": 1657966,
+      "sha256": "d157d4cb68f785ef0c447334fcde8197e837d56656bf3e38f4c9fd222c7c61dd"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/previews/rear.png",
+      "bytes": 1548568,
+      "sha256": "c28eb06ac7f2a090733b25d98a2186be1f4b4db1080bb837fcdbad0271f139b8"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/previews/front.png",
+      "bytes": 1700735,
+      "sha256": "155261af716536cde4630f6eecacc08aa667c220d8deb788532811d9eab488cb"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/previews/top.png",
+      "bytes": 1529717,
+      "sha256": "9e02eac35b0f3bd49f913650a710a64f361f5874db262ca102dddd1268177fa1"
+    },
+    {
+      "path": "nccu-eighth-classroom-20261024/model/previews/elevation.png",
+      "bytes": 1571847,
+      "sha256": "ecaa112e4ece1e782191645fce3922e7b9e2678d101c42fedf7b9d13591e94d7"
+    }
+  ]
+}

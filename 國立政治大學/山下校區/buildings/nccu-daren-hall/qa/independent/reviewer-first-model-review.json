@@ -1,0 +1,224 @@
+{
+  "status": "REVISE_V1_SOURCE_BOUND_FIRST_SHAPE",
+  "passed": false,
+  "public_release": false,
+  "created_utc": "2026-10-24T07:02:48.783036+00:00",
+  "identity": "nccu-daren-hall",
+  "stl_sha256": "290ec44657a1273c30f25177f333a5357b8f5d76db60c61d43698edc9cf7393f",
+  "scope": "First shape review only, not final numeric/native/clean-source/print certification. Exact archived v1 bytes extracted before communicating requested revisions; no mutable late bindings.",
+  "personally_viewed": [
+    "All four originals and two pure CCW readings",
+    "Five same-mesh previews, both source-angle candidates, plan sections and both source overlays"
+  ],
+  "accepted": [
+    "Complete four-storey narrow rectangle, no B1 or invented rooftop tower; coherent same-XY central stair and long corridor",
+    "Source first-floor plan shifted relative to later floors, shared column/core registration not per-page-scale; left subdivided rooms/right end room preserved",
+    "686 2F entrance and 687 same corridor long face are bounded candidates; 4F retained despite cropped/grade-hidden lowest floor, no per-photo mirror",
+    "Full external 18-step flight reaches an actual lower landing/local grade rather than clipped datum; roof and unseen rear restrained approximations"
+  ],
+  "required_revisions": [
+    {
+      "id": "D1",
+      "issue": "Front facade window/pier module too broad versus both photographed local bays",
+      "evidence": "686 near-frontal visible window bays are approximately as wide as high; model has 3.7 by2.0 design-unit panes and 4.25 pitch, rendering approximately1.8:1. 687 repeats narrow vertical bays. This also makes photographed canopy span about2-3 narrow modules while model spans onlyabout1.3.",
+      "action": "Reduce regularized visible-front module pitch, about half current is a defensible starting proxy; preserve whole60x9 footprint, source room/core registration and four storeys. Do not claim exact bay count or mirror this pattern to unseen back."
+    },
+    {
+      "id": "D2",
+      "issue": "Full-height light structural pier continues through entrance clear opening and canopy",
+      "evidence": "Frozen raw STL is solid at x4.25,y-4.47,z4/4.8/5.6/6.2. Same-scene686 render shows a light structural column bisecting the doorway, unlike source recessed dark glazed-door assembly.",
+      "action": "Interrupt facade pier within true entrance opening/canopy region; preserve needed upper pier and side supports. Use bounded dark door/frame proxy, with true usable opening/route retained, not a new solid closure."
+    },
+    {
+      "id": "D3",
+      "issue": "Clear photograph-proven horizontal shading assemblies absent",
+      "evidence": "686 uppermost windows have continuous dark horizontal louver rows beneath parapet; narrow short stacked pieces also occur beside visible piers, and687 confirms protruding horizontal assemblies on same face.",
+      "action": "Add reduced-count finite attached louver/shading proxies only to photo-supported front zones, with size/thickness approximation explicit; no exact slat count claim, rear duplication or text/signage."
+    },
+    {
+      "id": "D4",
+      "issue": "Ramp low-end top has an artificial step down to its landing",
+      "evidence": "Frozen actual raw downward rays at y-5.25 give top z0.5519676 atx27 versus landingz0.400390625 atx27.1: about0.15158 designunit /0.379mm discontinuity. Rotation was applied to a centered thick slab, so endpoint axisheight is not walking topheight.",
+      "action": "Construct ramp from its intended top surface and finite underside or raise/reshape finite low landing to meet actual top continuously, keeping complete lowerlanding/localgrade. Add dense path floor/head and top-height checks across both interfaces; do not move probes away from the lip."
+    }
+  ],
+  "nonblocking_limits": [
+    "Roof noRF, heights/window/slat counts/ramp pitch are source-relative approximations, not measured or building-code certification",
+    "Fine rear/room partitions are neutral simplified proxies; no need for every unknown window as source HOLD",
+    "Full independent raw/SAT/thickness/section/actual3MF andBlend edits/sourceZIP executions remain a later frozen-version gate"
+  ],
+  "bound_files": [
+    {
+      "path": "first-shape-v1-private.zip",
+      "bytes": 8607392,
+      "sha256": "0167f8320b5e143598a5f586abef6065d6c318aa4999603624e275be9140a17a"
+    },
+    {
+      "path": "first-shape-v1-freeze.json",
+      "bytes": 1631,
+      "sha256": "3e2d6b747edfaefee59043486e665ccf8ce357768e4e96b4903f425865399f11"
+    },
+    {
+      "path": "reviewer-v1-entry-ramp-evidence.json",
+      "bytes": 1660,
+      "sha256": "2a2d62af0b1db94e417742a6573485b353a75e49bf91b859b65312e9254e58b7"
+    },
+    {
+      "path": "reviewer_v1_entry_ramp_probe.py",
+      "bytes": 1364,
+      "sha256": "f3916e5abd14c68ec67307a0fce3bcbdfea5ba4e10f5bfeac3ee4220486617b4"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/build_model.py",
+      "bytes": 11428,
+      "sha256": "ce766a9b89fc62008bdbe728d01a209bad40c67bb2ac3d3aadcbae3391626b09"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/model.stl",
+      "bytes": 903184,
+      "sha256": "290ec44657a1273c30f25177f333a5357b8f5d76db60c61d43698edc9cf7393f"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/model.3mf",
+      "bytes": 173433,
+      "sha256": "55024b611d32c1cccd0af6203287052fecd1d7078370f6687511e580fce99a67"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/mesh.json",
+      "bytes": 736877,
+      "sha256": "58853db37763bbb2353bab96f02a11dcab47c235cebeb033fc4c3fdb886fecd2"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/palette.json",
+      "bytes": 588,
+      "sha256": "fddad97456e11972e92da7804c20e56c2e9e4142464379032e347caf9d457228"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/scene.blend",
+      "bytes": 1535996,
+      "sha256": "cd7832932215d22a8282d6e8a80f27c13fc6203a14df041a2e4544f656e976df"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/render_model.py",
+      "bytes": 4991,
+      "sha256": "2edcfae8fd53de8e0fbb6fec2f3f52ab3c069cd8a6ef2d668c0ff31e68e6a3b7"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/previews/front.png",
+      "bytes": 1616482,
+      "sha256": "b02146b6345a8795ad419bfc6c316b912bbfb6dbf66c8e588dd3261a0ce116ec"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/previews/rear.png",
+      "bytes": 1520067,
+      "sha256": "cdf1327154aae86f1cdb1f5e97928cb93e24124396df8c7fe98cfb284114aedb"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/previews/elevation.png",
+      "bytes": 1558072,
+      "sha256": "2a92aa0485299a8f57347acf8d151e5a32ac1ad62a39cd670513c16f9ff3141d"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/previews/top.png",
+      "bytes": 1461023,
+      "sha256": "2b2f23670f1c27396306531204d4bd4c46a430f9d9470af9f3e085f93e3f42bf"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/model/previews/left_oblique.png",
+      "bytes": 1588711,
+      "sha256": "4958cad5d098dbef2fbf81a84446a70473426993c72105c78ad7deb2860fd8bd"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/plan-sections.png",
+      "bytes": 31698,
+      "sha256": "83d821cebceed25b40346cff6428c0f60fb60374b827df044229c17f920af8f4"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/source-plan-registration.json",
+      "bytes": 1088,
+      "sha256": "45466e787e433f92a0ef4eba43211215fd8f4ccbc5d434dfcfb98824a508f8a3"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/source-plan-overlay-registration.json",
+      "bytes": 1308,
+      "sha256": "5ab23378d3f2009fd88a6913eb00b47ecab0abe1595af9ad5973d4e4a5065b59"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/private-overlay-689.png",
+      "bytes": 73591,
+      "sha256": "7e863fc91b621a259b2670c5ee2ec1bfce53f8c596bd4b8738e2ed90f9c2a0b7"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/private-overlay-690.png",
+      "bytes": 77386,
+      "sha256": "19de5fa78f6fb4b5181ea775d559f1f15f5b415ddd2c39aa8b269b86f78d13fa"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/photo686-comparison.png",
+      "bytes": 1631682,
+      "sha256": "855f7bbd53582d448c4b14849df60c27d513c90bce4973cfcb9e2f577c80a606"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/photo687-comparison.png",
+      "bytes": 1550312,
+      "sha256": "93b020776c5d4518af4c292feadc7f766b1f651e81e11202a16b3e0358f5ca82"
+    },
+    {
+      "path": "reviewer-v1-frozen-readback/photo-camera-manifest.json",
+      "bytes": 536,
+      "sha256": "21478dcb619230c7f703fbd388fc8e1719659073589e084c5b49700ccc9d3dac"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/SOURCE-HANDOFF.md",
+      "bytes": 2247,
+      "sha256": "3f5e97df36bf7fa2ead4cf3bc9c07cda6cb153b02fa8386854f7835b82d73c90"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/GEOMETRY-EVIDENCE-MAP.md",
+      "bytes": 2980,
+      "sha256": "b35bafd3d43354b4a374e71457aa0de0a8efba647d56435e1417a1b122fc6391"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/SOURCE-RIGHTS-DATES.md",
+      "bytes": 1193,
+      "sha256": "512c35e0a5a241c23a627e9323896cf85669763865ea60538e932506369ed55b"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/source-manifest.json",
+      "bytes": 5922,
+      "sha256": "d3cfe4c808b860e261495add3e6ed9f45f111dcbeb350826f468356dfc3dd43a"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/page88-xref686.jpeg",
+      "bytes": 183016,
+      "sha256": "e1dafd45a01a067986f1162afc186fd7641ffed8eb48768141d33b5e4d75ad4b"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/page88-xref687.jpeg",
+      "bytes": 192613,
+      "sha256": "3a0659b2282e62912e9127a043b493c3721c9c0a5562596dda85e66e5e2368d8"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/page89-xref689.png",
+      "bytes": 68299,
+      "sha256": "f0b961b1106cd91bc6e441d20d545a69a12c9a154df8d09d2f450d7b0432edc0"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/page89-xref690.png",
+      "bytes": 71684,
+      "sha256": "b90a8d2d8814cf26f5343da9d71d9b2461f4c0334d0b8b35814481f2c1ae4dec"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/page89-xref689-reading.png",
+      "bytes": 73342,
+      "sha256": "2a418662b1cc7cf8ef426157517e3b94b51aaccc50308515f1d7bdaa50ea65e9"
+    },
+    {
+      "path": "../research-round-ab5cc331/nccu-daren-next/page89-xref690-reading.png",
+      "bytes": 76832,
+      "sha256": "cf04d4f16c7cbfb8c90630e25f68c4f6e92868144329c15dd8eac446c736d5d4"
+    }
+  ],
+  "source_pixel_overlays_private_only": true,
+  "reviewer_modified_builder_or_main": false
+}

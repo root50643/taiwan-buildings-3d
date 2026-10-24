@@ -1,0 +1,16 @@
+{
+  "status": "BOUNDARY_TEST_SCOPE_RESOLUTION_NOT_GEOMETRY_CHANGE",
+  "failed_trial": {
+    "path": "reviewer-landing-boundary-history.json",
+    "sha256": "3112da79a00a06ef4eab2917addd4bdc59358838845472da69029ce172784daa"
+  },
+  "trial_script": {
+    "path": "reviewer_feature_check_landing_boundary_history.py",
+    "sha256": "d3ca4891fbe75cd289224034e0b67e1e41a2f21fcbd5786045f7eac5148fca24"
+  },
+  "trial_samples": 6870,
+  "failed_head_samples": 15,
+  "actual_geometry": "All 15 lie at x27.5667..27.8,y-4.6 against existing facade pier (fronty-4.72), not along the ramp which endsx27. The trial rectangular landing clear region wrongly included its building-side boundary pier.",
+  "resolution": "Retain failed trial; explicitly test side pier as solid, adjacent walkstrip as air. Validate finite continuous landing strip y-5.7..-4.8 without claiming whole nominal landing rectangle unobstructed. No raw geometry or builder probes changed.",
+  "not_full_landing_or_human_code_clearance_certificate": true
+}

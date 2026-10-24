@@ -1,0 +1,184 @@
+{
+  "status": "FIRST_MODEL_MAIN_FORM_REVISIONS_REQUIRED",
+  "passed": false,
+  "source_only": false,
+  "public_release": false,
+  "created_utc": "2026-10-24T06:11:24.096980+00:00",
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "revision_reviewed": "v1 exact frozen; no model modifications by reviewer",
+  "personally_viewed": [
+    "All five original source images and B1 pure CCW reading",
+    "All five v1 model previews",
+    "Both same-mesh photo601/photo602 comparisons",
+    "Plan coordinates; private605/607 source overlays and B1-on605 overlay"
+  ],
+  "accepted_main_geometry": [
+    "Two-storey L footprint, left wing deeper in plan rather than a taller wing",
+    "Rightmost two structural bays partial B1, plus same-height right stair enclosure; not full-L basement or third-floor tower",
+    "601 left short end and lower long face;602 other near angle on SAME long face; no independent photo mirroring",
+    "Bounded flat roof approximation and restrained unknown rear; neighbour coloured-frame Lohas Hall not included",
+    "Opaque shallow-relief screen proxy and attached green canopy/columns appropriate coarse material scope, not true perforated screen reconstruction"
+  ],
+  "required_changes": [
+    {
+      "id": "G1",
+      "issue": "Most non-basement body and external stair/ramp bottoms float above common z0; rear and elevation show unsupported long spans not established by source.",
+      "required": "Add finite explicitly approximate perimeter grade/contact and stair/landing foundations down to common ground. Do not turn all of L into a basement, fill evidenced right B1/stair throat, or fabricate a site-wide platform.",
+      "validation": "Same-mesh rear/side/section showing finite support/contact; raw occupancy at grade and kept B1 void."
+    },
+    {
+      "id": "G2",
+      "issue": "Long ramp low end finishes at z2.18 while main floor is about3.2 and current grade datum0; complete low arrival and high flush threshold not established.",
+      "required": "Define complete high and low landings connected to the local finite grade/walkway, with finite-width route and no rail blocking the actual entry. Heights remain approximate.",
+      "validation": "Direct surface-height/air-clearance samples along complete ramp and each landing, not merely isolated inside points."
+    },
+    {
+      "id": "G3",
+      "issue": "602 upper narrow window primitive x899..901,y548..584 is buried in stair enclosure and invisible.",
+      "required": "Place finite photo-supported panel on exposed short return candidate near masterx900,y674..687; keep stair enclosure/body fixed, do not mirror to rear.",
+      "validation": "Same-mesh602 angle and actual material/first-hit evidence; exact panel position remains a bounded inference."
+    },
+    {
+      "id": "G4",
+      "issue": "B1 mapped upper-left projecting corner is absent from v1 envelope.",
+      "required": "Preserve approximately x683..719,y483..510 B1 nib from common-column registration; do not extrude above-ground new wing.",
+      "validation": "B1 outline overlay and occupancy at nib, with aboveground outside remaining empty."
+    },
+    {
+      "id": "G5",
+      "issue": "Right stair is represented with flights and landings but ends against solid body wall; source607 shows a westward door to interior circulation.",
+      "required": "Make finite landing/threshold side opening and limited receiving pocket, not a stair ending at a false wall. Preserve B1 and 1F/2F flight distinctions. Full interior circulation is not required or asserted.",
+      "validation": "Finite-width route floor-solid/head-air samples across landings/door threshold, with clear limits on simplified interior."
+    }
+  ],
+  "optional_camera_refinement": "601 comparison can be viewed farther toward left short end so its nearer face is prominent; same mesh only, no mirrored geometry.",
+  "not_required": [
+    "Do not add unseen back windows or neighbour building",
+    "Do not infer an elevator tower from X symbols",
+    "Do not copy fine sign text/photos",
+    "Do not treat successful shell/SAT checks as source fidelity or print readiness"
+  ],
+  "manufacturing_scope": "Builder v1 numeric results not independently accepted as final; complete final numeric/native/source/archive chain follows corrected frozen model.",
+  "bound_files": [
+    {
+      "path": "core-v1-freeze.json",
+      "bytes": 5993,
+      "sha256": "1ea9d07712ee876d22ec8ffb97a3ca42f90157a0bc14d0435f1a1a7cc41912e6"
+    },
+    {
+      "path": "first-shape-v1-private.zip",
+      "bytes": 11535068,
+      "sha256": "cd45883dde0c1f541525427e56155b782a78d513cd4d33b7411d7778094781a3"
+    },
+    {
+      "path": "model/build_model.py",
+      "bytes": 13691,
+      "sha256": "f8fae90fcb05ce84861eafefffa8f26c100fffeae71719e7361fa8cce3f2a044"
+    },
+    {
+      "path": "model/model.stl",
+      "bytes": 871684,
+      "sha256": "bbee648ef79223ada788ab09e781a429e121d62791558f6b718ddd6b42e0cc63"
+    },
+    {
+      "path": "model/scene.blend",
+      "bytes": 1547980,
+      "sha256": "6eb2f1c068a0e9f9c481ce26a218bfc297e8d133a29dbc07e4c335265a229541"
+    },
+    {
+      "path": "plan-coordinates.png",
+      "bytes": 16788,
+      "sha256": "265f486414bd406468ebaab8f86664d9a6652f823fcc181e29ec51bc12976523"
+    },
+    {
+      "path": "photo601-comparison.png",
+      "bytes": 1295429,
+      "sha256": "7f7b70377505f5179c3bdeea4273dd14c6090bd045371663bc97959349ed2b53"
+    },
+    {
+      "path": "photo602-comparison.png",
+      "bytes": 1366022,
+      "sha256": "bfde8a5cae792adb7d4437563bdb7b58e21d49dc5321eb950648a0709310f1f1"
+    },
+    {
+      "path": "private-overlay-605.png",
+      "bytes": 180850,
+      "sha256": "927dd07d9a75f018a69de534e3a22e3b4a7a12209beebf85ff2d4acfc4bef2bf"
+    },
+    {
+      "path": "private-overlay-607.png",
+      "bytes": 218793,
+      "sha256": "5517498376d22355dbf967e6cefa25f0e988831cff6e375bfa96f32ae837ce24"
+    },
+    {
+      "path": "private-registration-B1-on605.png",
+      "bytes": 184472,
+      "sha256": "7bb90fb182ec62d6f4f822b5e94acd8731e30e2c61dd8eed20dbe8db8b2a4656"
+    },
+    {
+      "path": "model/previews/left_oblique.png",
+      "bytes": 1661628,
+      "sha256": "732a0828b8e99fbba5bf73bcb3ff43a689659144698775b1bf45cabf14b68978"
+    },
+    {
+      "path": "model/previews/rear.png",
+      "bytes": 1530742,
+      "sha256": "0de11cfeebb75ddc626121b6a822ec314fb6db1ac63a7642d0e9096b7c0f3a82"
+    },
+    {
+      "path": "model/previews/front.png",
+      "bytes": 1697844,
+      "sha256": "cfe42ea39aa1b24d5a69bd7e6f7f49c9006754088f42e32110b098cbfb70b516"
+    },
+    {
+      "path": "model/previews/top.png",
+      "bytes": 1549703,
+      "sha256": "71d14ac05ce271c04d27ae3371bd7b867b3efd544a1f945e3b2c9d59fccaabab"
+    },
+    {
+      "path": "model/previews/elevation.png",
+      "bytes": 1575250,
+      "sha256": "f02697d9798c24d22e1fd531a55c880a45e5fd8eb5ef216bafcf5e6214356c12"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/SOURCE-HANDOFF.md",
+      "bytes": 3656,
+      "sha256": "d8a81f95aa5b8c5da75f4fb6b798d095751412bc1ea4458cc08e709698776109"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/source-manifest.json",
+      "bytes": 6140,
+      "sha256": "0a67393410c133707dba9938b145a89835ad0dcc9594f6360ee4c98b2b90b7c6"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/page57-xref601.jpeg",
+      "bytes": 133171,
+      "sha256": "8cff5bb36c594338fc449f6b6510578912f58658d75bffcad960cece13e25045"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/page57-xref602.jpeg",
+      "bytes": 119311,
+      "sha256": "144dde3277bf091acc8cafb70c4dff4926802735d769375ad5bbac56602ccb5f"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/page58-xref604.jpeg",
+      "bytes": 60664,
+      "sha256": "25b934dc85828f7ec680a170b9a436e780c7de1070444e5e819e9858424addc4"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/page58-xref604-reading.png",
+      "bytes": 145024,
+      "sha256": "58d887a1510970d183e9c536d6907bd74e7d865085c95abc2c93b9191c75158a"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/page58-xref605.jpeg",
+      "bytes": 68827,
+      "sha256": "293b14d5fe8c4d180ec706756c735b97bbae1463972cb5a2e584b31f71d59b45"
+    },
+    {
+      "path": "/workspace/scratch/0459ddc40ee0/research-round-ab5cc331/nccu-lohas-shop-next/page59-xref607.jpeg",
+      "bytes": 75548,
+      "sha256": "8c26ee7b9aa1864ac9c883bde0fa032cf145d49ed11de7c4762848699a44b216"
+    }
+  ]
+}

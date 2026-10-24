@@ -1,6 +1,6 @@
 # 國立政治大學｜校園建築模型
 
-目前24套建築外觀近似模型：山下16套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
+目前25套建築外觀近似模型：山下17套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -12,6 +12,7 @@
 | [<img src="山上校區/buildings/nccu-innovation-center/previews/front.png" alt="研究暨創新育成總中心（研創總中心）：實際模型預覽" width="220">](山上校區/buildings/nccu-innovation-center/README.md)<br>**[研究暨創新育成總中心（研創總中心）](山上校區/buildings/nccu-innovation-center/README.md)** | [<img src="山上校區/buildings/nccu-communication-building/previews/front.png" alt="傳播學院主樓：實際模型預覽" width="220">](山上校區/buildings/nccu-communication-building/README.md)<br>**[傳播學院主樓](山上校區/buildings/nccu-communication-building/README.md)** | [<img src="山下校區/buildings/nccu-information-complex/previews/front.png" alt="資訊大樓（含電算中心）：實際模型預覽" width="220">](山下校區/buildings/nccu-information-complex/README.md)<br>**[資訊大樓（含電算中心）](山下校區/buildings/nccu-information-complex/README.md)** |
 | [<img src="山下校區/buildings/nccu-xuesi-hall/previews/front.png" alt="學思樓：實際模型預覽" width="220">](山下校區/buildings/nccu-xuesi-hall/README.md)<br>**[學思樓](山下校區/buildings/nccu-xuesi-hall/README.md)** | [<img src="山上校區/buildings/nccu-daofan-hall/previews/front.png" alt="道藩樓：實際模型預覽" width="220">](山上校區/buildings/nccu-daofan-hall/README.md)<br>**[道藩樓](山上校區/buildings/nccu-daofan-hall/README.md)** | [<img src="山下校區/buildings/nccu-journalism-hall/previews/front.png" alt="新聞館：實際模型預覽" width="220">](山下校區/buildings/nccu-journalism-hall/README.md)<br>**[新聞館](山下校區/buildings/nccu-journalism-hall/README.md)** |
 | [<img src="山下校區/buildings/nccu-jiying-hall/previews/front.png" alt="集英樓：實際模型預覽" width="220">](山下校區/buildings/nccu-jiying-hall/README.md)<br>**[集英樓](山下校區/buildings/nccu-jiying-hall/README.md)** | [<img src="山下校區/buildings/nccu-eighth-classroom/previews/front.png" alt="第八教室／校友服務中心：實際模型預覽" width="220">](山下校區/buildings/nccu-eighth-classroom/README.md)<br>**[第八教室／校友服務中心](山下校區/buildings/nccu-eighth-classroom/README.md)** | [<img src="山下校區/buildings/nccu-lohas-shop/previews/front.png" alt="樂活小舖：實際模型預覽" width="220">](山下校區/buildings/nccu-lohas-shop/README.md)<br>**[樂活小舖](山下校區/buildings/nccu-lohas-shop/README.md)** |
+| [<img src="山下校區/buildings/nccu-dazhi-hall/previews/front.png" alt="大智樓：實際模型預覽" width="220">](山下校區/buildings/nccu-dazhi-hall/README.md)<br>**[大智樓](山下校區/buildings/nccu-dazhi-hall/README.md)** |  |  |
 
 [山下校區](山下校區/) · [山上校區](山上校區/README.md) · [指南校區](指南校區/) · [金華校區](金華校區/) · [覆蓋範圍](coverage.json) · [精確續接清單](research-handoff/)
 
@@ -45,3 +46,5 @@
 第八教室／校友服務中心為同一棟完整兩層長矩形主樓（60-9／A11），山下分組依官方PDF第9–10頁溪流分界與A11圖文。保留首層真柱廊及背牆、右遠端展示室封廊、左短端與前長側兩個正交短階，上層玻璃只覆前廊及可見廊深短角，其餘白牆及橘色飾面保留。共梯及有限寬上層回廊保持真空間。屋面僅低閉合包絡及可見灰簷／局部短折線，未證完整雙坡四坡、全脊長與背坡；沒有高塔或額外樓層。官方消防簡圖非竣工測繪，照片攝年未知、尺寸細窗色值近似，非已核2026現況。6色Blend／3MF／STL、五張實網格預覽及重建來源ZIP齊備；182截面有2層薄警，細框玻璃及屋脊尖端與柱廊頂板須評估尺度和支撐，未實體試印、不保免支撐。實際來源與權利狀態見SOURCES及LICENSE。
 
 樂活小舖為完整兩層L形主樓（60-13），含同高右梯間與右兩bay局部B1及小凸角；A12是照片相鄰樂活館60-12，不是本舖自身校圖標號。山下分組為官方校圖與照片鄰接綜合判讀。保留上層不透明粗鏤空磚代理、下層店舖牆面及綠棚長廊，左寬階、長坡、右外階、B1內梯與內凹小階分立。有限局部地坪與斜切面只處理階坡接地，非實測地形或滿L地下室；右上梯為有限厚階板，保B1路徑空間。平頂有界近似，不加新塔及未知設備；消防簡圖非竣工測繪，攝年未知、尺寸細窗色值近似，非已核2026現況。8色Blend／3MF／STL、五張實網格預覽及重建來源ZIP齊備；205總截面含近頂部、85層薄警，細磚欄杆棚柱與懸挑須評估尺度和支撐，未實體試印、不保免支撐。來源與權利狀態見SOURCES及LICENSE。
+
+大智樓為完整四層窄長主樓（60-19／A24），山下分組依官方PDF第9–10頁圖文。共同兩端梯、柱線、長廊與左單右雙衛生間區固定平面手性；二樓右端保有限平台、完整外直階及接地，不擴成四層新翼。長教室窗面及補強斜撐有界近似，未見廊側以中性實牆有限開口處理，不鏡射已見窗面；低平屋頂包絡不加塔或額外樓層。108內階及18外階、全級與中平台及出口有限寬地板／頭空共4320筆獨立測試通過，非測繪或法規淨高認證。消防簡圖非竣工圖、照片攝年未知，尺寸細窗與色值近似，非已核2026現況。6色Blend／3MF／STL、五張實網格預覽與重建源ZIP齊備；175切層152層薄警，獨立390/768樣本低於0.8mm、最小約0.17324mm，非全域壁厚保證；薄階板、窗框及多層空腔需支撐和困料評估，未實體試印、不保免支撐。實際來源與權利狀態見SOURCES及LICENSE。

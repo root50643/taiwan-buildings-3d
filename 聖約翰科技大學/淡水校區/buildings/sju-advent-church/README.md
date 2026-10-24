@@ -4,7 +4,14 @@
 
 | 正面 | 背面 |
 |---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| ![有限證據配色正面](appearance/previews/front.png) | ![有限證據配色背面](appearance/previews/rear.png) |
+
+
+## 2026-10-24｜有限證據配色層
+
+另附 [appearance/README.md](appearance/README.md)：在原 3,972 個三角面上增加可編修材質、真正含逐面材質的 3MF 與七向預覽，**原 STL、原 Blend、原預覽、尺度與既有幾何／薄件限制均不變**。2,218 面有有限來源依據；1,754 面明確維持未知／抽象底座中性色，包含有顏色衝突的十字架與未對上的背門。不是新增建物，不表示全表面已驗證，也未實體試印。
+
+原始單色預覽仍保留：[正面](previews/front.png)、[背面](previews/rear.png)；下方原幾何與 v1 限制不因配色而改變。
 
 ## 範圍與可信度
 
@@ -32,7 +39,7 @@
 
 Python安裝requirements後執行build_model.py，再以Blender執行render_preview.py，最後執行run_all_checks.py。檢查原始STL單一水密表面、每邊二面、vertex-link單環、法向與繞序、正體積、重建SHA、Blend幾何、重繪PNG及所有0.2mm截面。原Polygon逐一erosion/opening須零消失零分裂；invalid直接失敗，沒有repair fallback。完整數值見QA檔；面積損失不得替代逐構件連通檢查。416層、800個原Polygon均無消失或分裂；52整層與436個跨層原Polygon樣本opening損失超過1%，包含四角柱與十字架。此警告不是零，也不能全歸為四角；詳下方補充與 [細件說明](thin-feature-review.json)。
 
-外觀已於2026-10-14核准，作者數位QA通過並凍結v1；獨立硬性幾何與9張PNG重現檢查通過；薄損具體例外已核准，本說明補充仍待最終文件核對，尚未發布。
+**原 v1 凍結驗證紀錄（歷史狀態，非本配色層目前狀態）：** 外觀已於2026-10-14核准，作者數位QA通過並凍結v1；獨立硬性幾何與9張PNG重現檢查通過；薄損具體例外已核准，本說明補充仍待最終文件核對，尚未發布。
 
 
 ## v1文件補充：局部薄損例外

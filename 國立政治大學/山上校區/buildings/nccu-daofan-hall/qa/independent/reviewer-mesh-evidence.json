@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "stl_sha256": "b53630ec03784edbd9ed7bcd57797c06b2c2a688002f40e725bd7dc1c280886f",
+  "model_3mf_sha256": "a01c37938c2b8caa2dde7580e99edbdea3b9e8c69a2d050e78c423ed8da4b40c",
+  "raw": {
+    "triangles": 12548,
+    "exact_weld_vertices": 5960,
+    "nonfinite": 0,
+    "zero_area": 0,
+    "duplicate_unoriented_faces": 0,
+    "edge_incidence_not_two": 0,
+    "edge_orientation_errors": 0,
+    "vertex_link_errors": 0,
+    "stored_normal_nonpositive_dot": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "signed_volume_mm3": 293064.9984475135,
+    "bounds_mm": [
+      [
+        0.0,
+        -8.5,
+        0.0
+      ],
+      [
+        208.75,
+        103.0,
+        59.189998626708984
+      ]
+    ],
+    "surface_area_mm2": 91293.84759710304,
+    "minimum_triangle_area_mm2": 0.0002621816056489479,
+    "boundary_shells": 3,
+    "signed_shell_volumes_mm3": [
+      312119.7452279252,
+      -9903.450498938895,
+      -9151.296281472716
+    ],
+    "cavity_validation": {
+      "positive_exterior": 1,
+      "negative_cavities": 2,
+      "exact_raw_triangle_partition": true,
+      "all_inner_vertices_and_face_centroids_inside_outer": true,
+      "cavities": [
+        {
+          "signed_volume_mm3": -9903.450498938895,
+          "bounds_mm": [
+            [
+              148.42999267578125,
+              75.68000030517578,
+              10.619999885559082
+            ],
+            [
+              202.07000732421875,
+              98.31999969482422,
+              19.979999542236328
+            ]
+          ],
+          "tested_points": 77,
+          "minimum_tested_clearance_mm": 1.67999267578125
+        },
+        {
+          "signed_volume_mm3": -9151.296281472716,
+          "bounds_mm": [
+            [
+              158.75,
+              75.68000030517578,
+              20.81999969482422
+            ],
+            [
+              202.07000732421875,
+              98.31999969482422,
+              30.18000030517578
+            ]
+          ],
+          "tested_points": 32,
+          "minimum_tested_clearance_mm": 0.8400001525878906
+        }
+      ],
+      "cavities_not_nested": true,
+      "cross_shell_contacts_included_in_SAT": true,
+      "interpretation": "One positive building boundary encloses two finite negative hall-void boundaries. Not three positive disconnected objects; no cavity filling/healing."
+    }
+  },
+  "exchange": {
+    "unit": "millimeter",
+    "objects": 1,
+    "vertices": 5960,
+    "triangles": 12548,
+    "all_triangle_coordinates_order_and_winding_exact": true,
+    "exact_canonical_vertices_and_indices": true,
+    "whole_face_material_assignments": true,
+    "materials": [
+      {
+        "name": "red_brown_brick",
+        "displaycolor": "#874F3EFF"
+      },
+      {
+        "name": "warm_pale_concrete",
+        "displaycolor": "#D4CDB9FF"
+      },
+      {
+        "name": "opaque_blue_gray_glazing",
+        "displaycolor": "#49616BFF"
+      },
+      {
+        "name": "gray_weathered_concrete",
+        "displaycolor": "#929383FF"
+      },
+      {
+        "name": "roof_concrete",
+        "displaycolor": "#AAA99AFF"
+      },
+      {
+        "name": "bounded_grade_proxy",
+        "displaycolor": "#8A8A76FF"
+      },
+      {
+        "name": "entry_stone",
+        "displaycolor": "#B7AE95FF"
+      }
+    ],
+    "material_face_counts": [
+      1043,
+      10134,
+      514,
+      203,
+      18,
+      337,
+      299
+    ]
+  },
+  "non_vertex_adjacent_SAT": {
+    "candidate_pairs": 73655,
+    "contact_pairs": 0,
+    "axes": 17,
+    "epsilon_mm": 1e-07,
+    "shared_vertex_pairs_excluded": true,
+    "limitation": "Does not establish an exhaustive test of all adjacent triangle pairs; exact edge incidence/orientation and vertex links checked independently."
+  },
+  "repair_or_rounding_applied": false,
+  "physical_print_or_slicer_test": false
+}

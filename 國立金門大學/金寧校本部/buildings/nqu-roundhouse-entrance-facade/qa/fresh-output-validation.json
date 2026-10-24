@@ -1,0 +1,29 @@
+{
+  "fresh_empty_output_directory": true,
+  "source_assets_required": false,
+  "stages": [
+    {
+      "stage": "geometry",
+      "passed": true
+    },
+    {
+      "stage": "strict material 3MF + roundtrip",
+      "passed": true
+    },
+    {
+      "stage": "editable scene no-render",
+      "passed": true
+    },
+    {
+      "stage": "Blend reopen + recolor-copy",
+      "passed": true
+    },
+    {
+      "stage": "Blend declared path-buffer audit",
+      "passed": true
+    }
+  ],
+  "stl_byte_identity": true,
+  "geometry_array_identity": "also independently verified in rebuild-validation.json",
+  "previews": "Main package six views rendered; fresh pipeline uses --no-render to verify scene output without duplicating previews."
+}

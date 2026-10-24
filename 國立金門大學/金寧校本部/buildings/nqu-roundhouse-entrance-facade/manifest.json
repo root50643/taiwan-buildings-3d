@@ -1,0 +1,88 @@
+{
+  "schema": "taiwan-buildings-source-bounded-model-v1",
+  "id": "nqu-roundhouse-entrance-facade",
+  "name": "國立金門大學 圓樓中央入口立面段",
+  "title": "圓樓・正面中央入口立面段（照片近似；非完整建築）",
+  "school": "國立金門大學",
+  "campus": "金寧校本部",
+  "target_repository_path": "國立金門大學/金寧校本部/buildings/nqu-roundhouse-entrance-facade",
+  "repository_base_verified": "48e923a1f62b16e2d2a6d4785c8c893bad261fe2",
+  "repository_check": {
+    "checked_utc": "2026-10-24T12:32:10Z",
+    "method": "Existing exact-revision tree names and archived school/inventory metadata; no clone",
+    "target_absent": true,
+    "existing_nqu_package": "nqu-library-tower-segment"
+  },
+  "status": "CANDIDATE_PENDING_INDEPENDENT_REVIEW_NOT_PUBLISHED",
+  "scope": "Central entrance facade only; not whole roundhouse. Artificial neutral rear/side cuts and display base.",
+  "classification": "partial architectural facade segment",
+  "whole_building": false,
+  "units": "model millimetres; no measured architectural scale",
+  "size_model_mm": [
+    146,
+    41,
+    145.15
+  ],
+  "construction": "Authored Boolean solid union; sub-0.0001 mm quantization slivers welded before STL export; no source pixels or third-party mesh",
+  "render_coordinate_system": "Local -Y entrance, +Y artificial rear cut; not compass directions",
+  "artifacts": {
+    "blend": "nqu-roundhouse-entrance-facade.blend",
+    "stl": "nqu-roundhouse-entrance-facade.stl",
+    "material_3mf": "nqu-roundhouse-entrance-facade.3mf",
+    "sources": "sources.json",
+    "certainty_map": "evidence-map.json"
+  },
+  "qa": {
+    "topology": "qa/mesh-validation.json",
+    "slice_thickness_screen": "qa/slice-thickness-screen.json",
+    "3mf": "qa/3mf-validation.json",
+    "rebuild": "qa/rebuild-validation.json",
+    "blend_readback": "qa/blend-validation.json",
+    "fresh_output": "qa/fresh-output-validation.json",
+    "declared_blend_buffers": "qa/path-buffer-validation.json",
+    "public_path_scan": "qa/public-path-scan.json",
+    "visual_source_match": "qa/visual-source-match.md"
+  },
+  "software": {
+    "Blender": "4.3.2",
+    "lib3mf": "2.5.0"
+  },
+  "uncertainties": [
+    "Photo capture dates unknown; document date not capture date; not a verified 2026-current survey",
+    "No measured width, radius, opening depth, column diameter, roof slope or scale",
+    "Brick bond, tile rhythm, rail spacing and mullion counts are authored simplifications",
+    "Colors are uncalibrated material families",
+    "Rear closure, side cuts and base are artificial support, not as-built geometry",
+    "DWG obtained but not interpreted; point-cloud roof gaps do not establish roof openings"
+  ],
+  "omitted": [
+    "Full circular building and complete roof",
+    "Rear and side balcony/window layout",
+    "Dormitory links",
+    "Interior layout/circulation",
+    "Changing retail signs, landscaping, people and vehicles"
+  ],
+  "printing": {
+    "actual_printed": false,
+    "slicer_toolpath_validated": false,
+    "watertight_export_checked": true,
+    "supports_may_be_required": true,
+    "no_support_free_claim": true,
+    "notes": "Check 1 mm rails/mullions, wide lintel, inset windows and front eave in the selected slicer. 726 horizontal sections are a geometric screen only."
+  },
+  "rights": {
+    "third_party_source_images_in_package": false,
+    "source_image_open_license_established": false,
+    "independently_authored_geometry_and_renders": true
+  },
+  "previews": [
+    "previews/front.png",
+    "previews/oblique.png",
+    "previews/left.png",
+    "previews/right.png",
+    "previews/rear.png",
+    "previews/top.png"
+  ],
+  "preview_count": 6,
+  "readme_images": "Six actual model views embedded in two three-column Markdown image tables"
+}

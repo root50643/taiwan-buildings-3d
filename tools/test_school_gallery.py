@@ -154,7 +154,7 @@ class GalleryTests(unittest.TestCase):
         r=self.run_audit(TABLE([CARD('a'),'',CARD('b')]));self.assertIn('non_terminal_padding',r['errors'])
     def test_complete_padded_gallery_passes(self):
         self.assertEqual(self.run_audit(TABLE([CARD('a'),CARD('b'),'']))['errors'],[])
-    def test_two_angle_same_package_not_duplicate_card(self):
+    def test_unmigrated_legacy_two_angle_same_package_not_duplicate_card(self):
         t='| 正面 | 背面 |\n|---|---|\n| '+CARD('a')+' | '+CARD('a')+' |\n\n'+TABLE([CARD('b'),'',''])
         self.assertEqual(self.run_audit(t)['errors'],['fragmented_card_gallery'])
     def test_linked_header_image_and_download_rows_are_one_catalog(self):
@@ -321,4 +321,70 @@ class GalleryTests(unittest.TestCase):
         after=g.normalize_mixed_preview_widths(TABLE([first,second,'']),PAGE,[R1,R2])
         self.assertIn('alt="Example height=420 and width=300" width="220"',after)
         self.assertEqual([i['width'] for i in g.preview_images(after)],['220','220'])
+
+class SingleImageOverviewTests(unittest.TestCase):
+    def normalize(self,text,page=PAGE,expected=None):
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{page}):
+            return g.normalize_overview_representatives(text,page,expected or [R1,R2])
+    def test_linked_markdown_keeps_existing_front_and_all_other_links(self):
+        rear='[![rear](buildings/a/previews/rear.png)](buildings/a/README.md) '
+        front='[![front](buildings/a/previews/front.png)](buildings/a/README.md)'
+        text=TABLE([front+' '+rear+'<br>[STL](buildings/a/model.stl) [QA](buildings/a/QA.md)',CARD('b'),''])
+        after=self.normalize(text)
+        self.assertEqual(after,text.replace(rear,''))
+        self.assertEqual(self.normalize(after),after)
+        self.assertNotIn('[](',after)
+    def test_linked_html_removes_only_extra_image_markup(self):
+        rear='[<img src="buildings/a/previews/rear.png" alt="rear">](buildings/a/) '
+        text=TABLE([CARD('a')+' '+rear+'note',CARD('b'),''])
+        self.assertEqual(self.normalize(text),text.replace(rear,''))
+    def test_existing_special_view_is_retained_when_no_front_present(self):
+        text=TABLE(['![chosen](buildings/a/previews/detail.png) ![other](buildings/a/previews/rear.png)',CARD('b'),''])
+        after=self.normalize(text)
+        self.assertIn('previews/detail.png',after);self.assertNotIn('previews/rear.png',after)
+        self.assertNotIn('buildings/a/previews/front.png',after)
+    def test_first_selected_view_is_not_replaced_by_a_later_front(self):
+        text=TABLE(['![selected](buildings/a/previews/rear.png) ![later](buildings/a/previews/front.png)',CARD('b'),''])
+        after=self.normalize(text)
+        self.assertIn('buildings/a/previews/rear.png',after)
+        self.assertNotIn('buildings/a/previews/front.png',after)
+    def test_appearance_front_is_not_changed_to_original_asset(self):
+        text=TABLE([CARD('a').replace('/previews/','/appearance/previews/')+' ![rear](buildings/a/appearance/previews/rear.png)',CARD('b'),''])
+        after=self.normalize(text)
+        self.assertIn('/appearance/previews/front.png',after)
+        self.assertNotIn('buildings/a/previews/front.png',after)
+    def test_other_overviews_are_not_silently_migrated(self):
+        text=TABLE([CARD('a')+' '+CARD('a'),CARD('b'),''])
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',set()):
+            self.assertEqual(g.normalize_overview_representatives(text,PAGE,[R1,R2]),text)
+    def test_individual_model_gallery_is_always_excluded(self):
+        page=R1+'/README.md';text='| front | rear | top |\n|---|---|---|\n| ![front](previews/front.png) | ![rear](previews/rear.png) | ![top](previews/top.png) |\n'
+        self.assertEqual(self.normalize(text,page,[R1]),text)
+    def test_scoped_audit_rejects_duplicate_preview_not_duplicate_links(self):
+        text=TABLE([CARD('a')+' '+CARD('a')+' [download](buildings/a/README.md)',CARD('b'),''])
+        fs={r+'/previews/front.png' for r in [R1,R2]}|{r+'/README.md' for r in [R1,R2]}
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',return_value=text):
+            result=g.audit(PAGE,[R1,R2]);self.assertIn('overview_not_one_image_per_building',result['errors'])
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',return_value=self.normalize(text)):
+            self.assertEqual(g.audit(PAGE,[R1,R2])['errors'],[])
+    def test_unparsed_markdown_fails_closed_without_rewrite(self):
+        text=TABLE(['![front **label**](buildings/a/previews/front.png)',CARD('b'),''])
+        self.assertEqual(self.normalize(text),text)
+        fs={r+'/previews/front.png' for r in [R1,R2]}|{r+'/README.md' for r in [R1,R2]}
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',return_value=text):
+            self.assertIn('unparsed_overview_images',g.audit(PAGE,[R1,R2])['errors'])
+    def test_sync_repairs_scoped_overview_and_is_idempotent(self):
+        text=TABLE([CARD('a')+' '+CARD('a'),CARD('b'),''])+'\n## QA\n[Evidence](buildings/a/README.md)\n'
+        with tempfile.TemporaryDirectory() as tmp:
+            root=pathlib.Path(tmp);p=root/PAGE;p.parent.mkdir(parents=True);p.write_text(text)
+            fs={r+'/previews/front.png' for r in [R1,R2]}|{r+'/README.md' for r in [R1,R2]}
+            with patch.object(g,'ROOT',root),patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',side_effect=lambda page:(root/page).read_text()):
+                self.assertTrue(g.sync(PAGE,[R1,R2]));self.assertFalse(g.sync(PAGE,[R1,R2]))
+            self.assertIn('## QA\n[Evidence](buildings/a/README.md)',p.read_text())
+            groups=g.overview_preview_groups(p.read_text(),PAGE,[R1,R2]);self.assertEqual([len(x) for x in groups.values()],[1,1])
+    def test_new_card_has_exactly_one_preview(self):
+        fs={R1+'/README.md',R1+'/previews/front.png',R1+'/previews/rear.png'}
+        with patch.object(g,'FILES',fs),patch.object(g,'read',return_value='# Example\n'):
+            self.assertEqual(len(g.preview_images(g.new_card(R1,PAGE))),1)
+
 if __name__=='__main__':unittest.main()

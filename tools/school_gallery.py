@@ -111,6 +111,56 @@ def is_model_preview(src,page,expected):
         return bool(re.fullmatch(r'(?:(?:appearance/)?previews/.+|(?:front|rear|elevation|top|left_oblique)\.png|output/preview-[^/]+\.png)',relative,re.I))
     return False
 
+# Explicit rollout scope: other existing overview layouts are audited separately
+# before migration. Model-level README galleries must never use this policy.
+SINGLE_IMAGE_OVERVIEW_PAGES = {
+    '亞洲大學/README.md',
+    '亞洲大學/霧峰校本部/README.md',
+}
+
+def single_image_overview(page):
+    return page in SINGLE_IMAGE_OVERVIEW_PAGES and '/buildings/' not in page
+
+def overview_preview_groups(text,page,expected):
+    """Group actual overview previews by package, not image/link occurrences."""
+    images=preview_images(text)
+    if images is None:return None
+    groups={root:[] for root in expected}
+    for image in images:
+        if not is_model_preview(image['src'],page,expected):continue
+        target=resolve(image['src'],page)
+        root=next(root for root in expected if target.startswith(root+'/'))
+        groups[root].append(image)
+    return groups
+
+def normalize_overview_representatives(text,page,expected):
+    """Keep one existing primary image per building on opted-in overview pages.
+
+    Retain the first existing preview chosen by the overview. Never choose a
+    new asset or modify model-level multiview galleries.
+    Preserve download/source/QA links and text outside the removed image markup.
+    Complex Markdown is left unchanged and rejected by the scoped audit.
+    """
+    if not single_image_overview(page):return text
+    groups=overview_preview_groups(text,page,expected)
+    if groups is None:return text
+    remove=[]
+    for images in groups.values():
+        if len(images)<2:continue
+        keep=images[0]
+        for image in images:
+            if image is keep:continue
+            a,b=image['match'].span()
+            # Remove a whole image-only navigation link, never leave an empty link.
+            linked=re.match(r'\]\(([^\n]*?)\)',text[b:])
+            if a>0 and text[a-1]=='[' and linked:
+                a-=1;b+=linked.end()
+            # One separator space belongs to the deleted image, not its caption.
+            if b<len(text) and text[b]==' ':b+=1
+            remove.append((a,b))
+    for a,b in sorted(remove,reverse=True):text=text[:a]+text[b:]
+    return text
+
 def mixed_preview_blocks(text,page,expected):
     result=[]
     for block in re.finditer(r'(?m)(?:^\|.*\n?)+',text):
@@ -178,7 +228,8 @@ def packed_gallery(lines,a,b,page,expected):
     """Combine adjacent card tables, preserving same-model column relationships.
 
     Named column headings, images, downloads, sources and notes stay together.
-    Multiple views of one model stay in one card. Narrative/section boundaries
+    Legacy multiple views stay in one card until the explicit single-image
+    overview policy is activated. Narrative/section boundaries
     are supplied by table(), so separate semantic sections are never crossed.
     """
     cards={};notes=[]
@@ -299,6 +350,7 @@ def sync(page,expected):
                     if preferred in FILES:
                         group=group.replace(u,posixpath.relpath(preferred,posixpath.dirname(page)))
         group=normalize_mixed_preview_widths(group,page,expected)
+        group=normalize_overview_representatives(group,page,expected)
         lines[a:b]=[group];text=''.join(lines)
     if text==original:return False
     p=ROOT/page;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text);return True
@@ -349,6 +401,13 @@ def audit(page,expected):
     if stale:errors.append('stale_preview')
     mixed_widths=[i['src'] for _,images in mixed_preview_blocks(primary,page,expected) for i in images]
     if mixed_widths:errors.append('mixed_preview_widths')
+    overview_image_counts={}
+    if single_image_overview(page):
+        groups=overview_preview_groups(primary,page,expected)
+        if groups is None:errors.append('unparsed_overview_images')
+        else:
+            overview_image_counts={root:len(images) for root,images in groups.items()}
+            if any(n!=1 for n in overview_image_counts.values()):errors.append('overview_not_one_image_per_building')
     # Validate each table against its own column schema. Existing two-angle/row catalogs
     # are intentional; the generated catalog blocks always have three columns.
     structural=[];new_cards=[]
@@ -372,7 +431,7 @@ def audit(page,expected):
     repeated_footer=duplicate_new_footer_entries(text,page,expected)
     if repeated_footer:errors.append('duplicate_new_model_footer')
     errors+=structural
-    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),table_blocks=len(blocks),layout_kind='model_cards' if packed is not None else 'preserved_specialized_or_non_table',missing=missing,extra=extra,duplicates=duplicate_cards,duplicate_new_footer_packages=repeated_footer,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),mixed_preview_widths=mixed_widths,errors=sorted(set(errors)))
+    return dict(path=page,primary_kind=kind,expected_count=len(expected),primary_count=len(found),table_blocks=len(blocks),layout_kind='model_cards' if packed is not None else 'preserved_specialized_or_non_table',missing=missing,extra=extra,duplicates=duplicate_cards,duplicate_new_footer_packages=repeated_footer,broken_links=sorted(set(broken)),stale_previews=sorted(set(stale)),mixed_preview_widths=mixed_widths,overview_image_counts=overview_image_counts,errors=sorted(set(errors)))
 
 def homepage_recent_sections(text):
     # The homepage keeps school navigation, not a second recent-building feed.

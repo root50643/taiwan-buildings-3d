@@ -13,7 +13,3 @@
 數位QA不等於真切片或實體試印。原照片與PDF僅私下核對，不包含於公開資料。
 
 [六材質外觀與來源界線](buildings/ntnu-administration-central-entry-segment/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![師大行政中央入口段外觀](buildings/ntnu-administration-central-entry-segment/appearance/previews/front.png) |  |  |

@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 五館西南主要面<br>[![西南面](buildings/yzu-building5-library-extension/previews/front.png)](buildings/yzu-building5-library-extension/README.md) | 同件東北背面<br>[![東北面](buildings/yzu-building5-library-extension/previews/rear.png)](buildings/yzu-building5-library-extension/README.md) |  |
+| 五館西南主要面<br>[![西南面](buildings/yzu-building5-library-extension/previews/front.png)](buildings/yzu-building5-library-extension/README.md) | 同件東北背面<br> |  |
 
 [建物完整說明](buildings/yzu-building5-library-extension/README.md) · [STL](buildings/yzu-building5-library-extension/model.stl) · [Blend](buildings/yzu-building5-library-extension/scene.blend) · [原創源](buildings/yzu-building5-library-extension/build_model.py) · [頂圖](buildings/yzu-building5-library-extension/previews/top.png) · [來源](buildings/yzu-building5-library-extension/sources.json) · [QA](buildings/yzu-building5-library-extension/qa-summary.json)
 

@@ -8,7 +8,7 @@ C棟2016–2017更新版完整外部主體近似，不代表全校完成。往D�
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](臺北校區/buildings/usc-c-human-ecology/previews/front.png)<br>背面<br>![背面](臺北校區/buildings/usc-c-human-ecology/previews/rear.png) | [![實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院：實際模型預覽](臺北校區/buildings/usc-gym-library-courtyard/previews/front.png)](臺北校區/buildings/usc-gym-library-courtyard/README.md)<br>**[實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院](臺北校區/buildings/usc-gym-library-courtyard/README.md)** |  |
+| 正面<br>![正面](臺北校區/buildings/usc-c-human-ecology/previews/front.png)<br>背面<br> | [![實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院：實際模型預覽](臺北校區/buildings/usc-gym-library-courtyard/previews/front.png)](臺北校區/buildings/usc-gym-library-courtyard/README.md)<br>**[實踐大學臺北校區 M 棟體育館＋N 棟圖資大樓＋中央庭院](臺北校區/buildings/usc-gym-library-courtyard/README.md)** |  |
 
 [C棟民生學院教學大樓：檔案及限制](臺北校區/buildings/usc-c-human-ecology/README.md)
 

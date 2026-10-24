@@ -19,18 +19,6 @@
 
 [七材質外觀與來源界線](buildings/museum/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![博物館外觀](buildings/museum/appearance/previews/front.png) |  |  |
-
 [八材質外觀與來源界線](buildings/old-physics-south-hall/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![舊物理南館外觀](buildings/old-physics-south-hall/appearance/previews/front.png) |  |  |
-
 [八材質外觀與來源界線](buildings/gechi-hall/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![格致堂外觀](buildings/gechi-hall/appearance/previews/front.png) |  |  |

@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 同一建物正面<br>![正面](buildings/au-oxford-1999-core/previews/front.png) | 同一建物背面<br>![背面](buildings/au-oxford-1999-core/previews/rear.png) |  |
+| 同一建物正面<br>![正面](buildings/au-oxford-1999-core/previews/front.png) | 同一建物背面<br> |  |
 
 [開啟模型與檔案](buildings/au-oxford-1999-core/README.md) · [返回學校](../README.md)
 

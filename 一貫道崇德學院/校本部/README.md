@@ -4,7 +4,7 @@
 
 | 中央局部彩色外觀 | 背部裁切界面 | 四種零件／十實件示意 |
 |---|---|---|
-| [![七柱三門與弧簷](buildings/iktcds-curved-entrance-section/previews/front.png)](buildings/iktcds-curved-entrance-section/README.md) | [![中性背板為模型封閉面](buildings/iktcds-curved-entrance-section/previews/rear.png)](buildings/iktcds-curved-entrance-section/README.md) | [![平台、七柱、背板與弧簷](buildings/iktcds-curved-entrance-section/previews/exploded.png)](buildings/iktcds-curved-entrance-section/README.md) |
+| [![七柱三門與弧簷](buildings/iktcds-curved-entrance-section/previews/front.png)](buildings/iktcds-curved-entrance-section/README.md) |  |  |
 
 <details>
 <summary>教學樓曲線列柱入口中央局部：下載與限制</summary>

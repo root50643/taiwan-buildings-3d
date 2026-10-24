@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 圖資大樓東南主要面<br>[![東南面](校本部/buildings/hfu-library-2009/previews/front.png)](校本部/buildings/hfu-library-2009/README.md) | 同件西北坡上面<br>[![同棟西北面](校本部/buildings/hfu-library-2009/previews/rear.png)](校本部/buildings/hfu-library-2009/README.md) |  |
+| 圖資大樓東南主要面<br>[![東南面](校本部/buildings/hfu-library-2009/previews/front.png)](校本部/buildings/hfu-library-2009/README.md) | 同件西北坡上面<br> |  |
 
 [模型完整說明](校本部/buildings/hfu-library-2009/README.md) · [STL](校本部/buildings/hfu-library-2009/model.stl) · [Blend](校本部/buildings/hfu-library-2009/scene.blend) · [屋頂](校本部/buildings/hfu-library-2009/previews/top.png) · [來源](校本部/buildings/hfu-library-2009/sources.json) · [QA](校本部/buildings/hfu-library-2009/qa-summary.json)
 

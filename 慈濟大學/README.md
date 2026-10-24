@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 同件北玻璃及架空面<br>[![北側](介仁校區/buildings/tcu-hexin-library-2001/appearance/previews/front.png)](介仁校區/buildings/tcu-hexin-library-2001/README.md) | 同件南側及長翼<br>[![南側](介仁校區/buildings/tcu-hexin-library-2001/appearance/previews/rear.png)](介仁校區/buildings/tcu-hexin-library-2001/README.md) |  |
+| 同件北玻璃及架空面<br>[![北側](介仁校區/buildings/tcu-hexin-library-2001/appearance/previews/front.png)](介仁校區/buildings/tcu-hexin-library-2001/README.md) | 同件南側及長翼<br> |  |
 
 [完整說明](介仁校區/buildings/tcu-hexin-library-2001/README.md) · [STL](介仁校區/buildings/tcu-hexin-library-2001/model.stl) · [Blend](介仁校區/buildings/tcu-hexin-library-2001/scene.blend) · [原創源](介仁校區/buildings/tcu-hexin-library-2001/build_model.py) · [頂圖](介仁校區/buildings/tcu-hexin-library-2001/previews/top.png) · [來源](介仁校區/buildings/tcu-hexin-library-2001/sources.json) · [QA](介仁校區/buildings/tcu-hexin-library-2001/qa-summary.json) · [有限原面彩色外觀](介仁校區/buildings/tcu-hexin-library-2001/appearance/README.md)
 

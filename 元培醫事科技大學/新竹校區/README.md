@@ -4,6 +4,6 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![內院正面](buildings/ypu-guanghan-guanghuan-complex/previews/front.png) | 背面<br>![外弧背面](buildings/ypu-guanghan-guanghuan-complex/previews/rear.png) |  |
+| 正面<br>![內院正面](buildings/ypu-guanghan-guanghuan-complex/previews/front.png) | 背面<br> |  |
 
 [模型、來源與列印限制](buildings/ypu-guanghan-guanghuan-complex/README.md)

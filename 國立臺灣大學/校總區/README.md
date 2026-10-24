@@ -28,36 +28,12 @@
 
 [六材質外觀與來源界線](buildings/ntu-liberal-arts/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![文學院外觀](buildings/ntu-liberal-arts/appearance/previews/front.png) |  |  |
-
 [六材質外觀與來源界線](buildings/ntu-administration/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![行政大樓外觀](buildings/ntu-administration/appearance/previews/front.png) |  |  |
 
 [七材質外觀與來源界線](buildings/ntu-old-main-library/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![舊總圖書館外觀](buildings/ntu-old-main-library/appearance/previews/front.png) |  |  |
-
 [七材質外觀與來源界線](buildings/ntu-geology-front/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![臺大地質科學館前棟外觀](buildings/ntu-geology-front/appearance/previews/front.png) |  |  |
 
 [七材質外觀與來源界線](buildings/ntu-herbarium-main/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![臺大植物標本館主館外觀](buildings/ntu-herbarium-main/appearance/previews/front.png) |  |  |
-
 [六材質外觀與來源界線](buildings/ntu-tomatake-hall/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![臺大知武館外觀](buildings/ntu-tomatake-hall/appearance/previews/front.png) |  |  |

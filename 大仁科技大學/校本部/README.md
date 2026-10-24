@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 南東正面（actual STL）<br>![正面（歷史限域配色）](buildings/tajen-admin-library/appearance/previews/front.png) · [限域外觀](buildings/tajen-admin-library/appearance/README.md) | 西北背面（actual STL）<br>![背面（歷史限域配色）](buildings/tajen-admin-library/appearance/previews/rear.png) |  |
+| 南東正面（actual STL）<br>![正面（歷史限域配色）](buildings/tajen-admin-library/appearance/previews/front.png) · [限域外觀](buildings/tajen-admin-library/appearance/README.md) | 西北背面（actual STL）<br> |  |
 
 ## 來源與形體
 原創 Python 參數實體；[來源清單](buildings/tajen-admin-library/sources.json)。官方 A 棟包含行政與圖書館，公開用途證明 10F 存在；B2 地下不完整建模，沒有把十層均分。2001 三面照片配合 2016／2024 正射及 2024 西北街景。排除 C 活動中心、能源中心與臨時施工網。

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit/sync PRIMARY school/campus galleries, never publication-history footers.
+"""Audit school/campus galleries and visible representatives; sync primary tables only.
 
 Run before publishing: python tools/school_gallery.py --check --report report.json
 To insert new packages: python tools/school_gallery.py --sync, review diff, then --check.
@@ -111,15 +111,78 @@ def is_model_preview(src,page,expected):
         return bool(re.fullmatch(r'(?:(?:appearance/)?previews/.+|(?:front|rear|elevation|top|left_oblique)\.png|output/preview-[^/]+\.png)',relative,re.I))
     return False
 
-# Explicit rollout scope: other existing overview layouts are audited separately
-# before migration. Model-level README galleries must never use this policy.
-SINGLE_IMAGE_OVERVIEW_PAGES = {
-    '亞洲大學/README.md',
-    '亞洲大學/霧峰校本部/README.md',
-}
+# None activates the reviewed policy for every canonical school/campus overview.
+# A set is an explicit restricted rollout/test scope. Homepage, individual model
+# galleries and OTHER_ROOTS catalogs are never school/campus overview targets.
+SINGLE_IMAGE_OVERVIEW_PAGES = None
 
 def single_image_overview(page):
-    return page in SINGLE_IMAGE_OVERVIEW_PAGES and '/buildings/' not in page
+    if page == 'README.md' or '/buildings/' in page or page in OTHER_ROOTS:return False
+    if SINGLE_IMAGE_OVERVIEW_PAGES is not None:return page in SINGLE_IMAGE_OVERVIEW_PAGES
+    return page in pages() and page.split('/')[0] in SCHOOLS
+
+def visible_overview_text(text):
+    """Mask balanced collapsed supporting details, but not open/visible details.
+
+    Malformed detail boundaries fail closed; they must not hide duplicate images.
+    Offsets are retained for inspection, and this function never rewrites a page.
+    """
+    stack=[];spans=[]
+    for match in re.finditer(r'</?details\b[^>]*>',text,re.I):
+        closing=match[0].startswith('</')
+        if closing:
+            if not stack:return None
+            start,collapsed=stack.pop()
+            if collapsed:
+                # A summary remains visible when its details body is collapsed.
+                # Do not hide an image-bearing (or unclosed) summary: leave that
+                # uncommon layout for explicit review rather than false-passing.
+                region=text[start:match.end()]
+                if re.search(r'<summary\b[^>]*>(?:(?!</summary\s*>).)*(?:!\[|<img\b)',region,re.I|re.S):return None
+                spans.append((start,match.end()))
+        else:
+            # Parse attributes: a quoted title containing the word 'open' is
+            # not the boolean open attribute and must remain collapsed.
+            class DetailTag(HTMLParser):
+                attrs = None
+                def handle_starttag(self,name,attrs):
+                    if name == 'details':self.attrs = dict(attrs)
+            tag=DetailTag();tag.feed(match[0])
+            if tag.attrs is None:return None
+            stack.append((match.start(),'open' not in tag.attrs))
+    if stack:return None
+    for a,b in reversed(sorted(spans)):
+        text=text[:a]+re.sub(r'[^\n]',' ',text[a:b])+text[b:]
+    return text
+
+def visible_overview_groups(text,page,expected):
+    """Read-only count of all visible package images, including current footers.
+
+    Unlike the conservative rewrite parser, labels may contain Markdown and
+    destinations may use angle brackets. Unsupported destinations fail closed.
+    Collapsed supporting details retain their separate multiview documentation.
+    """
+    visible=visible_overview_text(text)
+    if visible is None:return None
+    groups={root:[] for root in expected};spans=[]
+    for match in IMAGE.finditer(visible):
+        if match[2] is not None:
+            src=match[2]
+            if src.startswith('<') and src.endswith('>'):src=src[1:-1]
+            if re.search(r'[\s<>"\x27\\()]',src):return None
+        else:
+            attrs=PreviewTag(match[0]).attrs
+            if attrs is None:return None
+            src=dict(attrs).get('src')
+            if src is None:return None
+        target=resolve(src,page)
+        root=next((r for r in expected if target and target.startswith(r+'/')),None)
+        if root is not None:groups[root].append(dict(src=src,target=target,match=match))
+        spans.append(match.span())
+    # Reference-style or otherwise unparsed image syntax is not silently ignored.
+    for a,b in reversed(spans):visible=visible[:a]+' '*(b-a)+visible[b:]
+    if re.search(r'!\[|<img\b',visible,re.I):return None
+    return groups
 
 def overview_preview_groups(text,page,expected):
     """Group actual overview previews by package, not image/link occurrences."""
@@ -349,8 +412,8 @@ def sync(page,expected):
                     preferred=r+'/appearance/'+target[len(r)+1:]
                     if preferred in FILES:
                         group=group.replace(u,posixpath.relpath(preferred,posixpath.dirname(page)))
-        group=normalize_mixed_preview_widths(group,page,expected)
         group=normalize_overview_representatives(group,page,expected)
+        group=normalize_mixed_preview_widths(group,page,expected)
         lines[a:b]=[group];text=''.join(lines)
     if text==original:return False
     p=ROOT/page;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text);return True
@@ -403,10 +466,12 @@ def audit(page,expected):
     if mixed_widths:errors.append('mixed_preview_widths')
     overview_image_counts={}
     if single_image_overview(page):
-        groups=overview_preview_groups(primary,page,expected)
+        groups=visible_overview_groups(text,page,expected)
         if groups is None:errors.append('unparsed_overview_images')
         else:
             overview_image_counts={root:len(images) for root,images in groups.items()}
+            if any(image['target'] not in FILES for images in groups.values() for image in images):
+                errors.append('broken_overview_image')
             if any(n!=1 for n in overview_image_counts.values()):errors.append('overview_not_one_image_per_building')
     # Validate each table against its own column schema. Existing two-angle/row catalogs
     # are intentional; the generated catalog blocks always have three columns.
@@ -516,7 +581,7 @@ def main():
         if school in REGISTRY['schools'] and REGISTRY['schools'][school]['count']!=len(roots)-len(LEGACY.get(school,[])):count_errors.append('registry_school_count:'+school)
     recent_sections=homepage_recent_sections(read('README.md'))
     representative_errors=homepage_representative_errors(read('README.md'),json.loads(read('homepage-representatives.json'))['schools'],REGISTRY,SCHOOLS,FILES)
-    report={'homepage_representative_errors':representative_errors,'count_errors':count_errors,'homepage_recent_sections':recent_sections,'scope':'primary school/campus galleries; exact package-root equality, not full-page mentions; no homepage recent-building feed','school_count':len(SCHOOLS),'higher_education_packages':sum(map(len,BY_SCHOOL.values())),'all_repository_packages':len(set(ROOTS).union(*(set(v) for v in OTHER_ROOTS.values()))),'pages':results,'changed':changed,'passed':not representative_errors and not count_errors and not recent_sections and all(not r['errors'] for r in results)}
+    report={'homepage_representative_errors':representative_errors,'count_errors':count_errors,'homepage_recent_sections':recent_sections,'scope':'primary package-root navigation plus one visible image per building across school/campus overviews; collapsed supporting details excluded; no homepage recent-building feed','school_count':len(SCHOOLS),'higher_education_packages':sum(map(len,BY_SCHOOL.values())),'all_repository_packages':len(set(ROOTS).union(*(set(v) for v in OTHER_ROOTS.values()))),'pages':results,'changed':changed,'passed':not representative_errors and not count_errors and not recent_sections and all(not r['errors'] for r in results)}
     if args.report:pathlib.Path(args.report).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'schools':len(SCHOOLS),'pages':len(results),'packages':report['higher_education_packages'],'changed':len(changed),'homepage_representative_errors':representative_errors,'count_errors':count_errors,'homepage_recent_sections':recent_sections,'failures':[r for r in results if r['errors']]},ensure_ascii=False,indent=2))
     return 0 if report['passed'] else 1

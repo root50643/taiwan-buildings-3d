@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 南面，實際STL<br>![南面](buildings/ntunhs-wenjiao-1965/previews/front.png) | 北面，實際STL<br>![北面](buildings/ntunhs-wenjiao-1965/previews/rear.png) |  |
+| 南面，實際STL<br>![南面](buildings/ntunhs-wenjiao-1965/previews/front.png) | 北面，實際STL<br> |  |
 
 [模型、來源、尺寸限制與驗證](buildings/ntunhs-wenjiao-1965/README.md)
 

@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正向 actual STL<br>![正向](buildings/tku-palace-classrooms/appearance/previews/front.png)<br>反向 actual STL<br>![反向](buildings/tku-palace-classrooms/appearance/previews/rear.png) | [![淡江大學海事博物館｜低細節外觀代表模型：實際模型預覽](buildings/tku-maritime-museum/previews/front.png)](buildings/tku-maritime-museum/README.md)<br>**[淡江大學海事博物館｜低細節外觀代表模型](buildings/tku-maritime-museum/README.md)** | [![淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座：實際模型預覽](buildings/tku-scroll-square-monument/previews/front.png)](buildings/tku-scroll-square-monument/README.md)<br>**[淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座](buildings/tku-scroll-square-monument/README.md)** |
+| 正向 actual STL<br>![正向](buildings/tku-palace-classrooms/appearance/previews/front.png)<br>反向 actual STL<br> | [![淡江大學海事博物館｜低細節外觀代表模型：實際模型預覽](buildings/tku-maritime-museum/previews/front.png)](buildings/tku-maritime-museum/README.md)<br>**[淡江大學海事博物館｜低細節外觀代表模型](buildings/tku-maritime-museum/README.md)** | [![淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座：實際模型預覽](buildings/tku-scroll-square-monument/previews/front.png)](buildings/tku-scroll-square-monument/README.md)<br>**[淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座](buildings/tku-scroll-square-monument/README.md)** |
 
 [模型、來源與列印限制](buildings/tku-palace-classrooms/README.md) · [數位驗證](buildings/tku-palace-classrooms/QA.md)
 

@@ -4,11 +4,11 @@
 
 版本v1已凍結，保留薄件與支撐警示。
 
-## 牛津學堂：同一建物正背並排
+## 牛津學堂：同一建物一張代表圖
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](淡水校區/buildings/au-oxford-1999-core/previews/front.png) | 背面<br>![背面](淡水校區/buildings/au-oxford-1999-core/previews/rear.png) |  |
+| 正面<br>![正面](淡水校區/buildings/au-oxford-1999-core/previews/front.png) | 背面<br> |  |
 
 [模型、STL、Blend與完整限制](淡水校區/buildings/au-oxford-1999-core/README.md) · [淡水校區入口](淡水校區/README.md)
 

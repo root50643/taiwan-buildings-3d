@@ -156,7 +156,7 @@ class GalleryTests(unittest.TestCase):
         self.assertEqual(self.run_audit(TABLE([CARD('a'),CARD('b'),'']))['errors'],[])
     def test_unmigrated_legacy_two_angle_same_package_not_duplicate_card(self):
         t='| 正面 | 背面 |\n|---|---|\n| '+CARD('a')+' | '+CARD('a')+' |\n\n'+TABLE([CARD('b'),'',''])
-        self.assertEqual(self.run_audit(t)['errors'],['fragmented_card_gallery'])
+        self.assertEqual(self.run_audit(t)['errors'],['fragmented_card_gallery','overview_not_one_image_per_building'])
     def test_linked_header_image_and_download_rows_are_one_catalog(self):
         t='| [A](buildings/a/) | [B](buildings/b/) | |\n|---|---|---|\n| '+CARD('a')+' | '+CARD('b')+' | |\n| [A來源](buildings/a/README.md) | [B來源](buildings/b/README.md) | |\n'
         self.assertEqual(self.run_audit(t)['errors'],[])
@@ -235,7 +235,7 @@ class GalleryTests(unittest.TestCase):
         rear=CARD('a').replace('/front.png','/rear.png')
         text='| A 正面 | A 背面 |\n|---|---|\n| '+CARD('a')+' | '+rear+' |\n\n'+TABLE([CARD('b'),'',''])
         _,result=self.sync_text(text,[R1,R2]);row=self.card_rows(result)[0]
-        self.assertIn('A 正面<br>'+CARD('a'),row[0]);self.assertIn('A 背面<br>'+rear,row[0])
+        self.assertIn('A 正面<br>'+CARD('a'),row[0]);self.assertIn('A 背面<br>',row[0]);self.assertNotIn(rear,row[0])
         self.assertEqual(row[1],CARD('b'))
     def test_placeholder_notes_do_not_become_fake_model_cards(self):
         text='| A | 後續 |\n|---|---|\n| '+CARD('a')+' | 尚未交付 |\n| [來源](buildings/a/sources.md) | [工作範圍](coverage/) |\n\n'+TABLE([CARD('b'),'',''])
@@ -269,22 +269,23 @@ class GalleryTests(unittest.TestCase):
         expected=before.replace('![A & B](buildings/a/previews/front.png)','<img src="buildings/a/previews/front.png" alt="A &amp; B" width="220">')
         self.assertEqual(after,expected)
         self.assertNotIn('mixed_preview_widths',self.run_audit(after)['errors'])
-    def test_vertical_views_keep_both_angles_and_proportional_height(self):
+    def test_overview_vertical_views_keep_first_angle_and_proportional_height(self):
         front=CARD('a').replace('front.png"','front.png" width="420" height="420"')
         rear=front.replace('front.png','rear.png')
         other=CARD('b').replace('front.png"','front.png" width="220"')
         before=TABLE([front+'<br>'+rear,other,''])
         _,after=self.sync_text(before,[R1,R2])
-        self.assertEqual(after.count('width="220"'),3)
-        self.assertNotIn('height=',after);self.assertIn('rear.png',after)
-    def test_inline_multiview_special_layout_is_not_enlarged(self):
+        self.assertEqual(after.count('width="220"'),2)
+        self.assertNotIn('height=',after);self.assertNotIn('rear.png',after)
+    def test_overview_single_image_normalization_is_width_idempotent(self):
         front=CARD('a').replace('front.png"','front.png" width="150"')
         pair=front+front.replace('front.png','rear.png')
         other=CARD('b').replace('front.png"','front.png" width="220"')
         before=TABLE([pair,other,''])
         changed,after=self.sync_text(before,[R1,R2])
-        self.assertFalse(changed);self.assertEqual(after,before)
-        self.assertEqual(g.mixed_preview_blocks(before,PAGE,[R1,R2]),[])
+        self.assertTrue(changed);self.assertEqual(after.count('<img'),2)
+        self.assertNotIn('rear.png',after);self.assertEqual(after.count('width="220"'),2)
+        self.assertEqual(g.mixed_preview_blocks(after,PAGE,[R1,R2]),[])
     def test_uniform_widths_hero_and_unknown_source_images_are_not_reformatted(self):
         for width in ['260','44%']:
             before=TABLE([CARD('a'),CARD('b'),'']).replace('front.png"','front.png" width="'+width+'"')
@@ -367,12 +368,12 @@ class SingleImageOverviewTests(unittest.TestCase):
             result=g.audit(PAGE,[R1,R2]);self.assertIn('overview_not_one_image_per_building',result['errors'])
         with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',return_value=self.normalize(text)):
             self.assertEqual(g.audit(PAGE,[R1,R2])['errors'],[])
-    def test_unparsed_markdown_fails_closed_without_rewrite(self):
+    def test_formatted_label_is_counted_read_only_without_rewrite(self):
         text=TABLE(['![front **label**](buildings/a/previews/front.png)',CARD('b'),''])
         self.assertEqual(self.normalize(text),text)
         fs={r+'/previews/front.png' for r in [R1,R2]}|{r+'/README.md' for r in [R1,R2]}
         with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',return_value=text):
-            self.assertIn('unparsed_overview_images',g.audit(PAGE,[R1,R2])['errors'])
+            self.assertEqual(g.audit(PAGE,[R1,R2])['errors'],[])
     def test_sync_repairs_scoped_overview_and_is_idempotent(self):
         text=TABLE([CARD('a')+' '+CARD('a'),CARD('b'),''])+'\n## QA\n[Evidence](buildings/a/README.md)\n'
         with tempfile.TemporaryDirectory() as tmp:
@@ -386,5 +387,69 @@ class SingleImageOverviewTests(unittest.TestCase):
         fs={R1+'/README.md',R1+'/previews/front.png',R1+'/previews/rear.png'}
         with patch.object(g,'FILES',fs),patch.object(g,'read',return_value='# Example\n'):
             self.assertEqual(len(g.preview_images(g.new_card(R1,PAGE))),1)
+
+class VisibleOverviewPolicyTests(unittest.TestCase):
+    def audit_text(self,text,extra_files=()):
+        fs={r+'/previews/front.png' for r in [R1,R2]}|{r+'/README.md' for r in [R1,R2]}|set(extra_files)
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',return_value=text):
+            return g.audit(PAGE,[R1,R2])
+    def test_all_canonical_school_campus_pages_are_enabled(self):
+        chosen=[p for p in g.pages() if g.single_image_overview(p)]
+        self.assertEqual(len(chosen),259)
+        self.assertTrue(all(p.split('/')[0] in g.SCHOOLS for p in chosen))
+    def test_homepage_model_and_other_catalogs_never_enabled(self):
+        for page in ['README.md',R1+'/README.md',*g.OTHER_ROOTS]:
+            with self.subTest(page=page),patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{page}):
+                self.assertFalse(g.single_image_overview(page))
+    def test_current_appearance_footer_duplicate_is_rejected(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'\n## 現行配色\n![彩色](buildings/a/appearance/previews/front.png)\n'
+        result=self.audit_text(text,[R1+'/appearance/previews/front.png'])
+        self.assertIn('overview_not_one_image_per_building',result['errors'])
+        self.assertEqual(result['overview_image_counts'][R1],2)
+    def test_footer_download_and_model_links_do_not_count_as_images(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'\n[配色](buildings/a/appearance/README.md) [下載](buildings/a/model.stl)\n'
+        self.assertEqual(self.audit_text(text)['errors'],[])
+    def test_collapsed_supporting_multiviews_are_preserved_and_excluded(self):
+        detail='<details>\n<summary>限定模型細節</summary>\n'+CARD('a')+CARD('a')+'\n</details>\n'
+        text=TABLE([CARD('a'),CARD('b'),''])+detail
+        self.assertEqual(self.audit_text(text)['errors'],[])
+        self.assertIn(detail,text)
+    def test_quoted_open_word_is_not_boolean_attribute(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'<details title="open instructions">'+CARD('a')+'</details>'
+        self.assertEqual(self.audit_text(text)['errors'],[])
+    def test_visible_summary_images_cannot_hide_in_collapsed_details(self):
+        for summary in ['<summary>'+CARD('a')+'</summary>', '<summary>![A](buildings/a/previews/front.png)</summary>', '<summary>'+CARD('a')]:
+            text=TABLE([CARD('a'),CARD('b'),''])+'<details>'+summary+'supporting text</details>'
+            self.assertIn('unparsed_overview_images',self.audit_text(text)['errors'])
+    def test_open_details_are_visible_and_counted(self):
+        for opening in ['<details open>','<details open="open">']:
+            text=TABLE([CARD('a'),CARD('b'),''])+opening+CARD('a')+'</details>'
+            self.assertIn('overview_not_one_image_per_building',self.audit_text(text)['errors'])
+    def test_nested_collapsed_details_are_masked_without_offset_loss(self):
+        text='before<details>'+CARD('a')+'<details open>'+CARD('a')+'</details></details>after'
+        masked=g.visible_overview_text(text)
+        self.assertEqual(len(masked),len(text));self.assertTrue(masked.startswith('before'));self.assertTrue(masked.endswith('after'))
+        self.assertNotIn('<img',masked)
+    def test_unbalanced_detail_boundaries_fail_closed(self):
+        for detail in ['<details>'+CARD('a'),'</details>', '<details>'+CARD('a')+'</details></details>']:
+            self.assertIn('unparsed_overview_images',self.audit_text(TABLE([CARD('a'),CARD('b'),''])+detail)['errors'])
+    def test_angle_bracket_destination_and_formatted_label_count(self):
+        text=TABLE(['![A **label**](<buildings/a/previews/front.png>)',CARD('b'),''])
+        self.assertEqual(self.audit_text(text)['errors'],[])
+    def test_unknown_reference_style_images_fail_closed(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'\n![extra][preview]\n[preview]: buildings/a/previews/front.png\n'
+        self.assertIn('unparsed_overview_images',self.audit_text(text)['errors'])
+    def test_broken_footer_image_is_rejected(self):
+        text=TABLE([CARD('a'),CARD('b'),''])+'\n![extra](buildings/a/previews/missing.png)\n'
+        self.assertIn('broken_overview_image',self.audit_text(text)['errors'])
+    def test_sync_never_silently_removes_supporting_or_footer_sections(self):
+        footer='\n## 現行配色\n'+CARD('a')+'\n<details>'+CARD('a')+'</details>\n'
+        text=TABLE([CARD('a'),CARD('b'),''])+footer
+        with tempfile.TemporaryDirectory() as tmp:
+            root=pathlib.Path(tmp);p=root/PAGE;p.parent.mkdir(parents=True);p.write_text(text)
+            fs={r+'/previews/front.png' for r in [R1,R2]}|{r+'/README.md' for r in [R1,R2]}
+            with patch.object(g,'ROOT',root),patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',side_effect=lambda page:(root/page).read_text()):
+                self.assertFalse(g.sync(PAGE,[R1,R2]));self.assertEqual(p.read_text(),text)
+                self.assertIn('overview_not_one_image_per_building',g.audit(PAGE,[R1,R2])['errors'])
 
 if __name__=='__main__':unittest.main()

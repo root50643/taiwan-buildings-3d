@@ -6,7 +6,7 @@
 
 | 建築 | 正面：坡上入口與鐘塔 | 背面：田徑場側 |
 |---|---|---|
-| [學生活動中心](校本部（桃園龜山）/buildings/cgu-student-activity-center/README.md)<br>[屋頂PV限域外觀](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/README.md) | ![正面](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/previews/front.png) | ![背面](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/previews/rear.png) |
+| [學生活動中心](校本部（桃園龜山）/buildings/cgu-student-activity-center/README.md)<br>[屋頂PV限域外觀](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/README.md) | ![正面](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/previews/front.png) |  |
 
 - [STL 模型](校本部（桃園龜山）/buildings/cgu-student-activity-center/model.stl)；[Blender 場景](校本部（桃園龜山）/buildings/cgu-student-activity-center/scene.blend)
 - [來源、尺度界限與列印簡化](校本部（桃園龜山）/buildings/cgu-student-activity-center/sources.md)

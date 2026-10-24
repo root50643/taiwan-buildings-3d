@@ -4,7 +4,7 @@
 
 | 圖資大樓銃樓段正面 | 圖資大樓銃樓段背面 | 圓樓中央入口立面段 |
 |---|---|---|
-| ![正面](金寧校本部/buildings/nqu-library-tower-segment/appearance/previews/front.png) | ![背面](金寧校本部/buildings/nqu-library-tower-segment/appearance/previews/rear.png)  | [![圓樓正面中央入口立面段：照片近似，非完整建築](金寧校本部/buildings/nqu-roundhouse-entrance-facade/previews/front.png)](金寧校本部/buildings/nqu-roundhouse-entrance-facade/README.md)<br>**[圓樓・正面中央入口立面段（照片近似；非完整建築）](金寧校本部/buildings/nqu-roundhouse-entrance-facade/README.md)** |
+| ![正面](金寧校本部/buildings/nqu-library-tower-segment/appearance/previews/front.png) |   | [![圓樓正面中央入口立面段：照片近似，非完整建築](金寧校本部/buildings/nqu-roundhouse-entrance-facade/previews/front.png)](金寧校本部/buildings/nqu-roundhouse-entrance-facade/README.md)<br>**[圓樓・正面中央入口立面段（照片近似；非完整建築）](金寧校本部/buildings/nqu-roundhouse-entrance-facade/README.md)** |
 
 [模型、來源與QA](金寧校本部/buildings/nqu-library-tower-segment/README.md)。70×70×150mm含底；已知新側4錯層窄窗與石基開口補入，未知背面/主館未建。數位篩檢非實體試印，支撐與縮小風險見模型頁。本修版已完成獨立數位覆核與限定例外核可；詳模型頁獨立補充。
 

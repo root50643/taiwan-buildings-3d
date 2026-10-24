@@ -15,21 +15,9 @@
 
 [七材質外觀與來源界線](buildings/taiwan-literature-e101/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![臺文系 E101外觀](buildings/taiwan-literature-e101/appearance/previews/front.png) |  |  |
-
 [七材質外觀與來源界線](buildings/taiwan-literature-e102/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![臺文系 E102外觀](buildings/taiwan-literature-e102/appearance/previews/front.png) |  |  |
-
 [八材質外觀與來源界線](buildings/taiwan-literature-lecture-hall/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![臺文講堂 E107外觀](buildings/taiwan-literature-lecture-hall/appearance/previews/front.png) |  |  |
 
 ## 綠色魔法學校整棟升級
 

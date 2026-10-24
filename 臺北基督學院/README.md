@@ -2,11 +2,11 @@
 
 目前 **1 套有界街側模型**：淡水校區校門房、固定門片與字塔。外觀、幾何與 9 材質配色交付完成，FFF 實際切片與試印待驗；不是全校完成、實測 BIM 或 2026 現況保證。
 
-## 模型圖鑑：同一套模型的三個視角
+## 模型圖鑑：每套模型一張代表圖
 
 | 街側彩色外觀 | 背面估計封閉面 | 四分件示意 |
 |---|---|---|
-| [![校門房與字塔](淡水校區/buildings/cct-street-gatehouse-pylon/previews/front.png)](淡水校區/buildings/cct-street-gatehouse-pylon/README.md) | [![未知背面採簡單封閉估計](淡水校區/buildings/cct-street-gatehouse-pylon/previews/rear.png)](淡水校區/buildings/cct-street-gatehouse-pylon/README.md) | [![主件、薄頂蓋、門片、水平格柵](淡水校區/buildings/cct-street-gatehouse-pylon/previews/exploded.png)](淡水校區/buildings/cct-street-gatehouse-pylon/README.md) |
+| [![校門房與字塔](淡水校區/buildings/cct-street-gatehouse-pylon/previews/front.png)](淡水校區/buildings/cct-street-gatehouse-pylon/README.md) |  |  |
 
 <details>
 <summary>校門房與字塔：下載、來源及限制</summary>

@@ -4,7 +4,7 @@
 
 | 彩色外觀 | 另一側 | 四分件示意 |
 |---|---|---|
-| [![九材質紀念鐘樓](buildings/rocna-memorial-bell-tower/previews/front.png)](buildings/rocna-memorial-bell-tower/README.md) | [![柱間通空與背側簡化](buildings/rocna-memorial-bell-tower/previews/rear.png)](buildings/rocna-memorial-bell-tower/README.md) | [![台座、柱架、帽頂與吊鐘](buildings/rocna-memorial-bell-tower/previews/exploded.png)](buildings/rocna-memorial-bell-tower/README.md) |
+| [![九材質紀念鐘樓](buildings/rocna-memorial-bell-tower/previews/front.png)](buildings/rocna-memorial-bell-tower/README.md) |  |  |
 
 <details>
 <summary>公共紀念鐘樓：下載與限制</summary>

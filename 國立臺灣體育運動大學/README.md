@@ -6,6 +6,6 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| [![長啓樓近似配色正面](臺中校區/buildings/ntus-changqi-building/appearance/previews/front.png)](臺中校區/buildings/ntus-changqi-building/appearance/README.md) | [![長啓樓近似配色後側](臺中校區/buildings/ntus-changqi-building/appearance/previews/rear.png)](臺中校區/buildings/ntus-changqi-building/appearance/README.md) | [![長啓樓近似配色街面](臺中校區/buildings/ntus-changqi-building/appearance/previews/street.png)](臺中校區/buildings/ntus-changqi-building/appearance/README.md) |
+| [![長啓樓近似配色正面](臺中校區/buildings/ntus-changqi-building/appearance/previews/front.png)](臺中校區/buildings/ntus-changqi-building/appearance/README.md) |  |  |
 
 三圖為同一原模型的來源限定近似配色實際渲染；1,783 個完整原三角面加入代表色，其餘 3,915 面保持中性未知，不表示現場灰材或完整逐面復原。原 STL、原八張預覽與列印限制保留，STL 本身沒有色彩或材質。

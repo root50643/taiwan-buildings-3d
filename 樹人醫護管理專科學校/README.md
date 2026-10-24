@@ -6,7 +6,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正向六材質外觀<br>![正向](路竹校本部/buildings/szmc-multifunction-activity-center/appearance/previews/front.png) | 反向原幾何／未確認色區中性<br>![反向](路竹校本部/buildings/szmc-multifunction-activity-center/appearance/previews/rear.png) |  |
+| 正向六材質外觀<br>![正向](路竹校本部/buildings/szmc-multifunction-activity-center/appearance/previews/front.png) | 反向原幾何／未確認色區中性<br> |  |
 
 [模型與來源限制](路竹校本部/buildings/szmc-multifunction-activity-center/README.md) · [數位QA](路竹校本部/buildings/szmc-multifunction-activity-center/QA.md)
 

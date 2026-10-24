@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 同件東南正面<br>![正面](buildings/tut-library-information-2002/previews/appearance-front.png) | 同件西後<br>![西後](buildings/tut-library-information-2002/previews/appearance-rear.png) |  |
+| 同件東南正面<br>![正面](buildings/tut-library-information-2002/previews/appearance-front.png) | 同件西後<br> |  |
 
 [模型、來源與QA](buildings/tut-library-information-2002/README.md)
 

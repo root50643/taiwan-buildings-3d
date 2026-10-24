@@ -20,30 +20,10 @@
 
 [六材質外觀與來源界線](buildings/dacheng-hall/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![大成館外觀](buildings/dacheng-hall/appearance/previews/front.png) |  |  |
-
 [六材質外觀與來源界線](buildings/military-training-building/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![軍訓樓外觀](buildings/military-training-building/appearance/previews/front.png) |  |  |
 
 [七材質外觀與來源界線](buildings/historical-artifacts-museum/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![歷史文物館外觀](buildings/historical-artifacts-museum/appearance/previews/front.png) |  |  |
-
 [六材質外觀與來源界線](buildings/history-department/appearance/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![歷史學系館外觀](buildings/history-department/appearance/previews/front.png) |  |  |
-
 [五材質外觀與來源界線](buildings/chinese-department-building/appearance/README.md)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![中文系館外觀](buildings/chinese-department-building/appearance/previews/front.png) |  |  |

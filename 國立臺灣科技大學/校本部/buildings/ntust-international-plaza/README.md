@@ -13,13 +13,15 @@
 
 ## 模型預覽
 
-| 正面，實際STL | 背面，實際STL |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面，實際STL<br>![正面](previews/front.png) | 背面，實際STL<br>![背面](previews/rear.png) |  |
 
 庭院保持開放，頂視可核對兩翼關係：
 
-![頂視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![頂視](previews/top.png) |  |  |
 
 ## 保留特徵
 

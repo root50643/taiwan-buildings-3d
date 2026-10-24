@@ -4,9 +4,9 @@
 
 ## 實際 STL 正面與背面
 
-| 正面 | 背面 |
-|---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
 

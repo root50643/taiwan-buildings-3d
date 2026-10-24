@@ -2,13 +2,17 @@
 
 ## 6 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 來源支持後窗／混合實牆中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持後窗／混合實牆中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntuiso-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 雙官方歷史照支持炭灰主屋與附屋瓦頂、灰褐左木板及淡藍灰廊柱；前後混合實牆中性，後窗有來源，不稱修繕完成現況。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 官方索引代碼 S62。公開外觀近似模型，非測繪或BIM。

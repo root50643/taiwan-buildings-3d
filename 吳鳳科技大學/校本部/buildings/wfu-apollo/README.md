@@ -2,9 +2,9 @@
 
 2021 年 10 月啟用主館的低細節外觀代表模型。以 2023／2024 年官方簡介照片為外觀時期，2025 年 10 月平面圖核對主館平面與跨距；不宣稱為 2026 年即時現況。本件固定候選已完成來源與獨立數位覆核，詳見[覆核摘要](../../../inventory/qa/wfu-apollo-review.md)；吳鳳原已收錄生有樓，本件也不代表全校完成。
 
-| 已見長立面一側 | 另一側與短端 |
-| :---: | :---: |
-| ![主館斜視](previews/v1/front.png) | ![另一側斜視](previews/v1/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 已見長立面一側<br>![主館斜視](previews/v1/front.png) | 另一側與短端<br>![另一側斜視](previews/v1/rear.png) |  |
 
 [STL](models/v1/model.stl) · [Blender 原始場景](models/v1/scene.blend) · [生成器](source/build_model.py) · [參數](parameters.json) · [來源與限制](SOURCE-CREDITS.md) · [驗證說明](qa/README.md)
 

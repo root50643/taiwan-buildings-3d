@@ -2,9 +2,16 @@
 
 1956 年紀念校門的**地上整體外觀近似模型**；不是測繪、修復或結構圖。官方虛擬校園將本項列在「勝利校區」，但實際位於大學路／勝利路交叉口，不是圍合校區內的一座門。
 
-[![西面斜視](previews/front.png)](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![西面斜視](previews/front.png)](previews/front.png) |  |  |
 
 [西面](previews/front.png) · [東面](previews/rear.png) · [立面](previews/elevation.png) · [頂面](previews/top.png) · [另一斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 東面<br>![東面](previews/rear.png) | 立面<br>![立面](previews/elevation.png) | 頂面<br>![頂面](previews/top.png) |
+| 另一斜視<br>![另一斜視](previews/left_oblique.png) |  |  |
 
 ## 檔案與範圍
 

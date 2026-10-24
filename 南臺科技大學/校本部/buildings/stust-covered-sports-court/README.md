@@ -7,6 +7,13 @@
 - 北端於新舊棚接界截止，不含舊黃色棚、不補假牆。不含鄰棟、壁畫牆、地下池、後加太陽能板。
 - 場地4座籃球場及8組側掛籃架；未建臨時網杆、球網、燈具/電纜、微細接頭、板縫。籃板為開框簡化。
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 ## 檔案
 `scene.blend`：可編輯頂點、9材質；`model.3mf`：每三角面材質指派；`model.stl`：同一幾何，格式本身不帶色。
 `build_model.py` / `render_model.py` / `rebuild.py` 可在乾淨目錄重建；`previews/`五張皆由最終mesh渲染，不是概念合成圖。

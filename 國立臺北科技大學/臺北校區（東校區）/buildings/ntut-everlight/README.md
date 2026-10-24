@@ -12,11 +12,15 @@
 
 ## 實際 STL 預覽
 
-| 忠孝東路側正面 | 後面 |
-| --- | --- |
-| ![actual STL正面](previews/front.png) | ![actual STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 忠孝東路側正面<br>![actual STL正面](previews/front.png) | 後面<br>![actual STL背面](previews/rear.png) |  |
 
 [頂視圖](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 主要辨識特徵
 

@@ -4,14 +4,18 @@
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/cjcu-gate-cross-tower-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-![校門十字架鐘塔兩同向寬面限域代理](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![校門十字架鐘塔兩同向寬面限域代理](appearance/previews/front.png) |  |  |
 
 只為兩片塔朝+X寬面126個完整原三角配淺磚紅代理，合6744.980026mm²；反面、窄側、灰頂、孔壁、橫繫與底座374面皆中性。原500面座標、面序與STL bytes不變，不切面、不增套。官方航拍拍攝日未知，EXIF三日期空且無XMP；2024-04-24文章日與檔名20240408不是拍攝日，不稱2026現況。第二角本次503未取得，不作配色依據。原孔形與構件近似及未實體試印限制保留，照片不分發；本塔不是慎行鐘或長榮堂。
 
 
 [學校目錄](../../../README.md) · [校區目錄](../../README.md)
 
-![實際STL正面及背面並排](previews/front-rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
 
 ## 範圍與外觀
 保留雙片薄壁高塔、寬面十字穿孔、中央開放間隙、中段連繫板與上部橫向連繫；底座與細部均為獨立縮尺。這是地標構造物，不能算作教學樓館，也不是校圖36號慎行鐘。
@@ -28,6 +32,10 @@
 - [來源與不確定性](sources.json)
 - [幾何驗證](validation.json) · [0.2mm層檢查](layer-check.json) · [輪廓多邊形有效性](contour-validity-check.json) · [0.8mm參考薄特徵篩查](thin-feature-check.json)
 - [SHA256](SHA256SUMS.txt) · [重跑檢查](check_all.sh)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 重建與驗證
 需要 Python 3.12、requirements.txt 所列套件與 Blender 4.3.2+。在本目錄安裝依賴後執行：

@@ -2,7 +2,9 @@
 
 NUU Erping Shan central gate-name tower and attached guard booth, approximate exterior segment.
 
-![實際交付網格前右視角](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際交付網格前右視角](previews/front.png) |  |  |
 
 ## 範圍與檔案
 
@@ -32,9 +34,9 @@ NUU Erping Shan central gate-name tower and attached guard booth, approximate ex
 |---|---|---|
 | ![](previews/front.png) | ![](previews/elevation.png) | ![](previews/rear.png) |
 
-| 頂面近似 | 前左 |
-|---|---|
-| ![](previews/top.png) | ![](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂面近似<br>![](previews/top.png) | 前左<br>![](previews/left_oblique.png) |  |
 
 ## 重建
 

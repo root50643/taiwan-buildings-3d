@@ -2,7 +2,9 @@
 
 新莊校本部，官方校圖3號；含底座最大150 mm，每件獨立估計比例。不是測绘或BIM，也不是整校完成。
 
-<table><tr><td><img src="previews/front.png" width="420" alt="STL斜前方"></td><td><img src="previews/rear.png" width="420" alt="STL斜後方"></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![STL斜前方](previews/front.png) | ![STL斜後方](previews/rear.png) |  |
 
 ## 保留特徵
 三大片連續玻璃窗面、六道窗列與不透明窗下板、兩道上端外張立柱、側面石牆與中央樓梯玻璃窗、三個突出不透明梯間面板、底層入口翼及2026劇場玻璃門廳。

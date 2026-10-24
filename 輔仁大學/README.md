@@ -2,7 +2,10 @@
 
 目前5件外觀近似模型。尚未完成全校逐棟盤點；60個官方校圖條目包含建物群、館內服務及球場，不能當作60棟。各件獨立比例、最大150 mm。未做實體試印，不能保證可印。
 
-<table><tr><td width="33%"><a href="新莊校本部/buildings/fju-chung-mei-auditorium/README.md"><img src="新莊校本部/buildings/fju-chung-mei-auditorium/previews/front.png" width="220" alt="中美堂 STL前方"><br>中美堂</a></td><td width="33%"><a href="新莊校本部/buildings/fju-immaculate-conception-chapel/README.md"><img src="新莊校本部/buildings/fju-immaculate-conception-chapel/appearance/previews/front.png" width="220" alt="淨心堂白柱前臉限域配色代理"><br>淨心堂</a></td><td width="33%"><a href="新莊校本部/buildings/fju-fahy-memorial-building/README.md"><img src="新莊校本部/buildings/fju-fahy-memorial-building/previews/front.png" width="220" alt="濟時樓（主塔外觀近似） STL前方"><br>濟時樓（主塔外觀近似）</a></td></tr><tr><td width="33%"><a href="新莊校本部/buildings/fju-yu-pin-administration/README.md"><img src="新莊校本部/buildings/fju-yu-pin-administration/previews/front.png" width="220" alt="于斌樓（主體外觀近似） STL前方"><br>于斌樓（主體外觀近似）</a></td><td width="33%"><a href="新莊校本部/buildings/fju-schutte-memorial-building/README.md"><img src="新莊校本部/buildings/fju-schutte-memorial-building/previews/front.png" width="220" alt="舒德樓（主體外觀近似） STL前方"><br>舒德樓（主體外觀近似）</a></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![中美堂 STL前方](新莊校本部/buildings/fju-chung-mei-auditorium/previews/front.png)<br>中美堂](新莊校本部/buildings/fju-chung-mei-auditorium/README.md) | [![淨心堂白柱前臉限域配色代理](新莊校本部/buildings/fju-immaculate-conception-chapel/appearance/previews/front.png)<br>淨心堂](新莊校本部/buildings/fju-immaculate-conception-chapel/README.md) | [![濟時樓（主塔外觀近似） STL前方](新莊校本部/buildings/fju-fahy-memorial-building/previews/front.png)<br>濟時樓（主塔外觀近似）](新莊校本部/buildings/fju-fahy-memorial-building/README.md) |
+| [![于斌樓（主體外觀近似） STL前方](新莊校本部/buildings/fju-yu-pin-administration/previews/front.png)<br>于斌樓（主體外觀近似）](新莊校本部/buildings/fju-yu-pin-administration/README.md) | [![舒德樓（主體外觀近似） STL前方](新莊校本部/buildings/fju-schutte-memorial-building/previews/front.png)<br>舒德樓（主體外觀近似）](新莊校本部/buildings/fju-schutte-memorial-building/README.md) |  |
 
 [範圍與剩餘工作](新莊校本部/COVERAGE.md) · [逐來源／棟群待辦](新莊校本部/remaining-work.json)
 

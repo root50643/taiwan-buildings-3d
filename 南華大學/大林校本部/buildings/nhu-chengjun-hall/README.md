@@ -8,15 +8,15 @@
 
 | 正面 | 前右斜視 | 來源照片對照方向（斜視） |
 |---|---|---|
-| <img src="previews/front.png" alt="成均館模型正面" width="240"> | <img src="previews/oblique.png" alt="成均館模型前右斜視" width="240"> | <img src="previews/source-side.png" alt="成均館模型來源照片對照斜視方向，非來源照片" width="240"> |
+| ![成均館模型正面](previews/front.png) | ![成均館模型前右斜視](previews/oblique.png) | ![成均館模型來源照片對照斜視方向，非來源照片](previews/source-side.png) |
 
 | 右側（有來源支持的翼廊） | 左側（未見面中性簡化） | 背面（未見面中性簡化） |
 |---|---|---|
-| <img src="previews/right.png" alt="成均館模型右側凹廊" width="240"> | <img src="previews/left.png" alt="成均館模型左側中性簡化" width="240"> | <img src="previews/rear.png" alt="成均館模型背面中性簡化" width="240"> |
+| ![成均館模型右側凹廊](previews/right.png) | ![成均館模型左側中性簡化](previews/left.png) | ![成均館模型背面中性簡化](previews/rear.png) |
 
 | 俯視（屋頂接點仍屬推論） | 入口細部 | 自繪平面關係圖（非測繪） |
 |---|---|---|
-| <img src="previews/top.png" alt="成均館模型俯視" width="240"> | <img src="previews/front-detail.png" alt="成均館模型入口細部" width="240"> | <img src="previews/footprint.png" alt="成均館模型自繪平面關係圖，非實測尺寸" width="240"> |
+| ![成均館模型俯視](previews/top.png) | ![成均館模型入口細部](previews/front-detail.png) | ![成均館模型自繪平面關係圖，非實測尺寸](previews/footprint.png) |
 
 ## 檔案
 

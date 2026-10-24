@@ -2,8 +2,9 @@
 
 校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 91.00 × 115.10 mm。
 
-![實際STL正面](appearance/previews/front.png)
-![實際STL背面](appearance/previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面](appearance/previews/front.png) | ![實際STL背面](appearance/previews/rear.png) |  |
 
 ## 最新配色與下載
 
@@ -39,3 +40,8 @@ STL SHA-256：46fd8857dab8dadca6bc429ef697d4dbfe4a797c0b541347d331480a664c0a3c
 ## 歷史單色記錄
 
 原 scene.blend、render_preview.py 與三張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)。它們是原模型重建及製造檢查的歷史證據，最新配色展示與交換檔位於 appearance/。原 8 層薄篩警示仍保留，沒有被本次外觀檢查取代。
+
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 立面<br>![立面](previews/elevation.png) |

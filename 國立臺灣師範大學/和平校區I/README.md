@@ -14,4 +14,6 @@
 
 [六材質外觀與來源界線](buildings/ntnu-administration-central-entry-segment/appearance/README.md)
 
-![師大行政中央入口段外觀](buildings/ntnu-administration-central-entry-segment/appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![師大行政中央入口段外觀](buildings/ntnu-administration-central-entry-segment/appearance/previews/front.png) |  |  |

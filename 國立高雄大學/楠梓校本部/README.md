@@ -4,7 +4,7 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| [<img src="buildings/nuk-library-main/previews/front.png" alt="圖書資訊大樓主棟：實際模型預覽" width="220">](buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](buildings/nuk-library-main/README.md)** | [<img src="buildings/nuk-sports-leisure/previews/front.png" alt="體育健康休閒多功能教學大樓：實際模型預覽" width="220">](buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](buildings/nuk-sports-leisure/README.md)** | [<img src="buildings/nuk-humanities-ab/previews/front.png" alt="人文社會科學院 A/B 主樓：實際模型預覽" width="220">](buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](buildings/nuk-humanities-ab/README.md)** |
+| [![圖書資訊大樓主棟：實際模型預覽](buildings/nuk-library-main/previews/front.png)](buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](buildings/nuk-library-main/README.md)** | [![體育健康休閒多功能教學大樓：實際模型預覽](buildings/nuk-sports-leisure/previews/front.png)](buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](buildings/nuk-sports-leisure/README.md)** | [![人文社會科學院 A/B 主樓：實際模型預覽](buildings/nuk-humanities-ab/previews/front.png)](buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](buildings/nuk-humanities-ab/README.md)** |
 
 [回學校入口](../README.md) · [逐項未完成範圍](../remaining-buildings.md)
 

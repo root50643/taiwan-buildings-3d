@@ -4,9 +4,9 @@
 
 尺寸（含底座）：150 × 47 × 38.8 mm。
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 來源與像素觀察
 

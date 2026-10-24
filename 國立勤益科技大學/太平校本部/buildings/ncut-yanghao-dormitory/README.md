@@ -6,11 +6,15 @@
 
 ## 實際 STL 預覽
 
-| 正側斜視 | 反側斜視 |
-| --- | --- |
-| ![由交付STL渲染的正側斜視](previews/front.png) | ![由交付STL渲染的反側斜視](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正側斜視<br>![由交付STL渲染的正側斜視](previews/front.png) | 反側斜視<br>![由交付STL渲染的反側斜視](previews/rear.png) |  |
 
 [正側正立面](previews/elevation.png) · [反側正立面](previews/back_elevation.png) · [Z 形平面與屋頂頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正側正立面<br>![正側正立面](previews/elevation.png) | 反側正立面<br>![反側正立面](previews/back_elevation.png) | Z 形平面與屋頂頂視<br>![Z 形平面與屋頂頂視](previews/top.png) |
 
 預覽由本資料夾的實際 STL 匯入渲染。正背名稱只是相機視角，未主張經測量的地理方位。頂視高度色階用於辨識屋面與開放空間；窗槽的深灰與外端玻璃凹面的局部藍色也是預覽材質，僅標示實際幾何中的凹面。這些色彩不代表建築完整實景配色，STL 本身無色。
 

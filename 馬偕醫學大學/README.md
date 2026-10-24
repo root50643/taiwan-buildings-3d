@@ -4,9 +4,9 @@
 
 ## 本件模型
 
-| 坡下長玻璃面 | 同件坡上入口面 |
-|---|---|
-| [![活動中心坡下](校本部/buildings/mmu-multifunctional-2013/appearance/previews/front.png)](校本部/buildings/mmu-multifunctional-2013/README.md) | [![同件活動中心坡上](校本部/buildings/mmu-multifunctional-2013/appearance/previews/rear.png)](校本部/buildings/mmu-multifunctional-2013/README.md) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 坡下長玻璃面<br>[![活動中心坡下](校本部/buildings/mmu-multifunctional-2013/appearance/previews/front.png)](校本部/buildings/mmu-multifunctional-2013/README.md) | 同件坡上入口面<br>[![同件活動中心坡上](校本部/buildings/mmu-multifunctional-2013/appearance/previews/rear.png)](校本部/buildings/mmu-multifunctional-2013/README.md) |  |
 
 [多功能教學活動中心模型與完整說明](校本部/buildings/mmu-multifunctional-2013/README.md) · [STL](校本部/buildings/mmu-multifunctional-2013/model.stl) · [Blend](校本部/buildings/mmu-multifunctional-2013/scene.blend) · [來源限制](校本部/buildings/mmu-multifunctional-2013/sources.json) · [QA](校本部/buildings/mmu-multifunctional-2013/qa-summary.json)
 

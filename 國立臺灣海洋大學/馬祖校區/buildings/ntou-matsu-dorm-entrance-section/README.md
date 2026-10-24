@@ -2,11 +2,15 @@
 
 國立臺灣海洋大學／馬祖校區。局部件，不計全棟。依公開實照自建的近似縮模，非測繪、非建築施工模型。
 
-| 正面 | 背面／截面 |
-| --- | --- |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面／截面<br>![背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [中央窗組近圖](previews/center-detail.png) · [俯視](previews/top.png) · [STL](model.stl) · [可編輯Blender檔](scene.blend) · [重建程式](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 中央窗組近圖<br>![中央窗組近圖](previews/center-detail.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 範圍與外觀
 - 保留左2右3開間、外凸／齊平陽台、退縮入口、中央上層橫直分格窗、柱廊、小瓦簷

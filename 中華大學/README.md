@@ -2,9 +2,9 @@
 
 本目錄目前只有行政暨圖資大樓單棟的來源限定有界版，主體／屋頂拓撲、南窗、北側未知處簡化及半穹冠三向外觀比較已覆核、已完成獨立原STL重驗並獲主審特定例外接受；不代表全校或全校區完成。未納入鄰接國際會議廳的紅斜屋頂。
 
-| 正面：南側入口 | 背面：北側長立面 |
-| --- | --- |
-| ![正面](香山校本部/buildings/chu-administration-library/appearance/previews/front.png) | ![背面](香山校本部/buildings/chu-administration-library/appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面：南側入口<br>![正面](香山校本部/buildings/chu-administration-library/appearance/previews/front.png) | 背面：北側長立面<br>![背面](香山校本部/buildings/chu-administration-library/appearance/previews/rear.png) |  |
 
 圖為模型渲染。[建築說明與列印限制](香山校本部/buildings/chu-administration-library/README.md) · [原面有限彩色外觀](香山校本部/buildings/chu-administration-library/appearance/README.md) · [STL](香山校本部/buildings/chu-administration-library/model.stl) · [來源與證據](香山校本部/buildings/chu-administration-library/sources.md)
 

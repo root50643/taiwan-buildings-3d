@@ -2,11 +2,16 @@
 
 既有模型修正，不增加學校或模型件數。完整外觀有界近似，150 × 111 × 41.9 mm（含底）。沿用原參數曲殼與主館；不是測繪、內部結構或全校完成件。
 
-| 實際 STL 正面 | 同件背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 同件背面<br>![背面](previews/rear.png) |  |
 
 [頂圖](previews/top.png) · [場側全高](previews/elevation.png) · [入口局部](previews/entry-detail.png) · [場側局部](previews/field-detail.png) · [左側局部](previews/left-detail.png)。front、rear、top、elevation為4張完整全貌，entry-detail、field-detail、left-detail為3張局部；全部由本包 STL 渲染，沒有來源合成圖。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂圖<br>![頂圖](previews/top.png) | 場側全高<br>![場側全高](previews/elevation.png) | 入口局部<br>![入口局部](previews/entry-detail.png) |
+| 場側局部<br>![場側局部](previews/field-detail.png) | 左側局部<br>![左側局部](previews/left-detail.png) |  |
 
 ## 這次修正
 以官方2000px正面與2026-03-19公開近側照，撤除舊規則全長通空柱廊及大外挑棚；補中央兩跨深入口、粗圓柱、左錯層短窗和小門棚、右兩組背接寬窗與頂小通風帶。右窗框為列印加粗淺浮雕。

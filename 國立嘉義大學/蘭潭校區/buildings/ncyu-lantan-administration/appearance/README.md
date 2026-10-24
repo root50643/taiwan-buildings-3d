@@ -15,6 +15,11 @@
 - [正面](previews/front.png)、[背面](previews/rear.png)、[正立面](previews/elevation.png)、[側面](previews/side.png)、[頂面](previews/top.png)：實際交付網格渲染，包含全底座。
 - [來源及日期](SOURCES.md)、[權利說明](LICENSE-NOTICE.md)、[重建來源包](rebuild-source.zip)、[SHA256SUMS](SHA256SUMS)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| 側面<br>![側面](previews/side.png) | 頂面<br>![頂面](previews/top.png) |  |
+
 ## 重建與驗證
 重建包包含原model.stl及appearance/source。Python 3 + numpy + lib3mf；Blender 4.3.2+：依序執行 `python appearance/source/build_appearance.py`、`python appearance/source/verify_material_boundaries.py`、`python appearance/source/verify_exchange.py`、`blender -b -t 4 -P appearance/source/render_appearance.py`、`blender -b -t 4 -P appearance/source/verify_scene.py`。
 

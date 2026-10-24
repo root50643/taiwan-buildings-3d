@@ -6,9 +6,9 @@
 
 **Library 未上傳、未官方回下載、未驗證。** 使用者已取消額外備份作本次發布門檻；這不是備份成功聲明。原候選保持不變；公開歷史 QA／NO-GO 紀錄保留原測值、布林判定、失敗旗標與歷史 SHA，僅將私人執行路徑中性化，按其記錄時點解讀。
 
-| 內院方向預覽 | 背面方向預覽 |
-|:---:|:---:|
-| ![教學大樓內院方向](previews/front.png) | ![教學大樓背面方向](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 內院方向預覽<br>![教學大樓內院方向](previews/front.png) | 背面方向預覽<br>![教學大樓背面方向](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [九件分解圖](previews/exploded.png) · [分層截面](qa/sections.png)
 
@@ -78,3 +78,8 @@ python source/qa_geometry.py
 重建後應重新核對尺寸、單位、SHA、預覽與切片證據。上述命令不包含讀者設備的列印校準，也不代表現場復原或實體製造驗收。
 
 發布副本的 metadata 與私人路徑清理綁定見 [PUBLICATION-METADATA.md](qa/PUBLICATION-METADATA.md) 與 [current-binding.json](qa/current-binding.json)。原候選測值與旗標沒有重算或改判；目前檔案 SHA 以 [PACKAGE-SHA256.json](PACKAGE-SHA256.json) 為準。
+
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) | 九件分解圖<br>![九件分解圖](previews/exploded.png) |  |

@@ -14,11 +14,10 @@
 - `previews/`：由實際交付網格渲染的五張圖。
 - `build_model.py`、`render_model.py`、`rebuild.py`：參數化建模及重建程式。
 
-![正面斜視](previews/front.png)
-![背面斜視](previews/rear.png)
-![正面立視](previews/elevation.png)
-![頂視](previews/top.png)
-![另一側斜視](previews/left_oblique.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面斜視](previews/front.png) | ![背面斜視](previews/rear.png) | ![正面立視](previews/elevation.png) |
+| ![頂視](previews/top.png) | ![另一側斜視](previews/left_oblique.png) |  |
 
 ## 幾何與限制
 

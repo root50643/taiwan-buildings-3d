@@ -2,9 +2,9 @@
 
 本批完成五館（圖書資訊大樓）暨2006圖書館擴建翼的同件來源限定外觀近似；不含六館，也不是全校完成。其他校舍仍待逐棟補證續作。
 
-| 五館西南主要面 | 同件東北背面 |
-|---|---|
-| [![西南面](buildings/yzu-building5-library-extension/previews/front.png)](buildings/yzu-building5-library-extension/README.md) | [![東北面](buildings/yzu-building5-library-extension/previews/rear.png)](buildings/yzu-building5-library-extension/README.md) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 五館西南主要面<br>[![西南面](buildings/yzu-building5-library-extension/previews/front.png)](buildings/yzu-building5-library-extension/README.md) | 同件東北背面<br>[![東北面](buildings/yzu-building5-library-extension/previews/rear.png)](buildings/yzu-building5-library-extension/README.md) |  |
 
 [建物完整說明](buildings/yzu-building5-library-extension/README.md) · [STL](buildings/yzu-building5-library-extension/model.stl) · [Blend](buildings/yzu-building5-library-extension/scene.blend) · [原創源](buildings/yzu-building5-library-extension/build_model.py) · [頂圖](buildings/yzu-building5-library-extension/previews/top.png) · [來源](buildings/yzu-building5-library-extension/sources.json) · [QA](buildings/yzu-building5-library-extension/qa-summary.json)
 

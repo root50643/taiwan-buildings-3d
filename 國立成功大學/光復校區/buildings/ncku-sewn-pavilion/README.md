@@ -11,9 +11,9 @@
 |---|---|---|
 | ![正面](previews/front.png) | ![反面](previews/rear.png) | ![立面](previews/elevation.png) |
 
-| 俯視三葉與中央缺口 | 側向曲帶層次 |
-|---|---|
-| ![俯視](previews/top.png) | ![側斜視](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視三葉與中央缺口<br>![俯視](previews/top.png) | 側向曲帶層次<br>![側斜視](previews/left_oblique.png) |  |
 
 ## 模型保留的辨識特徵
 - **三葉A／B／C、每葉六道0–5曲帶、三個共用腳ab／bc／ca**。曲帶跨兩腳成拱、向腳部收束，不增造第四腳，也不是柱子加平頂的普通涼亭。

@@ -7,6 +7,11 @@
 - [入口正面](previews/front.png)・[花園側](previews/left.png)・[東側](previews/right.png)・[背面](previews/rear.png)・[俯視](previews/top.png)
 - [重建原始碼ZIP](rebuild-source.zip)：解壓後依序執行 appearance/source/build_appearance.py、verify_exchange.py，再用 Blender --background --python 執行 render_appearance.py、verify_scene.py。Python numpy、lib3mf 2.5.0、Blender 4.3.2。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口正面<br>![入口正面](previews/front.png) | 花園側<br>![花園側](previews/left.png) | 東側<br>![東側](previews/right.png) |
+| 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 ## 嚴格範圍
 四個有限外牆平面，原三角形三頂點與實際外法向全部落域才選取。框窗、白色橫帶、窗洞側壁、下牆與柱、入口山牆與門廊、屋頂、東側與背面、底座全不染。窗灰是未確認的原中性，不代表白色玻璃。不新增磚縫貼圖、切面或幾何。前／花園與東／背的配色分界是證據範圍，不宣稱真實建築材料接縫。
 

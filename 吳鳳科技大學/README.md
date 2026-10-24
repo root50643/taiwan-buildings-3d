@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/wfu-shengyou/qa/render-check/v13/sanitized-previews/front.png" alt="生有樓入口三層挑空與三角中庭模型" width="260">](校本部/buildings/wfu-shengyou/README.md)<br>**[生有樓｜2014標稱空拍外觀代表](校本部/buildings/wfu-shengyou/README.md)**<br>三角中庭、分層深廊與分段露空屋頂<br>220 × 186 × 114.5 mm | [<img src="校本部/buildings/wfu-apollo/previews/v1/front.png" alt="APOLLO航太車輛館低坡雙坡主館模型" width="260">](校本部/buildings/wfu-apollo/README.md)<br>**[APOLLO航太車輛館｜主館外觀代表](校本部/buildings/wfu-apollo/README.md)**<br>長向屋脊、連續長簷；高度與門窗估算<br>190 × 88 × 40.19 mm |  |
+| [![生有樓入口三層挑空與三角中庭模型](校本部/buildings/wfu-shengyou/qa/render-check/v13/sanitized-previews/front.png)](校本部/buildings/wfu-shengyou/README.md)<br>**[生有樓｜2014標稱空拍外觀代表](校本部/buildings/wfu-shengyou/README.md)**<br>三角中庭、分層深廊與分段露空屋頂<br>220 × 186 × 114.5 mm | [![APOLLO航太車輛館低坡雙坡主館模型](校本部/buildings/wfu-apollo/previews/v1/front.png)](校本部/buildings/wfu-apollo/README.md)<br>**[APOLLO航太車輛館｜主館外觀代表](校本部/buildings/wfu-apollo/README.md)**<br>長向屋脊、連續長簷；高度與門窗估算<br>190 × 88 × 40.19 mm |  |
 
 ## 生有樓說明
 

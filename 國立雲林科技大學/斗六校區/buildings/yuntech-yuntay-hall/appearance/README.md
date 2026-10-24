@@ -2,10 +2,10 @@
 
 直接在原有 **12,890 三角面／6,445 頂點**配置材質，不改座標、面序、幾何或原 STL 位元，不細分，也不增加模型包數。這是既有有界縮模的外觀改版，不是重新測繪或新增建築。
 
-| 曲面正立面 | 後方直角翼保持中性 |
-|---|---|
-| ![曲面正面](previews/front.png) | ![後方](previews/rear.png) |
-| ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 曲面正立面<br>![曲面正面](previews/front.png) | 後方直角翼保持中性<br>![後方](previews/rear.png) | ![正立面](previews/elevation.png) |
+| ![頂視](previews/top.png) |  |  |
 
 [表面色 3MF](yuntay-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 

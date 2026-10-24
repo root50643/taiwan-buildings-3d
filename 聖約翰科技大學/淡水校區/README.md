@@ -4,9 +4,9 @@
 
 目前僅降臨堂主堂近似版；校區尚未完整建模，南側關懷中心及附屬鐘塔未納入。
 
-| 降臨堂有限證據配色正面 | 降臨堂有限證據配色背面 |
-|---|---|
-| [![正面](buildings/sju-advent-church/appearance/previews/front.png)](buildings/sju-advent-church/) | [![背面](buildings/sju-advent-church/appearance/previews/rear.png)](buildings/sju-advent-church/) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 降臨堂有限證據配色正面<br>[![正面](buildings/sju-advent-church/appearance/previews/front.png)](buildings/sju-advent-church/) | 降臨堂有限證據配色背面<br>[![背面](buildings/sju-advent-church/appearance/previews/rear.png)](buildings/sju-advent-church/) |  |
 
 [模型、限制與來源](buildings/sju-advent-church/README.md) · [有限證據配色／逐面材質 3MF](buildings/sju-advent-church/appearance/README.md)
 

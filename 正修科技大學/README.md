@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/csu-library-technology/appearance/previews/front.png" alt="圖書科技大樓：實際模型預覽" width="220">](校本部/buildings/csu-library-technology/README.md)<br>**[圖書科技大樓](校本部/buildings/csu-library-technology/README.md)** | [<img src="校本部/buildings/csu-administration-03/previews/v2/front-three-quarter.png" alt="綜合行政大樓03A/B/C：實際模型預覽" width="220">](校本部/buildings/csu-administration-03/README.md)<br>**[綜合行政大樓03A/B/C](校本部/buildings/csu-administration-03/README.md)** | [<img src="校本部/buildings/csu-childcare-building/previews/front.png" alt="幼兒保育館｜2024含PV版：實際模型預覽" width="220">](校本部/buildings/csu-childcare-building/README.md)<br>**[幼兒保育館｜2024含PV版](校本部/buildings/csu-childcare-building/README.md)** |
+| [![圖書科技大樓：實際模型預覽](校本部/buildings/csu-library-technology/appearance/previews/front.png)](校本部/buildings/csu-library-technology/README.md)<br>**[圖書科技大樓](校本部/buildings/csu-library-technology/README.md)** | [![綜合行政大樓03A/B/C：實際模型預覽](校本部/buildings/csu-administration-03/previews/v2/front-three-quarter.png)](校本部/buildings/csu-administration-03/README.md)<br>**[綜合行政大樓03A/B/C](校本部/buildings/csu-administration-03/README.md)** | [![幼兒保育館｜2024含PV版：實際模型預覽](校本部/buildings/csu-childcare-building/previews/front.png)](校本部/buildings/csu-childcare-building/README.md)<br>**[幼兒保育館｜2024含PV版](校本部/buildings/csu-childcare-building/README.md)** |
 
 [圖科模型與QA](校本部/buildings/csu-library-technology/)；[行政模型、兩分件與發布說明](校本部/buildings/csu-administration-03/PUBLICATION.md)。行政03A/B/C是同棟三區，主體與截頂屋蓋分印仍只算一套；排除04及鄰樓。 · [有限原面彩色外觀](校本部/buildings/csu-library-technology/appearance/README.md)
 

@@ -6,6 +6,6 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/ntu-medical-humanities-museum/appearance/previews/front.png" alt="醫學人文博物館（中央樓及西翼外部量體）" width="220">](buildings/ntu-medical-humanities-museum/README.md)<br>[醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/README.md) | [<img src="buildings/ntu-hospital-bam-wood-hut-2018/previews/front.png" alt="臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）：實際模型預覽" width="220">](buildings/ntu-hospital-bam-wood-hut-2018/README.md)<br>**[臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）](buildings/ntu-hospital-bam-wood-hut-2018/README.md)** |  |
+| [![醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/appearance/previews/front.png)](buildings/ntu-medical-humanities-museum/README.md)<br>[醫學人文博物館（中央樓及西翼外部量體）](buildings/ntu-medical-humanities-museum/README.md) | [![臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）：實際模型預覽](buildings/ntu-hospital-bam-wood-hut-2018/previews/front.png)](buildings/ntu-hospital-bam-wood-hut-2018/README.md)<br>**[臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）](buildings/ntu-hospital-bam-wood-hut-2018/README.md)** |  |
 
 [八材質外觀與來源界線](buildings/ntu-medical-humanities-museum/appearance/README.md)

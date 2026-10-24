@@ -2,9 +2,9 @@
 
 **範圍：局部段，非全棟。此為自建可列印外觀近似，不是测繪成果。**
 
-| 正面 actual STL | 背面 actual STL |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面 actual STL<br>![正面](previews/front.png) | 背面 actual STL<br>![背面](previews/rear.png) |  |
 
 ## 幾何與來源界線
 保留中央高塔、上方鏤空孔、中央玻璃分格、雙圓柱深門廊與兩側各三跨立面。未涵蓋完整左右側翼、庭院與後棟。

@@ -1,6 +1,8 @@
 # 國立聯合大學八甲校區 1 弧形候車亭端部雙框外觀段
 
-![實際模型正面斜視](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際模型正面斜視](previews/front.png) |  |  |
 
 新增建築外觀段模型，不是「八甲校區 2」直線候車亭，也不是完整站體。選取八甲校區 1 左翼、白色設備櫃旁端柱至第二根內柱之間的兩個連續公告板格。設備櫃本身不建模。官方照片 2 背面視角的最右兩格，對應照片 1 的白色背板與相鄰淺藍內面公告格。延伸側在第二根內柱切斷。
 
@@ -11,6 +13,11 @@
 - [可重建生成器](build_model.py)、[渲染器](render_model.py)、[材質表](palette.json)
 - [正面](previews/front.png) · [背面](previews/rear.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png) · [左斜視](previews/left_oblique.png)
 - [來源與推估邊界](SOURCES.md) · [驗證及列印限制](QA.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) |  |  |
 
 ## 表達範圍
 保留平面上的緩弧屋簷與灰色下牆、三根後立柱、向候車側伸出的開放三角懸臂、兩片素面框板、框板下 3 mm 窄開口、內側木座板及淡色壁托、短端部低返牆。未加入前側落地柱或側玻璃。

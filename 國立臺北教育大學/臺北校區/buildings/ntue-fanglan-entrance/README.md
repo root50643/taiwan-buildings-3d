@@ -19,11 +19,15 @@
 - [requirements.txt](requirements.txt)：Python依賴；執行 python build_model.py 可重建
 - [render_preview.py](render_preview.py)：用 Blender 實際讀取交付STL渲染，非示意效果圖
 
-| 實際STL正面 | 實際STL背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 [俯視圖](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視圖<br>![俯視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 列印與驗證
 

@@ -4,16 +4,18 @@
 
 [配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/hwai-nursing-j-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-| 正面限域配色 | 未確認後側保持中性 |
-|---|---|
-| ![低翼瓦帽及單綠玻璃豎帶](appearance/previews/front.png) | ![後側保持中性](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面限域配色<br>![低翼瓦帽及單綠玻璃豎帶](appearance/previews/front.png) | 未確認後側保持中性<br>![後側保持中性](appearance/previews/rear.png) |  |
 
 僅左前低翼前/左瓦坡16個完整面與單綠玻璃豎槽後壁22面配色；混材牆、山牆、其他窗槽、庭院、後側與未確認坡面維持中性，不是整棟精準彩色。原STL bytes、4516三角面、幾何及歷史QA不變，不增套數。3MF為單網格表面色，非分色封閉體、切片或G-code；原薄處與支撐限制保留，未實體試印。照片日期未知，不代表完整2026現況；第三方照片不分發。
 
 
 公開外觀近似模型。別名／去重：科技教學大樓；體育一館為地下樓層用途，不另計棟。
 
-![實際STL正面（左）與背面（右）](previews/front-rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面（左）與背面（右）](previews/front-rear.png) |  |  |
 
 ## 觀察與近似
 十層主塔、分段高低翼、兩層入口柱廊、側面深凹水平帶、綠玻璃樓梯豎帶、折線／弧線混合山牆及低翼坡簷。
@@ -25,9 +27,9 @@
 ## V2：新增已識別深庭證據
 [可讀「科技教學大樓」的入口照](https://www.flickr.com/photos/techexpo/9355047531/)與[2004-11-17入口全景](https://www.flickr.com/photos/techexpo/9357821208/)確認為J棟舊名；[跨層橋廊照片](https://www.flickr.com/photos/techexpo/9355047873/)顯示開頂深庭。本版保留向西敞開的院落、六層橋廊及入口柱棚，修正V1未見該面時的實心包絡。庭院深度、橋距為近似；歷史照片不代表逐處2026現況。
 
-![實際STL俯視，庭院保持開放](previews/top.png)
-
-![實際STL西向庭院立面](previews/courtyard.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL俯視，庭院保持開放](previews/top.png) | ![實際STL西向庭院立面](previews/courtyard.png) |  |
 
 ## 尺寸與檔案
 - 含底板 150.0 × 107.0 × 120.0 mm，最長150mm；每棟獨立目估比例，無測繪尺寸。

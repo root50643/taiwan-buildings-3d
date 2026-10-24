@@ -8,13 +8,13 @@
 - [建模源碼](source/build_model.py)、[調色表](palette.json)、[逐面材質](face-materials.json)、[SHA256](SHA256SUMS)
 - 含底座仍為 **150 × 142 × 98 mm**，752 頂點、1524 三角面，單件封閉網格。不是測繪模型，未宣稱精確 1:N。
 
-| y− 正面凸盒與 x+ 右側雙陽臺 | x− 外梯側，向 y− 正面上升 |
-|---|---|
-| ![正面與右鄰面](previews/front.png) | ![外梯與正面](previews/stairs.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| y− 正面凸盒與 x+ 右側雙陽臺<br>![正面與右鄰面](previews/front.png) | x− 外梯側，向 y− 正面上升<br>![外梯與正面](previews/stairs.png) |  |
 
-| y+ 後面保持中性簡化 | 俯視：x− 左、x+ 右、y− 下 |
-|---|---|
-| ![後面與外梯側](previews/rear.png) | ![座標方向俯視](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| y+ 後面保持中性簡化<br>![後面與外梯側](previews/rear.png) | 俯視：x− 左、x+ 右、y− 下<br>![座標方向俯視](previews/top.png) |  |
 
 ## 來源如何對應座標
 

@@ -9,6 +9,11 @@
 - [正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)、[側面](previews/side.png)、[頂面](previews/top.png)
 - [來源](SOURCES.md)、[權利](LICENSE-NOTICE.md)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 立面<br>![立面](previews/elevation.png) |
+| 側面<br>![側面](previews/side.png) | 頂面<br>![頂面](previews/top.png) |  |
+
 原 STL bytes、三角面順序、每個頂點座標保持不變；native polygon IDs 已用精確三頂點集合雙射轉為 canonical STL IDs。選取必須全 3 頂點位於 y=-61.9 有限矩形且朝 -Y，總面積 1986.98958182 mm²。沒有 centroid 裁切、細分、加厚或新幾何。最高列 x=2 的下窗保留既有 4 面。
 
 ## 重建

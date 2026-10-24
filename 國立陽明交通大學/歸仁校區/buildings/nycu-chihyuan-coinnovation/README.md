@@ -2,11 +2,15 @@
 
 國立陽明交通大學｜歸仁校區。主雙翼、相連翼樓、露天中庭及錯層露臺之外觀近似；非測繪，局部內院立面與上層連橋位置/深度推估。
 
-| 實際 STL 正面 | 實際 STL 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 範圍與來源
 

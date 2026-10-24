@@ -4,9 +4,15 @@
 
 > 主要外觀近似；包含架空主館與局部低層平台，不含相鄰體泳館、室內及完整地形。
 
-<table><tr><td><img src="previews/front.png" width="450" alt="交付STL正面"></td><td><img src="previews/rear.png" width="450" alt="交付STL背面"></td></tr><tr><td>正面</td><td>背面</td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![交付STL正面](previews/front.png)<br>正面 | ![交付STL背面](previews/rear.png)<br>背面 |  |
 
 [頂面](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂面<br>![頂面](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 下載與單位
 

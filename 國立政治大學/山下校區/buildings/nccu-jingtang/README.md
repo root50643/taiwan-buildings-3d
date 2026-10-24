@@ -2,11 +2,15 @@
 
 山下校區。依公開實景與官方平面外輪廓自建的完整建物外觀近似，非测绘、BIM或結構設計。
 
-| 正面（實際STL） | 背面（實際STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（實際STL）<br>![正面](previews/front.png) | 背面（實際STL）<br>![背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 形狀及證據限制
 

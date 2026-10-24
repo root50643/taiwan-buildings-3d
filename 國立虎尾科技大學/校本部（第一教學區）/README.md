@@ -2,7 +2,9 @@
 
 本區本批1件，非全區完成。
 
-[![第一教學區校門與警衛室](buildings/nfu-main-gate/previews/front.png)](buildings/nfu-main-gate/README.md)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![第一教學區校門與警衛室](buildings/nfu-main-gate/previews/front.png)](buildings/nfu-main-gate/README.md) |  |  |
 
 [第一教學區校門與警衛室](buildings/nfu-main-gate/README.md)
 

@@ -2,6 +2,13 @@
 
 這是既有 `ntpu-library-main-block-segment` 的**整體幾何替代**，不是新增一棟或增加套數。以 2014 成品照片系列及建築師公開 B1–7F 平面，重建雙高圖書館翼、兩層資訊中心、3F 低屋頂露臺、中央橋廊、2F 大道與臨湖梯端、局部 B1 下沉院。不是 2026 現況，也不是測繪或施工模型。
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 ## 檔案
 - `scene.blend`：可編輯真三角網格、各面材質；沒有嵌入來源照片或外部材質圖。
 - `model.3mf`：毫米單位、逐面八材質，可交換與修改；中央採光頂/橋頂用半透明顯示代理。

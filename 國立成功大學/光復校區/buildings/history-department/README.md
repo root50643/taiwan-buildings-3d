@@ -4,13 +4,17 @@
 
 ## 最新六材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 已登錄背面長廊 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 已登錄背面長廊<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/history-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依官方照片登錄背面磚牆、前六石柱與長廊淡色後牆；廊口不是玻璃。正面磚牆因三角面跨界而保守中性，避免假斜角分界；兩短端方向未證，屋面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 ## 公開來源與像素檢視

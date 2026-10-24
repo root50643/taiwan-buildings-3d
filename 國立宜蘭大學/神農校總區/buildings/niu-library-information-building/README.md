@@ -4,11 +4,15 @@
 
 ## 模型與預覽
 
-| 正面（actual STL） | 背面（actual STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（actual STL）<br>![正面](previews/front.png) | 背面（actual STL）<br>![背面](previews/rear.png) |  |
 
 [頂視圖](previews/top.png) · [正立面](previews/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 - 尺寸：109 × 150 × 82.1 mm（包含3mm底座；STL實測值以validation.json為準）
 - 範圍：圖書資訊大樓／圖書資訊館為一件；崇發廳、宜大記憶庫、黃春明行動體驗館與資訊教室均為館內空間，不各算一棟；不包含旁邊原圖書館/人管院。

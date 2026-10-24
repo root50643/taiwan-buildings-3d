@@ -2,9 +2,9 @@
 
 ## 2 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 歷史主屋面同系統／牆面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 歷史主屋面同系統／牆面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/cycuhuaien-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,8 +13,9 @@
 
 中原大學・中壢校區。完整長條建築量體的歷史外觀近似；1983整修圖補形，與2023屋頂圖、2021屋面及背面實照交叉核對。不是2021精密復原，也不是2026現況。這是一棟模型，不代表全校完成。
 
-![南側實際STL](previews/front.png)
-![北側實際STL](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![南側實際STL](previews/front.png) | ![北側實際STL](previews/rear.png) |  |
 
 ## 檔案
 

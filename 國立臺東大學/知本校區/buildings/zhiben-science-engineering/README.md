@@ -49,8 +49,9 @@ python validate_model.py
 - 未宣稱完成全域自相交的獨立窮舉檢查；數位幾何驗證不等於試印。
 - STL SHA-256：`a14fa14bae7f2462d442f7f226862135b32781f7f6f032724ff31bb256a8c7cf`。
 
-![實際 STL 正面](previews/front.png)
-![實際 STL 背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
 
 ## 第二版外觀 QA 修正
 第二版加入三處明顯前凸窄翼、深凹外廊及分層樓板／直柱，保留左側凸窗和三段斜屋頂。可見突出深度已實作成真實 STL 幾何；薄欄杆與細碎外牆構件仍簡化。
@@ -60,6 +61,6 @@ python validate_model.py
 
 ## 實際STL正背並排
 
-| 正面 | 背面（未見部分按詳頁明示簡化） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

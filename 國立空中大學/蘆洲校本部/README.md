@@ -6,9 +6,9 @@
 
 [北院｜紅色防漏坡屋蓋版](buildings/nou-north-courtyard/README.md)：完整外環四翼、中央行政橫棟、雙庭院、內院柱廊及正門穿堂的低細節近似。保存後加低坡屋蓋，未推造原始平屋頂。
 
-| 正面 | 背面 |
-|:---:|:---:|
-| [![北院正面](buildings/nou-north-courtyard/previews/front.png)](buildings/nou-north-courtyard/README.md) | [![北院背面](buildings/nou-north-courtyard/previews/rear.png)](buildings/nou-north-courtyard/README.md) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>[![北院正面](buildings/nou-north-courtyard/previews/front.png)](buildings/nou-north-courtyard/README.md) | 背面<br>[![北院背面](buildings/nou-north-courtyard/previews/rear.png)](buildings/nou-north-courtyard/README.md) |  |
 
 含底座最長 150 mm，單位毫米。紅色僅預覽材質，STL 不含顏色。資料出版日、網頁日與照片拍攝日有別，詳個別 README；不宣稱 2026 精確現況。
 

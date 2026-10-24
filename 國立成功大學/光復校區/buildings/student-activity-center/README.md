@@ -2,9 +2,9 @@
 
 第十一批，光復校區。尺寸 150 × 98 × 38 mm，含底座最長邊150 mm；每件獨立比例。
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 來源與像素檢視
 

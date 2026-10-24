@@ -4,11 +4,16 @@
 
 外觀已核可，作者數位驗證通過；發布前仍須獨立審核。本檔案未上傳 GitHub。
 
-| 正面斜視：街面及南側 | 背面斜視：北側及端部 |
-|---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面斜視：街面及南側<br>![實際STL正面](previews/front.png) | 背面斜視：北側及端部<br>![實際STL背面](previews/rear.png) |  |
 
 上圖直接由交付的 [model.stl](model.stl) 匯入渲染。深色窗、灰色基座及綠色屋頂僅為 Blender／PNG 的辨識用預覽色，**STL 本身沒有材質或色彩，也不包含植物實體**。主要深凹、雨遮與退台均為實際幾何，不是貼圖。另有 [街面](previews/street.png)、[南側](previews/south.png)、[北側](previews/north.png)、[端面](previews/end.png)、[東南斜視](previews/southeast.png)、[頂視](previews/top.png)。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 街面<br>![街面](previews/street.png) | 南側<br>![南側](previews/south.png) | 北側<br>![北側](previews/north.png) |
+| 端面<br>![端面](previews/end.png) | 東南斜視<br>![東南斜視](previews/southeast.png) | 頂視<br>![頂視](previews/top.png) |
 
 ## 尺寸與時間切片
 

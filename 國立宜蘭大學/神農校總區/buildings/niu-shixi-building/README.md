@@ -4,11 +4,15 @@
 
 ## 模型與預覽
 
-| 正面（actual STL） | 背面（actual STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（actual STL）<br>![正面](previews/front.png) | 背面（actual STL）<br>![背面](previews/rear.png) |  |
 
 [頂視圖](previews/top.png) · [正立面](previews/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 - 尺寸：150 × 111 × 65 mm（包含3mm底座；STL實測值以validation.json為準）
 - 範圍：時習大樓為一件。照片中旁邊的其他大樓不納入；不同實驗室為同館使用單位，不拆算。

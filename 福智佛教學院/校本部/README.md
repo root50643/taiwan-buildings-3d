@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/bwbc-zongde-administration-library-2024/previews/v17/front.png" alt="宗德樓正面模型" width="260">](buildings/bwbc-zongde-administration-library-2024/README.md)<br>**[宗德樓｜2024](buildings/bwbc-zongde-administration-library-2024/README.md)**<br>行政圖書資訊大樓單棟，含開放內院<br>210 × 187.5 × 54.625 mm |  |  |
+| [![宗德樓正面模型](buildings/bwbc-zongde-administration-library-2024/previews/v17/front.png)](buildings/bwbc-zongde-administration-library-2024/README.md)<br>**[宗德樓｜2024](buildings/bwbc-zongde-administration-library-2024/README.md)**<br>行政圖書資訊大樓單棟，含開放內院<br>210 × 187.5 × 54.625 mm |  |  |
 
 [完整模型、正反面並排預覽與下載](buildings/bwbc-zongde-administration-library-2024/README.md) · [來源摘要](../inventory/sources/bwbc-zongde-administration-library-2024-source-summary.md) · [QA摘要](../inventory/qa/bwbc-zongde-administration-library-2024-review.md)
 

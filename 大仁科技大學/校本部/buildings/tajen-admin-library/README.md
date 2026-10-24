@@ -2,9 +2,9 @@
 
 狀態：外觀有界近似已核；作者幾何與重現檢查完成。39個局部損失樣本與獨立加密2331短首段的具體限定證據已由主審接受；原作者7點/1054筆結果仍保留。
 
-| 南東正面（actual STL） | 西北背面（actual STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 南東正面（actual STL）<br>![正面](previews/front.png) | 西北背面（actual STL）<br>![背面](previews/rear.png) |  |
 
 ## 來源與形體
 原創 Python 參數實體；[來源清單](sources.json)。官方 A 棟包含行政與圖書館，公開用途證明 10F 存在；B2 地下不完整建模，沒有把十層均分。2001 三面照片配合 2016／2024 正射及 2024 西北街景。排除 C 活動中心、能源中心與臨時施工網。
@@ -30,6 +30,12 @@
 ## 其餘實際STL視圖
 
 [front-low](previews/front-low.png) · [rear-low](previews/rear-low.png) · [top](previews/top.png) · [east](previews/east.png) · [west](previews/west.png) · [north-elevation](previews/north-elevation.png) · [south-elevation](previews/south-elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| front-low<br>![front-low](previews/front-low.png) | rear-low<br>![rear-low](previews/rear-low.png) | top<br>![top](previews/top.png) |
+| east<br>![east](previews/east.png) | west<br>![west](previews/west.png) | north-elevation<br>![north-elevation](previews/north-elevation.png) |
+| south-elevation<br>![south-elevation](previews/south-elevation.png) |  |  |
 
 ## 南北立面預覽修正
 

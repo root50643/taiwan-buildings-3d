@@ -4,16 +4,22 @@
 
 ## 最新六材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 背面與未知屋頂保持中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未知屋頂保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nptu-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依官方照片登錄淡玫瑰實牆、白色柱肋、深灰藍凹窗與灰色橫帶；中央實牆不當玻璃，屋頂與未知背面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
-![實際STL頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL頂視](previews/top.png) |  |  |
 
 ## 外觀範圍
 

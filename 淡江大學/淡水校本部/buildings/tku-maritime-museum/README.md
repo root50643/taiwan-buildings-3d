@@ -2,9 +2,9 @@
 
 **本模型需要支撐，並須在自己的切片器完成支撐安排與拆除確認。** 獨立覆核為條件式GO；沒有實際生成支撐、切片或試印，不保證支撐可移除，也不宣稱免支撐。
 
-| 前方甲板視角 | 相反視角 |
-|---|---|
-| ![前方](previews/front.png) | ![相反](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前方甲板視角<br>![前方](previews/front.png) | 相反視角<br>![相反](previews/rear.png) |  |
 
 [下載STL](model.stl) · [列印前操作說明](PRINTING-LIMITS.md) · [獨立覆核與兩條排除路徑](qa/public-review/README.md) · [全部預覽與相機](previews/render-manifest.json)
 

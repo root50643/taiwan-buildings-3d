@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正面 actual STL<br><img src="buildings/dila-yangsheng-hall/appearance/previews/front.png" alt="正面" width="220"><br>背面 actual STL<br><img src="buildings/dila-yangsheng-hall/appearance/previews/rear.png" alt="背面" width="220"> | [<img src="buildings/dila-great-vow-bridge-middle-span-segment/previews/front.png" alt="法鼓文理學院・大願橋整橋外觀近似：實際模型預覽" width="220">](buildings/dila-great-vow-bridge-middle-span-segment/README.md)<br>**[法鼓文理學院・大願橋整橋外觀近似](buildings/dila-great-vow-bridge-middle-span-segment/README.md)** | [<img src="buildings/dila-administration-teaching-complex/previews/front.png" alt="綜合大樓GA／GB／GC：實際模型預覽" width="220">](buildings/dila-administration-teaching-complex/README.md)<br>**[綜合大樓（GA／GB／GC）](buildings/dila-administration-teaching-complex/README.md)** |
+| 正面 actual STL<br>![正面](buildings/dila-yangsheng-hall/appearance/previews/front.png)<br>背面 actual STL<br>![背面](buildings/dila-yangsheng-hall/appearance/previews/rear.png) | [![法鼓文理學院・大願橋整橋外觀近似：實際模型預覽](buildings/dila-great-vow-bridge-middle-span-segment/previews/front.png)](buildings/dila-great-vow-bridge-middle-span-segment/README.md)<br>**[法鼓文理學院・大願橋整橋外觀近似](buildings/dila-great-vow-bridge-middle-span-segment/README.md)** | [![綜合大樓GA／GB／GC：實際模型預覽](buildings/dila-administration-teaching-complex/previews/front.png)](buildings/dila-administration-teaching-complex/README.md)<br>**[綜合大樓（GA／GB／GC）](buildings/dila-administration-teaching-complex/README.md)** |
 
 [模型、來源及數位檢查](buildings/dila-yangsheng-hall/README.md)。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 

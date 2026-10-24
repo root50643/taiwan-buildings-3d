@@ -2,12 +2,17 @@
 
 依國立聯合大學公開校園地圖及外觀照片製作的近似建築模型，包含 A1a、A1b、A1c 所屬建築群。不是測繪模型，亦未做實體試印。
 
-![A1 七材質外觀主版正面預覽](appearance/previews/front.png)
-![A1 七材質外觀主版背面預覽](appearance/previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![A1 七材質外觀主版正面預覽](appearance/previews/front.png) | ![A1 七材質外觀主版背面預覽](appearance/previews/rear.png) |  |
 
 目前展示採[七材質外觀主版](appearance/README.zh-TW.md)，屋頂灰綠、太陽能板深藍與灰立面分開，不受四色工具數限制；可下載[通用七材質 3MF](appearance/a1-appearance-core.3mf)及[可編輯彩色場景](appearance/scene.blend)。[四色／四工具方案](multicolor/README.zh-TW.md)另作選配製造衍生版。原無支撐切片路線 **NO-GO**；開支撐僅完成生成比較，真機設定、支撐清除、黏結及試印未驗。
 
 原始單色幾何預覽只保留作歷史／製造比對，不代表目前配色：[舊正面](previews/front.png) · [舊背面](previews/rear.png)。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 舊正面<br>![舊正面](previews/front.png) | 舊背面<br>![舊背面](previews/rear.png) |  |
 
 ## 外觀依據
 

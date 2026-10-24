@@ -2,11 +2,15 @@
 
 2013–2014落成時期主要外觀的自建「來源比例近似版」，不是竣工測繪，也不表示亞洲大學全校建物完成。已在GitHub公開（[歷史提交](https://github.com/root50643/taiwan-buildings-3d/commit/6002ac2bc30d8f17a593b1aa398cc2e0f2920e1d)）；既有作者數位QA與程式重建比對報告通過，具日期及範圍的完整獨立放行紀錄未確認，並非判定審查失敗。公開狀態不代表所有QA或列印驗證均已完成。
 
-| 正面／角面（實際STL） | 背面（實際STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面／角面（實際STL）<br>![正面](previews/front.png) | 背面（實際STL）<br>![背面](previews/rear.png) |  |
 
 [頂視](previews/top.png) · [低視角正面](previews/source-front.png) · [模型STL](model.stl) · [可編輯Blend](scene.blend)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 低視角正面<br>![低視角正面](previews/source-front.png) |  |
 
 ## 範圍與比例
 - 保存同向錯位的三角樓層、尖薄屋簷、正面高架3F、沿三角邊內收的兩側厚牆、深退2F、不同方向出挑及中央三角凹庭。較低2F外伸角另有一層高厚支承及1F局部退縮，與前面兩層高牆分開。

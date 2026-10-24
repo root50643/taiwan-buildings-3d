@@ -7,6 +7,11 @@
 - [正面](previews/front.png)・[左側](previews/left.png)・[右側](previews/right.png)・[背面](previews/rear.png)・[俯視](previews/top.png)
 - [可重建來源ZIP](rebuild-source.zip)：解壓後依序執行 appearance/source/build_appearance.py、verify_exchange.py，再用 Blender --background --python 執行 render_appearance.py、verify_scene.py。numpy、lib3mf 2.5.0、Blender 4.3.2。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |
+| 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 ## 有限範圍
 逆原150°旋轉與1.209283792097708等比縮放，以實叉積外法向及全部三頂點測試110個有限平面／原48-chord段；local容差3e−5。沒有centroid近似、切三角、分割或新增玻璃幾何。普通32窗因白肋／冷氣混界拒絕；壁畫、下D筒樹遮域、框、環、灰頭、百葉、opaque牆、低閱讀台、屋頂、底座與其他面均不染。證據色界不宣稱材料接縫。原模型未描繪壁畫，本次未刪改藝術圖紋。
 

@@ -2,9 +2,9 @@
 
 來源限定外觀近似模型，含底座150×100×55.6 mm。範圍為平頂禮拜堂、分片開口鐘塔、東低翼露台、兩段外梯及一段短橋；不是全校完成或測繪復原。
 
-| 正面六材質外觀 | 背面原幾何，未確認色區中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面六材質外觀<br>![正面](appearance/previews/front.png) | 背面原幾何，未確認色區中性<br>![背面](appearance/previews/rear.png) |  |
 
 ## 最新外觀與下載
 
@@ -41,6 +41,13 @@ Python 3安裝requirements.txt後，依序執行python build_model.py、blender 
 ## 歷史單色圖與製造紀錄
 
 原 scene.blend／render_preview.py 與十張舊圖保留作幾何和製造 QA 證據，不是本版配色展示：[正面](previews/front.png)、[背面](previews/rear.png)、[左側](previews/left.png)、[右側](previews/right.png)、[頂視](previews/top.png)、[屋頂](previews/roof-detail.png)、[入口](previews/porch-detail.png)、[北側](previews/north-detail.png)、[塔頂](previews/tower-detail.png)、[南側](previews/south-detail.png)。舊 readme-view-check.json 記錄更新前的單色圖連結與雜湊，仍為歷史記錄；本次所有展示層與圖片由 appearance/ 的新驗證覆核。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 左側<br>![左側](previews/left.png) |
+| 右側<br>![右側](previews/right.png) | 頂視<br>![頂視](previews/top.png) | 屋頂<br>![屋頂](previews/roof-detail.png) |
+| 入口<br>![入口](previews/porch-detail.png) | 北側<br>![北側](previews/north-detail.png) | 塔頂<br>![塔頂](previews/tower-detail.png) |
+| 南側<br>![南側](previews/south-detail.png) |  |  |
 
 ## 獨立薄損例外補充
 278層460原Polygon均保持單一侵蝕／opening核心、零消失或分裂。72個跨層樣本分三族，並非72個實體構件。最大構件損失10.06010126136%、保留89.93989873864%；27整層超過1%，整層最大1.03166293445%。全部保留原WKT與正式opening，非凸折牆未用理想矩形替代。指定原面射線最薄1.23999269mm，最高折牆五處連續直達底座，沒有以角區mask代替實際厚度及根接證據。

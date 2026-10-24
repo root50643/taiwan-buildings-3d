@@ -4,13 +4,17 @@
 
 ## 最新六材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 背面與未見面保持中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/military-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依官方地圖照片登錄紅赭正面與小窗短端、暖白廊背及原厚化欄帶；深廊口不是玻璃。屋頂、背面與另一素面短端中性，不增加窗格或設備。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 ## 來源與像素檢視

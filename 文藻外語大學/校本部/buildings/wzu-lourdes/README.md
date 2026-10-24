@@ -2,10 +2,9 @@
 
 校本部／公開外觀近似模型。每棟獨立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 124.00 × 73.50 mm。
 
-![實際STL正面](previews/front.png)
-![實際STL背面](previews/rear.png)
-
-![實際STL俯視（如適用）](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) | ![實際STL俯視（如適用）](previews/top.png) |
 
 ## 外觀與範圍
 保留短返翼與長東返翼、中央較高廳堂、三層廊道、穿堂、兩排三跨窗與較高傳統屋頂。

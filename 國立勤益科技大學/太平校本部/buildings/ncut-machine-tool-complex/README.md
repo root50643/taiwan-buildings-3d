@@ -6,11 +6,15 @@
 
 ## 實際 STL 預覽
 
-| 教學樓前側 | 廠房背側 |
-| --- | --- |
-| ![由交付STL渲染的教學樓前側](previews/front.png) | ![由交付STL渲染的廠房背側](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 教學樓前側<br>![由交付STL渲染的教學樓前側](previews/front.png) | 廠房背側<br>![由交付STL渲染的廠房背側](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [院落與屋頂頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 院落與屋頂頂視<br>![院落與屋頂頂視](previews/top.png) |  |
 
 頂視中的高度色階只協助辨識院落地坪與不同屋頂標高，不代表實景塗色。正背面與院落頂視已完成外觀核對。
 

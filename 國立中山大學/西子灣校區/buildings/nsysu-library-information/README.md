@@ -2,9 +2,9 @@
 
 [返回西子灣校區](../../README.md) · [返回全校圖鑑](../../../README.md)
 
-| 實際 STL 正面 | 實際 STL 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
 [下載 STL](model.stl) · [可編輯 Blender](scene.blend) · [參數重建](build_model.py) · [幾何驗證](validation.json) · [全部來源](sources.json)
 
@@ -24,6 +24,10 @@
 - 實際高度與立面深度未有測量，樓層形態依照片比例估算；屋頂細部機電省略。
 
 [正立面](previews/elevation.png) · [俯視／屋頂](previews/top.png)。照片年代未提供，2026-10-13為查閱日，不代表拍攝日或全校現況確認。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 俯視／屋頂<br>![俯視／屋頂](previews/top.png) |  |
 
 ## 列印與數位檢查
 單位為毫米，底座朝下。可先用0.4mm噴嘴、0.2mm層高試切片，依材料和機器調整。柱直徑3.4mm，窗間實心分隔约1.3mm，頂冠凹深约5.5mm；頂冠出挑、門廊及扁弧凹口有懸垂，需切片檢查支撐。

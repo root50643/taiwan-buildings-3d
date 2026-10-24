@@ -2,9 +2,9 @@
 
 第七批；成功校區。尺寸 150 × 142 × 143 mm，最長邊150 mm含底座，各件比例獨立。
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 公開來源及像素檢視
 

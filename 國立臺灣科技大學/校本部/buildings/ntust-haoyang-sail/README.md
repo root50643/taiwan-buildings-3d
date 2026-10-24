@@ -13,9 +13,9 @@
 
 ## 模型預覽
 
-| 正面，實際STL | 背面，實際STL |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面，實際STL<br>![正面](previews/front.png) | 背面，實際STL<br>![背面](previews/rear.png) |  |
 
 ## 保留特徵
 

@@ -2,12 +2,14 @@
 
 遷建後完整門樓的**照片比例近似外觀模型**：拱形通道基座、上層中央門樓、單簷歇山主屋頂、兩側後退單坡附屋與前平台。非實測、非現況調查、非古蹟修復模型。
 
-![小西門模型正面](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![小西門模型正面](previews/front.png) |  |  |
 
-| 模型視角 | 模型視角 |
-|---|---|
-| ![校園背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![左斜視](previews/left_oblique.png) | ![俯視](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 模型視角<br>![校園背面](previews/rear.png) | 模型視角<br>![正立面](previews/elevation.png) | ![左斜視](previews/left_oblique.png) |
+| ![俯視](previews/top.png) |  |  |
 
 ## 檔案
 - [可編輯彩色 Blender](scene.blend)／[彩色 3MF](model.3mf)／[單色 STL](model.stl)

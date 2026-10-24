@@ -1,5 +1,11 @@
 # 蓮池潭龍虎塔｜可列印外觀微縮模型
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+
 ## 先下載列印檔
 
 [下載龍虎塔 STL：dragon_tiger_pagodas_150mm.stl](https://github.com/root50643/taiwan-landmark-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl)。此檔以 Release v1.0.0 附件提供，GitHub 原始碼 ZIP 不包含 model.stl。下載後請改名為 model.stl，置於本 README 所在目錄，再執行下列驗證、預覽或重建流程。STL 位元組及既有驗證雜湊均未變更。

@@ -2,10 +2,10 @@
 
 由原有 STL 的 **21,848 個三角面／10,608 個頂點**直接分配材質，面序與座標不變、不細分、不增建。這是外觀改版，不是新增建築或完整實景重建；尺寸仍為 146 × 150 × 約 52.56 mm。
 
-| 正面：僅一座屋頂與前立面配色 | 背面：未知處保留中性 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
-| ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面：僅一座屋頂與前立面配色<br>![正面](previews/front.png) | 背面：未知處保留中性<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
+| ![頂視](previews/top.png) |  |  |
 
 [表面色 3MF](pccu-appearance.3mf) · [可編輯 Blender](scene.blend) · [色表](palette.json) · [逐面指派與理由](face-materials.json) · [原 STL](../model.stl)
 

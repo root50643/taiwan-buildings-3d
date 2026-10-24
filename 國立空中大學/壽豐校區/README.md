@@ -6,7 +6,7 @@
 
 | 建築模型 |  |  |
 |:---:|:---:|:---:|
-| <a href="buildings/nou-shoufeng-teaching-2022/README.md"><img src="buildings/nou-shoufeng-teaching-2022/previews/front.png" width="150" alt="壽豐教學大樓內院向實際九件網格預覽"><img src="buildings/nou-shoufeng-teaching-2022/previews/rear.png" width="150" alt="壽豐教學大樓背側向實際九件網格預覽"></a><br>內院／背側<br>[教學大樓｜2022 外觀參考、九件分層列印](buildings/nou-shoufeng-teaching-2022/README.md)<br>156 × 126 × 48 mm；尺寸估計、未試印 |  |  |
+| [![壽豐教學大樓內院向實際九件網格預覽](buildings/nou-shoufeng-teaching-2022/previews/front.png)![壽豐教學大樓背側向實際九件網格預覽](buildings/nou-shoufeng-teaching-2022/previews/rear.png)](buildings/nou-shoufeng-teaching-2022/README.md)<br>內院／背側<br>[教學大樓｜2022 外觀參考、九件分層列印](buildings/nou-shoufeng-teaching-2022/README.md)<br>156 × 126 × 48 mm；尺寸估計、未試印 |  |  |
 
 只建四層、近直角 L 形教學樓與低屋突。排除右側紅色六層營運中心及白入口、SPA／餐飲／綜合／宿舍／壽豐會館／廚藝樓；沒有把蘆洲或東華校區混入。組裝參考 STL 不能當一體列印方案。九件需分別切片及列印，偶數 cap 於組裝時翻回；沒有試印、拆支撐或試合。薄特徵 opening 殘差與原失敗旗標保留，詳 [QA 與製造限制](buildings/nou-shoufeng-teaching-2022/QA-SUMMARY.md)。
 

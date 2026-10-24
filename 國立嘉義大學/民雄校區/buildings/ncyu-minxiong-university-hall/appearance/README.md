@@ -2,7 +2,9 @@
 
 新增外觀研究，不改原 STL 的2536個完整三角、座標或面序，不改歷史幾何/QA；不是新增一套建物。主館露出的白色前牆8面、前廳紅磚簷帶38面配色，其餘2490面中性。原單色預覽不作材料證據。
 
-![前方外觀](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![前方外觀](previews/front.png) |  |  |
 
 ## 範圍與限制
 - 主館白前牆：y=0、x[-6.25,43.75]、z[29.8,50.1]mm，8面、1014.99996mm²。包含同平面女兒牆，僅垂直前面。
@@ -15,6 +17,11 @@
 [可編輯3MF](ncyu-minxiong-university-hall-appearance.3mf)、[Blend](scene.blend)、[逐面材料](face-materials.json)、[色票](palette.json)、[來源](SOURCES.md)、[授權說明](LICENSE-NOTICE.md)、[可攜重建包](rebuild-source.zip)。
 
 [正面](previews/front.png)／[後方](previews/rear.png)／[前立面](previews/elevation.png)／[側面](previews/side.png)／[頂視](previews/top.png)。頂視依模型座標，不是地理北向圖。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 後方<br>![後方](previews/rear.png) | 前立面<br>![前立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) |
+| 頂視<br>![頂視](previews/top.png) |  |  |
 
 將重建包解壓後於 appearance/source 安裝 requirements.txt，依序執行 build_appearance.py、verify_exchange.py、verify_material_boundaries.py；Blender 4.3.2以 `blender -b -t 2 -P appearance/source/render_appearance.py` 產生Blend與五圖，再同法執行 verify_scene.py。原STL在appearance上一層。固定環境下乾淨重建3MF/maps/五PNG逐bytes一致；Blend作幾何/材料/編輯語義驗證，不宣稱二進位一致。
 

@@ -2,11 +2,16 @@
 
 2022正面/西側照片與2024全屋頂為主要依據，2009池側及官方其他角度補證的完整主體有界近似；不是測繪、同年完整復原或全校完成。
 
-| 正面 | 背面 |
-|---|---|
-| ![正面 actual STL](previews/front.png) | ![背面 actual STL](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面 actual STL](previews/front.png) | 背面<br>![背面 actual STL](previews/rear.png) |  |
 
 [頂圖](previews/top.png) · [側東](previews/east.png) · [側西](previews/west.png) · [正立向](previews/north.png) · [斜俯視](previews/aerial.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂圖<br>![頂圖](previews/top.png) | 側東<br>![側東](previews/east.png) | 側西<br>![側西](previews/west.png) |
+| 正立向<br>![正立向](previews/north.png) | 斜俯視<br>![斜俯視](previews/aerial.png) |  |
 
 ## 檔案與尺度
 - [model.stl](model.stl)：毫米，含底座150×145×66.550003mm，底座朝下。

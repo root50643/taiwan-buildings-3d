@@ -4,7 +4,9 @@
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nthu-innovation-incubation-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-![創新育成中心磚框與低翼深灰簷前臉限域代理](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![創新育成中心磚框與低翼深灰簷前臉限域代理](appearance/previews/front.png) |  |  |
 
 僅高棟湖側暖磚框前臉12個完整原面及低翼深灰簷前臉2面，合計1263.87546mm²；其他8652面中性。全頂點有限平面域、前向法向選面，不切面、不為填補磚框缺口擴染。內側窄框、玻璃、彩色葉片、草頂、水平簷面、側背與未知區均中性；不是全棟材質復原。九典三張完工照拍攝日期未知：EXIF三日期空，XMP2012為工具版本，作品2011–2016與URL2024/11均非拍攝日，不稱2026現況。未校準目視代理，原8666面座標／面序／STL與歷史QA不變、不增套。兩翼深度與低層邊界等原近似仍保留；鄰棟不納入，未實體試印，照片不分發。
 
@@ -65,6 +67,6 @@ python check_layers.py
 
 ## 實際STL正背並排
 
-| 正面 | 背面（未見部分按詳頁明示簡化） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

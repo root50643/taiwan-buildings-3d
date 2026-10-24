@@ -2,11 +2,15 @@
 
 **2012 年完工建築群中的單座地上入口棚**：依建築師兩張相反方向的竣工照片，取總覽照前景、同一座折板棚，另附明確裁切的地下入口鄰接示意。不包含整座運動中心、實習旅館、另一座棚或地下網路，亦不代表全校完成。
 
-| 步道側 | 跑道側 |
-|---|---|
-| ![步道側](previews/front.png) | ![跑道側](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 步道側<br>![步道側](previews/front.png) | 跑道側<br>![跑道側](previews/rear.png) |  |
 
 [頂視](previews/top.png) · [步道立面](previews/elevation.png) · [另一端](previews/path_end.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 步道立面<br>![步道立面](previews/elevation.png) | 另一端<br>![另一端](previews/path_end.png) |
 
 ## 檔案
 - [彩色可編輯 3MF](model.3mf)：6 種逐面顯示材質；不是多材料擠出機設定。

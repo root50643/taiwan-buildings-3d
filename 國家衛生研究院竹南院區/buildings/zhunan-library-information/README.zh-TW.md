@@ -2,9 +2,9 @@
 
 ## 5 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 來源支持的後側窗格 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持的後側窗格<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nhrilib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,8 +13,9 @@
 
 依公開院區配置與外觀照片製作的單體 FDM 微縮模型，包含相連低矮翼與前方柱廊。圖書館、資訊中心與會議空間不重複計為三棟。核對日期：2026-10-11。
 
-![柱廊側實際 STL 預覽](previews/front.png)
-![外側實際 STL 預覽](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![柱廊側實際 STL 預覽](previews/front.png) | ![外側實際 STL 預覽](previews/rear.png) |  |
 
 ## 模型與辨識依據
 

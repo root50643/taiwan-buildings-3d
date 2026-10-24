@@ -2,9 +2,9 @@
 
 第十二批；光復校區。校方GIS A040，財產校碼R1A-34-0。尺寸約 150 × 138 × 59.9 mm，含底座最長邊150 mm，各件獨立比例。
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 建模範圍與近似
 
@@ -37,5 +37,9 @@
 - `python validate_sections.py` 執行固定共同邊方向0.2 mm截面閉合檢查；拒絕不閉合／退化輪廓
 - `python check_thin.py` 執行每1 mm取樣、0.8 mm形態開運算薄特徵輔助篩查
 - [原始驗證](validation.json)、[截面結果](cross_sections.json)、[薄特徵結果](thin-feature-check.json)、[結構化來源](sources.json)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 立面圖<br>![立面圖](previews/elevation.png) |  |  |
 
 任一原始驗證false或程式非零退出碼，整批均不可封版；沒有窮盡自交檢測或實體列印保證。原始參考照片與地圖只供內部核對，不放公開包。

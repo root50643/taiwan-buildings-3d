@@ -6,11 +6,15 @@
 
 以下兩張圖均由本包實際 STL 渲染；材質僅供構件辨識，來源照片不包含在模型包內。
 
-| 正面斜視 | 背面斜視 |
-| --- | --- |
-| ![實際 STL 正面斜視](previews/front.png) | ![實際 STL 背面斜視](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面斜視<br>![實際 STL 正面斜視](previews/front.png) | 背面斜視<br>![實際 STL 背面斜視](previews/rear.png) |  |
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [俯視圖](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視圖<br>![俯視圖](previews/top.png) |  |  |
 
 
 依 MAYU architects 公開的 2022 建成案圖面與照片，重建成功校區大新園西棟（Alumni Club）。這是適合小比例實體製作的外觀近似模型，並非測繪、BIM、施工圖、室內模型或 2026 現況紀錄。

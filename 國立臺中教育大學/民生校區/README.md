@@ -1,5 +1,11 @@
 # 國立臺中教育大學｜民生校區
 
+## 模型圖鑑
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 行政樓中央入口段<br>[![行政樓中央入口段](buildings/ntcu-administration-central-section/previews/front.png)](buildings/ntcu-administration-central-section/README.md) | 中正樓入口段<br>[![中正樓入口段](buildings/ntcu-zhongzheng-entrance-section/previews/front.png)](buildings/ntcu-zhongzheng-entrance-section/README.md) |  |
+
 兩件局部入口模型，不是整棟或全校完成：
 - [行政樓中央入口段](buildings/ntcu-administration-central-section/README.md)：三層窗組與淺弧拱山牆門廊，頂端三格為飾格。
 - [中正樓入口段](buildings/ntcu-zhongzheng-entrance-section/README.md)：雙主柱、深凹門廊與齊平玻璃帶。未知後殿未建。

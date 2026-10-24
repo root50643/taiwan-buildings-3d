@@ -2,9 +2,9 @@
 
 本批僅合心樓2A（圖書館及行政翼）的有界外觀近似，未完成整校。建物2001-06-03完工；分館2007-09開館。2024合校後以同一慈濟大學計數，不另算原慈濟科技大學。
 
-| 同件北玻璃及架空面 | 同件南側及長翼 |
-|---|---|
-| [![北側](buildings/tcu-hexin-library-2001/appearance/previews/front.png)](buildings/tcu-hexin-library-2001/README.md) | [![南側](buildings/tcu-hexin-library-2001/appearance/previews/rear.png)](buildings/tcu-hexin-library-2001/README.md) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 同件北玻璃及架空面<br>[![北側](buildings/tcu-hexin-library-2001/appearance/previews/front.png)](buildings/tcu-hexin-library-2001/README.md) | 同件南側及長翼<br>[![南側](buildings/tcu-hexin-library-2001/appearance/previews/rear.png)](buildings/tcu-hexin-library-2001/README.md) |  |
 
 [完整說明](buildings/tcu-hexin-library-2001/README.md) · [STL](buildings/tcu-hexin-library-2001/model.stl) · [Blend](buildings/tcu-hexin-library-2001/scene.blend) · [原創源](buildings/tcu-hexin-library-2001/build_model.py) · [頂圖](buildings/tcu-hexin-library-2001/previews/top.png) · [來源](buildings/tcu-hexin-library-2001/sources.json) · [QA](buildings/tcu-hexin-library-2001/qa-summary.json) · [有限原面彩色外觀](buildings/tcu-hexin-library-2001/appearance/README.md)
 

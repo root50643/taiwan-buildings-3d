@@ -18,9 +18,9 @@
 |---|---|---|
 | ![](previews/front.png) | ![](previews/rear.png) | ![](previews/elevation.png) |
 
-| 右側 | 頂視 |
-|---|---|
-| ![](previews/side.png) | ![](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 右側<br>![](previews/side.png) | 頂視<br>![](previews/top.png) |  |
 
 ## 重建與驗證
 原model.stl置於appearance上層；依賴見source/requirements.txt；Blender 4.3.2。

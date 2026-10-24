@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="林口校區/buildings/cgust-linkou-gym/previews/v10/front.png" alt="林口體育館兩段弧頂與入口模型" width="260">](林口校區/buildings/cgust-linkou-gym/README.md)<br>**[林口體育館｜相對比例外觀代表](林口校區/buildings/cgust-linkou-gym/README.md)**<br>高低分段主弧頂、偏置次弧頂及露空支架<br>146 × 222 × 53 mm |  |  |
+| [![林口體育館兩段弧頂與入口模型](林口校區/buildings/cgust-linkou-gym/previews/v10/front.png)](林口校區/buildings/cgust-linkou-gym/README.md)<br>**[林口體育館｜相對比例外觀代表](林口校區/buildings/cgust-linkou-gym/README.md)**<br>高低分段主弧頂、偏置次弧頂及露空支架<br>146 × 222 × 53 mm |  |  |
 
 [完整模型、正反並排預覽與下載](林口校區/buildings/cgust-linkou-gym/README.md) · [來源摘要](inventory/sources/cgust-linkou-gym-source-summary.md) · [QA摘要](inventory/qa/cgust-linkou-gym-review.md)
 

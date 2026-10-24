@@ -4,9 +4,9 @@
 
 ## [尚志教育研究館](buildings/ttu-shangzhi-hall/README.md)
 
-| 東面入口側 | 西面背側 |
-|---|---|
-| ![東面入口側](buildings/ttu-shangzhi-hall/appearance/previews/front.png) | ![西面背側](buildings/ttu-shangzhi-hall/appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 東面入口側<br>![東面入口側](buildings/ttu-shangzhi-hall/appearance/previews/front.png) | 西面背側<br>![西面背側](buildings/ttu-shangzhi-hall/appearance/previews/rear.png) |  |
 
 一件正背並排，不以不同角度冒充多棟。高度、鼓座及圓頂為照片比例近似，非實測；低翼雙庭院保留。挑空門廊與西側懸鐘需評估支撐，勿任意縮小，未實體試印。完整來源、限制及檔案見模型README。
 

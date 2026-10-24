@@ -2,9 +2,9 @@
 
 **範圍：局部段，圖書館與博物館合計一棟。此為自建可列印外觀近似，不是测繪成果。**
 
-| 正面 actual STL | 背面 actual STL |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面 actual STL<br>![正面](previews/front.png) | 背面 actual STL<br>![背面](previews/rear.png) |  |
 
 ## 幾何與來源界線
 保留三列主要上層窗帶、外凸水平遮陽帶、直向格柵、左側轉角、低層入口／停車開口與前側階梯。只製作可見前侧及短左轉角，並非全館。

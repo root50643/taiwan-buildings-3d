@@ -2,7 +2,9 @@
 
 [學校目錄](../../../README.md) · [校區目錄](../../README.md)
 
-![實際STL正面及背面並排](previews/front-rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
 
 ## 範圍與外觀
 保留三層入口圓弧立面、雙層挑空雙圓柱門廊、窄直窗列、較低的兩侧翼、縱向桶拱大屋頂及2020屋頂更新後可見的光導採光罩。
@@ -19,6 +21,10 @@
 - [來源與不確定性](sources.json)
 - [幾何驗證](validation.json) · [0.2mm層檢查](layer-check.json) · [輪廓多邊形有效性](contour-validity-check.json) · [0.8mm參考薄特徵篩查](thin-feature-check.json)
 - [SHA256](SHA256SUMS.txt) · [重跑檢查](check_all.sh)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 重建與驗證
 需要 Python 3.12、requirements.txt 所列套件與 Blender 4.3.2+。在本目錄安裝依賴後執行：

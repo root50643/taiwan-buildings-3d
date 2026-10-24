@@ -2,9 +2,9 @@
 
 以校方標稱2014空拍外觀、2025年10月配置圖的相對平面關係交叉約束，保留三層入口挑空、開放三角中庭、低翼與較小高體、分層深廊及分段露空屋頂。
 
-| 入口斜視 | 後側斜視 |
-| :---: | :---: |
-| ![入口斜視](qa/render-check/v13/sanitized-previews/front.png) | ![後側斜視](qa/render-check/v13/sanitized-previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口斜視<br>![入口斜視](qa/render-check/v13/sanitized-previews/front.png) | 後側斜視<br>![後側斜視](qa/render-check/v13/sanitized-previews/rear.png) |  |
 
 [下載 STL](models/v13/model.stl) · [下載 Blender 場景](models/v13/scene.blend) · [列印限制](PRINTING-LIMITS.md) · [估計與簡化](ESTIMATES-AND-SIMPLIFICATIONS.md) · [完整QA與還原](qa/README.md)
 
@@ -24,7 +24,9 @@
 | :---: | :---: | :---: |
 | ![入口正向](qa/render-check/v13/sanitized-previews/north.png) | ![後側正向](qa/render-check/v13/sanitized-previews/south.png) | ![中庭深廊](qa/render-check/v13/sanitized-previews/courtyard-gallery.png) |
 
-![屋頂分段與露空近景](qa/render-check/v13/sanitized-previews/courtyard-arcade.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![屋頂分段與露空近景](qa/render-check/v13/sanitized-previews/courtyard-arcade.png) |  |  |
 
 視圖鍵名為固定驗證介面，沒有已知地理方位的主張。公開九圖只移除指定非視覺metadata，原圖像資料與解碼像素不變。
 

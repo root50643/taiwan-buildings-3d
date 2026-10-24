@@ -6,8 +6,8 @@
 
 | 行政大樓 | 大禮堂前門廊段 | 圖資中央塔樓與門廊段 |
 |---|---|---|
-| [<img src="buildings/ccu-administration-complex/previews/front.png" alt="行政大樓連體群" width="220">](buildings/ccu-administration-complex/README.md)<br>[行政大樓連體群](buildings/ccu-administration-complex/README.md) | [<img src="buildings/ccu-auditorium-front-section/appearance/previews/front.png" alt="大禮堂前門廊段" width="220">](buildings/ccu-auditorium-front-section/README.md)<br>[大禮堂前門廊段](buildings/ccu-auditorium-front-section/README.md) | [<img src="buildings/ccu-library-central-tower-section/previews/front.png" alt="圖書資訊大樓中央塔樓與門廊段" width="220">](buildings/ccu-library-central-tower-section/README.md)<br>[圖書資訊大樓中央塔樓與門廊段](buildings/ccu-library-central-tower-section/README.md) |
-| [<img src="buildings/ccu-shared-classroom-complex/previews/front.png" alt="共同教室大樓" width="220">](buildings/ccu-shared-classroom-complex/README.md)<br>[共同教室大樓：完整量體近似](buildings/ccu-shared-classroom-complex/README.md) |  |  |
+| [![行政大樓連體群](buildings/ccu-administration-complex/previews/front.png)](buildings/ccu-administration-complex/README.md)<br>[行政大樓連體群](buildings/ccu-administration-complex/README.md) | [![大禮堂前門廊段](buildings/ccu-auditorium-front-section/appearance/previews/front.png)](buildings/ccu-auditorium-front-section/README.md)<br>[大禮堂前門廊段](buildings/ccu-auditorium-front-section/README.md) | [![圖書資訊大樓中央塔樓與門廊段](buildings/ccu-library-central-tower-section/previews/front.png)](buildings/ccu-library-central-tower-section/README.md)<br>[圖書資訊大樓中央塔樓與門廊段](buildings/ccu-library-central-tower-section/README.md) |
+| [![共同教室大樓](buildings/ccu-shared-classroom-complex/previews/front.png)](buildings/ccu-shared-classroom-complex/README.md)<br>[共同教室大樓：完整量體近似](buildings/ccu-shared-classroom-complex/README.md) |  |  |
 
 ## 校區與完成範圍
 

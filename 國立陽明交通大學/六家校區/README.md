@@ -8,4 +8,6 @@
 
 [六材質外觀與來源界線](buildings/nycu-hakka-round-building/appearance/README.md)
 
-![圓樓外觀](buildings/nycu-hakka-round-building/appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![圓樓外觀](buildings/nycu-hakka-round-building/appearance/previews/front.png) |  |  |

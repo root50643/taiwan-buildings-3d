@@ -2,7 +2,9 @@
 
 斗六校區，雲泰表演廳旁獨立鐘塔。完整地上主體的公開照片近似模型，非實測復原；2017、2018、2020校方照片外觀，不宣稱目前狀況。
 
-![實際模型正面斜視](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際模型正面斜視](previews/front.png) |  |  |
 
 ## 下載／編輯
 - [STL列印幾何](model.stl)：70×70×183 mm，單一封閉連通網格。
@@ -19,9 +21,10 @@ I型鋼翼板0.85mm、腹板1mm，鐘籠桿1.2mm，細長鋼柱與懸吊鐘有�
 Python套件見requirements.txt：`python build_model.py`、`python qa_model.py`、`python check_features.py`。Blender以`blender -b --python-exit-code 1 --python render_model.py`生成五張圖與scene.blend，再執行verify_scene.py及verify_render.py。官方lib3mf Python SDK供verify_exchange.py；BUILD_PYTHON指定具manifold3d等套件的Python。驗證報告及SHA256SUMS綁定交付檔案，不是列印認證。
 
 ## 其他視角
-![背斜視](previews/rear.png)
-![正立面](previews/elevation.png)
-![頂視](previews/top.png)
-![左斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![背斜視](previews/rear.png) | ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| ![左斜視](previews/left_oblique.png) |  |  |
 
 模型與程式依LICENSE；官方來源照片權利不在此授權內，未重新散布。

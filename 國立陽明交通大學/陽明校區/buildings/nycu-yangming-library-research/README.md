@@ -2,9 +2,9 @@
 
 ## 5 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 來源支持後端／混合窗區中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持後端／混合窗區中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nycuyangming-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,11 +13,15 @@
 
 國立陽明交通大學｜陽明校區。完整主量體的公開照片外觀近似；入口、球場側與階梯端細節有實拍支持，未見的外侧長立面及後中段保留簡化牆面，非完整立面紀錄或測繪。
 
-| 實際 STL 正面 | 實際 STL 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 範圍與來源
 

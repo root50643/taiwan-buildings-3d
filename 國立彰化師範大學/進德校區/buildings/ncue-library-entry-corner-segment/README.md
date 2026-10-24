@@ -2,11 +2,15 @@
 
 國立彰化師範大學・進德校區。依公開實拍自建的局部外觀近似模型，非全館測繪；每館獨立比例，無法以本件直接推算現地尺寸。
 
-| 正面（實際 STL） | 背側收邊（實際 STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背側](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（實際 STL）<br>![正面](previews/front.png) | 背側收邊（實際 STL）<br>![背側](previews/rear.png) |  |
 
 [下載 STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py) · [頂視圖](previews/top.png) · [來源紀錄](sources.json)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) |  |  |
 
 ## 保留的外觀
 

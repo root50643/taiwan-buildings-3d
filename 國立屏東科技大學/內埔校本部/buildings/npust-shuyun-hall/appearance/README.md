@@ -13,4 +13,9 @@
 - [色票](palette.json)、[原面對照](face-materials.json)、[來源](SOURCES.md)、[許可](LICENSE-NOTICE.md)
 - 五圖：[正斜](previews/front.png)、[後斜](previews/rear.png)、[正立](previews/elevation.png)、[側面](previews/side.png)、[頂面](previews/top.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正斜<br>![正斜](previews/front.png) | 後斜<br>![後斜](previews/rear.png) | 正立<br>![正立](previews/elevation.png) |
+| 側面<br>![側面](previews/side.png) | 頂面<br>![頂面](previews/top.png) |  |
+
 原 model.stl 與 appearance 同父層。Python numpy 2.3.5、lib3mf 2.5.0 依序執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py、source/verify_scene.py。strict 3MF真材質改存讀；Blend真材質/頂點改存讀及重開render；乾淨重建3MF、maps、五PNG bytes一致，Blend僅語義一致。

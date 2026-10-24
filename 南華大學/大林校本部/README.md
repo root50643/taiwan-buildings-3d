@@ -6,6 +6,6 @@
 
 | 無盡藏圖書館正面 | 無盡藏圖書館背面 | 成均館 |
 |---|---|---|
-| <img src="buildings/nhu-wujinzang-library/appearance/previews/front.png" alt="正面（屋頂限域配色）" width="220"> | <img src="buildings/nhu-wujinzang-library/appearance/previews/rear.png" alt="背面（屋頂限域配色）" width="220">  | [<img src="buildings/nhu-chengjun-hall/previews/front.png" alt="成均館（校方照片與調查圖參考外觀近似版；照片年代未定）：實際模型預覽" width="220">](buildings/nhu-chengjun-hall/README.md)<br>**[成均館（校方照片與調查圖參考外觀近似版；照片年代未定）](buildings/nhu-chengjun-hall/README.md)** |
+| ![正面（屋頂限域配色）](buildings/nhu-wujinzang-library/appearance/previews/front.png) | ![背面（屋頂限域配色）](buildings/nhu-wujinzang-library/appearance/previews/rear.png)  | [![成均館（校方照片與調查圖參考外觀近似版；照片年代未定）：實際模型預覽](buildings/nhu-chengjun-hall/previews/front.png)](buildings/nhu-chengjun-hall/README.md)<br>**[成均館（校方照片與調查圖參考外觀近似版；照片年代未定）](buildings/nhu-chengjun-hall/README.md)** |
 
 白覆蓋與前紅坡為官方實景支持的限域配色；其餘未確認面保持中性，攝影年月限制見模型配色說明。

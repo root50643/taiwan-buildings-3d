@@ -6,11 +6,15 @@
 
 以下是交付STL網格的實際渲染，不是概念示意；入口與庭院兩側並列。史料照片不包含在公開套件內。
 
-| 入口側：會堂、外階梯與月洞門 | 庭院側：下沉庭院與練習室外伸隔牆 |
-| --- | --- |
-| ![入口側實際STL渲染](output/preview-entrance.png) | ![庭院側實際STL渲染](output/preview-courtyard.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口側：會堂、外階梯與月洞門<br>![入口側實際STL渲染](output/preview-entrance.png) | 庭院側：下沉庭院與練習室外伸隔牆<br>![庭院側實際STL渲染](output/preview-courtyard.png) |  |
 
 [俯視圖](output/preview-plan.png) · [列印STL](output/model.stl) · [Blender場景](output/model.blend)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視圖<br>![俯視圖](output/preview-plan.png) |  |  |
 
 ## 模型與列印
 

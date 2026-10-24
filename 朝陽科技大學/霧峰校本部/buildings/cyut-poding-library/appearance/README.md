@@ -7,6 +7,11 @@
 - [正面](previews/front.png)・[左側](previews/left.png)・[右側](previews/right.png)・[背面](previews/rear.png)・[俯視](previews/top.png)
 - [重建原始碼ZIP](rebuild-source.zip)；Python numpy、lib3mf 2.5.0，Blender 4.3.2。解壓後依序執行 source/build_appearance.py、verify_exchange.py，再以 Blender --background --python 執行 render_appearance.py、verify_scene.py。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |
+| 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 ## 範圍與未知
 只涵蓋主立面上兩排窗、上／中長窗帶、塔上部實窗背及左後退高塊六窗。不擴染紅灰大牆、下方27窗組、低塔窗、拱背、門廊槽、百葉、雙折屋頂、框／橫檔／分格、背面、側牆、階梯和底座；沒有新增幾何、切面或以三角形硬湊材料邊界。原簡化窗分割節奏保持，不等於逐片實景窗格測繪。
 

@@ -2,9 +2,9 @@
 
 這是一件依公開資料自行建立、供3D列印使用的完整四層主棟外形近似模型，不是全校區、精密測繪或2025修復後現況。模型年代為1965竣工原始形態，排除1966–1967及後續底層增建教室、現代電梯、相鄰體育館與宿舍等另外建物。
 
-| 南面斜視，實際STL | 北面斜視，實際STL |
-|---|---|
-| ![南面](previews/front.png) | ![北面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 南面斜視，實際STL<br>![南面](previews/front.png) | 北面斜視，實際STL<br>![北面](previews/rear.png) |  |
 
 ## 保留與近似
 
@@ -31,6 +31,11 @@
 - [來源紀錄](sources.json)、[完整QA摘要](qa-summary.json)、[原網格與重建驗證](validation.json)
 - [0.2mm逐層逐Polygon檢查](layer-component-check.json)、[空間射線與淨空量測](open-space-check.json)、[PNG重繪一致性](preview-check.json)
 - [北面近照](previews/rear-detail.png)、[正立面](previews/south.png)、[背立面](previews/north.png)、[東側面](previews/east.png)、[俯視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 北面近照<br>![北面近照](previews/rear-detail.png) | 正立面<br>![正立面](previews/south.png) | 背立面<br>![背立面](previews/north.png) |
+| 東側面<br>![東側面](previews/east.png) | 俯視<br>![俯視](previews/top.png) |  |
 
 使用Python 3.12及Blender 4.3.2測試。先安裝requirements，執行build_model.py產生STL，再用Blender背景模式執行render_preview.py，接著執行clean_previews.py清除PNG中繼資料。執行validate_all.py重跑全部檢查。請在副本操作，勿更改已凍結原件。
 

@@ -1,12 +1,19 @@
 # 國立清華大學｜奕亭
 
-![奕亭完整簡化外觀](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![奕亭完整簡化外觀](previews/front.png) |  |  |
 
 依2010、2012、2013、2018歷史照片重建的完整簡化木亭；位於校本部南側奕園。不是整座奕園、不是南大校區，也不是2026現況測繪。
 
 - [彩色可編輯 Blender](scene.blend)、[彩色3MF](model.3mf)、[單色STL](model.stl)
 - [正面斜視](previews/front.png) · [背側推定面](previews/rear.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png) · [左斜視](previews/left_oblique.png)
 - [來源與推定界線](SOURCES.md) · [檢測與列印限制](QA.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 背側推定面<br>![背側推定面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) |  |  |
 
 低四坡方屋頂、四角木柱、柱旁梯格、屋下屋架及側後長凳低欄。前方中央通道保持開放。後側欄格規律化為推定，沒有獨立後側全貌照片；不是修復級或全向實測複製品。
 

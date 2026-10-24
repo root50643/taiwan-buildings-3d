@@ -6,8 +6,9 @@
 
 ## 模型與下載
 
-![實際STL正面與背面](previews/front-rear.png)
-![實際STL頂視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面與背面](previews/front-rear.png) | ![實際STL頂視](previews/top.png) |  |
 
 - [STL列印模型](model.stl)
 - [可編輯Blender場景](scene.blend)：匯入實際交付STL的單一網格；各色僅為預覽材質

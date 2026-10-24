@@ -2,9 +2,9 @@
 
 ## 3 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nptustudententry-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,11 +13,13 @@
 
 這是依公開完成照片自建的局部外觀模型，非全館測繪、全校模型或精確比例復原。所屬實體建物：**活動中心**。
 
-| 實際 STL 正面 | 實際 STL 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
-![實際STL頂視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL頂視](previews/top.png) |  |  |
 
 ## 外觀範圍
 

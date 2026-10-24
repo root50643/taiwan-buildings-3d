@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正面<br><img src="內埔校本部/buildings/npust-shuyun-hall/appearance/previews/front.png" alt="述耘堂正面紅板白帶限域配色" width="220"><br>背面<br><img src="內埔校本部/buildings/npust-shuyun-hall/appearance/previews/rear.png" alt="述耘堂背面" width="220"> | [<img src="內埔校本部/buildings/npust-yukang-library/appearance/previews/front.png" alt="玉崗紀念圖書館前中央有限配色：其餘中性" width="220">](內埔校本部/buildings/npust-yukang-library/appearance/README.md)<br>**[玉崗紀念圖書館（前中央有限配色）](內埔校本部/buildings/npust-yukang-library/appearance/README.md)** | [<img src="內埔校本部/buildings/npust-second-refectory/previews/front.png" alt="第二餐廳：實際模型預覽" width="220">](內埔校本部/buildings/npust-second-refectory/README.md)<br>**[第二餐廳](內埔校本部/buildings/npust-second-refectory/README.md)** |
+| 正面<br>![述耘堂正面紅板白帶限域配色](內埔校本部/buildings/npust-shuyun-hall/appearance/previews/front.png)<br>背面<br>![述耘堂背面](內埔校本部/buildings/npust-shuyun-hall/appearance/previews/rear.png) | [![玉崗紀念圖書館前中央有限配色：其餘中性](內埔校本部/buildings/npust-yukang-library/appearance/previews/front.png)](內埔校本部/buildings/npust-yukang-library/appearance/README.md)<br>**[玉崗紀念圖書館（前中央有限配色）](內埔校本部/buildings/npust-yukang-library/appearance/README.md)** | [![第二餐廳：實際模型預覽](內埔校本部/buildings/npust-second-refectory/previews/front.png)](內埔校本部/buildings/npust-second-refectory/README.md)<br>**[第二餐廳](內埔校本部/buildings/npust-second-refectory/README.md)** |
 
 ## 第二餐廳
 

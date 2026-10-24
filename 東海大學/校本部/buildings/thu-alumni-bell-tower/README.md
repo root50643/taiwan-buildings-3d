@@ -1,6 +1,8 @@
 # 東海大學 文理大道校友鐘樓
 
-![校友鐘樓模型](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![校友鐘樓模型](previews/front.png) |  |  |
 
 **新增完整塔體幾何｜依2019官方相簿與2022攝影者照片近似；不是現場測繪，不宣稱2026現況。** 這是文理大道的校友鐘樓，並非教堂旁四牆式畢律斯鐘樓。
 
@@ -21,10 +23,11 @@
 水密不等於可直接列印。十一橫板下緣、懸鐘與鐘舌需要切片器支撐／方向評估；鐘壁局部低於0.8mm侵蝕門檻，詳見QA原樣保留的失敗。**無實體試印，不認證免支撐、最小法向厚度、強度或切片器相容性。**
 
 ## 五個實際交付網格視角
-![背斜視](previews/rear.png)
-![正立面](previews/elevation.png)
-![頂視](previews/top.png)
-![左斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![背斜視](previews/rear.png) | ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| ![左斜視](previews/left_oblique.png) |  |  |
 
 ## 重建與驗證
 Python依賴見requirements.txt；另需lib3mf官方SDK、Blender4.3.2。

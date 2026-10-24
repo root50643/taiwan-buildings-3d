@@ -4,8 +4,8 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [行政大樓](buildings/nsysu-administration/README.md)<br><img src="buildings/nsysu-administration/previews/front.png" alt="行政大樓 STL" width="220"> | [圖資大樓](buildings/nsysu-library-information/README.md)<br><img src="buildings/nsysu-library-information/previews/front.png" alt="圖資大樓 STL" width="220"> | [逸仙館](buildings/nsysu-yatsen-hall/README.md)<br><img src="buildings/nsysu-yatsen-hall/appearance/previews/front.png" alt="逸仙館限域磚紅外觀代理" width="220"> |
-| [西子樓校友會館・推薦六件製造方案](buildings/nsysu-xizi-alumni-hall/manufacturing/v2/README.md)<br><img src="buildings/nsysu-xizi-alumni-hall/manufacturing/v2/previews/assembled.png" alt="西子樓六件 STL 組裝預覽" width="220"> | [<img src="buildings/nsysu-bridge-pavilion/previews/front.png" alt="國立中山大學橋上涼亭：實際模型預覽" width="220">](buildings/nsysu-bridge-pavilion/README.md)<br>**[國立中山大學橋上涼亭](buildings/nsysu-bridge-pavilion/README.md)** |  |
+| [行政大樓](buildings/nsysu-administration/README.md)<br>![行政大樓 STL](buildings/nsysu-administration/previews/front.png) | [圖資大樓](buildings/nsysu-library-information/README.md)<br>![圖資大樓 STL](buildings/nsysu-library-information/previews/front.png) | [逸仙館](buildings/nsysu-yatsen-hall/README.md)<br>![逸仙館限域磚紅外觀代理](buildings/nsysu-yatsen-hall/appearance/previews/front.png) |
+| [西子樓校友會館・推薦六件製造方案](buildings/nsysu-xizi-alumni-hall/manufacturing/v2/README.md)<br>![西子樓六件 STL 組裝預覽](buildings/nsysu-xizi-alumni-hall/manufacturing/v2/previews/assembled.png) | [![國立中山大學橋上涼亭：實際模型預覽](buildings/nsysu-bridge-pavilion/previews/front.png)](buildings/nsysu-bridge-pavilion/README.md)<br>**[國立中山大學橋上涼亭](buildings/nsysu-bridge-pavilion/README.md)** |  |
 
 西子樓不是逸仙館別名；[原單件](buildings/nsysu-xizi-alumni-hall/README.md)仍保留且需要支撐。六件變體與原單件合計只算一套。推薦方案須保留供應印向，使用0.4mm噴嘴、0.15mm層高與100% rectilinear逐件列印；指定條件下已實際切片，支撐擠出為0，01件仍有19條短橋、最大未覆蓋段約0.225001mm。尚未試印、拆brim、乾組或膠合；generic G-code僅為覆核證據，請依真機重切。來源照片拍攝日期未知，PDF metadata不是測繪或刊登日期，不宣稱已驗證2026現況。
 

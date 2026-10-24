@@ -6,13 +6,13 @@
 
 依官方平面與實照修正外梯、雙陽臺及門洞所在立面，並修正外梯升向。以凸盒為模型正面 y−，外梯在 x− 左側往正面上升，雙陽臺在 x+ 右鄰面；不是地理方位。[來源、修訂細節、可重建源碼與新版檢查](facade-layout-v2/README.md)。原高度、細部尺寸仍是近似，不能稱為完整比例校準。
 
-| 凸盒正面 y− 與右鄰陽臺面 x+ | 左側外梯 x−，往正面上升 |
-|---|---|
-| ![修訂正面](facade-layout-v2/previews/front.png) | ![修訂外梯](facade-layout-v2/previews/stairs.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 凸盒正面 y− 與右鄰陽臺面 x+<br>![修訂正面](facade-layout-v2/previews/front.png) | 左側外梯 x−，往正面上升<br>![修訂外梯](facade-layout-v2/previews/stairs.png) |  |
 
-| 後面 y+ 保守中性 | 俯視 x− 左／x+ 右／y− 下 |
-|---|---|
-| ![修訂後面](facade-layout-v2/previews/rear.png) | ![修訂俯視](facade-layout-v2/previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 後面 y+ 保守中性<br>![修訂後面](facade-layout-v2/previews/rear.png) | 俯視 x− 左／x+ 右／y− 下<br>![修訂俯視](facade-layout-v2/previews/top.png) |  |
 
 含底座仍為 150 × 142 × 98 mm；752 頂點、1524 三角面。新版重新檢查水密／流形／法線／退化面、重建一致性及 490 個截層；仍有 11 層薄特徵警示（最大局部損失 2.7367 mm²）。[新版 QA](facade-layout-v2/qa/geometry-validation.json)、[新版截層](facade-layout-v2/qa/layer-check.json)。尚未正式 FFF 切片或實體試印，不能保證免支撐。
 

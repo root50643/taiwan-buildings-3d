@@ -4,9 +4,15 @@
 
 > **局部段，並非全棟。** 鐘樓、下部量體、近旁低翼及短階梯；不含完整教學大樓、人文廣場、鼓樓或行政大樓。
 
-<table><tr><td width="50%"><img src="previews/front.png" alt="交付STL正面" width="450"></td><td width="50%"><img src="previews/rear.png" alt="交付STL背面" width="450"></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![交付STL正面](previews/front.png) | ![交付STL背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [頂面](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 頂面<br>![頂面](previews/top.png) |  |
 
 ## 下載與尺寸
 

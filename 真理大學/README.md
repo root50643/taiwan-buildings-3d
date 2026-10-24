@@ -6,9 +6,9 @@
 
 ## 牛津學堂：同一建物正背並排
 
-| 正面 | 背面 |
-|---|---|
-| ![正面](淡水校區/buildings/au-oxford-1999-core/previews/front.png) | ![背面](淡水校區/buildings/au-oxford-1999-core/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](淡水校區/buildings/au-oxford-1999-core/previews/front.png) | 背面<br>![背面](淡水校區/buildings/au-oxford-1999-core/previews/rear.png) |  |
 
 [模型、STL、Blend與完整限制](淡水校區/buildings/au-oxford-1999-core/README.md) · [淡水校區入口](淡水校區/README.md)
 

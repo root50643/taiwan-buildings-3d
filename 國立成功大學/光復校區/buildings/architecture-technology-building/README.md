@@ -2,9 +2,9 @@
 
 第十三批；光復校區。校方GIS A005，財產校碼R1A-37-0。尺寸約 150 × 145 × 132 mm，含底座最長邊150 mm，各件獨立比例。
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 棟別範圍與近似
 
@@ -38,5 +38,9 @@
 - `python validate_model.py` 檢查原始法線、封閉性、邊/頂點流形、單一連通表面、無額外內部空腔殼、正體積、乾淨重建雜湊與 Blender 幾何一致性；見 [validation.json](validation.json)
 - `python validate_sections.py` 使用固定共同邊方向插值，檢查每0.2 mm水平截面輪廓閉合；見 [cross_sections.json](cross_sections.json)
 - `python check_thin.py` 每1 mm取樣，先確認閉合/有效輪廓，再做0.8 mm形態開運算；見 [thin-feature-check.json](thin-feature-check.json)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 立面<br>![立面](previews/elevation.png) |  |  |
 
 任一原始驗證false、程式非零退出碼或資產雜湊不一致都不可封版。沒有窮盡自交檢測，也不以報告代替實體列印。原始參考照片和地圖不隨公開包散布。

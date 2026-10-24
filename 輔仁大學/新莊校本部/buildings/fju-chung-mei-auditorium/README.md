@@ -2,7 +2,9 @@
 
 新莊校本部；官方校圖編號 29。這是公開照片導向的整棟外觀近似研究模型，並非精密測繪或BIM。
 
-<table><tr><td><img src="previews/front.png" width="420" alt="STL斜前方"></td><td><img src="previews/rear.png" width="420" alt="STL斜後方"></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![STL斜前方](previews/front.png) | ![STL斜後方](previews/rear.png) |  |
 
 ## 外觀依據與範圍
 圓形主館、70瓣放射起伏屋頂、頂部採光鼓座與淺錐帽、正面三道拱門、階梯、下層周邊凹廊及有背板的格柵簡化。

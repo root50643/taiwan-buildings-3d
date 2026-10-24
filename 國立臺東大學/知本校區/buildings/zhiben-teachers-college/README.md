@@ -49,8 +49,9 @@ python validate_model.py
 - 未宣稱完成全域自相交的獨立窮舉檢查；數位幾何驗證不等於試印。
 - STL SHA-256：`6bd3e91f0d0feb8401baeea03181e6f1efcef14bdc295f1253e5f7c41a5c3217`。
 
-![實際 STL 正面](previews/front.png)
-![實際 STL 背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
 
 ## 第二版外觀 QA 修正
 第二版依正確師範學院照片深化左右兩翼外廊，新增連續直柱與水平樓板，中央樓梯塔改成深凹開口及樓層平台。校方紅磚 news4 照片屬鏡心書院，不是師範學院，沒有將兩建物混用。
@@ -60,6 +61,6 @@ python validate_model.py
 
 ## 實際STL正背並排
 
-| 正面 | 背面（未見部分按詳頁明示簡化） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

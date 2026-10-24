@@ -2,9 +2,9 @@
 
 正面與背面均直接由交付 STL 渲染：
 
-| 正面 | 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 ## 來源與外觀
 

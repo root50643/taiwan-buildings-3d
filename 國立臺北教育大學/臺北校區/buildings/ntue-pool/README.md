@@ -12,6 +12,10 @@
 
 [入口近圖](previews/entry_close.png) · [原STL射線證據](portal-ray-proof.json) · [可重跑射線檢查](check_portal_geometry.py)。檢查直接遍歷原STL三角形，不修補、不封截面；入口沒有臆造貫穿背面的通道。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口近圖<br>![入口近圖](previews/entry_close.png) |  |  |
+
 官方文件日期2023年10月25日，實拍攝影日未載。資料更新日不視為拍攝日；這些來源不能保證2026全部現況。完整來源頁碼與URL見 [sources.json](sources.json)。原照片與PDF只留私人核對，不隨公開包散布。
 
 ## 交付檔
@@ -21,11 +25,15 @@
 - [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：參數重建來源，執行 python build_model.py
 - [render_preview.py](render_preview.py)：以Blender讀取實際STL渲染；執行 blender -b -t 2 -P render_preview.py
 
-| 實際STL正面 | 實際STL背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 [入口側](previews/side.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口側<br>![入口側](previews/side.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 列印與檢查限制
 

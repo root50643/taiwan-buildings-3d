@@ -6,9 +6,17 @@
 
 ## 正反面
 
-<table><tr><th>NE 格柵／廣場側</th><th>SW 通廊／球場側</th></tr><tr><td><img src="previews/v3/front.png" alt="NE格柵面、紅磚端區與中央石拱"></td><td><img src="previews/v3/rear.png" alt="SW開放通廊、端部紅磚與側凸電梯"></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| NE 格柵／廣場側<br>![NE格柵面、紅磚端區與中央石拱](previews/v3/front.png) | SW 通廊／球場側<br>![SW開放通廊、端部紅磚與側凸電梯](previews/v3/rear.png) |  |
 
 其餘主圖： [SE 端](previews/v3/west.png) · [NW 端](previews/v3/east.png) · [NE 正立面](previews/v3/south.png) · [SW 正立面](previews/v3/north.png) · [頂視](previews/v3/top.png)。局部：[中央穿堂](previews/v3/entry-detail.png) · [NW 電梯與屋頂](previews/v3/roof-detail.png)。檔名中的 west/east/south/north 是模型局部座標相機名，並非真地理方位。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| SE 端<br>![SE 端](previews/v3/west.png) | NW 端<br>![NW 端](previews/v3/east.png) | NE 正立面<br>![NE 正立面](previews/v3/south.png) |
+| SW 正立面<br>![SW 正立面](previews/v3/north.png) | 頂視<br>![頂視](previews/v3/top.png) | 中央穿堂<br>![中央穿堂](previews/v3/entry-detail.png) |
+| NW 電梯與屋頂<br>![NW 電梯與屋頂](previews/v3/roof-detail.png) |  |  |
 
 ## 檔案與重建
 

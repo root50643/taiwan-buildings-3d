@@ -4,18 +4,24 @@
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/ccu-auditorium-front-section-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-![前門廊段中央三角玻璃背板外觀代理](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![前門廊段中央三角玻璃背板外觀代理](appearance/previews/front.png) |  |  |
 
 只將原face725完整532mm²三角玻璃背板指定灰藍不透明proxy，其餘3521面中性；前方三竪框與橫框另有面，維持中性。這仍是前門廊段，不是完整大禮堂。磚牆混灰帶、其他窗/屋頂/截斷背面不擴塗，中性不代表實物灰色。官方頁未載日期；原JPEG EXIF正前2003:08:09 17:18:21、側照2003:10:25 12:17:24（無offset、時鐘未獨核），不是2026現貌。側照不含所選三角玻璃，不當其側背補證。原3522面座標/面序/STL與歷史QA不變、不增套；非分色封閉體或G-code，未實體試印，照片不分發。
 
 
 國立中正大學・民雄校本部｜公開實拍外觀近似模型｜單位：毫米（mm）。
 
-| 前斜視（實際 STL） | 後斜視（實際 STL） |
-|---|---|
-| ![前斜視](previews/front.png) | ![後斜視](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前斜視（實際 STL）<br>![前斜視](previews/front.png) | 後斜視（實際 STL）<br>![後斜視](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [上視圖](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 上視圖<br>![上視圖](previews/top.png) |  |
 
 ## 模型範圍
 

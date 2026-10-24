@@ -2,9 +2,9 @@
 
 依公開實景資料製作的原創、相對比例、低細節外觀代表。保留入口A端較低、設備B端較高的兩段主弧頂，偏教學樓T側的窄低次弧頂、球場S側及B向平台、不同附翼與入口退縮。
 
-| 入口A端與球場S側 | 設備B端與教學樓T側 |
-| :---: | :---: |
-| ![入口A端與球場S側斜視](previews/v10/front.png) | ![設備B端與教學樓T側斜視](previews/v10/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口A端與球場S側<br>![入口A端與球場S側斜視](previews/v10/front.png) | 設備B端與教學樓T側<br>![設備B端與教學樓T側斜視](previews/v10/rear.png) |  |
 
 [下載 STL](models/v10/model.stl) · [下載 Blender 場景](models/v10/scene.blend) · [估計與簡化](ESTIMATES.md) · [作者數位檢查範圍](AUTHOR-GEOMETRY-SCOPE.md) · [完整QA與安全還原](qa/README.md)
 
@@ -28,7 +28,9 @@
 | :---: | :---: | :---: |
 | ![A端正向](previews/v10/north.png) | ![B端正向](previews/v10/south.png) | ![主外架斜桿與中央三角露空](previews/v10/courtyard-gallery.png) |
 
-![B端偏置次弧頂及S側、B向雙向平台近景](previews/v10/courtyard-arcade.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![B端偏置次弧頂及S側、B向雙向平台近景](previews/v10/courtyard-arcade.png) |  |  |
 
 圖片中文名稱見[圖說](VIEW-CAPTIONS.zh-TW.json)。east/west/north/south為固定機器鍵名，不主張真北；兩個courtyard代號分別為外架與B端屋面近景，不表示本棟有中庭。公開九圖僅移除指定非視覺metadata，原圖像資料及解碼像素保持一致。
 

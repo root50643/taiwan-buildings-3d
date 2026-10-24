@@ -2,9 +2,9 @@
 
 ## 7 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 背牆中性／屋面同系統推估 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／屋面同系統推估<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuj1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -31,8 +31,9 @@
 - `evidence.json`：來源與判讀界線；未附第三方照片
 - `SHA256SUMS`：交付檔案雜湊
 
-![正面](previews/front.png)
-![背面，未見部分為簡化牆](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面，未見部分為簡化牆](previews/rear.png) |  |
 
 ## 列印
 

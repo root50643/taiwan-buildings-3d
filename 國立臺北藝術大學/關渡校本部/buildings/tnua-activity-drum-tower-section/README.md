@@ -4,9 +4,15 @@
 
 > **局部段，不是全棟。** 鼓樓塔體、下坡端三層窗帶、附近低翼、曲牆與短階梯；活動中心長翼、完整水舞臺／荷池、全部室內與廣場皆未建。
 
-<table><tr><td width="50%"><img src="previews/front.png" alt="actual STL正面" width="450"></td><td width="50%"><img src="previews/rear.png" alt="actual STL背面及截面" width="450"></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![actual STL正面](previews/front.png) | ![actual STL背面及截面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [頂面](previews/top.png) · [外側窗帶對照角](previews/outer.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 頂面<br>![頂面](previews/top.png) | 外側窗帶對照角<br>![外側窗帶對照角](previews/outer.png) |
 
 ## 下載與列印
 

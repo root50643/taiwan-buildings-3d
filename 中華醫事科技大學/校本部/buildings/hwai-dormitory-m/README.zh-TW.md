@@ -1,6 +1,8 @@
 # M棟 第二宿舍
 
-![實際STL正面（左）與背面（右）](previews/front-rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面（左）與背面（右）](previews/front-rear.png) |  |  |
 
 依[學校2019簡報第42頁](https://virtual.lchs.kh.edu.tw/guide/108-0306a/108hwai.pdf)公開實景重建，並用[現行官方校圖](https://www.hwai.edu.tw/p/405-1000-35523%2Cc93.php?Lang=zh-tw)及[校史](https://www.hwai.edu.tw/p/16-1000-35517.php?Lang=zh-tw)核對十層M棟。H第一宿舍为另一棟，未重複計入。模型保留寬中央玻璃帶、兩側小陽臺、左側成對窗、階梯屋頂與凹入口。
 

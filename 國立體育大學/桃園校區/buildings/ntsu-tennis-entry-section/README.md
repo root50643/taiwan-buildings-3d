@@ -2,9 +2,9 @@
 
 **局部外觀近似，非全館測繪。** 桃園市龜山區文化一路250號，NTSU；不是臺中國立臺灣體育運動大學NTUS。
 
-| 前側 actual STL | 後側 actual STL |
-|---|---|
-| ![前侧](previews/front.png) | ![後侧留白切面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前側 actual STL<br>![前侧](previews/front.png) | 後側 actual STL<br>![後侧留白切面](previews/rear.png) |  |
 
 ## 製作範圍
 四根方柱與開放尖頂門樓、鏤空三角屋架、招牌橫梁、深入口、左右鄰窗與入口坡道。尖頂檐底做2.2mm平底檐板，屋脊寬約1.8mm，避免原STL出現不可解析尖薄端。

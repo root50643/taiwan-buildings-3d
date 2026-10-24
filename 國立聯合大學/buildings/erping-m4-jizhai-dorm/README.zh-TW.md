@@ -2,9 +2,9 @@
 
 ## 7 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 背牆中性／整體凸簷材質延伸 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／整體凸簷材質延伸<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum4-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -59,9 +59,9 @@
 - `evidence.json`：官方來源、逐張照片網址與限制。
 - `SHA256SUMS`：交付檔案雜湊清單，不含清單自身。
 
-![實際 STL 正面](previews/front.png)
-
-![實際 STL 背面：無照片佐證處簡化](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面：無照片佐證處簡化](previews/rear.png) |  |
 
 ## 重建與驗證
 

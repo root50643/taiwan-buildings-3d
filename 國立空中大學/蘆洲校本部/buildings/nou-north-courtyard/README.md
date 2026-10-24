@@ -2,11 +2,16 @@
 
 紅色防漏坡屋蓋版，完整主體低細節近似。包含外環四翼、中央行政橫棟、前大後小雙庭院、內院柱廊與正門穿堂。這是一件原創外觀模型，不是測繪、歷史原貌復原、精確現況 BIM，也不表示全校已完成。
 
-| 正面 actual STL | 背面 actual STL |
-|:---:|:---:|
-| ![北院正面](previews/front.png) | ![北院背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面 actual STL<br>![北院正面](previews/front.png) | 背面 actual STL<br>![北院背面](previews/rear.png) |  |
 
 [頂視](previews/top.png) · [側向](previews/side.png) · [正立面](previews/front_elevation.png) · [正門近圖](previews/gate_detail.png) · [柱廊視角](previews/courtyard_detail.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 側向<br>![側向](previews/side.png) | 正立面<br>![正立面](previews/front_elevation.png) |
+| 正門近圖<br>![正門近圖](previews/gate_detail.png) | 柱廊視角<br>![柱廊視角](previews/courtyard_detail.png) |  |
 
 ## 版本與依據
 

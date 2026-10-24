@@ -36,15 +36,11 @@ python -B source/build_model.py --output-dir qa/local-rebuild
 
 座標為模型局部座標：X 沿主樓長邊，照片可見主立面為 −Y，+X 朝曲面連接段。此座標不宣稱地理方位。八張預覽對應同一 STL，檢視識別雜湊見 [render-manifest.json](previews/v1/render-manifest.json)。
 
-| 前側斜視 | 後側斜視 |
-| --- | --- |
-| ![前側斜視](previews/v1/front.png) | ![後側斜視](previews/v1/rear.png) |
-| −Y 長邊 | +Y 長邊（中性牆面） |
-| ![前長邊](previews/v1/long-front.png) | ![後長邊](previews/v1/long-rear.png) |
-| −X 端部 | +X 端部／連接段截斷 |
-| ![負X端部](previews/v1/end-negative-x.png) | ![正X端部](previews/v1/end-positive-x.png) |
-| 屋頂 | 曲面段細節 |
-| ![俯視](previews/v1/top.png) | ![曲面連接段](previews/v1/connector.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前側斜視<br>![前側斜視](previews/v1/front.png) | 後側斜視<br>![後側斜視](previews/v1/rear.png) | −Y 長邊<br>![前長邊](previews/v1/long-front.png) |
+| +Y 長邊（中性牆面）<br>![後長邊](previews/v1/long-rear.png) | −X 端部<br>![負X端部](previews/v1/end-negative-x.png) | +X 端部／連接段截斷<br>![正X端部](previews/v1/end-positive-x.png) |
+| 屋頂<br>![俯視](previews/v1/top.png) | 曲面段細節<br>![曲面連接段](previews/v1/connector.png) |  |
 
 ## 審查與列印界線
 

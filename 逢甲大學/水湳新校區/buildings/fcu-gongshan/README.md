@@ -2,11 +2,15 @@
 
 2025年建成外觀的原創比例近似模型。單件全樓主體與周邊高低地景示意，不代表全校區已完成。本輪僅更新外觀材質，原幾何與62跨層警示／3類既有例外均保留；本版已完成外觀重建與匯出格式核驗。
 
-| 正面新配色 | 背面新配色 |
-|---|---|
-| ![正面](previews/appearance-front.png) | ![背面](previews/appearance-rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面新配色<br>![正面](previews/appearance-front.png) | 背面新配色<br>![背面](previews/appearance-rear.png) |  |
 
 [頂圖](previews/appearance-top.png) · [STL](model.stl) · [新配色Blend](appearance.blend) · [彩色3MF](appearance.3mf) · [鳥瞰](previews/appearance-aerial.png) · [來源](sources.json) · [QA](QA.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂圖<br>![頂圖](previews/appearance-top.png) | 鳥瞰<br>![鳥瞰](previews/appearance-aerial.png) |  |
 
 ## 模型範圍與證據限制
 - 多翼斜屋面、D完整斜四邊形高端、O真退縮廊下、三角植栽庭院、下沉灰廣場、主要玻璃框與階梯保留。O不是植栽三角院。

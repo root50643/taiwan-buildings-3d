@@ -2,9 +2,9 @@
 
 ## 八材質外觀版（2026-10-20）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuub2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -17,9 +17,9 @@
 
 下列圖片直接渲染自隨附的 model.stl，並非原建築照片。玻璃、太陽能板與格柵的視覺細節均為同一個可列印網格的凹凸表面。
 
-![B2 電子工程館正面斜視](previews/front.png)
-
-![B2 電子工程館背面斜視；背面細節為近似](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![B2 電子工程館正面斜視](previews/front.png) | ![B2 電子工程館背面斜視；背面細節為近似](previews/rear.png) |  |
 
 ## 保留的辨識特徵
 

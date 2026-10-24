@@ -1,6 +1,8 @@
 # 臺北醫學大學信義校區｜君蔚樓 Dream-Way Building
 
-![君蔚樓自製模型](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![君蔚樓自製模型](previews/front.png) |  |  |
 
 完整建築的**有限細節、近似外觀模型**：三層大圓主體、前方較小圓端的高圓筒與寬簷帽、後側兩層小圓翼及短頸（頂部位於三樓樓面，形成露臺）、正面矩形入口雨棚、後側弧形外梯。不是僅正面片段，也不是簡單兩圓花生形。
 
@@ -9,6 +11,11 @@
 - [通用彩色 3MF](model.3mf)：每三角面材色，不代表指定切片器/機台的擠出機配置。
 - [單色 STL](model.stl)、[生成器](build_model.py)、[原網格資料](mesh.json)、[材質表](palette.json)。
 - [正面](previews/front.png)｜[正立面](previews/elevation.png)｜[背面](previews/rear.png)｜[俯視](previews/top.png)｜[左斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) |  |  |
 
 ## 依據及不確定性
 官方校史館三張照片與官方公開樓層圖的**外輪廓**支援三圓比例、連接及不同高度；沒有複製室內房間、逃生路線、保全或設備配置。原始照片、PDF未收入本模型包。[完整來源與限制](SOURCES.md)。

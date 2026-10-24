@@ -4,9 +4,9 @@
 
 [五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/hwai-library-f-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-| 東側歷史限域配色 | 未確認後側保持中性 |
-|---|---|
-| ![東端瓦帽](appearance/previews/front.png) | ![後側保持中性](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 東側歷史限域配色<br>![東端瓦帽](appearance/previews/front.png) | 未確認後側保持中性<br>![後側保持中性](appearance/previews/rear.png) |  |
 
 僅東端截錐瓦帽朝東斜面76個完整三角面紅褐配色；頂平面、西半、白肩、其他坡頂及5026面中性，五道玻璃因缺細框分面HOLD不塗。半頂色界是保守證據範圍，不是實景接縫。原STL bytes、5102面與歷史QA不變，不增套數，F/F1–F4仍為一個連體群，G排除。
 
@@ -15,9 +15,9 @@
 
 一件群組模型涵蓋F、F1、F2、F3、F4五個官方代碼，不是五棟各自完整模型。圖書館與系館共用西側連體脊；G食營系館排除。未來若細分五代碼，不可與本件重複計數。F2網頁仍名生科系館，現行圖片標製藥系館，視為同碼別名。
 
-![實際STL正面（左）與背面（右）](previews/front-rear.png)
-
-![實際STL俯視：兩處向東開放院落](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面（左）與背面（右）](previews/front-rear.png) | ![實際STL俯視：兩處向東開放院落](previews/top.png) |  |
 
 ## 外觀與尺度
 保留東端圓弧玻璃帶、截錐簷頂、雙柱挑空入口、連體西脊、兩短翼、兩處開放院落與可見凹廊。含底板102×150×70mm，最長150mm，獨立目估比例，非測繪。

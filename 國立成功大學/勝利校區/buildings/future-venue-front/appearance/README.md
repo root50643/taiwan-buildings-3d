@@ -6,6 +6,11 @@
 - [前](previews/front.png) · [左](previews/left.png) · [右](previews/right.png) · [後](previews/rear.png) · [頂](previews/top.png)
 - [同角度單色對照](previews/mono-front.png) · [來源及限制](SOURCES.md) · [授權](LICENSE-NOTICE.md)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前<br>![前](previews/front.png) | 左<br>![左](previews/left.png) | 右<br>![右](previews/right.png) |
+| 後<br>![後](previews/rear.png) | 頂<br>![頂](previews/top.png) | 同角度單色對照<br>![同角度單色對照](previews/mono-front.png) |
+
 372上中窗背、120淺色低窗背、2次入口門背、17突出白色U框正面。全部三點位於各個有限平面矩形並驗證實際叉積法線；白框同材質角面重疊只計一次。5044原三角形坐標、順序、朝向及STL bytes完整不變。大牆／共面細框、側背、屋頂、底座、實心梯側與底、主入口底梁、次門門檻及未選reveals保持中性，不補玻璃／窗櫺，不復原已拆T形後翼。
 
 ## 非製造修復／非可直接列印

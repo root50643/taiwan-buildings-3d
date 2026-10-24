@@ -6,11 +6,15 @@
 
 ## 實際 STL 外觀
 
-| 正面 | 背面 |
-|---|---|
-| ![actual STL正面](previews/front.png) | ![actual STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![actual STL正面](previews/front.png) | 背面<br>![actual STL背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png)｜[頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 頂視<br>![頂視](previews/top.png) |  |
 
 ## 檔案與尺度
 

@@ -2,9 +2,9 @@
 
 本批1件：圖書資訊大樓（跨年有界近似），非全校完成。圖書館1–5F不代表整棟僅5F；不含鄰藝術中心、乃建堂。
 
-| 同件東南正面 | 同件西後 |
-|---|---|
-| ![正面](校本部/buildings/tut-library-information-2002/previews/appearance-front.png) | ![西後](校本部/buildings/tut-library-information-2002/previews/appearance-rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 同件東南正面<br>![正面](校本部/buildings/tut-library-information-2002/previews/appearance-front.png) | 同件西後<br>![西後](校本部/buildings/tut-library-information-2002/previews/appearance-rear.png) |  |
 
 [模型、來源與QA](校本部/buildings/tut-library-information-2002/README.md)
 

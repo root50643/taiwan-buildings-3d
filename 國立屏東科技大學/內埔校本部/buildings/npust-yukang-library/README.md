@@ -2,11 +2,15 @@
 
 國立屏東科技大學內埔校本部。以公開平面、跨年代照片及完整頂視建立的**有界外觀近似**，不是精確測繪或1991年原貌復原。審核與限定例外紀錄見 [QA](QA.md)，是否正式發布以統一發布清單為準。
 
-| 正面 | 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 [頂視](previews/top.png) · [北端](previews/left.png) · [南端](previews/right.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 北端<br>![北端](previews/left.png) | 南端<br>![南端](previews/right.png) |
 
 ## 內容及比例
 - 保留兩側四層高體、中央三排窗低帶、中央低幅曲蓋、前後柱廊、北端不均分組X斜撐與寬梯台。

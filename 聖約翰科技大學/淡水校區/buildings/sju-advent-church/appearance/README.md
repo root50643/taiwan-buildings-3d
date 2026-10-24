@@ -2,9 +2,9 @@
 
 [回原模型](../README.md)
 
-| 正面 | 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 此層只為原有 **3,972 個三角面**指定材質；未切面、未重建、未縮放、未改動原 `model.stl`、原 Blend 或原預覽。不是新增建物，也不表示全校或整棟外觀均獲驗證。
 
@@ -14,6 +14,11 @@
 - [sju-advent-church-materials.3mf](sju-advent-church-materials.3mf)：真正的 3MF Core `basematerials` 與逐三角面材質屬性，毫米；不是改副檔名的 STL，也不是只在 Blender 顯色。未提供特定切片器的噴頭/耗材分派；軟體可能忽略顯示色，使用者仍須自行確認。
 - [左側](previews/side-minus-x.png)、[右側](previews/side-plus-x.png)、[頂視](previews/top.png)、[正面低視角](previews/front-low.png)、[背面低視角](previews/rear-low.png)。左右為模型 ±X；正面為 −Y，不是已測定的東西南北。
 - [逐面對照](face-materials.json)、[材質與證據區域](material-manifest.json)、[公開來源與限制](sources.json)。所有照片僅供私下研究，**未附原圖、裁圖或照片貼圖**。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 左側<br>![左側](previews/side-minus-x.png) | 右側<br>![右側](previews/side-plus-x.png) | 頂視<br>![頂視](previews/top.png) |
+| 正面低視角<br>![正面低視角](previews/front-low.png) | 背面低視角<br>![背面低視角](previews/rear-low.png) |  |
 
 ## 配色依據與未知部分
 

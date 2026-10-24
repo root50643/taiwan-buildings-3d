@@ -2,15 +2,19 @@
 
 跨來源有界群組微縮近似，非精密單棟復刻。七棟主教室分離排列於坡地，整體以連續底座接成單一表面殼。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 
-| 西南西端正向 | 東北東端反向 |
-|---|---|
-| ![正向 actual STL](appearance/previews/front.png) | ![反向 actual STL](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西南西端正向<br>![正向 actual STL](appearance/previews/front.png) | 東北東端反向<br>![反向 actual STL](appearance/previews/rear.png) |  |
 
 ## 最新 2021 可見面五材質外觀版（2026-10-20）
 
 [材質、四視角與來源界線](appearance/README.md) · [表面色 3MF](appearance/tku-appearance.3mf) · [可編輯材質場景](appearance/scene.blend)
 
 只配色七棟逐一登錄屋面及照片明確可見的部分西端；遮蔽牆與兩小附棟保持中性。原 STL、建模程式、原場景與歷史 QA 未改，不是新增幾何。[原單色正面](previews/front.png) · [原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 ## 範圍與來源
 - 七主棟 N1、N3、N4、S1–S4；N2 小附棟和南側廁所另作低量體，不補第八棟主教室。

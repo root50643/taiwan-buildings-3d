@@ -1,6 +1,8 @@
 # 國立聯合大學八甲南大門中央三段門牆外觀段
 
-![實際模型正面斜視](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際模型正面斜視](previews/front.png) |  |  |
 
 新增的照片導向建築外觀模型，**只包含兩車道之間中央三段實心門牆**，不是完整南大門，也不是北大門或二坪山校門。
 
@@ -11,6 +13,11 @@
 - [可重建生成器](build_model.py) · [渲染器](render_model.py) · [材質表](palette.json)
 - [正面斜視](previews/front.png) · [背面](previews/rear.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png) · [左斜視](previews/left_oblique.png)
 - [來源與推估邊界](SOURCES.md) · [驗證及列印限制](QA.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) |  |  |
 
 ## 表達範圍
 保留高聳中央白色校名面、紅褐磚色直立邊、兩片較低灰色門牆、三個淺凹灰色平頂及橘紅壓頂。中央立面略向路側突出，白色面板是有實心背板的淺凹，不是可穿越門洞。書法文字刻意留白；磚與石材只以色區區分，不複製攝影紋理，不任意添加密集磚縫。

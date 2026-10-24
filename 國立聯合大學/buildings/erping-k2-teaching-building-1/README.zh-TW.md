@@ -2,9 +2,9 @@
 
 ## 7 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 有來源支持的遮陽肋側 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 有來源支持的遮陽肋側<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuk2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -25,8 +25,9 @@
 
 ## 預覽與交付
 
-![正面](previews/front.png)
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 - `model.stl`：單一連通封閉實體
 - `build_model.py`：可攜式完整幾何原始碼

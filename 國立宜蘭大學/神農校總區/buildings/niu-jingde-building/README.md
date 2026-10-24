@@ -4,11 +4,15 @@
 
 ## 模型與預覽
 
-| 正面（actual STL） | 背面（actual STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（actual STL）<br>![正面](previews/front.png) | 背面（actual STL）<br>![背面](previews/rear.png) |  |
 
 [頂視圖](previews/top.png) · [正立面](previews/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 - 尺寸：138 × 150 × 84 mm（包含3mm底座；STL實測值以validation.json為準）
 - 範圍：經德大樓為一件；空中大學所用樓層屬同一建物，不額外計件。保留中庭上部大開口，並以低位薄板表現2021建築師記述的新增遮雨棚。

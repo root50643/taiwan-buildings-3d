@@ -4,13 +4,18 @@
 
 ## 模型與下載
 
-![實際交付STL正背](previews/front-rear.png)
-![實際交付STL頂視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際交付STL正背](previews/front-rear.png) | ![實際交付STL頂視](previews/top.png) |  |
 
 - [毫米STL](model.stl)、[可編輯Blend網格](scene.blend)
 - [參數腳本](build_model.py)、[相依版本](requirements.txt)、[actual STL渲染腳本](render_preview.py)
 - [公開來源與日期](sources.json)、[逐面窗列／柱跨／屋頂退階高度](facade-observations.json)、[模型資訊](model-info.json)
 - [正立面](previews/front-elevation.png)、[院徽亭與架空橋近圖](previews/courtyard.png)、[西翼三組屋頂近圖](previews/west-roof-detail.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/front-elevation.png) | 院徽亭與架空橋近圖<br>![院徽亭與架空橋近圖](previews/courtyard.png) | 西翼三組屋頂近圖<br>![西翼三組屋頂近圖](previews/west-roof-detail.png) |
 
 含底座150 × 136 × 64mm，STL毫米，各館獨立比例。底座朝下。前視為東入口偏南，後視為西北；方位以校圖與照片推定，1F／3F原圖沒有北向及尺寸，非地理或建築測繪。
 

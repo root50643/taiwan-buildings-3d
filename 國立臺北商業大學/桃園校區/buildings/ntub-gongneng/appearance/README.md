@@ -6,6 +6,11 @@
 - [正面](previews/front.png)・[左側](previews/left.png)・[右側](previews/right.png)・[背面](previews/rear.png)・[俯視](previews/top.png)
 - [可重建來源ZIP](rebuild-source.zip)：解壓後依序python appearance/source/build_appearance.py、verify_exchange.py，Blender -b --python appearance/source/render_appearance.py、verify_scene.py。numpy／lib3mf2.5.0／Blender4.3.2；model.stl和original-scene.blend保持同層。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |
+| 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 原Blend唯一Warm stone preview only材質datablock真保留，linear RGBA不改；3MF原色是最近8-bit sRGB換算，不是新判斷的實景色。新增低飽和、不透明深藍灰PV及較淺灰藍玻璃代理，非光譜測色、透明玻璃或反射模擬。交付不含來源照片／貼圖。
 
 ## 嚴格有限範圍

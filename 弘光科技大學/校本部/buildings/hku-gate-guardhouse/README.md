@@ -4,11 +4,9 @@
 
 ## 實際 STL 預覽
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
-
-![俯視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![俯視](previews/top.png) |
 
 
 

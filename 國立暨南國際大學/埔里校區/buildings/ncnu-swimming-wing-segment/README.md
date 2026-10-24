@@ -4,11 +4,15 @@
 
 泳池與健身設施側之矩形窗翼，只詳化長側立面與深陽臺端面；不是整座體健中心，也未精確切割泳池、SPA與健身房的室內使用範圍。
 
-| 交付 STL 正面 | 交付 STL 背面 |
-| --- | --- |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [STL](model.stl) · [可編修 Blender 網格](scene.blend) · [參數腳本](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 辨識特徵
 - 矩形高窗、百葉帶、屋簷托架與斜拉桿

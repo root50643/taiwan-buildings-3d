@@ -4,16 +4,18 @@
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nsysu-yatsen-hall-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-![前上磚牆及前欄板粗外觀代理](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![前上磚牆及前欄板粗外觀代理](appearance/previews/front.png) |  |  |
 
 僅51前上牆＋2門廊前欄板，合計53個原完整三角採磚紅proxy；其餘3057面中性。這是主磚平面粗外觀代理，非細外皮還原：窄灰壓頂、字樣、磚縫未建，不切面造色條。弧內、側背、白梁柱、屋頂和底座不擴染；中性不代表實物灰色。完整官方照片2/3日期未知，不稱2026現況或確切成分；截斷圖1未用。原STL/3110面座標/面序/歷史QA不變，不增套；非分色封閉體/G-code，未實體試印，第三方照片不分發。
 
 
 [返回西子灣校區](../../README.md) · [返回全校圖鑑](../../../README.md)
 
-| 實際 STL 正面 | 實際 STL 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
 [下載 STL](model.stl) · [可編輯 Blender](scene.blend) · [參數重建](build_model.py) · [幾何驗證](validation.json) · [全部來源](sources.json)
 
@@ -33,6 +35,10 @@
 - 實拍相簿年代未提供；2020整建啟用新聞確認館舍啟用，不能替代2026各面外觀證據。
 
 [正立面](previews/elevation.png) · [俯視／屋頂](previews/top.png)。照片年代未提供，2026-10-13為查閱日，不代表拍攝日或全校現況確認。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 俯視／屋頂<br>![俯視／屋頂](previews/top.png) |  |
 
 ## 列印與數位檢查
 單位為毫米，底座朝下。可先用0.4mm噴嘴、0.2mm層高試切片，依材料和機器調整。主門廊柱直徑4.2mm、兩旁3.5mm，露台邊1.6mm，梁底1.6mm；門廊跨距、露台與上層扁弧凹口需支撐/橋接評估。

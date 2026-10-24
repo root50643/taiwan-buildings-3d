@@ -4,11 +4,15 @@
 
 **本件只重建體育館正面入口段，非完整體育館。背面平整面是截取邊界，不是真實後立面；模型截取深度自行選定。**
 
-| 實際 STL 正面 | 實際 STL 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
 [上視圖](previews/top.png) · [低角度立面圖](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 上視圖<br>![上視圖](previews/top.png) | 低角度立面圖<br>![低角度立面圖](previews/elevation.png) |  |
 
 ## 下載與重建
 - [毫米 STL](model.stl)（150.0 × 62.0 × 72.4 mm，含3mm底座，各件獨立近似比例）

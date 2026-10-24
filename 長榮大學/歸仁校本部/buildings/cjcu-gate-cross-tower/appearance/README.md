@@ -12,4 +12,9 @@
 - 五圖：[正斜視](previews/front.png)、[後斜視](previews/rear.png)、[寬面立面](previews/elevation.png)、[窄側](previews/side.png)、[頂面](previews/top.png)。
 - [來源](SOURCES.md)、[許可](LICENSE-NOTICE.md)。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正斜視<br>![正斜視](previews/front.png) | 後斜視<br>![後斜視](previews/rear.png) | 寬面立面<br>![寬面立面](previews/elevation.png) |
+| 窄側<br>![窄側](previews/side.png) | 頂面<br>![頂面](previews/top.png) |  |
+
 原 model.stl 與 appearance 同父層。Python（numpy 2.3.5、lib3mf 2.5.0）依序執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py、source/verify_scene.py。重建另於乾淨目錄進行，核對 3MF、maps、五 PNG bytes；Blend 核語義，不宣稱二進位確定性。驗證含 strict lib3mf 真材質修改存讀與 Blender 真材質／頂點修改存讀及重開渲染。

@@ -52,12 +52,13 @@ python section_check.py
 - 未宣稱獨立窮舉自相交檢查。
 - STL SHA-256：`854e49c793350ad42e6188bfabb2f733c4707c956fdfca31bb88d92fe9c441c4`。
 
-![實際 STL 正面](previews/front.png)
-![實際 STL 背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
 
 
 ## 實際STL正背並排
 
-| 正面 | 背面（未見部分按詳頁明示簡化） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

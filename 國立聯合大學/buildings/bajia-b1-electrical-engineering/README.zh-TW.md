@@ -2,9 +2,9 @@
 
 ## 八材質外觀版（2026-10-20）
 
-| 正面、左翼與已有光伏板 | 未見背面保守中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面、左翼與已有光伏板<br>![正面](appearance/previews/front.png) | 未見背面保守中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuub1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -17,9 +17,9 @@
 
 以下為實際列印 STL 的前、後視角，並非原建築照片；後側外牆為保守近似。
 
-![B1 電機工程館模型前視角](previews/front.png)
-
-![B1 電機工程館模型後視角（近似）](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![B1 電機工程館模型前視角](previews/front.png) | ![B1 電機工程館模型後視角（近似）](previews/rear.png) |  |
 
 ## 模型範圍與尺寸
 

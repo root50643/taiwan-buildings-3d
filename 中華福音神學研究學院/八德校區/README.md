@@ -4,9 +4,9 @@
 
 來源限定外觀近似，含底座最長150mm。平頂主堂、分片開口塔、東露台與自身階梯；尺度經柱距/剖圖/航照交叉校正，仍非測繪模型。未試印，不保證免支撐。
 
-| 正面六材質外觀 | 背面原幾何，未確認色區中性 |
-|---|---|
-| ![正面](buildings/ces-trinity-chapel/appearance/previews/front.png) | ![背面](buildings/ces-trinity-chapel/appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面六材質外觀<br>![正面](buildings/ces-trinity-chapel/appearance/previews/front.png) | 背面原幾何，未確認色區中性<br>![背面](buildings/ces-trinity-chapel/appearance/previews/rear.png) |  |
 
 [模型、來源及數位QA](buildings/ces-trinity-chapel/README.md)。本批僅禮拜堂，不代表全校完成；其他棟尚未建模。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 

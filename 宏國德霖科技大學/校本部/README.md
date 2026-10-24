@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/hdut-hanjian-building/previews/v14-public/front.png" alt="罕見樓東側高斜框、深廊、抬高前廊與中庭模型" width="260">](buildings/hdut-hanjian-building/README.md)<br>**[罕見樓｜早期完成外觀](buildings/hdut-hanjian-building/README.md)**<br>南五北二斜陽台、通透中庭與不同端核心<br>222.5 × 125 × 約114.9 mm |  |  |
+| [![罕見樓東側高斜框、深廊、抬高前廊與中庭模型](buildings/hdut-hanjian-building/previews/v14-public/front.png)](buildings/hdut-hanjian-building/README.md)<br>**[罕見樓｜早期完成外觀](buildings/hdut-hanjian-building/README.md)**<br>南五北二斜陽台、通透中庭與不同端核心<br>222.5 × 125 × 約114.9 mm |  |  |
 
 [完整模型、正反並排預覽與下載](buildings/hdut-hanjian-building/README.md) · [來源摘要](../inventory/sources/hdut-hanjian-building-source-summary.md) · [QA摘要](../inventory/qa/hdut-hanjian-building-review.md)
 

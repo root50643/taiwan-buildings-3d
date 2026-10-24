@@ -1,6 +1,8 @@
 # 東海大學 畢律斯鐘樓
 
-![畢律斯鐘樓模型](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![畢律斯鐘樓模型](previews/front.png) |  |  |
 
 **新增幾何｜依官方公開照片近似，不是現場測繪，也不宣稱2026現況。** 本模型是路思義教堂旁的畢律斯鐘樓，不是校友鐘樓，不包含教堂或後方辦公室。
 
@@ -21,10 +23,11 @@
 水密不等於可直接列印。鐘口、鐘舌、軸架、支承座底部懸挑需要切片器支撐／方向評估；菱格浮雕及曲面尖端可能小於0.8 mm。全域與局部侵蝕測試失敗會原樣列在 QA，不能由大底座掩蓋。**沒有實體試印，不認證免支撐、最小法向厚度、強度或切片器相容性。**
 
 ## 五個實際交付網格視角
-![背斜視](previews/rear.png)
-![正立面](previews/elevation.png)
-![頂視](previews/top.png)
-![左斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![背斜視](previews/rear.png) | ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| ![左斜視](previews/left_oblique.png) |  |  |
 
 ## 重建與驗證
 Python依賴見requirements.txt；驗證另需lib3mf官方SDK、Blender4.3.2。

@@ -6,11 +6,13 @@
 
 ## 正面與背面
 
-| 西南側（正面） | 東北側（背面） |
-| --- | --- |
-| ![西南側原始 STL 預覽](previews/front.png) | ![東北側原始 STL 預覽](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西南側（正面）<br>![西南側原始 STL 預覽](previews/front.png) | 東北側（背面）<br>![東北側原始 STL 預覽](previews/rear.png) |  |
 
-![俯視原始 STL](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![俯視原始 STL](previews/top.png) |  |  |
 
 PNG 及 scene.blend 都使用同一份 model.stl 的原始有向三角面；色彩只幫助辨識材質區，STL 為單色實體，沒有透明玻璃。圖中沒有另加渲染專用的建築構件。
 

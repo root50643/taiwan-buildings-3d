@@ -2,14 +2,19 @@
 
 來源限定的原創外觀近似模型。圖資大樓內「廣欽老和尚紀念圖書館」是使用單位，並非另計一棟。本件只涵蓋這棟大樓與辨識坡上／坡下入口所需的簡化坡台，不代表華梵全校完成，也不是建築或地形測繪。
 
-| 東南主要外觀 | 西北／坡上外觀 |
-|---|---|
-| ![圖資大樓東南](previews/front.png) | ![同棟西北](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 東南主要外觀<br>![圖資大樓東南](previews/front.png) | 西北／坡上外觀<br>![同棟西北](previews/rear.png) |  |
 
 ## 模型與使用
 - [STL](model.stl)、[可編輯Blender網格](scene.blend)、[重建Python源](build_model.py)、[環境需求](requirements.txt)。模型採最終毫米，含底座150×140×53.5mm；底座厚3mm。名義每推估實景米對2mm，約1:500，各尺寸仍有影像估值限制。
 - 底座朝下。四亭、東雙高柱入口與南兩層長廊是真開放空間，屋簷／跨梁可能需要支撐。無實體試印，亦未驗Cura／Prusa工具路徑，不能保證免支撐或任何特定機器可印。
 - [屋頂](previews/top.png)、[南面](previews/elevation.png)、[東入口](previews/east.png)、[西面](previews/west.png)、[北面](previews/rear-elevation.png)。全部PNG由交付STL本身匯入渲染；凹面顏色只協助閱讀，不是額外代理幾何。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 屋頂<br>![屋頂](previews/top.png) | 南面<br>![南面](previews/elevation.png) | 東入口<br>![東入口](previews/east.png) |
+| 西面<br>![西面](previews/west.png) | 北面<br>![北面](previews/rear-elevation.png) |  |
 
 ## 依據與近似界線
 來源索引：[sources.json](sources.json)；尺度／高程口徑：[dimensional-evidence.json](dimensional-evidence.json)。2009-10-30校方記啟用，主要外觀綜合校方實照、2023/2024公開照片及2017/2024正射。不同年來源不等於同年測繪。

@@ -4,7 +4,9 @@
 
 **早期2011–2013外觀近似；非2026設備現況、非測繪BIM、未實體列印。** 此件沿用既有 `magic-school-green-technologies` 身份，替換原已3材質但後立面簡牆近似；不是新增建築，不增加套數。本次整棟升級沿用既有 canonical 目錄，不增加模型套數；驗證範圍以 qa/final-validation.json 與獨審報告為準，發布狀態以儲存庫 commit 歷史為準。
 
-![完整模型](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![完整模型](previews/front.png) |  |  |
 
 ## 交付與範圍
 - [可編輯Blender場景](scene.blend)：真頂點與13組可編輯材質，不是貼圖截圖；無嵌入外部圖片或腳本。

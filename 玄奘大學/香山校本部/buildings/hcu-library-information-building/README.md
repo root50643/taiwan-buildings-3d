@@ -2,11 +2,15 @@
 
 狀態：有界近似版。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。未做實體試印。
 
-| 正面模型 PNG | 背面模型 PNG |
-|---|---|
-| ![正面模型預覽](previews/front.png) | ![背面模型預覽；未知窗列保守省略](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面模型 PNG<br>![正面模型預覽](previews/front.png) | 背面模型 PNG<br>![背面模型預覽；未知窗列保守省略](previews/rear.png) |  |
 
 [左側預覽](previews/left.png) · [右側預覽](previews/right.png) · [俯視預覽](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 左側預覽<br>![左側預覽](previews/left.png) | 右側預覽<br>![右側預覽](previews/right.png) | 俯視預覽<br>![俯視預覽](previews/top.png) |
 
 ## 建物與時間範圍
 

@@ -2,9 +2,9 @@
 
 **局部外觀近似，非全館測繪。** 桃園市龜山區文化一路250號，NTSU；不是臺中國立臺灣體育運動大學NTUS。
 
-| 前側 actual STL | 後側 actual STL |
-|---|---|
-| ![前侧](previews/front.png) | ![後侧留白切面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前側 actual STL<br>![前侧](previews/front.png) | 後側 actual STL<br>![後侧留白切面](previews/rear.png) |  |
 
 ## 製作範圍
 中央高玻璃帶、直立主柱、右側突出窗跨、兩側各兩個窄翼窗跨與深雨遮入口。六列立面帶依照片逐列核對，沒有用樓層用途數代替窗列。

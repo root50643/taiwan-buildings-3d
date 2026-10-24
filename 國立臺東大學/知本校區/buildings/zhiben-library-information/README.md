@@ -49,8 +49,9 @@ python validate_model.py
 - 未宣稱完成全域自相交的獨立窮舉檢查；數位幾何驗證不等於試印。
 - STL SHA-256：`2b79321536cdecd979ecae1d67a6b656992089400802ab55cc502cd19eec9aa3`。
 
-![實際 STL 正面](previews/front.png)
-![實際 STL 背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
 
 ## 第二版外觀 QA 修正
 第二版將中央頂端平台深度由 9 mm 縮至 3 mm，保留照片所見的短平頂與兩側肩部斜線。原狹槽改為向外張開的 V 形入口切面，兩個三角牆面加入可見窗孔。中央玻璃格柵退回立面內，低層資訊翼增設兩層水平樓板。V 形夾角、窗孔位置與曲線翼仍為照片近似。
@@ -60,6 +61,6 @@ python validate_model.py
 
 ## 實際STL正背並排
 
-| 正面 | 背面（未見部分按詳頁明示簡化） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

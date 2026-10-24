@@ -6,6 +6,11 @@
 - [正面](previews/front.png) · [左面](previews/left.png) · [右面](previews/right.png) · [背面](previews/rear.png) · [頂面](previews/top.png)
 - [來源與年代](SOURCES.md) · [授權說明](LICENSE-NOTICE.md) · [重建原始碼包](rebuild-source.zip)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 左面<br>![左面](previews/left.png) | 右面<br>![右面](previews/right.png) |
+| 背面<br>![背面](previews/rear.png) | 頂面<br>![頂面](previews/top.png) |  |
+
 保留1442個原三角面的座標與面序，原STL bytes不動。僅兩片前向紅屋坡9面（主坡7、門廊2，1768.181312平方毫米）和21組窗背42面（2314平方毫米）；合計51面／4082.181312平方毫米。其餘1391面維持未查證中性色，不表示實際白牆。23有限域要求全部三頂點在明確有限平面／梯形內且叉積法向吻合；不切面、不新增玻璃、不重三角化。
 
 混合磚灰主牆、地層格柵／植栽、側後屋坡、屋脊、簷邊、右高塊及其餘面皆不染。前後坡色彩終止是證據範圍，不是實景材質接縫。窗框與凹口仍是原始幾何，粗略窗序不宣稱精確歷史復原。紅坡、綠灰窗皆未校色的不透明展示代理，非精確RGB或玻璃光學。

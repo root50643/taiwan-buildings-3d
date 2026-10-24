@@ -4,14 +4,24 @@
 
 ## 最新來源限定前面六材質外觀版（2026-10-20）
 
-![圖書館前立面外觀](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![圖書館前立面外觀](appearance/previews/front.png) |  |  |
 
 [配色、來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/library-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 只改善2008官方照片13013可登錄的前面與左端藝術中心雨棚；背面、屋頂與右入口保持中性。原STL與歷史QA保留，不是新增幾何。[原單色正背合圖](previews/front-rear.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正背合圖<br>![原單色正背合圖](previews/front-rear.png) |  |  |
+
 
 [頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 正面大圖<br>![正面大圖](previews/front.png) | 背面大圖<br>![背面大圖](previews/rear.png) |
 
 ## 下載與重建
 - [可列印模型 model.stl](model.stl)：單位毫米，含底座最大邊不超過150毫米，本件尺寸約 150 × 112 × 70 毫米。

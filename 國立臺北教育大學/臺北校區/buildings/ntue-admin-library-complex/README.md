@@ -15,13 +15,21 @@
 - [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：自行建模參數；python build_model.py
 - [render_preview.py](render_preview.py)：實際STL渲染；blender -b -t 2 -P render_preview.py
 
-| 實際STL正面 | 實際STL背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
+
 [圖書館入口斜正立面](previews/library_elevation.png)；不把行政及圖書館同形外觀當成同一張照片重用。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 圖書館入口斜正立面<br>![圖書館入口斜正立面](previews/library_elevation.png) |  |  |
 
 [原STL射線空隙檢核](portal-ray-proof.json) · [重跑射線程式](check_portal_geometry.py)。直接遍歷原STL三角形，不修補或封截面。
 

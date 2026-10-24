@@ -4,8 +4,8 @@
 
 階段模型（1套），非全教學區／全校完成。第三教學區是本次模型導覽分區，不因此新增官方校區列冊。
 
-| 建築模型 |
-| :---: |
-| [<img src="buildings/nfu-cma-building/previews/front.png" alt="文理暨管理大樓：實際模型預覽" width="220">](buildings/nfu-cma-building/README.md)<br>**[文理暨管理大樓](buildings/nfu-cma-building/README.md)** |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 建築模型<br>[![文理暨管理大樓：實際模型預覽](buildings/nfu-cma-building/previews/front.png)](buildings/nfu-cma-building/README.md)<br>**[文理暨管理大樓](buildings/nfu-cma-building/README.md)** |  |  |
 
 文理暨管理大樓完整相連主外觀近似：第三教學區北3F/南9F錯位雙翼、圓廳戶外平台、真B1採光院、1–3F異位橋梯、不對稱雙高退臺外框、主曲膜及塔頂小膜。2007官方設計＋六張建築師完成照，照片攝日未知，非竣工測繪或2026現況。248.4×172.8×125.55mm，8色Blend/3MF/STL與5實mesh預覽；103580三角單殼，628有效切層、22空實點及6局部切層，strict材質及Blend頂點存讀、乾淨9件byte一致、獨審通過。小膜z114.8mm有1個0.891mm²薄截層島如實保留，膜/橋梯需支撐、未實印；細部按設計近似，不代表全校完成。

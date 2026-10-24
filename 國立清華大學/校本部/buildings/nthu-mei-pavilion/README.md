@@ -1,6 +1,8 @@
 # 國立清華大學 梅亭／機亭
 
-![完整薄殼主體模型](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![完整薄殼主體模型](previews/front.png) |  |  |
 
 **新增幾何｜完整建築主體外觀近似，不是測繪復原。** 清華校本部梅園梅亭，亦稱機亭；不是月涵亭、月涵堂或寄梅亭。
 
@@ -21,10 +23,11 @@
 水密與單連通≠可直接列印。0.2mm水平切層中，自由高角頂端有0.8mm侵蝕測試失敗，局部薄特徵失敗亦照實保留。大面積鞍面底部、自由角懸挑、桌面槽口需切片器支撐／方向規劃；可能須加厚尖端。**未做實體試印，未認證免支撐、強度或逐點壁厚。**
 
 ## 五個實際交付網格視角
-![背斜視](previews/rear.png)
-![立面](previews/elevation.png)
-![頂視](previews/top.png)
-![左斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![背斜視](previews/rear.png) | ![立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| ![左斜視](previews/left_oblique.png) |  |  |
 
 ## 重建與驗證
 Python依賴見requirements.txt；lib3mf官方SDK另裝於執行驗證的Python環境，Blender4.3.2。

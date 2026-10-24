@@ -2,9 +2,9 @@
 
 ## 4 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 原截段封閉面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 原截段封閉面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntutpioneer-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -23,11 +23,15 @@
 
 ## 實際 STL 預覽
 
-| 正面 | 背面（模型截面） |
-| --- | --- |
-| ![actual STL正面](previews/front.png) | ![actual STL截段背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![actual STL正面](previews/front.png) | 背面（模型截面）<br>![actual STL截段背面](previews/rear.png) |  |
 
 [頂視圖](previews/top.png) · [北向正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 北向正立面<br>![北向正立面](previews/elevation.png) |  |
 
 ## 特徵與簡化
 

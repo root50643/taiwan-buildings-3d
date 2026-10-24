@@ -2,10 +2,9 @@
 
 校本部／公開外觀近似模型。每棟独立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 110.00 × 93.70 mm。
 
-![實際STL正面](previews/front.png)
-![實際STL背面](previews/rear.png)
-
-![實際STL俯視（如適用）](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) | ![實際STL俯視（如適用）](previews/top.png) |
 
 ## 外觀與範圍
 橢圓體量、弧面帶窗、開放屋頂網球場、上緣環梁與支柱、端部高服務牆及低機房。

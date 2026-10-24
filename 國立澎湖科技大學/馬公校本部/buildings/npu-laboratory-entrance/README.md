@@ -2,11 +2,15 @@
 
 **局部外觀模型，不是全館、不是整棟兩層樓。** 範圍僅入口兩圓柱深門廊、後方前兩層玻璃立面、右側雨棚及上方大挑梁。廣場照片另見更高退縮窗帶、山牆與斜屋頂；本件全部排除。背面 y=20 mm、左右及上邊界是人工截斷，不能讀成真實背立面或屋頂。
 
-| 正面 | 背面 |
-|---|---|
-| ![交付STL正面](previews/front.png) | ![交付STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![交付STL正面](previews/front.png) | 背面<br>![交付STL背面](previews/rear.png) |  |
 
 [STL](model.stl) · [可編輯Blender網格](scene.blend) · [同來源低視角](previews/source-angle.png) · [正立面](previews/elevation.png) · [頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 同來源低視角<br>![同來源低視角](previews/source-angle.png) | 正立面<br>![正立面](previews/elevation.png) | 頂視<br>![頂視](previews/top.png) |
 
 ## 來源與建模範圍
 - 官方門口近照與1F平面入口前緣兩個圓形柱位交叉核對，做2支主要圓柱；細門窗梃不計主柱。

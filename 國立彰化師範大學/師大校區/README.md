@@ -6,5 +6,7 @@
 
 ### [工學院大樓主立面段](buildings/ncue-engineering-front-segment/)
 
-[![工學院大樓主立面段](buildings/ncue-engineering-front-segment/previews/front.png)](buildings/ncue-engineering-front-segment/)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![工學院大樓主立面段](buildings/ncue-engineering-front-segment/previews/front.png)](buildings/ncue-engineering-front-segment/) |  |  |
 

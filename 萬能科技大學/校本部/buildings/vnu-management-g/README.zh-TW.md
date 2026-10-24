@@ -16,9 +16,9 @@ v2保留左下兩層深凹口與橫梁；凹深依照片近似。右側立面在
 - 執行 validate_model.py、check_layers.py、check_thin_features.py 複核。
 
 ## 實際STL正背並排
-| 正面 | 背面（未見處簡化） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見處簡化）<br>![背面](previews/rear.png) |  |
 
 ## 檢查及列印限制
 - 原STL法向/邊與頂點流形、正體積、單一連通外表面、無分離內腔殼、重建SHA與Blend/STL三角幾何一致：全部通過。

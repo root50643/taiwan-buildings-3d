@@ -4,16 +4,24 @@
 
 ## 最新七材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 背面保持中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nqu-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 只對建築師實景可登錄正面與右側配色；凸角石和窗框淡色，前瓦坡炭灰，未覆核左側與未知背面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+
 
 [正立面](previews/elevation.png) · [頂視](previews/top.png) · [屋頂低視角](previews/roof-detail.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 頂視<br>![頂視](previews/top.png) | 屋頂低視角<br>![屋頂低視角](previews/roof-detail.png) |
 
 ## 範圍與版本
 - 外觀候選：2024側面補證修版v2；保留成對曲線山牆及橫向屋脊。獨立數位驗證已完成，44筆角損及沿面限定證據已核可，不能視為已發布或已試印。
@@ -43,6 +51,10 @@
 44筆原Polygon角損（36山牆端、8屋面外角）最大2.213313498497953%，最少保留97.78668650150205%；原0.8mm opening零消失/分裂，真角0.41mm鄰域外損失0。仍保留原strict false，特定限定裁定見獨立補充。全射線後區間有122條沿面／3551原三角區間，沿面不算實體厚度或開放空氣；詳見QA。
 
 [新增側面](previews/new-side.png) · [側正立面](previews/left.png) · [本次變更](CHANGELOG.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 新增側面<br>![新增側面](previews/new-side.png) | 側正立面<br>![側正立面](previews/left.png) |  |
 
 獨審補充：15點/原面共135480點；73旗標分71正長度外表面（涵作者原63全）＋2孤立共享邊切觸。作者先前以單點winding判46正常的解釋撤回；原值與strict false保留，詳QA更正。
 

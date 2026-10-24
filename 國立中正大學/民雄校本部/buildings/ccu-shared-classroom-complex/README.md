@@ -6,11 +6,15 @@
 
 ## 預覽
 
-| 正面 | 背面 |
-|---|---|
-| ![actual STL正面](previews/front.png) | ![actual STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![actual STL正面](previews/front.png) | 背面<br>![actual STL背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [俯視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |  |
 
 所有預覽由交付的同一份STL匯入後渲染；非來源照片、效果圖或另做的展示幾何。
 

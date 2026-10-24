@@ -20,11 +20,13 @@ build_model.py為原創可重建參數；model.stl為列印候選；scene.blend�
 
 [STL](model.stl) · [可編輯場景](scene.blend) · [原創參數](build_model.py) · [來源](sources.json) · [核驗與待審警告](QA.md)
 
-| 正面 | 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
-![屋頂](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![屋頂](previews/top.png) |  |  |
 
 ## 獨立核驗與有限例外
 

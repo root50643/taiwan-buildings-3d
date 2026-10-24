@@ -2,9 +2,9 @@
 
 MOE 1080。以最終方案 C、2016 年完成資訊與 2017-09-17 已落成實照交叉約束的早期主體外殼。這是估計比例的建築外觀模型，不是測繪、竣工 BIM 或結構模型。未試印。
 
-| 東側大框、深廊與抬高前裙樓 | 西背面與兩端不同核心 |
-|---|---|
-| ![正面](previews/v14-public/front.png) | ![背面](previews/v14-public/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 東側大框、深廊與抬高前裙樓<br>![正面](previews/v14-public/front.png) | 西背面與兩端不同核心<br>![背面](previews/v14-public/rear.png) |  |
 
 ## 建築與尺度
 
@@ -24,6 +24,12 @@ MOE 1080。以最終方案 C、2016 年完成資訊與 2017-09-17 已落成實�
 九張正式圖為 front、rear、east、west、south、north、top、courtyard-gallery、courtyard-arcade。前七張正交，院內兩張為 20 mm 透視，投影與焦距逐圖綁定 manifest。Cycles CPU、64 samples、單執行緒，未使用 OIDN 或其他降噪。公開 PNG 只允許移除 File／時間文字 metadata；IDAT、解碼 RGBA 及保留色彩 chunks 必須逐圖不變。
 
 [東正面](previews/v14-public/east.png) · [西背面](previews/v14-public/west.png) · [南短側](previews/v14-public/south.png) · [北短側](previews/v14-public/north.png) · [俯視](previews/v14-public/top.png) · [院內高棟深廊](previews/v14-public/courtyard-gallery.png) · [院內前裙樓通廊](previews/v14-public/courtyard-arcade.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 東正面<br>![東正面](previews/v14-public/east.png) | 西背面<br>![西背面](previews/v14-public/west.png) | 南短側<br>![南短側](previews/v14-public/south.png) |
+| 北短側<br>![北短側](previews/v14-public/north.png) | 俯視<br>![俯視](previews/v14-public/top.png) | 院內高棟深廊<br>![院內高棟深廊](previews/v14-public/courtyard-gallery.png) |
+| 院內前裙樓通廊<br>![院內前裙樓通廊](previews/v14-public/courtyard-arcade.png) |  |  |
 
 ## 來源
 

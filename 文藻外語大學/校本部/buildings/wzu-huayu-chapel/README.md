@@ -2,10 +2,9 @@
 
 校本部／公開外觀近似模型。每棟獨立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 140.00 × 90.00 mm。
 
-![實際STL正面](appearance/previews/front.png)
-![實際STL背面](appearance/previews/rear.png)
-
-![實際STL俯視（如適用）](appearance/previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面](appearance/previews/front.png) | ![實際STL背面](appearance/previews/rear.png) | ![實際STL俯視（如適用）](appearance/previews/top.png) |
 
 ## 最新配色與下載
 
@@ -41,3 +40,9 @@ STL SHA-256：f00727291f2ad83bf84b95f260ab252fa5089c47b2a0d52b6fd8ee97d038382e
 ## 歷史單色與原網格 QA
 
 原 scene.blend、render_preview.py 與四張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)、[頂視](previews/top.png)。它們是原模型的重建及製造檢查記錄；最新展示位於 appearance/。原 QA 不覆寫，新細分網格的拓撲、外包絡與數值精度另行檢查，沒有新切片或試印。
+
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 立面<br>![立面](previews/elevation.png) |
+| 頂視<br>![頂視](previews/top.png) |  |  |

@@ -2,9 +2,15 @@
 
 國立高雄大學／楠梓校本部。自主建立的照片外觀近似模型；不是測繪、竣工BIM或全校完成。
 
-![實際STL正背面並列](previews/front-rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正背面並列](previews/front-rear.png) |  |  |
 
 [STL](model.stl) · [可編修Blender網格](scene.blend) · [正投影](previews/elevation.png) · [反面正投影](previews/rear_elevation.png) · [頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正投影<br>![正投影](previews/elevation.png) | 反面正投影<br>![反面正投影](previews/rear_elevation.png) | 頂視<br>![頂視](previews/top.png) |
 
 ## 建模範圍與來源限度
 - 高館、低館（泳池所在）、接合服務塔與後側低層玻璃翼合併成一件外觀近似模型；泳池不另計棟。

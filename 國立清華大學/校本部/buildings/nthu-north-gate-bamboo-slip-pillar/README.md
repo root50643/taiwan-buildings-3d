@@ -1,6 +1,8 @@
 # 國立清華大學北校門簡冊立柱｜三片牆體外觀近似
 
-![實際模型正面斜視](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際模型正面斜視](previews/front.png) |  |  |
 
 1977 年楊英風設計北校門地標的獨立外觀近似，**不是整座北校門、清華門或新光廊重建**。
 
@@ -9,6 +11,11 @@
 - [生成器](build_model.py) · [渲染器](render_model.py) · [材質表](palette.json)
 - [正面斜視](previews/front.png) · [背面](previews/rear.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png) · [左斜視](previews/left_oblique.png)
 - [來源與取捨](SOURCES.md) · [列印限制與 QA](QA.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) |  |  |
 
 三種獨立命名展示材質可換色，3MF 顏色不是列印機料槽指派。保留三片**等高**平行牆體的外形、兩道側面淺凹縫，以及照片中三組雙橫飾。凹縫有實心背板，並非貫通孔；內部採加厚實體，不聲稱重建真實結構。正面校名字體刻意省略，以避免臆造書法與細碎凸字。背面平整簡化，沒有鏡像文字。
 

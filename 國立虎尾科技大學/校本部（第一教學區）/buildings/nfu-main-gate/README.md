@@ -4,11 +4,15 @@
 
 **只做既有校門曲牆與警衛室，不含後方相鄰教學大樓。不是整個校門廣場現況模型；2025新增虎雕、旗桿與路障未建。**
 
-| 實際 STL 正面 | 實際 STL 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
 [上視圖](previews/top.png) · [低角度立面圖](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 上視圖<br>![上視圖](previews/top.png) | 低角度立面圖<br>![低角度立面圖](previews/elevation.png) |  |
 
 ## 下載與重建
 - [毫米 STL](model.stl)（150.0 × 76.0 × 47.8 mm，含3mm底座，各件獨立近似比例）
@@ -37,3 +41,8 @@
 1個取樣層超過1% opening loss，並非零警告。[逐構件補充檢查](component-thin-audit.json)及[可重跑腳本](check_component_thin.py)確認全部48個取樣層之各Polygon均留存，0.4mm侵蝕核心未分裂。最不利z=47.071mm只有1個Polygon，11.703887mm²中保留98.836039%；包圍矩形最小寬3.0521mm。設計徑向壁厚3mm，包圍矩形寬不能當全面局部最小壁厚。開運算損失集中於角落，仍須實際切片與試印確認。
 
 [最不利頂端截面圖（自製數位QA）](previews/top-section-qa.png)
+
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 最不利頂端截面圖（自製數位QA）<br>![最不利頂端截面圖（自製數位QA）](previews/top-section-qa.png) |  |  |

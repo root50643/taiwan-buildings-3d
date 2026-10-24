@@ -2,11 +2,16 @@
 
 國立臺北護理健康大學・石牌校區。本件以2021施工方完工照片、校方7–10F平面及NLSC航照建立完整主體外觀近似；不是測繪、同年現況或全校完成。既有城區校區1965文教大樓是另一件建物，本件不增加學校覆蓋數。
 
-| 北長面，實際STL | 南長面，實際STL |
-|---|---|
-| ![北面](previews/front.png) | ![南面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 北長面，實際STL<br>![北面](previews/front.png) | 南長面，實際STL<br>![南面](previews/rear.png) |  |
 
 [STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數來源](build_model.py) · [北立面](previews/elevation.png) · [南立面](previews/rear-elevation.png) · [西端](previews/west.png) · [東端](previews/east.png) · [俯視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 北立面<br>![北立面](previews/elevation.png) | 南立面<br>![南立面](previews/rear-elevation.png) | 西端<br>![西端](previews/west.png) |
+| 東端<br>![東端](previews/east.png) | 俯視<br>![俯視](previews/top.png) |  |
 
 ## 幾何範圍
 

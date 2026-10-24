@@ -7,6 +7,11 @@
 - [北正面](previews/front.png)・[左側](previews/left.png)・[右側](previews/right.png)・[南背面](previews/rear.png)・[俯視](previews/top.png)
 - [可重建來源ZIP](rebuild-source.zip)：解壓後依序執行appearance/source/build_appearance.py、verify_exchange.py，再用Blender --background --python執行render_appearance.py、verify_scene.py。numpy、lib3mf2.5.0、Blender4.3.2；保留同層model.stl與original-scene.blend。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 北正面<br>![北正面](previews/front.png) | 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |
+| 南背面<br>![南背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 ## 明確範圍與有限收益
 全三頂點有限平面／弦域及實叉積世界外法向驗證81域，local容差3e-5；逆原scale150/96、Y鏡射、z+2。禁止centroid代替、不切三角、不增幾何、不染黑牆。北x5..26是已見連續玻璃材質的保守內縮，非精確攝影測繪、facet對像素配準或真實材料縫。最後兩北facet、東短端、北最低不透明帶4.4..6.2、D/E翼、南中窄窗、框、屋頂、底座等均不新染。292面探索案與第四facet64面不適用。色／中性界線表達證據界限而不是建材接縫。北格網及南長窗辨識有所改善，不能誇大為全樓外觀還原。代理RGB未量測，不重建透明或反射。
 

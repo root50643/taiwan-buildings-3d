@@ -2,9 +2,9 @@
 
 ## 8 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuh1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -23,9 +23,9 @@
 - `rebuild-check.json`：連續重建 STL 的雜湊比對。
 - `evidence.json`：官方證據、判讀內容與限制；`SHA256SUMS`：檔案核對值。
 
-![H1 實際 STL 正面](previews/front.png)
-
-![H1 實際 STL 背面；背立面證據不足，保留簡化](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![H1 實際 STL 正面](previews/front.png) | ![H1 實際 STL 背面；背立面證據不足，保留簡化](previews/rear.png) |  |
 
 ## 依照片保留的辨識特徵
 

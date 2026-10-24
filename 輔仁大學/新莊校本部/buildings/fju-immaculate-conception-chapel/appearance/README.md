@@ -19,4 +19,9 @@
 - [可重建來源包](rebuild-source.zip)：解壓後於appearance/source依序執行`python build_appearance.py`、`python verify_exchange.py`、`python verify_material_boundaries.py`、`blender -b -t 2 -P render_appearance.py`、`blender -b -t 2 -P verify_scene.py`。依[requirements](source/requirements.txt)。
 - 五圖：[前斜](previews/front.png)、[正面](previews/elevation.png)、[側面](previews/side.png)、[背面](previews/rear.png)、[俯視](previews/top.png)。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前斜<br>![前斜](previews/front.png) | 正面<br>![正面](previews/elevation.png) | 側面<br>![側面](previews/side.png) |
+| 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |  |
+
 QA含lib3mf strict零警告、真材質修改存檔重開、Blender材質修改存檔重開、乾淨重建、幾何精確比對。原製造QA未重算，不主張FFF或物理列印已測。照片不隨包分發。

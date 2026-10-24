@@ -2,9 +2,9 @@
 
 1957建物、修復前外觀的來源限定近似。僅禮拜堂自身西前廳、長堂、東半圓聖壇、北側鐘塔及附房，不含本館、西校舍或整個校園。現法定學校與歷史台南神學院同址承接關係，不另計第二校；亦不推定本件校舍為獨占產權。
 
-| 西正面與南長面 | 東聖壇與鐘塔 |
-|---|---|
-| ![同件西正面](previews/front.png) | ![同件東背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西正面與南長面<br>![同件西正面](previews/front.png) | 東聖壇與鐘塔<br>![同件東背面](previews/rear.png) |  |
 
 [STL](model.stl) · [可編輯Blend網格](scene.blend) · [參數源碼](build_model.py) · [來源](sources.json) · [尺度證據](dimensional-evidence.json) · [QA](qa-summary.json) · [原面ray](architectural-ray-check.json) · [每構件loss](feature-loss-locations.json)
 
@@ -49,11 +49,15 @@
 
 使用 [requirements.txt](requirements.txt) 與Blender4.3.2，依序執行 `python build_model.py`、`blender -b -t 4 -P render_preview.py`、`python run_all_checks.py`。任何invalid或非零exit都須修源重新全檢，不能repair後沿用舊報告。
 
-| 正西低角度 | 屋頂分段 |
-|---|---|
-| ![西門與三連拱](previews/west.png) | ![西RC及後雙坡](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正西低角度<br>![西門與三連拱](previews/west.png) | 屋頂分段<br>![西RC及後雙坡](previews/top.png) |  |
 
 [北面](previews/elevation.png) · [東面](previews/east.png) · [東正視](previews/rear-elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 北面<br>![北面](previews/elevation.png) | 東面<br>![東面](previews/east.png) | 東正視<br>![東正視](previews/rear-elevation.png) |
 
 原照片／PDF只作核對，未隨本包重新散布。未建模本館、西校舍、宿舍、圖書館與其他校園設施，本件不代表全校完成。
 

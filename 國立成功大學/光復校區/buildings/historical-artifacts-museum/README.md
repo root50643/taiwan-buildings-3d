@@ -4,13 +4,17 @@
 
 ## 最新七材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 背面與未見面保持中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/artifact-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依官方照片登錄紅棕正面與左長側、奶油窗楣雨遮及灰色已見屋頂坡；深入口不是玻璃。另一長側、後端與遠側屋頂中性，不增加白牆基分界或磚瓦紋理。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 ## 來源及實際像素觀察

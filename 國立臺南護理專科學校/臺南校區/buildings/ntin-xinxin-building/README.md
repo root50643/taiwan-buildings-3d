@@ -8,6 +8,10 @@
 
 [正立面](previews/elevation.png) · [短側](previews/side.png) · [頂視](previews/top.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 短側<br>![短側](previews/side.png) | 頂視<br>![頂視](previews/top.png) |
+
 ## 下載與重建
 
 - [列印 STL](model.stl)，毫米，含底座 150 × 48 × 41.700001 mm

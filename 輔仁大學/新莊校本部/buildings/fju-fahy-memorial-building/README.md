@@ -2,7 +2,9 @@
 
 新莊校本部；官方校圖編號 47。這是公開照片導向的整棟外觀近似研究模型，並非精密測繪或BIM。
 
-<table><tr><td><img src="previews/front.png" width="420" alt="STL斜前方"></td><td><img src="previews/rear.png" width="420" alt="STL斜後方"></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![STL斜前方](previews/front.png) | ![STL斜後方](previews/rear.png) |  |
 
 ## 外觀依據與範圍
 完整主塔樓外包絡、中央高窗帶、左右窗列及水平挑板、較高中央頂部、圓弧入口雨遮与柱廊。

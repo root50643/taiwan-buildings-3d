@@ -6,6 +6,11 @@
 - [前](previews/front.png) · [左](previews/left.png) · [右](previews/right.png) · [後](previews/rear.png) · [頂](previews/top.png)
 - [單色對照](previews/mono-rear.png) · [來源及限制](SOURCES.md) · [授權](LICENSE-NOTICE.md)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前<br>![前](previews/front.png) | 左<br>![左](previews/left.png) | 右<br>![右](previews/right.png) |
+| 後<br>![後](previews/rear.png) | 頂<br>![頂](previews/top.png) | 單色對照<br>![單色對照](previews/mono-rear.png) |
+
 白色曲翼窗背1120、兩座梯塔64、退台36、可見高紅磚區22面。高紅磚隱蔽96面拒染；前面、所有不透明牆體、屋頂、框、窗洞側壁、八孔及白翼梁槽均不染色。精確原三角形，無分割、增添玻璃或窗櫺。每面全部三點限定在原有限平面分段且以實際叉積法線驗證；原STL bytes、坐標、順序及朝向不變。
 
 ## 非製造修復／非可直接列印

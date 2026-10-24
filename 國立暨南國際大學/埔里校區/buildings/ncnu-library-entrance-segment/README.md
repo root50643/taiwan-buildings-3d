@@ -4,11 +4,15 @@
 
 只建入口雙柱、折面倒錐柱頭、雨遮、門前階梯、相鄰局部立面及低柱廊。不是整棟圖書館。
 
-| 交付 STL 正面 | 交付 STL 背面 |
-| --- | --- |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數腳本](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 範圍與辨識特徵
 - 雙柱與向上展開的倒錐折面柱頭

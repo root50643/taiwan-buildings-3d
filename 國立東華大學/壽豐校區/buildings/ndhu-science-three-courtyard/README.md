@@ -6,8 +6,9 @@
 
 ## 模型與下載
 
-![實際交付STL正面與背面](previews/front-rear.png)
-![實際交付STL頂視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際交付STL正面與背面](previews/front-rear.png) | ![實際交付STL頂視](previews/top.png) |  |
 
 - [STL列印模型](model.stl)
 - [可編輯Blender場景](scene.blend)：匯入實際交付STL的網格，預覽顏色不隨STL保存
@@ -34,7 +35,9 @@
 
 ## 架空通道專項證據
 
-![原STL低視角架空柱廊](previews/piloti.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![原STL低視角架空柱廊](previews/piloti.png) |  |  |
 
 [直接原STL射線檢查](piloti-opening-check.json)及[重跑腳本](check_piloti_opening.py)：在y=10、z=6及10.8mm，X方向穿越B翼全寬無交點；柱列y=20、z=6mm交到兩個實心圓柱區間；z=11.2mm穿過柱列或跨中只交B翼外側兩面，證明上方連續樓板。配合單一連通表面QA，柱與樓板確實連接。這不是結構承載試驗。
 

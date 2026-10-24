@@ -2,9 +2,9 @@
 
 第九批；成功校區。尺寸 150 × 86 × 129 mm，含底座最長邊150 mm；各件獨立比例。
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 公開來源與像素檢視
 

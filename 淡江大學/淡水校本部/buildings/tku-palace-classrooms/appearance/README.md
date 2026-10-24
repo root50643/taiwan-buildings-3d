@@ -2,10 +2,10 @@
 
 本次只對原有 **11,064 三角面／5,414 頂點**加表面材質，不改座標、面序或形體，不細分，也不把群組拆成新增七件模型。原 STL 位元保持。
 
-| 西南西端向東北東 | 反向：未知牆面保持中性 |
-|---|---|
-| ![正向](previews/front.png) | ![反向](previews/rear.png) |
-| ![南側立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西南西端向東北東<br>![正向](previews/front.png) | 反向：未知牆面保持中性<br>![反向](previews/rear.png) | ![南側立面](previews/elevation.png) |
+| ![頂視](previews/top.png) |  |  |
 
 [彩色 3MF](tku-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派理由](face-materials.json) · [原 STL](../model.stl)
 

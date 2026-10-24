@@ -11,9 +11,9 @@
 |---|---|---|
 | ![正面](previews/front.png) | ![反面](previews/rear.png) | ![立面](previews/elevation.png) |
 
-| 俯視四片分離曲線 | 側高斜視 |
-|---|---|
-| ![俯視](previews/top.png) | ![側高斜](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視四片分離曲線<br>![俯視](previews/top.png) | 側高斜視<br>![側高斜](previews/left_oblique.png) |  |
 
 ## 保留的主體
 - **四片分離白色曲板**，各有斜升自由頂緣；最高片、次高片、兩片較低，非等高複製。

@@ -6,7 +6,7 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| [<img src="buildings/stust-living-services-gate-2016/previews/campus.png" alt="生活機能館暨一體校門（2016）：實際模型預覽" width="220">](buildings/stust-living-services-gate-2016/README.md)<br>**[生活機能館暨一體校門（2016）](buildings/stust-living-services-gate-2016/README.md)** | [<img src="buildings/stust-covered-sports-court/previews/front.png" alt="新風雨球場（2020）：實際模型預覽" width="220">](buildings/stust-covered-sports-court/README.md)<br>**[新風雨球場（2020）](buildings/stust-covered-sports-court/README.md)** | |
+| [![生活機能館暨一體校門（2016）：實際模型預覽](buildings/stust-living-services-gate-2016/previews/campus.png)](buildings/stust-living-services-gate-2016/README.md)<br>**[生活機能館暨一體校門（2016）](buildings/stust-living-services-gate-2016/README.md)** | [![新風雨球場（2020）：實際模型預覽](buildings/stust-covered-sports-court/previews/front.png)](buildings/stust-covered-sports-court/README.md)<br>**[新風雨球場（2020）](buildings/stust-covered-sports-court/README.md)** | |
 
 [模型、原創參數、來源與完整QA](buildings/stust-living-services-gate-2016/README.md)
 

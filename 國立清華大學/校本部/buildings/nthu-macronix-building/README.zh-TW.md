@@ -68,14 +68,16 @@ python check_layers.py
 
 以下四圖均來自根目錄 STL／SHA-256 `00f6bbdd09196fba873d843bb9d50a1c3aad4e19e760978333dce6f49740627c`。
 
-| 正面 | 屋面高視角 |
-|---|---|
-| ![原R2 00f6 正面](previews/front.png) | ![原R2 00f6 屋面](previews/roof.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![原R2 00f6 正面](previews/front.png) | 屋面高視角<br>![原R2 00f6 屋面](previews/roof.png) |  |
 
-| 背面 | 正投影 |
-|---|---|
-| ![原R2 00f6 背面](previews/rear.png) | ![原R2 00f6 立面](previews/elevation.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 背面<br>![原R2 00f6 背面](previews/rear.png) | 正投影<br>![原R2 00f6 立面](previews/elevation.png) |  |
 
 填縫製造檢查選項的實際預覽（僅對應 `6801f9c41c9fd986df4167523ec36195e715d6a38a680c09aff002cba1351b2a`）：
 
-[![填縫版6801實際正面預覽](manufacturing/fill-hidden-gaps/previews/front.png)](manufacturing/fill-hidden-gaps/model.stl)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| [![填縫版6801實際正面預覽](manufacturing/fill-hidden-gaps/previews/front.png)](manufacturing/fill-hidden-gaps/model.stl) |  |  |

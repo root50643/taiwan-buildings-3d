@@ -2,9 +2,9 @@
 
 ## 八材質外觀版（2026-10-20）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuub4-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,8 +13,9 @@
 
 依國立聯合大學官方校園地圖與外觀照片製作的近似建築模型。B4 設有資訊工程學系與電機資訊學院院辦；本作不是測繪模型，尚未實體試印。
 
-![B4 實際 STL 正面預覽](previews/front.png)
-![B4 實際 STL 背面預覽](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![B4 實際 STL 正面預覽](previews/front.png) | ![B4 實際 STL 背面預覽](previews/rear.png) |  |
 
 ## 外觀依據
 

@@ -8,9 +8,9 @@
 | :---: | :---: | :---: |
 | ![前斜](previews/front.png) | ![後斜](previews/rear.png) | ![正立面](previews/elevation.png) |
 
-| 屋頂 | 另一側斜視 |
-| :---: | :---: |
-| ![屋頂](previews/top.png) | ![另一側](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 屋頂<br>![屋頂](previews/top.png) | 另一側斜視<br>![另一側](previews/left_oblique.png) |  |
 
 ## 檔案
 - `scene.blend`：可編輯原始三角幾何及8材質；不是照片貼圖。

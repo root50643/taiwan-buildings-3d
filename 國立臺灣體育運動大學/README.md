@@ -4,8 +4,8 @@
 
 [臺中校區模型入口](臺中校區/README.md)
 
-| 長啓樓正面 | 長啓樓背面 |
-|---|---|
-| ![長啓樓實際STL正面](臺中校區/buildings/ntus-changqi-building/previews/front.png) | ![長啓樓實際STL背面](臺中校區/buildings/ntus-changqi-building/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 長啓樓正面<br>![長啓樓實際STL正面](臺中校區/buildings/ntus-changqi-building/previews/front.png) | 長啓樓背面<br>![長啓樓實際STL背面](臺中校區/buildings/ntus-changqi-building/previews/rear.png) |  |
 
 兩圖皆由交付 STL 渲染；預覽顏色僅供辨識，STL 本身沒有色彩或材質。

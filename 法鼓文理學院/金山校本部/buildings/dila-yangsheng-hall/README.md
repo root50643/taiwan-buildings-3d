@@ -2,9 +2,9 @@
 
 來源限定外觀近似模型，最大尺寸 **150 mm**。呈現西側挑空球場與東側五層長條棟、五西一南凸盒窗、南階梯及兩座截斷橋接；不是精密建築復刻或同年測繪。
 
-| 正面 actual STL | 背面 actual STL |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面 actual STL<br>![正面](appearance/previews/front.png) | 背面 actual STL<br>![背面](appearance/previews/rear.png) |  |
 
 ## 最新配色與下載
 
@@ -49,3 +49,10 @@
 ## 歷史單色與展示檢查
 
 原 scene.blend 與八張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[左側](previews/left.png)、[右側](previews/right.png)、[頂視](previews/top.png)、[屋面細節](previews/roof-detail.png)、[南框細節](previews/porch-detail.png)、[北端細節](previews/north-detail.png)。原 readme-view-check.json 是當時單色展示的路徑與 SHA 記錄，未覆寫；現行 README 圖片另由此次外觀發布檢查驗證。上列原製造警示與特定例外沒有被配色 QA 取代。
+
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 左側<br>![左側](previews/left.png) |
+| 右側<br>![右側](previews/right.png) | 頂視<br>![頂視](previews/top.png) | 屋面細節<br>![屋面細節](previews/roof-detail.png) |
+| 南框細節<br>![南框細節](previews/porch-detail.png) | 北端細節<br>![北端細節](previews/north-detail.png) |  |

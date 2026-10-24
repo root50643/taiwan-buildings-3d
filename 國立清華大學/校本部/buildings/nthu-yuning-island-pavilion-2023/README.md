@@ -2,11 +2,14 @@
 
 2023 實建外觀引導的完整簡化模型；不是 2022 山牆提案、舊西瓜亭或其他清華亭。尺寸為設計 mm，非實測比例。
 
-![完整模型](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![完整模型](previews/front.png) |  |  |
 
-| 陸側入口 | 湖側反向 | 正立面 | 俯視 | 側向 |
-|---|---|---|---|---|
-| ![](previews/front.png) | ![](previews/rear.png) | ![](previews/elevation.png) | ![](previews/top.png) | ![](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 陸側入口<br>![](previews/front.png) | 湖側反向<br>![](previews/rear.png) | 正立面<br>![](previews/elevation.png) |
+| 俯視<br>![](previews/top.png) | 側向<br>![](previews/left_oblique.png) |  |
 
 ## 交付
 - `scene.blend`：可編輯單網格與五種材質；`model.3mf`：逐三角面基礎色；`model.stl`：無色幾何。

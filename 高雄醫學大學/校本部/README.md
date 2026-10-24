@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/kmu-library-two-early/previews/v5-public/front.png" alt="圖書二館北入口與西側圓窗模型" width="260">](buildings/kmu-library-two-early/README.md)<br>**[圖書二館｜早期完成外觀](buildings/kmu-library-two-early/README.md)**<br>四層玻璃主體、南側較高服務核、西北L形梯<br>122 × 135 × 約102.4 mm |  |  |
+| [![圖書二館北入口與西側圓窗模型](buildings/kmu-library-two-early/previews/v5-public/front.png)](buildings/kmu-library-two-early/README.md)<br>**[圖書二館｜早期完成外觀](buildings/kmu-library-two-early/README.md)**<br>四層玻璃主體、南側較高服務核、西北L形梯<br>122 × 135 × 約102.4 mm |  |  |
 
 [完整模型、正反並排預覽與下載](buildings/kmu-library-two-early/README.md) · [來源摘要](../inventory/sources/kmu-library-two-early-source-summary.md) · [QA摘要](../inventory/qa/kmu-library-two-early-review.md)
 

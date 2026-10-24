@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/nycu-tsmc-energy-education-center/previews/front.png" alt="台積電交大能源教育館（2017永久版蘭花屋）：實際模型預覽" width="220">](buildings/nycu-tsmc-energy-education-center/README.md)<br>**[台積電交大能源教育館（2017永久版蘭花屋）](buildings/nycu-tsmc-energy-education-center/README.md)** |  |  |
+| [![台積電交大能源教育館（2017永久版蘭花屋）：實際模型預覽](buildings/nycu-tsmc-energy-education-center/previews/front.png)](buildings/nycu-tsmc-energy-education-center/README.md)<br>**[台積電交大能源教育館（2017永久版蘭花屋）](buildings/nycu-tsmc-energy-education-center/README.md)** |  |  |
 
 ## 既有說明與更新紀錄
 

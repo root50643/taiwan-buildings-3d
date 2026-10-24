@@ -2,9 +2,9 @@
 
 通稱華梵大學。本批僅完成2009圖書資訊大樓的來源限定外觀近似；樓內廣欽老和尚紀念圖書館不另計一棟。不是全校完成，其他校舍待逐棟續作。
 
-| 圖資大樓東南主要面 | 同件西北坡上面 |
-|---|---|
-| [![東南面](校本部/buildings/hfu-library-2009/previews/front.png)](校本部/buildings/hfu-library-2009/README.md) | [![同棟西北面](校本部/buildings/hfu-library-2009/previews/rear.png)](校本部/buildings/hfu-library-2009/README.md) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 圖資大樓東南主要面<br>[![東南面](校本部/buildings/hfu-library-2009/previews/front.png)](校本部/buildings/hfu-library-2009/README.md) | 同件西北坡上面<br>[![同棟西北面](校本部/buildings/hfu-library-2009/previews/rear.png)](校本部/buildings/hfu-library-2009/README.md) |  |
 
 [模型完整說明](校本部/buildings/hfu-library-2009/README.md) · [STL](校本部/buildings/hfu-library-2009/model.stl) · [Blend](校本部/buildings/hfu-library-2009/scene.blend) · [屋頂](校本部/buildings/hfu-library-2009/previews/top.png) · [來源](校本部/buildings/hfu-library-2009/sources.json) · [QA](校本部/buildings/hfu-library-2009/qa-summary.json)
 

@@ -2,13 +2,17 @@
 
 ## 5 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 同構背側材料有界推估 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 同構背側材料有界推估<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuus2-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依四張官方內外照片配置銀灰金屬屋頂、象牙白結構、灰百葉與淡藍灰屏板；同構未見側材質為明示有界推估，屋頂不是 PV，不添加未分面的透光片、護柱套或球場圖形。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 依官方外觀照片製作的近似列印模型。最長邊獨立設定150 mm，並非全校統一縮尺或實測模型。正面朝-Y。只建外觀，不建內部配置。

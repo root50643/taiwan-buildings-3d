@@ -1,6 +1,8 @@
 # 國立成功大學｜安南校區｜研究總中心共享中庭弧棚雙跨構架段
 
-![弧棚構架段彩色模型](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![弧棚構架段彩色模型](previews/front.png) |  |  |
 
 以設計者官方歷史照片為依據的估算展示模型，**僅取三道橫向桁架／兩跨縱向構架段**，不是完整中庭、第三棟大樓或測繪模型。既有研究總中心高翼、入口低翼模型明確排除此共享弧棚；本件也不重建兩翼、連橋、欄杆、樓梯及室內。
 
@@ -19,13 +21,14 @@
 屋皮材質／透明度不明，採中性銀灰不透明薄皮；省略密集平行細條、螺栓和不可辨設備。鋼構深灰。藍色展示切端座刻意與建築區分，不宣稱照片中存在藍色構件。照片拍攝日期未知；2003 是作品頁完工年，非照片年份，2018 URL 路徑不是拍攝證據，也不稱為 2026 現況。
 
 ## 五個實際網格視角
-| 正斜視 | 後斜視 |
-|---|---|
-| ![](previews/front.png) | ![](previews/rear.png) |
-| 正立面 | 俯視 |
-| ![](previews/elevation.png) | ![](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正斜視<br>![](previews/front.png) | 後斜視<br>![](previews/rear.png) | 正立面<br>![](previews/elevation.png) |
+| 俯視<br>![](previews/top.png) |  |  |
 
-![低角度看開放桁架與檁條](previews/left_oblique.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![低角度看開放桁架與檁條](previews/left_oblique.png) |  |  |
 
 ## 重建
 Python 依賴見 requirements.txt；執行 `python build_model.py`、`python qa_model.py`、`python check_features.py`；Blender 執行 `blender -b --python render_model.py`。SDK 驗證需 lib3mf；可用 `BUILD_PYTHON` 指定含 manifold3d 的 Python。

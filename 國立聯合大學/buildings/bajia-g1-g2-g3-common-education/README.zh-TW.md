@@ -2,9 +2,9 @@
 
 ## 8 材質外觀版（2026-10-20）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuug-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -19,9 +19,9 @@
 
 下圖由本資料夾的 `model.stl` 匯入 Blender 渲染，表面凹槽、立柱、樓梯、坡屋頂及景觀平台都存在於列印網格；背景地板與燈光不屬於列印件。灰白色為展示材質，不代表實際建築配色。
 
-![G1 前排景觀平台、G2 中排館舍與 G3 後排館舍實際網格](previews/front.png)
-
-![背側及端部網格，背立面採簡化處理](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![G1 前排景觀平台、G2 中排館舍與 G3 後排館舍實際網格](previews/front.png) | ![背側及端部網格，背立面採簡化處理](previews/rear.png) |  |
 
 ## 三棟辨識與保留特徵
 

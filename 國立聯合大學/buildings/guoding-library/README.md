@@ -2,9 +2,9 @@
 
 ## 八材質外觀版（2026-10-20）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuulib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -20,13 +20,22 @@
 下列圖片直接由同一份 STL 幾何渲染，使用單色材質與攝影棚光照；窗戶是實際凹槽。
 
 ### 正面透視
-![國鼎圖書館模型正面透視圖](front_perspective.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![國鼎圖書館模型正面透視圖](front_perspective.png) |  |  |
 
 ### 正面視圖
-![國鼎圖書館模型正面視圖](front_elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![國鼎圖書館模型正面視圖](front_elevation.png) |  |  |
 
 ### 背面透視
-![國鼎圖書館模型背面透視圖；背面為簡化詮釋](rear_perspective.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![國鼎圖書館模型背面透視圖；背面為簡化詮釋](rear_perspective.png) |  |  |
 
 ## 下載與檔案
 

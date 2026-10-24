@@ -4,11 +4,15 @@
 
 ## 正背同表
 
-| 正面：南側入口 | 背面：北側長立面 |
-| --- | --- |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面：南側入口<br>![正面](previews/front.png) | 背面：北側長立面<br>![背面](previews/rear.png) |  |
 
 預覽是模型渲染，不是實景照片。左右側另見 [西側](previews/left.png)與[東側](previews/right.png)；方位以模型編製約定及實景判讀為準。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西側<br>![西側](previews/left.png) | 東側<br>![東側](previews/right.png) |  |
 
 ## 範圍與版本
 

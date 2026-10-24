@@ -2,11 +2,13 @@
 
 展示與建模不受四色或印表機工具數限制。此版以已核實照支持的七個細材質身分，呈現米白牆／淺框、磚橘紅貼面、灰立面、灰綠屋面、深藍太陽能板、青綠玻璃與獨立深灰展示底板。八個語意網格保留，材質可繼續編輯、細分；七種是目前資料支持的分組，不是日後色數上限。
 
-| 正面 | 背面 |
-|---|---|
-| ![多材質展示正面](previews/front.png) | ![多材質展示背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![多材質展示正面](previews/front.png) | 背面<br>![多材質展示背面](previews/rear.png) |  |
 
-![屋面與太陽能板分色](previews/roof.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![屋面與太陽能板分色](previews/roof.png) |  |  |
 
 [通用七材質 3MF](a1-appearance-core.3mf) · [可編輯色表](palette.json) · [可編輯展示場景](scene.blend) · [來源與配色界線](../multicolor/COLOR-EVIDENCE.zh-TW.md) · [已公開細材質表](../multicolor/color-evidence.json) · [另選四色列印合併方案](../multicolor/README.zh-TW.md)
 

@@ -8,9 +8,9 @@
 |---|---|---|
 | ![正面](previews/front.png) | ![背面](previews/rear.png) | ![東立面](previews/elevation.png) |
 
-| 頂視 | 左斜視 |
-|---|---|
-| ![頂視](previews/top.png) | ![左斜視](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 左斜視<br>![左斜視](previews/left_oblique.png) |  |
 
 [彩色可編輯Blend](scene.blend) · [八材質3MF](model.3mf) · [無色STL](model.stl) · [來源](SOURCES.md) · [驗證](QA.md) · [授權](LICENSE.txt)
 
@@ -22,9 +22,9 @@
 
 ## 無切網格的通道補充視圖
 
-![從南廊口看長廊](qa/corridor-detail.png)
-
-![中央東西貫通門廊](qa/passage-detail.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![從南廊口看長廊](qa/corridor-detail.png) | ![中央東西貫通門廊](qa/passage-detail.png) |  |
 
 補充圖只改相機，不切網格、不隱藏牆或改材質。
 

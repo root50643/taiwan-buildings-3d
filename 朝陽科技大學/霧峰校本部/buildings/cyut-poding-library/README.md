@@ -2,11 +2,16 @@
 
 朝陽科技大學・霧峰校本部。這是一件依官方樓層圖、不同年代外觀照片與航照交叉建構的可列印尺度外觀近似，**不是全館測繪、同年現況或全校完成**。背側窗序仍缺全貌，保留已知退台體量，不複製正面窗陣。
 
-| 正面 | 背面 |
-|---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [正立面](previews/elevation.png) · [背立面](previews/rear-elevation.png) · [南端側面](previews/west.png) · [北端側面](previews/east.png) · [STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數來源](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) | 背立面<br>![背立面](previews/rear-elevation.png) |
+| 南端側面<br>![南端側面](previews/west.png) | 北端側面<br>![北端側面](previews/east.png) |  |
 
 ## v2 修訂與局部角損警示
 

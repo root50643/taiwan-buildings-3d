@@ -6,11 +6,16 @@
 
 **版本：v1 凍結。已完成數位QA與外觀核圖；尖塔／端飾薄件警示與支撐限制仍保留。**
 
-| 同一建物正面 | 同一建物背面 |
-|---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 同一建物正面<br>![實際STL正面](previews/front.png) | 同一建物背面<br>![實際STL背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [正立面](previews/elevation.png) · [背立面](previews/back_elevation.png) · [左側](previews/left.png) · [右側](previews/right.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) | 背立面<br>![背立面](previews/back_elevation.png) |
+| 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |  |
 
 ## 範圍與年代
 

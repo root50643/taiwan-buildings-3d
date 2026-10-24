@@ -2,9 +2,9 @@
 
 ## 七材質外觀版（2026-10-20）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuud12-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,9 +13,9 @@
 
 依國立聯合大學官方照片與校區教學配置圖製作的建築辨識微縮模型。這是一個雙棟共底座的 STL，包含兩棟不同建築；不是新增第三棟，也不是精密測繪模型。
 
-![模型正面](previews/front.png)
-
-![模型背面：未核實處簡化](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![模型正面](previews/front.png) | ![模型背面：未核實處簡化](previews/rear.png) |  |
 
 ## 範圍與辨識特徵
 

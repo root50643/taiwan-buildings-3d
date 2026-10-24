@@ -12,4 +12,6 @@
 
 [六材質外觀與來源界線](buildings/nptu-music-hall-rotunda-segment/appearance/README.md)
 
-![音樂館圓廳外觀](buildings/nptu-music-hall-rotunda-segment/appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![音樂館圓廳外觀](buildings/nptu-music-hall-rotunda-segment/appearance/previews/front.png) |  |  |

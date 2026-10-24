@@ -4,14 +4,18 @@
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/ncyu-minxiong-university-hall-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-![大學館白前牆與紅磚前簷限域代理](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![大學館白前牆與紅磚前簷限域代理](appearance/previews/front.png) |  |  |
 
 僅主館白色前牆8個完整原面與前廳紅磚簷帶38面配色，其餘2490面中性。跨界面拒選、不切面；理論矩形與完整選面積差約10.62507mm²包含跨界拒選與無對應共面外表面缺口，不全是跨界面積。玻璃框、水平頂面、灰薄唇、側背與未知部分不擴塗。官照一三個EXIF時間皆2019-02-10 12:08:04，官照二拍攝日未知；原幾何包含2011年街景，跨年資料非2026現貌。未校準目視近似，不是精確測色或材料鑑定。原2536面座標/面序/STL與歷史QA不變、不增套；未實體試印，照片不分發。
 
 
 B02大學館的整體外殼近似模型，依官方一樓全圖、前廳實照、衛星俯視及2011年東／西側街景自建。不是現況測繪或精密比例模型，也沒有重建內部空間。
 
-![同件模型正面與背面並排](previews/front-rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![同件模型正面與背面並排](previews/front-rear.png) |  |  |
 
 ## 建模範圍與限制
 - 保留不對稱平面、切角玻璃前廳、寬簷帶、多座金字塔採光頂，以及演藝廳、演講廳和周邊量體的高低層次。
@@ -32,6 +36,11 @@ B02大學館的整體外殼近似模型，依官方一樓全圖、前廳實照�
 [model.stl](model.stl)、[scene.blend](scene.blend)、[build_model.py](build_model.py)、[requirements.txt](requirements.txt)。Blend是由交付STL匯入的可編輯網格，參數腳本為重建來源。
 
 actual STL預覽：[西南前方](previews/front.png)、[東北後方](previews/rear.png)、[前立面](previews/elevation.png)、[頂視](previews/top.png)。頂視原圖依建模座標，不能直接當北向圖。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西南前方<br>![西南前方](previews/front.png) | 東北後方<br>![東北後方](previews/rear.png) | 前立面<br>![前立面](previews/elevation.png) |
+| 頂視<br>![頂視](previews/top.png) |  |  |
 
 Python3.12安裝requirements.txt後，依序執行build_model.py、Blender背景執行render_preview.py、validate_model.py、check_contour_validity.py、check_thin_features.py。任何程式exit非0、JSON passed非true或checks含false，立即停止；不用repair掩蓋無效原網格或輪廓。
 

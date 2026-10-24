@@ -2,7 +2,9 @@
 
 本件是 **2016 修復後一層主體的低細節外觀近似**。固定 STL 已獨立有條件 GO，毫米場景增量亦獨立 GO；尚未實體試印或拆支撐。Library 身分寫回／官方回驗未完成，依使用者取消額外備份門檻，已不再作為本次 GitHub 發布阻擋；未宣稱 Library 已驗證。它不是 1934 原狀復原或 2026 測繪復刻；沒有官方米制尺寸或可靠比例尺。發布範圍與歷史判定見 [發布說明](PUBLICATION.md)。
 
-![候選實際 STL 斜視圖](previews/v1/oblique.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![候選實際 STL 斜視圖](previews/v1/oblique.png) |  |  |
 
 主屋身採橫向四披屋頂；中央較低凸入口有自己的雙坡山牆與圓通風窗。正面大矩形木窗和兩側成組拱窗有修復後實照支持；六角窗只置於照片確認的入口左側壁。未見背面及右端的開口予以省略。文獻所述東北截角尚未精確定位與量化，局部未細刻，不能把這個近似包絡稱為完全精確的矩形平面。
 
@@ -21,6 +23,11 @@
 - 場景明設 `METRIC`、`scale_length=0.001`、`MILLIMETERS`；網格與物件未縮放。166 × 111 × 54.4 的座標按 mm 解讀，已檢查實際物理尺寸及 evaluated 世界三角形與 STL 相同。
 - [正面](previews/v1/front.png)、[左端](previews/v1/left.png)、[背面](previews/v1/rear.png)、[頂視](previews/v1/top.png)、[入口細節](previews/v1/entry-detail.png)。預覽重新載入實際 STL；色彩只供辨識，STL 不含色彩。
 - [最初尖屋脊及真實失敗記錄](qa/initial-tip-check/README.md) 僅供追溯，不是建議列印檔。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/v1/front.png) | 左端<br>![左端](previews/v1/left.png) | 背面<br>![背面](previews/v1/rear.png) |
+| 頂視<br>![頂視](previews/v1/top.png) | 入口細節<br>![入口細節](previews/v1/entry-detail.png) |  |
 
 在安裝 [依賴版本](requirements.txt) 的 Python 環境，從本模型包目錄執行：
 

@@ -2,13 +2,17 @@
 
 ## 8 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntufirst-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 實照支持白色折板端面、灰藍柱、深窗格與中央紅門；下窗混合實裙、未分界白磚帶及未知屋頂保持中性，插畫只辨形不供配色。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 官方索引代碼 M11。公開外觀近似模型，非測繪或BIM。

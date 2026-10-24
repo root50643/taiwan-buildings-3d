@@ -15,11 +15,16 @@
 - [build_model.py](build_model.py)、[requirements.txt](requirements.txt)：python build_model.py
 - [render_preview.py](render_preview.py)：blender -b -t 4 -P render_preview.py；圖片皆實際STL
 
-| 實際STL正面 | 實際STL背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png) · [通口近圖](previews/entry_close.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
+| 通口近圖<br>![通口近圖](previews/entry_close.png) |  |  |
 
 ## 列印及數位QA
 

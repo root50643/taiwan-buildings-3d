@@ -4,14 +4,25 @@
 
 ## 最新七材質外觀版（2026-10-20）
 
-![七材質外觀正面](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![七材質外觀正面](appearance/previews/front.png) |  |  |
 
 [七材質外觀說明與來源界線](appearance/README.md) · [表面色 3MF](appearance/yuntech-appearance.3mf) · [可編輯材質場景](appearance/scene.blend) · [背面](appearance/previews/rear.png) · [頂視](appearance/previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 背面<br>![背面](appearance/previews/rear.png) | 頂視<br>![頂視](appearance/previews/top.png) |  |
 
 只增加外觀材質；原 STL、幾何、原場景與歷史 QA 均保留。背面屬有限對稱配色外推，不是新測繪。3MF 非已完成切片或保證可印。
 
 ### 原單色預覽（保留歷史）
 [原正背合圖](previews/front-rear.png) · [原頂視圖](previews/top.png) · [原正面大圖](previews/front.png) · [原背面大圖](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原正背合圖<br>![原正背合圖](previews/front-rear.png) | 原頂視圖<br>![原頂視圖](previews/top.png) | 原正面大圖<br>![原正面大圖](previews/front.png) |
+| 原背面大圖<br>![原背面大圖](previews/rear.png) |  |  |
 
 ## 下載與重建
 - [可列印模型 model.stl](model.stl)：單位毫米，含底座最大邊不超過150毫米，本件尺寸約 76 × 76 × 150 毫米。

@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/ctbc-dormitory-hall-early/previews/v11/front.png" alt="原女生宿舍暨演講廳東南側模型" width="260">](buildings/ctbc-dormitory-hall-early/README.md)<br>**[原女生宿舍暨演講廳｜早期完工外觀](buildings/ctbc-dormitory-hall-early/README.md)**<br>平行高翼、大扁拱、前拱列與開放院落<br>200 × 125 × 約58.25 mm |  |  |
+| [![原女生宿舍暨演講廳東南側模型](buildings/ctbc-dormitory-hall-early/previews/v11/front.png)](buildings/ctbc-dormitory-hall-early/README.md)<br>**[原女生宿舍暨演講廳｜早期完工外觀](buildings/ctbc-dormitory-hall-early/README.md)**<br>平行高翼、大扁拱、前拱列與開放院落<br>200 × 125 × 約58.25 mm |  |  |
 
 [完整模型、正反並排預覽與下載](buildings/ctbc-dormitory-hall-early/README.md) · [來源摘要](../inventory/sources/ctbc-dormitory-hall-early-source-summary.md) · [QA摘要](../inventory/qa/ctbc-dormitory-hall-early-review.md)
 

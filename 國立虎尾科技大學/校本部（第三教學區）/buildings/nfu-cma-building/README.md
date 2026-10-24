@@ -47,6 +47,6 @@ python rebuild.py --output /new/empty/output --blender blender
 | :---: | :---: | :---: |
 | ![前側](previews/front.png) | ![後側](previews/rear.png) | ![正立面](previews/elevation.png) |
 
-| 俯視 | 另一側斜視 |
-| :---: | :---: |
-| ![俯視](previews/top.png) | ![斜視](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) | 另一側斜視<br>![斜視](previews/left_oblique.png) |  |

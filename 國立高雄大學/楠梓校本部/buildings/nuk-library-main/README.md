@@ -2,9 +2,15 @@
 
 國立高雄大學／楠梓校本部。自主建立的照片外觀近似模型；不是測繪、竣工BIM或全校完成。
 
-![實際STL正背面並列](previews/front-rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正背面並列](previews/front-rear.png) |  |  |
 
 [STL](model.stl) · [可編修Blender網格](scene.blend) · [正投影](previews/elevation.png) · [反面正投影](previews/rear_elevation.png) · [頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正投影<br>![正投影](previews/elevation.png) | 反面正投影<br>![反面正投影](previews/rear_elevation.png) | 頂視<br>![頂視](previews/top.png) |
 
 ## 建模範圍與來源限度
 - 只做長方形圖資主棟與相鄰的裁切入口台階，未做低層入口館/國際會議廳量體、長天橋與完整入口廣場。不能以本件宣稱全圖資複合體已完成。

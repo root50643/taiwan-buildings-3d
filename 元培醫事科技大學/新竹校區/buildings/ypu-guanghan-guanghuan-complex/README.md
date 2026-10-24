@@ -2,11 +2,15 @@
 
 依官方平面、跨年正射、校方正面與斜空照片自建的有界外觀近似。不是精準測繪或特定年份完整復原。
 
-| 內院正面 | 外弧背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 內院正面<br>![正面](previews/front.png) | 外弧背面<br>![背面](previews/rear.png) |  |
 
 [頂視](previews/top.png) · [西端](previews/left.png) · [東端](previews/right.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 西端<br>![西端](previews/left.png) | 東端<br>![東端](previews/right.png) |
 
 ## 檔案與比例
 

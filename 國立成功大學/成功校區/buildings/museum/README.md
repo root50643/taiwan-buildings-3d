@@ -6,13 +6,17 @@
 
 ## 最新七材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 背面與未見面保持中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/museum-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依官方近照與歷史廣角照登錄磚牆、窗台、凹窗和前屋坡；無字圓盤不新增 logo，跨年來源明列，未知屋頂與背面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 ## 來源與像素觀察

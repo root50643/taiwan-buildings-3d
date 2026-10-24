@@ -4,14 +4,24 @@
 
 ## 最新雙立面四材質外觀版（2026-10-20）
 
-![學生活動中心外觀](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![學生活動中心外觀](appearance/previews/front.png) |  |  |
 
 [配色、來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/student-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 只改善2014湖側與2017道路入口可登錄立面及玻璃屋頂；未見端面與中央簡化圓筒保持中性，屋頂不是PV。原STL與歷史QA保留，不是新增幾何。[原單色正背合圖](previews/front-rear.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正背合圖<br>![原單色正背合圖](previews/front-rear.png) |  |  |
+
 
 [頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 正面大圖<br>![正面大圖](previews/front.png) | 背面大圖<br>![背面大圖](previews/rear.png) |
 
 ## 下載與重建
 - [可列印模型 model.stl](model.stl)：單位毫米，含底座最大邊不超過150毫米，本件尺寸約 150 × 65 × 23 毫米。

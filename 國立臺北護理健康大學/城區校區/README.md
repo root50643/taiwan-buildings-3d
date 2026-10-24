@@ -2,9 +2,9 @@
 
 本次只有[文教大樓1965原始主棟](buildings/ntunhs-wenjiao-1965/README.md)，不含相鄰體育館、宿舍、婦幼衛生中心、供應室及其他建物，也不代表2025修復後現況。
 
-| 南面，實際STL | 北面，實際STL |
-|---|---|
-| ![南面](buildings/ntunhs-wenjiao-1965/previews/front.png) | ![北面](buildings/ntunhs-wenjiao-1965/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 南面，實際STL<br>![南面](buildings/ntunhs-wenjiao-1965/previews/front.png) | 北面，實際STL<br>![北面](buildings/ntunhs-wenjiao-1965/previews/rear.png) |  |
 
 [模型、來源、尺寸限制與驗證](buildings/ntunhs-wenjiao-1965/README.md)
 

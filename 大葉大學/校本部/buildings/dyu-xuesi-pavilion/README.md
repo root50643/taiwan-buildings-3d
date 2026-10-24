@@ -1,6 +1,8 @@
 # 大葉大學學思亭｜完整方亭外觀模型
 
-![實際模型預覽](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際模型預覽](previews/front.png) |  |  |
 
 [彩色可編輯 Blender](scene.blend) · [七色 3MF](model.3mf) · [無色 STL](model.stl) · [生成器](build_model.py) · [檢測與限制](QA.md)
 
@@ -19,3 +21,9 @@
 **屋簷、凳面、長橫梁及欄杆需要切片器支撐/方向規劃。薄處測試仍有失敗，詳 QA.md；沒有免支撐或成功列印保證。** 不含山坡、樹木、階梯、路燈及遠處建物。來源照片不隨包散布。
 
 [正立面](previews/elevation.png) · [背面](previews/rear.png) · [俯視](previews/top.png) · [左前側](previews/left_oblique.png)
+
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |
+| 左前側<br>![左前側](previews/left_oblique.png) |  |  |

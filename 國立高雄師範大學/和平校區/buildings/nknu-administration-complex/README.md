@@ -2,9 +2,15 @@
 
 國立高雄師範大學／和平校區，首批單件自主近似外觀模型。三棟及兩側低連廊合併為一件，沒有把圖書館或教育大樓再次計作另件。不是全校完成，也不是測繪模型。
 
-![實際STL正面](previews/front.png) ![實際STL背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正面](previews/front.png) ![實際STL背面](previews/rear.png) |  |  |
 
 [正立面](previews/elevation.png) · [俯視](previews/top.png) · [STL](model.stl) · [可編修Blend](scene.blend)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |  |
 
 ## 保留與不確定處
 - 10層主塔、5層平行側翼、開放前庭、低連廊、主塔三組深凹窗、上端冠頂及一樓中央穿通川堂。

@@ -2,9 +2,9 @@
 
 ## 5 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 側向窗格／未知遠端中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 側向窗格／未知遠端中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nhrir12-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,8 +13,9 @@
 
 依官方院區外部配置圖與公開建築外觀照片製作的 FDM 微縮模型。R1、R2 與兩者之間可見的中央量體合成一件列印；中央量體不另算一棟，也未把行政大樓、圖資大樓混入。資料核對日期：2026-10-11。
 
-![庭院側：實際 STL 預覽](previews/front.png)
-![後側：實際 STL 預覽](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![庭院側：實際 STL 預覽](previews/front.png) | ![後側：實際 STL 預覽](previews/rear.png) |  |
 
 ## 外觀依據與可信度
 

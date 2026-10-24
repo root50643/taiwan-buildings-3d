@@ -2,11 +2,16 @@
 
 狀態：已在GitHub公開（[歷史提交](https://github.com/root50643/taiwan-buildings-3d/commit/897897849bca52f9e43f6b573f71600927d93221)）。既有作者數位QA報告通過，另有固定STL的44層十字架局部例外紀錄；完整總體獨立放行紀錄未確認，並非判定審查失敗。公開狀態不代表所有QA或列印驗證均已完成。不是現況實測或施工模型。
 
-| 入口側 | 背面 |
-|---|---|
-| ![入口側](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口側<br>![入口側](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 [入口低視角](previews/elevation.png) · [左側](previews/left.png) · [右側](previews/right.png) · [頂視](previews/top.png) · [同側航照視角](previews/aerial.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 入口低視角<br>![入口低視角](previews/elevation.png) | 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |
+| 頂視<br>![頂視](previews/top.png) | 同側航照視角<br>![同側航照視角](previews/aerial.png) |  |
 
 ## 範圍與可辨識特徵
 

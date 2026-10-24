@@ -1,6 +1,8 @@
 # 國立中央大學聽松台｜街側入口與候車棚外觀近似
 
-![實際模型街側斜視](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際模型街側斜視](previews/front.png) |  |  |
 
 **限定街側長棚、紅磚候車區、單一寬階梯、ATM 門面及最右開放框跨；不是完整聽松台、觀景平台或機車停車場。** 依 2020 年官方實景擬合，未測繪，也不宣稱反映 2026 現況。
 
@@ -9,6 +11,11 @@
 - [生成器](build_model.py) · [渲染器](render_model.py) · [六種命名材質](palette.json)
 - [街側斜視](previews/front.png) · [截斷後側](previews/rear.png) · [街側正立面](previews/elevation.png) · [俯視](previews/top.png) · [左斜視](previews/left_oblique.png)
 - [來源與取捨](SOURCES.md) · [QA 與列印限制](QA.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 截斷後側<br>![截斷後側](previews/rear.png) | 街側正立面<br>![街側正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
+| 左斜視<br>![左斜視](previews/left_oblique.png) |  |  |
 
 保留不對稱「左端較高→長段中低→右端緩升」棚頂，暖咖啡色柱梁、淺浮雕直條封邊、左側紅磚實牆／穿孔回牆及座椅、緊接磚區的唯一寬梯、灰色 ATM 框與暗色凹入門面、最右開放跨。階梯不是整體正中央；遠端背景舊警衛建物不是 ATM 上層，沒有併入。
 

@@ -18,9 +18,9 @@
 |---|---|---|
 | ![](previews/front.png) | ![](previews/rear.png) | ![](previews/elevation.png) |
 
-| 側視 | 頂視 |
-|---|---|
-| ![](previews/side.png) | ![](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 側視<br>![](previews/side.png) | 頂視<br>![](previews/top.png) |  |
 
 ## 重建與驗證
 Python依賴見source/requirements.txt，Blender 4.3.2。原model.stl須置於appearance上層，sha256為50964d7b2b33cb1489a01b8b3198e272d1a1a03c2d537dd9c7fb4030053e9d4b。

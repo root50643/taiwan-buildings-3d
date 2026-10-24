@@ -2,9 +2,15 @@
 
 國立高雄師範大學／和平校區。自主製作的完整外部量體近似，包含開放中庭；不是2016年拆改前的舊研究大樓，不是建築測繪或全校完成。
 
-![actual STL正面](previews/front.png) ![actual STL背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![actual STL正面](previews/front.png) ![actual STL背面](previews/rear.png) |  |  |
 
 [正立面](previews/elevation.png) · [俯視](previews/top.png) · [STL](model.stl) · [可編修Blend](scene.blend)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |  |
 
 ## 外觀與證據界線
 - 保留七層、成列深陽台、轉角玻璃梯塔、雙層入口柱廊、主要立面退縮、屋頂女牆／梯間及開放中庭。

@@ -6,14 +6,19 @@
 
 ## 模型與附件
 
-![實際STL正背面](previews/front-rear.png)
-![實際STL頂視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際STL正背面](previews/front-rear.png) | ![實際STL頂視](previews/top.png) |  |
 
 - [STL模型](model.stl)，[可編輯Blender場景](scene.blend)
 - [參數化重建腳本](build_model.py)，[相依版本](requirements.txt)
 - [實際STL正立面](previews/front-elevation.png)
 - [來源及各自支持範圍](sources.json)，[生成前逐立面觀察](facade-observations.md)
 - [模型資訊](model-info.json)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正立面<br>![實際STL正立面](previews/front-elevation.png) |  |  |
 
 含底座150 × 108 × 70.132 mm，最長150mm，每館獨立比例；單位毫米。座標+y為校園北、-y為行政大樓／南入口方向，校園軸與真北約有20度差異，未作測量級地理定位。scene.blend由實際STL匯入，為可編修網格；build_model.py是參數化重建來源，預覽色彩不隨STL保存。
 

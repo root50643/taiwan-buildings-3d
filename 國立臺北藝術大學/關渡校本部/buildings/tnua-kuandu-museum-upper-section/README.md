@@ -4,9 +4,15 @@
 
 > 局部：四樓入口層可見玻璃盒、階梯與層疊曲牆屋頂；不含下坡低樓層、不含相連／相鄰研究大樓，不代表完整美術館。
 
-<table><tr><td><img src="previews/front.png" width="450" alt="交付STL正面"></td><td><img src="previews/rear.png" width="450" alt="交付STL背面"></td></tr><tr><td>正面</td><td>背面</td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![交付STL正面](previews/front.png)<br>正面 | ![交付STL背面](previews/rear.png)<br>背面 |  |
 
 [頂面](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂面<br>![頂面](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 下載與單位
 

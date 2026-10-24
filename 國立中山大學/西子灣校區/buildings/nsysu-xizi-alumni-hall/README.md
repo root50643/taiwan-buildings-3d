@@ -2,7 +2,9 @@
 
 已完成獨立來源、幾何與六件製造方案覆核。**列印請優先使用[六件分體方案](manufacturing/v2/README.md)**；原單件 v4 仍需支撐，不能套用分件零結構支撐結論。兩種交付方式合計一套模型，西子樓不是逸仙館別名。
 
-![實際 STL 外觀](previews/v4/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 外觀](previews/v4/front.png) |  |  |
 
 [推薦六件 STL 與印向](manufacturing/v2/README.md) · [原單件 STL（需支撐）](models/v4/model.stl) · [原單件 Blender 場景](models/v4/scene.blend) · [參數](parameters.json) · [原單件生成器](source/build_model.py) · [來源逐圖覆核](evidence/SOURCE-REVIEW.md) · [固定 SHA 獨立摘要](INDEPENDENT-REVIEW.md)
 

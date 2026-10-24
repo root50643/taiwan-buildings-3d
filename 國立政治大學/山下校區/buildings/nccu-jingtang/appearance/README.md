@@ -6,6 +6,11 @@
 
 [前庭左斜](previews/front.png) · [前庭右斜](previews/opposite.png) · [正立面](previews/elevation.png) · [背面](previews/rear.png) · [頂面](previews/top.png) · [同角中性比較](qa/mono-front.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前庭左斜<br>![前庭左斜](previews/front.png) | 前庭右斜<br>![前庭右斜](previews/opposite.png) | 正立面<br>![正立面](previews/elevation.png) |
+| 背面<br>![背面](previews/rear.png) | 頂面<br>![頂面](previews/top.png) |  |
+
 五圖均包含完整建物及底座，不用裁切或額外染屋頂強化收益。後／頂面幾乎無收益是限域證據的正常結果。原幾何窗肚混有簡化白框，不能整片冒稱深玻璃；門窗、窗凹背、框、屋頂、屋簷、背面／端牆、底座與後突出部全部中性。原雨棚為簡化方板，未補造照片中的弧形。
 
 原STL bytes、6176個三角面順序與所有座標維持不變。80個弧段各自檢查三頂點切向界與平面、柱有限旋轉盒及灰雨棚有限前／側平面，使用actual cross-product normal；不以bbox或centroid整片套色，不切三角、不加厚。native對應原STL使用完整oriented exact triangle bijection。

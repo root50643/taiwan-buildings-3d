@@ -2,7 +2,9 @@
 
 **國立臺灣海洋大學｜祥豐校區｜完整夢泉噴泉地標外觀近似。** 包含中央雕塑、七級圓階及完整環形圓池；不是夢泉商場建築，也不是整個夢泉廣場。
 
-![同一交付mesh的前斜視：四向四高圓柱臂、頂鼓管束與完整環槽](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![同一交付mesh的前斜視：四向四高圓柱臂、頂鼓管束與完整環槽](previews/front.png) |  |  |
 
 ## 保留的主要構成
 
@@ -41,6 +43,11 @@ Blend及3MF保留**5種逐面材質**；STL不含顏色。交付是融合單閉�
 | `SOURCES.md`、`sources.json`、`SHA256SUMS` | 來源、版本限制及完整校驗 |
 
 [前斜視](previews/front.png) · [反斜視](previews/rear.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png) · [另一側斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 反斜視<br>![反斜視](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
+| 另一側斜視<br>![另一側斜視](previews/left_oblique.png) |  |  |
 
 五圖由同一交付網格渲染，不是來源照片、AI概念圖或實印成果。
 

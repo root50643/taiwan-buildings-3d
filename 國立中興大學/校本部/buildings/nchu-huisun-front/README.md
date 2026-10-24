@@ -4,18 +4,24 @@
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nchu-huisun-front-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-![惠蓀堂西向前棟段正面磁磚與上排玻璃限域代理](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![惠蓀堂西向前棟段正面磁磚與上排玻璃限域代理](appearance/previews/front.png) |  |  |
 
 僅280完整平直正面磁磚面指定乳白米灰、2上排玻璃背面指定灰藍不透明代理，其餘3140面中性。下排右端格柵混材未分面，不整條染玻璃；框、圓角側背、屋頂與人工截面中性。仍是西向前棟段，不是完整惠蓀堂。官方館訊2022.06刊、兩原照EXIF Original/Digitized/DateTime均2018-09-21；原幾何依2021/2024照片，跨年資料非2026現貌。未校準目視近似，不是精確測色或材料鑑定。原3422面座標/面序/STL與歷史QA不變、不增套；非分色封閉體或G-code，未實體試印，照片不分發。
 
 
 校本部公開外觀近似模型，局部建築段。含底座尺寸 150.00 × 64.00 × 50.20 mm，最長150mm。各件獨立縮放，不能直接組成等比例校園。
 
-| 實際STL斜正面 | 實際STL背側截斷面 |
-|---|---|
-| ![斜正面](previews/front.png) | ![背側截斷面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL斜正面<br>![斜正面](previews/front.png) | 實際STL背側截斷面<br>![背側截斷面](previews/rear.png) |  |
 
 [正投影](previews/elevation.png) / [頂面與退縮區](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正投影<br>![正投影](previews/elevation.png) | 頂面與退縮區<br>![頂面與退縮區](previews/top.png) |  |
 
 ## 保留特徵與範圍
 上層長條量體及圓角、兩層連續帶窗、兩端成對小方窗、下層退縮帶與開放柱廊、中央較厚入口柱及階梯。

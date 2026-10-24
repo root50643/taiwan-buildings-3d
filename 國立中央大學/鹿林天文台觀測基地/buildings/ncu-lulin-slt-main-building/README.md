@@ -1,6 +1,8 @@
 # 中央大學｜鹿林天文台 SLT 主建築（1999）
 
-![SLT主樓完整外觀近似，最終網格正面斜視](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![SLT主樓完整外觀近似，最終網格正面斜視](previews/front.png) |  |  |
 
 **校外「鹿林天文台觀測基地」的白色 SLT 單棟完整外觀近似，不是桃園校本部、粉紅色 LOT 控制中心或整座天文台。** 建築於1999年1月完工啟用；本模型以2022正面及2023反側照片可見的白色狀態為主要依據，**不宣稱2026現況**。不是測繪、BIM、施工圖或可操作觀測機構。
 
@@ -47,6 +49,11 @@
 ## 五個最終網格視圖
 
 [正面斜視](previews/front.png) · [後斜視](previews/rear.png) · [正立面](previews/elevation.png) · [俯視](previews/top.png) · [左前斜視](previews/left_oblique.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 後斜視<br>![後斜視](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) | 俯視<br>![俯視](previews/top.png) |
+| 左前斜視<br>![左前斜視](previews/left_oblique.png) |  |  |
 
 五圖均由同一最終網格渲染，非原照片拼貼或生成的概念圖；不代表實印成品。
 

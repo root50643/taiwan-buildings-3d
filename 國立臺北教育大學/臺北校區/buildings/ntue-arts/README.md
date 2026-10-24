@@ -15,13 +15,21 @@
 - [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：自行建模參數來源；python build_model.py
 - [render_preview.py](render_preview.py)：讀取原STL渲染；blender -b -t 2 -P render_preview.py
 
-| 實際STL正面 | 實際STL背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視及院落](previews/top.png)
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視及院落<br>![俯視及院落](previews/top.png) |
+
 [曲面及入口近圖](previews/entry_close.png) · [原STL射線證據](portal-ray-proof.json) · [射線檢查腳本](check_portal_geometry.py)。原STL三角形射線證實中央入口真空隙深32.5毫米、前柱間淨寬14.2毫米、底板下至階梯淨高20.6毫米；均為模型近似尺寸。底板與柱間不是僅刻表面凹紋。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 曲面及入口近圖<br>![曲面及入口近圖](previews/entry_close.png) |  |  |
 
 ## 列印與QA限制
 

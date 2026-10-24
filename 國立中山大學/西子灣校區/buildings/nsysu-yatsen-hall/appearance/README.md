@@ -2,11 +2,15 @@
 
 [彩色3MF](nsysu-yatsen-hall-appearance.3mf) · [可編輯Blend](scene.blend) · [面材質對照](face-materials.json) · [色盤](palette.json) · [來源](SOURCES.md) · [重建原始碼包](rebuild-source.zip)
 
-| 正面 | 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 範圍與限制
 官方未標年的完整實拍2、3支持正面上部磚牆51面與門廊前磚欄板2面，合計53個原完整三角採低飽和磚紅 #AE6C58；其餘3057面保持中性 #AAA79F。此為模型既有**磚牆主平面粗外觀代理**，不是細外皮精密還原。窄灰壓頂、字樣、磚縫及污漬未建，沒有切面造色條；屋頂水平面仍為中性。弧洞內表面、側背、白梁柱、玻璃陰影、底座均不擴染；側牆灰裙基界面不清，整片不選。

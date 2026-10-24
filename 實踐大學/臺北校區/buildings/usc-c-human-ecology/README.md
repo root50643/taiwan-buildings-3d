@@ -2,9 +2,9 @@
 
 2016–2017更新版完整外部主體近似，非2026測繪；本件不代表全校已完成。往D棟橋廊僅建C棟側4m截段，不含D棟。
 
-| 南西正面 | 北東背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 南西正面<br>![正面](previews/front.png) | 北東背面<br>![背面](previews/rear.png) |  |
 
 ## 下載與重建
 - [model.stl](model.stl)：毫米，150×53×32.923mm，底座朝下；主體約1:357.14，底座厚2.4mm
@@ -12,6 +12,11 @@
 - Python 3.12，pip install -r requirements.txt；python build_model.py；blender -b -t 3 -P render_preview.py
 - python check_thin_features.py；python check_layer_components.py；python check_screen.py；python validate_model.py
 - [頂視](previews/top.png)、[西側](previews/west.png)、[東側](previews/east.png)、[南立面](previews/south-elevation.png)、[北立面](previews/north-elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 西側<br>![西側](previews/west.png) | 東側<br>![東側](previews/east.png) |
+| 南立面<br>![南立面](previews/south-elevation.png) | 北立面<br>![北立面](previews/north-elevation.png) |  |
 
 ## 建模依據與限制
 採建築師2017年刊公開1–3F完整平面、8m比例尺、木桁架雙坡屋頂剖面、南西竣工照片與C棟10.9m數字。模型保留南面柱廊、大漏窗屏、中央教室雙坡屋頂、西端屋頂平台、東端梯間、北側橋廊及階梯平台凸出。[來源與描摹控制點](sources.json)。

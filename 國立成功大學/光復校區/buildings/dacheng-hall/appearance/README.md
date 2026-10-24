@@ -2,10 +2,10 @@
 
 沿用原 **9,608 三角面／4,794 頂點**，不改原 STL 位元、座標、面序或幾何；這是既有模型外觀改版，不增加模型包數。
 
-| 正面 | 另一已登錄長面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
-| ![正立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 另一已登錄長面<br>![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
+| ![頂視](previews/top.png) |  |  |
 
 [表面色 3MF](nckudacheng-appearance.3mf) · [可編輯 Blender](scene.blend) · [材質色表](palette.json) · [逐面指派與依據](face-materials.json) · [原 STL](../model.stl)
 

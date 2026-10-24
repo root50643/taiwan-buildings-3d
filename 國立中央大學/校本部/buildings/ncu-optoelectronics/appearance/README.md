@@ -26,9 +26,9 @@
 |---|---|---|
 | ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
 
-| 側向 | 頂向 |
-|---|---|
-| ![側向](previews/side.png) | ![頂向](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 側向<br>![側向](previews/side.png) | 頂向<br>![頂向](previews/top.png) |  |
 
 五圖由本次實際3MF完整網格渲染；相機名稱不是精確地理方位，背側/頂部中性不代表有同向實景佐證。
 

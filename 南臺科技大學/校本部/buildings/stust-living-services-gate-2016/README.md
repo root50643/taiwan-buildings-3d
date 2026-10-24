@@ -2,9 +2,9 @@
 
 現稱 W 棟「磅礡館」。本件是單一館舍與其一體校門的**來源限定、有界外觀近似**，不含西鄰 T 棟，不代表全校建築已完成。
 
-| 校園側完整全景 | 背側完整全景（未知窗省略） |
-|---|---|
-| ![校園側](previews/campus.png) | ![背側](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 校園側完整全景<br>![校園側](previews/campus.png) | 背側完整全景（未知窗省略）<br>![背側](previews/rear.png) |  |
 
 ## 範圍與仍未知之處
 
@@ -44,6 +44,11 @@
 - [頂圖](previews/top.png)、[洞底近圖](previews/atrium.png)、[道路全景](previews/road.png)、[校園近圖](previews/campus-detail.png)、[道路近圖](previews/road-detail.png)。近圖可局部取景，前兩主圖保留完整館與門頂。
 - Python安裝requirements後執行build_model.py；Blender4.3+執行render_preview.py。繁中圖說使用系統NotoSansCJK-Regular.ttc第3字型、16px；沒有可用字型時應安裝同字型再重建，不能把缺字圖當通過。
 - 依序執行validate_model.py、check_thin_features.py、check_all_layers.py、check_layer_components.py、check_feature_losses.py、check_architectural_rays.py、check_dense_first_chords.py、check_v2_dense_region.py、check_dense_parity.py。原照片/PDF沒有放入公開包。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂圖<br>![頂圖](previews/top.png) | 洞底近圖<br>![洞底近圖](previews/atrium.png) | 道路全景<br>![道路全景](previews/road.png) |
+| 校園近圖<br>![校園近圖](previews/campus-detail.png) | 道路近圖<br>![道路近圖](previews/road-detail.png) |  |
 
 ### v2 原首段內外控制
 

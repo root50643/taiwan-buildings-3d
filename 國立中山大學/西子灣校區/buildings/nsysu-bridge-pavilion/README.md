@@ -2,11 +2,18 @@
 
 **官方多角度照片的全亭外觀近似；八柱／八面為推定，不是測繪復原。** 照片 3、4 各可辨約七根真柱；第八柱與隱藏面依遮擋及規則環圈推估，並非八根都逐一可見。照片中的棕櫚樹幹沒有當成柱子。
 
-![橋上涼亭實際網格預覽](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![橋上涼亭實際網格預覽](previews/front.png) |  |  |
 
 - [可編輯彩色 Blender](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl)
 - [正立面](previews/elevation.png) · [左前斜視](previews/left_oblique.png) · [推定背側](previews/rear.png) · [推定頂面](previews/top.png)
 - [來源及界線](SOURCES.md) · [QA 與列印限制](QA.md) · [參數生成器](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 左前斜視<br>![左前斜視](previews/left_oblique.png) | 推定背側<br>![推定背側](previews/rear.png) |
+| 推定頂面<br>![推定頂面](previews/top.png) |  |  |
 
 ## 範圍與尺度
 完整亭體及直接承載平台：粗圓柱、環形梁、黃綠曲面屋頂、附著式瓦脊、加粗頂飾、六段真正穿孔欄板，保留相對的兩個橋側入口。**不包含長橋、池塘、園林及被遮擋的桌椅。** 下方短實心八角支撐為展示用的近似延續，不代表量測過的水下基礎。

@@ -1,6 +1,8 @@
 # 國立聯合大學八甲校區 2 公車候車亭左端單跨外觀段
 
-![實際模型預覽](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際模型預覽](previews/front.png) |  |  |
 
 原創近似外觀模型，以校方交通設施相簿照片 7 前景、照片 8 最左跨為同一目標；照片 6 僅佐證相同構造側剖輪廓，**不借用右端跨的告示內容**。不是完整三跨候車亭、建築施工圖或量測比例模型。
 
@@ -25,5 +27,10 @@
 ## 來源與再現
 [SOURCES.md](SOURCES.md) 記錄官方原始來源、日期與未見部位；[QA.md](QA.md) 解釋檢查範圍。五圖均由交付網格產生：
 [正斜視](previews/front.png) · [正立面](previews/elevation.png) · [左斜視](previews/left_oblique.png) · [後斜視](previews/rear.png) · [頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 左斜視<br>![左斜視](previews/left_oblique.png) | 後斜視<br>![後斜視](previews/rear.png) |
+| 頂視<br>![頂視](previews/top.png) |  |  |
 
 使用 `requirements.txt` 安裝幾何依賴後執行 `python build_model.py`、`python qa_model.py`、`python check_features.py`。以 Blender 4.3.2 執行 `blender -b -P render_model.py`。lib3mf 交換驗證另需 `lib3mf`，詳見驗證腳本。原創幾何／程式依 LICENSE；不授予現地照片或告示作品的權利。

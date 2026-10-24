@@ -6,11 +6,15 @@
 
 ## 實際 STL 預覽
 
-| 運動場／看臺側 | 背側入口 |
-| --- | --- |
-| ![由交付STL渲染的運動場側](previews/front.png) | ![由交付STL渲染的背側入口](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 運動場／看臺側<br>![由交付STL渲染的運動場側](previews/front.png) | 背側入口<br>![由交付STL渲染的背側入口](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [屋頂與座區頂視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 屋頂與座區頂視<br>![屋頂與座區頂視](previews/top.png) |  |
 
 正背兩面已完成來源外觀核對。上述皆由交付的 model.stl 渲染，渲染顏色只供辨識，沒有使用另一份高細節展示網格。
 

@@ -6,12 +6,18 @@
 
 ## 正反並排
 
-| 西南入口側 | 東北背側 |
-|---|---|
-| ![西南入口側](renders/front.png) | ![東北背側](renders/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西南入口側<br>![西南入口側](renders/front.png) | 東北背側<br>![東北背側](renders/rear.png) |  |
 
 其餘主視圖：[西](renders/west.png)、[東](renders/east.png)、[南](renders/south.png)、[北](renders/north.png)、[俯視](renders/top.png)。
 局部：[入口雙梯](renders/entry-detail.png)、[雙向屋頂與採光帽](renders/roof-detail.png)。以上共七張主視圖、兩張局部圖。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西<br>![西](renders/west.png) | 東<br>![東](renders/east.png) | 南<br>![南](renders/south.png) |
+| 北<br>![北](renders/north.png) | 俯視<br>![俯視](renders/top.png) | 入口雙梯<br>![入口雙梯](renders/entry-detail.png) |
+| 雙向屋頂與採光帽<br>![雙向屋頂與採光帽](renders/roof-detail.png) |  |  |
 
 ## 模型與比例
 

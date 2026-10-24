@@ -2,9 +2,9 @@
 
 ## 4 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 來源支持構件／未知牆面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持構件／未知牆面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/oculib-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -13,11 +13,15 @@
 
 2007 年完工主體的公開影像比例近似模型，包括西圓筒冠環、後長高翼、東突出高翼與屋突、南低館退台及北低附體。這是單棟階段成果，不代表全校完成，也不是測繪、結構或施工模型。
 
-| 正面（實際 STL） | 背面（實際 STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（實際 STL）<br>![正面](previews/front.png) | 背面（實際 STL）<br>![背面](previews/rear.png) |  |
 
 [北上頂圖](previews/top.png) · [實際網格可見邊頂圖](previews/top-lines.png) · [冠局部](previews/crown.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 北上頂圖<br>![北上頂圖](previews/top.png) | 實際網格可見邊頂圖<br>![實際網格可見邊頂圖](previews/top-lines.png) | 冠局部<br>![冠局部](previews/crown.png) |
 
 ## 比例與不確定性
 - 全件含底最長 **150 mm**，單位毫米；長寬高及 SHA 以 validation.json 為準。腳本原型 1 m 對應 1.6552519477888414 mm。底座朝下。

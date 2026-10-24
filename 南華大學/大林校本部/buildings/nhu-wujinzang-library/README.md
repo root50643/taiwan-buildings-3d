@@ -4,9 +4,9 @@
 
 [五視角、來源及限制](appearance/README.md) · [表面色3MF](appearance/nhu-library-roofs-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-| 前右 | 後左 |
-|---|---|
-| ![屋頂限域配色](appearance/previews/front.png) | ![後壁維持中性](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前右<br>![屋頂限域配色](appearance/previews/front.png) | 後左<br>![後壁維持中性](appearance/previews/rear.png) |  |
 
 僅中央覆蓋與九肋頂面190面採柔白，前上層及入口向前坡各4面採紅褐；其餘4180面維持未確認中性。依官方地面VR與拍攝年月未知官方航照，非實測色或2026全棟現況；不斷言白頂2023已存在。牆、玻璃、封邊、灰端框及側屋頂不擴染。原4378面座標/面序/STL與歷史QA不改，不增模型套。單網格表面色不是分色封閉體，未實體試印；第三方照片不分發。
 
@@ -14,11 +14,16 @@
 跨來源當代外觀比例近似；2026-10-14二次外觀核准，完成作者QA後封存，是否正式發布以統一發布清單為準。
 本件屬大林校本部，包含主館、相連北側低翼、東端突出及貼身入口平台／兩座玻璃錐亭。兩亭不是另計建物；不含遠端九品蓮華大道，不代表全校完成。
 
-| 西向正面（actual STL） | 東端背面（actual STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西向正面（actual STL）<br>![正面](previews/front.png) | 東端背面（actual STL）<br>![背面](previews/rear.png) |  |
 
 [左／北側](previews/left.png) · [右／南側](previews/right.png) · [頂視](previews/top.png) · [正立面](previews/elevation.png) · [正面近景](previews/front-detail.png) · [北側近景](previews/left-detail.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 左／北側<br>![左／北側](previews/left.png) | 右／南側<br>![右／南側](previews/right.png) | 頂視<br>![頂視](previews/top.png) |
+| 正立面<br>![正立面](previews/elevation.png) | 正面近景<br>![正面近景](previews/front-detail.png) | 北側近景<br>![北側近景](previews/left-detail.png) |
 
 ## 依據與外形
 - 2023校安官方B1–5F平面、正側照與2023-09-18官方VR正面，核五層主體與地下一層。B1未虛構成完整外露第六層，模型不呈現內部樓板。

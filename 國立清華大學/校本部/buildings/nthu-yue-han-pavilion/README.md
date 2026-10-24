@@ -2,11 +2,18 @@
 
 **2016 官方照片來源的全亭外觀近似模型，不是測繪復原，也不代表已核實的 2026 現況。**
 
-![月涵亭模型實際網格預覽](previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![月涵亭模型實際網格預覽](previews/front.png) |  |  |
 
 - [可編輯彩色 Blender](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl)
 - [正立面](previews/elevation.png) · [左前斜視](previews/left_oblique.png) · [推定背側](previews/rear.png) · [推定屋頂俯視](previews/top.png)
 - [來源與建模界線](SOURCES.md) · [檢查及列印限制](QA.md) · [參數生成器](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 左前斜視<br>![左前斜視](previews/left_oblique.png) | 推定背側<br>![推定背側](previews/rear.png) |
+| 推定屋頂俯視<br>![推定屋頂俯視](previews/top.png) |  |  |
 
 ## 建模範圍
 以梅園月涵亭為單一完整建築物：圓形淺頂及挑簷、十二出口多邊內環、寬柱、深楣板、窄帶高窗、圓形地坪與前方簡化十一級階梯。並非梅亭、月涵堂或寄梅亭。官方書籍記載張昌華設計，1978 年 4 月 30 日完工。

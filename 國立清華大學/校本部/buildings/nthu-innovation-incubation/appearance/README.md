@@ -14,4 +14,9 @@
 - 五圖：[正斜視](previews/front.png)、[後斜視](previews/rear.png)、[前立面](previews/elevation.png)、[側面](previews/side.png)、[頂面](previews/top.png)。
 - [來源](SOURCES.md)、[許可說明](LICENSE-NOTICE.md)。
 
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正斜視<br>![正斜視](previews/front.png) | 後斜視<br>![後斜視](previews/rear.png) | 前立面<br>![前立面](previews/elevation.png) |
+| 側面<br>![側面](previews/side.png) | 頂面<br>![頂面](previews/top.png) |  |
+
 將原 model.stl 與 appearance 資料夾置於同一父層；Python（numpy、lib3mf）執行 source/build_appearance.py、source/verify_exchange.py、source/verify_material_boundaries.py；Blender 4.3.2 執行 source/render_appearance.py 與 source/verify_scene.py。獨立乾淨重建需驗 3MF、maps、五張 PNG bytes 相同；Blend 驗語義而不宣稱二進位確定性。

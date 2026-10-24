@@ -2,9 +2,9 @@
 
 2004 年完工建築的原創、有界外觀模型。本件只涵蓋天機教學大樓，並非全校完成。原名亦見「綜合教學大樓」；不含鄰棟耕書樓、勤學樓或保健大樓。
 
-| 正面：兩翼及下沉庭院 | 背面：高樓與穿堂大拱 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面：兩翼及下沉庭院<br>![正面](previews/front.png) | 背面：高樓與穿堂大拱<br>![背面](previews/rear.png) |  |
 
 ## 形體及資料界線
 - 東側十層高樓、南北六層兩翼、西側雙層柱廊、逐層階梯退台、下沉庭院實底與四小採光井、東背真穿通大拱，採同一連體外觀模型。
@@ -19,6 +19,10 @@
 - [STL](model.stl)、[可編輯Blend](scene.blend)、[原創參數](build_model.py)、[參數摘要](parameters.json)、[來源](sources.json)
 - [頂視](previews/top.png)、[全部渲染SHA](render-manifest.json)、[硬QA](validation.json)、[逐Polygon](detailed-component-check.json)、[原面厚度/根](surface-ray-check.json)、[密採樣綁定](dense-sampling-binding.json)
 - Python環境依requirements.txt；執行build_model.py後，以Blender執行render_preview.py。scene.blend匯入同一STL三角網格；所有預覽直接渲染交付STL，無代理形體。
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) |  |  |
 
 ## 列印與檢驗限制
 - 單位毫米，含底座最長150mm，底座平面朝下。未實體試印，未以Cura/Prusa驗實際工具路徑。大拱、長柱廊、屋頂庇與外梯可能需要支撐；不得宣稱免支撐。任意縮小未驗證。

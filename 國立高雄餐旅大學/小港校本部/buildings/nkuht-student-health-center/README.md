@@ -2,11 +2,16 @@
 
 國立高雄餐旅大學・小港校本部。原創來源比例完整群棟外觀近似；包含南主館、北獨立遮棚、三層折形輔樓、連橋、下沉廣場與基座。2012為完工識別，參考影像跨2014／2018／2024浮水印及2023報告，不宣稱還原同一天或實測BIM。
 
-| 正面 | 背面 |
-|---|---|
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
 
 [頂視](previews/top.png)・[東側](previews/right.png)・[西側](previews/left.png)・[空拍](previews/aerial.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視<br>![頂視](previews/top.png) | 東側<br>![東側](previews/right.png) | 西側<br>![西側](previews/left.png) |
+| 空拍<br>![空拍](previews/aerial.png) |  |  |
 
 ## 交付與尺度
 

@@ -2,9 +2,9 @@
 
 **局部外觀近似，非全館測繪。** 桃園市龜山區文化一路250號，NTSU；不是臺中國立臺灣體育運動大學NTUS。
 
-| 前側 actual STL | 後側 actual STL |
-|---|---|
-| ![前侧](previews/front.png) | ![後侧留白切面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前側 actual STL<br>![前侧](previews/front.png) | 後側 actual STL<br>![後侧留白切面](previews/rear.png) |  |
 
 ## 製作範圍
 保留兩直翼的內凹角、雙窗群組、六根圓柱弧廊與11個上層透空洞。圓弧是真實自建幾何；上層洞與柱間空間均貫通，不以淺刻線代替。

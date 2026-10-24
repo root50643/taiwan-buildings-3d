@@ -4,9 +4,15 @@
 
 > **局部段，並非全棟。** 研究大樓下坡端塔狀量體與左側前三組短翼；未建完整長翼、其餘連體區、文資書苑完整外廓或關渡美術館。
 
-<table><tr><td width="50%"><img src="previews/front.png" alt="交付STL正面" width="450"></td><td width="50%"><img src="previews/rear.png" alt="交付STL背面" width="450"></td></tr></table>
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![交付STL正面](previews/front.png) | ![交付STL背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [頂面](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 頂面<br>![頂面](previews/top.png) |  |
 
 ## 下載與尺寸
 

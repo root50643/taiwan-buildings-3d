@@ -2,11 +2,15 @@
 
 [彩色3MF](nchu-huisun-front-appearance.3mf) · [可編輯Blend](scene.blend) · [面材質對照](face-materials.json) · [色盤](palette.json) · [來源](SOURCES.md) · [重建原始碼包](rebuild-source.zip)
 
-| 正面 | 背面 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 範圍與年代限制
 這是1993年第二代惠蓀堂的**西向前棟段**，不是完整惠蓀堂；後方演藝廳、主廳屋頂、太陽能設備及後立面不包含。此次依官方完整實拍，只給既有平直主正面280完整三角指定乳白米灰磁磚近似 #C7C5B7、上排連續玻璃背平面2完整三角指定低飽和灰藍 #7C9198。不繪磁磚紋理、金字、雲影或倒影。其餘3140面中性 #AAA79F，不把中性當實際材色。

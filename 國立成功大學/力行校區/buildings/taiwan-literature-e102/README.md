@@ -4,13 +4,17 @@
 
 ## 最新七材質外觀版（2026-10-20）
 
-| 正面原幾何配色 | 背面與未見面保持中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/e102-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 依官方 2010 歷史轉角照片登錄紅磚長面與左山牆、原淡窗格／窗臺與灰門階；近坡均一灰色是有限推估，不宣稱逐瓦觀察。背面、另一端與遠屋坡中性，保留原簡化窗數。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 ## 來源與像素檢視

@@ -2,13 +2,17 @@
 
 ## 4 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 未見外側背面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nhriadmin-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
 協會案例北側照支持淺灰牆與暗窗，暖砂岩只用低柱廊；未知屋頂、端面、背面中性。2014 是文章發布日，非拍攝日。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 
 依公開院區配置圖、北側與迎賓廣場外觀照片製作的可列印概念模型。此為外觀辨識縮模，並非測繪、竣工圖或精確比例復刻；不包含室內、實驗室、設備或保全資訊。

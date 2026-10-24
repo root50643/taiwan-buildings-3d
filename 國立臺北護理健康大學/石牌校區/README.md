@@ -4,7 +4,7 @@
 
 | 模型 | 模型 | 模型 |
 |---|---|---|
-| [<img src="buildings/ntunhs-xuesi-2021/previews/front.png" alt="學思樓｜2021完工外觀：實際模型預覽" width="220">](buildings/ntunhs-xuesi-2021/README.md)<br>**[學思樓｜2021完工外觀](buildings/ntunhs-xuesi-2021/README.md)** | [<img src="buildings/ntunhs-erya-dorm/previews/front.png" alt="爾雅樓（第三學生宿舍）：實際模型預覽" width="220">](buildings/ntunhs-erya-dorm/README.md)<br>**[爾雅樓（第三學生宿舍）](buildings/ntunhs-erya-dorm/README.md)** |  |
+| [![學思樓｜2021完工外觀：實際模型預覽](buildings/ntunhs-xuesi-2021/previews/front.png)](buildings/ntunhs-xuesi-2021/README.md)<br>**[學思樓｜2021完工外觀](buildings/ntunhs-xuesi-2021/README.md)** | [![爾雅樓（第三學生宿舍）：實際模型預覽](buildings/ntunhs-erya-dorm/previews/front.png)](buildings/ntunhs-erya-dorm/README.md)<br>**[爾雅樓（第三學生宿舍）](buildings/ntunhs-erya-dorm/README.md)** |  |
 
 [模型、來源、角損警示與完整QA](buildings/ntunhs-xuesi-2021/README.md)。含底座最長150mm；49.9m整案高度未分棟，不作精確學思樓標高。
 

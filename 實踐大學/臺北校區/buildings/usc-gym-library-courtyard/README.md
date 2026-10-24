@@ -4,11 +4,15 @@
 
 ## 模型預覽與下載
 
-| 正面（同一份 STL） | 背面（同一份 STL） |
-|---|---|
-| ![M 體育館、N 圖資大樓與中央庭院正面](previews/front.png) | ![M 體育館、N 圖資大樓與中央庭院背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（同一份 STL）<br>![M 體育館、N 圖資大樓與中央庭院正面](previews/front.png) | 背面（同一份 STL）<br>![M 體育館、N 圖資大樓與中央庭院背面](previews/rear.png) |  |
 
 [下載 STL](model.stl) · [Blender 原始場景](scene.blend) · [俯視圖](previews/top.png) · [校級獨立 QA 摘要](../../../inventory/qa/usc-gym-library-courtyard-review.md)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視圖<br>![俯視圖](previews/top.png) |  |  |
 
 ## 模型範圍
 

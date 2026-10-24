@@ -2,7 +2,9 @@
 
 建議使用這六個已定向 STL，**分開列印、最後膠合**。本次已實際執行 PrusaSlicer 2.9.6 切片與路徑分析，並經[獨立重切及固定 SHA 覆核 GO](../../INDEPENDENT-REVIEW.md)，確認指定條件下沒有生成結構支撐工具路徑。尚未實體試印、拆 brim、乾組或膠合試作。原整件 v4 及全部原始 `false / exit 1` 保留；原單件仍需支撐，分件結果不能推回單件。
 
-![組回外觀](previews/assembled.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![組回外觀](previews/assembled.png) |  |  |
 
 歸檔報告中的原暫存名稱與交付包重跑入口，請見[歷史證據的路徑對照](EVIDENCE-READING.md)。
 
@@ -71,3 +73,8 @@ prusa-slicer-console --datadir output/local-data --load slicing/solid100-confirm
 ```
 
 這是重現切片證據的指令；正式列印仍須使用自己的機器與材料設定。每件 argv、exit、CLI 文字與 G-code 的去私人路徑副本都在 slicing/ 下。工具 ZIP／EXE 的版本及雜湊已記錄，未把外部工具、憑證或第三方原始照片放入模型包。尚未進行任何實體試印、brim 拆除力或膠合強度試驗；已完成獨立數位覆核，公開結論限上述製造條件。
+
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 分解圖<br>![分解圖](previews/exploded.png) | 列印方向與編號<br>![列印方向與編號](previews/print-orientations.png) |  |

@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/utaipei-tianmu-gymnasium-a-2012/renders/front.png" alt="天母體育館A棟西南入口側模型" width="260">](buildings/utaipei-tianmu-gymnasium-a-2012/README.md)<br>**[天母體育館A棟｜2012](buildings/utaipei-tianmu-gymnasium-a-2012/README.md)**<br>銀色雙向曲面屋頂、採光帽與雙外梯<br>210 × 152 × 63.8 mm |  |  |
+| [![天母體育館A棟西南入口側模型](buildings/utaipei-tianmu-gymnasium-a-2012/renders/front.png)](buildings/utaipei-tianmu-gymnasium-a-2012/README.md)<br>**[天母體育館A棟｜2012](buildings/utaipei-tianmu-gymnasium-a-2012/README.md)**<br>銀色雙向曲面屋頂、採光帽與雙外梯<br>210 × 152 × 63.8 mm |  |  |
 
 [完整模型、正反並排預覽與下載](buildings/utaipei-tianmu-gymnasium-a-2012/README.md) · [來源摘要](../inventory/sources/utaipei-tianmu-gymnasium-a-2012-source-summary.md) · [QA摘要](../inventory/qa/utaipei-tianmu-gymnasium-a-2012-review.md)
 

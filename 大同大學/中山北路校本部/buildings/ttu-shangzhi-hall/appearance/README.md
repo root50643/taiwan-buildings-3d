@@ -2,10 +2,10 @@
 
 在原 **32,106 三角面／16,031 頂點**上直接配色，座標、面序、幾何和原 STL 位元不變；沒有細分、加建或新增模型包。原模型仍是跨來源有界近似，不是測量 BIM。
 
-| 東入口側 | 西側：本次未確認材質 |
-|---|---|
-| ![東入口](previews/front.png) | ![西側](previews/rear.png) |
-| ![東立面](previews/elevation.png) | ![頂視](previews/top.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 東入口側<br>![東入口](previews/front.png) | 西側：本次未確認材質<br>![西側](previews/rear.png) | ![東立面](previews/elevation.png) |
+| ![頂視](previews/top.png) |  |  |
 
 [表面色 3MF](ttu-appearance.3mf) · [可編輯 Blender 場景](scene.blend) · [色表](palette.json) · [逐面分類與理由](face-materials.json) · [原 STL](../model.stl)
 

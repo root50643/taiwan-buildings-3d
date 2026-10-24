@@ -11,9 +11,9 @@
 |---|---|---|
 | ![正面](previews/front.png) | ![反面](previews/rear.png) | ![立面](previews/elevation.png) |
 
-| 俯視漸縮屋面 | 寬高端及屋頂底面 |
-|---|---|
-| ![俯視](previews/top.png) | ![寬端](previews/left_oblique.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視漸縮屋面<br>![俯視](previews/top.png) | 寬高端及屋頂底面<br>![寬端](previews/left_oblique.png) |  |
 
 ## 這個模型保留什麼
 - **單一傾斜平面透明PC頂**，從窄低端升往寬高端；屋面與塑木平台都呈漸縮梯形，不是矩形雙坡涼亭。

@@ -2,9 +2,9 @@
 
 第八批；敬業校區。尺寸 150 × 108 × 65.9 mm，含底座最長邊150 mm，每件比例獨立。
 
-![正面](previews/front.png)
-
-![背面](previews/rear.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 公開來源與像素檢視
 

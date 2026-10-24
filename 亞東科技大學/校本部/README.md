@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="buildings/aeust-youxiang-building/qa/render-check/v15-author-preflight/sanitized-previews/front.png" alt="有庠科技大樓街側巨框、圓角窗帶及雙翼天井模型" width="260">](buildings/aeust-youxiang-building/README.md)<br>**[有庠科技大樓｜初期外觀代表](buildings/aeust-youxiang-building/README.md)**<br>雙深天井、街側巨框真洞及不對稱端部<br>219 × 107 × 119 mm | [<img src="buildings/aeust-chengqin-2021/previews/v1/front.png" alt="誠勤大樓12層板身、端部核心與曲面連接段模型" width="260">](buildings/aeust-chengqin-2021/README.md)<br>**[誠勤大樓｜約2021年外觀代表](buildings/aeust-chengqin-2021/README.md)**<br>平頂板身、兩端屋頂箱體及元智交界截斷<br>184.3 × 63.08 × 159 mm |  |
+| [![有庠科技大樓街側巨框、圓角窗帶及雙翼天井模型](buildings/aeust-youxiang-building/qa/render-check/v15-author-preflight/sanitized-previews/front.png)](buildings/aeust-youxiang-building/README.md)<br>**[有庠科技大樓｜初期外觀代表](buildings/aeust-youxiang-building/README.md)**<br>雙深天井、街側巨框真洞及不對稱端部<br>219 × 107 × 119 mm | [![誠勤大樓12層板身、端部核心與曲面連接段模型](buildings/aeust-chengqin-2021/previews/v1/front.png)](buildings/aeust-chengqin-2021/README.md)<br>**[誠勤大樓｜約2021年外觀代表](buildings/aeust-chengqin-2021/README.md)**<br>平頂板身、兩端屋頂箱體及元智交界截斷<br>184.3 × 63.08 × 159 mm |  |
 
 [完整模型、正反並排預覽與下載](buildings/aeust-youxiang-building/README.md) · [來源摘要](../inventory/sources/aeust-youxiang-building-source-summary.md) · [QA摘要](../inventory/qa/aeust-youxiang-building-review.md)
 

@@ -4,8 +4,9 @@
 
 ## 模型與下載
 
-![實際交付STL正背](previews/front-rear.png)
-![實際交付STL頂視](previews/top.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際交付STL正背](previews/front-rear.png) | ![實際交付STL頂視](previews/top.png) |  |
 
 - [毫米STL](model.stl)、[可編輯Blend網格](scene.blend)
 - [自建參數腳本](build_model.py)、[相依版本](requirements.txt)、[實際STL渲染腳本](render_preview.py)
@@ -53,7 +54,9 @@ python verify_package.py
 
 ## 斜弧玻璃罩專項
 
-![actual STL近院落](previews/courtyard.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![actual STL近院落](previews/courtyard.png) |  |  |
 
 低玻璃罩為縮徑斜截錐近似，加上第二弧段和實心頂面；玻璃細框省略／粗化，不用空環代替罩體。[原STL射線檢查](curved-glass-body-check.json)及[重跑腳本](check_curved_glass_body.py)確認：垂直線只交z0底座和z14.9頂面；由B翼穿至罩面只交外界兩面，兩者融合。罩體前緣z5位於y=-25.47649、z12退至y=-26.65349，保留向內斜面。近圖由[渲染腳本](render_courtyard.py)讀保存STL網格產生，不改幾何。
 

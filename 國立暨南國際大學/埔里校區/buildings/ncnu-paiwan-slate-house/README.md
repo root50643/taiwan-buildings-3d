@@ -4,11 +4,15 @@
 
 原住民族環境教育場域中單一排灣族石板屋本體；以2017完工正／側實拍和2025刊載的校方提供全景自建近似外觀。屋外祖靈柱、廣場石座與其他傳統建築不納入。
 
-| 交付 STL 正面 | 交付 STL 背面 |
-| --- | --- |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 交付 STL 正面<br>![正面](previews/front.png) | 交付 STL 背面<br>![背面](previews/rear.png) |  |
 
 [俯視](previews/top.png) · [STL](model.stl) · [可編修 Blender 網格](scene.blend) · [參數腳本](build_model.py)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 辨識特徵
 - 淺雙坡石板屋頂與6個低矮不規則壓物近似

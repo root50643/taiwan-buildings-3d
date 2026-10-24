@@ -2,9 +2,9 @@
 
 ## 6 材質外觀版（2026-10-21）
 
-| 正面與來源支持區域 | 來源支持外長牆／未知頂面中性 |
-|---|---|
-| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持外長牆／未知頂面中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntutyida-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
@@ -23,11 +23,15 @@
 
 ## 實際 STL 預覽
 
-| 正面 | 背面 |
-| --- | --- |
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
 
 [頂視圖](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 已保留的外觀
 

@@ -4,11 +4,15 @@
 
 [三材質3MF](npust-yukang-library-appearance.3mf) · [可編輯Blend](scene.blend) · [原STL](../model.stl) · [重建源碼ZIP](rebuild-source.zip)
 
-|正面|背面|
-|---|---|
-|![正面](previews/front.png)|![背面](previews/rear.png)|
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 [左](previews/left.png) · [右](previews/right.png) · [頂](previews/top.png) · [同角中性對照](qa/mono-front.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 左<br>![左](previews/left.png) | 右<br>![右](previews/right.png) | 頂<br>![頂](previews/top.png) |
 
 全7106原三角／面序不變，沒有增建或切割面。原模型跨1991、2012、105學年度、2024正射及2026照片的有界外觀近似、尺寸／薄件／支承限制均繼承原README與QA。本次只改材料，未實體試印、未產生切片工具路徑、不保證無支撐可印。模型外觀層不是校方色碼、結構或製造認證。
 

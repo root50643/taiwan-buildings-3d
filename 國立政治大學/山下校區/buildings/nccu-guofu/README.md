@@ -4,18 +4,24 @@
 
 [五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nccu-guofu-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-![主前坡與左翼內坡灰綠瓦代理](appearance/previews/front.png)
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![主前坡與左翼內坡灰綠瓦代理](appearance/previews/front.png) |  |  |
 
 僅主屋前庭坡10面、左翼內坡9面，共19完整三角面採歷史照片支持的低飽和灰綠瓦proxy。所有屋脊、簷、其他坡、牆窗、入口及底板中性；中性表示未確認，不代表實物灰色。官方記憶網正/側圖說2009，正面EXIF DateTime 2009-05-08，側面無日期EXIF；2025僅輔照，不稱跨年色值不變或2026現況。原1020面座標/面序/STL/歷史QA不變，不增套數。非分色封閉體或G-code，未實體試印；第三方照片不分發。
 
 
 山下校區。本件為依公開實拍與官方平面外輪廓自建的完整建物外觀近似模型，不是測繪、BIM或結構工程資料。
 
-| 正面（實際 STL） | 背面（實際 STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（實際 STL）<br>![正面](previews/front.png) | 背面（實際 STL）<br>![背面](previews/rear.png) |  |
 
 [俯視圖](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視圖<br>![俯視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 特徵與證據限制
 

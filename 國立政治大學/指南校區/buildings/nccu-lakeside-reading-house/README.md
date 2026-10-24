@@ -4,20 +4,24 @@
 
 [五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/nccu-lakeside-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
 
-| 正面與右前窗背 | 未確認後側保持中性 |
-|---|---|
-| ![窗背限域](appearance/previews/front.png) | ![後側中性](appearance/previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面與右前窗背<br>![窗背限域](appearance/previews/front.png) | 未確認後側保持中性<br>![後側中性](appearance/previews/rear.png) |  |
 
 僅正面24窗及右前8窗背64個完整三角採深灰青玻璃外觀代理；其餘3340面、原框、左階側、右後2灣、後、屋頂及基座維持中性。中性意為未確認，不是斷言實物灰色。依建築師2022/03刊小屋實拍，曝光日期未報，不聲稱2026現況或實測色。獨立兩層小屋不是主棟；主棟橘色百葉不套用。原3404面座標、面序、STL及歷史QA不變，不增套數。3MF單網格表面色，非分色封閉體或G-code；未實體試印。第三方照片不分發。
 
 
 指南校區。公開完成實拍與官方平面外輪廓自建的完整建物外觀近似，不是測繪或BIM。
 
-| 正面（實際 STL） | 背面（實際 STL） |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面（實際 STL）<br>![正面](previews/front.png) | 背面（實際 STL）<br>![背面](previews/rear.png) |  |
 
 [俯視圖](previews/top.png) · [正立面](previews/elevation.png)
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 俯視圖<br>![俯視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 特徵與範圍
 

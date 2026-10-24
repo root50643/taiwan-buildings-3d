@@ -1,0 +1,94 @@
+{
+  "review_kind": "Author visual comparison of actual delivered-mesh renders against actual source photographs and plans; bounded representative envelope, not measured fidelity certification",
+  "date_utc": "2026-10-24T20:39:20.465141+00:00",
+  "stl_sha256": "692ceebc2e2dcd7ee1ef40b68698cf35adb52ddbd28de1ff4b19934a3c3d6bdb",
+  "mesh_data_sha256": "8db5edd54326124525c26b8bb47e526c22b69298465ac15da9eee959daf4d383",
+  "views_inspected": [
+    {
+      "file": "previews/front.png",
+      "sha256": "8c212e39999992d5853e9e1daa627e71c819057178107e7642886cff7ac5480a"
+    },
+    {
+      "file": "previews/oblique.png",
+      "sha256": "b5828c22bd16119ed59d7567bd6d3e0ab389ed5a505fa0b4f4c50230847ca176"
+    },
+    {
+      "file": "previews/top.png",
+      "sha256": "b30c22e885192d8e715464321d6b0da7ff761af4c0dda7164f37b5c39c1db5d4"
+    },
+    {
+      "file": "previews/left.png",
+      "sha256": "2ac10c8d826c5fe4f286d56976dd03f3c2af558ddb9fe3f7026c5ebfa14a4dc2"
+    },
+    {
+      "file": "previews/right.png",
+      "sha256": "a074d26d0a20809bff1f02c577ed33c121e4a923d7b2c39f1859d24fdf5c48b3"
+    },
+    {
+      "file": "previews/rear.png",
+      "sha256": "c5077faa137c6455587ef748ce594c7790f9a14d572b339f9d6b0d340692dfdb"
+    },
+    {
+      "file": "previews/rear-oblique.png",
+      "sha256": "78929adfc49d3222db89d36f90226694b23a34cf39f66ba81ad3d967dac50fe5"
+    },
+    {
+      "file": "previews/underside.png",
+      "sha256": "c129717ad289cfd47f6f4cd6bd7707d8a8c107ec056012acb93616263138a512"
+    },
+    {
+      "file": "previews/low-front.png",
+      "sha256": "f227563e7995d66dba01de15adce78fccbe027551453de83035e44673c381dba"
+    }
+  ],
+  "source_images_actually_inspected": [
+    "S08 sports photo1",
+    "S04 p1-08 full, p2-12 full, p3-01 full",
+    "S17 image2",
+    "S10 image1 after half",
+    "S11 image1",
+    "S12 image4",
+    "S07 upright physical pp2,3,4,5,8; p4 high-resolution SG314/SG321 details"
+  ],
+  "comparisons": [
+    {
+      "feature": "Front",
+      "finding": "Paired full-height glass corners, six deep tall piers, recessed curtain wall, projecting fascia and lower entry canopy remain distinct. Main hall does not start at 4F without a lower base."
+    },
+    {
+      "feature": "Both flanks",
+      "finding": "Each side has its own parameterized upper horizontal bands, lower small-window rows, canopy and rear lateral stair glazing. No geometry mirroring command is used; exact panel/window subdivisions are approximate."
+    },
+    {
+      "feature": "Rear",
+      "finding": "Complete neutral plan-constrained rear and tower-back surfaces are present. No invented rear openings, signage, plant or duplicated front rhythms. Blank model rear explicitly does not assert an observed blank facade."
+    },
+    {
+      "feature": "Lower volume and access",
+      "finding": "Different lower plan polygons and 3F front projection retained. Terrace bounding box is not filled wholesale: asymmetric left and right flights and landings remain distinct. Actual grade/exposed lower floors unverified; lower display voids are not a verified cantilever claim."
+    },
+    {
+      "feature": "Roof",
+      "finding": "Installed PV zones over a blue roof basin, with simplified blue gaps and low arrays. Front corners no longer have broad unsupported white roof caps. No pre-installation five-strip roof is mixed into the installed state."
+    },
+    {
+      "feature": "Underside",
+      "finding": "Schematic display plinth and connected exterior solid shown explicitly. It is not reconstructed surveyed terrain."
+    }
+  ],
+  "iterations_completed": [
+    "Reduced broad front-corner roof caps to edge caps so installed PV roof remains coherent",
+    "Replaced continuous long exterior stair run with visible six flight/landing organization",
+    "Corrected an exact-touch stair/terrace intersection causing an invalid numerical slice",
+    "Unified PV seam lattices in 2D and regularized delivered float32 geometry to remove coplanar sliver artifacts; independent self-intersection test now passes"
+  ],
+  "remaining_simplifications": [
+    "No survey scale or total-height chain",
+    "Neutral unobserved rear and terrain-contact surfaces",
+    "Opaque glass and solid interior",
+    "Rectangularized columns/canopies, simplified rails and stair counts",
+    "Representative PV zones/grid, not module counts, pitch or installation engineering",
+    "Representative uncalibrated colors, no textures or borrowed pixels"
+  ],
+  "assessment": "Coherent identifiable whole aboveground installed-PV representative exterior within stated limitations. No physical-print, architectural-survey or engineering qualification asserted."
+}

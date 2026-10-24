@@ -1,0 +1,16 @@
+{
+  "implementation": "source/validate_self_intersections.py",
+  "positive_control": {
+    "input": "Two independently triangulated 2 mm cubes offset by (0.5,0.5,0.5) mm; intersecting surfaces intentionally retained",
+    "expected": "reject",
+    "observed": "reject",
+    "detected_intersections": 18
+  },
+  "negative_control": {
+    "input": "Single watertight 2 mm cube with shared face edges",
+    "expected": "pass",
+    "observed": "pass",
+    "detected_intersections": 0
+  },
+  "limitations": "Small control fixtures exercise overlap rejection and allowed mesh adjacency, not formal proof of all geometric degeneracies."
+}

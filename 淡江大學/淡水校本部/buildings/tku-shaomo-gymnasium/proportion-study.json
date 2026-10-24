@@ -1,0 +1,142 @@
+{
+  "method": "Manual observational endpoints on actual rendered plan; line ambiguity is retained. Coordinates refer to the full upright image, not this public package. No image pixels are distributed.",
+  "local_anchor_image": {
+    "file_identifier": "S07-04-hires-upright.png",
+    "sha256": "d0777517bd9b29c3e67b91f28939e03a4db29ef4db33cbb3aa68e312c098787d",
+    "size_px": [
+      2600,
+      1927
+    ]
+  },
+  "local_anchors": [
+    {
+      "room": "SG314",
+      "printed_internal_dimensions": [
+        1080,
+        985
+      ],
+      "interpretation": "centimeters tentatively supported by stated room area; not overall dimensions",
+      "x_endpoints_px": [
+        [
+          606,
+          1022
+        ],
+        [
+          850,
+          1022
+        ]
+      ],
+      "y_endpoints_px": [
+        [
+          606,
+          794
+        ],
+        [
+          606,
+          1022
+        ]
+      ],
+      "wall_line": "approximate inside room boundary",
+      "m_per_px_x": 0.04426229508196722,
+      "m_per_px_y": 0.04320175438596491
+    },
+    {
+      "room": "SG321",
+      "printed_internal_dimensions": [
+        1275,
+        1002
+      ],
+      "x_endpoints_px": [
+        [
+          1740,
+          1635
+        ],
+        [
+          2038,
+          1635
+        ]
+      ],
+      "y_endpoints_px": [
+        [
+          2038,
+          1345
+        ],
+        [
+          2038,
+          1585
+        ]
+      ],
+      "wall_line": "dimension extension/room perimeter line, not guaranteed same reference as SG314",
+      "m_per_px_x": 0.04278523489932886,
+      "m_per_px_y": 0.041749999999999995,
+      "relative_to_SG314_x_percent": -3.3370618941088837,
+      "relative_to_SG314_y_percent": -3.3604060913705602
+    }
+  ],
+  "decision": "Separate-axis calibrations differ by roughly 3.3 percent between the two local anchors; wall-reference choice and scan distortion prevent a precise global metric conversion. No total building dimensions in meters are asserted. Model uses normalized plan ratios instead.",
+  "registration": [
+    {
+      "image": "S07-8-upright.png",
+      "reference": "outer paired front corner x315..966; front y602; main rear y136",
+      "main_upper_depth_over_width": 0.7158218125960062,
+      "rear_tower_boxes_px": [
+        [
+          210,
+          327,
+          119,
+          243
+        ],
+        [
+          952,
+          1069,
+          119,
+          243
+        ]
+      ],
+      "registration_rule": "Corresponding front corners and rear circulation towers, not equal DPI across pages"
+    },
+    {
+      "image": "S07-5-upright.png",
+      "reference": "outer paired front corner x265..915; front y602; main rear y130",
+      "traced_features": "front terrace to y742, long right flights x1017..1144, left front access x128..162, left outer flight/edge x56..160",
+      "precision": "Approximate orthogonalized outline; stair counts simplified"
+    },
+    {
+      "image": "S07-2-upright.png",
+      "reference": "1F main rectangle and rear lateral boxes traced independently; no front terrace projection copied from upper levels",
+      "date_scale_note": "Titleblock 94.10.24 (2005-10-24), 1:250, with later 2006 overprint; not registered by global DPI"
+    },
+    {
+      "image": "S07-3-upright.png",
+      "reference": "2F main rectangle and lateral boxes separately inspected; outer access differs from 1F/3F",
+      "date_scale_note": "Upper sheets 94.09.16 (2005-09-16), 1:300, later 2006 overprint"
+    }
+  ],
+  "chosen_vertical_proportions": {
+    "W_display_mm": 120,
+    "terrace_to_fascia_top_over_W": 0.5416666666666666,
+    "lower_exposed_base_over_W": 0.16666666666666666,
+    "total_height_status": "UNVERIFIED; all Z values chosen photographically",
+    "cross_checks": [
+      {
+        "source": "S04 p1-08 and p2-12",
+        "finding": "Tall glass corner and fascia rise substantially above the entrance terrace; low-angle perspective exaggerates apparent height. Retain tall paired corners and slightly lower fascia underside."
+      },
+      {
+        "source": "S08 and S17 image2",
+        "finding": "Other flank confirms full-height front corner, rear/lateral glass circulation tower, short lower wall zone then three upper horizontal window bands."
+      },
+      {
+        "source": "S11 image1",
+        "finding": "Aerial flattens height and exposes full broad PV roof. Cross-check roof footprint/depth and tower alignment rather than derive absolute height from perspective."
+      }
+    ],
+    "fit_type": "Qualitative two-direction silhouette fit, not photogrammetric calibration or camera solve"
+  },
+  "rejected_interpretations": [
+    "4F 11m and 7F 12m are clear hall heights, not floor-to-floor or total height",
+    "B1 not B2",
+    "8F open hall plan not roof",
+    "Neither total floor area nor PV system count establishes exterior dimensions"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_SOURCE_ZIP_EXTRACTION_EXECUTION",
+  "passed": true,
+  "public_release_authorized": false,
+  "source_zip_sha256": "31085489d23240b89b44f2b0cc3e677b1ba20338eb9a6852bee0d181e5583740",
+  "source_zip_members": 14,
+  "actual_members_match_delivered_source_bytes": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 489,
+      "sha256": "c2a60c7bedc7b778dec171783b5b159d161d9a376caee3712cb66d557d2f9382"
+    },
+    {
+      "path": "QA.md",
+      "bytes": 2371,
+      "sha256": "1d5e138a81093d4eae8616cae3f363c78a093f49aa02657325f2bfd477968ebe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3377,
+      "sha256": "6afa0f95f959f034984571eee41165eca1f3d763b0c39d1eaf3e389569762aae"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 4471,
+      "sha256": "e68d6fcb5ac3f9235b94451bd8e34fed757909bacbfdd2bf7e2959655c44b483"
+    },
+    {
+      "path": "build_model.py",
+      "bytes": 14689,
+      "sha256": "231e30b2b2695f82d17c05ad074875d6ca8c10d4bebd132bc8b5b4c100ab3c02"
+    },
+    {
+      "path": "check_features.py",
+      "bytes": 2879,
+      "sha256": "b55b12bc1468b213d3d2b22d66dbcbb73e14c0174b4ce14391dabcc540e1d71d"
+    },
+    {
+      "path": "qa_model.py",
+      "bytes": 8669,
+      "sha256": "92869d3e3d189540e66f87ce587cb98543741470a9e6e6a2f71ed8977453b19b"
+    },
+    {
+      "path": "rebuild.py",
+      "bytes": 1563,
+      "sha256": "43f7e8db8660cfbd2510a1966a20221b774025a3328b9007011cba8096e14a31"
+    },
+    {
+      "path": "render_model.py",
+      "bytes": 4993,
+      "sha256": "61c8f2b8f181839645d338dc25c39a8442c0a3896bf9951c71cd5da7f5f47da0"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 102,
+      "sha256": "614c6442883509b465095693286ae9b35977fe86ed8628bf7a40acb359a948dd"
+    },
+    {
+      "path": "run_all_checks.py",
+      "bytes": 473,
+      "sha256": "4da31c64ea56505958b25ac1f837dce168f93805af3f1cd9309b855398681ee5"
+    },
+    {
+      "path": "verify_exchange.py",
+      "bytes": 6587,
+      "sha256": "feb03344a04f4adad5589f103cdda663a1d017e7a445da414aeefcb95f982983"
+    },
+    {
+      "path": "verify_render.py",
+      "bytes": 942,
+      "sha256": "b09a769eabe90c2e5849e090fdd496329b0ac8cdea7113a261fd0d738915ded8"
+    },
+    {
+      "path": "verify_scene.py",
+      "bytes": 3634,
+      "sha256": "23e6bdefd5ee4fe97c69b029b61101522cf00e175257036960906835f9087990"
+    }
+  ],
+  "executed_commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/0459ddc40ee0/nccu-jitao-hall-20261024/reviewer-source-extracted-v4/build_model.py"
+    ],
+    [
+      "/usr/bin/blender",
+      "-b",
+      "-t",
+      "4",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "/workspace/scratch/0459ddc40ee0/nccu-jitao-hall-20261024/reviewer-source-extracted-v4/render_model.py"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/0459ddc40ee0/nccu-jitao-hall-20261024/reviewer-source-extracted-v4/run_all_checks.py"
+    ]
+  ],
+  "all_commands_exit_zero": true,
+  "nine_artifacts_byte_identical": [
+    {
+      "path": "model.stl",
+      "bytes": 413684,
+      "sha256": "72e45f230822b51b01b6b9fb4da1ad639c84aa26c0dc7ec19a44ee7e55078fa1"
+    },
+    {
+      "path": "model.3mf",
+      "bytes": 83253,
+      "sha256": "5cc9db081400308a0451be11f7f1d1c51e7881b75e22ada703419771c251f9f1"
+    },
+    {
+      "path": "mesh.json",
+      "bytes": 375035,
+      "sha256": "be040aad91abe0aa2fc4e7209f970c2fd455b922c10b75a4dd5117fffb74e8ec"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 568,
+      "sha256": "580a5c59169092b0118c1f72cf296403ee87922142f00778074632f19af23daf"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1695500,
+      "sha256": "b8489f7882bae6e5bb9c0e9d5fd5d6c88b884a51bd3ad40f9c9b073e671f990e"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1600219,
+      "sha256": "d45cd40e9aa917a498694a18e9e31e186cd0b0162b5fa60724ffbd65dc17b376"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1601446,
+      "sha256": "284219509e5f06bca4d075ca6f57c8519f3394c5d90179877a9675b8a64aebda"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1617487,
+      "sha256": "1f745d1f49d73f4dca6aa67dc50579e8805503f28a3c362dd0a6af79b0d6ce90"
+    },
+    {
+      "path": "previews/left_oblique.png",
+      "bytes": 1630935,
+      "sha256": "051485354db9ac9c60cd1fb1169aeeb7f2d8a3cf75994172bedc5b53ecd3d6e9"
+    }
+  ],
+  "scene_validation_semantics_identical": true,
+  "source_archive_has_no_third_party_photos": true,
+  "delivery_core_files_not_written": true
+}

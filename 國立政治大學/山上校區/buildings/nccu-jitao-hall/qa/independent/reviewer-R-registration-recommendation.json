@@ -1,0 +1,57 @@
+{
+  "status": "BOUNDED_SOURCE_READING_RECOMMENDATION_NOT_FINAL_MODEL_PASS",
+  "passed": false,
+  "public_release": false,
+  "source_files": [
+    {
+      "path": "research-round-ab5cc331/nccu-jitao-next/evacuation-page16-xref80.png",
+      "bytes": 362754,
+      "sha256": "16e439cc3732726f9b4eac7e05bcc2d96c81e16838088c1a0db0cf59585279e1"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jitao-next/evacuation-page17-xref83.png",
+      "bytes": 192270,
+      "sha256": "9626be21964cd5d5627d28840e3c8fbdf158f89e6ff70e8f5f1bb8d6d55ad2ae"
+    }
+  ],
+  "method": "Independently viewed actual high-resolution original PDF embedded images; manually read matching stair-flight centres; shared-stair registration, not outer bounding box fitting.",
+  "R_stair_centres_pixels": [
+    [
+      989.0,
+      332.0
+    ],
+    [
+      611.0,
+      642.0
+    ]
+  ],
+  "five_floor_stair_centres_pixels": [
+    [
+      879.0,
+      324.0
+    ],
+    [
+      496.0,
+      640.0
+    ]
+  ],
+  "translation_R_to_5F_pixels": [
+    -112.5,
+    -5.0
+  ],
+  "residuals_pixels": [
+    3.905124837953327,
+    3.905124837953327
+  ],
+  "pixel_reading_uncertainty_approx": 4,
+  "scale": "No additional scale/rotation imposed between R and 5F: two anchors nearly agree under translation. This is a bounded drawing interpretation, not surveyed floor registration.",
+  "overlay_method": "Actual R dark source pixels translated over 5F, not a new invented polygon; all source pixels private/excluded from delivery.",
+  "interpretation": [
+    "R outer diagonal and top local steps do not coincide exactly with full occupied 5F outline after stair registration. Do not shrink all lower floors or apply .944 scaling from an outer diagonal alone.",
+    "Preserve full occupied 5F envelope and continuous roof closure. A separately traced R-level parapet/top-boundary proxy may sit inside that roof; exact roof setback construction/height is not independently measured.",
+    "Keep both stair access positions connected; no floating hood, no new full sixth occupied storey.",
+    "5F eastern blank connector remains lower roof; earlier 2F full upper-room footprint cannot be blindly extruded through 5F.",
+    "Overlay contains source pixels: private reviewer reading evidence only, exclude from all model delivery/source ZIPs."
+  ],
+  "builder_gate": "Compare current R/5F model outlines and both stairs in common-core overlay and source-angle renders; this note does not authorize final geometry or publication."
+}

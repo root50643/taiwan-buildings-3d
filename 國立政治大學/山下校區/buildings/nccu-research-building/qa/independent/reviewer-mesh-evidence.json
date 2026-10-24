@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "stl_sha256": "dd48f3d650d5dc0ee901cf2094362ca61c4c72529d699c38c2080361368b8466",
+  "model_3mf_sha256": "4cb5551220a4d56a7d7b079f2b1fae549a73153dda266fc45e7049884b7d6e2f",
+  "raw": {
+    "triangles": 8552,
+    "exact_weld_vertices": 4278,
+    "nonfinite": 0,
+    "zero_area": 0,
+    "duplicate_unoriented_faces": 0,
+    "edge_incidence_not_two": 0,
+    "edge_orientation_errors": 0,
+    "vertex_link_errors": 0,
+    "stored_normal_nonpositive_dot": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "signed_volume_mm3": 1298432.6627423342,
+    "bounds_mm": [
+      [
+        -90.0,
+        -49.5,
+        0.0
+      ],
+      [
+        90.0,
+        49.5,
+        105.44999694824219
+      ]
+    ],
+    "surface_area_mm2": 104947.54672721689,
+    "minimum_triangle_area_mm2": 0.0013510345452232286,
+    "boundary_shells": 2,
+    "signed_shell_volumes_mm3": [
+      1317340.481363286,
+      -18907.81862095187
+    ],
+    "cavity_validation": {
+      "positive_exterior": 1,
+      "negative_cavities": 1,
+      "exact_raw_triangle_partition": true,
+      "all_inner_vertices_and_face_centroids_inside_outer": true,
+      "tested_points": 104,
+      "minimum_tested_clearance_mm": 0.12000274658203125,
+      "cross_shell_contacts_included_in_SAT": true,
+      "interpretation": "One solid connected building with one intentionally capped upper hall void; not two disconnected positive objects. No boolean healing or cavity filling used."
+    }
+  },
+  "exchange": {
+    "unit": "millimeter",
+    "objects": 1,
+    "vertices": 4278,
+    "triangles": 8552,
+    "all_triangle_coordinates_order_and_winding_exact": true,
+    "exact_canonical_vertices_and_indices": true,
+    "whole_face_material_assignments": true,
+    "materials": [
+      {
+        "name": "ground_concrete",
+        "displaycolor": "#92958DFF"
+      },
+      {
+        "name": "historic_pale_tile_proxy",
+        "displaycolor": "#D0D0C4FF"
+      },
+      {
+        "name": "gray_roof_coping",
+        "displaycolor": "#777D78FF"
+      },
+      {
+        "name": "opaque_recessed_window",
+        "displaycolor": "#435559FF"
+      },
+      {
+        "name": "pale_window_frame",
+        "displaycolor": "#B4B8AFFF"
+      },
+      {
+        "name": "muted_warm_recess_wall",
+        "displaycolor": "#B6A48BFF"
+      }
+    ],
+    "material_face_counts": [
+      38,
+      1863,
+      452,
+      1338,
+      4450,
+      411
+    ]
+  },
+  "non_vertex_adjacent_SAT": {
+    "candidate_pairs": 47308,
+    "contact_pairs": 0,
+    "axes": 17,
+    "epsilon_mm": 1e-07,
+    "shared_vertex_pairs_excluded": true,
+    "limitation": "Does not establish an exhaustive test of all adjacent triangle pairs; exact edge incidence/orientation and vertex links checked independently."
+  },
+  "repair_or_rounding_applied": false,
+  "physical_print_or_slicer_test": false
+}

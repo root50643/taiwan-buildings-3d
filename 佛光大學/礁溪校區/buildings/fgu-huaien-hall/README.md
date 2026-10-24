@@ -2,9 +2,13 @@
 
 [回礁溪校區](../../README.md)
 
-| 東側門廊 | 西側及環廊 |
-|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |
+| 東側門廊 | 西側及環廊 | 頂視 |
+|---|---|---|
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+| 正面低視角 | 背面低視角 | 東側 |
+| ![正面低視角](previews/front-low.png) | ![背面低視角](previews/rear-low.png) | ![東側](previews/east.png) |
+| 西側 |  |  |
+| ![西側](previews/west.png) |  |  |
 
 ## 範圍與證據
 
@@ -24,7 +28,7 @@
 
 [model.stl](model.stl)採毫米，含底座150×144×47.60mm，約1:500。底座朝下。[scene.blend](scene.blend)為交付STL匯入的可編修網格；[build_model.py](build_model.py)為原創參數來源。
 
-[正面低視角](previews/front-low.png)、[背面低視角](previews/rear-low.png)、[頂視](previews/top.png)、[東側](previews/east.png)、[西側](previews/west.png)皆由實際交付STL繪製。
+上方七視角預覽皆由實際交付STL繪製。
 
 安裝[requirements.txt](requirements.txt)後執行build_model.py，再以Blender執行[render_preview.py](render_preview.py)，最後執行[run_all_checks.py](run_all_checks.py)。[validation.json](validation.json)、[qa-summary.json](qa-summary.json)、[逐構件細檢](detailed-component-check.json)、[原STL根射線](root-ray-check.json)、[細件解釋](thin-feature-review.json)與[SHA256SUMS](SHA256SUMS)供查核。
 
@@ -44,3 +48,16 @@
 所有1669警告截面都以原STL三角面局部兩向法線射線覆查，最小量得1.799999952316284mm；32個主圈結構位置（開放段斜柱/高牆段壁柱）與5根門廊柱根連接均已驗。壁柱根射線選牆側內部點避開恰好共面邊界；寬度另用柱中心點。所有探測起點和方向保留，可由原STL重算。見 [逐警告caliper](warning-caliper-check.json) 及 [可重跑腳本](check_warning_calipers.py)。這是限定截面補證，不是全域最小壁厚或實體試印；不同浮點/GEOS圓弧離散可能使末位微變，保留完整原值與失敗即停規則。具體警告已依原始STL局部厚度、根連接及逐構件留存證據接受，不以改閾值處理。
 
 獨立覆核補充：1669個跨層原Polygon樣本不是1669根實體柱。全部指定原三角面法線射線最小量得1.7999968mm，所有起點在原始實體內；32個主圈柱／壁柱和5根門廊柱根連接覆核通過。單構件最大損失4.39052395946%、保留95.60947604054%；頂點0.41mm鄰域外損失最高0.003405806278mm²，對原構件面積比例最高0.1033325774%，兩項最大值未必同一樣本，不能概稱純角損。238層1912原Polygon皆無侵蝕或opening分裂／消失，指定警告截面近凸，未見細頸。此為特定截面及根部證據，並非全域最小壁厚、全面支撐分析或實體試印保證；環廊、簷板、門廊需檢查支撐與移除風險，不得任意縮小。
+
+
+## 來源約束的逐面配色版本
+
+新增[原網格限定配色](appearance/README.md)：白色膜帽、灰色斜環與僅 6 個已對位窗組的凹槽背面。其餘表面明示為未確認中性，不以對稱或高度帶補色。
+
+| 配色東南側 | 配色背面 | 配色頂視 |
+|---|---|---|
+| ![配色東南側](appearance/previews/front.png) | ![配色背面](appearance/previews/rear.png) | ![配色頂視](appearance/previews/top.png) |
+
+[可編修彩色 Blend](appearance/scene.blend) · [逐面材質 3MF](appearance/fgu-huaien-hall-materials.3mf) · [9 視角與來源／限制](appearance/README.md)
+
+原 STL、幾何來源、縮尺限制與既有數位 QA 均未更動；彩色版本不是新增切片或實體試印驗證。原根目錄 scene.blend / previews 仍為既有中性版本，彩色交付請用 appearance/。

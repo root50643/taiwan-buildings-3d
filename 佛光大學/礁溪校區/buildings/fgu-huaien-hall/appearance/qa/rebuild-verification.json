@@ -1,0 +1,32 @@
+{
+  "fresh_directory_created_by_out_option": true,
+  "input_original_stl_unchanged": true,
+  "files": {
+    "mesh-data.npz": {
+      "sha256_delivery": "3e7d7c179e8f290a699f8a305b91fc167eafd5a71ea4de10160a60190a276bd2",
+      "sha256_rebuild": "3e7d7c179e8f290a699f8a305b91fc167eafd5a71ea4de10160a60190a276bd2",
+      "byte_equal": true
+    },
+    "face-materials.json": {
+      "sha256_delivery": "5991c93a1ca023ddae0e508bc4c83ca81c7d29a831871ef81a1bc037fe0b8f0e",
+      "sha256_rebuild": "5991c93a1ca023ddae0e508bc4c83ca81c7d29a831871ef81a1bc037fe0b8f0e",
+      "byte_equal": true
+    },
+    "fgu-huaien-hall-materials.3mf": {
+      "sha256_delivery": "6bcca8dd55ebc3293e57260be8106f02ed867ba4843850fe6048611df34b779c",
+      "sha256_rebuild": "6bcca8dd55ebc3293e57260be8106f02ed867ba4843850fe6048611df34b779c",
+      "byte_equal": true
+    }
+  },
+  "rebuild_front_pixels_exact": true,
+  "blend_byte_identity_claimed": false,
+  "blend_note": "Blender serializer bytes may vary; exact mesh/material attributes are checked by reopen tests.",
+  "commands": [
+    "python source/build_appearance.py --stl ../model.stl --out NEW_DIRECTORY",
+    "python source/export_3mf.py --out NEW_DIRECTORY",
+    "blender -b -t 4 --factory-startup --python source/render_appearance.py -- --out NEW_DIRECTORY --render --views front"
+  ],
+  "fresh_blend_edit_reopen_passed": true,
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14"
+}

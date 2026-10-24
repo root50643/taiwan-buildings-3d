@@ -1,0 +1,156 @@
+{
+  "schema": 1,
+  "title": "元智大學六館行政教學大樓 — complete historical exterior approximation",
+  "units": "display millimeters; geometry other than the 68 m approximate height anchor is unmeasured",
+  "display_scale_mm": 1.0,
+  "height_anchor": {
+    "source": "School history physical PDF page 3 / printed 159",
+    "approximate_real_tower_height_m": 68,
+    "model_tower_above_base_mm": 170,
+    "nominal_height_based_scale": "1:400",
+    "limitation": "Approximate published height only; not an as-built or calibrated whole-building scale."
+  },
+  "tower": {
+    "center_x": -77.0,
+    "center_y": 0.0,
+    "radius": 28.0,
+    "body_top": 149.0,
+    "crown_top": 172.5,
+    "crown_wall": 2.4,
+    "crown_arc_degrees": [
+      -60,
+      210
+    ],
+    "cap_z": 163.0,
+    "cap_thickness": 1.8,
+    "circle_segments": 120,
+    "recess_x": [
+      -96,
+      -81
+    ],
+    "recess_front_y": -31,
+    "recess_back_y": -10
+  },
+  "service_spine": {
+    "x": [
+      -128,
+      -101
+    ],
+    "y": [
+      -14,
+      17
+    ],
+    "top": 142.5
+  },
+  "teaching_bar": {
+    "x": [
+      -66,
+      116
+    ],
+    "y": [
+      -25,
+      27
+    ],
+    "occupied_bottom": 14,
+    "terrace_z": 47.5,
+    "setback_front_y": -8,
+    "top": 60.5
+  },
+  "auditorium": {
+    "x": [
+      110,
+      145
+    ],
+    "y": [
+      -30,
+      28
+    ],
+    "top": 57.5
+  },
+  "repetition_conventions": {
+    "tower_window_angle_pitch_deg": 12,
+    "tower_window_rows": [
+      13,
+      25,
+      37,
+      48,
+      59,
+      70,
+      81,
+      92,
+      103,
+      114,
+      125,
+      136
+    ],
+    "bar_bay_pitch": 14,
+    "bar_mullion_pitch": 4.2,
+    "service_window_rows": [
+      10,
+      22,
+      34,
+      46,
+      58,
+      70,
+      82,
+      94,
+      106,
+      118,
+      130
+    ]
+  },
+  "manufacturing": {
+    "base_mm": 2.5,
+    "minimum_standalone_fin_mm": 1.0,
+    "minimum_rail_mm": 1.0,
+    "main_columns_mm": 3.8,
+    "crown_wall_mm": 2.4,
+    "opaque_window_recess_depth_mm": 1.1,
+    "model_only_plinth": true,
+    "supports_required_for_assessment": [
+      "tower projecting cap",
+      "ground colonnade ceiling",
+      "external sunshades and terrace railing"
+    ],
+    "actual_print_test": false
+  },
+  "temporal_scope": "2016-watermark roof + 2018 exterior historical main-body approximation; later maps/tables support stable identity/topology only",
+  "unknowns": [
+    "Complete north-side opening layouts",
+    "Hall east/north wall openings",
+    "Precise tower-spine joint and wall thickness",
+    "Exact footprint, curve angles, story heights and window counts",
+    "All roof equipment and early small solar installations",
+    "B1 and site grade"
+  ],
+  "excluded": [
+    "Independent Building 1",
+    "Building 5 gate/library volume",
+    "Building 7",
+    "Newer extensive PV array",
+    "Interiors, basement, terrain, logo and source pixels"
+  ],
+  "parameter_contract": {
+    "driving_fields": [
+      "display_scale_mm",
+      "tower.center_x",
+      "tower.center_y",
+      "tower.radius",
+      "tower.body_top",
+      "tower.crown_top",
+      "tower.crown_wall",
+      "tower.crown_arc_degrees",
+      "tower.cap_z",
+      "tower.cap_thickness",
+      "tower.circle_segments",
+      "tower.recess_x",
+      "tower.recess_front_y",
+      "tower.recess_back_y",
+      "service_spine",
+      "teaching_bar",
+      "auditorium",
+      "repetition_conventions"
+    ],
+    "other_numeric_fields": "Recorded manufacturing choices; detailed framing coordinates remain editable in build_geometry.py."
+  }
+}

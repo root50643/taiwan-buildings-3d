@@ -1,0 +1,68 @@
+{
+  "reload_source": "model.stl",
+  "stl_sha256": "48ae213d2648081e4aed356941d89e3bd41807042795d3779d6f047e594d7a14",
+  "stl_triangle_order_and_coordinates_exact_to_authoritative_mesh": true,
+  "vertices_after_weld": 13878,
+  "triangles": 28172,
+  "watertight": true,
+  "winding_consistent": true,
+  "edge_manifold_all_incidence_2": true,
+  "vertex_manifold_all_links_single_cycles": true,
+  "connected_components": 1,
+  "degenerate_triangles": 0,
+  "duplicate_triangles": 0,
+  "minimum_triangle_area_display_mm2": 1.3268958520287087e-05,
+  "euler_number": -208,
+  "positive_volume_display_mm3": 1059119.1905363838,
+  "bounds_display_mm": [
+    [
+      -135.0,
+      -39.0,
+      0.0
+    ],
+    [
+      152.0,
+      36.0,
+      172.5
+    ]
+  ],
+  "maximum_stl_vs_npz_abs_coordinate_drift": 0.0,
+  "slice_preflight": {
+    "layer_height_scenario_mm": 0.2,
+    "first_plane_mm": 0.1,
+    "layers_checked": 862,
+    "closed_valid_sections": 862,
+    "new_unattached_component_starts": [],
+    "max_slice_components": 18,
+    "minimum_component_area_display_mm2": 1.0,
+    "method": "Exact decimal-centered triangle-plane intersection; endpoint weld tolerance 1e-7 mm; Shapely closed polygons with odd-even rings; not extrusion toolpaths"
+  },
+  "overhang_preflight": {
+    "criterion": "down-facing triangles >45 degrees from vertical, excluding build-plate bottom",
+    "area_display_mm2": 11766.78329956294,
+    "triangle_count": 5298,
+    "support_warning": true
+  },
+  "practical_features": {
+    "base_mm": 2.5,
+    "minimum_standalone_fin_mm": 1.0,
+    "minimum_rail_mm": 1.0,
+    "main_columns_mm": 3.8,
+    "crown_wall_mm": 2.4,
+    "opaque_window_recess_depth_mm": 1.1,
+    "model_only_plinth": true,
+    "supports_required_for_assessment": [
+      "tower projecting cap",
+      "ground colonnade ceiling",
+      "external sunshades and terrace railing"
+    ],
+    "actual_print_test": false
+  },
+  "physical_print_test": false,
+  "limitations": [
+    "Numerical mesh/slice checks do not guarantee adhesion, strength or support-free printing.",
+    "Supports need assessment under the projecting tower cap, ground colonnade soffit, sunshade fins and terrace rails.",
+    "Color-only window and trim boundaries are actual face assignments, not holes. Fine features may require enlargement or resin; louvers and rails are model-thickened.",
+    "Complete connected historical exterior with open colonnade; no full interior, basement, site grading, structural simulation or exact measured footprint. Approximate 68 m tower anchor only."
+  ]
+}

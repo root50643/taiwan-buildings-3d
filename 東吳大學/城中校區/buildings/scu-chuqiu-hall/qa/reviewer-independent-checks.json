@@ -1,0 +1,1133 @@
+{
+  "reviewer": "independent reviewer /root/review_cjcu_bell_frames",
+  "utc": "2026-10-23T17:34:15.555594+00:00",
+  "model_version": "v12",
+  "passed": true,
+  "public_distribution_authorized": false,
+  "model_license": "UNRESOLVED_PENDING_PROJECT_DECISION",
+  "manufacturing_approval": false,
+  "main_repository_modified": false,
+  "frozen_STL_sha256": "e409cb13e48a9b34c53e63ad249fe04df917afbfe3a7353198f2415bceac645e",
+  "freeze_manifest": {
+    "path": "scu-chuqiu-hall-20261023/REVIEW-CORE-HASHES.json",
+    "bytes": 2194,
+    "sha256": "5206e867ae1aee39ff791c082115d4ca913f4e321ecf07304c338a0966d9367e"
+  },
+  "status": "PASS",
+  "status_scope": "Private source-bound geometry, raw/native/exchange/occupancy/render technical checks only. Not PUBLIC READY, license clearance, manufacturing certification, or a physical print result.",
+  "methods": {
+    "raw_mesh": "Reviewer-written parser reads every original float32 STL triangle; exact equality welding only, no repair/deletion/subdivision/rounding.",
+    "intersection": "Independent R-tree broad phase and 17-axis closed triangle SAT of all non-shared-vertex candidate pairs. Shared-vertex pairs are excluded explicitly; edge/link checks are separate, not an exhaustive adjacent intersection proof.",
+    "exchange": "Independent XML parse of the delivered 3MF, exact every vertex/index/oriented triangle and whole-face material assignment against canonical STL and mesh.json.",
+    "native": "Independent Blender 4.3.2 actual delivery readback; different real last-vertex/material edits, private temporary save/reopen; reopen unchanged delivery and render front byte-identically.",
+    "features": "40 independently chosen source-oriented air/solid probes and 3 true triangle-ray thickness measurements. No builder geometry functions imported.",
+    "clean_rebuild": "Reviewer compared nine actual isolated-rebuild-v12 files against delivery bytes and the builder report. Builder executed that isolated rebuild; reviewer separately reopened and rendered saved scene."
+  },
+  "raw_and_exchange": {
+    "status": "PASS",
+    "stl_sha256": "e409cb13e48a9b34c53e63ad249fe04df917afbfe3a7353198f2415bceac645e",
+    "model_3mf_sha256": "e388164335adb71102057b991fa08ad085a1d7b84a529a36b7104d00a18542b1",
+    "raw": {
+      "triangles": 93326,
+      "exact_weld_vertices": 46645,
+      "nonfinite": 0,
+      "zero_area": 0,
+      "duplicate_unoriented_faces": 0,
+      "edge_incidence_not_two": 0,
+      "edge_orientation_errors": 0,
+      "vertex_link_errors": 0,
+      "stored_normal_nonpositive_dot": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 1152948.136135467,
+      "bounds_mm": [
+        [
+          -125.30249786376953,
+          -51.0,
+          0.0
+        ],
+        [
+          131.30250549316406,
+          51.0,
+          86.55000305175781
+        ]
+      ],
+      "surface_area_mm2": 134014.16954201512,
+      "minimum_triangle_area_mm2": 0.002700238037505187,
+      "boundary_shells": 1
+    },
+    "exchange": {
+      "unit": "millimeter",
+      "objects": 1,
+      "vertices": 46645,
+      "triangles": 93326,
+      "all_triangle_coordinates_order_and_winding_exact": true,
+      "exact_canonical_vertices_and_indices": true,
+      "whole_face_material_assignments": true,
+      "materials": [
+        {
+          "name": "neutral_display_base",
+          "displaycolor": "#89908BFF"
+        },
+        {
+          "name": "warm_gray_exposed_concrete",
+          "displaycolor": "#AEA69AFF"
+        },
+        {
+          "name": "ochre_brick_fields",
+          "displaycolor": "#B77F51FF"
+        },
+        {
+          "name": "pale_window_frames",
+          "displaycolor": "#CEC8B4FF"
+        },
+        {
+          "name": "opaque_muted_glazing",
+          "displaycolor": "#657671FF"
+        },
+        {
+          "name": "roof_weathered_gray",
+          "displaycolor": "#96978BFF"
+        }
+      ],
+      "material_face_counts": [
+        242,
+        3597,
+        3870,
+        66697,
+        18870,
+        50
+      ]
+    },
+    "non_vertex_adjacent_SAT": {
+      "candidate_pairs": 333997,
+      "contact_pairs": 0,
+      "axes": 17,
+      "epsilon_mm": 1e-07,
+      "shared_vertex_pairs_excluded": true,
+      "limitation": "Does not establish an exhaustive test of all adjacent triangle pairs; exact edge incidence/orientation and vertex links checked independently."
+    },
+    "repair_or_rounding_applied": false,
+    "physical_print_or_slicer_test": false
+  },
+  "native": {
+    "status": "PASS",
+    "scene_sha256": "68dd9f2736b7ab13fc973b77dcde4eac1bab33bbea3e4467d1eba6902d994779",
+    "stl_sha256": "e409cb13e48a9b34c53e63ad249fe04df917afbfe3a7353198f2415bceac645e",
+    "triangles": 93326,
+    "exact_vertices": 46645,
+    "canonical_triangle_coordinates_order_winding_and_materials_exact": true,
+    "single_mesh_identity_transform_no_modifiers": true,
+    "materials_linear_rgba_match": true,
+    "actual_vertex_edit_save_reopen": "last vertex z +0.125 mm",
+    "actual_material_edit_save_reopen": "material index4 RGBA .17,.28,.39,.63",
+    "other_vertices_faces_and_materials_preserved": true,
+    "no_delivery_files_changed": true,
+    "reopened_original_front_png_byte_identical": true,
+    "render_sha256": "2eda93fde4885b6963ed92e9b3287121d21426621c3c17c269ede8bec3519452",
+    "external_or_embedded_source_assets": 0
+  },
+  "feature_checks": {
+    "status": "PASS",
+    "stl_sha256": "e409cb13e48a9b34c53e63ad249fe04df917afbfe3a7353198f2415bceac645e",
+    "method": "Actual raw STL exact-coordinate mesh contains and triangle-ray intersections; manually chosen source feature probes; no generation geometry imported.",
+    "probes": [
+      {
+        "name": "display slab",
+        "point_design_frame_m": [
+          40,
+          5,
+          0.35
+        ],
+        "point_stl_mm": [
+          0.6975000000000051,
+          -3,
+          1.0499999999999998
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "main body",
+        "point_design_frame_m": [
+          25,
+          12,
+          10
+        ],
+        "point_stl_mm": [
+          -44.302499999999995,
+          18,
+          30
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "south T recess",
+        "point_design_frame_m": [
+          50,
+          -4,
+          10
+        ],
+        "point_stl_mm": [
+          30.697500000000005,
+          -30,
+          30
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "south projecting T wing",
+        "point_design_frame_m": [
+          70,
+          -4,
+          10
+        ],
+        "point_stl_mm": [
+          90.6975,
+          -30,
+          30
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "north T recess",
+        "point_design_frame_m": [
+          50,
+          20,
+          10
+        ],
+        "point_stl_mm": [
+          30.697500000000005,
+          42,
+          30
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "north projecting T wing",
+        "point_design_frame_m": [
+          70,
+          20,
+          10
+        ],
+        "point_stl_mm": [
+          90.6975,
+          42,
+          30
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "east 3F-5F real recessed air",
+        "point_design_frame_m": [
+          79.1,
+          0,
+          11
+        ],
+        "point_stl_mm": [
+          117.99749999999999,
+          -18,
+          33
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "east recessed back inside",
+        "point_design_frame_m": [
+          78.15,
+          0,
+          11
+        ],
+        "point_stl_mm": [
+          115.14750000000002,
+          -18,
+          33
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "east 6F projected wall",
+        "point_design_frame_m": [
+          79.1,
+          0,
+          19
+        ],
+        "point_stl_mm": [
+          117.99749999999999,
+          -18,
+          57
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "east 6F beam",
+        "point_design_frame_m": [
+          80,
+          2,
+          17.85
+        ],
+        "point_stl_mm": [
+          120.6975,
+          -12,
+          53.550000000000004
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "air below east beam between ribs",
+        "point_design_frame_m": [
+          80,
+          2,
+          17.4
+        ],
+        "point_stl_mm": [
+          120.6975,
+          -12,
+          52.199999999999996
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "east tall portal pier",
+        "point_design_frame_m": [
+          80,
+          3.55,
+          12
+        ],
+        "point_stl_mm": [
+          120.6975,
+          -7.3500000000000005,
+          36
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "east entrance open volume",
+        "point_design_frame_m": [
+          79.2,
+          6,
+          3
+        ],
+        "point_stl_mm": [
+          118.29750000000001,
+          0,
+          9
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "east entrance opaque glazing proxy",
+        "point_design_frame_m": [
+          78.38,
+          6,
+          3
+        ],
+        "point_stl_mm": [
+          115.83749999999999,
+          0,
+          9
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "west door recess air",
+        "point_design_frame_m": [
+          -0.05,
+          10.3,
+          3
+        ],
+        "point_stl_mm": [
+          -119.45249999999999,
+          12.900000000000002,
+          9
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "west door backing",
+        "point_design_frame_m": [
+          0.5,
+          10.3,
+          3
+        ],
+        "point_stl_mm": [
+          -117.8025,
+          12.900000000000002,
+          9
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "north entrance air",
+        "point_design_frame_m": [
+          48,
+          17.3,
+          2.5
+        ],
+        "point_stl_mm": [
+          24.697500000000005,
+          33.900000000000006,
+          7.5
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "north door backing",
+        "point_design_frame_m": [
+          48,
+          16.75,
+          2.5
+        ],
+        "point_stl_mm": [
+          24.697500000000005,
+          32.25,
+          7.5
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "south entrance air",
+        "point_design_frame_m": [
+          20,
+          0.25,
+          3
+        ],
+        "point_stl_mm": [
+          -59.302499999999995,
+          -17.25,
+          9
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "south door backing",
+        "point_design_frame_m": [
+          18.5,
+          0.45,
+          3
+        ],
+        "point_stl_mm": [
+          -63.802499999999995,
+          -16.65,
+          9
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "central high room",
+        "point_design_frame_m": [
+          28,
+          6,
+          28
+        ],
+        "point_stl_mm": [
+          -35.302499999999995,
+          0,
+          84
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "central high room above",
+        "point_design_frame_m": [
+          28,
+          6,
+          29.05
+        ],
+        "point_stl_mm": [
+          -35.302499999999995,
+          0,
+          87.15
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "central right low stair",
+        "point_design_frame_m": [
+          35,
+          6,
+          26.8
+        ],
+        "point_stl_mm": [
+          -14.302499999999995,
+          0,
+          80.4
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "air above central low stair",
+        "point_design_frame_m": [
+          35,
+          6,
+          27.6
+        ],
+        "point_stl_mm": [
+          -14.302499999999995,
+          0,
+          82.80000000000001
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "central high northwest full footprint",
+        "point_design_frame_m": [
+          24,
+          9.4,
+          28
+        ],
+        "point_stl_mm": [
+          -47.302499999999995,
+          10.200000000000001,
+          84
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "central high south short-of-full-low-footprint",
+        "point_design_frame_m": [
+          25,
+          1.5,
+          28
+        ],
+        "point_stl_mm": [
+          -44.302499999999995,
+          -13.5,
+          84
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "east high L return",
+        "point_design_frame_m": [
+          63.4,
+          8.4,
+          28
+        ],
+        "point_stl_mm": [
+          70.89750000000001,
+          7.200000000000001,
+          84
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "east L notch",
+        "point_design_frame_m": [
+          63.4,
+          5,
+          28
+        ],
+        "point_stl_mm": [
+          70.89750000000001,
+          -3,
+          84
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "east high stem",
+        "point_design_frame_m": [
+          66,
+          5,
+          28
+        ],
+        "point_stl_mm": [
+          78.6975,
+          -3,
+          84
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "east north low stair",
+        "point_design_frame_m": [
+          65,
+          12,
+          26.8
+        ],
+        "point_stl_mm": [
+          75.6975,
+          18,
+          80.4
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "air above east low stair",
+        "point_design_frame_m": [
+          65,
+          12,
+          27.6
+        ],
+        "point_stl_mm": [
+          75.6975,
+          18,
+          82.80000000000001
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "west low roof room",
+        "point_design_frame_m": [
+          2,
+          3,
+          27
+        ],
+        "point_stl_mm": [
+          -113.3025,
+          -9,
+          81
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "west roof room above",
+        "point_design_frame_m": [
+          2,
+          3,
+          27.6
+        ],
+        "point_stl_mm": [
+          -113.3025,
+          -9,
+          82.80000000000001
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "west water tank",
+        "point_design_frame_m": [
+          8,
+          10.8,
+          25.5
+        ],
+        "point_stl_mm": [
+          -95.3025,
+          14.400000000000002,
+          76.5
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "east water tank",
+        "point_design_frame_m": [
+          52,
+          10.8,
+          25.5
+        ],
+        "point_stl_mm": [
+          36.697500000000005,
+          14.400000000000002,
+          76.5
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "air above low tank",
+        "point_design_frame_m": [
+          52,
+          10.8,
+          26.5
+        ],
+        "point_stl_mm": [
+          36.697500000000005,
+          14.400000000000002,
+          79.5
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "flat exposed roof",
+        "point_design_frame_m": [
+          42,
+          9,
+          24.6
+        ],
+        "point_stl_mm": [
+          6.697500000000005,
+          9,
+          73.80000000000001
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "no sloped roof volume",
+        "point_design_frame_m": [
+          42,
+          9,
+          26
+        ],
+        "point_stl_mm": [
+          6.697500000000005,
+          9,
+          78
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      },
+      {
+        "name": "7F outward wrap",
+        "point_design_frame_m": [
+          45,
+          -0.3,
+          22.4
+        ],
+        "point_stl_mm": [
+          15.697500000000005,
+          -18.9,
+          67.19999999999999
+        ],
+        "expected_solid": true,
+        "actual_solid": true
+      },
+      {
+        "name": "air below 7F wrap above last window",
+        "point_design_frame_m": [
+          45,
+          -0.38,
+          21.08
+        ],
+        "point_stl_mm": [
+          15.697500000000005,
+          -19.14,
+          63.239999999999995
+        ],
+        "expected_solid": false,
+        "actual_solid": false
+      }
+    ],
+    "failed_probes": [],
+    "rays": [
+      {
+        "name": "real east canopy thickness",
+        "origin_design_frame_m": [
+          81,
+          5.5,
+          12
+        ],
+        "origin_stl_mm": [
+          123.6975,
+          -1.5,
+          36.0
+        ],
+        "unit_direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "all_hit_distances_mm": [
+          9.149999618530273,
+          10.799999237060547,
+          31.81500005722046,
+          36.0
+        ],
+        "first_solid_interval_mm": 1.6499996185302734,
+        "expected_mm": 1.65
+      },
+      {
+        "name": "roof parapet cross-wall",
+        "origin_design_frame_m": [
+          42,
+          -3,
+          24.92
+        ],
+        "origin_stl_mm": [
+          6.697500000000005,
+          -27.0,
+          74.76
+        ],
+        "unit_direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "all_hit_distances_mm": [
+          6.780000686645508,
+          7.920000076293945,
+          62.880001068115234,
+          64.02000045776367
+        ],
+        "first_solid_interval_mm": 1.1399993896484375,
+        "expected_mm": 1.14
+      },
+      {
+        "name": "6F beam between underside ribs",
+        "origin_design_frame_m": [
+          80,
+          2,
+          20
+        ],
+        "origin_stl_mm": [
+          120.6975,
+          -12.0,
+          60.0
+        ],
+        "unit_direction": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "all_hit_distances_mm": [
+          5.729999542236328,
+          6.990001678466797,
+          57.90000009536743,
+          60.0
+        ],
+        "first_solid_interval_mm": 1.2600021362304688,
+        "expected_mm": 1.26
+      }
+    ],
+    "not_a_global_minimum_wall_or_printability_certificate": true,
+    "probe_placement_corrections": [
+      "Initial south-backing sample x20 fell between the two separate source doors, not on a backing; corrected to x18.5.",
+      "Initial below-wrap sample z20.6 intercepted an existing window frame; corrected to z21.08, above the last window and below 7F, away from ribs. Initial evidence retained privately; geometry unchanged."
+    ]
+  },
+  "source_bindings": {
+    "actual_local_files_verified": 84,
+    "actual_external_cache_verified": 1,
+    "manifest_sha256": "f4f9d9714a3dc9cbf104cf9493b3227f0f8f336e7cef336e36ac86f3b93c2767",
+    "sealed_source_preserved": true
+  },
+  "builder_suite_observed": {
+    "global_layers": 433,
+    "layer_spacing_mm": 0.2,
+    "all_contours_valid": true,
+    "positive_components_survive_diameter_mm": 0.8,
+    "thin_component_warnings": 0,
+    "not_a_minimum_wall_thickness_proof": true,
+    "builder_feature_points": 51,
+    "builder_local_slices": 11,
+    "builder_ray_samples": 3,
+    "strict_lib3mf_warnings": 0,
+    "true_material_alpha_roundtrip_verified_by_builder": true,
+    "independent_exchange_exact_check_separate": true,
+    "isolated_rebuild_actual_byte_identical_files": [
+      "model.stl",
+      "model.3mf",
+      "mesh.json",
+      "palette.json",
+      "previews/front.png",
+      "previews/rear.png",
+      "previews/elevation.png",
+      "previews/top.png",
+      "previews/left_oblique.png"
+    ]
+  },
+  "limitations": [
+    "Window vertical/horizontal frames nominally 0.45/0.39 mm and relief depth can be smaller; no blanket 0.8 mm wall guarantee.",
+    "Entry canopies, 6F soffit beams/ribs, lintels and 7F slight overhang require slicer-specific support planning.",
+    "All interiors intentionally solidified for an exterior model; B1 below display ground and interiors are not reconstructed.",
+    "No physical print, actual FFF/SLA slicer support run, structural test or survey certification.",
+    "Source-image CC BY-NC and model rights remain a separate unresolved project decision; this PASS permits only technical/private review progression."
+  ],
+  "bound_files": [
+    {
+      "path": "scu-chuqiu-hall-20261023/REVIEW-CORE-HASHES.json",
+      "bytes": 2194,
+      "sha256": "5206e867ae1aee39ff791c082115d4ca913f4e321ecf07304c338a0966d9367e"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/build_model.py",
+      "bytes": 17367,
+      "sha256": "70b09414c5d9ed06a562edfb7ae032dd384f30e9c65b53d6eb04a1bfca3fa81f"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/render_model.py",
+      "bytes": 5142,
+      "sha256": "32fee158b617f4e910665423510eb8828a65b8dd24f14448bf2be72e54efc518"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/render_detail.py",
+      "bytes": 1574,
+      "sha256": "8cb439045fea728f6e0cceeae4c1bc06acd7a364d83a939ffeeaed8c633bb493"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/model.stl",
+      "bytes": 4666384,
+      "sha256": "e409cb13e48a9b34c53e63ad249fe04df917afbfe3a7353198f2415bceac645e"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/model.3mf",
+      "bytes": 899498,
+      "sha256": "e388164335adb71102057b991fa08ad085a1d7b84a529a36b7104d00a18542b1"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/scene.blend",
+      "bytes": 5600776,
+      "sha256": "68dd9f2736b7ab13fc973b77dcde4eac1bab33bbea3e4467d1eba6902d994779"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/mesh.json",
+      "bytes": 4620835,
+      "sha256": "9cd57ebfd972fd765b1107f2598f7097ad36dc8733dc71ffdc9263b807115980"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/palette.json",
+      "bytes": 583,
+      "sha256": "a3950219ab4f0540d4c695d78f79f8c651089afa304eecfd5b67b4b61a00fe20"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/east-entry-detail.png",
+      "bytes": 2026827,
+      "sha256": "b064c58c77fc37830ad6f33a1958efd1a6d1b0dbfd02d114a22d92fd7cb18b75"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/east-entry-detail.json",
+      "bytes": 625,
+      "sha256": "3c295b5f2ce11e8134e55f498f9a9945fa2746ea0e1a67c64ba47f364149fb5b"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/previews/front.png",
+      "bytes": 1854040,
+      "sha256": "2eda93fde4885b6963ed92e9b3287121d21426621c3c17c269ede8bec3519452"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/previews/rear.png",
+      "bytes": 1821780,
+      "sha256": "553effa16f2e4803c3aa7d94b46ea3171d915b3296ba0b38609acdc8a81bc023"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/previews/elevation.png",
+      "bytes": 1667190,
+      "sha256": "2c3c739591efb97bdf012beb5d99289f9a70ee74c21c0c5ca429002250bbbbb1"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/previews/top.png",
+      "bytes": 1629863,
+      "sha256": "b68c3dbc7b86b9a5f962389774cb2da880851ffa2d2d6b2af258475570293699"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/previews/left_oblique.png",
+      "bytes": 1800093,
+      "sha256": "cd23e53344cc68c87606c06ef8c4a7a274ede202e35a44cbd48ea75595aa9f01"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/README.md",
+      "bytes": 3009,
+      "sha256": "de7ee1dad8dce513d6578248655343e68eec37065dc19ff439f2ce2469299305"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/SOURCES.md",
+      "bytes": 4011,
+      "sha256": "64adf4b612d6f39d6ee54f5eb01d835ea15ff3dac0f9e7acb7041ea42f7d4c58"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/QA.md",
+      "bytes": 2907,
+      "sha256": "55e9dc87175f2e3e9f08c797d3a3ea6a9ce816df4c15de9252f93e0eca54f019"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/LICENSE.txt",
+      "bytes": 778,
+      "sha256": "4075309a0bb9afdc2367e844f2d8052f64ce2810ab9c50de5cd8eeb75a8da01b"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/requirements.txt",
+      "bytes": 102,
+      "sha256": "614c6442883509b465095693286ae9b35977fe86ed8628bf7a40acb359a948dd"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa-topology.json",
+      "bytes": 685,
+      "sha256": "c7b4f25eaa86dd69d9a0add9e58af78722c8bef631191c0142cc285ffaf6a574"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa-layers.json",
+      "bytes": 78288,
+      "sha256": "9adf2c2a56b17b42e4f6893ae2f76c1c09cfcd21521825614da0084b80e8f33a"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/exchange-validation.json",
+      "bytes": 1121,
+      "sha256": "8b912c9c240d6fd9c37c8b8f700f4c0f99b720e52fbc4e0e7279fc76bad273cd"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/feature-validation.json",
+      "bytes": 327078,
+      "sha256": "c0ef1b231f343d7daeb5eaa0f06ec433f48f304a944b668747f6728237897a5f"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/nonadjacent-triangle-contacts.json",
+      "bytes": 595,
+      "sha256": "6556dea0550c44bee11a607e6384bfac2363b432d429fb8c3be4d94dc0bc9a35"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/scene-validation.json",
+      "bytes": 633,
+      "sha256": "52d88230be3bea6aa7102cf925f7e03bbff07ec0720e9443a4869406059a9767"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/render-reopen-validation.json",
+      "bytes": 257,
+      "sha256": "3e15a494ef81715017e6df2439215f8b831d915724bbe188dca1d53fd8f3ee0a"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/render-manifest.json",
+      "bytes": 1824,
+      "sha256": "452f2de5ac676533d413e883bf651159d6f8a0ea2367f81e465b28de466b1495"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/isolated-rebuild.json",
+      "bytes": 1263,
+      "sha256": "5d976cfb7463d7e40366f80f75ae564183fe499671da819eeb6a3d0859aa1a44"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/source-validation.json",
+      "bytes": 946,
+      "sha256": "07cefcdf8c85d5508f16eb872d95d48029f52860818fb138bb827ef4bc56a0b4"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/identity-dedup-validation.json",
+      "bytes": 532,
+      "sha256": "64f11e9c3795d0089c01a890a54cef4f253a9740f03097eee081a0f531f1ff86"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/model/qa/toolchain.json",
+      "bytes": 375,
+      "sha256": "13c4f43dbca86bd58e75b50bdf560a79bf4027a8fb56f132a6df52a8e750fc9a"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/source-manifest.json",
+      "bytes": 14273,
+      "sha256": "f4f9d9714a3dc9cbf104cf9493b3227f0f8f336e7cef336e36ac86f3b93c2767"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/SOURCE-HANDOFF.md",
+      "bytes": 9307,
+      "sha256": "11b825111cbaaa1e9df8e4edac7ece1200d0484134fe4853771d7901a1876436"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/independent-source-review.json",
+      "bytes": 18584,
+      "sha256": "5fd9d320378142143de377f24de18fc650bccbf5251bda943b8c944ff6ae425e"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/reviewer-offline-checks.json",
+      "bytes": 47109,
+      "sha256": "93fab29cfb0a4fbe75190a172e4e3380e4752ceb4c08e80130372839b84f289b"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/roof-section.jpg",
+      "bytes": 1839843,
+      "sha256": "7f9a45d8632db7c1869636f14f2a63e211346c9c35f03a51fb5472841c26970c"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/b1-1f.jpg",
+      "bytes": 1926863,
+      "sha256": "dc4ad3e36f2c4714535042f9212b58a7926ea86a23a60688efcd1bc58f85c749"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/2f-3f.jpg",
+      "bytes": 1916350,
+      "sha256": "cb838b0b0d25819e8ab46ac1d6ab1fd786833a6d35693b29840aeff82f33f32e"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/4f-5f.jpg",
+      "bytes": 1751993,
+      "sha256": "3e0a9054ddfc0f8b0934de221a1c9e589d7b09e1a209f422638c22d1b39efac9"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/6f-7f.jpg",
+      "bytes": 1694928,
+      "sha256": "4f044840cf0ea6074e6d01300fc605d34bba5c5d809756ae198406ee069c74b7"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/elevations.jpg",
+      "bytes": 1990481,
+      "sha256": "d2ba2e4b755ff13f98a3cbf7398993601ca5b15163419e80dcd3d04b6c9b9a13"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/blog-07.jpg",
+      "bytes": 2163760,
+      "sha256": "deffc5596875fd0a30eff9bfd811df659c6dbd8de05a2569d7dafc041ad71ad1"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next/blog-12.jpg",
+      "bytes": 1291389,
+      "sha256": "8d45065f67cdfff135fc70d12b0c707a822a6c24905ab69ed176f8388cb0fe37"
+    },
+    {
+      "path": "research-round-ab5cc331/scu-chuqiu-next-source-confirmation.json",
+      "bytes": 18416,
+      "sha256": "542daf4f26b94ccf23800cc3a3ac14b60f8d00597de3f1c6498b44b65ee09af3"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/LICENSE-REVIEW-PENDING.json",
+      "bytes": 1725,
+      "sha256": "19ef1c73836ff6432a616fe05357882d4bd8fef6c98c1756180205848fe262e9"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/reviewer_mesh_helpers.py",
+      "bytes": 3674,
+      "sha256": "af7bd6e13b0fd32688c4e27d2f5c94d9b2690330fdb30d9f055a685afb8b83ad"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/reviewer_mesh_check.py",
+      "bytes": 2543,
+      "sha256": "70d6426d3aaca2073fa3c5d7ea4e71ba38814b12c765910548e40eca7b739ec6"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/reviewer_native_check.py",
+      "bytes": 4020,
+      "sha256": "bc7f77171e35b84904277ab74a530e4be7e6cb2365c16b8cd9d595aca23cf278"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/reviewer_feature_check.py",
+      "bytes": 4165,
+      "sha256": "b393b7a16ceb5a53e8ba0213db4f9f1fbf08152b1022c288fabef9eaf7d088a3"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/reviewer-mesh-evidence.json",
+      "bytes": 2268,
+      "sha256": "c469b7c8d1b01ebf2142e061a5ac50cf17fdc51168fb98cf2f8deab0c6178361"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/reviewer-native-evidence.json",
+      "bytes": 830,
+      "sha256": "eb18ac429c6de70c0ef73b285552a5baff509e80749cff89ee3dce92ec9ef6a7"
+    },
+    {
+      "path": "scu-chuqiu-hall-20261023/reviewer-feature-evidence.json",
+      "bytes": 13342,
+      "sha256": "f8b351e01dca5683a1d8326113c948a9f1464db016dc0b4c43f26d3b432fbe85"
+    }
+  ]
+}

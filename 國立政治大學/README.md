@@ -1,6 +1,6 @@
 # 國立政治大學｜校園建築模型
 
-目前21套建築外觀近似模型：山下13套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
+目前22套建築外觀近似模型：山下14套、山上5套、指南2套、金華1套；金華公企中心住宿棟、會展棟與公共連接合計一套。全校、其他校區及實體試印未完成；不把官方地圖項目數、防災表數或使用單位數當獨立樓棟數。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -11,6 +11,7 @@
 | [<img src="山下校區/buildings/nccu-research-building/previews/front.png" alt="研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況：實際模型預覽" width="220">](山下校區/buildings/nccu-research-building/README.md)<br>**[研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況](山下校區/buildings/nccu-research-building/README.md)** | [<img src="山上校區/buildings/nccu-jitao-hall/previews/front.png" alt="季陶樓：實際模型預覽" width="220">](山上校區/buildings/nccu-jitao-hall/README.md)<br>**[季陶樓](山上校區/buildings/nccu-jitao-hall/README.md)** | [<img src="山上校區/buildings/nccu-international-building/previews/front.png" alt="國際大樓：實際模型預覽" width="220">](山上校區/buildings/nccu-international-building/README.md)<br>**[國際大樓](山上校區/buildings/nccu-international-building/README.md)** |
 | [<img src="山上校區/buildings/nccu-innovation-center/previews/front.png" alt="研究暨創新育成總中心（研創總中心）：實際模型預覽" width="220">](山上校區/buildings/nccu-innovation-center/README.md)<br>**[研究暨創新育成總中心（研創總中心）](山上校區/buildings/nccu-innovation-center/README.md)** | [<img src="山上校區/buildings/nccu-communication-building/previews/front.png" alt="傳播學院主樓：實際模型預覽" width="220">](山上校區/buildings/nccu-communication-building/README.md)<br>**[傳播學院主樓](山上校區/buildings/nccu-communication-building/README.md)** | [<img src="山下校區/buildings/nccu-information-complex/previews/front.png" alt="資訊大樓（含電算中心）：實際模型預覽" width="220">](山下校區/buildings/nccu-information-complex/README.md)<br>**[資訊大樓（含電算中心）](山下校區/buildings/nccu-information-complex/README.md)** |
 | [<img src="山下校區/buildings/nccu-xuesi-hall/previews/front.png" alt="學思樓：實際模型預覽" width="220">](山下校區/buildings/nccu-xuesi-hall/README.md)<br>**[學思樓](山下校區/buildings/nccu-xuesi-hall/README.md)** | [<img src="山上校區/buildings/nccu-daofan-hall/previews/front.png" alt="道藩樓：實際模型預覽" width="220">](山上校區/buildings/nccu-daofan-hall/README.md)<br>**[道藩樓](山上校區/buildings/nccu-daofan-hall/README.md)** | [<img src="山下校區/buildings/nccu-journalism-hall/previews/front.png" alt="新聞館：實際模型預覽" width="220">](山下校區/buildings/nccu-journalism-hall/README.md)<br>**[新聞館](山下校區/buildings/nccu-journalism-hall/README.md)** |
+| [<img src="山下校區/buildings/nccu-jiying-hall/previews/front.png" alt="集英樓：實際模型預覽" width="220">](山下校區/buildings/nccu-jiying-hall/README.md)<br>**[集英樓](山下校區/buildings/nccu-jiying-hall/README.md)** |  |  |
 
 [山下校區](山下校區/) · [山上校區](山上校區/README.md) · [指南校區](指南校區/) · [金華校區](金華校區/) · [覆蓋範圍](coverage.json) · [精確續接清單](research-handoff/)
 
@@ -38,3 +39,5 @@
 道藩樓為完整C形主樓與相連窄頸、兩層附廳的彩色外觀近似模型；山上分組依官方PDF第9–10頁溪流分界及A31圖文聯讀。保留北／側四層、南翼三層低頂、局部地下層與貼樓坡地、三梯與開放柱廊、附廳兩圓梯和局部夾層／一樓突房，以及退凹入口和外階。799南西低翼視角及單一有限屋面圍護是有界近似，非精確攝位或屋頂測量。攝影年未知、消防簡圖非測量竣工圖，層高細窗地形近似，非已核2026現況。Blend／3MF／STL、五張實網格預覽及可執行來源ZIP齊備；1外殼加2室內近似內腔，保留87層薄件警告，封腔排液／支撐未解，未實體試印。原照片和平面像素不入模型包，實際來源與授權狀態見SOURCES與LICENSE。
 
 新聞館為完整兩層長條雙翼、中央三層房群及側小房、僅一層後凸門廳的彩色外觀近似模型；山下分組依官方PDF第9–10頁溪流分界及A23圖文聯讀。保留雙翼露平台、白色豎框、紅色實腹、青綠遮陽板，以及真凹入門廳、入口雨簷與接地階梯。669樹遮照片只作局部側角候選，不宣稱完整背面或唯一端頭。照片攝年未知，消防簡圖非測繪竣工圖，層高細窗色值及簷邊近似，非已核2026現況。Blend／3MF／STL、五張實網格預覽及可執行來源ZIP齊備；單正殼、253截面含14層薄件警告，未實體試印，細框欄杆及簷底支撐須另評估。原照片和平面像素不入模型包，實際來源與授權狀態見SOURCES與LICENSE。
+
+集英樓為完整十字式三層主樓與局部B1外露基腳的彩色外觀近似模型；山下分組依官方PDF第9–10頁溪流分界與A22圖文聯讀。保留退縮窗背、開放陽台、真入口凹廊、上層厚外挑與斜肩、北西較深屋簷、兩處折階及有限接地坡道。照片較強為西北／西南同側雙角候選，但東側180度替代尚未唯一排除，未看見立面為規整代理；屋面僅有限平頂，細小構件精位用途未知未添加。攝年未知、簡圖非測繪竣工圖，樓高細窗色值近似，非已核2026現況。Blend／3MF／STL、五張實網格預覽及可執行來源ZIP齊備；單正殼、256截面含56層薄件警告，未實體試印，細框欄杆、外挑簷底及底下空間支撐須另評估。來源像素不入模型包，實際來源與重用權利狀態見SOURCES與LICENSE。

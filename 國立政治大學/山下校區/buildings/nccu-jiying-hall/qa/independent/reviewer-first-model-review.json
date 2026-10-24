@@ -1,0 +1,235 @@
+{
+  "status": "FIRST_MODEL_REVISIONS_REQUIRED_MAIN_FRAME_CONDITIONALLY_ACCEPTED",
+  "passed": false,
+  "final_model_approved": false,
+  "public_release": false,
+  "reviewer": "/root/review_cjcu_bell_frames",
+  "created_utc": "2026-10-24T05:11:26.396178+00:00",
+  "identity": "國立政治大學集英樓",
+  "first_snapshot": {
+    "zip_sha256": "8f87ab7e1c0ec986cc28652ae010ec6a03e8ec6c2fa917bd9b4040519010c462",
+    "STL_sha256": "32dc055fc595f036e087ca2dd45a503bfa31390b1c6e0ad2a0c9b3c89b26241f",
+    "members": {
+      "model/build_model.py": {
+        "bytes": 13823,
+        "sha256": "31b8439fca0e3a679f333dd1c35d8df9bd13c50f9282059aabf3ba3542cc9687"
+      },
+      "model/model.stl": {
+        "bytes": 681284,
+        "sha256": "32dc055fc595f036e087ca2dd45a503bfa31390b1c6e0ad2a0c9b3c89b26241f"
+      },
+      "model/model.3mf": {
+        "bytes": 124689,
+        "sha256": "5c84ba03d361a0ed1a164b43e08c37fdcb351ad7953131023c6cc527b1ce2244"
+      },
+      "model/mesh.json": {
+        "bytes": 484916,
+        "sha256": "8d8f7cfddefa59c0e9e7eec9c6691a44387d99b8bb8e554645a612ae426bbd70"
+      },
+      "model/palette.json": {
+        "bytes": 676,
+        "sha256": "cbc592f33d92a8a1e7458a81e6acc58bec69db799dd8747800ad429ae00e083f"
+      },
+      "model/scene.blend": {
+        "bytes": 1317904,
+        "sha256": "9e8ff5a53970def953a179e0d8c46c0885108822a5647ccc015396157ae2b103"
+      },
+      "model/qa/design-features.json": {
+        "bytes": 36836,
+        "sha256": "edadb2f78237ba2ee8ffc633be0dd902bd46b3a2bfd4ecb531d4f91265629fc1"
+      },
+      "core-registration.json": {
+        "bytes": 1110,
+        "sha256": "2ce918e501d219f4b00f9222e958d6059731ed2c491f7aaa0b3e862ef8609388"
+      },
+      "plan-coordinates.png": {
+        "bytes": 14293,
+        "sha256": "eb3c7a56173559cdd66b4ca8df44fb3e85ec2741cb5c6199f3c1bdb701825170"
+      },
+      "model/previews/front.png": {
+        "bytes": 1680309,
+        "sha256": "01ba6717b468db70d2d070b8a780bb213a886288964f4d89b39c5a845c4ce3af"
+      },
+      "model/previews/rear.png": {
+        "bytes": 1667162,
+        "sha256": "f57129d23cc1574ee932e3edb0215412bfff89f68471870984e0cfc877be5075"
+      },
+      "model/previews/top.png": {
+        "bytes": 1599289,
+        "sha256": "9e4e179f95f19e39d9bfcf74e083347c737f16b0081406813e6402f6d1c26123"
+      },
+      "model/previews/elevation.png": {
+        "bytes": 1541613,
+        "sha256": "e14fa8f186a2f9d34258cbdbad9a3933ede2870cb3d3c82718715c48115aca88"
+      },
+      "model/previews/left_oblique.png": {
+        "bytes": 1651570,
+        "sha256": "dbf178c3f8fe97b3e15e6fb26ea1fd7f6963e311c5b1c019d4bb45eb22ff6a45"
+      },
+      "photo658-comparison.png": {
+        "bytes": 1459200,
+        "sha256": "b26df40a767c3f4bc584e02581b7e89c1bf0b7d9fc20d579adaea84ee176142d"
+      },
+      "photo659-comparison.png": {
+        "bytes": 1494077,
+        "sha256": "6eedb35b57c6a9d17160c4a56d1ce3f7d88c5adb5ff8e62b18c5db4fa0b5fdb0"
+      },
+      "photo-camera-manifest.json": {
+        "bytes": 692,
+        "sha256": "04bae0306fcc30b0550e46993d6cf06f34ba173e8243dadc17246f69d2a0d9be"
+      },
+      "photo_cameras.py": {
+        "bytes": 1512,
+        "sha256": "a328d51b03e16fb112d3af80b32dda8c5c2e78475190da9d8671815ec6982397"
+      }
+    },
+    "scope": "Archived first mesh and author-generated views only; not final raw topology/material/manufacturing approval."
+  },
+  "personally_viewed": [
+    "All six source original images and three corrected readings",
+    "Four source registration overlays, v1 plan and all five principal model views",
+    "Builder v1 east/SE and east/NE comparisons",
+    "Independent same archived v1 scene rendered from globally180-opposite west/NW and west/SW cameras"
+  ],
+  "shared_frame_findings": {
+    "accepted_as_bounded_image_registration": true,
+    "rotations": "661 CW90,662 CCW90,664 180,665 original",
+    "transforms": "665 master;662 (+155,+200);664 x+100,y*.953+168;661 .777+(470,172). Multiple columns, main stairs, single-X/paired-X/compartments align. These are drawing registration approximations, not metre dimensions or measured setbacks.",
+    "basement": "Partial east-side footprint retained; no full cross B1 room mass. Inventory zero elevators; X symbols are not functional evidence.",
+    "main_topology": "Occupied central 3F is solid-use proxy, not courtyard. Upper cross and lower recessed balcony relationship is directionally consistent."
+  },
+  "required_revisions": [
+    {
+      "id": "entry",
+      "finding": "v1 generator has cut=None and no actual entry recess; rendered lower facade is ordinary repeated glazing. Source658 requires a real entrance setback, doors and bounded fascia/canopy.",
+      "requested": "Build the true source-bound entrance opening/doors and attached fascia at the selected plan interface, not merely a material patch. Preserve separate genuine exterior interfaces."
+    },
+    {
+      "id": "steps",
+      "finding": "v1 southeast short straight stairs do not follow the broad bent exterior stair interface drawn in662.",
+      "requested": "Retain the complete building-attached southeast turn/broad stair and landing, with connected side-ramp termination; do not arbitrarily truncate stair flights. Exact step count/heights may be explicit approximation."
+    },
+    {
+      "id": "ground",
+      "finding": "West plinth starts at z1.15 while partial basement only supports the eastern footprint; v1 elevation/rear and independent west views show an unsupported-looking whole western lower edge. Comment risinggrade is not actual grade geometry.",
+      "requested": "Provide bounded contact footing/grade to the common base without inventing a complete B1 room volume or filling actual exterior balcony/column airspace. No generic displayplate required."
+    },
+    {
+      "id": "eaves_shoulders",
+      "finding": "665 shows deeper exterior grey projection strips north of y208 and west of x225; roof=occupied window outline omits these. Photo659 strongly supports the main 3F cantilever and underside structure; additional above-window eave depth is less certain. v1 bevel is limited to bottom z9..9.82 while photographed white return edge splays over much of the top-storey height.",
+      "requested": "Retain north/west source-evidenced deeper projections and only bounded thin east/south edges unless independently supported. Do not mirror deep eaves to all sides merely for the camera candidate. Improve visible side-edge splay as a declared coarse geometric approximation, then compare source angles."
+    }
+  ],
+  "photographic_registration": {
+    "preferred_candidate": "658 east face from southeast and659 same east face from northeast; entry left and corner relationship plausibly fit southeast external access.",
+    "not_unique": true,
+    "independent_countertest": "Globally180-opposite west views also reproduce nearly symmetric main mass relationships. Archived v1 has regularized similar facades and cannot uniquely disambiguate sides; stairs and a roof enclosure alone are not a compass proof.",
+    "rule": "Do not move or mirror plan-proven asymmetric eaves/B1 merely to enforce the east candidate. One unchanged model and both views, candid description of relative-side uncertainty.",
+    "visible_small_roof_enclosure": "A low finite proxy may represent the visible659 enclosure if positioned conservatively, with use/precise position unknown; never infer elevator machinery from paired-X symbols or invent multiple towers."
+  },
+  "nonblocking_limits": [
+    "Fine unseen windows and materials may be restrained regularized proxies but are not photo-proved on all four sides.",
+    "No separate RF: bounded roof closure is acceptable, not surveyed reconstruction.",
+    "Generator header still called Journalism Hall in v1; final identity metadata must consistently be Jiying.",
+    "Known v1 disconnected slope is not certified as final; builder must correct construction and rerun complete raw/native/source/archive QA."
+  ],
+  "source_pixels": "reviewer-private-v1-overlays and reviewer-private crops contain original plan/photo pixels, private evidence only and prohibited from final deliverables.",
+  "bound_files_base": "Workspace root; all paths relative to /workspace/scratch/0459ddc40ee0",
+  "bound_files": [
+    {
+      "path": "nccu-jiying-hall-20261024/first-shape-v1-private.zip",
+      "bytes": 11763155,
+      "sha256": "8f87ab7e1c0ec986cc28652ae010ec6a03e8ec6c2fa917bd9b4040519010c462"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/v1-history.json",
+      "bytes": 2027,
+      "sha256": "45eb885234b31a4b59b168ed21854ca4fcc5026c93e93777b0d885160579a7da"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-v1-west-camera.json",
+      "bytes": 900,
+      "sha256": "604b47030d2d6b200f1802d0b256cd6e2500e327572245c9824d9fcd61957b7e"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-v1-658-west-comparison.png",
+      "bytes": 1424645,
+      "sha256": "a88748e7e427f0188e53589477d78e41d2c6f1ae3185ef0fd7664ced18037384"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-v1-659-west-comparison.png",
+      "bytes": 1450195,
+      "sha256": "58c3e7f685426b2db160bbee296e870781d5b0ebd6b27a4df5db13d7939e58ed"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer_v1_west_probe.py",
+      "bytes": 1438,
+      "sha256": "c637102c93fcc031f7d6cdba2aba83000fae08b44231832ab24e3c5168a78aaa"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-v1-west-probe.log",
+      "bytes": 10100,
+      "sha256": "90915a909e3e19dedca74aac7efb418af94b7e2f9c167d621f4aa971423c7c79"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/SOURCE-HANDOFF.md",
+      "bytes": 3354,
+      "sha256": "6633aa729ec7297b6ba1fbf7f2257b1053c00355f099c59bd0f701e141e0ad5e"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/GEOMETRY-EVIDENCE-MAP.md",
+      "bytes": 2230,
+      "sha256": "984da5b333d7a3a4fd5de9c242dbb7d83dbbb308255503de5a725494eb6eb551"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/page77-xref658.jpeg",
+      "bytes": 141515,
+      "sha256": "d3cd47c7bec95b72f522df836e5fbbf1bf16db690e11ca752f0a53b50c2025ea"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/page77-xref659.jpeg",
+      "bytes": 126044,
+      "sha256": "f709887e2241fa750f3ecd412ad123fe1185a8e9f8786f7c2a417f75386ed51a"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/page78-xref661.jpeg",
+      "bytes": 61769,
+      "sha256": "5ab16202c708243183f02afaddd7200c9adb349c698a0421c9cf195059ca8c9a"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/page78-xref662.jpeg",
+      "bytes": 103545,
+      "sha256": "c870d70957ceb9de4219f774139ca7a8473e56e7796e2f949c44fbbbc9d5e61c"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/page79-xref664.jpeg",
+      "bytes": 43748,
+      "sha256": "4bbf4c21106e18f28a4d023dec93a8641619958b86782a5bdc38bcd824ad1c8a"
+    },
+    {
+      "path": "research-round-ab5cc331/nccu-jiying-next/page79-xref665.jpeg",
+      "bytes": 131664,
+      "sha256": "ac428bacdbb921cce0550d3edba89a628d3ed5a2e61b1c54d61bc7d29bf708d2"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-private-v1-overlays/private-registration-661.png",
+      "bytes": 149021,
+      "sha256": "fdd2ab39ce91e0f5f500ccf40be401410bed35de8f565a5fc3209ae68792cad6"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-private-v1-overlays/private-registration-662.png",
+      "bytes": 452923,
+      "sha256": "367e454641a4ad51f3887cf7a60a56253fdf71cd9782076b79ec7b806173f4f4"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-private-v1-overlays/private-registration-664.png",
+      "bytes": 144193,
+      "sha256": "77c814d129b3273f241c12ceaf90b81d30103a760ccfd97f6e48a40a96e1d798"
+    },
+    {
+      "path": "nccu-jiying-hall-20261024/reviewer-private-v1-overlays/private-registration-665.png",
+      "bytes": 641641,
+      "sha256": "76daa07ec1716cfb51f6ce9691518c72c715e8d38e51689a6eebaeec7dc22458"
+    }
+  ]
+}

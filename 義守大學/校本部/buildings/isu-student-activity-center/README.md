@@ -27,3 +27,7 @@
 - 未實體試印，亦未執行Cura/Prusa實際工具路徑。門廊、挑簷和凹處應檢查支撐；拆支撐保護細柱/框，勿任意縮小。數位篩檢與有限原面射線不是全模型所有方向最小壁厚或可印保證。
 
 [來源](sources.md) · [完整QA](QA.md) · [驗證JSON](validation.json) · [逐構件](component-detail.json) · [原面射線](surface-chords.json)
+
+## 原面有限磚材外觀層
+
+[彩色3MF、可編輯Blend與五視角](appearance/README.md)：只染238個原+Y入口／−X花園上兩帶磚面，2900.7799204075227 mm²；其餘9388面中性。框窗／白帶／下牆／屋頂／東背全不染，不新增幾何。原9626面／4775頂點、STL bytes與原QA保留。官方2022為caption年非EXIF攝年，圖片來源秘書處、ARR保留，照片不附。歷史strict pass不是實印或全域厚度保證。

@@ -4,9 +4,9 @@
 
 | 同件北玻璃及架空面 | 同件南側及長翼 |
 |---|---|
-| [![北側](buildings/tcu-hexin-library-2001/previews/north.png)](buildings/tcu-hexin-library-2001/README.md) | [![南側](buildings/tcu-hexin-library-2001/previews/south.png)](buildings/tcu-hexin-library-2001/README.md) |
+| [![北側](buildings/tcu-hexin-library-2001/appearance/previews/front.png)](buildings/tcu-hexin-library-2001/README.md) | [![南側](buildings/tcu-hexin-library-2001/appearance/previews/rear.png)](buildings/tcu-hexin-library-2001/README.md) |
 
-[完整說明](buildings/tcu-hexin-library-2001/README.md) · [STL](buildings/tcu-hexin-library-2001/model.stl) · [Blend](buildings/tcu-hexin-library-2001/scene.blend) · [原創源](buildings/tcu-hexin-library-2001/build_model.py) · [頂圖](buildings/tcu-hexin-library-2001/previews/top.png) · [來源](buildings/tcu-hexin-library-2001/sources.json) · [QA](buildings/tcu-hexin-library-2001/qa-summary.json)
+[完整說明](buildings/tcu-hexin-library-2001/README.md) · [STL](buildings/tcu-hexin-library-2001/model.stl) · [Blend](buildings/tcu-hexin-library-2001/scene.blend) · [原創源](buildings/tcu-hexin-library-2001/build_model.py) · [頂圖](buildings/tcu-hexin-library-2001/previews/top.png) · [來源](buildings/tcu-hexin-library-2001/sources.json) · [QA](buildings/tcu-hexin-library-2001/qa-summary.json) · [有限原面彩色外觀](buildings/tcu-hexin-library-2001/appearance/README.md)
 
 含底座137.5×150×27mm。保留弧面北玻璃、北／東真架空、南實牆上窗、D玻璃連接、E雙層深門廊及F/G抬高平頂。高度A16m（14–19m試配）、E13m（11.5–15m）、F/G14.5m、低頂11.8m，全為跨年影像推估，非測繪。F/G高差1–4m候選採2.7m；低頂精確層位與小天井仍未核，採實底近似，不能把影子當通洞。西側未知窗省略；原照片／PDF不附包。
 

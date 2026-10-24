@@ -4,6 +4,6 @@
 
 | 學生活動中心：正面 | 同件背面 |
 |---|---|
-| ![正面](校本部/buildings/isu-student-activity-center/previews/front.png) | ![背面](校本部/buildings/isu-student-activity-center/previews/rear.png) |
+| ![正面](校本部/buildings/isu-student-activity-center/appearance/previews/front.png) | ![背面](校本部/buildings/isu-student-activity-center/appearance/previews/rear.png) |
 
-[模型、參數源、Blend、QA及限制](校本部/buildings/isu-student-activity-center/README.md) · [屋頂](校本部/buildings/isu-student-activity-center/previews/top.png)
+[模型、參數源、Blend、QA及限制](校本部/buildings/isu-student-activity-center/README.md) · [屋頂](校本部/buildings/isu-student-activity-center/previews/top.png) · [有限原面彩色外觀](校本部/buildings/isu-student-activity-center/appearance/README.md)

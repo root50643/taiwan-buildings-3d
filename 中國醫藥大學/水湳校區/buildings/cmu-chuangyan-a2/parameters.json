@@ -1,0 +1,274 @@
+{
+  "schema": "cmu-a2-normalized-exterior-v1",
+  "units": "Display millimeters only, normalized main body length 240; no surveyed building dimensions or physical scale claimed",
+  "orientation": "+X east, +Y north/court, +Z up; south/street is front",
+  "display_main_length_mm": 240.0,
+  "base": {
+    "x": [
+      -127,
+      127
+    ],
+    "south_y": -40,
+    "north_y": 45,
+    "thickness": 3,
+    "corner_radius": 4
+  },
+  "body": {
+    "half_length": 120,
+    "south_y": -29,
+    "north_y": 28,
+    "corner_radius": 4,
+    "numbered_levels": 12,
+    "level_pitch": 14.0,
+    "first_upper_z": 14,
+    "roof_z": 168,
+    "north_lobes": [
+      [
+        -63,
+        5.0,
+        24
+      ],
+      [
+        62,
+        6.0,
+        26
+      ]
+    ],
+    "upper_profile_variation": 0.6
+  },
+  "ground": {
+    "west_room_rect": [
+      -116,
+      -64,
+      -28,
+      22
+    ],
+    "west_services_polygon": [
+      [
+        -116,
+        10
+      ],
+      [
+        -116,
+        22
+      ],
+      [
+        -98,
+        23
+      ],
+      [
+        -81,
+        32
+      ],
+      [
+        -65,
+        34
+      ],
+      [
+        -49,
+        30
+      ],
+      [
+        -29,
+        22
+      ],
+      [
+        -29,
+        10
+      ]
+    ],
+    "east_room_rect": [
+      42,
+      116,
+      -28,
+      23
+    ],
+    "east_services_polygon": [
+      [
+        40,
+        8
+      ],
+      [
+        40,
+        24
+      ],
+      [
+        51,
+        31
+      ],
+      [
+        63,
+        34
+      ],
+      [
+        78,
+        28
+      ],
+      [
+        116,
+        24
+      ],
+      [
+        116,
+        8
+      ]
+    ],
+    "offset_core_rect": [
+      23,
+      42,
+      -21,
+      23
+    ],
+    "oval_core_center": [
+      -29,
+      -2
+    ],
+    "oval_core_radii": [
+      20,
+      17
+    ],
+    "core_height": 14,
+    "passage_x": [
+      -5,
+      22
+    ],
+    "passage_arch_peak_z": 29,
+    "passage_spring_z": 11
+  },
+  "fins": {
+    "outer_offset": 6.0,
+    "rim_width": 1.25,
+    "thickness": 0.95,
+    "paired_separation": 2.6,
+    "samples_long": 121,
+    "corner_segments": 8,
+    "bracket_pitch": 6,
+    "bracket_width": 1.0,
+    "entry_center_x": 7,
+    "entry_width": 25,
+    "entry_lift": 15,
+    "entry_decay_z": 23,
+    "rear_observed_wave": {
+      "center_x": -26,
+      "width": 40,
+      "center_z": 48,
+      "height_decay": 34,
+      "deflection": -5.5
+    }
+  },
+  "eye": {
+    "center_x": -55,
+    "center_y": -30.2,
+    "center_z": 117,
+    "radius_x": 21,
+    "depth_radius_y": 20,
+    "radius_z": 13.5,
+    "influence_width_x": 29,
+    "influence_height_z": 19,
+    "fin_deflection": 12.5,
+    "lip_radial_width": 1.8,
+    "lip_front_y": -32.4,
+    "lip_back_y": -28.4,
+    "facets": 32
+  },
+  "windows": {
+    "mullion_pitch": 4.8,
+    "mullion_width": 0.7,
+    "mullion_projection": 0.65,
+    "transom_thickness": 0.75,
+    "west_inset_y": [
+      -18,
+      17
+    ],
+    "east_inset_y": [
+      -22,
+      21
+    ]
+  },
+  "rear_screen": {
+    "pitch": 2.7,
+    "bar_width": 1.25,
+    "projection": 1.25
+  },
+  "roof": {
+    "outer_offset": 3.7,
+    "north_lobes": [
+      [
+        -63,
+        8,
+        24
+      ],
+      [
+        62,
+        9,
+        26
+      ]
+    ],
+    "slab_thickness": 1.4,
+    "parapet_height": 2.4,
+    "parapet_width": 1.2
+  },
+  "raised_screen": {
+    "half_length": 94,
+    "center_y": 13.5,
+    "waist_half_width": 13,
+    "lobe_centers": [
+      -61,
+      61
+    ],
+    "height": 19,
+    "rim_width": 1.3,
+    "rim_height": 1.2,
+    "bar_pitch_perimeter": 3.3,
+    "bar_width": 0.9,
+    "segments": 160,
+    "top_variation": 1.5,
+    "lobe_half_width": 25,
+    "profile": "Two rounded end lobes joined continuously by cosine-narrowed waist; not two independent cylinders"
+  },
+  "pv": {
+    "central_fields": [
+      [
+        -77,
+        -48,
+        3,
+        23
+      ],
+      [
+        -43,
+        29,
+        5,
+        24
+      ],
+      [
+        37,
+        70,
+        3,
+        23
+      ]
+    ],
+    "south_strip": [
+      -106,
+      106,
+      -24,
+      -18
+    ],
+    "field_height": 1.35,
+    "divider_width": 0.45,
+    "divider_pitch_x": 7,
+    "divider_pitch_y": 6
+  },
+  "tessellation": {
+    "ellipse_segments": 64,
+    "numerical_cleanup_mm": 0.0001
+  },
+  "manufacturing": {
+    "fin_edge_thickness_mm": 0.95,
+    "window_mullion_width_mm": 0.7,
+    "raised_screen_bar_width_mm": 0.9,
+    "minimum_color_region_not_guaranteed": true,
+    "requires_support_assessment": true,
+    "physical_print_test": false
+  },
+  "parameter_coverage": "All principal dimensions, ground trace vertices, eye dimensions, profile controls, roof/PV areas, repetitions, manufacturing thickness and tessellation are explicit here. Boolean construction, derived profile equations, topology cleanup and face tagging are fixed algorithms in source/build_geometry.py; this is not an unrestricted architectural BIM or measured model."
+}

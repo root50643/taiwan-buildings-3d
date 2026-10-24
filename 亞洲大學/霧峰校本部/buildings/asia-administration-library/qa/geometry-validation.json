@@ -1,0 +1,62 @@
+{
+  "reload_source": "model.stl",
+  "stl_sha256": "4739cd5ebad76779d37bdc6799ca0a3aaf5419297aeebb560929ab1f6d273a75",
+  "stl_triangle_order_and_coordinates_exact_to_authoritative_mesh": true,
+  "vertices_after_weld": 19620,
+  "triangles": 39392,
+  "watertight": true,
+  "winding_consistent": true,
+  "edge_manifold_all_incidence_2": true,
+  "vertex_manifold_all_links_single_cycles": true,
+  "connected_components": 1,
+  "degenerate_triangles": 0,
+  "duplicate_triangles": 0,
+  "minimum_triangle_area_display_mm2": 4.795623630750757e-08,
+  "euler_number": -76,
+  "positive_volume_display_mm3": 269125.61599272274,
+  "bounds_display_mm": [
+    [
+      -79.5,
+      -4.5,
+      0.0
+    ],
+    [
+      79.5,
+      71.25,
+      65.69999694824219
+    ]
+  ],
+  "maximum_stl_vs_npz_abs_coordinate_drift": 0.0,
+  "slice_preflight": {
+    "layer_height_scenario_mm": 0.2,
+    "first_plane_mm": 0.1,
+    "layers_checked": 328,
+    "closed_valid_sections": 328,
+    "new_unattached_component_starts": [],
+    "max_slice_components": 21,
+    "minimum_component_area_display_mm2": 0.54502,
+    "method": "Exact triangle-plane intersection + Shapely closed polygons, odd-even rings; not actual extrusion toolpaths"
+  },
+  "overhang_preflight": {
+    "criterion": "down-facing triangles >45 degrees from vertical, excluding build-plate bottom",
+    "area_display_mm2": 1177.530616314081,
+    "triangle_count": 2904,
+    "support_warning": true
+  },
+  "practical_features": {
+    "base_thickness": 1.1,
+    "column_diameter_mm": 1.86,
+    "main_gallery_clear_height_mm": 19.5,
+    "tower_lantern_post_width_mm": 1.05,
+    "dome_lantern_post_diameter_mm": 0.9,
+    "roof_pad_depth_mm": 0.75,
+    "planar_window_colors_only": true
+  },
+  "physical_print_test": false,
+  "limitations": [
+    "Numerical mesh/slice checks do not guarantee adhesion, strength or support-free printing.",
+    "Use supports under the long curved gallery, tower lantern lintels, central lantern cap and overhangs; tune orientation, support removal and material.",
+    "Color-only window and trim boundaries are actual face assignments, not holes. Fine features may require enlargement or resin; lantern posts are model-thickened.",
+    "Solid massing model; no interior halls, basement, site grading, structural simulation or exact real-world scale."
+  ]
+}

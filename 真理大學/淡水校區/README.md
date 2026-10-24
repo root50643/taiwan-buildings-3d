@@ -6,8 +6,10 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 同一建物正面<br>![正面](buildings/au-oxford-1999-core/previews/front.png) | 同一建物背面<br> |  |
+| 同一建物有限材料示意<br>![有限材料示意](buildings/au-oxford-1999-core/appearance/previews/front.png) |  |  |
 
 [開啟模型與檔案](buildings/au-oxford-1999-core/README.md) · [返回學校](../README.md)
 
 保留完整兩長翼、前橫堂、通空柱廊與後段院落；明確排除中庭／背側後加建，不稱1882原貌或2026現況。150×130×66.1mm，70層opening損失>1%；小端飾與尖塔1.15–1.2mm，完整警告在[薄件說明](buildings/au-oxford-1999-core/THIN-FEATURES.md)。需切片確認支撐，未實體試印。
+
+[有限材料色系與可編修檔](buildings/au-oxford-1999-core/appearance/README.md)：僅596個原三角面指定磚／瓦／前欄板青綠材料家族，其餘13,446面保持未知中性，原14,042面幾何不變；不是整棟彩色完成、1999精準原色復原或2026現況。較晚照片拍攝日期未定、色碼未校正；配色不另計一套，原薄件與支撐警告保留。

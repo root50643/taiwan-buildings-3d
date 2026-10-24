@@ -6,6 +6,18 @@
 
 **版本：v1 凍結。已完成數位QA與外觀核圖；尖塔／端飾薄件警示與支撐限制仍保留。**
 
+## 既有主體網格的有限材料色系示意
+
+[材料色系示意、九視角與可編修檔](appearance/README.md)：原 **14,042 個保朝向三角面精確保留**，只對 **596 面**指定磚、瓦與前欄板青綠材料家族，**13,446 面維持未知中性**。不是整棟彩色完成、1999精準原色復原或2026現況；不新增建物或幾何。未知中性不代表實物灰色材料。
+
+| 有限材料左前斜視 | 有限材料正立面 | 背面維持未知中性 |
+| :---: | :---: | :---: |
+| ![牛津學堂有限材料示意](appearance/previews/front.png) | ![牛津學堂材料示意正立面](appearance/previews/elevation.png) | ![牛津學堂背面未知中性](appearance/previews/rear.png) |
+
+下載[可編修 Blender](appearance/au-oxford-1999-core-appearance.blend)、[逐面材質3MF](appearance/au-oxford-1999-core-appearance.3mf)；[Python重建](appearance/source/rebuild.py)使用原公開STL、數字參數、色盤與程式，不需要照片。材料家族來自較晚官方照片，拍攝日期未定，色碼只是未校正展示代理；前山牆、長翼屋坡、右長牆、背面與內院仍不推色。原STL、Blend、7張預覽及薄件／支撐警告原樣保留，未實體試印。
+
+## 原始幾何與既有無色預覽
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 同一建物正面<br>![實際STL正面](previews/front.png) | 同一建物背面<br>![實際STL背面](previews/rear.png) |  |

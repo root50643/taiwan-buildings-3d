@@ -8,8 +8,10 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](淡水校區/buildings/au-oxford-1999-core/previews/front.png) | 背面<br> |  |
+| 有限材料示意<br>![有限材料示意](淡水校區/buildings/au-oxford-1999-core/appearance/previews/front.png) |  |  |
 
 [模型、STL、Blend與完整限制](淡水校區/buildings/au-oxford-1999-core/README.md) · [淡水校區入口](淡水校區/README.md)
 
 最長150mm含底座；70層opening損失>1%，尖塔／端飾1.15–1.2mm，完整薄件警示保留。底座朝下，柱廊與懸挑需實際切片評估支撐；未實體試印，不保證可印。
+
+[有限材料色系與可編修檔](淡水校區/buildings/au-oxford-1999-core/appearance/README.md)：僅596個原三角面指定磚／瓦／前欄板青綠材料家族，其餘13,446面保持未知中性，原14,042面幾何不變；不是整棟彩色完成、1999精準原色復原或2026現況。較晚照片拍攝日期未定、色碼未校正；配色不另計一套，原薄件與支撐警告保留。

@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "stl_sha256": "5a1e22d6d987582f54867345d099b31a632d9104dcb2113d0089aeda0b9a60f3",
+  "model_3mf_sha256": "2f8e5b7ba2a98525f704246023269209ce8426d81ae6f26ccc4f73709705d74a",
+  "raw": {
+    "triangles": 16120,
+    "exact_weld_vertices": 8050,
+    "nonfinite": 0,
+    "zero_area": 0,
+    "duplicate_unoriented_faces": 0,
+    "edge_incidence_not_two": 0,
+    "edge_orientation_errors": 0,
+    "vertex_link_errors": 0,
+    "stored_normal_nonpositive_dot": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "signed_volume_mm3": 334276.0040239331,
+    "bounds_mm": [
+      [
+        -5.347042083740234,
+        -27.5,
+        0.0
+      ],
+      [
+        182.0,
+        32.25,
+        74.69999694824219
+      ]
+    ],
+    "surface_area_mm2": 53611.90983743302,
+    "minimum_triangle_area_mm2": 1.033898297464475e-05,
+    "boundary_shells": 2,
+    "signed_shell_volumes_mm3": [
+      335227.8290292259,
+      -951.8250052928925
+    ],
+    "cavity_validation": {
+      "positive_exterior": 1,
+      "negative_cavities": 1,
+      "exact_raw_triangle_partition": true,
+      "all_inner_vertices_and_face_centroids_inside_outer": true,
+      "tested_points": 20,
+      "minimum_tested_clearance_mm": 1.7999999523162842,
+      "cross_shell_contacts_included_in_SAT": true,
+      "interpretation": "One solid connected building with one B1 plan recess sealed by approximate terrain; a geometric proxy, not proof of a real closed room; not two disconnected positive objects. No boolean healing or cavity filling used."
+    }
+  },
+  "exchange": {
+    "unit": "millimeter",
+    "objects": 1,
+    "vertices": 8050,
+    "triangles": 16120,
+    "all_triangle_coordinates_order_and_winding_exact": true,
+    "exact_canonical_vertices_and_indices": true,
+    "whole_face_material_assignments": true,
+    "materials": [
+      {
+        "name": "rose_tile",
+        "displaycolor": "#A77970FF"
+      },
+      {
+        "name": "cream_tile_bands",
+        "displaycolor": "#D1C9B6FF"
+      },
+      {
+        "name": "opaque_glazing",
+        "displaycolor": "#52615FFF"
+      },
+      {
+        "name": "pale_frames",
+        "displaycolor": "#C2C9C3FF"
+      },
+      {
+        "name": "roof_concrete",
+        "displaycolor": "#91958CFF"
+      },
+      {
+        "name": "slope_proxy",
+        "displaycolor": "#85856FFF"
+      },
+      {
+        "name": "entry_terracotta",
+        "displaycolor": "#A85F45FF"
+      }
+    ],
+    "material_face_counts": [
+      1448,
+      714,
+      1735,
+      11201,
+      118,
+      344,
+      560
+    ]
+  },
+  "non_vertex_adjacent_SAT": {
+    "candidate_pairs": 69264,
+    "contact_pairs": 0,
+    "axes": 17,
+    "epsilon_mm": 1e-07,
+    "shared_vertex_pairs_excluded": true,
+    "limitation": "Does not establish an exhaustive test of all adjacent triangle pairs; exact edge incidence/orientation and vertex links checked independently."
+  },
+  "repair_or_rounding_applied": false,
+  "physical_print_or_slicer_test": false
+}

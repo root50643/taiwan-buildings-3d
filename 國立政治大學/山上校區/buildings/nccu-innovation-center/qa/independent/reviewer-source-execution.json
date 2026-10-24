@@ -1,0 +1,160 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_SOURCE_ZIP_EXTRACTION_EXECUTION",
+  "passed": true,
+  "public_release_authorized": false,
+  "source_zip_sha256": "23a36752bcb0e3e67144db8017b86ec1c8f66939546e073501d1d0e1ead819c9",
+  "source_zip_members": 16,
+  "actual_members_match_delivered_source_bytes": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 499,
+      "sha256": "28bfea826efaca5456f2dada740697a59c1ce902b8f0bd2f228971dda065888a"
+    },
+    {
+      "path": "QA.md",
+      "bytes": 3039,
+      "sha256": "ce97c5024728036add08fdc00b83628ddc5a6697f4252e825bb904ce1f319de1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3620,
+      "sha256": "52d4ce890dcded69fe0c3c7dadeb15d340e0706bf07856ef06f6c7c3e3e74a82"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 2569,
+      "sha256": "1e4cc2fcc20219386f8f59c199b4f3682b994407a26c131b1fa1d3fc44df5495"
+    },
+    {
+      "path": "build_model.py",
+      "bytes": 19149,
+      "sha256": "d94f29a271c0e6516185cae6ae8694ed10a642a35d30a6aa7db47badf63d5085"
+    },
+    {
+      "path": "caption_preview.py",
+      "bytes": 539,
+      "sha256": "366462aecf0cc98d3b416bdc91fc194a29052e960341a803e0b65b63c78fc94d"
+    },
+    {
+      "path": "check_cavity_clearance.py",
+      "bytes": 2895,
+      "sha256": "2d1ebda4cdca33d27c0ecb0d8d479d1f91cf9d13283b645e0a31a61f247f4d0b"
+    },
+    {
+      "path": "check_features.py",
+      "bytes": 2962,
+      "sha256": "bce7cdfc69281c9f4f64058e02ff0c9b53f1ee59f50968c84df7db80e3f4fd09"
+    },
+    {
+      "path": "qa_model.py",
+      "bytes": 9350,
+      "sha256": "cffe8d0a779a8f94bc9f1f4c4c5aeee6601a249a183861d70c625c1e80a3b3ba"
+    },
+    {
+      "path": "rebuild.py",
+      "bytes": 1584,
+      "sha256": "077b8431509b3a18cac1d977d3bd7dde90da560ab753ed7879efebb0a2e41f8d"
+    },
+    {
+      "path": "render_model.py",
+      "bytes": 5404,
+      "sha256": "25a18260234015c80af114ffc00e4d370b15975bbec0bb59cd0be0e9b69dd84c"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 117,
+      "sha256": "fd8aa3620fdfff0b6bd23f5cfd5e8e65559a804028d6c6b1a85cd4fa01a08cee"
+    },
+    {
+      "path": "run_all_checks.py",
+      "bytes": 495,
+      "sha256": "8dcf0e88a631c25bb2982de194e8d0b0276e2a1f234a2142929c310418c18fe9"
+    },
+    {
+      "path": "verify_exchange.py",
+      "bytes": 6968,
+      "sha256": "704bbcd16358f34454a95b48fcbfb5bdee983c08e5f9ecc0a424f66b24e17efa"
+    },
+    {
+      "path": "verify_render.py",
+      "bytes": 1111,
+      "sha256": "12d597b73d1e0c43615e9ca6f959c26ddd2bb54763d87e195ed9e511e38caccb"
+    },
+    {
+      "path": "verify_scene.py",
+      "bytes": 3634,
+      "sha256": "23e6bdefd5ee4fe97c69b029b61101522cf00e175257036960906835f9087990"
+    }
+  ],
+  "executed_commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/0459ddc40ee0/nccu-innovation-center-20261024/reviewer-source-extracted-v6c/build_model.py"
+    ],
+    [
+      "/usr/bin/blender",
+      "-b",
+      "-t",
+      "4",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "/workspace/scratch/0459ddc40ee0/nccu-innovation-center-20261024/reviewer-source-extracted-v6c/render_model.py"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/0459ddc40ee0/nccu-innovation-center-20261024/reviewer-source-extracted-v6c/run_all_checks.py"
+    ]
+  ],
+  "all_commands_exit_zero": true,
+  "nine_artifacts_byte_identical": [
+    {
+      "path": "model.stl",
+      "bytes": 194384,
+      "sha256": "cb6cdc8d977f318f79bb2f4303ae4f7d421c5a778b58d0e5a6855253e8f3d60c"
+    },
+    {
+      "path": "model.3mf",
+      "bytes": 42935,
+      "sha256": "d523d59447f620e7a802d13ce22ba7a4aa3c3f2ff9d920c91068244490146f13"
+    },
+    {
+      "path": "mesh.json",
+      "bytes": 175424,
+      "sha256": "b11d4252d84624b8c60b2c5b784d75393cfd1a6ee9b55ece85a999856bb93e88"
+    },
+    {
+      "path": "palette.json",
+      "bytes": 671,
+      "sha256": "de3760a7f6248407f121711babc052d59cec38adc5caac640dc0d5a745237c0b"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1065333,
+      "sha256": "9facba2df23d478ff7dc4f85ba4247ea13fa0364e0d41435891b2297b82cacff"
+    },
+    {
+      "path": "previews/rear.png",
+      "bytes": 1052678,
+      "sha256": "0c0dd2206d5c0f3402b221032c17ea5ea30c12ef6dd5e6ecf69afb6b5441e67a"
+    },
+    {
+      "path": "previews/elevation.png",
+      "bytes": 1024084,
+      "sha256": "57c4e253f9f5dd48f3ddf1ed4f835ef17fab71c1c6168f36c9e0e0a833fb3d30"
+    },
+    {
+      "path": "previews/top.png",
+      "bytes": 1141426,
+      "sha256": "28400416e55d1e6d52a7d5773c4b3e5e9c7fb1fabd437bd2294084d486231a9a"
+    },
+    {
+      "path": "previews/left_oblique.png",
+      "bytes": 1032203,
+      "sha256": "4f81bbad89709a6126dde63376224a4378a8066fc568e319c5312f571919d263"
+    }
+  ],
+  "scene_validation_semantics_identical": true,
+  "source_archive_has_no_third_party_photos": true,
+  "delivery_core_files_not_written": true
+}

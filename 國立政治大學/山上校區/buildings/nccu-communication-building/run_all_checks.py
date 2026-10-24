@@ -1,0 +1,8 @@
+from pathlib import Path
+import subprocess,sys
+A=Path(__file__).resolve().parent
+for name in ['qa_model.py','check_features.py','verify_exchange.py']:
+ subprocess.run([sys.executable,str(A/name)],check=True)
+for name in ['verify_scene.py','verify_render.py']:
+ subprocess.run(['blender','-b','-t','4','--python-exit-code','1','--python',str(A/name)],check=True)
+print('ALL EXECUTED TECHNICAL GATES COMPLETE; RETAIN THIN-FEATURE WARNINGS, NOT PHYSICAL PRINT CERTIFICATION')

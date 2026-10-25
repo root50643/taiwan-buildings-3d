@@ -3,7 +3,7 @@
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [![長榮堂實際STL預覽](歸仁校本部/buildings/cjcu-hall/previews/front.png)](歸仁校本部/buildings/cjcu-hall/README.md)<br>**[長榮堂](歸仁校本部/buildings/cjcu-hall/README.md)** | [![行政大樓實際STL預覽](歸仁校本部/buildings/cjcu-administration/previews/front.png)](歸仁校本部/buildings/cjcu-administration/README.md)<br>**[行政大樓](歸仁校本部/buildings/cjcu-administration/README.md)** | [![蘭大衛紀念圖書館主量體實際STL預覽](歸仁校本部/buildings/cjcu-library/previews/front.png)](歸仁校本部/buildings/cjcu-library/README.md)<br>**[蘭大衛紀念圖書館主量體](歸仁校本部/buildings/cjcu-library/README.md)** |
-| [![綜合體育館實際STL預覽](歸仁校本部/buildings/cjcu-gymnasium/previews/front.png)](歸仁校本部/buildings/cjcu-gymnasium/README.md)<br>**[綜合體育館](歸仁校本部/buildings/cjcu-gymnasium/README.md)** | [![校門十字架鐘塔兩同向寬面限域配色代理](歸仁校本部/buildings/cjcu-gate-cross-tower/appearance/previews/front.png)](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)<br>**[校門十字架鐘塔（地標構造物）](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)** |  |
+| [![綜合體育館屋面板材族中性示意，非實際配色](歸仁校本部/buildings/cjcu-gymnasium/appearance/previews/front.png)](歸仁校本部/buildings/cjcu-gymnasium/README.md)<br>**[綜合體育館](歸仁校本部/buildings/cjcu-gymnasium/README.md)**<br>屋面板材族中性示意，非實際配色 | [![校門十字架鐘塔兩同向寬面限域配色代理](歸仁校本部/buildings/cjcu-gate-cross-tower/appearance/previews/front.png)](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)<br>**[校門十字架鐘塔（地標構造物）](歸仁校本部/buildings/cjcu-gate-cross-tower/README.md)** |  |
 
 目前包含長榮堂、行政大樓、蘭大衛紀念圖書館主量體及綜合體育館，共4件樓館模型；另有校門十字架鐘塔1件地標構造物，合計5個模型，不把地標算第5棟樓館。各件自行建構，不使用第三方3D模型；第三方照片只列來源連結，沒有再散布。模型獨立縮尺，含底座最大150mm。
 
@@ -33,3 +33,5 @@
 - [校園導覽](https://www163.cjcu.edu.tw/web2023/ja/about_campus_tour.php)
 - [長榮堂設計理念](https://dweb.cjcu.edu.tw/general/article/7920)
 - [健康科學學院沿革](https://dweb.cjcu.edu.tw/chs/article/1996)
+
+[綜合體育館屋面示意與可重建檔](歸仁校本部/buildings/cjcu-gymnasium/appearance/README.md)：依 2020 校方屋面夜景辨識的金屬板材族中性示意；非實際日光配色／材質規格，非 2026 現況。僅1,206個桶拱屋面原面使用任選無彩標記，其餘3,488面沿用原預覽值；不是全館配色完成。原幾何、採光罩粗化及後側近似、支撐／未試印限制保留，不另計模型。

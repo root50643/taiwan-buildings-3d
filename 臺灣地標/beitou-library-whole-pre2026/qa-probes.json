@@ -1,0 +1,239 @@
+{
+  "section_step_mm": 0.2,
+  "print_warnings": [
+    "No physical print or slicer toolpath was performed.",
+    "Long terrace roofs, balcony overhangs, fine railing and open tower screen require scale/orientation/support review.",
+    "Smallest intended rail member is 0.65 mm at delivered model size; not a proven global wall-thickness minimum."
+  ],
+  "gap_rays": [
+    {
+      "name": "lower actual long balcony recess",
+      "start_model_mm": [
+        -24,
+        5.026666666666669,
+        8
+      ],
+      "direction": [
+        1,
+        0.9022222222222221,
+        0
+      ],
+      "segment_length_model_mm": 85.05112308759678,
+      "expected_clear": true
+    },
+    {
+      "name": "middle actual long balcony recess",
+      "start_model_mm": [
+        -24,
+        5.026666666666669,
+        25
+      ],
+      "direction": [
+        1,
+        0.9022222222222221,
+        0
+      ],
+      "segment_length_model_mm": 85.05112308759678,
+      "expected_clear": true
+    },
+    {
+      "name": "upper actual long balcony recess",
+      "start_model_mm": [
+        -24,
+        5.026666666666669,
+        41
+      ],
+      "direction": [
+        1,
+        0.9022222222222221,
+        0
+      ],
+      "segment_length_model_mm": 85.05112308759678,
+      "expected_clear": true
+    },
+    {
+      "name": "east return balcony void",
+      "start_model_mm": [
+        87.5,
+        83.52,
+        24
+      ],
+      "direction": [
+        0,
+        1.16,
+        0
+      ],
+      "segment_length_model_mm": 11.6,
+      "expected_clear": true
+    },
+    {
+      "name": "open equipment screen center",
+      "start_model_mm": [
+        -22,
+        -34.8,
+        55
+      ],
+      "direction": [
+        0,
+        0.0,
+        1
+      ],
+      "segment_length_model_mm": 20.0,
+      "expected_clear": true
+    },
+    {
+      "name": "roof walk center open",
+      "start_model_mm": [
+        20,
+        19.204444444444444,
+        53.8672131147541
+      ],
+      "direction": [
+        1,
+        0.9022222222222221,
+        0.13934426229508196
+      ],
+      "segment_length_model_mm": 58.432355389352395,
+      "expected_clear": true
+    },
+    {
+      "name": "enclosed library body occupied",
+      "start_model_mm": [
+        35,
+        11.6,
+        25
+      ],
+      "direction": [
+        1,
+        0.0,
+        0
+      ],
+      "segment_length_model_mm": 10.0,
+      "expected_clear": false
+    },
+    {
+      "name": "service tower solid lower body",
+      "start_model_mm": [
+        -22,
+        -34.8,
+        40
+      ],
+      "direction": [
+        0,
+        0.0,
+        1
+      ],
+      "segment_length_model_mm": 5.0,
+      "expected_clear": false
+    },
+    {
+      "name": "actual park grade occupied",
+      "start_model_mm": [
+        20,
+        -46.4,
+        8
+      ],
+      "direction": [
+        1,
+        0.0,
+        0
+      ],
+      "segment_length_model_mm": 15.0,
+      "expected_clear": false
+    },
+    {
+      "name": "roof PV surface occupied",
+      "start_model_mm": [
+        35,
+        48.97777777777778,
+        53.15737704918033
+      ],
+      "direction": [
+        0,
+        0.0,
+        1
+      ],
+      "segment_length_model_mm": 0.25,
+      "expected_clear": false
+    }
+  ],
+  "injected_gap_blocker": {
+    "ray_name": "middle actual long balcony recess",
+    "box_center_model_mm": [
+      0,
+      26.68,
+      25
+    ],
+    "box_extents_model_mm": [
+      3,
+      3.4799999999999995,
+      3
+    ]
+  },
+  "rising_surface_profiles": [
+    {
+      "name": "Bent west-to-east roof top including steeper low tail",
+      "sample_xy_model_mm": [
+        [
+          -80,
+          -43.17777777777778
+        ],
+        [
+          -65,
+          -29.644444444444446
+        ],
+        [
+          -50,
+          -16.11111111111111
+        ],
+        [
+          -35,
+          -2.5777777777777766
+        ],
+        [
+          -20,
+          10.955555555555552
+        ],
+        [
+          0,
+          28.999999999999996
+        ],
+        [
+          30,
+          56.066666666666656
+        ],
+        [
+          60,
+          83.13333333333334
+        ],
+        [
+          85,
+          105.68888888888888
+        ]
+      ],
+      "ray_top_z_model_mm": 80
+    },
+    {
+      "name": "Planted field gentle east rise",
+      "sample_xy_model_mm": [
+        [
+          20,
+          -11.6
+        ],
+        [
+          40,
+          -11.6
+        ],
+        [
+          60,
+          -11.6
+        ],
+        [
+          80,
+          -11.6
+        ]
+      ],
+      "ray_top_z_model_mm": 80
+    }
+  ]
+}

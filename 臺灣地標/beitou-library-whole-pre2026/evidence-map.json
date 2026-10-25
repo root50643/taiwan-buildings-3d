@@ -1,0 +1,106 @@
+{
+  "method": "Actual independent inspection of architect photographs and ordinary permitted private print-view pages before geometry; no automatic tracing or source-pixel reuse. Manual proportional registration, not metric photogrammetry.",
+  "features": [
+    {
+      "id": "F01",
+      "feature": "Whole unequal triangular/wedge footprint and attached rectangular service block",
+      "evidence": [
+        "P01 p7 printed83 1F/RF",
+        "A01 whole aerial",
+        "A03 east end",
+        "A05 south service face"
+      ],
+      "required": "No generic rectangular chalet, no isolated balcony fragment, no separate count for tower."
+    },
+    {
+      "id": "F02",
+      "feature": "Complete nonuniform roof, PV band, green field and low western end",
+      "evidence": [
+        "P01 p6 longitudinal section",
+        "P01 p7 RF",
+        "P01 p8 actual roof walk",
+        "A01 aerial"
+      ],
+      "required": "Preserve asymmetric main slope and low-end break, narrow dividing roof walk/railings, broad triangular green roof and long separate PV field; no guessed gable/pyramid or flattened slab."
+    },
+    {
+      "id": "F03",
+      "feature": "Service tower with upper louvered enclosure and solid core",
+      "evidence": [
+        "A01 roof aerial",
+        "A05 service face",
+        "P01 p7 RF/1F"
+      ],
+      "required": "Distinguish solid gray service body from taller slatted equipment-screen rim; do not fill the upper rim as a featureless solid additional storey."
+    },
+    {
+      "id": "F04",
+      "feature": "Two above-ground floors plus exposed lower level on creek side",
+      "evidence": [
+        "P01 p5–6 floor statement and longitudinal section",
+        "A04 three exterior levels",
+        "A01 creek bank"
+      ],
+      "required": "Follow grade difference; never label the visible lower level an invented third above-ground floor. Balcony floors are open recesses, not continuous closed orange wall."
+    },
+    {
+      "id": "F05",
+      "feature": "Continuous long balcony frontage with returns, posts, deep roof eaves and end stair",
+      "evidence": [
+        "A04",
+        "A01",
+        "P01 p6–8",
+        "A07"
+      ],
+      "required": "Keep reading terraces as real depth/void, major perimeter turns and supporting posts. Fine railing repetition may be print-thickened without sealing whole bays."
+    },
+    {
+      "id": "F06",
+      "feature": "Different park-side and end façade patterns",
+      "evidence": [
+        "A03 tree-obscured east glazed end",
+        "A05 gray service/timber glass south side",
+        "P01 p7 footprint",
+        "A01 low western end"
+      ],
+      "required": "No mirror-copy of long balcony face onto all sides; preserve high glazed end and service wall as materially different exterior regions. Use only footprint-bounded joins where foliage hides minor detail."
+    },
+    {
+      "id": "F07",
+      "feature": "Photo-grounded procedural material colors",
+      "evidence": [
+        "A01",
+        "A04",
+        "A05",
+        "A07",
+        "P01 p5–8"
+      ],
+      "required": "Warm amber/honey timber frames/soffits, darker weathered gray-brown horizontal rail/deck bands, gray textured service face with pale courses, dark muted green/blue glass, muted green roof and blue-gray PV. No source-photo textures, artwork, logos or transcribed decorative drawings."
+    }
+  ],
+  "coordinate_registration": "Source plans compared by service block, wedge vertices, PV/green separation and creek edge, not page-up north. Model +X high/east end, -X low/west end, diagonal +Y creek side.",
+  "limitations": [
+    "No measured as-built survey or full dimensioned working drawings; section/roof-plan raster and photos constrain proportions, not exact dimensions.",
+    "East façade foliage partially occludes lower details. Whole1F/RF, section and adjacent actual views bound major mass; reviewer must flag any still-unbounded silhouette, rather than invent a hidden bay.",
+    "Small roof objects/plant shapes differ between plan symbols and aerial; one clearly visible skylight is positively supported in A01. Do not convert every white RF symbol into an extra skylight.",
+    "Photo colors are illumination/weathering dependent, not calibrated paint codes.",
+    "Original photographic capture dates and individual photographer credits are not supplied."
+  ],
+  "major_join_checks": [
+    "Full roof and lower-wall footprints are distinct",
+    "Service tower intersects body and low roof, upper screen remains open",
+    "Ground/three exterior levels align with higher park grade",
+    "North terrace and east return are geometrically open",
+    "South service and east glazed faces are not mirrored north balconies"
+  ],
+  "source_image_reproduction": false,
+  "plan_RF_section_registration": {
+    "RF": "Full roof right-triangle major-envelope aspect approximately 0.91 from ordinary visual plan inspection; model 170.52/188=0.907 after whole cross-axis registration. Green field starts near 0.59 of roof X span and service block spans roughly the lower western third. No source vectors or image tracing.",
+    "1F": "Lower wall footprint differs from roof: inset wedge, a kink near low north end, attached rectangular southern service block and open creek terraces with high-end return. Source trees and image resolution limit minor bay counts.",
+    "long_section": "Steeper west tail rises 12 to 44 mm across 66 model mm, then gentler high field rises 44 to 61 across 122 model mm. Three creek-visible floors at 1.4/17.4/33.4 mm; park grade 17 mm. These are source-proportion interpretation, not measured building dimensions.",
+    "high_end": "Tall timber/glass end joins opaque board portion, deep triangular roof overhang and localized balcony return, rather than a fourth floor.",
+    "reverse_side": "Gray rectangular service core with pale horizontal courses and small windows transitions into timber/glass park facade with projecting shade; upper service screen open above solid core.",
+    "precision_limits": "Manual major-envelope registration only; not sub-pixel photogrammetry, licensed drawing duplication or an as-built fit."
+  },
+  "technical_geometry_note": "A shared-vertex float artifact introduced by applying the RF cross-axis stretch before Boolean triangulation was eliminated by applying that same affine stretch after canonical union triangulation. Delivered stretched STL is independently reloaded and fully scanned at unchanged 1e-5 mm coordinate tolerance. Roof trim/slat clearances were authored physically; checks were not loosened."
+}

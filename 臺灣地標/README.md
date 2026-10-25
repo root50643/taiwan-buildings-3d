@@ -1,10 +1,10 @@
-# 臺灣 25 處地標建築｜外觀微縮模型
+# 臺灣 26 處地標建築｜外觀微縮模型
 
-收錄 25 座臺灣地標的原創參數化外觀模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。
+收錄 26 座臺灣地標的原創參數化外觀模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。各包尺寸與列印限制請讀專屬README。
 
 ## 使用前先讀
 
-- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。25座並非共同比例，不能用來反推真實建築尺寸。
+- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。26座並非共同比例，不能用來反推真實建築尺寸。
 - 模型依公開外觀照片等資料重新建立幾何，屬桌上型外觀詮釋，並非測繪、工程或官方授權模型。未確認的背面、屋頂與細節可能經過推定、簡化及加粗。
 - 數位網格驗證不等同切片或實體試印成功。尚未完成實際切片測試及實體試印；列印前請檢查逐層路徑、薄壁、懸垂、支撐與拆除空間。
 - STL 不包含預覽材質或色彩。Blender 場景的地板、相機、燈光只供預覽，請勿當作列印模型匯出。
@@ -24,7 +24,7 @@
 | [![高雄85大樓前視模型預覽](85-sky-tower/previews/front.png)](85-sky-tower/README.md)<br>**[高雄85大樓](85-sky-tower/README.md)** | [![衛武營國家藝術文化中心前視模型預覽](weiwuying/previews/front.png)](weiwuying/README.md)<br>**[衛武營國家藝術文化中心](weiwuying/README.md)** | [![龍虎塔前視模型預覽](dragon-tiger-pagodas/previews/front.png)](dragon-tiger-pagodas/README.md)<br>**[龍虎塔](dragon-tiger-pagodas/README.md)** |
 | [![鵝鑾鼻燈塔前視模型預覽](eluanbi-lighthouse/previews/front.png)](eluanbi-lighthouse/README.md)<br>**[鵝鑾鼻燈塔](eluanbi-lighthouse/README.md)** | [![松園別館前視模型預覽](pine-garden/previews/front.png)](pine-garden/README.md)<br>**[松園別館](pine-garden/README.md)** | [![國立臺灣史前文化博物館康樂本館前視模型預覽](prehistory-museum-kangle/previews/front.png)](prehistory-museum-kangle/README.md)<br>**[國立臺灣史前文化博物館康樂本館](prehistory-museum-kangle/README.md)** |
 | [![金門得月樓前視模型預覽](deyue-tower/previews/front.png)](deyue-tower/README.md)<br>**[金門得月樓](deyue-tower/README.md)** | [![澎湖天后宮前視模型預覽](penghu-tianhou-temple/previews/front.png)](penghu-tianhou-temple/README.md)<br>**[澎湖天后宮](penghu-tianhou-temple/README.md)** | [![馬祖東湧燈塔前視模型預覽](dongyong-lighthouse/previews/front.png)](dongyong-lighthouse/README.md)<br>**[馬祖東湧燈塔](dongyong-lighthouse/README.md)** |
-| [![臺北表演藝術中心完整主建築模型預覽](tpac-whole-2022/previews/front.png)](tpac-whole-2022/README.md)<br>**[臺北表演藝術中心](tpac-whole-2022/README.md)** |  |  |
+| [![臺北表演藝術中心完整主建築模型預覽](tpac-whole-2022/previews/front.png)](tpac-whole-2022/README.md)<br>**[臺北表演藝術中心](tpac-whole-2022/README.md)** | [![北投圖書館整棟歷史外觀模型預覽](beitou-library-whole-pre2026/previews/front.png)](beitou-library-whole-pre2026/README.md)<br>**[北投圖書館](beitou-library-whole-pre2026/README.md)** |  |
 
 ## 模型目錄與實際預覽
 
@@ -55,10 +55,11 @@
 | 澎湖天后宮 | [模型與說明](penghu-tianhou-temple/README.md) · [STL](penghu-tianhou-temple/model.stl) | [前視](penghu-tianhou-temple/previews/front.png) | [後視](penghu-tianhou-temple/previews/rear.png) |
 | 馬祖東湧燈塔 | [模型與說明](dongyong-lighthouse/README.md) · [STL](dongyong-lighthouse/model.stl) | [前視](dongyong-lighthouse/previews/front.png) | [後視](dongyong-lighthouse/previews/rear.png) |
 | 臺北表演藝術中心 | [模型與說明](tpac-whole-2022/README.md) · [STL](tpac-whole-2022/tpac-whole-2022.stl) · [3MF](tpac-whole-2022/tpac-whole-2022.3mf) · [Blend](tpac-whole-2022/tpac-whole-2022.blend) | [前視](tpac-whole-2022/previews/front.png) | [後視](tpac-whole-2022/previews/rear.png) |
+| 北投圖書館 | [模型與說明](beitou-library-whole-pre2026/README.md) · [STL](beitou-library-whole-pre2026/beitou-library-whole-pre2026.stl) · [3MF](beitou-library-whole-pre2026/beitou-library-whole-pre2026.3mf) · [Blend](beitou-library-whole-pre2026/beitou-library-whole-pre2026.blend) | [公園／東端](beitou-library-whole-pre2026/previews/front.png) | [溪側](beitou-library-whole-pre2026/previews/north.png) |
 
 ## 重建與檔案
 
-新增臺北表演藝術中心的檔名、公開數值重建流程及九張模型視圖，請依[專屬 README](tpac-whole-2022/README.md)；下列舊檔名說明及18個原包的完整性紀錄保留為原有24座交付歷史。來源權利與圖庫06署名衝突見該包說明，原始第三方照片不公開。
+新增臺北表演藝術中心的檔名、公開數值重建流程及九張模型視圖，請依[專屬 README](tpac-whole-2022/README.md)；下列舊檔名說明及18個原包的完整性紀錄保留為原有24座交付歷史。來源權利與圖庫06署名衝突見該包說明，原始第三方照片不公開。北投圖書館的[專屬README](beitou-library-whole-pre2026/README.md)另列九圖及公開數值重建流程，建築師、照片與逐項來源權利均保留；受保護PDF及其擷取內容不收入公開包。
 
 各目錄包含 build_model.py、requirements.txt、render_preview.py、validate_model.py 及數位檢查結果。請在該模型目錄依其 README 安裝相依套件並執行重建；不同模型的參數和重建流程可能不同。
 

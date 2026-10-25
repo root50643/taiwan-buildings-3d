@@ -1,0 +1,4461 @@
+{
+  "units": "millimetres, normalized desktop interpretation; no surveyed dimension or exact scale claim",
+  "palette": [
+    {
+      "id": "warm_timber",
+      "name": "Warm amber timber frame and soffit",
+      "hex": "#A96F3C",
+      "evidence": "A03/A04/A07; approximate visible material family, no calibrated RGB"
+    },
+    {
+      "id": "weathered_wood",
+      "name": "Weathered dark wood decks and rails",
+      "hex": "#61584A",
+      "evidence": "A01/A04/A07 horizontal balcony and deck bands"
+    },
+    {
+      "id": "service_masonry",
+      "name": "Grey service masonry cladding",
+      "hex": "#8F9189",
+      "evidence": "A01/A05 rectangular service mass, not mirrored timber facade"
+    },
+    {
+      "id": "glazing",
+      "name": "Muted dark green blue glazing",
+      "hex": "#365C59",
+      "evidence": "A03/A04/A07; opaque model proxy, not real light transmission"
+    },
+    {
+      "id": "roof_green",
+      "name": "Muted planted roof field",
+      "hex": "#7C8D54",
+      "evidence": "A01 roof and P01 RF; season-dependent planting"
+    },
+    {
+      "id": "pv_bluegrey",
+      "name": "Blue grey photovoltaic panel field",
+      "hex": "#536278",
+      "evidence": "A01 roof photograph; separate panel and planting regions"
+    },
+    {
+      "id": "pale_trim",
+      "name": "Pale roof edge and masonry courses",
+      "hex": "#BEBBAA",
+      "evidence": "A01/A05 pale eaves, panel grid and service courses"
+    },
+    {
+      "id": "local_ground",
+      "name": "Immediate sloping planted ground",
+      "hex": "#8B956E",
+      "evidence": "A01/P01 section grade relation only; distant park and creek omitted"
+    },
+    {
+      "id": "retaining_stone",
+      "name": "Low grey retaining transition",
+      "hex": "#797B70",
+      "evidence": "A01 creek-side retaining interface; no copied stone texture"
+    },
+    {
+      "id": "roof_equipment",
+      "name": "Simplified light equipment volumes",
+      "hex": "#B5B7AD",
+      "evidence": "A01 visible inside open rooftop screen; minor apparatus generalized"
+    }
+  ],
+  "features": [
+    {
+      "name": "Thin local ground closure",
+      "material": "retaining_stone",
+      "evidence": "Authored local closure only, not an architectural podium",
+      "bounds_model_mm": [
+        -127.9260615259409,
+        -62.63999999999999,
+        -1.2,
+        103.0,
+        146.81485112696885,
+        0.40000000000000013
+      ]
+    },
+    {
+      "name": "Low creek-side immediate ground",
+      "material": "local_ground",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -125.89440306276083,
+        -61.82799999654293,
+        0.2,
+        102.29999999701977,
+        145.14917878448964,
+        1.0
+      ]
+    },
+    {
+      "name": "Higher park-side grade",
+      "material": "local_ground",
+      "evidence": "P01 long section and A01: two above ground floors, creek-side exposed basement",
+      "bounds_model_mm": [
+        -110.0,
+        -62.63999999999999,
+        0.7,
+        103.0,
+        -38.45399999827146,
+        17.0
+      ]
+    },
+    {
+      "name": "Park-side narrow paving",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -75.0,
+        -53.36,
+        16.8,
+        100.0,
+        -38.45399999827146,
+        17.3
+      ]
+    },
+    {
+      "name": "Park retaining edge",
+      "material": "retaining_stone",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -110.64999999850988,
+        -62.63999999999999,
+        0.6,
+        103.0,
+        -37.699999999999996,
+        17.3
+      ]
+    },
+    {
+      "name": "East park to creek descending grade",
+      "material": "local_ground",
+      "evidence": "P01 section and A03 high park-side ground, A01 creek exposure; simplified terrain transition",
+      "bounds_model_mm": [
+        83.79999999701975,
+        -62.64,
+        0.5,
+        103.0,
+        73.08,
+        17.000000000000004
+      ]
+    },
+    {
+      "name": "Whole wedge enclosed library body",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -46.0,
+        -38.279999999999994,
+        0.7,
+        84.00000000000001,
+        98.6,
+        58.885245901639344
+      ]
+    },
+    {
+      "name": "Level 0 projecting balcony deck",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -22.854628240466116,
+        0.7499999999999999,
+        91.00999999791384,
+        107.58225648432969,
+        1.85
+      ]
+    },
+    {
+      "name": "Level 0 outer balcony fascia",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.36836437135935,
+        -14.340500255823134,
+        0.5999999999999999,
+        89.60000000149012,
+        108.04570777654646,
+        1.9
+      ]
+    },
+    {
+      "name": "Level 0 railing horizontal 1.5",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.19953069835901,
+        -14.088696897029875,
+        2.9,
+        89.32500000298023,
+        107.61531393259763,
+        3.55
+      ]
+    },
+    {
+      "name": "Level 0 railing horizontal 2.9",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.19953069835901,
+        -14.088696897029875,
+        4.3,
+        89.32500000298023,
+        107.61531393259763,
+        4.95
+      ]
+    },
+    {
+      "name": "Level 0 railing horizontal 4.3",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.19953069835901,
+        -14.088696897029875,
+        5.699999999999999,
+        89.32500000298023,
+        107.61531393259763,
+        6.35
+      ]
+    },
+    {
+      "name": "Level 0 rail post 00",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.39000000059605,
+        -14.243511110842228,
+        1.0999999999999999,
+        -49.60999999940395,
+        -13.3387111094594,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 01",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -42.49647782742977,
+        -7.121799991726875,
+        1.0999999999999999,
+        -41.71647782623768,
+        -6.216999990344047,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 02",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -34.602955654263496,
+        -8.888125419616698e-05,
+        1.0999999999999999,
+        -33.8229556530714,
+        0.9047111201286315,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 03",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -26.70943348109722,
+        7.121622237861156,
+        1.0999999999999999,
+        -25.92943347990513,
+        8.026422239243983,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 04",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -18.815911307930946,
+        14.243333356976509,
+        1.0999999999999999,
+        -18.035911306738853,
+        15.148133358359336,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 05",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -10.922389134764671,
+        21.36504447609186,
+        1.0999999999999999,
+        -10.142389133572578,
+        22.269844468832016,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 06",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -3.0288669541478157,
+        28.486755586564538,
+        1.0999999999999999,
+        -2.2488669604063034,
+        29.391555587947366,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 07",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        4.864655219018459,
+        35.60846670567989,
+        1.0999999999999999,
+        5.644655212759972,
+        36.51326670706272,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 08",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        12.758177392184734,
+        42.73017782479524,
+        1.0999999999999999,
+        13.538177393376827,
+        43.63497782617807,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 09",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        20.65169956535101,
+        49.851888943910595,
+        1.0999999999999999,
+        21.431699566543102,
+        50.75668893665075,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 10",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        28.545221738517284,
+        56.973600054383276,
+        1.0999999999999999,
+        29.325221739709377,
+        57.8784000557661,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 11",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        36.43874391168356,
+        64.09531117349863,
+        1.0999999999999999,
+        37.21874391287565,
+        65.00011117488145,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 12",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        44.332266084849834,
+        71.21702229261398,
+        1.0999999999999999,
+        45.11226608604193,
+        72.1218222939968,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 13",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        52.22578825801611,
+        78.33873340308666,
+        1.0999999999999999,
+        53.0057882592082,
+        79.24353340446949,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 14",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        60.119310431182384,
+        85.46044452220201,
+        1.0999999999999999,
+        60.89931043237448,
+        86.36524452358483,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 15",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        68.01283260434866,
+        92.58215564131736,
+        1.0999999999999999,
+        68.79283260554075,
+        93.4869556427002,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 16",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        75.90635477751493,
+        99.70386676043272,
+        1.0999999999999999,
+        76.68635477870703,
+        100.60866675317287,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 17",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.77452054619789,
+        106.4506999117136,
+        1.0999999999999999,
+        84.55452054738998,
+        107.35549991309642,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 18",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        97.06882658451795,
+        1.0999999999999999,
+        89.39000000059605,
+        97.9736265772581,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 19",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        85.46882658451796,
+        1.0999999999999999,
+        89.39000000059605,
+        86.37362657725811,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 0 rail post 20",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        74.94759999930858,
+        1.0999999999999999,
+        89.39000000059605,
+        75.8524000006914,
+        6.5
+      ]
+    },
+    {
+      "name": "Level 1 projecting balcony deck",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -22.854628240466116,
+        16.75,
+        91.00999999791384,
+        107.58225648432969,
+        17.849999999999998
+      ]
+    },
+    {
+      "name": "Level 1 outer balcony fascia",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.36836437135935,
+        -14.340500255823134,
+        16.599999999999998,
+        89.60000000149012,
+        108.04570777654646,
+        17.9
+      ]
+    },
+    {
+      "name": "Level 1 lower slatted fascia -2.7",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.30697030574083,
+        -14.248935399651526,
+        14.7,
+        89.5,
+        107.88920092970132,
+        15.35
+      ]
+    },
+    {
+      "name": "Level 1 lower slatted fascia -1.6",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.30697030574083,
+        -14.248935399651526,
+        15.799999999999999,
+        89.5,
+        107.88920092970132,
+        16.45
+      ]
+    },
+    {
+      "name": "Level 1 lower slatted fascia -0.5",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.30697030574083,
+        -14.248935399651526,
+        16.9,
+        89.5,
+        107.88920092970132,
+        17.549999999999997
+      ]
+    },
+    {
+      "name": "Level 1 railing horizontal 1.5",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.19953069835901,
+        -14.088696897029875,
+        18.9,
+        89.32500000298023,
+        107.61531393259763,
+        19.549999999999997
+      ]
+    },
+    {
+      "name": "Level 1 railing horizontal 2.9",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.19953069835901,
+        -14.088696897029875,
+        20.299999999999997,
+        89.32500000298023,
+        107.61531393259763,
+        20.949999999999996
+      ]
+    },
+    {
+      "name": "Level 1 railing horizontal 4.3",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.19953069835901,
+        -14.088696897029875,
+        21.7,
+        89.32500000298023,
+        107.61531393259763,
+        22.349999999999998
+      ]
+    },
+    {
+      "name": "Level 1 rail post 00",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.39000000059605,
+        -14.243511110842228,
+        14.399999999999999,
+        -49.60999999940395,
+        -13.3387111094594,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 01",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -42.49647782742977,
+        -7.121799991726875,
+        14.399999999999999,
+        -41.71647782623768,
+        -6.216999990344047,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 02",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -34.602955654263496,
+        -8.888125419616698e-05,
+        14.399999999999999,
+        -33.8229556530714,
+        0.9047111201286315,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 03",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -26.70943348109722,
+        7.121622237861156,
+        14.399999999999999,
+        -25.92943347990513,
+        8.026422239243983,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 04",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -18.815911307930946,
+        14.243333356976509,
+        14.399999999999999,
+        -18.035911306738853,
+        15.148133358359336,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 05",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -10.922389134764671,
+        21.36504447609186,
+        14.399999999999999,
+        -10.142389133572578,
+        22.269844468832016,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 06",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -3.0288669541478157,
+        28.486755586564538,
+        14.399999999999999,
+        -2.2488669604063034,
+        29.391555587947366,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 07",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        4.864655219018459,
+        35.60846670567989,
+        14.399999999999999,
+        5.644655212759972,
+        36.51326670706272,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 08",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        12.758177392184734,
+        42.73017782479524,
+        14.399999999999999,
+        13.538177393376827,
+        43.63497782617807,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 09",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        20.65169956535101,
+        49.851888943910595,
+        14.399999999999999,
+        21.431699566543102,
+        50.75668893665075,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 10",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        28.545221738517284,
+        56.973600054383276,
+        14.399999999999999,
+        29.325221739709377,
+        57.8784000557661,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 11",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        36.43874391168356,
+        64.09531117349863,
+        14.399999999999999,
+        37.21874391287565,
+        65.00011117488145,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 12",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        44.332266084849834,
+        71.21702229261398,
+        14.399999999999999,
+        45.11226608604193,
+        72.1218222939968,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 13",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        52.22578825801611,
+        78.33873340308666,
+        14.399999999999999,
+        53.0057882592082,
+        79.24353340446949,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 14",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        60.119310431182384,
+        85.46044452220201,
+        14.399999999999999,
+        60.89931043237448,
+        86.36524452358483,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 15",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        68.01283260434866,
+        92.58215564131736,
+        14.399999999999999,
+        68.79283260554075,
+        93.4869556427002,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 16",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        75.90635477751493,
+        99.70386676043272,
+        14.399999999999999,
+        76.68635477870703,
+        100.60866675317287,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 17",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.77452054619789,
+        106.4506999117136,
+        14.399999999999999,
+        84.55452054738998,
+        107.35549991309642,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 18",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        97.06882658451795,
+        14.399999999999999,
+        89.39000000059605,
+        97.9736265772581,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 19",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        85.46882658451796,
+        14.399999999999999,
+        89.39000000059605,
+        86.37362657725811,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 1 rail post 20",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        74.94759999930858,
+        14.399999999999999,
+        89.39000000059605,
+        75.8524000006914,
+        22.5
+      ]
+    },
+    {
+      "name": "Level 2 projecting balcony deck",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -40.0,
+        -13.483584485650061,
+        32.75,
+        91.00999999791384,
+        107.58225648432969,
+        33.85
+      ]
+    },
+    {
+      "name": "Level 2 outer balcony fascia",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.36836437135935,
+        -2.6116113659739493,
+        32.6,
+        89.60000000149012,
+        108.04570777654646,
+        33.9
+      ]
+    },
+    {
+      "name": "Level 2 lower slatted fascia -2.7",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.30697030574083,
+        -2.5200465098023415,
+        30.7,
+        89.5,
+        107.88920092970132,
+        31.349999999999998
+      ]
+    },
+    {
+      "name": "Level 2 lower slatted fascia -1.6",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.30697030574083,
+        -2.5200465098023415,
+        31.799999999999997,
+        89.5,
+        107.88920092970132,
+        32.449999999999996
+      ]
+    },
+    {
+      "name": "Level 2 lower slatted fascia -0.5",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.30697030574083,
+        -2.5200465098023415,
+        32.9,
+        89.5,
+        107.88920092970132,
+        33.55
+      ]
+    },
+    {
+      "name": "Level 2 railing horizontal 1.5",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.19953069835901,
+        -2.3598080071806904,
+        34.9,
+        89.32500000298023,
+        107.61531393259763,
+        35.55
+      ]
+    },
+    {
+      "name": "Level 2 railing horizontal 2.9",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.19953069835901,
+        -2.3598080071806904,
+        36.3,
+        89.32500000298023,
+        107.61531393259763,
+        36.949999999999996
+      ]
+    },
+    {
+      "name": "Level 2 railing horizontal 4.3",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.19953069835901,
+        -2.3598080071806904,
+        37.699999999999996,
+        89.32500000298023,
+        107.61531393259763,
+        38.349999999999994
+      ]
+    },
+    {
+      "name": "Level 2 rail post 00",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.39000000059605,
+        -2.514622220993042,
+        30.4,
+        -36.60999999940395,
+        -1.609822219610214,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 01",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -29.49647782742977,
+        4.60708889812231,
+        30.4,
+        -28.71647782623768,
+        5.511888890862465,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 02",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -21.602955654263496,
+        11.72880000859499,
+        30.4,
+        -20.822955653071404,
+        12.633600009977817,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 03",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -13.709433481097221,
+        18.85051112771034,
+        30.4,
+        -12.929433479905128,
+        19.75531112909317,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 04",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -5.815911307930946,
+        25.972222246825694,
+        30.4,
+        -5.0359113067388535,
+        26.877022248208522,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 05",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        2.0776108652353287,
+        33.09393336594105,
+        30.4,
+        2.8576108664274216,
+        33.9987333586812,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 06",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        9.971133045852184,
+        40.21564447641372,
+        30.4,
+        10.751133039593697,
+        41.12044447779655,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 07",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        17.86465521901846,
+        47.337355595529075,
+        30.4,
+        18.64465521275997,
+        48.24215559691191,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 08",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        25.758177392184734,
+        54.45906671464443,
+        30.4,
+        26.538177393376827,
+        55.36386671602725,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 09",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        33.65169956535101,
+        61.58077782511711,
+        30.4,
+        34.4316995665431,
+        62.485577826499934,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 10",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        41.545221738517284,
+        68.70248894423246,
+        30.4,
+        42.32522173970938,
+        69.60728894561528,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 11",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        49.43874391168356,
+        75.82420006334782,
+        30.4,
+        50.21874391287565,
+        76.72900006473064,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 12",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        57.332266084849834,
+        82.94591118246316,
+        30.4,
+        58.11226608604193,
+        83.85071117520332,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 13",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        65.22578825801611,
+        90.06762229293584,
+        30.4,
+        66.0057882592082,
+        90.97242229431868,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 14",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        73.11931043118238,
+        97.1893334120512,
+        30.4,
+        73.89931043237448,
+        98.09413341343402,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 15",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        81.01283260434866,
+        104.31104453116654,
+        30.4,
+        81.79283260554075,
+        105.21584453254937,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 16",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.19907289743423,
+        100.97605380475521,
+        30.4,
+        88.97907289862633,
+        101.88085379749536,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 17",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        89.56455390155315,
+        30.4,
+        89.39000000059605,
+        90.46935390293598,
+        38.5
+      ]
+    },
+    {
+      "name": "Level 2 rail post 18",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        88.60999999940395,
+        77.96455390155315,
+        30.4,
+        89.39000000059605,
+        78.86935390293597,
+        38.5
+      ]
+    },
+    {
+      "name": "Creek facade timber post 00",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.0,
+        -22.40088888466358,
+        0.6,
+        -48.0,
+        -20.08088888466358,
+        33.98787878787879
+      ]
+    },
+    {
+      "name": "Timber post beam tie 00 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -49.70000000298023,
+        -21.24088888466358,
+        16.9,
+        -48.29999999701977,
+        -13.00488889157772,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 00 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -49.70000000298023,
+        -21.24088888466358,
+        32.9,
+        -48.29999999701977,
+        -13.00488889157772,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 01",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -38.0,
+        -11.574222223758698,
+        0.6,
+        -36.0,
+        -9.254222223758697,
+        39.80606060606061
+      ]
+    },
+    {
+      "name": "Timber post beam tie 01 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.70000000298023,
+        -10.414222223758697,
+        16.9,
+        -36.29999999701977,
+        -2.1782222220301626,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 01 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -37.70000000298023,
+        -10.414222223758697,
+        32.9,
+        -36.29999999701977,
+        -2.1782222220301626,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 02",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -26.0,
+        -0.7475555542111396,
+        0.6,
+        -24.0,
+        1.5724444457888602,
+        43.89672131147541
+      ]
+    },
+    {
+      "name": "Timber post beam tie 02 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -25.700000002980232,
+        0.4124444457888603,
+        16.9,
+        -24.299999997019768,
+        8.648444447517395,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 02 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -25.700000002980232,
+        0.4124444457888603,
+        32.9,
+        -24.299999997019768,
+        8.648444447517395,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 03",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -14.0,
+        10.079111115336417,
+        0.6,
+        -12.0,
+        12.399111115336417,
+        45.5688524590164
+      ]
+    },
+    {
+      "name": "Timber post beam tie 03 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -13.700000002980232,
+        11.239111115336417,
+        16.9,
+        -12.299999997019768,
+        19.47511110842228,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 03 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -13.700000002980232,
+        11.239111115336417,
+        32.9,
+        -12.299999997019768,
+        19.47511110842228,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 04",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -2.0,
+        20.9057777762413,
+        0.6,
+        0.0,
+        23.2257777762413,
+        47.24098360655738
+      ]
+    },
+    {
+      "name": "Timber post beam tie 04 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -1.7000000029802322,
+        22.0657777762413,
+        16.9,
+        -0.29999999701976776,
+        30.301777777969836,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 04 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -1.7000000029802322,
+        22.0657777762413,
+        32.9,
+        -0.29999999701976776,
+        30.301777777969836,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 05",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        10.0,
+        31.732444445788857,
+        0.6,
+        12.0,
+        34.05244444578886,
+        48.91311475409836
+      ]
+    },
+    {
+      "name": "Timber post beam tie 05 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        10.299999997019768,
+        32.89244444578886,
+        16.9,
+        11.700000002980232,
+        41.128444447517396,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 05 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        10.299999997019768,
+        32.89244444578886,
+        32.9,
+        11.700000002980232,
+        41.128444447517396,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 06",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        22.0,
+        42.559111115336414,
+        0.6,
+        24.0,
+        44.879111115336414,
+        50.58524590163935
+      ]
+    },
+    {
+      "name": "Timber post beam tie 06 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        22.299999997019768,
+        43.71911111533642,
+        16.9,
+        23.700000002980232,
+        51.95511110842227,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 06 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        22.299999997019768,
+        43.71911111533642,
+        32.9,
+        23.700000002980232,
+        51.95511110842227,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 07",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        34.0,
+        53.3857777762413,
+        0.6,
+        36.0,
+        55.7057777762413,
+        52.25737704918033
+      ]
+    },
+    {
+      "name": "Timber post beam tie 07 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        34.29999999701977,
+        54.5457777762413,
+        16.9,
+        35.70000000298023,
+        62.781777777969836,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 07 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        34.29999999701977,
+        54.5457777762413,
+        32.9,
+        35.70000000298023,
+        62.781777777969836,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 08",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        46.0,
+        64.21244444578886,
+        0.6,
+        48.0,
+        66.53244444578885,
+        53.929508196721315
+      ]
+    },
+    {
+      "name": "Timber post beam tie 08 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        46.29999999701977,
+        65.37244444578886,
+        16.9,
+        47.70000000298023,
+        73.60844444751739,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 08 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        46.29999999701977,
+        65.37244444578886,
+        32.9,
+        47.70000000298023,
+        73.60844444751739,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 09",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        58.0,
+        75.03911111533641,
+        0.6,
+        60.0,
+        77.35911111533642,
+        55.601639344262296
+      ]
+    },
+    {
+      "name": "Timber post beam tie 09 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        58.29999999701977,
+        76.19911111533641,
+        16.9,
+        59.70000000298023,
+        84.43511110842228,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 09 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        58.29999999701977,
+        76.19911111533641,
+        32.9,
+        59.70000000298023,
+        84.43511110842228,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 10",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        70.0,
+        85.8657777762413,
+        0.6,
+        72.0,
+        88.1857777762413,
+        57.273770491803276
+      ]
+    },
+    {
+      "name": "Timber post beam tie 10 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        70.29999999701977,
+        87.0257777762413,
+        16.9,
+        71.70000000298023,
+        95.26177777796983,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 10 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        70.29999999701977,
+        87.0257777762413,
+        32.9,
+        71.70000000298023,
+        95.26177777796983,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek facade timber post 11",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        82.0,
+        96.69244444578885,
+        0.6,
+        84.0,
+        99.01244444578886,
+        58.945901639344264
+      ]
+    },
+    {
+      "name": "Timber post beam tie 11 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        82.29999999701977,
+        97.85244444578885,
+        16.9,
+        83.70000000298023,
+        106.08844444751739,
+        18.0
+      ]
+    },
+    {
+      "name": "Timber post beam tie 11 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        82.29999999701977,
+        97.85244444578885,
+        32.9,
+        83.70000000298023,
+        106.08844444751739,
+        34.0
+      ]
+    },
+    {
+      "name": "Creek window horizontal frame 00",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.23022773116827,
+        -22.138479323387145,
+        5.0,
+        83.23022773116827,
+        97.97929754218973,
+        5.8
+      ]
+    },
+    {
+      "name": "Creek window horizontal frame 01",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.23022773116827,
+        -22.138479323387145,
+        13.6,
+        83.23022773116827,
+        97.97929754218973,
+        14.4
+      ]
+    },
+    {
+      "name": "Creek window horizontal frame 02",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.23022773116827,
+        -22.138479323387145,
+        21.0,
+        83.23022773116827,
+        97.97929754218973,
+        21.8
+      ]
+    },
+    {
+      "name": "Creek window horizontal frame 03",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -50.23022773116827,
+        -22.138479323387145,
+        29.7,
+        83.23022773116827,
+        97.97929754218973,
+        30.5
+      ]
+    },
+    {
+      "name": "Creek window horizontal frame 04",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -42.99375,
+        -16.025001454419137,
+        37.0,
+        83.23022773116827,
+        97.97929754218973,
+        37.8
+      ]
+    },
+    {
+      "name": "Creek window horizontal frame 05",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -17.799999999999983,
+        6.705359655782449,
+        45.0,
+        83.23022773116827,
+        97.97929754218973,
+        45.8
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 00",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -42.27446445822716,
+        -16.16323200583458,
+        1.0,
+        -41.625535540282726,
+        -14.267434661984442,
+        36.981818181818184
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 01",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -36.27446445822716,
+        -10.749898675382136,
+        1.0,
+        -35.625535540282726,
+        -8.854101322889328,
+        39.89090909090909
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 02",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -30.274464458227158,
+        -5.336565336287022,
+        1.0,
+        -29.625535540282726,
+        -3.4407679924368857,
+        42.8
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 03",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -24.274464458227158,
+        0.07676799416542053,
+        1.0,
+        -23.625535540282726,
+        1.9725653380155561,
+        43.63606557377049
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 04",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -18.274464458227158,
+        5.4901013246178625,
+        1.0,
+        -17.625535540282726,
+        7.385898677110672,
+        44.47213114754098
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 05",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -12.274464458227158,
+        10.903434663712977,
+        1.0,
+        -11.625535540282726,
+        12.799232007563113,
+        45.308196721311475
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 06",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -6.274464458227158,
+        16.31676799416542,
+        1.0,
+        -5.625535540282726,
+        18.212565338015555,
+        46.144262295081965
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 07",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -0.2744644582271576,
+        21.730101324617863,
+        1.0,
+        0.3744644597172737,
+        23.62589867711067,
+        46.980327868852456
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 08",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        5.725535541772842,
+        27.143434663712977,
+        1.0,
+        6.374464459717274,
+        29.03923200756311,
+        47.816393442622946
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 09",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        11.725535541772842,
+        32.55676799416542,
+        1.0,
+        12.374464459717274,
+        34.45256533801555,
+        48.652459016393436
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 10",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        17.725535541772842,
+        37.97010132461786,
+        1.0,
+        18.374464459717274,
+        39.86589867711067,
+        49.488524590163934
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 11",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        23.725535541772842,
+        43.383434663712976,
+        1.0,
+        24.374464459717274,
+        45.27923200756311,
+        50.324590163934424
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 12",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        29.725535541772842,
+        48.796767994165414,
+        1.0,
+        30.374464459717274,
+        50.692565338015555,
+        51.160655737704914
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 13",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        35.72553554177284,
+        54.21010132461786,
+        1.0,
+        36.374464459717274,
+        56.105898677110666,
+        51.996721311475405
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 14",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        41.72553554177284,
+        59.62343466371298,
+        1.0,
+        42.374464459717274,
+        61.51923200756311,
+        52.832786885245895
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 15",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        47.72553554177284,
+        65.03676799416542,
+        1.0,
+        48.374464459717274,
+        66.93256533801555,
+        53.66885245901639
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 16",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        53.72553554177284,
+        70.45010132461786,
+        1.0,
+        54.374464459717274,
+        72.34589867711067,
+        54.50491803278688
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 17",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        59.72553554177284,
+        75.86343466371298,
+        1.0,
+        60.374464459717274,
+        77.75923200756311,
+        55.34098360655737
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 18",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        65.72553554177284,
+        81.27676799416541,
+        1.0,
+        66.37446445971727,
+        83.17256533801554,
+        56.17704918032786
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 19",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        71.72553554177284,
+        86.69010132461786,
+        1.0,
+        72.37446445971727,
+        88.58589867711066,
+        57.01311475409835
+      ]
+    },
+    {
+      "name": "Creek secondary mullion 20",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        77.72553554177284,
+        92.10343466371297,
+        1.0,
+        78.37446445971727,
+        93.99923200756311,
+        57.84918032786885
+      ]
+    },
+    {
+      "name": "Upper terrace independent deep canopy",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        2.0,
+        22.572799551188943,
+        47.0,
+        92.0,
+        109.03220638275145,
+        48.1
+      ]
+    },
+    {
+      "name": "Upper canopy support 6",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        5.149999998509884,
+        34.58733333736658,
+        33.5,
+        6.850000001490116,
+        36.55933333218098,
+        48.71639344262295
+      ]
+    },
+    {
+      "name": "Upper canopy support 18",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        17.149999998509884,
+        45.413999998271464,
+        33.5,
+        18.850000001490116,
+        47.38600000172853,
+        50.38852459016394
+      ]
+    },
+    {
+      "name": "Upper canopy support 30",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        29.149999998509884,
+        56.24066666781902,
+        33.5,
+        30.850000001490116,
+        58.21266666263342,
+        52.06065573770492
+      ]
+    },
+    {
+      "name": "Upper canopy support 42",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        41.149999998509884,
+        67.06733333736658,
+        33.5,
+        42.850000001490116,
+        69.03933333218097,
+        53.7327868852459
+      ]
+    },
+    {
+      "name": "Upper canopy support 54",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        53.149999998509884,
+        77.89399999827145,
+        33.5,
+        54.850000001490116,
+        79.86600000172852,
+        55.40491803278689
+      ]
+    },
+    {
+      "name": "Upper canopy support 66",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        65.14999999850988,
+        88.72066666781902,
+        33.5,
+        66.85000000149012,
+        90.69266666263341,
+        57.07704918032787
+      ]
+    },
+    {
+      "name": "Upper canopy support 78",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        77.14999999850988,
+        99.54733333736658,
+        33.5,
+        78.85000000149012,
+        101.51933333218096,
+        58.74918032786886
+      ]
+    },
+    {
+      "name": "East tall timber frame 00",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        -34.39399999827146,
+        17.0,
+        85.0,
+        -32.88600000172853,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 01",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        -20.473999998271463,
+        17.0,
+        85.0,
+        -18.966000001728535,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 02",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        -6.553999998271465,
+        17.0,
+        85.0,
+        -5.046000001728534,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 03",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        7.366000001728534,
+        17.0,
+        85.0,
+        8.873999998271465,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 04",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        21.28600000172853,
+        17.0,
+        85.0,
+        22.793999998271463,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 05",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        35.20600000172853,
+        17.0,
+        85.0,
+        36.71399999827146,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 06",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        49.12600000172853,
+        17.0,
+        85.0,
+        50.63399999827146,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 07",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        63.04600000172853,
+        17.0,
+        85.0,
+        64.55399999827146,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 08",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        76.96600000172853,
+        17.0,
+        85.0,
+        78.47399999827147,
+        60.1
+      ]
+    },
+    {
+      "name": "East tall timber frame 09",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.45000000298023,
+        90.88600000172853,
+        17.0,
+        85.0,
+        92.39399999827145,
+        60.1
+      ]
+    },
+    {
+      "name": "East glass transom 17.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.5,
+        -37.12,
+        16.95,
+        85.04999999701977,
+        104.39999999999999,
+        17.849999999999998
+      ]
+    },
+    {
+      "name": "East glass transom 25.2",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.5,
+        -37.12,
+        24.75,
+        85.04999999701977,
+        104.39999999999999,
+        25.65
+      ]
+    },
+    {
+      "name": "East glass transom 33.4",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.5,
+        -37.12,
+        32.949999999999996,
+        85.04999999701977,
+        104.39999999999999,
+        33.85
+      ]
+    },
+    {
+      "name": "East glass transom 43.7",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.5,
+        -37.12,
+        43.25,
+        85.04999999701977,
+        104.39999999999999,
+        44.150000000000006
+      ]
+    },
+    {
+      "name": "East glass transom 53.5",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.5,
+        -37.12,
+        53.05,
+        85.04999999701977,
+        104.39999999999999,
+        53.95
+      ]
+    },
+    {
+      "name": "East opaque board side portion",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        83.5,
+        -36.88799999654293,
+        17.0,
+        85.20000000298023,
+        -9.28,
+        42.0
+      ]
+    },
+    {
+      "name": "East board joint 18.0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        18.0,
+        85.32000000029802,
+        -9.28,
+        18.35
+      ]
+    },
+    {
+      "name": "East board joint 19.8",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        19.8,
+        85.32000000029802,
+        -9.28,
+        20.150000000000002
+      ]
+    },
+    {
+      "name": "East board joint 21.6",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        21.6,
+        85.32000000029802,
+        -9.28,
+        21.950000000000003
+      ]
+    },
+    {
+      "name": "East board joint 23.4",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        23.400000000000002,
+        85.32000000029802,
+        -9.28,
+        23.750000000000004
+      ]
+    },
+    {
+      "name": "East board joint 25.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        25.200000000000003,
+        85.32000000029802,
+        -9.28,
+        25.550000000000004
+      ]
+    },
+    {
+      "name": "East board joint 27.0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        27.000000000000004,
+        85.32000000029802,
+        -9.28,
+        27.350000000000005
+      ]
+    },
+    {
+      "name": "East board joint 28.8",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        28.800000000000004,
+        85.32000000029802,
+        -9.28,
+        29.150000000000006
+      ]
+    },
+    {
+      "name": "East board joint 30.6",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        30.600000000000005,
+        85.32000000029802,
+        -9.28,
+        30.950000000000006
+      ]
+    },
+    {
+      "name": "East board joint 32.4",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        32.400000000000006,
+        85.32000000029802,
+        -9.28,
+        32.75000000000001
+      ]
+    },
+    {
+      "name": "East board joint 34.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        34.2,
+        85.32000000029802,
+        -9.28,
+        34.550000000000004
+      ]
+    },
+    {
+      "name": "East board joint 36.0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        36.00000000000001,
+        85.32000000029802,
+        -9.28,
+        36.35000000000001
+      ]
+    },
+    {
+      "name": "East board joint 37.8",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        37.80000000000001,
+        85.32000000029802,
+        -9.28,
+        38.15000000000001
+      ]
+    },
+    {
+      "name": "East board joint 39.6",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.10000000149012,
+        -36.88799999654293,
+        39.60000000000001,
+        85.32000000029802,
+        -9.28,
+        39.95000000000001
+      ]
+    },
+    {
+      "name": "South timber opaque lower spandrel",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        10.0,
+        -39.556000001728535,
+        31.0,
+        83.70000000298023,
+        -37.93200000345707,
+        35.5
+      ]
+    },
+    {
+      "name": "South facade timber frame 00",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        14.299999997019768,
+        -39.556000001728535,
+        16.7,
+        15.700000002980232,
+        -37.699999999999996,
+        49.77049180327869
+      ]
+    },
+    {
+      "name": "South facade timber frame 01",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        24.299999997019768,
+        -39.556000001728535,
+        16.7,
+        25.700000002980232,
+        -37.699999999999996,
+        51.16393442622952
+      ]
+    },
+    {
+      "name": "South facade timber frame 02",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        34.29999999701977,
+        -39.556000001728535,
+        16.7,
+        35.70000000298023,
+        -37.699999999999996,
+        52.55737704918033
+      ]
+    },
+    {
+      "name": "South facade timber frame 03",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        44.29999999701977,
+        -39.556000001728535,
+        16.7,
+        45.70000000298023,
+        -37.699999999999996,
+        53.950819672131146
+      ]
+    },
+    {
+      "name": "South facade timber frame 04",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        54.29999999701977,
+        -39.556000001728535,
+        16.7,
+        55.70000000298023,
+        -37.699999999999996,
+        55.344262295081975
+      ]
+    },
+    {
+      "name": "South facade timber frame 05",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        64.29999999701977,
+        -39.556000001728535,
+        16.7,
+        65.70000000298023,
+        -37.699999999999996,
+        56.73770491803279
+      ]
+    },
+    {
+      "name": "South facade timber frame 06",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        74.29999999701977,
+        -39.556000001728535,
+        16.7,
+        75.70000000298023,
+        -37.699999999999996,
+        58.131147540983605
+      ]
+    },
+    {
+      "name": "South intermediate projecting shade",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        8.0,
+        -44.08,
+        32.8,
+        85.0,
+        -36.88799999654293,
+        34.1
+      ]
+    },
+    {
+      "name": "South shade trellis end 00",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        9.649999998509884,
+        -46.4,
+        33.2,
+        10.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 01",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        12.649999998509884,
+        -46.4,
+        33.2,
+        13.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 02",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        15.649999998509884,
+        -46.4,
+        33.2,
+        16.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 03",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        18.649999998509884,
+        -46.4,
+        33.2,
+        19.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 04",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        21.649999998509884,
+        -46.4,
+        33.2,
+        22.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 05",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        24.649999998509884,
+        -46.4,
+        33.2,
+        25.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 06",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        27.649999998509884,
+        -46.4,
+        33.2,
+        28.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 07",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        30.649999998509884,
+        -46.4,
+        33.2,
+        31.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 08",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        33.649999998509884,
+        -46.4,
+        33.2,
+        34.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 09",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        36.649999998509884,
+        -46.4,
+        33.2,
+        37.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 10",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        39.649999998509884,
+        -46.4,
+        33.2,
+        40.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 11",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        42.649999998509884,
+        -46.4,
+        33.2,
+        43.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 12",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        45.649999998509884,
+        -46.4,
+        33.2,
+        46.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 13",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        48.649999998509884,
+        -46.4,
+        33.2,
+        49.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 14",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        51.649999998509884,
+        -46.4,
+        33.2,
+        52.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 15",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        54.649999998509884,
+        -46.4,
+        33.2,
+        55.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 16",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        57.649999998509884,
+        -46.4,
+        33.2,
+        58.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 17",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        60.649999998509884,
+        -46.4,
+        33.2,
+        61.350000001490116,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 18",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        63.649999998509884,
+        -46.4,
+        33.2,
+        64.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 19",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        66.64999999850988,
+        -46.4,
+        33.2,
+        67.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 20",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        69.64999999850988,
+        -46.4,
+        33.2,
+        70.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 21",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        72.64999999850988,
+        -46.4,
+        33.2,
+        73.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 22",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        75.64999999850988,
+        -46.4,
+        33.2,
+        76.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 23",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        78.64999999850988,
+        -46.4,
+        33.2,
+        79.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 24",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        81.64999999850988,
+        -46.4,
+        33.2,
+        82.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "South shade trellis end 25",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.64999999850988,
+        -46.4,
+        33.2,
+        85.35000000149012,
+        -37.699999999999996,
+        33.9
+      ]
+    },
+    {
+      "name": "Low west opaque end body",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -69.0,
+        -38.279999999999994,
+        0.7,
+        -46.0,
+        -18.56,
+        35.74242424242424
+      ]
+    },
+    {
+      "name": "Low west small window 00",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -62.29999999701977,
+        -38.68600000172853,
+        22.0,
+        -59.70000000298023,
+        -37.989999999999995,
+        26.2
+      ]
+    },
+    {
+      "name": "Low west small window 01",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -53.29999999701977,
+        -38.68600000172853,
+        22.0,
+        -50.70000000298023,
+        -37.989999999999995,
+        26.2
+      ]
+    },
+    {
+      "name": "Whole nonuniform bent roof shell",
+      "material": "warm_timber",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -96.0,
+        -49.879999999999995,
+        10.5,
+        92.00000000000001,
+        120.63999999999999,
+        61.0
+      ]
+    },
+    {
+      "name": "Pale continuous roof eave edge",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -96.0,
+        -49.879999999999995,
+        10.9,
+        92.00000000000001,
+        120.63999999999999,
+        61.35
+      ]
+    },
+    {
+      "name": "Separate triangular planted roof",
+      "material": "roof_green",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        13.999999999999998,
+        -39.44,
+        50.0311475409836,
+        85.0,
+        73.20888888984918,
+        60.57459016393442
+      ]
+    },
+    {
+      "name": "Long photovoltaic panel field",
+      "material": "pv_bluegrey",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -28.0,
+        -19.462222220301626,
+        44.178688524590164,
+        85.0,
+        106.84888888984918,
+        60.57459016393442
+      ]
+    },
+    {
+      "name": "Reduced real PV panel frame grid",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -27.399999998509884,
+        -16.938442118763923,
+        44.562295082174856,
+        84.39999999850988,
+        100.71621988981961,
+        60.710983606349735
+      ]
+    },
+    {
+      "name": "Roof access walk dividing PV and planting",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        6.200000002980232,
+        -17.4,
+        48.944262295497246,
+        86.10509310662746,
+        79.49705631822347,
+        60.8285785476448
+      ]
+    },
+    {
+      "name": "Reduced roof deck slat rhythm",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -88.92966454476118,
+        -46.1912000003457,
+        15.078041432843063,
+        90.14999999850988,
+        115.7912000003457,
+        61.042213114546456
+      ]
+    },
+    {
+      "name": "Roof rail 0 horizontal 2.0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        11.800469301640987,
+        14.589080882668494,
+        51.824655558425384,
+        85.19953069835901,
+        81.04647467672824,
+        62.70239362190248
+      ]
+    },
+    {
+      "name": "Roof rail 0 horizontal 4.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        11.800469301640987,
+        14.589080882668494,
+        54.02465555842539,
+        85.19953069835901,
+        81.04647467672824,
+        64.90239362190248
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 00",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        11.609999999403954,
+        14.434266668856143,
+        49.55245901639344,
+        12.390000000596046,
+        15.33906667023897,
+        54.85245901639344
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 01",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        18.714169956743717,
+        20.84380667001009,
+        50.542384338185066,
+        19.49416995793581,
+        21.748606671392917,
+        55.84238433818506
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 02",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        25.81833991408348,
+        27.253346679806707,
+        51.53230965997669,
+        26.598339915275574,
+        28.158146672546863,
+        56.83230965997669
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 03",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        32.922509871423244,
+        33.66288668096065,
+        52.52223498176831,
+        33.70250987261534,
+        34.56768668234348,
+        57.822234981768304
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 04",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        40.02667982876301,
+        40.07242669075727,
+        53.51216030355994,
+        40.80667982250452,
+        40.97722668349743,
+        58.812160303559935
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 05",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        47.13084977865219,
+        46.48196669191122,
+        54.502085625351555,
+        47.910849779844284,
+        47.38676669329404,
+        59.80208562535155
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 06",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        54.235019735991955,
+        52.89150669306516,
+        55.49201094714318,
+        55.01501973718405,
+        53.79630669444799,
+        60.792010947143176
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 07",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        61.33918969333172,
+        59.30104670286178,
+        56.4819362689348,
+        62.11918969452381,
+        60.20584670424461,
+        61.7819362689348
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 08",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        68.44335965067148,
+        65.71058670401572,
+        57.47186159072642,
+        69.22335965186357,
+        66.61538670539855,
+        62.77186159072642
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 09",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        75.54752960801125,
+        72.12012671381234,
+        58.46178691251804,
+        76.32752960920334,
+        73.02492671519518,
+        63.76178691251804
+      ]
+    },
+    {
+      "name": "Roof rail 0 post 10",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        82.65169956535101,
+        78.5296667149663,
+        59.45171223430967,
+        83.4316995665431,
+        79.43446671634912,
+        64.75171223430966
+      ]
+    },
+    {
+      "name": "Roof rail 1 horizontal 2.0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        11.800469301640987,
+        8.789080882668495,
+        51.824655558425384,
+        85.19953069835901,
+        75.24647467672824,
+        62.70239362190248
+      ]
+    },
+    {
+      "name": "Roof rail 1 horizontal 4.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        11.800469301640987,
+        8.789080882668495,
+        54.02465555842539,
+        85.19953069835901,
+        75.24647467672824,
+        64.90239362190248
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 00",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        11.609999999403954,
+        8.634266668856144,
+        49.55245901639344,
+        12.390000000596046,
+        9.539066670238972,
+        54.85245901639344
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 01",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        18.714169956743717,
+        15.043806670010088,
+        50.542384338185066,
+        19.49416995793581,
+        15.948606671392916,
+        55.84238433818506
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 02",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        25.81833991408348,
+        21.453346679806707,
+        51.53230965997669,
+        26.598339915275574,
+        22.358146672546862,
+        56.83230965997669
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 03",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        32.922509871423244,
+        27.862886680960653,
+        52.52223498176831,
+        33.70250987261534,
+        28.76768668234348,
+        57.822234981768304
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 04",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        40.02667982876301,
+        34.27242669075727,
+        53.51216030355994,
+        40.80667982250452,
+        35.17722668349742,
+        58.812160303559935
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 05",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        47.13084977865219,
+        40.68196669191122,
+        54.502085625351555,
+        47.910849779844284,
+        41.586766693294045,
+        59.80208562535155
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 06",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        54.235019735991955,
+        47.09150669306516,
+        55.49201094714318,
+        55.01501973718405,
+        47.99630669444799,
+        60.792010947143176
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 07",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        61.33918969333172,
+        53.501046702861785,
+        56.4819362689348,
+        62.11918969452381,
+        54.40584670424461,
+        61.7819362689348
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 08",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        68.44335965067148,
+        59.91058670401573,
+        57.47186159072642,
+        69.22335965186357,
+        60.81538670539855,
+        62.77186159072642
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 09",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        75.54752960801125,
+        66.32012671381234,
+        58.46178691251804,
+        76.32752960920334,
+        67.22492671519518,
+        63.76178691251804
+      ]
+    },
+    {
+      "name": "Roof rail 1 post 10",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        82.65169956535101,
+        72.72966671496629,
+        59.45171223430967,
+        83.4316995665431,
+        73.63446671634912,
+        64.75171223430966
+      ]
+    },
+    {
+      "name": "Roof rail 2 horizontal 2.0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        14.0,
+        -39.81700000345707,
+        52.131147540983605,
+        85.32500000298023,
+        73.20888888984918,
+        62.7198770495956
+      ]
+    },
+    {
+      "name": "Roof rail 2 horizontal 4.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        14.0,
+        -39.81700000345707,
+        54.33114754098361,
+        85.32500000298023,
+        73.20888888984918,
+        64.9198770495956
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 00",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        13.609999999403954,
+        -39.89240000069141,
+        49.83114754098361,
+        14.390000000596046,
+        -38.987599999308586,
+        55.131147540983605
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 01",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        22.609999999403954,
+        -39.89240000069141,
+        51.08524590163935,
+        23.390000000596046,
+        -38.987599999308586,
+        56.385245901639344
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 02",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        31.609999999403954,
+        -39.89240000069141,
+        52.339344262295086,
+        32.39000000059605,
+        -38.987599999308586,
+        57.63934426229508
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 03",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        40.60999999940395,
+        -39.89240000069141,
+        53.59344262295082,
+        41.39000000059605,
+        -38.987599999308586,
+        58.893442622950815
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 04",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        49.60999999940395,
+        -39.89240000069141,
+        54.847540983606564,
+        50.39000000059605,
+        -38.987599999308586,
+        60.14754098360656
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 05",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        58.60999999940395,
+        -39.89240000069141,
+        56.101639344262296,
+        59.39000000059605,
+        -38.987599999308586,
+        61.40163934426229
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 06",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        67.60999999940395,
+        -39.89240000069141,
+        57.355737704918035,
+        68.39000000059605,
+        -38.987599999308586,
+        62.65573770491803
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 07",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        76.60999999940395,
+        -39.89240000069141,
+        58.609836065573774,
+        77.39000000059605,
+        -38.987599999308586,
+        63.90983606557377
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 08",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        -38.73240000069141,
+        59.72459016393442,
+        85.39000000059605,
+        -37.82759999930858,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 09",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        -28.292400000691412,
+        59.72459016393442,
+        85.39000000059605,
+        -27.387599999308584,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 10",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        -17.852400000691414,
+        59.72459016393442,
+        85.39000000059605,
+        -16.947599999308586,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 11",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        -7.412400000691413,
+        59.72459016393442,
+        85.39000000059605,
+        -6.507599999308586,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 12",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        3.027599999308586,
+        59.72459016393442,
+        85.39000000059605,
+        3.9324000006914135,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 13",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        13.467599999308586,
+        59.72459016393442,
+        85.39000000059605,
+        14.372400000691412,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 14",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        23.907599999308584,
+        59.72459016393442,
+        85.39000000059605,
+        24.81240000069141,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 15",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        34.347599999308585,
+        59.72459016393442,
+        85.39000000059605,
+        35.25240000069141,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 16",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        44.78759999930858,
+        59.72459016393442,
+        85.39000000059605,
+        45.692400000691414,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 17",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        55.22759999930858,
+        59.72459016393442,
+        85.39000000059605,
+        56.13240000069141,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Roof rail 2 post 18",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        84.60999999940395,
+        65.66759999930858,
+        59.72459016393442,
+        85.39000000059605,
+        66.5724000006914,
+        65.02459016393442
+      ]
+    },
+    {
+      "name": "Single observed small skylight frame",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        49.0,
+        -5.8,
+        54.90819672131148,
+        56.0,
+        2.32,
+        57.483606557377044
+      ]
+    },
+    {
+      "name": "Single skylight dark inset",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        49.649999998509884,
+        -5.046000001728534,
+        56.398770491595634,
+        55.350000001490116,
+        1.5660000017285345,
+        57.54303278709288
+      ]
+    },
+    {
+      "name": "Attached service tower masonry body",
+      "material": "service_masonry",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        0.7,
+        10.0,
+        -19.72,
+        50.3
+      ]
+    },
+    {
+      "name": "Service tower pale course 4.0",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        4.0,
+        10.179999999701977,
+        -19.511200000345706,
+        4.4
+      ]
+    },
+    {
+      "name": "Service tower pale course 9.2",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        9.2,
+        10.179999999701977,
+        -19.511200000345706,
+        9.6
+      ]
+    },
+    {
+      "name": "Service tower pale course 14.4",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        14.399999999999999,
+        10.179999999701977,
+        -19.511200000345706,
+        14.799999999999999
+      ]
+    },
+    {
+      "name": "Service tower pale course 19.6",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        19.599999999999998,
+        10.179999999701977,
+        -19.511200000345706,
+        19.999999999999996
+      ]
+    },
+    {
+      "name": "Service tower pale course 24.8",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        24.799999999999997,
+        10.179999999701977,
+        -19.511200000345706,
+        25.199999999999996
+      ]
+    },
+    {
+      "name": "Service tower pale course 30.0",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        29.999999999999996,
+        10.179999999701977,
+        -19.511200000345706,
+        30.399999999999995
+      ]
+    },
+    {
+      "name": "Service tower pale course 35.2",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        35.199999999999996,
+        10.179999999701977,
+        -19.511200000345706,
+        35.599999999999994
+      ]
+    },
+    {
+      "name": "Service tower pale course 40.4",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        40.39999999999999,
+        10.179999999701977,
+        -19.511200000345706,
+        40.79999999999999
+      ]
+    },
+    {
+      "name": "Service tower pale course 45.6",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.17999999970198,
+        -50.08879999965429,
+        45.599999999999994,
+        10.179999999701977,
+        -19.511200000345706,
+        45.99999999999999
+      ]
+    },
+    {
+      "name": "South service small opening 0 23",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -45.0,
+        -50.20480000138282,
+        23.0,
+        -41.0,
+        -49.589999999999996,
+        27.5
+      ]
+    },
+    {
+      "name": "South service small opening 0 38",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -45.0,
+        -50.20480000138282,
+        38.0,
+        -41.0,
+        -49.589999999999996,
+        42.5
+      ]
+    },
+    {
+      "name": "South service small opening 1 23",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -22.0,
+        -50.20480000138282,
+        23.0,
+        -18.0,
+        -49.589999999999996,
+        27.5
+      ]
+    },
+    {
+      "name": "South service small opening 1 38",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -22.0,
+        -50.20480000138282,
+        38.0,
+        -18.0,
+        -49.589999999999996,
+        42.5
+      ]
+    },
+    {
+      "name": "South service small opening 2 23",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -1.0,
+        -50.20480000138282,
+        23.0,
+        3.0,
+        -49.589999999999996,
+        27.5
+      ]
+    },
+    {
+      "name": "South service small opening 2 38",
+      "material": "glazing",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -1.0,
+        -50.20480000138282,
+        38.0,
+        3.0,
+        -49.589999999999996,
+        42.5
+      ]
+    },
+    {
+      "name": "Open screen equipment floor",
+      "material": "pale_trim",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -53.600000001490116,
+        -49.416000001728534,
+        50.0,
+        9.600000001490116,
+        -20.183999998271464,
+        50.7
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 51.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        51.2,
+        10.0,
+        -19.72,
+        51.88
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 52.7",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        52.7,
+        10.0,
+        -19.72,
+        53.38
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 54.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        54.2,
+        10.0,
+        -19.72,
+        54.88
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 55.7",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        55.7,
+        10.0,
+        -19.72,
+        56.38
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 57.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        57.2,
+        10.0,
+        -19.72,
+        57.88
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 58.7",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        58.7,
+        10.0,
+        -19.72,
+        59.38
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 60.2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        60.2,
+        10.0,
+        -19.72,
+        60.88
+      ]
+    },
+    {
+      "name": "Open tower perimeter slat 61.7",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.0,
+        -49.879999999999995,
+        61.7,
+        10.0,
+        -19.72,
+        62.38
+      ]
+    },
+    {
+      "name": "Tower open screen post 0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.04999999701977,
+        -49.93799999654293,
+        49.7,
+        -52.95000000298023,
+        -48.66200000345707,
+        62.2
+      ]
+    },
+    {
+      "name": "Tower open screen post 1",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -54.04999999701977,
+        -20.937999996542928,
+        49.7,
+        -52.95000000298023,
+        -19.662000003457067,
+        62.2
+      ]
+    },
+    {
+      "name": "Tower open screen post 2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        8.950000002980232,
+        -49.93799999654293,
+        49.7,
+        10.049999997019768,
+        -48.66200000345707,
+        62.2
+      ]
+    },
+    {
+      "name": "Tower open screen post 3",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        8.950000002980232,
+        -20.937999996542928,
+        49.7,
+        10.049999997019768,
+        -19.662000003457067,
+        62.2
+      ]
+    },
+    {
+      "name": "Tower open screen post 4",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -22.549999997019768,
+        -49.93799999654293,
+        49.7,
+        -21.450000002980232,
+        -48.66200000345707,
+        62.2
+      ]
+    },
+    {
+      "name": "Tower open screen post 5",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -22.549999997019768,
+        -20.937999996542928,
+        49.7,
+        -21.450000002980232,
+        -19.662000003457067,
+        62.2
+      ]
+    },
+    {
+      "name": "Simplified visible roof equipment 0",
+      "material": "roof_equipment",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -49.0,
+        -41.76,
+        50.4,
+        -39.0,
+        -27.839999999999996,
+        53.7
+      ]
+    },
+    {
+      "name": "Simplified visible roof equipment 1",
+      "material": "roof_equipment",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -27.0,
+        -41.76,
+        50.4,
+        -17.0,
+        -27.839999999999996,
+        53.7
+      ]
+    },
+    {
+      "name": "Simplified visible roof equipment 2",
+      "material": "roof_equipment",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -6.0,
+        -41.76,
+        50.4,
+        4.0,
+        -27.839999999999996,
+        53.7
+      ]
+    },
+    {
+      "name": "East exterior stair tread 00",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        74.24,
+        0.8,
+        92.0,
+        76.15399999827146,
+        2.5428571428571427
+      ]
+    },
+    {
+      "name": "East exterior stair tread 01",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        75.97999999999999,
+        0.8,
+        92.0,
+        77.89399999827145,
+        3.685714285714285
+      ]
+    },
+    {
+      "name": "East exterior stair tread 02",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        77.72,
+        0.8,
+        92.0,
+        79.63399999827146,
+        4.828571428571428
+      ]
+    },
+    {
+      "name": "East exterior stair tread 03",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        79.46,
+        0.8,
+        92.0,
+        81.37399999827146,
+        5.9714285714285715
+      ]
+    },
+    {
+      "name": "East exterior stair tread 04",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        81.19999999999999,
+        0.8,
+        92.0,
+        83.11399999827145,
+        7.114285714285714
+      ]
+    },
+    {
+      "name": "East exterior stair tread 05",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        82.94,
+        0.8,
+        92.0,
+        84.85399999827146,
+        8.257142857142856
+      ]
+    },
+    {
+      "name": "East exterior stair tread 06",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        84.67999999999999,
+        0.8,
+        92.0,
+        86.59399999827146,
+        9.4
+      ]
+    },
+    {
+      "name": "East exterior stair tread 07",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        86.41999999999999,
+        0.8,
+        92.0,
+        88.33399999827147,
+        10.542857142857143
+      ]
+    },
+    {
+      "name": "East exterior stair tread 08",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        88.16,
+        0.8,
+        92.0,
+        90.07399999827146,
+        11.685714285714287
+      ]
+    },
+    {
+      "name": "East exterior stair tread 09",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        89.89999999999999,
+        0.8,
+        92.0,
+        91.81399999827146,
+        12.82857142857143
+      ]
+    },
+    {
+      "name": "East exterior stair tread 10",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        91.64,
+        0.8,
+        92.0,
+        93.55399999827146,
+        13.971428571428572
+      ]
+    },
+    {
+      "name": "East exterior stair tread 11",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        93.38,
+        0.8,
+        92.0,
+        95.29399999827146,
+        15.114285714285714
+      ]
+    },
+    {
+      "name": "East exterior stair tread 12",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        95.11999999999999,
+        0.8,
+        92.0,
+        97.03399999827145,
+        16.257142857142856
+      ]
+    },
+    {
+      "name": "East exterior stair tread 13",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        85.0,
+        96.86,
+        0.8,
+        92.0,
+        98.77399999827146,
+        17.4
+      ]
+    },
+    {
+      "name": "East exterior stair inclined handrail",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        91.6,
+        73.9964701474231,
+        5.224454369390362,
+        92.4,
+        98.84352985257689,
+        21.77554563060964
+      ]
+    },
+    {
+      "name": "East stair handrail post 0",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        91.64999999850988,
+        73.83399999827147,
+        1.2,
+        92.35000000149012,
+        74.64600000172852,
+        6.1
+      ]
+    },
+    {
+      "name": "East stair handrail post 1",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        91.64999999850988,
+        79.92399999827146,
+        5.2,
+        92.35000000149012,
+        80.73600000172853,
+        10.100000000000001
+      ]
+    },
+    {
+      "name": "East stair handrail post 2",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        91.64999999850988,
+        86.01399999827146,
+        9.200000000000001,
+        92.35000000149012,
+        86.82600000172853,
+        14.100000000000001
+      ]
+    },
+    {
+      "name": "East stair handrail post 3",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        91.64999999850988,
+        92.10399999827146,
+        13.200000000000001,
+        92.35000000149012,
+        92.91600000172853,
+        18.1
+      ]
+    },
+    {
+      "name": "East stair handrail post 4",
+      "material": "weathered_wood",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        91.64999999850988,
+        98.19399999827147,
+        17.2,
+        92.35000000149012,
+        99.00600000172852,
+        22.099999999999998
+      ]
+    },
+    {
+      "name": "Creek-side defining retaining strip",
+      "material": "retaining_stone",
+      "evidence": "P01 full 1F/RF and section, A01/A03/A04/A05; proportionally bounded original-design exterior",
+      "bounds_model_mm": [
+        -72.51402352750301,
+        -28.473533990085123,
+        0.1,
+        99.31035220623016,
+        121.6505315476656,
+        3.2
+      ]
+    }
+  ]
+}

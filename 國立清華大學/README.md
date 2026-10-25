@@ -2,9 +2,9 @@
 
 本輪核准的外觀近似模型套件；全校尚未完成。套件可能包含相連群組、局部或歷史外觀，件數不等於完整建築棟數。旺宏館填縫版已完成一套參考切片，詳見下方卡片；其餘模型未正式切片。全校模型均未實體試印，沒有真機製造放行。各件警示、來源年代、背面簡化及支撐需求請讀詳頁。只公開來源URL，不散布原照片或PDF。
 
-29件均依來源歸入校本部；南大、高雄仍有資料缺口，沒有以校本部模型冒充其他校區。清齋僅AB雙翼；化工館與百齡堂為整修／整備前歷史外觀。98列為混合地圖標籤，非98棟。
+30件均依來源歸入校本部；南大、高雄仍有資料缺口，沒有以校本部模型冒充其他校區。清齋僅AB雙翼；化工館與百齡堂為整修／整備前歷史外觀。98列為混合地圖標籤，非98棟。
 
-現行共29套（原24套加北校門簡冊立柱、月涵亭、梅亭／機亭、奕亭及成功湖昱寧島涼亭），每件獨立縮放，並非統一比例校園拼圖。
+現行共30套（原24套加北校門簡冊立柱、月涵亭、梅亭／機亭、奕亭、成功湖昱寧島涼亭及捷英文物館），每件獨立縮放，並非統一比例校園拼圖。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -17,7 +17,7 @@
 | [第三綜合大樓](校本部/buildings/nthu-general-building-iii/README.zh-TW.md)<br>[![第三綜合大樓](校本部/buildings/nthu-general-building-iii/appearance/previews/front.png)](校本部/buildings/nthu-general-building-iii/README.zh-TW.md)<br>[資料夾](校本部/buildings/nthu-general-building-iii) | [竹屋（原住民族科學發展中心）](校本部/buildings/nthu-bamboo-house/README.zh-TW.md)<br>[![竹屋（原住民族科學發展中心）](校本部/buildings/nthu-bamboo-house/appearance/previews/front.png)](校本部/buildings/nthu-bamboo-house/README.zh-TW.md)<br>[資料夾](校本部/buildings/nthu-bamboo-house) | [李存敏館（綠色低碳能源教學研究大樓）](校本部/buildings/nthu-lee-tsun-min/README.zh-TW.md)<br>[![李存敏館（綠色低碳能源教學研究大樓）](校本部/buildings/nthu-lee-tsun-min/appearance/previews/front.png)](校本部/buildings/nthu-lee-tsun-min/README.zh-TW.md)<br>[資料夾](校本部/buildings/nthu-lee-tsun-min) |
 | [清齋 AB 雙翼外觀群（非整個清齋）](校本部/buildings/nthu-qing-dormitory-ab/README.zh-TW.md)<br>[![清齋 AB 雙翼外觀群（非整個清齋）](校本部/buildings/nthu-qing-dormitory-ab/appearance/previews/front.png)](校本部/buildings/nthu-qing-dormitory-ab/README.zh-TW.md)<br>[資料夾](校本部/buildings/nthu-qing-dormitory-ab) | [新齋](校本部/buildings/nthu-xin-dormitory/README.zh-TW.md)<br>[![新齋](校本部/buildings/nthu-xin-dormitory/appearance/previews/front.png)](校本部/buildings/nthu-xin-dormitory/README.zh-TW.md)<br>[資料夾](校本部/buildings/nthu-xin-dormitory) | [百齡堂前棟（2025整備前歷史外觀版）](校本部/buildings/nthu-bailing-hall-front/README.zh-TW.md)<br>[![百齡堂前棟（2025整備前歷史外觀版）](校本部/buildings/nthu-bailing-hall-front/appearance/previews/front.png)](校本部/buildings/nthu-bailing-hall-front/README.zh-TW.md)<br>[資料夾](校本部/buildings/nthu-bailing-hall-front) |
 | [![國立清華大學 梅亭／機亭：實際模型預覽](校本部/buildings/nthu-mei-pavilion/previews/front.png)](校本部/buildings/nthu-mei-pavilion/README.md)<br>**[國立清華大學 梅亭／機亭](校本部/buildings/nthu-mei-pavilion/README.md)** | [![國立清華大學北校門簡冊立柱｜三片牆體外觀近似：實際模型預覽](校本部/buildings/nthu-north-gate-bamboo-slip-pillar/previews/front.png)](校本部/buildings/nthu-north-gate-bamboo-slip-pillar/README.md)<br>**[國立清華大學北校門簡冊立柱｜三片牆體外觀近似](校本部/buildings/nthu-north-gate-bamboo-slip-pillar/README.md)** | [![國立清華大學｜奕亭：實際模型預覽](校本部/buildings/nthu-yi-pavilion/previews/front.png)](校本部/buildings/nthu-yi-pavilion/README.md)<br>**[國立清華大學｜奕亭](校本部/buildings/nthu-yi-pavilion/README.md)** |
-| [![國立清華大學月涵亭：實際模型預覽](校本部/buildings/nthu-yue-han-pavilion/previews/front.png)](校本部/buildings/nthu-yue-han-pavilion/README.md)<br>**[國立清華大學月涵亭](校本部/buildings/nthu-yue-han-pavilion/README.md)** | [![國立清華大學成功湖昱寧島涼亭：實際模型預覽](校本部/buildings/nthu-yuning-island-pavilion-2023/previews/front.png)](校本部/buildings/nthu-yuning-island-pavilion-2023/README.md)<br>**[國立清華大學成功湖昱寧島涼亭](校本部/buildings/nthu-yuning-island-pavilion-2023/README.md)** |  |
+| [![國立清華大學月涵亭：實際模型預覽](校本部/buildings/nthu-yue-han-pavilion/previews/front.png)](校本部/buildings/nthu-yue-han-pavilion/README.md)<br>**[國立清華大學月涵亭](校本部/buildings/nthu-yue-han-pavilion/README.md)** | [![國立清華大學成功湖昱寧島涼亭：實際模型預覽](校本部/buildings/nthu-yuning-island-pavilion-2023/previews/front.png)](校本部/buildings/nthu-yuning-island-pavilion-2023/README.md)<br>**[國立清華大學成功湖昱寧島涼亭](校本部/buildings/nthu-yuning-island-pavilion-2023/README.md)** | [![捷英文物館相連整館外殼近似](校本部/buildings/nthu-jieying-museum/previews/front.png)](校本部/buildings/nthu-jieying-museum/README.md)<br>**[捷英文物館｜2024–2025相連整館外殼近似](校本部/buildings/nthu-jieying-museum/README.md)**<br>非竣工一致／最終裝修證明 |
 
 ## 覆蓋與缺口
 - [amendments](audits/amendments)
@@ -59,3 +59,7 @@
 [竹師教育學院有限配色外觀與來源界線](校本部/buildings/nthu-chu-shih-education/appearance/README.md)
 
 [清齋 AB 中央玻璃與結構有限配色外觀與來源界線](校本部/buildings/nthu-qing-dormitory-ab/appearance/README.md)
+
+[捷英文物館｜2024–2025相連整館外殼近似](校本部/buildings/nthu-jieying-museum/README.md)：捷英文物館：2024–2025實照所見相連整館外殼的有限細節比例近似，包含低位山牆／殘牆形體、曲廊、階梯露臺、端部外梯及穿越通道；旁側獨立歷史農舍不包含。不是實測、竣工一致、最終2026裝修或開館狀態證明。200×168×94mm為展示模型尺寸，非精確縮尺；已公布3層／18.05m只作量體參考，1536／1552m²面積差異未據以補造幾何。起伏屋面、厚化葉片、橢圓孔、長縫與低位玻璃為示意近似；深孔保留中性封底、隱蔽背側不鏡像玻璃，未建室內與未知設備。9材質3MF、STL、可編輯Blend及319隱藏建構分件、公開Python與9張實際圖；隱藏重疊構件不可與外殼同印，分件修改不自動更新最終外殼。470截面、16空間射線、自交正負控制、原生編輯與公開輸入重建通過；屋簷／穿越通道／外梯與0.85–0.88mm欄杆需支撐評估，22級樓梯及梯下填實為模型近似，未真正切片或試印、不保證免支撐。
+
+捷英文物館位於校本部南側，非南大校區；[校方112年報第82頁](https://info.site.nthu.edu.tw/var/file/91/1091/img/3805/112Report.pdf)明列「校本部南校區三合院旁」，僅用作校區身分核對，不採舊提案幾何。館方目前標示工程維護、暫未對外開放，參觀狀態以[館方資訊](https://museum.site.nthu.edu.tw/p/404-1153-149191.php?Lang=zh-tw)為準；本模型不推定最終開館裝修。

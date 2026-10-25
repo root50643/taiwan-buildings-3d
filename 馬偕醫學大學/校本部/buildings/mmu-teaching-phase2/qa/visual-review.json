@@ -1,0 +1,55 @@
+{
+  "type": "Author source-fidelity and actual-render review; not independent acceptance or survey",
+  "input_model_stl_sha256": "e2a28cd6f7338ac03018dac8d4884e27bc00e913ebe582cb00617456de03d6a7",
+  "actual_render_views_reviewed": [
+    "front",
+    "oblique",
+    "right",
+    "left",
+    "rear",
+    "top",
+    "road-side",
+    "rear-g",
+    "aerial"
+  ],
+  "checks": [
+    {
+      "view": "top",
+      "reference": "Architect teaching 5F and official 6F/7F",
+      "result": "Unequal G/E arms, inset F, rotated D, narrow links, central open court, G–F slot, F–E lightwell and E–D recess retained; boundary stops before phase I."
+    },
+    {
+      "view": "front / right",
+      "reference": "ad-13 and contractor-2105200238281",
+      "result": "D flat roof and open branching screen; E brick window-band facade and open roof beams plus local white upper room and higher brick cap. No phase-I glass tower."
+    },
+    {
+      "view": "road-side / rear",
+      "reference": "ad-02 / ad-12 / ad-15",
+      "result": "Non-mirrored broad brick panels, glazed concrete bays, exposed stair language and upper open corridor retained; precise bay/stair counts simplified."
+    },
+    {
+      "view": "rear-g / left",
+      "reference": "Official 3F–7F, aerial and bounded contractor return view",
+      "result": "Whole G wing and F inset volume present, with open lower exposure, flat terraces and high open frame silhouettes. Minor return opening layout remains approximate."
+    },
+    {
+      "view": "aerial",
+      "reference": "tw-201606a5-1 upper-left D–G group",
+      "result": "D flat roof, E two-stage local rooftop group, F/G framed setbacks, long wings, connections and all major voids present. No K, dormitory or first-phase geometry."
+    }
+  ],
+  "iterations": [
+    "Initial render showed E circulation strip as an overly exposed white grid; corrected it to the enclosed brick window-band facade visible in the source.",
+    "Added distinct road-side brick piers and grouped windows rather than mirroring the front.",
+    "Removed float32 export slivers on rotated D color surfaces with 0.0002 mm geometric simplification; intersection checker tolerances unchanged."
+  ],
+  "bounded_unknowns": [
+    "Display grade blocks are neutral abstract supports, not surveyed terrain or basement walls.",
+    "No exact window schedule, tiny roof equipment or unverified roof finish is claimed.",
+    "Model dimensions and vertical intervals are normalized author proportions, not metric building measurements."
+  ],
+  "period_label_matches_sources": true,
+  "source_pixels_used_as_textures": false,
+  "scope_whole_connected_D_G_only": true
+}

@@ -1,0 +1,15 @@
+{
+  "checker": "source/validate_self_intersections.py",
+  "negative_control": {
+    "geometry": "one closed 10 mm cube",
+    "expected": "pass",
+    "actual_pass": true
+  },
+  "positive_control": {
+    "geometry": "two closed 10 mm cubes overlapped with translation [3,2,1] without Boolean union",
+    "expected": "reject",
+    "actual_rejected": true,
+    "detected_intersections": 15
+  },
+  "all_pass": true
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "cnu-original-appearance-1",
+  "scope": "Unchanged existing preview-contrast assignments; not measured real materials; source-corrected approved faces: 0.",
+  "color_space": {
+    "rgb": "scene-linear Linear Rec.709",
+    "storage": "four IEEE-754 binary32 channels, little endian, R G B A",
+    "alpha": "untransformed, all 1.0 (opaque)",
+    "rna_subtype": "COLOR",
+    "original_view_transform": "Standard",
+    "original_display_device": "sRGB",
+    "original_exposure": 0,
+    "original_gamma": 1,
+    "original_look": "None"
+  },
+  "display_encoding": {
+    "space": "sRGB",
+    "channels": "8-bit R G B A",
+    "conversion": "RGB: c<=0.0031308 ? 12.92*c : 1.055*c**(1/2.4)-0.055; each channel floor(255*c+0.5). Alpha untransformed.",
+    "lossless_original_float_color": false,
+    "authoritative_restoration": "Use unchanged ../scene.blend, or unpack rgba_le_f32_hex with struct.unpack(\"<4f\", bytes.fromhex(...)) into scene-linear material.diffuse_color on a disposable copy; apply the stored face-materials.csv, never centroid formulas."
+  },
+  "source_hashes": {
+    "stl_sha256": "353a5ce7fcd15a798f8bbf932e73d67b95ef856c60623cc3d7831f46dd609897",
+    "blend_sha256": "d63ad8d2dcf1c896dda145966e4bad84e9475634c3080755fe60251e0cd0189a",
+    "binding_csv_sha256": "acd713223dc352c9dedb7902273d28db5b58c0288dbd9308b6c3b389ec338f54",
+    "ordered_triangle_xyz_f32_sha256": "cf80fd91ee40f3f89dc711404ef27731763ce3d265bafd26e1ad8e7fe354e85a",
+    "face_material_index_u8_sha256": "7565653b6de1aed06d7785ddf83c5839d55a15977bde3d7073f41334e02ecb12"
+  },
+  "materials": [
+    {
+      "index": 0,
+      "name": "Neutral building preview",
+      "rgba_le_f32_hex": "9a99593f9a99593f295c4f3f0000803f",
+      "rgba_exact_decimal": [
+        "0.85000002384185791015625",
+        "0.85000002384185791015625",
+        "0.810000002384185791015625",
+        "1"
+      ],
+      "face_count": 52416,
+      "display_rgba8_hex": "#EDEDE8FF"
+    },
+    {
+      "index": 1,
+      "name": "Base contrast preview only",
+      "rgba_le_f32_hex": "0ad7a33e14aec73e3d0ad73e0000803f",
+      "rgba_exact_decimal": [
+        "0.319999992847442626953125",
+        "0.38999998569488525390625",
+        "0.4199999868869781494140625",
+        "1"
+      ],
+      "face_count": 451,
+      "display_rgba8_hex": "#99A8ADFF"
+    },
+    {
+      "index": 2,
+      "name": "Roof contrast preview only",
+      "rgba_le_f32_hex": "5c8fc23e6666e63ed7a3f03e0000803f",
+      "rgba_exact_decimal": [
+        "0.37999999523162841796875",
+        "0.449999988079071044921875",
+        "0.4699999988079071044921875",
+        "1"
+      ],
+      "face_count": 4736,
+      "display_rgba8_hex": "#A6B3B6FF"
+    },
+    {
+      "index": 3,
+      "name": "Glazing contrast preview only",
+      "rgba_le_f32_hex": "7b14ae3e8fc2f53e48e1fa3e0000803f",
+      "rgba_exact_decimal": [
+        "0.3400000035762786865234375",
+        "0.4799999892711639404296875",
+        "0.4900000095367431640625",
+        "1"
+      ],
+      "face_count": 6612,
+      "display_rgba8_hex": "#9EB8BAFF"
+    },
+    {
+      "index": 4,
+      "name": "Recessed north wall contrast only",
+      "rgba_le_f32_hex": "52b81e3f48e1fa3e14aec73e0000803f",
+      "rgba_exact_decimal": [
+        "0.62000000476837158203125",
+        "0.4900000095367431640625",
+        "0.38999998569488525390625",
+        "1"
+      ],
+      "face_count": 1471,
+      "display_rgba8_hex": "#CEBAA8FF"
+    }
+  ]
+}

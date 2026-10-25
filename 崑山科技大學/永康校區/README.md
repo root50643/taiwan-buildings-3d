@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 北面正面<br>![北面](buildings/ksu-library-information-building/appearance/previews/front.png) | 南面背面<br> |  |
+| 北面正面<br>![北面](buildings/ksu-library-information-building/appearance/previews/front.png) |  |  |
 
 [模型說明](buildings/ksu-library-information-building/README.md) · [後窗限域外觀](buildings/ksu-library-information-building/appearance/README.md) · [來源與限制](buildings/ksu-library-information-building/sources.md) · [幾何審查](buildings/ksu-library-information-building/QA.md)
 

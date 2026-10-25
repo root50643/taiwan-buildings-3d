@@ -4,6 +4,6 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面：兩翼及下沉庭院<br>![正面](校本部/buildings/ctust-tianji/previews/front.png) | 背面：高樓與穿堂大拱<br> |  |
+| 正面：兩翼及下沉庭院<br>![正面](校本部/buildings/ctust-tianji/previews/front.png) |  |  |
 
 [模型與列印限制](校本部/buildings/ctust-tianji/README.md) · [STL](校本部/buildings/ctust-tianji/model.stl) · [來源](校本部/buildings/ctust-tianji/sources.json)

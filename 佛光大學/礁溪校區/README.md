@@ -4,7 +4,7 @@
 
 目前僅懷恩館主體近似版，非全校區完成。
 
-| 懷恩館正面 | 懷恩館背面 | 懷恩館俯視 |
+| 懷恩館正面 |  |  |
 |---|---|---|
 | [![懷恩館限域配色正面模型預覽](buildings/fgu-huaien-hall/appearance/previews/front.png)](buildings/fgu-huaien-hall/README.md) |  |  |
 

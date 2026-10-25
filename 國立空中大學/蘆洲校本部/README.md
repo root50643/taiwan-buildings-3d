@@ -8,7 +8,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>[![北院正面](buildings/nou-north-courtyard/previews/front.png)](buildings/nou-north-courtyard/README.md) | 背面<br> |  |
+| 正面<br>[![北院正面](buildings/nou-north-courtyard/previews/front.png)](buildings/nou-north-courtyard/README.md) |  |  |
 
 含底座最長 150 mm，單位毫米。紅色僅預覽材質，STL 不含顏色。資料出版日、網頁日與照片拍攝日有別，詳個別 README；不宣稱 2026 精確現況。
 

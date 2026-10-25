@@ -4,7 +4,7 @@
 
 [無盡藏圖書館](buildings/nhu-wujinzang-library/README.md)
 
-| 無盡藏圖書館正面 | 無盡藏圖書館背面 | 成均館 |
+| 無盡藏圖書館正面 |  | 成均館 |
 |---|---|---|
 | ![正面（屋頂限域配色）](buildings/nhu-wujinzang-library/appearance/previews/front.png) |   | [![成均館（校方照片與調查圖參考外觀近似版；照片年代未定）：實際模型預覽](buildings/nhu-chengjun-hall/previews/front.png)](buildings/nhu-chengjun-hall/README.md)<br>**[成均館（校方照片與調查圖參考外觀近似版；照片年代未定）](buildings/nhu-chengjun-hall/README.md)** |
 

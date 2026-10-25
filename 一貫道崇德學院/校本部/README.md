@@ -2,7 +2,7 @@
 
 目前1套教學樓曲線列柱入口中央局部模型，4種零件／10實件／8材質。只取七柱、六柱間、三門與近前低階，左右／背部／頂部均為模型裁切；不是完整教學樓或全校完成。尺寸比例估計，FFF切片與實印待驗。
 
-| 中央局部彩色外觀 | 背部裁切界面 | 四種零件／十實件示意 |
+| 中央局部彩色外觀 |  |  |
 |---|---|---|
 | [![七柱三門與弧簷](buildings/iktcds-curved-entrance-section/previews/front.png)](buildings/iktcds-curved-entrance-section/README.md) |  |  |
 

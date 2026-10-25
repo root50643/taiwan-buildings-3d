@@ -4,6 +4,6 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 圖書館正面<br>![正面](buildings/ltu-library/previews/front.png) | 同件背面<br> |  |
+| 圖書館正面<br>![正面](buildings/ltu-library/previews/front.png) |  |  |
 
 [圖書館模型、誤差及列印/QA限制](buildings/ltu-library/README.md)

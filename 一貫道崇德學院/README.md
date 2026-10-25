@@ -4,7 +4,7 @@
 
 ## 模型圖鑑
 
-| 中央局部彩色外觀 | 背部裁切界面 | 四種零件／十實件示意 |
+| 中央局部彩色外觀 |  |  |
 |---|---|---|
 | [![七柱三門與弧簷](校本部/buildings/iktcds-curved-entrance-section/previews/front.png)](校本部/buildings/iktcds-curved-entrance-section/README.md) |  |  |
 

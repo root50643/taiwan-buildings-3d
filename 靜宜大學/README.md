@@ -10,7 +10,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 入口側<br>![入口側](沙鹿校本部/buildings/pu-providence-chapel/previews/front.png)<br>背面<br> | [![靜宜大學蓋夏圖書館舊館・入口格構轉角片段：實際模型預覽](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/previews/front.png)](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/README.md)<br>**[靜宜大學蓋夏圖書館舊館・入口格構轉角片段](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/README.md)** |  |
+| 入口側<br>![入口側](沙鹿校本部/buildings/pu-providence-chapel/previews/front.png) | [![靜宜大學蓋夏圖書館舊館・入口格構轉角片段：實際模型預覽](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/previews/front.png)](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/README.md)<br>**[靜宜大學蓋夏圖書館舊館・入口格構轉角片段](沙鹿校本部/buildings/pu-luking-library-entry-lattice-segment/README.md)** |  |
 
 每件保留一張代表圖；不以同館不同角度冒充多棟。獨立避靜中心未建模，其餘建築研究狀態見下列更新。本包不含第三方原圖與PDF。
 

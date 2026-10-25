@@ -2,7 +2,7 @@
 
 目前1套公共紀念鐘樓有界外觀模型，4分件／9材質。只含紀念本體與圓台，非全校完成、現況保證或實測復原；FFF切片與實印待驗。
 
-| 彩色外觀 | 另一側 | 四分件示意 |
+| 彩色外觀 |  |  |
 |---|---|---|
 | [![九材質紀念鐘樓](buildings/rocna-memorial-bell-tower/previews/front.png)](buildings/rocna-memorial-bell-tower/README.md) |  |  |
 

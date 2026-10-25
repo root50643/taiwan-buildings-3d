@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 同件北玻璃及架空面<br>[![北側](buildings/tcu-hexin-library-2001/appearance/previews/front.png)](buildings/tcu-hexin-library-2001/README.md) | 同件南側及長翼<br> |  |
+| 同件北玻璃及架空面<br>[![北側](buildings/tcu-hexin-library-2001/appearance/previews/front.png)](buildings/tcu-hexin-library-2001/README.md) |  |  |
 
 [完整說明](buildings/tcu-hexin-library-2001/README.md) · [STL](buildings/tcu-hexin-library-2001/model.stl) · [Blend](buildings/tcu-hexin-library-2001/scene.blend) · [原創源](buildings/tcu-hexin-library-2001/build_model.py) · [頂圖](buildings/tcu-hexin-library-2001/previews/top.png) · [來源](buildings/tcu-hexin-library-2001/sources.json) · [QA](buildings/tcu-hexin-library-2001/qa-summary.json) · [有限原面彩色外觀](buildings/tcu-hexin-library-2001/appearance/README.md)
 

@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 入口側<br>![入口側](buildings/pu-providence-chapel/previews/front.png)<br>背面<br> | [![靜宜大學蓋夏圖書館舊館・入口格構轉角片段：實際模型預覽](buildings/pu-luking-library-entry-lattice-segment/previews/front.png)](buildings/pu-luking-library-entry-lattice-segment/README.md)<br>**[靜宜大學蓋夏圖書館舊館・入口格構轉角片段](buildings/pu-luking-library-entry-lattice-segment/README.md)** |  |
+| 入口側<br>![入口側](buildings/pu-providence-chapel/previews/front.png) | [![靜宜大學蓋夏圖書館舊館・入口格構轉角片段：實際模型預覽](buildings/pu-luking-library-entry-lattice-segment/previews/front.png)](buildings/pu-luking-library-entry-lattice-segment/README.md)<br>**[靜宜大學蓋夏圖書館舊館・入口格構轉角片段](buildings/pu-luking-library-entry-lattice-segment/README.md)** |  |
 
 已在GitHub公開（[歷史提交](https://github.com/root50643/taiwan-buildings-3d/commit/897897849bca52f9e43f6b573f71600927d93221)）。既有作者數位QA報告通過，另有固定STL的44層十字架局部例外紀錄；完整總體獨立放行紀錄未確認，並非判定審查失敗。公開狀態不代表所有QA或列印驗證均已完成。尺度、未知與完整檔案見模型README。
 

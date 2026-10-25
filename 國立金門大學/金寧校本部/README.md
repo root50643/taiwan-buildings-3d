@@ -2,7 +2,7 @@
 
 目前2件局部外觀研究模型：楊清廉圖資大樓銃樓段與圓樓正面中央入口立面段。0棟全形；不是完整圓樓，也不代表全校完成。
 
-| 圖資大樓銃樓段正面 | 圖資大樓銃樓段背面 | 圓樓中央入口立面段 |
+| 圖資大樓銃樓段正面 |  | 圓樓中央入口立面段 |
 |---|---|---|
 | ![正面](buildings/nqu-library-tower-segment/appearance/previews/front.png) |   | [![圓樓正面中央入口立面段：照片近似，非完整建築](buildings/nqu-roundhouse-entrance-facade/previews/front.png)](buildings/nqu-roundhouse-entrance-facade/README.md)<br>**[圓樓・正面中央入口立面段（照片近似；非完整建築）](buildings/nqu-roundhouse-entrance-facade/README.md)** |
 

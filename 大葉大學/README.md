@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 圖書館主要前側<br>[![前側](校本部/buildings/dyu-library-1998/previews/front.png)](校本部/buildings/dyu-library-1998/README.md)<br>同件後扇形背側<br> | [![大葉大學學思亭｜完整方亭外觀模型：實際模型預覽](校本部/buildings/dyu-xuesi-pavilion/previews/front.png)](校本部/buildings/dyu-xuesi-pavilion/README.md)<br>**[大葉大學學思亭｜完整方亭外觀模型](校本部/buildings/dyu-xuesi-pavilion/README.md)** |  |
+| 圖書館主要前側<br>[![前側](校本部/buildings/dyu-library-1998/previews/front.png)](校本部/buildings/dyu-library-1998/README.md) | [![大葉大學學思亭｜完整方亭外觀模型：實際模型預覽](校本部/buildings/dyu-xuesi-pavilion/previews/front.png)](校本部/buildings/dyu-xuesi-pavilion/README.md)<br>**[大葉大學學思亭｜完整方亭外觀模型](校本部/buildings/dyu-xuesi-pavilion/README.md)** |  |
 
 [完整說明](校本部/buildings/dyu-library-1998/README.md) · [STL](校本部/buildings/dyu-library-1998/model.stl) · [Blend](校本部/buildings/dyu-library-1998/scene.blend) · [原創源](校本部/buildings/dyu-library-1998/build_model.py) · [頂圖](校本部/buildings/dyu-library-1998/previews/top.png) · [來源](校本部/buildings/dyu-library-1998/sources.json) · [QA](校本部/buildings/dyu-library-1998/qa-summary.json)
 

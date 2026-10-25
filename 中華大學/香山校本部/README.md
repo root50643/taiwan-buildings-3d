@@ -4,7 +4,7 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 正面：南側入口<br>![正面](buildings/chu-administration-library/appearance/previews/front.png) | 背面：北側長立面<br> |  |
+| 正面：南側入口<br>![正面](buildings/chu-administration-library/appearance/previews/front.png) |  |  |
 
 圖為模型渲染。[建築說明與列印限制](buildings/chu-administration-library/README.md) · [原面有限彩色外觀](buildings/chu-administration-library/appearance/README.md) · [STL](buildings/chu-administration-library/model.stl) · [來源與證據](buildings/chu-administration-library/sources.md)
 

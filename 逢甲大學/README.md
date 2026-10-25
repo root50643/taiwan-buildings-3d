@@ -4,6 +4,6 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 共善樓正面<br>![正面](水湳新校區/buildings/fcu-gongshan/previews/appearance-front.png) | 共善樓背面<br> |  |
+| 共善樓正面<br>![正面](水湳新校區/buildings/fcu-gongshan/previews/appearance-front.png) |  |  |
 
 [共善樓模型、來源與列印警告](水湳新校區/buildings/fcu-gongshan/README.md)

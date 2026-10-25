@@ -4,7 +4,7 @@
 
 ## 模型圖鑑
 
-| 彩色外觀 | 另一側 | 四分件示意 |
+| 彩色外觀 |  |  |
 |---|---|---|
 | [![九材質紀念鐘樓](公開紀念景物/buildings/rocna-memorial-bell-tower/previews/front.png)](公開紀念景物/buildings/rocna-memorial-bell-tower/README.md) |  |  |
 

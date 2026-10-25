@@ -6,6 +6,6 @@
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
-| 同件正面<br>![正面](buildings/nkuht-student-health-center/previews/front.png) | 同件背面<br> |  |
+| 同件正面<br>![正面](buildings/nkuht-student-health-center/previews/front.png) |  |  |
 
 原創比例近似，含主館、獨立遮棚、折形輔樓、橋與下沉廣場。來源、尺度、支撐限制和QA見模型頁。

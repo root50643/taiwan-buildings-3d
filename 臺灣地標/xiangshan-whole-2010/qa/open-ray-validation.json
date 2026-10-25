@@ -1,0 +1,230 @@
+{
+  "stl_sha256": "8b831515531bc7cfadc90e4d06d7ab977fc33e02cc805ca9a23d2e707f3a446f",
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded-STL segment ray intersections plus interior point checks; occupied controls and actual injected-blocker negative fixture",
+  "checks": [
+    {
+      "name": "both nested canopies through central promenade",
+      "start_model_mm": [
+        -145,
+        0,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 120,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "visitor canopy central clearance",
+      "start_model_mm": [
+        -132,
+        0,
+        6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 44,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "administration canopy central clearance",
+      "start_model_mm": [
+        -90,
+        0,
+        6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 58,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "upper aligned canopy clearance",
+      "start_model_mm": [
+        -132,
+        16,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 99,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "lower aligned canopy clearance",
+      "start_model_mm": [
+        -132,
+        -10,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 99,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "separate central court not a solid building",
+      "start_model_mm": [
+        -23,
+        0,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 45,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "administration occupied facade blocks ray",
+      "start_model_mm": [
+        -130,
+        70,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 85,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1,
+      "occupied_sample_points": 2
+    },
+    {
+      "name": "visitor occupied facade blocks ray",
+      "start_model_mm": [
+        -135,
+        -55,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 65,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "administration closed canopy end blocks ray",
+      "start_model_mm": [
+        -85,
+        -25,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 60,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "visitor closed canopy end blocks ray",
+      "start_model_mm": [
+        -135,
+        35,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 55,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 3,
+      "occupied_sample_points": 2
+    },
+    {
+      "name": "administration overhead concrete blocks ray",
+      "start_model_mm": [
+        -90,
+        0,
+        16
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 58,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "visitor overhead concrete blocks ray",
+      "start_model_mm": [
+        -132,
+        0,
+        12.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 44,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    }
+  ],
+  "negative_control": {
+    "injected_underpass_blocker_detected": true,
+    "ray_name": "visitor canopy central clearance",
+    "hits": 2,
+    "occupied_sample_points": 1,
+    "deliverable_modified": false
+  }
+}

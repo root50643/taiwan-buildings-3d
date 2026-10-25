@@ -1,0 +1,491 @@
+{
+  "fresh_directory_public_inputs_only": true,
+  "copied_input_files": [
+    "build_model.py",
+    "parameters.json",
+    "qa-probes.json",
+    "mesh_topology.py",
+    "topology_controls.py",
+    "export_3mf.py",
+    "render_model.py",
+    "validate_model.py",
+    "validate_self_intersections.py",
+    "intersection_controls.py",
+    "verify_blend.py",
+    "verify_path_buffers.py",
+    "verify_png_metadata.py",
+    "reproduce.py",
+    "requirements-model.txt"
+  ],
+  "input_sha256": {
+    "build_model.py": "75d89708ba94ebafd03cc26b6eebacc8c97a41e608f67f5d9f703fed8b0624e7",
+    "parameters.json": "8b1753b9f523e72ccf3a37ef211a0ba36d5e703d5a81b15e15519ade02cefb8b",
+    "qa-probes.json": "a593b4a3e0807f2f5ab61f1d8cda78c010d60946db8ac3dd2b44f489fab54652",
+    "mesh_topology.py": "e1c6d46ada51d499cb0540e7c9dfb3263603c2ee07f2c4e0b4c86196d53d03da",
+    "topology_controls.py": "32d37a0bea4d2cfeed512ca250c81d84a784ef7830d91d1ad684a2e3d1b31049",
+    "export_3mf.py": "5b6369aab9524d43398ed70a503d249439f911213107785b7554fe1cea08b917",
+    "render_model.py": "1f520cea8533d702a6d189a34ca154f9e9b4827f38f3c79868f5b7fb221d8bb0",
+    "validate_model.py": "f4b2474ae35b206af4b9347ca8406a0315651ce2fff07549ffd0d4b7c06128a7",
+    "validate_self_intersections.py": "0d82b04a08e5ee2b1e58c97b69650e1ef2c51692cb160af914453887d8aad39b",
+    "intersection_controls.py": "18f4a3017ca91a60ff668f2ba0648a3ca38adb9624cd75e41eda49e8471e7599",
+    "verify_blend.py": "e5104ffdcdd06ec640db87b3c52992df74a07cd65fa887dfa3aebd097dfc3611",
+    "verify_path_buffers.py": "fa7017a66298d9d9a2c5b4b19a77661dd3ef5080b4a3b5fddae5a446ba81bd4b",
+    "verify_png_metadata.py": "16c8ea2afcfc02ddb40bbd0558dbc6552bf8521474bc6c29ede1a996fb604c1f",
+    "reproduce.py": "081118414b9b6ce272a632cd431aa451323ae2612e00aca2919bdbf61b97196a",
+    "requirements-model.txt": "7f0c13ae60c96c11130d311231a03bc3fd17fdc57e9a16a8d9d1fd1307e07966"
+  },
+  "network_or_reference_images_required": false,
+  "geometry_arrays_identical": {
+    "vertices": true,
+    "faces": true,
+    "materials": true,
+    "groups": true
+  },
+  "stl_bytes_identical": true,
+  "component_data_and_build_summary_identical": {
+    "construction-parts.json": true,
+    "editable-parts.json": true,
+    "build-summary.json": true
+  },
+  "preview_count": 9,
+  "previews": [
+    {
+      "file": "previews/admin-east.png",
+      "dimensions": [
+        1100,
+        360
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "e1acf23512b91d3d07c353648fabcf905e88ff7049c93831e73d8a846513596d"
+    },
+    {
+      "file": "previews/admin-west.png",
+      "dimensions": [
+        1100,
+        360
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "480e5a993f1398f5a835eaa164c4189c05e4c0898b93c4d5872a731504c32dd7"
+    },
+    {
+      "file": "previews/canopy-detail.png",
+      "dimensions": [
+        1100,
+        460
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "8d52b5b4b6bd3a057b237ada2efe1e3b57140155672bd90272aeb5ec76dd4edc"
+    },
+    {
+      "file": "previews/front.png",
+      "dimensions": [
+        1100,
+        360
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "8bb6cd3a6f04c540c8d2c4feb9831863653e2b947798a331b428d03f2427f3a9"
+    },
+    {
+      "file": "previews/ground-plan.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "76d259269ce6b8e8c08d213f9e15b88281f1a186536ac6dd3b9f7bbfb8ea9098"
+    },
+    {
+      "file": "previews/oblique.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "2a65b9a0102fc357cbe3cb18ad29bd6560a97c1fb592346067694d477b0eaaf2"
+    },
+    {
+      "file": "previews/top.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "52ad419c92efe8f89bb44d1ed2a9cbb2ad947b4b97ba69cefd1d498bb6b9c423"
+    },
+    {
+      "file": "previews/visitor-east.png",
+      "dimensions": [
+        1100,
+        360
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "99d6a2ca1cdb9a03cc4209899c0dec57d764435c87cf03bce97852554599dbe6"
+    },
+    {
+      "file": "previews/visitor-west.png",
+      "dimensions": [
+        1100,
+        360
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "80e31a9927bc958c37bf9148000fef33eeed3c9404b3912efa9ef71a1f409cc0"
+    }
+  ],
+  "clean_rebuild_3mf_strict_validation": {
+    "topology": {
+      "artifact": "xiangshan-whole-2010.3mf",
+      "vertices": 12059,
+      "triangles": 24338,
+      "closed_shells": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume_mm3": 225825.68668242218,
+      "edge_incidence_histogram": {
+        "2": 36507
+      },
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertex_links": 0,
+      "inconsistently_oriented_edges": 0,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 0,
+      "unreferenced_vertices": 0,
+      "size_model_mm": [
+        281.0,
+        218.0,
+        17.80000078678131
+      ],
+      "bounds_model_mm": [
+        [
+          -146.0,
+          -111.0,
+          -1.100000023841858
+        ],
+        [
+          135.0,
+          107.0,
+          16.700000762939453
+        ]
+      ],
+      "euler_characteristic": -110,
+      "all_pass": true
+    },
+    "strict": true,
+    "warnings": 0,
+    "mesh_objects": 1,
+    "build_items": 1,
+    "model_units": "millimetre",
+    "all_triangle_property_resources_match_group": true,
+    "vertices": 12059,
+    "triangles": 24338,
+    "base_materials": 8,
+    "all_triangle_materials_match_palette": true,
+    "triangle_indices_exact_match": true,
+    "vertex_max_abs_difference_mm": 1.52587890625e-05,
+    "vertex_tolerance_mm": 2e-05,
+    "roundtrip": {
+      "topology": {
+        "artifact": "roundtrip.3mf",
+        "vertices": 12059,
+        "triangles": 24338,
+        "closed_shells": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 225825.68668242218,
+        "edge_incidence_histogram": {
+          "2": 36507
+        },
+        "nonmanifold_edges": 0,
+        "nonmanifold_vertex_links": 0,
+        "inconsistently_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "duplicate_triangles": 0,
+        "unreferenced_vertices": 0,
+        "size_model_mm": [
+          281.0,
+          218.0,
+          17.80000078678131
+        ],
+        "bounds_model_mm": [
+          [
+            -146.0,
+            -111.0,
+            -1.100000023841858
+          ],
+          [
+            135.0,
+            107.0,
+            16.700000762939453
+          ]
+        ],
+        "euler_characteristic": -110,
+        "all_pass": true
+      },
+      "strict": true,
+      "warnings": 0,
+      "mesh_objects": 1,
+      "build_items": 1,
+      "model_units": "millimetre",
+      "all_triangle_property_resources_match_group": true,
+      "vertices": 12059,
+      "triangles": 24338,
+      "base_materials": 8,
+      "all_triangle_materials_match_palette": true,
+      "triangle_indices_exact_match": true,
+      "vertex_max_abs_difference_mm": 1.52587890625e-05,
+      "vertex_tolerance_mm": 2e-05
+    },
+    "lib3mf_version": [
+      2,
+      5,
+      0
+    ],
+    "3mf_sha256": "04182996da4ce572964eafd4ecf5faf719f9d8364efa9487ef9f3025e16563d6"
+  },
+  "clean_rebuild_native_edit_validation": {
+    "native_vertex_changed_and_reopened": true,
+    "native_material_diffuse_and_shader_changed_and_reopened": true,
+    "construction_component_vertex_changed_and_reopened": true,
+    "individual_component_move_and_colour_changed_and_reopened": true,
+    "construction_location_delta_mm": 0.35,
+    "tested_building_component": "Administration whole curved concrete roof shell",
+    "final_vertex_delta_mm": 0.125,
+    "construction_vertex_delta_mm": 0.2,
+    "deliverable_modified": false,
+    "temporary_probe_removed": true,
+    "original_deliverable_sha256_before_and_after": "d9ef69323578753e1ec2ee22c05f7113365e1999c35b0947da6aec778141315a"
+  },
+  "clean_rebuild_full_sdna_validation": {
+    "all_pass": true,
+    "buffers_checked": 7249,
+    "total_fixed_buffer_bytes": 264399,
+    "classification_counts": {
+      "exact_factory_buffer": 6821,
+      "public_authored_value_with_verified_full_tail": 428
+    },
+    "violations": [],
+    "method": "Recursive embedded SDNA field offsets over every structured block instance and embedded structure/array; every fixed char array including its complete NUL tail; compare exact whole buffers with an actual newly saved --factory-startup Blender file, then narrowly declared public names/settings with full tail checking. No prefix-only grep or field-name-only path scan.",
+    "scope": "Declared non-pointer fixed arrays of char/uchar/int8_t/uint8_t; raw pointer allocations, float geometry, and media are separate native/artifact checks.",
+    "model_blend_sha256": "d9ef69323578753e1ec2ee22c05f7113365e1999c35b0947da6aec778141315a",
+    "blender_file_version": "403",
+    "sdna_sha256": "26245ba53e256375178f5cd806cdcfdbed9a3b1d40e3a5f7f525afefd6eeceaa",
+    "actual_factory_file_created": true,
+    "factory_blend_sha256": "01997199b611083e5570a39326a5522392c21371f0b15b5dc70a40825e158a18",
+    "factory_fixed_buffers": 1983,
+    "structured_blocks_checked": 3048,
+    "raw_non_structured_blocks_outside_fixed_array_scope": 825,
+    "distinct_fixed_fields": 280,
+    "synthetic_negative_controls": [
+      {
+        "control": "actual_untouched_factory_file",
+        "expected_pass": true,
+        "actual_pass": true
+      },
+      {
+        "control": "post_NUL_stale_text",
+        "field": "Scene.r/RenderData.pic[1024]",
+        "expected_pass": false,
+        "actual_pass": false
+      },
+      {
+        "control": "nested_struct_private_value",
+        "field": "Scene.r/RenderData.im_format/ImageFormatData.linear_colorspace_settings/ColorManagedColorspaceSettings.name[64]",
+        "expected_pass": false,
+        "actual_pass": false
+      }
+    ],
+    "deliverable_modified": false
+  },
+  "clean_rebuild_png_metadata_validation": {
+    "all_pass": true,
+    "preview_count": 9,
+    "excluded_chunks": [
+      "tEXt",
+      "zTXt",
+      "iTXt",
+      "eXIf",
+      "tIME"
+    ],
+    "method": "Parse each delivered PNG through IEND; validate chunk CRCs and reject text/EXIF/time metadata or trailing bytes. This is metadata validation, not a copyright or visual-content classifier.",
+    "previews": [
+      {
+        "file": "previews/admin-east.png",
+        "dimensions": [
+          1100,
+          360
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "e1acf23512b91d3d07c353648fabcf905e88ff7049c93831e73d8a846513596d"
+      },
+      {
+        "file": "previews/admin-west.png",
+        "dimensions": [
+          1100,
+          360
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "480e5a993f1398f5a835eaa164c4189c05e4c0898b93c4d5872a731504c32dd7"
+      },
+      {
+        "file": "previews/canopy-detail.png",
+        "dimensions": [
+          1100,
+          460
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "8d52b5b4b6bd3a057b237ada2efe1e3b57140155672bd90272aeb5ec76dd4edc"
+      },
+      {
+        "file": "previews/front.png",
+        "dimensions": [
+          1100,
+          360
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "8bb6cd3a6f04c540c8d2c4feb9831863653e2b947798a331b428d03f2427f3a9"
+      },
+      {
+        "file": "previews/ground-plan.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "76d259269ce6b8e8c08d213f9e15b88281f1a186536ac6dd3b9f7bbfb8ea9098"
+      },
+      {
+        "file": "previews/oblique.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "2a65b9a0102fc357cbe3cb18ad29bd6560a97c1fb592346067694d477b0eaaf2"
+      },
+      {
+        "file": "previews/top.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "52ad419c92efe8f89bb44d1ed2a9cbb2ad947b4b97ba69cefd1d498bb6b9c423"
+      },
+      {
+        "file": "previews/visitor-east.png",
+        "dimensions": [
+          1100,
+          360
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "99d6a2ca1cdb9a03cc4209899c0dec57d764435c87cf03bce97852554599dbe6"
+      },
+      {
+        "file": "previews/visitor-west.png",
+        "dimensions": [
+          1100,
+          360
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "80e31a9927bc958c37bf9148000fef33eeed3c9404b3912efa9ef71a1f409cc0"
+      }
+    ]
+  },
+  "clean_rebuild_saved_scene_render_validation": {
+    "actual_saved_blend_reopened_and_rendered": true,
+    "reference_preview": "previews/front.png",
+    "png_bytes_identical_after_metadata_normalization": true,
+    "sha256": "8bb6cd3a6f04c540c8d2c4feb9831863653e2b947798a331b428d03f2427f3a9",
+    "deliverable_modified": false
+  },
+  "all_pass": true
+}

@@ -1,0 +1,355 @@
+{
+  "section_step_mm": 0.2,
+  "print_warnings": [
+    "Roof spans require slicer supports; no physical print is claimed.",
+    "Narrow glazing bars and retaining walls are miniature approximations; use size and support review before printing.",
+    "Basin is opaque geometry, not a fluid or drainable engineering model."
+  ],
+  "gap_rays": [
+    {
+      "name": "both nested canopies through central promenade",
+      "start_model_mm": [
+        -145,
+        0,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 120,
+      "expected_clear": true
+    },
+    {
+      "name": "visitor canopy central clearance",
+      "start_model_mm": [
+        -132,
+        0,
+        6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 44,
+      "expected_clear": true
+    },
+    {
+      "name": "administration canopy central clearance",
+      "start_model_mm": [
+        -90,
+        0,
+        6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 58,
+      "expected_clear": true
+    },
+    {
+      "name": "upper aligned canopy clearance",
+      "start_model_mm": [
+        -132,
+        16,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 99,
+      "expected_clear": true
+    },
+    {
+      "name": "lower aligned canopy clearance",
+      "start_model_mm": [
+        -132,
+        -10,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 99,
+      "expected_clear": true
+    },
+    {
+      "name": "separate central court not a solid building",
+      "start_model_mm": [
+        -23,
+        0,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 45,
+      "expected_clear": true
+    },
+    {
+      "name": "administration occupied facade blocks ray",
+      "start_model_mm": [
+        -130,
+        70,
+        5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 85,
+      "expected_clear": false
+    },
+    {
+      "name": "visitor occupied facade blocks ray",
+      "start_model_mm": [
+        -135,
+        -55,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 65,
+      "expected_clear": false
+    },
+    {
+      "name": "administration closed canopy end blocks ray",
+      "start_model_mm": [
+        -85,
+        -25,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 60,
+      "expected_clear": false
+    },
+    {
+      "name": "visitor closed canopy end blocks ray",
+      "start_model_mm": [
+        -135,
+        35,
+        4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 55,
+      "expected_clear": false
+    },
+    {
+      "name": "administration overhead concrete blocks ray",
+      "start_model_mm": [
+        -90,
+        0,
+        16
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 58,
+      "expected_clear": false
+    },
+    {
+      "name": "visitor overhead concrete blocks ray",
+      "start_model_mm": [
+        -132,
+        0,
+        12.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 44,
+      "expected_clear": false
+    }
+  ],
+  "injected_gap_blocker": {
+    "ray_name": "visitor canopy central clearance",
+    "box_extents_model_mm": [
+      4,
+      4,
+      4
+    ],
+    "box_center_model_mm": [
+      -110,
+      0,
+      6
+    ]
+  },
+  "rising_surface_profiles": [
+    {
+      "name": "Administration long roof descends to pointed inland grade",
+      "sample_xy_model_mm": [
+        [
+          110,
+          88
+        ],
+        [
+          90,
+          88
+        ],
+        [
+          70,
+          88
+        ],
+        [
+          50,
+          88
+        ],
+        [
+          30,
+          88
+        ],
+        [
+          10,
+          88
+        ],
+        [
+          -10,
+          88
+        ],
+        [
+          -30,
+          88
+        ]
+      ],
+      "ray_top_z_model_mm": 30
+    },
+    {
+      "name": "Visitor long roof descends to rounded inland grade",
+      "sample_xy_model_mm": [
+        [
+          52,
+          -84
+        ],
+        [
+          40,
+          -91
+        ],
+        [
+          20,
+          -96
+        ],
+        [
+          0,
+          -94
+        ],
+        [
+          -20,
+          -92
+        ],
+        [
+          -40,
+          -90
+        ],
+        [
+          -60,
+          -88
+        ]
+      ],
+      "ray_top_z_model_mm": 30
+    }
+  ],
+  "recess_depth_pairs": [
+    {
+      "name": "Administration long diagonal recessed return",
+      "floor_xy_model_mm": [
+        20,
+        79
+      ],
+      "adjacent_roof_xy_model_mm": [
+        20,
+        85
+      ],
+      "minimum_depth_model_mm": 2.5
+    },
+    {
+      "name": "Visitor elongated curved recessed return",
+      "floor_xy_model_mm": [
+        -90,
+        -70
+      ],
+      "adjacent_roof_xy_model_mm": [
+        -90,
+        -83
+      ],
+      "minimum_depth_model_mm": 1.5
+    }
+  ],
+  "grade_join_points": [
+    {
+      "name": "Administration pointed inland termination",
+      "points_model_mm": [
+        [
+          119,
+          88,
+          0.16
+        ],
+        [
+          119,
+          88,
+          0.2
+        ],
+        [
+          119,
+          88,
+          0.24
+        ],
+        [
+          119,
+          88,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "Visitor rounded inland termination",
+      "points_model_mm": [
+        [
+          59,
+          -76,
+          0.16
+        ],
+        [
+          59,
+          -76,
+          0.2
+        ],
+        [
+          59,
+          -76,
+          0.24
+        ],
+        [
+          59,
+          -76,
+          0.4
+        ]
+      ]
+    }
+  ]
+}

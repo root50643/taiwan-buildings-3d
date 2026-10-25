@@ -1,0 +1,431 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent STL ray/triangle intersections bounded to stated segments; includes occupied controls",
+  "checks": [
+    {
+      "name": "south_arch_open",
+      "start_mm": [
+        0,
+        -80.0,
+        86.77
+      ],
+      "direction": [
+        0.0,
+        1,
+        0.0
+      ],
+      "length_mm": 15.700000000000003,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "south_arch_backing",
+      "start_mm": [
+        0,
+        -80.0,
+        86.77
+      ],
+      "direction": [
+        0.0,
+        1,
+        0.0
+      ],
+      "length_mm": 19.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "north_arch_open",
+      "start_mm": [
+        0,
+        80.0,
+        86.77
+      ],
+      "direction": [
+        0.0,
+        -1,
+        0.0
+      ],
+      "length_mm": 15.700000000000003,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "north_arch_backing",
+      "start_mm": [
+        0,
+        80.0,
+        86.77
+      ],
+      "direction": [
+        0.0,
+        -1,
+        0.0
+      ],
+      "length_mm": 19.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "east_arch_open",
+      "start_mm": [
+        80.0,
+        18.48,
+        86.77
+      ],
+      "direction": [
+        -1,
+        0.0,
+        0.0
+      ],
+      "length_mm": 43.8,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "east_arch_backing",
+      "start_mm": [
+        80.0,
+        18.48,
+        86.77
+      ],
+      "direction": [
+        -1,
+        0.0,
+        0.0
+      ],
+      "length_mm": 47.099999999999994,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "west_arch_open",
+      "start_mm": [
+        -80.0,
+        18.48,
+        86.77
+      ],
+      "direction": [
+        1,
+        0.0,
+        0.0
+      ],
+      "length_mm": 43.8,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "west_arch_backing",
+      "start_mm": [
+        -80.0,
+        18.48,
+        86.77
+      ],
+      "direction": [
+        1,
+        0.0,
+        0.0
+      ],
+      "length_mm": 47.099999999999994,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "south_portico_open",
+      "start_mm": [
+        0,
+        -70,
+        6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 20,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "south_portico_entry_backing",
+      "start_mm": [
+        0,
+        -70,
+        6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 26,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "south_portico_open_below_soffit",
+      "start_mm": [
+        0,
+        -55,
+        8
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 6,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "south_portico_soffit",
+      "start_mm": [
+        0,
+        -55,
+        8
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 12,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "south_column_occupied_control",
+      "start_mm": [
+        11.25,
+        -70,
+        6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "length_mm": 12,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 2
+    },
+    {
+      "name": "north_portico_open",
+      "start_mm": [
+        0,
+        70,
+        6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "length_mm": 20,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "north_portico_entry_backing",
+      "start_mm": [
+        0,
+        70,
+        6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "length_mm": 26,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "north_portico_open_below_soffit",
+      "start_mm": [
+        0,
+        55,
+        8
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 6,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "north_portico_soffit",
+      "start_mm": [
+        0,
+        55,
+        8
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "length_mm": 12,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "north_column_occupied_control",
+      "start_mm": [
+        11.25,
+        70,
+        6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "length_mm": 12,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 2
+    },
+    {
+      "name": "east_3F_connector_scope_cap",
+      "start_mm": [
+        40,
+        -10.6,
+        21
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 8,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "west_3F_connector_scope_cap",
+      "start_mm": [
+        -40,
+        -10.6,
+        21
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 8,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "east_crown_center_pair_separator",
+      "start_mm": [
+        45,
+        0,
+        86.77
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "length_mm": 9,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "west_crown_center_pair_separator",
+      "start_mm": [
+        -45,
+        0,
+        86.77
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "length_mm": 9,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "roof_single_machine_occupied",
+      "start_mm": [
+        0,
+        6.6,
+        110
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "length_mm": 10,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    },
+    {
+      "name": "roof_no_displaced_second_machine",
+      "start_mm": [
+        0,
+        40,
+        110
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "length_mm": 12,
+      "expected_clear": true,
+      "actual_clear": true,
+      "within_segment_hits": 0
+    },
+    {
+      "name": "roof_deck_backing",
+      "start_mm": [
+        0,
+        40,
+        110
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "length_mm": 16,
+      "expected_clear": false,
+      "actual_clear": false,
+      "within_segment_hits": 1
+    }
+  ]
+}

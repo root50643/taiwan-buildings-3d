@@ -1,0 +1,69 @@
+{
+  "schema": "taiwan-buildings-original-exterior-model-v1",
+  "id": "utaipei-boai-library-2021",
+  "name": "臺北市立大學博愛校區新圖書館",
+  "title": "2020 竣工／2021 啟用；多來源有限細節外觀近似",
+  "school": "臺北市立大學",
+  "campus": "博愛校區",
+  "scope": "Whole above-ground building exterior; no interiors, underground structure or whole-campus claim",
+  "date_scope": "Mixed-reference built form; source capture dates unknown, not exact 2021 reconstruction or verified 2026 current survey",
+  "units": "Normalized representative model millimetres, not measured real-world scale",
+  "size_model_mm": [
+    212,
+    216,
+    140.15
+  ],
+  "orientation": "Local +X approximately east entrance, +Y approximately north, not geodetic survey",
+  "artifacts": {
+    "editable_blend": "utaipei-boai-library-2021.blend",
+    "color_3mf": "utaipei-boai-library-2021.3mf",
+    "monochrome_stl": "utaipei-boai-library-2021.stl",
+    "builder": "build_model.py",
+    "parameters": "parameters.json",
+    "rebuild_command": "reproduce.py",
+    "sources": "sources.json",
+    "evidence_map": "evidence-map.json"
+  },
+  "geometry": {
+    "vertices": 11596,
+    "triangles": 23552,
+    "closed_shells": 1,
+    "materials": 10,
+    "editable_construction_parts": 470
+  },
+  "previews": [
+    "previews/front-detail.png",
+    "previews/front.png",
+    "previews/north.png",
+    "previews/northeast.png",
+    "previews/oblique.png",
+    "previews/roof-oblique.png",
+    "previews/south.png",
+    "previews/top.png",
+    "previews/west.png"
+  ],
+  "rights": "Original geometry, procedural colors and own model renders only. No third-party source pixels or endorsement. See README and sources.json.",
+  "limitations": [
+    "Unknown west facade detail neutralized without erasing plan-supported envelope",
+    "Rooftop heights and proportions approximate; no additional full roof storey",
+    "Central dark top does not resolve atrium covering or depth",
+    "No surveyed dimensions or source acquisition-date claims",
+    "No physical-print or support-free certification"
+  ],
+  "qa": {
+    "mesh": "qa/mesh-validation.json",
+    "self_intersections": "qa/self-intersection-validation.json",
+    "intersection_controls": "qa/self-intersection-controls.json",
+    "slices": "qa/slice-thickness-screen.json",
+    "clearance_rays": "qa/open-ray-validation.json",
+    "3mf": "qa/3mf-validation.json",
+    "native_edit": "qa/native-edit-validation.json",
+    "clean_rebuild": "qa/clean-reproduction.json",
+    "visual_comparison": "qa/visual-source-match.md"
+  },
+  "documentation_revision": {
+    "revision": 2,
+    "change": "Usage-comment example now names utaipei-boai-library-2021.blend; no executable logic changed.",
+    "rebuild_evidence_note": "Recorded input-file hashes refer to the preceding comment text. Executable code, all numerical inputs and all generated artifacts are byte-identical; the documentation-only change does not alter those reproduction results."
+  }
+}

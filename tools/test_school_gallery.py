@@ -394,9 +394,27 @@ class VisibleOverviewPolicyTests(unittest.TestCase):
         with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{PAGE}),patch.object(g,'FILES',fs),patch.object(g,'read',return_value=text):
             return g.audit(PAGE,[R1,R2])
     def test_all_canonical_school_campus_pages_are_enabled(self):
-        chosen=[p for p in g.pages() if g.single_image_overview(p)]
-        self.assertEqual(len(chosen),259)
-        self.assertTrue(all(p.split('/')[0] in g.SCHOOLS for p in chosen))
+        # Derive the expected set from indexed paths, not pages()/the policy predicate.
+        expected={school+'/README.md' for school in g.SCHOOLS}
+        for page in g.FILES:
+            parts=page.split('/')
+            if len(parts)==3 and parts[0] in g.SCHOOLS and parts[-1]=='README.md':
+                prefix='/'.join(parts[:2])+'/buildings/'
+                if any(path.startswith(prefix) for path in g.FILES):expected.add(page)
+        chosen={page for page in g.pages() if g.single_image_overview(page)}
+        self.assertEqual(chosen,expected)
+    def test_new_campus_is_covered_without_fixed_page_count(self):
+        school='Fixture University';root=school+'/New Campus/buildings/library'
+        campus=school+'/New Campus/README.md';model=root+'/README.md'
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',None),patch.object(g,'SCHOOLS',{school}),patch.object(g,'BY_SCHOOL',{school:[root]}),patch.object(g,'ROOTS',[root]),patch.object(g,'FILES',{school+'/README.md',campus,model}),patch.object(g,'OTHER_ROOTS',{}):
+            self.assertEqual(set(g.pages()),{school+'/README.md',campus})
+            self.assertTrue(g.single_image_overview(campus))
+            self.assertFalse(g.single_image_overview(model))
+    def test_unmodeled_campus_readme_does_not_become_model_overview(self):
+        school='Fixture University';page=school+'/Unmodeled Campus/README.md'
+        with patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',None),patch.object(g,'SCHOOLS',{school}),patch.object(g,'BY_SCHOOL',{school:[]}),patch.object(g,'ROOTS',[]),patch.object(g,'FILES',{school+'/README.md',page}),patch.object(g,'OTHER_ROOTS',{}):
+            self.assertEqual(set(g.pages()),{school+'/README.md'})
+            self.assertFalse(g.single_image_overview(page))
     def test_homepage_model_and_other_catalogs_never_enabled(self):
         for page in ['README.md',R1+'/README.md',*g.OTHER_ROOTS]:
             with self.subTest(page=page),patch.object(g,'SINGLE_IMAGE_OVERVIEW_PAGES',{page}):

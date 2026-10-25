@@ -1,0 +1,91 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded STL ray/triangle segment checks, including occupied controls",
+  "checks": [
+    {
+      "name": "south_pergola_gap",
+      "start_mm": [
+        -72.2,
+        -78,
+        126.5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_mm": 4,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "south_pergola_rafter",
+      "start_mm": [
+        -74,
+        -78,
+        126.5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_mm": 4,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2
+    },
+    {
+      "name": "northeast_lower_passage",
+      "start_mm": [
+        96,
+        46,
+        20
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "segment_length_mm": 55,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "east_upper_glazing",
+      "start_mm": [
+        98,
+        0,
+        115
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "segment_length_mm": 28,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "central_dark_is_surface_not_open_shaft",
+      "start_mm": [
+        0,
+        40,
+        145
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 20,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    }
+  ]
+}

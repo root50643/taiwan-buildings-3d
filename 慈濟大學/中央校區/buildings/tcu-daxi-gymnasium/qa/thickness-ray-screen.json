@@ -1,0 +1,128 @@
+{
+  "method": "Reloaded STL: bidirectional chords at seven occupied structural points, plus inward face-normal rays from 3000 evenly distributed triangle centroids. A numerical screen, not an exact medial-axis global minimum thickness proof.",
+  "structural_chords": [
+    {
+      "feature": "outer_canopy_post",
+      "inside_point_mm": [
+        59.2,
+        -98,
+        7
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "measured_chord_mm": 1.2000007629394531,
+      "minimum_expected_mm": 1.19,
+      "pass": true
+    },
+    {
+      "feature": "inner_canopy_roof",
+      "inside_point_mm": [
+        41,
+        -47,
+        12.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "measured_chord_mm": 1.0,
+      "minimum_expected_mm": 0.99,
+      "pass": true
+    },
+    {
+      "feature": "outer_canopy_roof",
+      "inside_point_mm": [
+        55,
+        -47,
+        12.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "measured_chord_mm": 1.0,
+      "minimum_expected_mm": 0.99,
+      "pass": true
+    },
+    {
+      "feature": "track_arcade_pier",
+      "inside_point_mm": [
+        -35,
+        -79,
+        13
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "measured_chord_mm": 3.0,
+      "minimum_expected_mm": 2.99,
+      "pass": true
+    },
+    {
+      "feature": "upper_gallery_round_column",
+      "inside_point_mm": [
+        -36.5,
+        -71,
+        36
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "measured_chord_mm": 2.5,
+      "minimum_expected_mm": 2.49,
+      "pass": true
+    },
+    {
+      "feature": "entrance_round_column",
+      "inside_point_mm": [
+        33,
+        115.6363636364,
+        15
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "measured_chord_mm": 2.6999982278314505,
+      "minimum_expected_mm": 2.69,
+      "pass": true
+    },
+    {
+      "feature": "external_stair_parapet",
+      "inside_point_mm": [
+        -47,
+        54,
+        17.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "measured_chord_mm": 0.9000015258789062,
+      "minimum_expected_mm": 0.89,
+      "pass": true
+    }
+  ],
+  "global_surface_samples": 3000,
+  "global_chord_mm_percentiles": {
+    "0": 0.3499984741210904,
+    "1": 0.3599987030029299,
+    "5": 0.39999961853027366,
+    "50": 7.0,
+    "95": 76.69999694824219,
+    "100": 232.36363220214844
+  },
+  "sampled_chords_under_0_8mm": 476,
+  "limitations": "Short chords can be attached trim, corners or near-grazing facets; hidden interior is a solid exterior abstraction. Print orientation, support removal and material limits still require a real slicer and printer test."
+}

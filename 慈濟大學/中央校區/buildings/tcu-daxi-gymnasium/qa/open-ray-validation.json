@@ -1,0 +1,397 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded STL ray/triangle segment checks, including occupied controls",
+  "checks": [
+    {
+      "name": "track_arcade_true_open_approach",
+      "start_mm": [
+        -42,
+        -84,
+        12
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "track_arcade_setback_backing",
+      "start_mm": [
+        -42,
+        -84,
+        12
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_mm": 13,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "track_arcade_upper_arch_void",
+      "start_mm": [
+        -42,
+        -84,
+        21
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "track_arcade_arch_spandrel_solid",
+      "start_mm": [
+        -42,
+        -79,
+        21
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_mm": 6,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "road_arch_is_closed_glazing",
+      "start_mm": [
+        42,
+        -84,
+        18
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "segment_length_mm": 7,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "road_low_rectangle_is_closed",
+      "start_mm": [
+        42,
+        -84,
+        8
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "segment_length_mm": 7,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "road_upper_gallery_open_approach",
+      "start_mm": [
+        42,
+        -80,
+        36
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "segment_length_mm": 9,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "road_upper_gallery_setback_glazing",
+      "start_mm": [
+        42,
+        -80,
+        36
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "segment_length_mm": 13,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "track_upper_gallery_open_approach",
+      "start_mm": [
+        -42,
+        -80,
+        36
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_mm": 9,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "canopy_central_aisle_open_to_sky",
+      "start_mm": [
+        48.5,
+        -47,
+        4
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_mm": 30,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "canopy_central_aisle_open_longitudinally",
+      "start_mm": [
+        48.5,
+        -103,
+        7
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 124,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "inner_parking_bay_open_under_roof",
+      "start_mm": [
+        41,
+        -103,
+        7
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 121,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "outer_parking_bay_open_under_roof",
+      "start_mm": [
+        55,
+        -103,
+        7
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 121,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "inner_parking_roof_present",
+      "start_mm": [
+        41,
+        -47,
+        5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2
+    },
+    {
+      "name": "outer_parking_roof_present",
+      "start_mm": [
+        55,
+        -47,
+        5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2
+    },
+    {
+      "name": "portico_open_approach",
+      "start_mm": [
+        0,
+        140,
+        15
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "segment_length_mm": 35,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "portico_recessed_glazed_closure",
+      "start_mm": [
+        0,
+        140,
+        15
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "segment_length_mm": 38,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "entrance_ramp_track_side",
+      "start_mm": [
+        -30,
+        127,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 8,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "no_mirrored_road_side_entrance_ramp",
+      "start_mm": [
+        30,
+        127,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 5,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "external_stair_daylight_beneath",
+      "start_mm": [
+        -50,
+        50,
+        8
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "broad_roof_is_closed",
+      "start_mm": [
+        25,
+        -35,
+        80
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 20,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "narrow_cap_above_broad_roof",
+      "start_mm": [
+        0,
+        -30,
+        80
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "air_beside_narrow_cap",
+      "start_mm": [
+        18,
+        -30,
+        80
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    }
+  ]
+}

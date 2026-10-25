@@ -1,0 +1,75 @@
+{
+  "schema": "taiwan-buildings-original-exterior-model-v1",
+  "id": "tcu-daxi-gymnasium",
+  "name": "慈濟大學中央校區大喜館",
+  "school": "慈濟大學",
+  "campus": "中央校區",
+  "building_id": "T",
+  "title": "整館光電前外觀近似；低入口翼、高球場主館與雙排開放停車棚",
+  "scope": "Whole joined exterior and source-evidenced ancillary open parking canopies; no interiors, foundations, neighboring buildings or campus scenery",
+  "date_scope": "Pre-photovoltaic exterior approximation assembled from early public images; later views corroborate persistent topology only",
+  "units": "Normalized representative model millimetres; not surveyed building dimensions and no exact scale ratio claimed",
+  "size_model_mm": [
+    118,
+    248,
+    71.9
+  ],
+  "orientation": "+Y toward northeast entrance, -Y southwest court end; +X southeast road/canopies, -X northwest track; approximate local axes, not geodetic",
+  "artifacts": {
+    "editable_blend": "tcu-daxi-gymnasium.blend",
+    "color_3mf": "tcu-daxi-gymnasium.3mf",
+    "monochrome_stl": "tcu-daxi-gymnasium.stl",
+    "builder": "build_model.py",
+    "parameters": "parameters.json",
+    "rebuild_command": "reproduce.py",
+    "fresh_rebuild_comparison": "verify_reproducibility.py",
+    "sources": "sources.json",
+    "evidence_map": "evidence-map.json"
+  },
+  "geometry": {
+    "vertices": 12924,
+    "triangles": 26020,
+    "closed_shells": 1,
+    "materials": 8,
+    "editable_construction_parts": 736
+  },
+  "previews": [
+    "previews/east.png",
+    "previews/front-detail.png",
+    "previews/front.png",
+    "previews/oblique.png",
+    "previews/road-detail.png",
+    "previews/roof-oblique.png",
+    "previews/south.png",
+    "previews/top.png",
+    "previews/west.png"
+  ],
+  "qa_reports": [
+    "qa/3mf-validation.json",
+    "qa/blend-validation.json",
+    "qa/clean-public-rebuild-validation.json",
+    "qa/mesh-validation.json",
+    "qa/native-edit-validation.json",
+    "qa/open-ray-validation.json",
+    "qa/png-metadata-validation.json",
+    "qa/public-payload-validation.json",
+    "qa/raw-path-buffer-validation.json",
+    "qa/rebuild-validation.json",
+    "qa/render-manifest.json",
+    "qa/saved-scene-render-validation.json",
+    "qa/self-intersection-controls.json",
+    "qa/self-intersection-validation.json",
+    "qa/slice-thickness-screen.json",
+    "qa/thickness-ray-screen.json",
+    "qa/visual-comparison.json"
+  ],
+  "rights": "Independently authored geometry, procedural materials and self-rendered previews. No third-party source pixels or photographic textures. Source attribution does not grant a source-image reuse licence.",
+  "limits": [
+    "Photo-fit proportions and heights, not surveyed dimensions or an exact scale ratio.",
+    "Early pre-PV approximation, not one exact historic day, exact 2003 as-built or present 2026 state.",
+    "Later parking images corroborate broad persistent topology, not unchanged engineering details.",
+    "Broad roof plus narrow raised cap; real track arcade voids but closed road arched windows and low window/base row.",
+    "Two open canopy roof strips retained; post spacing, roof pitch and wall connections simplified and thickened.",
+    "Geometric sections, sampled thickness and manifold checks are not a toolpath or physical-print guarantee."
+  ]
+}

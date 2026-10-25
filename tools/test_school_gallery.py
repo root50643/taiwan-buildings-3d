@@ -470,4 +470,45 @@ class VisibleOverviewPolicyTests(unittest.TestCase):
                 self.assertFalse(g.sync(PAGE,[R1,R2]));self.assertEqual(p.read_text(),text)
                 self.assertIn('overview_not_one_image_per_building',g.audit(PAGE,[R1,R2])['errors'])
 
+class HomepageCardCaptionTests(unittest.TestCase):
+    @staticmethod
+    def card_suffixes(text):
+        """Inspect every linked bold card label, including cards without images."""
+        found=[]
+        for line in text.splitlines():
+            if not line.startswith('|'):
+                continue
+            for cell in g.splitrow(line):
+                labels=list(re.finditer(r'\*\*\[([^\]]+)\]\(([^)]+)\)\*\*',cell))
+                if not labels:
+                    continue
+                if len(labels)!=1:
+                    found.append((None,'multiple card labels'))
+                    continue
+                label=labels[0]
+                rest=cell[:label.start()]+cell[label.end():]
+                rest=re.sub(r'\[<img\b[^>]*>\]\([^)]+\)','',rest)
+                rest=re.sub(r'<br\s*/?>','',rest,flags=re.I).strip()
+                found.append((label.group(2),rest))
+        return found
+
+    def test_current_homepage_all_cards_have_no_descriptive_suffix(self):
+        cards=self.card_suffixes(g.read('README.md'))
+        self.assertTrue(cards)
+        self.assertEqual([x for x in cards if x[1] not in ('','代表圖待指定')],[])
+        self.assertEqual(len({href for href,_ in cards}),len(cards))
+
+    def test_text_only_card_description_is_not_skipped(self):
+        text=TABLE(['**[N｜1 組](N/README.md)**<br>代表圖待指定<br>部分建築，非全校完成','',''])
+        self.assertEqual(self.card_suffixes(text),[('N/README.md','代表圖待指定部分建築，非全校完成')])
+
+    def test_pending_marker_without_description_remains_valid(self):
+        text=TABLE(['**[N｜1 組](N/README.md)**<br>代表圖待指定','',''])
+        self.assertEqual(self.card_suffixes(text),[('N/README.md','代表圖待指定')])
+
+    def test_image_card_description_is_detected_too(self):
+        text=TABLE(['[<img src="N/front.png">](N/README.md)<br>**[N｜1 組](N/README.md)**<br>外觀研究模型','',''])
+        self.assertEqual(self.card_suffixes(text),[('N/README.md','外觀研究模型')])
+
+
 if __name__=='__main__':unittest.main()

@@ -24,5 +24,3 @@
 | ![正面](previews/front.png) | ![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
 | 屋頂 | 另一端斜視 | |
 | ![屋頂](previews/top.png) | ![端側](previews/left_oblique.png) | |
-
-本校首頁代表圖**待使用者選擇**；此處首張僅為模型視圖排序，不指定首頁代表。

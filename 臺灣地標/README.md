@@ -1,10 +1,10 @@
-# 臺灣 24 處地標建築｜150 mm 外觀微縮模型
+# 臺灣 25 處地標建築｜外觀微縮模型
 
-收錄 24 座臺灣地標的原創參數化外觀模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。
+收錄 25 座臺灣地標的原創參數化外觀模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。
 
 ## 使用前先讀
 
-- 單位為毫米（mm），各模型以獨立成品大小設計，最長邊約 150 mm；24 座並非共同比例，不能用來反推真實建築尺寸。
+- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。25座並非共同比例，不能用來反推真實建築尺寸。
 - 模型依公開外觀照片等資料重新建立幾何，屬桌上型外觀詮釋，並非測繪、工程或官方授權模型。未確認的背面、屋頂與細節可能經過推定、簡化及加粗。
 - 數位網格驗證不等同切片或實體試印成功。尚未完成實際切片測試及實體試印；列印前請檢查逐層路徑、薄壁、懸垂、支撐與拆除空間。
 - STL 不包含預覽材質或色彩。Blender 場景的地板、相機、燈光只供預覽，請勿當作列印模型匯出。
@@ -24,6 +24,7 @@
 | [![高雄85大樓前視模型預覽](85-sky-tower/previews/front.png)](85-sky-tower/README.md)<br>**[高雄85大樓](85-sky-tower/README.md)** | [![衛武營國家藝術文化中心前視模型預覽](weiwuying/previews/front.png)](weiwuying/README.md)<br>**[衛武營國家藝術文化中心](weiwuying/README.md)** | [![龍虎塔前視模型預覽](dragon-tiger-pagodas/previews/front.png)](dragon-tiger-pagodas/README.md)<br>**[龍虎塔](dragon-tiger-pagodas/README.md)** |
 | [![鵝鑾鼻燈塔前視模型預覽](eluanbi-lighthouse/previews/front.png)](eluanbi-lighthouse/README.md)<br>**[鵝鑾鼻燈塔](eluanbi-lighthouse/README.md)** | [![松園別館前視模型預覽](pine-garden/previews/front.png)](pine-garden/README.md)<br>**[松園別館](pine-garden/README.md)** | [![國立臺灣史前文化博物館康樂本館前視模型預覽](prehistory-museum-kangle/previews/front.png)](prehistory-museum-kangle/README.md)<br>**[國立臺灣史前文化博物館康樂本館](prehistory-museum-kangle/README.md)** |
 | [![金門得月樓前視模型預覽](deyue-tower/previews/front.png)](deyue-tower/README.md)<br>**[金門得月樓](deyue-tower/README.md)** | [![澎湖天后宮前視模型預覽](penghu-tianhou-temple/previews/front.png)](penghu-tianhou-temple/README.md)<br>**[澎湖天后宮](penghu-tianhou-temple/README.md)** | [![馬祖東湧燈塔前視模型預覽](dongyong-lighthouse/previews/front.png)](dongyong-lighthouse/README.md)<br>**[馬祖東湧燈塔](dongyong-lighthouse/README.md)** |
+| [![臺北表演藝術中心完整主建築模型預覽](tpac-whole-2022/previews/front.png)](tpac-whole-2022/README.md)<br>**[臺北表演藝術中心](tpac-whole-2022/README.md)** |  |  |
 
 ## 模型目錄與實際預覽
 
@@ -53,8 +54,11 @@
 | 金門得月樓 | [模型與說明](deyue-tower/README.md) · [STL](deyue-tower/model.stl) | [前視](deyue-tower/previews/front.png) | [後視](deyue-tower/previews/rear.png) |
 | 澎湖天后宮 | [模型與說明](penghu-tianhou-temple/README.md) · [STL](penghu-tianhou-temple/model.stl) | [前視](penghu-tianhou-temple/previews/front.png) | [後視](penghu-tianhou-temple/previews/rear.png) |
 | 馬祖東湧燈塔 | [模型與說明](dongyong-lighthouse/README.md) · [STL](dongyong-lighthouse/model.stl) | [前視](dongyong-lighthouse/previews/front.png) | [後視](dongyong-lighthouse/previews/rear.png) |
+| 臺北表演藝術中心 | [模型與說明](tpac-whole-2022/README.md) · [STL](tpac-whole-2022/tpac-whole-2022.stl) · [3MF](tpac-whole-2022/tpac-whole-2022.3mf) · [Blend](tpac-whole-2022/tpac-whole-2022.blend) | [前視](tpac-whole-2022/previews/front.png) | [後視](tpac-whole-2022/previews/rear.png) |
 
 ## 重建與檔案
+
+新增臺北表演藝術中心的檔名、公開數值重建流程及九張模型視圖，請依[專屬 README](tpac-whole-2022/README.md)；下列舊檔名說明及18個原包的完整性紀錄保留為原有24座交付歷史。來源權利與圖庫06署名衝突見該包說明，原始第三方照片不公開。
 
 各目錄包含 build_model.py、requirements.txt、render_preview.py、validate_model.py 及數位檢查結果。請在該模型目錄依其 README 安裝相依套件並執行重建；不同模型的參數和重建流程可能不同。
 
@@ -72,7 +76,7 @@
 
 龍虎塔的 STL 較大，另以 Release v1.0.0 附件提供：[下載 dragon_tiger_pagodas_150mm.stl](https://github.com/root50643/taiwan-landmark-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl)。GitHub 的原始碼 ZIP 不包含此 STL。請將下載檔改名為 model.stl，放入 dragon-tiger-pagodas/ 目錄，再依該目錄 README 執行驗證或預覽。檔案幾何與既有驗證雜湊維持不變；publication-manifest.json 將此檔標記為 release_only。
 
-## 24 處地標模型預覽
+## 原有 24 處地標模型預覽
 
 以下皆為實際模型的渲染圖。
 

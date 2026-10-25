@@ -1,0 +1,69 @@
+{
+  "all_expected_outcomes": true,
+  "controls": [
+    {
+      "control": "single_manifold_cube",
+      "expected_clear": true,
+      "reported_clear": true,
+      "intersections_reported": 0,
+      "stl_sha256": "74120293f87d683a176db536c1d993ba71ebba56c5b10383b0e31e0375d19ae1",
+      "exit_code": 0
+    },
+    {
+      "control": "overlapping_cubes",
+      "expected_clear": false,
+      "reported_clear": false,
+      "intersections_reported": 15,
+      "stl_sha256": "2cbdb147475386f38f70f433791e9efb5975e514ff23b164c2bac6dc16f4494f",
+      "exit_code": 1
+    },
+    {
+      "control": "crossing_triangles",
+      "expected_clear": false,
+      "reported_clear": false,
+      "intersections_reported": 1,
+      "stl_sha256": "95cc6d3a6a3c4bbf7c36ad8f9bc6eea9bf32a177f32449cfaf7816ed80715046",
+      "exit_code": 1
+    },
+    {
+      "control": "coplanar_triangles",
+      "expected_clear": false,
+      "reported_clear": false,
+      "intersections_reported": 1,
+      "stl_sha256": "fa1df5618c2cbcc15be07ff59bc43a3c805a6f8afe81659fffd48aa46e9d986e",
+      "exit_code": 1
+    },
+    {
+      "control": "near_coplanar_overlap",
+      "expected_clear": false,
+      "reported_clear": false,
+      "intersections_reported": 1,
+      "stl_sha256": "7ef93f693ac93889acf16fed114e462358db2bb525466b72d3100709fd424d02",
+      "exit_code": 1
+    },
+    {
+      "control": "shared_edge_triangles",
+      "expected_clear": true,
+      "reported_clear": true,
+      "intersections_reported": 0,
+      "stl_sha256": "f67ebf4957918b665acb18a52d9c8aece302b7ee56476a575a6c4625c24d54c7",
+      "exit_code": 0
+    },
+    {
+      "control": "disjoint_cubes",
+      "expected_clear": true,
+      "reported_clear": true,
+      "intersections_reported": 0,
+      "stl_sha256": "31012fe4b828e02830d836b2fc502e3baf8981bd8172c6aa4cc78ef10a63097f",
+      "exit_code": 0
+    },
+    {
+      "control": "shared_vertex_only",
+      "expected_clear": true,
+      "reported_clear": true,
+      "intersections_reported": 0,
+      "stl_sha256": "27a789418f811db4d3697db1a6d3f879eadcd1ae796abb20cd570e5b7400a547",
+      "exit_code": 0
+    }
+  ]
+}

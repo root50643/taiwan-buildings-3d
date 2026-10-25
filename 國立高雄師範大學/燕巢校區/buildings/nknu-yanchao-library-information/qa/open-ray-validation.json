@@ -1,0 +1,334 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded STL ray/triangle segment checks with occupied controls and actual injected-underpass-blocker negative fixture",
+  "checks": [
+    {
+      "name": "front_underpass_cross_route",
+      "start_model_mm": [
+        -25.0,
+        -80.0,
+        6.25
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 80.0,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "front_underpass_below_slab",
+      "start_model_mm": [
+        12.5,
+        -80.0,
+        6.25
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 4.5,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "front_terrace_slab_occupied_control",
+      "start_model_mm": [
+        12.5,
+        -80.0,
+        6.25
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 7.5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2
+    },
+    {
+      "name": "front_open_upper_terrace",
+      "start_model_mm": [
+        12.5,
+        -80.0,
+        14.0
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 23.75,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "front_glazed_entry",
+      "start_model_mm": [
+        12.5,
+        -70.0,
+        17.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 17.5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "rear_lowest_1F_glazed_doors",
+      "start_model_mm": [
+        0.0,
+        50.0,
+        5.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "segment_length_model_mm": 20.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "rear_upper_glazed_band",
+      "start_model_mm": [
+        0.0,
+        50.0,
+        18.75
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "segment_length_model_mm": 20.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "rear_terrace_above_shallow_steps",
+      "start_model_mm": [
+        0.0,
+        47.5,
+        2.5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 20.0,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "rear_curved_canopy",
+      "start_model_mm": [
+        0.0,
+        37.75,
+        7.5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5.5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2
+    },
+    {
+      "name": "right_roof_canopy_open_gap",
+      "start_model_mm": [
+        100.0,
+        0.0,
+        35.0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 10.0,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "right_roof_canopy_band_present",
+      "start_model_mm": [
+        100.0,
+        0.0,
+        36.375
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 10.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2
+    },
+    {
+      "name": "circular_rooflight_recess_open_above_glazing",
+      "start_model_mm": [
+        0.0,
+        0.0,
+        33.5
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 10.0,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "circular_rooflight_glazed_closure",
+      "start_model_mm": [
+        0.0,
+        0.0,
+        33.5
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_model_mm": 2.5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "left_full_skewed_roof_field",
+      "start_model_mm": [
+        -75.0,
+        -25.0,
+        40.0
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_model_mm": 10.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "right_full_roof_field",
+      "start_model_mm": [
+        62.5,
+        0.0,
+        40.0
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_model_mm": 10.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "right_external_escape_stair",
+      "start_model_mm": [
+        106.5,
+        -37.5,
+        20.0
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_model_mm": 20.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "rear_external_escape_stair",
+      "start_model_mm": [
+        70.0,
+        61.875,
+        20.0
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_model_mm": 20.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "left_paired_entrance_stair",
+      "start_model_mm": [
+        -10.375,
+        -119.5,
+        15.0
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_model_mm": 15.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "right_paired_entrance_stair",
+      "start_model_mm": [
+        51.5,
+        -109.25,
+        15.0
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_model_mm": 15.0,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    }
+  ],
+  "negative_control": {
+    "injected_underpass_blocker_detected": true,
+    "hits": 2,
+    "deliverable_modified": false
+  }
+}

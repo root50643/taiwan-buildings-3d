@@ -1,0 +1,335 @@
+{
+  "section_step_mm": 0.25,
+  "print_warnings": [
+    "No physical print, slicer toolpath, structural certification or calibrated true colour is claimed.",
+    "Deep eaves, raised side decks, fine diamond transoms, railings and copper details require scale/orientation/support review.",
+    "0.8 mm principal rail members; finer cosmetic roof joints and lattice exist. No global minimum wall-thickness guarantee."
+  ],
+  "gap_rays": [
+    {
+      "name": "open covered front porch",
+      "start_model_mm": [
+        -14,
+        -80,
+        20
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 28,
+      "expected_clear": true
+    },
+    {
+      "name": "main front eave overhang",
+      "start_model_mm": [
+        42,
+        -70,
+        40
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 39,
+      "expected_clear": true
+    },
+    {
+      "name": "right deck actual undercroft",
+      "start_model_mm": [
+        102,
+        -25,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 50,
+      "expected_clear": true
+    },
+    {
+      "name": "left deck actual undercroft",
+      "start_model_mm": [
+        -102,
+        -25,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 50,
+      "expected_clear": true
+    },
+    {
+      "name": "discrete front ledge has open underside",
+      "start_model_mm": [
+        45,
+        -60,
+        12
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 20,
+      "expected_clear": true
+    },
+    {
+      "name": "no rear entry portico",
+      "start_model_mm": [
+        0,
+        70,
+        25
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 15,
+      "expected_clear": true
+    },
+    {
+      "name": "no invented left outer stair",
+      "start_model_mm": [
+        -120,
+        0,
+        2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 8,
+      "expected_clear": true
+    },
+    {
+      "name": "right rail real open gap",
+      "start_model_mm": [
+        106,
+        25,
+        10.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 6,
+      "expected_clear": true
+    },
+    {
+      "name": "front window rail real open gap",
+      "start_model_mm": [
+        -60,
+        -63.5,
+        19
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 3.4,
+      "expected_clear": true
+    },
+    {
+      "name": "solid display hall body",
+      "start_model_mm": [
+        0,
+        0,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false
+    },
+    {
+      "name": "blank shallow rear projection",
+      "start_model_mm": [
+        0,
+        60,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false
+    },
+    {
+      "name": "right outer stair occupied",
+      "start_model_mm": [
+        114,
+        0,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 1,
+      "expected_clear": false
+    },
+    {
+      "name": "porch supporting column",
+      "start_model_mm": [
+        18.2,
+        -83.1,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false
+    },
+    {
+      "name": "complete roof center occupied",
+      "start_model_mm": [
+        0,
+        0,
+        80
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false
+    }
+  ],
+  "injected_gap_blocker": {
+    "ray_name": "open covered front porch",
+    "box_center_model_mm": [
+      0,
+      -80,
+      20
+    ],
+    "box_extents_model_mm": [
+      3,
+      3,
+      3
+    ]
+  },
+  "rising_surface_profiles": [
+    {
+      "name": "Curved main long slope from eave to ridge",
+      "sample_xy_model_mm": [
+        [
+          40,
+          -73
+        ],
+        [
+          40,
+          -60
+        ],
+        [
+          40,
+          -45
+        ],
+        [
+          40,
+          -30
+        ],
+        [
+          40,
+          -15
+        ],
+        [
+          40,
+          -3
+        ]
+      ],
+      "ray_top_z_model_mm": 120
+    },
+    {
+      "name": "Lower end hip from eave to gable shoulder",
+      "sample_xy_model_mm": [
+        [
+          110,
+          0
+        ],
+        [
+          104,
+          0
+        ],
+        [
+          97,
+          0
+        ],
+        [
+          90,
+          0
+        ],
+        [
+          83,
+          0
+        ]
+      ],
+      "ray_top_z_model_mm": 120
+    },
+    {
+      "name": "Right-only outer stair rises toward discrete deck",
+      "sample_xy_model_mm": [
+        [
+          118.8,
+          0
+        ],
+        [
+          116.4,
+          0
+        ],
+        [
+          114.0,
+          0
+        ],
+        [
+          111.6,
+          0
+        ]
+      ],
+      "ray_top_z_model_mm": 12
+    },
+    {
+      "name": "Front short approach steps rise toward porch",
+      "sample_xy_model_mm": [
+        [
+          0,
+          -103.4
+        ],
+        [
+          0,
+          -100.8
+        ],
+        [
+          0,
+          -98.0
+        ],
+        [
+          0,
+          -95.4
+        ]
+      ],
+      "ray_top_z_model_mm": 12
+    }
+  ]
+}

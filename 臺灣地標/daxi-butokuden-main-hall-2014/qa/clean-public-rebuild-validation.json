@@ -1,0 +1,490 @@
+{
+  "fresh_directory_public_inputs_only": true,
+  "copied_input_files": [
+    "build_model.py",
+    "parameters.json",
+    "qa-probes.json",
+    "mesh_topology.py",
+    "topology_controls.py",
+    "export_3mf.py",
+    "render_model.py",
+    "validate_model.py",
+    "validate_self_intersections.py",
+    "intersection_controls.py",
+    "verify_blend.py",
+    "verify_path_buffers.py",
+    "verify_png_metadata.py",
+    "reproduce.py",
+    "requirements-model.txt"
+  ],
+  "input_sha256": {
+    "build_model.py": "39f936d88eddcc962a3dbe06492e26bbd41e1f557a6121fb1012c7d2fcc7e9e3",
+    "parameters.json": "bc6905fd1f5ddb1eeaae0de6a0fd7ef4fbfacc9309a857ba0e0e31e6ce97848d",
+    "qa-probes.json": "82973eb82ab71bb517684911866a2054f13999d8cf0022433771a7c2aebc0e47",
+    "mesh_topology.py": "e1c6d46ada51d499cb0540e7c9dfb3263603c2ee07f2c4e0b4c86196d53d03da",
+    "topology_controls.py": "32d37a0bea4d2cfeed512ca250c81d84a784ef7830d91d1ad684a2e3d1b31049",
+    "export_3mf.py": "fd3c3789b3dd8c0fc46b1a47d6d39be753359c97f81135ba632d65a62497523d",
+    "render_model.py": "b9d1abda5b0dd335e927c2ae6b4ffe0a891c3d0591c57c8141d18683ee578f96",
+    "validate_model.py": "29dd219e0affa6b2838953ba6c9306a0b87ffb6bd8803ff69929be1e53ab1bd1",
+    "validate_self_intersections.py": "e09fa83af78890fcf6ce0a993d30041deccfbaef24c03b27ceac732d79191393",
+    "intersection_controls.py": "910852cd3bc963ad806bde5c3adf8fa342a938a6858f63c7eb6109c207f6be93",
+    "verify_blend.py": "2cb6310f2579c1e0f02bd03927e71aa22cc806231d25bc19121ff6aa6dc8c71c",
+    "verify_path_buffers.py": "7e7984898fd7b1c2b15a5841faa42dd534e26dbbe05714386c9cad823b604ac5",
+    "verify_png_metadata.py": "16c8ea2afcfc02ddb40bbd0558dbc6552bf8521474bc6c29ede1a996fb604c1f",
+    "reproduce.py": "68deacc0b591776b16a6632c955d9f25a24207d411ce200aff41c69ed4a718da",
+    "requirements-model.txt": "7f0c13ae60c96c11130d311231a03bc3fd17fdc57e9a16a8d9d1fd1307e07966"
+  },
+  "network_or_reference_images_required": false,
+  "geometry_arrays_identical": {
+    "vertices": true,
+    "faces": true,
+    "materials": true
+  },
+  "stl_bytes_identical": true,
+  "component_data_and_build_summary_identical": {
+    "construction-parts.json": true,
+    "editable-parts.json": true,
+    "build-summary.json": true
+  },
+  "preview_count": 9,
+  "previews": [
+    {
+      "file": "previews/front-elevation.png",
+      "dimensions": [
+        1100,
+        600
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "bbcd3239cbef6d2bc2eca6ee0041308beef115c7032af61f380b64d984e28e9b"
+    },
+    {
+      "file": "previews/front.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "748efc5c0c1c40e149d925ef5fc70ef6cc559fc292f00be7575e9e009bcdd9d5"
+    },
+    {
+      "file": "previews/ground-plan.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "0cbfc0b53e2807f982cececb0ff69603b8fc2dbf83f0c8e012ca915233faa2b5"
+    },
+    {
+      "file": "previews/left-elevation.png",
+      "dimensions": [
+        1100,
+        600
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "d93d94242aafababaefe146497738077516e39203267fd7487b725c288488510"
+    },
+    {
+      "file": "previews/oblique.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "c726e1efa1c22b6012657b5ed8382c11b507a7431b785ae7b6ef1fcb1dd0f5e3"
+    },
+    {
+      "file": "previews/rear-elevation.png",
+      "dimensions": [
+        1100,
+        600
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "f60600ac2d21c2be059018ef2e183c57f4b25f3bc2e444dd50bce53999cbb7bb"
+    },
+    {
+      "file": "previews/right-elevation.png",
+      "dimensions": [
+        1100,
+        600
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "2f4ce5991d95dc812522994139c5f702aed77c1ce5fb8524e03ac5b547f03b54"
+    },
+    {
+      "file": "previews/roof-detail.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "51fc0f05561bcd6162b8556b2635b613859062065c68ae9ac4e2b90195dac906"
+    },
+    {
+      "file": "previews/top.png",
+      "dimensions": [
+        1100,
+        920
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "9a7f9a07f551cebad9c324274f973c393b589d63ab27ce291d0d986636f26e0f"
+    }
+  ],
+  "clean_rebuild_3mf_strict_validation": {
+    "topology": {
+      "artifact": "daxi-butokuden-main-hall-2014.3mf",
+      "vertices": 20941,
+      "triangles": 43618,
+      "closed_shells": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume_mm3": 1632002.5368723264,
+      "edge_incidence_histogram": {
+        "2": 65427
+      },
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertex_links": 0,
+      "inconsistently_oriented_edges": 0,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 0,
+      "unreferenced_vertices": 0,
+      "size_model_mm": [
+        231.75442504882812,
+        179.66890716552734,
+        108.94999694824219
+      ],
+      "bounds_model_mm": [
+        [
+          -111.90442657470703,
+          -104.19999694824219,
+          0.0
+        ],
+        [
+          119.8499984741211,
+          75.46891021728516,
+          108.94999694824219
+        ]
+      ],
+      "euler_characteristic": -868,
+      "all_pass": true
+    },
+    "strict": true,
+    "warnings": 0,
+    "mesh_objects": 1,
+    "build_items": 1,
+    "model_units": "millimetre",
+    "all_triangle_property_resources_match_group": true,
+    "vertices": 20941,
+    "triangles": 43618,
+    "base_materials": 8,
+    "all_triangle_materials_match_palette": true,
+    "triangle_indices_exact_match": true,
+    "vertex_max_abs_difference_mm": 7.62939453125e-06,
+    "vertex_tolerance_mm": 2e-05,
+    "roundtrip": {
+      "topology": {
+        "artifact": "roundtrip.3mf",
+        "vertices": 20941,
+        "triangles": 43618,
+        "closed_shells": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 1632002.5368723264,
+        "edge_incidence_histogram": {
+          "2": 65427
+        },
+        "nonmanifold_edges": 0,
+        "nonmanifold_vertex_links": 0,
+        "inconsistently_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "duplicate_triangles": 0,
+        "unreferenced_vertices": 0,
+        "size_model_mm": [
+          231.75442504882812,
+          179.66890716552734,
+          108.94999694824219
+        ],
+        "bounds_model_mm": [
+          [
+            -111.90442657470703,
+            -104.19999694824219,
+            0.0
+          ],
+          [
+            119.8499984741211,
+            75.46891021728516,
+            108.94999694824219
+          ]
+        ],
+        "euler_characteristic": -868,
+        "all_pass": true
+      },
+      "strict": true,
+      "warnings": 0,
+      "mesh_objects": 1,
+      "build_items": 1,
+      "model_units": "millimetre",
+      "all_triangle_property_resources_match_group": true,
+      "vertices": 20941,
+      "triangles": 43618,
+      "base_materials": 8,
+      "all_triangle_materials_match_palette": true,
+      "triangle_indices_exact_match": true,
+      "vertex_max_abs_difference_mm": 7.62939453125e-06,
+      "vertex_tolerance_mm": 2e-05
+    },
+    "lib3mf_version": [
+      2,
+      5,
+      0
+    ],
+    "3mf_sha256": "9f32684d358292a7cf80bab60fd026feb3db844d4f217eebcdd8cd88257af9cf"
+  },
+  "clean_rebuild_native_edit_validation": {
+    "native_vertex_changed_and_reopened": true,
+    "native_material_diffuse_and_shader_changed_and_reopened": true,
+    "construction_component_vertex_changed_and_reopened": true,
+    "individual_component_move_and_colour_changed_and_reopened": true,
+    "construction_location_delta_mm": 0.35,
+    "tested_building_component": "Whole main hall exterior enclosure",
+    "final_vertex_delta_mm": 0.125,
+    "construction_vertex_delta_mm": 0.2,
+    "deliverable_modified": false,
+    "temporary_probe_removed": true,
+    "original_deliverable_sha256_before_and_after": "7fb8be79b15bf193684d481448e22a984078b7aa2277d42172a3a9fd82f8d1a9"
+  },
+  "clean_rebuild_full_sdna_validation": {
+    "all_pass": true,
+    "buffers_checked": 41845,
+    "total_fixed_buffer_bytes": 1310091,
+    "classification_counts": {
+      "exact_factory_buffer": 36953,
+      "public_authored_value_with_verified_full_tail": 4892
+    },
+    "violations": [],
+    "method": "Recursive embedded SDNA field offsets over every structured block instance and embedded structure/array; every fixed char array including its complete NUL tail; compare exact whole buffers with an actual newly saved --factory-startup Blender file, then narrowly declared public names/settings with full tail checking. No prefix-only grep or field-name-only path scan.",
+    "scope": "Declared non-pointer fixed arrays of char/uchar/int8_t/uint8_t; raw pointer allocations, float geometry, and media are separate native/artifact checks.",
+    "model_blend_sha256": "7fb8be79b15bf193684d481448e22a984078b7aa2277d42172a3a9fd82f8d1a9",
+    "blender_file_version": "403",
+    "sdna_sha256": "26245ba53e256375178f5cd806cdcfdbed9a3b1d40e3a5f7f525afefd6eeceaa",
+    "actual_factory_file_created": true,
+    "factory_blend_sha256": "79545b29e267e80f499872a5066bcb74b6ab930312c490d4bea22e9bc6bf1a35",
+    "factory_fixed_buffers": 1983,
+    "structured_blocks_checked": 18672,
+    "raw_non_structured_blocks_outside_fixed_array_scope": 10869,
+    "distinct_fixed_fields": 280,
+    "synthetic_negative_controls": [
+      {
+        "control": "actual_untouched_factory_file",
+        "expected_pass": true,
+        "actual_pass": true
+      },
+      {
+        "control": "post_NUL_stale_text",
+        "field": "Scene.r/RenderData.pic[1024]",
+        "expected_pass": false,
+        "actual_pass": false
+      },
+      {
+        "control": "nested_struct_private_value",
+        "field": "Scene.r/RenderData.im_format/ImageFormatData.linear_colorspace_settings/ColorManagedColorspaceSettings.name[64]",
+        "expected_pass": false,
+        "actual_pass": false
+      }
+    ],
+    "deliverable_modified": false
+  },
+  "clean_rebuild_png_metadata_validation": {
+    "all_pass": true,
+    "preview_count": 9,
+    "excluded_chunks": [
+      "tEXt",
+      "zTXt",
+      "iTXt",
+      "eXIf",
+      "tIME"
+    ],
+    "method": "Parse each delivered PNG through IEND; validate chunk CRCs and reject text/EXIF/time metadata or trailing bytes. This is metadata validation, not a copyright or visual-content classifier.",
+    "previews": [
+      {
+        "file": "previews/front-elevation.png",
+        "dimensions": [
+          1100,
+          600
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "bbcd3239cbef6d2bc2eca6ee0041308beef115c7032af61f380b64d984e28e9b"
+      },
+      {
+        "file": "previews/front.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "748efc5c0c1c40e149d925ef5fc70ef6cc559fc292f00be7575e9e009bcdd9d5"
+      },
+      {
+        "file": "previews/ground-plan.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "0cbfc0b53e2807f982cececb0ff69603b8fc2dbf83f0c8e012ca915233faa2b5"
+      },
+      {
+        "file": "previews/left-elevation.png",
+        "dimensions": [
+          1100,
+          600
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "d93d94242aafababaefe146497738077516e39203267fd7487b725c288488510"
+      },
+      {
+        "file": "previews/oblique.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "c726e1efa1c22b6012657b5ed8382c11b507a7431b785ae7b6ef1fcb1dd0f5e3"
+      },
+      {
+        "file": "previews/rear-elevation.png",
+        "dimensions": [
+          1100,
+          600
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "f60600ac2d21c2be059018ef2e183c57f4b25f3bc2e444dd50bce53999cbb7bb"
+      },
+      {
+        "file": "previews/right-elevation.png",
+        "dimensions": [
+          1100,
+          600
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "2f4ce5991d95dc812522994139c5f702aed77c1ce5fb8524e03ac5b547f03b54"
+      },
+      {
+        "file": "previews/roof-detail.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "51fc0f05561bcd6162b8556b2635b613859062065c68ae9ac4e2b90195dac906"
+      },
+      {
+        "file": "previews/top.png",
+        "dimensions": [
+          1100,
+          920
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "9a7f9a07f551cebad9c324274f973c393b589d63ab27ce291d0d986636f26e0f"
+      }
+    ]
+  },
+  "clean_rebuild_saved_scene_render_validation": {
+    "actual_saved_blend_reopened_and_rendered": true,
+    "reference_preview": "previews/front.png",
+    "png_bytes_identical_after_metadata_normalization": true,
+    "sha256": "748efc5c0c1c40e149d925ef5fc70ef6cc559fc292f00be7575e9e009bcdd9d5",
+    "deliverable_modified": false
+  },
+  "all_pass": true
+}

@@ -1,0 +1,265 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded-STL segment ray intersections plus interior point checks; occupied controls and actual injected-blocker negative fixture",
+  "checks": [
+    {
+      "name": "open covered front porch",
+      "start_model_mm": [
+        -14,
+        -80,
+        20
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 28,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "main front eave overhang",
+      "start_model_mm": [
+        42,
+        -70,
+        40
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 39,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "right deck actual undercroft",
+      "start_model_mm": [
+        102,
+        -25,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 50,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "left deck actual undercroft",
+      "start_model_mm": [
+        -102,
+        -25,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 50,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "discrete front ledge has open underside",
+      "start_model_mm": [
+        45,
+        -60,
+        12
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 20,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "no rear entry portico",
+      "start_model_mm": [
+        0,
+        70,
+        25
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 15,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "no invented left outer stair",
+      "start_model_mm": [
+        -120,
+        0,
+        2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 8,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "right rail real open gap",
+      "start_model_mm": [
+        106,
+        25,
+        10.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 6,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "front window rail real open gap",
+      "start_model_mm": [
+        -60,
+        -63.5,
+        19
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 3.4,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "solid display hall body",
+      "start_model_mm": [
+        0,
+        0,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 3
+    },
+    {
+      "name": "blank shallow rear projection",
+      "start_model_mm": [
+        0,
+        60,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 3
+    },
+    {
+      "name": "right outer stair occupied",
+      "start_model_mm": [
+        114,
+        0,
+        2
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 1,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 3
+    },
+    {
+      "name": "porch supporting column",
+      "start_model_mm": [
+        18.2,
+        -83.1,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 3
+    },
+    {
+      "name": "complete roof center occupied",
+      "start_model_mm": [
+        0,
+        0,
+        80
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 5,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 3
+    }
+  ],
+  "negative_control": {
+    "injected_underpass_blocker_detected": true,
+    "ray_name": "open covered front porch",
+    "hits": 2,
+    "occupied_sample_points": 1,
+    "deliverable_modified": false
+  }
+}

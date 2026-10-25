@@ -1,0 +1,193 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded STL ray/triangle segment checks, including occupied controls",
+  "checks": [
+    {
+      "name": "west_pocket_open_approach",
+      "start_mm": [
+        -50,
+        -49,
+        12
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 19,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "west_pocket_backing_closes_not_tunnel",
+      "start_mm": [
+        -50,
+        -49,
+        12
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 24,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "west_pocket_open_below_soffit",
+      "start_mm": [
+        -50,
+        -35,
+        12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_mm": 7,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "west_pocket_closed_by_second_floor",
+      "start_mm": [
+        -50,
+        -35,
+        12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "east_pocket_setback_before_glass",
+      "start_mm": [
+        50,
+        -39,
+        12
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 11,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "east_pocket_glazed_backing",
+      "start_mm": [
+        50,
+        -39,
+        12
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 17,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "south_continuous_upper_bar",
+      "start_mm": [
+        -50,
+        -49,
+        30
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_mm": 14,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "north_low_glazing_setback_clearance",
+      "start_mm": [
+        0,
+        73,
+        28
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "segment_length_mm": 6,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    },
+    {
+      "name": "north_low_glazing_closure",
+      "start_mm": [
+        0,
+        73,
+        28
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "segment_length_mm": 11,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "covered_atrium_not_open_exterior_court",
+      "start_mm": [
+        0,
+        20,
+        155
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 17,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1
+    },
+    {
+      "name": "above_atrium_free_air",
+      "start_mm": [
+        0,
+        20,
+        155
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "segment_length_mm": 10,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0
+    }
+  ]
+}

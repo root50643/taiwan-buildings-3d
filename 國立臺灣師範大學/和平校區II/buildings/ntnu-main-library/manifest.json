@@ -1,0 +1,73 @@
+{
+  "schema": "taiwan-buildings-original-exterior-model-v1",
+  "id": "ntnu-main-library",
+  "name": "國立臺灣師範大學圖書館總館",
+  "school": "國立臺灣師範大學",
+  "campus": "和平校區 II",
+  "building_id": "H202",
+  "title": "八層 D 形整棟有限外觀近似；有覆頂中庭及兩個低層南側凹口",
+  "scope": "Whole above-ground exterior approximation; no interiors, underground structure or neighbouring buildings",
+  "date_scope": "Mixed-date references including 2020/2023 form, 2025 repair-report photographs and January/February/May 2025 Street View; not exact 2026 conditions",
+  "units": "Representative model millimetres; no surveyed physical dimensions or exact scale ratio",
+  "size_model_mm": [
+    230.0,
+    151.0,
+    148.5
+  ],
+  "orientation": "Local +X approximately east, +Y approximately north; not geodetic control",
+  "artifacts": {
+    "editable_blend": "ntnu-main-library.blend",
+    "color_3mf": "ntnu-main-library.3mf",
+    "monochrome_stl": "ntnu-main-library.stl",
+    "builder": "build_model.py",
+    "parameters": "parameters.json",
+    "rebuild_command": "reproduce.py",
+    "fresh_rebuild_comparison": "verify_reproducibility.py",
+    "sources": "sources.json",
+    "evidence_map": "evidence-map.json"
+  },
+  "geometry": {
+    "vertices": 14192,
+    "triangles": 28380,
+    "closed_shells": 1,
+    "materials": 10,
+    "editable_construction_parts": 636
+  },
+  "previews": [
+    "previews/east.png",
+    "previews/front-detail.png",
+    "previews/front.png",
+    "previews/oblique.png",
+    "previews/rear-detail.png",
+    "previews/roof-oblique.png",
+    "previews/south.png",
+    "previews/top.png",
+    "previews/west.png"
+  ],
+  "qa_reports": [
+    "qa/3mf-validation.json",
+    "qa/blend-validation.json",
+    "qa/clean-public-rebuild-validation.json",
+    "qa/mesh-validation.json",
+    "qa/native-edit-validation.json",
+    "qa/open-ray-validation.json",
+    "qa/png-metadata-validation.json",
+    "qa/public-payload-validation.json",
+    "qa/raw-path-buffer-validation.json",
+    "qa/rebuild-validation.json",
+    "qa/render-manifest.json",
+    "qa/saved-scene-render-validation.json",
+    "qa/self-intersection-controls.json",
+    "qa/self-intersection-validation.json",
+    "qa/slice-thickness-screen.json",
+    "qa/visual-comparison.json"
+  ],
+  "rights": "Independently authored geometry and neutral materials. No external source pixels or photographic textures. Source attributions do not grant source-image reuse licences.",
+  "limits": [
+    "Nonmetric axonometrics, not surveyed orthographic floor plans",
+    "West pocket has a neutral backed boundary, not observed exact material or glazing plane",
+    "East storefront is simplified independently; west is not mirrored",
+    "Atrium roof is closed near roof level; cap count and relative heights qualitative",
+    "Geometric checks are not a physical-print guarantee"
+  ]
+}

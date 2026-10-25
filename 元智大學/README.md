@@ -2,9 +2,9 @@
 
 目前收錄2套來源限定外觀近似：五館（圖書資訊大樓）暨2006圖書館擴建翼合計1套，以及六館行政教學大樓1套。不是全校完成；其他校舍仍待逐棟補證續作。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 五館西南主要面<br>[![西南面](校本部/buildings/yzu-building5-library-extension/previews/front.png)](校本部/buildings/yzu-building5-library-extension/README.md) | [![六館行政教學大樓：實際模型預覽](校本部/buildings/yzu-building6/previews/front.png)](校本部/buildings/yzu-building6/README.md)<br>**[六館行政教學大樓｜2016–2018歷史外觀近似版](校本部/buildings/yzu-building6/README.md)** |  |
+| [![西南面](校本部/buildings/yzu-building5-library-extension/previews/front.png)](校本部/buildings/yzu-building5-library-extension/README.md)<br>**[五館西南主要面](校本部/buildings/yzu-building5-library-extension/README.md)** | [![六館行政教學大樓：實際模型預覽](校本部/buildings/yzu-building6/previews/front.png)](校本部/buildings/yzu-building6/README.md)<br>**[六館行政教學大樓｜2016–2018歷史外觀近似版](校本部/buildings/yzu-building6/README.md)** |  |
 
 ## 五館既有範圍與警示
 

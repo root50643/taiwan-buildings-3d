@@ -4,9 +4,9 @@
 
 **三一禮拜堂既有模型：** 來源限定外觀近似，含底座最長150mm。平頂主堂、分片開口塔、東露台與自身階梯；尺度經柱距/剖圖/航照交叉校正，仍非測繪模型。未試印，不保證免支撐。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正面六材質外觀<br>![正面](八德校區/buildings/ces-trinity-chapel/appearance/previews/front.png) | [![真理文教大樓與相連圖書館翼：實際模型預覽](八德校區/buildings/ces-truth-teaching-building/previews/front.png)](八德校區/buildings/ces-truth-teaching-building/README.md)<br>**[真理文教大樓與相連圖書館翼｜歷史外觀近似版](八德校區/buildings/ces-truth-teaching-building/README.md)** |  |
+| [![正面](八德校區/buildings/ces-trinity-chapel/appearance/previews/front.png)](八德校區/buildings/ces-trinity-chapel/README.md)<br>**[中華福音神學研究學院｜八德校區｜三一禮拜堂](八德校區/buildings/ces-trinity-chapel/README.md)**<br>正面六材質外觀 | [![真理文教大樓與相連圖書館翼：實際模型預覽](八德校區/buildings/ces-truth-teaching-building/previews/front.png)](八德校區/buildings/ces-truth-teaching-building/README.md)<br>**[真理文教大樓與相連圖書館翼｜歷史外觀近似版](八德校區/buildings/ces-truth-teaching-building/README.md)** |  |
 
 [模型、來源及數位QA](八德校區/buildings/ces-trinity-chapel/README.md)。現收錄三一禮拜堂、真理文教大樓與相連圖書館翼共2套；後者相連雙翼只計一套，不代表全校完成。三一禮拜堂原有範圍、數位審核與限制維持不變。
 

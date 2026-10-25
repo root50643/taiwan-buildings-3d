@@ -4,8 +4,8 @@
 
 [無盡藏圖書館](大林校本部/buildings/nhu-wujinzang-library/README.md)
 
-| 無盡藏圖書館正面 |  | 成均館 |
-|---|---|---|
-| ![正面（屋頂限域配色）](大林校本部/buildings/nhu-wujinzang-library/appearance/previews/front.png) |   | [![成均館（校方照片與調查圖參考外觀近似版；照片年代未定）：實際模型預覽](大林校本部/buildings/nhu-chengjun-hall/previews/front.png)](大林校本部/buildings/nhu-chengjun-hall/README.md)<br>**[成均館（校方照片與調查圖參考外觀近似版；照片年代未定）](大林校本部/buildings/nhu-chengjun-hall/README.md)** |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![正面（屋頂限域配色）](大林校本部/buildings/nhu-wujinzang-library/appearance/previews/front.png)](大林校本部/buildings/nhu-wujinzang-library/README.md)<br>**[南華大學無盡藏圖書館](大林校本部/buildings/nhu-wujinzang-library/README.md)**<br>無盡藏圖書館正面 | [![成均館（校方照片與調查圖參考外觀近似版；照片年代未定）：實際模型預覽](大林校本部/buildings/nhu-chengjun-hall/previews/front.png)](大林校本部/buildings/nhu-chengjun-hall/README.md)<br>**[成均館（校方照片與調查圖參考外觀近似版；照片年代未定）](大林校本部/buildings/nhu-chengjun-hall/README.md)** |  |
 
 白覆蓋與前紅坡為官方實景支持的限域配色；其餘未確認面保持中性，攝影年月限制見模型配色說明。

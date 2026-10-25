@@ -4,9 +4,9 @@
 
 ## 模型圖鑑
 
-| 行政大樓・圖書館・教育大樓複合體 | 新研究大樓（2020年啟用館） | 燕巢圖資大樓｜2011–2012整棟地上外觀近似 |
-| --- | --- | --- |
-| [![實際STL](和平校區/buildings/nknu-administration-complex/previews/front.png)](和平校區/buildings/nknu-administration-complex/README.md) | [![實際STL](和平校區/buildings/nknu-new-research-building/previews/front.png)](和平校區/buildings/nknu-new-research-building/README.md) | [![燕巢圖資大樓實際模型](燕巢校區/buildings/nknu-yanchao-library-information/previews/front.png)](燕巢校區/buildings/nknu-yanchao-library-information/README.md) |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![實際STL](和平校區/buildings/nknu-administration-complex/previews/front.png)](和平校區/buildings/nknu-administration-complex/README.md)<br>**[行政大樓・圖書館・教育大樓複合體](和平校區/buildings/nknu-administration-complex/README.md)** | [![實際STL](和平校區/buildings/nknu-new-research-building/previews/front.png)](和平校區/buildings/nknu-new-research-building/README.md)<br>**[新研究大樓（2020年啟用館）](和平校區/buildings/nknu-new-research-building/README.md)** | [![燕巢圖資大樓實際模型](燕巢校區/buildings/nknu-yanchao-library-information/previews/front.png)](燕巢校區/buildings/nknu-yanchao-library-information/README.md)<br>**[燕巢圖資大樓｜2011–2012整棟地上外觀近似](燕巢校區/buildings/nknu-yanchao-library-information/README.md)** |
 
 每列最多三個不同模型；不以同件不同角度湊件數。
 

@@ -4,9 +4,9 @@
 
 [圖書資訊綜合大樓完整說明](香山校本部/buildings/hcu-library-information-building/README.md)
 
-| 模型 | 模型 | 模型 |
-|---|---|---|
-| [![圖書資訊綜合大樓：實際模型預覽](香山校本部/buildings/hcu-library-information-building/previews/front.png)](香山校本部/buildings/hcu-library-information-building/README.md)<br>**[圖書資訊綜合大樓](香山校本部/buildings/hcu-library-information-building/README.md)** | [![慈恩精舍選佛場：實際模型預覽](香山校本部/buildings/hcu-hsuan-fo-hall/previews/front.png)](香山校本部/buildings/hcu-hsuan-fo-hall/README.md)<br>**[慈恩精舍選佛場](香山校本部/buildings/hcu-hsuan-fo-hall/README.md)** | |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![圖書資訊綜合大樓：實際模型預覽](香山校本部/buildings/hcu-library-information-building/previews/front.png)](香山校本部/buildings/hcu-library-information-building/README.md)<br>**[圖書資訊綜合大樓](香山校本部/buildings/hcu-library-information-building/README.md)** | [![慈恩精舍選佛場：實際模型預覽](香山校本部/buildings/hcu-hsuan-fo-hall/previews/front.png)](香山校本部/buildings/hcu-hsuan-fo-hall/README.md)<br>**[慈恩精舍選佛場](香山校本部/buildings/hcu-hsuan-fo-hall/README.md)** |  |
 
 數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。模型採 2022 年光電併聯後的厚背棚外形，結合 2013／2018 刊載的立面實照，是跨年有界近似；厚背棚不是原始裸屋頂。T 形主體、入口兩方柱與厚簷為核心，P2 低坡端面別仍是中高信心候選、非唯一確證。長主翼未知窗列保守省略。
 

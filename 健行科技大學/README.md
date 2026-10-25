@@ -1,8 +1,8 @@
 # 健行科技大學
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 圖書館東面窗背有限配色<br>![正面](校本部/buildings/uch-library/appearance/previews/front.png) |  |  |
+| [![正面](校本部/buildings/uch-library/appearance/previews/front.png)](校本部/buildings/uch-library/README.md)<br>**[健行科技大學圖書館：有界外觀近似模型](校本部/buildings/uch-library/README.md)**<br>圖書館東面窗背有限配色 |  |  |
 
 [圖書館模型與完整限制](校本部/buildings/uch-library/README.md) · [東面104窗背雙材質3MF／Blend與外觀限制](校本部/buildings/uch-library/appearance/README.md)。1990 使用執照主體／2002 整建，外觀參照 2020–2024，150mm含底，有界近似。校本部是本包整理層級名稱。未知面維持中性。來源私圖未納包。
 

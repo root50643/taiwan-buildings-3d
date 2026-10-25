@@ -2,9 +2,9 @@
 
 目前收錄4套：和平校區I原有3件不同建築的**局部外觀段**，以及和平校區II圖書館總館的**整棟地上有限外觀近似**。不是4棟完整精細模型，也不是全校完成。原3件含底座最長150mm；圖書館模型含底座230×151×148.5mm，各自獨立比例、自建網格。
 
-| 行政大樓 | 禮堂 | 文薈廳 |
-|---|---|---|
-| [![行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-administration-central-entry-segment/)<br>[行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/) | [![禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-auditorium-front-block-segment/)<br>[禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/) | [![文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/)<br>[文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/) |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-administration-central-entry-segment/README.md)<br>**[行政大樓中央入口段](和平校區I/buildings/ntnu-administration-central-entry-segment/)** | [![禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-auditorium-front-block-segment/README.md)<br>**[禮堂前棟入口段](和平校區I/buildings/ntnu-auditorium-front-block-segment/)** | [![文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/appearance/previews/front.png)](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/README.md)<br>**[文薈廳圓窗山牆與蝙蝠廊段](和平校區I/buildings/ntnu-wenhui-gable-corridor-segment/)** |
 | [![圖書館總館北側模型](和平校區II/buildings/ntnu-main-library/previews/front.png)](和平校區II/buildings/ntnu-main-library/README.md)<br>**[圖書館總館｜整棟地上外觀有限細節近似](和平校區II/buildings/ntnu-main-library/README.md)**<br>跨年度參考；非實測／已核實現況 |  |  |
 
 以上預覽皆由交付模型幾何及原創材質渲染。每件資料夾有 STL、可編輯 Blender 原生檔、參數腳本、來源、數位QA及SHA。

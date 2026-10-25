@@ -4,9 +4,9 @@
 
 ## 模型圖鑑（2套）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 坡下長玻璃面<br>[![活動中心坡下](校本部/buildings/mmu-multifunctional-2013/appearance/previews/front.png)](校本部/buildings/mmu-multifunctional-2013/README.md) | [![第二教研大樓D–G實際模型預覽](校本部/buildings/mmu-teaching-phase2/previews/front.png)](校本部/buildings/mmu-teaching-phase2/README.md)<br>**[第二教研大樓D–G｜完整相連組歷史外觀有限細節近似](校本部/buildings/mmu-teaching-phase2/README.md)** |  |
+| [![活動中心坡下](校本部/buildings/mmu-multifunctional-2013/appearance/previews/front.png)](校本部/buildings/mmu-multifunctional-2013/README.md)<br>**[馬偕醫學大學｜多功能教學活動中心（K棟）](校本部/buildings/mmu-multifunctional-2013/README.md)**<br>坡下長玻璃面 | [![第二教研大樓D–G實際模型預覽](校本部/buildings/mmu-teaching-phase2/previews/front.png)](校本部/buildings/mmu-teaching-phase2/README.md)<br>**[第二教研大樓D–G｜完整相連組歷史外觀有限細節近似](校本部/buildings/mmu-teaching-phase2/README.md)** |  |
 
 [多功能教學活動中心模型與完整說明](校本部/buildings/mmu-multifunctional-2013/README.md) · [STL](校本部/buildings/mmu-multifunctional-2013/model.stl) · [Blend](校本部/buildings/mmu-multifunctional-2013/scene.blend) · [來源限制](校本部/buildings/mmu-multifunctional-2013/sources.json) · [QA](校本部/buildings/mmu-multifunctional-2013/qa-summary.json)
 

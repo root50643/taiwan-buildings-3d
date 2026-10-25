@@ -4,8 +4,8 @@
 
 本館採2024修復後完整單棟外觀近似：兩層H形、五交接雙坡與四組成對谷線，西南接口保留真開口並截斷外接穿廊；不含西校舍或禮拜堂。彩色Blend/3MF/STL與5實mesh圖、來源及QA均見模型詳頁；尺寸微型化非測繪，未實印，不保證免支撐。
 
-| 模型 | 模型 | 模型 |
-|---|---|---|
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
 | [![禮拜堂1957：實際模型預覽](校本部/buildings/ttcs-chapel-1957/previews/front.png)](校本部/buildings/ttcs-chapel-1957/README.md)<br>**[禮拜堂1957](校本部/buildings/ttcs-chapel-1957/README.md)** | [![本館（巴克禮紀念館）：實際模型預覽](校本部/buildings/ttcs-barclay-main-hall/previews/front.png)](校本部/buildings/ttcs-barclay-main-hall/README.md)<br>**[本館（巴克禮紀念館）](校本部/buildings/ttcs-barclay-main-hall/README.md)** | [![西校舍1957：實際模型預覽](校本部/buildings/ttcs-west-school-1957/previews/front.png)](校本部/buildings/ttcs-west-school-1957/README.md)<br>**[西校舍1957](校本部/buildings/ttcs-west-school-1957/README.md)** |
 
 [禮拜堂模型與完整說明](校本部/buildings/ttcs-chapel-1957/README.md) · [STL](校本部/buildings/ttcs-chapel-1957/model.stl) · [Blend](校本部/buildings/ttcs-chapel-1957/scene.blend) · [來源限制](校本部/buildings/ttcs-chapel-1957/sources.json) · [完整QA](校本部/buildings/ttcs-chapel-1957/qa-summary.json)

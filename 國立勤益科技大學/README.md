@@ -6,9 +6,9 @@
 
 ## 本批圖鑑
 
-| 工具機學院大樓整體群 | 鹿鳴臺 | 養浩學舍 C／D 連體群 |
-| --- | --- | --- |
-| [![工具機學院大樓整體群](太平校本部/buildings/ncut-machine-tool-complex/previews/front.png)](太平校本部/buildings/ncut-machine-tool-complex/README.md)<br>[工具機學院大樓整體群](太平校本部/buildings/ncut-machine-tool-complex/README.md)<br>建築群整體近似模型 | [![鹿鳴臺](太平校本部/buildings/ncut-luming-grandstand/previews/front.png)](太平校本部/buildings/ncut-luming-grandstand/README.md)<br>[鹿鳴臺](太平校本部/buildings/ncut-luming-grandstand/README.md)<br>附屬看臺模型 | [![養浩學舍 C／D 連體群](太平校本部/buildings/ncut-yanghao-dormitory/previews/front.png)](太平校本部/buildings/ncut-yanghao-dormitory/README.md)<br>[養浩學舍 C／D 連體群](太平校本部/buildings/ncut-yanghao-dormitory/README.md)<br>建築群整體近似模型 |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![工具機學院大樓整體群](太平校本部/buildings/ncut-machine-tool-complex/previews/front.png)](太平校本部/buildings/ncut-machine-tool-complex/README.md)<br>**[工具機學院大樓整體群](太平校本部/buildings/ncut-machine-tool-complex/README.md)**<br>建築群整體近似模型 | [![鹿鳴臺](太平校本部/buildings/ncut-luming-grandstand/previews/front.png)](太平校本部/buildings/ncut-luming-grandstand/README.md)<br>**[鹿鳴臺](太平校本部/buildings/ncut-luming-grandstand/README.md)**<br>附屬看臺模型 | [![養浩學舍 C／D 連體群](太平校本部/buildings/ncut-yanghao-dormitory/previews/front.png)](太平校本部/buildings/ncut-yanghao-dormitory/README.md)<br>**[養浩學舍 C／D 連體群](太平校本部/buildings/ncut-yanghao-dormitory/README.md)**<br>建築群整體近似模型 |
 
 [太平校本部入口](太平校本部/README.md) · [37項逐項研究續接](COVERAGE.md) · [機讀涵蓋範圍](coverage.json) · [模型與驗證清單](batch-manifest.json)
 

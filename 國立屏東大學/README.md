@@ -4,10 +4,10 @@
 
 ## 建築圖鑑
 
-| 圖鑑 1 | 圖鑑 2 | 圖鑑 3 |
-|---|---|---|
-| [![圖資大樓主塔段](屏商校區/buildings/nptu-library-tower-segment/appearance/previews/front.png)](屏商校區/buildings/nptu-library-tower-segment/README.md)<br>[圖資大樓主塔段](屏商校區/buildings/nptu-library-tower-segment/README.md)<br>屏商校區 | [![學生活動中心入口段](屏商校區/buildings/nptu-student-center-entrance-segment/appearance/previews/front.png)](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)<br>[學生活動中心入口段](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)<br>屏商校區 | [![音樂館圓廳段](屏師校區/buildings/nptu-music-hall-rotunda-segment/appearance/previews/front.png)](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)<br>[音樂館圓廳段](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)<br>屏師校區 |
-| [![五育樓主體與中庭](民生校區/buildings/nptu-wuyu-courtyard-complex/appearance/previews/front.png)](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)<br>[五育樓主體與中庭](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)<br>民生校區 | [![學習輔助犬訓練教室主屋](民生校區/buildings/nptu-learning-assistance-dog-classroom/appearance/previews/front.png)](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)<br>[學習輔助犬訓練教室主屋](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)<br>民生校區 |  |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![圖資大樓主塔段](屏商校區/buildings/nptu-library-tower-segment/appearance/previews/front.png)](屏商校區/buildings/nptu-library-tower-segment/README.md)<br>**[圖資大樓主塔段](屏商校區/buildings/nptu-library-tower-segment/README.md)**<br>屏商校區 | [![學生活動中心入口段](屏商校區/buildings/nptu-student-center-entrance-segment/appearance/previews/front.png)](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)<br>**[學生活動中心入口段](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)**<br>屏商校區 | [![音樂館圓廳段](屏師校區/buildings/nptu-music-hall-rotunda-segment/appearance/previews/front.png)](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)<br>**[音樂館圓廳段](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)**<br>屏師校區 |
+| [![五育樓主體與中庭](民生校區/buildings/nptu-wuyu-courtyard-complex/appearance/previews/front.png)](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)<br>**[五育樓主體與中庭](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)**<br>民生校區 | [![學習輔助犬訓練教室主屋](民生校區/buildings/nptu-learning-assistance-dog-classroom/appearance/previews/front.png)](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)<br>**[學習輔助犬訓練教室主屋](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)**<br>民生校區 |  |
 
 ## 校區入口
 

@@ -2,9 +2,9 @@
 
 目前收錄2套：介仁校區合心樓2A（圖書館及行政翼）的有界外觀近似，以及中央校區大喜館的整館光電前外觀近似，未完成整校。合心樓2001-06-03完工；分館2007-09開館。2024合校後以同一慈濟大學計數，不另算原慈濟科技大學。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 合心樓2A｜北玻璃及架空面<br>[![北側](介仁校區/buildings/tcu-hexin-library-2001/appearance/previews/front.png)](介仁校區/buildings/tcu-hexin-library-2001/README.md) | [![大喜館入口模型](中央校區/buildings/tcu-daxi-gymnasium/previews/front.png)](中央校區/buildings/tcu-daxi-gymnasium/README.md)<br>**[大喜館｜整館光電前外觀近似](中央校區/buildings/tcu-daxi-gymnasium/README.md)**<br>一座館舍及雙排開放停車棚；非現況 |  |
+| [![北側](介仁校區/buildings/tcu-hexin-library-2001/appearance/previews/front.png)](介仁校區/buildings/tcu-hexin-library-2001/README.md)<br>**[合心樓2A｜北玻璃及架空面](介仁校區/buildings/tcu-hexin-library-2001/README.md)** | [![大喜館入口模型](中央校區/buildings/tcu-daxi-gymnasium/previews/front.png)](中央校區/buildings/tcu-daxi-gymnasium/README.md)<br>**[大喜館｜整館光電前外觀近似](中央校區/buildings/tcu-daxi-gymnasium/README.md)**<br>一座館舍及雙排開放停車棚；非現況 |  |
 
 [完整說明](介仁校區/buildings/tcu-hexin-library-2001/README.md) · [STL](介仁校區/buildings/tcu-hexin-library-2001/model.stl) · [Blend](介仁校區/buildings/tcu-hexin-library-2001/scene.blend) · [原創源](介仁校區/buildings/tcu-hexin-library-2001/build_model.py) · [頂圖](介仁校區/buildings/tcu-hexin-library-2001/previews/top.png) · [來源](介仁校區/buildings/tcu-hexin-library-2001/sources.json) · [QA](介仁校區/buildings/tcu-hexin-library-2001/qa-summary.json) · [有限原面彩色外觀](介仁校區/buildings/tcu-hexin-library-2001/appearance/README.md)
 

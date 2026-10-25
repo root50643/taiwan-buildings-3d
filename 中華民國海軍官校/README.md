@@ -4,9 +4,9 @@
 
 ## 模型圖鑑
 
-| 彩色外觀 |  |  |
-|---|---|---|
-| [![九材質紀念鐘樓](公開紀念景物/buildings/rocna-memorial-bell-tower/previews/front.png)](公開紀念景物/buildings/rocna-memorial-bell-tower/README.md) |  |  |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![九材質紀念鐘樓](公開紀念景物/buildings/rocna-memorial-bell-tower/previews/front.png)](公開紀念景物/buildings/rocna-memorial-bell-tower/README.md)<br>**[中華民國海軍官校：公共紀念鐘樓](公開紀念景物/buildings/rocna-memorial-bell-tower/README.md)**<br>彩色外觀 |  |  |
 
 <details>
 <summary>公共紀念鐘樓：下載與限制</summary>

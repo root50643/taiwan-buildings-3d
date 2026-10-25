@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 正向 actual STL<br>![正向](淡水校本部/buildings/tku-palace-classrooms/appearance/previews/front.png) | [![淡江大學海事博物館｜低細節外觀代表模型：實際模型預覽](淡水校本部/buildings/tku-maritime-museum/previews/front.png)](淡水校本部/buildings/tku-maritime-museum/README.md)<br>**[淡江大學海事博物館｜低細節外觀代表模型](淡水校本部/buildings/tku-maritime-museum/README.md)** | [![淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座：實際模型預覽](淡水校本部/buildings/tku-scroll-square-monument/previews/front.png)](淡水校本部/buildings/tku-scroll-square-monument/README.md)<br>**[淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座](淡水校本部/buildings/tku-scroll-square-monument/README.md)** |
+| [![正向](淡水校本部/buildings/tku-palace-classrooms/appearance/previews/front.png)](淡水校本部/buildings/tku-palace-classrooms/README.md)<br>**[淡江大學・淡水校本部・宮燈教室群](淡水校本部/buildings/tku-palace-classrooms/README.md)**<br>正向 actual STL | [![淡江大學海事博物館｜低細節外觀代表模型：實際模型預覽](淡水校本部/buildings/tku-maritime-museum/previews/front.png)](淡水校本部/buildings/tku-maritime-museum/README.md)<br>**[淡江大學海事博物館｜低細節外觀代表模型](淡水校本部/buildings/tku-maritime-museum/README.md)** | [![淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座：實際模型預覽](淡水校本部/buildings/tku-scroll-square-monument/previews/front.png)](淡水校本部/buildings/tku-scroll-square-monument/README.md)<br>**[淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座](淡水校本部/buildings/tku-scroll-square-monument/README.md)** |
 | [![紹謨紀念體育館：實際模型預覽](淡水校本部/buildings/tku-shaomo-gymnasium/previews/front.png)](淡水校本部/buildings/tku-shaomo-gymnasium/README.md)<br>**[紹謨紀念體育館｜2021–2022已裝光電完整地上外觀近似版](淡水校本部/buildings/tku-shaomo-gymnasium/README.md)** |  |  |
 
 [模型、來源與列印限制](淡水校本部/buildings/tku-palace-classrooms/README.md) · [數位驗證](淡水校本部/buildings/tku-palace-classrooms/QA.md)

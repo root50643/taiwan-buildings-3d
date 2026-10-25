@@ -6,9 +6,9 @@
 
 ## 牛津學堂：同一建物一張代表圖
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 有限材料示意<br>![有限材料示意](淡水校區/buildings/au-oxford-1999-core/appearance/previews/front.png) |  |  |
+| [![有限材料示意](淡水校區/buildings/au-oxford-1999-core/appearance/previews/front.png)](淡水校區/buildings/au-oxford-1999-core/README.md)<br>**[真理大學牛津學堂](淡水校區/buildings/au-oxford-1999-core/README.md)**<br>有限材料示意 |  |  |
 
 [模型、STL、Blend與完整限制](淡水校區/buildings/au-oxford-1999-core/README.md) · [淡水校區入口](淡水校區/README.md)
 

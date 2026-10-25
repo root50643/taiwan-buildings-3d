@@ -4,9 +4,9 @@
 
 既有來源限定、有界近似：**生活機能館暨一體校門（2016，現稱W磅礡館）**。館與一體校門合計一件，非全校完成；西鄰T棟不包含。
 
-| 模型 | 模型 | 模型 |
-|---|---|---|
-| [![生活機能館暨一體校門（2016）：實際模型預覽](校本部/buildings/stust-living-services-gate-2016/previews/campus.png)](校本部/buildings/stust-living-services-gate-2016/README.md)<br>**[生活機能館暨一體校門（2016）](校本部/buildings/stust-living-services-gate-2016/README.md)** | [![新風雨球場（2020）：實際模型預覽](校本部/buildings/stust-covered-sports-court/previews/front.png)](校本部/buildings/stust-covered-sports-court/README.md)<br>**[新風雨球場（2020）](校本部/buildings/stust-covered-sports-court/README.md)** | |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![生活機能館暨一體校門（2016）：實際模型預覽](校本部/buildings/stust-living-services-gate-2016/previews/campus.png)](校本部/buildings/stust-living-services-gate-2016/README.md)<br>**[生活機能館暨一體校門（2016）](校本部/buildings/stust-living-services-gate-2016/README.md)** | [![新風雨球場（2020）：實際模型預覽](校本部/buildings/stust-covered-sports-court/previews/front.png)](校本部/buildings/stust-covered-sports-court/README.md)<br>**[新風雨球場（2020）](校本部/buildings/stust-covered-sports-court/README.md)** |  |
 
 [模型、原創參數、來源與完整QA](校本部/buildings/stust-living-services-gate-2016/README.md)
 

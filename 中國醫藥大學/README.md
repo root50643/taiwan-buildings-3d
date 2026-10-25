@@ -2,9 +2,9 @@
 
 現收錄2套：關懷大樓A3既有有界外觀模型，以及創研大樓A2整棟地上外觀有限細節近似；不代表全校全部建物已完成。關懷大樓原有範圍與限制維持不變。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 西側正面<br>![關懷大樓正面](水湳校區/buildings/cmu-guanhuai/previews/front.png) | [![創研大樓A2：實際模型預覽](水湳校區/buildings/cmu-chuangyan-a2/previews/front.png)](水湳校區/buildings/cmu-chuangyan-a2/README.md)<br>**[水湳創研大樓 A2｜整棟地上外觀有限細節近似版](水湳校區/buildings/cmu-chuangyan-a2/README.md)** |  |
+| [![關懷大樓正面](水湳校區/buildings/cmu-guanhuai/previews/front.png)](水湳校區/buildings/cmu-guanhuai/README.md)<br>**[中國醫藥大學水湳校區 關懷大樓](水湳校區/buildings/cmu-guanhuai/README.md)**<br>西側正面 | [![創研大樓A2：實際模型預覽](水湳校區/buildings/cmu-chuangyan-a2/previews/front.png)](水湳校區/buildings/cmu-chuangyan-a2/README.md)<br>**[水湳創研大樓 A2｜整棟地上外觀有限細節近似版](水湳校區/buildings/cmu-chuangyan-a2/README.md)** |  |
 
 [關懷大樓：模型、範圍及限制](水湳校區/buildings/cmu-guanhuai/README.md)
 

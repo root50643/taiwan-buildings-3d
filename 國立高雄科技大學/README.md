@@ -6,10 +6,10 @@
 
 ## 模型圖鑑
 
-| 模型一 | 模型二 | 模型三 |
-|---|---|---|
-| [![產創園區A棟主立面段](<第一校區（西校區）/buildings/nkust-industry-a-front-segment/previews/front.png>)](<第一校區（西校區）/buildings/nkust-industry-a-front-segment/README.md>)<br>[產創園區A棟主立面段](<第一校區（西校區）/buildings/nkust-industry-a-front-segment/README.md>)<br>第一校區（西校區）・局部 | [![圖書資訊大樓入口翼段](<燕巢校區/buildings/nkust-yanchao-library-entrance-wing/previews/front.png>)](<燕巢校區/buildings/nkust-yanchao-library-entrance-wing/README.md>)<br>[圖書資訊大樓入口翼段](<燕巢校區/buildings/nkust-yanchao-library-entrance-wing/README.md>)<br>燕巢校區・局部 | [![行政大樓中央曲面入口段](<建工校區/buildings/nkust-jianggong-administration-central-segment/previews/front.png>)](<建工校區/buildings/nkust-jianggong-administration-central-segment/README.md>)<br>[行政大樓中央曲面入口段](<建工校區/buildings/nkust-jianggong-administration-central-segment/README.md>)<br>建工校區・局部 |
-| [![水食實習大樓長立面暨入口段](<楠梓校區/buildings/nkust-seafood-practice-entrance-segment/previews/front.png>)](<楠梓校區/buildings/nkust-seafood-practice-entrance-segment/README.md>)<br>[水食實習大樓長立面暨入口段](<楠梓校區/buildings/nkust-seafood-practice-entrance-segment/README.md>)<br>楠梓校區・局部 | — | — |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![產創園區A棟主立面段](<第一校區（西校區）/buildings/nkust-industry-a-front-segment/previews/front.png>)](第一校區（西校區）/buildings/nkust-industry-a-front-segment/README.md)<br>**[產創園區A棟主立面段](<第一校區（西校區）/buildings/nkust-industry-a-front-segment/README.md>)**<br>第一校區（西校區）・局部 | [![圖書資訊大樓入口翼段](<燕巢校區/buildings/nkust-yanchao-library-entrance-wing/previews/front.png>)](燕巢校區/buildings/nkust-yanchao-library-entrance-wing/README.md)<br>**[圖書資訊大樓入口翼段](<燕巢校區/buildings/nkust-yanchao-library-entrance-wing/README.md>)**<br>燕巢校區・局部 | [![行政大樓中央曲面入口段](<建工校區/buildings/nkust-jianggong-administration-central-segment/previews/front.png>)](建工校區/buildings/nkust-jianggong-administration-central-segment/README.md)<br>**[行政大樓中央曲面入口段](<建工校區/buildings/nkust-jianggong-administration-central-segment/README.md>)**<br>建工校區・局部 |
+| [![水食實習大樓長立面暨入口段](<楠梓校區/buildings/nkust-seafood-practice-entrance-segment/previews/front.png>)](楠梓校區/buildings/nkust-seafood-practice-entrance-segment/README.md)<br>**[水食實習大樓長立面暨入口段](<楠梓校區/buildings/nkust-seafood-practice-entrance-segment/README.md>)**<br>楠梓校區・局部 |  |  |
 
 每列放不同建築的模型，空欄留白；各模型頁提供正背並排與頂視。四件為各自含底座最長150mm、單色自建近似外觀；不從第三方下載3D網格。
 

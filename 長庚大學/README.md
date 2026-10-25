@@ -4,9 +4,9 @@
 
 本候選收錄學生活動中心，並非長庚科技大學活動中心。校區採地理描述「校本部（桃園龜山）」；主體建成年尚未確證。
 
-| 建築 | 正面：坡上入口與鐘塔 |  |
-|---|---|---|
-| [學生活動中心](校本部（桃園龜山）/buildings/cgu-student-activity-center/README.md)<br>[屋頂PV限域外觀](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/README.md) | ![正面](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/previews/front.png) |  |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![正面](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/previews/front.png)](校本部（桃園龜山）/buildings/cgu-student-activity-center/README.md)<br>**[學生活動中心](校本部（桃園龜山）/buildings/cgu-student-activity-center/README.md)**<br>[屋頂PV限域外觀](校本部（桃園龜山）/buildings/cgu-student-activity-center/appearance/README.md)<br>正面：坡上入口與鐘塔 |  |  |
 
 - [STL 模型](校本部（桃園龜山）/buildings/cgu-student-activity-center/model.stl)；[Blender 場景](校本部（桃園龜山）/buildings/cgu-student-activity-center/scene.blend)
 - [來源、尺度界限與列印簡化](校本部（桃園龜山）/buildings/cgu-student-activity-center/sources.md)

@@ -4,9 +4,11 @@
 
 [淡水校區](淡水校區/README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![](淡水校區/buildings/sju-advent-church/appearance/previews/front.png)<br>降臨堂｜約2014主堂近似版・有限證據配色](淡水校區/buildings/sju-advent-church/README.md) | 待續建物 | 待續建物 |
+| [![](淡水校區/buildings/sju-advent-church/appearance/previews/front.png)](淡水校區/buildings/sju-advent-church/README.md)<br>**[降臨堂｜約2014主堂近似版・有限證據配色](淡水校區/buildings/sju-advent-church/README.md)** |  |  |
+
+- 待續建物
 
 每件保留一張代表圖；同一件不拆占學校圖鑑三欄。原始第三方照片不隨公開包再散布。原 v1 外觀／幾何與薄損例外的凍結驗證紀錄保留於建物詳頁。2026-10-24 增加有限證據配色與真正逐面材質 3MF；2,218 面有有限來源依據，1,754 面維持未知／抽象底座中性色。原 STL、原 Blend、原預覽與薄件／支撐限制不變，未實體試印；仍是同一件模型。
 

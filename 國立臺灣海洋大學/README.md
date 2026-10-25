@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![體育館正面](北寧校區/buildings/ntou-gymnasium/previews/front.png)](北寧校區/buildings/ntou-gymnasium/)<br>[反面實渲](北寧校區/buildings/ntou-gymnasium/previews/rear.png)<br>**[北寧校區體育館・完整外觀近似](北寧校區/buildings/ntou-gymnasium/)** | [![國際學舍入口段](馬祖校區/buildings/ntou-matsu-dorm-entrance-section/previews/front.png)](馬祖校區/buildings/ntou-matsu-dorm-entrance-section/)<br>**[馬祖國際學舍入口段・非全棟](馬祖校區/buildings/ntou-matsu-dorm-entrance-section/)** | [![夢泉2018可見版本](祥豐校區/buildings/ntou-dream-fountain-2018/previews/front.png)](祥豐校區/buildings/ntou-dream-fountain-2018/)<br>**[祥豐校區夢泉・完整噴泉地標近似](祥豐校區/buildings/ntou-dream-fountain-2018/)** |
+| [![體育館正面](北寧校區/buildings/ntou-gymnasium/previews/front.png)](北寧校區/buildings/ntou-gymnasium/README.md)<br>**[北寧校區體育館・完整外觀近似](北寧校區/buildings/ntou-gymnasium/)**<br>[反面實渲](北寧校區/buildings/ntou-gymnasium/previews/rear.png) | [![國際學舍入口段](馬祖校區/buildings/ntou-matsu-dorm-entrance-section/previews/front.png)](馬祖校區/buildings/ntou-matsu-dorm-entrance-section/README.md)<br>**[馬祖國際學舍入口段・非全棟](馬祖校區/buildings/ntou-matsu-dorm-entrance-section/)** | [![夢泉2018可見版本](祥豐校區/buildings/ntou-dream-fountain-2018/previews/front.png)](祥豐校區/buildings/ntou-dream-fountain-2018/README.md)<br>**[祥豐校區夢泉・完整噴泉地標近似](祥豐校區/buildings/ntou-dream-fountain-2018/)** |
 
 [85列點位／場域歷史工作清單](inventory/)；地圖點不等於建築棟數，沒有以少數代表館聲稱全校完成。新模型範圍見[本次盤點更新](inventory_updates_dream_fountain_20261022.json)。
 

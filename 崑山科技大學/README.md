@@ -2,9 +2,9 @@
 
 本包模型：圖書資訊館。建成採2005–2006口徑；公開實景與正射有界近似，非精密測繪或同年復原。最大150mm，未試印，需切片及支撐檢查。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 北面正面<br>![北面](永康校區/buildings/ksu-library-information-building/appearance/previews/front.png) |  |  |
+| [![北面](永康校區/buildings/ksu-library-information-building/appearance/previews/front.png)](永康校區/buildings/ksu-library-information-building/README.md)<br>**[崑山科技大學｜永康校區｜圖書資訊館](永康校區/buildings/ksu-library-information-building/README.md)**<br>北面正面 |  |  |
 
 [模型說明](永康校區/buildings/ksu-library-information-building/README.md) · [後窗限域外觀](永康校區/buildings/ksu-library-information-building/appearance/README.md) · [來源與限制](永康校區/buildings/ksu-library-information-building/sources.md) · [幾何審查](永康校區/buildings/ksu-library-information-building/QA.md)
 

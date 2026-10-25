@@ -2,9 +2,9 @@
 
 狀態：外觀有界近似已核；作者幾何與重現檢查完成。39個局部損失樣本與獨立加密2331短首段的具體限定證據已由主審接受；原作者7點/1054筆結果仍保留。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 南東正面（actual STL）<br>![正面（歷史限域配色）](校本部/buildings/tajen-admin-library/appearance/previews/front.png) · [限域外觀](校本部/buildings/tajen-admin-library/appearance/README.md) |  |  |
+| [![正面（歷史限域配色）](校本部/buildings/tajen-admin-library/appearance/previews/front.png)](校本部/buildings/tajen-admin-library/README.md)<br>**[大仁科技大學｜校本部｜行政圖資大樓 A](校本部/buildings/tajen-admin-library/README.md)**<br>南東正面（actual STL）<br>· [限域外觀](校本部/buildings/tajen-admin-library/appearance/README.md) |  |  |
 
 ## 來源與形體
 原創 Python 參數實體；[來源清單](校本部/buildings/tajen-admin-library/sources.json)。官方 A 棟包含行政與圖書館，公開用途證明 10F 存在；B2 地下不完整建模，沒有把十層均分。2001 三面照片配合 2016／2024 正射及 2024 西北街景。排除 C 活動中心、能源中心與臨時施工網。

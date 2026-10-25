@@ -2,9 +2,9 @@
 
 本批1件：圖書資訊大樓（跨年有界近似），非全校完成。圖書館1–5F不代表整棟僅5F；不含鄰藝術中心、乃建堂。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| 同件東南正面<br>![正面](校本部/buildings/tut-library-information-2002/previews/appearance-front.png) |  |  |
+| [![正面](校本部/buildings/tut-library-information-2002/previews/appearance-front.png)](校本部/buildings/tut-library-information-2002/README.md)<br>**[台南應用科技大學｜圖書資訊大樓（跨年有界近似）](校本部/buildings/tut-library-information-2002/README.md)**<br>同件東南正面 |  |  |
 
 [模型、來源與QA](校本部/buildings/tut-library-information-2002/README.md)
 

@@ -6,9 +6,9 @@
 
 ## 本批圖鑑
 
-| 國際大樓廣場側段 | 研揚大樓運動場立面段 | 浩揚實驗大樓風帆側段 |
-|---|---|---|
-| [![國際大樓廣場側段](校本部/buildings/ntust-international-plaza/previews/front.png)](校本部/buildings/ntust-international-plaza/README.md)<br>[國際大樓廣場側段](校本部/buildings/ntust-international-plaza/README.md) | [![研揚大樓運動場立面段](校本部/buildings/ntust-aeon-sports-facade/previews/front.png)](校本部/buildings/ntust-aeon-sports-facade/README.md)<br>[研揚大樓運動場立面段](校本部/buildings/ntust-aeon-sports-facade/README.md) | [![浩揚實驗大樓風帆側段](校本部/buildings/ntust-haoyang-sail/previews/front.png)](校本部/buildings/ntust-haoyang-sail/README.md)<br>[浩揚實驗大樓風帆側段](校本部/buildings/ntust-haoyang-sail/README.md) |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![國際大樓廣場側段](校本部/buildings/ntust-international-plaza/previews/front.png)](校本部/buildings/ntust-international-plaza/README.md)<br>**[國際大樓廣場側段](校本部/buildings/ntust-international-plaza/README.md)** | [![研揚大樓運動場立面段](校本部/buildings/ntust-aeon-sports-facade/previews/front.png)](校本部/buildings/ntust-aeon-sports-facade/README.md)<br>**[研揚大樓運動場立面段](校本部/buildings/ntust-aeon-sports-facade/README.md)** | [![浩揚實驗大樓風帆側段](校本部/buildings/ntust-haoyang-sail/previews/front.png)](校本部/buildings/ntust-haoyang-sail/README.md)<br>**[浩揚實驗大樓風帆側段](校本部/buildings/ntust-haoyang-sail/README.md)** |
 
 ## 校區入口
 

@@ -6,8 +6,8 @@
 
 ## 已收錄模型（3件）
 
-| 模型 | 模型 | 模型 |
-|---|---|---|
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
 | [![文教大樓｜1965原始主棟：實際模型預覽](城區校區/buildings/ntunhs-wenjiao-1965/previews/front.png)](城區校區/buildings/ntunhs-wenjiao-1965/README.md)<br>**[文教大樓｜1965原始主棟](城區校區/buildings/ntunhs-wenjiao-1965/README.md)** | [![學思樓｜2021完工外觀：實際模型預覽](石牌校區/buildings/ntunhs-xuesi-2021/previews/front.png)](石牌校區/buildings/ntunhs-xuesi-2021/README.md)<br>**[學思樓｜2021完工外觀](石牌校區/buildings/ntunhs-xuesi-2021/README.md)** | [![爾雅樓（第三學生宿舍）：實際模型預覽](石牌校區/buildings/ntunhs-erya-dorm/previews/front.png)](石牌校區/buildings/ntunhs-erya-dorm/README.md)<br>**[爾雅樓（第三學生宿舍）](石牌校區/buildings/ntunhs-erya-dorm/README.md)** |
 
 [模型、範圍與驗證](城區校區/buildings/ntunhs-wenjiao-1965/README.md) · [城區校區入口](城區校區/README.md) · [覆蓋範圍](coverage.json)

@@ -4,10 +4,12 @@
 
 ## 埔里校區圖鑑
 
-| 模型一 | 模型二 | 模型三 |
-| --- | --- | --- |
-| [![圖書資訊暨多功能大樓入口柱廊段](埔里校區/buildings/ncnu-library-entrance-segment/previews/front.png)](埔里校區/buildings/ncnu-library-entrance-segment/README.md)<br>[圖書資訊暨多功能大樓入口柱廊段](埔里校區/buildings/ncnu-library-entrance-segment/README.md) | [![體育健康中心綜合球館量體](埔里校區/buildings/ncnu-sports-ball-hall/previews/front.png)](埔里校區/buildings/ncnu-sports-ball-hall/README.md)<br>[體育健康中心綜合球館量體](埔里校區/buildings/ncnu-sports-ball-hall/README.md) | [![體育健康中心矩窗翼端側立面段](埔里校區/buildings/ncnu-swimming-wing-segment/previews/front.png)](埔里校區/buildings/ncnu-swimming-wing-segment/README.md)<br>[體育健康中心矩窗翼端側立面段](埔里校區/buildings/ncnu-swimming-wing-segment/README.md) |
-| [![排灣族石板屋外觀量體](埔里校區/buildings/ncnu-paiwan-slate-house/previews/front.png)](埔里校區/buildings/ncnu-paiwan-slate-house/README.md)<br>[排灣族石板屋外觀量體](埔里校區/buildings/ncnu-paiwan-slate-house/README.md) | 待續 | 待續 |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![圖書資訊暨多功能大樓入口柱廊段](埔里校區/buildings/ncnu-library-entrance-segment/previews/front.png)](埔里校區/buildings/ncnu-library-entrance-segment/README.md)<br>**[圖書資訊暨多功能大樓入口柱廊段](埔里校區/buildings/ncnu-library-entrance-segment/README.md)** | [![體育健康中心綜合球館量體](埔里校區/buildings/ncnu-sports-ball-hall/previews/front.png)](埔里校區/buildings/ncnu-sports-ball-hall/README.md)<br>**[體育健康中心綜合球館量體](埔里校區/buildings/ncnu-sports-ball-hall/README.md)** | [![體育健康中心矩窗翼端側立面段](埔里校區/buildings/ncnu-swimming-wing-segment/previews/front.png)](埔里校區/buildings/ncnu-swimming-wing-segment/README.md)<br>**[體育健康中心矩窗翼端側立面段](埔里校區/buildings/ncnu-swimming-wing-segment/README.md)** |
+| [![排灣族石板屋外觀量體](埔里校區/buildings/ncnu-paiwan-slate-house/previews/front.png)](埔里校區/buildings/ncnu-paiwan-slate-house/README.md)<br>**[排灣族石板屋外觀量體](埔里校區/buildings/ncnu-paiwan-slate-house/README.md)** |  |  |
+
+- 待續
 
 [校區入口](埔里校區/README.md) · [模型清單與STL雜湊](model-index.json) · [32項研究與續接](inventory/README.md)
 

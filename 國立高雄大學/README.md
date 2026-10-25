@@ -4,8 +4,8 @@
 
 ## 模型圖鑑
 
-| 模型 | 模型 | 模型 |
-|---|---|---|
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
 | [![圖書資訊大樓主棟：實際模型預覽](楠梓校本部/buildings/nuk-library-main/previews/front.png)](楠梓校本部/buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](楠梓校本部/buildings/nuk-library-main/README.md)** | [![體育健康休閒多功能教學大樓：實際模型預覽](楠梓校本部/buildings/nuk-sports-leisure/previews/front.png)](楠梓校本部/buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](楠梓校本部/buildings/nuk-sports-leisure/README.md)** | [![人文社會科學院 A/B 主樓：實際模型預覽](楠梓校本部/buildings/nuk-humanities-ab/previews/front.png)](楠梓校本部/buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](楠梓校本部/buildings/nuk-humanities-ab/README.md)** |
 
 每格一個不同模型。既有兩件含毫米STL、生成器、可編修Blend與實mesh圖，含底座最長150mm；新增人社A/B為242×256×34mm、彩色Blend/3MF/STL及五視角圖，各件獨立尺度，非全校完成。未實體試印；各件原範圍、支撐與細件限制保留，請讀各自README。

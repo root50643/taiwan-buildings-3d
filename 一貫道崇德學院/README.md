@@ -4,9 +4,9 @@
 
 ## 模型圖鑑
 
-| 中央局部彩色外觀 |  |  |
-|---|---|---|
-| [![七柱三門與弧簷](校本部/buildings/iktcds-curved-entrance-section/previews/front.png)](校本部/buildings/iktcds-curved-entrance-section/README.md) |  |  |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![七柱三門與弧簷](校本部/buildings/iktcds-curved-entrance-section/previews/front.png)](校本部/buildings/iktcds-curved-entrance-section/README.md)<br>**[一貫道崇德學院：教學樓曲線列柱入口中央局部](校本部/buildings/iktcds-curved-entrance-section/README.md)**<br>中央局部彩色外觀 |  |  |
 
 <details>
 <summary>教學樓曲線列柱入口中央局部：下載與限制</summary>

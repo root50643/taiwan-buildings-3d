@@ -2,9 +2,9 @@
 
 本批為板橋校區3件，含1件圖書館入口立面段，並非全校完成；與國立臺南藝術大學不同。每件自行以公開照片建立毫米制幾何、含底座最大150 mm且各自獨立比例。
 
-| 圖書館球體入口立面段 | 有章藝術博物館現館 | 臺藝表演廳 |
-|---|---|---|
-| [![圖書館球體入口立面段](板橋校區/buildings/ntua-library-entrance-section/previews/front.png)](板橋校區/buildings/ntua-library-entrance-section/README.md) | [![有章藝術博物館現館](板橋校區/buildings/ntua-you-chang-museum/appearance/previews/front.png)](板橋校區/buildings/ntua-you-chang-museum/README.md)<br>[歷史照片限域外觀](板橋校區/buildings/ntua-you-chang-museum/appearance/README.md) | [![臺藝表演廳](板橋校區/buildings/ntua-performing-arts-hall/previews/front.png)](板橋校區/buildings/ntua-performing-arts-hall/README.md) |
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [![圖書館球體入口立面段](板橋校區/buildings/ntua-library-entrance-section/previews/front.png)](板橋校區/buildings/ntua-library-entrance-section/README.md)<br>**[圖書館球體入口立面段](板橋校區/buildings/ntua-library-entrance-section/README.md)** | [![有章藝術博物館現館](板橋校區/buildings/ntua-you-chang-museum/appearance/previews/front.png)](板橋校區/buildings/ntua-you-chang-museum/README.md)<br>**[有章藝術博物館現館](板橋校區/buildings/ntua-you-chang-museum/README.md)**<br>[歷史照片限域外觀](板橋校區/buildings/ntua-you-chang-museum/appearance/README.md) | [![臺藝表演廳](板橋校區/buildings/ntua-performing-arts-hall/previews/front.png)](板橋校區/buildings/ntua-performing-arts-hall/README.md)<br>**[臺藝表演廳](板橋校區/buildings/ntua-performing-arts-hall/README.md)** |
 
 每件頁面提供STL、可編輯Blender場景、重建程式、前後STL渲染、來源及原始網格數位QA。第三方照片/PDF未再散布，只列來源網址。玻璃為實心曲面或背襯；未知側背、進深及細節估算逐件說明。
 

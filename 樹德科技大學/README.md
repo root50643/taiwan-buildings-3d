@@ -4,7 +4,7 @@
 
 [校本部模型目錄](校本部/README.md)
 
-| 校園模型 | 校園模型 | 校園模型 |
+| 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [![行政大樓弧形入口及前庭行政翼（局部）實際STL預覽](校本部/buildings/shute-admin-forecourt-wing/previews/front.png)](校本部/buildings/shute-admin-forecourt-wing/README.md)<br>**[行政大樓弧形入口及前庭行政翼（局部）](校本部/buildings/shute-admin-forecourt-wing/README.md)**<br>部分行政前翼；後側採明示簡化終止面 |  |  |
 

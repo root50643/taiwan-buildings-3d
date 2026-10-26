@@ -1,10 +1,10 @@
-# 臺灣 29 處地標建築｜外觀微縮模型
+# 臺灣 30 處地標建築｜外觀微縮模型
 
-收錄 29 座臺灣地標的原創參數化外觀模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。各包尺寸與列印限制請讀專屬README。
+收錄 30 座臺灣地標的原創參數化外觀模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。另新增臺北府城北門／承恩門：依2017–2022公開來源系列建立的完整歷史外觀近似，保留真實透空拱形門洞、四向上層開口與連續瓦屋頂；照片拍攝及插入日期不明，F02與F04為同一短向面，不是確定拍攝年份的測繪復原或2026現況。各包尺寸與列印限制請讀專屬README。
 
 ## 使用前先讀
 
-- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。29座並非共同比例，不能用來反推真實建築尺寸。
+- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。30座並非共同比例，不能用來反推真實建築尺寸。
 - 模型依公開外觀照片等資料重新建立幾何，屬桌上型外觀詮釋，並非測繪、工程或官方授權模型。未確認的背面、屋頂與細節可能經過推定、簡化及加粗。
 - 數位網格驗證不等同切片或實體試印成功。尚未完成實際切片測試及實體試印；列印前請檢查逐層路徑、薄壁、懸垂、支撐與拆除空間。
 - STL 不包含預覽材質或色彩。Blender 場景的地板、相機、燈光只供預覽，請勿當作列印模型匯出。
@@ -25,7 +25,7 @@
 | [![鵝鑾鼻燈塔前視模型預覽](eluanbi-lighthouse/previews/front.png)](eluanbi-lighthouse/README.md)<br>**[鵝鑾鼻燈塔](eluanbi-lighthouse/README.md)** | [![松園別館前視模型預覽](pine-garden/previews/front.png)](pine-garden/README.md)<br>**[松園別館](pine-garden/README.md)** | [![國立臺灣史前文化博物館康樂本館前視模型預覽](prehistory-museum-kangle/previews/front.png)](prehistory-museum-kangle/README.md)<br>**[國立臺灣史前文化博物館康樂本館](prehistory-museum-kangle/README.md)** |
 | [![金門得月樓前視模型預覽](deyue-tower/previews/front.png)](deyue-tower/README.md)<br>**[金門得月樓](deyue-tower/README.md)** | [![澎湖天后宮前視模型預覽](penghu-tianhou-temple/previews/front.png)](penghu-tianhou-temple/README.md)<br>**[澎湖天后宮](penghu-tianhou-temple/README.md)** | [![馬祖東湧燈塔前視模型預覽](dongyong-lighthouse/previews/front.png)](dongyong-lighthouse/README.md)<br>**[馬祖東湧燈塔](dongyong-lighthouse/README.md)** |
 | [![臺北表演藝術中心完整主建築模型預覽](tpac-whole-2022/previews/front.png)](tpac-whole-2022/README.md)<br>**[臺北表演藝術中心](tpac-whole-2022/README.md)** | [![北投圖書館整棟歷史外觀模型預覽](beitou-library-whole-pre2026/previews/front.png)](beitou-library-whole-pre2026/README.md)<br>**[北投圖書館](beitou-library-whole-pre2026/README.md)** | [![日月潭向山行政暨遊客中心完整雙翼模型預覽](xiangshan-whole-2010/previews/front.png)](xiangshan-whole-2010/README.md)<br>**[日月潭向山行政暨遊客中心](xiangshan-whole-2010/README.md)** |
-| [![大溪武德殿主殿2014狀態完整模型預覽](daxi-butokuden-main-hall-2014/previews/front.png)](daxi-butokuden-main-hall-2014/README.md)<br>**[大溪武德殿主殿](daxi-butokuden-main-hall-2014/README.md)** | [![埔里紙教堂2008至2009完整單棟模型預覽](paper-dome-taiwan-whole-2008-2009/previews/front.png)](paper-dome-taiwan-whole-2008-2009/README.md)<br>**[埔里紙教堂](paper-dome-taiwan-whole-2008-2009/README.md)** |  |
+| [![大溪武德殿主殿2014狀態完整模型預覽](daxi-butokuden-main-hall-2014/previews/front.png)](daxi-butokuden-main-hall-2014/README.md)<br>**[大溪武德殿主殿](daxi-butokuden-main-hall-2014/README.md)** | [![埔里紙教堂2008至2009完整單棟模型預覽](paper-dome-taiwan-whole-2008-2009/previews/front.png)](paper-dome-taiwan-whole-2008-2009/README.md)<br>**[埔里紙教堂](paper-dome-taiwan-whole-2008-2009/README.md)** | [![臺北府城北門完整歷史外觀近似模型預覽](taipei-north-gate-whole-2017-2022/previews/front.png)](taipei-north-gate-whole-2017-2022/README.md)<br>**[臺北府城北門／承恩門](taipei-north-gate-whole-2017-2022/README.md)** |
 
 ## 模型目錄與實際預覽
 
@@ -60,10 +60,11 @@
 | 日月潭向山行政暨遊客中心 | [模型與說明](xiangshan-whole-2010/README.md) · [STL](xiangshan-whole-2010/xiangshan-whole-2010.stl) · [3MF](xiangshan-whole-2010/xiangshan-whole-2010.3mf) · [Blend](xiangshan-whole-2010/xiangshan-whole-2010.blend) | [湖側完整立面](xiangshan-whole-2010/previews/front.png) | [雙翼斜視](xiangshan-whole-2010/previews/oblique.png) |
 | 大溪武德殿主殿 | [模型與說明](daxi-butokuden-main-hall-2014/README.md) · [STL](daxi-butokuden-main-hall-2014/daxi-butokuden-main-hall-2014.stl) · [3MF](daxi-butokuden-main-hall-2014/daxi-butokuden-main-hall-2014.3mf) · [Blend](daxi-butokuden-main-hall-2014/daxi-butokuden-main-hall-2014.blend) | [前右斜視](daxi-butokuden-main-hall-2014/previews/front.png) | [後左斜視](daxi-butokuden-main-hall-2014/previews/oblique.png) |
 | 埔里紙教堂 | [模型與說明](paper-dome-taiwan-whole-2008-2009/README.md) · [STL](paper-dome-taiwan-whole-2008-2009/paper-dome-taiwan-whole-2008-2009.stl) · [3MF](paper-dome-taiwan-whole-2008-2009/paper-dome-taiwan-whole-2008-2009.3mf) · [Blend](paper-dome-taiwan-whole-2008-2009/paper-dome-taiwan-whole-2008-2009.blend) | [正面斜視](paper-dome-taiwan-whole-2008-2009/previews/front.png) | [後方與池側斜視](paper-dome-taiwan-whole-2008-2009/previews/oblique.png) |
+| 臺北府城北門／承恩門 | [模型與說明](taipei-north-gate-whole-2017-2022/README.md) · [STL](taipei-north-gate-whole-2017-2022/taipei-north-gate-whole-2017-2022.stl) · [3MF](taipei-north-gate-whole-2017-2022/taipei-north-gate-whole-2017-2022.3mf) · [Blend](taipei-north-gate-whole-2017-2022/taipei-north-gate-whole-2017-2022.blend) | [正面斜視](taipei-north-gate-whole-2017-2022/previews/front.png) | [背面斜視](taipei-north-gate-whole-2017-2022/previews/oblique.png) |
 
 ## 重建與檔案
 
-新增臺北表演藝術中心的檔名、公開數值重建流程及九張模型視圖，請依[專屬 README](tpac-whole-2022/README.md)；下列舊檔名說明及18個原包的完整性紀錄保留為原有24座交付歷史。來源權利與圖庫06署名衝突見該包說明，原始第三方照片不公開。北投圖書館的[專屬README](beitou-library-whole-pre2026/README.md)另列九圖及公開數值重建流程，建築師、照片與逐項來源權利均保留；受保護PDF及其擷取內容不收入公開包。向山的[專屬README](xiangshan-whole-2010/README.md)提供九張實際模型視圖、完整兩翼的公開數值重建及列印限制；保留建築師與頁面層級攝影署名，原始照片、圖說與HTML不公開。大溪武德殿主殿的[專屬README](daxi-butokuden-main-hall-2014/README.md)提供九張模型視圖及公開輸入重建，保留2014調查報告與個別歷史影像署名、內牆尺寸和屋頂尺寸分別使用及列印支撐限制；原始報告與照片不公開。紙教堂的[專屬README](paper-dome-taiwan-whole-2008-2009/README.md)提供九張實際模型視圖與公開數值重建；保留坂茂建築設計與個別來源署名、非池側立面證據限制、獨立研究及非官方背書說明，未授予第三方照片、建築設計或商標權利。原照、歷史圖面、HTML及私人審查不公開。
+新增臺北表演藝術中心的檔名、公開數值重建流程及九張模型視圖，請依[專屬 README](tpac-whole-2022/README.md)；下列舊檔名說明及18個原包的完整性紀錄保留為原有24座交付歷史。來源權利與圖庫06署名衝突見該包說明，原始第三方照片不公開。北投圖書館的[專屬README](beitou-library-whole-pre2026/README.md)另列九圖及公開數值重建流程，建築師、照片與逐項來源權利均保留；受保護PDF及其擷取內容不收入公開包。向山的[專屬README](xiangshan-whole-2010/README.md)提供九張實際模型視圖、完整兩翼的公開數值重建及列印限制；保留建築師與頁面層級攝影署名，原始照片、圖說與HTML不公開。大溪武德殿主殿的[專屬README](daxi-butokuden-main-hall-2014/README.md)提供九張模型視圖及公開輸入重建，保留2014調查報告與個別歷史影像署名、內牆尺寸和屋頂尺寸分別使用及列印支撐限制；原始報告與照片不公開。紙教堂的[專屬README](paper-dome-taiwan-whole-2008-2009/README.md)提供九張實際模型視圖與公開數值重建；保留坂茂建築設計與個別來源署名、非池側立面證據限制、獨立研究及非官方背書說明，未授予第三方照片、建築設計或商標權利。原照、歷史圖面、HTML及私人審查不公開。北門的[專屬README](taipei-north-gate-whole-2017-2022/README.md)提供九張實際模型視圖、公開數值重建及可編輯組件；保留來源日期不確定性、同端面辨識、連續屋頂與顏色近似限制。門洞水平剖面是實際模型切面，不是測繪圖；原始照片、PDF、HTML與私人研究／審查不公開，第三方權利不因模型公開而獲授權。
 
 松園別館為既有主棟的限域材質升級，不新增建築、不改原 STL 幾何；僅正面有來源支持的屋頂與砌體補色，背面、側面與門窗凹槽保留未驗證中性材質，不是全館真實色彩復原。六張實際模型視圖見[預覽目錄](pine-garden/previews/)；離線材質重建與新版檢查依[專屬 README](pine-garden/README.md)，不沿用下列舊檔名流程。
 

@@ -1,0 +1,68 @@
+{
+  "inspected_utc": "2026-10-26T04:55:29Z",
+  "timestamp_source": "clock.curr_time after final nine original PNGs were actually opened",
+  "actual_nine_renders_inspected": true,
+  "stl_sha256": "bd486fbddd761c387e8e6a815709c16f6721ff6690adb6520487c25d1f999596",
+  "render_views": [
+    {
+      "file": "previews/front.png",
+      "sha256": "999b3d877c694e4dffd341d9ba0e45dffc0e8f5880c0f752122bd50ab07f529c",
+      "whole_geometry_frame_margin_fraction": 0.07407409450557678
+    },
+    {
+      "file": "previews/oblique.png",
+      "sha256": "4ec991a87f51cdefb3e043d4117ea2fae82139616d519a4651dd3cba66b41bfd",
+      "whole_geometry_frame_margin_fraction": 0.07407409145483113
+    },
+    {
+      "file": "previews/front-elevation.png",
+      "sha256": "481c2578afe2e99b522752ec6ca2dd6071b835a50c10425ee18fe1512025ec47",
+      "whole_geometry_frame_margin_fraction": 0.12374695895010968
+    },
+    {
+      "file": "previews/rear-elevation.png",
+      "sha256": "a8d717290258bef3d7550212daecf655ed2e2e2148e5c45f8f07a1994445216a",
+      "whole_geometry_frame_margin_fraction": 0.12374689951192341
+    },
+    {
+      "file": "previews/same-end-elevation.png",
+      "sha256": "a72a38b38f16d50898ad4ccc6e4581d80cc4b9313f196026194f4d3421ba0e18",
+      "whole_geometry_frame_margin_fraction": 0.08776162764222728
+    },
+    {
+      "file": "previews/other-end-elevation.png",
+      "sha256": "7e87526b280fa098ee428761393ba5b754ffedf8ce23e846f1b859228e3c6a93",
+      "whole_geometry_frame_margin_fraction": 0.08776162764222728
+    },
+    {
+      "file": "previews/top.png",
+      "sha256": "43407fdd642f85397a9f4495b3e2ae3e5ed0d51c1908bd7fc2f7eb138267b823",
+      "whole_geometry_frame_margin_fraction": 0.12374695895010968
+    },
+    {
+      "file": "previews/roof-oblique.png",
+      "sha256": "f41c8656cb47c919e2154c7dfebcc86aa16f46b922e0af8ad25eeb82bac23fb0",
+      "whole_geometry_frame_margin_fraction": 0.07407408357002931
+    },
+    {
+      "file": "previews/ground-plan.png",
+      "sha256": "73a1f78cdbd758708d670c76e1c869d09169545945fe9a0c9bcc19fad55263c2",
+      "whole_geometry_frame_margin_fraction": 0.12374695895010968
+    }
+  ],
+  "checks": {
+    "whole_building_unclipped_all_views": true,
+    "all_four_facades_visible_in_required_elevations": true,
+    "through_passage_visible_in_elevations_and_exact_horizontal_section": true,
+    "both_long_slopes_and_terminal_gable_hip_joins_visible": true,
+    "front_plaque_distinct_from_plain_reverse": true,
+    "stone_plaster_brick_tile_ridge_trim_material_regions_visible": true,
+    "source_photos_or_photo_textures_in_previews": false
+  },
+  "camera_policy": "All nine orthographic views fitted to actual full-mesh camera-space bounds using minimum 1.08 fit-scale expansion. The remaining normalized frame margin is recorded per view, at least 0.07. Ground-plan is the explicitly labelled actual mesh Boolean cut at Z=30 mm; other images are complete geometry.",
+  "limits": [
+    "Source-relative proportional exterior approximation, not a pixel-aligned photogrammetric reconstruction.",
+    "Tile ribs, stone blocks, ridge upturns, brick surrounds and tiny joins are simplified. Plaque inscription is intentionally absent.",
+    "Flat material regions under neutral studio lighting are uncalibrated; no physical printing tested."
+  ]
+}

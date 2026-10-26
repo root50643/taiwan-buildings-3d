@@ -1,0 +1,265 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded-STL segment ray intersections plus interior point checks; occupied controls and actual injected-blocker negative fixture",
+  "checks": [
+    {
+      "name": "Passage clear 0 18",
+      "start_model_mm": [
+        0,
+        -95,
+        18
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Passage clear 0 58",
+      "start_model_mm": [
+        0,
+        -95,
+        58
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Passage clear -18 42",
+      "start_model_mm": [
+        -18,
+        -95,
+        42
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Passage clear 18 42",
+      "start_model_mm": [
+        18,
+        -95,
+        42
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Above arch solid",
+      "start_model_mm": [
+        0,
+        -95,
+        77
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "Left pier solid",
+      "start_model_mm": [
+        -46,
+        -95,
+        35
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "Square opening -56",
+      "start_model_mm": [
+        -56,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Square opening 56",
+      "start_model_mm": [
+        56,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Round opening",
+      "start_model_mm": [
+        0,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Upper red wall occupied",
+      "start_model_mm": [
+        27,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 4,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Both independently sourced end openings",
+      "start_model_mm": [
+        -140,
+        0,
+        100
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 280,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Both solid lower ends",
+      "start_model_mm": [
+        -140,
+        25,
+        55
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 280,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 4,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Roof blocks vertical ray",
+      "start_model_mm": [
+        0,
+        15,
+        145
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 65,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "Unobstructed space above roof",
+      "start_model_mm": [
+        0,
+        -95,
+        215
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    }
+  ],
+  "negative_control": {
+    "injected_underpass_blocker_detected": true,
+    "ray_name": "Passage clear 0 18",
+    "hits": 2,
+    "occupied_sample_points": 1,
+    "deliverable_modified": false
+  }
+}

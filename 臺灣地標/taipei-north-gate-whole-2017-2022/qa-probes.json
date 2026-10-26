@@ -1,0 +1,313 @@
+{
+  "section_step_mm": 0.4,
+  "print_warnings": [
+    "Source-bounded display geometry, not engineering or FFF print certification.",
+    "Fine tile relief, plaque border, window lintels and raised ridge tips need printer-specific scaling/supports.",
+    "Horizontal slices are a geometric screen, not global minimum thickness, toolpaths or a physical print."
+  ],
+  "gap_rays": [
+    {
+      "name": "Passage clear 0 18",
+      "start_model_mm": [
+        0,
+        -95,
+        18
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    },
+    {
+      "name": "Passage clear 0 58",
+      "start_model_mm": [
+        0,
+        -95,
+        58
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    },
+    {
+      "name": "Passage clear -18 42",
+      "start_model_mm": [
+        -18,
+        -95,
+        42
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    },
+    {
+      "name": "Passage clear 18 42",
+      "start_model_mm": [
+        18,
+        -95,
+        42
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    },
+    {
+      "name": "Above arch solid",
+      "start_model_mm": [
+        0,
+        -95,
+        77
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": false
+    },
+    {
+      "name": "Left pier solid",
+      "start_model_mm": [
+        -46,
+        -95,
+        35
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": false
+    },
+    {
+      "name": "Square opening -56",
+      "start_model_mm": [
+        -56,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    },
+    {
+      "name": "Square opening 56",
+      "start_model_mm": [
+        56,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    },
+    {
+      "name": "Round opening",
+      "start_model_mm": [
+        0,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    },
+    {
+      "name": "Upper red wall occupied",
+      "start_model_mm": [
+        27,
+        -95,
+        115
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": false
+    },
+    {
+      "name": "Both independently sourced end openings",
+      "start_model_mm": [
+        -140,
+        0,
+        100
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 280,
+      "expected_clear": true
+    },
+    {
+      "name": "Both solid lower ends",
+      "start_model_mm": [
+        -140,
+        25,
+        55
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 280,
+      "expected_clear": false
+    },
+    {
+      "name": "Roof blocks vertical ray",
+      "start_model_mm": [
+        0,
+        15,
+        145
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 65,
+      "expected_clear": false
+    },
+    {
+      "name": "Unobstructed space above roof",
+      "start_model_mm": [
+        0,
+        -95,
+        215
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 190,
+      "expected_clear": true
+    }
+  ],
+  "injected_gap_blocker": {
+    "ray_name": "Passage clear 0 18",
+    "box_extents_model_mm": [
+      10,
+      10,
+      10
+    ],
+    "box_center_model_mm": [
+      0,
+      0,
+      18
+    ]
+  },
+  "rising_surface_profiles": [
+    {
+      "name": "Front tile field rises from eave to ridge",
+      "sample_xy_model_mm": [
+        [
+          -15,
+          -70
+        ],
+        [
+          -15,
+          -55
+        ],
+        [
+          -15,
+          -40
+        ],
+        [
+          -15,
+          -25
+        ],
+        [
+          -15,
+          -8
+        ]
+      ],
+      "ray_top_z_model_mm": 220
+    },
+    {
+      "name": "Reverse tile field rises from eave to ridge",
+      "sample_xy_model_mm": [
+        [
+          15,
+          70
+        ],
+        [
+          15,
+          55
+        ],
+        [
+          15,
+          40
+        ],
+        [
+          15,
+          25
+        ],
+        [
+          15,
+          8
+        ]
+      ],
+      "ray_top_z_model_mm": 220
+    },
+    {
+      "name": "End hip rises into terminal gable",
+      "sample_xy_model_mm": [
+        [
+          122,
+          10
+        ],
+        [
+          116,
+          10
+        ],
+        [
+          110,
+          10
+        ],
+        [
+          104,
+          10
+        ],
+        [
+          96,
+          10
+        ]
+      ],
+      "ray_top_z_model_mm": 220
+    }
+  ]
+}

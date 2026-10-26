@@ -1,37 +1,29 @@
-# 參考來源與幾何判讀
+# 來源與本次證據範圍
 
-查閱日期：2026-10-11。主要觀察對象為公開可見外觀。
+查閱／原始檔審核：2026-10-26。本次沒有新拍攝或幾何測量；只是原有安平古堡縮景的限域歷史色系詮釋。
 
-## 臺南旅遊網，安平古堡
+## A01 — 唯一補色照片
 
-https://www.twtainan.net/zh-cn/attractions/detail/671
+臺南市政府文化局古蹟營運科，〈安平古堡〉，官方 `58_img_1.jpg`：
 
-介紹現存白塔與尖頂為後期整理的面貌；實際檢視全景、近景、平臺與展示館外觀。
+- [照片原址](https://historic.tainan.gov.tw/upload/cht/160/58_img_1.jpg)
+- [直接連結該照片的景點頁](https://historic.tainan.gov.tw/index.php?id=58&lang=cht&option=module&task=pageinfo)
+- [同站政府網站資料開放宣告](https://historic.tainan.gov.tw/index.php?id=440&index=2&lang=cht&option=module&task=pageinfo)
 
-## 臺南市政府文化局古蹟營運科，安平古堡
+保留原 JPEG 為 2048 × 1536，SHA-256 `d58f52fdd90686a21bfc48b54b9331b5ba7b1189b4b187ba2330fb569da67c1f`。EXIF 的 DateTime、DateTimeOriginal、DateTimeDigitized 均為 2004-12-28 10:02:47；這是來源檔案資訊，不是獨立驗證的拍攝日期。來源像素已實際檢視，但沒有放進模型、貼圖或本公開目錄。
 
-https://historic.tainan.gov.tw/index.php?belongid=45&id=58&index=8&lang=cht&option=module&task=pageinfo
+可見材料支持：塔身及正面簷緣暖白灰泥；瓦屋坡紅褐色系；正面磚臺及階梯紅褐磚。光照、陰影、老化和灰縫不等同材料真色。塔身下方樹叢、磚面前景樹木、裁切屋頂邊緣下的同面延續屬明示推定；不是逐像素定位、攝影機姿態解算或 2026 現況判讀。
 
-確認分期磚臺、展示館及白色瞭望塔的現存歷史層次。
+## 來源署名
 
-## 已檢視的官方全景原圖
+臺南市政府文化局古蹟營運科，〈安平古堡〉，照片 58_img_1.jpg（EXIF 記錄 2004-12-28，2026-10-26 查閱），依該站政府網站資料開放宣告使用。材料為獨立近似歷史色系詮釋，遮擋區材料連續性屬推定；非主管機關認證、2026 現況、校色或測繪成果。不臆造攝影者姓名。
 
-https://www.twtainan.net/content/images/attractions/14276/1024x768_Filedata635549389055643528.jpg
+## 排除與既有基線
 
-塔、臺基、階梯及低矮展示館的主要外观參考。
+- A02 是景觀裁切範圍外的古牆與樹根，不能證明模型三層磚臺的材料。
+- A03 顯示另座「熱蘭遮城博物館」，不能作模型中小展示館的補色證據。未因出現在原蒐集紀錄就使用。
+- 只採最後 158 面審核結果；186 面與 178 面舊提案不可當有效面表。20 個上平台交界面、8 個背面內凹槽及整個瞭望室保留未知。
+- [既有公開版本雜湊表](https://github.com/root50643/taiwan-buildings-3d/blob/main/%E8%87%BA%E7%81%A3%E5%9C%B0%E6%A8%99/anping-old-fort/SHA256SUMS.txt) 的四檔映射與原檔核對一致，記錄在 `baseline-identity.json`。新材質直接讀原 STL，不執行幾何重建。
+- `legacy-sources.md` 為舊版來源紀錄原樣保留；不是本次重新檢視其每張影像的聲明，也不構成本次色彩授權。
 
-## 已檢視的官方近景原圖
-
-https://www.twtainan.net/content/images/attractions/17447/1024x768_Filedata635593452362411551.jpg
-
-確認瞭望室外張斜面與四坡尖屋頂。
-
-## 已檢視的官方展示館外觀原圖
-
-https://www.twtainan.net/content/images/attractions/17450/1024x768_Filedata635593454206334790.jpg
-
-判讀柱廊、拱形梁帶及屋簷。
-
-## 資料與權利限制
-
-公開來源不代表照片可自由再散布。原始照片僅用於研究，沒有放入交付 ZIP。模型為重新編寫的參數化幾何，不是掃描、官方圖說或第三方 3D 模型。外觀相似度不構成測繪精度、商用授權或列印成功保證。
+數值 palette 是從材料家族作獨立近似的作者約定，非照片取樣。未驗證 3,460 面使用灰色顯示約定，不宣稱其本來就是灰色。

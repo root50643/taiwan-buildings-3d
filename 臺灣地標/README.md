@@ -45,7 +45,7 @@
 | 中台禪寺 | [模型與說明](chung-tai-monastery/README.md) · [STL](chung-tai-monastery/model.stl) | [前視](chung-tai-monastery/previews/front.png) | [後視](chung-tai-monastery/previews/rear.png) |
 | 國立故宮博物院南部院區 | [模型與說明](palace-south/README.md) · [STL](palace-south/model.stl) | [前視](palace-south/previews/front.png) | [後視](palace-south/previews/rear.png) |
 | 赤崁樓 | [模型與說明](chihkan-tower/README.md) · [STL](chihkan-tower/model.stl) | [前視](chihkan-tower/previews/front.png) | [後視](chihkan-tower/previews/rear.png) |
-| 安平古堡 | [模型與說明](anping-old-fort/README.md) · [STL](anping-old-fort/model.stl) | [前視](anping-old-fort/previews/front.png) | [後視](anping-old-fort/previews/rear.png) |
+| 安平古堡 | [模型與說明](anping-old-fort/README.md) · [STL](anping-old-fort/model.stl) · [3MF](anping-old-fort/model.3mf) · [Blend](anping-old-fort/scene.blend) | [前視](anping-old-fort/previews/front.png) | [後視](anping-old-fort/previews/rear.png) |
 | 奇美博物館 | [模型與說明](chimei-museum/README.md) · [STL](chimei-museum/model.stl) | [前視](chimei-museum/previews/front.png) | [後視](chimei-museum/previews/rear.png) |
 | 高雄85大樓 | [模型與說明](85-sky-tower/README.md) · [STL](85-sky-tower/model.stl) | [前視](85-sky-tower/previews/front.png) | [後視](85-sky-tower/previews/rear.png) |
 | 衛武營國家藝術文化中心 | [模型與說明](weiwuying/README.md) · [STL](weiwuying/model.stl) | [前視](weiwuying/previews/front.png) | [後視](weiwuying/previews/rear.png) |
@@ -63,6 +63,8 @@
 | 埔里紙教堂 | [模型與說明](paper-dome-taiwan-whole-2008-2009/README.md) · [STL](paper-dome-taiwan-whole-2008-2009/paper-dome-taiwan-whole-2008-2009.stl) · [3MF](paper-dome-taiwan-whole-2008-2009/paper-dome-taiwan-whole-2008-2009.3mf) · [Blend](paper-dome-taiwan-whole-2008-2009/paper-dome-taiwan-whole-2008-2009.blend) | [正面斜視](paper-dome-taiwan-whole-2008-2009/previews/front.png) | [後方與池側斜視](paper-dome-taiwan-whole-2008-2009/previews/oblique.png) |
 | 臺北府城北門／承恩門 | [模型與說明](taipei-north-gate-whole-2017-2022/README.md) · [STL](taipei-north-gate-whole-2017-2022/taipei-north-gate-whole-2017-2022.stl) · [3MF](taipei-north-gate-whole-2017-2022/taipei-north-gate-whole-2017-2022.3mf) · [Blend](taipei-north-gate-whole-2017-2022/taipei-north-gate-whole-2017-2022.blend) | [正面斜視](taipei-north-gate-whole-2017-2022/previews/front.png) | [背面斜視](taipei-north-gate-whole-2017-2022/previews/oblique.png) |
 | 旗後燈塔完整連接主建築 | [模型與說明](qihou-lighthouse-main-2020/README.md) · [STL](qihou-lighthouse-main-2020/qihou-lighthouse-main-2020.stl) · [3MF](qihou-lighthouse-main-2020/qihou-lighthouse-main-2020.3mf) · [Blend](qihou-lighthouse-main-2020/qihou-lighthouse-main-2020.blend) | [正面斜視](qihou-lighthouse-main-2020/previews/front.png) | [背面斜視](qihou-lighthouse-main-2020/previews/oblique.png) |
+
+安平古堡沿用既有縮景與原始 STL，僅為約2004年照片支持的158個正面三角面加入未校準歷史色系，其餘3,460面維持未知中性灰；遮蔽處同平面延伸屬明示推定。這是既有模型材質升級，不增加建築或模型件數，也不是完整復色、現況測繪或十七世紀古堡復原。六張完整模型視圖與限制均在[原模型詳頁](anping-old-fort/README.md)，此總覽保留原建築卡片及圖片數量。
 
 ## 重建與檔案
 

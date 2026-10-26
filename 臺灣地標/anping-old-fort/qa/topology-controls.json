@@ -1,0 +1,68 @@
+{
+  "all_expected_outcomes": true,
+  "controls": [
+    {
+      "control": "single_oriented_cube",
+      "expected_pass": true,
+      "actual_pass": true,
+      "closed_shells": 1,
+      "nonmanifold_vertex_links": 0,
+      "nonmanifold_edges": 0,
+      "inconsistently_oriented_edges": 0
+    },
+    {
+      "control": "missing_triangle",
+      "expected_pass": false,
+      "actual_pass": false,
+      "closed_shells": 1,
+      "nonmanifold_vertex_links": 3,
+      "nonmanifold_edges": 3,
+      "inconsistently_oriented_edges": 3
+    },
+    {
+      "control": "one_inverted_triangle",
+      "expected_pass": false,
+      "actual_pass": false,
+      "closed_shells": 1,
+      "nonmanifold_vertex_links": 0,
+      "nonmanifold_edges": 0,
+      "inconsistently_oriented_edges": 3
+    },
+    {
+      "control": "duplicated_triangle",
+      "expected_pass": false,
+      "actual_pass": false,
+      "closed_shells": 1,
+      "nonmanifold_vertex_links": 0,
+      "nonmanifold_edges": 3,
+      "inconsistently_oriented_edges": 3
+    },
+    {
+      "control": "unreferenced_vertex",
+      "expected_pass": false,
+      "actual_pass": false,
+      "closed_shells": 1,
+      "nonmanifold_vertex_links": 0,
+      "nonmanifold_edges": 0,
+      "inconsistently_oriented_edges": 0
+    },
+    {
+      "control": "two_shells_touching_only_at_vertex",
+      "expected_pass": false,
+      "actual_pass": false,
+      "closed_shells": 1,
+      "nonmanifold_vertex_links": 1,
+      "nonmanifold_edges": 0,
+      "inconsistently_oriented_edges": 0
+    },
+    {
+      "control": "two_disjoint_shells",
+      "expected_pass": false,
+      "actual_pass": false,
+      "closed_shells": 2,
+      "nonmanifold_vertex_links": 0,
+      "nonmanifold_edges": 0,
+      "inconsistently_oriented_edges": 0
+    }
+  ]
+}

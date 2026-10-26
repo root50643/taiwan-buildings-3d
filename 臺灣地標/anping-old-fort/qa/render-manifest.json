@@ -1,0 +1,220 @@
+{
+  "blender": "4.3.2",
+  "engine": "Cycles",
+  "source_pixels": 0,
+  "geometry": "All views render exact whole original mesh with same per-triangle materials. No clipping, texture, facade decoration or extra mesh.",
+  "palette": [
+    {
+      "id": "unknown_neutral",
+      "name": "Unknown neutral display convention",
+      "hex": "#A3A3A3",
+      "roughness": 0.8,
+      "source_evidence": "3460 original triangles. Unknown gray is display annotation, not observed building material."
+    },
+    {
+      "id": "plaster",
+      "name": "Approximate historical warm-white plaster",
+      "hex": "#D4D1C5",
+      "roughness": 0.82,
+      "source_evidence": "14 original triangles. A01 observed material family, independently approximated color; uncalibrated historical interpretation with bounded continuity inference."
+    },
+    {
+      "id": "roof",
+      "name": "Approximate historical red-brown front roof",
+      "hex": "#805A4B",
+      "roughness": 0.84,
+      "source_evidence": "2 original triangles. A01 observed material family, independently approximated color; uncalibrated historical interpretation with bounded continuity inference."
+    },
+    {
+      "id": "brick",
+      "name": "Approximate historical red-brown front brick",
+      "hex": "#966D5B",
+      "roughness": 0.86,
+      "source_evidence": "142 original triangles. A01 observed material family, independently approximated color; uncalibrated historical interpretation with bounded continuity inference."
+    }
+  ],
+  "executed_view_framing": [
+    {
+      "name": "front",
+      "normalized_xy_bounds": [
+        [
+          0.11903788149356842,
+          0.880962610244751
+        ],
+        [
+          0.04422818496823311,
+          0.8334277272224426
+        ]
+      ],
+      "minimum_required_frame_margin": 0.03,
+      "all_vertices_inside_frame": true
+    },
+    {
+      "name": "rear",
+      "normalized_xy_bounds": [
+        [
+          0.11903762817382812,
+          0.8809623718261719
+        ],
+        [
+          0.044228632003068924,
+          0.770415186882019
+        ]
+      ],
+      "minimum_required_frame_margin": 0.03,
+      "all_vertices_inside_frame": true
+    },
+    {
+      "name": "front-elevation",
+      "normalized_xy_bounds": [
+        [
+          0.05882352963089943,
+          0.9411764740943909
+        ],
+        [
+          0.09215641766786575,
+          0.9015682339668274
+        ]
+      ],
+      "minimum_required_frame_margin": 0.03,
+      "all_vertices_inside_frame": true
+    },
+    {
+      "name": "rear-elevation",
+      "normalized_xy_bounds": [
+        [
+          0.05882357433438301,
+          0.9411765336990356
+        ],
+        [
+          0.09215656667947769,
+          0.9015684723854065
+        ]
+      ],
+      "minimum_required_frame_margin": 0.03,
+      "all_vertices_inside_frame": true
+    },
+    {
+      "name": "right-end",
+      "normalized_xy_bounds": [
+        [
+          0.1466667503118515,
+          0.8533334136009216
+        ],
+        [
+          0.0839998796582222,
+          0.9095999002456665
+        ]
+      ],
+      "minimum_required_frame_margin": 0.03,
+      "all_vertices_inside_frame": true
+    },
+    {
+      "name": "top",
+      "normalized_xy_bounds": [
+        [
+          0.05882352963089943,
+          0.9411764740943909
+        ],
+        [
+          0.05986158177256584,
+          0.9401383996009827
+        ]
+      ],
+      "minimum_required_frame_margin": 0.03,
+      "all_vertices_inside_frame": true
+    }
+  ],
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        155,
+        -270,
+        190
+      ],
+      "scale_mm": 240,
+      "target": [
+        0,
+        0,
+        47
+      ],
+      "height": 850
+    },
+    {
+      "name": "rear",
+      "camera": [
+        -155,
+        270,
+        190
+      ],
+      "scale_mm": 240,
+      "target": [
+        0,
+        0,
+        47
+      ],
+      "height": 850
+    },
+    {
+      "name": "front-elevation",
+      "camera": [
+        0,
+        -300,
+        52
+      ],
+      "scale_mm": 170,
+      "target": [
+        0,
+        0,
+        52
+      ],
+      "height": 900
+    },
+    {
+      "name": "rear-elevation",
+      "camera": [
+        0,
+        300,
+        52
+      ],
+      "scale_mm": 170,
+      "target": [
+        0,
+        0,
+        52
+      ],
+      "height": 900
+    },
+    {
+      "name": "right-end",
+      "camera": [
+        300,
+        0,
+        52
+      ],
+      "scale_mm": 150,
+      "target": [
+        0,
+        0,
+        52
+      ],
+      "height": 1000
+    },
+    {
+      "name": "top",
+      "camera": [
+        0,
+        0,
+        300
+      ],
+      "scale_mm": 170,
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "height": 850
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "anping-historical-front-material-parameters-v1",
+  "geometry": "Original model.stl is unchanged canonical geometry; 3618 triangles. Geometry reconstruction is never executed by this material pipeline.",
+  "new_buildings": 0,
+  "palette": [
+    {
+      "id": "unknown_neutral",
+      "name": "Unknown neutral display convention",
+      "hex": "#A3A3A3",
+      "roughness": 0.8,
+      "source_evidence": "3460 original triangles. Unknown gray is display annotation, not observed building material."
+    },
+    {
+      "id": "plaster",
+      "name": "Approximate historical warm-white plaster",
+      "hex": "#D4D1C5",
+      "roughness": 0.82,
+      "source_evidence": "14 original triangles. A01 observed material family, independently approximated color; uncalibrated historical interpretation with bounded continuity inference."
+    },
+    {
+      "id": "roof",
+      "name": "Approximate historical red-brown front roof",
+      "hex": "#805A4B",
+      "roughness": 0.84,
+      "source_evidence": "2 original triangles. A01 observed material family, independently approximated color; uncalibrated historical interpretation with bounded continuity inference."
+    },
+    {
+      "id": "brick",
+      "name": "Approximate historical red-brown front brick",
+      "hex": "#966D5B",
+      "roughness": 0.86,
+      "source_evidence": "142 original triangles. A01 observed material family, independently approximated color; uncalibrated historical interpretation with bounded continuity inference."
+    }
+  ],
+  "material_counts": [
+    3460,
+    14,
+    2,
+    142
+  ],
+  "units": "millimetre",
+  "source_relative_axes": {
+    "front": "-Y",
+    "rear": "+Y",
+    "geographic_azimuth_known": false
+  },
+  "historical_reference": "A01 EXIF 2004-12-28, metadata not independently authenticated; not current 2026 appearance.",
+  "continuity_inference": "Admitted shaft/brick/slope triangles extend only on the same plane behind shrubs/trees or cropped roof edge; material continuity is inferred, not individual pixel proof.",
+  "render": {
+    "engine": "CYCLES",
+    "samples": 32,
+    "threads": 2,
+    "width": 1200,
+    "height": 850,
+    "color_management": "Standard / None",
+    "seed": 0
+  }
+}

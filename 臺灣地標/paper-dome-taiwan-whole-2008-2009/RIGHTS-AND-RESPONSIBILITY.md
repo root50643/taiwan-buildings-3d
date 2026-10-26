@@ -1,0 +1,11 @@
+# Rights and responsibility
+
+The procedural code, numeric construction and rendered previews are newly authored for an approximate architectural study. They contain no source photographs, source crops, textures, copied drawing sheets, raw PDF/HTML or source-image derivatives. This statement describes the package contents; it is **not a blanket legal clearance or an open-source/photo licence**.
+
+Architecture: **Shigeru Ban Architects**. Architect reference photographs/drawings and source website contents remain reserved to their respective rights holders; an individual photographer for the Taiwan architect images was not established. Historical relocation/reassembly information is credited to **Paper Dome New Homeland Learning Park / New Homeland Foundation**. The 2009 rear photograph/article is credited to **speedbug / 小蟲記事簿**. Bibliographic metadata, hashes and source-page links are in `sources.json`; none confers reuse permission.
+
+No express open licence or rightsholder permission for source media was established. The right to view or cite a source is not a grant to redistribute its media. Independent procedural authorship and removal of source pixels do not alone resolve architectural/design rights. **Public distribution, sale and other external use of this model require a separate rights assessment and authorization; this package does not grant that authorization.** No publication permission is inferred from its packaging or file names.
+
+The model is a normalized, simplified, non-surveyed interpretation of one complete Puli Paper Dome hall in approximate 2008–2009 completed Taiwan condition. The 1995 Kobe drawing is a historical frame comparator, supported by documented numbered-frame transfer; it is not a Taiwan as-built. Replacement floor/cladding, exact membrane curvature, hidden connections and non-pond facade details are not known precisely. No 2026-condition, engineering, structural, accessibility, safety, archival reconstruction or physical printing certification is offered.
+
+STL is uncoloured; 3MF contains base-material colours, not printer/extruder profiles. Digital geometry tests do not prove printability at any particular scale, process or material. Evaluate supports, delicate members, build volume and test pieces independently.

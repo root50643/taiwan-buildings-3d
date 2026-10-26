@@ -1,14 +1,18 @@
-# 公開參考來源
+# 來源、判讀及既有模型沿革
 
-1. 花蓮縣文化局〈松園別館〉：https://www.hccc.gov.tw/zh-tw/LocalCulturalHall/Detail/20
-   - 官文說明二層主體、上下拱廊及日式瓦頂。
-2. 同頁主棟前斜視圖：https://www.hccc.gov.tw/Utility/DisplayImage?id=27205
-   - 實際檢視，用於上下拱廊、欄杆與長立面體量。
-3. 同頁前側與山牆照片：https://www.hccc.gov.tw/Utility/DisplayImage?id=27204
-   - 實際檢視，確認側面山牆、雙坡屋頂與簡樸側牆。
-4. 同頁公開外廊照片：https://www.hccc.gov.tw/Utility/DisplayImage?id=27200
-   - 用於確認拱廊與後方外門窗的退縮層次；不製作室內。
-5. 觀光署多媒體資料〈松園別館〉：https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_376550000a_000012
-   - 提供縣政府景點文字及建築照片入口。
+## 本次實際檢視的照片
 
-參考照片常受枝葉遮擋，並非量測正投影。後立面、側面窗及尺寸比例均明示為推定。原始照片未收錄於交付檔案。
+- **花蓮縣政府／花蓮旅遊網 — 松園別館**：[景點頁](https://hualien.travel/zh-tw/attraction/12/)。唯一用於此次色系判讀的[主棟照片 A01](https://hualien.travel/_api/Image/2434/?r=1786001408008) 於 2026-10-25 21:05:59 UTC 取得，1151 × 768，218,616 bytes。頁面更新日期不等於照片拍攝日期，拍攝日期未確定。
+- 原圖 SHA-256：`b887ea145ac8ebdc9357824c7f3085dec424c85ed515b79af6733556a1875bc8`。照片只供私人證據查核，**不隨公開模型、GitHub、BLEND、3MF 或預覽附上**；沒有照片貼圖或來源像素重製。
+- 該圖顯示主棟正面長拱廊、灰色砌體、暗灰褐老化屋頂，右端重度藤蔓遮擋。只允許概略正面材料色系，不能證實背面、另一屋坡、被遮擋山牆、精確門窗分割、RGB 或現況。
+- [網站著作權政策](https://hualien.travel/zh-tw/copyright/) 與[開放宣告](https://hualien.travel/zh-tw/government/) 於 2026-10-25 取得及審查。各自限制與例外保留，不能推論全部第三方權利已清理。未找到可確定的個別攝影者署名，不杜撰攝影者。
+
+## 限域面表
+
+`face-material-map.json` 把此次核准色系範圍連到精確原始 STL。正面屋頂 122 面、正面砌體 4295 面；其餘 1457 面為未驗證中性顯示。原始零起算面序、完整三頂點座標與獨立法向比對共同確保邊界。沒有用單一面心去猜區域，也沒有把 Blender 匯入的序號直接視作原始序號。
+
+## 既有幾何沿革
+
+原公開版本：`root50643/taiwan-buildings-3d`，commit `d5b1e05bbd544f2da0367bfe7aa78e1ebadab604`，路徑 `臺灣地標/pine-garden/`。此次保留同一 `model.stl` 與原 `build_model.py`；歷史幾何驗證保留為 `legacy-validation.json`。
+
+原幾何建立時的舊來源沿革不因本次旅遊網政策而重新取得授權。本次**沒有取得或使用 HCCC 圖片或 HTML**，沒有用不同附屬木屋或園區招牌的照片推定主棟材質。新補色不聲稱修正原有十跨近似、盲拱廊、厚欄板或推定背/側面。

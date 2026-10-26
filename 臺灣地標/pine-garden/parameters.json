@@ -1,0 +1,47 @@
+{
+  "schema": "pine-garden-material-parameters-v1",
+  "geometry": "Original model.stl is the canonical unchanged input; 5874 triangles. No geometry parameters are applied by the color-upgrade pipeline.",
+  "new_buildings": 0,
+  "palette": [
+    {
+      "id": "unverified_neutral",
+      "name": "Unverified generic neutral display",
+      "hex": "#B8B8B8",
+      "roughness": 0.8,
+      "source_evidence": "1457 unverified faces; no source color claim. Includes rear, sides, opposite roof, base, door/transom backs and excluded side-gable vent faces."
+    },
+    {
+      "id": "weathered_front_roof",
+      "name": "Approximate dark weathered roof family",
+      "hex": "#4E4A43",
+      "roughness": 0.84,
+      "source_evidence": "122 allowed front roof/ridge triangles only. A01 dark weathered neutral/brown-gray family; no measured RGB or texture."
+    },
+    {
+      "id": "front_mineral_masonry",
+      "name": "Approximate warm neutral-gray masonry",
+      "hex": "#ABA79F",
+      "roughness": 0.86,
+      "source_evidence": "4295 allowed front piers, arches, intrados, wall fields, stringcourses and thickened parapet triangles. A01 family interpretation; uncalibrated."
+    }
+  ],
+  "material_counts": [
+    1457,
+    122,
+    4295
+  ],
+  "units": "millimetre",
+  "source_relative_axes": {
+    "front": "-Y",
+    "rear": "+Y"
+  },
+  "render": {
+    "engine": "CYCLES",
+    "samples": 32,
+    "threads": 4,
+    "width": 1200,
+    "height": 850,
+    "color_management": "Standard / None",
+    "seed": 0
+  }
+}

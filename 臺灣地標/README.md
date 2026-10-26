@@ -50,7 +50,7 @@
 | 衛武營國家藝術文化中心 | [模型與說明](weiwuying/README.md) · [STL](weiwuying/model.stl) | [前視](weiwuying/previews/front.png) | [後視](weiwuying/previews/rear.png) |
 | 龍虎塔 | [模型與說明](dragon-tiger-pagodas/README.md) · [STL（Release 下載）](https://github.com/root50643/taiwan-landmark-buildings-3d/releases/download/v1.0.0/dragon_tiger_pagodas_150mm.stl) | [前視](dragon-tiger-pagodas/previews/front.png) | [後視](dragon-tiger-pagodas/previews/rear.png) |
 | 鵝鑾鼻燈塔 | [模型與說明](eluanbi-lighthouse/README.md) · [STL](eluanbi-lighthouse/model.stl) | [前視](eluanbi-lighthouse/previews/front.png) | [後視](eluanbi-lighthouse/previews/rear.png) |
-| 松園別館 | [模型與說明](pine-garden/README.md) · [STL](pine-garden/model.stl) | [前視](pine-garden/previews/front.png) | [後視](pine-garden/previews/rear.png) |
+| 松園別館 | [限域補色與說明](pine-garden/README.md) · [原 STL](pine-garden/model.stl) · [3MF](pine-garden/model.3mf) · [Blend](pine-garden/scene.blend) | [正面補色](pine-garden/previews/front.png) | [背面未驗證中性材質](pine-garden/previews/rear.png) |
 | 國立臺灣史前文化博物館康樂本館 | [模型與說明](prehistory-museum-kangle/README.md) · [STL](prehistory-museum-kangle/model.stl) | [前視](prehistory-museum-kangle/previews/front.png) | [後視](prehistory-museum-kangle/previews/rear.png) |
 | 金門得月樓 | [模型與說明](deyue-tower/README.md) · [STL](deyue-tower/model.stl) | [前視](deyue-tower/previews/front.png) | [後視](deyue-tower/previews/rear.png) |
 | 澎湖天后宮 | [模型與說明](penghu-tianhou-temple/README.md) · [STL](penghu-tianhou-temple/model.stl) | [前視](penghu-tianhou-temple/previews/front.png) | [後視](penghu-tianhou-temple/previews/rear.png) |
@@ -65,7 +65,9 @@
 
 新增臺北表演藝術中心的檔名、公開數值重建流程及九張模型視圖，請依[專屬 README](tpac-whole-2022/README.md)；下列舊檔名說明及18個原包的完整性紀錄保留為原有24座交付歷史。來源權利與圖庫06署名衝突見該包說明，原始第三方照片不公開。北投圖書館的[專屬README](beitou-library-whole-pre2026/README.md)另列九圖及公開數值重建流程，建築師、照片與逐項來源權利均保留；受保護PDF及其擷取內容不收入公開包。向山的[專屬README](xiangshan-whole-2010/README.md)提供九張實際模型視圖、完整兩翼的公開數值重建及列印限制；保留建築師與頁面層級攝影署名，原始照片、圖說與HTML不公開。大溪武德殿主殿的[專屬README](daxi-butokuden-main-hall-2014/README.md)提供九張模型視圖及公開輸入重建，保留2014調查報告與個別歷史影像署名、內牆尺寸和屋頂尺寸分別使用及列印支撐限制；原始報告與照片不公開。紙教堂的[專屬README](paper-dome-taiwan-whole-2008-2009/README.md)提供九張實際模型視圖與公開數值重建；保留坂茂建築設計與個別來源署名、非池側立面證據限制、獨立研究及非官方背書說明，未授予第三方照片、建築設計或商標權利。原照、歷史圖面、HTML及私人審查不公開。
 
-各目錄包含 build_model.py、requirements.txt、render_preview.py、validate_model.py 及數位檢查結果。請在該模型目錄依其 README 安裝相依套件並執行重建；不同模型的參數和重建流程可能不同。
+松園別館為既有主棟的限域材質升級，不新增建築、不改原 STL 幾何；僅正面有來源支持的屋頂與砌體補色，背面、側面與門窗凹槽保留未驗證中性材質，不是全館真實色彩復原。六張實際模型視圖見[預覽目錄](pine-garden/previews/)；離線材質重建與新版檢查依[專屬 README](pine-garden/README.md)，不沿用下列舊檔名流程。
+
+原有交付目錄包含 build_model.py、requirements.txt、render_preview.py、validate_model.py 及數位檢查結果。請在該模型目錄依其 README 安裝相依套件並執行重建；不同模型的參數和重建流程可能不同。
 
 - model.stl：列印用幾何。
 - scene.blend 或 editable.blend：可編輯模型與預覽場景。
@@ -75,7 +77,7 @@
 
 ## 公開整理與完整性
 
-18 個原始交付壓縮包涵蓋 24 座模型，均通過 ZIP CRC 完整性檢查；原包附帶的 228 筆 SHA-256 校驗全部相符。STL、Blender 場景、建模原始碼和預覽圖維持原交付位元組。三份 validation.json 移除含暫存工作路徑的 rebuild_stdout 記錄欄位，相關校驗清單已更新；數位驗證數值未變更。沒有加入研究照片、私人下載連結或執行日誌。
+18 個原始交付壓縮包涵蓋 24 座模型，均通過 ZIP CRC 完整性檢查；原包附帶的 228 筆 SHA-256 校驗全部相符。初次公開整理時，STL、Blender 場景、建模原始碼和預覽圖維持原交付位元組；松園別館本次僅原 STL 與幾何作者程式維持原位元組，材質場景、預覽及重建檢查已依專屬 README 升級。三份 validation.json 移除含暫存工作路徑的 rebuild_stdout 記錄欄位，相關校驗清單已更新；數位驗證數值未變更。沒有加入研究照片、私人下載連結或執行日誌。
 
 ## 龍虎塔 STL 下載方式
 

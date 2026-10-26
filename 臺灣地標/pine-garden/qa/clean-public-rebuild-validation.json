@@ -1,0 +1,727 @@
+{
+  "all_pass": true,
+  "started_utc": "2026-10-26T04:15:50.371892+00:00",
+  "completed_utc": "2026-10-26T04:17:14.088922+00:00",
+  "fresh_directory_public_inputs_only": true,
+  "copied_input_files": [
+    "model.stl",
+    "face-material-map.json",
+    "parameters.json",
+    "legacy-validation.json",
+    "build_materials.py",
+    "material_geometry.py",
+    "mesh_topology.py",
+    "export_3mf.py",
+    "verify_material_controls.py",
+    "validate_self_intersections.py",
+    "render_preview.py",
+    "verify_blend.py",
+    "verify_path_buffers.py",
+    "verify_png_metadata.py",
+    "reproduce.py",
+    "requirements.txt",
+    "topology_controls.py",
+    "intersection_controls.py",
+    "verify_3mf_xml.py"
+  ],
+  "input_sha256": {
+    "model.stl": "7fc0fcf4aadbf8a0c774d0cc6f659092bb6553e6071334953f17ac5c2f478d1d",
+    "face-material-map.json": "7ab22dc159c608d23d229535aec5b97e275ed134e181b64f8fe99db534873c99",
+    "parameters.json": "1399ba15acf69dc133e352655e94e6f061c3e520d4e0c618e0ce2962f307d227",
+    "legacy-validation.json": "380b4ac5031cc14fad1ac23c47d3d4dd7db071ae623b66036712d42d14591970",
+    "build_materials.py": "877a13010703eb37e49e916f1f97d2f706d20e6bbedb60096d6d7a3fbb5f9c32",
+    "material_geometry.py": "042862437febd1b6b616a766a5b65c9ed2a13e893b5e2cb02abe5f6ae616c02c",
+    "mesh_topology.py": "e1c6d46ada51d499cb0540e7c9dfb3263603c2ee07f2c4e0b4c86196d53d03da",
+    "export_3mf.py": "159e68af830bdadf18215c006544df9271191c93323b127b35687dadbae2b46e",
+    "verify_material_controls.py": "cf6751c622a6833f9bd4f18ea48a3723ab37bfa789ed9ee4b98d1f727520c7c9",
+    "validate_self_intersections.py": "84889394d92ec47a156cd36ffc99d9ce8806ddafe75c9f4fe3135a044f7c0b0c",
+    "render_preview.py": "c04ba5d86e6243700962b3c06c207df8123883983d1b9a35b3b0412b19afe1b0",
+    "verify_blend.py": "13f615ac58f1faa1ffa55543e8368bb5fcede1775ee6a63b6c51dcbbd44af9b1",
+    "verify_path_buffers.py": "7efd60247a12db6fde019f4ae16ee65835c0d198b4b53b3e0db74382a09b90be",
+    "verify_png_metadata.py": "06c7d9cece8e7e935d4dcc24d4777fb50d2c4d4370a5c32db01b8fec6e841e0c",
+    "reproduce.py": "15efa8788cd6510896f04951676c8ecaaad426890019463bbc54ce5180c91ff4",
+    "requirements.txt": "e2dbc63da2babebb1803066537973e7a0fd21a1dd919e614d0e46c0a4c362e9d",
+    "topology_controls.py": "32d37a0bea4d2cfeed512ca250c81d84a784ef7830d91d1ad684a2e3d1b31049",
+    "intersection_controls.py": "d86a8a50ea97e123c59fd27066828b7e3b33582131f9497bb7bcfb7c40dcf32b",
+    "verify_3mf_xml.py": "4c8f2b9bf65b12f19e5b6567fba844c56dc03983833d4de8ddb99bfc2f1f4e86"
+  },
+  "network_or_source_pixels_required": false,
+  "exact_arrays": {
+    "vertices": true,
+    "faces": true,
+    "materials": true,
+    "original_triangle_index": true
+  },
+  "exact_artifact_bytes": {
+    "model.stl": true,
+    "model.3mf": true
+  },
+  "previews": [
+    {
+      "file": "previews/front-elevation.png",
+      "png_bytes_identical": true,
+      "sha256": "b5b3024ec63f6b4097d08d9fe0a23dc6896f778a73366fa1ce2412ee5c7a5994"
+    },
+    {
+      "file": "previews/front.png",
+      "png_bytes_identical": true,
+      "sha256": "d6042cd6f0cdd87161c0714c903ccd5d2ba2fbef7ec07e93a961bca1599550b3"
+    },
+    {
+      "file": "previews/rear-elevation.png",
+      "png_bytes_identical": true,
+      "sha256": "6c33908121603bd22967bb1235f6d9e0d1eeb0cb05f1831c588ab804fbe3929a"
+    },
+    {
+      "file": "previews/rear.png",
+      "png_bytes_identical": true,
+      "sha256": "55a36e8741b2fde5d5cba2df6375efdceec0cab1f2caf2feba08d33d77f01427"
+    },
+    {
+      "file": "previews/right-end.png",
+      "png_bytes_identical": true,
+      "sha256": "f45994dbeab8fa75de3ef7f064156d33e063e0f8e3385e7072b0b34c67652861"
+    },
+    {
+      "file": "previews/top.png",
+      "png_bytes_identical": true,
+      "sha256": "961787171f6e1dc0fddba08a206bbf7479eea2413a9fcd1e22c302b8684b3e4f"
+    }
+  ],
+  "native_bytes_not_required_identical": "Blender embeds runtime/session data. Actual native geometry/material/privacy/editability checks and all rendered preview bytes must agree.",
+  "clean_rebuild_reports": {
+    "geometry-material-validation.json": {
+      "all_pass": true,
+      "source_stl_sha256": "7fc0fcf4aadbf8a0c774d0cc6f659092bb6553e6071334953f17ac5c2f478d1d",
+      "stl_bytes": 293784,
+      "source_triangles": 5874,
+      "vertices": 2939,
+      "geometry_changed": false,
+      "source_order_preserved": true,
+      "all_oriented_full_triangle_coordinates_exact": true,
+      "triangle_bijection_complete": true,
+      "independent_normal_max_difference_from_stored": 2.9761440312192633e-08,
+      "material_counts": [
+        1457,
+        122,
+        4295
+      ],
+      "white_door_transom_assignments": 0,
+      "excluded_vent_assignments": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "topology": {
+        "artifact": "unchanged original model.stl",
+        "vertices": 2939,
+        "triangles": 5874,
+        "closed_shells": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 304466.74353290134,
+        "edge_incidence_histogram": {
+          "2": 8811
+        },
+        "nonmanifold_edges": 0,
+        "nonmanifold_vertex_links": 0,
+        "inconsistently_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "duplicate_triangles": 0,
+        "unreferenced_vertices": 0,
+        "size_model_mm": [
+          150.0,
+          72.0,
+          57.400001525878906
+        ],
+        "bounds_model_mm": [
+          [
+            -75.0,
+            -36.0,
+            0.0
+          ],
+          [
+            75.0,
+            36.0,
+            57.400001525878906
+          ]
+        ],
+        "euler_characteristic": 2,
+        "all_pass": true
+      },
+      "mesh_repair_performed": false,
+      "limitation": "Topology equals preserved original. Not a physical print test or exact-predicate proof of no global geometric intersections."
+    },
+    "3mf-validation.json": {
+      "topology": {
+        "artifact": "model.3mf",
+        "vertices": 2939,
+        "triangles": 5874,
+        "closed_shells": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume_mm3": 304466.74353290134,
+        "edge_incidence_histogram": {
+          "2": 8811
+        },
+        "nonmanifold_edges": 0,
+        "nonmanifold_vertex_links": 0,
+        "inconsistently_oriented_edges": 0,
+        "degenerate_triangles": 0,
+        "duplicate_triangles": 0,
+        "unreferenced_vertices": 0,
+        "size_model_mm": [
+          150.0,
+          72.0,
+          57.400001525878906
+        ],
+        "bounds_model_mm": [
+          [
+            -75.0,
+            -36.0,
+            0.0
+          ],
+          [
+            75.0,
+            36.0,
+            57.400001525878906
+          ]
+        ],
+        "euler_characteristic": 2,
+        "all_pass": true
+      },
+      "strict": true,
+      "warnings": 0,
+      "mesh_objects": 1,
+      "build_items": 1,
+      "model_units": "millimetre",
+      "all_triangle_property_resources_match_group": true,
+      "vertices": 2939,
+      "triangles": 5874,
+      "base_materials": 3,
+      "all_triangle_materials_match_palette": true,
+      "material_counts": [
+        1457,
+        122,
+        4295
+      ],
+      "triangle_indices_exact_match": true,
+      "vertices_exact_after_float32_cast": true,
+      "vertex_max_abs_difference_mm": 0.0,
+      "vertex_tolerance_mm": 0.0,
+      "raw_lib3mf_writer_max_abs_drift_mm": 3.5839999981135406e-06,
+      "roundtrip_raw_writer_max_abs_drift_mm": 3.5839999981135406e-06,
+      "export_serialization": "Canonical float32 vertices serialized with 17 significant digits after bounded lib3mf decimal-writer drift check; both strict reloaded models must match exactly.",
+      "roundtrip": {
+        "topology": {
+          "artifact": "roundtrip.3mf",
+          "vertices": 2939,
+          "triangles": 5874,
+          "closed_shells": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume_mm3": 304466.74353290134,
+          "edge_incidence_histogram": {
+            "2": 8811
+          },
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertex_links": 0,
+          "inconsistently_oriented_edges": 0,
+          "degenerate_triangles": 0,
+          "duplicate_triangles": 0,
+          "unreferenced_vertices": 0,
+          "size_model_mm": [
+            150.0,
+            72.0,
+            57.400001525878906
+          ],
+          "bounds_model_mm": [
+            [
+              -75.0,
+              -36.0,
+              0.0
+            ],
+            [
+              75.0,
+              36.0,
+              57.400001525878906
+            ]
+          ],
+          "euler_characteristic": 2,
+          "all_pass": true
+        },
+        "strict": true,
+        "warnings": 0,
+        "mesh_objects": 1,
+        "build_items": 1,
+        "model_units": "millimetre",
+        "all_triangle_property_resources_match_group": true,
+        "vertices": 2939,
+        "triangles": 5874,
+        "base_materials": 3,
+        "all_triangle_materials_match_palette": true,
+        "material_counts": [
+          1457,
+          122,
+          4295
+        ],
+        "triangle_indices_exact_match": true,
+        "vertices_exact_after_float32_cast": true,
+        "vertex_max_abs_difference_mm": 0.0,
+        "vertex_tolerance_mm": 0.0
+      },
+      "lib3mf_version": [
+        2,
+        5,
+        0
+      ],
+      "3mf_sha256": "d955c2988b4c924b4f7e533fb4338584c762dc7d3ef82b5768329ca82c50e4ef"
+    },
+    "blend-validation.json": {
+      "all_pass": true,
+      "blender_version": "4.3.2",
+      "visible_mesh_objects": 1,
+      "vertices": 2939,
+      "triangles": 5874,
+      "full_oriented_triangle_mapping_bijective": true,
+      "all_triangle_coordinates_exact": true,
+      "normals_independently_identical": true,
+      "native_source_index_attribute_matches_bijection": true,
+      "all_material_indices_match_original_face_mask": true,
+      "material_counts": [
+        1457,
+        122,
+        4295
+      ],
+      "diffuse_and_shader_palette_match_public_srgb": true,
+      "modifiers": 0,
+      "model_transform_identity": true,
+      "external_or_packed_images": 0,
+      "linked_libraries": 0,
+      "embedded_scripts": 0,
+      "relative_render_and_browser_paths": true,
+      "deliverable_sha256": "977c181db0117dee8572696e242d3d276791ca4298adf8b58f3e8022b60c0ed2"
+    },
+    "native-edit-validation.json": {
+      "all_pass": true,
+      "temporary_mesh_vertex_edit_saved_and_reopened": true,
+      "temporary_per_face_material_edit_saved_and_reopened": true,
+      "temporary_diffuse_and_shader_edit_saved_and_reopened": true,
+      "temporary_probe_removed": true,
+      "delivered_blend_modified": false,
+      "before_and_after_sha256": "977c181db0117dee8572696e242d3d276791ca4298adf8b58f3e8022b60c0ed2"
+    },
+    "raw-path-buffer-validation.json": {
+      "all_pass": true,
+      "buffers_checked": 2942,
+      "total_fixed_buffer_bytes": 107519,
+      "classification_counts": {
+        "exact_factory_buffer": 2901,
+        "public_authored_value_with_verified_full_tail": 41
+      },
+      "violations": [],
+      "method": "Recursive embedded SDNA field offsets over every structured block instance and embedded structure/array; every fixed char array including its complete NUL tail; compare exact whole buffers with an actual newly saved --factory-startup Blender file, then narrowly declared public names/settings with full tail checking. No prefix-only grep or field-name-only path scan.",
+      "scope": "Declared non-pointer fixed arrays of char/uchar/int8_t/uint8_t; raw pointer allocations, float geometry, and media are separate native/artifact checks.",
+      "model_blend_sha256": "977c181db0117dee8572696e242d3d276791ca4298adf8b58f3e8022b60c0ed2",
+      "blender_file_version": "403",
+      "sdna_sha256": "26245ba53e256375178f5cd806cdcfdbed9a3b1d40e3a5f7f525afefd6eeceaa",
+      "actual_factory_file_created": true,
+      "factory_blend_sha256": "4344ca62463b136da8877c381868fef5bedf5ec81e5e11100fa90ff8a83616fc",
+      "factory_fixed_buffers": 1983,
+      "structured_blocks_checked": 1429,
+      "raw_non_structured_blocks_outside_fixed_array_scope": 28,
+      "distinct_fixed_fields": 280,
+      "synthetic_negative_controls": [
+        {
+          "control": "actual_untouched_factory_file",
+          "expected_pass": true,
+          "actual_pass": true
+        },
+        {
+          "control": "post_NUL_stale_text",
+          "field": "Scene.r/RenderData.pic[1024]",
+          "expected_pass": false,
+          "actual_pass": false
+        },
+        {
+          "control": "nested_struct_private_value",
+          "field": "Scene.r/RenderData.im_format/ImageFormatData.linear_colorspace_settings/ColorManagedColorspaceSettings.name[64]",
+          "expected_pass": false,
+          "actual_pass": false
+        }
+      ],
+      "deliverable_modified": false
+    },
+    "png-metadata-validation.json": {
+      "all_pass": true,
+      "preview_count": 6,
+      "excluded_chunks": [
+        "tEXt",
+        "zTXt",
+        "iTXt",
+        "eXIf",
+        "tIME"
+      ],
+      "method": "Parse each delivered PNG through IEND; validate chunk CRCs and reject text/EXIF/time metadata or trailing bytes. This is metadata validation, not a copyright or visual-content classifier.",
+      "previews": [
+        {
+          "file": "previews/front-elevation.png",
+          "dimensions": [
+            1200,
+            600
+          ],
+          "png_chunk_types": [
+            "IDAT",
+            "IEND",
+            "IHDR",
+            "oFFs",
+            "pHYs"
+          ],
+          "forbidden_metadata_chunks": 0,
+          "all_chunk_crcs_valid": true,
+          "trailing_bytes": 0,
+          "sha256": "b5b3024ec63f6b4097d08d9fe0a23dc6896f778a73366fa1ce2412ee5c7a5994"
+        },
+        {
+          "file": "previews/front.png",
+          "dimensions": [
+            1200,
+            850
+          ],
+          "png_chunk_types": [
+            "IDAT",
+            "IEND",
+            "IHDR",
+            "oFFs",
+            "pHYs"
+          ],
+          "forbidden_metadata_chunks": 0,
+          "all_chunk_crcs_valid": true,
+          "trailing_bytes": 0,
+          "sha256": "d6042cd6f0cdd87161c0714c903ccd5d2ba2fbef7ec07e93a961bca1599550b3"
+        },
+        {
+          "file": "previews/rear-elevation.png",
+          "dimensions": [
+            1200,
+            600
+          ],
+          "png_chunk_types": [
+            "IDAT",
+            "IEND",
+            "IHDR",
+            "oFFs",
+            "pHYs"
+          ],
+          "forbidden_metadata_chunks": 0,
+          "all_chunk_crcs_valid": true,
+          "trailing_bytes": 0,
+          "sha256": "6c33908121603bd22967bb1235f6d9e0d1eeb0cb05f1831c588ab804fbe3929a"
+        },
+        {
+          "file": "previews/rear.png",
+          "dimensions": [
+            1200,
+            850
+          ],
+          "png_chunk_types": [
+            "IDAT",
+            "IEND",
+            "IHDR",
+            "oFFs",
+            "pHYs"
+          ],
+          "forbidden_metadata_chunks": 0,
+          "all_chunk_crcs_valid": true,
+          "trailing_bytes": 0,
+          "sha256": "55a36e8741b2fde5d5cba2df6375efdceec0cab1f2caf2feba08d33d77f01427"
+        },
+        {
+          "file": "previews/right-end.png",
+          "dimensions": [
+            1200,
+            850
+          ],
+          "png_chunk_types": [
+            "IDAT",
+            "IEND",
+            "IHDR",
+            "oFFs",
+            "pHYs"
+          ],
+          "forbidden_metadata_chunks": 0,
+          "all_chunk_crcs_valid": true,
+          "trailing_bytes": 0,
+          "sha256": "f45994dbeab8fa75de3ef7f064156d33e063e0f8e3385e7072b0b34c67652861"
+        },
+        {
+          "file": "previews/top.png",
+          "dimensions": [
+            1200,
+            850
+          ],
+          "png_chunk_types": [
+            "IDAT",
+            "IEND",
+            "IHDR",
+            "oFFs",
+            "pHYs"
+          ],
+          "forbidden_metadata_chunks": 0,
+          "all_chunk_crcs_valid": true,
+          "trailing_bytes": 0,
+          "sha256": "961787171f6e1dc0fddba08a206bbf7479eea2413a9fcd1e22c302b8684b3e4f"
+        }
+      ]
+    },
+    "saved-scene-render-validation.json": {
+      "all_pass": true,
+      "reopened_actual_scene_rendered": true,
+      "reference": "previews/front.png",
+      "png_bytes_identical_after_metadata_normalization": true,
+      "sha256": "d6042cd6f0cdd87161c0714c903ccd5d2ba2fbef7ec07e93a961bca1599550b3"
+    },
+    "self-intersection-validation.json": {
+      "source": "model.stl reloaded independently",
+      "stl_sha256": "7fc0fcf4aadbf8a0c774d0cc6f659092bb6553e6071334953f17ac5c2f478d1d",
+      "triangles": 5874,
+      "aabb_candidate_pairs": 69686,
+      "coplanar_pairs_checked": 17999,
+      "noncoplanar_pairs_checked": 41163,
+      "coordinate_tolerance_mm": 1e-05,
+      "parallel_normal_sine_tolerance": 1e-05,
+      "coplanar_area_tolerance_mm2": 1e-08,
+      "raw_edge_triangle_hit_points": 78755,
+      "rejected_unconfirmed_hit_points": 0,
+      "confirmed_edge_triangle_hit_points": 78755,
+      "candidate_hit_confirmation": "Both triangle plane distances, both 3D bounding boxes and both dominant-axis projected triangle edge halfspaces must confirm each candidate point within the unchanged coordinate tolerance.",
+      "forbidden_intersections": [],
+      "all_pass": true,
+      "scan_complete": true,
+      "stopped_early_after_many_violations": false,
+      "method": "3D R-tree broad phase; near-parallel planes require reciprocal vertex-plane distances within coordinate tolerance before coplanar projected polygon area; noncoplanar edge/triangle candidate intersections independently confirmed on both planes and inside both projected triangles; points from ill-conditioned determinant cancellation are not accepted as intersections; shared mesh edges and vertices allowed; coplanar point/line contacts outside shared topology rejected. Numerical preflight, not exact-predicate proof.",
+      "elapsed_seconds": 15.744
+    },
+    "3mf-xml-validation.json": {
+      "all_pass": true,
+      "source": "Independent XML parser, unchanged original STL and public face mask; no generated mesh arrays used.",
+      "vertices": 2939,
+      "triangles": 5874,
+      "exact_float64_decimal_coordinate_identity": true,
+      "original_triangle_order_and_winding_preserved": true,
+      "all_material_resource_ids_and_three_property_ids_correct": true,
+      "palette_names_and_colors_correct": true,
+      "build_transform_identity": true,
+      "texture_or_external_members": 0
+    },
+    "topology-controls.json": {
+      "all_expected_outcomes": true,
+      "controls": [
+        {
+          "control": "single_oriented_cube",
+          "expected_pass": true,
+          "actual_pass": true,
+          "closed_shells": 1,
+          "nonmanifold_vertex_links": 0,
+          "nonmanifold_edges": 0,
+          "inconsistently_oriented_edges": 0
+        },
+        {
+          "control": "missing_triangle",
+          "expected_pass": false,
+          "actual_pass": false,
+          "closed_shells": 1,
+          "nonmanifold_vertex_links": 3,
+          "nonmanifold_edges": 3,
+          "inconsistently_oriented_edges": 3
+        },
+        {
+          "control": "one_inverted_triangle",
+          "expected_pass": false,
+          "actual_pass": false,
+          "closed_shells": 1,
+          "nonmanifold_vertex_links": 0,
+          "nonmanifold_edges": 0,
+          "inconsistently_oriented_edges": 3
+        },
+        {
+          "control": "duplicated_triangle",
+          "expected_pass": false,
+          "actual_pass": false,
+          "closed_shells": 1,
+          "nonmanifold_vertex_links": 0,
+          "nonmanifold_edges": 3,
+          "inconsistently_oriented_edges": 3
+        },
+        {
+          "control": "unreferenced_vertex",
+          "expected_pass": false,
+          "actual_pass": false,
+          "closed_shells": 1,
+          "nonmanifold_vertex_links": 0,
+          "nonmanifold_edges": 0,
+          "inconsistently_oriented_edges": 0
+        },
+        {
+          "control": "two_shells_touching_only_at_vertex",
+          "expected_pass": false,
+          "actual_pass": false,
+          "closed_shells": 1,
+          "nonmanifold_vertex_links": 1,
+          "nonmanifold_edges": 0,
+          "inconsistently_oriented_edges": 0
+        },
+        {
+          "control": "two_disjoint_shells",
+          "expected_pass": false,
+          "actual_pass": false,
+          "closed_shells": 2,
+          "nonmanifold_vertex_links": 0,
+          "nonmanifold_edges": 0,
+          "inconsistently_oriented_edges": 0
+        }
+      ]
+    },
+    "self-intersection-controls.json": {
+      "all_expected_outcomes": true,
+      "controls": [
+        {
+          "control": "single_manifold_cube",
+          "expected_clear": true,
+          "reported_clear": true,
+          "intersections_reported": 0,
+          "stl_sha256": "74120293f87d683a176db536c1d993ba71ebba56c5b10383b0e31e0375d19ae1",
+          "exit_code": 0,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "overlapping_cubes",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 15,
+          "stl_sha256": "2cbdb147475386f38f70f433791e9efb5975e514ff23b164c2bac6dc16f4494f",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "crossing_triangles",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 1,
+          "stl_sha256": "95cc6d3a6a3c4bbf7c36ad8f9bc6eea9bf32a177f32449cfaf7816ed80715046",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "coplanar_triangles",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 1,
+          "stl_sha256": "fa1df5618c2cbcc15be07ff59bc43a3c805a6f8afe81659fffd48aa46e9d986e",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "near_coplanar_overlap",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 1,
+          "stl_sha256": "7ef93f693ac93889acf16fed114e462358db2bb525466b72d3100709fd424d02",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "shared_edge_triangles",
+          "expected_clear": true,
+          "reported_clear": true,
+          "intersections_reported": 0,
+          "stl_sha256": "f67ebf4957918b665acb18a52d9c8aece302b7ee56476a575a6c4625c24d54c7",
+          "exit_code": 0,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "disjoint_cubes",
+          "expected_clear": true,
+          "reported_clear": true,
+          "intersections_reported": 0,
+          "stl_sha256": "31012fe4b828e02830d836b2fc502e3baf8981bd8172c6aa4cc78ef10a63097f",
+          "exit_code": 0,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "shared_vertex_only",
+          "expected_clear": true,
+          "reported_clear": true,
+          "intersections_reported": 0,
+          "stl_sha256": "27a789418f811db4d3697db1a6d3f879eadcd1ae796abb20cd570e5b7400a547",
+          "exit_code": 0,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "coplanar_t_junction",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 1,
+          "stl_sha256": "816af01e664907ea2a27e6706cdba6f2913edb7c58ca20e854848500663a4175",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "coplanar_vertex_on_edge",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 1,
+          "stl_sha256": "f5d18d3bcbddf4ce9804debef7d9cbcc098455e6bbc5d4603fe2ef575589a4fe",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "noncoplanar_vertex_on_face",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 1,
+          "stl_sha256": "d394698f9ed45cf54565612bffd3dd0b6eccf7342b50c2954c775eadfedfec42",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        },
+        {
+          "control": "near_parallel_shared_vertex_fan_972_14889",
+          "expected_clear": true,
+          "reported_clear": true,
+          "intersections_reported": 0,
+          "stl_sha256": "92b9dacea0b16dec4cbc23f7e28cdf1154f9877bbd614d4b4025624ba9912d65",
+          "exit_code": 0,
+          "rejected_unconfirmed_hit_points": 1
+        },
+        {
+          "control": "near_parallel_shared_vertex_fan_973_14887",
+          "expected_clear": true,
+          "reported_clear": true,
+          "intersections_reported": 0,
+          "stl_sha256": "f290067878d0892e4af2ddcc64aae379cba2fce46b7ccc98583ea9cefcfe08df",
+          "exit_code": 0,
+          "rejected_unconfirmed_hit_points": 1
+        },
+        {
+          "control": "near_parallel_shared_vertex_fan_1469_14887",
+          "expected_clear": true,
+          "reported_clear": true,
+          "intersections_reported": 0,
+          "stl_sha256": "9bd5824a533a5f5e61caff34e3e7715c1d5a948be6d3caa61641637bbde1c623",
+          "exit_code": 0,
+          "rejected_unconfirmed_hit_points": 1
+        },
+        {
+          "control": "near_parallel_true_crossing",
+          "expected_clear": false,
+          "reported_clear": false,
+          "intersections_reported": 1,
+          "stl_sha256": "65cac5d9a53e34e00f91d4e386a9ec2e52b7c71f5698fe7b86f8fc8ca822fb00",
+          "exit_code": 1,
+          "rejected_unconfirmed_hit_points": 0
+        }
+      ]
+    }
+  }
+}

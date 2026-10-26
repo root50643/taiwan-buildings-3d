@@ -1,0 +1,121 @@
+{
+  "blender": "4.3.2",
+  "engine": "Cycles",
+  "source_pixels": 0,
+  "geometry": "All views render exact whole original mesh with same per-triangle materials. No clipping, texture, facade decoration or extra mesh.",
+  "palette": [
+    {
+      "id": "unverified_neutral",
+      "name": "Unverified generic neutral display",
+      "hex": "#B8B8B8",
+      "roughness": 0.8,
+      "source_evidence": "1457 unverified faces; no source color claim. Includes rear, sides, opposite roof, base, door/transom backs and excluded side-gable vent faces."
+    },
+    {
+      "id": "weathered_front_roof",
+      "name": "Approximate dark weathered roof family",
+      "hex": "#4E4A43",
+      "roughness": 0.84,
+      "source_evidence": "122 allowed front roof/ridge triangles only. A01 dark weathered neutral/brown-gray family; no measured RGB or texture."
+    },
+    {
+      "id": "front_mineral_masonry",
+      "name": "Approximate warm neutral-gray masonry",
+      "hex": "#ABA79F",
+      "roughness": 0.86,
+      "source_evidence": "4295 allowed front piers, arches, intrados, wall fields, stringcourses and thickened parapet triangles. A01 family interpretation; uncalibrated."
+    }
+  ],
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        155,
+        -270,
+        150
+      ],
+      "scale_mm": 190,
+      "target": [
+        0,
+        0,
+        27
+      ],
+      "height": 850
+    },
+    {
+      "name": "rear",
+      "camera": [
+        -155,
+        270,
+        150
+      ],
+      "scale_mm": 190,
+      "target": [
+        0,
+        0,
+        27
+      ],
+      "height": 850
+    },
+    {
+      "name": "front-elevation",
+      "camera": [
+        0,
+        -300,
+        28.7
+      ],
+      "scale_mm": 170,
+      "target": [
+        0,
+        0,
+        28.7
+      ],
+      "height": 600
+    },
+    {
+      "name": "rear-elevation",
+      "camera": [
+        0,
+        300,
+        28.7
+      ],
+      "scale_mm": 170,
+      "target": [
+        0,
+        0,
+        28.7
+      ],
+      "height": 600
+    },
+    {
+      "name": "right-end",
+      "camera": [
+        300,
+        0,
+        28.7
+      ],
+      "scale_mm": 103,
+      "target": [
+        0,
+        0,
+        28.7
+      ],
+      "height": 850
+    },
+    {
+      "name": "top",
+      "camera": [
+        0,
+        0,
+        300
+      ],
+      "scale_mm": 170,
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "height": 850
+    }
+  ]
+}

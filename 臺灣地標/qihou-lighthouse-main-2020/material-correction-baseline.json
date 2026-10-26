@@ -1,0 +1,527 @@
+{
+  "revision": "completed-2020-lantern-material-correction",
+  "original_stl_sha256": "dbaa1979f69d170d9e5df5c1d7c45a93f8480386393d145f3f7af7b1ca9ff9f8",
+  "original_manifest_sha256": "46ea62f2d805aca2b88b18143f155decbc257f69703dc71919a0db7811ddeb1e",
+  "original_parameters": {
+    "model_id": "qihou-lighthouse-main-2020",
+    "units": "normalized model millimetres; dimensions are source-reference approximations, not a measured scale model",
+    "reference_cm_to_model_mm": 0.2,
+    "wing_front_width_mm": 241.2,
+    "wing_rear_width_mm": 240.8,
+    "wing_depth_mm": 101.4,
+    "roof_width_mm": 258.4,
+    "roof_depth_mm": 119.2,
+    "neck_width_mm": 44.4,
+    "tower_y_mm": 97.3,
+    "tower_across_flats_mm": 65.6,
+    "floor_z_mm": 9.0,
+    "eave_z_mm": 87.6,
+    "parapet_z_mm": 96.6,
+    "pediment_peak_z_mm": 105.8,
+    "balcony_bottom_z_mm": 147.8,
+    "balcony_top_z_mm": 152.6,
+    "balcony_across_flats_mm": 110.6,
+    "railing_radius_mm": 52.3,
+    "railing_height_mm": 22.0,
+    "railing_pickets": 64,
+    "railing_bar_radius_mm": 0.52,
+    "pedestal_radius_mm": 30.1,
+    "lantern_bottom_z_mm": 186.6,
+    "lantern_top_z_mm": 220.0,
+    "lantern_radius_mm": 28.1,
+    "lantern_bays": 12,
+    "dome_radius_mm": 27.3,
+    "orb_top_z_mm": 266.6,
+    "finial_top_z_mm": 284.0,
+    "circular_segments": 96,
+    "front_window_centers_mm": [
+      -90.8,
+      -59.6,
+      58.6,
+      89.4
+    ],
+    "rear_window_centers_mm": [
+      -89.8,
+      -58.6,
+      57.4,
+      89.0
+    ],
+    "window_width_mm": 16.6,
+    "window_bottom_z_mm": 22.0,
+    "window_top_z_mm": 64.6,
+    "proportions_note": "A09 reference dimensions retain the 1206/1204 cm front/rear difference. A12/A13 height chain 45+393+325+170+487=1420 cm reconciles base to finial; detailed upper 167+233+88=488 cm differs by 1 cm, absorbed in finial. Source drawings expressly require field checking. No survey-grade coordinates or exact ornaments are claimed."
+  },
+  "original_mesh_arrays": {
+    "vertices": {
+      "dtype": "float32",
+      "shape": [
+        15607,
+        3
+      ],
+      "sha256": "7421fe4daf018f89e7ceb3a2329c1a062ade3c1f51cf211274f79e7e891c59ec"
+    },
+    "faces": {
+      "dtype": "int64",
+      "shape": [
+        32282,
+        3
+      ],
+      "sha256": "b7e57a47c049f39d190a3dfdf7857ac848f042038970c62fdf26e5a8cfd96b09"
+    },
+    "materials": {
+      "dtype": "int32",
+      "shape": [
+        32282
+      ],
+      "sha256": "38392347f0f060470df33f89cf626698e295e348353fb49a4a2c2fdc15b15e46"
+    }
+  },
+  "original_palette": [
+    {
+      "id": "white_wall",
+      "hex": "#E9EBE6"
+    },
+    {
+      "id": "white_trim",
+      "hex": "#F2F3EE"
+    },
+    {
+      "id": "white_roof",
+      "hex": "#DDE1DB"
+    },
+    {
+      "id": "dark_metal",
+      "hex": "#333B40"
+    },
+    {
+      "id": "grey_frame",
+      "hex": "#7A858A"
+    },
+    {
+      "id": "glazing",
+      "hex": "#52646C"
+    },
+    {
+      "id": "balcony_deck",
+      "hex": "#77786D"
+    },
+    {
+      "id": "base_band",
+      "hex": "#4C5355"
+    }
+  ],
+  "components": [
+    {
+      "name": "Connected building foundation footprint",
+      "material_index": 1,
+      "geometry_sha256": "a00a5f33d16828efaee3b57b00404cb510a9f42bc82cc156d3042a4981f5b5cc"
+    },
+    {
+      "name": "Low plinth band",
+      "material_index": 7,
+      "geometry_sha256": "1e254ae088f4cebc60ca743c4cccd17d81d608d91977c83315b2b7880499c225"
+    },
+    {
+      "name": "Whole wing with recessed openings",
+      "material_index": 0,
+      "geometry_sha256": "540d6f4501cd460abb4eaedca035814acdbf3b60d81d68b66db2752508fab8b3"
+    },
+    {
+      "name": "Short physically connected neck",
+      "material_index": 0,
+      "geometry_sha256": "383564078ee9a7d95a344acd88962ce0869117b057acbdfca46afb7eae1ff4ca"
+    },
+    {
+      "name": "Eight faceted tower shaft",
+      "material_index": 0,
+      "geometry_sha256": "1290ec0e7154ef7a64099e27ac1412d465df36799b1d5061334364ae0db85d70"
+    },
+    {
+      "name": "Tower high NW window opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "4fc09b840b3e7825991c7e4de7ca8e150c3166d53fbf685c0cd8d7e0ff632755"
+    },
+    {
+      "name": "Tower high NW window gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "52a6b9809f32976aa813b96a2d97788cd8eacb62f8d8becea05d72798185f88d"
+    },
+    {
+      "name": "Tower high NW window white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "b89d541895edaf6f559288cbce512c3e37d40475dc3ce2abc47a32e08a6d75cf"
+    },
+    {
+      "name": "Tower low NE window opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "42efee5ca9e11412711b306fb4f2084ca737ebc8b265d4a31cd378fef460bbe6"
+    },
+    {
+      "name": "Tower low NE window gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "853e735b4db9dc8964a4daca571e1169a2f7e381ccfc7040e3e9097e7f7a6797"
+    },
+    {
+      "name": "Tower low NE window white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "e44b94bf44357b57a63db40b46cddd77798335c8cbf3a083812e8b014a1fdd12"
+    },
+    {
+      "name": "Wing SE window 1 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "1770b7982d3de77f065e5008c528e8cbfdc62abd078b89ca5e8c2b925fd1a8f0"
+    },
+    {
+      "name": "Wing SE window 1 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "443816829e5a276b84597e3f625081d0082d078f34b016b47a9faec825491565"
+    },
+    {
+      "name": "Wing SE window 1 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "ed9e8578135a2203a50d0335b8134d90004ed602f75edccb32cc054478a61ecf"
+    },
+    {
+      "name": "Wing SE window 2 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "100f622ea4fc90c18748faf81f9b9974ea142ad99d1d39a9dd49f124da87eb34"
+    },
+    {
+      "name": "Wing SE window 2 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "866024484b7b79332e6af4f631e9daff89149530f58af3a1caab9d51f2b7cce3"
+    },
+    {
+      "name": "Wing SE window 2 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "79c4b0795c408bb14b8b4cf0b466ce47238cb2054f51d90a79a7cb10eecd35d0"
+    },
+    {
+      "name": "Wing SE window 3 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "dbff70e1d580f9f9085e298cd537a2fe476046bfd130b7a763de8a734db9c815"
+    },
+    {
+      "name": "Wing SE window 3 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "3eb26bc466dde3074ab36a34ce54a5248976c3cbaf3b0e50e53586a588f149d3"
+    },
+    {
+      "name": "Wing SE window 3 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "39814348ca5741b8cf684dbcee09ee9dbd19d4fdd70d9eadb93ac08451e99f32"
+    },
+    {
+      "name": "Wing SE window 4 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "99a9f82781c75ec497dd08e6a8e47ec3442c5972d6a7181ff52f3acdef23d8d3"
+    },
+    {
+      "name": "Wing SE window 4 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "0c59dbab045dd0fd367f8a250dea00005f302592de5b9d6f2d6029550002f3fe"
+    },
+    {
+      "name": "Wing SE window 4 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "30f8f6af2f763af74e8f27de5d231a29abd631e4009a789f112195a0862764ac"
+    },
+    {
+      "name": "Wing NW window 1 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "652738d04b80bcc740823c193511f63981c1f852dc48f4e52b109aef564c04aa"
+    },
+    {
+      "name": "Wing NW window 1 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "971954c8c20b7b1d4d7d83fc558492df3878fe837820a16783d66f873577f8b9"
+    },
+    {
+      "name": "Wing NW window 1 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "a7a9e53d489ffa2e44f50965aa67efa7f27a2a58269316182687bc5f0967e41c"
+    },
+    {
+      "name": "Wing NW window 2 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "6637313e2212c2de207ef1683936f3b6235768894910b2c09562c8c3fb069939"
+    },
+    {
+      "name": "Wing NW window 2 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "6b4ebcc0b96ca535888551242a5424dc4cf7e38ea9edab0c981574960fd89a02"
+    },
+    {
+      "name": "Wing NW window 2 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "50994a11ad25548cf802c40d4179b6dcabeec1463bdcbd7a4dabf60f1239a8dd"
+    },
+    {
+      "name": "Wing NW window 3 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "a2ba384dae91b27cc0d04ba34065f501ab9b81c1e54ee7f243b76c4323bda372"
+    },
+    {
+      "name": "Wing NW window 3 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "607645a73224ea364d529bfde515517ba678e4013ee7b50068825b0d76f6bc72"
+    },
+    {
+      "name": "Wing NW window 3 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "68453938a1a26c176577058757720f39f570ac50231c1243dd43cb162773fc2c"
+    },
+    {
+      "name": "Wing NW window 4 opaque inset glass",
+      "material_index": 5,
+      "geometry_sha256": "dc94640bde47148b47016495aa52eab07140f719c141612596729b68c5555b75"
+    },
+    {
+      "name": "Wing NW window 4 gray sash and crossbars",
+      "material_index": 4,
+      "geometry_sha256": "001e710b755a9fd6d5b8caa6acf513eff24451e7a30b6fa46fde43ca9cf06e54"
+    },
+    {
+      "name": "Wing NW window 4 white surround and sill",
+      "material_index": 1,
+      "geometry_sha256": "6a68c7b5f972a040ee2cab708b908126496084e4d1d4cc48924616853832e8fe"
+    },
+    {
+      "name": "Front opaque arched entry recess",
+      "material_index": 5,
+      "geometry_sha256": "bceab5ad4232f610fe15a5fdf374f4e767ccdb3f6a10703c37bfb276f825bee2"
+    },
+    {
+      "name": "Front white arched entry surround",
+      "material_index": 1,
+      "geometry_sha256": "c798f10bcdd1123d9e7aeba8eed8dc2751518092e41a28f2879b293c6700fbb1"
+    },
+    {
+      "name": "Front gray double door leaves",
+      "material_index": 4,
+      "geometry_sha256": "0827138f4c7ffe81d89de6016ad96eca274bc4850ab912a70e83681f795c8cb8"
+    },
+    {
+      "name": "Front door authored panel moldings",
+      "material_index": 1,
+      "geometry_sha256": "4b80733dcd475994e79f98c35060b449e4b2ddfdfa9adbe18ffeb39e2163c621"
+    },
+    {
+      "name": "Front fanlight reduced geometric lattice",
+      "material_index": 4,
+      "geometry_sha256": "1a52d64ad3bfa4923baaf78e6fd5aeb2794a176863a80c58a2e757b420b2704a"
+    },
+    {
+      "name": "SW opaque side doorway",
+      "material_index": 5,
+      "geometry_sha256": "2f0a3099918ec6c7ae15752d87809dab63e3abf8aa631802b4fe6e2ef550660f"
+    },
+    {
+      "name": "SW gray door frame",
+      "material_index": 4,
+      "geometry_sha256": "ba046375e49a3466493be7286b364e0ea1788328d5f32afa5a643c5f091653db"
+    },
+    {
+      "name": "SW door canopy and brackets",
+      "material_index": 1,
+      "geometry_sha256": "aa2921d2adc2625d51e227ba2097fa0b57925dea0ef2dcae2fa3f191e7978f6c"
+    },
+    {
+      "name": "SW attached doorstep",
+      "material_index": 1,
+      "geometry_sha256": "31caa120a2812b78967b5f34366aac3ebe96a482b4cccaf3294da50a7ff93055"
+    },
+    {
+      "name": "SE pilaster -1",
+      "material_index": 1,
+      "geometry_sha256": "2584a21661a62c1963ced2fe8244c7e1ea0a0cba141628ce5812255f4edada21"
+    },
+    {
+      "name": "SE outer corner pilaster -1",
+      "material_index": 1,
+      "geometry_sha256": "170ffa2b48d493a934a50e12ca0b3b7bee70c780c83b75ebe4e9c7314ce9b8a5"
+    },
+    {
+      "name": "SE pilaster 1",
+      "material_index": 1,
+      "geometry_sha256": "14d7d1f61e4a91cd5324164812bbeb08d9c069e4b540b1ae77a3405c89728906"
+    },
+    {
+      "name": "SE outer corner pilaster 1",
+      "material_index": 1,
+      "geometry_sha256": "91388e9c73fc05bb36215c7ecd9f03c32db7e4b9e828eec0d916f74b9a77d523"
+    },
+    {
+      "name": "NE blind wall recessed-panel border",
+      "material_index": 1,
+      "geometry_sha256": "0e5bf4f74d0fd3cd236e89d2a66a87195b10fa7e6adfc2393e5445cbf00edfa1"
+    },
+    {
+      "name": "SW wall panel border",
+      "material_index": 1,
+      "geometry_sha256": "7d78c01bcfdc47a384146a9260bc8060073a34e4913f84984b4b663aa44f8668"
+    },
+    {
+      "name": "Attached front six-step entrance",
+      "material_index": 6,
+      "geometry_sha256": "3d95db1bd5ddfb977d3ef74b210a9bb70d84b7762cba427c35255bb39bf975ae"
+    },
+    {
+      "name": "Front stair cheek -1",
+      "material_index": 1,
+      "geometry_sha256": "3911d8f756b398e709f3eafc68cb5e59884860d8ef27415ef7494f98672eace4"
+    },
+    {
+      "name": "Front stair cheek 1",
+      "material_index": 1,
+      "geometry_sha256": "4eb6ed193905dfe27b37fd311c39d688c95e34380e9db3d1d2256ca3c603af2e"
+    },
+    {
+      "name": "Whole low wing and neck roof slab",
+      "material_index": 2,
+      "geometry_sha256": "509d032ccf5c8f76c8952c123530524cbb0b36395795b2947ba4ecad13d27d77"
+    },
+    {
+      "name": "Wing white projecting cornice",
+      "material_index": 1,
+      "geometry_sha256": "8239256e8ee78b1e3bf52c76e22f0924a8a309e69c06af91d24d3c176d6c902d"
+    },
+    {
+      "name": "Low continuous roof parapet",
+      "material_index": 0,
+      "geometry_sha256": "ea1fa4a0a4a03b314d17d3b939809f1e31d5ddb11fe52160d937644842d2de99"
+    },
+    {
+      "name": "Central front pediment only",
+      "material_index": 0,
+      "geometry_sha256": "df32b89af504e50877bb48e7fd46b455f6ed021617adf688f0638fdd6edca611"
+    },
+    {
+      "name": "Pediment raised sloping cornice",
+      "material_index": 1,
+      "geometry_sha256": "34f877a7d2140c3ba1da057128f729048c83579bcbca89fe1ed5cef7da65ab0f"
+    },
+    {
+      "name": "Front roof rainwater pipe 1",
+      "material_index": 4,
+      "geometry_sha256": "52871b0b5730c98ff8126b517915bc139fba3997ebaedb76454aae853a1f6b8b"
+    },
+    {
+      "name": "Front roof rainwater pipe 2",
+      "material_index": 4,
+      "geometry_sha256": "a5322d9281275598a29f436737366f3495a2bcc3eb217a70fd3c46f861fc5218"
+    },
+    {
+      "name": "Front roof rainwater pipe 3",
+      "material_index": 4,
+      "geometry_sha256": "039ff99ef795492254fec3aef5db1555b843bf7e713d84645209678d90a2b69e"
+    },
+    {
+      "name": "Front roof rainwater pipe 4",
+      "material_index": 4,
+      "geometry_sha256": "6cddf5fd5eafef11f4d46dffb90fb63fa9aee5ef6eee71b1d64cf1e9ea8c57fc"
+    },
+    {
+      "name": "Octagonal shaft cornice band",
+      "material_index": 1,
+      "geometry_sha256": "b291eede3855838ff42d3e9780939eb8c4d228c8bfb6b83b9e98a1fbd54f6b5b"
+    },
+    {
+      "name": "Twenty-four reduced stepped corbels",
+      "material_index": 1,
+      "geometry_sha256": "27dbdc515e32b7f25b91cd2ac243e6af380b7acc320a340885db65c2912a15c2"
+    },
+    {
+      "name": "Octagonal balcony slab",
+      "material_index": 1,
+      "geometry_sha256": "7d8f8bf5f1c3873dd53ccd8c816968240002d5f53261473512b5136b2ce909da"
+    },
+    {
+      "name": "Octagonal muted balcony walking surface",
+      "material_index": 6,
+      "geometry_sha256": "fcba9e086fbe50f28df2ef8d7ace23570155b05653d17a768918d2f7f7a74747"
+    },
+    {
+      "name": "Circular lantern pedestal",
+      "material_index": 0,
+      "geometry_sha256": "131d397121c8dc9f298564383467382d86d1c98edbeb006caaffe7f01d0b84f0"
+    },
+    {
+      "name": "Front balcony doorway inset",
+      "material_index": 4,
+      "geometry_sha256": "cfcacfcb7dbfc6c60ac4b115bd77104a887159130bf62e571df2e5cc9b60548a"
+    },
+    {
+      "name": "Front balcony doorway white surround",
+      "material_index": 1,
+      "geometry_sha256": "99ed9120cfac124499507036e8515f2d083c84a56d62f56a481ecf434e3f539c"
+    },
+    {
+      "name": "Lantern base cornice 153.6",
+      "material_index": 1,
+      "geometry_sha256": "c5ec3f62e05d5d1c7fdc334fb40f2b0ce19e57684b2a7a8f5b4188bd37c7bffc"
+    },
+    {
+      "name": "Lantern base cornice 184.4",
+      "material_index": 1,
+      "geometry_sha256": "3cc62f140c97df2c7e8fdd99c9d57204f129cabc7fdc3e10b52fe84a553a3b32"
+    },
+    {
+      "name": "Circular open balcony railing",
+      "material_index": 3,
+      "geometry_sha256": "2342f3f072fe719f135a114794e03a203417bd7943b516bd98c5fe7f2e951dcb"
+    },
+    {
+      "name": "Opaque lantern glazing body",
+      "material_index": 5,
+      "geometry_sha256": "c70a4b7681d9d1a17a5e9dd8ccbce0e7c795a68a3e15899dfbe98aa7883de1fb"
+    },
+    {
+      "name": "Two tier diagonal lantern frame",
+      "material_index": 3,
+      "geometry_sha256": "da6531efd06c187e1eb1cb9baa0acebb5dc5f1b4ce5205ee8294c6351811453e"
+    },
+    {
+      "name": "Dome lower projecting rim",
+      "material_index": 3,
+      "geometry_sha256": "bb080e0fe9513f291f19e522aeecd252e28dfc242be900202641c99851d4a287"
+    },
+    {
+      "name": "Dark hemispherical dome",
+      "material_index": 3,
+      "geometry_sha256": "8ae4e4d3a339a457038a783bb33e7f995a44a1b20e66e24c0077e95b1bf2bf81"
+    },
+    {
+      "name": "Dome crown and finial orb",
+      "material_index": 3,
+      "geometry_sha256": "ee7393611103cf6974850f8edd80a5e7b7c6cd5b83837e53aaa3c3af2b6f1b20"
+    },
+    {
+      "name": "Reduced finial and weather vane",
+      "material_index": 3,
+      "geometry_sha256": "26e0c2dfbc24c4da8281c18420a79e3679c65c998c70f0ed1944d2383254acd1"
+    },
+    {
+      "name": "Pale exterior lantern access ladder",
+      "material_index": 1,
+      "geometry_sha256": "1b5b5f53614431b124a2b5d1f9cd9c26c40717590b9fc67d1e4aca6b9cc8d153"
+    }
+  ],
+  "allowed_component_material_changes": {
+    "Two tier diagonal lantern frame": {
+      "before": "dark_metal",
+      "after": "white_trim"
+    },
+    "Dome lower projecting rim": {
+      "before": "dark_metal",
+      "after": "white_trim"
+    },
+    "Lantern base cornice 184.4": {
+      "before": "white_trim",
+      "after": "dark_metal"
+    }
+  },
+  "source": "P01 PDF3 lower completed photograph, 2020-08-03",
+  "reason": "Completed photo clearly distinguishes pale diagonal lantern lattice and upper rim from dark dome and dark band below the glazing. Earlier package misassigned these three component materials.",
+  "not_claimed": "Photo does not establish calibrated colors or exact lower-band width; geometry intentionally unchanged."
+}

@@ -1,0 +1,265 @@
+{
+  "all_expected_outcomes": true,
+  "method": "Independent reloaded-STL segment ray intersections plus interior point checks; occupied controls and actual injected-blocker negative fixture",
+  "checks": [
+    {
+      "name": "NE reentrant exterior remains open",
+      "start_model_mm": [
+        -100,
+        75,
+        30
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 60,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "SW reentrant exterior remains open",
+      "start_model_mm": [
+        40,
+        75,
+        30
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 60,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Neck is physically occupied",
+      "start_model_mm": [
+        -30,
+        60,
+        30
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 60,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "Octagonal tower remains occupied",
+      "start_model_mm": [
+        0,
+        80,
+        100
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 50,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 3
+    },
+    {
+      "name": "SW doorway is opaque inset leaf",
+      "start_model_mm": [
+        117,
+        0,
+        30
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 11,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "NE side is blind wall",
+      "start_model_mm": [
+        -124,
+        0,
+        30
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 9,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1,
+      "occupied_sample_points": 2
+    },
+    {
+      "name": "Flat roof has no invented tall gable",
+      "start_model_mm": [
+        70,
+        -30,
+        100
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 60,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Whole wing low roof is occupied",
+      "start_model_mm": [
+        70,
+        0,
+        84
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "segment_length_model_mm": 8,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1,
+      "occupied_sample_points": 2
+    },
+    {
+      "name": "Circular railing real open gap",
+      "start_model_mm": [
+        39.9518182482069,
+        99.26270697309671,
+        160
+      ],
+      "direction": [
+        0.9987954562051724,
+        0.049067674327418015,
+        0
+      ],
+      "segment_length_model_mm": 25,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Circular railing picket control",
+      "start_model_mm": [
+        40,
+        97.3,
+        160
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 25,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "Lantern glazing deliberately opaque",
+      "start_model_mm": [
+        -35,
+        97.3,
+        200
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "segment_length_model_mm": 70,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    },
+    {
+      "name": "Front left window has inset glazing",
+      "start_model_mm": [
+        -90.8,
+        -55,
+        40
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 12,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 1,
+      "occupied_sample_points": 2
+    },
+    {
+      "name": "Detached precinct not fabricated",
+      "start_model_mm": [
+        80,
+        100,
+        20
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 50,
+      "expected_clear": true,
+      "actual_clear": true,
+      "hits_within_segment": 0,
+      "occupied_sample_points": 0
+    },
+    {
+      "name": "Front central pediment exists",
+      "start_model_mm": [
+        0,
+        -63,
+        101
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "segment_length_model_mm": 12,
+      "expected_clear": false,
+      "actual_clear": false,
+      "hits_within_segment": 2,
+      "occupied_sample_points": 1
+    }
+  ],
+  "negative_control": {
+    "injected_underpass_blocker_detected": true,
+    "ray_name": "NE reentrant exterior remains open",
+    "hits": 2,
+    "occupied_sample_points": 1,
+    "deliverable_modified": false
+  }
+}

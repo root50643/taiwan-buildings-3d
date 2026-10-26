@@ -1,0 +1,96 @@
+{
+  "all_pass": true,
+  "stl_sha256": "dbaa1979f69d170d9e5df5c1d7c45a93f8480386393d145f3f7af7b1ca9ff9f8",
+  "footprint_checks": [
+    {
+      "name": "Whole left office wing",
+      "xy_model_mm": [
+        -100,
+        0
+      ],
+      "expected_occupied": true,
+      "actual_occupied": true
+    },
+    {
+      "name": "Whole right exhibition wing",
+      "xy_model_mm": [
+        100,
+        0
+      ],
+      "expected_occupied": true,
+      "actual_occupied": true
+    },
+    {
+      "name": "Actual connecting neck",
+      "xy_model_mm": [
+        0,
+        60
+      ],
+      "expected_occupied": true,
+      "actual_occupied": true
+    },
+    {
+      "name": "Rear tower",
+      "xy_model_mm": [
+        0,
+        100
+      ],
+      "expected_occupied": true,
+      "actual_occupied": true
+    },
+    {
+      "name": "Left open reentrant",
+      "xy_model_mm": [
+        -60,
+        75
+      ],
+      "expected_occupied": false,
+      "actual_occupied": false
+    },
+    {
+      "name": "Right open reentrant",
+      "xy_model_mm": [
+        60,
+        75
+      ],
+      "expected_occupied": false,
+      "actual_occupied": false
+    },
+    {
+      "name": "Separate precinct not included",
+      "xy_model_mm": [
+        80,
+        120
+      ],
+      "expected_occupied": false,
+      "actual_occupied": false
+    }
+  ],
+  "octagon_sections": [
+    {
+      "name": "Eight-facet shaft",
+      "z_model_mm": 130,
+      "reference_across_flats_model_mm": 65.6,
+      "symmetric_difference_area_mm2": 0.0004313028731493017
+    },
+    {
+      "name": "Eight-sided balcony slab",
+      "z_model_mm": 150,
+      "reference_across_flats_model_mm": 110.6,
+      "symmetric_difference_area_mm2": 0.0005269036280245044
+    }
+  ],
+  "circular_dome_section": {
+    "z_model_mm": 245,
+    "vertex_count": 68,
+    "radial_range_mm": [
+      10.927744903494517,
+      10.95830321521583
+    ]
+  },
+  "whole_wing_front_and_rear_four_windows_each": true,
+  "sw_door_ne_blind_asymmetry": true,
+  "low_flat_wing_roof_with_front_pediment_only": true,
+  "whole_main_building_not_precinct": true,
+  "geometry_is_approximate_not_survey": true
+}

@@ -1,0 +1,1082 @@
+{
+  "units": "normalized model millimetres; dimensions are source-reference approximations, not a measured scale model",
+  "palette": [
+    {
+      "id": "white_wall",
+      "name": "White masonry",
+      "hex": "#E9EBE6",
+      "evidence": "P01 PDF3/4/8/9 completed white exterior; no calibrated sampling"
+    },
+    {
+      "id": "white_trim",
+      "name": "Light painted trim",
+      "hex": "#F2F3EE",
+      "evidence": "P01 A11/A12 white architectural trim; PDF3 lower completed 2020-08-03 photo pale lantern lattice and upper rim"
+    },
+    {
+      "id": "white_roof",
+      "name": "Light waterproof roof",
+      "hex": "#DDE1DB",
+      "evidence": "P01 PDF119 photographs5-146/147 completed wing roof coating"
+    },
+    {
+      "id": "dark_metal",
+      "name": "Dark dome and selected metalwork",
+      "hex": "#333B40",
+      "evidence": "P01 PDF6 dark dome/railing; PDF3 lower completed photo dark lower lantern band; not a generic metal color"
+    },
+    {
+      "id": "grey_frame",
+      "name": "Restrained gray frames",
+      "hex": "#7A858A",
+      "evidence": "P01 PDF3/4 front frames gray; hidden finishes simplified, not uniformly established"
+    },
+    {
+      "id": "glazing",
+      "name": "Opaque blue-gray glazing approximation",
+      "hex": "#52646C",
+      "evidence": "Authored opaque glazing representation, not measured glass transmission or interiors"
+    },
+    {
+      "id": "balcony_deck",
+      "name": "Muted balcony deck",
+      "hex": "#77786D",
+      "evidence": "P01 PDF6 overhead deck distinct from white wing roof; uncalibrated"
+    },
+    {
+      "id": "base_band",
+      "name": "Dark lower plinth band",
+      "hex": "#4C5355",
+      "evidence": "P01 PDF4 visible dark band below front white walls; extent simplified"
+    }
+  ],
+  "features": [
+    {
+      "name": "Connected building foundation footprint",
+      "material": "white_trim",
+      "evidence": "P01 A09 full wing, short neck and octagonal tower; not whole precinct, open reentrant sides",
+      "bounds_model_mm": [
+        -122.60394866019487,
+        -52.70000000298023,
+        0.0,
+        122.60394866019487,
+        132.10000000149012,
+        3.0
+      ]
+    },
+    {
+      "name": "Low plinth band",
+      "material": "base_band",
+      "evidence": "P01 PDF4 visible dark base band, reduced approximation; no site walls",
+      "bounds_model_mm": [
+        -120.60000000149012,
+        -50.70000000298023,
+        2.9,
+        120.60000000149012,
+        130.10000000149012,
+        9.15
+      ]
+    },
+    {
+      "name": "Whole wing with recessed openings",
+      "material": "white_wall",
+      "evidence": "P01 A09/A11/A12 entire office/exhibition wing; front four windows and central arch, rear four windows, SW side door, NE blind side. Solid exterior, not full interior reconstruction",
+      "bounds_model_mm": [
+        -120.60000000149012,
+        -53.70000000298023,
+        8.9,
+        120.60000000149012,
+        50.70000000298023,
+        86.1
+      ]
+    },
+    {
+      "name": "Short physically connected neck",
+      "material": "white_wall",
+      "evidence": "P01 A09 and A13 roof and neck attach to tower; open exterior reentrant spaces on both sides",
+      "bounds_model_mm": [
+        -22.200000002980232,
+        49.70000000298023,
+        8.9,
+        22.200000002980232,
+        82.29999999701977,
+        87.6
+      ]
+    },
+    {
+      "name": "Eight faceted tower shaft",
+      "material": "white_wall",
+      "evidence": "P01 A09/A10 octagonal tower, A12 unequal tower opening heights; not a round generic shaft",
+      "bounds_model_mm": [
+        -32.79999999701977,
+        64.5,
+        8.9,
+        32.79999999701977,
+        130.10000000149012,
+        143.0
+      ]
+    },
+    {
+      "name": "Tower high NW window opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        -5.5,
+        126.79999999701977,
+        106.0,
+        5.5,
+        128.70000000298023,
+        125.5
+      ]
+    },
+    {
+      "name": "Tower high NW window gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        -6.149999998509884,
+        128.45000000000002,
+        105.35000000149012,
+        6.149999998509884,
+        130.45000000298023,
+        126.14999999850988
+      ]
+    },
+    {
+      "name": "Tower high NW window white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        -7.5,
+        129.85000000000002,
+        104.4,
+        7.5,
+        131.60000000149012,
+        127.04999999701977
+      ]
+    },
+    {
+      "name": "Tower low NE window opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        -31.399999998509884,
+        91.8,
+        41.0,
+        -29.5,
+        102.8,
+        61.0
+      ]
+    },
+    {
+      "name": "Tower low NE window gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        -33.149999998509884,
+        91.15000000149011,
+        40.350000001490116,
+        -31.149999998509884,
+        103.44999999850988,
+        61.649999998509884
+      ]
+    },
+    {
+      "name": "Tower low NE window white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        -34.29999999701977,
+        89.8,
+        39.4,
+        -32.550000000000004,
+        104.8,
+        62.54999999701977
+      ]
+    },
+    {
+      "name": "Wing SE window 1 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        -99.10000000149012,
+        -49.29999999701977,
+        22.0,
+        -82.5,
+        -47.399999998509884,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing SE window 1 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        -99.75,
+        -51.04999999701977,
+        21.350000001490116,
+        -81.85000000149012,
+        -49.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing SE window 1 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        -101.10000000149012,
+        -52.20000000298023,
+        20.4,
+        -80.5,
+        -50.45000000000001,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Wing SE window 2 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        -67.89999999850988,
+        -49.29999999701977,
+        22.0,
+        -51.29999999701977,
+        -47.399999998509884,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing SE window 2 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        -68.54999999701977,
+        -51.04999999701977,
+        21.350000001490116,
+        -50.649999998509884,
+        -49.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing SE window 2 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        -69.89999999850988,
+        -52.20000000298023,
+        20.4,
+        -49.29999999701977,
+        -50.45000000000001,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Wing SE window 3 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        50.29999999701977,
+        -49.29999999701977,
+        22.0,
+        66.89999999850988,
+        -47.399999998509884,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing SE window 3 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        49.649999998509884,
+        -51.04999999701977,
+        21.350000001490116,
+        67.54999999701977,
+        -49.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing SE window 3 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        48.29999999701977,
+        -52.20000000298023,
+        20.4,
+        68.89999999850988,
+        -50.45000000000001,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Wing SE window 4 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        81.10000000149012,
+        -49.29999999701977,
+        22.0,
+        97.70000000298023,
+        -47.399999998509884,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing SE window 4 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        80.45000000298023,
+        -51.04999999701977,
+        21.350000001490116,
+        98.35000000149012,
+        -49.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing SE window 4 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        79.10000000149012,
+        -52.20000000298023,
+        20.4,
+        99.70000000298023,
+        -50.45000000000001,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Wing NW window 1 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        -98.10000000149012,
+        47.399999998509884,
+        22.0,
+        -81.5,
+        49.29999999701977,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing NW window 1 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        -98.75,
+        49.04999999701977,
+        21.350000001490116,
+        -80.85000000149012,
+        51.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing NW window 1 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        -100.10000000149012,
+        50.45000000000001,
+        20.4,
+        -79.5,
+        52.20000000298023,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Wing NW window 2 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        -66.89999999850988,
+        47.399999998509884,
+        22.0,
+        -50.29999999701977,
+        49.29999999701977,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing NW window 2 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        -67.54999999701977,
+        49.04999999701977,
+        21.350000001490116,
+        -49.649999998509884,
+        51.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing NW window 2 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        -68.89999999850988,
+        50.45000000000001,
+        20.4,
+        -48.29999999701977,
+        52.20000000298023,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Wing NW window 3 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        49.100000001490116,
+        47.399999998509884,
+        22.0,
+        65.70000000298023,
+        49.29999999701977,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing NW window 3 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        48.45000000298023,
+        49.04999999701977,
+        21.350000001490116,
+        66.35000000149012,
+        51.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing NW window 3 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        47.100000001490116,
+        50.45000000000001,
+        20.4,
+        67.70000000298023,
+        52.20000000298023,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Wing NW window 4 opaque inset glass",
+      "material": "glazing",
+      "evidence": "P01 A09/A11/A12 opening position; opaque recessed glazing is a modeling convention",
+      "bounds_model_mm": [
+        80.70000000298023,
+        47.399999998509884,
+        22.0,
+        97.29999999701977,
+        49.29999999701977,
+        64.6
+      ]
+    },
+    {
+      "name": "Wing NW window 4 gray sash and crossbars",
+      "material": "grey_frame",
+      "evidence": "P01 A11/A12 tall narrow sash rhythm; PDF3/4 front gray framing, other frames simplified",
+      "bounds_model_mm": [
+        80.04999999701977,
+        49.04999999701977,
+        21.350000001490116,
+        97.95000000298023,
+        51.04999999701977,
+        65.25
+      ]
+    },
+    {
+      "name": "Wing NW window 4 white surround and sill",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 thin white surrounds and projecting sill",
+      "bounds_model_mm": [
+        78.70000000298023,
+        50.45000000000001,
+        20.4,
+        99.29999999701977,
+        52.20000000298023,
+        66.14999999850988
+      ]
+    },
+    {
+      "name": "Front opaque arched entry recess",
+      "material": "glazing",
+      "evidence": "P01 A11 arched entry; opaque closed-leaf representation avoids inventing interior",
+      "bounds_model_mm": [
+        -12.5,
+        -49.30000000000001,
+        9.0,
+        12.5,
+        -47.40000000000001,
+        77.5
+      ]
+    },
+    {
+      "name": "Front white arched entry surround",
+      "material": "white_trim",
+      "evidence": "P01 A11 white arched surround",
+      "bounds_model_mm": [
+        -15.0,
+        -54.199999999999996,
+        8.899999998509884,
+        15.0,
+        -50.3,
+        80.0
+      ]
+    },
+    {
+      "name": "Front gray double door leaves",
+      "material": "grey_frame",
+      "evidence": "P01 A11 double-leaf entry, PDF4 gray front door; reduced panel detail",
+      "bounds_model_mm": [
+        -11.799999997019768,
+        -51.70000000298023,
+        9.0,
+        11.799999997019768,
+        -48.899999998509884,
+        59.7
+      ]
+    },
+    {
+      "name": "Front door authored panel moldings",
+      "material": "white_trim",
+      "evidence": "P01 A11 six rectangular leaf panels; reduced original profile without inscriptions",
+      "bounds_model_mm": [
+        -10.299999997019768,
+        -52.25,
+        9.0,
+        10.299999997019768,
+        -51.399999998509884,
+        60.0
+      ]
+    },
+    {
+      "name": "Front fanlight reduced geometric lattice",
+      "material": "grey_frame",
+      "evidence": "P01 A11 fanlight geometric pattern, simplified authored lattice not exact ornamental tracing",
+      "bounds_model_mm": [
+        -11.799999997019768,
+        -51.6,
+        60.5,
+        11.799999997019768,
+        -49.1,
+        76.79999999701977
+      ]
+    },
+    {
+      "name": "SW opaque side doorway",
+      "material": "glazing",
+      "evidence": "P01 A11 SW single doorway; no mirrored NE door",
+      "bounds_model_mm": [
+        117.10000000149012,
+        -9.399999998509884,
+        9.0,
+        118.89999999850988,
+        9.399999998509884,
+        55.4
+      ]
+    },
+    {
+      "name": "SW gray door frame",
+      "material": "grey_frame",
+      "evidence": "P01 A11 side door rectangular panels; restrained uncalibrated gray",
+      "bounds_model_mm": [
+        118.49999999999999,
+        -10.200000002980232,
+        9.0,
+        120.69999999999999,
+        10.200000002980232,
+        56.20000000298023
+      ]
+    },
+    {
+      "name": "SW door canopy and brackets",
+      "material": "white_trim",
+      "evidence": "P01 A11 small side-door projection and pair of brackets",
+      "bounds_model_mm": [
+        120.10000000149012,
+        -13.5,
+        56.2,
+        125.39999999850988,
+        13.5,
+        59.3
+      ]
+    },
+    {
+      "name": "SW attached doorstep",
+      "material": "white_trim",
+      "evidence": "P01 A09/A11 side entrance low attached steps, approximate risers",
+      "bounds_model_mm": [
+        119.39999999850988,
+        -11.0,
+        0.0,
+        127.39999999850988,
+        11.0,
+        9.0
+      ]
+    },
+    {
+      "name": "SE pilaster -1",
+      "material": "white_trim",
+      "evidence": "P01 A11 central pediment bay pilasters",
+      "bounds_model_mm": [
+        -38.399999998509884,
+        -54.399999998509884,
+        9.0,
+        -34.399999998509884,
+        -50.399999998509884,
+        85.6
+      ]
+    },
+    {
+      "name": "SE outer corner pilaster -1",
+      "material": "white_trim",
+      "evidence": "P01 A11 front outer corner relief",
+      "bounds_model_mm": [
+        -120.5,
+        -51.899999998509884,
+        9.0,
+        -116.89999999850988,
+        -50.29999999701977,
+        85.6
+      ]
+    },
+    {
+      "name": "SE pilaster 1",
+      "material": "white_trim",
+      "evidence": "P01 A11 central pediment bay pilasters",
+      "bounds_model_mm": [
+        34.399999998509884,
+        -54.399999998509884,
+        9.0,
+        38.399999998509884,
+        -50.399999998509884,
+        85.6
+      ]
+    },
+    {
+      "name": "SE outer corner pilaster 1",
+      "material": "white_trim",
+      "evidence": "P01 A11 front outer corner relief",
+      "bounds_model_mm": [
+        116.89999999850988,
+        -51.899999998509884,
+        9.0,
+        120.5,
+        -50.29999999701977,
+        85.6
+      ]
+    },
+    {
+      "name": "NE blind wall recessed-panel border",
+      "material": "white_trim",
+      "evidence": "P01 A12 NE blank rectangular wall panel; explicitly not a door",
+      "bounds_model_mm": [
+        -120.94999999999999,
+        -35.0,
+        10.0,
+        -120.19999999999999,
+        35.0,
+        70.5
+      ]
+    },
+    {
+      "name": "SW wall panel border",
+      "material": "white_trim",
+      "evidence": "P01 A11 side relief panel surrounding side door",
+      "bounds_model_mm": [
+        120.0,
+        -35.0,
+        10.0,
+        120.75,
+        35.0,
+        70.5
+      ]
+    },
+    {
+      "name": "Attached front six-step entrance",
+      "material": "balcony_deck",
+      "evidence": "P01 A09/A11 attached entrance steps only; reduced approximate risers, excludes hill approach",
+      "bounds_model_mm": [
+        -14.700000002980232,
+        -79.70000000298023,
+        0.0,
+        14.700000002980232,
+        -49.70000000298023,
+        9.0
+      ]
+    },
+    {
+      "name": "Front stair cheek -1",
+      "material": "white_trim",
+      "evidence": "P01 A11/PDF4 white low cheek walls attached to front steps; approximate incline",
+      "bounds_model_mm": [
+        14.5,
+        -80.70000000298023,
+        0.0,
+        17.5,
+        -49.70000000298023,
+        15.0
+      ]
+    },
+    {
+      "name": "Front stair cheek 1",
+      "material": "white_trim",
+      "evidence": "P01 A11/PDF4 white low cheek walls attached to front steps; approximate incline",
+      "bounds_model_mm": [
+        -17.5,
+        -80.70000000298023,
+        0.0,
+        -14.5,
+        -49.70000000298023,
+        15.0
+      ]
+    },
+    {
+      "name": "Whole low wing and neck roof slab",
+      "material": "white_roof",
+      "evidence": "P01 A09 RF and PDF119 flat/slightly draining white roof meets the tower; no occupied second floor",
+      "bounds_model_mm": [
+        -129.20000000298023,
+        -59.600000001490116,
+        85.6,
+        129.20000000298023,
+        97.29999999701977,
+        88.1
+      ]
+    },
+    {
+      "name": "Wing white projecting cornice",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 continuous projecting white cornice",
+      "bounds_model_mm": [
+        -130.20000000298023,
+        -60.600000001490116,
+        85.8,
+        130.20000000298023,
+        98.29999999701977,
+        87.3
+      ]
+    },
+    {
+      "name": "Low continuous roof parapet",
+      "material": "white_wall",
+      "evidence": "P01 A09 RF/PDF119 low perimeter parapet; connector touches tower, no enclosed courtyard",
+      "bounds_model_mm": [
+        -125.0,
+        -55.399999998509884,
+        87.5,
+        125.0,
+        79.48551088571548,
+        96.6
+      ]
+    },
+    {
+      "name": "Central front pediment only",
+      "material": "white_wall",
+      "evidence": "P01 A11 triangular central entrance pediment, not a full pitched roof",
+      "bounds_model_mm": [
+        -36.399999998509884,
+        -59.6,
+        86.60000000149012,
+        36.399999998509884,
+        -52.1,
+        105.79999999701977
+      ]
+    },
+    {
+      "name": "Pediment raised sloping cornice",
+      "material": "white_trim",
+      "evidence": "P01 A11 paired sloping pediment molding; reduced section",
+      "bounds_model_mm": [
+        -38.0,
+        -60.400000000000006,
+        86.29999999701977,
+        38.0,
+        -58.5,
+        107.10000000149012
+      ]
+    },
+    {
+      "name": "Front roof rainwater pipe 1",
+      "material": "grey_frame",
+      "evidence": "P01 A08 four wing roof drains/A11 slim vertical pipes; simplified routing and gray finish",
+      "bounds_model_mm": [
+        -101.20000000298023,
+        -53.0,
+        9.5,
+        -98.79999999701977,
+        -50.100000001490116,
+        87.6
+      ]
+    },
+    {
+      "name": "Front roof rainwater pipe 2",
+      "material": "grey_frame",
+      "evidence": "P01 A08 four wing roof drains/A11 slim vertical pipes; simplified routing and gray finish",
+      "bounds_model_mm": [
+        -44.20000000298023,
+        -53.0,
+        9.5,
+        -41.79999999701977,
+        -50.100000001490116,
+        87.6
+      ]
+    },
+    {
+      "name": "Front roof rainwater pipe 3",
+      "material": "grey_frame",
+      "evidence": "P01 A08 four wing roof drains/A11 slim vertical pipes; simplified routing and gray finish",
+      "bounds_model_mm": [
+        41.79999999701977,
+        -53.0,
+        9.5,
+        44.20000000298023,
+        -50.100000001490116,
+        87.6
+      ]
+    },
+    {
+      "name": "Front roof rainwater pipe 4",
+      "material": "grey_frame",
+      "evidence": "P01 A08 four wing roof drains/A11 slim vertical pipes; simplified routing and gray finish",
+      "bounds_model_mm": [
+        98.79999999701977,
+        -53.0,
+        9.5,
+        101.20000000298023,
+        -50.100000001490116,
+        87.6
+      ]
+    },
+    {
+      "name": "Octagonal shaft cornice band",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 octagonal tower transition below balcony",
+      "bounds_model_mm": [
+        -35.5,
+        61.8,
+        140.0,
+        35.5,
+        132.8,
+        144.5
+      ]
+    },
+    {
+      "name": "Twenty-four reduced stepped corbels",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 stepped balcony support rhythm; reduced count/detail, not exact carving",
+      "bounds_model_mm": [
+        -51.22909441024831,
+        46.07090558975169,
+        141.0,
+        51.22909441024831,
+        148.52909441024832,
+        148.2
+      ]
+    },
+    {
+      "name": "Octagonal balcony slab",
+      "material": "white_trim",
+      "evidence": "P01 A10 eight-sided balcony outline, not circular deck",
+      "bounds_model_mm": [
+        -55.29999999701977,
+        42.00000000298023,
+        147.8,
+        55.29999999701977,
+        152.59999999701978,
+        152.6
+      ]
+    },
+    {
+      "name": "Octagonal muted balcony walking surface",
+      "material": "balcony_deck",
+      "evidence": "P01 PDF6 deck muted/dark compared with brilliant white wing coating",
+      "bounds_model_mm": [
+        -54.70000000298023,
+        42.599999997019765,
+        152.29999999999998,
+        54.70000000298023,
+        152.00000000298024,
+        152.95
+      ]
+    },
+    {
+      "name": "Circular lantern pedestal",
+      "material": "white_wall",
+      "evidence": "P01 A10/A11 round lantern base above independent octagonal shaft and deck",
+      "bounds_model_mm": [
+        -30.1,
+        67.19999999999999,
+        152.29999999999998,
+        30.1,
+        127.4,
+        186.6
+      ]
+    },
+    {
+      "name": "Front balcony doorway inset",
+      "material": "grey_frame",
+      "evidence": "P01 A11 door in front of circular lantern pedestal; opaque simplified leaf",
+      "bounds_model_mm": [
+        -7.0,
+        69.09999999701976,
+        152.6,
+        7.0,
+        70.8,
+        177.4
+      ]
+    },
+    {
+      "name": "Front balcony doorway white surround",
+      "material": "white_trim",
+      "evidence": "P01 A11 balcony doorway surround",
+      "bounds_model_mm": [
+        -8.0,
+        66.49999999999999,
+        152.60000000149012,
+        8.0,
+        69.89999999999999,
+        178.39999999850988
+      ]
+    },
+    {
+      "name": "Lantern base cornice 153.6",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 circular pedestal bands",
+      "bounds_model_mm": [
+        -31.3,
+        66.0,
+        153.6,
+        31.3,
+        128.6,
+        154.9
+      ]
+    },
+    {
+      "name": "Lantern base cornice 184.4",
+      "material": "dark_metal",
+      "evidence": "P01 A11/A12 circular pedestal bands; P01 PDF3 lower completed photo 2020-08-03: exact component material correction to dark_metal",
+      "bounds_model_mm": [
+        -31.5,
+        65.8,
+        184.4,
+        31.5,
+        128.8,
+        185.70000000000002
+      ]
+    },
+    {
+      "name": "Circular open balcony railing",
+      "material": "dark_metal",
+      "evidence": "P01 A10/PDF6 circular dark railing inside octagonal balcony; 64 reduced pickets, open gaps retained",
+      "bounds_model_mm": [
+        -52.875,
+        44.425,
+        152.1,
+        52.875,
+        150.175,
+        175.0
+      ]
+    },
+    {
+      "name": "Opaque lantern glazing body",
+      "material": "glazing",
+      "evidence": "P01 A10/A11 circular glazing; opaque material preserves exterior without invented optics/interior",
+      "bounds_model_mm": [
+        -27.35,
+        69.94999999999999,
+        186.29999999999998,
+        27.35,
+        124.65,
+        220.3
+      ]
+    },
+    {
+      "name": "Two tier diagonal lantern frame",
+      "material": "white_trim",
+      "evidence": "P01 A11/A12 diagonal rhomboid/triangular lantern framing; reduced 12-bay layout; P01 PDF3 lower completed photo 2020-08-03: exact component material correction to white_trim",
+      "bounds_model_mm": [
+        -28.900000000000002,
+        68.39999999999999,
+        186.15757009552937,
+        28.900000000000002,
+        126.2,
+        220.44242990447066
+      ]
+    },
+    {
+      "name": "Dome lower projecting rim",
+      "material": "white_trim",
+      "evidence": "P01 A10/A11 circular projecting dome rim; PDF3 completed photo establishes pale finish; P01 PDF3 lower completed photo 2020-08-03: exact component material correction to white_trim",
+      "bounds_model_mm": [
+        -30.1,
+        67.19999999999999,
+        219.4,
+        30.1,
+        127.4,
+        220.9
+      ]
+    },
+    {
+      "name": "Dark hemispherical dome",
+      "material": "dark_metal",
+      "evidence": "P01 PDF6/PDF103 dark dome; A10 circular dome profile, no copied photographic texture",
+      "bounds_model_mm": [
+        -27.3,
+        70.0,
+        219.8,
+        27.3,
+        124.6,
+        247.3
+      ]
+    },
+    {
+      "name": "Dome crown and finial orb",
+      "material": "dark_metal",
+      "evidence": "P01 A11/A12 crown and orb silhouette; exact small finial geometry unresolved",
+      "bounds_model_mm": [
+        -9.3,
+        88.0,
+        246.3,
+        9.3,
+        106.6,
+        266.6
+      ]
+    },
+    {
+      "name": "Reduced finial and weather vane",
+      "material": "dark_metal",
+      "evidence": "P01 A11/A12 reduced connected vane, no exact symbols or inscription; thin-feature print caution",
+      "bounds_model_mm": [
+        -4.04,
+        96.72,
+        266.0,
+        4.04,
+        97.88,
+        284.3219193617534
+      ]
+    },
+    {
+      "name": "Pale exterior lantern access ladder",
+      "material": "white_trim",
+      "evidence": "P01 A11 ladder location and PDF6 completed pale ladder; red primer stage explicitly not final material",
+      "bounds_model_mm": [
+        19.94838722054881,
+        76.22,
+        173.96,
+        25.05161277945119,
+        79.1893770359397,
+        223.04000000000002
+      ]
+    }
+  ]
+}

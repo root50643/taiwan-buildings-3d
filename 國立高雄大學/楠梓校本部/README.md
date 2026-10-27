@@ -1,11 +1,13 @@
 # 楠梓校本部
 
-高雄市楠梓區高雄大學路700號。現收錄4件自主外觀近似模型；圖資仍只涵蓋主棟及裁切階台，人社以A/B相連主樓和獨立C棟分成兩個模型；本校區尚未全做。
+高雄市楠梓區高雄大學路700號。現收錄5件自主外觀近似模型；圖資仍只涵蓋主棟及裁切階台，人社以A/B相連主樓和獨立C棟分成兩個模型；本校區尚未全做。
+
+總配電站為照片支持外觀近似，未知背面與另一短端中性封閉，尺寸估計、短端映射示意，不是全棟精確還原。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="buildings/nuk-library-main/previews/front.png" alt="圖書資訊大樓主棟：實際模型預覽" width="220">](buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](buildings/nuk-library-main/README.md)** | [<img src="buildings/nuk-sports-leisure/previews/front.png" alt="體育健康休閒多功能教學大樓：實際模型預覽" width="220">](buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](buildings/nuk-sports-leisure/README.md)** | [<img src="buildings/nuk-humanities-ab/previews/front.png" alt="人文社會科學院 A/B 主樓：實際模型預覽" width="220">](buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](buildings/nuk-humanities-ab/README.md)** |
-| [<img src="buildings/nuk-humanities-c/previews/front.png" alt="國立高雄大學人文社會科學院 C 棟：實際模型預覽" width="220">](buildings/nuk-humanities-c/README.md)<br>**[國立高雄大學人文社會科學院 C 棟](buildings/nuk-humanities-c/README.md)** |  |  |
+| [<img src="buildings/nuk-humanities-c/previews/front.png" alt="國立高雄大學人文社會科學院 C 棟：實際模型預覽" width="220">](buildings/nuk-humanities-c/README.md)<br>**[國立高雄大學人文社會科學院 C 棟](buildings/nuk-humanities-c/README.md)** | [<img src="buildings/nuk-power-station/previews/front.png" alt="國立高雄大學總配電站：歷史照片有界外觀近似：實際模型預覽" width="220">](buildings/nuk-power-station/README.md)<br>**[國立高雄大學總配電站：歷史照片有界外觀近似](buildings/nuk-power-station/README.md)** |  |
 
 [回學校入口](../README.md) · [逐項未完成範圍](../remaining-buildings.md)
 

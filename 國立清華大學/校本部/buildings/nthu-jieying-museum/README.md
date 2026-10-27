@@ -16,6 +16,22 @@
 | 穿越通道近景 | 庭院及展廊斜視 | 屋頂與露臺斜視 |
 | ![穿越通道近景](previews/front-detail.png) | ![庭院及展廊斜視](previews/rear-detail.png) | ![屋頂及露臺斜視](previews/roof-oblique.png) |
 
+## 首頁與圖鑑代表角度
+
+![捷英文物館道路正面與右側三分之四代表圖](previews/homepage-three-quarter.png)
+
+首頁與校級／校區圖鑑仍選用**同一座捷英文物館**，只改用獨立的代表視角。以聯大八甲北大門代表圖為基準：相對建築正面偏轉約 **36.87°**、俯視 **23.43°**，採正交投影與 1200 × 1200 畫布，完整保留底座。清大模型的道路側正面朝局部 −X，因此相機基底須轉換，不能直接照抄其他模型的 XYZ 座標。上述局部方向不是地理方位。
+
+原本九張建築檢視圖（含 `previews/front.png` 道路側近立面）、STL、彩色 3MF、原生 Blender、網格、9 種材質、照明與背景均不變。此代表圖只調整相機、置中與取景；不新增模型件數，也不增加列印或實體驗證聲明。
+
+使用原交付場景與網格重渲染：
+
+```bash
+blender --disable-autoexec --background --factory-startup --python render_homepage_preview.py
+```
+
+可在命令末尾加 `-- --out /path/to/output`，輸出到另一目錄。腳本先逐元素核對場景頂點、三角面與材質索引，再渲染 `previews/homepage-three-quarter.png`，不儲存或覆寫原 `.blend`。實際相機、幾何比對、完整入框與兩次獨立啟動渲染的像素／位元組一致性，見 [`qa/homepage-camera-validation.json`](qa/homepage-camera-validation.json) 與 [`qa/homepage-cover-verification.json`](qa/homepage-cover-verification.json)。`reproduce.py` 已串接此獨立 renderer，乾淨重建與 PNG 檢查涵蓋全部十張圖；原九視角的相機與產圖程式不變。
+
 ## 可下載與可編輯檔
 
 - [`nthu-jieying-museum.blend`](nthu-jieying-museum.blend)：Blender 原生檔；可見的是布林合併後、逐面指定材質的完整網格。隱藏 `EDITABLE authored components` 集合保留建模分件，方便個別頂點編輯。**分件是合併前重疊構件，不是另一份可直接列印的組件套件**；編輯分件不會自動更新合併網格，程序性修改請重建。隱藏的主體上部是單一灰色整合構件；交付可見網格的玻璃／簷底色帶由程式逐面指定，不是隱藏分件的逐面材質副本。
@@ -52,7 +68,7 @@ python reproduce.py --out ./rebuild --blender blender
 python verify_reproducibility.py --out . --blender blender
 ```
 
-此命令只複製公開程式與參數到乾淨目錄重建，再比較幾何、STL、分件資料及九張 PNG。`reproduce.py --skip-slow-checks` 只供開發時略過較慢的自交測試與控制組，不能視為完整驗證。
+此命令只複製公開程式與參數到乾淨目錄重建，再比較幾何、STL、分件資料及十張 PNG（九張建築檢視＋一張代表圖）。`reproduce.py --skip-slow-checks` 只供開發時略過較慢的自交測試與控制組，不能視為完整驗證。
 
 ## 已執行的技術驗證
 
@@ -60,7 +76,7 @@ python verify_reproducibility.py --out . --blender blender
 
 詳見 `qa/` 的實際輸出：單一封閉正體積網格、非流形邊／頂點、退化／重複面、逐層幾何截面、空隙及實體對照射線、自交測試和正負控制組；3MF 嚴格讀回、逐面材質及 round-trip；Blender 原生頂點／材質／分件修改後實際儲存與重開；公開輸入乾淨重建、預覽比對和隱私欄位檢查。
 
-公開輸入的乾淨目錄重建已完成：頂點／面／材質陣列、STL 位元組及分件資料一致，**9 張 PNG 的像素與位元組也全部一致**；實際重開交付 Blender 場景的正面渲染一致，原生頂點／材質／分件修改後儲存重開驗證通過。
+公開輸入的乾淨目錄重建已完成：頂點／面／材質陣列、STL 位元組及分件資料一致，**10 張 PNG（原九張建築檢視與一張新增代表圖）的像素與位元組也全部一致**；實際重開交付 Blender 場景的正面渲染一致，原生頂點／材質／分件修改後儲存重開驗證通過。
 
 **檔案與幾何驗證不等於實體列印成功。** 未聲稱已經切片器產生可靠路徑、測試支撐設定或實際列印。穿越通道和懸挑簷底尤其需要支撐／橋接；細欄杆可能受縮放、噴嘴、材料與後處理影響。不可為免支撐而把真正通道填成建築牆。彩色 3MF 基礎材質不會自動映射到多材料機台。
 

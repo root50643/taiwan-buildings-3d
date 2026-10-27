@@ -1,0 +1,61 @@
+{
+  "candidate_sha256": "463f713f8255f17e42f6b7680f68cb62e8dcc86cb6e680678c67514fde68ec20",
+  "reproduced_sha256": "463f713f8255f17e42f6b7680f68cb62e8dcc86cb6e680678c67514fde68ec20",
+  "bytes_equal": true,
+  "pixels_equal": true,
+  "dimensions": [
+    1200,
+    1200
+  ],
+  "mode": "RGBA",
+  "metadata": {
+    "dpi": [
+      71.9836,
+      71.9836
+    ]
+  },
+  "source_files_unchanged": {
+    "render_model.py": true,
+    "mesh-data.npz": true,
+    "editable-parts.json": true,
+    "construction-parts.json": true,
+    "nthu-jieying-museum.blend": true,
+    "SHA256SUMS": true,
+    "manifest.json": true
+  },
+  "date_utc": "2026-10-27",
+  "baseline_commit": "c8ac293be078b33134be795fae1ac30843cbc7d2",
+  "publication_basis_commit": "9539ab8e523a8081f212d00c3e9c9eb73b015668",
+  "method": "Two separate Blender 4.3.2 process launches, first existing scene with camera-only code, second factory startup using public standalone renderer; output PNG decoded independently. Input files rehashed after rendering.",
+  "reference_angle": {
+    "nuu_front_camera": [
+      180,
+      -240,
+      155
+    ],
+    "nuu_front_target": [
+      0,
+      0,
+      25
+    ],
+    "camera_delta": [
+      180,
+      -240,
+      130
+    ],
+    "museum_local_basis_rotation_z_degrees": -90,
+    "museum_delta": [
+      -240,
+      -180,
+      130
+    ],
+    "yaw_from_facade_deg": 36.86989764584402,
+    "elevation_deg": 23.428692808745403
+  },
+  "reference_sources": [
+    "國立聯合大學/buildings/bajia-t3-north-gate-guardhouse/appearance/source/render_appearance.py",
+    "國家衛生研究院竹南院區/buildings/zhunan-administration/appearance/source/render_appearance.py"
+  ],
+  "technical_views": "Original nine previews and native scene are unchanged. The new cover is an additional independent render, not a replacement for the road elevation.",
+  "not_retested": "No geometry change, slicing, manufacturing or physical printing claims are added. Historical technical QA remains scoped to its original artifacts."
+}

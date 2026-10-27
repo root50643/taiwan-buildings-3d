@@ -5,6 +5,7 @@
     "parameters.json",
     "export_3mf.py",
     "render_model.py",
+    "render_homepage_preview.py",
     "validate_model.py",
     "validate_self_intersections.py",
     "intersection_controls.py",
@@ -19,13 +20,14 @@
     "parameters.json": "6752589057121c3f916e3b0d2abdaa7acf781f1db27627064036c003a211acda",
     "export_3mf.py": "a5aae2ac4dec1f254df7a78532a8e9167d4bc31f19f0b92f0d6fdace5c18f5a5",
     "render_model.py": "217b5e5a145acba8f48919f988c08680667aea7e24db447815664a611e5bbadf",
+    "render_homepage_preview.py": "9a738e17de3432814ce7c9849bbfa804bd4791c2b20c207564906c9b664e8cd9",
     "validate_model.py": "64f65afd672506ad89f193e56d5f47f3c4d898df88270730bdaceee0ff47deec",
     "validate_self_intersections.py": "98d87dba0ad3f1c660bfa8b12c07cc7fd241ccbe30b7c5392ddc5e5bb91fc871",
     "intersection_controls.py": "2c5afc3f8786659d8d978c2a0f90b07a3b74896aea3e4469b60ddcd6c1498d86",
     "verify_blend.py": "acf379ec069cb4778bc97bbf79fad05aebadaea61813715bb405ce79c655f46f",
     "verify_path_buffers.py": "a47f62fd4738c328e7cb81e83af5c55d8814dc066e1cdecbf61ccca6ba592203",
-    "verify_png_metadata.py": "16c8ea2afcfc02ddb40bbd0558dbc6552bf8521474bc6c29ede1a996fb604c1f",
-    "reproduce.py": "95c3cfa43f65f573b3137436decad6a13740d4d15c209234cbba7c7c3ad62ccb",
+    "verify_png_metadata.py": "e5c8a0715071f888e42cf650d0d297cd01f82862f86dfd472f6c3a7c4071a97f",
+    "reproduce.py": "2df36dfb336b26a5cca7405fe7ac9f89408e7d3d25f83cd39101fbdbce667bfc",
     "requirements-model.txt": "7f0c13ae60c96c11130d311231a03bc3fd17fdc57e9a16a8d9d1fd1307e07966"
   },
   "network_or_reference_images_required": false,
@@ -40,7 +42,7 @@
     "editable-parts.json": true,
     "build-summary.json": true
   },
-  "preview_count": 9,
+  "preview_count": 10,
   "previews": [
     {
       "file": "previews/east.png",
@@ -71,6 +73,16 @@
       "pixels_identical": true,
       "png_bytes_identical": true,
       "sha256": "83fa87258f04d804a390b9283550e144177a48e7d1c138dcf6fb627d1b344034"
+    },
+    {
+      "file": "previews/homepage-three-quarter.png",
+      "dimensions": [
+        1200,
+        1200
+      ],
+      "pixels_identical": true,
+      "png_bytes_identical": true,
+      "sha256": "463f713f8255f17e42f6b7680f68cb62e8dcc86cb6e680678c67514fde68ec20"
     },
     {
       "file": "previews/oblique.png",
@@ -176,11 +188,11 @@
     "construction_vertex_delta_mm": 0.2,
     "deliverable_modified": false,
     "temporary_probe_removed": true,
-    "original_deliverable_sha256_before_and_after": "bfd72c7bebe8b7fabf4c197ee35b219c189b58272c54f2ddad0c7f7e55256b1e"
+    "original_deliverable_sha256_before_and_after": "9fd7884f9765af09f2af424def429ab42c9bc25b95767d80a582907fff68f91d"
   },
   "clean_rebuild_png_metadata_validation": {
     "all_pass": true,
-    "preview_count": 9,
+    "preview_count": 10,
     "excluded_chunks": [
       "tEXt",
       "zTXt",
@@ -243,6 +255,24 @@
         "all_chunk_crcs_valid": true,
         "trailing_bytes": 0,
         "sha256": "83fa87258f04d804a390b9283550e144177a48e7d1c138dcf6fb627d1b344034"
+      },
+      {
+        "file": "previews/homepage-three-quarter.png",
+        "dimensions": [
+          1200,
+          1200
+        ],
+        "png_chunk_types": [
+          "IDAT",
+          "IEND",
+          "IHDR",
+          "oFFs",
+          "pHYs"
+        ],
+        "forbidden_metadata_chunks": 0,
+        "all_chunk_crcs_valid": true,
+        "trailing_bytes": 0,
+        "sha256": "463f713f8255f17e42f6b7680f68cb62e8dcc86cb6e680678c67514fde68ec20"
       },
       {
         "file": "previews/oblique.png",

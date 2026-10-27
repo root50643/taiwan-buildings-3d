@@ -18,6 +18,6 @@ for path in sorted((root/'previews').glob('*.png')):
   if tag==b'IEND':break
  assert at==len(raw) and tags[0]=='IHDR' and tags[-1]=='IEND' and dimensions
  records.append({'file':'previews/'+path.name,'dimensions':dimensions,'png_chunk_types':sorted(set(tags)),'forbidden_metadata_chunks':0,'all_chunk_crcs_valid':True,'trailing_bytes':0,'sha256':hashlib.sha256(raw).hexdigest()})
-assert len(records)==9
+assert len(records)==10
 report={'all_pass':True,'preview_count':len(records),'excluded_chunks':['tEXt','zTXt','iTXt','eXIf','tIME'],'method':'Parse each delivered PNG through IEND; validate chunk CRCs and reject text/EXIF/time metadata or trailing bytes. This is metadata validation, not a copyright or visual-content classifier.','previews':records}
 (root/'qa').mkdir(exist_ok=True);(root/'qa/png-metadata-validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

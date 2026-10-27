@@ -9,6 +9,7 @@ run([sys.executable,src/'validate_model.py','--out',a.out])
 if not a.skip_slow_checks:
  run([sys.executable,src/'validate_self_intersections.py','--out',a.out]);run([sys.executable,src/'intersection_controls.py','--out',a.out])
 run([a.blender,'--factory-startup','--background','--python',src/'render_model.py','--','--out',a.out])
+run([a.blender,'--disable-autoexec','--factory-startup','--background','--python',src/'render_homepage_preview.py','--','--source',a.out,'--out',a.out])
 run([a.blender,'--factory-startup','--background',a.out/'nthu-jieying-museum.blend','--python',src/'verify_blend.py'])
 run([sys.executable,src/'verify_path_buffers.py','--blend',a.out/'nthu-jieying-museum.blend','--report',a.out/'qa/raw-path-buffer-validation.json'])
 run([sys.executable,src/'verify_png_metadata.py','--out',a.out])

@@ -6,6 +6,22 @@
 | :---: | :---: | :---: |
 | 南正面與入口<br>![同件南正面](previews/front.png) | 北背面與下沉庭<br>![同件北背面](previews/rear.png) |  |
 
+## 首頁與圖鑑代表角度
+
+![張靜愚紀念圖書館南入口三分之四代表圖](previews/homepage-three-quarter.png)
+
+首頁、校級與校區圖鑑仍選用**同一座張靜愚紀念圖書館**；不改成懷恩樓或其他建物，不增加模型件數。沿用聯大八甲北大門代表圖的立面相對角度：相對南入口正面偏轉 **36.87°**、俯視 **23.43°**、正交投影、1200 × 1200 畫布及完整底座。本模型共同座標為 X 東、Y 北，主入口大梯位於 −Y；保留原 `front.png` 所見的南入口與東側，以相對視線 `(180, -240, 130)` 換算，不以相機絕對高度代替俯角。
+
+原 `previews/front.png` 的相對俯角約14.09°，仍保留為原始建築檢視，不覆寫。新增代表圖只改相機、置中與取景，**原八張預覽、STL、原生 Blender、幾何、單一灰色材質、照明與背景均保持不變**；兩行有界近似／未試印字幕照原文保留在底部50px區域，不遮住底座。本輪沒有補色、改材質或新增現況測繪、全向最薄壁及實體列印聲明。
+
+```sh
+blender --disable-autoexec --background --factory-startup --python-exit-code 1 --python render_homepage_preview.py
+```
+
+可在命令末尾加 `-- --out /path/to/output`，另存單張代表圖。腳本精確比對原場景與 STL 的 float32 三角座標，核對渲染前後幾何、材質索引、材質色彩、照明背景簽章，且不儲存原 `.blend`。若輸出目錄已有原八圖及其 `render-manifest.json`，會先驗證原圖雜湊再加入新圖；不改原圖。相機、完整入框、來源與簽章見 [`qa/homepage-camera-validation.json`](qa/homepage-camera-validation.json)。
+
+[`qa/homepage-cover-verification.json`](qa/homepage-cover-verification.json) 記錄兩次獨立載入原場景與一次從原始程式新建場景的封面一致性、來源負向控制及本輪驗證範圍。`validate_model.py` 保留既有檢查，新增獨立封面重渲染與九圖名稱／manifest完整性檢查；本輪核心重建結果見 [`validation.json`](validation.json)。原 `QA-SUMMARY.json` 的八圖結果、獨立薄特徵／角損／密點／根接審查是歷史幾何證據，保留原警示與有限例外；本次換相機未重跑這些完整幾何套件，也不新增製造保證。
+
 ## 共同座標及高度口徑
 北上，X向東、Y向北，南入口在負Y。校方5F示意圖8柱心為7跨，7×7.8m=54.6m；柱心約112px一跨。外牆按同圖約59.8×36.7m，與雙期正射主屋簷約60–63×37–40m一致。不是把原印刷1/600直接套渲圖DPI。
 

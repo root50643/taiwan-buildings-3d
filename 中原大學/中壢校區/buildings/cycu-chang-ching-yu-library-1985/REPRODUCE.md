@@ -19,6 +19,7 @@ sha256sum /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
 python3 -c "from PIL import ImageFont; print(ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',16,index=3).getname())"
 python3 build_model.py
 blender -b -t 3 --python render_preview.py
+blender --disable-autoexec --background --factory-startup -t 3 --python-exit-code 1 --python render_homepage_preview.py
 python3 validate_model.py
 python3 check_layer_components.py
 python3 check_feature_losses.py
@@ -33,3 +34,10 @@ python3 check_thin_features.py
 密點JSON直接gzip寫入，讀取可用json.load(gzip.open(path,'rt',encoding='utf-8'))；gzip容器時間戳可能不同，應比較完整解壓JSON值而非只比壓縮檔SHA。check_thin_features.py是保留原版1mm輔助檢查；原STL的0.2mm嚴格逐Polygon結果在check_layer_components.py。
 
 預覽v2僅把50px繁中字幕加到原1100×850畫面下方，輸出1100×900；不裁切、不覆蓋原渲染區、不改相機。保留原scene.blend幾何，STL與舊懷恩附件位元不動。原面短首段/根證分類及角損仍以獨立審查裁定，腳本數值不代表自動准印；未試印。
+
+
+## 獨立首頁代表圖
+
+原八張1100×900預覽與原相機不變。新增 `previews/homepage-three-quarter.png` 為1200×1200正交南入口三分之四圖，含完整底座及相同兩行限制字幕；不是用新圖覆蓋原 `front.png`。完整重建順序須先執行原 `render_preview.py`，再執行 `render_homepage_preview.py`：後者會將封面雜湊加入原 manifest，`validate_model.py` 在臨時目錄以同樣順序重建並核對九張圖及完整 manifest。所有既有幾何檢查仍保留。
+
+只重渲染封面可單獨執行上述 `render_homepage_preview.py` 命令；加 `-- --out /path/to/output` 可另存，不修改原場景及原八張圖。本次相機修訂的驗證範圍與歷史幾何審查分界，見 `qa/homepage-cover-verification.json` 及 README；未重新宣稱全面自交、最小壁厚或實體試印通過。

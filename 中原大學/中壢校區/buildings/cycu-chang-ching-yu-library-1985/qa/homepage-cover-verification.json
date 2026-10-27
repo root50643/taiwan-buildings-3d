@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "publication_basis_commit": "02a4d6c01eaec83bdedcb6f3e5dade8551b73532",
+  "scope": "Separate homepage camera, square framing and preserved limitation captions. Original eight previews, STL, scene and source data unchanged; no full thin-feature/dense/layer/root suite rerun.",
+  "source_origin": {
+    "repository": "root50643/taiwan-buildings-3d",
+    "commit": "02a4d6c01eaec83bdedcb6f3e5dade8551b73532",
+    "model_path": "中原大學/中壢校區/buildings/cycu-chang-ching-yu-library-1985",
+    "school_subtree_sha": "fe80d3d165291ab7fa93c9ff3fdddfa3e240febd",
+    "current_main_and_unchanged_subtree_verified_before_edit": true,
+    "original_selected_cover": "中原大學/中壢校區/buildings/cycu-chang-ching-yu-library-1985/previews/front.png"
+  },
+  "reference_angle": {
+    "source": "國立聯合大學/buildings/bajia-t3-north-gate-guardhouse/appearance/source/render_appearance.py",
+    "camera_delta": [
+      180,
+      -240,
+      130
+    ],
+    "yaw_from_facade_deg": 36.86989764584402,
+    "elevation_deg": 23.428692808745403
+  },
+  "source_file_sha256": {
+    "scene.blend": "de553388f4310168b4b88c06b1f152708fdca8410e8a0b6070559e606dc75981",
+    "model.stl": "76939c4a6901112a66b76a6c87de5b76829de584bcac9b61e2d5b2a301a36e86",
+    "draft-parameters.json": "f6d6125e1f20a14e1b07042668f1235c3758681ecadcee4eaa52fbf8c3aae7db"
+  },
+  "invariant_signatures": {
+    "mesh_and_material_indices": "03d4b84f24d8bbc3dda4cce7677230bf8437fb1e1f73f62147996fe1e88dcac1",
+    "materials": "250bcd7a7909d4bcff6783ccdbb4c71a502c10d6a4bd9202cf46dda3c590cae5",
+    "lighting_world_color_management": "11a8ccb8e518d85518c778e9c9dfa70262aa5ae5db6403201f6990b84deb88eb"
+  },
+  "native_scene_stl_exact_float32_triangle_match": true,
+  "repeat": {
+    "independent_saved_scene_loads": 2,
+    "all_png_bytes_and_pixels_identical": true,
+    "output_sha256": "40bdf60d2b7884e170bf37f97c6ff20eaea2aa5e0b7051062481b975f09b0e21"
+  },
+  "aggregate_integration": {
+    "report": "validation.json",
+    "passed": true,
+    "independent_rebuild_stl_same_sha256": true,
+    "independent_rebuild_preview_count": 9,
+    "all_nine_png_bytes_match": true,
+    "independent_rebuild_manifest_matches": true,
+    "old_eight_png_sha256_unchanged": true,
+    "all_original_core_checks_preserved": true
+  },
+  "negative_control": {
+    "test": "Increase the first STL triangle vertex X coordinate by 1 mm in an isolated copy, leaving native scene unchanged.",
+    "expected": "Reject source scene/STL mismatch before rendering.",
+    "actual": "AssertionError: Source scene differs from delivered STL; exit code 1; no PNG written.",
+    "passed": true
+  },
+  "visual_review": {
+    "actual_original_and_candidate_pixels_inspected": true,
+    "same_south_entry_and_east_side": true,
+    "full_base_visible": true,
+    "both_original_limitation_lines_preserved": true,
+    "parent_inspected_candidate": true
+  },
+  "limitations": [
+    "No geometry modifications or new physical-print/slicer claims.",
+    "Original eight-preview QA-SUMMARY and independent geometry audit reports are historical evidence, not rerun by this camera-only change.",
+    "Publication is not performed by the local preparation task."
+  ]
+}

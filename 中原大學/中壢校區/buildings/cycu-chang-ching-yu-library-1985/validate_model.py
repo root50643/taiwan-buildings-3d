@@ -63,9 +63,16 @@ with tempfile.TemporaryDirectory() as td:
  # Independent source rebuild is rendered again; compare all actual PNG bytes.
  shutil.copy(root/'render_preview.py',tmp/'render_preview.py')
  subprocess.run([a.blender,'-b','-t','3','-P',str(tmp/'render_preview.py')],check=True,capture_output=True,text=True)
+ # The separate cover runs after the original eight views, using the fresh scene.
+ shutil.copy(root/'render_homepage_preview.py',tmp/'render_homepage_preview.py')
+ subprocess.run([a.blender,'--disable-autoexec','--background','--factory-startup','-t','3','--python-exit-code','1','--python',str(tmp/'render_homepage_preview.py'),'--','--source',str(tmp),'--out',str(tmp)],check=True,capture_output=True,text=True)
+ expected_previews={'aerial.png','entry.png','front.png','garden.png','rear.png','roof.png','side.png','top.png','homepage-three-quarter.png'}
+ checks['required_nine_preview_names']=({p.name for p in (root/'previews').glob('*.png')}==expected_previews and {p.name for p in (tmp/'previews').glob('*.png')}==expected_previews)
  png_agreement={p.name:sha(p.read_bytes())==sha((tmp/'previews'/p.name).read_bytes()) for p in sorted((root/'previews').glob('*.png'))}
  checks['independent_rebuild_actual_pngs_match']=bool(png_agreement) and all(png_agreement.values())
  manifest=json.loads((root/'render-manifest.json').read_text())
+ checks['manifest_has_required_nine_preview_names']=set(manifest['previews'])==expected_previews
+ checks['independent_rebuild_manifest_matches']=json.loads((tmp/'render-manifest.json').read_text())==manifest
  checks['render_manifest_bound_to_delivered_stl']=manifest['stl_sha256']==sha(raw)
  checks['all_preview_hashes_match_manifest']=all(sha((root/'previews'/n).read_bytes())==h for n,h in manifest['previews'].items())
 bottom=np.isclose(mesh.triangles[:,:,2],0,atol=1e-6).all(axis=1)

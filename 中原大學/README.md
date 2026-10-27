@@ -8,7 +8,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![懷恩樓南面](中壢校區/buildings/cycu-huai-en-hall-2021/appearance/previews/front.png)](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)<br>**[懷恩樓（約2021外觀近似，未含2024光電）](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)**<br>南面實際模型 | [![中原大學 張靜愚紀念圖書館（1985）有界近似列印模型：實際模型預覽](中壢校區/buildings/cycu-chang-ching-yu-library-1985/previews/front.png)](中壢校區/buildings/cycu-chang-ching-yu-library-1985/README.md)<br>**[中原大學 張靜愚紀念圖書館（1985）有界近似列印模型](中壢校區/buildings/cycu-chang-ching-yu-library-1985/README.md)** | [![中原大學 M 字舊校門（2011 遷移後外觀近似）：實際模型預覽](中壢校區/buildings/cycu-m-gate-relocated/previews/front.png)](中壢校區/buildings/cycu-m-gate-relocated/README.md)<br>**[中原大學 M 字舊校門（2011 遷移後外觀近似）](中壢校區/buildings/cycu-m-gate-relocated/README.md)** |
+| [![懷恩樓南面](中壢校區/buildings/cycu-huai-en-hall-2021/appearance/previews/front.png)](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)<br>**[懷恩樓（約2021外觀近似，未含2024光電）](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)**<br>南面實際模型 | [![中原大學 張靜愚紀念圖書館（1985）有界近似列印模型：實際模型預覽](中壢校區/buildings/cycu-chang-ching-yu-library-1985/previews/homepage-three-quarter.png)](中壢校區/buildings/cycu-chang-ching-yu-library-1985/README.md)<br>**[中原大學 張靜愚紀念圖書館（1985）有界近似列印模型](中壢校區/buildings/cycu-chang-ching-yu-library-1985/README.md)** | [![中原大學 M 字舊校門（2011 遷移後外觀近似）：實際模型預覽](中壢校區/buildings/cycu-m-gate-relocated/previews/front.png)](中壢校區/buildings/cycu-m-gate-relocated/README.md)<br>**[中原大學 M 字舊校門（2011 遷移後外觀近似）](中壢校區/buildings/cycu-m-gate-relocated/README.md)** |
 | [![體育館：約1989–1991實際模型預覽](中壢校區/buildings/cycu-gymnasium/previews/front.png)](中壢校區/buildings/cycu-gymnasium/README.md)<br>**[體育館｜約1989–1991歷史整棟外觀近似版](中壢校區/buildings/cycu-gymnasium/README.md)** |  |  |
 
 [模型、來源與驗證](中壢校區/buildings/cycu-huai-en-hall-2021/README.md)

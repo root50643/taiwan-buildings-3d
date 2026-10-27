@@ -8,11 +8,7 @@
 
 目前展示採[七材質外觀主版](appearance/README.zh-TW.md)，屋頂灰綠、太陽能板深藍與灰立面分開，不受四色工具數限制；可下載[通用七材質 3MF](appearance/a1-appearance-core.3mf)及[可編輯彩色場景](appearance/scene.blend)。[四色／四工具方案](multicolor/README.zh-TW.md)另作選配製造衍生版。原無支撐切片路線 **NO-GO**；開支撐僅完成生成比較，真機設定、支撐清除、黏結及試印未驗。
 
-原始單色幾何預覽只保留作歷史／製造比對，不代表目前配色：[舊正面](previews/front.png) · [舊背面](previews/rear.png)。
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 舊正面<br>![舊正面](previews/front.png) | 舊背面<br>![舊背面](previews/rear.png) |  |
+[單色 STL 幾何正面](previews/front.png) · [單色 STL 幾何背面](previews/rear.png)。
 
 ## 外觀依據
 
@@ -30,7 +26,7 @@
 - `model.stl`：單一連通可列印網格，單位毫米
 - `model.obj`：相同幾何的通用交換格式
 - `build_model.py`：參數化重建程式，需要 Python、numpy、trimesh、manifold3d
-- `scene.blend`：原始單色 STL 預覽場景（歷史／幾何比對；目前彩色場景在 `appearance/scene.blend`）；工作室地板及燈光不是模型零件
+- `scene.blend`：單色 STL 預覽場景；彩色場景為 `appearance/scene.blend`；工作室地板及燈光不是模型零件
 - `render_preview.py`：Blender 4.3 預覽程式
 - `validation.json`：數位幾何檢查結果
 

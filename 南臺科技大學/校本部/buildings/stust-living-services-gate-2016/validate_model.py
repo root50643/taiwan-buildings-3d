@@ -63,6 +63,10 @@ with tempfile.TemporaryDirectory() as td:
  # Independent source rebuild is rendered again; compare all actual PNG bytes.
  shutil.copy(root/'render_preview.py',tmp/'render_preview.py')
  subprocess.run([a.blender,'-b','-t','3','-P',str(tmp/'render_preview.py')],check=True,capture_output=True,text=True)
+ # The dedicated cover uses this independently rebuilt native scene; original
+ # nine-view rendering stays unchanged, and all ten PNGs are compared below.
+ shutil.copy(root/'render_homepage_preview.py',tmp/'render_homepage_preview.py')
+ subprocess.run([a.blender,'--disable-autoexec','--background','--factory-startup','--python-exit-code','1','-t','3','--python',str(tmp/'render_homepage_preview.py')],check=True,capture_output=True,text=True)
  png_agreement={p.name:sha(p.read_bytes())==sha((tmp/'previews'/p.name).read_bytes()) for p in sorted((root/'previews').glob('*.png'))}
  checks['independent_rebuild_actual_pngs_match']=bool(png_agreement) and all(png_agreement.values())
  manifest=json.loads((root/'render-manifest.json').read_text())

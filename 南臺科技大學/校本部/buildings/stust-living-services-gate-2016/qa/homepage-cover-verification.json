@@ -1,0 +1,119 @@
+{
+  "date_utc": "2026-10-27",
+  "baseline_commit": "127ff76533dfc0983b14b5d6c657a998fda0a611",
+  "method": "Two independent Blender 4.3.2 factory-startup processes using the standalone camera-only renderer and original native scene; exact float32 triangle comparison against delivered STL before each render. All nine downloaded inputs rehashed afterwards.",
+  "png_byte_identical": true,
+  "decoded_RGB_pixels_identical": true,
+  "png_sha256": "563e8d543c7f70d1ddb4215a1a804c3ce1823886cda70bb032de22c4d5ac580b",
+  "png_bytes": 1073593,
+  "resolution": [
+    1200,
+    1200
+  ],
+  "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+  ],
+  "source_files_unchanged": true,
+  "source_receipts": [
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/scene.blend",
+      "git_blob": "5332773f6c1af957519cec3e6939574b27f21623",
+      "sha256": "9c9549ae676b39c2dc0f3435a2c2030c19abe0b61576e2d913ec507670088a2b",
+      "bytes": 728896
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/model.stl",
+      "git_blob": "fa01ad8df441f42060531adc0592ad582cfe3320",
+      "sha256": "bbc2dde32fdf1acff429b99dcac55e937e42ad022e6753595571d6498c4a91c5",
+      "bytes": 266584
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/render_preview.py",
+      "git_blob": "cef4548702a866c4aee321a232e3be115d74ea59",
+      "sha256": "a2c099e7c6998fbfb2646bb75cbbcb0158fd5d56f50609ddd4c1b722fb7f55ce",
+      "bytes": 6544
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/build_model.py",
+      "git_blob": "079d770a6143286658a7263caa6ece7b86fedf91",
+      "sha256": "5cfb28192dd2d38b6a62113d84236194d62720340953f2069a5d8a84c7719939",
+      "bytes": 7969
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/draft-parameters.json",
+      "git_blob": "c60cb607c4e69d1fb64af07d6c23c476db115bb2",
+      "sha256": "f85e1306c61b564463bdf6e48c3a93414fd13f096bdb4beea4e01ff17864f028",
+      "bytes": 3565
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/README.md",
+      "git_blob": "a02cf344b51a13e65cae45aadb309600ecc2e6fd",
+      "sha256": "d87f5544836d7ff937f24bdeab46b570de4604767c7e6e9805dc743b9f577ac5",
+      "bytes": 8462
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/render-manifest.json",
+      "git_blob": "d39851623c60888c3d85631a1fc45df1dd576665",
+      "sha256": "2de74bb8953623c3f60944212aec0f755447e13183f0d6fa17c4c270a3ace80c",
+      "bytes": 998
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/requirements.txt",
+      "git_blob": "894c194d48d3e72328031da76a26b7b30e119dab",
+      "sha256": "a822ffb1c423d370ccd4d3154e85958491ee97197435b4c2727d90d8d502f692",
+      "bytes": 125
+    },
+    {
+      "path": "南臺科技大學/校本部/buildings/stust-living-services-gate-2016/validation.json",
+      "git_blob": "9aff52ce1f925f8f6efe14bd5b2d6f0122f88313",
+      "sha256": "24b3c9c7e3453aafe39fb6ac6814c414f4b074061cdc4883da41912c746e3c03",
+      "bytes": 2368
+    }
+  ],
+  "full_base_in_frame": true,
+  "limitation_captions_retained": true,
+  "original_nine_technical_views": "Not rewritten; new representative image is independent.",
+  "not_retested": "Detailed layer/erosion/thin-feature/ray suites, slicing and physical printing were not rerun; their prior scope is unchanged. Core original-mesh/source-rebuild/native-scene and all-ten-PNG validation was rerun successfully; no new manufacturing claims.",
+  "publication_basis_commit": "a597bc4c2531ff99954dcea47efd23017c7204fc",
+  "reference_angle": {
+    "source": "國立聯合大學/buildings/bajia-t3-north-gate-guardhouse/appearance/source/render_appearance.py",
+    "camera_delta": [
+      180,
+      -240,
+      130
+    ],
+    "yaw_from_facade_deg": 36.86989764584402,
+    "elevation_deg": 23.428692808745403
+  },
+  "negative_control": {
+    "test": "Change the first STL triangle vertex x coordinate by 1 mm in an isolated copy, leaving native scene unchanged.",
+    "expected": "Reject source scene/STL mismatch before rendering.",
+    "actual": "AssertionError: Source scene differs from delivered STL; exit code 1; no PNG written.",
+    "passed": true
+  },
+  "aggregate_integration": {
+    "report": "validation.json",
+    "passed": true,
+    "independent_rebuild_stl_same_sha256": true,
+    "independent_rebuild_preview_count": 10,
+    "all_ten_png_bytes_match": true
+  }
+}

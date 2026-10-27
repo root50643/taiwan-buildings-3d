@@ -38,6 +38,22 @@
 
 - [完整原面／根射線](architectural-ray-check.json)、[逐構件損失](feature-loss-locations.json)、[重建／Blend／PNG逐bytes](validation.json)、[尺寸界線](dimensional-evidence.json)、[來源](sources.json)。仍須獨立發布審核。
 
+## 首頁與圖鑑代表角度
+
+![生活機能館暨一體校門校園正面三分之四代表圖](previews/homepage-three-quarter.png)
+
+首頁、校級與校區圖鑑仍選用**同一座生活機能館暨一體校門**，不改成新風雨球場，也不增加模型件數。以聯大八甲北大門代表圖為基準：相對校園正面偏轉約 **36.87°**、俯視 **23.43°**，採正交投影、1200 × 1200 畫布與完整底座。`build_model.py` 中 `NW→NE` 的20格三角立面才是本模型的校園正面；其外法向約為 `(-0.17159, 0.98517, 0)`，因此相機方向由此立面基底換算，並非直接複製其他模型的 XYZ 座標。
+
+原 `previews/campus.png` 是帶透視的低機位仰視，仍保留為原始建築檢視，不覆寫或冒稱統一角度。新增代表圖沿用相同校園側與門柱方向，只調整相機、置中與取景。**原九張技術圖、STL、原生 Blender、幾何、3種材質色彩、照明與背景皆不變**；底部兩行有界近似／未試印圖說也照原文保留。未補色或改材質，不新增現況測繪、全向壁厚或實體列印聲明。
+
+使用原交付場景及 STL 重渲染代表圖：
+
+```bash
+blender --disable-autoexec --background --factory-startup --python-exit-code 1 --python render_homepage_preview.py
+```
+
+命令末尾可加 `-- --out /path/to/output`，寫到另一目錄。腳本先精確核對原場景與 STL 的 float32 三角座標，再核對渲染前後幾何、材質索引、色彩及照明背景簽章，且不儲存原 `.blend`。實際立面基底、相機與完整入框數值見 [`qa/homepage-camera-validation.json`](qa/homepage-camera-validation.json)；兩次獨立啟動的 PNG 位元組／像素一致性與負向控制見 [`qa/homepage-cover-verification.json`](qa/homepage-cover-verification.json)。`validate_model.py` 會在獨立重建原九張技術圖後再執行此獨立 renderer，核對全部十張 PNG；最新重建結果見 [`validation.json`](validation.json)。原分層、薄特徵與射線 QA 保留其既有範圍，沒有因換相機而新增列印保證。
+
 ## 檔案與重建
 
 - [model.stl](model.stl)、[scene.blend](scene.blend)、[原創參數](build_model.py)、[依賴](requirements.txt)

@@ -135,12 +135,12 @@
 - 來源：[2016-06刊出；攝影日未分列](https://www2.nuk.edu.tw/licadm/public_html/201606/photo.html)，photo14 實拍；[115年附件](https://ga.nuk.edu.tw/p/405-1010-57892,c4767.php?Lang=zh-tw)，位置
 
 ### nuk-17 人文社會科學院
-- 場域／類型：楠梓校本部／A/B相連主樓與另棟C
-- 進度：A/B完整相連主樓外觀近似已發布；C、全院地景、地下延伸與室內未完成。
-- 已核：官方發包圖與早期官照，A三層／B二層錯向U院、內降斜接屋頂、六平台、各棟一水箱；左後條紋是停車場車道非外階。非竣工測繪或2026現況。
-- 模型：[人文社會科學院 A/B 主樓](楠梓校本部/buildings/nuk-humanities-ab/README.md)
-- 接續：另棟C及地景另案核實；不把本次A/B完成當整院或全校完成。
-- 來源：[校方發包設計圖](https://ap.nuk.edu.tw/p/405-1020-2651%2Cc481.php?Lang=zh-tw)、[校方沿革](https://ga.nuk.edu.tw/p/412-1010-4234.php?Lang=zh-tw)；原圖不隨模型公開。
+- 場域／類型：楠梓校本部／A/B相連主樓與獨立C棟
+- 進度：A/B相連主樓、獨立C棟外觀近似均已建模；全院地景、地下延伸與室內未完成。
+- 已核：官方發包平立剖、早期官照及明標C的2011施工照片。A/B為錯向U院；C為單層長體、植草屋頂與端部坡道、前側看臺及中央上揚遮棚。皆非竣工測繪或2026現況。
+- 模型：[人文社會科學院 A/B 主樓](楠梓校本部/buildings/nuk-humanities-ab/README.md) · [人文社會科學院 C 棟](楠梓校本部/buildings/nuk-humanities-c/README.md)
+- 接續：全院地景、室內、地下延伸與後續改修另案核實，不把這兩個模型當整院或全校完成。
+- 來源：[校方發包設計圖](https://ap.nuk.edu.tw/p/405-1020-2651%2Cc481.php?Lang=zh-tw) · [C棟施工外觀比對](https://www2.nuk.edu.tw/chss/eletter/eletter4/chss-100-5-2.pdf)；原圖不隨模型公開。
 
 ### nuk-18 學生第二宿舍
 - 場域／類型：楠梓校本部／建築物

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-27T09:53Z",
+  "review_scope": "Independent visual comparison of final generated render pixels with privately reviewed official C-block floor plan, roof plan, four elevations, A/C sections, and C-labelled 2011 construction photographs. This is not a structural, dimensional-survey or physical-print certification.",
+  "verdict": "pass_for_documented_exterior_approximation",
+  "unresolved_visual_blockers": [],
+  "final_render_sha256": {
+    "front.png": "ca945eae718b816141c9619e592645801682545117345f76d7d9939d0b9fe376",
+    "rear.png": "ae13ddd6421d5810d7b6a13a9149bc6c6a227295c99a61f5be3b93aead70abfb",
+    "left_oblique.png": "12d9f770d419106c8549bbdbd9355bdf896f39c70e51e08daa85cb1a6057581d",
+    "central_detail.png": "90a58ffbe2905de5d2e9ecd96412fe82b23ac86abb4842697fbcff3eacf0e2b7",
+    "rear_detail.png": "dbe622bf8a97ed827e50ef7f99b503a8f295885b4154dbba624ab5b59fc3c654"
+  },
+  "confirmed_matches": [
+    {
+      "feature": "C block identity and massing",
+      "result": "Independent low-long body, planted flat roof and inclined planted end masses; no A/B U-shaped courtyard substituted."
+    },
+    {
+      "feature": "Front/rear differentiation",
+      "result": "Front spectator tiers are split by the central covered C201 platform; rear classroom doors and window bands remain distinct under the projecting eave."
+    },
+    {
+      "feature": "Central canopy",
+      "result": "Outward-rising central canopy is attached to its platform; the displaced CAD roof projection was not modeled as a detached building."
+    },
+    {
+      "feature": "C-specific materials",
+      "result": "Warm ochre wall/edge, vegetation green, dark glazing proxy and light metal railing family are supported by C-labelled photos and drawings. Values remain approximate, not photo-calibrated."
+    },
+    {
+      "feature": "Source-based roof monitor correction",
+      "result": "Four roof monitors now read as narrow elongated elements instead of the prior square oversized caps."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "C-VIS-01",
+      "original_finding": "Each of the four roof ventilation monitors was roughly 2.6 m wide, conflicting with the roof plan dimension chain 100 / 260 / 100 cm.",
+      "resolution": "Author reduced nominal curb width to 1.00 m and cap width to 1.30 m. Actual new central_detail and oblique/front renders were re-inspected and show the correct narrow proportion.",
+      "status": "closed",
+      "residual_approximation": "Centers remain 3.70 m apart versus drawing-derived 3.60 m; 0.10 m design-space difference is 0.16 mm at this miniature scale. Monitor y length, hood thickness and precise service detailing remain simplified."
+    },
+    {
+      "id": "C-VIS-02",
+      "original_finding": "High rear camera hid most glazing beneath the eave.",
+      "resolution": "Lower rear view and rear_detail render now clearly expose repetitive classroom window/door rhythm and the end ramp transition.",
+      "status": "closed"
+    }
+  ],
+  "accepted_approximations": [
+    "Solid classroom exterior proxy, without reconstructed interior",
+    "Opaque colored window faces for miniature printing",
+    "Thickened rails with reduced horizontal bar count",
+    "Simplified seating tiers, treads and access stair relief",
+    "Source-derived service core, canopy and roof monitor details not claimed as fully verified as-built construction",
+    "Authored display base not represented as campus terrain"
+  ],
+  "limitations": [
+    "2011 photos document construction stage, not a 2026 survey.",
+    "Central canopy form is official-CAD-supported; this photo set does not show a finished close view of it.",
+    "Rear detail subdivisions rely on drawings with miniature simplification.",
+    "Visual correspondence is distinct from manifold, thickness, support and exchange-format validation."
+  ],
+  "source_privacy": "This report contains only findings and hashes of original model renders. No third-party photographs, CAD source drawings, source crops or PDF pages are included."
+}

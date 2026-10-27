@@ -1,14 +1,15 @@
 # 國立高雄大學
 
-依公開資料與實際查看的官方照片，自主製作可供3D列印切片的外觀近似模型。現收錄3件：圖書資訊大樓主棟、體育健康休閒多功能教學大樓與人文社會科學院 A/B 主樓。圖資只完成主棟，其他校舍與校外教學/服務據點仍待續做，不能視為全校完成。
+依公開資料與實際查看的官方照片，自主製作可供3D列印切片的外觀近似模型。現收錄4件：圖書資訊大樓主棟、體育健康休閒多功能教學大樓、人文社會科學院 A/B 主樓與獨立 C 棟。圖資只完成主棟，其他校舍與校外教學/服務據點仍待續做，不能視為全校完成。
 
 ## 模型圖鑑
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![圖書資訊大樓主棟：實際模型預覽](楠梓校本部/buildings/nuk-library-main/previews/front.png)](楠梓校本部/buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](楠梓校本部/buildings/nuk-library-main/README.md)** | [![體育健康休閒多功能教學大樓：實際模型預覽](楠梓校本部/buildings/nuk-sports-leisure/previews/front.png)](楠梓校本部/buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](楠梓校本部/buildings/nuk-sports-leisure/README.md)** | [![人文社會科學院 A/B 主樓：實際模型預覽](楠梓校本部/buildings/nuk-humanities-ab/previews/front.png)](楠梓校本部/buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](楠梓校本部/buildings/nuk-humanities-ab/README.md)** |
+| [<img src="楠梓校本部/buildings/nuk-library-main/previews/front.png" alt="圖書資訊大樓主棟：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](楠梓校本部/buildings/nuk-library-main/README.md)** | [<img src="楠梓校本部/buildings/nuk-sports-leisure/previews/front.png" alt="體育健康休閒多功能教學大樓：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](楠梓校本部/buildings/nuk-sports-leisure/README.md)** | [<img src="楠梓校本部/buildings/nuk-humanities-ab/previews/front.png" alt="人文社會科學院 A/B 主樓：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](楠梓校本部/buildings/nuk-humanities-ab/README.md)** |
+| [<img src="楠梓校本部/buildings/nuk-humanities-c/previews/front.png" alt="國立高雄大學人文社會科學院 C 棟：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-humanities-c/README.md)<br>**[國立高雄大學人文社會科學院 C 棟](楠梓校本部/buildings/nuk-humanities-c/README.md)** |  |  |
 
-每格一個不同模型。既有兩件含毫米STL、生成器、可編修Blend與實mesh圖，含底座最長150mm；新增人社A/B為242×256×34mm、彩色Blend/3MF/STL及五視角圖，各件獨立尺度，非全校完成。未實體試印；各件原範圍、支撐與細件限制保留，請讀各自README。
+每格一個不同模型，各件獨立尺度。圖資與體健休含底座最長150mm；人社A/B為242×256×34mm，C為約244.90×47.50×13.80mm；詳頁提供各自模型與實際渲染，非全校完成。未實體試印；各件原範圍、支撐與細件限制保留，請讀各自README。
 
 ## 學校、校區及範圍
 

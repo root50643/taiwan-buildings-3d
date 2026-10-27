@@ -2,6 +2,26 @@
 
 **整棟可見地上外觀的彩色比例近似模型，表達約 2011–2012 年完工期樣貌。** 不是和平校區圖書館，也不是經確認的 2026 現況、測繪模型或竣工圖。兩翼、中央大廳、完整屋頂、入口平台／通道、外階梯及後側露台均納入；不虛構不可見的 B1。
 
+## 首頁與圖鑑代表角度
+
+![燕巢圖資大樓入口平台正面與右側三分之四代表圖](previews/homepage-three-quarter.png)
+
+首頁與校級／校區圖鑑仍選用**同一座燕巢圖資大樓**，只改用獨立的代表視角。以聯大八甲北大門代表圖為基準：相對入口平台正面偏轉約 **36.87°**、俯視 **23.43°**，採正交投影與 **1200 × 1200** 畫布，完整保留底座。此模型局部 −Y 朝前方入口平台、+Y 朝後側凸弧大廳，代表相機採 `camera − look_at = (180, −240, 130)`；這是建築局部方向，不是測量地理方位。
+
+原本九張建築檢視圖（含 `previews/front.png`）、STL、彩色 3MF、原生 Blender、網格、7 種材質、隱藏建構分件、照明與背景均不變。只調整相機、置中與取景；不新增模型件數，也不增加列印或現況驗證聲明。
+
+使用原交付場景與網格獨立重渲染：
+
+```bash
+blender --disable-autoexec --background --factory-startup --python-exit-code 1 --python render_homepage_preview.py
+```
+
+可在命令末尾加 `-- --out /path/to/output`，輸出到另一目錄；`--source` 可指定原場景與 `mesh-data.npz` 所在目錄。腳本先逐元素核對場景頂點、三角面與材質索引，並在渲染前後比對所有可見／隱藏網格、材質節點、照明與背景簽章，不儲存或覆寫原 `.blend`。
+
+本次已完成獨立程序重複渲染的像素／PNG 位元組一致性、從原公開網格重建原生場景後的單張代表圖重現、幾何不匹配負控制，以及全部十張 PNG 的中繼資料檢查，見 [`qa/homepage-camera-validation.json`](qa/homepage-camera-validation.json) 與 [`qa/homepage-cover-verification.json`](qa/homepage-cover-verification.json)。`reproduce.py` 已串接此獨立 renderer；乾淨重建與 PNG 檢查的預期數量增為十張，原九視角及既有技術檢查均保留。
+
+**驗證範圍：** 此次僅為代表角度變更，原幾何、STL、3MF、原生檔與九張檢視圖逐檔雜湊未變，因此未重新執行完整建模、自交或切片幾何檢查。既有 `qa/clean-public-rebuild-validation.json` 保留為原九張檢視圖的歷史完整重建結果，不把它改寫成此次十張完整重建已執行的證明；此次十圖的 PNG 中繼資料結果另已實際更新。
+
 ## 九視角實際模型渲染
 
 下列預覽由本模型及純色材質實際渲染，不是來源照片。`east`、`west`、`south` 僅為模型局部視角檔名，**不代表測量地理方位**。
@@ -60,7 +80,7 @@ python reproduce.py --out rebuild --blender blender
 python verify_reproducibility.py --out . --blender blender
 ```
 
-乾淨重建檢查會把明確列出的公開程式與參數複製到新目錄，重建後比較幾何陣列、STL 位元組、分件資料，以及九張預覽的**像素與 PNG 位元組**。略過較慢檢查的開發模式不能視為完整通過。
+乾淨重建檢查會把明確列出的公開程式與參數複製到新目錄，重建後比較幾何陣列、STL 位元組、分件資料，以及十張預覽（原九張建築檢視＋新增代表圖）的**像素與 PNG 位元組**。略過較慢檢查的開發模式不能視為完整通過。
 
 ## 技術驗證如何查閱
 

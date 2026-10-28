@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-27T15:25:13.280255+00:00",
+  "reviewer": "Independent visual-review subagent; did not author model geometry",
+  "verdict": "PASS_WITH_EXPLICIT_SCOPE_LIMITATIONS",
+  "summary_zh": "已逐一實看四張官方來源照片、2024改善平面及final2六張實際模型渲染。主長翼與端部玻璃塔未見阻擋有界外觀近似交付的重大形體、比例或樓層窗列錯位；不代表現況測繪、完整全棟、逐窗精確重建或試印通過。",
+  "scope": "Historical-photo exterior approximation of the narrow main wing and one tall end glass tower. Attached opposite-end hall, full basement exposure, sunken plaza, landscape, road, background buildings and interiors are excluded.",
+  "review_method": [
+    "Visually inspected private-source/photo1.jpg through photo4.jpg using image viewing tool, then inspected private-source/plan2.png.",
+    "Independently inspected all six final2 PNG renders after render-final2.log recorded six saves and Blender quit.",
+    "Read final build_model.py solely to verify the stated final window and tower-width revisions, plus parameter and README limitations.",
+    "This is image-based visual review. Geometry, watertightness, printability and publication are separate checks."
+  ],
+  "references": [
+    {
+      "url": "https://www2.nuk.edu.tw/cpg/camp/conidition_05.htm",
+      "used": "Official four historical exterior photographs; photograph dates unknown."
+    },
+    {
+      "url": "https://defl.nuk.edu.tw/p/406-1062-73250,r1850.php?Lang=zh-tw",
+      "used": "Official 2024 accommodation-renovation drawing, viewed locally as plan2.png. Supports room/bath-bay rhythm and two upper floor plans, not as-built metric accuracy."
+    }
+  ],
+  "source_interpretation": [
+    {
+      "feature": "view identity",
+      "finding": "photo2 and photo3 show the same long facade. photo1 shows the opposite long facade; photo4 is nearly end-on to the glass tower."
+    },
+    {
+      "feature": "excluded background",
+      "finding": "The gray building with green balcony rails at the right foreground of photo2 is not the target main wing and is not included."
+    },
+    {
+      "feature": "room count versus facade rhythm",
+      "finding": "Each upper floor has 20 main rooms per side, divided into two ten-room segments; five shared narrow bathroom bays per segment produce a finer facade rhythm than ten equal room windows."
+    },
+    {
+      "feature": "floor interpretation",
+      "finding": "Two upper accommodation window rows are supported by the 3F/4F plan. Visible lower facade bands and colonnades are not additional accommodation floors. No basement volume was inferred from a window count."
+    }
+  ],
+  "passed_visual_checks": [
+    "Single slender green-glass tower, lower gray stone cheeks, flat dark tower cap, and a narrow long wing are consistent with the distinctive photographed massing.",
+    "Tower-to-wing height proportion and gray-cheek height are plausible within photo-perspective uncertainty; absolute lengths remain estimated.",
+    "Two upper room-window rows with narrower bathroom bays and a central split agree with the plan-supported rhythm.",
+    "Street-side lower window band and courtyard-side gallery rails are intentionally different rather than mirrored.",
+    "Open projecting roof ribs are divided into two long segments. No unsupported large solid barrel roof was introduced.",
+    "Top preview shows a narrow linear footprint and no duplicated tall tower at the remote termination.",
+    "Final room-window narrowing improves wall-to-window readability; final narrower tower glazing and dark top cap better match the reference silhouette."
+  ],
+  "revision_verification": {
+    "room_window_glass_estimated_width": 2.1,
+    "previous_glass_width": 2.56,
+    "reduction_approximately_percent": 18,
+    "room_frame_estimated_width": 2.38,
+    "tower_glass_width": 5.0,
+    "stone_plus_glass_end_width": 13.0,
+    "tower_glass_end_width_ratio": 0.38461538461538464,
+    "evidence": "Final build_model.py values corroborated by visually changed final2 front/street/tower-end views; these are authored estimates, not surveyed dimensions.",
+    "tower_cap": "Visually darker in final2; build_model.py assigns the dark window material to the thin cap."
+  },
+  "remaining_limitations": [
+    "Historical source photographs have unknown dates and do not establish 2026 current conditions.",
+    "Camera perspective prevents exact dimension, tower glazing-panel count or strict numeric proportion certification.",
+    "Room-window dimensions, narrow-bathroom window shapes, sunshade spacing and lower colonnade geometry remain schematic.",
+    "Lower dark backing surfaces represent recesses; they are not a claim that the building has continuous real glass walls or modeled internal circulation.",
+    "Roof central surface and unseen end details are neutral simplifications; no unobserved roof equipment was invented.",
+    "School-name inscription, round emblem, thin antenna and fine stone-panel joints are omitted and disclosed in README.",
+    "The model is intentionally cropped before the attached hall and does not claim to reproduce the whole building or site.",
+    "No physical trial print, global minimum-wall-thickness approval or structural/accessibility/code certification is part of this visual review."
+  ],
+  "blocking_visual_findings": [],
+  "reviewed_final_previews": [
+    {
+      "file": "output/previews/front.png",
+      "bytes": 1138478,
+      "sha256": "9ed82fef0d26ae4d0a94664ba59e16db353fc179fcee28b85d70570074bf6cad"
+    },
+    {
+      "file": "output/previews/street_elevation.png",
+      "bytes": 1038454,
+      "sha256": "5af22f5b2874ab831e2f71697b5ea31df424042569ce04c0e36fad3108cae43d"
+    },
+    {
+      "file": "output/previews/tower_end.png",
+      "bytes": 1089955,
+      "sha256": "d213a78d2a57b0228ec7ebab3c1e160440f1ca972f7c410c2b66b2c5210840a0"
+    },
+    {
+      "file": "output/previews/courtyard.png",
+      "bytes": 1145636,
+      "sha256": "6a247b6d75836f2e1ab82381296eff80bb3e884c006e43257ff070756663c1e0"
+    },
+    {
+      "file": "output/previews/top.png",
+      "bytes": 1005982,
+      "sha256": "6ca88b8b88e059fc3568d5c192aa81e2805bcb7d766342f1212931f4e522f63d"
+    },
+    {
+      "file": "output/previews/tower_detail.png",
+      "bytes": 1404867,
+      "sha256": "e10b02b9ded65ad98bcca3a521cfad23b4d084082090f26a2ee920a0b8347415"
+    }
+  ],
+  "reference_file_hashes": [
+    {
+      "file": "private-source/photo1.jpg",
+      "bytes": 108553,
+      "sha256": "0626a48293a05fb7f84f0f3b13d3ad6278f97507acce134ec9751559ceb26891"
+    },
+    {
+      "file": "private-source/photo2.jpg",
+      "bytes": 137198,
+      "sha256": "5554f585baa69e03170f364c24e8a68a3bc63f13be5a485517bd80f6f4817a21"
+    },
+    {
+      "file": "private-source/photo3.jpg",
+      "bytes": 69875,
+      "sha256": "d3434e5621d8e6f1bf18dede133d1779e8e9353447d9cfb76d8f3da27ec3109f"
+    },
+    {
+      "file": "private-source/photo4.jpg",
+      "bytes": 77785,
+      "sha256": "7dfb3dcaac5f01a241ddaa05d805229cd6f98926fbc6486802b386d29f5406ea"
+    },
+    {
+      "file": "private-source/plan2.png",
+      "bytes": 239850,
+      "sha256": "ecc95753b5244fa8b7b8b3bb048726c7bf04216e41047e46e7453ed7baa28985"
+    }
+  ],
+  "model_and_render_provenance": [
+    {
+      "file": "output/build_model.py",
+      "bytes": 9987,
+      "sha256": "d1f14e61cd54f3693a0566ee8bd49a4954ab00cb1a53662c269861a1fe2fa434"
+    },
+    {
+      "file": "output/mesh-data.npz",
+      "bytes": 177517,
+      "sha256": "dc83cfa46989d321b25b92972924918c00e071d9f844fd46f2bde8770aa97d3e"
+    },
+    {
+      "file": "output/scene.blend",
+      "bytes": 7285292,
+      "sha256": "6071aa9f0530e984fc37ee1bcfaea4c04c4eaf5b5369b9e2f361c621b4e388da"
+    },
+    {
+      "file": "output/render-manifest.json",
+      "bytes": 1945,
+      "sha256": "b26429c7c4a92b29a51c5598cd2e33be651c9056fae5d2b164abfbbc0032b3ea"
+    }
+  ],
+  "render_completion_evidence": {
+    "file": "render-final2.log",
+    "bytes": 29910,
+    "sha256": "93f0f6b99aadce6dca1eb7e221f8a40202c38ec336f4d9f175501b0be4b6fb10"
+  }
+}

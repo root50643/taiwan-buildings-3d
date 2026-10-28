@@ -1,5 +1,11 @@
 # 國立政治大學風雩樓 — proportional exterior study
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 完整主矩形、附著入口階梯／門廊與可見圓設備；實體三層對應 B1、1F、2F。不是四維堂，不包含整片歷史庭園、網球場或校園長廊。
@@ -21,9 +27,6 @@ Source rights remain unresolved; public availability does not infer commercial-u
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [已驗證重建來源 ZIP](rebuild-source.zip) · [技術與製造限制](QA.md)
 

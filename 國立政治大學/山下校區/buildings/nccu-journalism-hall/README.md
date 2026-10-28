@@ -1,5 +1,12 @@
 # 國立政治大學 新聞館｜彩色建築外觀模型
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![正面斜視](previews/front.png) | ![背面斜視](previews/rear.png) | ![正面立視](previews/elevation.png) |
+| ![頂視](previews/top.png) | ![另一側斜視](previews/left_oblique.png) |  |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 官方消防資料所記錄的外觀及簡易平面參考版，並非已核實的2026年現況或竣工測繪。對象為山下校區新聞館（官方校圖A23；資產表60-18）。
@@ -14,10 +21,6 @@
 - `previews/`：由實際交付網格渲染的五張圖。
 - `build_model.py`、`render_model.py`、`rebuild.py`：參數化建模及重建程式。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面斜視](previews/front.png) | ![背面斜視](previews/rear.png) | ![正面立視](previews/elevation.png) |
-| ![頂視](previews/top.png) | ![另一側斜視](previews/left_oblique.png) |  |
 
 ## 幾何與限制
 

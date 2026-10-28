@@ -1,10 +1,13 @@
 # M4 第四宿舍（霽齋樓）｜可列印外觀近似模型
 
-## 7 材質外觀版（2026-10-21）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／整體凸簷材質延伸<br>![背面](appearance/previews/rear.png) |  |
+
+## 7 材質外觀版（2026-10-21）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum4-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

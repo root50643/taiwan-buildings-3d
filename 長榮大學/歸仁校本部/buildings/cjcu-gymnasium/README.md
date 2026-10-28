@@ -1,5 +1,11 @@
 # 綜合體育館｜長榮大學
 
+## 模型預覽
+
+| 屋面族別正面示意 | 屋面族別俯視示意 | 屋面後斜視示意 |
+| :---: | :---: | :---: |
+| ![任選中性屋面族別標記，非實際配色](appearance/previews/front.png) | ![採光罩與其他面沿用原預覽](appearance/previews/top.png) | ![僅桶拱屋面標記，不推定背牆色彩](appearance/previews/rear-roof.png) |
+
 [學校目錄](../../../README.md) · [校區目錄](../../README.md)
 
 ## 桶拱屋面板材族中性示意（非實際配色）
@@ -8,9 +14,6 @@
 
 原 **4,694 個三角面、float32 座標、面序與繞序不變**；只對 **1,206 個屋面原面**使用任選無彩標記 `#8C8C8C`，其餘 **3,488 面**沿用原預覽值。這不是灰漆／銀漆、裸金屬光澤、精準歷史原色或全館配色完成；真實屋色、合金、塗覆及立面磚色仍缺證。沒有新增板肋、相片紋理、幾何或模型套件。
 
-| 屋面族別正面示意 | 屋面族別俯視示意 | 屋面後斜視示意 |
-| :---: | :---: | :---: |
-| ![任選中性屋面族別標記，非實際配色](appearance/previews/front.png) | ![採光罩與其他面沿用原預覽](appearance/previews/top.png) | ![僅桶拱屋面標記，不推定背牆色彩](appearance/previews/rear-roof.png) |
 
 可下載[原生 Blender](appearance/cjcu-gymnasium-roof-illustration.blend)、[逐面色彩 3MF](appearance/cjcu-gymnasium-roof-illustration.3mf)，用[公開重建程式](appearance/reproduce.py)與原 STL 重建，不需來源照片。原 STL、原 Blender、五張原預覽、建模程式及既有列印限制全部保留；示意標記不新增材料規格、可列印保證或實體試印證據。
 

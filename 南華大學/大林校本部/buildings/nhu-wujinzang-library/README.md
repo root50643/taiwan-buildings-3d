@@ -1,12 +1,15 @@
 # 南華大學無盡藏圖書館
 
-## 白覆蓋與前紅坡限域配色（2026-10-22）
-
-[五視角、來源及限制](appearance/README.md) · [表面色3MF](appearance/nhu-library-roofs-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 前右<br>![屋頂限域配色](appearance/previews/front.png) | 後左<br>![後壁維持中性](appearance/previews/rear.png) |  |
+
+## 白覆蓋與前紅坡限域配色（2026-10-22）
+
+[五視角、來源及限制](appearance/README.md) · [表面色3MF](appearance/nhu-library-roofs-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅中央覆蓋與九肋頂面190面採柔白，前上層及入口向前坡各4面採紅褐；其餘4180面維持未確認中性。依官方地面VR與拍攝年月未知官方航照，非實測色或2026全棟現況；不斷言白頂2023已存在。牆、玻璃、封邊、灰端框及側屋頂不擴染。原4378面座標/面序/STL與歷史QA不改，不增模型套。單網格表面色不是分色封閉體，未實體試印；第三方照片不分發。
 

@@ -1,5 +1,11 @@
 # 法鼓文理學院｜綜合大樓（GA／GB／GC）
 
+## 模型預覽
+
+| 前側 | 後側 | 正立面 |
+| :---: | :---: | :---: |
+| ![前側](previews/front.png) | ![後側](previews/rear.png) | ![正立面](previews/elevation.png) |
+
 [學校圖鑑](../../../README.md) · [金山校本部](../../README.md) · [全部模型](../../../../README.md)
 
 **完整相連主要外觀近似模型**，金山校本部。GA行政教學高翼、GC教學與三扇形講堂、GB生活／大慧館相連低翼合為一套，不是整校或另外三棟模型。
@@ -39,9 +45,6 @@ python rebuild.py --output /new/empty/output --blender blender
 
 `render_detail.py`另以不切割、不隱藏的實mesh產生院內QA圖，只補燈，不改寫交付Blend。依賴或作業環境不同不保證PNG byte一致；本次乾淨重建證據以JSON為準。
 
-| 前側 | 後側 | 正立面 |
-| :---: | :---: | :---: |
-| ![前側](previews/front.png) | ![後側](previews/rear.png) | ![正立面](previews/elevation.png) |
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |

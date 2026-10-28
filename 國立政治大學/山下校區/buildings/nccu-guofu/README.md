@@ -1,12 +1,15 @@
 # 國立政治大學｜果夫樓
 
-## 兩個可見瓦坡限域配色（2026-10-22）
-
-[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nccu-guofu-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![主前坡與左翼內坡灰綠瓦代理](appearance/previews/front.png) |  |  |
+
+## 兩個可見瓦坡限域配色（2026-10-22）
+
+[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nccu-guofu-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅主屋前庭坡10面、左翼內坡9面，共19完整三角面採歷史照片支持的低飽和灰綠瓦proxy。所有屋脊、簷、其他坡、牆窗、入口及底板中性；中性表示未確認，不代表實物灰色。官方記憶網正/側圖說2009，正面EXIF DateTime 2009-05-08，側面無日期EXIF；2025僅輔照，不稱跨年色值不變或2026現況。原1020面座標/面序/STL/歷史QA不變，不增套數。非分色封閉體或G-code，未實體試印；第三方照片不分發。
 

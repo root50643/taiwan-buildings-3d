@@ -1,14 +1,17 @@
 # 臺北醫學大學信義校區教學大樓
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| NE 格柵／廣場側<br>![NE格柵面、紅磚端區與中央石拱](previews/v3/front.png) | SW 通廊／球場側<br>![SW開放通廊、端部紅磚與側凸電梯](previews/v3/rear.png) |  |
+
 2021–2022 修復後的有限細節外觀模型，以 2023–2024 公開完成照片為依據。校名：臺北醫學大學；MOE115 代碼：1028。原作：吳明修，1963 年；修復設計：曾泊銘建築師事務所。本件只含教學大樓主體與側凸電梯，未含廣場鐘樓。
 
 這不是教研大樓、醫檢大樓、形態學大樓、雙和教學研究大樓或附設醫院，也不是實測、竣工或施工模型。
 
 ## 正反面
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| NE 格柵／廣場側<br>![NE格柵面、紅磚端區與中央石拱](previews/v3/front.png) | SW 通廊／球場側<br>![SW開放通廊、端部紅磚與側凸電梯](previews/v3/rear.png) |  |
 
 其餘主圖： [SE 端](previews/v3/west.png) · [NW 端](previews/v3/east.png) · [NE 正立面](previews/v3/south.png) · [SW 正立面](previews/v3/north.png) · [頂視](previews/v3/top.png)。局部：[中央穿堂](previews/v3/entry-detail.png) · [NW 電梯與屋頂](previews/v3/roof-detail.png)。檔名中的 west/east/south/north 是模型局部座標相機名，並非真地理方位。
 

@@ -1,12 +1,15 @@
 # 國立澎湖科技大學｜圖書資訊大樓圓弧入口前段
 
-## 圓弧入口前段有限配色（2026-10-22）
-
-[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/npu-library-rotunda-front-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 前段有限配色<br>![窗背與柱腳有限配色](appearance/previews/front.png) | 人為截斷背面維持中性<br>![截斷背面並非真實後立面](appearance/previews/rear.png) |  |
+
+## 圓弧入口前段有限配色（2026-10-22）
+
+[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/npu-library-rotunda-front-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅五完整窗位×兩列的80個窗背原面，以及六個既有柱腳外側36面配色。原幾何未分出實景藍綠遮棚，連續簷線保持中性、不整圈染色；其餘4806面中性。局部身份、4922原三角面、全部STL bytes與歷史QA不變，不增套數，不擴成全館。官方照片拍攝日期未知，不代表2026現況。3MF是單網格表面色、不是分色封閉實體或切片G-code；支撐與橋接限制保留，未實體試印。官方照片不再散布。
 

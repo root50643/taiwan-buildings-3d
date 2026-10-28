@@ -1,5 +1,13 @@
 # 亞東科技大學 有庠科技大樓
 
+## 模型預覽
+
+| 正反與俯視 | 正反與俯視 | 正反與俯視 |
+| :---: | :---: | :---: |
+| [![有庠科技大樓街側／正面原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/front.png)](qa/render-check/v15-author-preflight/sanitized-previews/front.png)<br>街側／正面 | [![有庠科技大樓校園側／背面原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/rear.png)](qa/render-check/v15-author-preflight/sanitized-previews/rear.png)<br>校園側／背面 | [![有庠科技大樓俯視原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/top.png)](qa/render-check/v15-author-preflight/sanitized-previews/top.png)<br>俯視 |
+| [![有庠科技大樓局部+X原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/east.png)](qa/render-check/v15-author-preflight/sanitized-previews/east.png)<br>局部+X | [![有庠科技大樓局部−X原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/west.png)](qa/render-check/v15-author-preflight/sanitized-previews/west.png)<br>局部−X | [![有庠科技大樓局部+Y原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/north.png)](qa/render-check/v15-author-preflight/sanitized-previews/north.png)<br>局部+Y |
+| [![有庠科技大樓局部−Y原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/south.png)](qa/render-check/v15-author-preflight/sanitized-previews/south.png)<br>局部−Y | [![有庠科技大樓天井廊道原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-gallery.png)](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-gallery.png)<br>天井廊道 | [![有庠科技大樓小天井／跨接原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-arcade.png)](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-arcade.png)<br>小天井／跨接 |
+
 MOE1084。以2007／2008年校園側照片為主的竣工初期外觀代表模型，搭配已於2010年刊出的街側承包商照片及後期樓層配置圖理解量體。
 
 - 原創參數化 CSG，STL、Python 原碼、Blender 場景及九視圖可追溯。
@@ -24,11 +32,6 @@ MOE1084。以2007／2008年校園側照片為主的竣工初期外觀代表模�
 
 前兩張為正反並排。方向檔名沿用模型局部座標，不代表經測繪確認的東西南北。全部來自同一凍結原創場景；只移除允許的非視覺metadata，原像素、IDAT與存留chunks不變。
 
-| 正反與俯視 | 正反與俯視 | 正反與俯視 |
-| :---: | :---: | :---: |
-| [![有庠科技大樓街側／正面原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/front.png)](qa/render-check/v15-author-preflight/sanitized-previews/front.png)<br>街側／正面 | [![有庠科技大樓校園側／背面原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/rear.png)](qa/render-check/v15-author-preflight/sanitized-previews/rear.png)<br>校園側／背面 | [![有庠科技大樓俯視原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/top.png)](qa/render-check/v15-author-preflight/sanitized-previews/top.png)<br>俯視 |
-| [![有庠科技大樓局部+X原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/east.png)](qa/render-check/v15-author-preflight/sanitized-previews/east.png)<br>局部+X | [![有庠科技大樓局部−X原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/west.png)](qa/render-check/v15-author-preflight/sanitized-previews/west.png)<br>局部−X | [![有庠科技大樓局部+Y原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/north.png)](qa/render-check/v15-author-preflight/sanitized-previews/north.png)<br>局部+Y |
-| [![有庠科技大樓局部−Y原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/south.png)](qa/render-check/v15-author-preflight/sanitized-previews/south.png)<br>局部−Y | [![有庠科技大樓天井廊道原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-gallery.png)](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-gallery.png)<br>天井廊道 | [![有庠科技大樓小天井／跨接原創模型渲染](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-arcade.png)](qa/render-check/v15-author-preflight/sanitized-previews/courtyard-arcade.png)<br>小天井／跨接 |
 
 ## 下載與重建
 

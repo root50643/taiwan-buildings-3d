@@ -1,14 +1,17 @@
 # 國立成功大學｜成大博物館
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
+
 首批代表建築外觀近似模型；僅此一棟，並非全校完成。校區：成功校區。查核與建模日期：2026-10-13。
 
 尺寸（含底座）：150 × 61 × 42.5 mm。
 
 ## 最新七材質外觀版（2026-10-20）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/museum-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

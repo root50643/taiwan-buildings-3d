@@ -1,10 +1,13 @@
 # 國立清華大學月涵亭
 
-**2016 官方照片來源的全亭外觀近似模型，不是測繪復原，也不代表已核實的 2026 現況。**
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![月涵亭模型實際網格預覽](previews/front.png) |  |  |
+
+**2016 官方照片來源的全亭外觀近似模型，不是測繪復原，也不代表已核實的 2026 現況。**
+
 
 - [可編輯彩色 Blender](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl)
 - [正立面](previews/elevation.png) · [左前斜視](previews/left_oblique.png) · [推定背側](previews/rear.png) · [推定屋頂俯視](previews/top.png)

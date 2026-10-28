@@ -1,12 +1,15 @@
 # 國立政治大學｜達賢圖書館主棟
 
-## 湖側上層直段遮陽板限域配色（2026-10-22）
-
-[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nccu-seetoo-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![中央12板棕色代理](appearance/previews/rear.png) |  |  |
+
+## 湖側上層直段遮陽板限域配色（2026-10-22）
+
+[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nccu-seetoo-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅主館湖側直段上層中央12板、240完整三角面採觀察棕色表面proxy；不確稱木材。橫向梁、兩端角板、斜面、其他立面及下層保持中性。中性表示未確認，不代表實物灰色。依建築師2022/03刊實拍，曝光日未報，不稱2026現況或實測RGB。原7246面座標/面序/STL/歷史QA不變，不增套數。非分色封閉體或G-code，未實體試印；第三方照片不分發。
 

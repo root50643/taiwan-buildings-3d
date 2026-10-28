@@ -1,10 +1,13 @@
 # 國立聯合大學 八甲田徑運動場司令台
 
-## 6 材質外觀版（2026-10-21）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／棚同材料推估<br>![背面](appearance/previews/rear.png) |  |
+
+## 6 材質外觀版（2026-10-21）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuustand-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

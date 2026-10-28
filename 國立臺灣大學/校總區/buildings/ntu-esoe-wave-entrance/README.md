@@ -1,12 +1,15 @@
 # 國立臺灣大學 工程科學及海洋工程學系館（五波浪入口段）
 
-[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
-
-## 實際 STL 正面與背面
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+
+[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
+
+## 實際 STL 正面與背面
+
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)
 

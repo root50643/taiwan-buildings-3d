@@ -1,5 +1,13 @@
 # 國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似
 
+## 模型預覽
+
+| 主視角 | 正立面 | 已見短端 |
+|---|---|---|
+| ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/observed_left.png) |
+| 未見背面中性處理 | 頂視圖 | 圓形屋突 |
+| ![](previews/neutral_rear.png) | ![](previews/top.png) | ![](previews/drum_detail.png) |
+
 僅呈現官方舊頁所見的地上主建物，非整座實驗廢水處理設施、現況測繪或精確全棟復原。不含地下池槽、機電、管路、旁側貨櫃屋及前方整片廣場／擋土牆。未見背面和另一短端以中性封閉處理，不能把空白牆當作已確認無窗。
 
 ## 已見與近似範圍
@@ -19,10 +27,5 @@
 ## 模型與實際預覽
 [STL](model.stl) · [七色3MF](model.3mf) · [Blender](scene.blend) · [來源](SOURCES.md) · [幾何QA](QA.json)
 
-| 主視角 | 正立面 | 已見短端 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/observed_left.png) |
-| 未見背面中性處理 | 頂視圖 | 圓形屋突 |
-| ![](previews/neutral_rear.png) | ![](previews/top.png) | ![](previews/drum_detail.png) |
 
 重建：以numpy、trimesh、manifold3d執行build_model.py；Blender 4.3執行render_model.py。validate_model.py核對幾何及交換格式；以Blender重開scene.blend執行verify_scene.py。模型單位mm。

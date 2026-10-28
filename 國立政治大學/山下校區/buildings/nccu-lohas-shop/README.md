@@ -1,5 +1,11 @@
 # 國立政治大學樂活小舖
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 官方PDF記錄外觀／簡易平面參考版，資產編號 **60-13**。兩層L形主樓、右側兩bay局部B1與同高梯間，保留左端寬階、長面長廊／坡道、右外階、B1內梯及內凹小階。鄰棟樂活館（60-12，校圖A12）、獨立棚架及整片道路／景觀不納入。
@@ -22,9 +28,6 @@
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
 

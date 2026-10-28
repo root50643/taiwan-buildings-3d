@@ -1,10 +1,13 @@
 # 台灣基督長老教會南神神學院｜禮拜堂
 
-1957建物、修復前外觀的來源限定近似。僅禮拜堂自身西前廳、長堂、東半圓聖壇、北側鐘塔及附房，不含本館、西校舍或整個校園。現法定學校與歷史台南神學院同址承接關係，不另計第二校；亦不推定本件校舍為獨占產權。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 西正面與南長面<br>![同件西正面](previews/front.png) | 東聖壇與鐘塔<br>![同件東背面](previews/rear.png) |  |
+
+1957建物、修復前外觀的來源限定近似。僅禮拜堂自身西前廳、長堂、東半圓聖壇、北側鐘塔及附房，不含本館、西校舍或整個校園。現法定學校與歷史台南神學院同址承接關係，不另計第二校；亦不推定本件校舍為獨占產權。
+
 
 [STL](model.stl) · [可編輯Blend網格](scene.blend) · [參數源碼](build_model.py) · [來源](sources.json) · [尺度證據](dimensional-evidence.json) · [QA](qa-summary.json) · [原面ray](architectural-ray-check.json) · [每構件loss](feature-loss-locations.json)
 

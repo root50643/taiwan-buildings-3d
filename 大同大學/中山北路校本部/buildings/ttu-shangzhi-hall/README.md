@@ -1,10 +1,13 @@
 # 大同大學尚志教育研究館（白宮）｜完整主體外觀近似
 
-原幾何歷史紀錄（非本次外觀交付狀態）：外觀已核准、作者硬QA全部通過；凍結候選，待獨立審核，未發布。這是尚志教育研究館，不是志生紀念館。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 東面入口側<br>![東面入口側](appearance/previews/front.png) | 西面背側<br>![西面背側](appearance/previews/rear.png) |  |
+
+原幾何歷史紀錄（非本次外觀交付狀態）：外觀已核准、作者硬QA全部通過；凍結候選，待獨立審核，未發布。這是尚志教育研究館，不是志生紀念館。
+
 
 [東入口低視角](previews/elevation.png) · [西面低視角](previews/west_elevation.png) · [南側](previews/left.png) · [北側](previews/right.png) · [頂視](previews/top.png) · [高視角](previews/aerial.png)
 

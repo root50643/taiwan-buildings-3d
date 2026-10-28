@@ -1,12 +1,15 @@
 # 台南應用科技大學｜圖書資訊大樓（跨年有界近似）
 
-## 2026-10-20 原貌配色重建
-
-[可編輯8材質Blender](appearance.blend) · [標準彩色3MF](appearance.3mf) · [最小獨立重建源包](appearance-rebuild-source.zip)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面配色<br>![正面配色](previews/appearance-front.png) | 未確認背面保持中性<br>![背面中性](previews/appearance-rear.png) |  |
+
+## 2026-10-20 原貌配色重建
+
+[可編輯8材質Blender](appearance.blend) · [標準彩色3MF](appearance.3mf) · [最小獨立重建源包](appearance-rebuild-source.zip)
+
 
 [完整俯斜](previews/appearance-aerial.png) · [北上頂圖](previews/appearance-top.png)
 

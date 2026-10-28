@@ -1,10 +1,13 @@
 # 國立聯合大學二坪山校名柱與附連警衛亭段
 
-NUU Erping Shan central gate-name tower and attached guard booth, approximate exterior segment.
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![實際交付網格前右視角](previews/front.png) |  |  |
+
+NUU Erping Shan central gate-name tower and attached guard booth, approximate exterior segment.
+
 
 ## 範圍與檔案
 

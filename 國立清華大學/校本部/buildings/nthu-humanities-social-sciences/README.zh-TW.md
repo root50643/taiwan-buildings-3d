@@ -1,5 +1,11 @@
 # 國立清華大學｜人文社會學院大樓
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |
+
 第六批公開外觀近似模型，並非測繪成果。每件獨立比例，150.00 × 140.00 × 137.00mm，最長150mm含底座。全校尚未完成。
 
 ## 來源與觀察
@@ -54,8 +60,3 @@ python check_layers.py
 補充來源：[鴻聖水電工程有限公司作品](https://www.houngsheng.com.tw/index.php?engineer_id=24&route=engineer%2Fengineer_detail)、[清華校史影像展](https://www.lib.nthu.edu.tw/events/2020/GoodTimes/)。
 
 
-## 實際STL正背並排
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

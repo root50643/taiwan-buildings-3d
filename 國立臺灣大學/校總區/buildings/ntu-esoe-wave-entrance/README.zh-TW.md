@@ -1,10 +1,13 @@
 # 國立臺灣大學 工程科學及海洋工程學系館（五波浪入口段）
 
-## 6 材質外觀版（2026-10-21）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
+
+## 6 材質外觀版（2026-10-21）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntuesoe-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

@@ -1,8 +1,6 @@
 # 臺北府城北門／承恩門 — 完整外觀近似模型
 
-**One complete Taipei North Gate, not a roof fragment or a city-wall reconstruction.** This is a source-bounded historical exterior associated with the published 2017–2022 source family, **not a measured capture-year reconstruction or 2026 as-built**. Photo dates are uncertain: the PTS article was published in 2017 but modified in 2025; image insertion dates and the portal photo date are unknown.
-
-## Nine actual mesh views / 九張實際模型預覽
+## 模型預覽
 
 | Front oblique / 正面斜視 | Reverse oblique / 背面斜視 | Roof joins / 屋頂斜視 |
 |---|---|---|
@@ -11,6 +9,11 @@
 | ![Front elevation](previews/front-elevation.png) | ![Reverse elevation](previews/rear-elevation.png) | ![Top](previews/top.png) |
 | F02/F04 same end / 同一短向面 | P01/G04 other end / 另一短向面 | Actual passage section / 門洞水平剖面 |
 | ![Same end](previews/same-end-elevation.png) | ![Other end](previews/other-end-elevation.png) | ![Ground section](previews/ground-plan.png) |
+
+**One complete Taipei North Gate, not a roof fragment or a city-wall reconstruction.** This is a source-bounded historical exterior associated with the published 2017–2022 source family, **not a measured capture-year reconstruction or 2026 as-built**. Photo dates are uncertain: the PTS article was published in 2017 but modified in 2025; image insertion dates and the portal photo date are unknown.
+
+## Nine actual mesh views / 九張實際模型預覽
+
 
 All views are rendered from the actual delivered geometry. The last image is an explicitly labelled exact Boolean cut at model Z=30 mm, revealing the real passage; it is not a substitute building or a surveyed plan. Other views show the complete model. No source-photo pixels appear here.
 

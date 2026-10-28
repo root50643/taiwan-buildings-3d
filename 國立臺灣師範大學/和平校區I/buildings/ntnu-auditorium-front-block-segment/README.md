@@ -1,13 +1,16 @@
 # 禮堂前棟入口段
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面保持中性<br>![背面](appearance/previews/rear.png) |  |
+
 國立臺灣師範大學 · 和平校區I · 校圖 H113  
 這是依公開外觀照片自建的局部近似模型，**不是完整單棟、測繪模型或2026現況複製品**。未使用第三方3D mesh。
 
 ## 最新六材質外觀版（2026-10-20）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面保持中性<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/auditorium-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

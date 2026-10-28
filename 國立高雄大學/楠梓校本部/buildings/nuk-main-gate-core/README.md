@@ -1,14 +1,17 @@
 # 國立高雄大學正門中央警衛室及門塔
 
-目前網格使用六種表面色（3MF色表另保留一個未使用的中性屋頂色）。
-
-本件為楠梓校本部正門的**中央核心歷史外觀近似**，不是整條校門、外側長牆或完整入口道路。未測繪、未核為2026現況、未實體試印。
+## 模型預覽
 
 | 模型預覽 | 正面 | 警衛室細部 |
 |---|---|---|
 | ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/guardhouse_detail.png) |
 | 側視 | 未確認反面中性處理 | 頂視 |
 | ![](previews/observed_side.png) | ![](previews/neutral_rear.png) | ![](previews/top.png) |
+
+目前網格使用六種表面色（3MF色表另保留一個未使用的中性屋頂色）。
+
+本件為楠梓校本部正門的**中央核心歷史外觀近似**，不是整條校門、外側長牆或完整入口道路。未測繪、未核為2026現況、未實體試印。
+
 
 ## 下載
 - [STL](model.stl)；[多色3MF](model.3mf)；[Blender](scene.blend)

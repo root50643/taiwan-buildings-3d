@@ -1,5 +1,11 @@
 # 國立成功大學｜成功校區｜56亭（Rotate Truss Pavilion）
 
+## 模型預覽
+
+| 正面斜視 | 反面斜視 | 長側立面 |
+|---|---|---|
+| ![正面](previews/front.png) | ![反面](previews/rear.png) | ![立面](previews/elevation.png) |
+
 **完整可見亭體外觀近似；非測繪、非全校完成。** 2021年建成、2022-11-11揭牌；另用2023-08-07拍攝的官方全景核對，拍攝日不等於2023-08-09上傳日。本包不是2026年現況調查。
 
 [可編輯Blender](scene.blend) · [八材質3MF](model.3mf) · [單色實體STL](model.stl) · [來源](SOURCES.md) · [完整QA](QA.md)
@@ -7,9 +13,6 @@
 ## 實際最終mesh五視圖
 所有PNG從交付3MF內與STL逐三角相同的幾何生成，非概念圖、照片或AI繪製。
 
-| 正面斜視 | 反面斜視 | 長側立面 |
-|---|---|---|
-| ![正面](previews/front.png) | ![反面](previews/rear.png) | ![立面](previews/elevation.png) |
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |

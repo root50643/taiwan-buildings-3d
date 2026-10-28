@@ -1,10 +1,13 @@
 # 馬偕醫學大學｜多功能教學活動中心（K棟）
 
-2013落成版本的來源限定外觀近似模型。現校名為馬偕醫學大學，2025年8月1日前為馬偕醫學院，兩者為同一學校；不是馬偕醫護管理專科學校。本件只含活動中心，未含相鄰教研樓、宿舍或整個校園。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 坡下長玻璃面<br>![同件坡下正面](appearance/previews/front.png) | 坡上入口與教室翼<br>![同件坡上背面](appearance/previews/rear.png) |  |
+
+2013落成版本的來源限定外觀近似模型。現校名為馬偕醫學大學，2025年8月1日前為馬偕醫學院，兩者為同一學校；不是馬偕醫護管理專科學校。本件只含活動中心，未含相鄰教研樓、宿舍或整個校園。
+
 
 [原STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數源碼](build_model.py) · [來源](sources.json) · [完整QA](qa-summary.json) · [原面ray](architectural-ray-check.json) · [逐構件loss](feature-loss-locations.json)
 

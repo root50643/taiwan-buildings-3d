@@ -1,12 +1,15 @@
 # 國立成功大學｜中文系館
 
-第十一批，光復校區。尺寸 104 × 150 × 34 mm，含底座最長邊150 mm；每件獨立比例。
-
-## 最新五材質外觀版（2026-10-20）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
+
+第十一批，光復校區。尺寸 104 × 150 × 34 mm，含底座最長邊150 mm；每件獨立比例。
+
+## 最新五材質外觀版（2026-10-20）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/chinese-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

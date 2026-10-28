@@ -1,14 +1,17 @@
 # 臺北市立大學｜天母校區體育館 A 棟（2012）
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 西南入口側<br>![西南入口側](renders/front.png) | 東北背側<br>![東北背側](renders/rear.png) |  |
+
 原創外觀模型一套，以銀色雙向曲面主屋頂、低矩形裙邊、抬高採光帽、米黃牆、粉色波形飾板及西側雙外梯為辨識重點。只包含 A 棟，不含 B／C 館；前身臺北體育學院不另算一所學校。
 
 **原始網格完整計算 QA 通過；未實際試印。** 獨立重播與最終總判定見 [QA 說明](qa/README.md)，計算檢查不等於免支撐或列印保證。
 
 ## 正反並排
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 西南入口側<br>![西南入口側](renders/front.png) | 東北背側<br>![東北背側](renders/rear.png) |  |
 
 其餘主視圖：[西](renders/west.png)、[東](renders/east.png)、[南](renders/south.png)、[北](renders/north.png)、[俯視](renders/top.png)。
 局部：[入口雙梯](renders/entry-detail.png)、[雙向屋頂與採光帽](renders/roof-detail.png)。以上共七張主視圖、兩張局部圖。

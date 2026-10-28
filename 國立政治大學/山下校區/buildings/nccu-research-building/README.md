@@ -1,5 +1,11 @@
 # 政大研究大樓 — 官方PDF記錄之修繕前瓷磚外觀版，非2026修繕後現況
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 來源約束的完整主樓簡化模型；不是修繕後現況復原，也不是實測竣工圖。模型提供展示及下載；未做實體列印，公開不表示第三方權利已全面清除。
@@ -35,9 +41,6 @@ Python依賴見requirements；Blender4.3.2 CPU Cycles；圖說需Pillow與系統
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [已驗證重建來源 ZIP](rebuild-source.zip) · [技術與製造限制](QA.md)
 

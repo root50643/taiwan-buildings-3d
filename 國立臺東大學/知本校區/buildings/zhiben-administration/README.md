@@ -1,5 +1,11 @@
 # 國立臺東大學知本校區：行政服務大樓
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
+
 公開實景確認的主要外牆和開放中庭組合；不是測量級的全棟竣工模型。
 
 ## 定位與比例
@@ -52,9 +58,6 @@ python section_check.py
 - 未宣稱獨立窮舉自相交檢查。
 - STL SHA-256：`854e49c793350ad42e6188bfabb2f733c4707c956fdfca31bb88d92fe9c441c4`。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
 
 
 ## 實際STL正背並排

@@ -1,6 +1,6 @@
 # 懷恩館｜完整主體外觀近似
 
-[回礁溪校區](../../README.md)
+## 模型預覽
 
 | 東側門廊 | 西側及環廊 | 頂視 |
 |---|---|---|
@@ -9,6 +9,9 @@
 | ![正面低視角](previews/front-low.png) | ![背面低視角](previews/rear-low.png) | ![東側](previews/east.png) |
 | 西側 |  |  |
 | ![西側](previews/west.png) |  |  |
+
+[回礁溪校區](../../README.md)
+
 
 ## 範圍與證據
 

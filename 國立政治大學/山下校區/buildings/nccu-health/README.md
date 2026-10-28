@@ -1,5 +1,11 @@
 # 國立政治大學 健康中心大樓 — proportional exterior study v5
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 完整地上1F–4F、R露臺及屋頂梯房條、右側不對稱尖翼與附屬入口階梯的多色比例模型。不是單入口局部；不是量測竣工圖、2026現況調查或可列印保證。新建identity，未替換或發布任何舊模型。
@@ -32,9 +38,6 @@ See `LICENSE.txt` and `SOURCES.md`; no broad CC license selected. Publication do
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [已驗證重建來源 ZIP](rebuild-source.zip) · [技術與製造限制](QA.md)
 

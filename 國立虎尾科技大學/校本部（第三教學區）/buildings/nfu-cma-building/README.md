@@ -1,5 +1,11 @@
 # 國立虎尾科技大學｜文理暨管理大樓
 
+## 模型預覽
+
+| 前側 | 後側 | 正立面 |
+| :---: | :---: | :---: |
+| ![前側](previews/front.png) | ![後側](previews/rear.png) | ![正立面](previews/elevation.png) |
+
 [第三教學區](../../README.md) · [學校模型](../../../README.md) · [全部模型](../../../../README.md)
 
 **完整相連主要外觀近似模型**；校本部（第三教學區，文化路64號）。不是第一教學區校門、經國體育館入口段，亦不是鄰近人文科學大樓。
@@ -43,9 +49,6 @@ python rebuild.py --output /new/empty/output --blender blender
 
 ## 實際模型預覽
 
-| 前側 | 後側 | 正立面 |
-| :---: | :---: | :---: |
-| ![前側](previews/front.png) | ![後側](previews/rear.png) | ![正立面](previews/elevation.png) |
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |

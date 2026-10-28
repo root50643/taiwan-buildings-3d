@@ -1,5 +1,11 @@
 # 國立政治大學季陶樓｜完整主樓參考模型
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山上校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 **版本：官方 PDF 所記錄的外觀與平面參考版；照片攝年未知，非已核 2026 現況。**
@@ -34,9 +40,6 @@ python run_all_checks.py
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [已驗證重建來源 ZIP](rebuild-source.zip) · [技術與製造限制](QA.md)
 

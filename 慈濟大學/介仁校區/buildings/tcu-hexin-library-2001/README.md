@@ -1,10 +1,13 @@
 # 慈濟大學介仁校區｜合心樓2A（圖書館及行政翼）
 
-本件是來源限定的外觀近似，包含主館、連接部與西南圖書館／行政翼，不代表整校完成。2001-06-03建物完工；2007-09為分館開館。慈濟大學2024合校後以同一校計數，不另列原慈濟科技大學。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 同件北玻璃與架空面<br>![北側](previews/north.png) | 同件南側及行政翼<br>![南側](previews/south.png) |  |
+
+本件是來源限定的外觀近似，包含主館、連接部與西南圖書館／行政翼，不代表整校完成。2001-06-03建物完工；2007-09為分館開館。慈濟大學2024合校後以同一校計數，不另列原慈濟科技大學。
+
 
 [STL](model.stl) · [Blend](scene.blend) · [原創Python](build_model.py) · [頂圖](previews/top.png) · [東面](previews/east.png) · [西面](previews/west.png) · [來源](sources.json) · [尺度依據](dimensional-evidence.json) · [QA](qa-summary.json) · [原網格與重現](validation.json)
 

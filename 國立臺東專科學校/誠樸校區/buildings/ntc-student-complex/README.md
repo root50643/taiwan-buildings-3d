@@ -1,12 +1,15 @@
 # C03 學生綜合樓（竣工主體近似）
 
-國立臺東專科學校｜誠樸校區｜完整主體、簡化細部。
-
-**狀態：凍結v1，外觀覆核與獨立數位QA通過。** 本件不代表整個校區或全校完成。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面：南側<br>![actual STL南側](previews/front.png) | 背面：北側<br>![actual STL北側](previews/rear.png) |  |
+
+國立臺東專科學校｜誠樸校區｜完整主體、簡化細部。
+
+**狀態：凍結v1，外觀覆核與獨立數位QA通過。** 本件不代表整個校區或全校完成。
+
 
 [頂視](previews/top.png) · [西側](previews/west.png) · [東側](previews/east.png) · [南側正立面](previews/south-elevation.png) · [北側正立面](previews/north-elevation.png)
 

@@ -1,10 +1,13 @@
 # 國立聯合大學八甲校區 B1 電機工程館
 
-## 八材質外觀
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面、左翼與已有光伏板<br>![正面](appearance/previews/front.png) | 未見背面保守中性<br>![背面](appearance/previews/rear.png) |  |
+
+## 八材質外觀
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuub1-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

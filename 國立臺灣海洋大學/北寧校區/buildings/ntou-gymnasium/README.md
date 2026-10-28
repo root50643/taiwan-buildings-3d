@@ -1,10 +1,13 @@
 # 北寧校區體育館｜場側立面修版
 
-既有模型修正，不增加學校或模型件數。完整外觀有界近似，150 × 111 × 41.9 mm（含底）。沿用原參數曲殼與主館；不是測繪、內部結構或全校完成件。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 實際 STL 正面<br>![正面](previews/front.png) | 同件背面<br>![背面](previews/rear.png) |  |
+
+既有模型修正，不增加學校或模型件數。完整外觀有界近似，150 × 111 × 41.9 mm（含底）。沿用原參數曲殼與主館；不是測繪、內部結構或全校完成件。
+
 
 [頂圖](previews/top.png) · [場側全高](previews/elevation.png) · [入口局部](previews/entry-detail.png) · [場側局部](previews/field-detail.png) · [左側局部](previews/left-detail.png)。front、rear、top、elevation為4張完整全貌，entry-detail、field-detail、left-detail為3張局部；全部由本包 STL 渲染，沒有來源合成圖。
 

@@ -1,5 +1,11 @@
 # 景文科技大學宿舍大樓（D）
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（證據不足處簡化）<br>![背面](previews/rear.png) |  |
+
 公開外觀照片推估的建築微縮研究，非測繪級BIM，也不代表2026即時外觀。
 
 ## 外觀依據
@@ -16,11 +22,6 @@
 
 ## 檔案及重建
 安裝 requirements.txt，執行 Python build_model.py 產生 model.stl。以 Blender -b -t 2 -P render_preview.py 由實際STL生成 scene.blend 與預覽；scene.blend 保留一個可編輯完整網格。再執行 validate_model.py、check_layers.py、check_thin_features.py。Python生成程式保留所有形體參數。
-
-## 實際STL正背對照
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（證據不足處簡化）<br>![背面](previews/rear.png) |  |
 
 ## 檢查
 - 原STL法向、封閉邊與頂點流形、正體積、一個連通外表面、無分離內腔殼、重建SHA及Blend/STL幾何一致：通過。

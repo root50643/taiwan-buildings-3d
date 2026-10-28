@@ -1,12 +1,15 @@
 # 國立中央大學國鼎光電大樓｜150 mm 外觀模型
 
-## 格棚與中央窗背限域配色（2026-10-22）
-
-[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/ncu-optoelectronics-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 格棚與中央窗背配色<br>![格棚與中央窗背限域配色](appearance/previews/front.png) | 側後保持中性<br>![側後深凹格保持中性](appearance/previews/rear.png) |  |
+
+## 格棚與中央窗背限域配色（2026-10-22）
+
+[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/ncu-optoelectronics-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 此為國鼎光電大樓，不是國鼎圖書資料館。僅1494個原格棚完整梁面深灰綠、21中央凹窗42個背面淡灰藍；2602面保持中性，側後深凹遮陽格不當成全玻璃，不補玻璃頂板。玻璃是不透明實體背襯代理，非真透明幕牆。依2010–2011歷史實照及攝影日未知的官方PDF圖限域近似，不代表完整2026現況。原STL bytes、4138三角面、幾何與歷史QA不變，不增套數。3MF為單網格表面色，非分色封閉體、切片或G-code；原z=82.071 mm薄篩警示與支撐/橋接限制保留，未實體試印；第三方照片不分發。
 

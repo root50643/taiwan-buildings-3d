@@ -1,5 +1,11 @@
 # 國立政治大學・集英樓
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 山下校區集英樓（官方校圖 A22、資產編號60-17）的多色外觀近似模型。依官方PDF記錄的照片與各層簡圖建模，**不是測繪竣工模型，也不是已查證2026現況**。
@@ -30,9 +36,6 @@ B1順時針90°、1F逆時針90°、2F180°、3F原向，以共同柱列、梯�
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
 

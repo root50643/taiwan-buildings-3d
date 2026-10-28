@@ -1,10 +1,13 @@
 # 王光祥暨海大校友國際學舍・入口立面段
 
-國立臺灣海洋大學／馬祖校區。局部件，不計全棟。依公開實照自建的近似縮模，非測繪、非建築施工模型。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面<br>![正面](previews/front.png) | 背面／截面<br>![背面](previews/rear.png) |  |
+
+國立臺灣海洋大學／馬祖校區。局部件，不計全棟。依公開實照自建的近似縮模，非測繪、非建築施工模型。
+
 
 [正立面](previews/elevation.png) · [中央窗組近圖](previews/center-detail.png) · [俯視](previews/top.png) · [STL](model.stl) · [可編輯Blender檔](scene.blend) · [重建程式](build_model.py)
 

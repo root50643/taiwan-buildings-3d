@@ -1,10 +1,13 @@
 # 國立中山大學 行政大樓
 
-[返回西子灣校區](../../README.md) · [返回全校圖鑑](../../../README.md)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
+
+[返回西子灣校區](../../README.md) · [返回全校圖鑑](../../../README.md)
+
 
 [下載 STL](model.stl) · [可編輯 Blender](scene.blend) · [參數重建](build_model.py) · [幾何驗證](validation.json) · [全部來源](sources.json)
 

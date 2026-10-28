@@ -1,5 +1,11 @@
 # 臺北工業學校紅樓
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 西端與未登錄長側<br>![背面](appearance/previews/rear.png) |  |
+
 國立臺北科技大學／臺北校區（西校區）
 
 ## 範圍與年代
@@ -10,13 +16,8 @@
 
 模型單位為 **毫米**，含底座尺寸 **108 × 150 × 105.80 mm**；每件獨立比例，底座最長150毫米。這是依公開外觀資料自建的教育展示與試印模型，並非測繪模型、修復圖說或校方官方3D檔。
 
-## 實際 STL 預覽
-
 ## 最新八材質外觀版（2026-10-20）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面原幾何配色<br>![正面](appearance/previews/front.png) | 西端與未登錄長側<br>![背面](appearance/previews/rear.png) |  |
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntut-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

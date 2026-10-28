@@ -1,5 +1,13 @@
 # 國立臺南大學｜2024年8月部分拆除前歷史美術館三翼
 
+## 模型預覽
+
+| 歷史中庭總覽 | 正立面 | 背側中性面 |
+| :---: | :---: | :---: |
+| ![](previews/front.png) | ![](previews/courtyard_elevation.png) | ![](previews/rear.png) |
+| 翼端 | 平面頂視 | 中央梯塔 |
+| ![](previews/left_end.png) | ![](previews/top.png) | ![](previews/stair_detail.png) |
+
 **這是北棟與中棟於2024年8月拆除前的歷史外觀近似模型，不是2026現況，也不是現存南棟單獨模型。** 官方現行系網註記北棟與中棟已拆除、南棟仍使用；同站保留的舊照片與平面用於本件歷史重建。
 
 ## 範圍與依據
@@ -12,11 +20,6 @@
 ## 檔案
 [STL](model.stl) · [多色3MF](model.3mf) · [Blender](scene.blend) · [建模程式](build_model.py) · [來源](SOURCES.md) · [幾何QA](QA.json)
 
-| 歷史中庭總覽 | 正立面 | 背側中性面 |
-| :---: | :---: | :---: |
-| ![](previews/front.png) | ![](previews/courtyard_elevation.png) | ![](previews/rear.png) |
-| 翼端 | 平面頂視 | 中央梯塔 |
-| ![](previews/left_end.png) | ![](previews/top.png) | ![](previews/stair_detail.png) |
 
 ## 重建
 Python 3，numpy、trimesh、manifold3d；Blender 4.3含numpy。於本目錄執行：python build_model.py、python validate_model.py；以Blender背景模式執行 render_model.py，--out指定本目錄。原創部件保存於construction-parts.json，Blender隱藏集合為前布林可編輯件，不是逐件列印包。無來源照片、外連材質或腳本嵌入BLEND。

@@ -1,14 +1,17 @@
 # 信心樓｜2014–2015 整修後外觀近似
 
+## 模型預覽
+
+| 局部配色左前斜視 | 局部配色正立面 | 背面仍保留中性 |
+| :---: | :---: | :---: |
+| ![信心樓局部材質左前斜視](appearance/previews/front.png) | ![信心樓局部材質正立面](appearance/previews/elevation.png) | ![信心樓背面中性](appearance/previews/rear.png) |
+
 國立臺南護理專科學校，臺南校區。這是依官方公開照片、校園底圖自行建立的完整主體辨識性模型，並非測繪、施工 BIM，亦不代表 2026 年實測現況。尺寸均為影像比例估計。
 
 ## 原三角面的局部材質外觀
 
 [局部配色模型、九視角與材料限制](appearance/README.md)：原 STL 的 **3,114 面與面序完全保留**，只為 **198 面**指定有來源支持的灰瓦、深色窗單元代理與暖奶油柱幹色，**2,916 面維持原中性**。不是完整著色、新增幾何或2026現況，也不把未知中性色當作現場材料。
 
-| 局部配色左前斜視 | 局部配色正立面 | 背面仍保留中性 |
-| :---: | :---: | :---: |
-| ![信心樓局部材質左前斜視](appearance/previews/front.png) | ![信心樓局部材質正立面](appearance/previews/elevation.png) | ![信心樓背面中性](appearance/previews/rear.png) |
 
 下載[可編修 Blender](appearance/ntin-xinxin-appearance.blend)、[逐面材質 3MF](appearance/ntin-xinxin-appearance.3mf)；[Python 重建入口](appearance/source/rebuild.py)只需原公開 STL、參數、色盤與程式，不需要來源照片。照片 EXIF 自述2014-12-30本地相機時間，未獨立驗證；詳見配色來源說明，並非2026拍攝。原幾何、五張舊預覽、64筆角損警示及薄件／支撐限制全部保留，尚未實體試印。
 

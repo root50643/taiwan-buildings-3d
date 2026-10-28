@@ -1,5 +1,13 @@
 # 國立臺南大學｜格致樓五層主體與中庭
 
+## 模型預覽
+
+| 中庭總覽 | 正立面 | 背側示意 |
+|---|---|---|
+| ![](previews/front.png) | ![](previews/courtyard_elevation.png) | ![](previews/rear.png) |
+| 左端 | 頂視 | 入口細節 |
+| ![](previews/left_end.png) | ![](previews/top.png) | ![](previews/entry_detail.png) |
+
 官方平面與歷史官方照片支持的外觀近似模型，**不是2026現況調查，也不是精密測繪**。五層非對稱U形、圖左開放走廊、圖右較短翼與前端低翼、入口挑空粗圓柱及右側懸挑陽台已建。
 
 ## 依據與尺度
@@ -11,11 +19,6 @@
 ## 檔案
 [STL](model.stl) · [5色3MF](model.3mf) · [可編輯Blender](scene.blend) · [來源](SOURCES.md) · [QA](QA.md)
 
-| 中庭總覽 | 正立面 | 背側示意 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/courtyard_elevation.png) | ![](previews/rear.png) |
-| 左端 | 頂視 | 入口細節 |
-| ![](previews/left_end.png) | ![](previews/top.png) | ![](previews/entry_detail.png) |
 
 ## 重建與列印限制
 Python3 + numpy/trimesh/manifold3d執行build_model.py、validate_model.py；Blender背景執行render_model.py。統一網格與隱藏原創部件一併保存於BLEND，來源照片/PDF未嵌入。3MF標準基本材質，7色表項實際使用5色（apricot/shadow為未使用保留項，不是本棟已證實材料），不含噴頭配置。

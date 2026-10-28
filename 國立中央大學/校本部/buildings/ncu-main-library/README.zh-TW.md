@@ -1,12 +1,15 @@
 # 國立中央大學總圖書館｜150 mm 外觀模型
 
-## 正面有限配色（2026-10-22）
-
-[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/ncu-main-library-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面有限配色<br>![正面窗背、圓窗及框體有限配色](appearance/previews/front.png) | 未確認後側保持中性<br>![未知後側保持中性](appearance/previews/rear.png) |  |
+
+## 正面有限配色（2026-10-22）
+
+[配色五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/ncu-main-library-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅原正面磁磚、離散窗背、圓窗與框體限域配色；底層混合玻璃/不透明裙板未建邊界，全層中性，不把整凹面塗藍。高排窗背為明示重複材質推論，頂端細窗帶、屋頂、背側中性，不是完整2026現況或整棟精準彩色。原STL bytes、6,688三角面、幾何與歷史QA不變，不增模型套數。3MF為單網格表面色，非分色封閉實體、切片或G-code；原薄處與支撐限制保留，未實體試印。第三方照片不分發。
 

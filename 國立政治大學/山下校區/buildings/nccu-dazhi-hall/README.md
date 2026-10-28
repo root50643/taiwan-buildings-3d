@@ -1,5 +1,11 @@
 # 國立政治大學大智樓
 
+## 模型預覽
+
+| 長窗面 | 未見側近似 | 頂視 |
+| :---: | :---: | :---: |
+| ![長窗面](previews/front.png) | ![未見側近似](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 政大山下校區大智樓，官方消防資料資產編號60-19、校圖A24（19）。本模型為來源所示完整四層主樓的近似外觀研究，不是實測、竣工圖或現況測繪復原。
@@ -33,9 +39,6 @@
 
 ## 模型預覽與下載
 
-| 長窗面 | 未見側近似 | 頂視 |
-| :---: | :---: | :---: |
-| ![長窗面](previews/front.png) | ![未見側近似](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
 

@@ -1,5 +1,13 @@
 # 國立高雄大學污水及中水處理場主建物：歷史照片外觀近似
 
+## 模型預覽
+
+| 主視角 | 主入口立面 | 推定另一短端局部 |
+|---|---|---|
+| ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/inferred_rear.png) |
+| 遮蔽長側中性處理 | 頂視圖 | 方罩細節 |
+| ![](previews/neutral_long_side.png) | ![](previews/top.png) | ![](previews/roof_detail.png) |
+
 此模型只呈現官方歷史照片中的地上主建物，不是整座污水／中水處理場、現況測繪、精確全棟復原或運作設備模型。沒有地下池槽、前方花台／水池、管路、植栽及室內機電。未攝清楚的長側採中性封閉，不能把空白牆當成已確認的實景。
 
 ## 已完成範圍
@@ -19,10 +27,5 @@
 ## 檔案與預覽
 [STL](model.stl) · [七色 3MF](model.3mf) · [Blender](scene.blend) · [來源](SOURCES.md) · [QA](QA.json)
 
-| 主視角 | 主入口立面 | 推定另一短端局部 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/inferred_rear.png) |
-| 遮蔽長側中性處理 | 頂視圖 | 方罩細節 |
-| ![](previews/neutral_long_side.png) | ![](previews/top.png) | ![](previews/roof_detail.png) |
 
 重建：使用 numpy、trimesh、manifold3d 執行 build_model.py；Blender 4.3 執行 render_model.py。幾何格式核驗使用 validate_model.py；以 Blender 重開 scene.blend 後執行 verify_scene.py。輸出模型使用 mm。

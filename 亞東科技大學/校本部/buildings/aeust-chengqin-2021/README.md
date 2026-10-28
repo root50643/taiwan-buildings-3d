@@ -1,5 +1,13 @@
 # 亞東科技大學誠勤大樓｜約 2021 年外觀代表模型
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 前側斜視<br>![前側斜視](previews/v1/front.png) | 後側斜視<br>![後側斜視](previews/v1/rear.png) | −Y 長邊<br>![前長邊](previews/v1/long-front.png) |
+| +Y 長邊（中性牆面）<br>![後長邊](previews/v1/long-rear.png) | −X 端部<br>![負X端部](previews/v1/end-negative-x.png) | +X 端部／連接段截斷<br>![正X端部](previews/v1/end-positive-x.png) |
+| 屋頂<br>![俯視](previews/v1/top.png) | 曲面段細節<br>![曲面連接段](previews/v1/connector.png) |  |
+
 **狀態：獨立覆核 GO 的發布模型。** 亞東目前收錄有庠與誠勤 2 套；不代表完整校園。模型以約 2021 年 1 月的可見外觀為範圍，包含 12 層細長直板主體、兩端淺突出核心、兩個端部屋頂箱體，以及接向元智的短曲面連接段。曲面段在元智交界明確截斷，沒有元智本體；不代表完整連棟或現況測繪。
 
 所有模型數值均為供展示與列印使用的毫米。官方 4F 圖只提供相對輪廓約束，沒有精確公尺標註；本包沒有建築實測尺寸或 1:N 比例承諾。主要長邊、端部核心與曲面段的平面關係依圖面簡化，主體外高及屋頂箱體深度則依照片估算。
@@ -36,11 +44,6 @@ python -B source/build_model.py --output-dir qa/local-rebuild
 
 座標為模型局部座標：X 沿主樓長邊，照片可見主立面為 −Y，+X 朝曲面連接段。此座標不宣稱地理方位。八張預覽對應同一 STL，檢視識別雜湊見 [render-manifest.json](previews/v1/render-manifest.json)。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 前側斜視<br>![前側斜視](previews/v1/front.png) | 後側斜視<br>![後側斜視](previews/v1/rear.png) | −Y 長邊<br>![前長邊](previews/v1/long-front.png) |
-| +Y 長邊（中性牆面）<br>![後長邊](previews/v1/long-rear.png) | −X 端部<br>![負X端部](previews/v1/end-negative-x.png) | +X 端部／連接段截斷<br>![正X端部](previews/v1/end-positive-x.png) |
-| 屋頂<br>![俯視](previews/v1/top.png) | 曲面段細節<br>![曲面連接段](previews/v1/connector.png) |  |
 
 ## 審查與列印界線
 

@@ -1,5 +1,11 @@
 # 國立政治大學逸仙樓｜完整主樓彩色模型
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 本模型以官方防災報告 B1–7F/R 平面與四張官方現存照片建立完整、不對稱主樓；包括雙端階梯核心、階梯式平屋頂、中央玻璃突出部、半層白屏、貼樓入口曲面厚簷與平台。學思樓及兩棟之間的獨立橋跨不納入；保留貼樓接口，不製造斷橋自由端或虛構封牆。
@@ -25,9 +31,6 @@ Python依賴見requirements.txt；Blender4.3.2、CPU4threads。執行 `python bu
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [已驗證重建來源 ZIP](rebuild-source.zip) · [技術與製造限制](QA.md)
 

@@ -1,10 +1,13 @@
 # 吳鳳科技大學｜生有樓
 
-以校方標稱2014空拍外觀、2025年10月配置圖的相對平面關係交叉約束，保留三層入口挑空、開放三角中庭、低翼與較小高體、分層深廊及分段露空屋頂。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 入口斜視<br>![入口斜視](qa/render-check/v13/sanitized-previews/front.png) | 後側斜視<br>![後側斜視](qa/render-check/v13/sanitized-previews/rear.png) |  |
+
+以校方標稱2014空拍外觀、2025年10月配置圖的相對平面關係交叉約束，保留三層入口挑空、開放三角中庭、低翼與較小高體、分層深廊及分段露空屋頂。
+
 
 [下載 STL](models/v13/model.stl) · [下載 Blender 場景](models/v13/scene.blend) · [列印限制](PRINTING-LIMITS.md) · [估計與簡化](ESTIMATES-AND-SIMPLIFICATIONS.md) · [完整QA與還原](qa/README.md)
 

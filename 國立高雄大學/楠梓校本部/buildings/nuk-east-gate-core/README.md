@@ -1,11 +1,14 @@
 # 國立高雄大學東門入口低牆及鋪面核心
 
-依舊版校園規劃小組四張照片製作的入口構造外觀近似，不是獨立館舍，也不是照片背景的住宅或遠方校舍。只涵蓋五件交錯低屏牆、兩側轉折矮牆、局部鋪面及兩盞燈。照片未標攝影日，不能當2026現況。
+## 模型預覽
 
 | 實際模型預覽 | 實際模型預覽 | 實際模型預覽 |
 | :---: | :---: | :---: |
 | ![外側總覽](previews/front.png) | ![道路側立面](previews/outside_elevation.png) | ![校園側總覽](previews/campus_side.png) |
 | ![側向](previews/side.png) | ![模型頂視非來源航照](previews/top.png) | ![燈細節](previews/lamp_detail.png) |
+
+依舊版校園規劃小組四張照片製作的入口構造外觀近似，不是獨立館舍，也不是照片背景的住宅或遠方校舍。只涵蓋五件交錯低屏牆、兩側轉折矮牆、局部鋪面及兩盞燈。照片未標攝影日，不能當2026現況。
+
 
 ## 下載
 [STL](model.stl) · [七色3MF](model.3mf) · [Blender](scene.blend) · [建模程式](build_model.py) · [SHA256](SHA256SUMS)

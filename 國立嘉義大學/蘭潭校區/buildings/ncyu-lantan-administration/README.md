@@ -1,12 +1,15 @@
 # 國立嘉義大學｜蘭潭校區行政中心（中正樓）
 
-## 光電頂面限域配色（2026-10-22）
-
-[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/ncyu-lantan-administration-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![行政中心光電頂面限域代理](appearance/previews/front.png) |  |  |
+
+## 光電頂面限域配色（2026-10-22）
+
+[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/ncyu-lantan-administration-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 只為原40個粗化光電凸片的80個完整頂面配藍灰，合2210 mm²；40不是實景板片數。薄側、板間、白屋頂、中央露臺、高U屋頂與立面等4168面皆中性。原4248面座標、面序與STL bytes不變，不增套。官方空拍EXIF原拍/數位化2019-10-25 08:10:25、修改2019-11-15 15:34:17；XMP建立/修改2019-10-25，與檔名1081024差一天並列保留，時鐘未校準。2023頁日期不是拍攝日；不是2026現況。此日期補核只適用空拍，不套到入口照。原幾何近似、背面未知、屋頂凹庭非通天庭及未實體試印限制不變。照片不分發。
 

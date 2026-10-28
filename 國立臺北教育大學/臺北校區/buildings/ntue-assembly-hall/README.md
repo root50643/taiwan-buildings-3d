@@ -1,5 +1,11 @@
 # 國立臺北教育大學｜大禮堂
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+
 臺北校區。自行以公開照片和平面資料建立的外觀近似模型；不是下載第三方3D模型、測繪成果或建築施工圖。
 
 ## 範圍與來源時點
@@ -19,9 +25,6 @@
 - [requirements.txt](requirements.txt)：Python依賴；執行 python build_model.py 可重建
 - [render_preview.py](render_preview.py)：用 Blender 實際讀取交付STL渲染，非示意效果圖
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 [俯視圖](previews/top.png) · [正立面](previews/elevation.png)
 

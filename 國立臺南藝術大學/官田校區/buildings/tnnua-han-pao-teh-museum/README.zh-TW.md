@@ -1,14 +1,17 @@
 # 國立臺南藝術大學｜漢寶德紀念館
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 凸盒正面 y− 與右鄰陽臺面 x+<br>![修訂正面](facade-layout-v2/previews/front.png) | 左側外梯 x−，往正面上升<br>![修訂外梯](facade-layout-v2/previews/stairs.png) |  |
+
 ## 最新版：立面配置修訂 v2
 
 **請下載 [修訂 STL](facade-layout-v2/model-v2.stl) 或 [七材質 3MF](facade-layout-v2/model.3mf)。本層 model.stl／scene.blend 與 appearance 資料夾保留的是修訂前歷史版本。**
 
 依官方平面與實照修正外梯、雙陽臺及門洞所在立面，並修正外梯升向。以凸盒為模型正面 y−，外梯在 x− 左側往正面上升，雙陽臺在 x+ 右鄰面；不是地理方位。[來源、修訂細節、可重建源碼與新版檢查](facade-layout-v2/README.md)。原高度、細部尺寸仍是近似，不能稱為完整比例校準。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 凸盒正面 y− 與右鄰陽臺面 x+<br>![修訂正面](facade-layout-v2/previews/front.png) | 左側外梯 x−，往正面上升<br>![修訂外梯](facade-layout-v2/previews/stairs.png) |  |
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |

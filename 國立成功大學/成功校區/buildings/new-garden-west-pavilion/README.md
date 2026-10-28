@@ -1,14 +1,17 @@
 # 國立成功大學大新園西棟：校友會館外觀近似模型
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面斜視<br>![實際 STL 正面斜視](previews/front.png) | 背面斜視<br>![實際 STL 背面斜視](previews/rear.png) |  |
+
 正式交付版 2.0.0。本包以已通過獨立技術審查的 2.0.0-rc3 為基線，原始 STL、Blend、六張 PNG、建構／驗證程式、參數與數值證據均保持不變。僅新增[獨立審查摘要](ncku-west-pavilion-v2-independent-review.md)，更新交付說明與完整性清單。未做實體試印。
 
 ## 實際 STL 正反視圖
 
 以下兩張圖均由本包實際 STL 渲染；材質僅供構件辨識，來源照片不包含在模型包內。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面斜視<br>![實際 STL 正面斜視](previews/front.png) | 背面斜視<br>![實際 STL 背面斜視](previews/rear.png) |  |
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [俯視圖](previews/top.png)
 

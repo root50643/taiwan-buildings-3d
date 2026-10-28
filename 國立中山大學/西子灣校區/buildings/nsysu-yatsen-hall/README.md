@@ -1,12 +1,15 @@
 # 國立中山大學 逸仙館
 
-## 前上磚牆與門廊前欄板限域配色（2026-10-22）
-
-[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nsysu-yatsen-hall-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![前上磚牆及前欄板粗外觀代理](appearance/previews/front.png) |  |  |
+
+## 前上磚牆與門廊前欄板限域配色（2026-10-22）
+
+[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/nsysu-yatsen-hall-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅51前上牆＋2門廊前欄板，合計53個原完整三角採磚紅proxy；其餘3057面中性。這是主磚平面粗外觀代理，非細外皮還原：窄灰壓頂、字樣、磚縫未建，不切面造色條。弧內、側背、白梁柱、屋頂和底座不擴染；中性不代表實物灰色。完整官方照片2/3日期未知，不稱2026現況或確切成分；截斷圖1未用。原STL/3110面座標/面序/歷史QA不變，不增套；非分色封閉體/G-code，未實體試印，第三方照片不分發。
 

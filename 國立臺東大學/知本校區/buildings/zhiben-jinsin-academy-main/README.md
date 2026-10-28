@@ -1,5 +1,11 @@
 # 國立臺東大學知本校區：鏡心書院主要教學棟
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
+
 照片可見的連接式主要教學棟群。未宣稱包含獨立 D 棟或所有附屬量體。
 
 ## 定位與比例
@@ -49,9 +55,6 @@ python section_check.py
 - 未宣稱獨立窮舉自相交檢查。
 - STL SHA-256：`41a0a7cb66486d913c6dea1bfb00b334bae33dfde48ea7f8a082e81af68a5206`。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際 STL 正面](previews/front.png) | ![實際 STL 背面](previews/rear.png) |  |
 
 
 ## 實際STL正背並排

@@ -1,10 +1,13 @@
 # 國立聯合大學｜八甲 M6 第六宿舍
 
-## 5 材質外觀版（2026-10-21）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／屋面同系統推估<br>![背面](appearance/previews/rear.png) |  |
+
+## 5 材質外觀版（2026-10-21）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuum6-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

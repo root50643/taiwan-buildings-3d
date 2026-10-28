@@ -1,5 +1,13 @@
 # 國立高雄大學總配電站：歷史照片有界外觀近似
 
+## 模型預覽
+
+| 主視角 | 已見長立面 | 已見短端面 |
+|---|---|---|
+| ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/observed_short_end.png) |
+| 中性未復原背面 | 屋頂 | 已見立面細節 |
+| ![](previews/rear_unreconstructed.png) | ![](previews/top.png) | ![](previews/front_detail.png) |
+
 這是可審視的外觀模型，不是全棟精確還原、竣工測繪或 2026 年現況模型。未見背面與另一短端面採中性封閉；不能把空白牆當成實景確認。
 
 ## 已完成
@@ -19,10 +27,5 @@
 ## 檔案
 [STL](model.stl) · [3MF](model.3mf) · [Blender](scene.blend) · [來源](SOURCES.md) · [QA](QA.json)
 
-| 主視角 | 已見長立面 | 已見短端面 |
-|---|---|---|
-| ![](previews/front.png) | ![](previews/front_elevation.png) | ![](previews/observed_short_end.png) |
-| 中性未復原背面 | 屋頂 | 已見立面細節 |
-| ![](previews/rear_unreconstructed.png) | ![](previews/top.png) | ![](previews/front_detail.png) |
 
 重建：使用 numpy、trimesh、manifold3d 執行 build_model.py，再使用 Blender 4.3 執行 render_model.py；幾何核驗執行 validate_model.py，Blender 重開核驗執行 verify_scene.py。

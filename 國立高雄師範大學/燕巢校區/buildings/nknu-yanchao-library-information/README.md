@@ -1,5 +1,15 @@
 # 國立高雄師範大學燕巢校區圖資大樓
 
+## 模型預覽
+
+| 入口正面 | 整體斜視 | 側視 A |
+|---|---|---|
+| ![入口正面](previews/front.png) | ![整體斜視](previews/oblique.png) | ![側視 A](previews/east.png) |
+| **側視 B** | **後側全景** | **俯視** |
+| ![側視 B](previews/west.png) | ![後側全景](previews/south.png) | ![俯視](previews/top.png) |
+| **入口平台與通道** | **後側弧形大廳** | **屋頂斜視** |
+| ![入口平台與通道](previews/front-detail.png) | ![後側弧形大廳](previews/rear-detail.png) | ![屋頂斜視](previews/roof-oblique.png) |
+
 **整棟可見地上外觀的彩色比例近似模型，表達約 2011–2012 年完工期樣貌。** 不是和平校區圖書館，也不是經確認的 2026 現況、測繪模型或竣工圖。兩翼、中央大廳、完整屋頂、入口平台／通道、外階梯及後側露台均納入；不虛構不可見的 B1。
 
 ## 首頁與圖鑑代表角度
@@ -26,13 +36,6 @@ blender --disable-autoexec --background --factory-startup --python-exit-code 1 -
 
 下列預覽由本模型及純色材質實際渲染，不是來源照片。`east`、`west`、`south` 僅為模型局部視角檔名，**不代表測量地理方位**。
 
-| 入口正面 | 整體斜視 | 側視 A |
-|---|---|---|
-| ![入口正面](previews/front.png) | ![整體斜視](previews/oblique.png) | ![側視 A](previews/east.png) |
-| **側視 B** | **後側全景** | **俯視** |
-| ![側視 B](previews/west.png) | ![後側全景](previews/south.png) | ![俯視](previews/top.png) |
-| **入口平台與通道** | **後側弧形大廳** | **屋頂斜視** |
-| ![入口平台與通道](previews/front-detail.png) | ![後側弧形大廳](previews/rear-detail.png) | ![屋頂斜視](previews/roof-oblique.png) |
 
 ## 檔案與尺度
 

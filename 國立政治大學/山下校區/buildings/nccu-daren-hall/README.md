@@ -1,5 +1,11 @@
 # 國立政治大學 大仁樓
 
+## 模型預覽
+
+| 長窗面 | 未見側近似 | 頂視 |
+| :---: | :---: | :---: |
+| ![長窗面](previews/front.png) | ![未見側近似](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山下校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 彩色四層主體幾何研究模型；官方建物編號60-20、校圖A25（20），山下校區。依官方外觀照片及消防平面簡圖建立長形主體、中央回折樓梯、長廊、左側細分房間、二樓中央入口與有界外階／坡道；不包含完整校園地景。
@@ -22,9 +28,6 @@
 
 ## 模型預覽與下載
 
-| 長窗面 | 未見側近似 | 頂視 |
-| :---: | :---: | :---: |
-| ![長窗面](previews/front.png) | ![未見側近似](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)
 

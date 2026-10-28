@@ -1,5 +1,11 @@
 # 東吳大學・城中校區鑄秋大樓（第二大樓）
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [城中校區圖鑑](../../README.md) · [東吳大學圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 **來源與使用範圍見包內 `LICENSE.txt`；來源素材的授權不自動等同本模型的通用授權，本包未另指定全包通用CC授權。**
@@ -33,8 +39,5 @@ Python 3.12，numpy、trimesh、manifold3d、shapely、scipy、rtree、lib3mf；
 
 ## 實際模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [來源與使用範圍](LICENSE.txt)

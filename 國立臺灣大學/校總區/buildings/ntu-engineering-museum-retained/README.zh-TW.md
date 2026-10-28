@@ -1,10 +1,13 @@
 # 國立臺灣大學 工學博物館（修復保留館體）
 
-## 6 材質外觀版（2026-10-21）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 背牆中性／低翼屋面同系統延伸<br>![背面](appearance/previews/rear.png) |  |
+
+## 6 材質外觀版（2026-10-21）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntuemuseum-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

@@ -1,12 +1,15 @@
 # 國立成功大學｜大成館
 
-第二批獨立外觀模型；校區：光復校區。不是全校完成。尺寸含底座：150 × 49 × 40.3 mm；最長邊150 mm，各件獨立比例。
-
-## 最新六材質外觀版（2026-10-20）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 另一已登錄長面<br>![背面](appearance/previews/rear.png) |  |
+
+第二批獨立外觀模型；校區：光復校區。不是全校完成。尺寸含底座：150 × 49 × 40.3 mm；最長邊150 mm，各件獨立比例。
+
+## 最新六材質外觀版（2026-10-20）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nckudacheng-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

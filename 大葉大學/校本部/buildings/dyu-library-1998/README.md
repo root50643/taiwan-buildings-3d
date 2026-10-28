@@ -1,10 +1,13 @@
 # 大葉大學圖書館（圖書資訊大樓）｜1998主體有界近似
 
-本件只涵蓋圖書館主體，不代表全校完成。1998年8月在新館提供服務，依1998-11-15館訊第5期p2；不將搜尋索引日期當啟用年。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 主要前側與露天花園<br>![前側](previews/front.png) | 同件後扇形外弧<br>![同館後側](previews/rear.png) |  |
+
+本件只涵蓋圖書館主體，不代表全校完成。1998年8月在新館提供服務，依1998-11-15館訊第5期p2；不將搜尋索引日期當啟用年。
+
 
 [STL](model.stl) · [可編輯Blend](scene.blend) · [原創Python源](build_model.py) · [頂圖](previews/top.png) · [前立面](previews/elevation.png) · [來源](sources.json) · [尺寸與限制](dimensional-evidence.json) · [QA](qa-summary.json)
 

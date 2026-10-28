@@ -1,12 +1,15 @@
 # 輔仁大學・淨心堂
 
-## 白色前門柱與柱帽限域配色（2026-10-22）
-
-[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/fju-immaculate-conception-chapel-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![淨心堂白色門柱與柱帽前臉限域代理](appearance/previews/front.png) |  |  |
+
+## 白色前門柱與柱帽限域配色（2026-10-22）
+
+[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/fju-immaculate-conception-chapel-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅兩厚門柱與四柱帽前臉16個完整原面配色，共702.20000267mm²；其餘1662面中性。全頂點有限平面域，不切面、不擴塗柱側、帽頂側與棕暗帽底，窗格／玻璃、屋面、側背保持中性。FJAC自拍JPEG三EXIF日期皆2008-09-08 09:50:53、無XMP；Commons2009上傳非拍攝，不宣稱2026現貌。原幾何另含2013鳥瞰與2017入口配置，後方聖言樓不納入。未校準目視近似，非官方色號或材料鑑定。原1678面座標／面序／STL與歷史QA不變、不增套；未實體試印，照片不分發。
 

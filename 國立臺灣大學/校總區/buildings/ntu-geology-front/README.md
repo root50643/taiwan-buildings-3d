@@ -1,14 +1,15 @@
 # 國立臺灣大學 地質科學館（三層前棟）
 
-[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
-
-## 實際 STL 正面與背面
-
-## 最新七材質外觀版（2026-10-20）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
+
+[返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
+
+## 最新七材質外觀版（2026-10-20）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/geology-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

@@ -1,10 +1,13 @@
 # 國立聯合大學 八甲生活館圓廳
 
-## 八材質外觀版（2026-10-20）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與已見露台<br>![正面](appearance/previews/front.png) | 未見背面保守中性<br>![背面](appearance/previews/rear.png) |  |
+
+## 八材質外觀版（2026-10-20）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nuuround-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

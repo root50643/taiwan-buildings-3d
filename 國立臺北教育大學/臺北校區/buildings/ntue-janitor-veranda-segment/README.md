@@ -1,5 +1,11 @@
 # 國立臺北教育大學｜舊琴房／小使室山牆簷廊段
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+
 臺北校區，自行用Python／實體布林建模，沒有下載第三方3D模型。模型為照片支持的近似，非實測或施工圖。
 
 ## 來源與界線
@@ -15,9 +21,6 @@
 - [build_model.py](build_model.py)、[requirements.txt](requirements.txt)：python build_model.py
 - [render_preview.py](render_preview.py)：blender -b -t 4 -P render_preview.py；圖片皆實際STL
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png) · [通口近圖](previews/entry_close.png)
 

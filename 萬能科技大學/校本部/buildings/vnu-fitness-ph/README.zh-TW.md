@@ -1,5 +1,11 @@
 # 萬能科技大學體適能中心（PH）
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![正面](previews/front.png) | 背面（未見處簡化）<br>![背面](previews/rear.png) |  |
+
 依公开官方外觀實拍的微縮研究，非測繪級BIM，亦非2026即時完整外觀保證。
 
 ## 證據及近似
@@ -13,11 +19,6 @@
 - 含底板尺寸：150.00 × 132.00 × 39.00 mm，單件最長150mm，各件獨立比例。
 - 安裝 requirements.txt；執行 python build_model.py 重建STL，再用 blender -b -t 2 -P render_preview.py 產生可編輯完整網格scene.blend與實際STL圖。
 - 執行 validate_model.py、check_layers.py、check_thin_features.py 複核。
-
-## 實際STL正背並排
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見處簡化）<br>![背面](previews/rear.png) |  |
 
 ## 檢查及列印限制
 - 原STL法向/邊與頂點流形、正體積、單一連通外表面、無分離內腔殼、重建SHA與Blend/STL三角幾何一致：全部通過。

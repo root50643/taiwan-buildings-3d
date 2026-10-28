@@ -1,10 +1,13 @@
 # 國立清華大學｜台達館
 
-## 6 材質外觀版（2026-10-21）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未知後牆中性／來源支持右側<br>![背面](appearance/previews/rear.png) |  |
+
+## 6 材質外觀版（2026-10-21）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthudelta-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

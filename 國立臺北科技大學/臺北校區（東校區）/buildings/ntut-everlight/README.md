@@ -1,5 +1,11 @@
 # 億光大樓
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 忠孝東路側正面<br>![actual STL正面](previews/front.png) | 後面<br>![actual STL背面](previews/rear.png) |  |
+
 國立臺北科技大學／臺北校區（東校區）
 
 ## 範圍與年代
@@ -12,9 +18,6 @@
 
 ## 實際 STL 預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 忠孝東路側正面<br>![actual STL正面](previews/front.png) | 後面<br>![actual STL背面](previews/rear.png) |  |
 
 [頂視圖](previews/top.png) · [正立面](previews/elevation.png)
 

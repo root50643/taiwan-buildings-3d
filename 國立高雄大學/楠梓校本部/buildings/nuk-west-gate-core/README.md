@@ -1,11 +1,14 @@
 # 國立高雄大學西門行人入口門柱與車阻核心
 
-官方歷史照片支持的有界入口構造近似，不是獨立館舍，不含背景綜合第一大樓、整條道路或西門全景。四張照片未標攝影日期，不能當作2026現況。
+## 模型預覽
 
 | 實際模型 | 實際模型 | 實際模型 |
 | :---: | :---: | :---: |
 | ![總覽](previews/front.png) | ![正立面](previews/front_elevation.png) | ![模型背側非實拍證實](previews/campus_side.png) |
 | ![側面](previews/side.png) | ![模型頂視](previews/top.png) | ![車阻近似](previews/barrier_detail.png) |
+
+官方歷史照片支持的有界入口構造近似，不是獨立館舍，不含背景綜合第一大樓、整條道路或西門全景。四張照片未標攝影日期，不能當作2026現況。
+
 
 ## 下載
 [STL](model.stl) · [七色3MF](model.3mf) · [Blender](scene.blend) · [建模程式](build_model.py) · [SHA256](SHA256SUMS)

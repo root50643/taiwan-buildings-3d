@@ -1,14 +1,17 @@
 # 國立高雄科技大學｜行政大樓中央曲面入口段
 
+## 模型預覽
+
+| 模型預覽 | 模型預覽 | 模型預覽 |
+| :---: | :---: | :---: |
+| 正面<br>![actual STL正面](previews/front.png) | 背面<br>![actual STL背面](previews/rear.png) |  |
+
 校區：建工校區。建築實體：建工行政大樓。
 
 **本件是局部外觀段，不是整棟測繪；全校尚未完成。** 只含中央曲面入口投影、其左右各兩跨短段與前弧柱廊；全長辦公翼、完整中庭和屋頂天窗不納入，背面是截斷封口。
 
 ## 實際 STL 外觀
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![actual STL正面](previews/front.png) | 背面<br>![actual STL背面](previews/rear.png) |  |
 
 [正立面](previews/elevation.png)｜[頂視](previews/top.png)
 

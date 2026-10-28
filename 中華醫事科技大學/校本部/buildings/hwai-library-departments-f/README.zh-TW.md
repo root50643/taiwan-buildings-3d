@@ -1,12 +1,15 @@
 # F圖書館與F1–F4系館連體群
 
-## 東端瓦帽歷史限域配色（2026-10-22）
-
-[五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/hwai-library-f-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 東側歷史限域配色<br>![東端瓦帽](appearance/previews/front.png) | 未確認後側保持中性<br>![後側保持中性](appearance/previews/rear.png) |  |
+
+## 東端瓦帽歷史限域配色（2026-10-22）
+
+[五視角、來源與限制](appearance/README.md) · [表面色3MF](appearance/hwai-library-f-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅東端截錐瓦帽朝東斜面76個完整三角面紅褐配色；頂平面、西半、白肩、其他坡頂及5026面中性，五道玻璃因缺細框分面HOLD不塗。半頂色界是保守證據範圍，不是實景接縫。原STL bytes、5102面與歷史QA不變，不增套數，F/F1–F4仍為一個連體群，G排除。
 

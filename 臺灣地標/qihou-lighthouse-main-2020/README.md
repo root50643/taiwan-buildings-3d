@@ -1,16 +1,19 @@
 # 旗後燈塔完整連接主建築 / Qihou Lighthouse, circa 2020
 
-Original, source-bounded exterior approximation of **one complete connected building**: the octagonal lighthouse tower, short linking neck, and entire one-storey office/exhibition wing. It is **not a tower-only fragment, full precinct, current-2026 survey, complete interior or physically print-certified object**.
-
-## 模型預覽 / Model gallery
-
-以下九張均為本模型的渲染圖，並非原始來源照片。水平剖面取自實際模型網格的 z = 30 mm 切面。
+## 模型預覽
 
 | 視角 1 | 視角 2 | 視角 3 |
 | --- | --- | --- |
 | ![入口斜視 / Entrance oblique](previews/front.png)<br>入口斜視 / Entrance oblique | ![背面斜視 / Rear oblique](previews/oblique.png)<br>背面斜視 / Rear oblique | ![屋頂斜視 / Roof oblique](previews/roof-oblique.png)<br>屋頂斜視 / Roof oblique |
 | ![東南正立面 / SE front](previews/front-elevation.png)<br>東南正立面 / SE front | ![西北背立面 / NW rear](previews/rear-elevation.png)<br>西北背立面 / NW rear | ![西南側立面 / SW side](previews/southwest-elevation.png)<br>西南側立面 / SW side |
 | ![東北側立面 / NE side](previews/northeast-elevation.png)<br>東北側立面 / NE side | ![俯視 / Top](previews/top.png)<br>俯視 / Top | ![30 mm水平剖面 / Horizontal cut](previews/ground-plan.png)<br>30 mm水平剖面 / Horizontal cut |
+
+Original, source-bounded exterior approximation of **one complete connected building**: the octagonal lighthouse tower, short linking neck, and entire one-storey office/exhibition wing. It is **not a tower-only fragment, full precinct, current-2026 survey, complete interior or physically print-certified object**.
+
+## 模型預覽 / Model gallery
+
+以下九張均為本模型的渲染圖，並非原始來源照片。水平剖面取自實際模型網格的 z = 30 mm 切面。
+
 
 ## Deliverables
 

@@ -1,16 +1,19 @@
 # 北投圖書館｜整棟原設計外觀模型
 
-臺北市立圖書館北投分館的**完整歷史原設計外觀近似模型**：以 2006 年完成設計、2008 年出版資料及建築師未註拍攝日期的完成照片互相核對。**不是 2026 年整修後現況、不是測量或施工圖。**
-
 ## 模型預覽
-
-以下九張均由本包實際模型渲染，不是來源照片；點選圖片可看原尺寸。
 
 | 模型視圖 | 模型視圖 | 模型視圖 |
 | :---: | :---: | :---: |
 | [![北投圖書館模型：公園／東端斜視](previews/front.png)](previews/front.png)<br>**公園／東端斜視** | [![北投圖書館模型：溪側斜視](previews/oblique.png)](previews/oblique.png)<br>**溪側斜視** | [![北投圖書館模型：溪側長面](previews/north.png)](previews/north.png)<br>**溪側長面** |
 | [![北投圖書館模型：公園服務面](previews/south.png)](previews/south.png)<br>**公園服務面** | [![北投圖書館模型：高玻璃端](previews/east.png)](previews/east.png)<br>**高玻璃端** | [![北投圖書館模型：低端](previews/west.png)](previews/west.png)<br>**低端** |
 | [![北投圖書館模型：整體屋頂](previews/top.png)](previews/top.png)<br>**整體屋頂** | [![北投圖書館模型：屋頂分區](previews/roof-detail.png)](previews/roof-detail.png)<br>**屋頂分區** | [![北投圖書館模型：同一完整網格高度18mm布林切面](previews/ground-plan.png)](previews/ground-plan.png)<br>**同一完整網格高度18mm布林切面** |
+
+臺北市立圖書館北投分館的**完整歷史原設計外觀近似模型**：以 2006 年完成設計、2008 年出版資料及建築師未註拍攝日期的完成照片互相核對。**不是 2026 年整修後現況、不是測量或施工圖。**
+
+## 模型預覽
+
+以下九張均由本包實際模型渲染，不是來源照片；點選圖片可看原尺寸。
+
 
 ## 包含什麼
 

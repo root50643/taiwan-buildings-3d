@@ -1,10 +1,13 @@
 # 懷恩樓（約2021外觀近似，未含2024光電）
 
-## 2 材質外觀版（2026-10-21）
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 歷史主屋面同系統／牆面中性<br>![背面](appearance/previews/rear.png) |  |
+
+## 2 材質外觀版（2026-10-21）
+
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/cycuhuaien-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 

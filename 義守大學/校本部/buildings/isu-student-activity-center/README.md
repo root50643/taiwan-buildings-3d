@@ -1,10 +1,13 @@
 # 義守大學｜校本部｜學生活動中心
 
-2022正面/西側照片與2024全屋頂為主要依據，2009池側及官方其他角度補證的完整主體有界近似；不是測繪、同年完整復原或全校完成。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面<br>![正面 actual STL](previews/front.png) | 背面<br>![背面 actual STL](previews/rear.png) |  |
+
+2022正面/西側照片與2024全屋頂為主要依據，2009池側及官方其他角度補證的完整主體有界近似；不是測繪、同年完整復原或全校完成。
+
 
 [頂圖](previews/top.png) · [側東](previews/east.png) · [側西](previews/west.png) · [正立向](previews/north.png) · [斜俯視](previews/aerial.png)
 

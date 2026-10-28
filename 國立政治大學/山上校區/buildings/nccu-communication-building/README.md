@@ -1,5 +1,11 @@
 # 國立政治大學｜傳播學院主樓
 
+## 模型預覽
+
+| 正面 | 背面 | 頂視 |
+| :---: | :---: | :---: |
+| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
+
 [山上校區圖鑑](../../README.md) · [政大圖鑑](../../../README.md) · [全部模型](../../../../README.md)
 
 官方 PDF 所記錄的外觀與平面參考版；照片攝年未知，非已核 2026 現況。不是實測模型，尚未實體試印，不稱可直接列印。
@@ -26,8 +32,5 @@ B1 寬廣左側下部、1–3F 寬廣主體、4F L 形教室翼、3F 低頂、�
 
 ## 模型預覽與下載
 
-| 正面 | 背面 | 頂視 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
 
 [可編輯 Blend](scene.blend) · [彩色 3MF](model.3mf) · [單色 STL](model.stl) · [重建來源 ZIP](rebuild-source.zip) · [來源](SOURCES.md) · [數值檢驗及製造限制](QA.md)

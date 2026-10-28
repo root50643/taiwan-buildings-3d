@@ -1,11 +1,14 @@
 # 國立高雄大學綜合第一大樓主長翼及端部玻璃塔
 
-依官方歷史照片與宿舍改善平面製作的外觀近似。僅主長翼及高玻璃端塔，不含另一端相連大廳、地下餐廳完整外露、下沉廣場、道路或背景樓。不是全棟現況測繪。
+## 模型預覽
 
 | 實際模型 | 實際模型 | 實際模型 |
 | :---: | :---: | :---: |
 | ![總覽](previews/front.png) | ![街側](previews/street_elevation.png) | ![端塔](previews/tower_end.png) |
 | ![內側](previews/courtyard.png) | ![模型頂視](previews/top.png) | ![玻璃塔近觀](previews/tower_detail.png) |
+
+依官方歷史照片與宿舍改善平面製作的外觀近似。僅主長翼及高玻璃端塔，不含另一端相連大廳、地下餐廳完整外露、下沉廣場、道路或背景樓。不是全棟現況測繪。
+
 
 ## 下載
 [STL](model.stl) · [七色3MF](model.3mf) · [Blender](scene.blend) · [建模程式](build_model.py) · [SHA256](SHA256SUMS)

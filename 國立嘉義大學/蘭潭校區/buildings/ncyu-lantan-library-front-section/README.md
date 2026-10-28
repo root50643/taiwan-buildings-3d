@@ -1,12 +1,15 @@
 # 國立嘉義大學｜蘭潭圖書資訊館前棟段
 
-## 雙端上圓筒與錐頂前半限域配色（2026-10-23）
-
-[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/ncyu-lantan-library-front-section-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![圖資前棟截段雙端上圓筒與錐頂前半配色代理](appearance/previews/front.png) |  |  |
+
+## 雙端上圓筒與錐頂前半限域配色（2026-10-23）
+
+[五視角、來源與限制](appearance/README.md) · [彩色3MF](appearance/ncyu-lantan-library-front-section-appearance.3mf) · [可編輯Blender](appearance/scene.blend)
+
 
 僅對雙端上圓筒前半外皮264面暖白、錐屋面前半128面銀灰，共392完整原面約688.827664mm²；窗洞、灰圈、水平頂盤、背半及主牆皆中性。原6510面座標、面序及STL bytes不變，不切面、不增套。仍是前棟截段，不是完整館舍；半面色界為證據範圍，不是真實材料接縫。正面官照拍攝日未知，斜角EXIF與XMP原拍2018-05-30、修改2018-10-11，不稱2026現況。照片不分發，原幾何近似與未實體試印限制保留。
 

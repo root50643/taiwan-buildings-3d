@@ -1,10 +1,13 @@
 # 國立臺北商業大學｜桃園校區弘毅樓
 
-全形量體與有證立面近似；未知立面及光電未完整重建。非測繪、非全棟完整復原，也不代表 2026 年現況。
+## 模型預覽
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 院落及已核側<br>![實際STL正面](previews/front.png) | 未核側與背面<br>![實際STL背面](previews/rear.png) |  |
+
+全形量體與有證立面近似；未知立面及光電未完整重建。非測繪、非全棟完整復原，也不代表 2026 年現況。
+
 
 [正立面](previews/elevation.png) · [已核外側](previews/east.png) · [頂視](previews/top.png) · [原始STL](model.stl) · [Blender](scene.blend) · [參數來源](build_model.py)
 

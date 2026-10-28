@@ -1,14 +1,17 @@
 # 國立體育大學｜綜合體育館
 
+## 模型預覽
+
+| 有限材料左前斜視 | 有限材料正立面 | 後側玻璃維持未知中性 |
+| :---: | :---: | :---: |
+| ![綜合體育館有限材料示意](appearance/previews/front.png) | ![綜合體育館正立面材料示意](appearance/previews/elevation.png) | ![後側玻璃維持中性](appearance/previews/rear.png) |
+
 **範圍：既有外觀全形近似（後勤細節未核）。此為自建可列印外觀近似，不是测繪成果。**
 
 ## 原三角面的有限材料色系示意
 
 [有限材料外觀、九視角與可編修檔](appearance/README.md)：原 **30,648 個三角面、面序、角點順序與 float32 座標完全保留**，只對 **23,862 面**指定主拱頂淡黃綠、水平屋頂唇邊暖白與前側幕牆灰藍材料家族，**6,786 面維持未知中性**。不是整棟配色完成、歷史精準原色、2017完整復原或2026現況，也不新增建物／幾何；未知中性不表示實物灰色。
 
-| 有限材料左前斜視 | 有限材料正立面 | 後側玻璃維持未知中性 |
-| :---: | :---: | :---: |
-| ![綜合體育館有限材料示意](appearance/previews/front.png) | ![綜合體育館正立面材料示意](appearance/previews/elevation.png) | ![後側玻璃維持中性](appearance/previews/rear.png) |
 
 下載[可編修 Blender](appearance/ntsu-arena-appearance.blend)、[逐面材質3MF](appearance/ntsu-arena-appearance.3mf)；[公開Python重建](appearance/source/rebuild.py)只需原公開STL、數值參數、色盤與程式，不需照片。來源照片攝影日期未定，活動標誌、PDF metadata及上傳路徑都不當精確拍攝日；色碼未校正。白色只到水平唇邊，不延伸至垂直環梁／簷底／V柱；後玻璃、環臺、凸橫帶與其餘面不推色。原STL、Blend、4張預覽、幾何QA與支撐限制全部保留，未新增實體或多色試印驗證。
 

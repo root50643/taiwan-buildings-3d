@@ -1,0 +1,89 @@
+{
+  "reviewer": "independent-source-candidate-agent",
+  "review_time_utc": "2026-10-27T17:04:44.473428+00:00",
+  "status": "pass_with_documented_limitations",
+  "scope": "Historical source-bounded exterior geometry and visual QA; not survey/current condition/physical print approval",
+  "files_reviewed": [
+    "private/plan.pdf",
+    "private/od.jpg",
+    "private/front.jpg",
+    "output/build_model.py",
+    "output/previews/front.png",
+    "output/previews/front_elevation.png",
+    "output/previews/rear.png",
+    "output/previews/left_end.png",
+    "output/previews/top.png",
+    "output/previews/entry_detail.png"
+  ],
+  "build_source_sha256": "64c6e5fb6d0ce37470f3a3c2d7541b49e91620d49923605e506500d5a3a29030",
+  "passes": [
+    {
+      "id": "mass_topology",
+      "finding": "Long high nave with lower longitudinal side service strip, projecting perpendicular office wing, and shorter rear/backstage mass matches official floorplan topology."
+    },
+    {
+      "id": "gable_front",
+      "finding": "Low-pitch gable, inward-tapering tall envelope, central tall glazing, wide entrance canopy and coral band are present, matching official diagram and front photographs."
+    },
+    {
+      "id": "conservative_hidden_facades",
+      "finding": "Unphotographed rear apertures are not filled with speculative dense repeated windows; plain treatment acceptable if limitations disclosed."
+    },
+    {
+      "id": "side_window_count",
+      "finding": "Revised preview and source show6 windows with unwindowed front foyer bay."
+    },
+    {
+      "id": "free_side_sill",
+      "finding": "Revised left_end/rear previews show tall free-side windows extending to near ground; service-side windows remain above low roof."
+    },
+    {
+      "id": "roof_frames",
+      "finding": "Revised roof portal frames continuously cross both gable halves, eliminating initial triangular eave stubs."
+    },
+    {
+      "id": "top_framing",
+      "finding": "Final top image includes the entire model and support with margin on all sides; main nave and L-like accessory outline can be inspected."
+    },
+    {
+      "id": "six_preview_review",
+      "finding": "All six final images inspected: front, front_elevation, rear, left_end, top, entry_detail. No unresolved major exterior/topology or framing blocker within declared approximation scope."
+    }
+  ],
+  "nonblocking_limitations": [
+    "Overall external dimensions, foyer depth, low-wing heights and roof thickness inferred; only selected interior plan dimensions explicitly given.",
+    "Rear stage projection top and rear-wall details are not verified by full exterior photograph; retain as declared approximation.",
+    "Window colours/counts in office wing and mullion subdivisions approximate, not survey exact.",
+    "No physical test print; manifold/closed mesh does not establish printability."
+  ],
+  "revision_review_pending": false,
+  "resolved_findings": [
+    {
+      "id": "side_window_count",
+      "finding": "Official axonometric appears to show six side windows while source emits seven; first at y2.1 lies in approximate foyer region before audience hall. Reconcile against source; likely remove y2.1 window and retain six in hall."
+    },
+    {
+      "id": "free_side_window_sill",
+      "finding": "Rendered free-side windows start at3.55m, leaving large unsupported blank lower wall, whereas photographs show tall near-ground windows. Parent already plans lowering to0.8m; rerender required."
+    },
+    {
+      "id": "roof_portal_ribs",
+      "finding": "Initial render has disconnected triangular rib stubs at eaves and no transverse roof portal frames, unlike official axon. Parent plans adding cross-roof frame; rerender required."
+    },
+    {
+      "id": "top_framing",
+      "finding": "Revised top.png clips or touches rear accessory roof at upper image boundary and crops display base. Increase orthographic scale or recenter so full model silhouette remains visible."
+    }
+  ],
+  "blockers": [],
+  "source_date_note": "Plan PDF title explicitly says2016 and metadata created2016-01-05; not a2026 survey.",
+  "preview_sha256": {
+    "entry_detail.png": "b38eac85eb8463389d282da53f4b04c579b6520ea828dcd5761171784531ab7a",
+    "rear.png": "69d73b670131830ce4e8e24a05d98ba2f7c6a86fa252acfd6ed0ec0813c1da11",
+    "front.png": "e0762fdf94f7faaeab5060704a644f3765d1d6ac3394eaa1fb36afa6e61b075e",
+    "front_elevation.png": "cc8a755a9ba5674df02899a97f9a4b72b419ff1185a45727ae5de41bc062fa09",
+    "top.png": "d69283b36a1fb2ea3d3a87f3c6b88b28136d966b4d80448b9edc835e14e9ac87",
+    "left_end.png": "5f120b2a69615d600b99e4ec58fa49a6dce2ef53fd2945cd433b38bc2729f74e"
+  },
+  "decision": "Accept as source-bounded exterior display reconstruction, not a current-condition accurate replica or tested printable model. No publication performed by reviewer."
+}

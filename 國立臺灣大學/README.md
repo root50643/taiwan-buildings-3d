@@ -1,8 +1,8 @@
 # 國立臺灣大學：公開外觀3D列印模型
 
-本校 **51 套**，其中校總區 **45 套**；套件數不等於整棟建築數，非全校完成。
+本校 **52 套**，其中校總區 **46 套**；套件數不等於整棟建築數，非全校完成。
 
-目前收錄51件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區（含臺大醫院場域）；另收校外溪頭實驗林樹之歌2019單棟及銀杏橋2017完整橋梁；溪頭合計2套，城中竹木隧道與溪頭兩件均非校總區，非2026現況調查。不是全校完成，也不是51棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
+目前收錄52件有明示範圍的外觀近似模型，分布於校總區、竹北校區、雲林校區、城中校區（含臺大醫院場域）；另收校外溪頭實驗林樹之歌2019單棟及銀杏橋2017完整橋梁；溪頭合計2套，城中竹木隧道與溪頭兩件均非校總區，非2026現況調查。不是全校完成，也不是52棟完整測繪模型；前部、歷史狀態或局部入口段的範圍以各詳頁為準。地質標本小屋與地質館前棟是不同實體，但不等於兩個官方索引項目。
 
 既有43件含STL、OBJ、Blender場景、可攜式參數化來源、原STL正背預覽及繁體中文來源說明。既有件獨立最長150mm；新增校門段為154mm展示寬，不能當同一比例校園拼接；來源照片未重新散布。
 
@@ -37,9 +37,10 @@
 | [<img src="校總區/buildings/ntu-social-sciences-main/previews/front.png" alt="社會科學院主棟" width="220">](校總區/buildings/ntu-social-sciences-main/README.md)<br>**[社會科學院主棟](校總區/buildings/ntu-social-sciences-main/README.md)** | [<img src="校總區/buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](校總區/buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](校總區/buildings/ntu-historic-gate-front-segment/README.md)** | [<img src="校總區/buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](校總區/buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](校總區/buildings/ntu-fu-bell-pavilion/README.md)** |
 | [<img src="校總區/buildings/ntu-si-nian-memorial-hall/previews/front.png" alt="國立臺灣大學｜傅園斯年堂：實際模型預覽" width="220">](校總區/buildings/ntu-si-nian-memorial-hall/README.md)<br>**[國立臺灣大學｜傅園斯年堂](校總區/buildings/ntu-si-nian-memorial-hall/README.md)** | [<img src="城中校區/buildings/ntu-hospital-bam-wood-hut-2018/previews/front.png" alt="臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）：實際模型預覽" width="220">](城中校區/buildings/ntu-hospital-bam-wood-hut-2018/README.md)<br>**[臺大醫院國際會議中心前廣場｜竹木隧道 Bam-Wood Hut（2018）](城中校區/buildings/ntu-hospital-bam-wood-hut-2018/README.md)** | [<img src="溪頭實驗林/buildings/ntu-xitou-tree-song/previews/front.png" alt="臺灣大學溪頭實驗林｜樹之歌木屋（2019）：實際模型預覽" width="220">](溪頭實驗林/buildings/ntu-xitou-tree-song/README.md)<br>**[臺灣大學溪頭實驗林｜樹之歌木屋（2019）](溪頭實驗林/buildings/ntu-xitou-tree-song/README.md)** |
 | [<img src="溪頭實驗林/buildings/ntu-xitou-ginkgo-bridge-2017/previews/front.png" alt="銀杏橋（2017竣工外觀近似）：實際模型預覽" width="220">](溪頭實驗林/buildings/ntu-xitou-ginkgo-bridge-2017/README.md)<br>**[銀杏橋（2017竣工外觀近似）](溪頭實驗林/buildings/ntu-xitou-ginkgo-bridge-2017/README.md)** | [<img src="校總區/buildings/ntu-odeum/previews/front.png" alt="國立臺灣大學雅頌坊｜全外觀近似模型：實際模型預覽" width="220">](校總區/buildings/ntu-odeum/README.md)<br>**[國立臺灣大學雅頌坊｜全外觀近似模型](校總區/buildings/ntu-odeum/README.md)** | [<img src="校總區/buildings/ntu-luming-main-historical/previews/front.png" alt="臺大鹿鳴堂主館 — 歷史外觀近似：實際模型預覽" width="220">](校總區/buildings/ntu-luming-main-historical/README.md)<br>**[臺大鹿鳴堂主館 — 歷史外觀近似](校總區/buildings/ntu-luming-main-historical/README.md)** |
+| [<img src="校總區/buildings/ntu-xiaofu-historic/previews/front.png" alt="臺大小福樓：1981–1986 年歷史外觀簡化模型：實際模型預覽" width="220">](校總區/buildings/ntu-xiaofu-historic/README.md)<br>**[臺大小福樓：1981–1986 年歷史外觀簡化模型](校總區/buildings/ntu-xiaofu-historic/README.md)** |  |  |
 
 ## 清冊與版本
-[全校待辦與來源缺口](inventory/README.zh-TW.md) · [51件現行索引](model-index.json) · [既有批次SHA256（歷史清單）](SHA256SUMS) · [雅頌坊完整SHA256](校總區/buildings/ntu-odeum/SHA256SUMS) · [批次紀錄](batches/)
+[全校待辦與來源缺口](inventory/README.zh-TW.md) · [52件現行索引](model-index.json) · [既有批次SHA256（歷史清單）](SHA256SUMS) · [雅頌坊完整SHA256](校總區/buildings/ntu-odeum/SHA256SUMS) · [批次紀錄](batches/)
 
 [下一階段逐項來源與缺口](inventory/CONTINUE.zh-TW.md) · [第12批補查](qa/batch12-20261013/README.zh-TW.md) · [第13批補查](qa/batch13-20261013/README.zh-TW.md)
 
@@ -85,3 +86,6 @@
 
 鹿鳴堂主館歷史外觀近似：2001官方規劃足跡與多面歷史照片界定主量體；尺寸皆估計，背面及對側中性化，未確認後方附屬排除。不是完整館群或2026現況測繪，未試印。
 [鹿鳴堂主館 SHA256](校總區/buildings/ntu-luming-main-historical/SHA256SUMS)
+
+小福樓1981–1986歷史外觀近似：1981官方竣工平面與加梯前照片支持三層L型及斜切內角；尺寸皆估計，未知後立面開口未細化，不混入1987後改造。不是2026現況測繪，未試印。
+[小福樓1981–1986 SHA256](校總區/buildings/ntu-xiaofu-historic/SHA256SUMS)

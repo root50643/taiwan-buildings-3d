@@ -1,12 +1,12 @@
 # 國立臺灣大學 校總區
 
-本校 **51 套**，其中校總區 **45 套**；套件數不等於整棟建築數，非全校完成。
+本校 **52 套**，其中校總區 **46 套**；套件數不等於整棟建築數，非全校完成。
 
 [返回臺大總圖鑑](../README.md)
 
-本校區目前45件外觀近似，不代表全部建築完成。既有件獨立150mm；新增校門段154mm展示寬；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
+本校區目前46件外觀近似，不代表全部建築完成。既有件獨立150mm；新增校門段154mm展示寬；詳頁載明前部/歷史形貌與未見面限制，尚未正式切片或試印。
 
-原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為45件現行版本的校區入口。
+原[README.zh-TW.md](README.zh-TW.md)、batch-validation.json及remaining-queue.json保留為首批5件歷史紀錄；本README.md為46件現行版本的校區入口。
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -25,6 +25,7 @@
 | [<img src="buildings/ntu-wancai-main/previews/front.png" alt="萬才館（主棟與前階梯段）" width="220">](buildings/ntu-wancai-main/README.md)<br>[萬才館（主棟與前階梯段）](buildings/ntu-wancai-main/README.md) | [<img src="buildings/ntu-bory-hall/appearance/previews/front.png" alt="博理館" width="220">](buildings/ntu-bory-hall/README.md)<br>[博理館](buildings/ntu-bory-hall/README.md) | [<img src="buildings/ntu-chemical-engineering-entry/previews/front.png" alt="化學工程館正門入口段" width="220">](buildings/ntu-chemical-engineering-entry/README.md)<br>[化學工程館正門入口段](buildings/ntu-chemical-engineering-entry/README.md) |
 | [<img src="buildings/ntu-social-sciences-main/previews/front.png" alt="社會科學院主棟" width="220">](buildings/ntu-social-sciences-main/README.md)<br>[社會科學院主棟](buildings/ntu-social-sciences-main/README.md) | [<img src="buildings/ntu-historic-gate-front-segment/previews/front.png" alt="國立臺灣大學歷史校門：弧形前牆與內側雙行人門段：實際模型預覽" width="220">](buildings/ntu-historic-gate-front-segment/README.md)<br>**[國立臺灣大學歷史校門：弧形前牆與內側雙行人門段](buildings/ntu-historic-gate-front-segment/README.md)** | [<img src="buildings/ntu-fu-bell-pavilion/previews/front.png" alt="國立臺灣大學｜傅鐘鐘亭：實際模型預覽" width="220">](buildings/ntu-fu-bell-pavilion/README.md)<br>**[國立臺灣大學｜傅鐘鐘亭](buildings/ntu-fu-bell-pavilion/README.md)** |
 | [<img src="buildings/ntu-si-nian-memorial-hall/previews/front.png" alt="國立臺灣大學｜傅園斯年堂：實際模型預覽" width="220">](buildings/ntu-si-nian-memorial-hall/README.md)<br>**[國立臺灣大學｜傅園斯年堂](buildings/ntu-si-nian-memorial-hall/README.md)** | [<img src="buildings/ntu-odeum/previews/front.png" alt="國立臺灣大學雅頌坊｜全外觀近似模型：實際模型預覽" width="220">](buildings/ntu-odeum/README.md)<br>**[國立臺灣大學雅頌坊｜全外觀近似模型](buildings/ntu-odeum/README.md)** | [<img src="buildings/ntu-luming-main-historical/previews/front.png" alt="臺大鹿鳴堂主館 — 歷史外觀近似：實際模型預覽" width="220">](buildings/ntu-luming-main-historical/README.md)<br>**[臺大鹿鳴堂主館 — 歷史外觀近似](buildings/ntu-luming-main-historical/README.md)** |
+| [<img src="buildings/ntu-xiaofu-historic/previews/front.png" alt="臺大小福樓：1981–1986 年歷史外觀簡化模型：實際模型預覽" width="220">](buildings/ntu-xiaofu-historic/README.md)<br>**[臺大小福樓：1981–1986 年歷史外觀簡化模型](buildings/ntu-xiaofu-historic/README.md)** |  |  |
 
 [六材質外觀與來源界線](buildings/ntu-liberal-arts/appearance/README.md)
 
@@ -41,3 +42,5 @@
 雅頌坊主廳、側服務翼、垂直辦公翼與後台之外觀近似：2016官方平面及歷史/未標拍攝日官方圖像支持主量體，附翼高度與後牆細節部分推定；非2026現況測繪，未試印。
 
 鹿鳴堂主館歷史外觀近似：2001官方規劃足跡與多面歷史照片界定主量體；尺寸皆估計，背面及對側中性化，未確認後方附屬排除。不是完整館群或2026現況測繪，未試印。
+
+小福樓1981–1986歷史外觀近似：1981官方竣工平面與加梯前照片支持三層L型及斜切內角；尺寸皆估計，未知後立面開口未細化，不混入1987後改造。不是2026現況測繪，未試印。

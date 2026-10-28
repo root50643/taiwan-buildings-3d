@@ -1,0 +1,61 @@
+{
+  "reviewer": "Independent source/visual review agent",
+  "reviewed_utc": "2026-10-27T17:31:49.548058+00:00",
+  "passed": true,
+  "status": "PASS_WITH_DECLARED_HISTORICAL_SIMPLIFICATIONS",
+  "review_scope": "Actual pixel inspection of five final renders (front, front_elevation, top, rear, entry_detail) against five official reference images; not quantitative survey, all 6-view inspection, mesh QA or printing validation.",
+  "reviewed_output_sha256": {
+    "previews/front.png": "588c8f3a7ebfaa97c271e8852dfb39d711f5a7ee6d39fdf66809e581b3968a5b",
+    "previews/top.png": "dcbc74b2444b107f6fc0643f06b7b9004c686a92856fe6c00aead17275c771a2",
+    "previews/rear.png": "1c21d0cb93e958d45873a5a2f919b582bf1c1295f8868031987859d34eef6fa7",
+    "previews/entry_detail.png": "ee8a596856b0a65ad5f548b03ac93f7f1e1a43c2778843edaeb959b498c25c78",
+    "README.md": "a07b2cf2e1595b0421d5dc211a5594890e6edaf42c42b805289b292e24d081dc",
+    "build_model.py": "f44bfd0dc8a5a5cbcaba40edbdc336d96cd91a20c8897c85390a046a425a4f6e",
+    "BLEND-QA.json": "941d0973c1bb3586224bce48a4f7a6b900eb3264f7b5d1f2da1584831fd506f1",
+    "previews/front_elevation.png": "a2b6b897899607a1c1c982af3d594497d8a58004daf79a531fb19e60685f0814"
+  },
+  "reference_sha256": {
+    "fig3.jpg": "b92ae2a3e06219acc05826446c43ef7076b8c58a8c9cfd0172409876e47029a3",
+    "fig4.jpg": "597f2f3d16db0cbc1b3e26e91791834a723b2723312e2539457cb0b3e1666773",
+    "fig5.jpg": "57524adbaed2940d340c97f96fbf20db7b1abecab7fa270da5fb462271099227",
+    "fig6.jpg": "06f7a86cfbe2192175c8d0890a56079b281396531b2295c6dc608e912c5fa386",
+    "fig10.jpg": "aff2e0b9ce5320ed8e0db2ae304c15fc17e94f29979983ac24e7b800ca878631"
+  },
+  "iteration_history": [
+    {
+      "status": "FAIL",
+      "finding": "Initial mixed/in-progress render set showed an unsupported horizontal parapet spur extending inward across roof beside courtyard chamfer, visible in top and entry_detail.",
+      "action": "Builder identified old preview, shortened horizontal parapet start from nominal x=13 to x=19, and regenerated complete render set."
+    },
+    {
+      "status": "PASS",
+      "finding": "After BLEND-QA.json appeared, newly viewed top and entry_detail show continuous courtyard parapet without unsupported inward spur."
+    },
+    {
+      "status": "FAIL",
+      "finding": "Parent reviewer identified original front base left/right clipping missed by initial independent visual check; full display base requires margin.",
+      "action": "Builder enlarged front/front_elevation camera orthographic scale from250 to295 and rerendered both images."
+    },
+    {
+      "status": "PASS",
+      "finding": "Independently reopened final front and front_elevation. Full visible base silhouette is inside frame; left/right image margins are approximately82px on1200px canvas. Front shows clear top/bottom margin and no protruding roof parapet. Rear base corner is naturally occluded by building, not image clipping."
+    }
+  ],
+  "checks_passed": [
+    "Plan topology is L-shaped with chamfered re-entrant courtyard corner, consistent with official upper-floor diagram at simplified-outline level.",
+    "Three visible storeys; ground-level broad shopfront apertures distinct from two upper levels of slender fins.",
+    "No later steel/RC central stair, glass canopy, modern signage or climbing vegetation is represented.",
+    "Flat roof and two small end-volume interpretations are present; no neighbouring pitched tiled roof was mistakenly attached.",
+    "Reviewed renders show no conspicuous clipping, detached facade components or camera obstruction after correction.",
+    "README explicitly identifies estimated nominal dimensions, non-current historical scope, opaque glazing, guessed stairhead sizes, unknown rear elevation detail and lack of trial print.",
+    "Final front and front_elevation display base visible extents are fully within frame, with substantial margin; no crop at left/right/top/bottom. Close-up entry_detail intentionally crops surrounding building."
+  ],
+  "limitations": [
+    "This passes only as an explicitly approximate 1981-1986 exterior interpretation, not a precise restoration.",
+    "Unseen rear facades remain blank placeholders, not evidence of original blind walls. Retain this caveat alongside images.",
+    "Fin count, window/door position and proportions, exact floor heights, roof parapet size, stairhead height and colours are not independently measurable from supplied low-resolution images.",
+    "Floor-plan outlines may include slabs/eaves. Model uses one simplified shell rather than asserting precise per-storey wall footprint.",
+    "No interiors, underground basement, real terrain, roof services or trial print are validated."
+  ],
+  "open_blocking_findings": []
+}

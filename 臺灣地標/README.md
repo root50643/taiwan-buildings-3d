@@ -1,10 +1,10 @@
-# 臺灣地標｜43 組外觀研究模型包
+# 臺灣地標｜44 組外觀研究模型包
 
-收錄 43 組臺灣地標相關外觀研究模型包（含局部研究，不等於43棟完整建築），提供原創參數化模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。另新增臺北府城北門／承恩門：依2017–2022公開來源系列建立的完整歷史外觀近似，保留真實透空拱形門洞、四向上層開口與連續瓦屋頂；照片拍攝及插入日期不明，F02與F04為同一短向面，不是確定拍攝年份的測繪復原或2026現況。另新增旗後燈塔完整連接主建築：依2020年第一期竣工圖與完成照片建立八角塔、短連接頸及整個辦公展示翼的單棟外觀近似，保留四向開口差異、低平翼頂及開放塔側退凹；不含整個園區，不是2026現況測繪。完成照片支持的燈室白色斜格與上緣、玻璃下暗帶已逐構件勘誤，色值仍為未校準近似。各包尺寸與列印限制請讀專屬README。
+收錄 44 組臺灣地標相關外觀研究模型包（含局部研究，不等於44棟完整建築），提供原創參數化模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。另新增臺北府城北門／承恩門：依2017–2022公開來源系列建立的完整歷史外觀近似，保留真實透空拱形門洞、四向上層開口與連續瓦屋頂；照片拍攝及插入日期不明，F02與F04為同一短向面，不是確定拍攝年份的測繪復原或2026現況。另新增旗後燈塔完整連接主建築：依2020年第一期竣工圖與完成照片建立八角塔、短連接頸及整個辦公展示翼的單棟外觀近似，保留四向開口差異、低平翼頂及開放塔側退凹；不含整個園區，不是2026現況測繪。完成照片支持的燈室白色斜格與上緣、玻璃下暗帶已逐構件勘誤，色值仍為未校準近似。各包尺寸與列印限制請讀專屬README。
 
 ## 使用前先讀
 
-- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。43組模型包並非共同比例，不能用來反推真實建築尺寸。
+- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。44組模型包並非共同比例，不能用來反推真實建築尺寸。
 - 模型依公開外觀照片等資料重新建立幾何，屬桌上型外觀詮釋，並非測繪、工程或官方授權模型。未確認的背面、屋頂與細節可能經過推定、簡化及加粗。
 - 數位網格驗證不等同切片或實體試印成功。尚未完成實際切片測試及實體試印；列印前請檢查逐層路徑、薄壁、懸垂、支撐與拆除空間。
 - STL 不包含預覽材質或色彩。Blender 場景的地板、相機、燈光只供預覽，請勿當作列印模型匯出。
@@ -30,7 +30,7 @@
 | [![嘉義市立美術館C棟研究模型](chiayi-art-museum-c-warehouse-exterior-study/previews/front.png)](chiayi-art-museum-c-warehouse-exterior-study/README.md)<br>**[嘉義市立美術館C棟（限定外觀研究模型）](chiayi-art-museum-c-warehouse-exterior-study/README.md)** | [![嘉義市立美術館A棟研究模型](chiayi-art-museum-a-heritage-office-exterior-study/previews/front.png)](chiayi-art-museum-a-heritage-office-exterior-study/README.md)<br>**[嘉義市立美術館A棟（限定外觀研究模型）](chiayi-art-museum-a-heritage-office-exterior-study/README.md)** | [![嘉義市立美術館B棟研究模型](chiayi-art-museum-b-new-wing-exterior-study/previews/front.png)](chiayi-art-museum-b-new-wing-exterior-study/README.md)<br>**[嘉義市立美術館B棟（限定外觀研究模型）](chiayi-art-museum-b-new-wing-exterior-study/README.md)** |
 | [![淡水小白宮主體研究模型](tamsui-little-white-house-main-body-study/previews/front.png)](tamsui-little-white-house-main-body-study/README.md)<br>**[淡水小白宮（主體與三面拱廊研究模型）](tamsui-little-white-house-main-body-study/README.md)** | [![屏東藝術館前入口正面局部研究模型](pingtung-art-hall-front-entrance-partial-study/previews/front.png)](pingtung-art-hall-front-entrance-partial-study/README.md)<br>**[屏東藝術館（前入口正面局部研究模型包）](pingtung-art-hall-front-entrance-partial-study/README.md)** | [![王大閎建築劇場2017復建主體外觀研究模型](wang-dahong-house-theatre-2017-main-body-study/previews/front.png)](wang-dahong-house-theatre-2017-main-body-study/README.md)<br>**[王大閎建築劇場（2017復建主體研究）](wang-dahong-house-theatre-2017-main-body-study/README.md)** |
 | [![帝國製糖臺中營業所歷史主體外觀研究模型](imperial-sugar-taichung-office-historic-body-study/previews/front.png)](imperial-sugar-taichung-office-historic-body-study/README.md)<br>**[帝國製糖臺中營業所（歷史主體研究）](imperial-sugar-taichung-office-historic-body-study/README.md)** | [![臺中刑務所浴場修後主體外觀研究模型](taichung-prison-bathhouse/previews/front.png)](taichung-prison-bathhouse/README.md)<br>**[臺中刑務所浴場（修後主體研究）](taichung-prison-bathhouse/README.md)** | [![原臺中刑務所典獄官舍修後主體外觀研究模型](taichung-prison-warden-residence-main-body-study/previews/front.png)](taichung-prison-warden-residence-main-body-study/README.md)<br>**[原臺中刑務所典獄官舍（修後主體研究）](taichung-prison-warden-residence-main-body-study/README.md)** |
-| [![林之助畫室調查主體截取外觀研究模型](lin-chih-chu-studio-survey-core/previews/front.png)](lin-chih-chu-studio-survey-core/README.md)<br>**[林之助畫室（調查主體截取研究）](lin-chih-chu-studio-survey-core/README.md)** |  |  |
+| [![林之助畫室調查主體截取外觀研究模型](lin-chih-chu-studio-survey-core/previews/front.png)](lin-chih-chu-studio-survey-core/README.md)<br>**[林之助畫室（調查主體截取研究）](lin-chih-chu-studio-survey-core/README.md)** | [![北斗郡守官舍修復主體外觀研究模型](beidou-governor-residence-restoration-main/previews/front.png)](beidou-governor-residence-restoration-main/README.md)<br>**[北斗郡守官舍（修復主體研究）](beidou-governor-residence-restoration-main/README.md)** |  |
 
 ## 模型目錄與實際預覽
 
@@ -386,3 +386,5 @@
 原臺中刑務所典獄官舍修後主體外觀近似研究，含和洋兩館與架空緣廊，不含庭園室內或浴場；缺完整修後背照，未攝後端面依圖表推定，69尺為歷史主立面控制而非現況全外包，非竣工測繪，未試印。
 
 林之助畫室調查報告主體截取外觀研究，含雙併核心、西服務翼與東南畫室，非修後全館；北附屋排除為人工研究截界而非已拆判定，灰封口非真實後牆，不含未定位現代坡道，尺度估讀，未試印。
+
+北斗郡守官舍修復報告主體外觀近似研究，含主屋、前後廊、東廚房突出部及北衛浴翼；不含獨立紅磚附屋23-1、庭園圍牆室內，後側與屋頂依修復圖推定非現照逐面核實，尺度為圖面軸線控制，屋頂門窗細節近似，未試印。

@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "vertices": true,
+    "faces": true,
+    "materials": true,
+    "build_model.py_bytes_match": true,
+    "render_model.py_bytes_match": true,
+    "model.stl_bytes_match": true,
+    "construction-parts.json_bytes_match": true,
+    "editable-parts.json_bytes_match": true,
+    "build-summary.json_bytes_match": true,
+    "3mf_all_members_match": true
+  },
+  "passed": true,
+  "method": "Independent clean-directory rebuild using copied scripts; exact arrays/STL/JSON/3MF member contents, disregarding ZIP timestamps.",
+  "render_check": {
+    "views": 6,
+    "all_pixels_equal": true,
+    "maximum_channel_difference": 0,
+    "container_metadata_may_differ": true
+  },
+  "comment_revision_handling": "Final script comment-only revision verified by equal Python AST, then copied and build re-executed; final script bytes match candidate."
+}

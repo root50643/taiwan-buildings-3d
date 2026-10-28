@@ -1,0 +1,1 @@
+幾何QA見QA.json、Blender重開見BLEND-QA.json、獨立照片/渲染比對見visual-review.json。通過僅限有界外觀近似及格式，不代表實體試印、完整管路拓樸或現況。

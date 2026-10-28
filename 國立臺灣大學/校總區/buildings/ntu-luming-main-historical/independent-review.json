@@ -1,0 +1,97 @@
+{
+  "reviewer": "independent child agent luming_evidence_review",
+  "reviewed_at_utc": "2026-10-27T17:18:44.925882+00:00",
+  "status": "conditional_pass",
+  "blocking_findings": [],
+  "scope": "Historical approximate main hall only; not full annex/site reconstruction, measured survey or current-state verification",
+  "actual_source_images_viewed": [
+    "private/plan-p20.png",
+    "private/photo-1.jpg",
+    "private/photo-2.jpg",
+    "private/photo-3.jpg",
+    "private/photo-8.jpg",
+    "private/photo-9.jpg",
+    "private/photo-13.jpg",
+    "private/photo-14.jpg"
+  ],
+  "actual_final_renders_viewed": [
+    "previews/entry_detail.png",
+    "previews/front.png",
+    "previews/front_elevation.png",
+    "previews/left_end.png",
+    "previews/rear.png",
+    "previews/top.png"
+  ],
+  "visual_checks": {
+    "main_rectangular_tall_hall": "pass",
+    "front_three_relief_fields_and_two_red_columns": "pass",
+    "observed_long_side_windows_terrace_canopy_and_stair": "pass_approximate",
+    "shallow_longitudinal_roof": "pass_approximate",
+    "rear_and_far_side_neutral": "pass_disclosed_unknown",
+    "no_invented_rear_annex": "pass",
+    "front_door_relief_interference": "fixed_and_visually_rechecked",
+    "top_view_base_and_roof_unclipped": "fixed_and_visually_rechecked"
+  },
+  "independent_mesh_checks": {
+    "vertices": 6079,
+    "faces": 12494,
+    "finite": true,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1,
+    "volume_mm3": 999092.3592056688,
+    "bounds_mm": [
+      [
+        -28.0,
+        -28.0,
+        0.0
+      ],
+      [
+        124.0,
+        176.0,
+        62.20000076293945
+      ]
+    ],
+    "min_area_mm2": 8.040363354666624e-05,
+    "stl_faces": 12494,
+    "stl_watertight": true,
+    "stl_consistent": true,
+    "stl_components": 1,
+    "stl_bounds_delta_mm": 0.0,
+    "stl_volume_delta_mm3": 0.0,
+    "material_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "mf3_vertices_delta_mm": 4.94140692808287e-08,
+    "mf3_faces_match": true
+  },
+  "method": "Direct image inspection; fresh numpy/trimesh load of mesh-data.npz and STL; own union-find vertex-edge component test because optional graph engine unavailable; XML parse of 3MF compared to NPZ. Does not independently reopen Blender; scene.blend hash records delivered artifact, not a Blender QA claim.",
+  "limitations": [
+    "2001 page is a planning drawing, not as-built measured evidence; no proposed internal uses or landscaping certified.",
+    "Dimensions, shallow roof pitch, window and relief counts/spacing, porch proportions and railing section are approximate.",
+    "Rear and far-side apertures/details unresolved and deliberately neutral; annexes excluded.",
+    "Relief colour is uncalibrated and stylized; exact weathering, lettering, ornament carving, protective netting and lights omitted.",
+    "No actual physical trial print or slicer/support validation; thin rails, roof and terrace overhangs may require supports or scaling.",
+    "Main body and supporting base are merged solid; interiors not reconstructed; base not surveyed terrain."
+  ],
+  "file_sha256": {
+    "model.stl": "165ec5f0e9b000315bd776758cf3f013cb0b2c4e98b6f3743fa18079fdc53894",
+    "model.3mf": "b0173d2b00692cf50ac5973e6374b0298c79c562b627d2e43a19f04ce2919b1b",
+    "mesh-data.npz": "66bc85ebaee8e9bcfa5c417769a7b2f18f8b38b2071652a272aa1ea116b53a04",
+    "build_model.py": "97b2c488dc79e96f522328136698dde4de59c847c6f8e1f7b18cddd4e68d5167",
+    "scene.blend": "bda2a1fa88f5352f661794ba83e7c7ee253679164cd8cfe1ae65b5ded952d69f",
+    "previews/entry_detail.png": "9ce5fc9ed2706a54b065915a2f3271b1dcbe15bfb1fca2242d440ca5b81d99c0",
+    "previews/front.png": "d9bdde657635cfaf96f253335e11d6058a24b50f8d31dd9e6422db60f39c4bf3",
+    "previews/front_elevation.png": "d7da7df454db1ddc02da4dde1301f4ddf45b280eb47c825e6d5279bbf5ded531",
+    "previews/left_end.png": "d9be058bea240c6688cdf1cc59d8b85bca9c5270e7ff45a23d10b0378d389784",
+    "previews/rear.png": "fcf00f0c4c37c15bd4ef4c43d6d6828f20d05de9a0c2e3c16c0a84efd575e12b",
+    "previews/top.png": "2ded4afad21badc0b7102c0b72000bbe2da398d38f513c2f04fede6a0c864c75"
+  }
+}

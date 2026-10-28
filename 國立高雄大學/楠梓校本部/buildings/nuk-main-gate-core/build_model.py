@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+"""Original bounded main gate tower and guardhouse model, not complete school gate."""
+from pathlib import Path
+import json,zipfile,xml.etree.ElementTree as ET,math
+import numpy as np,trimesh,manifold3d as mf
+ROOT=Path(__file__).resolve().parent
+PALETTE=[{'id':'tile','name':'Warm pink granite approximation','hex':'#A68171','evidence':'four historical official photos'}, {'id':'joint','name':'Dark shallow tile joints','hex':'#6F6259','evidence':'visible grid, spacing approximate'}, {'id':'metal','name':'Light grey lamp frames','hex':'#B5B7AA','evidence':'upper corner metal racks'}, {'id':'glass','name':'Opaque dark guardhouse glazing','hex':'#3F514E','evidence':'front round glazing and side windows'}, {'id':'gold','name':'Gold school lettering','hex':'#BA9B44','evidence':'visible six-character school name; substitute font not exact calligraphy'}, {'id':'roof','name':'Neutral roof surface','hex':'#A29D8E','evidence':'unseen top neutral'}, {'id':'base','name':'Display plinth','hex':'#B3B6AD','evidence':'authored support, not full landscape'}]
+SCALE=8.
+items=[];ops=[];ids={}
+def box(a,b):return mf.Manifold.cube(np.subtract(b,a).tolist()).translate(a)
+def add(name,s,mat,evidence):
+ s=s.translate([0,0,.4]).as_original();ids[int(s.original_id())]=mat;items.append(s);ops.append({'name':name,'material':mat,'evidence':evidence})
+def bx(name,a,b,mat=0,evidence='Photo-derived approximate proportion, not measured dimension'):add(name,box(a,b),mat,evidence)
+def cy(name,cx,cy,z0,z1,r,mat,evidence):add(name,mf.Manifold.cylinder(z1-z0,r,r,64).translate([cx,cy,z0]),mat,evidence)
+W,D,H=10.,5.2,12.
+bx('Cropped display base',[-1.4,-3.5,-.4],[11.4,6.6,0],6,'Gate core only; outer gate piers, long walls, road and barriers excluded')
+bx('Main inscription tower',[0,0,-.02],[W,D,10.3],0,'Frontal rectangle and oblique side observed; depth estimate, rear neutral')
+bx('Setback upper screen',[.35,.35,10.29],[9.65,4.85,12.0],0,'Raised narrower upper screen visible in frontal photo')
+bx('Neutral top surface',[.5,.5,11.99],[9.5,4.7,12.01],5,'Unseen top surface neutral')
+# Front shallow grid follows large rectangular stone tile rhythm.
+for z in [z for z in np.arange(.73,10.3,.68) if not 7.9<z<9.5]: bx(f'Front horizontal joint {z:.2f}',[-.005,-.015,z],[10.005,.005,z+.018],1,'Visible rectangular stone grid; authored approximate spacing')
+for row,z in enumerate(np.arange(.05,10.3,.68)):
+ if 7.5<z<9.5: continue
+ for x in np.arange((row%2)*.65,10,1.3):
+  if x>.05: bx(f'Front vertical tile seam {row}-{x:.2f}',[x,-.016,z],[x+.018,.004,min(z+.68,12)],1)
+# Side tile joints do not invent openings.
+for z in np.arange(.73,10.3,.68):
+ for x in [-.014,9.996]:bx(f'Side horizontal joint {x}-{z:.2f}',[x,0,z],[x+.018,D,z+.018],1)
+bx('Tower broad top coping',[.2,.2,11.85],[9.8,5.0,12.05],0)
+# Low frontal guardhouse projection, semi-circular front glazing as seen photo2.
+bx('Guardhouse lower solid body',[2.2,-1.9,0],[7.8,.2,5.25],0)
+cy('Guardhouse rounded projecting front solid',5,-1.7,.05,3.15,1.2,0,'Rounded frontal guard cabin seen directly; rear half intersects body')
+cy('Rounded opaque glass band',5,-1.71,.55,2.9,1.22,3,'Dark curved front glass; solid surface, no interior claimed')
+# vertical mullions across visible semicircle, lower stone/coping over glass
+for ang in [195,225,255,285,315,345]:
+ a=math.radians(ang);cx=5+1.23*math.cos(a);yy=-1.71+1.23*math.sin(a)
+ bx(f'Curved glazing frame {ang}',[cx-.04,yy-.04,.48],[cx+.04,yy+.04,3.02],2)
+cy('Rounded glazing sill',5,-1.71,.35,.60,1.29,0,'Visible low solid sill')
+cy('Rounded glazing upper cap',5,-1.71,2.85,3.13,1.30,0,'Visible curved cap')
+# Flat projecting layered entrance canopy; subtle angled face simplified as rectangle.
+bx('Guardhouse overhang',[1.75,-2.25,5.05],[8.25,.25,5.35],0,'Wide shallow canopy visible; exact profile simplified')
+bx('Guardhouse stepped upper mass',[2.35,-1.65,5.33],[7.65,.15,6.2],0,'Upper canopy block photo2')
+for x in [2.65,3.10,3.55,6.20,6.65,7.10]:
+ bx(f'Front narrow upright glass {x}',[x,-1.925,.65],[x+.24,-1.895,3.9],3,'Narrow upright front openings flanking curved cabin; approximate')
+# Side lower windows from oblique photo4: count incomplete, bounded visible group.
+for y in []:
+ bx(f'Observed side lower glazing {y}',[-.022,y,.9],[.005,y+.68,3.4],3,'Three visible side positions interpreted from oblique photo; no mirrored rear openings')
+ bx(f'Observed side transom {y}',[-.035,y,2.2],[.005,y+.68,2.28],2)
+# Four corner lamp frames: only front two explicitly detailed; rear omitted.
+for x in [.45,9.05]:
+ for dx in [0,.55]:
+  bx(f'Lamp post {x}-{dx}',[x+dx,-.16,10.65],[x+dx+.075,.4,12.8],2,'Two front roof-corner louvered lamp racks visible')
+ for z in np.arange(10.78,12.81,.20):
+  bx(f'Lamp horizontal shade {x}-{z:.2f}',[x-.15,-.28,z],[x+.80,.55,z+.055],2,'Approximate horizontal shade rhythm, actual total unverified')
+ bx(f'Lamp cap {x}',[x-.18,-.30,12.81],[x+.83,.58,12.9],2)
+# Raised readable school name. Derived glyph mesh generated by make_signage.py.
+for d in json.loads((ROOT/'signage-geometry.json').read_text()):
+ tm=trimesh.Trimesh(np.array(d['vertices']),np.array(d['faces']),process=True); tm.merge_vertices(); mm=mf.Mesh(np.array(tm.vertices,np.float32),np.array(tm.faces,np.uint32)); s=mf.Manifold(mm)
+ if s.status()!=mf.Error.NoError: raise RuntimeError(str(s.status()))
+ add('Raised school name '+d['name'],s,4,'Six visible characters 國立高雄大學; Noto Serif substitute typeface, not exact logo lettering')
+# Simple emblem plaque, emblem not reconstructed from low resolution.
+bx('Neutral square school-emblem plaque',[4.55,-.065,9.55],[5.45,.01,10.5],4,'Visible gold square plaque; intricate emblem omitted rather than invented')
+s=mf.Manifold.batch_boolean(items,mf.OpType.Add).set_tolerance(.01).simplify(.01)
+m=s.to_mesh();v=np.asarray(m.vert_properties)[:,:3]*SCALE*np.array([1,1,.84]);f=np.asarray(m.tri_verts).copy();mi=np.zeros(len(f),np.int32)
+for i,oid in enumerate(m.run_original_id):mi[m.run_index[i]//3:m.run_index[i+1]//3]=ids[int(oid)]
+# Repair collinear triangles from font tessellation after float32 export.
+# Collapse only zero-area face shortest edge; revalidate full manifold afterwards.
+repairs=[]
+for _ in range(20):
+ areas=np.linalg.norm(np.cross(v[f[:,1]]-v[f[:,0]],v[f[:,2]]-v[f[:,0]]),axis=1)
+ bad=np.flatnonzero(areas==0)
+ if not len(bad):break
+ row=f[bad[0]];pairs=[(row[0],row[1]),(row[1],row[2]),(row[2],row[0])];a,b=min(pairs,key=lambda ab:np.linalg.norm(v[ab[0]]-v[ab[1]]))
+ repairs.append({'edge_length_mm':float(np.linalg.norm(v[a]-v[b])),'material':int(mi[bad[0]])});f[f==b]=a
+ keep=(f[:,0]!=f[:,1])&(f[:,1]!=f[:,2])&(f[:,2]!=f[:,0]);f=f[keep];mi=mi[keep]
+used,inv=np.unique(f,return_inverse=True);v=v[used];f=inv.reshape((-1,3))
+(ROOT/'font-mesh-repairs.json').write_text(json.dumps(repairs,indent=2))
+t=trimesh.Trimesh(v,f,process=False);t.export(ROOT/'model.stl');np.savez_compressed(ROOT/'mesh-data.npz',vertices=v,faces=f,materials=mi)
+ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns);E=lambda s:'{'+ns+'}'+s
+root=ET.Element(E('model'),unit='millimeter');res=ET.SubElement(root,E('resources'));bm=ET.SubElement(res,E('basematerials'),id='1')
+for p in PALETTE:ET.SubElement(bm,E('base'),name=p['name'],displaycolor=p['hex']+'FF')
+o=ET.SubElement(res,E('object'),id='2',type='model',name='NUK main-gate central guardhouse and name tower');mesh=ET.SubElement(o,E('mesh'));vs=ET.SubElement(mesh,E('vertices'));ts=ET.SubElement(mesh,E('triangles'))
+for row in v:ET.SubElement(vs,E('vertex'),**{k:f'{float(a):.7f}' for k,a in zip('xyz',row)})
+for row,c in zip(f,mi):ET.SubElement(ts,E('triangle'),v1=str(row[0]),v2=str(row[1]),v3=str(row[2]),pid='1',p1=str(c),p2=str(c),p3=str(c))
+b=ET.SubElement(root,E('build'));ET.SubElement(b,E('item'),objectid='2')
+with zipfile.ZipFile(ROOT/'model.3mf','w',zipfile.ZIP_DEFLATED) as z:
+ z.writestr('[Content_Types].xml','<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>')
+ z.writestr('_rels/.rels','<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>')
+ z.writestr('3D/3dmodel.model',ET.tostring(root,encoding='utf-8',xml_declaration=True))
+parts=[]
+for op,item in zip(ops,items):
+ q=item.to_mesh();parts.append({**op,'vertices':(np.asarray(q.vert_properties)[:,:3]*SCALE*np.array([1,1,.84])).tolist(),'faces':np.asarray(q.tri_verts).tolist()})
+(ROOT/'construction-parts.json').write_text(json.dumps(parts,separators=(',',':')));(ROOT/'editable-parts.json').write_text(json.dumps({'palette':PALETTE,'features':ops},indent=2))
+r={'vertices':len(v),'triangles':len(f),'watertight':bool(t.is_watertight),'winding_consistent':bool(t.is_winding_consistent),'components':len(s.decompose()),'volume_mm3':float(t.volume),'dimensions_mm':t.extents.tolist(),'min_triangle_area_mm2':float(t.area_faces.min()),'material_counts':{p['id']:int((mi==i).sum()) for i,p in enumerate(PALETTE)},'scope':'Historical-photo gate core only; rear unknown neutral, outer walls and roads excluded; approximate dimensions; not current/as-built or trial printed'}
+(ROOT/'build-summary.json').write_text(json.dumps(r,indent=2));print(json.dumps(r,indent=2))

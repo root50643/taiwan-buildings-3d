@@ -1,6 +1,6 @@
 # 楠梓校本部
 
-高雄市楠梓區高雄大學路700號。現收錄7件自主外觀近似模型；圖資仍只涵蓋主棟及裁切階台，人社以A/B相連主樓和獨立C棟分成兩個模型；本校區尚未全做。
+高雄市楠梓區高雄大學路700號。現收錄8件自主外觀近似模型；圖資仍只涵蓋主棟及裁切階台，人社以A/B相連主樓和獨立C棟分成兩個模型；本校區尚未全做。
 
 總配電站為照片支持外觀近似，未知背面與另一短端中性封閉，尺寸估計、短端映射示意，不是全棟精確還原。
 
@@ -8,11 +8,13 @@
 
 實驗廢水處理場僅地上主建物歷史外觀近似；未見背面／另一端中性、尺寸估計，不含地下設施與廣場，非整場區或現況。
 
+正門僅中央警衛室與門塔歷史近似，不含外側長牆／道路；背面中性、尺寸估計、替代校名字型，非完整校門或現況。
+
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="buildings/nuk-library-main/previews/front.png" alt="圖書資訊大樓主棟：實際模型預覽" width="220">](buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](buildings/nuk-library-main/README.md)** | [<img src="buildings/nuk-sports-leisure/previews/front.png" alt="體育健康休閒多功能教學大樓：實際模型預覽" width="220">](buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](buildings/nuk-sports-leisure/README.md)** | [<img src="buildings/nuk-humanities-ab/previews/front.png" alt="人文社會科學院 A/B 主樓：實際模型預覽" width="220">](buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](buildings/nuk-humanities-ab/README.md)** |
 | [<img src="buildings/nuk-humanities-c/previews/front.png" alt="國立高雄大學人文社會科學院 C 棟：實際模型預覽" width="220">](buildings/nuk-humanities-c/README.md)<br>**[國立高雄大學人文社會科學院 C 棟](buildings/nuk-humanities-c/README.md)** | [<img src="buildings/nuk-power-station/previews/front.png" alt="國立高雄大學總配電站：歷史照片有界外觀近似：實際模型預覽" width="220">](buildings/nuk-power-station/README.md)<br>**[國立高雄大學總配電站：歷史照片有界外觀近似](buildings/nuk-power-station/README.md)** | [<img src="buildings/nuk-sewage-main/previews/front.png" alt="國立高雄大學污水及中水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](buildings/nuk-sewage-main/README.md)<br>**[國立高雄大學污水及中水處理場主建物：歷史照片外觀近似](buildings/nuk-sewage-main/README.md)** |
-| [<img src="buildings/nuk-lab-wastewater-main/previews/front.png" alt="國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](buildings/nuk-lab-wastewater-main/README.md)<br>**[國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似](buildings/nuk-lab-wastewater-main/README.md)** |  |  |
+| [<img src="buildings/nuk-lab-wastewater-main/previews/front.png" alt="國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](buildings/nuk-lab-wastewater-main/README.md)<br>**[國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似](buildings/nuk-lab-wastewater-main/README.md)** | [<img src="buildings/nuk-main-gate-core/previews/front.png" alt="國立高雄大學正門中央警衛室及門塔：實際模型預覽" width="220">](buildings/nuk-main-gate-core/README.md)<br>**[國立高雄大學正門中央警衛室及門塔](buildings/nuk-main-gate-core/README.md)** |  |
 
 [回學校入口](../README.md) · [逐項未完成範圍](../remaining-buildings.md)
 

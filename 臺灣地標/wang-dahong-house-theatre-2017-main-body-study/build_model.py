@@ -37,7 +37,7 @@ cy=6.80;cz=floor+1.65;rr=.8382
 moon=mf.Manifold.cylinder(80,rr*100,rr*100,64).rotate([0,90,0]).translate([(W-.5)*100,cy*100,cz*100])
 east=box([W-.35,0,floor],[W,D,ceil])-moon
 add('West red masonry wall with entry',west,0,'Official plan west entry + replica photos; opening offset estimated from plan')
-add('North masonry with four-panel opening',north,0,'Reconstruction article explicitly eighteen panels: fourteen south and four north; original plan locates north opening')
+add('North masonry with four-panel opening',north,0,'Original plan north four cross-checked with reconstruction article eighteen total and fourteen south; no direct complete replica north photograph')
 add('East masonry and circular window opening',east,0,'Official plan and 2018 replica moon-window photograph; 5.5ft aperture approximated')
 # Solid roof, white perimeter fascia and thin dark weathering cap. No invented rooftop equipment.
 bx('White continuous roof fascia',[-.04,-.04,ceil],[W+.04,D+.04,roof],1,'Replica flat roof and continuous pale band, thickness estimated')
@@ -51,8 +51,8 @@ for j in range(15):
 for z in [floor+.02,floor+.66,ceil-.035]:bx('South leaf horizontal rail',[.35,y-.05,z],[W-.35,y+.10,z+.045],2,'Replica glazing low horizontal rail; height photo-estimated')
 # Two slim free-standing black columns in front of glazing at 2:3:2 bay divisions.
 for x in [.35+4*U,.35+10*U]:add('South porch black round column',beam([x,.28,floor],[x,.28,ceil+.025],.045),2,'Two black columns, plan 4:6:4 glazing modules; diameter approximate')
-# Four north glazed leaves, retained as article-confirmed layout rather than mirrored south facade.
-bx('North opaque glazing',[2.60,D-.22,floor],[2.60+4*U,D-.13,ceil],3,'Four north two-foot leaves explicitly documented; opaque proxy')
+# Four north glazed leaves from original plan cross-checked with article 18 total minus 14 south; not a mirrored facade.
+bx('North opaque glazing',[2.60,D-.22,floor],[2.60+4*U,D-.13,ceil],3,'Four north leaves inferred from original plan and article eighteen total minus fourteen south; opaque proxy')
 for j in range(5):
  x=2.60+j*U;bx('North leaf frame',[x-.023,D-.24,floor],[x+.023,D-.10,ceil],2,'Four leaf layout, coarse visible frame')
 for z in [floor+.02,floor+.66,ceil-.035]:bx('North horizontal leaf rail',[2.60,D-.24,z],[2.60+4*U,D-.10,z+.045],2,'Same glazed leaf module; small rail levels estimated')

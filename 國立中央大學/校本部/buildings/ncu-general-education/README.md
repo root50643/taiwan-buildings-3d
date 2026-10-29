@@ -2,9 +2,17 @@
 
 ## 模型預覽
 
-| 正向 | 背向 | 立面視角 |
-|---|---|---|
-| ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
+### 照片近似彩色預覽
+
+依校方校友通訊綜教館外照：灰綠圓角梯核、淡鮭粉灰前翼、灰綠入口柱、淺灰既有框與暗灰綠窗背。未知側後／屋頂中性；內院紅磚不套外牆，原網格沒有分界的細橫帶或磚縫不新增。
+
+| 新彩色斜前 | 新彩色近來源角度 | 新彩色正面 |
+| :---: | :---: | :---: |
+| ![彩色斜前](appearance/front.png) | ![彩色近來源角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
+| 新彩色背面（未知中性） | 新彩色上視（未知中性） | 彩色下載 |
+| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
+原三張預覽、STL／OBJ／scene.blend、尺寸和首頁／校級代表圖均保留不變。照片日期未知，不稱1985原始塗裝或2026現況；詳[配色證據與限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 100 × 70.8 mm。
 
@@ -49,7 +57,7 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 

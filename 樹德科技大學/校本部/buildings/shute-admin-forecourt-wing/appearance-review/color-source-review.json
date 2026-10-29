@@ -1,0 +1,108 @@
+{
+  "status": "SCOPED_PHOTOGRAPHIC_COLOR_GO",
+  "reviewed_utc": "2026-10-29T05:22:29.393828+00:00",
+  "method": "Independent direct visual inspection of both existing reference raster files; color/material partition only, not geometry authorisation. RGB palette is representative appearance, not calibrated architectural coating or spectral measurement.",
+  "sources": [
+    {
+      "id": "official-aerial",
+      "file_label": "p12-001.jpg",
+      "sha256": "e23f64e6ecfad8e3fe4a87ca1ad0d2bf99941afabfc47aa4f07f8f9204db75d2",
+      "url": "https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/17377/accab4cb-8092-4855-9d38-65f37b5a9f0f.pdf",
+      "page": "printed12/PDF13",
+      "role": "Official published campus aerial confirms neutral concrete fins, warm reddish wall masses, green-blue glazing and pale rooftop framework. Small pixels cannot resolve exact coating.",
+      "date": "113年度 report; metadata2025-04-02 per existing ledger; actual photo date unknown."
+    },
+    {
+      "id": "close-front",
+      "file_label": "admin-front-104.jpg",
+      "sha256": "40417045ab8015050847245a4b46e7fa9f9ffb6766c9830b6b45eab291f94b39",
+      "url": "https://guide.104.com.tw/backend/media/origin/school/703.jpg",
+      "publisher": "104, third-party photographic reference, not an official product/finish specification",
+      "role": "Detailed front photo resolves tower sandstone/beige, muted rose-brown wall, grey concrete fins, dark green/cyan glass and silver-grey frames.",
+      "date": "Capture date unspecified; not asserted2026 current finish."
+    }
+  ],
+  "palette_encoding": "Suggested sRGB hex swatches; renderer must convert sRGB to linear when assigning linear shader inputs, or explicitly document its own matched palette.",
+  "regions": [
+    {
+      "id": "main_front_walls",
+      "appearance": "muted dusty rose / warm brown pink",
+      "suggested_srgb": "#98786F",
+      "confidence": "high categorical, medium numeric",
+      "include": "Main facade bands and front wall behind horizontal glazing",
+      "exclude": "Do not make whole building same pink; exclude pale tower and concrete fins."
+    },
+    {
+      "id": "right_tower",
+      "appearance": "warm sand beige",
+      "suggested_srgb": "#B1A08A",
+      "confidence": "high categorical",
+      "note": "Tall inscription face. Text need not be added if absent from existing geometry."
+    },
+    {
+      "id": "tower_upper_side",
+      "appearance": "pale warm cream",
+      "suggested_srgb": "#C3BBA7",
+      "confidence": "medium",
+      "note": "Photo has lighting-dependent pale side panel; avoid unjustified sharp invented boundary if existing mesh cannot isolate it."
+    },
+    {
+      "id": "concrete_fins_roof_lattice",
+      "appearance": "neutral slightly warm grey concrete",
+      "suggested_srgb": "#A6A7A0",
+      "confidence": "high",
+      "include": "Six projecting vertical fins, upper connecting framework and exposed pale structural column."
+    },
+    {
+      "id": "glazing",
+      "appearance": "dark green-teal reflective glazing",
+      "suggested_srgb": "#254C47",
+      "confidence": "high categorical",
+      "include": "Curved drum inset panes, long horizontal window bands, right vertical glazed strip, existing balcony glazing",
+      "note": "Some panes appear turquoise from reflection; preserve broad green family, no arbitrary rainbow or invented individualpane map. Opaque solid-print glass proxy acceptable."
+    },
+    {
+      "id": "window_frames",
+      "appearance": "light silver/grey",
+      "suggested_srgb": "#ADB5AF",
+      "confidence": "high",
+      "include": "Existing mullion/rail faces only; leave geometry unchanged."
+    },
+    {
+      "id": "sunshades",
+      "appearance": "grey-brown / neutral weathered concrete",
+      "suggested_srgb": "#8C8D82",
+      "confidence": "medium",
+      "note": "Horizontal projecting ledges are not glass and should not become green."
+    },
+    {
+      "id": "roof_unseen",
+      "appearance": "neutral grey proxy",
+      "suggested_srgb": "#9C9C96",
+      "confidence": "low",
+      "note": "Aerial partly supports pale roof/framework but does not justify a full detailed finish map."
+    },
+    {
+      "id": "unknown_rear_cut_face",
+      "appearance": "neutral grey schematic termination",
+      "suggested_srgb": "#A2A29D",
+      "confidence": "explicitly unknown",
+      "note": "Existing partial-building rear is simplified; do not imply surveyed rear color."
+    },
+    {
+      "id": "base",
+      "appearance": "neutral grey presentation base",
+      "suggested_srgb": "#B2B0A8",
+      "confidence": "presentation only",
+      "note": "Real foreground is grass but existing flat model base is not documented lawn geometry; do not color all base green."
+    }
+  ],
+  "nonnegotiable_constraints": [
+    "Do not change original STL, scene.blend, locked previews/front.png or geometry topology.",
+    "Create additive appearance assets only as parent authorised.",
+    "Color must not conceal or imply repair of known simplified rear/geometry gaps.",
+    "Do not include reference photographs or report pages in public model package.",
+    "Do not claim calibrated real paint, current as-built condition or successful trial print.",
+    "Final four new previews require separate actual visual inspection before appearance PASS."
+  ]
+}

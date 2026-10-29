@@ -6,6 +6,19 @@
 | :---: | :---: | :---: |
 | 實際 STL 斜前<br>![實際 STL 斜前預覽](previews/front.png) | 實際 STL 背面（簡化終止面）<br>![實際 STL 背面預覽](previews/rear.png) |  |
 
+
+### 彩色外觀增補（原幾何不變）
+
+**上方原單色代表圖保留不變**；下方是依照片新增的彩色比較，不是新建築或新幾何。主牆粉褐、塔面米色、混凝土翼片灰、玻璃深綠與框銀灰；未知背面／主屋頂及人工底座使用中性灰。顏色為照片近似，非校準色卡或 2026 現況保證。
+
+| 新彩色斜前 | 新彩色正面 | 新彩色上視 |
+| :---: | :---: | :---: |
+| ![新增彩色斜前](appearance/front.png) | ![新增彩色正面](appearance/elevation.png) | ![新增彩色上視](appearance/top.png) |
+| 新彩色背面（未知終止面維持中性） | 原單色斜前代表（保留） | 彩色下載 |
+| ![新增彩色背面](appearance/rear.png) | ![原單色代表保留](previews/front.png) | [彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) |
+
+[配色依據與重建](APPEARANCE.md)。原 [STL](model.stl) 不承載色彩，原 [scene.blend](scene.blend) 與四張原預覽均保持位元不變；請開啟 `appearance.blend` 或支援 3MF 材質的軟體查看新配色。
+
 > 復原修訂 v3：原 STL 與建模程式已從原始內容恢復，獨立重建 SHA 完全一致。缺失的渲染程式、Blend 與四張預覽重新製作；數值檢查程式與 C++ 輔助程式保持恢復的原位元內容並重新執行。新的彙整閘門與文件另作版本記錄，v3 獨立覆核與發布決策另行記錄。恢復、重產與新寫檔案的區別見 [recovery-provenance.json](recovery-provenance.json)。
 
 這是校本部南校區行政大樓的前庭翼段近似模型，**不是完整行政大樓、相接禮堂或全校模型**。依實拍與校方空照自行建立幾何，沒有擷取第三方 3D 網格。

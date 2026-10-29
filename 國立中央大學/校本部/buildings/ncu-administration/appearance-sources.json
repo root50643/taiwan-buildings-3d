@@ -1,0 +1,94 @@
+{
+  "status": "SCOPED_PHOTO_COLOR_GO",
+  "reviewed_utc": "2026-10-29T06:02:12.389192+00:00",
+  "repo_path": "國立中央大學/校本部/buildings/ncu-administration",
+  "scope": "Add material regions to existing photo-derived front exterior only; unchanged geometry and original representative image. Unknown side/rear/roof neutral. Not a surveyed building or complete contemporary as-built reconstruction.",
+  "baseline": {
+    "parent_pinned_head_prefix": "92a693f",
+    "preview_actually_viewed": true,
+    "material_probe": [
+      {
+        "name": "Printable_NCU",
+        "vertices": 2748,
+        "faces": 5500,
+        "materials": [
+          "Warm stone preview only"
+        ],
+        "indices": [
+          0
+        ]
+      }
+    ],
+    "file_sha256": {
+      "scene.blend": "9cbedfb58185df23b5c225ae278e49a04ff27119aac2d39692e6adf9992c696b",
+      "previews/front.png": "2a1019a7231c0b4cb38f19bf5ae327b19a03f498882107c205a08b627c50ad88",
+      "build_model.py": "c87de47fb151721725cc98738fa57118023307334951d7aa9766a8da5b7d1887",
+      "sources.json": "83e1813255eb74ad18c0bd39a38e97878b755182488a4806172507857d76e8ca",
+      "README.md": "468ca7cba138038b11881e1bc4a2fbc62b274ddc5df1b48d1bb4f6a1f1acaf27"
+    }
+  },
+  "source": {
+    "page": "https://love.adm.ncu.edu.tw/NCU_counsel/NCU-barrier-free/",
+    "photo": "https://love.adm.ncu.edu.tw/NCU_counsel/NCU-barrier-free/images/Administration_building/1.jpg",
+    "photo_sha256": "ec9e09e7c273c08da85caf6079f02e86cbcdb67fc3f810b611e5454b7e541f29",
+    "photo_actually_viewed": true,
+    "attribution_evidence": "Public official map script AdmiB binds Chinese 行政大樓 and this image path. Photo shows identifying offset square lattice, four-storey long block and projecting entrance canopy.",
+    "caption_correction": "English title in map script incorrectly says Chung Cheng Auditorium; do not propagate. Chinese selector and actual photo distinguish this building from adjacent auditorium.",
+    "photo_date": "Not stated; do not treat retrieval date or disaster table date as capture date.",
+    "access": "Normal public HTML and image download; no login or bypass."
+  },
+  "existing_pdf_status": {
+    "url": "https://military.ncu.edu.tw/download/114.07.21%E9%98%B2%E7%81%BD%E8%A8%88%E7%95%AB-%E5%85%AC%E5%91%8A%E7%94%A8.pdf",
+    "result": "Web index identifies 86 pages, but screenshot cache miss. Two ordinary downloads returned HTTP503. Page13 photo not actually inspected in this review; not relied on for color GO."
+  },
+  "regions": [
+    {
+      "region": "Front sunshade lattice and surrounding visible pale wall",
+      "srgb_proxy": "#B9B8AA",
+      "evidence": "Light grey-beige near-white square lattice visible; apparent darkness varies strongly with shadows."
+    },
+    {
+      "region": "Small lattice recess backing only",
+      "srgb_proxy": "#59685F",
+      "evidence": "Muted dark green-grey surfaces behind lattice; use opaque visual proxy, not claim every cavity is glass. Recess returns retain pale wall tone."
+    },
+    {
+      "region": "Irregular larger window backings",
+      "srgb_proxy": "#59666B",
+      "evidence": "Blue-grey dark glazing visible among lattice; no reflected sky or trees painted."
+    },
+    {
+      "region": "Existing window frame faces if geometrically identifiable",
+      "srgb_proxy": "#929790",
+      "evidence": "Muted silver-grey frames; do not create new frame geometry."
+    },
+    {
+      "region": "Exposed upper front parapet strip",
+      "srgb_proxy": "#817F72",
+      "evidence": "Weathered grey-brown band directly visible above pale lattice. Do not spread onto unseen roof top or rear."
+    },
+    {
+      "region": "Entrance canopy/piers",
+      "srgb_proxy": "#B6B5A7",
+      "evidence": "Pale grey-beige canopy fascia and piers; shadows not literal black material."
+    },
+    {
+      "region": "Existing front sign-board proxy",
+      "srgb_proxy": "#343838",
+      "evidence": "Dark display board visible on canopy; no invented digital text, school label or gold letters."
+    },
+    {
+      "region": "Stairs, roof top, rear/side estimates and display base",
+      "srgb_proxy": "#A7A8A2",
+      "evidence": "Neutral proxy for uncertain or artificial surfaces; front stairs broadly concrete grey. Side bands are not proven glazing."
+    }
+  ],
+  "limits": [
+    "Source photo is 700x525 and partly tree-obscured. Exact pigment/material specification is unverified; approximate sRGB only.",
+    "One official front-oblique photograph is sufficient only for broad front color classes, not hidden facades or roof finish.",
+    "Distant main-library volume behind administrative building is excluded; do not paint/add it as roof equipment.",
+    "Baseline lattice counts/depth and rear mass remain approximate. Color does not remove original QA warnings or imply actual trial printing.",
+    "Original photographs and private research images must not be distributed in public model package.",
+    "No new vegetation, vehicles, people, air conditioners, signage text or geometry."
+  ]
+}

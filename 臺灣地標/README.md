@@ -1,10 +1,10 @@
-# 臺灣地標｜58 組外觀研究模型包
+# 臺灣地標｜59 組外觀研究模型包
 
-收錄 58 組臺灣地標相關外觀研究模型包（含局部研究，不等於58棟完整建築），提供原創參數化模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。另新增臺北府城北門／承恩門：依2017–2022公開來源系列建立的完整歷史外觀近似，保留真實透空拱形門洞、四向上層開口與連續瓦屋頂；照片拍攝及插入日期不明，F02與F04為同一短向面，不是確定拍攝年份的測繪復原或2026現況。另新增旗後燈塔完整連接主建築：依2020年第一期竣工圖與完成照片建立八角塔、短連接頸及整個辦公展示翼的單棟外觀近似，保留四向開口差異、低平翼頂及開放塔側退凹；不含整個園區，不是2026現況測繪。完成照片支持的燈室白色斜格與上緣、玻璃下暗帶已逐構件勘誤，色值仍為未校準近似。各包尺寸與列印限制請讀專屬README。
+收錄 59 組臺灣地標相關外觀研究模型包（含局部研究，不等於59棟完整建築），提供原創參數化模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。另新增臺北府城北門／承恩門：依2017–2022公開來源系列建立的完整歷史外觀近似，保留真實透空拱形門洞、四向上層開口與連續瓦屋頂；照片拍攝及插入日期不明，F02與F04為同一短向面，不是確定拍攝年份的測繪復原或2026現況。另新增旗後燈塔完整連接主建築：依2020年第一期竣工圖與完成照片建立八角塔、短連接頸及整個辦公展示翼的單棟外觀近似，保留四向開口差異、低平翼頂及開放塔側退凹；不含整個園區，不是2026現況測繪。完成照片支持的燈室白色斜格與上緣、玻璃下暗帶已逐構件勘誤，色值仍為未校準近似。各包尺寸與列印限制請讀專屬README。
 
 ## 使用前先讀
 
-- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。58組模型包並非共同比例，不能用來反推真實建築尺寸。
+- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。59組模型包並非共同比例，不能用來反推真實建築尺寸。
 - 模型依公開外觀照片等資料重新建立幾何，屬桌上型外觀詮釋，並非測繪、工程或官方授權模型。未確認的背面、屋頂與細節可能經過推定、簡化及加粗。
 - 數位網格驗證不等同切片或實體試印成功。尚未完成實際切片測試及實體試印；列印前請檢查逐層路徑、薄壁、懸垂、支撐與拆除空間。
 - STL 不包含預覽材質或色彩。Blender 場景的地板、相機、燈光只供預覽，請勿當作列印模型匯出。
@@ -35,7 +35,7 @@
 | [![閻錫山故居紅磚屋2006調查期外觀研究模型](yan-xishan-redbrick-house-survey-2006/previews/front.png)](yan-xishan-redbrick-house-survey-2006/README.md)<br>**[閻錫山故居紅磚屋（2006調查期）](yan-xishan-redbrick-house-survey-2006/README.md)** | [![松山菸廠育嬰室2004測繪主體外觀研究模型](songshan-nursery-main-body-survey-2004/previews/front.png)](songshan-nursery-main-body-survey-2004/README.md)<br>**[松山菸廠育嬰室（2004測繪主體）](songshan-nursery-main-body-survey-2004/README.md)** | [![松山菸廠鍋爐房與煙囪2004調查外觀研究模型](songshan-tobacco-factory-boiler-house-2004-survey/previews/front.png)](songshan-tobacco-factory-boiler-house-2004-survey/README.md)<br>**[松山菸廠鍋爐房與煙囪（2004調查）](songshan-tobacco-factory-boiler-house-2004-survey/README.md)** |
 | [![松山菸廠檢查站2004調查外觀研究模型](songshan-tobacco-factory-checkpoint-2004-survey/previews/front.png)](songshan-tobacco-factory-checkpoint-2004-survey/README.md)<br>**[松山菸廠檢查站（2004調查）](songshan-tobacco-factory-checkpoint-2004-survey/README.md)** | [![松山菸廠工作作業場2004調查外觀研究模型](songshan-tobacco-factory-workshop-2004-survey/previews/front.png)](songshan-tobacco-factory-workshop-2004-survey/README.md)<br>**[松山菸廠工作作業場（2004調查）](songshan-tobacco-factory-workshop-2004-survey/README.md)** | [![松山菸廠一號倉庫2004調查外觀研究模型](songshan-tobacco-factory-warehouse1-2004-survey/previews/front.png)](songshan-tobacco-factory-warehouse1-2004-survey/README.md)<br>**[松山菸廠一號倉庫（2004調查）](songshan-tobacco-factory-warehouse1-2004-survey/README.md)** |
 | [![松山菸廠辦公廳2004調查外觀研究模型](songshan-tobacco-factory-office-2004-survey/previews/front.png)](songshan-tobacco-factory-office-2004-survey/README.md)<br>**[松山菸廠辦公廳（2004調查）](songshan-tobacco-factory-office-2004-survey/README.md)** | [![松山菸廠製菸工場2004調查外觀研究模型](songshan-tobacco-factory-manufacturing-hall-2004-survey/previews/front.png)](songshan-tobacco-factory-manufacturing-hall-2004-survey/README.md)<br>**[松山菸廠製菸工場（2004調查）](songshan-tobacco-factory-manufacturing-hall-2004-survey/README.md)** | [![原臺北北警察署2001調查外觀研究模型](taipei-north-police-station-2001-survey/previews/front.png)](taipei-north-police-station-2001-survey/README.md)<br>**[原臺北北警察署（2001調查）](taipei-north-police-station-2001-survey/README.md)** |
-| [![豐原頂街派出所2013調查外觀研究模型](fengyuan-dingjie-police-station-2013-survey/previews/front.png)](fengyuan-dingjie-police-station-2013-survey/README.md)<br>**[豐原頂街派出所（2013調查）](fengyuan-dingjie-police-station-2013-survey/README.md)** |  |  |
+| [![豐原頂街派出所2013調查外觀研究模型](fengyuan-dingjie-police-station-2013-survey/previews/front.png)](fengyuan-dingjie-police-station-2013-survey/README.md)<br>**[豐原頂街派出所（2013調查）](fengyuan-dingjie-police-station-2013-survey/README.md)** | [![梨山耶穌堂2016調查外觀研究模型](lishan-jesus-church-2016-survey/previews/front.png)](lishan-jesus-church-2016-survey/README.md)<br>**[梨山耶穌堂（2016調查）](lishan-jesus-church-2016-survey/README.md)** |  |
 
 ## 模型目錄與實際預覽
 
@@ -421,3 +421,5 @@
 原臺北北警察署2001年7月調查永久外觀研究，三層主館與後矩形半圓翼、永久屋梯及水箱；非1933原二層或今日修復，第三層增建年代不臆定。臨時屋頂棚及高度不明鄰接屋房排除，不造第四層。後翼216與217標高異文保留採216，不取平均；屋梯位置±1m與小水箱高度為明示代理，圖估長58.86m約±3%或更差。無完整拘留內裝、機電雜物或精密病害，名義1:250寬252mm，實心約1.208公升，未試印或認證安全。
 
 豐原頂街派出所2013年5月A現況外觀研究，1936年建但非原建復原或B提案；五邊形二層主館、入口閉捲門告示、西舊門封堵及東後期鐵皮附建保留。兩RC圓基座非水箱，高度未知採0.13m低代理；屋梯間圖標183.5×113cm，其餘多為獨立圖尺約±3%估讀，4.23m立面帶非確定樓板。徽章中性盤非鐘，照片紅牆未校色非原漆；無完整室內或鬆散屋頂設備。名義1:100，未試印或認證安全。
+
+梨山耶穌堂1969年建、2016年12月調查外觀研究，非2018 metadata年代或修復提案；主堂、兩低翼、真開口門廊鐘塔、小塔與左坡兩紅修補板保留，不含宿舍、噴水池或完整室內。31.56/31.57m與13.71/13.57m來源差異明示，外牆皮與未知塔背上拱為中性代理，不補背百葉。W9工程抬6cm避數值重合非實測標高，保留窗高與V差；低翼峰與端飾高度分開。名義1:200、尺寸推估與細雕簡化，未試印或認證安全。

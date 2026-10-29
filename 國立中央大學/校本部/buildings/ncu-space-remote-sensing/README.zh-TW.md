@@ -2,9 +2,19 @@
 
 ## 模型預覽
 
-| 正向 | 背向 | 立面視角 |
-|---|---|---|
-| ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
+| 新彩色前院斜視 | 新彩色屋塔角度 | 新彩色正面 |
+| :---: | :---: | :---: |
+| ![彩色前院](appearance/front.png) | ![彩色屋塔](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
+| 新彩色後向 | 新彩色上視 | 彩色下載 |
+| ![彩色後向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
+
+### 照片近似彩色預覽
+
+依成功讀取的01前院與05屋塔實照：原前／院牆淺灰米、箱遮陽米灰、窗背灰藍綠、屋塔淡米白、外梯灰與碟近白。遮陽暗凹不是額外玻璃，未知外背／平屋頂中性。
+
+
+只原三層太空遙測館，不含二期；原三圖、geometry／尺寸／STL／OBJ／scene與首頁／校級選圖不變。詳[來源與重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 143 × 105.459 mm。
 
@@ -50,7 +60,7 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 

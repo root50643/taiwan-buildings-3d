@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "revision": "color-v2-final",
+  "geometry_check_count": 16,
+  "clean_check_count": 16,
+  "material_region_check_passed": true,
+  "views": {
+    "front": {
+      "passed": true,
+      "observation": "Three-storey courtyard wings pale, windows grey-green and box-shade backs dark; original dish support and tower stairs visible without added lattice/feed."
+    },
+    "rear": {
+      "passed": true,
+      "observation": "Broad unknown rear/outer walls neutral; dish near-white only original surface/support, tower roof remains neutral."
+    },
+    "elevation": {
+      "passed": true,
+      "observation": "Two tower windows and all front wing windows preserved; corrected central lower shade recess dark, not canopy color or glass."
+    },
+    "source-angle": {
+      "passed": true,
+      "observation": "Complete dish and original tower framed; courtyard shadow slots distinct from window backs; no second-phase extension."
+    },
+    "top": {
+      "passed": true,
+      "observation": "Neutral roofs/base, near-white dish and original support only; no roof plane whitened by coarse dish bounds."
+    }
+  },
+  "preview_sha256": {
+    "appearance/front.png": "ff14fcd0d2ef9e722cbee31c5da01cb6898546d545de0f824f117ce87263fda0",
+    "appearance/rear.png": "78d3b79756f31d32f7364f296c57ea158e9311b092192a3686fdf6ff8c9bdb6b",
+    "appearance/elevation.png": "190f712df433f44e2f95d724a53aac2400528131720da1cf5cdb8f8566bd100a",
+    "appearance/source-angle.png": "50314a860a66454b27300d9845b0440bcfe70c9c9be9940b008f60a9c418cc1c",
+    "appearance/top.png": "dc60876b1b31e9ca00850b5c11e24499b5d4f71129eb0198ef788dd92005a3a8"
+  },
+  "sha256": {
+    "appearance.blend": "10d3190e6b3d1afa50d47a7b9105327acdcbe94c397eac1cbed0e511a512be43",
+    "appearance.3mf": "4c946c336ed9a315277279daff1df3bbfcbf5d17cc75bbf4c1f5d9dd3c009439",
+    "build_appearance.py": "63b79ff3ca63c1d5db24482c707c598f0e5d411e78ce12514adef1056340a4c5",
+    "appearance-materials.json": "697aed9d361570ff2f0215cd3ff0c76175fc4a9ded506f921e4512be67284573",
+    "scene.blend": "a12aeabab4ec5a3937aaa13a6cdd592b9737c143167d2b121dc4f4487b1bf7d5",
+    "model.stl": "f63e45ebb4476745c800c5447d291c8759988352446750d3c76225697f58bb06"
+  },
+  "clean_preview_byte_exact": true,
+  "png_text_chunks_absent": true,
+  "old_three_previews_unchanged": true,
+  "corrections": [
+    "V1 porch bounds overrode true shade recess triangles2003/2009 at y19.5,x+-7,z16.2..18. V2 gives actual shade-cut backs dark opaque shadow priority; no geometry changed."
+  ],
+  "additional_diagnostics": [
+    "92 actual window backing triangles;78 shade-shadow and2 entrance-shadow triangles remain separate material from glazing.",
+    "9042 dish triangles checked against inverse35degree original paraboloid/rim equations; other near-white faces restricted to original support.",
+    "55 tower-lid and67 main-roof triangles remain neutral, not dish-white."
+  ],
+  "limitations": [
+    "Original three-storey building, not second phase; only two actually viewed source photos.",
+    "Original thickened opaque bowl, robust staircase and simplified roof rooms unchanged; no lattice/feed restored.",
+    "Photographic proxy materials not calibrated finish survey; unknown sides/backs/roofs neutral.",
+    "Prior geometry limitations retained; no trial print or new structural certification."
+  ]
+}

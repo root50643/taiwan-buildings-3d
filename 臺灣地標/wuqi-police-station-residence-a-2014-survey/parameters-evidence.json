@@ -1,0 +1,141 @@
+{
+  "status": "SCOPED_SOURCE_GO",
+  "coordinates": {
+    "x": "front-view left to right; paper plan top to bottom",
+    "y": "front elevation towards rear; paper plan left to right",
+    "z": "nominal outdoor front ground=0; local ground slopes not precisely reconstructed"
+  },
+  "units": "metres",
+  "tolerance": "Raster estimates ±3%, locally ±0.2 m height; printed chains retain original endpoint differences. Not precision survey skin coordinates.",
+  "printed_cm": {
+    "ground_cross": 1204.2,
+    "upper_cross": 1202.9,
+    "total_depth": 1536.7,
+    "upper_RC_depth_chain": 529.7,
+    "main_flat_roof_depth_chain": 584.6
+  },
+  "nominal_xy": {
+    "wood_later_office_rect": [
+      0,
+      0,
+      5.67,
+      4.93
+    ],
+    "postwar_RC_rect": [
+      0,
+      4.93,
+      3.52,
+      10.227
+    ],
+    "original_flat_office_rect": [
+      5.67,
+      0,
+      12.042,
+      5.95
+    ],
+    "attached_A_polygon": [
+      [
+        4.16,
+        5.95
+      ],
+      [
+        4.16,
+        15.367
+      ],
+      [
+        9.24,
+        15.367
+      ],
+      [
+        9.24,
+        13.51
+      ],
+      [
+        12.042,
+        13.51
+      ],
+      [
+        12.042,
+        5.95
+      ]
+    ],
+    "tall_rectangular_feature_bbox_candidate": [
+      8.3,
+      4.9,
+      9.0,
+      5.8
+    ]
+  },
+  "plan_trace_evidence": {
+    "source": "Volume3 PDF94 A1-1, crosschecked95 A1-2",
+    "method": "Rendered figure visually traced; approximately scaled review image1888x1335: front outerwallpaperx465,topwallpapery161,rearwallx1445,lowerwallpapery926. Each axis scaled with printedchains; trace error remains.",
+    "key_edges_review_pixels": {
+      "wood_rear_x": 779,
+      "RC_rear_x": 1113,
+      "original_rear_x": 843,
+      "A_top_y": 426,
+      "A_rear_x": 1445,
+      "A_rear_notch_y": 749,
+      "A_notch_x": 1325
+    }
+  },
+  "nominal_heights": {
+    "main_RC_roof_surface": 4.58,
+    "main_cornice_lower_face": 4.5,
+    "main_side_parapet": 5.25,
+    "front_sculpted_parapet_top": 6.85,
+    "front_tall_rectangular_feature_top": 9.6,
+    "postwar_RC_roof": 6.65,
+    "wood_gable_ridge": 4.8,
+    "wood_eave": 3.38,
+    "plinth_outdoor_difference": 0.42,
+    "A_gable_roof_ridge": 5.76,
+    "A_main_eave": 3.75,
+    "A_side_corridor_roof_low": 2.8,
+    "A_side_corridor_roof_high": 3.1,
+    "A_rear_ornamental_gable_top": 6.4
+  },
+  "height_evidence": {
+    "main_roof": "Volume3 PDF107 E-E: ruler0–2m approximately173px on1800px render; ground967,slabupper571 gives4.58m. Distinguish roof slab from perimeterparapet.",
+    "exterior_checks": "99/101/102 elevations graphical rulers; localground differences/line endpoints prevent identical exactheights.",
+    "A_roof_warning": "108/109 sections ruler-scaled roof ridge5.72–5.80, main eave~3.75; rear ornamental gable higher~6.4. Locally±.2m estimates."
+  },
+  "pending": [
+    "Tallrectangle function/framewidth/depth approximate, notcalledchimney",
+    "Unidentified upperRCsmallrectangle keptblindplate",
+    "Farsteppedserviceportal lacks paneevidence, opaqueproxy"
+  ],
+  "exclusions": [
+    "Independent B/C/D dormitories",
+    "Airraid shelter",
+    "Hatched adjoining non-scope buildings",
+    "Unverified hidden openings",
+    "Complete interiors",
+    "Restoration proposal geometry"
+  ],
+  "roof_topology": {
+    "A": "Main gable footprint x5.3..12.042, ridge nominalx8.5, lower lean-to x4.16..5.3. Roof98 and framing97 retain stepped rear outline matching plan; clip sloped planes to stepped footprint, with closed vertical return at notch, not an open roof hole. Rear100 projects distinct y13.51 and15.367 endfaces.",
+    "A_evidence": "Volume3 PDF108/109 sections distinguish low side lean-to and higher main gable; PDF98 roof shows narrow strip next to RC side.",
+    "wood": "Gable ridge along local x; nominal center y2.45; meets but is not the same roof as originalRC.",
+    "A_rear_trim": "Higher endgable decorative peak belongs to farrear segment containing ridge. Shorter rear door host x10.43,y13.51 separately follows same sloped roof envelope; do not force all rearwalls coplanar."
+  },
+  "tall_feature_evidence": "Front99 fixes transverseprojection; side101 places high rectangle close to flatroofrear, crosschecked rearfootprint of98. Not frontsmallU-shaped seat. Name/function unconfirmed; no chimney claim. Coordinates graphicalproxy, require draft elevation check.",
+  "entry_front_profile": "94 shows central entry wall recessed about.45m relative adjacent front corners; steps project outward. Not a deep solid projecting porch.",
+  "source_status": "Geometry controls derived from current-condition survey2014-10-30; report2015-06",
+  "engineering_adjustments": [
+    "1:100 exterior proxies;2mm authored connected base",
+    "Frame width6cm=>0.6mm atscale; mullions5cm=>0.5mm",
+    "Tall frame depthbars lowered0.005m at top to avoid degenerate coplanar union triangles (0.05mmmodel); no historical dimensionclaim",
+    "Tilecourses22–23cm nominal, masonryjoint18cm nominal not surveyed counts",
+    "Opaque window and door surfaces, no full interior;unknown upper RC rectangle blind plate",
+    "Lamp relief concealed connecting stem for onecomponent union",
+    "Rearbrickgable faces15.547m and13.69m beyond roofends15.50/13.65m, preserve visiblebrick with thin externally extendedclosure",
+    "Square mitered window surrounds avoid roundedoffset intersection degeneracies; openinggeometry unchanged",
+    "Timber roof represented by thin pitched shell over visible solid weatherboard gable; not full interior reconstruction",
+    "Gable weatherboard joints project7cm (model0.7mm) to clear surfaceproxy, stylized notexact constructiondetail"
+  ],
+  "resolved": [
+    "A103 ground rear window directly evidenced byVolume2PDF19table/photo12",
+    "DormitoryA fournorthcorridorgroups directly evidenced byVolume3PDF105C-C and plan94"
+  ]
+}

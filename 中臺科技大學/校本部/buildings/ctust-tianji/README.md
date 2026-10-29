@@ -2,12 +2,22 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 正面：兩翼及下沉庭院<br>![正面](previews/front.png) | 背面：高樓與穿堂大拱<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
 
 2004 年完工建築的原創、有界外觀模型。本件只涵蓋天機教學大樓，並非全校完成。原名亦見「綜合教學大樓」；不含鄰棟耕書樓、勤學樓或保健大樓。
 
+
+### 新增完工實照近似彩色（九張原預覽保留）
+
+原場景有建物、底座、屋頂三種**中性展示對比**，不是字面單一材質；本次另增照片支持的粉橘磚、灰白梁板／柱與有限灰綠窗表觀。院向走廊暗槽不是整面玻璃，原厚護牆代理也不是精細金屬欄杆復刻。未知屋頂及未證面保守中性，不新增幾何或宣稱當代現況。
+
+
+[補色來源與限制](APPEARANCE.md)。原模型與九張鎖圖保留；兩份README同文。本次僅驗外觀材質及原幾何等價，不重新執行原列印QA。文字勘誤：依原[dense-sampling-binding](dense-sampling-binding.json)，原23050三角面×每面7點＝161350法向樣本；修正原誤寫「161350個原三角面」，原QA檔及數值不變。
 
 ## 形體及資料界線
 - 東側十層高樓、南北六層兩翼、西側雙層柱廊、逐層階梯退台、下沉庭院實底與四小採光井、東背真穿通大拱，採同一連體外觀模型。
@@ -20,12 +30,9 @@
 
 ## 檔案與重建
 - [STL](model.stl)、[可編輯Blend](scene.blend)、[原創參數](build_model.py)、[參數摘要](parameters.json)、[來源](sources.json)
-- [頂視](previews/top.png)、[全部渲染SHA](render-manifest.json)、[硬QA](validation.json)、[逐Polygon](detailed-component-check.json)、[原面厚度/根](surface-ray-check.json)、[密採樣綁定](dense-sampling-binding.json)
+- [頂視](appearance/top.png)、[全部渲染SHA](render-manifest.json)、[硬QA](validation.json)、[逐Polygon](detailed-component-check.json)、[原面厚度/根](surface-ray-check.json)、[密採樣綁定](dense-sampling-binding.json)
 - Python環境依requirements.txt；執行build_model.py後，以Blender執行render_preview.py。scene.blend匯入同一STL三角網格；所有預覽直接渲染交付STL，無代理形體。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視<br>![頂視](previews/top.png) |  |  |
 
 ## 列印與檢驗限制
 - 單位毫米，含底座最長150mm，底座平面朝下。未實體試印，未以Cura/Prusa驗實際工具路徑。大拱、長柱廊、屋頂庇與外梯可能需要支撐；不得宣稱免支撐。任意縮小未驗證。
@@ -40,7 +47,7 @@
 - 高屋頂支柱：60個跨層原Polygon樣本 >1%；最大損失3.9296637586%，最少保留96.0703362414%。真矩形四角0.41mm鄰域外最大0.00000000000000mm²（最大相對比例0.0000000000%）。原矩形caliper最小1.875000000mm；原面法向首連續實體最小1.875000000mm。
 院階真角外損失非零，不稱全部純角。前兩族原垂直根到基底；屋頂柱部分根止於屋面z69.755683899mm，不能概稱全都到底。上述caliper僅這批原矩形，非全域或任意方向壁厚。逐樣本/真角/射線完整值見 [警告摘要](warning-summary.json)、[原Polygon細查](detailed-component-check.json)、[原面首段與根](surface-ray-check.json)。
 
-全161350個原三角面7點法向密採樣含10364個小於0.8mm首段，並保留後air與內外控制；[密點原CSV](dense-samples.csv.gz)。其中9912個為來源指定淺浮雕背接帶，以另一個直接內根方向驗證；其餘452個均以實際entry/exit兩真面內法向和驗得直接連續根，最小2.640249010mm；本候選不需要第三/第四面方向。所有失敗中間方向仍保留，不把背根當原法向厚度，也不把全模型短弦一概說數值誤差。[背接證據](local-back-roots.json)、[交角證據](corner-root-check.json)、[完整有限樣本分族覆蓋](family-coverage.json)。
+全23050個原三角面，每面7點，共161350個法向樣本含10364個小於0.8mm首段，並保留後air與內外控制；[密點原CSV](dense-samples.csv.gz)。其中9912個為來源指定淺浮雕背接帶，以另一個直接內根方向驗證；其餘452個均以實際entry/exit兩真面內法向和驗得直接連續根，最小2.640249010mm；本候選不需要第三/第四面方向。所有失敗中間方向仍保留，不把背根當原法向厚度，也不把全模型短弦一概說數值誤差。[背接證據](local-back-roots.json)、[交角證據](corner-root-check.json)、[完整有限樣本分族覆蓋](family-coverage.json)。
 
 數位檢查中發現的10F外簷薄唇、塔窗間薄帶、翼頂圓孔覆帽與四採光井薄唇已由參數源修正；舊候選不隨本包提供。採光井內側邊有約0.4m有界讓位以保留厚根，保留四開口及實底。此處不代表完成實體列印。
 

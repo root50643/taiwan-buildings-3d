@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "reviewer": "parent building worker, independent from appearance implementation child",
+  "scope": "Read actual five final renders and four architect photos; source/geometry/material review only. No new print QA.",
+  "images": {
+    "elevation.png": {
+      "sha256": "38e0936d6cf63f82aceb59d6100c813d26ea2207f6094de7a5af686bfb4d91a9",
+      "size": [
+        900,
+        800
+      ],
+      "white_clipped_pixels": 0,
+      "personally_viewed": true
+    },
+    "front.png": {
+      "sha256": "83922bbfb8cef05c6d4e089903466898df4a82c01b3508b12828267119c3890e",
+      "size": [
+        900,
+        800
+      ],
+      "white_clipped_pixels": 0,
+      "personally_viewed": true
+    },
+    "rear.png": {
+      "sha256": "700f533b9b748c5f5e68ae0952876237b688a3e4cf2ec96b63e6af58b32c23e9",
+      "size": [
+        900,
+        800
+      ],
+      "white_clipped_pixels": 0,
+      "personally_viewed": true
+    },
+    "source-angle.png": {
+      "sha256": "6115bbe20f922ea465e33e338b23a48e39fdcf419282b08c5aa471f2d810a09d",
+      "size": [
+        900,
+        800
+      ],
+      "white_clipped_pixels": 0,
+      "personally_viewed": true
+    },
+    "top.png": {
+      "sha256": "dde1ced27a59bbf097a49ddd538f7902bece0e2c3a78bb4b469105187e7fa689",
+      "size": [
+        900,
+        800
+      ],
+      "white_clipped_pixels": 0,
+      "personally_viewed": true
+    }
+  },
+  "findings": [
+    "Full object and base remain framed in all five views; no cropped roof/colonnade.",
+    "Source-backed muted brick on cores, steps and east facade, grey structural/slab/stair proxies and green-grey exact original windows/frame surface families; colors approximate undated photos.",
+    "End tall grid remains neutral intentionally; no unproven curtainwall glazing. Broad roof/ground neutral is conservative, not omission.",
+    "Dark long corridor backs are explicitly non-glass shadow/display proxies; actual open arches/holes unchanged by exact geometry.",
+    "Thick original stair outlines remain grey proxies, no new fine metallic railing geometry.",
+    "Original pre-existing model form/printing limits retained; unchanged geometric mesh is not new measured survey or real trial print."
+  ],
+  "checks": {
+    "five_views_actually_viewed": true,
+    "no_white_clip": true,
+    "source_families_plausible": true,
+    "no_new_geometry_or_unsupported_colored_detail_seen": true
+  },
+  "sha256": {
+    "build_appearance.py": "ce81ef392a20b7715e16b2ea3f1faecb43b3eb471f6eda6610061fcb7b4c0c68",
+    "appearance.3mf": "0b52eb88255f665d1fc423b00d5e6171c7f8a8dcbb3bf032d7b15cb7f774c2cb",
+    "appearance-materials.json": "85b2840d49eef1836d3feb0acf9061d6e73e8ded014db4b9347d6faa30ebf62d"
+  },
+  "independent_numeric_evidence": [
+    "output-geometry-review.json",
+    "clean-geometry-review.json",
+    "material-region-check.json",
+    "clean-material-region-check.json"
+  ],
+  "limitations": "Targeted numeric material-region checks cover windows, frames, shadow zones, original roof/grid neutral controls; brick and stair overall placement additionally image-reviewed, not whole-surface calibrated material certification."
+}

@@ -2,18 +2,25 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 實際STL斜正面<br>![斜正面](previews/front.png) | 實際STL背側截斷面<br>![背側截斷面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 校本部公開外觀近似模型，局部建築段。含底座尺寸 150.00 × 72.00 × 91.00 mm，最長150mm。各件獨立縮放，不能直接組成等比例校園。
 
 
-[正投影](previews/elevation.png) / [頂面與退縮區](previews/top.png)
+[正投影](appearance/elevation.png) / [頂面與退縮區](appearance/top.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正投影<br>![正投影](previews/elevation.png) | 頂面與退縮區<br>![頂面與退縮區](previews/top.png) |  |
+
+### 新增有限活動空拍材料（原四圖保留）
+
+本輪只依圖書館活動頁單張低解析空拍補前翼米灰牆肋、灰銀遮陽條與暗灰綠凹窗；不是重新驗證2024地面原圖的色彩。左端未知外牆、背側截面及未證屋頂保中性；粉紫直幅不當建材整面染色。不同年代來源僅作材料近似，不宣稱全館或當代現況。
+
+
+[材料來源與限制](APPEARANCE.md)。原STL、scene、幾何及四張鎖定預覽保留；本輪不重跑原列印QA，沒有實體試印。
 
 ## 保留特徵與範圍
 前翼左端水平遮陽條、中間較高垂直標示牆、右側長向密集直窗條、上層退縮帶窗與大挑簷、屋頂階梯狀量體及保留的退縮平台。

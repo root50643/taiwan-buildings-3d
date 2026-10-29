@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "revision": "color-v2-final",
+  "geometry_check_count": 16,
+  "clean_check_count": 16,
+  "material_region_check_passed": true,
+  "views": {
+    "front": {
+      "passed": true,
+      "observation": "Source-supported right exterior glazing and pale mullions, courtyard windows, original round lecture band/terrace distinct; full silhouette framed."
+    },
+    "rear": {
+      "passed": true,
+      "observation": "Broad unknown rear and left exterior remain neutral, including original left window backs; no symmetric color inference."
+    },
+    "elevation": {
+      "passed": true,
+      "observation": "Monumental original opening and three walkways unchanged; round band grey-green only ring-defined original faces."
+    },
+    "source-angle": {
+      "passed": true,
+      "observation": "Corrected courtyard backing remains glazing rather than roundwall material; brown original terrace floor not rim or invented subdivision."
+    },
+    "top": {
+      "passed": true,
+      "observation": "Two original shallow roof-well floors metal-grey, broad roof/mechanical boxes neutral; no PV claim or added vegetation."
+    }
+  },
+  "preview_sha256": {
+    "appearance/front.png": "6939473cc2237f6e056fbf88a94d41f4161450911aa6c3fb97511be3f833e7ce",
+    "appearance/rear.png": "ef4e2f030b4226c9e9e849590c475a87d1936dde37cb4eec36543be1144b9b83",
+    "appearance/elevation.png": "0e84e9af6e2d8c05360d37b9dfd33a90fccb371405892fa04fc84574104e8b1d",
+    "appearance/source-angle.png": "a37351bbd402feb7aad671f43992edf09039bbd196b92b8122bc085aafed47c5",
+    "appearance/top.png": "7b42f28748e73a9f9ac30380bcbd7ecdc3084e5875d64d3bd3086c8a3d858497"
+  },
+  "sha256": {
+    "appearance.blend": "44cbbe8185c7f4fa536351254fd9325f51bd7c37cb50c9a940342b4d816fec61",
+    "appearance.3mf": "59d5286886f18e64d52953f97bb9dde53c434332684404317ff2c9a9ffa14db8",
+    "build_appearance.py": "c87c8e205a82f137bf1c421d2f5d671401e2fc05481ea89edd1cdfdb71ed7af3",
+    "appearance-materials.json": "1051590bf1193ea31c5a850cab69c6f50728530ba10d69c2a489f3fdcc1e69a1",
+    "scene.blend": "11d9a032a6dd4213096b005ac9e292540fa3558c82560a8256bf940266ea95b0",
+    "model.stl": "816013a8dbc35da9d66015de15a2b378b0836e7b647b0f870dc803761338f09c"
+  },
+  "clean_preview_byte_exact": true,
+  "png_text_chunks_absent": true,
+  "old_three_previews_unchanged": true,
+  "corrections": [
+    "V1 radius-centroid/rim bounds miscolored planar inner-window triangles4732/4745/4810 at x26.5. V2 uses original96-facet supporting planes and final true window-back priority; all three restored to window material without geometry change."
+  ],
+  "additional_diagnostics": [
+    "400 window-proxy triangles:160 right exterior,102 courtyard,138 existing round band;160 left exterior backing triangles remain unknown-neutral.",
+    "38 original z33 cut-floor triangles brown;4 original z61 roof-well triangles metal-grey.",
+    "Roundwall and all pale front/court faces checked against real original planes or component bounds."
+  ],
+  "limitations": [
+    "Rectangular teaching/research building plus original small round lecture projection only, not neighboring colorful auditorium.",
+    "Opaque photographic materials; no missing metal bands, timber divisions, planting or new topology.",
+    "Roof wells not asserted as photovoltaics; broad roofs/left exterior/back neutral.",
+    "Original model simplifications and QA caveats retained; no trial print or structural certification."
+  ]
+}

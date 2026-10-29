@@ -2,18 +2,25 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 實際STL斜正面<br>![斜正面](previews/front.png) | 實際STL背側截斷面<br>![背側截斷面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 校本部公開外觀近似模型，局部建築段。含底座尺寸 150.00 × 62.00 × 66.30 mm，最長150mm。各件獨立縮放，不能直接組成等比例校園。
 
 
-[正投影](previews/elevation.png) / [頂面與退縮區](previews/top.png)
+[正投影](appearance/elevation.png) / [頂面與退縮區](appearance/top.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正投影<br>![正投影](previews/elevation.png) | 頂面與退縮區<br>![頂面與退縮區](previews/top.png) |  |
+
+### 新增有限實照材料（原四圖保留）
+
+依2024年8月實照作前棟米黃灰牆柱、灰白原窗框、灰綠窗背及灰階梯的近似材料。背側是人為截斷，側大牆與屋頂未知區保持中性；不代表全館或2026現況。春聯紅帶、金字及簷口紅細帶缺原面界而省略，不將整根柱或整片屋頂染紅。
+
+
+[材料來源與限制](APPEARANCE.md)。原STL、scene、幾何及四張鎖定預覽保留；只另加appearance，不重跑原列印QA，沒有實體試印。
 
 ## 保留特徵與範圍
 六根圓形通高巨柱、柱後退縮的雙層入口、上部兩層前伸量體、兩側較低翼部、層間帶窗、前階梯及中央大挑簷。

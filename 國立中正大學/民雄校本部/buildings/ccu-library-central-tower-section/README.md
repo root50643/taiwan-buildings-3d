@@ -2,18 +2,22 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 前斜視（實際 STL）<br>![前斜視](previews/front.png) | 後斜視（實際 STL）<br>![後斜視](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
 
 國立中正大學・民雄校本部｜公開實拍外觀近似模型｜單位：毫米（mm）。
 
 
-[正立面](previews/elevation.png) · [上視圖](previews/top.png)
+### 新增官方實照近似彩色（原四圖保留）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 上視圖<br>![上視圖](previews/top.png) |  |
+僅原中央塔樓與前方門廊段，並非整個圖書資訊大樓完成。磚褐牆、灰綠原飾帶、深窗背與淺色玻璃磚表觀近似；兩三角填面不認證透明玻璃。後圓體限有證外半圈，未知側向大牆／肩部未證面／側窗／屋頂中性；非目前施工或完工現況。
+
+
+原幾何、尺寸、STL、scene及四張鎖定預覽不變；詳[補色來源與限制](APPEARANCE.md)。
 
 ## 模型範圍
 

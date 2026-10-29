@@ -1,0 +1,151 @@
+"""Add source-guided approximate materials; never modify original mesh or locked previews.
+Run Blender 4.3.2: blender -b -t 1 --python-exit-code 1 -P build_appearance.py
+Requires original scene.blend and model.stl alongside this script. No source photos embedded.
+"""
+from pathlib import Path
+import sys
+import bpy,hashlib,json,math,struct,zipfile,xml.etree.ElementTree as ET
+from mathutils import Vector
+R=Path(__file__).resolve().parent
+bpy.ops.wm.open_mainfile(filepath=str(R/'scene.blend'))
+bpy.context.preferences.filepaths.save_version=0
+obj=next(o for o in bpy.context.scene.objects if o.type=='MESH');mesh=obj.data
+verts=[tuple(v.co) for v in mesh.vertices];faces=[tuple(p.vertices) for p in mesh.polygons]
+assert all(len(f)==3 for f in faces)
+def digest(a,fmt):return hashlib.sha256(b''.join(struct.pack(fmt,*r) for r in a)).hexdigest()
+before={'vertices':digest(verts,'<3f'),'faces':digest(faces,'<3I')}
+# Three official undated photos: central tower and portico only, not full library.
+palette=[('Unknown sides roof base','#A7AAA5',.86),('Muted reddish brown brick family','#946D61',.86),('Original grey green trim bars','#9A9E94',.85),('Pale glass block appearance opaque proxy','#ACB8AF',.65),('Pale triangular infill opaque proxy','#9BABA8',.65),('Dark front windows entrance proxy','#46565A',.62),('Original muted red narrow frames','#795C58',.8),('Rear and outward drum window proxy','#697D78',.62),('Original grey entry steps','#A0A29A',.86)]
+def rgb(h):return tuple(int(h[i:i+2],16)/255 for i in (1,3,5))
+def lin(v):return v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4
+mesh.materials.clear()
+for name,col,rough in palette:
+ m=bpy.data.materials.new(name);m.use_nodes=True;bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=tuple(lin(v) for v in rgb(col))+(1,);bs.inputs['Roughness'].default_value=rough;m.diffuse_color=tuple(rgb(col))+(1,);mesh.materials.append(m)
+indices=[]
+def near(v,t,e=.035):return abs(v-t)<e
+import numpy as np
+EPS=.012
+def bounded(v,lo,hi):return np.all(v>=np.array(lo)-EPS) and np.all(v<=np.array(hi)+EPS)
+def plane(v,k,t):return max(abs(v[:,k]-t))<EPS
+def boxface(v,x,y,z,w,d,h):
+ lo=[x-w/2,y-d/2,z];hi=[x+w/2,y+d/2,z+h]
+ return bounded(v,lo,hi) and any(plane(v,k,t) for k in range(3) for t in [lo[k],hi[k]])
+def drumwall(v,n):
+ if abs(n[2])>.01 or min(v[:,1])<40-EPS or not bounded(v,[-19,40,59],[19,59,81]):return False
+ q=v[:,:2]-[0,40]
+ for k in range(24):
+  a=(k+.5)*math.pi/12;rad=np.array([math.cos(a),math.sin(a)])
+  if np.dot(n[:2],rad)>.8 and max(abs(q@rad-19*math.cos(math.pi/24)))<EPS:return True
+ return False
+for p in mesh.polygons:
+ v=np.array([mesh.vertices[j].co[:] for j in p.vertices]);n=np.array(p.normal);nx,ny,nz=n;i=0
+ # Actual frontal opaque surfaces; no virtual fine brick/stone divisions.
+ if plane(v,1,-33) and ny<-.8 and bounded(v,[-54,-33,2.8],[54,-33,101]):i=1
+ if plane(v,1,-59.75) and ny<-.8 and bounded(v,[-56,-59.75,31],[56,-59.75,41]):i=1
+ if plane(v,1,-59.5) and ny<-.8 and bounded(v,[-22,-59.5,39],[22,-59.5,54]):i=1
+ if plane(v,1,-60) and ny<-.8 and bounded(v,[-56,-60,28],[56,-60,33]):i=1
+ # Original square portico piers: same visible brick family on their existing sides.
+ for x,y in [(x,-58) for x in [-53,-18,18,53]]+[(x,-37) for x in [-53,53]]:
+  if boxface(v,x,y,3,3.8,5,26) and abs(nz)<.1:i=1
+ # Supported rear opaque wall planes and outward original24-facet drum only.
+ for yy,x0,x1,z0,z1 in [(43,-54,54,2.8,71.8),(57,-31,31,2.8,62.8),(44,-54,54,68,89)]:
+  if plane(v,1,yy) and ny>.8 and bounded(v,[x0,yy,z0],[x1,yy,z1]):i=1
+ if drumwall(v,n):i=1
+ # Three separate original trim bars; no invented portico/pier belts.
+ for z in [43,57,68]:
+  if boxface(v,0,-33.5,z,108,2.3,1.5):i=2
+ # Existing front true cut backs.
+ if plane(v,1,-31.25) and ny<-.8 and bounded(v,[-25,-31.25,3],[25,-31.25,29]):i=5
+ if plane(v,1,-58.5) and ny<-.8:
+  if bounded(v,[-18,-58.5,40],[18,-58.5,51]):i=4
+  for x in [-43,-30,30,43]:
+   if bounded(v,[x-4,-58.5,33],[x+4,-58.5,39]):i=3
+ if plane(v,1,-32) and ny<-.8 and bounded(v,[-13.5,-32,86],[13.5,-32,101]):i=4
+ if plane(v,1,-32.25) and ny<-.8:
+  if bounded(v,[-20.5,-32.25,70],[20.5,-32.25,80]):i=5
+  for x in [-17,-6,6,17]:
+   if bounded(v,[x-3.5,-32.25,60],[x+3.5,-32.25,66]):i=5
+  for x in [-42,42]:
+   for z in [44,58,75]:
+    if bounded(v,[x-4,-32.25,z],[x+4,-32.25,z+8]):i=5
+ # Muted red on ORIGINAL narrow framing, not new diagonal grids.
+ for x in [-11,0,11]:
+  if boxface(v,x,-60,40,1.4,3,8 if x==0 else 3.5):i=6
+ for x in [-18,-6,6,18]:
+  if boxface(v,x,-33.5,3,1.5,3.2,26):i=6
+ if boxface(v,0,-33.5,86,1.5,3,14):i=6
+ for x in [-16,-8,0,8,16]:
+  if boxface(v,x,-34,70,1.4,3.5,10):i=6
+ # Photo-supported rear window backings, not unknown side window planes.
+ if ny>.8:
+  if plane(v,1,54):
+   for x in [-23,-7,9,25]:
+    for z in [11,24,37]:
+     if bounded(v,[x-6,54,z],[x+6,54,z+9]):i=7
+   for x in [-24,-12,0,12,24]:
+    if bounded(v,[x-3.5,54,51],[x+3.5,54,58]):i=7
+  if plane(v,1,41.25):
+   for x in [-29,29]:
+    if bounded(v,[x-8.5,41.25,72],[x+8.5,41.25,77]):i=7
+  if plane(v,1,41.5):
+   for x in [-45,-35,35,45]:
+    for z in [9,19,29,39,49,59,73]:
+     if bounded(v,[x-2.5,41.5,z],[x+2.5,41.5,z+6.2]):i=7
+ for angle in range(10,171,15):
+  a=math.radians(angle);rad=np.array([math.cos(a),math.sin(a)]);tan=np.array([-math.sin(a),math.cos(a)]);q=v[:,:2]-[0,40]
+  if np.dot(n[:2],rad)>.8 and max(abs(q@rad-17.5))<EPS and max(abs(q@tan))<=2.8+EPS and min(v[:,2])>=65-EPS and max(v[:,2])<=76+EPS:i=7
+ for k in range(5):
+  if boxface(v,0,-66+k*1.6,2.8,104,2,.55*(k+1)):i=8
+ if max(v[:,2])<=3+EPS:i=0
+ p.material_index=i;indices.append(i)
+assert before=={'vertices':digest([tuple(v.co) for v in mesh.vertices],'<3f'),'faces':digest([tuple(p.vertices) for p in mesh.polygons],'<3I')}
+obj['appearance_policy']='Source-guided approximate sRGB; same exact vertices/triangles as original; unknown rear neutral'
+scene=bpy.context.scene;scene['appearance_revision']='color-v1'
+scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=32;scene.cycles.seed=0;scene.cycles.use_denoising=False
+scene.render.threads_mode='FIXED';scene.render.threads=1
+scene.render.resolution_x=900;scene.render.resolution_y=800
+for attr in dir(scene.render):
+ if attr.startswith('use_stamp'):
+  try:setattr(scene.render,attr,False)
+  except (TypeError,AttributeError):pass
+scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.82,.85,.89,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.65
+scene.view_settings.view_transform='Standard';scene.view_settings.look='Medium High Contrast';scene.view_settings.exposure=0;scene.view_settings.gamma=1
+# New appearance lighting only: remove inherited lamps, never change original scene.
+for lamp in list(scene.objects):
+ if lamp.type=='LIGHT':bpy.data.objects.remove(lamp,do_unlink=True)
+for name,energy,ang,rot in [('Key',2.1,.16,(28,-26,-32)),('Fill',.55,.35,(-20,32,140))]:
+ light=bpy.data.lights.new(name,'SUN');light.energy=energy;light.angle=ang;o=bpy.data.objects.new(name,light);bpy.context.collection.objects.link(o);o.rotation_euler=tuple(math.radians(a) for a in rot)
+
+bpy.ops.wm.save_as_mainfile(filepath=str(R/'appearance.blend'))
+# Core 3MF base materials per original triangle: no geometry splitting/resampling.
+ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02';ET.register_namespace('',ns)
+e=lambda tag,attrs={}:ET.Element('{'+ns+'}'+tag,attrs)
+root=e('model',{'unit':'millimeter','xml:lang':'en-US'});res=ET.SubElement(root,'{'+ns+'}resources');bm=ET.SubElement(res,'{'+ns+'}basematerials',{'id':'1'})
+for name,col,_ in palette:ET.SubElement(bm,'{'+ns+'}base',{'name':name,'displaycolor':col+'FF'})
+o=ET.SubElement(res,'{'+ns+'}object',{'id':'2','type':'model'});m=ET.SubElement(o,'{'+ns+'}mesh');vs=ET.SubElement(m,'{'+ns+'}vertices')
+for v in verts:ET.SubElement(vs,'{'+ns+'}vertex',dict(zip(['x','y','z'],[format(c,'.17g') for c in v])))
+ts=ET.SubElement(m,'{'+ns+'}triangles')
+for f,i in zip(faces,indices):ET.SubElement(ts,'{'+ns+'}triangle',{'v1':str(f[0]),'v2':str(f[1]),'v3':str(f[2]),'pid':'1','p1':str(i),'p2':str(i),'p3':str(i)})
+build=ET.SubElement(root,'{'+ns+'}build');ET.SubElement(build,'{'+ns+'}item',{'objectid':'2'})
+with zipfile.ZipFile(R/'appearance.3mf','w',zipfile.ZIP_DEFLATED) as out:
+ for n,b in {'3D/3dmodel.model':ET.tostring(root,encoding='utf-8',xml_declaration=True),'[Content_Types].xml':b'<?xml version="1.0"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/></Types>','_rels/.rels':b'<?xml version="1.0"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Target="/3D/3dmodel.model" Id="rel0" Type="http://schemas.microsoft.com/3dmanufacturing/2013/01/3dmodel"/></Relationships>'}.items():
+  info=zipfile.ZipInfo(n,date_time=(2026,10,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;out.writestr(info,b)
+from collections import Counter
+(R/'appearance-materials.json').write_text(json.dumps({'revision':'color-v1','geometry':before,'palette':[{'name':n,'srgb':c,'roughness':r} for n,c,r in palette],'face_counts':dict(Counter(indices)),'face_material_indices':indices,'limits':['Photographic approximation, not calibrated real finish values','Opaque glazing proxies, no real transparency or physical material certification','Central tower and front portico only, no low east-west wings or landscape pillars. Undated photo appearance, not repair-completion certification. Unknown side windows and broad roofs neutral; no diagonal infill grid, glass-block grid, gold text, brick seams or extra bands. Triangular infills and short portico windows are opaque mixed-material proxies, not confirmed transparent glass.','No actual trial print; original partial-model QA caveats remain']},indent=2))
+# New images only; locked previews/front.png and original scene are never overwritten.
+views={'front':((-190,-270,170),(0,0,50.5),230),'rear':((190,270,160),(0,0,50.5),230),'elevation':((0,-330,50.5),(0,0,50.5),230),'source-angle':((-155,-270,90),(0,-5,50.5),230),'top':((0,0,350),(0,0,0),230)}
+out=R/'appearance';out.mkdir(exist_ok=True)
+for name,(pos,target,scale) in ([] if '--skip-render' in sys.argv else views.items()):
+ c=scene.camera;c.location=pos;c.rotation_euler=(Vector(target)-c.location).to_track_quat('-Z','Y').to_euler();c.data.ortho_scale=scale
+ inv=c.rotation_euler.to_matrix().transposed();projected=[inv@(obj.matrix_world@Vector(corner)-c.location) for corner in obj.bound_box]
+ width=max(v.x for v in projected)-min(v.x for v in projected);height=max(v.y for v in projected)-min(v.y for v in projected)
+ c.data.ortho_scale=max(width,height*scene.render.resolution_x/scene.render.resolution_y)*1.18
+ scene.render.filepath=str(out/(name+'.png'));bpy.ops.render.render(write_still=True)
+ data=(out/(name+'.png')).read_bytes(); cleaned=data[:8]; off=8
+ while off<len(data):
+  length=struct.unpack_from('>I',data,off)[0];typ=data[off+4:off+8];body=data[off+8:off+8+length];key=body.split(b'\0',1)[0]
+  variable=typ in (b'tEXt',b'zTXt',b'iTXt') # no private path/date/timing metadata
+  if not variable:cleaned+=data[off:off+length+12]
+  off+=length+12
+ (out/(name+'.png')).write_bytes(cleaned)
+print('APPEARANCE_DONE',before,dict(Counter(indices)))

@@ -1,0 +1,112 @@
+{
+  "status": "SCOPED_OPENINGS_VISUAL_PASS",
+  "passed": true,
+  "version": "v3",
+  "scope": "Independent source/opening-code and nine final normalized rendered images; not structural, fabrication, or complete interior certification.",
+  "source_basis": {
+    "period": "2013-05-30 A current-condition survey",
+    "visually_read_pdf_pages": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209
+    ],
+    "primary_opening_sheets": {
+      "203": "A3-01 chamfer middle plane only",
+      "204": "A3-02 west and north",
+      "205": "A3-03 south and east"
+    },
+    "excluded": "B restoration drawings; hidden windows not recreated as exposed openings",
+    "access_method": "Read-only visual inspection of permitted renders; no extraction/decryption and no source imagery included."
+  },
+  "checks": [
+    {
+      "view": "front.png",
+      "passed": true,
+      "finding": "Complete overview; four unequal chamfer fields, four transoms, shutter and covered diamonds; six crest accents and neutral badge visible.",
+      "sha256": "d298646a092b589e98b7eeda60e0878cff6a5511436e3d7bddee0b02cfd4dae7"
+    },
+    {
+      "view": "rear.png",
+      "passed": true,
+      "finding": "Asymmetric cladding heights, south opening groups and roof stair enclosure remain distinct.",
+      "sha256": "f514e1a3ff0dafa19e1b1510d5d313d0dba5679197b29351ffe2c02edf5199d9"
+    },
+    {
+      "view": "west_elevation.png",
+      "passed": true,
+      "finding": "Three upper six-band windows and vents, two lower six-band/transom groups, closed infill, semicircle and circle with correct bars.",
+      "sha256": "f7cc86edadbb1e64e1f014b9a20f183979d7971f5e00d53025eb68e1573761ca"
+    },
+    {
+      "view": "north_elevation.png",
+      "passed": true,
+      "finding": "Three upper two-pane windows versus three lower six-band/transom groups; crest accents visible.",
+      "sha256": "472b33c734ecfc0fe5e7be394ca9fb827d6c9408a12e2886f1501f9a55409ece"
+    },
+    {
+      "view": "south_elevation.png",
+      "passed": true,
+      "finding": "Four upper six-band groups plus semicircle; one small and two tall lower windows; cladding end has one window per storey.",
+      "sha256": "f29bf750c240e00eb95be400167ed6a2a27d9749a78a80d5a00e7cbd3fd4a0a5"
+    },
+    {
+      "view": "east_elevation.png",
+      "passed": true,
+      "finding": "Three upper northern two-pane fields and vents; one upper outer-cladding window; concealed original apertures not drawn through addition.",
+      "sha256": "f5119f3eb1550e799219e5c8a3ae2f8ccea66fb190164d1774f269c3322615d9"
+    },
+    {
+      "view": "top.png",
+      "passed": true,
+      "finding": "Pentagonal main footprint, split-height east addition, stair enclosure and two low circular base proxies.",
+      "sha256": "94d9454b9126212a0f4cd620f2fb4e8e73d3b69590de6e972554a7c62fee6345"
+    },
+    {
+      "view": "entrance_detail.png",
+      "passed": true,
+      "finding": "Intentional crop; separate narrow/wide/wide/narrow fields and blank noticeboards conceal original diamonds.",
+      "sha256": "80d3537c5f2fc6ba1bc7c81e2b447f2e0aa93fbd3c5b3bfbb34fcd557c84ffa1"
+    },
+    {
+      "view": "annex_detail.png",
+      "passed": true,
+      "finding": "Intentional crop; metal-window host distinct from masonry and stepped roofline visible.",
+      "sha256": "44446069a20d808b6764a57c0b1699cb6b3362caae71c91e2d248f029566b6e5"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "issue": "Six crest accents buried inside parapet in v2.",
+      "resolution": "C plane changed to +0.12m with 0.08m relief; outer edge +0.20m exceeds parapet +0.15m. All six now visibly exposed in front and side projections.",
+      "passed": true
+    },
+    {
+      "issue": "Badge previously swallowed by crest and whole-image camera clipping.",
+      "resolution": "Neutral badge visible; all seven whole-building views retain entire building. Two detail crops intentional.",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Graphical dimensions approximately ±3%, not new measured survey.",
+    "Member thicknesses, relief, cladding pitch and display colors are legibility proxies.",
+    "Opaque glazing and blind roof-door recess do not model complete interiors.",
+    "Badge fine detail and illegible text omitted; badge is not a clock.",
+    "South/east whole-elevation top clearance is narrow but no component is cut off.",
+    "No physical trial print or structural-safety claim."
+  ],
+  "artifact_sha256": {
+    "build_model.py": "03312712d11f188a58fd3ba832cee52cca09921cad4195359611800b0552095c",
+    "opening-positions.json": "817ff8d182a6fcd8acdbd506ef889a31a7b0a90afdc58160c0880d7c0abd0454",
+    "model.stl": "7bcab5b084f0723c52dcca275f52425b565f7ad1d4f445c0536c6a78d7313607",
+    "model.3mf": "ff9745036d3506286481a0fdc30fc4c9d99ea07979121cf182ce60dbbf00c516",
+    "mesh-data.npz": "8e8b0d54366dcc133fb8e52727e68b81b07830ab932502a467a5cfc0b5fadc55"
+  },
+  "source_images_embedded": false
+}

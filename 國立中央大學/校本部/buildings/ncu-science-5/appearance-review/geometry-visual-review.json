@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "revision": "color-v1-final",
+  "geometry_check_count": 16,
+  "clean_check_count": 16,
+  "material_region_check_passed": true,
+  "views": {
+    "front": {
+      "passed": true,
+      "observation": "Pink projecting lower screen remains separate from white support piers, connecting slabs and courtyard wall; ivory balconies and teal-grey window backs clear."
+    },
+    "rear": {
+      "passed": true,
+      "observation": "Unknown outer rear and right wall neutral; original parapet through-holes remain structural openings, not colored glazing."
+    },
+    "elevation": {
+      "passed": true,
+      "observation": "Screen base piers are pale, main inner facades pale; no added yellow ground panel or face subdivisions."
+    },
+    "source-angle": {
+      "passed": true,
+      "observation": "Whole silhouette framed; screen pink front and original through-openings preserved; balcony ivory only existing components."
+    },
+    "top": {
+      "passed": true,
+      "observation": "Neutral L-shaped flat roofs/base, pink screen edge and pale slab connection distinct; no courtyard paving invention."
+    }
+  },
+  "preview_sha256": {
+    "appearance/front.png": "538f4166b2252805155b04a3dc6dfc6edeb2d7c2bdca0b89f4c0dca0666d8810",
+    "appearance/rear.png": "5bba4a606230f745f04261cd293ebadb8408b08324e6957d8c110e5443982bfe",
+    "appearance/elevation.png": "46ad63b87250dbe1114a524ed5030efa8512a5d978876b06f099987f0b065c96",
+    "appearance/source-angle.png": "15eefddb30832489372a4fad3edbb58546f5ae4ee798f79b7ad001d03b624c0b",
+    "appearance/top.png": "901a1b1936e37db04f110820305f82923e25d58b78713ba31f4dacda8c5fd466"
+  },
+  "sha256": {
+    "appearance.blend": "bb92b030a33d4ea6d2ed50ad8f5d318b1c3d1149a3d8dc38c05d2a7de91c11b0",
+    "appearance.3mf": "d58316957f4aad4aaf27841b8427df61ca208bbf30aa699cf861115cba1103b7",
+    "build_appearance.py": "0c29b7d4d9e175d3c1a76b48fe410ecabb4c56412e25c9818dbf550aac382bfb",
+    "appearance-materials.json": "f96ec93b5703151a51818d517ca02642b3d5677b1de3b0be85943dd340661550",
+    "scene.blend": "b30e8ad79aae598f7401dfff08c2486b926cc12fa6984876677d0a2e79261f76",
+    "model.stl": "a0b6bd27732d9fc90b4944bf10cf19add794155d667c7c202531267a88c047a1"
+  },
+  "clean_preview_byte_exact": true,
+  "png_text_chunks_absent": true,
+  "old_three_previews_unchanged": true,
+  "shared_screen_pier_boundary": {
+    "faces": [
+      2634,
+      2646,
+      2660
+    ],
+    "finding": "All vertices x20.5,z15..15.2: shared union front skin inside actual screen beginning z15. Pink front screen priority is intentional and does not color below z15 supporting pier. Initial reviewer assertion was overbroad and corrected after vertex inspection; no model change required."
+  },
+  "additional_diagnostics": [
+    "120 original window backing triangles,60 per inner wing.",
+    "664 pink screen triangles and298 ivory balcony triangles checked using full original component bounds.",
+    "30 lower pier,340 connecting slab,199 screen-behind-wall triangles remain pale; no pink spill behind screen."
+  ],
+  "limitations": [
+    "Photographic palette approximation on original mesh, not full calibrated current-state survey.",
+    "Parapet through-holes structural, not glass; no added colored ground panel or new face subdivision.",
+    "Original inferred outer backs and roofs remain neutral; original geometry QA caveats retained.",
+    "No actual trial print or new structural certification."
+  ]
+}

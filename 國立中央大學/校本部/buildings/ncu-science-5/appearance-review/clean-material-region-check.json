@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "issues": [],
+  "counts": {
+    "base_unknown": 53,
+    "outer_rear_unknown": 34,
+    "wall_behind_screen": 199,
+    "outer_right_unknown": 2,
+    "main_inner_back": 60,
+    "screen_connecting_slab": 340,
+    "right_inner_back": 60,
+    "screen_support_pier": 30
+  },
+  "shared_screen_pier_boundary": {
+    "faces": [
+      2634,
+      2646,
+      2660
+    ],
+    "finding": "All vertices x20.5,z15..15.2: shared union front skin inside actual screen beginning z15. Pink front screen priority is intentional and does not color below z15 supporting pier. Initial reviewer assertion was overbroad and corrected after vertex inspection; no model change required."
+  },
+  "sha256": {
+    "appearance.blend": "7368567935357ac1be8881786d797a944b74c8ead847c74d21ca65622f6a8969"
+  },
+  "limits": [
+    "Lower screen pink only within original screen; supporting piers/slabs and behind wall are separate pale structure",
+    "Parapet perforations are through openings, not glazing",
+    "No new ground color panel or new wall face topology",
+    "Unknown outer backs/roofs neutral; no trial print"
+  ]
+}

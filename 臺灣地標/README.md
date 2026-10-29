@@ -1,10 +1,10 @@
-# 臺灣地標｜50 組外觀研究模型包
+# 臺灣地標｜51 組外觀研究模型包
 
-收錄 50 組臺灣地標相關外觀研究模型包（含局部研究，不等於50棟完整建築），提供原創參數化模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。另新增臺北府城北門／承恩門：依2017–2022公開來源系列建立的完整歷史外觀近似，保留真實透空拱形門洞、四向上層開口與連續瓦屋頂；照片拍攝及插入日期不明，F02與F04為同一短向面，不是確定拍攝年份的測繪復原或2026現況。另新增旗後燈塔完整連接主建築：依2020年第一期竣工圖與完成照片建立八角塔、短連接頸及整個辦公展示翼的單棟外觀近似，保留四向開口差異、低平翼頂及開放塔側退凹；不含整個園區，不是2026現況測繪。完成照片支持的燈室白色斜格與上緣、玻璃下暗帶已逐構件勘誤，色值仍為未校準近似。各包尺寸與列印限制請讀專屬README。
+收錄 51 組臺灣地標相關外觀研究模型包（含局部研究，不等於51棟完整建築），提供原創參數化模型、STL、可編輯 Blender 場景，以及由模型本身渲染的預覽。原有24座150 mm級模型之外，新增臺北表演藝術中心：2022完成設計的完整主建築比例詮釋，展示底板約258×218 mm；非現況測繪，照片日期不明。另新增北投圖書館完整歷史原設計外觀：2006完成設計及2026年4月整修前的有界近似，保留折變屋頂、溪側外露地下層、凹入陽臺與開口設備屏；不是整修後現況、測繪或校色真色。另新增日月潭向山行政暨遊客中心：2010完成設計的完整不等雙翼，含兩道透空雨棚、下降綠屋頂、凹入路徑及接地庭院；兩翼合計一套，不是2026現況測繪或校色真色。另新增大溪武德殿完整主殿：2014調查狀態、2000–2001修復後及2016廊道前，保留曲線入母屋、分離側門平臺與僅右側外梯；不是現今整個博物館園區或未改動的1935原貌。另新增埔里紙教堂：2008重組完成、2009照片佐證的完整單棟歷史近似，保留58根疏密橢圓紙柱、覆蓋中央的膜頂與懸吊細桿；不是1995神戶場地、整個園區、2026現況或臺灣竣工實測。另新增臺北府城北門／承恩門：依2017–2022公開來源系列建立的完整歷史外觀近似，保留真實透空拱形門洞、四向上層開口與連續瓦屋頂；照片拍攝及插入日期不明，F02與F04為同一短向面，不是確定拍攝年份的測繪復原或2026現況。另新增旗後燈塔完整連接主建築：依2020年第一期竣工圖與完成照片建立八角塔、短連接頸及整個辦公展示翼的單棟外觀近似，保留四向開口差異、低平翼頂及開放塔側退凹；不含整個園區，不是2026現況測繪。完成照片支持的燈室白色斜格與上緣、玻璃下暗帶已逐構件勘誤，色值仍為未校準近似。各包尺寸與列印限制請讀專屬README。
 
 ## 使用前先讀
 
-- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。50組模型包並非共同比例，不能用來反推真實建築尺寸。
+- 單位為毫米（mm），各模型以獨立成品大小設計；原有24座最長邊約150 mm，新增臺北表演藝術中心的底板約258×218 mm。51組模型包並非共同比例，不能用來反推真實建築尺寸。
 - 模型依公開外觀照片等資料重新建立幾何，屬桌上型外觀詮釋，並非測繪、工程或官方授權模型。未確認的背面、屋頂與細節可能經過推定、簡化及加粗。
 - 數位網格驗證不等同切片或實體試印成功。尚未完成實際切片測試及實體試印；列印前請檢查逐層路徑、薄壁、懸垂、支撐與拆除空間。
 - STL 不包含預覽材質或色彩。Blender 場景的地板、相機、燈光只供預覽，請勿當作列印模型匯出。
@@ -32,7 +32,7 @@
 | [![帝國製糖臺中營業所歷史主體外觀研究模型](imperial-sugar-taichung-office-historic-body-study/previews/front.png)](imperial-sugar-taichung-office-historic-body-study/README.md)<br>**[帝國製糖臺中營業所（歷史主體研究）](imperial-sugar-taichung-office-historic-body-study/README.md)** | [![臺中刑務所浴場修後主體外觀研究模型](taichung-prison-bathhouse/previews/front.png)](taichung-prison-bathhouse/README.md)<br>**[臺中刑務所浴場（修後主體研究）](taichung-prison-bathhouse/README.md)** | [![原臺中刑務所典獄官舍修後主體外觀研究模型](taichung-prison-warden-residence-main-body-study/previews/front.png)](taichung-prison-warden-residence-main-body-study/README.md)<br>**[原臺中刑務所典獄官舍（修後主體研究）](taichung-prison-warden-residence-main-body-study/README.md)** |
 | [![林之助畫室調查主體截取外觀研究模型](lin-chih-chu-studio-survey-core/previews/front.png)](lin-chih-chu-studio-survey-core/README.md)<br>**[林之助畫室（調查主體截取研究）](lin-chih-chu-studio-survey-core/README.md)** | [![北斗郡守官舍修復主體外觀研究模型](beidou-governor-residence-restoration-main/previews/front.png)](beidou-governor-residence-restoration-main/README.md)<br>**[北斗郡守官舍（修復主體研究）](beidou-governor-residence-restoration-main/README.md)** | [![陶然居2001調查雙翼玄關截取研究模型](taoran-teahouse-2001-selected-wings/previews/front.png)](taoran-teahouse-2001-selected-wings/README.md)<br>**[陶然居（2001調查雙翼玄關截取）](taoran-teahouse-2001-selected-wings/README.md)** |
 | [![紫藤廬修復前調查外觀研究模型](wisteria-house-survey-2001-2003/previews/front.png)](wisteria-house-survey-2001-2003/README.md)<br>**[紫藤廬（修復前調查外觀）](wisteria-house-survey-2001-2003/README.md)** | [![蔡瑞月2000調查形制推定外觀研究模型](tsai-jui-yueh-dance-studio-survey-2000-no8-10/previews/front.png)](tsai-jui-yueh-dance-studio-survey-2000-no8-10/README.md)<br>**[蔡瑞月舞蹈研究社（2000調查8／10號）](tsai-jui-yueh-dance-studio-survey-2000-no8-10/README.md)** | [![閻錫山故居種能洞石造屋2006調查期外觀研究模型](yan-xishan-zhongneng-stone-house-survey-2006/previews/front.png)](yan-xishan-zhongneng-stone-house-survey-2006/README.md)<br>**[種能洞石造屋（2006調查期）](yan-xishan-zhongneng-stone-house-survey-2006/README.md)** |
-| [![閻錫山故居紅磚屋2006調查期外觀研究模型](yan-xishan-redbrick-house-survey-2006/previews/front.png)](yan-xishan-redbrick-house-survey-2006/README.md)<br>**[閻錫山故居紅磚屋（2006調查期）](yan-xishan-redbrick-house-survey-2006/README.md)** | [![松山菸廠育嬰室2004測繪主體外觀研究模型](songshan-nursery-main-body-survey-2004/previews/front.png)](songshan-nursery-main-body-survey-2004/README.md)<br>**[松山菸廠育嬰室（2004測繪主體）](songshan-nursery-main-body-survey-2004/README.md)** |  |
+| [![閻錫山故居紅磚屋2006調查期外觀研究模型](yan-xishan-redbrick-house-survey-2006/previews/front.png)](yan-xishan-redbrick-house-survey-2006/README.md)<br>**[閻錫山故居紅磚屋（2006調查期）](yan-xishan-redbrick-house-survey-2006/README.md)** | [![松山菸廠育嬰室2004測繪主體外觀研究模型](songshan-nursery-main-body-survey-2004/previews/front.png)](songshan-nursery-main-body-survey-2004/README.md)<br>**[松山菸廠育嬰室（2004測繪主體）](songshan-nursery-main-body-survey-2004/README.md)** | [![松山菸廠鍋爐房與煙囪2004調查外觀研究模型](songshan-tobacco-factory-boiler-house-2004-survey/previews/front.png)](songshan-tobacco-factory-boiler-house-2004-survey/README.md)<br>**[松山菸廠鍋爐房與煙囪（2004調查）](songshan-tobacco-factory-boiler-house-2004-survey/README.md)** |
 
 ## 模型目錄與實際預覽
 
@@ -402,3 +402,5 @@
 閻錫山故居紅磚屋2006調查期外觀研究，含兩層主體、屋頂女兒牆及小型衛哨；不含種能洞石造屋、低廚房、外梯橋、地形與室內，非2022修復後或2026現況。門窗及小孔為實心代理，端點差異明示，磚紋色彩與次要尺度簡化估配，未試印。
 
 松山菸廠育嬰室2004年1月報告現況測繪外觀研究，含1954增建主體、北向長廊、南側改造單坡屋頂及基地西側小棚；非1937原棟、1954完好原狀或今日修復現況。來源東西向圖題矛盾與不同尺寸端點保留，省略微小病害；三個底部貫通檢查孔為非史實技術構造，未試印。
+
+松山菸廠鍋爐房與煙囪2004年1月調查外觀研究，含1939建築之高層L形主體、錯位南山牆、低L形附室、氣樓、東側低煙道及煙囪；非1939完好原貌或今日修復現況。屋頂接合與長側屋脊投影推定，1412/1411cm及煙囪3606/3596cm差異保留；缺門不補造門葉，裂損未精密重建，不含內部設備，未試印。

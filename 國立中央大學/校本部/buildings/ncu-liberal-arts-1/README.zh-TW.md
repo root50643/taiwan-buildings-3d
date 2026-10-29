@@ -2,9 +2,19 @@
 
 ## 模型預覽
 
-| 正向 | 背向 | 立面視角 |
-|---|---|---|
-| ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
+| 新彩色斜前 | 新彩色近來源角度 | 新彩色正面 |
+| :---: | :---: | :---: |
+| ![彩色斜前](appearance/front.png) | ![彩色近來源角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
+| 新彩色背面（未知中性） | 新彩色上視（未知中性） | 彩色下載 |
+| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
+
+### 照片近似彩色預覽
+
+依文學院官方文學一館三張實照：灰米石質柱梁與上層長帶、淺灰既有框、入口棕框及灰藍綠窗背。照片赭褐小磁磚在原網格沒有可靠分界處省略，混合窗間牆中性；未知背／右側／屋頂中性。
+
+
+原三張預覽、geometry／尺寸／STL／OBJ／scene.blend及首頁／校級選圖均保留。照片未標拍攝日，不能代表2026全面現況；詳[配色來源及重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 103 × 68 mm。
 
@@ -49,7 +59,7 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 

@@ -2,18 +2,22 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 前斜視（實際 STL）<br>![前斜視](previews/front.png) | 後斜視（實際 STL）<br>![後斜視](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
 
 國立中正大學・民雄校本部｜公開實拍外觀近似模型｜單位：毫米（mm）。
 
 
-[正立面](previews/elevation.png) · [上視圖](previews/top.png)
+### 新增官方照片近似彩色（原四圖保留）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 上視圖<br>![上視圖](previews/top.png) |  |
+依三張官方導覽實照，淡砂桃牆、灰色雲牆／簷冠與灰綠原窗背作有限配色。原金字塔主體、低廊、開放院落及鐘鼓雙塔形體不變；修繕前照片外觀近似，**不是目前施工狀態或完工現況**。
+
+
+未知面中性，不填開放塔孔／門廊、不新增院落徽紋。原STL、scene、建模腳本、尺寸與鎖定預覽不變；詳[補色來源與限制](APPEARANCE.md)。
 
 ## 模型範圍
 

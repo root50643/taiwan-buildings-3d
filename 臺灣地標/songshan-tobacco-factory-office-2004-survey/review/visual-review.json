@@ -1,0 +1,88 @@
+{
+  "building": "松山菸廠辦公廳",
+  "reviewed_version": "v3",
+  "status": "PASS_WITH_STATED_APPROXIMATIONS",
+  "passed": true,
+  "reviewed_at_utc": "2026-10-29T01:50:34.048998+00:00",
+  "method": "Independent script/source-control comparison and direct visual inspection of all nine newly rendered final PNGs. Hashes computed after lossless PNG normalization. This is visual/source fidelity review, not print or structural certification.",
+  "source_basis": "January2004 official survey report, PDF253–259 plans/elevations/sections; authored observations only, no source images included.",
+  "previews": [
+    {
+      "path": "previews/front.png",
+      "sha256": "2c0d5d1c23a48cd19feada77481cb0d745bb5208107f3174b7109e891a3023c3",
+      "passed": true,
+      "observation": "West16sashes eachfloor, steppedtower and side shoulders; roof artifacts removed."
+    },
+    {
+      "path": "previews/rear.png",
+      "sha256": "cfcfa4853f6b689fe016d2d0e5623927bc00e234cf0bc35a8a81ced7169e70f7",
+      "passed": true,
+      "observation": "Courtyard open, rear bar and forward service return planes distinct, four neutral side proxies eachlevel."
+    },
+    {
+      "path": "previews/west_elevation.png",
+      "sha256": "cd04984866bfb10df8fa284d6789a9e8103902e61393287303a0ec33c17077d6",
+      "passed": true,
+      "observation": "8+8eachlevel; groundshoulder3rows, upper4rows; clock has no invented time."
+    },
+    {
+      "path": "previews/east_elevation.png",
+      "sha256": "f70444ec5096be35fa91cf55ee81555add0dbee59fc2ad9c788af4e658a671b0",
+      "passed": true,
+      "observation": "4+4eachlevel plus center3upper/3third/ground2anddoor; service4groups eachside eachfloor now at proper low upperfloor band."
+    },
+    {
+      "path": "previews/north_elevation.png",
+      "sha256": "e8bfa58bf541f134940fce8aa6313b3fd87187872a4ba5f32853a5bfb3fff83d",
+      "passed": true,
+      "observation": "Complete pole/frame; shoulder3narrow fields and small lowtowergrille; wing6T,S,T upper and6T+2shortpodground."
+    },
+    {
+      "path": "previews/south_elevation.png",
+      "sha256": "782207c7dff0814f2dfdd44c2ae97e10cd0ca4594c04cc4e88397d75fca4366c",
+      "passed": true,
+      "observation": "Opposite face independently viewed; same supported broad sequence and lowprojection preserved."
+    },
+    {
+      "path": "previews/top.png",
+      "sha256": "64252c08eb2c2979fa77b8ff3ce39785165b33414831d693de6867efef933649",
+      "passed": true,
+      "observation": "Uplan and pitchedhipped roof within outerflat eaves; courtyard remains open; narrow east continuations are scope cuts."
+    },
+    {
+      "path": "previews/clock_detail.png",
+      "sha256": "7556a8b84e617ccb63e47bed04370c8dec8dfe840be332850bb63a042e2b390c",
+      "passed": true,
+      "observation": "3x4major tall glazing, fine diamond infill omitted; shoulder narrow sashes, no invented hands."
+    },
+    {
+      "path": "previews/gallery_detail.png",
+      "sha256": "9ded376ab1bed5e575958be68bc857d8b0a1124c13dee6e0eb8d180ae91e5b27",
+      "passed": true,
+      "observation": "3upperpassage windows with wider3columncenter, sixsupportposts across two rows, groundopen and continuationend uncapped."
+    }
+  ],
+  "artifact_hashes": {
+    "build_model.py": "8067651b95a7b8815fe5f9801d1fd3d06e7e8a041a28f47cdb623bb71d332338",
+    "mesh-data.npz": "baac1dabf1d740b40b150bf88a29467605e257f02c333af439609e6380fc2526",
+    "model.stl": "c26d00b06b3922954f238a101aab95aae68b9bf8f138096575a6096cdd27ed5e",
+    "model.3mf": "d3e30dd3bfa70cf233ab3c4c21aeb6e88b8d8a9fd1eb1a3e2e45543c9cb6762b"
+  },
+  "resolved_findings": [
+    "East service four-group fields moved to correct east-return planes, with staggered lower sills and low upper-floor positions.",
+    "West shoulder ground division corrected to three rows.",
+    "Missing north/south shoulder-side narrow windows restored and small forward-tower base grille included.",
+    "Protruding proxy roof texture omitted.",
+    "North whole elevation frame now includes full pole.",
+    "Courtyard side four-per-floor plan marks represented separately as explicitly neutral proxies, not borrowed service grids."
+  ],
+  "limitations": [
+    "Raster-scaled geometry and heights are approximate rather than exact printed dimension chains.",
+    "Courtyard side window count/positions are plan-supported; sill/height and unsegmented pane are authored display proxies, not known historic joinery.",
+    "Fine diamond grille infill, exact clock markings, surface colors, tiny ornament, rainwater fittings, roof material detail and weathering are simplified or omitted.",
+    "Window members are enlarged display geometry with opaque glazing; door recesses have authored blind backing, not complete interiors.",
+    "East elevated passages end at declared survey scope without fabricated terminal facade; continuation buildings excluded.",
+    "2004 survey-era exterior study, not certified current condition or complete original restoration. No physical trial print or structural-safety conclusion."
+  ],
+  "unresolved_blocking_findings": []
+}

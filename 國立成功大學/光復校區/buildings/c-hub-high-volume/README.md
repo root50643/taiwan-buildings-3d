@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
@@ -11,14 +12,11 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nckuchub-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-僅高折面量體的已註冊正面／右側清水混凝土及原窗背代理；未知後側屋頂中性，不含低連接屋頂，也不新增板模線或細鋁框。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+僅高折面量體的已註冊正面／右側清水混凝土及原窗背代理；未知後側屋頂中性，不含低連接屋頂，也不新增板模線或細鋁框。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 第十三批；光復校區。校方GIS A042，財產校碼R1J-2-0。尺寸約 112 × 94 × 150 mm，含底座最長邊150 mm，各件獨立比例。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
 
 ## 棟別範圍與近似
 
@@ -50,15 +48,12 @@
 ## 檔案與重驗
 
 - [STL](model.stl)、[可編輯 Blender](scene.blend)、[結構化來源與照片直接網址](sources.json)
-- [正面原圖](previews/front.png)、[背面原圖](previews/rear.png)、[立面](previews/elevation.png)，均由實際 STL 產生
+- 正面原圖（歷史檔案留存，不作本頁預覽）、背面原圖（歷史檔案留存，不作本頁預覽）、立面（歷史檔案留存，不作本頁預覽），均由實際 STL 產生
 - 安裝 `requirements.txt` 後執行 `python build_model.py` 重建 STL
 - `blender -b -t 2 -P render_preview.py` 重建 Blender 與預覽
 - `python validate_model.py` 檢查原始法線、封閉性、邊/頂點流形、單一連通表面、無額外內部空腔殼、正體積、乾淨重建雜湊與 Blender 幾何一致性；見 [validation.json](validation.json)
 - `python validate_sections.py` 使用固定共同邊方向插值，檢查每0.2 mm水平截面輪廓閉合；見 [cross_sections.json](cross_sections.json)
 - `python check_thin.py` 每1 mm取樣，先確認閉合/有效輪廓，再做0.8 mm形態開運算；見 [thin-feature-check.json](thin-feature-check.json)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 立面<br>![立面](previews/elevation.png) |  |  |
 
 任一原始驗證false、程式非零退出碼或資產雜湊不一致都不可封版。沒有窮盡自交檢測，也不以報告代替實體列印。原始參考照片和地圖不隨公開包散布。

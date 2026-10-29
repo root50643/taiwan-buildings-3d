@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 草坪／操場側六材質外觀<br>![正向](appearance/previews/front.png) | 池塘／長翼側原幾何（未見色區中性）<br>![反向](appearance/previews/rear.png) |  |
@@ -33,13 +34,8 @@ build_model.py 原創參數源；model.stl；由實際STL匯入的可編輯 scen
 
 ## 歷史製造／單色預覽
 
-舊圖保留供原 QA 與重建證據核對，不是目前配色展示：[正向](previews/front.png)、[反向](previews/rear.png)、[低角度左](previews/left.png)、[低角度右](previews/right.png)、[頂視](previews/top.png)、[屋頂局部](previews/roof-detail.png)、[穿廊局部](previews/porch-detail.png)。原 render_preview.py／scene.blend 是歷史單色版；新外觀用 appearance/source/render_appearance.py／appearance/scene.blend。
+舊圖保留供原 QA 與重建證據核對，不是目前配色展示：正向（歷史檔案留存，不作本頁預覽）、反向（歷史檔案留存，不作本頁預覽）、低角度左（歷史檔案留存，不作本頁預覽）、低角度右（歷史檔案留存，不作本頁預覽）、頂視（歷史檔案留存，不作本頁預覽）、屋頂局部（歷史檔案留存，不作本頁預覽）、穿廊局部（歷史檔案留存，不作本頁預覽）。原 render_preview.py／scene.blend 是歷史單色版；新外觀用 appearance/source/render_appearance.py／appearance/scene.blend。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正向<br>![正向](previews/front.png) | 反向<br>![反向](previews/rear.png) | 低角度左<br>![低角度左](previews/left.png) |
-| 低角度右<br>![低角度右](previews/right.png) | 頂視<br>![頂視](previews/top.png) | 屋頂局部<br>![屋頂局部](previews/roof-detail.png) |
-| 穿廊局部<br>![穿廊局部](previews/porch-detail.png) |  |  |
 
 ## 獨立薄損特定例外
 113層217原Polygon皆保持單一侵蝕與opening核心，零消失／分裂。46個跨層警告樣本須分開判讀：44個穿廊矩形柱截面，實際X/Y原面寬1.4427947×1.8034935mm，最大損失5.30932005688%、保留94.6906799431%，損失在矩形四角0.41mm區域內；這不是44根柱。另兩個連續斜屋角截面z13.071／13.271mm，損失分別2.66272530443%／1.63327113624%。固定0.6mm轉角區外仍有最高0.2419528085mm²損失，不能概稱全是純小角。

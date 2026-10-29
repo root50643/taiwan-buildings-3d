@@ -2,18 +2,17 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![左](appearance/previews/left.png) |
+| ![右](appearance/previews/right.png) | ![頂](appearance/previews/top.png) |  |
 
 國立屏東科技大學內埔校本部。以公開平面、跨年代照片及完整頂視建立的**有界外觀近似**，不是精確測繪或1991年原貌復原。審核與限定例外紀錄見 [QA](QA.md)，是否正式發布以統一發布清單為準。
 
 
-[頂視](previews/top.png) · [北端](previews/left.png) · [南端](previews/right.png)
+頂視（歷史檔案留存，不作本頁預覽） · 北端（歷史檔案留存，不作本頁預覽） · 南端（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視<br>![頂視](previews/top.png) | 北端<br>![北端](previews/left.png) | 南端<br>![南端](previews/right.png) |
 
 ## 內容及比例
 - 保留兩側四層高體、中央三排窗低帶、中央低幅曲蓋、前後柱廊、北端不均分組X斜撐與寬梯台。
@@ -54,3 +53,4 @@ Python 3.12；requirements另含scipy 1.17.0（trimesh圖連通引擎）與Pillo
 ## 前中央有限外觀層
 
 [三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅中央窗背30面＋前柱／名梁14面，其餘7062面中性；非整樓全彩復原。
+

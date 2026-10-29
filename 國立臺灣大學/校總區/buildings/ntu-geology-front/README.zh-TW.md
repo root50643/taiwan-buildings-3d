@@ -4,9 +4,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![正立面](appearance/previews/elevation.png) |
+| ![頂視](appearance/previews/top.png) |  |  |
 
 ## 範圍與比例
 僅2010官方兩張照片可確認的三層前棟。1937年木造地質標本館、後方舊系館及側後複合體均未納入；不可將前棟當全部S22館群。三排窗罩高度略遞減，窗組數量與進深為列印尺度近似；未見端面與背面留白。
@@ -40,3 +42,4 @@
 - [臺大官方建物索引，檢索標題2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
 
 照片版權屬原權利人；沒有轉授原建築設計或照片權利。不同拍攝日期不等於已核實目前全部外觀。
+

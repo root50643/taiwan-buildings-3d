@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![正立面](appearance/previews/elevation.png) |
+| ![頂視](appearance/previews/top.png) |  |  |
 
 [返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
 
@@ -54,3 +56,4 @@
 
 ## 重建
 以requirements.txt列依賴執行python build_model.py；Blender 4.3.2+執行blender -b -P render_preview.py；python validate_model.py檢查原STL、獨立重建與場景。check_valid_sections.py及thin_canonical_v2.py均接受model.stl和輸出資料夾兩參數。
+

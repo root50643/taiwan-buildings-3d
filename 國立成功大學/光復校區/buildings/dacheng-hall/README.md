@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 另一已登錄長面<br>![背面](appearance/previews/rear.png) |  |
@@ -13,11 +14,7 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nckudacheng-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方前後長面照片登錄磚牆、六石柱與實心欄板；凹拱代表開放走廊而非玻璃，屋頂與短端中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+依官方前後長面照片登錄磚牆、六石柱與實心欄板；凹拱代表開放走廊而非玻璃，屋頂與短端中性。原STL與歷史QA不變，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 ## 來源及實際像素觀察

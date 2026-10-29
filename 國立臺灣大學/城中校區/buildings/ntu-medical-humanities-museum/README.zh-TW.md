@@ -4,9 +4,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![正立面](appearance/previews/elevation.png) |
+| ![頂視](appearance/previews/top.png) |  |  |
 
 ## 範圍與比例
 依官方中央入口照片與2023公開攝影者外觀、高角度屋頂照片，近似保留中央樓和西翼L形量體。各翼比例、進深與斜屋頂高度為目測；背面、端面與樹遮裝飾留白，未復刻後方舊講堂遺留立面。不包含已拆講堂、1930年前塔樓/老虎窗或旁邊醫院大樓；不是整組醫學院歷史建築復原。
@@ -44,3 +46,4 @@
 - [臺大官方建物索引，檢索標題2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
 
 照片版權屬原權利人；沒有轉授原建築設計或照片權利。不同拍攝日期不等於已核實目前全部外觀。
+

@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 局部配色左前斜視 | 局部配色正立面 | 背面仍保留中性 |
 | :---: | :---: | :---: |
 | ![信心樓局部材質左前斜視](appearance/previews/front.png) | ![信心樓局部材質正立面](appearance/previews/elevation.png) | ![信心樓背面中性](appearance/previews/rear.png) |
@@ -17,15 +18,9 @@
 
 ## 原始無色 STL 與既有幾何預覽
 
-| 建物 | 實際 STL 正面 | 實際 STL 背面 |
-|---|---|---|
-| 信心樓 | ![正面](previews/front.png) | ![背面](previews/rear.png) |
 
-[正立面](previews/elevation.png) · [短側](previews/side.png) · [頂視](previews/top.png)
+正立面（歷史檔案留存，不作本頁預覽） · 短側（歷史檔案留存，不作本頁預覽） · 頂視（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 短側<br>![短側](previews/side.png) | 頂視<br>![頂視](previews/top.png) |
 
 ## 下載與重建
 

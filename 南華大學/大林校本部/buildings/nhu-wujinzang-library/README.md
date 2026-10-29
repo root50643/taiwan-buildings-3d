@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 前右<br>![屋頂限域配色](appearance/previews/front.png) | 後左<br>![後壁維持中性](appearance/previews/rear.png) |  |
@@ -17,16 +18,9 @@
 跨來源當代外觀比例近似；2026-10-14二次外觀核准，完成作者QA後封存，是否正式發布以統一發布清單為準。
 本件屬大林校本部，包含主館、相連北側低翼、東端突出及貼身入口平台／兩座玻璃錐亭。兩亭不是另計建物；不含遠端九品蓮華大道，不代表全校完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 西向正面（actual STL）<br>![正面](previews/front.png) | 東端背面（actual STL）<br>![背面](previews/rear.png) |  |
 
-[左／北側](previews/left.png) · [右／南側](previews/right.png) · [頂視](previews/top.png) · [正立面](previews/elevation.png) · [正面近景](previews/front-detail.png) · [北側近景](previews/left-detail.png)
+左／北側（歷史檔案留存，不作本頁預覽） · 右／南側（歷史檔案留存，不作本頁預覽） · 頂視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽） · 正面近景（歷史檔案留存，不作本頁預覽） · 北側近景（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 左／北側<br>![左／北側](previews/left.png) | 右／南側<br>![右／南側](previews/right.png) | 頂視<br>![頂視](previews/top.png) |
-| 正立面<br>![正立面](previews/elevation.png) | 正面近景<br>![正面近景](previews/front-detail.png) | 北側近景<br>![北側近景](previews/left-detail.png) |
 
 ## 依據與外形
 - 2023校安官方B1–5F平面、正側照與2023-09-18官方VR正面，核五層主體與地下一層。B1未虛構成完整外露第六層，模型不呈現內部樓板。

@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 有限材料左前斜視 | 有限材料正立面 | 背面維持未知中性 |
 | :---: | :---: | :---: |
 | ![牛津學堂有限材料示意](appearance/previews/front.png) | ![牛津學堂材料示意正立面](appearance/previews/elevation.png) | ![牛津學堂背面未知中性](appearance/previews/rear.png) |
@@ -21,16 +22,9 @@
 
 ## 原始幾何與既有無色預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 同一建物正面<br>![實際STL正面](previews/front.png) | 同一建物背面<br>![實際STL背面](previews/rear.png) |  |
 
-[俯視](previews/top.png) · [正立面](previews/elevation.png) · [背立面](previews/back_elevation.png) · [左側](previews/left.png) · [右側](previews/right.png)
+俯視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽） · 背立面（歷史檔案留存，不作本頁預覽） · 左側（歷史檔案留存，不作本頁預覽） · 右側（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) | 背立面<br>![背立面](previews/back_elevation.png) |
-| 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |  |
 
 ## 範圍與年代
 

@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面：坡上入口與鐘塔<br>![正面](previews/front.png) | 背面：田徑場側<br>![背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![頂視](appearance/previews/top.png) |  |
 
 公開來源限定的有界近似模型。數位審核紀錄見隨附報告，是否正式發布以統一發布清單為準。未試印，不保證無支撐列印。
 
@@ -41,3 +43,4 @@ B1–3F 由官方拆層圖及會議資料獨立支持。坡上為 3F 入口，�
 ## 屋頂PV限域彩色外觀層
 
 [彩色3MF、可編輯Blend與五視角](appearance/README.md)：僅8個既有屋頂PV區23原面、4055.465801mm²深藍灰展示代理，其餘6245面中性；15脊蓋、綠頂、牆塔均排除。全部6268面及原STL bytes不變。官照拍攝日未知，2022-07僅PV完工；非現況測繪或新增列印保證。原雙QA口徑、六族例外與v1薄唇HOLD完整保留。
+

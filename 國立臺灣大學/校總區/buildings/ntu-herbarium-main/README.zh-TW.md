@@ -4,9 +4,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![正立面](appearance/previews/elevation.png) |
+| ![頂視](appearance/previews/top.png) |  |  |
 
 ## 範圍與比例
 主館長矩形外部量體，以街側入口照片與庭園側照片交叉比對；不包含附屬溫室、獨立烤房與連接拱廊。長窗數量、窗距、進深及庭園側凸部位置為目測簡化，屋簷後實際屋面無充分證據，留作低平實心頂，不虛構斜瓦屋頂；狹側留白。
@@ -44,3 +46,4 @@
 - [臺大官方建物索引，檢索標題2026-08-17](https://cpo.ntu.edu.tw/map/C_01_list.pdf)
 
 照片版權屬原權利人；沒有轉授原建築設計或照片權利。不同拍攝日期不等於已核實目前全部外觀。
+

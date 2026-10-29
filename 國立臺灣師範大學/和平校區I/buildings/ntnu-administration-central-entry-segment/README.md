@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
@@ -14,18 +15,11 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntnuadmin-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方導覽照片登錄原中央入口段紅棕磚牆、灰褐凸窗與拱緣、淡窗框與低彩度窗凹背；原菱形裝飾是石色，不是玻璃。照片拍攝日期未知；不增添交錯石塊、設備或文字，背面、裁切端與頂面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+依官方導覽照片登錄原中央入口段紅棕磚牆、灰褐凸窗與拱緣、淡窗框與低彩度窗凹背；原菱形裝飾是石色，不是玻璃。照片拍攝日期未知；不增添交錯石塊、設備或文字，背面、裁切端與頂面中性。原STL與歷史QA不變，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
-[俯視](previews/top.png) · [正立面](previews/elevation.png)
+俯視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 下載與重建
 

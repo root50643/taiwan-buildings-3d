@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 屋面族別正面示意 | 屋面族別俯視示意 | 屋面後斜視示意 |
 | :---: | :---: | :---: |
 | ![任選中性屋面族別標記，非實際配色](appearance/previews/front.png) | ![採光罩與其他面沿用原預覽](appearance/previews/top.png) | ![僅桶拱屋面標記，不推定背牆色彩](appearance/previews/rear-roof.png) |
@@ -19,9 +20,6 @@
 
 ## 原始幾何與既有中性預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
 
 ## 範圍與外觀
 保留三層入口圓弧立面、雙層挑空雙圓柱門廊、窄直窗列、較低的兩侧翼、縱向桶拱大屋頂及2020屋頂更新後可見的光導採光罩。
@@ -34,14 +32,11 @@
 - [原始模型 STL](model.stl)
 - [可編輯 Blender 場景](scene.blend)
 - [建模程式](build_model.py) · [Python依賴](requirements.txt)
-- [正面](previews/front.png) · [背面](previews/rear.png) · [俯視](previews/top.png)
+- 正面（歷史檔案留存，不作本頁預覽） · 背面（歷史檔案留存，不作本頁預覽） · 俯視（歷史檔案留存，不作本頁預覽）
 - [來源與不確定性](sources.json)
 - [幾何驗證](validation.json) · [0.2mm層檢查](layer-check.json) · [輪廓多邊形有效性](contour-validity-check.json) · [0.8mm參考薄特徵篩查](thin-feature-check.json)
 - [SHA256](SHA256SUMS.txt) · [重跑檢查](check_all.sh)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 重建與驗證
 需要 Python 3.12、requirements.txt 所列套件與 Blender 4.3.2+。在本目錄安裝依賴後執行：

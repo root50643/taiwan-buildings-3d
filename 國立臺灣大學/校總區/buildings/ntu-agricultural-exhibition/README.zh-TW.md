@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
@@ -11,11 +12,7 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntuagexh-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-灰白粗化圓孔屏與灰混凝土帶柱；孔底中性非玻璃，底層缺少紅褐細框明列省略，不以整片紅凹背冒充門框。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+灰白粗化圓孔屏與灰混凝土帶柱；孔底中性非玻璃，底層缺少紅褐細框明列省略，不以整片紅凹背冒充門框。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 公開外觀照片衍生的簡化列印模型，非測繪模型。官方索引代碼：M2。

@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 有限材料左前斜視 | 有限材料正立面 | 後側玻璃維持未知中性 |
 | :---: | :---: | :---: |
 | ![綜合體育館有限材料示意](appearance/previews/front.png) | ![綜合體育館正立面材料示意](appearance/previews/elevation.png) | ![後側玻璃維持中性](appearance/previews/rear.png) |
@@ -17,10 +18,6 @@
 
 ## 原始幾何與既有無色預覽
 
-| 原STL正面 | 原STL背面 | 原STL正立面 |
-| :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![正立面](previews/elevation.png) |
-| ![頂視](previews/top.png) |  |  |
 
 ## 幾何與來源界線
 保留環形主體、48個V型支撐節奏、低拱屋頂、環狀平台、前側深入口。屋頂多圈細構造、設備與細密玻璃分格已簡化；單一八角凹線不表示完整屋頂設備重建。

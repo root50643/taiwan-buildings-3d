@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面有限配色<br>![正面窗背、圓窗及框體有限配色](appearance/previews/front.png) | 未確認後側保持中性<br>![未知後側保持中性](appearance/previews/rear.png) |  |
@@ -55,9 +56,6 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
-| 正向 | 背向 | 立面視角 |
-|---|---|---|
-| ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
 
 以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
 

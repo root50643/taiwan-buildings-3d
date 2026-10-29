@@ -2,19 +2,17 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![正面 actual STL](previews/front.png) | 背面<br>![背面 actual STL](previews/rear.png) |  |
+| ![入口正面](appearance/previews/front.png) | ![花園側](appearance/previews/left.png) | ![東側](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) |  |
 
 2022正面/西側照片與2024全屋頂為主要依據，2009池側及官方其他角度補證的完整主體有界近似；不是測繪、同年完整復原或全校完成。
 
 
-[頂圖](previews/top.png) · [側東](previews/east.png) · [側西](previews/west.png) · [正立向](previews/north.png) · [斜俯視](previews/aerial.png)
+頂圖（歷史檔案留存，不作本頁預覽） · 側東（歷史檔案留存，不作本頁預覽） · 側西（歷史檔案留存，不作本頁預覽） · 正立向（歷史檔案留存，不作本頁預覽） · 斜俯視（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂圖<br>![頂圖](previews/top.png) | 側東<br>![側東](previews/east.png) | 側西<br>![側西](previews/west.png) |
-| 正立向<br>![正立向](previews/north.png) | 斜俯視<br>![斜俯視](previews/aerial.png) |  |
 
 ## 檔案與尺度
 - [model.stl](model.stl)：毫米，含底座150×145×66.550003mm，底座朝下。
@@ -39,3 +37,4 @@
 ## 原面有限磚材外觀層
 
 [彩色3MF、可編輯Blend與五視角](appearance/README.md)：只染238個原+Y入口／−X花園上兩帶磚面，2900.7799204075227 mm²；其餘9388面中性。框窗／白帶／下牆／屋頂／東背全不染，不新增幾何。原9626面／4775頂點、STL bytes與原QA保留。官方2022為caption年非EXIF攝年，圖片來源秘書處、ARR保留，照片不附。歷史strict pass不是實印或全域厚度保證。
+

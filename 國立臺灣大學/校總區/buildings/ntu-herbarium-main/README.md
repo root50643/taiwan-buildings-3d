@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 庭園面已見區配色；高窗背與未知面中性<br>![背面](appearance/previews/rear.png) |  |
@@ -13,11 +14,7 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/herbarium-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依街側與庭園來源登錄赭棕磚、原灰石拱框／層帶、暗窗梃及木門。**高拱窗凹背因原三角面跨越實心石裙／玻璃分界，整片保持中性，並非實景材質還原**；不切面或畫假對角分界。僅下層小窗背配玻璃，屋頂與窄端中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+依街側與庭園來源登錄赭棕磚、原灰石拱框／層帶、暗窗梃及木門。**高拱窗凹背因原三角面跨越實心石裙／玻璃分界，整片保持中性，並非實景材質還原**；不切面或畫假對角分界。僅下層小窗背配玻璃，屋頂與窄端中性。原STL與歷史QA不變，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)

@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未知背牆中性／來源確認 PV 板頂<br>![背面](appearance/previews/rear.png) |  |
@@ -11,7 +12,7 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nthugeneral-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-限定已見白結構、淺銀窗格及灰綠窗背，空拍確認 PV 板斜頂深藍；未分面的後高盒灰嵌板牆與未知背面中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+限定已見白結構、淺銀窗格及灰綠窗背，空拍確認 PV 板斜頂深藍；未分面的後高盒灰嵌板牆與未知背面中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 第二批外觀近似建築模型，並非測繪模型。獨立比例、最長150mm含底座；全校尚未完成。
@@ -69,6 +70,3 @@ python check_layers.py
 
 ## 實際STL正背並排
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

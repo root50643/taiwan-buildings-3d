@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 坡下長玻璃面<br>![同件坡下正面](appearance/previews/front.png) | 坡上入口與教室翼<br>![同件坡上背面](appearance/previews/rear.png) |  |
@@ -54,20 +55,13 @@
 | :---: | :---: | :---: |
 | 坡下正立面<br>![坡下正立面](appearance/previews/elevation.png) | 屋頂：未確認中性<br>![設備槽與折面頂](appearance/previews/top.png) |  |
 
-[歷史坡下正視](previews/elevation.png) · [歷史側視一](previews/west.png) · [歷史側視二](previews/east.png)
+歷史坡下正視（歷史檔案留存，不作本頁預覽） · 歷史側視一（歷史檔案留存，不作本頁預覽） · 歷史側視二（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 歷史坡下正視<br>![歷史坡下正視](previews/elevation.png) | 歷史側視一<br>![歷史側視一](previews/west.png) | 歷史側視二<br>![歷史側視二](previews/east.png) |
 
 獨立補充：192層482原Polygon零侵蝕／opening分裂或消失；兩方柱78個跨層樣本最大損失2.39848241135%、保留97.6015175886%，原四角0.41mm鄰域外損失為0。指定原三角面法線最小量得2.3999977mm，上下根實連重現。整層最大損失0.12703223848%不能取代此構件警告。禮堂局部平頂實際面積38.39061226mm²、旋轉外接框最窄5.40912916mm；指定點從z38.199向下連續28.199mm才出實體，這只證明該點根接，不能當全域壁厚。外廊、入口與折面禮堂仍須評估支撐及拆除，不得任意縮小，尚未實際試印。
 
 ## 保留的歷史展示
 
-原 scene.blend 與七張舊圖完整保留：[坡下](previews/front.png)、[坡上](previews/rear.png)、[坡下正視](previews/elevation.png)、[西側](previews/west.png)、[東側](previews/east.png)、[坡上低角](previews/rear-elevation.png)、[頂視](previews/top.png)。歷史 QA 仍指原 STL／scene／舊圖；本次新圖與表面細分交換網格另行驗證，沒有改寫舊製造紀錄。
+原 scene.blend 與七張舊圖完整保留：坡下（歷史檔案留存，不作本頁預覽）、坡上（歷史檔案留存，不作本頁預覽）、坡下正視（歷史檔案留存，不作本頁預覽）、西側（歷史檔案留存，不作本頁預覽）、東側（歷史檔案留存，不作本頁預覽）、坡上低角（歷史檔案留存，不作本頁預覽）、頂視（歷史檔案留存，不作本頁預覽）。歷史 QA 仍指原 STL／scene／舊圖；本次新圖與表面細分交換網格另行驗證，沒有改寫舊製造紀錄。
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 坡下<br>![坡下](previews/front.png) | 坡上<br>![坡上](previews/rear.png) | 坡上低角<br>![坡上低角](previews/rear-elevation.png) |
-| 頂視<br>![頂視](previews/top.png) |  |  |

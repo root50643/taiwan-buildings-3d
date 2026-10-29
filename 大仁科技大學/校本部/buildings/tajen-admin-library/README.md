@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 南東正面（actual STL）<br>![正面](previews/front.png) | 西北背面（actual STL）<br>![背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![左面](appearance/previews/left.png) | ![右面](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![頂面](appearance/previews/top.png) |  |
 
 狀態：外觀有界近似已核；作者幾何與重現檢查完成。39個局部損失樣本與獨立加密2331短首段的具體限定證據已由主審接受；原作者7點/1054筆結果仍保留。
 
@@ -32,13 +34,8 @@
 
 ## 其餘實際STL視圖
 
-[front-low](previews/front-low.png) · [rear-low](previews/rear-low.png) · [top](previews/top.png) · [east](previews/east.png) · [west](previews/west.png) · [north-elevation](previews/north-elevation.png) · [south-elevation](previews/south-elevation.png)
+front-low（歷史檔案留存，不作本頁預覽） · rear-low（歷史檔案留存，不作本頁預覽） · top（歷史檔案留存，不作本頁預覽） · east（歷史檔案留存，不作本頁預覽） · west（歷史檔案留存，不作本頁預覽） · north-elevation（歷史檔案留存，不作本頁預覽） · south-elevation（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| front-low<br>![front-low](previews/front-low.png) | rear-low<br>![rear-low](previews/rear-low.png) | top<br>![top](previews/top.png) |
-| east<br>![east](previews/east.png) | west<br>![west](previews/west.png) | north-elevation<br>![north-elevation](previews/north-elevation.png) |
-| south-elevation<br>![south-elevation](previews/south-elevation.png) |  |  |
 
 ## 南北立面預覽修正
 
@@ -50,3 +47,4 @@
 ## 歷史限域外觀層
 
 [三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅162面東低翼粉外皮及288面南／東暗窗背，其餘3646面中性；主南粉牆因跨白帶整片不染。原39局部損失、1054作者短段與2331密樣短段等製造限制不變，非全樓全彩或2026現況復原。
+

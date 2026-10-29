@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 西南正面 actual STL<br>![正面](previews/front.png) | 東北背面 actual STL<br>![背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![左面](appearance/previews/left.png) | ![右面](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![頂面](appearance/previews/top.png) |  |
 
 1990 年使用執照主體、2002 年整建；外觀參照官方 2020 年防災資料及 2024 年 8 月西南街景。地上 5 層、地下 2 層；沒有把地下層全部露出或把七層等高堆疊。本模型為原創參數化外觀近似，非測繪、施工圖、官方授權精準復原或實體試印成品。
 
@@ -23,11 +25,8 @@
 ## 檔案與重現
 - [原創 Python](build_model.py)、[實際 STL](model.stl)、[Blender 場景](scene.blend)
 - [來源與限制](sources.md)、[參數與描點](source-controls.json)、[QA](QA.md)
-- [北上頂圖](previews/top-lines.png)、[東側配景](previews/eastfit.png)、[西南配景](previews/swfit.png)
+- 北上頂圖（歷史檔案留存，不作本頁預覽）、東側配景（歷史檔案留存，不作本頁預覽）、西南配景（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 北上頂圖<br>![北上頂圖](previews/top-lines.png) | 東側配景<br>![東側配景](previews/eastfit.png) | 西南配景<br>![西南配景](previews/swfit.png) |
 
 底座朝下為初始列印方向，仍須自行切片及評估支撐。
 
@@ -38,3 +37,4 @@ Python 依賴 numpy、trimesh、manifold3d、shapely、Pillow、rtree，Blender 
 ## 限域外觀層
 
 [雙材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅東面八組完整窗背104面，其餘7076面中性；原strict幾何QA仍false，693角損與作者76／獨審311短弦未修復；非整樓全彩復原。
+

@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![實際STL正面](previews/front.png) ![實際STL背面](previews/rear.png) |  |  |
+| ![正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) |  |
 
 **全形量體近似，局部立面未核；不是精確全館測繪，亦不代表2026年現況。**
 
@@ -56,3 +58,4 @@ python check_manifest.py
 ## 既有中央PV頂與正面雙塔窗的有限純色外觀
 
 [3MF、可編輯Blend與五視角](appearance/README.md)：僅144完整原面（48既有粗化PV頂三角＋96前雙塔窗），3有限域、5651.247314568758mm²；5150原中性面和native材質不變。5294原三角2567原頂點／有向序exact，22原件全備份。PV48三角不是48真板，4×5／70×71mm為原粗化，非新精確PV邊界；來源251×188僅支持存在及大概位置。開廊、磚牆、入口、框、屋頂與未知面均不染。2017相機／2016後製倒序未解，2022PV跨年，不宣稱2026現況。原344／69QA不是實印；原全部估計、支撐、工具路徑與未實印限制照留。純色非全樓復原，不附照片。
+

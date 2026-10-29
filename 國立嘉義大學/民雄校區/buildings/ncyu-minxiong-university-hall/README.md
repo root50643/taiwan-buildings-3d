@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![大學館白前牆與紅磚前簷限域代理](appearance/previews/front.png) |  |  |
@@ -16,9 +17,6 @@
 
 B02大學館的整體外殼近似模型，依官方一樓全圖、前廳實照、衛星俯視及2011年東／西側街景自建。不是現況測繪或精密比例模型，也沒有重建內部空間。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![同件模型正面與背面並排](previews/front-rear.png) |  |  |
 
 ## 建模範圍與限制
 - 保留不對稱平面、切角玻璃前廳、寬簷帶、多座金字塔採光頂，以及演藝廳、演講廳和周邊量體的高低層次。
@@ -38,12 +36,8 @@ B02大學館的整體外殼近似模型，依官方一樓全圖、前廳實照�
 ## 交付與驗證
 [model.stl](model.stl)、[scene.blend](scene.blend)、[build_model.py](build_model.py)、[requirements.txt](requirements.txt)。Blend是由交付STL匯入的可編輯網格，參數腳本為重建來源。
 
-actual STL預覽：[西南前方](previews/front.png)、[東北後方](previews/rear.png)、[前立面](previews/elevation.png)、[頂視](previews/top.png)。頂視原圖依建模座標，不能直接當北向圖。
+actual STL預覽：西南前方（歷史檔案留存，不作本頁預覽）、東北後方（歷史檔案留存，不作本頁預覽）、前立面（歷史檔案留存，不作本頁預覽）、頂視（歷史檔案留存，不作本頁預覽）。頂視原圖依建模座標，不能直接當北向圖。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 西南前方<br>![西南前方](previews/front.png) | 東北後方<br>![東北後方](previews/rear.png) | 前立面<br>![前立面](previews/elevation.png) |
-| 頂視<br>![頂視](previews/top.png) |  |  |
 
 Python3.12安裝requirements.txt後，依序執行build_model.py、Blender背景執行render_preview.py、validate_model.py、check_contour_validity.py、check_thin_features.py。任何程式exit非0、JSON passed非true或checks含false，立即停止；不用repair掩蓋無效原網格或輪廓。
 

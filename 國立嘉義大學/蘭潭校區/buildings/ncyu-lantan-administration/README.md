@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![行政中心光電頂面限域代理](appearance/previews/front.png) |  |  |
@@ -16,9 +17,6 @@
 
 依國立嘉義大學官方實拍正面及空拍手工參數建模的外觀近似縮尺件。這是 A01 行政中心一件模型，不代表蘭潭校區或全校已完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![同件模型正面與背面並排](previews/front-rear.png) |  |  |
 
 ## 範圍與證據
 - 保留寬階梯、退縮前庭、雙層挑高方柱廊、密集直窗帶、左右低屋頂光電板，以及後段較高 U 形窗帶。
@@ -37,15 +35,11 @@
 - [model.stl](model.stl)：實際交付三角網格，含底座。
 - [scene.blend](scene.blend)：由交付 STL 匯入的可編輯網格與相機；原生 Blender 參數物件不另造一套。
 - [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：獨立可重建參數來源。
-- [正面](previews/front.png)、[背面](previews/rear.png)、[正立面](previews/elevation.png)、[頂視](previews/top.png)：由交付 STL 實際渲染。
+- 正面（歷史檔案留存，不作本頁預覽）、背面（歷史檔案留存，不作本頁預覽）、正立面（歷史檔案留存，不作本頁預覽）、頂視（歷史檔案留存，不作本頁預覽）：由交付 STL 實際渲染。
 - [validation.json](validation.json)：原 STL 法向、邊、頂點環、單一連通殼、尺寸、獨立重建 SHA、Blend 幾何比對。
 - [contour-validity-check.json](contour-validity-check.json)：從 z=0.071mm 開始、每0.2mm的原 STL 輪廓閉合與各別／組合多邊形有效性。
 - [thin-feature-check.json](thin-feature-check.json)：canonical 共同邊插值、每1mm抽層之0.8mm opening輔助檢查；不是全面最小壁厚分析。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
-| 頂視<br>![頂視](previews/top.png) |  |  |
 
 ## 重建及驗證
 Python 3.12 安裝 requirements.txt 後，依序執行 build_model.py、Blender背景執行render_preview.py、validate_model.py、check_contour_validity.py、check_thin_features.py。每個命令成功且所有 checks 為 true 才視為數位驗證通過；任何失敗立即停止，不修補交付輸入來掩蓋失敗。

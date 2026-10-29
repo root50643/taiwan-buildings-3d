@@ -2,18 +2,17 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面（實際STL）<br>![正面](previews/front.png) | 背面（實際STL）<br>![背面](previews/rear.png) |  |
+| ![前庭左斜](appearance/previews/front.png) | ![前庭右斜](appearance/previews/opposite.png) | ![正立面](appearance/previews/elevation.png) |
+| ![背面](appearance/previews/rear.png) | ![頂面](appearance/previews/top.png) |  |
 
 山下校區。依公開實景與官方平面外輪廓自建的完整建物外觀近似，非测绘、BIM或結構設計。
 
 
-[俯視](previews/top.png) · [正立面](previews/elevation.png)
+俯視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 形狀及證據限制
 
@@ -49,3 +48,4 @@ Python執行build_model.py；Blender背景執行render_preview.py產生實際STL
 ## 前庭有限外觀層
 
 [三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅內弧白牆／柱1395面＋灰雨棚立邊9面，其餘4772面中性；非整樓全彩復原。
+

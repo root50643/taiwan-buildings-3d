@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 北面正面（完整實際STL）<br>![北面](previews/front.png) | 南面背面（完整實際STL）<br>![南面](previews/rear.png) |  |
+| ![前](appearance/previews/front.png) | ![左](appearance/previews/left.png) | ![右](appearance/previews/right.png) |
+| ![後](appearance/previews/rear.png) | ![頂](appearance/previews/top.png) |  |
 
 公開資料有界近似模型，2005–2006建成口徑，結合建築師實景與標2022正射。原創參數源及實際STL預覽；非精密測繪或指定年份完整復原。已完成獨立數位檢查及具體有限例外核准；紀錄見QA，是否正式發布以統一清單為準。
 
@@ -43,3 +45,4 @@
 ## 歷史後窗限域外觀層
 
 [雙材質3MF、可編輯Blend與五視角](appearance/README.md)：僅1242後窗原面使用不透明藍綠灰代理，其餘16230面維持未查證中性；前面／八孔／梁槽／隱蔽96面均排除，無幾何改動。原圖無EXIF/XMP拍攝日期；頁面2005與啟用2006不是拍攝日期，非2026現況。原真薄與61.7342%局部支承及所有歷史QA不變；不是可直接列印版本。
+

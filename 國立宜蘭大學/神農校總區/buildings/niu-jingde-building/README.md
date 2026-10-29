@@ -2,20 +2,19 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面（actual STL）<br>![正面](previews/front.png) | 背面（actual STL）<br>![背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![立面](appearance/previews/elevation.png) |
+| ![側面](appearance/previews/side.png) | ![頂面](appearance/previews/top.png) |  |
 
 公開資料自建的近似外觀縮尺模型，單位為毫米（mm），含底座最長150mm。不是測繪、竣工圖、結構模型或保證可列印的成品。
 
 ## 模型與預覽
 
 
-[頂視圖](previews/top.png) · [正立面](previews/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
+頂視圖（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽） · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 - 尺寸：138 × 150 × 84 mm（包含3mm底座；STL實測值以validation.json為準）
 - 範圍：經德大樓為一件；空中大學所用樓層屬同一建物，不額外計件。保留中庭上部大開口，並以低位薄板表現2021建築師記述的新增遮雨棚。
@@ -60,3 +59,4 @@
 ## 有限窗背外觀層
 
 [雙材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅 -Y 57 灣上下窗背 230 面；其他面中性，非整棟全彩復原。
+

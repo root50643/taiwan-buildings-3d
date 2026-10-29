@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![校門十字架鐘塔兩同向寬面限域代理](appearance/previews/front.png) |  |  |
@@ -16,9 +17,6 @@
 
 [學校目錄](../../../README.md) · [校區目錄](../../README.md)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![實際STL正面及背面並排](previews/front-rear.png) |  |  |
 
 ## 範圍與外觀
 保留雙片薄壁高塔、寬面十字穿孔、中央開放間隙、中段連繫板與上部橫向連繫；底座與細部均為獨立縮尺。這是地標構造物，不能算作教學樓館，也不是校圖36號慎行鐘。
@@ -31,14 +29,11 @@
 - [原始模型 STL](model.stl)
 - [可編輯 Blender 場景](scene.blend)
 - [建模程式](build_model.py) · [Python依賴](requirements.txt)
-- [正面](previews/front.png) · [背面](previews/rear.png) · [俯視](previews/top.png)
+- 正面（歷史檔案留存，不作本頁預覽） · 背面（歷史檔案留存，不作本頁預覽） · 俯視（歷史檔案留存，不作本頁預覽）
 - [來源與不確定性](sources.json)
 - [幾何驗證](validation.json) · [0.2mm層檢查](layer-check.json) · [輪廓多邊形有效性](contour-validity-check.json) · [0.8mm參考薄特徵篩查](thin-feature-check.json)
 - [SHA256](SHA256SUMS.txt) · [重跑檢查](check_all.sh)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 俯視<br>![俯視](previews/top.png) |
 
 ## 重建與驗證
 需要 Python 3.12、requirements.txt 所列套件與 Blender 4.3.2+。在本目錄安裝依賴後執行：

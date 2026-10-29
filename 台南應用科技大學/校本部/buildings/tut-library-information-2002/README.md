@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面配色<br>![正面配色](previews/appearance-front.png) | 未確認背面保持中性<br>![背面中性](previews/appearance-rear.png) |  |
@@ -11,7 +12,7 @@
 [可編輯8材質Blender](appearance.blend) · [標準彩色3MF](appearance.3mf) · [最小獨立重建源包](appearance-rebuild-source.zip)
 
 
-[完整俯斜](previews/appearance-aerial.png) · [北上頂圖](previews/appearance-top.png)
+完整俯斜（歷史檔案留存，不作本頁預覽） · 北上頂圖（歷史檔案留存，不作本頁預覽）
 
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
@@ -29,16 +30,9 @@
 
 來源限定有界近似，非測繪、未試印。單棟，不含藝術中心85坪附展場、乃建堂及鄰樓。圖書館1–5F用途不等於整棟，官方另有7/8F電腦教室平面及9F其他教室用途。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 同件東南正面完整灰模<br>![正面](previews/front.png) | 同件西後完整灰模<br>![西後](previews/rear.png) |  |
 
-[北上頂圖](previews/top.png)｜[完整俯斜](previews/aerial.png)｜[入口實體曲棚](previews/entry.png)｜[上層窗組](previews/front-upper.png)｜[西後局部](previews/west-detail.png)
+北上頂圖（歷史檔案留存，不作本頁預覽）｜完整俯斜（歷史檔案留存，不作本頁預覽）｜入口實體曲棚（歷史檔案留存，不作本頁預覽）｜上層窗組（歷史檔案留存，不作本頁預覽）｜西後局部（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 北上頂圖<br>![北上頂圖](previews/top.png) | 完整俯斜<br>![完整俯斜](previews/aerial.png) | 入口實體曲棚<br>![入口實體曲棚](previews/entry.png) |
-| 上層窗組<br>![上層窗組](previews/front-upper.png) | 西後局部<br>![西後局部](previews/west-detail.png) |  |
 
 ## 三層來源界線
 - **官方可證**：2002-10啟用、圖書館使用1–5F、7/8F室內單位示意及9F用途。7F大X區沒有露天依據，模型不挖成中庭；地下不無據外露。

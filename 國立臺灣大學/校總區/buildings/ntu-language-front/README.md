@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![正立面](appearance/previews/elevation.png) |
+| ![頂視](appearance/previews/top.png) |  |  |
 
 [返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
 
@@ -58,3 +60,4 @@
 - python check_valid_sections.py：0.2mm間距、z=0.071mm起，全部個別輪廓及組合多邊形均須closed/valid，沒有polygon repair。結果valid-sections.json。
 - python thin_canonical_v2.py：1mm間距有效截面作0.8mm參考opening；這是輔助特徵指標，不是全面壁厚、切片器或實體試印。
 - 薄篩84層，最大面積損失0.1422%，超過1%指標層0個。
+

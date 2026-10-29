@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 來源支持後端／混合窗區中性<br>![背面](appearance/previews/rear.png) |  |
@@ -11,20 +12,14 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nycuyangming-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依建築師日照與前後實拍限定磁磚、銀灰構件與原離散窗區；左凸窗實裙、中央與院內混合窗背、屋頂和未見面中性，照片偏紫色調不作固定材料色。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+依建築師日照與前後實拍限定磁磚、銀灰構件與原離散窗區；左凸窗實裙、中央與院內混合窗背、屋頂和未見面中性，照片偏紫色調不作固定材料色。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 國立陽明交通大學｜陽明校區。完整主量體的公開照片外觀近似；入口、球場側與階梯端細節有實拍支持，未見的外侧長立面及後中段保留簡化牆面，非完整立面紀錄或測繪。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
-[俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py)
+俯視（歷史檔案留存，不作本頁預覽） · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 範圍與來源
 

@@ -2,19 +2,17 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) |  |
 
 朝陽科技大學・霧峰校本部。這是一件依官方樓層圖、不同年代外觀照片與航照交叉建構的可列印尺度外觀近似，**不是全館測繪、同年現況或全校完成**。背側窗序仍缺全貌，保留已知退台體量，不複製正面窗陣。
 
 
-[俯視](previews/top.png) · [正立面](previews/elevation.png) · [背立面](previews/rear-elevation.png) · [南端側面](previews/west.png) · [北端側面](previews/east.png) · [STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數來源](build_model.py)
+俯視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽） · 背立面（歷史檔案留存，不作本頁預覽） · 南端側面（歷史檔案留存，不作本頁預覽） · 北端側面（歷史檔案留存，不作本頁預覽） · [STL](model.stl) · [可編輯Blender網格](scene.blend) · [參數來源](build_model.py)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) | 背立面<br>![背立面](previews/rear-elevation.png) |
-| 南端側面<br>![南端側面](previews/west.png) | 北端側面<br>![北端側面](previews/east.png) |  |
 
 ## v2 修訂與局部角損警示
 
@@ -61,3 +59,4 @@ Python依[requirements.txt](requirements.txt)；Blender 4.3.2。先執行build_m
 ## 原面有限彩色外觀層
 
 [彩色3MF、可編輯Blend與五視角](appearance/README.md)：僅438個原上部／正面窗背三角面（316灰藍窗、122淺長窗帶），709.94116457 mm²；其餘6816面中性。紅灰牆、低窗、拱背、雙折屋頂與背面不染。原7254面／3621頂點與STL bytes不變，不是全棟實景精準復原。照片EXIF原攝自述2015無offset，IPTC +0000獨立保留，2019為後製。歷史兩柱56角損樣本、最大3.495800054%損失的有限接受及v1／v2報告界限全部保留，沒有新增列印保證。
+

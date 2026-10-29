@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面 actual STL<br>![正面](appearance/previews/front.png) | 背面 actual STL<br>![背面](appearance/previews/rear.png) |  |
@@ -51,11 +52,6 @@
 
 ## 歷史單色與展示檢查
 
-原 scene.blend 與八張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[左側](previews/left.png)、[右側](previews/right.png)、[頂視](previews/top.png)、[屋面細節](previews/roof-detail.png)、[南框細節](previews/porch-detail.png)、[北端細節](previews/north-detail.png)。原 readme-view-check.json 是當時單色展示的路徑與 SHA 記錄，未覆寫；現行 README 圖片另由此次外觀發布檢查驗證。上列原製造警示與特定例外沒有被配色 QA 取代。
+原 scene.blend 與八張單色圖完整保留：正面（歷史檔案留存，不作本頁預覽）、背面（歷史檔案留存，不作本頁預覽）、左側（歷史檔案留存，不作本頁預覽）、右側（歷史檔案留存，不作本頁預覽）、頂視（歷史檔案留存，不作本頁預覽）、屋面細節（歷史檔案留存，不作本頁預覽）、南框細節（歷史檔案留存，不作本頁預覽）、北端細節（歷史檔案留存，不作本頁預覽）。原 readme-view-check.json 是當時單色展示的路徑與 SHA 記錄，未覆寫；現行 README 圖片另由此次外觀發布檢查驗證。上列原製造警示與特定例外沒有被配色 QA 取代。
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 左側<br>![左側](previews/left.png) |
-| 右側<br>![右側](previews/right.png) | 頂視<br>![頂視](previews/top.png) | 屋面細節<br>![屋面細節](previews/roof-detail.png) |
-| 南框細節<br>![南框細節](previews/porch-detail.png) | 北端細節<br>![北端細節](previews/north-detail.png) |  |

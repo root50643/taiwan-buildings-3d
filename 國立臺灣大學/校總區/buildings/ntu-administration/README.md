@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 背面與未見面保持中性<br>![背面](appearance/previews/rear.png) |  |
@@ -13,11 +14,7 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/admin-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依官方照片登錄紅橘磚牆、淡灰四柱與柱頭、凹窗及前屋坡；深門廊和未知背面中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+依官方照片登錄紅橘磚牆、淡灰四柱與柱頭、凹窗及前屋坡；深門廊和未知背面中性。原STL與歷史QA不變，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 [下載 STL](model.stl) · [Blender 場景](scene.blend) · [參數化來源](build_model.py) · [驗證結果](validation.json)

@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 東側正面（actual STL）<br>![正面](previews/front.png) | 西側背面（actual STL）<br>![背面](previews/rear.png) |  |
+| ![正斜](appearance/previews/front.png) | ![後斜](appearance/previews/rear.png) | ![正立](appearance/previews/elevation.png) |
+| ![側面](appearance/previews/side.png) | ![頂面](appearance/previews/top.png) |  |
 
 狀態：2026-10-14新版外觀已核准為有界推定近似版。作者完成原始驗證後封存v1，獨立數位幾何與公開附件審核已通過。尚未實體試印，是否已發布以統一發布清單為準。
 
@@ -12,12 +14,8 @@
 依NLSC2024水印航照及校方2024年上架正面照片；2026-10-23補核該正面原圖EXIF Original/Digitized為2014-04-19 10:56:53、XMP CreateDate一致，主DateTime空。校史竣工條目附圖的拍攝日未定，1990/10是竣工事件，不是確證拍攝日；它只協助辨識與2014可見區仍相符的構件。不是1990原貌復原，不是2026現況測繪。2022屋頂整修已見校方紀錄，但坡形變動未證實。
 
 
-[左側](previews/left.png) · [右側](previews/right.png) · [頂視](previews/top.png) · [正立面](previews/elevation.png)
+左側（歷史檔案留存，不作本頁預覽） · 右側（歷史檔案留存，不作本頁預覽） · 頂視（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) | 頂視<br>![頂視](previews/top.png) |
-| 正立面<br>![正立面](previews/elevation.png) |  |  |
 
 ## 外形與推定界線
 - 東側前廳與西側主屋面依航照相對位置，保留主屋面、窄邊帶與四角突出，不互換主廳與前廳。
@@ -48,3 +46,4 @@
 
 ## 附加限域配色（2026-10-23）
 [正面紅板與白帶外觀層](appearance/README.md)：94個完整原面，其餘中性；不改原幾何、面序、套數或歷史QA。
+

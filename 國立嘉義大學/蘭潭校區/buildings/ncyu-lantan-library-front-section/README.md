@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![圖資前棟截段雙端上圓筒與錐頂前半配色代理](appearance/previews/front.png) |  |  |
@@ -16,9 +17,6 @@
 
 依官方正面及西側斜角實拍自建的局部外觀模型。僅涵蓋整體正立面與近側轉角，後緣是人為截斷面，不是館舍真實後牆；整館進深、後棟與屋頂全貌仍未還原。本件不可當作整個圖書資訊館已完成。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![同件模型正面與背面並排](previews/front-rear.png) |  |  |
 
 ## 證據與取捨
 - 保留兩端圓筒轉角、上層直柵、三高拱窗、五圓窗、中央淺山牆、翼部不同層窗形與入口挑空柱廊。
@@ -35,12 +33,8 @@
 ## 交付與重建
 [model.stl](model.stl)、[scene.blend](scene.blend)、[build_model.py](build_model.py)、[requirements.txt](requirements.txt)。Blend由交付STL匯入為可編輯網格，參數腳本是重建來源。
 
-預覽為actual交付STL渲染：[正面](previews/front.png)、[背切面](previews/rear.png)、[正立面](previews/elevation.png)、[頂視](previews/top.png)。
+預覽為actual交付STL渲染：正面（歷史檔案留存，不作本頁預覽）、背切面（歷史檔案留存，不作本頁預覽）、正立面（歷史檔案留存，不作本頁預覽）、頂視（歷史檔案留存，不作本頁預覽）。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背切面<br>![背切面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
-| 頂視<br>![頂視](previews/top.png) |  |  |
 
 Python3.12安裝requirements.txt後，依次執行build_model.py、Blender背景執行render_preview.py、validate_model.py、check_contour_validity.py、check_thin_features.py。每個命令需exit0且所有checks為true；失敗立即停止，不repair原STL掩蓋問題。
 

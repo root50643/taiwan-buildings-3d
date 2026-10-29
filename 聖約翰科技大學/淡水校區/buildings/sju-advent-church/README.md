@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面<br>![有限證據配色正面](appearance/previews/front.png) | 背面<br>![有限證據配色背面](appearance/previews/rear.png) |  |
@@ -9,16 +10,12 @@
 [回淡水校區](../../README.md)
 
 
-
 ## 2026-10-24｜有限證據配色層
 
 另附 [appearance/README.md](appearance/README.md)：在原 3,972 個三角面上增加可編修材質、真正含逐面材質的 3MF 與七向預覽，**原 STL、原 Blend、原預覽、尺度與既有幾何／薄件限制均不變**。2,218 面有有限來源依據；1,754 面明確維持未知／抽象底座中性色，包含有顏色衝突的十字架與未對上的背門。不是新增建物，不表示全表面已驗證，也未實體試印。
 
-原始單色預覽仍保留：[正面](previews/front.png)、[背面](previews/rear.png)；下方原幾何與 v1 限制不因配色而改變。
+原始單色預覽仍保留：正面（歷史檔案留存，不作本頁預覽）、背面（歷史檔案留存，不作本頁預覽）；下方原幾何與 v1 限制不因配色而改變。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) |  |
 
 ## 範圍與可信度
 
@@ -37,13 +34,9 @@
 
 - [model.stl](model.stl)：毫米；含底座150 × 150 × 83.08mm。比例約1:219.8，底座厚3mm。
 - [scene.blend](scene.blend)：由實際STL匯入的可編修網格；[build_model.py](build_model.py)是參數重建來源。
-- [頂視](previews/top.png)、[西側](previews/west.png)、[東側](previews/east.png)、[正面低視角](previews/front-low.png)、[背面低視角](previews/rear-low.png)。全部PNG取自交付STL。
+- 頂視（歷史檔案留存，不作本頁預覽）、西側（歷史檔案留存，不作本頁預覽）、東側（歷史檔案留存，不作本頁預覽）、正面低視角（歷史檔案留存，不作本頁預覽）、背面低視角（歷史檔案留存，不作本頁預覽）。全部PNG取自交付STL。
 - [requirements.txt](requirements.txt)、[render_preview.py](render_preview.py)、[run_all_checks.py](run_all_checks.py)、[validation.json](validation.json)、[qa-summary.json](qa-summary.json)、[SHA256SUMS](SHA256SUMS)。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視<br>![頂視](previews/top.png) | 西側<br>![西側](previews/west.png) | 東側<br>![東側](previews/east.png) |
-| 正面低視角<br>![正面低視角](previews/front-low.png) | 背面低視角<br>![背面低視角](previews/rear-low.png) |  |
 
 底座朝下。外簷與門廊有懸挑，須依實際切片評估支撐；細十架須留意搬運。0.2mm逐層幾何與0.8mm形態篩檢不是Cura/Prusa工具路徑，也未實體試印，不保證免支撐。切片前確認STL單位與方向。
 

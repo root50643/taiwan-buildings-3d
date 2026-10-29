@@ -2,20 +2,19 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![交付STL正面](previews/front.png)<br>正面 | ![交付STL背面](previews/rear.png)<br>背面 |  |
+| ![正面](appearance/previews/front.png) | ![左面](appearance/previews/left.png) | ![右面](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![頂面](appearance/previews/top.png) |  |
 
 國立臺北藝術大學｜關渡校本部｜150 mm 自建外觀近似模型
 
 > 主要外觀近似；包含架空主館與局部低層平台，不含相鄰體泳館、室內及完整地形。
 
 
-[頂面](previews/top.png) · [正立面](previews/elevation.png)
+頂面（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂面<br>![頂面](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 下載與單位
 
@@ -69,3 +68,4 @@ Python 3.12，先依 requirements.txt 安裝依賴，再執行 build_model.py；
 ## 限域外觀層
 
 [三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅窄窗背46面＋可見外皮196面，其餘3050面中性；非整樓全彩復原。
+

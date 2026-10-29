@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面（直接STL）<br>![正面](previews/front.png) | 背面（直接STL）<br>![背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
+| ![水池側](appearance/previews/rear.png) | ![頂視](appearance/previews/top.png) |  |
 
 板橋校區。這是根據公開外觀照片自行製作的3D列印縮模，不是官方測量或施工模型；實際尺寸不詳，模型採獨立展示比例。含底座最長邊150 mm；檔案單位為毫米。
 
@@ -42,3 +44,4 @@ Python 3.12 安裝requirements.txt後執行build_model.py，再以Blender 4.3.2�
 ## 歷史照片限域彩色外觀層
 
 [彩色3MF、可編輯Blend與五視角](appearance/README.md)：1132原面（1002巨字向外正面／130既有實心窗背），7428面中性。全部8560面與原STL bytes不變，不重建玻璃後磚木，不染字側框頂／屋尖／入口。依2007年自報日期官照的淺低飽和不透明代理，不是2026現況測繪或北側新館。原數位QA及估計幾何限制原樣保留。
+

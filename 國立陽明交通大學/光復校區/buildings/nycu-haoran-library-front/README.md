@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
@@ -11,20 +12,14 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/nycuhaoran-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-採日間米灰磁磚與灰暗玻璃代理，夜景僅註冊立面分界、不烘焙黃燈。頂部開廊非玻璃，未知屋頂及截斷背面中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
+採日間米灰磁磚與灰暗玻璃代理，夜景僅註冊立面分界、不烘焙黃燈。頂部開廊非玻璃，未知屋頂及截斷背面中性。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 國立陽明交通大學｜光復校區。廣場側主立面、前廊與曲面門廳段；非全棟模型，背面為範圍截斷平面。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
 
-[俯視](previews/top.png) · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py)
+俯視（歷史檔案留存，不作本頁預覽） · [STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) |  |  |
 
 ## 範圍與來源
 

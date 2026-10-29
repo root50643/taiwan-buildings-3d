@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![創新育成中心磚框與低翼深灰簷前臉限域代理](appearance/previews/front.png) |  |  |
@@ -70,6 +71,3 @@ python check_layers.py
 
 ## 實際STL正背並排
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面（未見部分按詳頁明示簡化）<br>![背面](previews/rear.png) |  |

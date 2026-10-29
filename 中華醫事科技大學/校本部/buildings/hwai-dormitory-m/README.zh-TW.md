@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![實際STL正面（左）與背面（右）](previews/front-rear.png) |  |  |
+| ![正面](appearance/previews/front.png) | ![左面](appearance/previews/left.png) | ![右面](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![頂面](appearance/previews/top.png) |  |
 
 依[學校2019簡報第42頁](https://virtual.lchs.kh.edu.tw/guide/108-0306a/108hwai.pdf)公開實景重建，並用[現行官方校圖](https://www.hwai.edu.tw/p/405-1000-35523%2Cc93.php?Lang=zh-tw)及[校史](https://www.hwai.edu.tw/p/16-1000-35517.php?Lang=zh-tw)核對十層M棟。H第一宿舍为另一棟，未重複計入。模型保留寬中央玻璃帶、兩側小陽臺、左側成對窗、階梯屋頂與凹入口。
 
@@ -23,3 +25,4 @@
 ## 中央正面限域外觀層
 
 [三材質3MF、可編輯Blend與五視角預覽](appearance/README.md)：僅120面綠色不透明實腹與23面暗窗背，其餘5495面中性。綠實腹非透明玻璃；原粗略窗格、包絡及製造限制未修復，不是全樓全彩或2026現況復原。
+

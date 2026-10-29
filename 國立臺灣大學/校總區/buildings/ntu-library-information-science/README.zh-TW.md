@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面與來源支持區域<br>![正面](appearance/previews/front.png) | 未見外側背面中性<br>![背面](appearance/previews/rear.png) |  |
@@ -11,11 +12,7 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntulis-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-灰柱與淺灰實窗裙、銀白框與離散灰玻璃、冷灰外階；左端只染來源支持凸肋，側槽非玻璃，2003 EXIF／2014 上傳日期分清。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+灰柱與淺灰實窗裙、銀白框與離散灰玻璃、冷灰外階；左端只染來源支持凸肋，側槽非玻璃，2003 EXIF／2014 上傳日期分清。 原 STL 與歷史 QA 不變；這是外觀改善，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
 官方索引代碼 M9。公開外觀近似模型，非測繪或BIM。

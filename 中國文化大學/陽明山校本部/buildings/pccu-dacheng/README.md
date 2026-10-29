@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面<br>![正面](appearance/previews/front.png) | 背面<br>![背面](appearance/previews/rear.png) |  |
@@ -13,11 +14,8 @@
 
 [材質、四視角與來源界線](appearance/README.md) · [表面色 3MF](appearance/pccu-appearance.3mf) · [可編輯材質場景](appearance/scene.blend)
 
-只改善可辨識的前屋頂與前立面配色；其他三屋頂與未知側背保持中性。原 STL、建模程式、原場景與歷史 QA 未改，不是新增幾何。[原單色正面](previews/front.png) · [原單色背面](previews/rear.png)
+只改善可辨識的前屋頂與前立面配色；其他三屋頂與未知側背保持中性。原 STL、建模程式、原場景與歷史 QA 未改，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽） · 原單色背面（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
 
 ## 版本與限制
 
@@ -38,13 +36,8 @@
 
 在Python環境安裝requirements.txt後執行build_model.py，再以Blender4.3.2執行render_preview.py；run_all_checks.py重跑全部作者檢查。未使用repair修補錯誤原輪廓；每個原Polygon及每層結果留在JSON，逾1%構件另有CSV。
 
-[頂視](previews/top.png)、[左側](previews/left.png)、[右側](previews/right.png)、[屋頂](previews/roof-detail.png)、[正低角](previews/porch-detail.png)、[側低角](previews/south-detail.png)、[背低角](previews/rear-detail.png)。公開預覽均含完整底座；來源對照圖及原照片/PDF只私下研究，不隨包散布。
+頂視（歷史檔案留存，不作本頁預覽）、左側（歷史檔案留存，不作本頁預覽）、右側（歷史檔案留存，不作本頁預覽）、屋頂（歷史檔案留存，不作本頁預覽）、正低角（歷史檔案留存，不作本頁預覽）、側低角（歷史檔案留存，不作本頁預覽）、背低角（歷史檔案留存，不作本頁預覽）。公開預覽均含完整底座；來源對照圖及原照片/PDF只私下研究，不隨包散布。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視<br>![頂視](previews/top.png) | 左側<br>![左側](previews/left.png) | 右側<br>![右側](previews/right.png) |
-| 屋頂<br>![屋頂](previews/roof-detail.png) | 正低角<br>![正低角](previews/porch-detail.png) | 側低角<br>![側低角](previews/south-detail.png) |
-| 背低角<br>![背低角](previews/rear-detail.png) |  |  |
 
 作者數位檢查見隨附報告；是否正式發布以統一發布清單及獨立審核為準。
 

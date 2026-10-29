@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | 正面原幾何配色<br>![正面](appearance/previews/front.png) | 西端與未登錄長側<br>![背面](appearance/previews/rear.png) |  |
@@ -21,18 +22,11 @@
 
 [來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/ntut-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-依校方東入口及市府西端照片登錄橘紅磚面、灰山牆、淡色窗柱與棕色門廊；另一長側與其瓦坡中性。原STL與歷史QA不變，不是新增幾何。[原單色正面](previews/front.png)／[原單色背面](previews/rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正面<br>![原單色正面](previews/front.png) | 原單色背面<br>![原單色背面](previews/rear.png) |  |
+依校方東入口及市府西端照片登錄橘紅磚面、灰山牆、淡色窗柱與棕色門廊；另一長側與其瓦坡中性。原STL與歷史QA不變，不是新增幾何。原單色正面（歷史檔案留存，不作本頁預覽）／原單色背面（歷史檔案留存，不作本頁預覽）
 
 
-[頂視圖](previews/top.png) · [正立面](previews/elevation.png)
+頂視圖（歷史檔案留存，不作本頁預覽） · 正立面（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 已保留的外觀
 

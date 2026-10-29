@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![實際STL正面](appearance/previews/front.png) | ![實際STL背面](appearance/previews/rear.png) |  |
@@ -42,9 +43,6 @@ STL SHA-256：ba8cec3cadb311a60aad2ea0efd669c761f98a9f73b4df87c5ffbf29009d216a
 
 ## 歷史單色記錄
 
-原 scene.blend、render_preview.py 與三張單色圖完整保留：[正面](previews/front.png)、[背面](previews/rear.png)、[立面](previews/elevation.png)。它們是原模型重建及製造檢查的歷史證據；最新配色展示位於 appearance/。原薄篩沒有超過 1% 損失的抽樣層，不代表列印保證，亦未被本次外觀 QA 重新測試。
+原 scene.blend、render_preview.py 與三張單色圖完整保留：正面（歷史檔案留存，不作本頁預覽）、背面（歷史檔案留存，不作本頁預覽）、立面（歷史檔案留存，不作本頁預覽）。它們是原模型重建及製造檢查的歷史證據；最新配色展示位於 appearance/。原薄篩沒有超過 1% 損失的抽樣層，不代表列印保證，亦未被本次外觀 QA 重新測試。
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 立面<br>![立面](previews/elevation.png) |

@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
+| ![前](appearance/previews/front.png) | ![左](appearance/previews/left.png) | ![右](appearance/previews/right.png) |
+| ![後](appearance/previews/rear.png) | ![頂](appearance/previews/top.png) |  |
 
 第二批獨立外觀模型；校區：勝利校區。不是全校完成。尺寸含底座：150 × 76 × 34 mm；最長邊150 mm，各件獨立比例。
 
@@ -64,3 +66,4 @@ python validate_model.py
 ## 現存前棟限域外觀層
 
 [五材質3MF、可編輯Blend與五視角](appearance/README.md)：僅511原面（372上中窗／120低窗／2次門／17白U框正面），其餘4533面保持未查證中性。5044原面／STL bytes不變，不復原已拆T形後翼，不染大牆／共面細框／實心梯／後頂。兩張官照上傳2024-08-07不是拍攝日期，無EXIF拍攝日期，3058 PNG CreationTime只自報建立時間。原170截面／34薄層歷史記錄與前棟近似不變；不是全樓幾何升級或可直接列印版。
+

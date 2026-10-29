@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 配色正面斜視 | 配色後側斜視 | 配色街面 |
 | :---: | :---: | :---: |
 | ![長啓樓來源限定近似配色正面](appearance/previews/front.png) | ![長啓樓來源限定近似配色後側](appearance/previews/rear.png) | ![長啓樓來源限定近似配色街面](appearance/previews/street.png) |
@@ -20,16 +21,8 @@
 以下保留原模型的八張實際幾何預覽與原辨識配色，供對照。
 
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面斜視：街面及南側<br>![實際STL正面](previews/front.png) | 背面斜視：北側及端部<br>![實際STL背面](previews/rear.png) |  |
+上圖直接由交付的 [model.stl](model.stl) 匯入渲染。深色窗、灰色基座及綠色屋頂僅為 Blender／PNG 的辨識用預覽色，**STL 本身沒有材質或色彩，也不包含植物實體**。主要深凹、雨遮與退台均為實際幾何，不是貼圖。另有 街面（歷史檔案留存，不作本頁預覽）、南側（歷史檔案留存，不作本頁預覽）、北側（歷史檔案留存，不作本頁預覽）、端面（歷史檔案留存，不作本頁預覽）、東南斜視（歷史檔案留存，不作本頁預覽）、頂視（歷史檔案留存，不作本頁預覽）。
 
-上圖直接由交付的 [model.stl](model.stl) 匯入渲染。深色窗、灰色基座及綠色屋頂僅為 Blender／PNG 的辨識用預覽色，**STL 本身沒有材質或色彩，也不包含植物實體**。主要深凹、雨遮與退台均為實際幾何，不是貼圖。另有 [街面](previews/street.png)、[南側](previews/south.png)、[北側](previews/north.png)、[端面](previews/end.png)、[東南斜視](previews/southeast.png)、[頂視](previews/top.png)。
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 街面<br>![街面](previews/street.png) | 南側<br>![南側](previews/south.png) | 北側<br>![北側](previews/north.png) |
-| 端面<br>![端面](previews/end.png) | 東南斜視<br>![東南斜視](previews/southeast.png) | 頂視<br>![頂視](previews/top.png) |
 
 ## 尺寸與時間切片
 

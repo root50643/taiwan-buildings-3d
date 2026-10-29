@@ -2,6 +2,7 @@
 
 ## 模型預覽
 
+
 | 模型預覽 | 模型預覽 | 模型預覽 |
 | :---: | :---: | :---: |
 | ![主樓正面外觀](appearance/previews/front.png) |  |  |
@@ -13,18 +14,11 @@
 
 [配色、來源界線與四視角](appearance/README.md) · [表面色 3MF](appearance/yunsyu-appearance.3mf) · [可編輯場景](appearance/scene.blend)
 
-只改善2023修復後照片可登錄的主樓正面；背面、深處端梯及折板屋頂保持中性。原STL與歷史QA保留，不是新增幾何。[原單色正背合圖](previews/front-rear.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 原單色正背合圖<br>![原單色正背合圖](previews/front-rear.png) |  |  |
+只改善2023修復後照片可登錄的主樓正面；背面、深處端梯及折板屋頂保持中性。原STL與歷史QA保留，不是新增幾何。原單色正背合圖（歷史檔案留存，不作本頁預覽）
 
 
-[頂視圖](previews/top.png) · [正面大圖](previews/front.png) · [背面大圖](previews/rear.png)
+頂視圖（歷史檔案留存，不作本頁預覽） · 正面大圖（歷史檔案留存，不作本頁預覽） · 背面大圖（歷史檔案留存，不作本頁預覽）
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) | 正面大圖<br>![正面大圖](previews/front.png) | 背面大圖<br>![背面大圖](previews/rear.png) |
 
 ## 下載與重建
 - [可列印模型 model.stl](model.stl)：單位毫米，含底座最大邊不超過150毫米，本件尺寸約 150 × 72 × 55.6 毫米。

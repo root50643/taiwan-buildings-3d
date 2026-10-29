@@ -2,18 +2,17 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 同件北玻璃與架空面<br>![北側](previews/north.png) | 同件南側及行政翼<br>![南側](previews/south.png) |  |
+| ![北正面](appearance/previews/front.png) | ![左側](appearance/previews/left.png) | ![右側](appearance/previews/right.png) |
+| ![南背面](appearance/previews/rear.png) | ![俯視](appearance/previews/top.png) |  |
 
 本件是來源限定的外觀近似，包含主館、連接部與西南圖書館／行政翼，不代表整校完成。2001-06-03建物完工；2007-09為分館開館。慈濟大學2024合校後以同一校計數，不另列原慈濟科技大學。
 
 
-[STL](model.stl) · [Blend](scene.blend) · [原創Python](build_model.py) · [頂圖](previews/top.png) · [東面](previews/east.png) · [西面](previews/west.png) · [來源](sources.json) · [尺度依據](dimensional-evidence.json) · [QA](qa-summary.json) · [原網格與重現](validation.json)
+[STL](model.stl) · [Blend](scene.blend) · [原創Python](build_model.py) · 頂圖（歷史檔案留存，不作本頁預覽） · 東面（歷史檔案留存，不作本頁預覽） · 西面（歷史檔案留存，不作本頁預覽） · [來源](sources.json) · [尺度依據](dimensional-evidence.json) · [QA](qa-summary.json) · [原網格與重現](validation.json)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂圖<br>![頂圖](previews/top.png) | 東面<br>![東面](previews/east.png) | 西面<br>![西面](previews/west.png) |
 
 ## 形體與限制
 
@@ -51,3 +50,4 @@
 ## 原窗面有限代理外觀
 
 [3MF、可編輯Blend與五視角](appearance/README.md)：只染228完整原面（北前三facet160＋南上長窗68），458.74519952540334 mm²，81有限域全3頂點與實法向。8412中性與84底座面／原native材料保留；不是全包mono。8724三角4348頂點exact、full36原件備份。北內縮是保守證據界而非精準攝影測繪或材料縫；最後兩北facet/東端/D/E/低實腹/框不染。純色proxy非全樓復原，不附照片。原QA true／歷史pending／後來248柱角有限例外、0.390625背靠浮雕與未實印限制照留。
+

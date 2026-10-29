@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| 正面<br>![實際STL正面](previews/front.png) | 背面<br>![實際STL背面](previews/rear.png) |  |
+| ![正面](appearance/previews/front.png) | ![背面](appearance/previews/rear.png) | ![正立面](appearance/previews/elevation.png) |
+| ![頂視](appearance/previews/top.png) |  |  |
 
 [返回校區圖鑑](../../README.md) · [返回臺大總圖鑑](../../../README.md)
 
@@ -59,3 +61,4 @@
 - python check_valid_sections.py：278 個 0.2 mm 間距截面，每個輪廓及其組合多邊形均須 closed/valid，不使用 polygon repair；結果 valid-sections.json。
 - python thin_canonical_v2.py：56 個 1 mm 間距截面作 0.8 mm 參考寬度形態學 opening，最大面積損失 0.0396%，沒有超過 1% 指標層。這是新增輔助幾何篩檢，並非全面壁厚測量、工具路徑或試印。
 - 舊版僅保留追溯，不作本版列印附件。支撐與切片器檢視仍不可省略。
+

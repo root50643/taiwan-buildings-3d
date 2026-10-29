@@ -2,13 +2,10 @@
 
 ## 模型預覽
 
-| 東側門廊 | 西側及環廊 | 頂視 |
+
+| 配色東南側 | 配色背面 | 配色頂視 |
 |---|---|---|
-| ![正面](previews/front.png) | ![背面](previews/rear.png) | ![頂視](previews/top.png) |
-| 正面低視角 | 背面低視角 | 東側 |
-| ![正面低視角](previews/front-low.png) | ![背面低視角](previews/rear-low.png) | ![東側](previews/east.png) |
-| 西側 |  |  |
-| ![西側](previews/west.png) |  |  |
+| ![配色東南側](appearance/previews/front.png) | ![配色背面](appearance/previews/rear.png) | ![配色頂視](appearance/previews/top.png) |
 
 [回礁溪校區](../../README.md)
 
@@ -42,8 +39,6 @@
 外觀已於2026-10-14核准，作者完整數位QA通過並凍結v1；獨立數位審核已完成，以下限定薄損例外已核可。所有截面原Polygon有效性先斷言，erosion/opening逐一零消失／分裂，不使用repair fallback。數位QA不等同Cura/Prusa工具路徑，尚未實體試印。具體形態損失須看細件解釋，不得只憑整層低百分比忽略小構件。
 
 
-
-
 ## 非零形態薄損補充
 
 238整層、1912個跨層原Polygon全數保留且不分裂；整層最大損失0.07188686308008162%，沒有整層超過1%。但1669個小截面樣本超過1%，不可用整層百分比掩蓋，主要為斜柱及門廊柱。最差構件z=30.071mm、面積3.295965671676505mm²，損失0.14471016251053978mm²（4.390523959460185%），保留95.60947604053982%。頂點0.41mm鄰域外仍有非零損失，最大0.0034058062780685993mm²，不稱為完全只是四角。
@@ -57,9 +52,6 @@
 
 新增[原網格限定配色](appearance/README.md)：白色膜帽、灰色斜環與僅 6 個已對位窗組的凹槽背面。其餘表面明示為未確認中性，不以對稱或高度帶補色。
 
-| 配色東南側 | 配色背面 | 配色頂視 |
-|---|---|---|
-| ![配色東南側](appearance/previews/front.png) | ![配色背面](appearance/previews/rear.png) | ![配色頂視](appearance/previews/top.png) |
 
 [可編修彩色 Blend](appearance/scene.blend) · [逐面材質 3MF](appearance/fgu-huaien-hall-materials.3mf) · [9 視角與來源／限制](appearance/README.md)
 

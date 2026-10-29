@@ -2,9 +2,11 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+| 新版模型預覽 | 新版模型預覽 | 新版模型預覽 |
 | :---: | :---: | :---: |
-| ![實際STL正面](previews/front.png) | ![實際STL背面](previews/rear.png) | ![實際STL俯視（如適用）](previews/top.png) |
+| ![正面](appearance/previews/front.png) | ![左面](appearance/previews/left.png) | ![右面](appearance/previews/right.png) |
+| ![背面](appearance/previews/rear.png) | ![頂面](appearance/previews/top.png) |  |
 
 校本部／公開外觀近似模型。每棟獨立縮放，最長尺寸含底板150mm；並非各館同一比例。實際尺寸：150.00 × 145.00 × 92.50 mm。
 
@@ -39,3 +41,4 @@ STL SHA-256：aeb72efac741a2f0c4e8a878fbef02f7b33d34f7f425c10ac0964d1a3219d81f
 ## 歷史限域外觀層
 
 [三材質3MF、可編輯Blend與五視角](appearance/README.md)：只染前紅屋坡9面與綠灰窗背42面，1391面維持未查證中性。官方AAA圖EXIF三日期為2008-09-24 16:08:20，無offset；非2026整樓現況。這項新年代辨識補充上文歷史原始來源說明；本輪未重看2025 PDF。原幾何及製造限制不變。
+

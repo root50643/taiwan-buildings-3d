@@ -2,9 +2,19 @@
 
 ## 模型預覽
 
-| 正向 | 背向 | 立面視角 |
-|---|---|---|
-| ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
+| 新彩色斜前 | 新彩色近來源角度 | 新彩色正面 |
+| :---: | :---: | :---: |
+| ![彩色斜前](appearance/front.png) | ![彩色近來源角度](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
+| 新彩色背面（未知中性） | 新彩色上視 | 彩色下載 |
+| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
+
+### 照片近似彩色預覽
+
+依校方HSB與承包商客家學院實照：低飽和紅褐磚面、米白既有山牆／框簷、灰藍原窗背與灰褐既有坡屋頂。未知背面／大平屋頂中性；同工程光電大樓照片的白格陣及藍玻璃不套本棟。
+
+
+原三圖、STL／OBJ／scene.blend、幾何尺寸與首頁／校級選圖不變。照片日期不明，不把工程2011日期或其他Commons2012日期當本照片拍攝日；詳[配色來源與重建限制](APPEARANCE.md)。
 
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 132 × 113 mm。
 
@@ -52,7 +62,7 @@ SHA256SUMS含可發布檔案雜湊。尚未實體試印。此為全校持續研�
 [STL](model.stl) · [可編輯 Blender](scene.blend) · [Python 來源](build_model.py) · [完整驗證](validation.json) · [來源](sources.json)
 
 
-以上皆由交付STL渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
+以上展示為交付彩色外觀模型的渲染；rear所示未知背側簡化，不代表有同視角實景佐證。相機視角不是精確地理方位。
 
 ## 截面數值方法修訂與補查
 

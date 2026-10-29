@@ -2,18 +2,22 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色內院 | 新彩色斜視 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 內院正面<br>![正面](previews/front.png) | 外弧背面<br>![背面](previews/rear.png) |  |
+| ![內院](appearance/front.png) | ![斜視](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
+
+### 新增有限實照彩色（原圖不變）
+
+依校方2022永續報告兩張不同時期照片，只補已辨內院牆米灰、原窗背灰綠／入口凸弧深藍綠、既有頂格架低飽和粉褐。未知外弧、背面、屋頂／人工坡地保中性，不新增光電或細構件。
+
+
+原五圖及選圖、原幾何／尺寸／STL／scene不變。詳[來源與重建限制](APPEARANCE.md)。
 
 依官方平面、跨年正射、校方正面與斜空照片自建的有界外觀近似。不是精準測繪或特定年份完整復原。
 
-
-[頂視](previews/top.png) · [西端](previews/left.png) · [東端](previews/right.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視<br>![頂視](previews/top.png) | 西端<br>![西端](previews/left.png) | 東端<br>![東端](previews/right.png) |
 
 ## 檔案與比例
 

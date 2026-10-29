@@ -1,0 +1,199 @@
+{
+  "controls": [
+    {
+      "parameter": "Wall longitudinal length and north bay chain",
+      "value_m": [
+        22.48,
+        2.98,
+        3.48,
+        3.48,
+        2.5,
+        3.48,
+        3.48,
+        2.98
+      ],
+      "evidence": "PDF284/287/288 annotated lengths",
+      "class": "direct_annotation"
+    },
+    {
+      "parameter": "Roof longitudinal extent and end segments",
+      "value_m": [
+        22.915,
+        3.38,
+        16.155,
+        3.38
+      ],
+      "evidence": "PDF286 roof dimension chain",
+      "class": "direct_annotation"
+    },
+    {
+      "parameter": "Roof transverse extent and chain",
+      "value_m": [
+        13.77,
+        2.27,
+        10.62,
+        0.88
+      ],
+      "evidence": "PDF286 roof dimension chain; model local_y=-.15..13.62",
+      "class": "direct_annotation_with_estimated_registration"
+    },
+    {
+      "parameter": "Floor-plan transverse envelope",
+      "value_m": 13.85,
+      "evidence": "PDF284 tick-to-tick span beyond wall lines; not imposed as external wall depth",
+      "class": "direct_annotation_not_wall_dimension"
+    },
+    {
+      "parameter": "Wall side and rear depths",
+      "value_m": [
+        12.4,
+        13.45
+      ],
+      "evidence": "PDF284 actual wall strokes registered independently of1385cm envelope; independent controls estimate12.3/13.4m; modeling trace12.40/13.45m",
+      "class": "raster_trace_estimate_not_measured_annotation"
+    },
+    {
+      "parameter": "Front gallery inner wall / rear-main-wall / southern projection width",
+      "value_m": [
+        2.25,
+        8.35,
+        3.3,
+        19.18
+      ],
+      "evidence": "PDF284 plan and287 transverse section; estimated wall locations and thicknesses",
+      "class": "raster_trace_estimate"
+    },
+    {
+      "parameter": "North floor / ridge above floor / ridge above northGL",
+      "value_m": [
+        0.51,
+        5.02,
+        5.53
+      ],
+      "evidence": "PDF287/288 north datum",
+      "class": "direct_annotation_and_sum"
+    },
+    {
+      "parameter": "South ridge above source ground",
+      "value_m": 5.635,
+      "evidence": "PDF288 uses a separate ground line; inferred southGL=-.105m relative to north. No terrain model; flat display base follows north datum.",
+      "class": "direct_annotation_different_datum"
+    },
+    {
+      "parameter": "Main eave / lower side roof ridge / south sheet rear height",
+      "value_m": [
+        3.65,
+        4.61,
+        2.86
+      ],
+      "evidence": "PDF287/289 registered silhouettes; not separately measured values",
+      "class": "raster_estimate"
+    },
+    {
+      "parameter": "North1-6 windows",
+      "value_mm_raw": [
+        1100,
+        3300
+      ],
+      "evidence": "PDF341; narrower end bays2980mm conflict with3300mm nominal opening. Model end openings2.78m vs inner3.28m/3.30m followsPDF288 visible fitting.",
+      "class": "annotated_nominal_with_disclosed_fitting"
+    },
+    {
+      "parameter": "Nos47/49",
+      "value": "No tabulated dimension asserted",
+      "evidence": "PDF341 rows blank; approximate0.90x1.40m window47 and0.90x1.95m door49 read fromPDF289 exterior, not invented table values",
+      "class": "visual_estimate"
+    },
+    {
+      "parameter": "Side gas vents23/24",
+      "value": "No separately floating aperture added",
+      "evidence": "PDF289 three main window groups per side; frame upper divisions are included in those groups rather than inventing an extra indexed position",
+      "class": "external_elevation_topology_priority"
+    },
+    {
+      "parameter": "North lower gallery wall",
+      "value_m": [
+        0.51,
+        1.38,
+        0.13
+      ],
+      "evidence": "PDF121 gallery photograph and288 plaster-spalling/brick symbol support lower opaque wall; thickness and sill estimate. Main wall remains2.25m back.",
+      "class": "source_interpretation_and_estimate"
+    },
+    {
+      "parameter": "Small west canopy",
+      "value_m": {
+        "x": [
+          22.43,
+          24.75
+        ],
+        "y": [
+          -0.35,
+          3.2
+        ],
+        "roof_x": [
+          22.38,
+          24.88
+        ],
+        "roof_y": [
+          -0.45,
+          3.35
+        ]
+      },
+      "evidence": "PDF284 platform/4posts andPDF288/289 canopy; source registered approximate extents",
+      "class": "raster_estimate"
+    },
+    {
+      "parameter": "Authored underside inspection bores",
+      "class": "manufacturing_adaptation_NOT_historic",
+      "count": 3,
+      "centres_source_m": [
+        [
+          5.0,
+          1.1
+        ],
+        [
+          11.24,
+          1.1
+        ],
+        [
+          17.5,
+          1.1
+        ]
+      ],
+      "opening_source_m": [
+        0.8,
+        0.76
+      ],
+      "opening_model_mm": [
+        4.8,
+        4.56
+      ],
+      "cut_z_source_m": [
+        -0.55,
+        1.0
+      ],
+      "penetration": "Display base and north-gallery floor, then cavity; no facade changes."
+    },
+    {
+      "parameter": "Roof ridge-cap height registration",
+      "class": "measured_outer_height_with_estimated_cap_section",
+      "main_outer_crest_m": 5.53,
+      "main_tile_plane_m": 5.455,
+      "main_cap_radius_m": 0.075,
+      "side_outer_crest_estimate_m": 4.61,
+      "side_tile_plane_estimate_m": 4.545,
+      "side_cap_radius_estimate_m": 0.065,
+      "evidence": "PDF287/288 height annotation applied to total roof crest; cap is not added above the stated height."
+    }
+  ],
+  "construction_simplifications": {
+    "source_to_model_mm_per_m": 6,
+    "base_thickness_mm": 3,
+    "minimum_repeated_frame_mm": 0.3,
+    "boolean_simplify_tolerance_mm": 0.003,
+    "interior": "Main room and roof junction filled; gallery cavities retained behind opaque glazing/lower wall/header. Three explicitly nonhistoric underside bores connect cavities through base and gallery floor. Doors/glass solid proxies.",
+    "colors": "Illustrative, not source-photo calibrated; black-and-white report does not establish historic green/brown shades.",
+    "condition": "Fine cracks, spalling, decay, missing tiles and interior ceiling damage not reconstructed; architectural survey-envelope study only."
+  }
+}

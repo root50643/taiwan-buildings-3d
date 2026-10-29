@@ -6,6 +6,18 @@
 |---|---|---|
 | ![正向](previews/front.png) | ![背向](previews/rear.png) | ![立面](previews/elevation.png) |
 
+### 新增正面照片近似彩色（原單色圖保留）
+
+依校方無障礙地圖國鼎圖書館實照：淺灰雙翼正面、灰褐中央柱面、暗藍灰窗帶、深灰既有框架、灰粉褐低弧入口與棕褐細簷。未知側後和屋頂中性；照片可見的淡粉米入口小板若原網格無獨立邊界即省略，不切新面或造框。
+
+| 新彩色斜前 | 新彩色近來源低視角 | 新彩色正面 |
+| :---: | :---: | :---: |
+| ![彩色斜前](appearance/front.png) | ![彩色近來源低視角](appearance/source-angle.png) | ![彩色正面](appearance/elevation.png) |
+| 新彩色背面（未知中性） | 新彩色上視（屋頂未知中性） | 彩色下載 |
+| ![彩色背面](appearance/rear.png) | ![彩色上視](appearance/top.png) | [彩色 3MF](appearance.3mf) · [彩色 Blender](appearance.blend) |
+
+原三圖、原 STL／OBJ／scene.blend／幾何尺寸及首頁／校級選圖均不變；照片拍攝日未知，不移用其他Commons檔EXIF日期，不稱2026現況。詳[配色來源與重建限制](APPEARANCE.md)。
+
 此為公開外觀資料研究模型，非測繪、施工或正式切片檔。每棟獨立縮尺，含底座最長150 mm，不能直接當作同一比例校園拼圖。本檔尺寸約 150 × 105 × 145.8 mm。
 
 ## 保留的識別特徵

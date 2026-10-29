@@ -2,9 +2,19 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 實際 STL 正面<br>![正面](previews/front.png) | 實際 STL 背面<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [彩色Blender](appearance.blend) |
+
+
+### 新增官方實照近似彩色（原圖保留）
+
+僅行政主棟正面：磚褐後牆／上盒、灰米柱梁、深淺灰藍窗與弧陽台磚色代理。照片外的側背屋頂保中性，鄰棟不納入；字樣、紅布條與細格天花未新增。
+
+
+原全部預覽及代表選圖、geometry／尺寸／STL／scene不變；詳[來源與限制](APPEARANCE.md)。
 
 [返回西子灣校區](../../README.md) · [返回全校圖鑑](../../../README.md)
 
@@ -26,11 +36,8 @@
 - 屋頂中央井口由3F以上貫通，背面下層依官方平面保留退縮；各層高度、高層出挑深度及樓梯頭高度以目視比例估算，未還原內部房間。
 - 主樓與東西相鄰低層群棟連接處截斷；柱身為列印加粗。
 
-[正立面](previews/elevation.png) · [俯視／屋頂](previews/top.png)。照片年代未提供，2026-10-13為查閱日，不代表拍攝日或全校現況確認。
+[正立面](appearance/elevation.png) · [俯視／屋頂](appearance/top.png)。照片年代未提供，2026-10-13為查閱日，不代表拍攝日或全校現況確認。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 俯視／屋頂<br>![俯視／屋頂](previews/top.png) |  |
 
 ## 列印與數位檢查
 單位為毫米，底座朝下。可先用0.4mm噴嘴、0.2mm層高試切片，依材料和機器調整。主柱直徑4.1mm，次框1.35mm，陽台邊1.6mm，屋頂緣1.5mm；柱廊跨距、上層出挑、弧形陽台板與中央井口均需檢查支撐及移除路徑。

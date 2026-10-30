@@ -2,18 +2,23 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面（實際STL）<br>![正面](previews/front.png) | 背面（實際STL）<br>![背面](previews/rear.png) |  |
 
 山下校區。依公開實景與官方平面外輪廓自建的完整建物外觀近似，非测绘、BIM或結構設計。
 
 
-[俯視](previews/top.png) · [正立面](previews/elevation.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+### 正面與可見左側有據彩色預覽
+
+依兩張官方實照，只為前面與左側有據原面增補灰石、真窗背深灰混合表觀及原入口構件；另一長側、後方、內院、屋頂與未見面中性。不添加文字、玻璃面或照片細格。
+
+| 正斜視 | 來源角度 | 正立面 |
 | :---: | :---: | :---: |
-| 俯視<br>![俯視](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
+| ![彩色正斜視](appearance/front.png) | ![彩色來源角度](appearance/source-angle.png) | ![彩色正立面](appearance/elevation.png) |
+| 背向 | 上視 | 新外觀下載 |
+| ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
+
+[材料證據與未知面](APPEARANCE.md)。原四張模型圖檔保留，README只展示新彩圖；原幾何、STL、scene與原列印警告不變。
 
 ## 形狀及證據限制
 
@@ -21,7 +26,7 @@
 
 未見完整遠後立面，後牆保守留白。窗距、屋頂機房、坡地與地下部分近似；只表達外殼與可見大挑空，不複製內部辦公配置。模型尺寸不是實測。
 
-官方防災表内日期2021-10-01，PDF編成2026-03-04，两者不可當照片拍攝日。來源網址、頁碼與支持特徵見[sources.json](sources.json)。第三方原圖不隨包散布。
+官方防災表内日期2021-10-01、PDF編成2026-03-04為原來源記錄，本輪補色未重讀該PDF；兩者不可當照片拍攝日。本輪兩張政大記憶網照片均未載攝影日期。來源網址、頁碼與支持特徵見[sources.json](sources.json)。第三方原圖不隨包散布。
 
 ## 使用方式
 

@@ -2,11 +2,21 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 臺北校區，自行用Python／實體布林建模，沒有下載第三方3D模型。模型為照片支持的近似，非實測或施工圖。
+
+### 新增來源支持的材料（原 6 張預覽保留）
+
+依本輪親看的校方前照與兩張訪客背照，前後原上部整面磚牆採磚紅，原拱框／石帶／柱座柱頭與圓柱灰。下外側石齒接、未分界的人行石橫樑與跨色域三角面保中性，不切新面或零碎補色；原三通口與柱間空隙不填玻璃。
+
+
+[來源、範圍與文案勘誤](APPEARANCE.md)。只正門入口段，不含後警衛空間或歷史舊警衛室。原幾何／STL／scene／六張原圖與數位QA不改；未實體試印。
 
 ## 來源與界線
 
@@ -22,20 +32,13 @@
 - [render_preview.py](render_preview.py)：blender -b -t 4 -P render_preview.py；圖片皆實際STL
 
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png) · [通口近圖](previews/entry_close.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
-| 通口近圖<br>![通口近圖](previews/entry_close.png) |  |  |
-
 ## 列印及數位QA
 
-底座朝下。拱口、頂板、鐘室懸鐘及深門廊需要評估支撐；移除支撐可能傷害薄框、柱或懸掛構件。鐘面／文字等細節有意省略或粗化。沒有實體試印或Cura／Prusa工具路徑驗證，不保證免支撐或保證可印。
+底座朝下。拱口、頂板、成對圓柱及深門廊需要評估支撐；移除支撐可能傷害薄框、柱或懸掛構件。校名文字、看板及燈具等細節有意省略。沒有實體試印或Cura／Prusa工具路徑驗證，不保證免支撐或保證可印。
 
 [validation.json](validation.json)檢原STL水密、正體積、法向／繞序、每邊兩面、vertex link單環、單一連通表面與無分離內腔殼，尺寸150毫米、重建SHA及Blend一致。[contour-validity-check.json](contour-validity-check.json)以z偏移0.071、每0.2毫米核全部輪廓閉合及Polygon有效，invalid直接失敗，不repair後宣稱成功。[thin-feature-check.json](thin-feature-check.json)使用canonical fail-closed v3的0.8毫米opening輔助篩檢，非完整最小壁厚或切片模擬。
 
-[原STL通口／懸鐘射線證據](portal-ray-proof.json)與[檢查腳本](check_portal_geometry.py)。原三角形射線不修補mesh；數字全是模型毫米，不能視為現地尺寸。
+[原STL通口／柱間空隙射線證據](portal-ray-proof.json)與[檢查腳本](check_portal_geometry.py)。原三角形射線不修補mesh；數字全是模型毫米，不能視為現地尺寸。
 
 重跑：python validate_model.py；python check_contour_validity.py；python check_thin_features.py；python check_portal_geometry.py。
 

@@ -2,9 +2,18 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+### 有據材料彩色預覽
+
+原有三種中性預覽對比並非實景配色；本次依校方高角照，校正可見灰牆、橘塔、前灰頂／後紅坡與原彩窗背面。未知背側保中性，不是1964全復原或2026現況保證。
+
+| 正斜視 | 來源角度 | 正立面 |
 | :---: | :---: | :---: |
-| 正面 actual STL<br>![正面](previews/front.png) | 背面 actual STL<br>![背面](previews/rear.png) |  |
+| ![彩色正斜視](appearance/front.png) | ![彩色來源角度](appearance/source-angle.png) | ![彩色正立面](appearance/elevation.png) |
+| 背向 | 上視 | 新外觀下載 |
+| ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
+
+[材料來源與限制](APPEARANCE.md)。原九張模型圖保留檔案，README僅展示新版；原幾何及十架薄特徵警告保持。
 
 ## 一組連體與來源限制
 

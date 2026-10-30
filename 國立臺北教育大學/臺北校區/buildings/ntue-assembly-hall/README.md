@@ -2,11 +2,21 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 臺北校區。自行以公開照片和平面資料建立的外觀近似模型；不是下載第三方3D模型、測繪成果或建築施工圖。
+
+### 新增照片支持的材料（原 8 張預覽全部保留）
+
+依官方防災計畫第71頁兩張實照，前長拱廊採磚紅、原獨立拱圈／柱腳與簷線灰石，前屋坡灰瓦材料近似。只賦原完整面，不增加磚瓦紋理。後屋坡、背牆、未確立端向及其他未證面保持中性；不是全四面實景復原或2026現況確認。
+
+
+[來源與材料限制](APPEARANCE.md)。原STL／scene、原預覽與列印QA保留；本輪不重測原列印篩檢、不宣稱實體試印。
 
 ## 範圍與來源時點
 
@@ -25,12 +35,6 @@
 - [requirements.txt](requirements.txt)：Python依賴；執行 python build_model.py 可重建
 - [render_preview.py](render_preview.py)：用 Blender 實際讀取交付STL渲染，非示意效果圖
 
-
-[俯視圖](previews/top.png) · [正立面](previews/elevation.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視圖<br>![俯視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 ## 列印與驗證
 

@@ -2,11 +2,20 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 臺北校區。自行以公開照片和平面資料建立的外觀近似模型；不是下載第三方3D模型、測繪成果或建築施工圖。
+
+### 正面及入口限定補色
+
+正面粉色磁磚、原灰石入口框、玻璃真凹背、原窗格與綠雨棚依官方照片補色。**側面粉／橄欖色交界缺原始網格分界，側後屋頂與不明面留中性；不是整棟驗色完成。**
+
+| 正斜視 | 來源角度 | 正立面 |
+| :---: | :---: | :---: |
+| ![彩色正斜視](appearance/front.png) | ![彩色斜視](appearance/source-angle.png) | ![彩色正立面](appearance/elevation.png) |
+| 背向 | 上視 | 外觀檔案 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
+
+[來源與範圍](APPEARANCE.md)。原四張模型圖保留檔案、不再放於 README；原幾何及列印警告不變。
 
 ## 範圍與來源時點
 
@@ -26,11 +35,8 @@
 - [render_preview.py](render_preview.py)：用 Blender 實際讀取交付STL渲染，非示意效果圖
 
 
-[俯視圖](previews/top.png) · [正立面](previews/elevation.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 俯視圖<br>![俯視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
+
 
 ## 列印與驗證
 

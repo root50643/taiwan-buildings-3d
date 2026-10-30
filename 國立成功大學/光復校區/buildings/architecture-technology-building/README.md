@@ -2,12 +2,22 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| ![正面](previews/front.png) | ![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 第十三批；光復校區。校方GIS A005，財產校碼R1A-37-0。尺寸約 150 × 145 × 132 mm，含底座最長邊150 mm，各件獨立比例。
 
+
+### 新增照片支持的材料（原三張預覽保留）
+
+依本輪親看的兩張校方照片，原主要前面與左弧廊側紅磚量體採低飽和磚紅、獨立門廊與弧廊灰石，真窗背暗灰綠。前下矩形／拱廊凹背是深廊、磚、窗混合陰影代理，不是整條玻璃。未證相反側、背面與屋頂中性，細帶無原面界則省略。
+
+
+[來源、物件名稱沿用與材料限制](APPEARANCE.md)。原幾何／STL／scene與QA不改，0.01089% opening loss、132層薄篩及660截面為原數位記錄，非本輪重測或實體試印。原包無OBJ，不增列不存在的下載。
 
 ## 棟別範圍與近似
 
@@ -35,15 +45,12 @@
 ## 檔案與重驗
 
 - [STL](model.stl)、[可編輯 Blender](scene.blend)、[結構化來源與照片直接網址](sources.json)
-- [正面原圖](previews/front.png)、[背面原圖](previews/rear.png)、[立面](previews/elevation.png)，均由實際 STL 產生
+- [正面彩圖](appearance/front.png)、[背面彩圖](appearance/rear.png)、[立面](appearance/elevation.png)，均由實際 STL 產生
 - 安裝 `requirements.txt` 後執行 `python build_model.py` 重建 STL
 - `blender -b -t 2 -P render_preview.py` 重建 Blender 與預覽
 - `python validate_model.py` 檢查原始法線、封閉性、邊/頂點流形、單一連通表面、無額外內部空腔殼、正體積、乾淨重建雜湊與 Blender 幾何一致性；見 [validation.json](validation.json)
 - `python validate_sections.py` 使用固定共同邊方向插值，檢查每0.2 mm水平截面輪廓閉合；見 [cross_sections.json](cross_sections.json)
 - `python check_thin.py` 每1 mm取樣，先確認閉合/有效輪廓，再做0.8 mm形態開運算；見 [thin-feature-check.json](thin-feature-check.json)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 立面<br>![立面](previews/elevation.png) |  |  |
 
 任一原始驗證false、程式非零退出碼或資產雜湊不一致都不可封版。沒有窮盡自交檢測，也不以報告代替實體列印。原始參考照片和地圖不隨公開包散布。

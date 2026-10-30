@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![關懷大樓正面](水湳校區/buildings/cmu-guanhuai/previews/front.png)](水湳校區/buildings/cmu-guanhuai/README.md)<br>**[中國醫藥大學水湳校區 關懷大樓](水湳校區/buildings/cmu-guanhuai/README.md)**<br>西側正面 | [![創研大樓A2：實際模型預覽](水湳校區/buildings/cmu-chuangyan-a2/previews/front.png)](水湳校區/buildings/cmu-chuangyan-a2/README.md)<br>**[水湳創研大樓 A2｜整棟地上外觀有限細節近似版](水湳校區/buildings/cmu-chuangyan-a2/README.md)** |  |
+| [![關懷大樓正面](水湳校區/buildings/cmu-guanhuai/appearance/front.png)](水湳校區/buildings/cmu-guanhuai/README.md)<br>**[中國醫藥大學水湳校區 關懷大樓](水湳校區/buildings/cmu-guanhuai/README.md)**<br>西側正面 | [![創研大樓A2：實際模型預覽](水湳校區/buildings/cmu-chuangyan-a2/previews/front.png)](水湳校區/buildings/cmu-chuangyan-a2/README.md)<br>**[水湳創研大樓 A2｜整棟地上外觀有限細節近似版](水湳校區/buildings/cmu-chuangyan-a2/README.md)** |  |
 
 [關懷大樓：模型、範圍及限制](水湳校區/buildings/cmu-guanhuai/README.md)
 

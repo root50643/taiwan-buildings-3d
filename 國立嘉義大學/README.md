@@ -6,7 +6,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![行政中心](蘭潭校區/buildings/ncyu-lantan-administration/appearance/previews/front.png)](蘭潭校區/buildings/ncyu-lantan-administration/README.md)<br>**[行政中心（中正樓）](蘭潭校區/buildings/ncyu-lantan-administration/)**<br>全外殼近似；後立面簡化 | [![圖資前棟段雙端限域配色代理](蘭潭校區/buildings/ncyu-lantan-library-front-section/appearance/previews/front.png)](蘭潭校區/buildings/ncyu-lantan-library-front-section/README.md)<br>**[圖書資訊館前棟段](蘭潭校區/buildings/ncyu-lantan-library-front-section/)**<br>僅前棟截段，不含完整後部 | [![嘉農鐘樓](蘭潭校區/buildings/ncyu-jianong-clock-tower/previews/front.png)](蘭潭校區/buildings/ncyu-jianong-clock-tower/README.md)<br>**[嘉農鐘樓](蘭潭校區/buildings/ncyu-jianong-clock-tower/)**<br>附屬地標構造物，非教學館 |
+| [![行政中心](蘭潭校區/buildings/ncyu-lantan-administration/appearance/previews/front.png)](蘭潭校區/buildings/ncyu-lantan-administration/README.md)<br>**[行政中心（中正樓）](蘭潭校區/buildings/ncyu-lantan-administration/)**<br>全外殼近似；後立面簡化 | [![圖資前棟段雙端限域配色代理](蘭潭校區/buildings/ncyu-lantan-library-front-section/appearance/previews/front.png)](蘭潭校區/buildings/ncyu-lantan-library-front-section/README.md)<br>**[圖書資訊館前棟段](蘭潭校區/buildings/ncyu-lantan-library-front-section/)**<br>僅前棟截段，不含完整後部 | [![嘉農鐘樓](蘭潭校區/buildings/ncyu-jianong-clock-tower/appearance/front.png)](蘭潭校區/buildings/ncyu-jianong-clock-tower/README.md)<br>**[嘉農鐘樓](蘭潭校區/buildings/ncyu-jianong-clock-tower/)**<br>附屬地標構造物，非教學館 |
 | [![國立嘉義大學｜民雄校區大學館：實際模型預覽](民雄校區/buildings/ncyu-minxiong-university-hall/appearance/previews/front.png)](民雄校區/buildings/ncyu-minxiong-university-hall/README.md)<br>**[國立嘉義大學｜民雄校區大學館](民雄校區/buildings/ncyu-minxiong-university-hall/README.md)** |  |  |
 
 每個資料夾包含STL、參數重建來源、可編輯Blend、actual STL正背／頂視圖、來源URL及數位驗證。原照片／PDF不隨包散布。

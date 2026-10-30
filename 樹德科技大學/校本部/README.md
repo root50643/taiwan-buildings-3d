@@ -4,7 +4,7 @@
 
 | 校園模型 | 校園模型 | 校園模型 |
 | :---: | :---: | :---: |
-| [![行政大樓弧形入口及前庭行政翼（局部）實際STL預覽](buildings/shute-admin-forecourt-wing/previews/front.png)](buildings/shute-admin-forecourt-wing/README.md)<br>**[行政大樓弧形入口及前庭行政翼（局部）](buildings/shute-admin-forecourt-wing/README.md)**<br>部分行政前翼；後側採明示簡化終止面 |  |  |
+| [![行政大樓弧形入口及前庭行政翼（局部）實際STL預覽](buildings/shute-admin-forecourt-wing/appearance/front.png)](buildings/shute-admin-forecourt-wing/README.md)<br>**[行政大樓弧形入口及前庭行政翼（局部）](buildings/shute-admin-forecourt-wing/README.md)**<br>部分行政前翼；後側採明示簡化終止面 |  |  |
 
 含底座 150 × 87 × 104 mm。原始法向短段診斷、限定淺凹紋根部及真實邊界證據，均保留在個別模型的 QA／validation 檔。請連同獨立覆核與實際切片檢查閱讀。
 

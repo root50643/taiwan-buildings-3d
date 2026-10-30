@@ -6,7 +6,7 @@
 
 | 工具機學院大樓整體群 | 鹿鳴臺 | 養浩學舍 C／D 連體群 |
 | --- | --- | --- |
-| [![工具機學院大樓整體群](buildings/ncut-machine-tool-complex/previews/front.png)](buildings/ncut-machine-tool-complex/README.md)<br>[工具機學院大樓整體群](buildings/ncut-machine-tool-complex/README.md)<br>建築群整體近似模型 | [![鹿鳴臺](buildings/ncut-luming-grandstand/previews/front.png)](buildings/ncut-luming-grandstand/README.md)<br>[鹿鳴臺](buildings/ncut-luming-grandstand/README.md)<br>附屬看臺模型 | [![養浩學舍 C／D 連體群](buildings/ncut-yanghao-dormitory/previews/front.png)](buildings/ncut-yanghao-dormitory/README.md)<br>[養浩學舍 C／D 連體群](buildings/ncut-yanghao-dormitory/README.md)<br>建築群整體近似模型 |
+| [![工具機學院大樓整體群](buildings/ncut-machine-tool-complex/previews/front.png)](buildings/ncut-machine-tool-complex/README.md)<br>[工具機學院大樓整體群](buildings/ncut-machine-tool-complex/README.md)<br>建築群整體近似模型 | [![鹿鳴臺](buildings/ncut-luming-grandstand/appearance/front.png)](buildings/ncut-luming-grandstand/README.md)<br>[鹿鳴臺](buildings/ncut-luming-grandstand/README.md)<br>附屬看臺模型 | [![養浩學舍 C／D 連體群](buildings/ncut-yanghao-dormitory/previews/front.png)](buildings/ncut-yanghao-dormitory/README.md)<br>[養浩學舍 C／D 連體群](buildings/ncut-yanghao-dormitory/README.md)<br>建築群整體近似模型 |
 
 ## 區域與模型界限
 

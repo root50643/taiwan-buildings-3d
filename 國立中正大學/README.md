@@ -6,8 +6,8 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![行政大樓連體群](民雄校本部/buildings/ccu-administration-complex/previews/front.png)](民雄校本部/buildings/ccu-administration-complex/README.md)<br>**[行政大樓連體群](民雄校本部/buildings/ccu-administration-complex/README.md)** | [![大禮堂前門廊段](民雄校本部/buildings/ccu-auditorium-front-section/appearance/previews/front.png)](民雄校本部/buildings/ccu-auditorium-front-section/README.md)<br>**[大禮堂前門廊段](民雄校本部/buildings/ccu-auditorium-front-section/README.md)** | [![圖書資訊大樓中央塔樓與門廊段](民雄校本部/buildings/ccu-library-central-tower-section/previews/front.png)](民雄校本部/buildings/ccu-library-central-tower-section/README.md)<br>**[圖書資訊大樓中央塔樓與門廊段](民雄校本部/buildings/ccu-library-central-tower-section/README.md)**<br>圖資中央塔樓與門廊段 |
-| [![共同教室大樓](民雄校本部/buildings/ccu-shared-classroom-complex/previews/front.png)](民雄校本部/buildings/ccu-shared-classroom-complex/README.md)<br>**[共同教室大樓：完整量體近似](民雄校本部/buildings/ccu-shared-classroom-complex/README.md)** |  |  |
+| [![行政大樓連體群](民雄校本部/buildings/ccu-administration-complex/appearance/front.png)](民雄校本部/buildings/ccu-administration-complex/README.md)<br>**[行政大樓連體群](民雄校本部/buildings/ccu-administration-complex/README.md)** | [![大禮堂前門廊段](民雄校本部/buildings/ccu-auditorium-front-section/appearance/previews/front.png)](民雄校本部/buildings/ccu-auditorium-front-section/README.md)<br>**[大禮堂前門廊段](民雄校本部/buildings/ccu-auditorium-front-section/README.md)** | [![圖書資訊大樓中央塔樓與門廊段](民雄校本部/buildings/ccu-library-central-tower-section/appearance/front.png)](民雄校本部/buildings/ccu-library-central-tower-section/README.md)<br>**[圖書資訊大樓中央塔樓與門廊段](民雄校本部/buildings/ccu-library-central-tower-section/README.md)**<br>圖資中央塔樓與門廊段 |
+| [![共同教室大樓](民雄校本部/buildings/ccu-shared-classroom-complex/appearance/front.png)](民雄校本部/buildings/ccu-shared-classroom-complex/README.md)<br>**[共同教室大樓：完整量體近似](民雄校本部/buildings/ccu-shared-classroom-complex/README.md)** |  |  |
 
 ## 校區與完成範圍
 

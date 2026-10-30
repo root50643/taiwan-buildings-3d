@@ -4,6 +4,6 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![正面](校本部/buildings/ctust-tianji/previews/front.png)](校本部/buildings/ctust-tianji/README.md)<br>**[中臺科技大學天機教學大樓](校本部/buildings/ctust-tianji/README.md)**<br>正面：兩翼及下沉庭院 |  |  |
+| [![正面](校本部/buildings/ctust-tianji/appearance/front.png)](校本部/buildings/ctust-tianji/README.md)<br>**[中臺科技大學天機教學大樓](校本部/buildings/ctust-tianji/README.md)**<br>正面：兩翼及下沉庭院 |  |  |
 
 [模型與列印限制](校本部/buildings/ctust-tianji/README.md) · [STL](校本部/buildings/ctust-tianji/model.stl) · [來源](校本部/buildings/ctust-tianji/sources.json)

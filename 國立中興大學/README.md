@@ -4,7 +4,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![行政大樓前棟與柱廊段](校本部/buildings/nchu-administration-front/previews/front.png)](校本部/buildings/nchu-administration-front/README.md)<br>**[行政大樓前棟與柱廊段](校本部/buildings/nchu-administration-front/)** | [![惠蓀堂西向前棟段](校本部/buildings/nchu-huisun-front/appearance/previews/front.png)](校本部/buildings/nchu-huisun-front/README.md)<br>**[惠蓀堂西向前棟段](校本部/buildings/nchu-huisun-front/)** | [![圖書館臨湖前翼與轉角段](校本部/buildings/nchu-library-lakeside/previews/front.png)](校本部/buildings/nchu-library-lakeside/README.md)<br>**[圖書館臨湖前翼與轉角段](校本部/buildings/nchu-library-lakeside/)** |
+| [![行政大樓前棟與柱廊段](校本部/buildings/nchu-administration-front/appearance/front.png)](校本部/buildings/nchu-administration-front/README.md)<br>**[行政大樓前棟與柱廊段](校本部/buildings/nchu-administration-front/)** | [![惠蓀堂西向前棟段](校本部/buildings/nchu-huisun-front/appearance/previews/front.png)](校本部/buildings/nchu-huisun-front/README.md)<br>**[惠蓀堂西向前棟段](校本部/buildings/nchu-huisun-front/)** | [![圖書館臨湖前翼與轉角段](校本部/buildings/nchu-library-lakeside/appearance/front.png)](校本部/buildings/nchu-library-lakeside/README.md)<br>**[圖書館臨湖前翼與轉角段](校本部/buildings/nchu-library-lakeside/)** |
 
 ## 校區及待續範圍
 [校本部模型](校本部/README.md)。南投校區（中興新村）、中科研發創業育成中心、向上獸醫醫院、四處實驗林場及霧峰/烏日農牧園藝場仍待逐建築研究。[逐項續接與來源](continuation.json)；此表是研究候選清單，不是已完成或最終棟數清冊。

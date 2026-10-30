@@ -2,11 +2,20 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
 臺北校區。自行使用Python實體布林建立的外觀／量體近似模型；沒有下載第三方3D模型，非施工圖、測繪或館內重建。
+
+### 僅中央入口構件的材料增補
+
+本版只為原中央曲窗真背、前向白框／樓帶、四柱及獨立端帽前面補色。**兩側主翼磚／混凝土混合牆全保中性，並非全館配色恢復**；不以三角面斜界假畫照片磚色。
+
+| 正斜視 | 來源角度 | 正立面 |
+| :---: | :---: | :---: |
+| ![入口限定彩色正斜視](appearance/front.png) | ![入口限定來源角度](appearance/source-angle.png) | ![入口限定正立面](appearance/elevation.png) |
+| 背向 | 上視 | 新外觀下載 |
+| ![入口限定背向](appearance/rear.png) | ![入口限定上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
+
+[有據構件及未知範圍](APPEARANCE.md)。原六張模型圖保留檔案，README只展示新版五圖；原幾何及列印警告不變。
 
 ## 證據與範圍
 
@@ -22,17 +31,11 @@
 - [render_preview.py](render_preview.py)：讀取原STL渲染；blender -b -t 2 -P render_preview.py
 
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視及院落](previews/top.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視及院落<br>![俯視及院落](previews/top.png) |
 
-[曲面及入口近圖](previews/entry_close.png) · [原STL射線證據](portal-ray-proof.json) · [射線檢查腳本](check_portal_geometry.py)。原STL三角形射線證實中央入口真空隙深32.5毫米、前柱間淨寬14.2毫米、底板下至階梯淨高20.6毫米；均為模型近似尺寸。底板與柱間不是僅刻表面凹紋。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 曲面及入口近圖<br>![曲面及入口近圖](previews/entry_close.png) |  |  |
+[原STL射線證據](portal-ray-proof.json) · [射線檢查腳本](check_portal_geometry.py)。原STL三角形射線證實中央入口真空隙深32.5毫米、前柱間淨寬14.2毫米、底板下至階梯淨高20.6毫米；均為模型近似尺寸。底板與柱間不是僅刻表面凹紋。
+
 
 ## 列印與QA限制
 

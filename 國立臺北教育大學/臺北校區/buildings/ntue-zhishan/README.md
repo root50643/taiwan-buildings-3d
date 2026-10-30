@@ -2,11 +2,20 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 新版前立面近圖<br>![新版前立面近圖](previews/front_close.png) |  |  |
 
 臺北校區。自行以Python實體布林建立外觀／量體近似，未下載第三方3D模型；不是測繪、施工圖或館內重建。
+
+### 照片材料近似彩色預覽
+
+官方正面／背側兩張實照支持前、後與窄窗側的磚色大面、原真窗背灰綠混合表觀及雨遮紅前緣／米灰底面。未知另一側、屋頂、雨遮寬頂及未證細部保持中性。只賦原完整面，不新增窗格、校名或設備；遮蔽區同牆材料延伸是近似，不是逐處實照。
+
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
+| :---: | :---: | :---: |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
+[來源、逐面材料與限制](APPEARANCE.md)。原幾何／STL／scene、原圖與數位QA不改，未實體試印；未驗證特定AMS或多色切片器相容。
 
 ## 證據與範圍
 
@@ -22,7 +31,7 @@
 - 6–8F：每列保留6組可辨識窄窗。官方6–8F平面有8個研究室分段，但房間數不是外窗數證據，照片左側受樹遮的2段保持素面，不臆補。
 - 最高處僅保留可見2道長短不同橫槽；細分玻璃格不刻製。
 
-[新版前立面近圖](previews/front_close.png)。窗組寬度與比例仍為照片近似，沒有實測。
+原前立面近圖檔保留供歷史核對，不作本頁展示。窗組寬度與比例仍為照片近似，沒有實測。
 
 
 ## 交付檔
@@ -32,15 +41,9 @@
 - [build_model.py](build_model.py) 與 [requirements.txt](requirements.txt)：自行建模參數；python build_model.py
 - [render_preview.py](render_preview.py)：實際STL渲染；blender -b -t 2 -P render_preview.py
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
 
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png)
+[正立面](appearance/elevation.png) · [俯視](appearance/top.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
 
 [原STL射線空隙檢核](portal-ray-proof.json) · [重跑射線程式](check_portal_geometry.py)。直接遍歷原STL三角形，不修補或封截面。
 

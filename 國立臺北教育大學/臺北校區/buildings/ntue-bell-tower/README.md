@@ -2,11 +2,21 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 實際STL正面<br>![正面](previews/front.png) | 實際STL背面<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 臺北校區，自行用Python／實體布林建模，沒有下載第三方3D模型。模型為照片支持的近似，非實測或施工圖。
+
+### 新增日照來源材料（原 6 張預覽全部保留）
+
+前與相鄰一面採紅磚、原獨立灰石拱圈／簷帶／臺基、淡鐘面及較早官照暗懸鐘。只賦原完整面，四向通拱不填玻璃。兩面以模型−Y／−X示意對映，不是實測地理方位；其他面與未證屋坡中性。夜間橙色燈光不作日間塗色，不保證2026懸鐘設備或外觀未變。
+
+
+[來源、跨年代及材料限制](APPEARANCE.md)。原STL／scene、預覽與數位QA保留，本輪不重測原列印篩檢、未實體試印。
 
 ## 來源與界線
 
@@ -21,13 +31,6 @@
 - [build_model.py](build_model.py)、[requirements.txt](requirements.txt)：python build_model.py
 - [render_preview.py](render_preview.py)：blender -b -t 4 -P render_preview.py；圖片皆實際STL
 
-
-[正立面](previews/elevation.png) · [側面](previews/side.png) · [俯視](previews/top.png) · [通口近圖](previews/entry_close.png)
-
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 側面<br>![側面](previews/side.png) | 俯視<br>![俯視](previews/top.png) |
-| 通口近圖<br>![通口近圖](previews/entry_close.png) |  |  |
 
 ## 列印及數位QA
 

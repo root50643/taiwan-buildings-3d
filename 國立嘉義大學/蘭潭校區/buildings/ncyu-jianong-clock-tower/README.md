@@ -2,12 +2,22 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| ![同件模型正面與背面並排](previews/front-rear.png) |  |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 這是校園附屬地標構造物的外觀近似模型，不是教學館，不增加教學館完成棟數。依官方斜角實拍自建幾何；四方塔身由可見相鄰兩面推估，其餘面保留簡化。
 
+
+### 新增有限實照材料（原五張預覽保留）
+
+官方斜角照僅支持帶鐘正面與相鄰左面：暖灰米板身、銀灰柱/線腳、灰白鐘面及原示意指針。其餘未證面保持中性，不加綠月桂、文字或玻璃。三可見角柱只分可見朝前/左扇區，背曲面與球飾維持中性；遠背角柱不依對稱臆染。
+
+
+[新讀照片日期與材料限制](APPEARANCE.md)。本輪JPEG EXIF記錄2017-12-13 10:39:01（無時區），不以2023網頁發佈日當攝影日。原幾何、STL、scene、五張原圖與列印限制保留，沒有實體試印。
 
 ## 已見與未知
 - 保留底層拱口、中段欄孔、上段尖拱、角柱與球飾。拱口和欄孔真正貫通，沒有以凹刻取代主要挑空。
@@ -25,12 +35,8 @@
 ## 交付與驗證
 [model.stl](model.stl)、[scene.blend](scene.blend)、[build_model.py](build_model.py)、[requirements.txt](requirements.txt)。Blend由交付STL匯入可編輯網格，參數腳本是幾何重建來源。
 
-actual STL預覽：[正面](previews/front.png)、[背面](previews/rear.png)、[正立面](previews/elevation.png)、[頂視](previews/top.png)。
+actual STL預覽：[正面](appearance/front.png)、[背面](appearance/rear.png)、[正立面](appearance/elevation.png)、[頂視](appearance/top.png)。
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 正面<br>![正面](previews/front.png) | 背面<br>![背面](previews/rear.png) | 正立面<br>![正立面](previews/elevation.png) |
-| 頂視<br>![頂視](previews/top.png) |  |  |
 
 Python3.12安裝requirements.txt後，依序執行build_model.py、Blender背景執行render_preview.py、validate_model.py、check_contour_validity.py、check_thin_features.py。每個命令需exit0且JSON checks全true，失敗立即停止，不用repair掩蓋原STL問題。
 

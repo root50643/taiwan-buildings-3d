@@ -2,20 +2,25 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| ![交付STL正面](previews/front.png) | ![交付STL背面](previews/rear.png) |  |
 
 國立臺北藝術大學｜關渡校本部｜自建外觀近似模型
 
 > **局部段，並非全棟。** 鐘樓、下部量體、近旁低翼及短階梯；不含完整教學大樓、人文廣場、鼓樓或行政大樓。
 
 
-[正立面](previews/elevation.png) · [頂面](previews/top.png)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+
+### 上部構件有據彩色預覽
+
+僅依本輪實讀斜面照片，已見上塔灰石、內壁淡灰、單側可見屋坡紅褐、既有鐘暗色；下量體、低翼、背截斷與未見屋坡中性。這是局部段的有限材料增補，不是全教學大樓或2026現況復原。
+
+| 新正斜視 | 新來源角度 | 新立面 |
 | :---: | :---: | :---: |
-| 正立面<br>![正立面](previews/elevation.png) | 頂面<br>![頂面](previews/top.png) |  |
+| ![彩色正斜視](appearance/front.png) | ![彩色來源角度](appearance/source-angle.png) | ![彩色立面](appearance/elevation.png) |
+| 新背向 | 新上視 | 新外觀下載 |
+| ![彩色背向](appearance/rear.png) | ![彩色上視](appearance/top.png) | [3MF](appearance.3mf) · [Blender](appearance.blend) |
+
+[本輪來源、原面界與限制](APPEARANCE.md)。四張舊模型圖保留原檔，但不再於README展示。原形狀／STL／scene及原列印警告不變。
 
 ## 下載與尺寸
 
@@ -48,7 +53,9 @@ Python3.12依 requirements.txt 安裝版本後執行 build_model.py；再用Blen
 - [canonical fail-closed v3 薄特徵篩檢](thin-feature-check.json)：0.8mm參考寬度、150切層，最大面積損失0.5711%
 - [綜合QA](qa-summary.json)：所有硬檢查皆true。形態opening只是輔助篩檢，不是完整壁厚檢測。
 
-## 證據與年代
+## 原建模證據與年代
+
+以下是原建模來源記錄，不表示本次補色全部重新讀取。本輪只實讀DSCF2656斜面照片；兩個Commons來源本輪HTTP403停止，沒有繞過，未重新核實其EXIF日期。
 
 - [北藝大115學年度舞蹈學系七年一貫制招生簡章，附件校圖（PDF第27頁／印刷頁25）](https://fsjh.chc.edu.tw/storage/074521/posts/6091/files/1141004310-0-0.pdf)：北藝大製作、芳苑國中公開轉載的正式招生文件。已查看圖像：館舍相對位置、鐘樓／教學大樓、研究大樓與文資書苑標籤。 插畫非測繪平面；最新取得的學年度資料，不等同確認2026全校外觀未變。
 - [112年氣候友善校園計畫配置圖（PDF第24頁）](https://ws-proj.moe.edu.tw/001/Upload/568/relfile/13271/12988/d95e8a4f-fa4e-4d65-9fd9-193872248e2e.pdf)：官方早期配置圖，核位置和別名。 插畫非測量平面。

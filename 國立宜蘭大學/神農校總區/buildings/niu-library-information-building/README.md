@@ -2,20 +2,27 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 正面（actual STL）<br>![正面](previews/front.png) | 背面（actual STL）<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 公開資料自建的近似外觀縮尺模型，單位為毫米（mm），含底座最長150mm。不是測繪、竣工圖、結構模型或保證可列印的成品。
+
+### 新增有限實照材料（原五張PNG保留）
+
+依校史跨頁實照及官方入口近照，原正面/右長側採淡灰白牆、灰褐原格柵與灰綠混合窗背；左斜側、後面、屋頂未知中性。階梯保校史灰色：較新/不同日期近照的紅橙彩繪與文字缺原面界而省略，不宣稱現況階梯已復原或所有來源同日。
+
+
+[材料來源與限制](APPEARANCE.md)。原幾何/STL/OBJ/scene、五張預覽與原QA不改，0.0502%歷史薄特徵記錄保留；未重跑列印QA或實體試印。
 
 ## 模型與預覽
 
 
-[頂視圖](previews/top.png) · [正立面](previews/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
+[頂視圖](appearance/top.png) · [正立面](appearance/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 - 尺寸：109 × 150 × 82.1 mm（包含3mm底座；STL實測值以validation.json為準）
 - 範圍：圖書資訊大樓／圖書資訊館為一件；崇發廳、宜大記憶庫、黃春明行動體驗館與資訊教室均為館內空間，不各算一棟；不包含旁邊原圖書館/人管院。

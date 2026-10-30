@@ -2,18 +2,25 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 正面（實際 STL）<br>![正面](previews/front.png) | 背側收邊（實際 STL）<br>![背側](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 國立彰化師範大學・進德校區。依公開實拍自建的局部外觀近似模型，非全館測繪；每館獨立比例，無法以本件直接推算現地尺寸。
 
 
-[下載 STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py) · [頂視圖](previews/top.png) · [來源紀錄](sources.json)
+[下載 STL](model.stl) · [可編輯 Blender 網格](scene.blend) · [參數重建](build_model.py) · [頂視圖](appearance/top.png) · [來源紀錄](sources.json)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) |  |  |
+
+### 新增有限照片材料（原預覽保留）
+
+僅入口轉角原可分凸窗採土米色、既有窗梃近白、真窗背深灰綠、入口罩墨綠與階梯灰色。實照大白／米寬橫帶無原完整色界，因此大牆、雙色柱與原窄凸線保持中性，不冒充寬條紋；不是全館完整配色復原。
+
+
+[來源與省略限制](APPEARANCE.md)。原幾何、四張預覽與QA不改；0.2235% opening loss僅保留原記錄，未重跑列印QA或實體試印。原柱廊真淨空仍開放。
 
 ## 保留的外觀
 

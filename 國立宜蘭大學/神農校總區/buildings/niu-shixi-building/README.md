@@ -2,20 +2,27 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 正面（actual STL）<br>![正面](previews/front.png) | 背面（actual STL）<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 公開資料自建的近似外觀縮尺模型，單位為毫米（mm），含底座最長150mm。不是測繪、竣工圖、結構模型或保證可列印的成品。
+
+### 新增有限照片材料（原預覽保留）
+
+依官方校史印頁154的跨期照片，以原可分完整面近似乳灰米牆、灰褐框、灰藍綠窗背及入口淡磚紅階梯；未知側面、屋頂與未證面中性。舊照標「正面」是模型+Y露台端，下方較新入口照對模型−Y寬窗端，不能直接按照片前後標題套色。這不是同日或2026現況復原。
+
+
+[來源與材料限制](APPEARANCE.md)。原STL、OBJ、scene、預覽與列印QA不改；原0.13519% opening loss僅保留歷史數位記錄，非本輪重測，未完成實體試印。
 
 ## 模型與預覽
 
 
-[頂視圖](previews/top.png) · [正立面](previews/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
+[頂視圖](appearance/top.png) · [正立面](appearance/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 - 尺寸：150 × 111 × 65 mm（包含3mm底座；STL實測值以validation.json為準）
 - 範圍：時習大樓為一件。照片中旁邊的其他大樓不納入；不同實驗室為同館使用單位，不拆算。

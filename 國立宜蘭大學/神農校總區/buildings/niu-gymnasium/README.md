@@ -2,20 +2,27 @@
 
 ## 模型預覽
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
+| 新彩色正斜視 | 新彩色來源角度 | 新彩色立面 |
 | :---: | :---: | :---: |
-| 正面（actual STL）<br>![正面](previews/front.png) | 背面（actual STL）<br>![背面](previews/rear.png) |  |
+| ![正斜視](appearance/front.png) | ![來源角度](appearance/source-angle.png) | ![立面](appearance/elevation.png) |
+| 新彩色背向 | 新彩色上視 | 彩色下載 |
+| ![背向](appearance/rear.png) | ![上視](appearance/top.png) | [彩色3MF](appearance.3mf) · [Blender](appearance.blend) |
+
 
 公開資料自建的近似外觀縮尺模型，單位為毫米（mm），含底座最長150mm。不是測繪、竣工圖、結構模型或保證可列印的成品。
+
+### 新增有限校史實照材料（原五張PNG保留）
+
+依校史印159–161頁實拍的既有主形態，僅支持的前牆/入口白灰磁磚、原可分淡粉樓帶、灰綠混合窗背與灰階梯補色。長側/高館後牆、未證天井與長屋蓋中性；不加壁畫、字、細欄杆或後加光電。不宣稱2018整修後或2026完整現況。
+
+
+[材料來源與限制](APPEARANCE.md)。原幾何、STL、OBJ、scene、五張PNG及原QA保留；原薄特徵約0.153%記錄不變，本輪未重跑列印QA、未實體試印。
 
 ## 模型與預覽
 
 
-[頂視圖](previews/top.png) · [正立面](previews/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
+[頂視圖](appearance/top.png) · [正立面](appearance/elevation.png) · [STL下載](model.stl) · [可編輯Blender](scene.blend) · [原始網格OBJ](model.obj)
 
-| 模型預覽 | 模型預覽 | 模型預覽 |
-| :---: | :---: | :---: |
-| 頂視圖<br>![頂視圖](previews/top.png) | 正立面<br>![正立面](previews/elevation.png) |  |
 
 - 尺寸：145 × 150 × 66.1 mm（包含3mm底座；STL實測值以validation.json為準）
 - 範圍：神農校總區體育館本體與相連行政翼為一件；不包括西側另建的半戶外多功能運動廣場、戶外田徑場，亦不是宜蘭運動公園體育館或城南擬議小巨蛋。

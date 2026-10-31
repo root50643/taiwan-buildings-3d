@@ -1,8 +1,8 @@
 # 臺灣建築物 3D 模型
 
-依地點整理的臺灣建築外觀模型集，收錄 **680 組模型／列印包**：國立聯合大學 42 組（原38組加二坪山校名柱警衛亭、八甲站2單跨、站1弧形端段與南大門中央門牆共4組）、國家衛生研究院竹南院區 9 組、臺灣各地地標 60 組，另新增下列大專校院 566 組及高中模型 3 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
+依地點整理的臺灣建築外觀模型集，收錄 **683 組模型／列印包**：國立聯合大學 42 組（原38組加二坪山校名柱警衛亭、八甲站2單跨、站1弧形端段與南大門中央門牆共4組）、國家衛生研究院竹南院區 9 組、臺灣各地地標 60 組，另新增下列大專校院 568 組及高中模型 4 組。模型套件數不等於獨立建築棟數，也不表示全校或全國完成。
 
-全庫有 **112 所大專校院至少一套模型**，合計 **609 套校園相關模型**；另有 **71 套非大專校園模型**。下方新增目錄為111校／566套，另計國立聯合大學42套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標59套不列入高教校數。
+全庫有 **113 所大專校院至少一套模型**，合計 **611 套校園相關模型**；另有 **72 套非大專校園模型**。下方新增目錄為112校／568套，另計國立聯合大學42套及東海大學路思義教堂1套；東海已在新增目錄中，校數不重複。國衛院9套與其餘地標59套不列入高教校數。
 
 每個地點資料夾保留模型、可編輯原始檔、Blender 場景、實際模型預覽、來源說明與既有驗證資料。點選下方圖片，進入該地點的三欄建築圖鑑；個別模型的詳細資訊可展開查看。
 
@@ -39,7 +39,7 @@
 | [<img src="大同大學/中山北路校本部/buildings/ttu-shangzhi-hall/appearance/previews/front.png" alt="大同大學實際模型預覽" width="260">](大同大學/README.md)<br>**[大同大學｜1 組](大同大學/README.md)** | [<img src="佛光大學/礁溪校區/buildings/fgu-huaien-hall/previews/front.png" alt="佛光大學實際模型預覽" width="260">](佛光大學/README.md)<br>**[佛光大學｜1 組](佛光大學/README.md)** | [<img src="淡江大學/淡水校本部/buildings/tku-scroll-square-monument/previews/front.png" alt="淡江大學實際模型預覽" width="260">](淡江大學/README.md)<br>**[淡江大學｜6 組](淡江大學/README.md)** |
 | [<img src="開南大學/桃園校區/buildings/knu-library/previews/front.png" alt="開南大學實際模型預覽" width="260">](開南大學/README.md)<br>**[開南大學｜1 組](開南大學/README.md)** | [<img src="樹人醫護管理專科學校/路竹校本部/buildings/szmc-multifunction-activity-center/appearance/previews/front.png" alt="樹人醫護管理專科學校實際模型預覽" width="260">](樹人醫護管理專科學校/README.md)<br>**[樹人醫護管理專科學校｜1 組](樹人醫護管理專科學校/README.md)** | [<img src="馬偕醫學大學/校本部/buildings/mmu-multifunctional-2013/appearance/previews/front.png" alt="馬偕醫學大學實際模型預覽" width="260">](馬偕醫學大學/README.md)<br>**[馬偕醫學大學｜2 組](馬偕醫學大學/README.md)** |
 | [<img src="法鼓文理學院/金山校本部/buildings/dila-yangsheng-hall/appearance/previews/front.png" alt="法鼓文理學院實際模型預覽" width="260">](法鼓文理學院/README.md)<br>**[法鼓文理學院｜3 組](法鼓文理學院/README.md)** | [<img src="中華福音神學研究學院/八德校區/buildings/ces-trinity-chapel/appearance/previews/front.png" alt="中華福音神學研究學院實際模型預覽" width="260">](中華福音神學研究學院/README.md)<br>**[中華福音神學研究學院｜2 組](中華福音神學研究學院/README.md)** | [<img src="明新科技大學/新豐校區/buildings/must-youren-library/previews/front.png" alt="明新科技大學實際模型預覽" width="260">](明新科技大學/README.md)<br>**[明新科技大學｜2 組](明新科技大學/README.md)** |
-| [<img src="台灣基督長老教會南神神學院/校本部/buildings/ttcs-chapel-1957/previews/front.png" alt="台灣基督長老教會南神神學院實際模型預覽" width="260">](台灣基督長老教會南神神學院/README.md)<br>**[台灣基督長老教會南神神學院｜3 組](台灣基督長老教會南神神學院/README.md)** | [<img src="國立高雄餐旅大學/小港校本部/buildings/nkuht-student-health-center/previews/front.png" alt="國立高雄餐旅大學實際模型預覽" width="260">](國立高雄餐旅大學/README.md)<br>**[國立高雄餐旅大學｜1 組](國立高雄餐旅大學/README.md)** | [<img src="華梵學校財團法人華梵大學/校本部/buildings/hfu-library-2009/previews/front.png" alt="華梵學校財團法人華梵大學實際模型預覽" width="260">](華梵學校財團法人華梵大學/README.md)<br>**[華梵學校財團法人華梵大學｜1 組](華梵學校財團法人華梵大學/README.md)** |
+| [<img src="台灣基督長老教會南神神學院/校本部/buildings/ttcs-chapel-1957/previews/front.png" alt="台灣基督長老教會南神神學院實際模型預覽" width="260">](台灣基督長老教會南神神學院/README.md)<br>**[台灣基督長老教會南神神學院｜3 組](台灣基督長老教會南神神學院/README.md)** | [<img src="國立高雄餐旅大學/小港校本部/buildings/nkuht-student-health-center/previews/front.png" alt="國立高雄餐旅大學實際模型預覽" width="260">](國立高雄餐旅大學/README.md)<br>**[國立高雄餐旅大學｜1 組](國立高雄餐旅大學/README.md)** | [<img src="華梵學校財團法人華梵大學/校本部/buildings/hfu-library-2009/previews/front.png" alt="華梵學校財團法人華梵大學實際模型預覽" width="260">](華梵學校財團法人華梵大學/README.md)<br>**[華梵學校財團法人華梵大學｜2 組](華梵學校財團法人華梵大學/README.md)** |
 | [<img src="中國文化大學/陽明山校本部/buildings/pccu-dacheng/appearance/previews/front.png" alt="中國文化大學實際模型預覽" width="260">](中國文化大學/README.md)<br>**[中國文化大學｜2 組](中國文化大學/README.md)** | [<img src="逢甲大學/水湳新校區/buildings/fcu-gongshan/previews/appearance-front.png" alt="逢甲大學實際模型預覽" width="260">](逢甲大學/README.md)<br>**[逢甲大學｜1 組](逢甲大學/README.md)** | [<img src="元智大學/校本部/buildings/yzu-building5-library-extension/previews/front.png" alt="元智大學實際模型預覽" width="260">](元智大學/README.md)<br>**[元智大學｜2 組](元智大學/README.md)** |
 | [<img src="東吳大學/外雙溪校區/buildings/scu-waishuanghsi-main-gate/previews/front.png" alt="東吳大學實際模型預覽" width="260">](東吳大學/README.md)<br>**[東吳大學｜3 組](東吳大學/README.md)** | [<img src="長庚大學/校本部（桃園龜山）/buildings/cgu-student-activity-center/previews/front.png" alt="長庚大學實際模型預覽" width="260">](長庚大學/README.md)<br>**[長庚大學｜1 組](長庚大學/README.md)** | [<img src="大葉大學/校本部/buildings/dyu-xuesi-pavilion/previews/front.png" alt="大葉大學實際模型預覽" width="260">](大葉大學/README.md)<br>**[大葉大學｜3 組](大葉大學/README.md)** |
 | [<img src="中華大學/香山校本部/buildings/chu-administration-library/previews/front.png" alt="中華大學實際模型預覽" width="260">](中華大學/README.md)<br>**[中華大學｜1 組](中華大學/README.md)** | [<img src="慈濟大學/介仁校區/buildings/tcu-hexin-library-2001/previews/north.png" alt="慈濟大學實際模型預覽" width="260">](慈濟大學/README.md)<br>**[慈濟大學｜2 組](慈濟大學/README.md)** | [<img src="玄奘大學/香山校本部/buildings/hcu-library-information-building/previews/front.png" alt="玄奘大學實際模型預覽" width="260">](玄奘大學/README.md)<br>**[玄奘大學｜2 組](玄奘大學/README.md)** |
@@ -54,6 +54,7 @@
 | [<img src="長庚科技大學/林口校區/buildings/cgust-linkou-gym/previews/v10/front.png" alt="長庚科技大學林口體育館分段弧頂與入口模型實際預覽" width="260">](長庚科技大學/README.md)<br>**[長庚科技大學｜1 組](長庚科技大學/README.md)** | [<img src="臺北基督學院/淡水校區/buildings/cct-street-gatehouse-pylon/previews/front.png" alt="臺北基督學院街側校門房與字塔九材質模型預覽" width="260">](臺北基督學院/README.md)<br>**[臺北基督學院｜1 組](臺北基督學院/README.md)** | [<img src="中華民國海軍官校/公開紀念景物/buildings/rocna-memorial-bell-tower/previews/front.png" alt="海軍官校公共紀念鐘樓九材質模型預覽" width="260">](中華民國海軍官校/README.md)<br>**[中華民國海軍官校｜1 組](中華民國海軍官校/README.md)** |
 | [<img src="一貫道崇德學院/校本部/buildings/iktcds-curved-entrance-section/previews/front.png" alt="崇德學院七柱三門入口中央局部八材質模型" width="260">](一貫道崇德學院/README.md)<br>**[一貫道崇德學院｜1 組](一貫道崇德學院/README.md)** | [<img src="馬偕醫護管理專科學校/三芝校區/buildings/mkc-common-building/previews/front.png" alt="馬偕醫護管理專科學校三芝綜合大樓實際模型預覽" width="260">](馬偕醫護管理專科學校/README.md)<br>**[馬偕醫護管理專科學校｜1 組](馬偕醫護管理專科學校/README.md)** |  |
 | **[敏實科技大學｜1 組](敏實科技大學/README.md)**<br>代表圖待指定 |  |  |
+| **[修平科技大學｜1 組](修平科技大學/README.md)**<br>代表圖待指定 |  |  |
 
 ## 全國大專校院擴充進度
 
@@ -115,3 +116,5 @@
 
 - [國立新竹高級中學｜2 套](國立新竹高級中學/README.md)
 - [國立斗六高級中學｜1 套](國立斗六高級中學/README.md)
+
+- [新竹市私立光復高級中學｜1 套](新竹市私立光復高級中學/README.md)：代表圖待指定。

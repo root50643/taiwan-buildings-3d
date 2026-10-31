@@ -1,10 +1,16 @@
 # 華梵學校財團法人華梵大學
 
+現行收錄 **2 套模型包**；套件數不等於完整建築棟數，亦非全校／校區完成。未實體試印，來源年代、估計尺寸與未知範圍請閱各模型頁。
+
+### 既有批次來源與列印限制（原批數量非現行總數）
+
+
 通稱華梵大學。本批僅完成2009圖書資訊大樓的來源限定外觀近似；樓內廣欽老和尚紀念圖書館不另計一棟。不是全校完成，其他校舍待逐棟續作。
+
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![東南面](校本部/buildings/hfu-library-2009/previews/front.png)](校本部/buildings/hfu-library-2009/README.md)<br>**[圖資大樓東南主要面](校本部/buildings/hfu-library-2009/README.md)** |  |  |
+| [<img src="校本部/buildings/hfu-library-2009/previews/front.png" alt="東南面" width="220">](校本部/buildings/hfu-library-2009/README.md)<br>**[圖資大樓東南主要面](校本部/buildings/hfu-library-2009/README.md)** | [<img src="校本部/buildings/hfu-yunshan-pavilion/previews/front.png" alt="華梵大學 雲山亭｜主要亭體彩色模型：實際模型預覽" width="220">](校本部/buildings/hfu-yunshan-pavilion/README.md)<br>**[華梵大學 雲山亭｜主要亭體彩色模型](校本部/buildings/hfu-yunshan-pavilion/README.md)** |  |
 
 [模型完整說明](校本部/buildings/hfu-library-2009/README.md) · [STL](校本部/buildings/hfu-library-2009/model.stl) · [Blend](校本部/buildings/hfu-library-2009/scene.blend) · [屋頂](校本部/buildings/hfu-library-2009/previews/top.png) · [來源](校本部/buildings/hfu-library-2009/sources.json) · [QA](校本部/buildings/hfu-library-2009/qa-summary.json)
 

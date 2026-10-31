@@ -1,6 +1,6 @@
 # 國立新竹高級中學建築外觀研究模型
 
-現行收錄 **1 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+現行收錄 **2 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
 
 ### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
 
@@ -12,7 +12,7 @@
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [<img src="校本部/buildings/hchs-history-hall-central-entry/previews/front.png" alt="新竹中學校講堂（校史館）｜中央入口截段：實際模型預覽" width="220">](校本部/buildings/hchs-history-hall-central-entry/README.md)<br>**[新竹中學校講堂（校史館）｜中央入口截段](校本部/buildings/hchs-history-hall-central-entry/README.md)** |  |  |
+| [<img src="校本部/buildings/hchs-history-hall-central-entry/previews/front.png" alt="新竹中學校講堂（校史館）｜中央入口截段：實際模型預覽" width="220">](校本部/buildings/hchs-history-hall-central-entry/README.md)<br>**[新竹中學校講堂（校史館）｜中央入口截段](校本部/buildings/hchs-history-hall-central-entry/README.md)** | [<img src="校本部/buildings/hchs-kendo-hall-restored-envelope/previews/front.png" alt="國立新竹高級中學 劍道館｜修復後外殼主要量體：實際模型預覽" width="220">](校本部/buildings/hchs-kendo-hall-restored-envelope/README.md)<br>**[國立新竹高級中學 劍道館｜修復後外殼主要量體](校本部/buildings/hchs-kendo-hall-restored-envelope/README.md)** |  |
 
 ## 既有說明與更新紀錄
 

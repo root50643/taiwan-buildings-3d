@@ -37,6 +37,14 @@ OTHER_ROOTS = {
     '國家衛生研究院竹南院區/README.md': sorted({p.split('/buildings/')[0]+'/buildings/'+p.split('/buildings/')[1].split('/')[0] for p in FILES if p.startswith('國家衛生研究院竹南院區/') and '/buildings/' in p}),
     '臺灣地標/README.md': sorted({'/'.join(p.split('/')[:2]) for p in FILES if p.startswith('臺灣地標/') and p.count('/')>=2})
 }
+# Secondary-school packages are navigable but excluded from higher-education totals.
+for institution in REGISTRY.get('non_higher_education_institutions', {}):
+    roots = sorted({p.split('/buildings/')[0]+'/buildings/'+p.split('/buildings/')[1].split('/')[0] for p in FILES if p.startswith(institution+'/') and '/buildings/' in p})
+    OTHER_ROOTS[institution+'/README.md'] = roots
+    for root in roots:
+        campus = root.split('/buildings/')[0]
+        OTHER_ROOTS.setdefault(campus+'/README.md', []).append(root)
+
 URL = re.compile(r'\]\(([^\n]*?)\)|(?:src|href)=[\"\']([^\"\']+)[\"\']')
 def urls(text):
     return [a or b for a,b in URL.findall(text)]

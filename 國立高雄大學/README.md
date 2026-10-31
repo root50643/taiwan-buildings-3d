@@ -1,15 +1,21 @@
 # 國立高雄大學
 
-依公開資料與實際查看的官方照片，自主製作可供3D列印切片的外觀近似模型。現收錄11件：圖書資訊大樓主棟、體育健康休閒多功能教學大樓、人文社會科學院 A/B 主樓、獨立 C 棟、總配電站、污水及中水處理場主建物、實驗廢水處理場主建物、正門中央警衛室／門塔、東門入口低牆／鋪面核心、西門行人入口門柱／車阻核心及綜合第一大樓主長翼／玻璃塔。圖資只完成主棟，其他校舍與校外教學/服務據點仍待續做，不能視為全校完成。
+現行收錄 **12 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+依公開資料與實際查看的官方照片，自主製作可供3D列印切片的外觀近似模型。當批收錄11件：圖書資訊大樓主棟、體育健康休閒多功能教學大樓、人文社會科學院 A/B 主樓、獨立 C 棟、總配電站、污水及中水處理場主建物、實驗廢水處理場主建物、正門中央警衛室／門塔、東門入口低牆／鋪面核心、西門行人入口門柱／車阻核心及綜合第一大樓主長翼／玻璃塔。圖資只完成主棟，其他校舍與校外教學/服務據點仍待續做，不能視為全校完成。
 
 ## 模型圖鑑
+
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
 | [<img src="楠梓校本部/buildings/nuk-library-main/previews/front.png" alt="圖書資訊大樓主棟：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-library-main/README.md)<br>**[圖書資訊大樓主棟](楠梓校本部/buildings/nuk-library-main/README.md)** | [<img src="楠梓校本部/buildings/nuk-sports-leisure/previews/front.png" alt="體育健康休閒多功能教學大樓：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-sports-leisure/README.md)<br>**[體育健康休閒多功能教學大樓](楠梓校本部/buildings/nuk-sports-leisure/README.md)** | [<img src="楠梓校本部/buildings/nuk-humanities-ab/previews/front.png" alt="人文社會科學院 A/B 主樓：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-humanities-ab/README.md)<br>**[人文社會科學院 A/B 主樓](楠梓校本部/buildings/nuk-humanities-ab/README.md)** |
 | [<img src="楠梓校本部/buildings/nuk-humanities-c/previews/front.png" alt="國立高雄大學人文社會科學院 C 棟：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-humanities-c/README.md)<br>**[國立高雄大學人文社會科學院 C 棟](楠梓校本部/buildings/nuk-humanities-c/README.md)** | [<img src="楠梓校本部/buildings/nuk-power-station/previews/front.png" alt="國立高雄大學總配電站：歷史照片有界外觀近似：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-power-station/README.md)<br>**[國立高雄大學總配電站：歷史照片有界外觀近似](楠梓校本部/buildings/nuk-power-station/README.md)** | [<img src="楠梓校本部/buildings/nuk-sewage-main/previews/front.png" alt="國立高雄大學污水及中水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-sewage-main/README.md)<br>**[國立高雄大學污水及中水處理場主建物：歷史照片外觀近似](楠梓校本部/buildings/nuk-sewage-main/README.md)** |
 | [<img src="楠梓校本部/buildings/nuk-lab-wastewater-main/previews/front.png" alt="國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-lab-wastewater-main/README.md)<br>**[國立高雄大學實驗廢水處理場主建物：歷史照片外觀近似](楠梓校本部/buildings/nuk-lab-wastewater-main/README.md)** | [<img src="楠梓校本部/buildings/nuk-main-gate-core/previews/front.png" alt="國立高雄大學正門中央警衛室及門塔：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-main-gate-core/README.md)<br>**[國立高雄大學正門中央警衛室及門塔](楠梓校本部/buildings/nuk-main-gate-core/README.md)** | [<img src="楠梓校本部/buildings/nuk-east-gate-core/previews/front.png" alt="國立高雄大學東門入口低牆及鋪面核心：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-east-gate-core/README.md)<br>**[國立高雄大學東門入口低牆及鋪面核心](楠梓校本部/buildings/nuk-east-gate-core/README.md)** |
-| [<img src="楠梓校本部/buildings/nuk-west-gate-core/previews/front.png" alt="國立高雄大學西門行人入口門柱與車阻核心：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-west-gate-core/README.md)<br>**[國立高雄大學西門行人入口門柱與車阻核心](楠梓校本部/buildings/nuk-west-gate-core/README.md)** | [<img src="楠梓校本部/buildings/nuk-general1-main-wing/previews/front.png" alt="國立高雄大學綜合第一大樓主長翼及端部玻璃塔：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-general1-main-wing/README.md)<br>**[國立高雄大學綜合第一大樓主長翼及端部玻璃塔](楠梓校本部/buildings/nuk-general1-main-wing/README.md)** |  |
+| [<img src="楠梓校本部/buildings/nuk-west-gate-core/previews/front.png" alt="國立高雄大學西門行人入口門柱與車阻核心：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-west-gate-core/README.md)<br>**[國立高雄大學西門行人入口門柱與車阻核心](楠梓校本部/buildings/nuk-west-gate-core/README.md)** | [<img src="楠梓校本部/buildings/nuk-general1-main-wing/previews/front.png" alt="國立高雄大學綜合第一大樓主長翼及端部玻璃塔：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-general1-main-wing/README.md)<br>**[國立高雄大學綜合第一大樓主長翼及端部玻璃塔](楠梓校本部/buildings/nuk-general1-main-wing/README.md)** | [<img src="楠梓校本部/buildings/nuk-demo-building-frame-2014/previews/front.png" alt="國立高雄大學木構造實驗展示屋：2014 施工期主木構架研究：實際模型預覽" width="220">](楠梓校本部/buildings/nuk-demo-building-frame-2014/README.md)<br>**[國立高雄大學木構造實驗展示屋：2014 施工期主木構架研究](楠梓校本部/buildings/nuk-demo-building-frame-2014/README.md)** |
 
 每格一個不同模型，各件獨立尺度。圖資與體健休含底座最長150mm；人社A/B為242×256×34mm，C為約244.90×47.50×13.80mm；詳頁提供各自模型與實際渲染，非全校完成。未實體試印；各件原範圍、支撐與細件限制保留，請讀各自README。
 

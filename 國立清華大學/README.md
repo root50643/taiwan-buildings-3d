@@ -1,10 +1,16 @@
 # 國立清華大學 3D外觀模型圖鑑
 
+現行收錄 **34 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
 本輪核准的外觀近似模型套件；全校尚未完成。套件可能包含相連群組、局部或歷史外觀，件數不等於完整建築棟數。旺宏館填縫版已完成一套參考切片，詳見下方卡片；其餘模型未正式切片。全校模型均未實體試印，沒有真機製造放行。各件警示、來源年代、背面簡化及支撐需求請讀詳頁。只公開來源URL，不散布原照片或PDF。
 
 30件均依來源歸入校本部；南大、高雄仍有資料缺口，沒有以校本部模型冒充其他校區。清齋僅AB雙翼；化工館與百齡堂為整修／整備前歷史外觀。98列為混合地圖標籤，非98棟。
 
-現行共30套（原24套加北校門簡冊立柱、月涵亭、梅亭／機亭、奕亭、成功湖昱寧島涼亭及捷英文物館），每件獨立縮放，並非統一比例校園拼圖。
+當批共30套（原24套加北校門簡冊立柱、月涵亭、梅亭／機亭、奕亭、成功湖昱寧島涼亭及捷英文物館），每件獨立縮放，並非統一比例校園拼圖。
+
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
@@ -18,6 +24,8 @@
 | [![清齋 AB 雙翼外觀群（非整個清齋）](校本部/buildings/nthu-qing-dormitory-ab/appearance/previews/front.png)](校本部/buildings/nthu-qing-dormitory-ab/README.zh-TW.md)<br>**[清齋 AB 雙翼外觀群（非整個清齋）](校本部/buildings/nthu-qing-dormitory-ab/README.zh-TW.md)**<br>[資料夾](校本部/buildings/nthu-qing-dormitory-ab) | [![新齋](校本部/buildings/nthu-xin-dormitory/appearance/previews/front.png)](校本部/buildings/nthu-xin-dormitory/README.zh-TW.md)<br>**[新齋](校本部/buildings/nthu-xin-dormitory/README.zh-TW.md)**<br>[資料夾](校本部/buildings/nthu-xin-dormitory) | [![百齡堂前棟（2025整備前歷史外觀版）](校本部/buildings/nthu-bailing-hall-front/appearance/previews/front.png)](校本部/buildings/nthu-bailing-hall-front/README.zh-TW.md)<br>**[百齡堂前棟（2025整備前歷史外觀版）](校本部/buildings/nthu-bailing-hall-front/README.zh-TW.md)**<br>[資料夾](校本部/buildings/nthu-bailing-hall-front) |
 | [![國立清華大學 梅亭／機亭：實際模型預覽](校本部/buildings/nthu-mei-pavilion/previews/front.png)](校本部/buildings/nthu-mei-pavilion/README.md)<br>**[國立清華大學 梅亭／機亭](校本部/buildings/nthu-mei-pavilion/README.md)** | [![國立清華大學北校門簡冊立柱｜三片牆體外觀近似：實際模型預覽](校本部/buildings/nthu-north-gate-bamboo-slip-pillar/previews/front.png)](校本部/buildings/nthu-north-gate-bamboo-slip-pillar/README.md)<br>**[國立清華大學北校門簡冊立柱｜三片牆體外觀近似](校本部/buildings/nthu-north-gate-bamboo-slip-pillar/README.md)** | [![國立清華大學｜奕亭：實際模型預覽](校本部/buildings/nthu-yi-pavilion/previews/front.png)](校本部/buildings/nthu-yi-pavilion/README.md)<br>**[國立清華大學｜奕亭](校本部/buildings/nthu-yi-pavilion/README.md)** |
 | [![國立清華大學月涵亭：實際模型預覽](校本部/buildings/nthu-yue-han-pavilion/previews/front.png)](校本部/buildings/nthu-yue-han-pavilion/README.md)<br>**[國立清華大學月涵亭](校本部/buildings/nthu-yue-han-pavilion/README.md)** | [![國立清華大學成功湖昱寧島涼亭：實際模型預覽](校本部/buildings/nthu-yuning-island-pavilion-2023/previews/front.png)](校本部/buildings/nthu-yuning-island-pavilion-2023/README.md)<br>**[國立清華大學成功湖昱寧島涼亭](校本部/buildings/nthu-yuning-island-pavilion-2023/README.md)** | [![捷英文物館相連整館外殼近似](校本部/buildings/nthu-jieying-museum/previews/homepage-three-quarter.png)](校本部/buildings/nthu-jieying-museum/README.md)<br>**[捷英文物館｜2024–2025相連整館外殼近似](校本部/buildings/nthu-jieying-museum/README.md)**<br>非竣工一致／最終裝修證明 |
+| [<img src="校本部/buildings/nthu-li-dorm-front-facade-segment/previews/front.png" alt="國立清華大學禮齋｜正門與兩側可見立面截段：實際模型預覽" width="220">](校本部/buildings/nthu-li-dorm-front-facade-segment/README.md)<br>**[國立清華大學禮齋｜正門與兩側可見立面截段](校本部/buildings/nthu-li-dorm-front-facade-segment/README.md)** | [<img src="校本部/buildings/nthu-renxu-pavilion/previews/front.png" alt="國立清華大學壬戌亭：實際模型預覽" width="220">](校本部/buildings/nthu-renxu-pavilion/README.md)<br>**[國立清華大學壬戌亭](校本部/buildings/nthu-renxu-pavilion/README.md)** | [<img src="校本部/buildings/nthu-shi-dorm-facade-segment/previews/front.png" alt="國立清華大學 實齋｜兩層長立面五跨截段：實際模型預覽" width="220">](校本部/buildings/nthu-shi-dorm-facade-segment/README.md)<br>**[國立清華大學 實齋｜兩層長立面五跨截段](校本部/buildings/nthu-shi-dorm-facade-segment/README.md)** |
+| [<img src="校本部/buildings/nthu-success-lake-octagonal-pavilion/previews/front.png" alt="國立清華大學成功湖八角亭：實際模型預覽" width="220">](校本部/buildings/nthu-success-lake-octagonal-pavilion/README.md)<br>**[國立清華大學成功湖八角亭](校本部/buildings/nthu-success-lake-octagonal-pavilion/README.md)** |  |  |
 
 ## 覆蓋與缺口
 - [amendments](audits/amendments)

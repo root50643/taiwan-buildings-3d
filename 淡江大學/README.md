@@ -1,15 +1,21 @@
 # 淡江大學
 
+現行收錄 **6 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
 已收錄4套外觀代表模型；不是全校或全校區完成。
 
 ## 模型圖鑑
 
 **宮燈教室群既有範圍：** 七棟坡地教室的跨來源有界微縮近似；不是同年復原或實測。數位審核紀錄見隨附報告；是否正式發布以統一發布清單為準。
 
+
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![正向](淡水校本部/buildings/tku-palace-classrooms/appearance/previews/front.png)](淡水校本部/buildings/tku-palace-classrooms/README.md)<br>**[淡江大學・淡水校本部・宮燈教室群](淡水校本部/buildings/tku-palace-classrooms/README.md)**<br>正向 actual STL | [![淡江大學海事博物館｜低細節外觀代表模型：實際模型預覽](淡水校本部/buildings/tku-maritime-museum/previews/front.png)](淡水校本部/buildings/tku-maritime-museum/README.md)<br>**[淡江大學海事博物館｜低細節外觀代表模型](淡水校本部/buildings/tku-maritime-museum/README.md)** | [![淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座：實際模型預覽](淡水校本部/buildings/tku-scroll-square-monument/previews/front.png)](淡水校本部/buildings/tku-scroll-square-monument/README.md)<br>**[淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座](淡水校本部/buildings/tku-scroll-square-monument/README.md)** |
-| [![紹謨紀念體育館：實際模型預覽](淡水校本部/buildings/tku-shaomo-gymnasium/previews/front.png)](淡水校本部/buildings/tku-shaomo-gymnasium/README.md)<br>**[紹謨紀念體育館｜2021–2022已裝光電完整地上外觀近似版](淡水校本部/buildings/tku-shaomo-gymnasium/README.md)** |  |  |
+| [<img src="淡水校本部/buildings/tku-palace-classrooms/appearance/previews/front.png" alt="正向" width="220">](淡水校本部/buildings/tku-palace-classrooms/README.md)<br>**[淡江大學・淡水校本部・宮燈教室群](淡水校本部/buildings/tku-palace-classrooms/README.md)**<br>正向 actual STL | [<img src="淡水校本部/buildings/tku-maritime-museum/previews/front.png" alt="淡江大學海事博物館｜低細節外觀代表模型：實際模型預覽" width="220">](淡水校本部/buildings/tku-maritime-museum/README.md)<br>**[淡江大學海事博物館｜低細節外觀代表模型](淡水校本部/buildings/tku-maritime-museum/README.md)** | [<img src="淡水校本部/buildings/tku-scroll-square-monument/previews/front.png" alt="淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座：實際模型預覽" width="220">](淡水校本部/buildings/tku-scroll-square-monument/README.md)<br>**[淡江大學｜淡水校本部｜書卷廣場竹卷雕塑與舊圓階座](淡水校本部/buildings/tku-scroll-square-monument/README.md)** |
+| [<img src="淡水校本部/buildings/tku-shaomo-gymnasium/previews/front.png" alt="紹謨紀念體育館：實際模型預覽" width="220">](淡水校本部/buildings/tku-shaomo-gymnasium/README.md)<br>**[紹謨紀念體育館｜2021–2022已裝光電完整地上外觀近似版](淡水校本部/buildings/tku-shaomo-gymnasium/README.md)** | [<img src="淡水校本部/buildings/tku-history-house-front-facade-segment/previews/front.png" alt="淡江大學校史館暨張建邦創辦人紀念館（原瀛苑）主立面截段：實際模型預覽" width="220">](淡水校本部/buildings/tku-history-house-front-facade-segment/README.md)<br>**[淡江大學校史館暨張建邦創辦人紀念館（原瀛苑）主立面截段](淡水校本部/buildings/tku-history-house-front-facade-segment/README.md)** | [<img src="淡水校本部/buildings/tku-shaomo-swimming-hall-facade-segment/previews/front.png" alt="淡江大學 紹謨紀念游泳館｜正面立面截段：實際模型預覽" width="220">](淡水校本部/buildings/tku-shaomo-swimming-hall-facade-segment/README.md)<br>**[淡江大學 紹謨紀念游泳館｜正面立面截段](淡水校本部/buildings/tku-shaomo-swimming-hall-facade-segment/README.md)** |
 
 [模型、來源與列印限制](淡水校本部/buildings/tku-palace-classrooms/README.md) · [數位驗證](淡水校本部/buildings/tku-palace-classrooms/QA.md)
 

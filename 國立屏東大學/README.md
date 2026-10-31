@@ -1,13 +1,19 @@
 # 國立屏東大學建築外觀模型
 
-現收錄5件獨立模型，分布於民生、屏師與屏商校區。本次新增民生校區2件：五育樓主體與中庭、學習輔助犬訓練教室主屋；原3件模型附件保持不變。**全校尚未完成；模型數不是完整建物棟數。**每件含底座最長150mm、單位毫米，各自按公開照片估算比例。
+現行收錄 **6 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+當批收錄5件獨立模型，分布於民生、屏師與屏商校區。本次新增民生校區2件：五育樓主體與中庭、學習輔助犬訓練教室主屋；原3件模型附件保持不變。**全校尚未完成；模型數不是完整建物棟數。**每件含底座最長150mm、單位毫米，各自按公開照片估算比例。
 
 ## 建築圖鑑
 
+
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![圖資大樓主塔段](屏商校區/buildings/nptu-library-tower-segment/appearance/previews/front.png)](屏商校區/buildings/nptu-library-tower-segment/README.md)<br>**[圖資大樓主塔段](屏商校區/buildings/nptu-library-tower-segment/README.md)**<br>屏商校區 | [![學生活動中心入口段](屏商校區/buildings/nptu-student-center-entrance-segment/appearance/previews/front.png)](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)<br>**[學生活動中心入口段](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)**<br>屏商校區 | [![音樂館圓廳段](屏師校區/buildings/nptu-music-hall-rotunda-segment/appearance/previews/front.png)](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)<br>**[音樂館圓廳段](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)**<br>屏師校區 |
-| [![五育樓主體與中庭](民生校區/buildings/nptu-wuyu-courtyard-complex/appearance/previews/front.png)](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)<br>**[五育樓主體與中庭](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)**<br>民生校區 | [![學習輔助犬訓練教室主屋](民生校區/buildings/nptu-learning-assistance-dog-classroom/appearance/previews/front.png)](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)<br>**[學習輔助犬訓練教室主屋](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)**<br>民生校區 |  |
+| [<img src="屏商校區/buildings/nptu-library-tower-segment/appearance/previews/front.png" alt="圖資大樓主塔段" width="220">](屏商校區/buildings/nptu-library-tower-segment/README.md)<br>**[圖資大樓主塔段](屏商校區/buildings/nptu-library-tower-segment/README.md)**<br>屏商校區 | [<img src="屏商校區/buildings/nptu-student-center-entrance-segment/appearance/previews/front.png" alt="學生活動中心入口段" width="220">](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)<br>**[學生活動中心入口段](屏商校區/buildings/nptu-student-center-entrance-segment/README.md)**<br>屏商校區 | [<img src="屏師校區/buildings/nptu-music-hall-rotunda-segment/appearance/previews/front.png" alt="音樂館圓廳段" width="220">](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)<br>**[音樂館圓廳段](屏師校區/buildings/nptu-music-hall-rotunda-segment/README.md)**<br>屏師校區 |
+| [<img src="民生校區/buildings/nptu-wuyu-courtyard-complex/appearance/previews/front.png" alt="五育樓主體與中庭" width="220">](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)<br>**[五育樓主體與中庭](民生校區/buildings/nptu-wuyu-courtyard-complex/README.md)**<br>民生校區 | [<img src="民生校區/buildings/nptu-learning-assistance-dog-classroom/appearance/previews/front.png" alt="學習輔助犬訓練教室主屋" width="220">](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)<br>**[學習輔助犬訓練教室主屋](民生校區/buildings/nptu-learning-assistance-dog-classroom/README.md)**<br>民生校區 | [<img src="屏師校區/buildings/nptu-pingshih-broadcast-tower/previews/front.png" alt="國立屏東大學屏師校區｜寶塔（播音塔）：實際模型預覽" width="220">](屏師校區/buildings/nptu-pingshih-broadcast-tower/README.md)<br>**[國立屏東大學屏師校區｜寶塔（播音塔）](屏師校區/buildings/nptu-pingshih-broadcast-tower/README.md)** |
 
 ## 校區入口
 

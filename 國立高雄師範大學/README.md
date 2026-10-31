@@ -1,12 +1,19 @@
 # 國立高雄師範大學
 
-依公開實拍與官方平面自主建立的3D列印外觀近似。已核對和平、燕巢兩校區，目前共3套：和平校區2套、燕巢校區圖資大樓1套；不是全校完成。
+現行收錄 **4 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+依公開實拍與官方平面自主建立的3D列印外觀近似。已核對和平、燕巢兩校區，當批共3套：和平校區2套、燕巢校區圖資大樓1套；不是全校完成。
 
 ## 模型圖鑑
 
+
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![實際STL](和平校區/buildings/nknu-administration-complex/previews/front.png)](和平校區/buildings/nknu-administration-complex/README.md)<br>**[行政大樓・圖書館・教育大樓複合體](和平校區/buildings/nknu-administration-complex/README.md)** | [![實際STL](和平校區/buildings/nknu-new-research-building/previews/front.png)](和平校區/buildings/nknu-new-research-building/README.md)<br>**[新研究大樓（2020年啟用館）](和平校區/buildings/nknu-new-research-building/README.md)** | [![燕巢圖資大樓實際模型](燕巢校區/buildings/nknu-yanchao-library-information/previews/homepage-three-quarter.png)](燕巢校區/buildings/nknu-yanchao-library-information/README.md)<br>**[燕巢圖資大樓｜2011–2012整棟地上外觀近似](燕巢校區/buildings/nknu-yanchao-library-information/README.md)** |
+| [<img src="和平校區/buildings/nknu-administration-complex/previews/front.png" alt="實際STL" width="220">](和平校區/buildings/nknu-administration-complex/README.md)<br>**[行政大樓・圖書館・教育大樓複合體](和平校區/buildings/nknu-administration-complex/README.md)** | [<img src="和平校區/buildings/nknu-new-research-building/previews/front.png" alt="實際STL" width="220">](和平校區/buildings/nknu-new-research-building/README.md)<br>**[新研究大樓（2020年啟用館）](和平校區/buildings/nknu-new-research-building/README.md)** | [<img src="燕巢校區/buildings/nknu-yanchao-library-information/previews/homepage-three-quarter.png" alt="燕巢圖資大樓實際模型" width="220">](燕巢校區/buildings/nknu-yanchao-library-information/README.md)<br>**[燕巢圖資大樓｜2011–2012整棟地上外觀近似](燕巢校區/buildings/nknu-yanchao-library-information/README.md)** |
+| [<img src="和平校區/buildings/nknu-historical-gate-main-assembly/previews/front.png" alt="國立高雄師範大學｜和平校區｜歷史舊校門主體：實際模型預覽" width="220">](和平校區/buildings/nknu-historical-gate-main-assembly/README.md)<br>**[國立高雄師範大學｜和平校區｜歷史舊校門主體](和平校區/buildings/nknu-historical-gate-main-assembly/README.md)** |  |  |
 
 每列最多三個不同模型；不以同件不同角度湊件數。
 

@@ -1,10 +1,16 @@
 # 大葉大學
 
-目前收錄 **2 套**：圖書館（圖書資訊大樓）1998主體與學思亭歷史外觀近似，不代表全校完成；其他校舍待逐棟補證續作。
+現行收錄 **3 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
+當批收錄 **2 套**：圖書館（圖書資訊大樓）1998主體與學思亭歷史外觀近似，不代表全校完成；其他校舍待逐棟補證續作。
+
 
 | 建築模型 | 建築模型 | 建築模型 |
 | :---: | :---: | :---: |
-| [![前側](校本部/buildings/dyu-library-1998/previews/front.png)](校本部/buildings/dyu-library-1998/README.md)<br>**[圖書館主要前側](校本部/buildings/dyu-library-1998/README.md)** | [![大葉大學學思亭｜完整方亭外觀模型：實際模型預覽](校本部/buildings/dyu-xuesi-pavilion/previews/front.png)](校本部/buildings/dyu-xuesi-pavilion/README.md)<br>**[大葉大學學思亭｜完整方亭外觀模型](校本部/buildings/dyu-xuesi-pavilion/README.md)** |  |
+| [<img src="校本部/buildings/dyu-library-1998/previews/front.png" alt="前側" width="220">](校本部/buildings/dyu-library-1998/README.md)<br>**[圖書館主要前側](校本部/buildings/dyu-library-1998/README.md)** | [<img src="校本部/buildings/dyu-xuesi-pavilion/previews/front.png" alt="大葉大學學思亭｜完整方亭外觀模型：實際模型預覽" width="220">](校本部/buildings/dyu-xuesi-pavilion/README.md)<br>**[大葉大學學思亭｜完整方亭外觀模型](校本部/buildings/dyu-xuesi-pavilion/README.md)** | [<img src="校本部/buildings/dyu-design-curved-bridge/previews/front.png" alt="大葉大學｜設計曲橋（彩虹橋）上部橋體：實際模型預覽" width="220">](校本部/buildings/dyu-design-curved-bridge/README.md)<br>**[大葉大學｜設計曲橋（彩虹橋）上部橋體](校本部/buildings/dyu-design-curved-bridge/README.md)** |
 
 [完整說明](校本部/buildings/dyu-library-1998/README.md) · [STL](校本部/buildings/dyu-library-1998/model.stl) · [Blend](校本部/buildings/dyu-library-1998/scene.blend) · [原創源](校本部/buildings/dyu-library-1998/build_model.py) · [頂圖](校本部/buildings/dyu-library-1998/previews/top.png) · [來源](校本部/buildings/dyu-library-1998/sources.json) · [QA](校本部/buildings/dyu-library-1998/qa-summary.json)
 

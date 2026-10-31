@@ -7,15 +7,15 @@
   "coverage_statement": "校本部A-F與南投N代碼表全部已轉錄；這是官方地圖項目清單，不是最終去重棟數。未列名的林場/農場附屬建物仍未逐棟研究。",
   "source_dates": "官方代碼頁未標明版本，讀取日期不等於更新/攝影日期；規劃/未完工狀態待2026另證。",
   "current_limits": [
-    "目前可靠模型僅3個建物前段，並無整校完成聲稱。",
+    "現行5個有界模型包；原3個前段加小禮堂重建後主廳與雲平樓2024中央前側，均非完整校園或全館測繪。",
     "官方影音相簿部分已有目錄/標題及日期，圖片傳輸本次失敗；未實看項目仍屬未研究，不能稱無資料。",
     "相簿用語新/舊、使用單位與樓名需要校圖去重。",
     "附屬高中、附農為非大專校院，在本大學模型數中不納入；若要做需另立範圍。"
   ],
   "next_priorities": [
-    "B-8小禮堂：官方相簿1658含20161201多角度、空拍1296。須先取到像素及確認1999重建後外觀。",
+    "B-8小禮堂：主廳有界外觀研究模型已列入現行索引；附屬迴廊、廂房、角塔、連接與現況仍未完成，不把主廳模型當全群。",
     "南投N-12/N-13、N-14/N-15、N-18/N-19：官方前後棟與相簿可逐組研究，避免同門牌誤合棟。",
-    "A-11雲平樓、D-5體育館：先釐清新舊/整修年代，再建最新可證版本。",
+    "A-11雲平樓：2024中央前側有界模型已列入現行索引；其餘完整樓體與新舊時序仍需續核。D-5體育館仍待來源。",
     "B-18國農、C-1農環、C-3作物、A-9社管：已有官方相簿，多角度實看後可續批。",
     "其餘校本部代碼及中科/向上院、四林場與霧峰/溪心壩場域逐步補足。"
   ],
@@ -311,7 +311,21 @@
         }
       ],
       "boundary_or_alias_note": "官方相簿另列新雲平樓2829、舊雲平樓982。須核拆除/新建時序，不把舊照與新館拼接；兩者實體關係未定。",
-      "next_step": "比對官方位置圖棟界，再實看多角度外觀照片及來源年代；確認可見後再自建，不將未研究寫成無資料。"
+      "next_step": "比對官方位置圖棟界，再實看多角度外觀照片及來源年代；確認可見後再自建，不將未研究寫成無資料。",
+      "bounded_model_update": [
+        {
+          "slug": "nchu-yunping-central-front-2024",
+          "name": "國立中興大學雲平樓｜2024中央正立面截段",
+          "campus": "校本部",
+          "path": "校本部/buildings/nchu-yunping-central-front-2024",
+          "readme": "README.md",
+          "scope": "依官方2024-07-31空拍封面建立的近似彩色模型。**僅中央正立面截段，不是整棟或測繪模型**。兩側斜翼、真實後側與完整屋頂平面不在範圍；棕紅塔只呈現前切片，背板及底座為人工封閉支撐。被樹遮蔽的左下部留空白支撐，不補猜窗門。來源年份不等於2026現況確認。\n\n\n- `model.stl`：單色幾何；`model.3mf`：同網格逐面色材質。\n- `scene.blend`：實際網格與隱藏可編輯原始零件，不含來源影像。\n- 尺寸約150×36×86.5mm（模型尺寸，非真實建物比例尺）。未試印；薄框與斜屋面須依印表機能力評估支撐。\n- `build_model.py`可無照片獨立重建；六張`previews/`均由實際網格Blender渲染，非生成式想像圖。\n- 來源及已知限制：[SOURCES.md](校本部/buildings/nchu-yunping-central-front-2024/SOURCES.md)。工程完整性測試不等於建築形制完整確認。",
+          "scope_and_limitations_reference": "校本部/buildings/nchu-yunping-central-front-2024/README.md",
+          "physical_print_verified": false,
+          "classification": "bounded_source_study_not_assigned_to_legacy_full_or_partial_categories"
+        }
+      ],
+      "prior_status_scope": "Historical research status below retained; bounded_model_update supersedes any blanket not-modeled claim only for its explicit scope."
     },
     {
       "map_code": "A-12",
@@ -589,7 +603,21 @@
         }
       ],
       "boundary_or_alias_note": "單位與棟界尚未核對；地圖點位不等於獨立棟。",
-      "next_step": "比對官方位置圖棟界，再實看多角度外觀照片及來源年代；確認可見後再自建，不將未研究寫成無資料。"
+      "next_step": "比對官方位置圖棟界，再實看多角度外觀照片及來源年代；確認可見後再自建，不將未研究寫成無資料。",
+      "bounded_model_update": [
+        {
+          "slug": "nchu-small-hall-rebuilt-main-hall",
+          "name": "國立中興大學小禮堂：重建後主廳外觀研究",
+          "campus": "校本部",
+          "path": "校本部/buildings/nchu-small-hall-rebuilt-main-hall",
+          "readme": "README.md",
+          "scope": "依據興大影音網 **2015 年 11 月 30 日空拍**與《興大校友》第 16 期第 59 頁「小禮堂現貌」照片製作。這是 **921 震災後重建版本的主廳外觀簡化模型**，不是 1943 年原建築，也不代表已驗證 2026 年現況。",
+          "scope_and_limitations_reference": "校本部/buildings/nchu-small-hall-rebuilt-main-hall/README.md",
+          "physical_print_verified": false,
+          "classification": "bounded_source_study_not_assigned_to_legacy_full_or_partial_categories"
+        }
+      ],
+      "prior_status_scope": "Historical research status below retained; bounded_model_update supersedes any blanket not-modeled claim only for its explicit scope."
     },
     {
       "map_code": "B-8-1",
@@ -2752,5 +2780,34 @@
       "boundary_or_alias_note": "官網校產範圍已核，確切單位/建物待逐項查，不宣稱無實照。",
       "next_step": "先建立場域內逐棟清單與公開外觀實照，再建模；勿把場域清單冒充已完成建築清單。"
     }
-  ]
+  ],
+  "current_model_packages": 5,
+  "model_count_updated_date": "2026-10-31",
+  "current_increment_packages": [
+    {
+      "slug": "nchu-small-hall-rebuilt-main-hall",
+      "name": "國立中興大學小禮堂：重建後主廳外觀研究",
+      "campus": "校本部",
+      "path": "校本部/buildings/nchu-small-hall-rebuilt-main-hall",
+      "readme": "README.md",
+      "scope": "依據興大影音網 **2015 年 11 月 30 日空拍**與《興大校友》第 16 期第 59 頁「小禮堂現貌」照片製作。這是 **921 震災後重建版本的主廳外觀簡化模型**，不是 1943 年原建築，也不代表已驗證 2026 年現況。",
+      "scope_and_limitations_reference": "校本部/buildings/nchu-small-hall-rebuilt-main-hall/README.md",
+      "physical_print_verified": false,
+      "classification": "bounded_source_study_not_assigned_to_legacy_full_or_partial_categories"
+    },
+    {
+      "slug": "nchu-yunping-central-front-2024",
+      "name": "國立中興大學雲平樓｜2024中央正立面截段",
+      "campus": "校本部",
+      "path": "校本部/buildings/nchu-yunping-central-front-2024",
+      "readme": "README.md",
+      "scope": "依官方2024-07-31空拍封面建立的近似彩色模型。**僅中央正立面截段，不是整棟或測繪模型**。兩側斜翼、真實後側與完整屋頂平面不在範圍；棕紅塔只呈現前切片，背板及底座為人工封閉支撐。被樹遮蔽的左下部留空白支撐，不補猜窗門。來源年份不等於2026現況確認。\n\n\n- `model.stl`：單色幾何；`model.3mf`：同網格逐面色材質。\n- `scene.blend`：實際網格與隱藏可編輯原始零件，不含來源影像。\n- 尺寸約150×36×86.5mm（模型尺寸，非真實建物比例尺）。未試印；薄框與斜屋面須依印表機能力評估支撐。\n- `build_model.py`可無照片獨立重建；六張`previews/`均由實際網格Blender渲染，非生成式想像圖。\n- 來源及已知限制：[SOURCES.md](校本部/buildings/nchu-yunping-central-front-2024/SOURCES.md)。工程完整性測試不等於建築形制完整確認。",
+      "scope_and_limitations_reference": "校本部/buildings/nchu-yunping-central-front-2024/README.md",
+      "physical_print_verified": false,
+      "classification": "bounded_source_study_not_assigned_to_legacy_full_or_partial_categories"
+    }
+  ],
+  "counting_scope": "現行模型套件總數；不是完整建築棟數或全校完成。新增項以各件README的來源、年代、截段與未知範圍為準，未實體試印。原full/partial分類不擅自擴充；新增項另列未分類。",
+  "current_increment_legacy_classification_unassigned": 2,
+  "classification_baseline_scope": "completed_full_buildings=0 and completed_partial_building_models=3 are prior-three baseline; two new bounded studies are unassigned rather than guessed into categories."
 }

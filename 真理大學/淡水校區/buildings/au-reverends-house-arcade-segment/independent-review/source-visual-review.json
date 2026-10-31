@@ -1,0 +1,58 @@
+{
+  "review_role": "Independent source and visual reviewer",
+  "reviewed_at_utc": "2026-10-30T21:56:29.326698+00:00",
+  "status": "accepted_with_scope_limitations",
+  "scope": "Source fidelity of schematic facade segment and actual front/elevation renders. Not a measured survey, independent numerical mesh audit, or physical print test.",
+  "reviewed_files_sha256": {
+    "build_model.py": "d96671dcc59e5b94911d3ad42c63f57ef431b19d1e00034dd052b040e8928143",
+    "README.md": "3dadb6a286acf307b23b7fdd20051bba74ccfa9bb65bcf9468a4daca2080fa84",
+    "SOURCES.md": "55837a9b81ebb205aa8ae3e03fba324a09b955d02373f8aeade8d4fe496fc9a2",
+    "previews/front.png": "97597759666dc9e436340638c8f017c1c6982d9d978941641de755a237721e32",
+    "previews/front_elevation.png": "efd8b6a4933035430675c634f9e4fe5d81e7070bbbb8cc806e37d1b58442005f",
+    "model.stl": "0b1385ccb57f9c478d8f375a4520169d665b09d1f383db8fc41d59554872df1f",
+    "model.3mf": "6e912f79e761515d64b5b9eb84482ff543b43868c692579ac2ed23259cd5ce74",
+    "mesh-data.npz": "b159126f88a3762100107eddc814696a21948334e02c48a39ffa6fa8d031d25e",
+    "scene.blend": "3e32bacbcd697b80a476791d1e846404825bb020ba18dd14fe426a79bfe01fb2"
+  },
+  "reference": {
+    "page_url": "https://www.au.edu.tw/p/406-1000-68648,r111568.php?Lang=zh-tw",
+    "image_url": "https://www.au.edu.tw/var/file/0/1000/pictures/360/m/mczh-tw1500x1500_large4887_979836693332.jpg",
+    "inspection": "Actual 800x450 official photo pixels compared against completed front and front-elevation renders",
+    "sha256": "272f16c5dfce8e4492de45c8ac3aa77a858b14f8992622ddba55d9d039135ff7",
+    "secondary_text_url": "https://newtaipei.travel/zh-tw/attractions/detail/110650"
+  },
+  "findings": [
+    {
+      "topic": "Visible facade organization",
+      "result": "supported",
+      "observation": "Two-storey red-brick arcade, upper broad/narrow/broad/narrow/broad/broad sequence, flatter lower broad arches, lower narrow rectangular openings, light turned balustrades and open second-broad ground entrance agree with visible source."
+    },
+    {
+      "topic": "Perspective normalization",
+      "result": "acceptable_inference",
+      "observation": "Four broad bays use equal nominal3.8 widths and rounded semicircular upper crowns. Avoids copying oblique-photo left-to-right enlargement into a frontal elevation. README/SOURCES explicitly disclose this as normalization assumption, not measured equality or surveyed radii."
+    },
+    {
+      "topic": "Arch headroom",
+      "result": "visually_clear",
+      "observation": "Actual front and elevation renders show continuous masonry above upper crowns below corbels. Source visible masonry separation is retained. Build parameters crown8.0 and corbel-bottom8.22 preserve clearance."
+    },
+    {
+      "topic": "Representation bounds",
+      "result": "acceptable_with_disclosure",
+      "observation": "Shallow depth, flat plinth, back/end closure, shadow backing and simplified baluster/corbel counts are authored approximations. Side arcade, rear plan, full roof, stair geometry and interior are not reconstructed. These omissions and assumptions are disclosed."
+    },
+    {
+      "topic": "Historical date",
+      "result": "disclosed_discrepancy",
+      "observation": "School1909 and municipal1906 statements are not merged; both public page URLs are cited. Date discrepancy does not establish a surveyed historical model state."
+    }
+  ],
+  "limitations": [
+    "Single photographic view; same-view school reencoding is not independent corroboration.",
+    "All dimensional proportions, material colors, exact baluster counts and cornice carving remain approximate.",
+    "No approval implied for full-building or measured-accuracy claims.",
+    "Reference photograph is privately inspected and not redistributed in model package."
+  ],
+  "overall": "Acceptable as an explicitly approximate source-informed six-bay facade study, subject to stated limitations and separate file/geometry QA. Any changes to reviewed files require hash renewal and relevant re-review."
+}

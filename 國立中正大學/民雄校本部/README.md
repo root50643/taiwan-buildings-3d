@@ -1,13 +1,23 @@
 # 民雄校本部建築模型
 
+現行收錄 **5 套模型包**；數量不等於完整建築棟數，亦非全校／校區完成。新件與既有件的年代、截段範圍及未試印限制請閱各模型頁。
+
+### 既有批次來源與列印限制（數量為各批歷史範圍，非現行總數）
+
+
 依公開實拍自建的毫米制可3D列印建築外觀近似模型，含底座最大尺寸150mm、各件獨立比例。不是精密測繪或施工模型。
 
-目前收錄4件：行政大樓連體群、共同教室大樓完整量體近似，以及圖資中央塔樓與門廊段、大禮堂前門廊段。後兩件為局部；尚未完成全校，也不能當成已完成完整圖書資訊大樓或完整大禮堂。
+當批收錄4件：行政大樓連體群、共同教室大樓完整量體近似，以及圖資中央塔樓與門廊段、大禮堂前門廊段。後兩件為局部；尚未完成全校，也不能當成已完成完整圖書資訊大樓或完整大禮堂。
+
 
 | 行政大樓 | 大禮堂前門廊段 | 圖資中央塔樓與門廊段 |
 |---|---|---|
 | [![行政大樓連體群](buildings/ccu-administration-complex/appearance/front.png)](buildings/ccu-administration-complex/README.md)<br>[行政大樓連體群](buildings/ccu-administration-complex/README.md) | [![大禮堂前門廊段](buildings/ccu-auditorium-front-section/appearance/previews/front.png)](buildings/ccu-auditorium-front-section/README.md)<br>[大禮堂前門廊段](buildings/ccu-auditorium-front-section/README.md) | [![圖書資訊大樓中央塔樓與門廊段](buildings/ccu-library-central-tower-section/appearance/front.png)](buildings/ccu-library-central-tower-section/README.md)<br>[圖書資訊大樓中央塔樓與門廊段](buildings/ccu-library-central-tower-section/README.md) |
 | [![共同教室大樓](buildings/ccu-shared-classroom-complex/appearance/front.png)](buildings/ccu-shared-classroom-complex/README.md)<br>[共同教室大樓：完整量體近似](buildings/ccu-shared-classroom-complex/README.md) |  |  |
+
+| 建築模型 | 建築模型 | 建築模型 |
+| :---: | :---: | :---: |
+| [<img src="buildings/ccu-gao-gazebo/previews/front.png" alt="國立中正大學 高師亭｜六邊原木茅草亭簡化模型：實際模型預覽" width="220">](buildings/ccu-gao-gazebo/README.md)<br>**[國立中正大學 高師亭｜六邊原木茅草亭簡化模型](buildings/ccu-gao-gazebo/README.md)** |  |  |
 
 ## 校區與完成範圍
 

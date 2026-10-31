@@ -1,0 +1,35 @@
+{
+  "status": "resolved_historical_review_superseded_by_SOURCE-VISUAL-QA",
+  "reviewed_at": "2026-10-31T11:32:32.080718+00:00",
+  "all_seven_previews_actually_viewed": true,
+  "resolved_prior_issues": [
+    "Dining porch now limited to low wing with substantial piers",
+    "South gym glazing subdivided with solid ends",
+    "North rear short window return present",
+    "Mechanical rear screen now denser",
+    "EAST-V-BRACE-GEOMETRY: narrow steep white lower truss tips verified in11:31 renders",
+    "Dining porch set back inside original footprint"
+  ],
+  "limits": "Not yet pass. Horizontal sizes approximate published graphic scale. Historical2016 supply photographs, not current survey. Excludes subterranean pool/equipment and PhaseI school.",
+  "sha256": {
+    "facade_detail.png": "df4da248cb94a1c53b11bf674877797540b81545d89f775e1437d6fd4f3f3ec2",
+    "rear.png": "6942f67ec1fe9b06edb541fb4f5b21d8735bfc4bd12ebdde7594f15042b52e79",
+    "front.png": "188cfd2d74a54ac3dcd9ac28f85d3a3892826e65575e56ec36f42f09467140a2",
+    "front_elevation.png": "aa28e1e58f520eb36e3c056fa59a2578fee527c1db555a33aa8b296f66810d41",
+    "north_end.png": "c9ad7cc88b63ba8b6ee8fc4c53107e6447d515fa067a91b1921e12ba554f910e",
+    "top.png": "83020903db8bda1abc4fca581bf2d22f3a5d334c20ba35ecd7893a8f0d6ea894",
+    "south_elevation.png": "84120e05437d211bd10504c1077f4fe0613bc69e1703cb9309c5b68884bb117e"
+  },
+  "historical_remaining": [
+    {
+      "id": "GLASS-WHITE-TRIANGLES",
+      "severity": "must_fix",
+      "finding": "11:31 front_elevation and facade_detail show large unintended white diagonal/triangular bands across lower pool glazing, not in source. Likely coplanar material/triangulation artifact after porch edit.",
+      "correction": "Remove artifact, regenerate and review all affected renders."
+    }
+  ],
+  "remaining": [],
+  "resolved_at_utc": "2026-10-31T11:43:30.506043+00:00",
+  "resolution": "Final sequential-union mesh and all seven latest previews inspected; unintended glass triangles removed, no remaining major source mismatch within explicit scope.",
+  "final_mesh_sha256": "08f29b9784af58b8bdf39bfc695d280cdfc7e7f9b325b32687d0c1b09584fb78"
+}
